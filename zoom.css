@@ -1,0 +1,10 @@
+.zoomable{cursor:zoom-in}
+.zoomable:focus-visible{outline:3px solid #6ee7f9;outline-offset:-3px}
+html.zoom-open{overflow:hidden}
+.image-zoom{width:min(1200px,96vw);max-width:96vw;max-height:94dvh;padding:12px;border:1px solid #263241;border-radius:16px;background:#121923;color:#edf3f8;box-shadow:0 20px 80px #0008}
+.image-zoom::backdrop{background:#03070de6}
+.zoom-toolbar{display:flex;align-items:center;gap:12px;margin-bottom:12px;font:14px/1.4 system-ui,sans-serif}
+.zoom-title{flex:1;min-width:0;overflow-wrap:anywhere}
+.zoom-original{color:#6ee7f9;white-space:nowrap}
+.zoom-close{cursor:pointer;flex:none;width:44px;height:44px;padding:0;border:1px solid #263241;border-radius:50%;background:#172331;color:#edf3f8;font:28px/1 system-ui,sans-serif}
+.zoom-image{display:block;width:100%;height:auto;max-height:calc(94dvh - 92px);object-fit:contain;background:white;border-radius:8px}
