@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe8ff"/>
+      <stop offset="1" stop-color="#f6fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#697384"/>
+      <stop offset="1" stop-color="#303845"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#17202b" flood-opacity=".3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="58" fill="#ffe27a" opacity=".85"/>
+  <path d="M0 395 Q120 350 235 390 T470 385 T800 375 V600 H0Z" fill="#9bd38b"/>
+  <path d="M0 440 Q170 405 345 438 T800 420 V600 H0Z" fill="#6ab77a"/>
+  <path d="M0 472 Q200 438 400 468 T800 455 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 535 Q190 505 390 532 T800 520" fill="none" stroke="#f8d86a" stroke-width="9" stroke-dasharray="55 35" opacity=".9"/>
+
+  <g fill="#ffffff" opacity=".8">
+    <path d="M92 125 q28-27 56 0 q-28 8-56 0Z"/>
+    <path d="M170 180 q34-30 68 0 q-34 10-68 0Z"/>
+    <path d="M570 165 q25-22 50 0 q-25 8-50 0Z"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <!-- bicycle -->
+    <circle cx="258" cy="455" r="73" fill="none" stroke="#202a36" stroke-width="12"/>
+    <circle cx="570" cy="455" r="73" fill="none" stroke="#202a36" stroke-width="12"/>
+    <circle cx="258" cy="455" r="8" fill="#f2c94c"/>
+    <circle cx="570" cy="455" r="8" fill="#f2c94c"/>
+    <path d="M258 455 L350 340 L447 455 L258 455 M350 340 L570 455 M447 455 L515 345 L570 455" fill="none" stroke="#e34b3f" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M332 344 L365 342 M508 344 L534 333" stroke="#202a36" stroke-width="10" stroke-linecap="round"/>
+    <path d="M431 445 q15 20 31 0" fill="none" stroke="#202a36" stroke-width="8"/>
+    <circle cx="447" cy="455" r="15" fill="#f2c94c" stroke="#202a36" stroke-width="6"/>
+    <path d="M447 455 l-26 20 M447 455 l28 18" stroke="#202a36" stroke-width="6" stroke-linecap="round"/>
+    <path d="M240 385 Q350 300 470 360" fill="none" stroke="#202a36" stroke-width="8" stroke-linecap="round"/>
+    <path d="M535 322 q-10-15-1-29" fill="none" stroke="#202a36" stroke-width="7" stroke-linecap="round"/>
+    <path d="M541 296 q19-10 34 2" fill="none" stroke="#202a36" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- pelican body -->
+    <ellipse cx="407" cy="270" rx="91" ry="112" fill="#f5f2e8" stroke="#202a36" stroke-width="8"/>
+    <path d="M347 239 Q300 213 302 169 Q320 130 360 147 Q405 166 420 215 Q390 233 347 239Z" fill="#dfe4e7" stroke="#202a36" stroke-width="8"/>
+    <path d="M359 155 Q377 102 425 117 Q467 132 464 180 Q456 227 418 244 Q392 199 359 155Z" fill="#f5f2e8" stroke="#202a36" stroke-width="8"/>
+    <ellipse cx="413" cy="144" rx="10" ry="13" fill="#202a36"/>
+    <circle cx="417" cy="140" r="3" fill="#fff"/>
+    <path d="M424 171 Q470 153 532 177 Q486 216 423 203 Q398 194 424 171Z" fill="#f2a65a" stroke="#202a36" stroke-width="8"/>
+    <path d="M430 187 Q474 203 524 182" fill="none" stroke="#c8733d" stroke-width="5"/>
+    <path d="M365 260 Q407 294 448 258" fill="none" stroke="#c7cdd1" stroke-width="18" stroke-linecap="round"/>
+    <path d="M370 316 Q405 344 443 316" fill="none" stroke="#202a36" stroke-width="8" stroke-linecap="round"/>
+    <path d="M359 350 Q328 387 322 433" fill="none" stroke="#f2a65a" stroke-width="13" stroke-linecap="round"/>
+    <path d="M443 350 Q469 384 485 430" fill="none" stroke="#f2a65a" stroke-width="13" stroke-linecap="round"/>
+    <path d="M315 435 l-18 13 M320 436 l-3 20 M483 432 l17 16 M479 436 l2 20" stroke="#202a36" stroke-width="7" stroke-linecap="round"/>
+    <path d="M348 246 Q308 288 337 327 Q369 348 397 314" fill="#cbd2d7" stroke="#202a36" stroke-width="8"/>
+    <path d="M459 254 Q502 282 472 326 Q451 345 423 315" fill="#cbd2d7" stroke="#202a36" stroke-width="8"/>
+
+    <!-- wing holding handlebar -->
+    <path d="M462 269 Q505 299 514 345" fill="none" stroke="#f5f2e8" stroke-width="31" stroke-linecap="round"/>
+    <path d="M462 269 Q505 299 514 345" fill="none" stroke="#202a36" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="515" cy="344" r="12" fill="#f2a65a" stroke="#202a36" stroke-width="6"/>
+
+    <!-- speech bubble -->
+    <path d="M570 112 Q686 70 742 137 Q771 181 726 221 Q674 253 595 214 L557 234 L566 198 Q539 157 570 112Z" fill="#fffdf3" stroke="#202a36" stroke-width="7"/>
+    <text x="596" y="151" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#202a36">MOVE OVER!</text>
+    <text x="605" y="181" font-family="Arial, sans-serif" font-size="19" fill="#e34b3f">I have a BIG</text>
+    <text x="624" y="204" font-family="Arial, sans-serif" font-size="19" fill="#e34b3f">beak!</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="68" font-size="43" font-weight="900" fill="#202a36" stroke="#fff" stroke-width="5" paint-order="stroke">THE PELICAN EXPRESS</text>
+    <text x="400" y="104" font-size="20" font-weight="700" fill="#e34b3f">When your bike has no basket… become the basket.</text>
+  </g>
+
+  <g fill="#3c9b63">
+    <path d="M76 467 q15-42 28 0 q-16-20-28 0Z"/>
+    <path d="M706 455 q13-38 26 0 q-13-19-26 0Z"/>
+    <path d="M735 463 q12-33 23 0 q-12-16-23 0Z"/>
+  </g>
+</svg>

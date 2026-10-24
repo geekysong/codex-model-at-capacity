@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8bd7f2"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59616b"/>
+      <stop offset="1" stop-color="#303841"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#1c2730" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="55" fill="#ffd968" opacity=".8"/>
+  <path d="M0 365 Q130 300 250 350 T520 335 T800 350 L800 600 L0 600Z" fill="#9bd27b"/>
+  <path d="M0 420 Q160 380 310 420 T620 410 T800 430 L800 600 L0 600Z" fill="#6db466"/>
+  <path d="M0 475 L800 455 L800 600 L0 600Z" fill="url(#road)"/>
+  <path d="M45 540 L755 520" stroke="#f4d35e" stroke-width="8" stroke-dasharray="55 38" opacity=".9"/>
+
+  <g fill="#ffffff" opacity=".72">
+    <path d="M90 115 q20-24 40 0 q22-17 42 5 q-22 22-82 12 q-12-9 0-17Z"/>
+    <path d="M470 90 q16-18 32 0 q18-14 34 4 q-20 19-67 11 q-9-8 1-15Z"/>
+  </g>
+
+  <text x="400" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="38" fill="#17232d" stroke="#ffffff" stroke-width="3" paint-order="stroke">
+    THE BEAK EXPRESS
+  </text>
+  <text x="400" y="91" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24343d">
+    “Because walking is for birds with smaller ambitions.”
+  </text>
+
+  <!-- bicycle shadow -->
+  <ellipse cx="410" cy="501" rx="198" ry="18" fill="#18232b" opacity=".35"/>
+
+  <!-- bicycle -->
+  <g stroke="#1b252d" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)">
+    <circle cx="285" cy="457" r="68" stroke="#202a32" fill="#edf4f5"/>
+    <circle cx="560" cy="457" r="68" stroke="#202a32" fill="#edf4f5"/>
+    <path d="M285 457 L370 350 L445 457 L285 457 L390 457 L560 457 L445 457 L515 350"/>
+    <path d="M370 350 L348 318"/>
+    <path d="M330 318 L366 318"/>
+    <path d="M515 350 L535 315"/>
+    <path d="M520 315 L555 315"/>
+    <path d="M445 457 L420 420"/>
+  </g>
+  <g fill="#ef5b5b" stroke="#18232b" stroke-width="5">
+    <circle cx="285" cy="457" r="10"/>
+    <circle cx="560" cy="457" r="10"/>
+    <circle cx="445" cy="457" r="12"/>
+  </g>
+  <path d="M445 457 Q420 425 420 405" fill="none" stroke="#18232b" stroke-width="6"/>
+  <path d="M400 405 L440 405" stroke="#18232b" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- pelican body -->
+  <g filter="url(#shadow)">
+    <ellipse cx="425" cy="268" rx="92" ry="116" fill="#f8fbfc" stroke="#27343b" stroke-width="6"/>
+    <path d="M367 226 Q345 170 386 137 Q429 104 475 139 Q505 163 492 213 Q464 240 425 237Z" fill="#dce8ed" stroke="#27343b" stroke-width="6"/>
+    <path d="M386 137 Q410 111 440 119 Q467 126 476 151 Q447 140 420 151 Q399 159 386 137Z" fill="#f8fbfc"/>
+    <path d="M420 151 Q440 137 468 151" stroke="#27343b" stroke-width="5" fill="none"/>
+    <!-- beak -->
+    <path d="M443 164 Q523 160 612 190 Q635 199 615 216 Q540 239 456 207Z" fill="#f3a83b" stroke="#27343b" stroke-width="6"/>
+    <path d="M455 203 Q534 207 615 190 Q594 231 512 245 Q470 239 455 203Z" fill="#e97836" stroke="#27343b" stroke-width="6"/>
+    <path d="M478 207 Q516 218 565 207" stroke="#9d422d" stroke-width="4" fill="none"/>
+    <circle cx="420" cy="164" r="9" fill="#202b31"/>
+    <circle cx="423" cy="160" r="3" fill="#ffffff" stroke="none"/>
+    <!-- wing -->
+    <path d="M363 252 Q309 288 342 365 Q362 400 401 365 Q420 342 405 298Z" fill="#e7f0f3" stroke="#27343b" stroke-width="6"/>
+    <path d="M359 287 Q376 317 392 344" stroke="#9eafb8" stroke-width="4" fill="none"/>
+    <!-- legs -->
+    <path d="M401 362 L375 426 L350 455" stroke="#e7a53f" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M450 362 L475 414 L492 455" stroke="#e7a53f" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M341 457 q18-17 34 0" stroke="#27343b" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M483 457 q18-17 34 0" stroke="#27343b" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- comical helmet -->
+  <path d="M367 142 Q376 98 424 90 Q470 88 487 133 L476 145 Q423 125 367 142Z" fill="#ed5b5b" stroke="#27343b" stroke-width="6"/>
+  <path d="M383 112 Q422 94 463 111" stroke="#ffc857" stroke-width="8" fill="none"/>
+  <path d="M375 138 L488 138" stroke="#27343b" stroke-width="6"/>
+
+  <!-- handlebars and wing grip -->
+  <path d="M515 350 Q540 332 555 315" stroke="#27343b" stroke-width="7" fill="none"/>
+  <path d="M515 350 Q482 316 461 301" stroke="#27343b" stroke-width="7" fill="none"/>
+  <path d="M461 301 Q445 294 435 309" stroke="#e7a53f" stroke-width="11" fill="none" stroke-linecap="round"/>
+
+  <!-- motion lines -->
+  <g stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity=".8">
+    <path d="M170 280 L235 270"/>
+    <path d="M145 310 L210 300"/>
+    <path d="M610 300 L665 292"/>
+  </g>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">
+    “PADDLE HARD, WOBBLE PROUD!”
+  </text>
+</svg>

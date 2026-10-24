@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a tiny bicycle while carrying an oversized fish in its beak.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7f5"/>
+      <stop offset="1" stop-color="#dff8ed"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#727784"/>
+      <stop offset="1" stop-color="#3f424d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17324d" flood-opacity=".3"/>
+    </filter>
+  </defs>
+
+  <!-- sky and seaside -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="48" fill="#fff3a8" opacity=".9"/>
+  <path d="M0 360 Q130 315 260 355 T520 350 T800 345 V435 H0Z" fill="#69c7c7"/>
+  <path d="M0 395 Q150 355 290 398 T560 390 T800 380 V452 H0Z" fill="#45aeb8" opacity=".9"/>
+  <path d="M0 438 Q170 420 330 440 T650 432 T800 440 V600 H0Z" fill="url(#road)"/>
+
+  <!-- clouds -->
+  <g fill="#ffffff" opacity=".8">
+    <path d="M70 105 q18-29 42 0 q19-20 40 5 h-105 q5-24 23-5z"/>
+    <path d="M500 130 q18-29 42 0 q19-20 40 5 h-105 q5-24 23-5z"/>
+  </g>
+
+  <!-- title -->
+  <g font-family="Trebuchet MS, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="65" font-size="42" font-weight="900" fill="#17324d" stroke="#ffffff" stroke-width="7" paint-order="stroke">THE PELICAN EXPRESS</text>
+    <text x="400" y="96" font-size="17" font-weight="700" fill="#d3483e">ONE BIRD. TWO WHEELS. ZERO FISHING LICENSES.</text>
+  </g>
+
+  <!-- road markings -->
+  <g stroke="#f7df8a" stroke-width="10" stroke-linecap="round" opacity=".9">
+    <path d="M45 522 h95"/>
+    <path d="M230 522 h95"/>
+    <path d="M415 522 h95"/>
+    <path d="M600 522 h95"/>
+  </g>
+
+  <!-- bicycle -->
+  <g filter="url(#shadow)">
+    <circle cx="286" cy="450" r="66" fill="none" stroke="#202938" stroke-width="9"/>
+    <circle cx="556" cy="450" r="66" fill="none" stroke="#202938" stroke-width="9"/>
+    <circle cx="286" cy="450" r="7" fill="#f6d365"/>
+    <circle cx="556" cy="450" r="7" fill="#f6d365"/>
+    <path d="M286 450 L365 380 L446 450 L350 450 Z" fill="none" stroke="#d3483e" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M365 380 L405 450 L446 450" fill="none" stroke="#d3483e" stroke-width="9" stroke-linecap="round"/>
+    <path d="M365 380 L350 346" stroke="#202938" stroke-width="8" stroke-linecap="round"/>
+    <path d="M333 346 h35" stroke="#202938" stroke-width="8" stroke-linecap="round"/>
+    <path d="M446 450 L465 374" stroke="#202938" stroke-width="8"/>
+    <path d="M450 374 h35" stroke="#202938" stroke-width="8" stroke-linecap="round"/>
+    <path d="M405 450 l-20 25 M405 450 l22 24" stroke="#202938" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="405" cy="450" r="13" fill="#f6d365" stroke="#202938" stroke-width="6"/>
+  </g>
+
+  <!-- pelican body -->
+  <g filter="url(#shadow)">
+    <ellipse cx="420" cy="287" rx="82" ry="112" fill="#f7f4e8" stroke="#202938" stroke-width="7"/>
+    <path d="M367 255 q-35 18-54 73 q31-12 66-8" fill="#e4e0d4" stroke="#202938" stroke-width="7"/>
+    <path d="M474 264 q42 24 35 87 q-30-18-57-45" fill="#dedbd0" stroke="#202938" stroke-width="7"/>
+    <ellipse cx="407" cy="176" rx="63" ry="57" fill="#f7f4e8" stroke="#202938" stroke-width="7"/>
+    <path d="M365 191 q-20 12-28 34 q39 3 76-14 q38-19 61-32 q-35-12-72-8z" fill="#f0a447" stroke="#202938" stroke-width="7"/>
+    <path d="M340 225 q48 17 102-3" fill="none" stroke="#d8792d" stroke-width="5"/>
+    <circle cx="431" cy="169" r="9" fill="#202938"/>
+    <circle cx="434" cy="166" r="3" fill="#ffffff"/>
+    <path d="M394 145 q24-22 49-2" fill="none" stroke="#202938" stroke-width="7" stroke-linecap="round"/>
+    <path d="M397 355 l-18 72 M447 353 l20 74" stroke="#f0a447" stroke-width="12" stroke-linecap="round"/>
+    <path d="M378 426 l-25 5 M466 427 l25 5" stroke="#f0a447" stroke-width="10" stroke-linecap="round"/>
+    <path d="M392 285 q34 18 57 1" fill="none" stroke="#202938" stroke-width="6" stroke-linecap="round"/>
+    <path d="M386 304 q35 22 68 0" fill="none" stroke="#d3483e" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- fish in beak -->
+  <g transform="translate(309 206) rotate(-12)">
+    <path d="M0 0 q33-31 75 0 q-42 31-75 0z" fill="#7fc6d8" stroke="#202938" stroke-width="6"/>
+    <path d="M74 0 l28-18 v36z" fill="#f0a447" stroke="#202938" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="18" cy="-5" r="4" fill="#202938"/>
+    <path d="M40-18 q8 18 0 36" fill="none" stroke="#438ca5" stroke-width="4"/>
+  </g>
+
+  <!-- speed lines and comic accents -->
+  <g fill="none" stroke="#d3483e" stroke-width="7" stroke-linecap="round">
+    <path d="M156 260 h68"/>
+    <path d="M130 286 h52"/>
+    <path d="M603 235 h62"/>
+    <path d="M631 266 h40"/>
+  </g>
+  <g font-family="Trebuchet MS, Arial, sans-serif" font-weight="900" fill="#17324d">
+    <text x="92" y="350" font-size="25" transform="rotate(-12 92 350)">HONK!</text>
+    <text x="634" y="330" font-size="22" transform="rotate(10 634 330)">FLAP!</text>
+  </g>
+
+  <!-- caption -->
+  <g font-family="Trebuchet MS, Arial, sans-serif" text-anchor="middle">
+    <rect x="155" y="548" width="490" height="38" rx="19" fill="#fff3a8" stroke="#202938" stroke-width="4"/>
+    <text x="400" y="574" font-size="19" font-weight="800" fill="#202938">“I’m just taking the scenic route to lunch.”</text>
+  </g>
+</svg>
