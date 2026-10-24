@@ -86,12 +86,12 @@ that invocation. The SVG files are kept as the original public artifacts.
 
 ## Reproduce or operate it
 
-The Raspberry Pi runs the Codex census every five minutes and the Claude API
-comparison every thirty minutes:
+The Raspberry Pi uses one shared daily prompt. Codex runs every thirty minutes;
+Claude runs once per day as the control group:
 
 ```cron
-*/5 * * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_round.py >> /home/songyy/codex-model-at-capacity/round.log 2>&1
-*/30 * * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_claude_round.py >> /home/songyy/codex-model-at-capacity/claude_round.log 2>&1
+*/30 * * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_round.py >> /home/songyy/codex-model-at-capacity/round.log 2>&1
+5 0 * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_claude_round.py >> /home/songyy/codex-model-at-capacity/claude_round.log 2>&1
 ```
 
 The Codex runner acquires `.round.lock`, invokes the four paired models once in
@@ -125,7 +125,8 @@ metadata are written to `comparisons/<timestamp>/`; the key is never written
 there or printed. This comparison is intentionally separate from the cron
 health series and is not automatically published to GitHub Pages.
 
-There are two prompt rounds: `pelican` asks for a pelican riding a bicycle;
-`substitution` satirizes a service promising a premium model while quietly
-substituting a weak one. `run_claude_round.py` runs all four Claude pairings for
-both variants every 30 minutes and publishes their side-by-side results.
+`daily_prompt.txt` is the single source of truth for the current question. Both
+providers receive it unchanged; its SGT date and SHA-256 prefix are recorded in
+every result so a Codex observation is compared only with Claude's same-day
+control. Change that file once per day to start a new question. The page keeps
+older Pelican, substitution, and physics experiments as historical rounds.
