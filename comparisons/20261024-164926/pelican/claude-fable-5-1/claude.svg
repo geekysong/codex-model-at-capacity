@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Impact,Arial Black,sans-serif">
+<defs>
+<linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7ec8f7"/><stop offset="1" stop-color="#dff3ff"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="url(#sk)"/>
+<circle cx="700" cy="110" r="45" fill="#ffd93b"/>
+<g fill="#fff" opacity=".9">
+<ellipse cx="150" cy="150" rx="60" ry="22"/><ellipse cx="190" cy="135" rx="40" ry="20"/>
+<ellipse cx="560" cy="180" rx="50" ry="18"/><ellipse cx="590" cy="168" rx="30" ry="16"/>
+</g>
+<rect y="470" width="800" height="130" fill="#6b8e4e"/>
+<rect y="455" width="800" height="60" fill="#444"/>
+<line x1="0" y1="485" x2="800" y2="485" stroke="#ffd93b" stroke-width="5" stroke-dasharray="40 30">
+<animate attributeName="stroke-dashoffset" from="70" to="0" dur=".5s" repeatCount="indefinite"/>
+</line>
+<g stroke="#333" stroke-width="4" stroke-linecap="round" opacity=".5">
+<line x1="120" y1="400" x2="190" y2="400"/><line x1="100" y1="430" x2="170" y2="430"/><line x1="140" y1="370" x2="200" y2="370"/>
+</g>
+<!-- wheels -->
+<g fill="none" stroke="#222" stroke-width="4">
+<g><circle cx="260" cy="440" r="46" stroke-width="8"/>
+<path d="M260 394v92M214 440h92M227 407l66 66M293 407l-66 66" stroke-width="2.5"/>
+<animateTransform attributeName="transform" type="rotate" from="0 260 440" to="360 260 440" dur="1s" repeatCount="indefinite"/></g>
+<g><circle cx="480" cy="440" r="46" stroke-width="8"/>
+<path d="M480 394v92M434 440h92M447 407l66 66M513 407l-66 66" stroke-width="2.5"/>
+<animateTransform attributeName="transform" type="rotate" from="0 480 440" to="360 480 440" dur="1s" repeatCount="indefinite"/></g>
+</g>
+<!-- frame -->
+<path d="M260 440L330 340L450 340L480 440M330 340L360 440L450 340M260 440L360 440M450 340L445 318M420 318H470" fill="none" stroke="#d6323c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="305" y="328" width="50" height="12" rx="6" fill="#222"/>
+<!-- crank -->
+<g stroke="#222" stroke-width="5" stroke-linecap="round">
+<line x1="360" y1="440" x2="360" y2="470"/><line x1="360" y1="440" x2="360" y2="410"/>
+<line x1="348" y1="470" x2="372" y2="470" stroke-width="7"/><line x1="348" y1="410" x2="372" y2="410" stroke-width="7"/>
+<animateTransform attributeName="transform" type="rotate" from="0 360 440" to="360 360 440" dur="1s" repeatCount="indefinite"/>
+</g>
+<circle cx="360" cy="440" r="9" fill="#222"/>
+<!-- pelican -->
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".5s" repeatCount="indefinite"/>
+<path d="M340 320L355 440M350 325L370 445" stroke="#f0a020" stroke-width="7" stroke-linecap="round" fill="none">
+<animate attributeName="d" values="M340 320L355 440M350 325L370 445;M340 320L372 418M350 325L350 468;M340 320L355 440M350 325L370 445" dur="1s" repeatCount="indefinite"/>
+</path>
+<ellipse cx="335" cy="290" rx="62" ry="42" fill="#f7f7f7" stroke="#222" stroke-width="3"/>
+<path d="M300 300Q290 330 330 325Q310 345 350 335" fill="none" stroke="#222" stroke-width="3"/>
+<path d="M350 280Q410 300 440 322" fill="none" stroke="#f7f7f7" stroke-width="22" stroke-linecap="round"/>
+<path d="M350 280Q410 300 440 322" fill="none" stroke="#222" stroke-width="3"/>
+<path d="M360 265Q395 240 400 205" fill="none" stroke="#f7f7f7" stroke-width="30" stroke-linecap="round"/>
+<path d="M360 265Q395 240 400 205" fill="none" stroke="#222" stroke-width="3" stroke-dasharray="0 0"/>
+<circle cx="400" cy="200" r="24" fill="#f7f7f7" stroke="#222" stroke-width="3"/>
+<path d="M412 192L540 215L418 210Z" fill="#f5a623" stroke="#222" stroke-width="3" stroke-linejoin="round"/>
+<path d="M418 210Q470 300 540 215" fill="#ffb84d" stroke="#222" stroke-width="3"/>
+<path d="M455 243L480 232L478 254Z" fill="#4a9bd1" stroke="#222" stroke-width="2"/>
+<circle cx="408" cy="193" r="6" fill="#fff" stroke="#222" stroke-width="2"/><circle cx="410" cy="193" r="2.5"/>
+<path d="M378 180Q400 150 428 180Z" fill="#d6323c" stroke="#222" stroke-width="3"/>
+<rect x="376" y="178" width="52" height="7" rx="3" fill="#222"/>
+<path d="M372 172l-10 -14M378 164l-6 -16" stroke="#4a9bd1" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text x="400" y="62" text-anchor="middle" font-size="52" fill="#d6323c" stroke="#222" stroke-width="2">PELICAN ON A BICYCLE</text>
+<text x="400" y="560" text-anchor="middle" font-size="26" font-family="Georgia,serif" font-style="italic" fill="#222">"Pouch full of fish, legs full of regret, and absolutely no idea where the brakes are."</text>
+</svg>

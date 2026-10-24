@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,0 L5,10 Z" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowUp" viewBox="0 0 10 10" refX="5" refY="1" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,10 L10,10 L5,0 Z" fill="#27ae60"/>
+    </marker>
+    <marker id="dimL" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M10,0 L0,5 L10,10 Z" fill="#555"/>
+    </marker>
+    <marker id="dimR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect width="600" height="400" fill="#f7f9fc"/>
+
+  <!-- title -->
+  <text x="300" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">Seesaw in Static Equilibrium</text>
+
+  <!-- scale: 1 m = 50 px, pivot at x=300 -->
+  <!-- pivot (triangle fulcrum) -->
+  <polygon points="300,230 275,290 325,290" fill="#7f8c8d" stroke="#34495e" stroke-width="2"/>
+  <rect x="150" y="290" width="300" height="8" fill="#95a5a6"/>
+  <text x="300" y="312" text-anchor="middle" font-size="12" fill="#555">pivot</text>
+
+  <!-- beam (stays level) -->
+  <rect x="140" y="222" width="320" height="10" rx="3" fill="#b9770e" stroke="#7e5109" stroke-width="2"/>
+  <circle cx="300" cy="227" r="5" fill="#2c3e50"/>
+
+  <!-- distance labels -->
+  <line x1="200" y1="248" x2="300" y2="248" stroke="#555" stroke-width="1.5" marker-start="url(#dimL)" marker-end="url(#dimR)"/>
+  <text x="250" y="264" text-anchor="middle" font-size="13" fill="#333">2 m</text>
+  <line x1="300" y1="248" x2="450" y2="248" stroke="#555" stroke-width="1.5" marker-start="url(#dimL)" marker-end="url(#dimR)"/>
+  <text x="375" y="264" text-anchor="middle" font-size="13" fill="#333">x = 3 m</text>
+
+  <!-- left mass: 6 kg at 2 m -->
+  <line x1="200" y1="232" x2="200" y2="110" stroke="#2c3e50" stroke-width="2"/>
+  <g>
+    <rect x="178" y="80" width="44" height="34" rx="4" fill="#2980b9" stroke="#1b4f72" stroke-width="2"/>
+    <text x="200" y="103" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">6 kg</text>
+    <animateTransform attributeName="transform" type="scale" additive="sum" values="1;1.06;1" keyTimes="0;0.5;1" dur="2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;-12,-5.8;0,0" keyTimes="0;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </g>
+  <!-- left weight force arrow -->
+  <g>
+    <line x1="200" y1="130" x2="200" y2="200" stroke="#c0392b" stroke-width="4" marker-end="url(#arrowDown)">
+      <animate attributeName="y2" values="196;206;196" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <animate attributeName="opacity" values="0.75;1;0.75" dur="2s" repeatCount="indefinite"/>
+  </g>
+  <text x="148" y="170" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">W₁ = 6g</text>
+
+  <!-- right mass: 4 kg at 3 m -->
+  <line x1="450" y1="232" x2="450" y2="110" stroke="#2c3e50" stroke-width="2"/>
+  <g>
+    <rect x="432" y="86" width="36" height="28" rx="4" fill="#8e44ad" stroke="#4a235a" stroke-width="2"/>
+    <text x="450" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">4 kg</text>
+    <animateTransform attributeName="transform" type="scale" additive="sum" values="1;1.06;1" keyTimes="0;0.5;1" dur="2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;-27,-6;0,0" keyTimes="0;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </g>
+  <!-- right weight force arrow -->
+  <g>
+    <line x1="450" y1="130" x2="450" y2="200" stroke="#c0392b" stroke-width="4" marker-end="url(#arrowDown)">
+      <animate attributeName="y2" values="196;206;196" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <animate attributeName="opacity" values="0.75;1;0.75" dur="2s" repeatCount="indefinite"/>
+  </g>
+  <text x="500" y="170" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">W₂ = 4g</text>
+
+  <!-- normal force at pivot (upward) -->
+  <g>
+    <line x1="300" y1="300" x2="300" y2="240" stroke="#27ae60" stroke-width="4" marker-end="url(#arrowUp)">
+      <animate attributeName="y2" values="244;236;244" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <animate attributeName="opacity" values="0.75;1;0.75" dur="2s" repeatCount="indefinite"/>
+  </g>
+  <text x="300" y="285" text-anchor="middle" font-size="12" fill="#1e8449" font-weight="bold">N = 10g</text>
+
+  <!-- torque equation box -->
+  <rect x="150" y="325" width="300" height="62" rx="8" fill="#fff" stroke="#bbb" stroke-width="1.5"/>
+  <text x="300" y="347" text-anchor="middle" font-size="15" fill="#222">Σ τ = 0 :  6 × 2 = 4 × x  ⇒  x = 12 / 4 = 3 m</text>
+  <text x="300" y="372" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e8449">6 × 2 = 4 × 3  →  BALANCED
+    <animate attributeName="opacity" values="1;0.55;1" dur="2s" repeatCount="indefinite"/>
+  </text>
+</svg>
