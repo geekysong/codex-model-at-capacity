@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Balanced seesaw: 6 kilograms at 2 meters left equals 4 kilograms at 3 meters right">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#d94841"/>
+    </marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #17324d; }
+      .label { font-size: 18px; font-weight: 600; }
+      .small { font-size: 16px; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="#f8fbfd"/>
+  <text x="300" y="42" text-anchor="middle" font-size="25" font-weight="700">Static Equilibrium</text>
+
+  <!-- Seesaw -->
+  <line x1="80" y1="210" x2="520" y2="210" stroke="#345b75" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="300" cy="210" r="8" fill="#17324d"/>
+
+  <!-- Pivot -->
+  <path d="M300 218 L260 300 L340 300 Z" fill="#f0a64a" stroke="#a96216" stroke-width="4"/>
+  <line x1="245" y1="300" x2="355" y2="300" stroke="#17324d" stroke-width="5"/>
+  <text x="300" y="327" text-anchor="middle" class="label">pivot</text>
+
+  <!-- Left mass -->
+  <line x1="140" y1="210" x2="140" y2="250" stroke="#345b75" stroke-width="3"/>
+  <rect x="108" y="250" width="64" height="48" rx="5" fill="#5a9bd5" stroke="#17324d" stroke-width="3"/>
+  <text x="140" y="280" text-anchor="middle" fill="white" font-size="19" font-weight="700">6 kg</text>
+  <line x1="140" y1="310" x2="140" y2="350" stroke="#d94841" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="104" y="342" text-anchor="end" class="small">weight</text>
+
+  <!-- Right mass -->
+  <line x1="480" y1="210" x2="480" y2="250" stroke="#345b75" stroke-width="3"/>
+  <rect x="448" y="250" width="64" height="48" rx="5" fill="#70b77e" stroke="#17324d" stroke-width="3"/>
+  <text x="480" y="280" text-anchor="middle" fill="white" font-size="19" font-weight="700">4 kg</text>
+  <line x1="480" y1="310" x2="480" y2="350" stroke="#d94841" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="516" y="342" class="small">weight</text>
+
+  <!-- Pivot force -->
+  <line x1="300" y1="192" x2="300" y2="135" stroke="#d94841" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="313" y="157" class="small">support force</text>
+
+  <!-- Distance labels -->
+  <line x1="140" y1="180" x2="300" y2="180" stroke="#5c7080" stroke-width="2"/>
+  <line x1="140" y1="172" x2="140" y2="188" stroke="#5c7080" stroke-width="2"/>
+  <line x1="300" y1="172" x2="300" y2="188" stroke="#5c7080" stroke-width="2"/>
+  <text x="220" y="169" text-anchor="middle" class="label">2 m</text>
+
+  <line x1="300" y1="180" x2="480" y2="180" stroke="#5c7080" stroke-width="2"/>
+  <line x1="480" y1="172" x2="480" y2="188" stroke="#5c7080" stroke-width="2"/>
+  <text x="390" y="169" text-anchor="middle" class="label">x = 3 m</text>
+
+  <!-- Equation -->
+  <rect x="155" y="65" width="290" height="50" rx="10" fill="#e6f4ea" stroke="#4d9b62" stroke-width="2"/>
+  <text x="300" y="98" text-anchor="middle" font-size="24" font-weight="700">6 × 2 = 4 × 3</text>
+  <text x="300" y="375" text-anchor="middle" font-size="23" font-weight="700" fill="#28743c">balanced</text>
+</svg>
