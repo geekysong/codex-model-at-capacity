@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="50" y="30" font-size="18">Projectile motion — total flight time: 3 s</text>
+    <text x="50" y="55" font-size="14">Initial velocity: (20, 15) m/s · Gravity: 10 m/s²</text>
+    <text x="50" y="80" font-size="13">Scale: 10 px/m; horizontal distances are measured from launch.</text>
+    <text x="50" y="103" font-size="13">Axis break omits 35–55 m so the 60 m landing fits the canvas.</text>
+  </g>
+
+  <!-- Horizontal axis discontinuity: x = 35–55 m is omitted. -->
+  <path d="M50 350 H550" fill="none" stroke="#505967" stroke-width="2"/>
+  <rect x="450" y="342" width="20" height="16" fill="white"/>
+  <path d="M451 355 L457 345 M463 355 L469 345"
+        fill="none" stroke="#505967" stroke-width="2"/>
+
+  <!-- Physical trajectory: x = 20t, h = 15t - 5t².
+       Before the break: X = 100 + 10x, Y = 350 - 10h.
+       After the break: X = 100 + 10x - 180. -->
+  <path d="M100 350 Q275 218.75 450 240.625
+           M470 315.625 Q495 331.25 520 350"
+        fill="none" stroke="#1769aa" stroke-width="3"/>
+
+  <g fill="#1769aa">
+    <circle cx="100" cy="350" r="4"/>
+    <circle cx="400" cy="237.5" r="4"/>
+    <circle cx="520" cy="350" r="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="58" y="380">launch: 0 m, 0 m</text>
+    <text x="345" y="217">apex: 30 m, 11.25 m</text>
+    <text x="414" y="380">landing: 60 m, 0 m</text>
+  </g>
+</svg>

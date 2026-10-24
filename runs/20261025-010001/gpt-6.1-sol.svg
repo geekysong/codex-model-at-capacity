@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="50" y="30">Projectile motion: vₓ = 20 m/s, vᵧ = 15 m/s, g = 10 m/s²</text>
+    <text x="50" y="54">Total flight time: 3 s</text>
+    <text x="50" y="78">Scale: 10 px/m; final segment shown in continuation inset</text>
+  </g>
+
+  <path d="M50 350H550" stroke="#333" stroke-width="2"/>
+
+  <defs>
+    <clipPath id="main-clip">
+      <rect x="90" y="220" width="460" height="132"/>
+    </clipPath>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <path d="M100 350Q400 125 700 350" fill="none" stroke="#2563eb" stroke-width="2.5" clip-path="url(#main-clip)"/>
+  <path d="M535 260.28125L550 265.625" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <circle cx="100" cy="350" r="4" fill="#172033"/>
+  <circle cx="400" cy="237.5" r="4" fill="#172033"/>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="55" y="380">launch: 0 m, 0 m</text>
+    <text x="330" y="217">apex: 30 m, 11.25 m</text>
+  </g>
+
+  <rect x="365" y="98" width="215" height="103" rx="5" fill="#f8fafc" stroke="#94a3b8"/>
+  <text x="375" y="118" font-family="Arial, sans-serif" font-size="12" fill="#475569">Landing continuation · same scale</text>
+  <svg x="375" y="125" width="190" height="45" viewBox="560 305 190 45" overflow="hidden">
+    <path d="M560 350H750" stroke="#333" stroke-width="2"/>
+    <path d="M100 350Q400 125 700 350" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  </svg>
