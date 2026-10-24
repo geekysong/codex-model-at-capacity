@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0a1f"/>
+      <stop offset="1" stop-color="#1d0f35"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <text x="400" y="62" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-weight="bold" font-size="46" fill="#ff4fd8" filter="url(#glow)">THE EXCLUSIVE CODEX CLUB</text>
+
+  <!-- Door and FULL sign -->
+  <rect x="560" y="230" width="160" height="240" fill="#1a1040" stroke="#f5c542" stroke-width="5"/>
+  <rect x="580" y="250" width="120" height="90" fill="#ffd66b" opacity="0.25"/>
+  <circle cx="640" cy="330" r="22" fill="#ffd66b" filter="url(#glow)"/>
+  <text x="640" y="337" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20" fill="#2a1a00">1</text>
+  <text x="640" y="380" text-anchor="middle" font-family="Arial" font-size="13" fill="#ffd66b">ONE MODEL</text>
+  <text x="640" y="396" text-anchor="middle" font-family="Arial" font-size="13" fill="#ffd66b">ALLOWED IN</text>
+  <rect x="580" y="150" width="120" height="50" rx="8" fill="#ff1f1f" filter="url(#glow)"/>
+  <text x="640" y="187" text-anchor="middle" font-family="Arial Black, Arial" font-weight="bold" font-size="32" fill="#fff">FULL</text>
+
+  <!-- Velvet rope -->
+  <rect x="436" y="410" width="8" height="60" fill="#f5c542"/>
+  <rect x="536" y="410" width="8" height="60" fill="#f5c542"/>
+  <path d="M444 422 Q490 448 540 422" fill="none" stroke="#b00020" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Robot bouncer -->
+  <rect x="345" y="270" width="90" height="200" rx="10" fill="#4f5b72"/>
+  <rect x="355" y="170" width="70" height="100" rx="10" fill="#9aa8c4"/>
+  <line x1="390" y1="170" x2="390" y2="148" stroke="#9aa8c4" stroke-width="4"/>
+  <circle cx="390" cy="144" r="6" fill="#ff3b3b" filter="url(#glow)"/>
+  <rect x="363" y="196" width="54" height="14" rx="4" fill="#ff3b3b"/>
+  <rect x="370" y="228" width="40" height="6" fill="#2b3346"/>
+  <rect x="425" y="300" width="50" height="70" rx="4" fill="#f4f4f4" transform="rotate(-6 450 335)"/>
+  <line x1="433" y1="318" x2="467" y2="314" stroke="#888" stroke-width="3"/>
+  <line x1="433" y1="332" x2="467" y2="328" stroke="#888" stroke-width="3"/>
+  <line x1="433" y1="346" x2="462" y2="342" stroke="#888" stroke-width="3"/>
+  <text x="446" y="306" font-family="Arial" font-weight="bold" font-size="9" fill="#c00" transform="rotate(-6 450 335)">WAITLIST</text>
+
+  <!-- Bouncer speech bubble -->
+  <path d="M40 130 H330 Q340 130 340 140 V185 Q340 195 330 195 H300 L340 230 L285 195 H40 Q30 195 30 185 V140 Q30 130 40 130 Z" fill="#fff"/>
+  <text x="185" y="158" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold" fill="#111">Selected model is at capacity.</text>
+  <text x="185" y="180" text-anchor="middle" font-family="Arial" font-size="15" fill="#111">Please try a different model.</text>
+
+  <!-- Queue of tired developers -->
+  <g>
+    <rect x="20" y="430" width="60" height="40" rx="6" fill="#3b82f6"/>
+    <circle cx="50" cy="415" r="18" fill="#e0b48a"/>
+    <ellipse cx="44" cy="418" rx="5" ry="2" fill="#4a2b1a"/><ellipse cx="56" cy="418" rx="5" ry="2" fill="#4a2b1a"/>
+    <rect x="30" y="470" width="40" height="60" fill="#334"/>
+  </g>
+  <g>
+    <rect x="110" y="430" width="60" height="40" rx="6" fill="#a3a3a3"/>
+    <circle cx="140" cy="415" r="18" fill="#c68e5b"/>
+    <path d="M128 408 Q140 398 152 408" fill="none" stroke="#222" stroke-width="4"/>
+    <rect x="120" y="470" width="40" height="60" fill="#553"/>
+    <rect x="160" y="395" width="20" height="30" rx="3" fill="#fff" stroke="#999"/>
+  </g>
+  <g>
+    <rect x="200" y="430" width="60" height="40" rx="6" fill="#22c55e"/>
+    <circle cx="230" cy="415" r="18" fill="#f1c9a5"/>
+    <line x1="220" y1="410" x2="226" y2="414" stroke="#222" stroke-width="3"/>
+    <line x1="240" y1="410" x2="234" y2="414" stroke="#222" stroke-width="3"/>
+    <rect x="210" y="470" width="40" height="60" fill="#345"/>
+    <text x="240" y="385" font-family="Arial" font-size="14" fill="#fff">pls work</text>
+  </g>
+  <g>
+    <rect x="290" y="430" width="50" height="40" rx="6" fill="#ef4444"/>
+    <circle cx="315" cy="415" r="18" fill="#8d5524"/>
+    <ellipse cx="308" cy="412" rx="6" ry="4" fill="#fff" opacity="0.7"/>
+    <ellipse cx="322" cy="412" rx="6" ry="4" fill="#fff" opacity="0.7"/>
+    <rect x="305" y="470" width="40" height="60" fill="#432"/>
+    <rect x="330" y="445" width="14" height="22" rx="3" fill="#7c3f00"/>
+  </g>
+
+  <text x="400" y="565" text-anchor="middle" font-family="Arial" font-style="italic" font-size="18" fill="#e5e7eb">Codex: sorry, the club is at capacity. Your 4,212th retry has been placed in line.</text>
+</svg>
