@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <clipPath id="main-view">
+      <rect x="50" y="200" width="500" height="151"/>
+    </clipPath>
+    <clipPath id="landing-view">
+      <rect x="365" y="76" width="180" height="90"/>
+    </clipPath>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="50" y="30" font-size="19" font-weight="bold">Projectile motion</text>
+    <text x="50" y="60">Initial horizontal speed: 20 m/s</text>
+    <text x="50" y="84">Initial vertical speed: 15 m/s</text>
+    <text x="50" y="108">Gravity: 10 m/s²; no air resistance</text>
+    <text x="50" y="132">Scale: 10 px per meter</text>
+    <text x="50" y="156" font-weight="bold">Total flight time: 3 s</text>
+    <text x="50" y="180" font-size="12">Distances measured from launch.</text>
+  </g>
+
+  <!-- x = 100 + 200t; y = 350 - 150t + 50t².
+       Landing is at x=700, beyond the main viewport.
+       The inset preserves scale and translates the landing region. -->
+  <path d="M50 350 H550" stroke="#475569" stroke-width="2"/>
+  <g clip-path="url(#main-view)">
+    <path d="M100 350 Q400 125 700 350"
+          fill="none" stroke="#1769aa" stroke-width="3"/>
+  </g>
+  <circle cx="100" cy="350" r="4" fill="#172033"/>
+  <circle cx="400" cy="237.5" r="4" fill="#172033"/>
+
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="60" y="369" font-size="14">launch: 0 m, 0 m</text>
+    <text x="316" y="217" font-size="14">apex: 30 m, 11.25 m</text>
+    <text x="438" y="291" font-size="12">Continues in inset ↑</text>
+  </g>
+
+  <rect x="360" y="40" width="190" height="132" rx="5"
+        fill="#f5f9ff" stroke="#94a3b8"/>
+  <text x="372" y="63" font-family="Arial, sans-serif"
+        font-size="14" fill="#172033">landing: 60 m, 0 m</text>
+  <g clip-path="url(#landing-view)">
+    <g transform="translate(-230 -200)">
+      <path d="M595 350 H770" stroke="#475569" stroke-width="2"/>
+      <path d="M100 350 Q400 125 700 350"
+            fill="none" stroke="#1769aa" stroke-width="3"/>
+      <circle cx="700" cy="350" r="4" fill="#172033"/>
+    </g>
+  </g>
+  <text x="365" y="190" font-family="Arial, sans-serif"
+        font-size="12" fill="#475569">Landing inset: same scale, shifted</text>
+
+  <path d="M30 378 H570" stroke="#cbd5e1"/>
+  <text x="300" y="394" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" fill="#334155">2026-10-25 05:03:14 SGT (UTC+08:00)</text>
+</svg>
