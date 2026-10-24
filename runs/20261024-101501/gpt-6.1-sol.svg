@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15152f"/>
+      <stop offset="1" stop-color="#090914"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#262642"/>
+      <stop offset="1" stop-color="#111126"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4fd8"/>
+      <stop offset="1" stop-color="#7c5cff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 430 Q200 390 400 430 T800 420 V600 H0Z" fill="url(#floor)"/>
+  <path d="M0 470 H800" stroke="#3a3a62" stroke-width="3"/>
+  <path d="M0 515 H800" stroke="#292945" stroke-width="2"/>
+
+  <text x="400" y="48" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="2">CODEX NIGHTCLUB</text>
+  <text x="400" y="78" text-anchor="middle" fill="#ff66df" font-family="Arial, sans-serif" font-size="16" font-weight="700">THE EXCLUSIVE MODEL LOUNGE</text>
+
+  <!-- club facade -->
+  <rect x="285" y="105" width="440" height="280" rx="18" fill="#202044" stroke="#6256b8" stroke-width="5"/>
+  <rect x="315" y="140" width="380" height="220" rx="12" fill="#101025" stroke="#40386f" stroke-width="3"/>
+  <path d="M335 170 H675" stroke="#ff4fd8" stroke-width="5" filter="url(#glow)"/>
+  <path d="M335 330 H675" stroke="#625cff" stroke-width="5" filter="url(#glow)"/>
+  <text x="505" y="220" text-anchor="middle" fill="#bcb8ff" font-family="Arial, sans-serif" font-size="22" font-weight="800">MODEL LOUNGE</text>
+  <text x="505" y="255" text-anchor="middle" fill="#7ffcff" font-family="monospace" font-size="15">ONE SEAT AVAILABLE</text>
+
+  <!-- FULL sign -->
+  <rect x="415" y="95" width="180" height="65" rx="12" fill="#281024" stroke="#ff4f87" stroke-width="4" filter="url(#glow)"/>
+  <text x="505" y="138" text-anchor="middle" fill="#ff5e8a" font-family="Arial, sans-serif" font-size="38" font-weight="900">FULL</text>
+
+  <!-- melting servers / hamster wheels -->
+  <g transform="translate(610 275)">
+    <ellipse cx="0" cy="28" rx="55" ry="18" fill="#542c62"/>
+    <circle cx="0" cy="0" r="39" fill="none" stroke="#62eaff" stroke-width="8"/>
+    <path d="M-26 24 Q0 -10 26 24 M-35 0 Q0 30 35 0" fill="none" stroke="#62eaff" stroke-width="4"/>
+    <ellipse cx="-14" cy="-46" rx="12" ry="23" fill="#ff6b70" opacity=".8" filter="url(#soft)"/>
+    <ellipse cx="15" cy="-53" rx="10" ry="26" fill="#ffb35e" opacity=".75" filter="url(#soft)"/>
+    <path d="M-35 44 Q0 62 35 43 L30 66 Q0 82 -30 65Z" fill="#e95d7c"/>
+  </g>
+  <g transform="translate(665 300) scale(.7)">
+    <circle cx="0" cy="0" r="39" fill="none" stroke="#8effcb" stroke-width="8"/>
+    <path d="M-26 24 Q0 -10 26 24 M-35 0 Q0 30 35 0" fill="none" stroke="#8effcb" stroke-width="4"/>
+    <path d="M-28 40 Q0 58 28 40 L23 65 Q0 78 -23 64Z" fill="#f17867"/>
+  </g>
+
+  <!-- bouncer -->
+  <g transform="translate(300 185)">
+    <rect x="-52" y="75" width="105" height="145" rx="25" fill="#454b66" stroke="#b7c2ff" stroke-width="4"/>
+    <rect x="-64" y="205" width="32" height="75" rx="15" fill="#30364f"/>
+    <rect x="30" y="205" width="32" height="75" rx="15" fill="#30364f"/>
+    <rect x="-75" y="270" width="55" height="17" rx="8" fill="#111522"/>
+    <rect x="20" y="270" width="55" height="17" rx="8" fill="#111522"/>
+    <rect x="-72" y="0" width="145" height="105" rx="30" fill="#69718e" stroke="#dce3ff" stroke-width="5"/>
+    <rect x="-50" y="27" width="100" height="48" rx="15" fill="#111728"/>
+    <circle cx="-22" cy="51" r="10" fill="#ff5e94" filter="url(#glow)"/>
+    <circle cx="22" cy="51" r="10" fill="#ff5e94" filter="url(#glow)"/>
+    <path d="M-22 84 Q0 95 22 84" fill="none" stroke="#95ffdc" stroke-width="5"/>
+    <path d="M-73 126 Q-118 145 -135 183" fill="none" stroke="#69718e" stroke-width="22" stroke-linecap="round"/>
+    <path d="M73 126 Q110 133 130 160" fill="none" stroke="#69718e" stroke-width="22" stroke-linecap="round"/>
+    <rect x="-105" y="164" width="80" height="35" rx="7" fill="#171a2e" stroke="#ff78c9" stroke-width="3"/>
+    <text x="-65" y="188" text-anchor="middle" fill="#ffb8e8" font-family="monospace" font-size="13">NOPE</text>
+    <path d="M0 -2 V-25" stroke="#dce3ff" stroke-width="5"/>
+    <circle cx="0" cy="-32" r="8" fill="#ff5e94"/>
+  </g>
+
+  <!-- velvet rope -->
+  <path d="M190 365 Q350 405 500 365" fill="none" stroke="#d91c69" stroke-width="10"/>
+  <path d="M190 365 Q350 405 500 365" fill="none" stroke="#ff5d9a" stroke-width="3"/>
+  <g fill="#d8b16b" stroke="#ffe2a5" stroke-width="3">
+    <circle cx="190" cy="365" r="10"/><rect x="184" y="365" width="12" height="96" rx="5"/>
+    <circle cx="500" cy="365" r="10"/><rect x="494" y="365" width="12" height="96" rx="5"/>
+  </g>
+
+  <!-- queue of tired developers -->
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(55 400)">
+      <circle cx="28" cy="0" r="22" fill="#d99b7d"/><path d="M8 -5 Q28 -28 48 -5" fill="#392b4c"/>
+      <rect x="8" y="25" width="42" height="65" rx="12" fill="#4f89c7"/><path d="M20 47 H38" stroke="#d7f3ff" stroke-width="4"/>
+      <path d="M12 35 L-8 70 M47 35 L66 70" stroke="#d99b7d" stroke-width="10" stroke-linecap="round"/>
+      <path d="M17 93 H2 M42 93 H57" stroke="#202337" stroke-width="10" stroke-linecap="round"/>
+      <text x="28" y="120" text-anchor="middle" fill="#b8b8d6" font-size="12">DEV #1</text>
+    </g>
+    <g transform="translate(145 420) scale(.9)">
+      <circle cx="28" cy="0" r="22" fill="#8d5b46"/><path d="M8 -5 Q28 -28 48 -5" fill="#1e1b32"/>
+      <rect x="8" y="25" width="42" height="65" rx="12" fill="#d36a71"/><path d="M18 47 H40" stroke="#ffe5e5" stroke-width="4"/>
+      <path d="M12 35 L-8 70 M47 35 L66 70" stroke="#8d5b46" stroke-width="10" stroke-linecap="round"/>
+      <path d="M17 93 H2 M42 93 H57" stroke="#202337" stroke-width="10" stroke-linecap="round"/>
+      <text x="28" y="120" text-anchor="middle" fill="#b8b8d6" font-size="12">DEV #2</text>
+    </g>
+    <g transform="translate(235 395)">
+      <circle cx="28" cy="0" r="22" fill="#e1b08d"/><path d="M7 -4 Q27 -31 49 -3" fill="#6b4d36"/>
+      <rect x="8" y="25" width="42" height="65" rx="12" fill="#67b58d"/><path d="M15 48 H42" stroke="#eaffd9" stroke-width="4"/>
+      <path d="M12 35 L-8 70 M47 35 L66 70" stroke="#e1b08d" stroke-width="10" stroke-linecap="round"/>
+      <path d="M17 93 H2 M42 93 H57" stroke="#202337" stroke-width="10" stroke-linecap="round"/>
+      <text x="28" y="120" text-anchor="middle" fill="#b8b8d6" font-size="12">DEV #3</text>
+    </g>
+    <g transform="translate(20 520) scale(.75)">
+      <circle cx="28" cy="0" r="22" fill="#b8785e"/><path d="M7 -4 Q27 -31 49 -3" fill="#27243d"/>
+      <rect x="8" y="25" width="42" height="65" rx="12" fill="#a77be5"/>
+      <path d="M12 35 L-8 70 M47 35 L66 70" stroke="#b8785e" stroke-width="10" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- rejection speech bubble -->
+  <path d="M395 395 Q450 365 555 390 Q590 400 568 435 Q548 465 430 455 L400 478 L408 448 Q380 430 395 395Z" fill="#fff" stroke="#27233e" stroke-width="4"/>
+  <text x="482" y="419" text-anchor="middle" fill="#27233e" font-family="Arial, sans-serif" font-size="16" font-weight="800">Selected model is at</text>
+  <text x="482" y="440" text-anchor="middle" fill="#d52b72" font-family="Arial, sans-serif" font-size="20" font-weight="900">capacity. Try again!</text>
+
+  <!-- caption -->
+  <rect x="70" y="555" width="660" height="34" rx="17" fill="#17172d" stroke="#514a89" stroke-width="2"/>
+  <text x="400" y="578" text-anchor="middle" fill="#f6f2ff" font-family="Arial, sans-serif" font-size="16" font-weight="700">When the bouncer says “at capacity,” even the servers need a vacation.</text>
+</svg>

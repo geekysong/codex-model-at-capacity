@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152d"/>
+      <stop offset="1" stop-color="#090914"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4fd8"/>
+      <stop offset="1" stop-color="#6df6ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="smoke">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="100" cy="90" r="3" fill="#fff"/>
+  <circle cx="690" cy="70" r="4" fill="#6df6ff"/>
+  <circle cx="745" cy="170" r="2" fill="#fff"/>
+  <path d="M0 450 Q180 410 330 455 T800 430 V600 H0Z" fill="#111126"/>
+
+  <!-- Club -->
+  <rect x="245" y="54" width="470" height="280" rx="22" fill="#261d49" stroke="#8d5cff" stroke-width="5"/>
+  <path d="M270 118 H690" stroke="#ff4fd8" stroke-width="4" filter="url(#glow)"/>
+  <text x="480" y="98" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="38" fill="#fff">THE MODEL CLUB</text>
+  <text x="480" y="143" text-anchor="middle" font-family="sans-serif" font-size="19" fill="#b8a9ff">exclusive inference lounge</text>
+
+  <!-- Full sign -->
+  <rect x="365" y="174" width="230" height="78" rx="12" fill="#220d24" stroke="#ff315e" stroke-width="7" filter="url(#glow)"/>
+  <text x="480" y="229" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="47" fill="#ff526d">FULL</text>
+
+  <!-- lone model inside -->
+  <ellipse cx="620" cy="300" rx="39" ry="10" fill="#080812"/>
+  <rect x="589" y="238" width="62" height="63" rx="18" fill="#69d9e8" stroke="#d4ffff" stroke-width="4"/>
+  <circle cx="608" cy="264" r="6" fill="#17152d"/>
+  <circle cx="632" cy="264" r="6" fill="#17152d"/>
+  <path d="M606 280 Q620 291 635 279" fill="none" stroke="#17152d" stroke-width="4"/>
+  <path d="M620 238 V222" stroke="#d4ffff" stroke-width="4"/>
+  <circle cx="620" cy="217" r="7" fill="#ff4fd8"/>
+
+  <!-- Bouncer -->
+  <ellipse cx="210" cy="494" rx="77" ry="14" fill="#06060d"/>
+  <rect x="163" y="278" width="96" height="168" rx="35" fill="#39405e" stroke="#aab7de" stroke-width="4"/>
+  <rect x="179" y="254" width="64" height="61" rx="20" fill="#8798b9" stroke="#d7e5ff" stroke-width="4"/>
+  <circle cx="198" cy="281" r="7" fill="#ff315e"/>
+  <circle cx="225" cy="281" r="7" fill="#ff315e"/>
+  <path d="M195 299 Q212 310 230 298" fill="none" stroke="#2c2942" stroke-width="5"/>
+  <path d="M210 254 V237" stroke="#d7e5ff" stroke-width="4"/>
+  <circle cx="210" cy="231" r="8" fill="#6df6ff" filter="url(#glow)"/>
+  <path d="M168 328 L117 356" stroke="#aab7de" stroke-width="17" stroke-linecap="round"/>
+  <path d="M251 328 L298 297" stroke="#aab7de" stroke-width="17" stroke-linecap="round"/>
+  <path d="M165 430 L145 500 M255 430 L278 500" stroke="#39405e" stroke-width="25" stroke-linecap="round"/>
+  <rect x="113" y="349" width="105" height="43" rx="10" fill="#17152d" stroke="#ff4fd8" stroke-width="3" transform="rotate(-8 113 349)"/>
+  <text x="165" y="378" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="16" fill="#fff" transform="rotate(-8 165 378)">NOPE</text>
+
+  <!-- Velvet rope -->
+  <path d="M294 410 Q430 465 610 410" fill="none" stroke="#cf174e" stroke-width="9"/>
+  <path d="M294 410 V493 M610 410 V493" stroke="#f2c66d" stroke-width="8"/>
+  <circle cx="294" cy="410" r="12" fill="#ffe39a"/>
+  <circle cx="610" cy="410" r="12" fill="#ffe39a"/>
+
+  <!-- Queue developers -->
+  <g stroke="#25243e" stroke-width="4">
+    <circle cx="92" cy="430" r="25" fill="#c88968"/>
+    <path d="M66 423 Q90 389 117 421" fill="#4a2c31"/>
+    <rect x="64" y="455" width="56" height="62" rx="18" fill="#f0b34d"/>
+    <path d="M75 474 H108" stroke="#fff" stroke-width="5"/>
+
+    <circle cx="365" cy="493" r="23" fill="#e0a77f"/>
+    <path d="M341 487 Q360 458 388 483" fill="#75604f"/>
+    <rect x="335" y="517" width="60" height="66" rx="18" fill="#5ed0a2"/>
+    <path d="M348 538 H380" stroke="#163b38" stroke-width="5"/>
+
+    <circle cx="470" cy="493" r="23" fill="#8d5b48"/>
+    <path d="M445 486 Q468 453 493 484" fill="#202338"/>
+    <rect x="440" y="517" width="60" height="66" rx="18" fill="#6b8cff"/>
+    <path d="M452 540 H487" stroke="#17204d" stroke-width="5"/>
+
+    <circle cx="575" cy="493" r="23" fill="#d49b76"/>
+    <path d="M550 486 Q574 455 599 484" fill="#e8d39d"/>
+    <rect x="545" y="517" width="60" height="66" rx="18" fill="#ff6d83"/>
+    <path d="M558 540 H592" stroke="#5c1834" stroke-width="5"/>
+  </g>
+
+  <!-- laptops -->
+  <g fill="#bceeff" stroke="#24243f" stroke-width="4">
+    <rect x="60" y="481" width="55" height="30" rx="3"/>
+    <path d="M51 514 H124 L115 521 H59Z"/>
+    <rect x="337" y="557" width="55" height="26" rx="3"/>
+    <rect x="442" y="557" width="55" height="26" rx="3"/>
+  </g>
+
+  <!-- melting servers -->
+  <g transform="translate(650 357)">
+    <rect x="0" y="0" width="120" height="90" rx="8" fill="#4e526d" stroke="#d4d8ff" stroke-width="4"/>
+    <rect x="10" y="14" width="100" height="18" fill="#27283f"/>
+    <rect x="10" y="43" width="100" height="18" fill="#27283f"/>
+    <circle cx="23" cy="23" r="5" fill="#ff315e"/>
+    <circle cx="23" cy="52" r="5" fill="#6df6ff"/>
+    <path d="M20 90 Q30 116 42 92 Q54 72 65 101 Q76 123 90 90 Q101 70 112 96" fill="none" stroke="#ff9b42" stroke-width="10"/>
+    <path d="M35 45 Q40 72 48 77 M78 15 Q87 44 93 52" stroke="#ff704d" stroke-width="6"/>
+  </g>
+  <path d="M675 338 Q704 315 735 340" fill="none" stroke="#8c88a8" stroke-width="15" opacity=".5" filter="url(#smoke)"/>
+
+  <!-- speech bubble -->
+  <path d="M260 345 Q302 310 373 335 Q410 348 377 382 Q336 405 279 382 L254 398 L261 375 Q237 362 260 345Z" fill="#fff" stroke="#17152d" stroke-width="5"/>
+  <text x="322" y="363" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="18" fill="#17152d">Selected model?</text>
+  <text x="322" y="384" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="18" fill="#ff315e">Not tonight.</text>
+
+  <!-- title and caption -->
+  <text x="400" y="34" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="25" fill="#fff">CODEX AFTER DARK</text>
+  <rect x="125" y="548" width="550" height="38" rx="19" fill="#ff4fd8"/>
+  <text x="400" y="575" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="20" fill="#17152d">“Selected model is at capacity. Please try a different model.”</text>
+</svg>

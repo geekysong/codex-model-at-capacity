@@ -25,25 +25,30 @@ SGT = ZoneInfo("Asia/Singapore")
 MODELS = [
     "gpt-6-astra",
     "gpt-6.1-sol",
-    "gpt-6-sol",
     "gpt-6-luna",
-    "gpt-reserve",
-    "gpt-5.6-sol",
     "gpt-5.6-terra",
-    "gpt-5.6-luna",
 ]
 PER_MODEL_TIMEOUT = 180  # seconds; hard cap, no retry after this
-PROMPT = (
+PROMPTS = {
+"pelican": (
     "Draw a satirical cartoon as ONE single self-contained SVG document "
-    "(viewBox=\"0 0 800 600\"). Theme: OpenAI Codex keeps refusing work with "
-    "\"Selected model is at capacity. Please try a different model.\" Make fun of "
-    "that: a robot nightclub bouncer turning away a long queue of tired developers, "
-    "a velvet rope and a glowing FULL sign, hamster-wheel servers melting, an "
-    "exclusive club where only one model got in — pick ONE scene and make it funny. "
-    "Include inside the SVG a bold title and a caption containing the words "
-    "\"at capacity\". Output ONLY the SVG code: no markdown fences, no explanation, "
-    "no text outside the <svg>...</svg> document."
-)
+    "(viewBox=\"0 0 800 600\"). Theme: a pelican riding a bicycle. Make it funny "
+    "and visually expressive, with a clear single scene, readable characters, and "
+    "a bold title plus a short caption about the pelican on the bicycle. Output ONLY "
+    "the SVG code: no markdown fences, no explanation, no text outside the document."
+),
+"substitution": (
+    "Draw a satirical cartoon as ONE single self-contained SVG document "
+    "(viewBox=\"0 0 800 600\"). Theme: a service promises a premium model but quietly "
+    "substitutes a cheap weak model. Show the bait-and-switch clearly and humorously, "
+    "with a bold title and short caption. Output ONLY the SVG code: no markdown fences, "
+    "no explanation, no text outside the <svg>...</svg> document."
+),
+}
+PROMPT_VARIANT = os.environ.get("PROBE_VARIANT", "pelican")
+if PROMPT_VARIANT not in PROMPTS:
+    raise ValueError(f"unknown PROBE_VARIANT: {PROMPT_VARIANT}")
+PROMPT = PROMPTS[PROMPT_VARIANT]
 
 # The small cross-provider panel on the site compares only these four pairs.
 # Claude outputs are produced separately by compare_claude.py via Anthropic's API.
@@ -62,6 +67,7 @@ def run_model(model: str, round_id: str) -> dict:
     t0 = time.monotonic()
     rec = {
         "round": round_id,
+        "variant": PROMPT_VARIANT,
         "time_sgt": started.strftime("%Y-%m-%d %H:%M:%S"),
         "model": model,
         "status": "error",
@@ -241,7 +247,7 @@ def main() -> int:
     except BlockingIOError:
         print("another round is still running; skipping", flush=True)
         return 0
-    round_id = datetime.now(SGT).strftime("%Y%m%d-%H%M%S")
+    round_id = datetime.now(SGT).strftime("%Y%m%d-%H%M%S") + "-" + PROMPT_VARIANT
     print(f"round {round_id}: {len(MODELS)} models, one attempt each", flush=True)
     # All models run concurrently: each codex exec mostly waits on the API,
     # so the Pi handles 8 in parallel fine, and a round takes ~max(duration)
