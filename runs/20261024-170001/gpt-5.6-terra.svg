@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#b22222"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <!-- Seesaw beam -->
+  <rect x="70" y="210" width="460" height="20" rx="5" fill="#8b5a2b" stroke="#4a2d16" stroke-width="3"/>
+
+  <!-- Pivot -->
+  <polygon points="300,230 265,300 335,300" fill="#777" stroke="#333" stroke-width="3"/>
+  <circle cx="300" cy="220" r="8" fill="#333"/>
+  <text x="300" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">pivot</text>
+
+  <!-- Left mass and support -->
+  <line x1="170" y1="230" x2="170" y2="270" stroke="#333" stroke-width="3"/>
+  <rect x="140" y="270" width="60" height="45" rx="5" fill="#4f81bd" stroke="#1f3f66" stroke-width="3"/>
+  <text x="170" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="white">6 kg</text>
+
+  <!-- Right mass and support -->
+  <line x1="450" y1="230" x2="450" y2="270" stroke="#333" stroke-width="3"/>
+  <rect x="420" y="270" width="60" height="45" rx="5" fill="#4f81bd" stroke="#1f3f66" stroke-width="3"/>
+  <text x="450" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="white">4 kg</text>
+
+  <!-- Force arrows -->
+  <line x1="170" y1="245" x2="170" y2="265" stroke="#b22222" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="170" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#b22222">F = 6g</text>
+
+  <line x1="450" y1="245" x2="450" y2="265" stroke="#b22222" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="450" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#b22222">F = 4g</text>
+
+  <!-- Distance indicators -->
+  <line x1="170" y1="165" x2="300" y2="165" stroke="#333" stroke-width="2"/>
+  <line x1="170" y1="158" x2="170" y2="172" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="158" x2="300" y2="172" stroke="#333" stroke-width="2"/>
+  <text x="235" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">2 m</text>
+
+  <line x1="300" y1="135" x2="450" y2="135" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="128" x2="300" y2="142" stroke="#333" stroke-width="2"/>
+  <line x1="450" y1="128" x2="450" y2="142" stroke="#333" stroke-width="2"/>
+  <text x="375" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">3 m</text>
+
+  <!-- Equation and status -->
+  <text x="300" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#222">
+    6 × 2 = 4 × 3
+  </text>
+  <text x="300" y="388" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#16803c">
+    balanced
+  </text>
+</svg>

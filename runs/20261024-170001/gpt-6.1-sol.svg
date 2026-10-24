@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f4e79"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <text x="300" y="38" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="26" font-weight="bold" fill="#222">Level Seesaw in Static Equilibrium</text>
+
+  <!-- seesaw beam -->
+  <rect x="90" y="178" width="420" height="24" rx="4" fill="#c98b45" stroke="#6b421f" stroke-width="3"/>
+  <line x1="300" y1="170" x2="300" y2="210" stroke="#333" stroke-width="3"/>
+  <text x="300" y="166" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="16" fill="#333">pivot</text>
+
+  <!-- pivot support -->
+  <polygon points="300,202 265,270 335,270" fill="#777" stroke="#333" stroke-width="3"/>
+  <line x1="245" y1="270" x2="355" y2="270" stroke="#333" stroke-width="5"/>
+
+  <!-- left mass and force -->
+  <line x1="180" y1="202" x2="180" y2="275" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="145" y="278" width="70" height="48" rx="6" fill="#d9534f" stroke="#8b1e1e" stroke-width="2"/>
+  <text x="180" y="308" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="18" font-weight="bold" fill="white">6 kg</text>
+  <text x="180" y="258" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="16" fill="#1f4e79">F = mg</text>
+
+  <!-- right mass and force -->
+  <line x1="420" y1="202" x2="420" y2="275" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="385" y="278" width="70" height="48" rx="6" fill="#4f81bd" stroke="#244a73" stroke-width="2"/>
+  <text x="420" y="308" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="18" font-weight="bold" fill="white">4 kg</text>
+  <text x="420" y="258" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="16" fill="#1f4e79">F = mg</text>
+
+  <!-- distance dimension lines -->
+  <line x1="180" y1="145" x2="300" y2="145" stroke="#333" stroke-width="2"/>
+  <line x1="180" y1="137" x2="180" y2="153" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="137" x2="300" y2="153" stroke="#333" stroke-width="2"/>
+  <text x="240" y="132" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="18" fill="#222">2 m</text>
+
+  <line x1="300" y1="115" x2="420" y2="115" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="107" x2="300" y2="123" stroke="#333" stroke-width="2"/>
+  <line x1="420" y1="107" x2="420" y2="123" stroke="#333" stroke-width="2"/>
+  <text x="360" y="102" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="18" fill="#222">3 m = x</text>
+
+  <!-- torque equation -->
+  <text x="300" y="355" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="24" font-weight="bold" fill="#222">6 × 2 = 4 × 3</text>
+  <text x="300" y="382" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="24" font-weight="bold" fill="#188038">balanced</text>
+</svg>
