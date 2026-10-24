@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE BEAK EXPRESS</title>
+  <desc id="desc">A smug pelican pedals a bicycle, hauling an enormous fish and a tiny helmet.</desc>
+  <defs>
+    <style>
+      text { font-family: system-ui, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .8s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f9e9bd"/>
+  <path d="M0 405 Q120 385 230 405 T460 401 T800 395 V520 H0Z" fill="#b8d9c0"/>
+  <path d="M0 442 Q180 425 360 442 T800 432" fill="none" stroke="#7eb49a" stroke-width="5" stroke-dasharray="18 15"/>
+  <circle cx="694" cy="112" r="42" fill="#f4b942"/>
+  <path d="M0 365 Q120 330 230 365 T460 360 T800 350" fill="none" stroke="#e4c983" stroke-width="3"/>
+
+  <text id="title" x="400" y="58" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="2" fill="#183c46">THE BEAK EXPRESS</text>
+  <text x="400" y="88" text-anchor="middle" font-size="16" font-weight="650" fill="#44636a">Local delivery. Extremely long commute.</text>
+
+  <!-- bicycle -->
+  <g fill="none" stroke="#183c46" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="258" cy="405" r="59" stroke="#183c46" stroke-width="6"/>
+      <path d="M258 346V464M199 405H317M216 363L300 447M300 363L216 447" stroke="#66918d" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="540" cy="405" r="59" stroke="#183c46" stroke-width="6"/>
+      <path d="M540 346V464M481 405H599M498 363L582 447M582 363L498 447" stroke="#66918d" stroke-width="3"/>
+    </g>
+    <path d="M258 405L342 405L392 323L455 405L342 405L318 350L390 350"/>
+    <path d="M455 405L484 321"/>
+    <path d="M468 319H509M385 350L365 338"/>
+    <circle cx="342" cy="405" r="12" fill="#f4b942" stroke="#183c46" stroke-width="5"/>
+    <path d="M332 414L316 438M351 396L368 375"/>
+    <path d="M484 321L505 313"/>
+  </g>
+
+  <!-- rider and cargo -->
+  <g class="rider">
+    <!-- tail feathers -->
+    <path d="M440 260Q493 229 515 254Q488 286 451 291Z" fill="#fffdf2" stroke="#183c46" stroke-width="4"/>
+    <path d="M451 276Q480 263 505 254M456 284Q483 277 495 270" fill="none" stroke="#d6d2bd" stroke-width="3"/>
+    <!-- body -->
+    <ellipse cx="390" cy="259" rx="66" ry="49" fill="#fffdf2" stroke="#183c46" stroke-width="5"/>
+    <path d="M361 268Q392 287 422 269Q411 306 380 306Q365 297 361 268Z" fill="#f1c84d" stroke="#183c46" stroke-width="4"/>
+    <!-- wing -->
+    <path d="M373 242Q410 220 435 246Q414 265 382 264Z" fill="#e9e4d4" stroke="#183c46" stroke-width="4"/>
+    <path d="M391 249L420 242M393 256L418 252" stroke="#b9b5a8" stroke-width="3"/>
+    <!-- neck and head -->
+    <path d="M370 255Q351 214 356 172L391 172Q398 213 403 237Z" fill="#fffdf2" stroke="#183c46" stroke-width="5"/>
+    <ellipse cx="376" cy="160" rx="38" ry="34" fill="#fffdf2" stroke="#183c46" stroke-width="5"/>
+    <!-- beak -->
+    <path d="M406 164Q475 157 518 180Q481 194 411 185Z" fill="#f4b942" stroke="#183c46" stroke-width="5"/>
+    <path d="M409 183Q452 204 498 188Q488 214 455 215Q425 205 409 183Z" fill="#ee7650" stroke="#183c46" stroke-width="4"/>
+    <path d="M424 187Q452 198 480 191" fill="none" stroke="#b84d3e" stroke-width="3"/>
+    <!-- expressive face -->
+    <circle cx="385" cy="154" r="5.5" fill="#183c46"/>
+    <path d="M374 142Q385 135 395 142" fill="none" stroke="#183c46" stroke-width="4" stroke-linecap="round"/>
+    <path d="M356 139Q345 129 340 117" fill="none" stroke="#183c46" stroke-width="3" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M344 138Q346 112 373 109Q399 111 404 138Z" fill="#54a7a1" stroke="#183c46" stroke-width="4"/>
+    <path d="M344 138H407" stroke="#183c46" stroke-width="4" stroke-linecap="round"/>
+    <path d="M371 111L367 136M386 116L388 136" stroke="#d8f0d8" stroke-width="3"/>
+    <!-- legs pedaling -->
+    <path d="M384 296L341 336L367 375" fill="none" stroke="#f4b942" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M416 294L437 341L368 375" fill="none" stroke="#f4b942" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M359 376L379 378M360 373L376 371" stroke="#183c46" stroke-width="5" stroke-linecap="round"/>
+    <path d="M429 343L447 350M430 339L446 345" stroke="#183c46" stroke-width="5" stroke-linecap="round"/>
+    <!-- giant fish in the beak -->
+    <g transform="translate(531 170) rotate(9)">
+      <path d="M0 0Q30 -28 66 0Q30 28 0 0Z" fill="#75b9b5" stroke="#183c46" stroke-width="4"/>
+      <path d="M0 0L-18 -15V15Z" fill="#f4b942" stroke="#183c46" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="49" cy="-4" r="3.5" fill="#183c46"/>
+      <path d="M30 -15L39 -3L28 3Z" fill="#f9e9bd" stroke="#183c46" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- comic accents -->
+  <path d="M283 208L265 196M294 190L281 173M311 181L305 161" stroke="#e68150" stroke-width="4" stroke-linecap="round"/>
+  <text x="209" y="235" font-size="15" font-weight="800" fill="#b84d3e" transform="rotate(-12 209 235)">HONK!</text>
+  <path d="M591 287Q625 267 650 286" fill="none" stroke="#e68150" stroke-width="3" stroke-dasharray="5 7"/>
+  <text x="616" y="269" font-size="14" font-weight="750" fill="#b84d3e" transform="rotate(8 616 269)">BIKE LANE?</text>
+
+  <rect x="96" y="480" width="608" height="2" rx="1" fill="#789d88"/>
+  <text x="400" y="513" text-anchor="middle" font-size="16" font-weight="700" fill="#294d50">“I’m not late. I’m just taking the scenic route to lunch.”</text>
+  <text x="400" y="573" text-anchor="middle" font-size="15" font-weight="700" fill="#183c46">2026-10-25 04:02:00 SGT (UTC+08:00)</text>
+</svg>
