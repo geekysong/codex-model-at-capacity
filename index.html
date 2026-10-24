@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selected model is at capacity — a 5-minute SVG census</title>
+<style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;margin:0;padding:24px}
+h1{font-size:26px;margin:0 0 4px} .sub{color:#8b949e;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px;margin-bottom:28px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:10px;margin:0;overflow:hidden}
+.card img{width:100%;display:block;background:#fff}
+.card figcaption{padding:8px 12px;color:#c9d1d9;font-size:13px}
+.noart{padding:38px 16px;text-align:center;color:#f85149;background:#1c1215}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border-bottom:1px solid #21262d;padding:6px 8px;text-align:left;vertical-align:top}
+th{color:#8b949e} td.n{text-align:right;font-variant-numeric:tabular-nums}
+.ok{color:#3fb950} .err{color:#f85149} .errtxt{color:#f85149;max-width:340px;word-break:break-word}
+a{color:#58a6ff}
+</style></head><body>
+<h1>🚪 Selected model is at capacity.</h1>
+<div class="sub">Every 5 minutes, each Codex model on a home Raspberry Pi is asked — once, no retries —
+to draw a satirical SVG about exactly that error. Timing, token usage and failures are recorded verbatim.
+Latest round: <b>20261024-083927</b> · 8/8 models produced an SVG · page rebuilt 2026-10-24 08:46:27 SGT ·
+<a href="stats.json">raw stats.json</a></div>
+<div class="grid"><figure class="card"><img src="runs/20261024-083927/gpt-6-astra.svg" alt="SVG by gpt-6-astra" loading="lazy"><figcaption><b>gpt-6-astra</b> · 74.26s · 17628 tok · ok</figcaption></figure><figure class="card"><img src="runs/20261024-083927/gpt-6.1-sol.svg" alt="SVG by gpt-6.1-sol" loading="lazy"><figcaption><b>gpt-6.1-sol</b> · 23.86s · 17370 tok · ok</figcaption></figure><figure class="card"><img src="runs/20261024-083927/gpt-6-sol.svg" alt="SVG by gpt-6-sol" loading="lazy"><figcaption><b>gpt-6-sol</b> · 27.26s · 17276 tok · ok</figcaption></figure><figure class="card"><img src="runs/20261024-083927/gpt-6-luna.svg" alt="SVG by gpt-6-luna" loading="lazy"><figcaption><b>gpt-6-luna</b> · 75.77s · 18661 tok · ok</figcaption></figure><figure class="card"><img src="runs/20261024-083927/gpt-reserve.svg" alt="SVG by gpt-reserve" loading="lazy"><figcaption><b>gpt-reserve</b> · 25.39s · 16781 tok · ok</figcaption></figure><figure class="card"><img src="runs/20261024-083927/gpt-5.6-sol.svg" alt="SVG by gpt-5.6-sol" loading="lazy"><figcaption><b>gpt-5.6-sol</b> · 39.23s · 18820 tok · ok</figcaption></figure><figure class="card"><img src="runs/20261024-083927/gpt-5.6-terra.svg" alt="SVG by gpt-5.6-terra" loading="lazy"><figcaption><b>gpt-5.6-terra</b> · 72.89s · 16582 tok · ok</figcaption></figure><figure class="card"><img src="runs/20261024-083927/gpt-5.6-luna.svg" alt="SVG by gpt-5.6-luna" loading="lazy"><figcaption><b>gpt-5.6-luna</b> · 81.63s · 15460 tok · ok</figcaption></figure></div>
+<h2>All rounds</h2>
+<table><thead><tr><th>Time (SGT)</th><th>Model</th><th>Status</th><th>Duration (s)</th>
+<th>Input</th><th>Cached</th><th>Output</th><th>Reasoning</th><th>Total tok</th><th>Error</th><th>SVG</th></tr></thead>
+<tbody><tr><td>2026-10-24 08:45:05</td><td>gpt-5.6-luna</td><td><span class="ok">ok</span></td><td class="n">81.63</td><td class="n">12590</td><td class="n">10240</td><td class="n">2870</td><td class="n">30</td><td class="n">15460</td><td class="errtxt"></td><td><a href="runs/20261024-083927/gpt-5.6-luna.svg">svg</a></td></tr><tr><td>2026-10-24 08:43:53</td><td>gpt-5.6-terra</td><td><span class="ok">ok</span></td><td class="n">72.89</td><td class="n">14112</td><td class="n">11264</td><td class="n">2470</td><td class="n">61</td><td class="n">16582</td><td class="errtxt"></td><td><a href="runs/20261024-083927/gpt-5.6-terra.svg">svg</a></td></tr><tr><td>2026-10-24 08:43:13</td><td>gpt-5.6-sol</td><td><span class="ok">ok</span></td><td class="n">39.23</td><td class="n">15804</td><td class="n">11264</td><td class="n">3016</td><td class="n">96</td><td class="n">18820</td><td class="errtxt"></td><td><a href="runs/20261024-083927/gpt-5.6-sol.svg">svg</a></td></tr><tr><td>2026-10-24 08:42:48</td><td>gpt-reserve</td><td><span class="ok">ok</span></td><td class="n">25.39</td><td class="n">14282</td><td class="n">10240</td><td class="n">2499</td><td class="n">61</td><td class="n">16781</td><td class="errtxt"></td><td><a href="runs/20261024-083927/gpt-reserve.svg">svg</a></td></tr><tr><td>2026-10-24 08:41:32</td><td>gpt-6-luna</td><td><span class="ok">ok</span></td><td class="n">75.77</td><td class="n">15994</td><td class="n">11520</td><td class="n">2667</td><td class="n">68</td><td class="n">18661</td><td class="errtxt"></td><td><a href="runs/20261024-083927/gpt-6-luna.svg">svg</a></td></tr><tr><td>2026-10-24 08:41:05</td><td>gpt-6-sol</td><td><span class="ok">ok</span></td><td class="n">27.26</td><td class="n">14481</td><td class="n">11776</td><td class="n">2795</td><td class="n">45</td><td class="n">17276</td><td class="errtxt"></td><td><a href="runs/20261024-083927/gpt-6-sol.svg">svg</a></td></tr><tr><td>2026-10-24 08:40:41</td><td>gpt-6.1-sol</td><td><span class="ok">ok</span></td><td class="n">23.86</td><td class="n">14994</td><td class="n">12288</td><td class="n">2376</td><td class="n">41</td><td class="n">17370</td><td class="errtxt"></td><td><a href="runs/20261024-083927/gpt-6.1-sol.svg">svg</a></td></tr><tr><td>2026-10-24 08:39:27</td><td>gpt-6-astra</td><td><span class="ok">ok</span></td><td class="n">74.26</td><td class="n">14930</td><td class="n">12160</td><td class="n">2698</td><td class="n">92</td><td class="n">17628</td><td class="errtxt"></td><td><a href="runs/20261024-083927/gpt-6-astra.svg">svg</a></td></tr></tbody></table>
+</body></html>

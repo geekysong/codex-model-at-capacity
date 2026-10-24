@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152f"/>
+      <stop offset="1" stop-color="#392044"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8e2ed"/>
+      <stop offset=".5" stop-color="#75859a"/>
+      <stop offset="1" stop-color="#39465c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="690" cy="105" r="90" fill="#ff3f8e" opacity=".12" filter="url(#soft)"/>
+  <circle cx="120" cy="170" r="100" fill="#3df5d0" opacity=".08" filter="url(#soft)"/>
+
+  <!-- title -->
+  <text x="400" y="48" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="27" fill="#fff">CODEX NIGHTCLUB</text>
+  <text x="400" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ff9fca">THE HOTTEST CLUB IN COMPUTING</text>
+
+  <!-- club facade -->
+  <rect x="245" y="105" width="510" height="390" rx="22" fill="#101321" stroke="#ff3f8e" stroke-width="5"/>
+  <path d="M260 145 Q500 95 740 145" fill="none" stroke="#3df5d0" stroke-width="5" opacity=".7"/>
+  <text x="500" y="135" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="20" fill="#ffd6e8">THE EXCLUSIVE MODEL LOUNGE</text>
+
+  <!-- glowing full sign -->
+  <rect x="395" y="166" width="210" height="74" rx="12" fill="#360b20" stroke="#ff2d71" stroke-width="5" filter="url(#glow)"/>
+  <text x="500" y="216" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="43" fill="#ff477f">FULL</text>
+
+  <!-- bouncer -->
+  <ellipse cx="625" cy="415" rx="92" ry="22" fill="#080b16"/>
+  <rect x="565" y="270" width="120" height="150" rx="28" fill="url(#metal)" stroke="#202b3d" stroke-width="5"/>
+  <rect x="578" y="292" width="94" height="68" rx="15" fill="#111827" stroke="#3df5d0" stroke-width="4"/>
+  <circle cx="608" cy="325" r="9" fill="#ff456f" filter="url(#glow)"/>
+  <circle cx="643" cy="325" r="9" fill="#ff456f" filter="url(#glow)"/>
+  <path d="M603 346 Q625 360 647 346" fill="none" stroke="#3df5d0" stroke-width="5"/>
+  <path d="M578 388 Q625 405 672 388" fill="none" stroke="#25344b" stroke-width="8"/>
+  <rect x="548" y="260" width="155" height="24" rx="12" fill="#252d3d"/>
+  <text x="625" y="278" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="13" fill="#fff">BOUNCER-BOT 4.0</text>
+  <path d="M565 345 L510 370" stroke="#75859a" stroke-width="20" stroke-linecap="round"/>
+  <path d="M685 345 L722 315" stroke="#75859a" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="722" cy="315" r="16" fill="#ff477f"/>
+  <path d="M715 308 L729 322 M729 308 L715 322" stroke="#fff" stroke-width="4"/>
+
+  <!-- velvet rope -->
+  <path d="M275 420 Q400 475 540 420" fill="none" stroke="#d91b58" stroke-width="10"/>
+  <path d="M275 420 L275 480 M540 420 L540 480" stroke="#ffd26b" stroke-width="9"/>
+  <circle cx="275" cy="420" r="13" fill="#ffd26b"/>
+  <circle cx="540" cy="420" r="13" fill="#ffd26b"/>
+
+  <!-- melting servers -->
+  <g transform="translate(290 275)">
+    <rect x="0" y="0" width="155" height="102" rx="10" fill="#4b5265" stroke="#161b29" stroke-width="5"/>
+    <rect x="14" y="15" width="127" height="18" rx="4" fill="#252c3d"/>
+    <rect x="14" y="45" width="127" height="18" rx="4" fill="#252c3d"/>
+    <circle cx="28" cy="24" r="5" fill="#ffdb4d"/>
+    <circle cx="28" cy="54" r="5" fill="#ff477f"/>
+    <path d="M25 102 Q20 125 35 135 Q48 142 53 119 Q61 105 72 122 Q86 144 102 125 Q116 105 125 125 Q140 143 153 116 L153 102Z" fill="#ff8c42"/>
+    <text x="77" y="88" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="14" fill="#ffcf72">OVERHEATED</text>
+  </g>
+
+  <!-- queue of developers -->
+  <g font-family="Arial, sans-serif">
+    <!-- dev 1 -->
+    <g transform="translate(65 310)">
+      <circle cx="35" cy="28" r="22" fill="#c98768"/>
+      <path d="M14 25 Q35 -2 57 23 Q43 13 20 22" fill="#30202c"/>
+      <path d="M10 80 Q35 48 60 80 L66 140 L5 140Z" fill="#67c6d9"/>
+      <path d="M20 73 L50 73" stroke="#172b42" stroke-width="5"/>
+      <text x="35" y="164" text-anchor="middle" font-size="14" fill="#fff">retry?</text>
+    </g>
+    <!-- dev 2 -->
+    <g transform="translate(135 355)">
+      <circle cx="35" cy="28" r="22" fill="#8f604c"/>
+      <path d="M14 23 Q33 -8 58 23 L50 31 Q34 13 18 30Z" fill="#141b2b"/>
+      <path d="M8 80 Q35 48 62 80 L68 125 L2 125Z" fill="#f1a34f"/>
+      <rect x="20" y="68" width="32" height="14" rx="3" fill="#22283b"/>
+      <text x="35" y="150" text-anchor="middle" font-size="14" fill="#fff">please?</text>
+    </g>
+    <!-- dev 3 -->
+    <g transform="translate(25 445)">
+      <circle cx="35" cy="24" r="21" fill="#d49b76"/>
+      <path d="M15 24 Q20 -4 57 13 L59 28 Q38 15 15 29Z" fill="#e7d3b0"/>
+      <path d="M8 75 Q35 45 62 75 L68 115 L2 115Z" fill="#7564d9"/>
+      <path d="M18 68 L52 68" stroke="#f5e8ff" stroke-width="5"/>
+    </g>
+    <!-- exhausted dev -->
+    <g transform="translate(145 500)">
+      <circle cx="35" cy="20" r="20" fill="#b47760"/>
+      <path d="M14 18 Q35 -12 58 17" fill="none" stroke="#b9c4d0" stroke-width="11"/>
+      <path d="M7 70 Q35 42 63 70 L68 104 L2 104Z" fill="#4cc58c"/>
+      <text x="35" y="128" text-anchor="middle" font-size="13" fill="#ffb4d0">zzz...</text>
+    </g>
+  </g>
+
+  <!-- sign held by bouncer -->
+  <path d="M694 360 L775 335 L785 389 L704 412Z" fill="#fff0a8" stroke="#3b2435" stroke-width="4"/>
+  <text x="744" y="367" text-anchor="middle" transform="rotate(-16 744 367)" font-family="Arial Black, sans-serif" font-size="12" fill="#b52255">SELECTED</text>
+  <text x="744" y="382" text-anchor="middle" transform="rotate(-16 744 382)" font-family="Arial Black, sans-serif" font-size="12" fill="#b52255">MODEL IS AT</text>
+  <text x="744" y="397" text-anchor="middle" transform="rotate(-16 744 397)" font-family="Arial Black, sans-serif" font-size="12" fill="#b52255">CAPACITY</text>
+
+  <!-- lonely model inside -->
+  <g transform="translate(448 286)">
+    <ellipse cx="38" cy="92" rx="48" ry="10" fill="#05070d"/>
+    <rect x="0" y="25" width="76" height="70" rx="16" fill="#9be7dc" stroke="#22434c" stroke-width="4"/>
+    <rect x="12" y="37" width="52" height="28" rx="8" fill="#152734"/>
+    <circle cx="28" cy="51" r="4" fill="#ffe56d"/>
+    <circle cx="48" cy="51" r="4" fill="#ffe56d"/>
+    <path d="M26 75 Q38 83 50 75" fill="none" stroke="#193b43" stroke-width="4"/>
+    <text x="38" y="116" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="12" fill="#3df5d0">ONE MODEL</text>
+  </g>
+
+  <!-- caption -->
+  <rect x="52" y="160" width="175" height="100" rx="16" fill="#fff3c4" stroke="#ff477f" stroke-width="5" transform="rotate(-5 140 210)"/>
+  <text x="140" y="192" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" fill="#241a35" transform="rotate(-5 140 210)">“Sorry,</text>
+  <text x="140" y="216" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" fill="#241a35" transform="rotate(-5 140 210)">we're at</text>
+  <text x="140" y="240" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" fill="#ff2d71" transform="rotate(-5 140 210)">capacity!”</text>
+  <path d="M220 230 Q260 260 295 295" fill="none" stroke="#fff3c4" stroke-width="4"/>
+  <path d="M295 295 L281 289 M295 295 L287 282" stroke="#fff3c4" stroke-width="4"/>
+</svg>

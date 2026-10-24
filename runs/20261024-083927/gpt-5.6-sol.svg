@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171329"/>
+      <stop offset="1" stop-color="#090812"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4fd8"/>
+      <stop offset="1" stop-color="#6d5cff"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9c5d6"/>
+      <stop offset="0.45" stop-color="#566276"/>
+      <stop offset="1" stop-color="#202735"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="550" cy="185" rx="230" ry="135" fill="#7b42d8" opacity=".15" filter="url(#soft)"/>
+  <ellipse cx="185" cy="440" rx="220" ry="100" fill="#ff3d9a" opacity=".1" filter="url(#soft)"/>
+
+  <text x="400" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#fff">CODEX NIGHTCLUB</text>
+  <text x="400" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="3" fill="#ff83df">THE EXCLUSIVE MODEL LOUNGE</text>
+
+  <!-- club facade -->
+  <rect x="420" y="110" width="335" height="355" rx="18" fill="#11101c" stroke="#514b78" stroke-width="5"/>
+  <rect x="445" y="135" width="285" height="95" rx="14" fill="#211a38" stroke="#a66cff" stroke-width="3"/>
+  <text x="587" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="900" fill="#ff77d8" filter="url(#glow)">MODEL LOUNGE</text>
+  <text x="587" y="201" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#d7c9ff">one model inside • zero seats left</text>
+
+  <!-- FULL sign -->
+  <rect x="500" y="250" width="175" height="66" rx="10" fill="#250e18" stroke="#ff315c" stroke-width="5" filter="url(#glow)"/>
+  <text x="587" y="294" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="39" font-weight="900" fill="#ff4665">FULL</text>
+
+  <!-- tiny exclusive model behind glass -->
+  <rect x="545" y="345" width="88" height="70" rx="12" fill="#171b2a" stroke="#48e7ff" stroke-width="3"/>
+  <circle cx="589" cy="365" r="16" fill="url(#metal)"/>
+  <rect x="571" y="383" width="36" height="23" rx="8" fill="url(#metal)"/>
+  <circle cx="583" cy="363" r="3" fill="#7cffd3"/>
+  <circle cx="595" cy="363" r="3" fill="#7cffd3"/>
+  <text x="589" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#9aa8c9">VIP: model_01</text>
+
+  <!-- bouncer -->
+  <ellipse cx="390" cy="478" rx="92" ry="16" fill="#05050a" opacity=".8"/>
+  <rect x="330" y="263" width="112" height="185" rx="35" fill="url(#metal)" stroke="#161b28" stroke-width="5"/>
+  <rect x="345" y="287" width="82" height="52" rx="15" fill="#121827" stroke="#81f4ff" stroke-width="3"/>
+  <circle cx="370" cy="312" r="8" fill="#ff4f7d"/>
+  <circle cx="402" cy="312" r="8" fill="#ff4f7d"/>
+  <path d="M366 325 Q386 338 406 325" fill="none" stroke="#81f4ff" stroke-width="4"/>
+  <path d="M330 300 L299 275" stroke="#566276" stroke-width="20" stroke-linecap="round"/>
+  <path d="M442 300 L476 275" stroke="#566276" stroke-width="20" stroke-linecap="round"/>
+  <rect x="288" y="257" width="58" height="26" rx="8" fill="#202735" transform="rotate(-22 288 257)"/>
+  <text x="316" y="273" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff91dc" transform="rotate(-22 316 273)">NOPE</text>
+  <rect x="458" y="257" width="58" height="26" rx="8" fill="#202735" transform="rotate(22 458 257)"/>
+  <text x="487" y="273" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ff91dc" transform="rotate(22 487 273)">SORRY</text>
+  <rect x="353" y="445" width="25" height="40" rx="10" fill="#343d4d"/>
+  <rect x="400" y="445" width="25" height="40" rx="10" fill="#343d4d"/>
+
+  <!-- queue -->
+  <path d="M70 505 H470" stroke="#d61c75" stroke-width="5"/>
+  <path d="M70 505 V440 M470 505 V440" stroke="#f04ba5" stroke-width="7"/>
+  <circle cx="70" cy="438" r="11" fill="#e3a2c9"/>
+  <circle cx="470" cy="438" r="11" fill="#e3a2c9"/>
+  <path d="M70 438 Q270 395 470 438" fill="none" stroke="#ef68ad" stroke-width="5"/>
+
+  <!-- developers -->
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(75 390)">
+      <circle cx="28" cy="28" r="25" fill="#d99572"/>
+      <path d="M4 25 Q28 -3 52 25" fill="#4b2d32"/>
+      <rect x="2" y="55" width="52" height="70" rx="18" fill="#4b77c9"/>
+      <rect x="12" y="72" width="32" height="25" rx="3" fill="#172238"/>
+      <text x="28" y="90" text-anchor="middle" font-size="12" fill="#74f5d1">404</text>
+      <path d="M8 110 L-6 139 M48 110 L63 139" stroke="#252d43" stroke-width="13"/>
+      <text x="28" y="160" text-anchor="middle" font-size="12" fill="#d7c9ff">dev #1</text>
+    </g>
+    <g transform="translate(175 400)">
+      <circle cx="28" cy="28" r="25" fill="#8e5a43"/>
+      <path d="M4 22 Q30 -8 54 22" fill="#1f2639"/>
+      <rect x="2" y="55" width="52" height="70" rx="18" fill="#d85d72"/>
+      <path d="M12 77 h32 M12 88 h24" stroke="#ffe37c" stroke-width="4"/>
+      <path d="M8 110 L-6 139 M48 110 L63 139" stroke="#313442" stroke-width="13"/>
+      <text x="28" y="160" text-anchor="middle" font-size="12" fill="#d7c9ff">dev #2</text>
+    </g>
+    <g transform="translate(275 390)">
+      <circle cx="28" cy="28" r="25" fill="#e5b18f"/>
+      <path d="M2 25 Q28 -10 55 23" fill="#b6d2d8"/>
+      <rect x="2" y="55" width="52" height="70" rx="18" fill="#42a78c"/>
+      <rect x="10" y="72" width="36" height="25" rx="3" fill="#1a302e"/>
+      <text x="28" y="90" text-anchor="middle" font-size="12" fill="#ff9ddc">ZZZ</text>
+      <path d="M8 110 L-6 139 M48 110 L63 139" stroke="#313442" stroke-width="13"/>
+      <text x="28" y="160" text-anchor="middle" font-size="12" fill="#d7c9ff">dev #3</text>
+    </g>
+  </g>
+
+  <!-- hamster-wheel servers melting -->
+  <g transform="translate(55 155)">
+    <circle cx="95" cy="95" r="74" fill="none" stroke="#7b8499" stroke-width="11"/>
+    <circle cx="95" cy="95" r="55" fill="none" stroke="#343c50" stroke-width="7"/>
+    <path d="M95 40 V150 M40 95 H150 M56 56 L134 134 M134 56 L56 134" stroke="#5c6880" stroke-width="6"/>
+    <ellipse cx="95" cy="101" rx="25" ry="18" fill="#b77a4c"/>
+    <circle cx="85" cy="96" r="3" fill="#171329"/>
+    <circle cx="103" cy="96" r="3" fill="#171329"/>
+    <path d="M88 108 Q95 114 103 108" fill="none" stroke="#171329" stroke-width="3"/>
+    <path d="M55 164 Q68 178 81 165 T108 166 T136 160" fill="none" stroke="#ff6e55" stroke-width="12" stroke-linecap="round"/>
+    <path d="M78 170 Q91 194 105 171 T130 174" fill="none" stroke="#ffb347" stroke-width="8" stroke-linecap="round"/>
+    <text x="95" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffb4d9">server farm, technically</text>
+  </g>
+
+  <!-- speech bubble -->
+  <path d="M520 500 Q520 460 565 460 H745 Q780 460 780 500 Q780 535 745 535 H615 L580 560 L586 535 Q520 535 520 500Z" fill="#fff4ff" stroke="#ff69c5" stroke-width="4"/>
+  <text x="650" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="900" fill="#34213b">Selected model is</text>
+  <text x="650" y="514" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="900" fill="#d52d81">at capacity.</text>
+  <text x="650" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c5770">Please try a different model.</text>
+
+  <text x="400" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-style="italic" fill="#ffabd9">When the bouncer is an algorithm, everyone is “on the list”... eventually.</text>
+</svg>

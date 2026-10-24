@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152f"/>
+      <stop offset="1" stop-color="#35204b"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4fc3"/>
+      <stop offset="1" stop-color="#65f7ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#night)"/>
+  <circle cx="120" cy="135" r="95" fill="#ff4fc3" opacity=".08"/>
+  <circle cx="700" cy="150" r="120" fill="#65f7ff" opacity=".08"/>
+
+  <text x="400" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#fff">
+    CODEX NIGHTCLUB
+  </text>
+  <text x="400" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#65f7ff">
+    THE HOTTEST MODEL IN TOWN
+  </text>
+
+  <!-- club facade -->
+  <rect x="240" y="105" width="430" height="330" rx="22" fill="#100e20" stroke="#65f7ff" stroke-width="5"/>
+  <path d="M255 205 Q455 120 655 205" fill="none" stroke="#ff4fc3" stroke-width="8" opacity=".75"/>
+  <text x="455" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="43" font-weight="900" fill="#fff" filter="url(#glow)">FULL</text>
+  <text x="455" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ff4fc3">PLEASE TRY A DIFFERENT MODEL</text>
+
+  <!-- disco -->
+  <circle cx="455" cy="285" r="95" fill="#252044"/>
+  <circle cx="455" cy="285" r="62" fill="none" stroke="#65f7ff" stroke-width="3" stroke-dasharray="8 10"/>
+  <path d="M390 320 Q455 245 520 320 M410 350 Q455 290 500 350" fill="none" stroke="#ff4fc3" stroke-width="7"/>
+  <circle cx="455" cy="270" r="16" fill="#65f7ff"/>
+
+  <!-- melting hamster servers -->
+  <g transform="translate(535 355)">
+    <rect x="0" y="0" width="95" height="52" rx="8" fill="#596070" stroke="#b9c2d0" stroke-width="3"/>
+    <circle cx="20" cy="26" r="5" fill="#65f7ff"/>
+    <circle cx="38" cy="26" r="5" fill="#ff4fc3"/>
+    <path d="M65 8 C58 22 77 26 67 40 C61 50 82 55 77 66" fill="none" stroke="#ffb84d" stroke-width="7"/>
+    <path d="M10 52 C20 66 12 80 27 87 C38 91 38 76 52 82" fill="none" stroke="#ff784f" stroke-width="8"/>
+    <text x="47" y="-10" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">SERVER</text>
+  </g>
+
+  <!-- bouncer -->
+  <g transform="translate(180 205)">
+    <ellipse cx="65" cy="180" rx="55" ry="18" fill="#090813" opacity=".7"/>
+    <rect x="30" y="70" width="70" height="112" rx="25" fill="#26334c"/>
+    <path d="M36 85 Q65 55 94 85 L104 145 L26 145Z" fill="#101828"/>
+    <circle cx="65" cy="45" r="34" fill="#77879b"/>
+    <rect x="39" y="35" width="52" height="18" rx="8" fill="#141522"/>
+    <circle cx="52" cy="44" r="5" fill="#ff4fc3"/>
+    <circle cx="78" cy="44" r="5" fill="#65f7ff"/>
+    <path d="M48 65 Q65 76 82 65" fill="none" stroke="#1c2334" stroke-width="4"/>
+    <path d="M35 95 L5 130" stroke="#77879b" stroke-width="16" stroke-linecap="round"/>
+    <path d="M95 95 L130 115" stroke="#77879b" stroke-width="16" stroke-linecap="round"/>
+    <rect x="105" y="103" width="75" height="33" rx="8" fill="#ff4fc3" transform="rotate(-7 105 103)"/>
+    <text x="142" y="125" text-anchor="middle" font-family="Arial" font-size="14" font-weight="900" fill="#fff" transform="rotate(-7 142 125)">NOPE</text>
+  </g>
+
+  <!-- velvet rope -->
+  <path d="M255 405 Q385 455 565 405" fill="none" stroke="#ff3b70" stroke-width="8"/>
+  <circle cx="255" cy="405" r="11" fill="#ffd36b"/>
+  <circle cx="565" cy="405" r="11" fill="#ffd36b"/>
+
+  <!-- queue of developers -->
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(35 390)">
+      <circle cx="35" cy="25" r="22" fill="#d59a73"/><path d="M15 20 Q35 -5 55 20" fill="#463329"/>
+      <rect x="12" y="47" width="48" height="65" rx="14" fill="#4d8bd8"/><path d="M20 75 L52 75" stroke="#fff" stroke-width="5"/>
+      <text x="35" y="135" text-anchor="middle" font-size="12" fill="#fff">dev</text>
+    </g>
+    <g transform="translate(112 402)">
+      <circle cx="35" cy="25" r="22" fill="#8f5e43"/><path d="M14 22 Q35 -8 57 22" fill="#16131a"/>
+      <rect x="10" y="47" width="50" height="70" rx="14" fill="#e98f4f"/><path d="M20 76 L52 76" stroke="#402d32" stroke-width="5"/>
+      <text x="35" y="140" text-anchor="middle" font-size="12" fill="#fff">dev</text>
+    </g>
+    <g transform="translate(12 500)">
+      <circle cx="35" cy="25" r="22" fill="#f0bd91"/><path d="M14 20 Q35 -10 57 20" fill="#d9d9e8"/>
+      <rect x="10" y="47" width="50" height="60" rx="14" fill="#72c58a"/>
+      <text x="35" y="130" text-anchor="middle" font-size="12" fill="#fff">dev</text>
+    </g>
+    <g transform="translate(90 505)">
+      <circle cx="35" cy="25" r="22" fill="#b97855"/><path d="M14 20 Q35 -10 57 20" fill="#2a202d"/>
+      <rect x="10" y="47" width="50" height="60" rx="14" fill="#a879d8"/>
+      <text x="35" y="130" text-anchor="middle" font-size="12" fill="#fff">dev</text>
+    </g>
+  </g>
+
+  <!-- tired symbols -->
+  <text x="55" y="350" font-family="Arial" font-size="25" fill="#fff" transform="rotate(-15 55 350)">Z</text>
+  <text x="92" y="325" font-family="Arial" font-size="18" fill="#65f7ff" transform="rotate(-15 92 325)">z</text>
+  <text x="150" y="365" font-family="Arial" font-size="22" fill="#ff4fc3">...</text>
+
+  <!-- lone VIP model -->
+  <g transform="translate(585 120)">
+    <circle cx="35" cy="18" r="14" fill="#65f7ff"/>
+    <rect x="20" y="32" width="30" height="45" rx="10" fill="#65f7ff"/>
+    <path d="M10 35 L0 10 L18 20 M50 35 L65 10 L48 20" fill="none" stroke="#65f7ff" stroke-width="7"/>
+    <text x="35" y="100" text-anchor="middle" font-family="Arial" font-size="12" font-weight="900" fill="#65f7ff">MODEL-ONE</text>
+  </g>
+
+  <rect x="155" y="555" width="490" height="32" rx="16" fill="#ff4fc3"/>
+  <text x="400" y="578" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#fff">
+    CAPTION: SORRY, THE JOKE IS AT CAPACITY.
+  </text>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152b"/>
+      <stop offset="1" stop-color="#35204d"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#21152d"/>
+      <stop offset=".5" stop-color="#5b2347"/>
+      <stop offset="1" stop-color="#21152d"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="100" cy="100" r="65" fill="#ff3d81" opacity=".13" filter="url(#soft)"/>
+  <circle cx="700" cy="145" r="90" fill="#35e7ff" opacity=".1" filter="url(#soft)"/>
+  <path d="M0 440 Q200 390 400 435 T800 420 V600 H0Z" fill="url(#floor)"/>
+
+  <text x="400" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="29" fill="#fff">CODEX NIGHTCLUB</text>
+  <text x="400" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="#ff7fb3">THE EXCLUSIVE MODEL EXPERIENCE</text>
+
+  <!-- club facade -->
+  <rect x="440" y="118" width="315" height="305" rx="18" fill="#111321" stroke="#ff3d81" stroke-width="5"/>
+  <rect x="465" y="145" width="265" height="105" rx="12" fill="#252044" stroke="#6c5cff" stroke-width="3"/>
+  <text x="597" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="31" fill="#ffef6b" filter="url(#glow)">FULL</text>
+  <text x="597" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="18" fill="#ffef6b">ONE MODEL INSIDE</text>
+  <circle cx="487" cy="164" r="8" fill="#ff315d"/><circle cx="708" cy="164" r="8" fill="#ff315d"/>
+  <path d="M485 278 H710" stroke="#3c3158" stroke-width="3"/>
+  <text x="597" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#bfb8e8">VIP LOUNGE</text>
+  <text x="597" y="347" text-anchor="middle" font-family="monospace" font-size="19" fill="#72f5ff">[ model_001.exe ]</text>
+  <text x="597" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#ff7fb3">Please do not disturb</text>
+
+  <!-- bouncer -->
+  <ellipse cx="393" cy="420" rx="88" ry="17" fill="#150f22" opacity=".65"/>
+  <rect x="348" y="264" width="92" height="138" rx="28" fill="#69758e" stroke="#0c1020" stroke-width="5"/>
+  <rect x="360" y="286" width="68" height="50" rx="12" fill="#12172b" stroke="#8ff7ff" stroke-width="4"/>
+  <circle cx="379" cy="310" r="7" fill="#ff4b88" filter="url(#glow)"/>
+  <circle cx="407" cy="310" r="7" fill="#ff4b88" filter="url(#glow)"/>
+  <path d="M376 325 Q394 336 412 325" fill="none" stroke="#8ff7ff" stroke-width="4"/>
+  <path d="M350 342 L310 376" stroke="#69758e" stroke-width="20" stroke-linecap="round"/>
+  <path d="M438 342 L478 357" stroke="#69758e" stroke-width="20" stroke-linecap="round"/>
+  <path d="M370 400 L361 453 M420 400 L430 453" stroke="#69758e" stroke-width="23" stroke-linecap="round"/>
+  <path d="M344 457 H378 M414 457 H449" stroke="#0c1020" stroke-width="12" stroke-linecap="round"/>
+  <path d="M324 381 Q394 400 470 373" fill="none" stroke="#ff335f" stroke-width="5"/>
+  <text x="394" y="249" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="16" fill="#ffef6b">BOUNCER-BOT 9000</text>
+
+  <!-- queue -->
+  <path d="M65 456 C150 425 225 458 292 427" fill="none" stroke="#c22b65" stroke-width="6"/>
+  <path d="M65 484 C160 454 222 492 292 458" fill="none" stroke="#c22b65" stroke-width="6"/>
+  <g font-family="Arial, sans-serif">
+    <!-- dev 1 -->
+    <g transform="translate(86 356)">
+      <circle cx="0" cy="0" r="25" fill="#e6a47d" stroke="#291b32" stroke-width="4"/>
+      <path d="M-25 -4 Q0 -36 27 -5 Q10 -14 -22 5" fill="#402b4d"/>
+      <path d="M-25 35 Q0 17 27 35 L34 91 H-33Z" fill="#46d1b5"/>
+      <path d="M-14 58 L-39 86 M15 58 L43 83" stroke="#46d1b5" stroke-width="12" stroke-linecap="round"/>
+      <text x="0" y="116" text-anchor="middle" font-size="14" fill="#fff">DEV #1</text>
+    </g>
+    <!-- dev 2 -->
+    <g transform="translate(181 389)">
+      <circle cx="0" cy="0" r="24" fill="#8f5c43" stroke="#291b32" stroke-width="4"/>
+      <path d="M-24 -5 Q0 -37 25 -5 L18 -16 Q-4 -26 -19 -12" fill="#171321"/>
+      <path d="M-24 34 Q0 16 25 34 L32 84 H-31Z" fill="#e86875"/>
+      <path d="M-12 59 L-36 83 M13 59 L39 84" stroke="#e86875" stroke-width="12" stroke-linecap="round"/>
+      <text x="0" y="110" text-anchor="middle" font-size="14" fill="#fff">DEV #2</text>
+    </g>
+    <!-- dev 3 -->
+    <g transform="translate(272 350)">
+      <circle cx="0" cy="0" r="25" fill="#f0bc91" stroke="#291b32" stroke-width="4"/>
+      <path d="M-25 -4 Q0 -38 27 -5" fill="none" stroke="#d8d8e8" stroke-width="11"/>
+      <path d="M-25 35 Q0 17 27 35 L35 91 H-35Z" fill="#6689e8"/>
+      <path d="M-13 58 L-40 86 M14 58 L41 84" stroke="#6689e8" stroke-width="12" stroke-linecap="round"/>
+      <text x="0" y="116" text-anchor="middle" font-size="14" fill="#fff">DEV #3</text>
+    </g>
+  </g>
+
+  <!-- tired speech bubble -->
+  <path d="M38 198 Q35 137 130 131 Q222 128 245 180 Q251 220 178 230 L145 257 L140 229 Q50 235 38 198Z" fill="#fff7e8" stroke="#261933" stroke-width="5"/>
+  <text x="140" y="169" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#2c1b36">“I just need</text>
+  <text x="140" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#2c1b36">one completion…”</text>
+  <text x="140" y="211" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#d52b5d">*has been waiting 4 hours*</text>
+
+  <!-- server hamster wheels -->
+  <g transform="translate(650 472)">
+    <circle r="53" fill="none" stroke="#ff9457" stroke-width="9"/>
+    <path d="M-35 -36 L35 36 M35 -36 L-35 36 M-52 0 H52 M0 -52 V52" stroke="#ff9457" stroke-width="6"/>
+    <ellipse cx="0" cy="0" rx="18" ry="10" fill="#f5c04c"/>
+    <circle cx="-8" cy="-3" r="3" fill="#24162e"/><circle cx="9" cy="-3" r="3" fill="#24162e"/>
+    <path d="M-9 6 Q0 13 9 6" fill="none" stroke="#24162e" stroke-width="3"/>
+    <path d="M-38 -48 Q-48 -72 -31 -81 M35 -47 Q49 -65 42 -79" stroke="#ff5b5b" stroke-width="6" stroke-linecap="round"/>
+    <text x="0" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#ffcf8b">SERVER HAMSTER</text>
+  </g>
+  <path d="M602 407 Q620 390 634 410 T668 404 T696 414" fill="none" stroke="#ff5b5b" stroke-width="5" filter="url(#glow)"/>
+  <path d="M610 399 Q604 382 615 373 M680 399 Q690 381 684 368" stroke="#ffcf53" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- rope posts -->
+  <circle cx="315" cy="420" r="9" fill="#ffcf53"/><circle cx="478" cy="420" r="9" fill="#ffcf53"/>
+  <path d="M315 420 Q394 456 478 420" fill="none" stroke="#ffcf53" stroke-width="5"/>
+
+  <!-- caption -->
+  <rect x="36" y="535" width="728" height="42" rx="21" fill="#0d0c18" stroke="#ff3d81" stroke-width="3"/>
+  <text x="400" y="563" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="900" fill="#fff">“Selected model is at capacity. Please try a different model.”</text>
+</svg>
