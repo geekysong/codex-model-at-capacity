@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Pelican Express</title>
+  <desc id="description">A smug pelican pedals a bicycle with a fish-filled bill pouch. Its wheels spin, its feet pedal, and its body bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="spokes" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 8L8 0" stroke="#d9e8e8" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; }
+    .ink { stroke:#203741; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+    .spoke { stroke:#79969e; stroke-width:3; }
+  </style>
+
+  <rect width="800" height="600" fill="#fff6df"/>
+  <text x="400" y="61" text-anchor="middle" font-size="43" font-weight="900" fill="#203741" letter-spacing="3">PELICAN EXPRESS</text>
+  <text x="400" y="92" text-anchor="middle" font-size="18" fill="#586b6d">The gig economy has officially gone fowl.</text>
+
+  <circle cx="680" cy="161" r="39" fill="#ffd36e"/>
+  <g fill="white" opacity=".85">
+    <ellipse cx="125" cy="156" rx="62" ry="19"/>
+    <ellipse cx="105" cy="143" rx="26" ry="24"/>
+    <ellipse cx="145" cy="145" rx="30" ry="21"/>
+  </g>
+  <path d="M0 429Q150 387 310 427T620 421T800 424V488H0Z" fill="#dce6bd"/>
+  <path d="M0 464H800" stroke="#203741" stroke-width="5"/>
+  <ellipse cx="400" cy="463" rx="252" ry="12" fill="#203741" opacity=".12"/>
+
+  <!-- Rotating wheels, with an asymmetric valve marker to make rotation visible. -->
+  <g transform="translate(253 387)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+      <circle r="75" fill="#fffaf0" class="ink" stroke-width="9"/>
+      <circle r="65" fill="none" stroke="#9bb1b5" stroke-width="2"/>
+      <path d="M-66 0H66M0-66V66M-47-47L47 47M-47 47L47-47" class="spoke"/>
+      <circle cy="-64" r="5" fill="#e96648"/>
+    </g>
+    <circle r="8" fill="#203741"/>
+  </g>
+  <g transform="translate(550 387)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+      <circle r="75" fill="#fffaf0" class="ink" stroke-width="9"/>
+      <circle r="65" fill="none" stroke="#9bb1b5" stroke-width="2"/>
+      <path d="M-66 0H66M0-66V66M-47-47L47 47M-47 47L47-47" class="spoke"/>
+      <circle cy="-64" r="5" fill="#e96648"/>
+    </g>
+    <circle r="8" fill="#203741"/>
+  </g>
+
+  <!-- Bicycle frame. -->
+  <g fill="none" class="ink">
+    <path d="M253 387L319 291L377 387ZM319 291H498L377 387M498 291L550 387" stroke="#d95d49" stroke-width="10"/>
+    <path d="M319 291L310 269M498 291L487 254L510 242H536" stroke-width="8"/>
+    <path d="M289 268H333" stroke-width="10"/>
+    <path d="M253 387H377" stroke="#61777a" stroke-width="3"/>
+  </g>
+
+  <!-- Pedaling feet and crank. -->
+  <g transform="translate(377 387)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+      <path d="M-23 0H23" class="ink" fill="none"/>
+      <path d="M-38-6L-15-6L-10 5L-39 5Z" fill="#efaa3f" class="ink" stroke-width="3"/>
+      <path d="M12-5L36-5L41 6L12 6Z" fill="#efaa3f" class="ink" stroke-width="3"/>
+    </g>
+    <circle r="9" fill="#203741"/>
+  </g>
+
+  <!-- The rider gently bobs, including a bent leg and handlebar grip. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".75s" repeatCount="indefinite"/>
+    <path d="M327 287L352 328L377 365" fill="none" stroke="#e9a33a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M278 235L235 253L264 215" fill="#eef2e9" class="ink"/>
+    <path d="M272 224C267 177 325 157 365 187C386 204 391 247 367 269C338 297 285 277 272 224Z" fill="#fffef2" class="ink"/>
+    <path d="M302 208Q345 195 362 229Q336 249 304 232" fill="#dbe6df" class="ink"/>
+    <path d="M356 206C373 180 357 145 381 129C401 115 428 129 428 151L424 186" fill="#fffef2" class="ink"/>
+    <!-- Vast bill pouch, full of suspiciously unpaid cargo. -->
+    <path d="M416 169L596 179Q562 262 473 244Q436 233 416 169Z" fill="#f6bb58" class="ink"/>
+    <path d="M417 160L605 176L418 183Z" fill="#ffd578" class="ink"/>
+    <path d="M446 191Q475 203 501 198M523 198L556 191" fill="none" stroke="#d49336" stroke-width="3"/>
+    <g transform="translate(486 218) rotate(12)">
+      <path d="M-24 0Q-6-20 19 0Q-6 19-24 0L-35-12V12Z" fill="#70aaa6" stroke="#203741" stroke-width="3"/>
+      <circle cx="10" cy="-2" r="3" fill="#203741"/>
+    </g>
+    <g transform="translate(544 214) rotate(-17)">
+      <path d="M-18 0Q-2-15 19 0Q-2 15-18 0L-29-10V10Z" fill="#e87b66" stroke="#203741" stroke-width="3"/>
+      <circle cx="10" cy="-2" r="3" fill="#203741"/>
+    </g>
+    <!-- Helmet and deeply unimpressed eye. -->
+    <path d="M370 143Q369 112 397 110Q426 111 432 143Z" fill="#df634d" class="ink"/>
+    <path d="M389 115L387 135M405 115L410 135" stroke="#fff1d6" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="405" cy="155" r="5" fill="#203741"/>
+    <path d="M393 146L414 148" class="ink" stroke-width="3"/>
+    <path d="M423 146L432 164L425 182" fill="none" stroke="#203741" stroke-width="3"/>
+    <path d="M354 229Q398 267 509 243" fill="none" stroke="#203741" stroke-width="7" stroke-linecap="round"/>
+    <path d="M359 225Q393 254 423 253" fill="none" stroke="#fffef2" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(91 281)">
+    <path d="M91 28L138 14M98 51L128 47M84 74L132 77" stroke="#9eb1a5" stroke-width="5" stroke-linecap="round">
+      <animate attributeName="opacity" values=".3;1;.3" dur=".75s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g transform="translate(601 288) rotate(8)">
+    <path d="M0 0H114V51H0Z" fill="#fffef2" stroke="#203741" stroke-width="3"/>
+    <text x="57" y="21" text-anchor="middle" font-size="14" font-weight="bold" fill="#203741">PAID IN</text>
+    <text x="57" y="41" text-anchor="middle" font-size="17" font-weight="900" fill="#d95d49">EXPOSURE</text>
+  </g>
+
+  <text x="400" y="510" text-anchor="middle" font-size="23" font-weight="bold" fill="#203741">Zero emissions. One enormous delivery pouch.</text>
+  <path d="M55 536H745" stroke="#d8cdb5" stroke-width="2"/>
+  <text x="400" y="570" text-anchor="middle" font-size="18" fill="#42585e">2026-10-25 01:31:14 SGT (UTC+08:00)</text>
+</svg>
