@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f2937"/>
+    </marker>
+    <style>
+      .label { font-family: Arial, sans-serif; fill: #1f2937; }
+      .line { stroke: #1f2937; stroke-width: 4; stroke-linecap: round; }
+      .thin { stroke: #1f2937; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <!-- Seesaw beam -->
+  <rect x="90" y="202" width="420" height="16" rx="8" fill="#b87935" stroke="#5b3a1f" stroke-width="3"/>
+
+  <!-- Pivot -->
+  <polygon points="300,218 260,300 340,300" fill="#64748b" stroke="#1f2937" stroke-width="3"/>
+  <circle cx="300" cy="210" r="8" fill="#f8fafc" stroke="#1f2937" stroke-width="3"/>
+  <text x="300" y="328" text-anchor="middle" class="label" font-size="18">pivot</text>
+
+  <!-- Left mass and hanger -->
+  <line x1="180" y1="218" x2="180" y2="265" class="line"/>
+  <rect x="145" y="265" width="70" height="52" rx="6" fill="#60a5fa" stroke="#1e3a8a" stroke-width="3"/>
+  <text x="180" y="297" text-anchor="middle" class="label" font-size="20" fill="#0f172a">6 kg</text>
+
+  <!-- Right mass and hanger -->
+  <line x1="420" y1="218" x2="420" y2="265" class="line"/>
+  <rect x="385" y="265" width="70" height="52" rx="6" fill="#f59e0b" stroke="#92400e" stroke-width="3"/>
+  <text x="420" y="297" text-anchor="middle" class="label" font-size="20" fill="#0f172a">4 kg</text>
+
+  <!-- Force arrows -->
+  <line x1="180" y1="245" x2="180" y2="330" class="line" marker-end="url(#arrow)"/>
+  <text x="180" y="352" text-anchor="middle" class="label" font-size="17">6g downward</text>
+
+  <line x1="420" y1="245" x2="420" y2="330" class="line" marker-end="url(#arrow)"/>
+  <text x="420" y="352" text-anchor="middle" class="label" font-size="17">4g downward</text>
+
+  <!-- Distance indicators -->
+  <line x1="180" y1="180" x2="300" y2="180" class="thin"/>
+  <line x1="180" y1="172" x2="180" y2="188" class="thin"/>
+  <line x1="300" y1="172" x2="300" y2="188" class="thin"/>
+  <text x="240" y="168" text-anchor="middle" class="label" font-size="20">2 m</text>
+
+  <line x1="300" y1="145" x2="420" y2="145" class="thin"/>
+  <line x1="300" y1="137" x2="300" y2="153" class="thin"/>
+  <line x1="420" y1="137" x2="420" y2="153" class="thin"/>
+  <text x="360" y="133" text-anchor="middle" class="label" font-size="20">x = 3 m</text>
+
+  <!-- Level indicator -->
+  <line x1="245" y1="95" x2="355" y2="95" stroke="#16a34a" stroke-width="4"/>
+  <circle cx="300" cy="95" r="8" fill="#16a34a"/>
+  <text x="300" y="75" text-anchor="middle" class="label" font-size="18" fill="#166534">level</text>
+
+  <!-- Torque equation and status -->
+  <text x="300" y=" treinta" visibility="hidden">.</text>
+  <text x="300" y="380" text-anchor="middle" class="label" font-size="22" font-weight="bold">
+    6 × 2 = 4 × 3
+  </text>
+  <text x="520" y="55" text-anchor="middle" class="label" font-size="26" font-weight="bold" fill="#16a34a">balanced</text>
+</svg>

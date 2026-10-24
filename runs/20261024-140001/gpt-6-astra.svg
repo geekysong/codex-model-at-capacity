@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Level seesaw in static equilibrium: 6 kilogram mass two meters left of pivot and 4 kilogram mass three meters right, with torque equation 6 times 2 equals 4 times 3.">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f2937"/>
+    </marker>
+    <style>
+      .label { font: 18px Arial, sans-serif; fill: #111827; }
+      .small { font: 16px Arial, sans-serif; fill: #374151; }
+      .bold { font: bold 24px Arial, sans-serif; fill: #047857; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <!-- Level seesaw beam -->
+  <rect x="80" y="178" width="440" height="24" rx="5" fill="#b7791f" stroke="#7c4a12" stroke-width="3"/>
+  <line x1="300" y1="165" x2="300" y2="215" stroke="#374151" stroke-width="3"/>
+
+  <!-- Pivot -->
+  <polygon points="270,285 330,285 300,205" fill="#64748b" stroke="#334155" stroke-width="3"/>
+  <line x1="250" y1="285" x2="350" y2="285" stroke="#334155" stroke-width="5"/>
+  <text x="300" y="315" text-anchor="middle" class="small">pivot</text>
+
+  <!-- Left hanging mass -->
+  <line x1="150" y1="202" x2="150" y2="265" stroke="#374151" stroke-width="3"/>
+  <rect x="115" y="265" width="70" height="55" rx="6" fill="#60a5fa" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="150" y="299" text-anchor="middle" class="label">6 kg</text>
+
+  <!-- Right hanging mass -->
+  <line x1="450" y1="202" x2="450" y2="265" stroke="#374151" stroke-width="3"/>
+  <rect x="415" y="265" width="70" height="55" rx="6" fill="#fbbf24" stroke="#b45309" stroke-width="3"/>
+  <text x="450" y="299" text-anchor="middle" class="label">4 kg</text>
+
+  <!-- Force arrows -->
+  <line x1="150" y1="245" x2="150" y2="215" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="150" y="235" text-anchor="end" dx="-10" class="small">F = 6g</text>
+  <line x1="450" y1="245" x2="450" y2="215" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="450" y="235" text-anchor="start" dx="10" class="small">F = 4g</text>
+
+  <!-- Distance dimensions -->
+  <line x1="150" y1="145" x2="300" y2="145" stroke="#374151" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="225" y="136" text-anchor="middle" class="label">2 m</text>
+  <line x1="300" y1="115" x2="450" y2="115" stroke="#374151" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="375" y="106" text-anchor="middle" class="label">x = 3 m</text>
+
+  <!-- Equilibrium statement -->
+  <text x="300" y=" fifty" text-anchor="middle" class="bold">BALANCED</text>
+  <text x="300" y="365" text-anchor="middle" class="label">6 × 2 = 4 × 3</text>
+</svg>
