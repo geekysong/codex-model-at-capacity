@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">A Pelican on the Move</title>
+  <desc id="desc">A rather serious pelican pedals a bicycle while carrying an oversized fish. The wheels turn and the rider bobs gently.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#dff5ef;stroke:#17324d;stroke-width:7}
+      .spoke{stroke:#4f7d80;stroke-width:2}
+      .frame{fill:none;stroke:#e65a45;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .title{font:900 34px sans-serif;letter-spacing:1px;fill:#17324d}
+      .caption{font:600 17px sans-serif;fill:#34566c}
+      .date{font:600 15px sans-serif;fill:#34566c}
+    </style>
+    <g id="wheel">
+      <circle class="wheel" r="57"/>
+      <circle r="8" fill="#e65a45" stroke="#17324d" stroke-width="3"/>
+      <g class="spoke">
+        <path d="M0-54V-8M0 8V54M-54 0H-8M8 0H54"/>
+        <path d="M-38-38L-6-6M6 6L38 38M38-38L6-6M-6 6L-38 38"/>
+      </g>
+    </g>
+    <g id="bird">
+      <!-- animated rider -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0;0 3;0 0" dur="1.2s" repeatCount="indefinite"/>
+        <path d="M377 239 Q390 194 431 197 Q469 200 476 239 Q478 272 447 290 L392 281 Q373 266 377 239Z" fill="#fff8e7" class="ink"/>
+        <path d="M403 251 Q428 225 458 248 Q437 266 404 267Z" fill="#e7b5a0" stroke="#17324d" stroke-width="3"/>
+        <path d="M437 222 Q460 212 476 229" fill="none" stroke="#17324d" stroke-width="4"/>
+        <circle cx="451" cy="220" r="5" fill="#17324d"/>
+        <path d="M465 231 Q512 225 548 242 Q514 252 476 244Z" fill="#f2a33a" class="ink"/>
+        <path d="M487 240 Q514 237 544 243 Q522 264 492 257Z" fill="#f28c32" stroke="#17324d" stroke-width="3"/>
+        <path d="M499 245 Q523 246 540 244" fill="none" stroke="#b94e37" stroke-width="3"/>
+        <path d="M394 278 Q421 290 445 281 L457 298 Q428 311 392 296Z" fill="#fff8e7" class="ink"/>
+        <!-- wing sleeve and wing -->
+        <path d="M386 239 Q404 230 424 244 L414 263 Q399 257 389 267Z" fill="#f2d7b8" class="ink"/>
+        <path d="M409 246 Q434 251 448 266 Q430 275 407 262Z" fill="#fff8e7" stroke="#17324d" stroke-width="4"/>
+        <path d="M443 292 L462 321" fill="none" stroke="#17324d" stroke-width="7"/>
+        <path d="M393 290 L381 323" fill="none" stroke="#17324d" stroke-width="7"/>
+        <!-- feet -->
+        <path d="M455 318 Q466 318 473 324 L451 331" fill="none" stroke="#e65a45" stroke-width="6" stroke-linecap="round"/>
+        <path d="M375 321 Q386 320 394 326 L372 333" fill="none" stroke="#e65a45" stroke-width="6" stroke-linecap="round"/>
+        <path d="M465 220 Q474 210 481 220" fill="none" stroke="#17324d" stroke-width="2"/>
+        <path d="M480 211 l8-8 M483 216 l11-2" stroke="#17324d" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#f7f2df"/>
+  <circle cx="686" cy="105" r="45" fill="#f5c85b"/>
+  <path d="M0 374 Q140 344 281 373 T560 368 T800 368 V470 H0Z" fill="#d5e9d5"/>
+  <path d="M0 414 Q180 394 360 414 T800 411" fill="none" stroke="#9ec5ad" stroke-width="3"/>
+  <text id="title" x="40" y="55" class="title">THE GREAT BEAK ESCAPE</text>
+  <text x="42" y="82" class="caption">He’s cycling for the birds. The fish is his emotional support.</text>
+
+  <!-- bicycle -->
+  <g aria-label="Bicycle">
+    <g transform="translate(276 381)">
+      <use href="#wheel" xlink:href="#wheel">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.3s" repeatCount="indefinite"/>
+      </use>
+    </g>
+    <g transform="translate(548 381)">
+      <use href="#wheel" xlink:href="#wheel">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.3s" repeatCount="indefinite"/>
+      </use>
+    </g>
+    <path class="frame" d="M276 381 L371 381 L338 316 L276 381 M371 381 L427 316 L338 316 M427 316 L548 381 M427 316 L461 316"/>
+    <path d="M321 310 L349 310 M420 306 L439 306" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M371 381 L398 400 M371 381 L350 400" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="371" cy="381" r="7" fill="#e65a45" stroke="#17324d" stroke-width="3"/>
+    <g>
+      <path d="M371 381 L396 359 M371 381 L349 401" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+      <path d="M390 357 L402 362 M344 399 L356 404" stroke="#e65a45" stroke-width="5" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 371 381;360 371 381" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+    <path d="M403 317 Q418 297 439 314" fill="none" stroke="#17324d" stroke-width="5"/>
+  </g>
+
+  <use href="#bird" xlink:href="#bird"/>
+
+  <!-- fish in the beak pouch -->
+  <g transform="translate(525 245) rotate(7)">
+    <path d="M0 0 Q18 -14 37 0 Q18 15 0 0 M0 0 L-11 -10 L-11 10Z" fill="#6fc1ba" stroke="#17324d" stroke-width="2.5"/>
+    <circle cx="28" cy="-2" r="2" fill="#17324d"/>
+  </g>
+  <path d="M554 236 Q565 225 575 233" fill="none" stroke="#17324d" stroke-width="2"/>
+  <text x="577" y="229" font-family="sans-serif" font-size="13" font-weight="700" fill="#34566c">“I meant to take the bus.”</text>
+
+  <path d="M55 446 Q400 432 746 446" fill="none" stroke="#789b8a" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="488" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17324d">Pedal-powered. Beak-forward. Absolutely no helmet budget.</text>
+  <path d="M30 523 H770" stroke="#c4d4c5" stroke-width="2"/>
+  <text x="400" y="558" text-anchor="middle" class="date">2026-10-25 02:32:30 SGT (UTC+08:00)</text>
+</svg>

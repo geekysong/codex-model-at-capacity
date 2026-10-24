@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="50" y="28">Projectile motion · total flight time: 3 s</text>
+    <text x="50" y="51">vₓ = 20 m/s · vᵧ = 15 m/s · g = 10 m/s²</text>
+    <text x="50" y="74">Scale: 10 px/m · no air resistance</text>
+    <text x="50" y="110" font-size="12">Range: 60 m (600 px).</text>
+    <text x="50" y="128" font-size="12">Landing continues in the inset</text>
+    <text x="50" y="146" font-size="12">at the same scale.</text>
+  </g>
+
+  <!-- Physical mapping: x = 100 + 200t, y = 350 - 150t + 50t².
+       The landing is at x = 700, so the final segment is translated
+       into a clearly identified inset without changing its scale. -->
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#576274" stroke-width="2"/>
+  <path d="M100 350 Q320 20 540 262" fill="none" stroke="#1769aa" stroke-width="3"/>
+  <circle cx="100" cy="350" r="4" fill="#172033"/>
+  <circle cx="400" cy="237.5" r="4" fill="#172033"/>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="300" y="218">apex: 30 m, 11.25 m</text>
+    <text x="60" y="369">launch: 0 m, 0 m</text>
+    <text x="440" y="294" font-size="12">A: to inset</text>
+  </g>
+  <path d="M532 261 L542 253 M537 267 L547 259" stroke="#1769aa" stroke-width="2"/>
+
+  <rect x="322" y="88" width="238" height="116" rx="5" fill="#f4f8fc" stroke="#a8b6c8"/>
+  <g transform="translate(-200,-160)">
+    <line x1="540" y1="350" x2="740" y2="350" stroke="#576274" stroke-width="2"/>
+    <path d="M540 262 Q620 350 700 350" fill="none" stroke="none"/>
+    <path d="M540 262 Q620 318 700 350" fill="none" stroke="none"/>
+    <path d="M540 262 Q620 290 700 350" fill="none" stroke="#1769aa" stroke-width="3"/>
+    <circle cx="700" cy="350" r="4" fill="#172033"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="363" y="108" font-size="12">A · landing continuation</text>
+    <text x="374" y="131" font-size="14">landing: 60 m, 0 m</text>
+  </g>
+
+  <rect x="0" y="378" width="600" height="22" fill="#edf1f5"/>
+  <text x="300" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#172033">2026-10-25 02:33:07 SGT (UTC+08:00)</text>
+</svg>
