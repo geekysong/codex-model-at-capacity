@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d62828"/>
+    </marker>
+    <marker id="dimArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+    <linearGradient id="beamGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c8935a"/>
+      <stop offset="1" stop-color="#8a5a2b"/>
+    </linearGradient>
+    <linearGradient id="massGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c7cfa"/>
+      <stop offset="1" stop-color="#364fc7"/>
+    </linearGradient>
+    <style>
+      .force { transform-box: fill-box; transform-origin: 50% 0%; animation: pulse 2s ease-in-out infinite; }
+      .mass { transform-box: fill-box; transform-origin: 50% 0%; animation: breathe 2s ease-in-out infinite; }
+      .balanced { animation: glow 2s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { transform: scaleY(1); opacity: 0.75; } 50% { transform: scaleY(1.12); opacity: 1; } }
+      @keyframes breathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+      @keyframes glow { 0%,100% { opacity: 0.7; } 50% { opacity: 1; } }
+      text { fill: #222; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fb"/>
+
+  <!-- Title and equations -->
+  <text x="300" y="34" text-anchor="middle" font-size="22" font-weight="bold">Seesaw in Static Equilibrium</text>
+  <text x="300" y="64" text-anchor="middle" font-size="16">Στ = 0 :  m₁·d₁ = m₂·d₂  →  6 × 2 = 4 × x  →  x = 12 ÷ 4 = 3 m</text>
+  <text x="300" y="94" text-anchor="middle" font-size="20" font-weight="bold" fill="#1d3557">6×2 = 4×3   (12 = 12)</text>
+
+  <!-- Dimension lines -->
+  <g stroke="#333" stroke-width="1.5">
+    <line x1="180" y1="150" x2="300" y2="150" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+    <line x1="300" y1="150" x2="480" y2="150" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+    <line x1="180" y1="140" x2="180" y2="182" stroke-dasharray="3,3"/>
+    <line x1="300" y1="140" x2="300" y2="182" stroke-dasharray="3,3"/>
+    <line x1="480" y1="140" x2="480" y2="182" stroke-dasharray="3,3"/>
+  </g>
+  <text x="240" y="140" text-anchor="middle" font-size="16" font-weight="bold">2 m</text>
+  <text x="390" y="140" text-anchor="middle" font-size="16" font-weight="bold">x = 3 m</text>
+
+  <!-- Ground and pivot -->
+  <line x1="240" y1="252" x2="360" y2="252" stroke="#555" stroke-width="3"/>
+  <g stroke="#777" stroke-width="1.5">
+    <line x1="250" y1="252" x2="242" y2="262"/>
+    <line x1="270" y1="252" x2="262" y2="262"/>
+    <line x1="290" y1="252" x2="282" y2="262"/>
+    <line x1="310" y1="252" x2="302" y2="262"/>
+    <line x1="330" y1="252" x2="322" y2="262"/>
+    <line x1="350" y1="252" x2="342" y2="262"/>
+  </g>
+  <polygon points="300,196 268,252 332,252" fill="#495057" stroke="#212529" stroke-width="2"/>
+  <text x="300" y="278" text-anchor="middle" font-size="13">pivot</text>
+
+  <!-- Level beam (held perfectly level) -->
+  <rect x="120" y="184" width="400" height="12" rx="3" fill="url(#beamGrad)" stroke="#5c3a17" stroke-width="1.5"/>
+  <circle cx="300" cy="190" r="4" fill="#212529"/>
+  <text x="530" y="194" font-size="12" fill="#2b8a3e">0°</text>
+
+  <!-- Left mass: 6 kg -->
+  <line x1="180" y1="196" x2="180" y2="222" stroke="#333" stroke-width="2"/>
+  <g class="mass">
+    <rect x="150" y="222" width="60" height="50" rx="5" fill="url(#massGrad)" stroke="#1c2f8a" stroke-width="2"/>
+    <text x="180" y="253" text-anchor="middle" font-size="17" font-weight="bold" style="fill:#fff">6 kg</text>
+  </g>
+
+  <!-- Right mass: 4 kg -->
+  <line x1="480" y1="196" x2="480" y2="226" stroke="#333" stroke-width="2"/>
+  <g class="mass">
+    <rect x="458" y="226" width="44" height="42" rx="5" fill="url(#massGrad)" stroke="#1c2f8a" stroke-width="2"/>
+    <text x="480" y="252" text-anchor="middle" font-size="15" font-weight="bold" style="fill:#fff">4 kg</text>
+  </g>
+
+  <!-- Force arrows (weights), pulsing -->
+  <line class="force" x1="180" y1="278" x2="180" y2="340" stroke="#d62828" stroke-width="5" marker-end="url(#arrowRed)"/>
+  <line class="force" x1="480" y1="274" x2="480" y2="318" stroke="#d62828" stroke-width="5" marker-end="url(#arrowRed)"/>
+  <text x="194" y="318" font-size="14" font-weight="bold" style="fill:#d62828">W = 6g ≈ 58.8 N</text>
+  <text x="380" y="304" text-anchor="end" font-size="14" font-weight="bold" style="fill:#d62828">W = 4g ≈ 39.2 N</text>
+
+  <!-- Torque labels -->
+  <text x="110" y="370" font-size="14">τ_left = 6 × 2 = 12</text>
+  <text x="490" y="370" text-anchor="end" font-size="14">τ_right = 4 × 3 = 12</text>
+
+  <!-- Balanced -->
+  <text class="balanced" x="300" y="372" text-anchor="middle" font-size="26" font-weight="bold" style="fill:#2b8a3e" letter-spacing="2">BALANCED
+    <animate attributeName="font-size" values="26;28;26" dur="2s" repeatCount="indefinite"/>
+  </text>
+</svg>
