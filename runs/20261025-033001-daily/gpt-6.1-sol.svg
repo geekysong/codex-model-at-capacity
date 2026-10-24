@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#172033">
+    <text x="30" y="28" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="30" y="52">Initial velocity: 20 m/s horizontal, 15 m/s vertical</text>
+    <text x="30" y="74">g = 10 m/s² · No air resistance · Scale: 10 px/m</text>
+    <text x="30" y="96">Total flight time: 3 s</text>
+
+    <line x1="50" y1="350" x2="550" y2="350" stroke="#475569" stroke-width="2"/>
+
+    <!-- x = 100 + 200t; y = 350 - 150t + 50t².
+         A horizontal axis break removes 20 m after x = 420.
+         The final segment therefore uses x_screen = x - 200. -->
+    <path d="M100 350 Q260 230 420 238"
+          fill="none" stroke="#2563eb" stroke-width="3"/>
+    <path d="M460 322 Q480 335 500 350"
+          fill="none" stroke="#2563eb" stroke-width="3"/>
+
+    <g fill="#2563eb">
+      <circle cx="100" cy="350" r="4"/>
+      <circle cx="400" cy="237.5" r="4"/>
+      <circle cx="500" cy="350" r="4"/>
+    </g>
+
+    <text x="330" y="215">apex: 30 m, 11.25 m</text>
+    <text x="52" y="373">launch: 0 m, 0 m</text>
+    <text x="425" y="373">landing: 60 m, 0 m</text>
+
+    <path d="M424 241 l5 -7 m1 10 l5 -7 M448 322 l5 -7 m1 10 l5 -7"
+          fill="none" stroke="#2563eb" stroke-width="2"/>
+    <text x="210" y="296">Horizontal axis break: 20 m omitted</text>
+    <path d="M430 345 l5 10 5 -10 5 10 5 -10"
+          fill="none" stroke="white" stroke-width="6"/>
+    <path d="M430 345 l5 10 5 -10 5 10 5 -10"
+          fill="none" stroke="#475569" stroke-width="2"/>
+
+    <text x="300" y="395" text-anchor="middle" font-size="12">2026-10-25 03:33:29 SGT (UTC+08:00)</text>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Daily Commute</title>
+  <desc id="desc">A proud pelican pedals a bicycle while a fish rides in its beak. The wheels spin and the pelican bobs along.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .65s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-5px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f2"/>
+  <circle cx="690" cy="112" r="49" fill="#ffd36a"/>
+  <path d="M0 372 Q130 325 260 372 T520 372 T800 372 V510 H0Z" fill="#a8d887"/>
+  <path d="M0 428 Q150 402 300 428 T600 428 T900 428" fill="none" stroke="#79b95f" stroke-width="5"/>
+  <path d="M70 348 Q100 295 130 348 M117 351 Q148 285 177 351 M620 350 Q650 290 680 350" fill="none" stroke="#5a9e68" stroke-width="8" stroke-linecap="round"/>
+
+  <text id="title" x="400" y="57" text-anchor="middle" font-size="31" font-weight="900" fill="#173c4a">THE PELICAN’S DAILY COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" font-size="16" font-weight="700" fill="#315966">“On the bright side, the fish is already packed.”</text>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke="#244856" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M254 393 L355 393 L420 310 L470 393 L355 393 L322 310"/>
+    <path d="M420 310 L435 310 M310 310 L337 310"/>
+    <path d="M470 393 L488 393"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#244856" stroke-width="6">
+    <circle cx="254" cy="393" r="58"/>
+    <path d="M254 335V451 M196 393H312 M213 352L295 434 M295 352L213 434"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#244856" stroke-width="6">
+    <circle cx="470" cy="393" r="58"/>
+    <path d="M470 335V451 M412 393H528 M429 352L511 434 M511 352L429 434"/>
+  </g>
+  <circle cx="355" cy="393" r="12" fill="#f2a541" stroke="#244856" stroke-width="5"/>
+  <path d="M355 393 L330 365 M355 393 L382 416" stroke="#244856" stroke-width="6" stroke-linecap="round"/>
+  <path d="M322 310 L310 298 M337 310 L347 298" stroke="#244856" stroke-width="6" stroke-linecap="round"/>
+  <path d="M310 298 Q322 291 334 298" fill="none" stroke="#244856" stroke-width="5" stroke-linecap="round"/>
+  <path d="M435 310 L448 296 M435 310 L453 311" stroke="#244856" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Expressive pelican rider -->
+  <g class="rider">
+    <path d="M344 286 Q331 256 347 223 Q366 192 405 204 Q438 215 444 249 Q448 279 425 301 L396 322 L367 310Z" fill="#fffdf1" stroke="#244856" stroke-width="5"/>
+    <path d="M365 291 Q389 302 423 282 L433 304 Q407 327 374 315Z" fill="#f7f1d9" stroke="#244856" stroke-width="4"/>
+    <path d="M403 211 Q426 184 449 194 Q469 203 455 225 Q438 244 410 239Z" fill="#fffdf1" stroke="#244856" stroke-width="5"/>
+    <circle cx="443" cy="207" r="4.5" fill="#173c4a"/>
+    <path d="M456 215 Q492 223 524 211 Q505 239 464 238Z" fill="#f2a541" stroke="#244856" stroke-width="4"/>
+    <path d="M474 230 Q501 240 526 216 Q521 255 491 264 Q475 261 474 230Z" fill="#f47d56" stroke="#244856" stroke-width="4"/>
+    <!-- Fish passenger -->
+    <path d="M493 199 Q508 187 522 199 Q508 211 493 199Z" fill="#58b8c4" stroke="#244856" stroke-width="2.5"/>
+    <path d="M493 199 L484 192 L484 206Z" fill="#f2a541" stroke="#244856" stroke-width="2"/>
+    <circle cx="515" cy="197" r="1.8" fill="#173c4a"/>
+    <path d="M376 308 L356 350 L373 366 M414 305 L396 348 L382 365" fill="none" stroke="#244856" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M373 366 L348 367 M382 365 L402 366" fill="none" stroke="#f2a541" stroke-width="7" stroke-linecap="round"/>
+    <path d="M360 256 Q375 267 390 257" fill="none" stroke="#e8b8a5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M354 235 Q365 229 375 235 M355 239 Q366 233 376 239" fill="none" stroke="#244856" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion marks and punchline -->
+  <path d="M205 300 L180 289 M210 316 L176 314 M536 315 L561 305" stroke="#f47d56" stroke-width="5" stroke-linecap="round"/>
+  <path d="M541 179 Q565 155 586 178 Q608 152 630 177" fill="none" stroke="#fffdf1" stroke-width="4" stroke-linecap="round"/>
+  <rect x="537" y="265" width="190" height="54" rx="14" fill="#fffdf1" stroke="#244856" stroke-width="3"/>
+  <text x="632" y="288" text-anchor="middle" font-size="13" font-weight="800" fill="#244856">NO HELMET.</text>
+  <text x="632" y="306" text-anchor="middle" font-size="13" font-weight="800" fill="#244856">EXCELLENT AIRBAG.</text>
+  <path d="M537 291 L516 279" stroke="#244856" stroke-width="3"/>
+
+  <path d="M0 482 Q200 472 400 482 T800 482 V600 H0Z" fill="#173c4a"/>
+  <text x="400" y="527" text-anchor="middle" font-size="15" font-weight="700" fill="#fffdf1">A fish in the beak, wind in the feathers, absolutely no cycling licence.</text>
+  <text x="400" y="570" text-anchor="middle" font-size="16" font-weight="700" fill="#ffd36a">2026-10-25 03:32:14 SGT (UTC+08:00)</text>
+</svg>
