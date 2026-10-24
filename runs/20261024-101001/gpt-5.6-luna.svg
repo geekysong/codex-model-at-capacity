@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152b"/>
+      <stop offset="1" stop-color="#3a163b"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d9e5ed"/>
+      <stop offset=".5" stop-color="#718393"/>
+      <stop offset="1" stop-color="#293746"/>
+    </linearGradient>
+    <linearGradient id="velvet" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#781d53"/>
+      <stop offset=".5" stop-color="#e24175"/>
+      <stop offset="1" stop-color="#781d53"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <pattern id="brick" width="80" height="34" patternUnits="userSpaceOnUse">
+      <path d="M0 1H80M0 33H80M1 0V17M40 17V34M79 0V17" fill="none" stroke="#5b2755" stroke-width="3"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect y="105" width="800" height="330" fill="url(#brick)" opacity=".75"/>
+  <path d="M0 435 Q400 390 800 435 V600 H0Z" fill="#121526"/>
+  <path d="M0 466 Q400 420 800 466" fill="none" stroke="#67345f" stroke-width="4"/>
+
+  <text x="400" y="52" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="34" fill="#fff4c7" stroke="#ff4f91" stroke-width="2" paint-order="stroke">
+    CODEX NIGHTCLUB
+  </text>
+  <text x="400" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="17" fill="#ffb8d2">
+    THE HOTTEST CLUB IN COMPUTE
+  </text>
+
+  <g transform="translate(528 125)">
+    <rect x="0" y="0" width="232" height="108" rx="12" fill="#27192e" stroke="#f4c95d" stroke-width="5"/>
+    <rect x="12" y="12" width="208" height="84" rx="7" fill="#ff314e" opacity=".18" filter="url(#glow)"/>
+    <text x="116" y="69" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="52" fill="#ff4d5f" filter="url(#glow)">FULL</text>
+    <circle cx="22" cy="25" r="5" fill="#6effba"/>
+    <circle cx="210" cy="25" r="5" fill="#6effba"/>
+  </g>
+
+  <g transform="translate(455 245)">
+    <ellipse cx="106" cy="274" rx="145" ry="18" fill="#080b14" opacity=".8"/>
+    <rect x="18" y="72" width="176" height="172" rx="34" fill="url(#metal)" stroke="#151e2b" stroke-width="7"/>
+    <rect x="31" y="91" width="150" height="82" rx="17" fill="#172235" stroke="#93c8d4" stroke-width="4"/>
+    <circle cx="68" cy="132" r="14" fill="#ff456c" filter="url(#glow)"/>
+    <circle cx="142" cy="132" r="14" fill="#ff456c" filter="url(#glow)"/>
+    <path d="M65 156 Q105 181 145 156" fill="none" stroke="#ffca77" stroke-width="7"/>
+    <path d="M106 72V42M106 42L94 29M106 42L118 29" fill="none" stroke="#9eb7c3" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="106" cy="25" r="11" fill="#ffdc54" filter="url(#glow)"/>
+    <path d="M18 105L-30 83M194 105L239 80" stroke="#9eb3bf" stroke-width="18" stroke-linecap="round"/>
+    <path d="M-29 83L-52 67M-29 83L-51 92M239 80L263 63M239 80L263 92" stroke="#9eb3bf" stroke-width="9" stroke-linecap="round"/>
+    <path d="M65 244L45 277M147 244L166 277" stroke="#9eb3bf" stroke-width="18" stroke-linecap="round"/>
+    <rect x="57" y="194" width="98" height="31" rx="9" fill="#222d3b" stroke="#91a9b5" stroke-width="3"/>
+    <text x="106" y="216" text-anchor="middle" font-family="Arial Black" font-size="14" fill="#ffd56b">NOPE</text>
+    <path d="M10 57 Q106 9 202 57" fill="none" stroke="#ff4f91" stroke-width="8"/>
+    <text x="106" y="45" text-anchor="middle" font-family="Arial Black" font-size="17" fill="#fff">BOUNCER-bot</text>
+  </g>
+
+  <g transform="translate(45 260)">
+    <ellipse cx="173" cy="283" rx="175" ry="17" fill="#080b14" opacity=".7"/>
+    <path d="M40 99 Q173 137 305 99" fill="none" stroke="#f05b91" stroke-width="8"/>
+    <path d="M40 99 Q173 137 305 99" fill="none" stroke="#7b143f" stroke-width="15" opacity=".55"/>
+    <g fill="#f2c9a5" stroke="#241d31" stroke-width="4">
+      <circle cx="50" cy="18" r="20"/><path d="M25 14Q50-18 76 14L69 32H30Z" fill="#45375c"/>
+      <circle cx="118" cy="46" r="20"/><path d="M94 45Q120 5 143 40L140 59H96Z" fill="#e56e46"/>
+      <circle cx="190" cy="9" r="20"/><path d="M164 6Q190-27 216 7L210 24H170Z" fill="#2a6d7b"/>
+      <circle cx="262" cy="53" r="20"/><path d="M239 48Q263 16 288 46L286 66H240Z" fill="#dfcf4e"/>
+      <circle cx="326" cy="22" r="20"/><path d="M302 20Q327-10 351 21L346 38H307Z" fill="#8953a3"/>
+    </g>
+    <g stroke="#f2c9a5" stroke-width="7" stroke-linecap="round">
+      <path d="M34 64L21 115M65 64L79 115"/>
+      <path d="M102 91L92 144M132 91L147 144"/>
+      <path d="M175 54L163 106M205 54L220 106"/>
+      <path d="M247 98L236 151M277 98L292 151"/>
+      <path d="M311 68L300 120M341 68L355 120"/>
+    </g>
+    <g font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#fff4c7">
+      <text x="12" y="181" transform="rotate(-8 12 181)">I brought snacks!</text>
+      <text x="91" y="181" transform="rotate(5 91 181)">Try again?</text>
+      <text x="169" y="181" transform="rotate(-7 169 181)">I pay in tokens!</text>
+      <text x="253" y="181" transform="rotate(6 253 181)">It worked yesterday!</text>
+    </g>
+  </g>
+
+  <g transform="translate(55 462)">
+    <path d="M0 60 Q28 10 56 60T112 60T168 60T224 60" fill="none" stroke="#d52d4d" stroke-width="8"/>
+    <path d="M0 60 Q28 10 56 60T112 60T168 60T224 60" fill="none" stroke="#ffb34d" stroke-width="3"/>
+    <circle cx="32" cy="46" r="13" fill="#e4aa69"/><circle cx="84" cy="46" r="13" fill="#e4aa69"/><circle cx="138" cy="46" r="13" fill="#e4aa69"/><circle cx="192" cy="46" r="13" fill="#e4aa69"/>
+    <path d="M27 34L20 17M39 34L49 12M79 34L71 15M91 34L101 10M133 34L125 13M145 34L155 11M187 34L180 15M199 34L210 13" stroke="#ffcf56" stroke-width="5" stroke-linecap="round"/>
+    <text x="110" y="105" text-anchor="middle" font-family="Arial Black" font-size="15" fill="#ff9b62">SERVERS: PLEASE STOP</text>
+  </g>
+
+  <g transform="translate(575 414)">
+    <ellipse cx="92" cy="108" rx="115" ry="14" fill="#080b14"/>
+    <circle cx="92" cy="58" r="51" fill="none" stroke="#b8c3ce" stroke-width="12"/>
+    <circle cx="92" cy="58" r="30" fill="none" stroke="#e84d65" stroke-width="8"/>
+    <path d="M45 72Q92 120 139 72" fill="none" stroke="#ffbf57" stroke-width="6"/>
+    <path d="M28 18L12 0M156 18L175 0" stroke="#ff9848" stroke-width="7" stroke-linecap="round"/>
+    <path d="M76 7L68-18M108 7L117-18" stroke="#ff9848" stroke-width="7" stroke-linecap="round"/>
+    <text x="92" y="138" text-anchor="middle" font-family="Arial Black" font-size="13" fill="#ff7c88">OVERHEATED</text>
+  </g>
+
+  <g transform="translate(385 523)">
+    <rect x="0" y="0" width="371" height="48" rx="24" fill="#23162d" stroke="#ff4f91" stroke-width="3"/>
+    <text x="185" y="31" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="19" fill="#ffe9ad">
+      “SELECTED MODEL IS AT CAPACITY.”
+    </text>
+  </g>
+
+  <g transform="translate(710 270)">
+    <rect x="0" y="0" width="54" height="66" rx="7" fill="#172435" stroke="#89a4b3" stroke-width="4"/>
+    <rect x="9" y="10" width="36" height="25" rx="3" fill="#7df3b4"/>
+    <text x="27" y="29" text-anchor="middle" font-family="Arial Black" font-size="13" fill="#172435">1</text>
+    <text x="27" y="54" text-anchor="middle" font-family="Arial Black" font-size="9" fill="#ffcc70">VIP</text>
+  </g>
+</svg>

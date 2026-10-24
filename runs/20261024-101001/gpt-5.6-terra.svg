@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152d"/>
+      <stop offset="1" stop-color="#32152d"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#281936"/>
+      <stop offset=".5" stop-color="#5b204b"/>
+      <stop offset="1" stop-color="#281936"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4fd8"/>
+      <stop offset=".5" stop-color="#8b5cff"/>
+      <stop offset="1" stop-color="#27e7ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 438 Q200 390 400 430 T800 420 V600 H0Z" fill="url(#floor)"/>
+  <path d="M0 455 Q200 420 400 450 T800 440" fill="none" stroke="#d52b9d" stroke-width="3" opacity=".5"/>
+
+  <g opacity=".25" stroke="#7e48b7" stroke-width="2">
+    <path d="M80 0V380M160 0V380M240 0V380M320 0V380M400 0V380M480 0V380M560 0V380M640 0V380M720 0V380"/>
+    <path d="M0 90H800M0 170H800M0 250H800M0 330H800"/>
+  </g>
+
+  <text x="400" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#fff">CODEX NIGHTCLUB</text>
+  <text x="400" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ff72d8">WHERE IDEAS COME TO PARTY</text>
+
+  <g filter="url(#glow)">
+    <rect x="548" y="108" width="190" height="82" rx="12" fill="#190f27" stroke="#ff3dba" stroke-width="5"/>
+    <text x="643" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="900" fill="#ff72d8">TONIGHT'S STATUS</text>
+    <text x="643" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="900" fill="#fff">FULL</text>
+  </g>
+
+  <!-- melting server stack -->
+  <g transform="translate(55 285)">
+    <path d="M0 105 Q18 90 10 65 Q7 43 24 35 Q44 28 57 43 Q72 26 95 39 Q112 47 105 69 Q125 77 111 102 Q91 119 65 111 Q37 125 0 105Z" fill="#5c879a" stroke="#171d35" stroke-width="5"/>
+    <rect x="17" y="58" width="90" height="50" rx="8" fill="#23394c" stroke="#9bd7db" stroke-width="3"/>
+    <circle cx="34" cy="76" r="5" fill="#ff4f9a"/>
+    <circle cx="51" cy="76" r="5" fill="#62f7d4"/>
+    <path d="M25 92 Q55 84 93 94" fill="none" stroke="#ffcc55" stroke-width="4"/>
+    <path d="M15 120 Q32 138 52 124 Q67 115 82 130 Q98 143 113 126" fill="none" stroke="#ff8b4a" stroke-width="7" stroke-linecap="round"/>
+    <text x="56" y="157" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffd2ed">SERVER FARM</text>
+  </g>
+
+  <g transform="translate(210 340)">
+    <ellipse cx="86" cy="73" rx="84" ry="26" fill="#161629" stroke="#ff78cf" stroke-width="4"/>
+    <ellipse cx="86" cy="68" rx="64" ry="17" fill="none" stroke="#ffb85c" stroke-width="5" stroke-dasharray="12 8"/>
+    <circle cx="86" cy="64" r="17" fill="#f0a44e" stroke="#36203f" stroke-width="4"/>
+    <circle cx="80" cy="60" r="3" fill="#36203f"/><circle cx="92" cy="60" r="3" fill="#36203f"/>
+    <path d="M78 69 Q87 77 96 69" fill="none" stroke="#36203f" stroke-width="3"/>
+    <path d="M20 76 Q42 93 65 78 M107 78 Q130 94 153 75" fill="none" stroke="#ff784c" stroke-width="8" stroke-linecap="round"/>
+    <text x="86" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffcf86">HAMSTER-POWERED CLOUD</text>
+  </g>
+
+  <!-- bouncer -->
+  <g transform="translate(505 205)">
+    <ellipse cx="102" cy="223" rx="97" ry="18" fill="#150f25" opacity=".7"/>
+    <path d="M48 218 L58 104 L143 104 L155 218Z" fill="#22243d" stroke="#0d1023" stroke-width="6"/>
+    <path d="M76 117 L101 159 L126 117" fill="none" stroke="#f04da9" stroke-width="6"/>
+    <path d="M101 159 V213" stroke="#73e7ff" stroke-width="5"/>
+    <rect x="84" y="178" width="35" height="22" rx="4" fill="#11182d" stroke="#ffdd62" stroke-width="3"/>
+    <text x="101" y="194" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="900" fill="#ffdd62">DENY</text>
+    <circle cx="101" cy="66" r="47" fill="#a8d7dc" stroke="#10152e" stroke-width="6"/>
+    <path d="M60 55 Q101 15 142 55" fill="#303b63" stroke="#10152e" stroke-width="6"/>
+    <rect x="67" y="55" width="68" height="26" rx="13" fill="#11172e" stroke="#72f5ff" stroke-width="4"/>
+    <circle cx="84" cy="68" r="6" fill="#ff4ca5"/><circle cx="118" cy="68" r="6" fill="#ff4ca5"/>
+    <path d="M83 96 Q101 107 119 96" fill="none" stroke="#14172b" stroke-width="5"/>
+    <path d="M58 132 L18 174" stroke="#a8d7dc" stroke-width="17" stroke-linecap="round"/>
+    <path d="M144 132 L185 156" stroke="#a8d7dc" stroke-width="17" stroke-linecap="round"/>
+    <path d="M18 174 L3 163" stroke="#a8d7dc" stroke-width="12" stroke-linecap="round"/>
+    <path d="M185 156 L207 145" stroke="#a8d7dc" stroke-width="12" stroke-linecap="round"/>
+    <text x="101" y="257" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#fff">BOUNCER-BOT 3000</text>
+  </g>
+
+  <!-- velvet rope -->
+  <path d="M420 377 Q475 438 548 381" fill="none" stroke="#e52b76" stroke-width="9"/>
+  <circle cx="420" cy="377" r="11" fill="#ffd45b" stroke="#6d315d" stroke-width="4"/>
+  <circle cx="548" cy="381" r="11" fill="#ffd45b" stroke="#6d315d" stroke-width="4"/>
+
+  <!-- queue of tired developers -->
+  <g stroke="#17152d" stroke-width="4">
+    <g transform="translate(105 405)">
+      <circle cx="0" cy="0" r="25" fill="#d99472"/><path d="M-25 -4 Q0 -35 25 -5" fill="#3a2948"/><path d="M-12 9 Q0 18 12 9" fill="none"/><path d="M-33 45 Q0 20 33 45 V92 H-33Z" fill="#4d86bb"/><path d="M-13 45 L2 64 L17 45" fill="#f5c85e"/>
+      <rect x="-20" y="55" width="40" height="22" rx="3" fill="#20283d"/><text x="0" y="71" text-anchor="middle" font-size="10" font-family="Arial" fill="#7cf3ff">BUG?</text>
+    </g>
+    <g transform="translate(185 425) scale(.9)">
+      <circle cx="0" cy="0" r="25" fill="#8d5e4d"/><path d="M-25 -5 Q0 -37 25 -5" fill="#171927"/><path d="M-12 12 Q0 5 12 12" fill="none"/><path d="M-33 45 Q0 20 33 45 V92 H-33Z" fill="#d65c72"/><path d="M-17 45 L0 65 L17 45" fill="#f7d9a1"/>
+      <rect x="-20" y="55" width="40" height="22" rx="3" fill="#20283d"/><text x="0" y="71" text-anchor="middle" font-size="10" font-family="Arial" fill="#7cf3ff">404</text>
+    </g>
+    <g transform="translate(270 397) scale(1.05)">
+      <circle cx="0" cy="0" r="25" fill="#e0ae87"/><path d="M-25 -4 Q0 -38 25 -4" fill="#9e4d49"/><path d="M-12 10 Q0 18 12 10" fill="none"/><path d="M-33 45 Q0 20 33 45 V92 H-33Z" fill="#5db47d"/><path d="M-17 45 L0 66 L17 45" fill="#f1cc68"/>
+      <rect x="-20" y="55" width="40" height="22" rx="3" fill="#20283d"/><text x="0" y="71" text-anchor="middle" font-size="9" font-family="Arial" fill="#7cf3ff">SHIP</text>
+    </g>
+    <g transform="translate(355 428) scale(.82)">
+      <circle cx="0" cy="0" r="25" fill="#b97862"/><path d="M-25 -4 Q0 -34 25 -4" fill="#29233d"/><path d="M-12 11 Q0 4 12 11" fill="none"/><path d="M-33 45 Q0 20 33 45 V92 H-33Z" fill="#8b6dcc"/><rect x="-20" y="55" width="40" height="22" rx="3" fill="#20283d"/><text x="0" y="71" text-anchor="middle" font-size="9" font-family="Arial" fill="#7cf3ff">Zzz</text>
+    </g>
+  </g>
+
+  <g transform="translate(60 535)">
+    <rect width="680" height="45" rx="22" fill="#120e22" stroke="#ff4dbd" stroke-width="3"/>
+    <text x="340" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#fff">“Selected model is at capacity. Please try a different model.”</text>
+  </g>
+
+  <text x="400" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#ffef72" filter="url(#softGlow)">THE EXCLUSIVE CLUB WHERE EVERYONE IS WAITLISTED</text>
+</svg>

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152d"/>
+      <stop offset="1" stop-color="#090914"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#241b46"/>
+      <stop offset="1" stop-color="#100d25"/>
+    </linearGradient>
+    <linearGradient id="sign" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff6d86"/>
+      <stop offset="1" stop-color="#c81755"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <style>
+      .ink{stroke:#171327;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+      .white{fill:#fff5dc}
+      .muted{fill:#b9b0d2}
+      .pink{fill:#ff477e}
+      .cyan{fill:#53e4e8}
+      .yellow{fill:#ffd45c}
+      text{font-family:Arial,Helvetica,sans-serif}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 390 Q180 345 400 385 T800 370 V600 H0Z" fill="url(#floor)"/>
+  <path d="M0 493 Q220 454 430 485 T800 468" fill="none" stroke="#413565" stroke-width="4"/>
+  <path d="M0 548 Q230 510 450 540 T800 526" fill="none" stroke="#302551" stroke-width="3"/>
+
+  <text x="400" y="55" text-anchor="middle" font-size="31" font-weight="900" fill="#fff5dc" letter-spacing="2">CODEX NIGHTCLUB</text>
+  <text x="400" y="88" text-anchor="middle" font-size="16" font-weight="700" fill="#53e4e8">THE HOTTEST PLACE IN COMPUTING</text>
+
+  <g filter="url(#glow)" opacity=".5">
+    <ellipse cx="620" cy="177" rx="170" ry="80" fill="#ec2e81"/>
+  </g>
+  <rect x="535" y="111" width="185" height="103" rx="15" fill="#391735" class="ink"/>
+  <rect x="549" y="124" width="157" height="76" rx="9" fill="url(#sign)" class="ink"/>
+  <text x="627" y="158" text-anchor="middle" font-size="25" font-weight="900" fill="#fff5dc">FULL</text>
+  <text x="627" y="184" text-anchor="middle" font-size="13" font-weight="900" fill="#ffd45c">TRY AGAIN LATER</text>
+  <circle cx="560" cy="137" r="5" fill="#ffd45c"/>
+  <circle cx="694" cy="137" r="5" fill="#ffd45c"/>
+
+  <!-- Club entrance -->
+  <rect x="510" y="220" width="235" height="255" rx="18" fill="#090914" class="ink"/>
+  <path d="M532 450 V260 Q532 240 552 240 H703 Q723 240 723 260 V450" fill="#201337" stroke="#5a3b76" stroke-width="8"/>
+  <path d="M548 415 Q620 345 708 415" fill="none" stroke="#ff477e" stroke-width="8" opacity=".65"/>
+  <path d="M561 390 Q622 330 696 390" fill="none" stroke="#53e4e8" stroke-width="7" opacity=".55"/>
+  <text x="628" y="283" text-anchor="middle" font-size="14" font-weight="900" fill="#ffd45c">EXCLUSIVE ACCESS</text>
+
+  <!-- single model inside -->
+  <g transform="translate(620 320)">
+    <ellipse cx="0" cy="104" rx="48" ry="12" fill="#090914" opacity=".7"/>
+    <rect x="-37" y="-5" width="74" height="88" rx="16" fill="#53e4e8" class="ink"/>
+    <rect x="-31" y="9" width="62" height="37" rx="8" fill="#15142b" class="ink"/>
+    <circle cx="-13" cy="28" r="6" fill="#ff477e"/>
+    <circle cx="13" cy="28" r="6" fill="#ffd45c"/>
+    <path d="M-20 62 Q0 76 20 62" fill="none" class="ink"/>
+    <path d="M-25 -5 L-18 -28 M25 -5 L18 -28" class="ink" fill="none"/>
+    <circle cx="-18" cy="-29" r="5" fill="#ffd45c" class="ink"/>
+    <circle cx="18" cy="-29" r="5" fill="#ffd45c" class="ink"/>
+    <path d="M-37 16 L-57 34 M37 16 L57 34 M-22 83 L-26 111 M22 83 L26 111" class="ink" fill="none"/>
+    <circle cx="-59" cy="36" r="7" fill="#53e4e8" class="ink"/>
+    <circle cx="59" cy="36" r="7" fill="#53e4e8" class="ink"/>
+    <text x="0" y="103" text-anchor="middle" font-size="11" font-weight="900" fill="#fff5dc">MODEL 1</text>
+  </g>
+
+  <!-- Bouncer -->
+  <g transform="translate(475 280)">
+    <ellipse cx="0" cy="190" rx="75" ry="14" fill="#090914" opacity=".75"/>
+    <rect x="-47" y="28" width="94" height="125" rx="18" fill="#24203b" class="ink"/>
+    <path d="M-46 67 H46 V91 H-46Z" fill="#ff477e" class="ink"/>
+    <rect x="-42" y="70" width="84" height="18" fill="#fff5dc" opacity=".9"/>
+    <circle cx="0" cy="-2" r="48" fill="#9b91b4" class="ink"/>
+    <path d="M-47 -9 Q0 -72 47 -9 L40 4 Q0 -29 -40 4Z" fill="#171327" class="ink"/>
+    <rect x="-38" y="-5" width="76" height="25" rx="8" fill="#171327" class="ink"/>
+    <circle cx="-19" cy="8" r="5" fill="#ff477e"/>
+    <circle cx="19" cy="8" r="5" fill="#ff477e"/>
+    <path d="M-18 37 Q0 48 18 37" fill="none" class="ink"/>
+    <path d="M-40 71 L-95 96 M40 71 L84 49 M-28 150 L-38 190 M28 150 L42 190" fill="none" class="ink"/>
+    <path d="M-102 93 L-72 78" fill="none" class="ink"/>
+    <text x="-5" y="111" text-anchor="middle" font-size="15" font-weight="900" fill="#ffd45c">BOUNCER</text>
+    <path d="M-93 96 Q-121 92 -138 109" fill="none" stroke="#ff477e" stroke-width="7"/>
+  </g>
+
+  <!-- Velvet rope -->
+  <path d="M400 420 Q445 454 508 420" fill="none" stroke="#d21d5d" stroke-width="9"/>
+  <path d="M400 420 L400 478 M508 420 L508 478" stroke="#ffd45c" stroke-width="8"/>
+  <circle cx="400" cy="420" r="8" fill="#ffd45c" class="ink"/>
+  <circle cx="508" cy="420" r="8" fill="#ffd45c" class="ink"/>
+
+  <!-- Servers melting -->
+  <g transform="translate(87 319)">
+    <path d="M0 119 Q16 98 32 119 Q47 137 61 118 Q75 96 90 116 Q106 136 120 115 L120 145 H0Z" fill="#ff477e" class="ink"/>
+    <rect x="12" y="27" width="97" height="92" rx="10" fill="#56506e" class="ink"/>
+    <rect x="25" y="42" width="70" height="47" rx="5" fill="#171327" class="ink"/>
+    <circle cx="38" cy="58" r="5" fill="#53e4e8"/>
+    <circle cx="57" cy="58" r="5" fill="#ffd45c"/>
+    <circle cx="76" cy="58" r="5" fill="#ff477e"/>
+    <path d="M28 77 H88" stroke="#53e4e8" stroke-width="5"/>
+    <path d="M34 27 Q25 8 39 -5 M68 27 Q58 8 72 -8 M94 27 Q84 8 98 -5" stroke="#ffd45c" stroke-width="5" fill="none"/>
+    <text x="60" y="166" text-anchor="middle" font-size="15" font-weight="900" fill="#ffd45c">SERVER FARM</text>
+    <text x="60" y="184" text-anchor="middle" font-size="12" fill="#fff5dc">now with 300% more panic</text>
+  </g>
+
+  <!-- queue of developers -->
+  <g class="ink">
+    <g transform="translate(44 470)">
+      <circle cx="0" cy="-58" r="22" fill="#d7a17d"/><path d="M-22 -60 Q0 -88 22 -60" fill="#3a2540"/>
+      <path d="M-31 0 V-25 Q-31 -40 0 -40 Q31 -40 31 -25 V0Z" fill="#53e4e8"/>
+      <path d="M-16 -2 L-25 30 M16 -2 L26 30" fill="none"/><path d="M-38 -20 L-58 -2 M38 -20 L55 -38" fill="none"/>
+      <rect x="-70" y="-7" width="25" height="18" fill="#fff5dc"/>
+    </g>
+    <g transform="translate(143 488)">
+      <circle cx="0" cy="-61" r="22" fill="#8b5b45"/><path d="M-22 -65 Q0 -93 23 -64" fill="#16142b"/>
+      <path d="M-31 0 V-27 Q-31 -43 0 -43 Q31 -43 31 -27 V0Z" fill="#ffd45c"/>
+      <path d="M-16 -2 L-28 32 M16 -2 L28 32" fill="none"/><path d="M-38 -22 L-64 -4 M38 -22 L62 -39" fill="none"/>
+      <rect x="-76" y="-10" width="25" height="18" fill="#fff5dc"/>
+    </g>
+    <g transform="translate(245 464)">
+      <circle cx="0" cy="-57" r="22" fill="#e3b18e"/><path d="M-23 -61 Q-6 -91 24 -68" fill="#704637"/>
+      <path d="M-31 0 V-26 Q-31 -42 0 -42 Q31 -42 31 -26 V0Z" fill="#ff477e"/>
+      <path d="M-16 -2 L-27 34 M16 -2 L27 34" fill="none"/><path d="M-38 -20 L-59 -4 M38 -20 L59 -37" fill="none"/>
+      <rect x="-72" y="-9" width="25" height="18" fill="#fff5dc"/>
+    </g>
+    <g transform="translate(340 490)">
+      <circle cx="0" cy="-60" r="22" fill="#b97855"/><path d="M-23 -64 Q0 -89 24 -62" fill="#29203c"/>
+      <path d="M-31 0 V-28 Q-31 -43 0 -43 Q31 -43 31 -28 V0Z" fill="#53e4e8"/>
+      <path d="M-16 -2 L-28 31 M16 -2 L28 31" fill="none"/><path d="M-38 -22 L-61 -4 M38 -22 L61 -39" fill="none"/>
+      <rect x="-75" y="-10" width="25" height="18" fill="#fff5dc"/>
+    </g>
+  </g>
+
+  <!-- speech bubble -->
+  <path d="M191 287 Q219 245 302 256 Q347 263 346 304 Q345 344 294 350 L270 372 L267 348 Q214 349 193 324 Q177 307 191 287Z" fill="#fff5dc" class="ink"/>
+  <text x="265" y="292" text-anchor="middle" font-size="14" font-weight="900" fill="#171327">I brought snacks</text>
+  <text x="265" y="314" text-anchor="middle" font-size="14" font-weight="900" fill="#171327">and a deadline!</text>
+
+  <text x="400" y="575" text-anchor="middle" font-size="22" font-weight="900" fill="#fff5dc">“Selected model is at capacity. Please try a different model.”</text>
+</svg>
