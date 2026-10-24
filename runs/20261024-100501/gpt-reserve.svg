@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152f"/>
+      <stop offset="1" stop-color="#33204d"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4fd8"/>
+      <stop offset="1" stop-color="#6df6ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="120" cy="90" r="2" fill="#fff"/>
+  <circle cx="690" cy="75" r="3" fill="#ff8ee9"/>
+  <circle cx="745" cy="180" r="2" fill="#6df6ff"/>
+  <path d="M0 470 Q180 420 350 470 T800 460 V600 H0Z" fill="#120f25"/>
+
+  <text x="400" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="900" fill="#ffffff" letter-spacing="2">
+    CODEX NIGHTCLUB
+  </text>
+  <text x="400" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ff72db">
+    THE HOTTEST MODEL IN TOWN
+  </text>
+
+  <!-- Club facade -->
+  <rect x="250" y="110" width="490" height="350" rx="22" fill="#241c43" stroke="#6df6ff" stroke-width="5"/>
+  <rect x="285" y="145" width="420" height="265" rx="16" fill="#100d20" stroke="#ff4fd8" stroke-width="3"/>
+  <path d="M285 210 H705 M285 275 H705 M285 340 H705" stroke="#34285c" stroke-width="2"/>
+  <path d="M355 145 V410 M425 145 V410 M495 145 V410 M565 145 V410 M635 145 V410" stroke="#2a2450" stroke-width="2"/>
+
+  <!-- Disco lights -->
+  <circle cx="335" cy="180" r="7" fill="#6df6ff" filter="url(#glow)"/>
+  <circle cx="650" cy="180" r="7" fill="#ff4fd8" filter="url(#glow)"/>
+  <circle cx="470" cy="375" r="7" fill="#ffd34f" filter="url(#glow)"/>
+
+  <!-- Full sign -->
+  <rect x="385" y="175" width="215" height="91" rx="15" fill="#391338" stroke="#ff4fd8" stroke-width="5" filter="url(#glow)"/>
+  <text x="492" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#fff36d">FULL</text>
+  <text x="492" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ff9eea">NO MORE TOKENS</text>
+
+  <!-- Exclusive model inside -->
+  <ellipse cx="590" cy="340" rx="56" ry="18" fill="#0b0916"/>
+  <rect x="550" y="285" width="80" height="63" rx="18" fill="#9a82ff" stroke="#d9d1ff" stroke-width="4"/>
+  <rect x="559" y="254" width="62" height="42" rx="16" fill="#9a82ff" stroke="#d9d1ff" stroke-width="4"/>
+  <circle cx="578" cy="273" r="6" fill="#111020"/>
+  <circle cx="602" cy="273" r="6" fill="#111020"/>
+  <path d="M575 285 Q590 295 605 285" fill="none" stroke="#111020" stroke-width="4"/>
+  <path d="M572 348 V375 M608 348 V375" stroke="#d9d1ff" stroke-width="7" stroke-linecap="round"/>
+  <text x="590" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="900" fill="#d9d1ff">MODEL X</text>
+
+  <!-- Melting server hamster wheels -->
+  <g transform="translate(320 335)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#ff8b4f" stroke-width="8"/>
+    <path d="M-26 -25 L26 25 M26 -25 L-26 25" stroke="#ff8b4f" stroke-width="5"/>
+    <ellipse cx="0" cy="3" rx="16" ry="10" fill="#ffd16a"/>
+    <path d="M-40 37 Q-20 52 5 43 T48 45" fill="none" stroke="#ff633d" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="-28" cy="-48" r="6" fill="#ff633d"/>
+    <circle cx="31" cy="-46" r="5" fill="#ffb347"/>
+  </g>
+  <g transform="translate(430 335) scale(.75)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#ff8b4f" stroke-width="8"/>
+    <path d="M-26 -25 L26 25 M26 -25 L-26 25" stroke="#ff8b4f" stroke-width="5"/>
+    <ellipse cx="0" cy="3" rx="16" ry="10" fill="#ffd16a"/>
+    <path d="M-40 37 Q-20 52 5 43 T48 45" fill="none" stroke="#ff633d" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <!-- Bouncer -->
+  <ellipse cx="190" cy="490" rx="104" ry="20" fill="#0b0916"/>
+  <rect x="132" y="270" width="116" height="188" rx="28" fill="#30384e" stroke="#111426" stroke-width="5"/>
+  <path d="M145 297 Q190 325 235 297 L246 410 Q190 435 134 410Z" fill="#171b31"/>
+  <rect x="166" y="335" width="48" height="72" rx="7" fill="#111322" stroke="#6df6ff" stroke-width="3"/>
+  <text x="190" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="900" fill="#6df6ff">API</text>
+  <text x="190" y="379" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#fff">DENIED</text>
+  <circle cx="190" cy="234" r="55" fill="#56627a" stroke="#111426" stroke-width="5"/>
+  <path d="M157 231 Q190 197 223 231" fill="none" stroke="#111426" stroke-width="10"/>
+  <circle cx="173" cy="245" r="8" fill="#ff4fd8" filter="url(#glow)"/>
+  <circle cx="207" cy="245" r="8" fill="#ff4fd8" filter="url(#glow)"/>
+  <path d="M173 268 Q190 280 207 268" fill="none" stroke="#111426" stroke-width="5"/>
+  <path d="M190 178 V158" stroke="#6df6ff" stroke-width="5"/>
+  <circle cx="190" cy="151" r="8" fill="#6df6ff" filter="url(#glow)"/>
+  <path d="M132 310 L91 350 M248 310 L281 349" stroke="#56627a" stroke-width="17" stroke-linecap="round"/>
+  <path d="M92 350 L68 338" stroke="#56627a" stroke-width="14" stroke-linecap="round"/>
+  <path d="M280 349 L305 335" stroke="#56627a" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Queue -->
+  <path d="M82 440 Q195 420 328 445" fill="none" stroke="#d71970" stroke-width="6"/>
+  <path d="M82 440 Q195 420 328 445" fill="none" stroke="#ffe0f0" stroke-width="2" stroke-dasharray="18 13"/>
+  <circle cx="82" cy="440" r="12" fill="#d71970"/>
+  <circle cx="328" cy="445" r="12" fill="#d71970"/>
+
+  <!-- Developers -->
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(70 355)">
+      <circle cx="0" cy="0" r="24" fill="#d58e6a"/>
+      <path d="M-24 -4 Q0 -35 25 -5 V-20 Q0 -47 -25 -20Z" fill="#482b32"/>
+      <rect x="-25" y="28" width="51" height="68" rx="14" fill="#53b7a5"/>
+      <path d="M-14 49 H14 M-14 63 H8" stroke="#173d43" stroke-width="4"/>
+      <path d="M-15 96 V137 M15 96 V137" stroke="#263044" stroke-width="12"/>
+      <text x="0" y="165" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">DEV #1</text>
+    </g>
+    <g transform="translate(155 400) scale(.9)">
+      <circle cx="0" cy="0" r="24" fill="#9a624b"/>
+      <path d="M-24 -4 Q0 -37 24 -4 V-20 Q0 -48 -24 -20Z" fill="#151725"/>
+      <rect x="-25" y="28" width="51" height="68" rx="14" fill="#efb64f"/>
+      <path d="M-14 49 H14 M-14 63 H6" stroke="#70451c" stroke-width="4"/>
+      <path d="M-15 96 V137 M15 96 V137" stroke="#263044" stroke-width="12"/>
+      <text x="0" y="165" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">DEV #2</text>
+    </g>
+    <g transform="translate(242 365) scale(.82)">
+      <circle cx="0" cy="0" r="24" fill="#e0a47c"/>
+      <path d="M-24 -7 Q0 -38 24 -7 V-22 Q0 -48 -24 -22Z" fill="#b5c8d4"/>
+      <rect x="-25" y="28" width="51" height="68" rx="14" fill="#6d7ee8"/>
+      <path d="M-14 49 H14 M-14 63 H9" stroke="#26336f" stroke-width="4"/>
+      <path d="M-15 96 V137 M15 96 V137" stroke="#263044" stroke-width="12"/>
+      <text x="0" y="165" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">DEV #3</text>
+    </g>
+  </g>
+
+  <!-- Speech bubble -->
+  <path d="M25 170 Q25 115 90 115 H260 Q300 115 300 155 V178 Q300 220 260 220 H125 L78 250 L86 220 H65 Q25 220 25 170Z" fill="#fff7ff" stroke="#ff4fd8" stroke-width="4"/>
+  <text x="162" y="151" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="900" fill="#2b1740">SELECTED MODEL</text>
+  <text x="162" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="900" fill="#2b1740">IS AT CAPACITY.</text>
+  <text x="162" y="201" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#6d3a75">Please try a different bouncer.</text>
+
+  <!-- Velvet rope foreground -->
+  <path d="M35 520 Q170 485 328 505" fill="none" stroke="#c51b58" stroke-width="8"/>
+  <path d="M35 520 Q170 485 328 505" fill="none" stroke="#ff9ec5" stroke-width="2" stroke-dasharray="17 10"/>
+  <circle cx="35" cy="520" r="13" fill="#ffd34f"/>
+  <circle cx="328" cy="505" r="13" fill="#ffd34f"/>
+
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">
+    WHEN THE ONLY MODEL IN THE CLUB IS ALREADY DANCING WITH ITSELF
+  </text>
+</svg>

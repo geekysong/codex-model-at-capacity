@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152b"/>
+      <stop offset="1" stop-color="#090914"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4fd8"/>
+      <stop offset="1" stop-color="#6df7ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 455 Q180 430 360 455 T800 450 V600 H0Z" fill="#111020"/>
+  <g opacity=".35" fill="#6df7ff">
+    <circle cx="70" cy="95" r="2"/><circle cx="150" cy="160" r="2"/><circle cx="710" cy="120" r="2"/>
+    <circle cx="620" cy="65" r="2"/><circle cx="750" cy="250" r="2"/><circle cx="40" cy="270" r="2"/>
+  </g>
+
+  <text x="400" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#fff">
+    CODEX AFTER DARK
+  </text>
+  <text x="400" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="#ff79df">
+    THE EXCLUSIVE MODEL CLUB
+  </text>
+
+  <!-- Club facade -->
+  <rect x="245" y="112" width="505" height="325" rx="18" fill="#201b39" stroke="#6df7ff" stroke-width="4"/>
+  <path d="M260 205 H735" stroke="#ff4fd8" stroke-width="5" filter="url(#glow)"/>
+  <rect x="335" y="130" width="325" height="62" rx="12" fill="#090914" stroke="#ff4fd8" stroke-width="3"/>
+  <text x="497" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="35" fill="#fff" filter="url(#glow)">FULL</text>
+  <text x="497" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#6df7ff">NO MORE MODELS TONIGHT</text>
+
+  <!-- dance floor -->
+  <rect x="285" y="230" width="425" height="177" rx="12" fill="#0c1022"/>
+  <g opacity=".7" fill="url(#neon)">
+    <circle cx="350" cy="300" r="7"/><circle cx="420" cy="350" r="7"/><circle cx="520" cy="285" r="7"/><circle cx="630" cy="350" r="7"/>
+  </g>
+  <path d="M300 390 Q400 330 500 390 T700 390" fill="none" stroke="#6df7ff" stroke-width="3" opacity=".45"/>
+
+  <!-- lone model inside -->
+  <g transform="translate(560 270)">
+    <rect x="0" y="35" width="82" height="76" rx="13" fill="#8b9cff" stroke="#d9ddff" stroke-width="3"/>
+    <rect x="15" y="0" width="52" height="45" rx="10" fill="#aab8ff" stroke="#d9ddff" stroke-width="3"/>
+    <circle cx="31" cy="22" r="5" fill="#15152b"/><circle cx="51" cy="22" r="5" fill="#15152b"/>
+    <path d="M29 34 Q41 42 53 34" fill="none" stroke="#15152b" stroke-width="3"/>
+    <text x="41" y="83" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#11142b">MODEL 1</text>
+  </g>
+
+  <!-- Robot bouncer -->
+  <g transform="translate(210 250)">
+    <ellipse cx="48" cy="160" rx="66" ry="15" fill="#000" opacity=".5"/>
+    <rect x="8" y="58" width="80" height="105" rx="18" fill="#626a82" stroke="#d5dbef" stroke-width="4"/>
+    <rect x="18" y="70" width="60" height="34" rx="8" fill="#101326" stroke="#6df7ff" stroke-width="3"/>
+    <circle cx="35" cy="87" r="6" fill="#ff4fd8" filter="url(#glow)"/><circle cx="61" cy="87" r="6" fill="#ff4fd8" filter="url(#glow)"/>
+    <rect x="25" y="112" width="46" height="8" rx="4" fill="#d5dbef"/>
+    <rect x="20" y="0" width="56" height="65" rx="16" fill="#77819a" stroke="#d5dbef" stroke-width="4"/>
+    <path d="M48 0 V-16" stroke="#d5dbef" stroke-width="4"/><circle cx="48" cy="-22" r="7" fill="#ff4fd8" filter="url(#glow)"/>
+    <path d="M8 82 L-25 110 M88 82 L122 72" stroke="#d5dbef" stroke-width="12" stroke-linecap="round"/>
+    <path d="M10 160 L0 192 M86 160 L99 192" stroke="#d5dbef" stroke-width="13" stroke-linecap="round"/>
+    <text x="48" y="145" text-anchor="middle" font-family="Arial" font-size="10" font-weight="900" fill="#11142b">BOUNCER.EXE</text>
+  </g>
+
+  <!-- velvet rope -->
+  <g stroke="#d52f68" stroke-width="8" fill="none">
+    <path d="M126 417 Q220 365 300 420"/>
+  </g>
+  <g fill="#ffd36d" stroke="#fff1b0" stroke-width="3">
+    <rect x="108" y="400" width="15" height="62" rx="4"/><rect x="292" y="400" width="15" height="62" rx="4"/>
+    <circle cx="115" cy="399" r="9"/><circle cx="299" cy="399" r="9"/>
+  </g>
+
+  <!-- queue of tired developers -->
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(26 365)">
+      <circle cx="42" cy="20" r="22" fill="#d89b76"/><path d="M22 17 Q42 -7 64 15" fill="#413040"/>
+      <rect x="18" y="44" width="48" height="62" rx="12" fill="#4e85c5"/><path d="M29 74 h27" stroke="#fff" stroke-width="5"/>
+      <path d="M20 107 l-12 30 M63 107 l13 30" stroke="#d89b76" stroke-width="10" stroke-linecap="round"/>
+      <text x="42" y="160" text-anchor="middle" font-size="12" fill="#c8c8e8">dev #1</text>
+    </g>
+    <g transform="translate(105 375)">
+      <circle cx="42" cy="20" r="22" fill="#8d5c43"/><path d="M20 14 Q42 -12 66 14" fill="#201b27"/>
+      <rect x="18" y="44" width="48" height="62" rx="12" fill="#d66b58"/><path d="M28 73 h28 M30 84 h24" stroke="#ffd36d" stroke-width="4"/>
+      <path d="M20 107 l-12 30 M63 107 l13 30" stroke="#8d5c43" stroke-width="10" stroke-linecap="round"/>
+      <text x="42" y="160" text-anchor="middle" font-size="12" fill="#c8c8e8">dev #2</text>
+    </g>
+    <g transform="translate(0 470)">
+      <path d="M0 20 Q35 0 70 20" stroke="#6df7ff" stroke-width="4" fill="none"/>
+      <text x="10" y="48" font-size="15" fill="#ffdf7a">…and 847 more developers</text>
+    </g>
+  </g>
+
+  <!-- melting hamster-wheel servers -->
+  <g transform="translate(505 462)">
+    <ellipse cx="0" cy="52" rx="62" ry="16" fill="#000" opacity=".5"/>
+    <circle cx="0" cy="0" r="46" fill="#30364f" stroke="#9aa5c7" stroke-width="5"/>
+    <circle cx="0" cy="0" r="29" fill="none" stroke="#ff79df" stroke-width="5"/>
+    <path d="M-28 18 Q0 37 28 18" fill="none" stroke="#6df7ff" stroke-width="5"/>
+    <rect x="-22" y="-12" width="44" height="18" rx="5" fill="#6df7ff"/>
+    <path d="M-35 48 Q-20 78 -5 57 Q8 85 23 58 Q38 78 50 48" fill="#ff8a4c"/>
+    <text x="0" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="#ffb77a">SERVER FARM (OVERHEATED)</text>
+  </g>
+  <g transform="translate(670 475)">
+    <rect x="-35" y="-28" width="70" height="58" rx="8" fill="#343b55" stroke="#9aa5c7" stroke-width="4"/>
+    <circle cx="-15" cy="-7" r="5" fill="#ff4fd8"/><circle cx="4" cy="-7" r="5" fill="#6df7ff"/>
+    <path d="M-20 14 Q0 28 20 14" stroke="#ff8a4c" stroke-width="6" fill="none"/>
+    <path d="M-35 30 Q-18 54 0 32 Q15 58 32 31" fill="#ff8a4c"/>
+  </g>
+
+  <!-- caption -->
+  <rect x="82" y="535" width="636" height="43" rx="12" fill="#090914" stroke="#ff4fd8" stroke-width="2"/>
+  <text x="400" y="563" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#fff">
+    “Selected model is at capacity.” — The bouncer has one VIP and zero chill.
+  </text>
+</svg>

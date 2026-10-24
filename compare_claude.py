@@ -32,7 +32,7 @@ PROMPT = (
     "exclusive club where only one model got in — pick ONE scene and make it funny. "
     'Include inside the SVG a bold title and a caption containing the words "at capacity". '
     "Output ONLY the SVG code: no markdown fences, no explanation, no text outside the "
-    "<svg>...</svg> document."
+    "<svg>...</svg> document. Keep the SVG compact (under 2500 tokens)."
 )
 
 

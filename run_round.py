@@ -45,6 +45,15 @@ PROMPT = (
     "no text outside the <svg>...</svg> document."
 )
 
+# The small cross-provider panel on the site compares only these four pairs.
+# Claude outputs are produced separately by compare_claude.py via Anthropic's API.
+PAIRINGS = [
+    ("gpt-6-astra", "claude-fable-5-1", "Fable 5.1"),
+    ("gpt-6.1-sol", "claude-opus-5-5", "Opus 5.5"),
+    ("gpt-6-luna", "claude-haiku-5-5", "Haiku 5.5"),
+    ("gpt-5.6-terra", "claude-sonnet-5-5", "Sonnet 5.5"),
+]
+
 
 def run_model(model: str, round_id: str) -> dict:
     env = dict(os.environ)
@@ -158,6 +167,25 @@ def build_index(records: list[dict]) -> str:
             f'<span class="state {"pass" if state == "PASS" else "fail"}">{state}</span></div>'
             f'<small>{r["duration_s"] or "—"}s · {r["total_tokens"] or "—"} tokens</small></figcaption></figure>'
         )
+    pair_cards = []
+    comparison_root = REPO / "comparisons"
+    comparison_files = sorted(comparison_root.glob("*/claude-*/claude.svg")) if comparison_root.exists() else []
+    for codex_model, claude_id, claude_label in PAIRINGS:
+        codex = next((r for r in latest_recs if r["model"] == codex_model and r.get("svg")), None)
+        claude_paths = [p for p in comparison_files if p.parent.name == claude_id]
+        claude = claude_paths[-1] if claude_paths else None
+        if not codex and not claude:
+            continue
+        left = (f'<img src="{html.escape(codex["svg"])}" alt="{html.escape(codex_model)}" loading="lazy">'
+                if codex else '<div class="noart">No Codex image</div>')
+        if claude:
+            rel = claude.relative_to(REPO).as_posix()
+            right = f'<img src="{html.escape(rel)}" alt="{html.escape(claude_label)}" loading="lazy">'
+        else:
+            right = '<div class="noart">No Claude image yet</div>'
+        pair_cards.append(f'<article class="pair"><div><small>CODEX · {html.escape(codex_model)}</small>{left}</div>'
+                          f'<div><small>CLAUDE API · {html.escape(claude_label)}</small>{right}</div></article>')
+    prompt_text = html.escape(PROMPT)
     payload = html.escape(json.dumps(sorted(records, key=lambda x: (x["round"], x["time_sgt"]), reverse=True), ensure_ascii=False), quote=False)
     # The JSON is inserted into a script tag; escaping '<' prevents a data value from closing it.
     payload = payload.replace("&lt;", "\\u003c").replace("&gt;", "\\u003e").replace("&amp;", "&")
@@ -177,6 +205,7 @@ a{{color:var(--cyan)}} .links{{white-space:nowrap}} .links a{{border:1px solid v
 .metrics{{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}} .metric{{padding:14px 16px;border-left:2px solid var(--cyan);background:#0e151e;border-radius:10px}} .metric b{{display:block;font-size:25px;letter-spacing:-.04em}} .metric small,.muted{{color:var(--muted)}}
 .section-head{{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:32px 0 12px}} h2{{font-size:20px;margin:0}} .section-head p{{color:var(--muted);margin:0}}
 .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}} .card{{background:#0e151e;border:1px solid var(--line);border-radius:12px;margin:0;overflow:hidden}} .art{{aspect-ratio:4/3;background:#fff;display:grid;place-items:center}} .card img{{width:100%;height:100%;object-fit:contain;display:block}} .card figcaption{{padding:11px 13px}} .card figcaption div{{display:flex;justify-content:space-between;gap:8px}} .card small{{color:var(--muted)}} .state{{font:700 10px ui-monospace,monospace;letter-spacing:.08em}} .pass{{color:var(--green)}} .fail{{color:var(--red)}} .noart{{padding:20px;text-align:center;color:var(--red)}} .noart small{{display:block;color:var(--muted);margin-top:8px}}
+.pairs{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}} .pair{{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#0e151e;border:1px solid var(--line);border-radius:12px;padding:9px}} .pair small{{display:block;color:var(--muted);font:10px ui-monospace,monospace;margin:2px 3px 7px}} .pair img{{width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;border-radius:7px;display:block}} details summary{{cursor:pointer;color:var(--cyan);font-weight:700}} .prompt{{white-space:pre-wrap;color:#c8d5e0;background:#0b1118;border:1px solid var(--line);padding:14px;border-radius:8px;font:12px/1.55 ui-monospace,monospace;margin:14px 0 0}}
 .chart{{display:flex;gap:8px;align-items:flex-end;height:150px;padding:14px 4px 0;overflow:auto}} .bar-wrap{{min-width:42px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px}} .bar{{width:26px;min-height:3px;background:linear-gradient(#6ee7f9,#347d9a);border-radius:5px 5px 2px 2px}} .bar.zero{{background:var(--red)}} .bar-label{{color:var(--muted);font:10px ui-monospace,monospace;writing-mode:vertical-rl;transform:rotate(180deg)}}
 .toolbar{{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}} input,select{{background:#0b1118;border:1px solid var(--line);border-radius:8px;color:var(--ink);padding:9px 11px;font:inherit}} input{{min-width:240px;flex:1}} .table-wrap{{overflow:auto}} table{{border-collapse:collapse;width:100%;font-size:12px;min-width:1000px}} th,td{{border-bottom:1px solid #202b38;padding:9px 8px;text-align:left;vertical-align:top}} th{{color:var(--muted);font-size:11px;letter-spacing:.04em;text-transform:uppercase;position:sticky;top:0;background:#121923}} td.n{{text-align:right;font-variant-numeric:tabular-nums}} td.errtxt{{color:var(--red);max-width:300px;word-break:break-word}} .pager{{display:flex;justify-content:space-between;align-items:center;margin-top:12px;color:var(--muted)}} button{{background:#172331;border:1px solid var(--line);border-radius:7px;color:var(--ink);padding:7px 11px;cursor:pointer}} button:disabled{{opacity:.4;cursor:not-allowed}}
 @media(max-width:760px){{main{{padding:24px 14px 48px}}header{{display:block}}.links{{margin-top:18px}}.metrics{{grid-template-columns:repeat(2,1fr)}}.panel{{padding:14px}}}}
@@ -184,6 +213,8 @@ a{{color:var(--cyan)}} .links{{white-space:nowrap}} .links a{{border:1px solid v
 <header><div><div class="eyebrow">PUBLIC ACCOUNT MONITOR · 5 MINUTE CENSUS</div><h1>When the door says <span>at capacity</span>.</h1><p class="lede">One Codex account, eight models in parallel, one attempt each. The SVGs are the probe; timestamps, latency, token drift and failures are the evidence.</p></div><div class="links"><a href="stats.json">raw stats.json</a><a href="https://github.com/geekysong/codex-model-at-capacity">source ↗</a></div></header>
 <section class="metrics"><div class="metric"><small>Latest round</small><b>{ok_n}/{len(latest_recs)}</b><small>models returned an SVG</small></div><div class="metric"><small>All attempts</small><b>{attempts}</b><small>{len(rounds)} rounds · {all_ok / attempts * 100 if attempts else 0:.1f}% success</small></div><div class="metric"><small>Median latency</small><b>{median if median is not None else "—"}<small> s</small></b><small>across recorded attempts</small></div><div class="metric"><small>Last seen</small><b style="font-size:16px">{latest or "—"}</b><small>{updated}</small></div></section>
 <section class="panel"><div class="section-head"><h2>Latest round · {latest or "—"}</h2><p>{ok_n}/{len(latest_recs)} passed · once per model · no retries</p></div><div class="grid">{''.join(cards)}</div></section>
+<section class="panel"><div class="section-head"><h2>Cross-provider pairs</h2><p>Codex subscription vs Claude API · same prompt</p></div><div class="pairs">{''.join(pair_cards) or '<p class="muted">Claude comparison images are not available yet.</p>'}</div></section>
+<section class="panel"><details><summary>Probe prompt used for every image</summary><pre class="prompt">{prompt_text}</pre></details></section>
 <section class="panel"><div class="section-head"><h2>Capacity signal by round</h2><p>bar height = successful attempts</p></div><div id="chart" class="chart"></div></section>
 <section class="panel"><div class="section-head"><h2>Full attempt log</h2><p>raw records, searchable and paginated</p></div><div class="toolbar"><input id="search" type="search" placeholder="Filter model, status, error or round…"><select id="model"><option value="">All models</option></select><select id="status"><option value="">All statuses</option><option value="ok">ok</option><option value="error">error</option></select></div><div class="table-wrap"><table><thead><tr><th>Time (SGT)</th><th>Round</th><th>Model</th><th>Status</th><th>Duration</th><th>Input</th><th>Cached</th><th>Output</th><th>Reasoning</th><th>Total</th><th>Error</th><th>SVG</th></tr></thead><tbody id="tbody"></tbody></table></div><div class="pager"><span id="count"></span><span><button id="prev">Previous</button> <button id="next">Next</button></span></div></section>
 <section class="panel muted"><b>为什么做这件事？</b> 重要任务不会交给一个疑似降智的 Codex 去做；这里的 SVG 只是低风险探针。额度没怎么用却反复收到 “Selected model is at capacity”，同时怀疑模型质量悄悄下降。官方没有可查记录，所以这个账号每 5 分钟公开留下一份体检档案：错误率暴露容量问题，耗时、token 用量和任务失败是降智的早期信号。<br><span>In October 2026 this account began seeing unexplained capacity refusals and suspected silent degradation. This page makes the evidence reproducible: the Raspberry Pi runs <code>run_round.py</code>, appends to <code>stats.json</code>, rebuilds this page, and publishes both branches. A separate subjective quality series is planned: Claude Code will score fixed benchmark answers with a versioned rubric. No subjective score is shown until those reviews exist.</span></section>

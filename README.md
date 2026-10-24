@@ -18,13 +18,6 @@ capacity problem; drifting durations, token patterns and sudden task failures
 are the early-warning signal for degradation. The satirical SVG is just the
 probe — the data is the point.
 
-中文：2026 年 10 月，这个账号用 Codex 时频繁遇到两个问题：一是额度明明没用多少，
-却反复报 “Selected model is at capacity”；二是怀疑模型「降智」——回答质量悄悄变差。
-两个问题官方都不留任何可查的记录。这个项目就给这个账号做持续、公开的体检：
-每 5 分钟用同一个小任务轮询每个模型，如实记录耗时、token 和错误。错误率上升
-说明有容量问题；耗时/token 漂移、任务突然失败，就是降智的早期信号。讽刺 SVG
-只是探针，数据才是本体。
-
 ## How it works
 
 Every 5 minutes, a job on a home Raspberry Pi asks each OpenAI Codex model —
