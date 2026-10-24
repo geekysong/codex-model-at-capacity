@@ -75,12 +75,19 @@ def run_model(model: str, round_id: str) -> dict:
     env = dict(os.environ)
     env["PATH"] = str(Path.home() / ".local" / "bin") + ":" + env.get("PATH", "")
     started = datetime.now(SGT)
+    request_timestamp = started.isoformat(timespec="microseconds")
+    request_prompt = (
+        f"Request timestamp: {request_timestamp}\n"
+        "This timestamp is request metadata only; do not include it in the SVG.\n\n"
+        + PROMPT
+    )
     t0 = time.monotonic()
     rec = {
         "round": round_id,
         "variant": PROMPT_VARIANT,
         "prompt_date": PROMPT_DATE,
         "prompt_sha": PROMPT_SHA,
+        "request_timestamp": request_timestamp,
         "time_sgt": started.strftime("%Y-%m-%d %H:%M:%S"),
         "model": model,
         "status": "error",
@@ -100,7 +107,7 @@ def run_model(model: str, round_id: str) -> dict:
                 "-m", model,
                 "-c", 'model_reasoning_effort="low"',
                 "--skip-git-repo-check",
-                PROMPT,
+                request_prompt,
             ],
             capture_output=True, text=True, timeout=PER_MODEL_TIMEOUT,
             cwd="/tmp", env=env, stdin=subprocess.DEVNULL,
