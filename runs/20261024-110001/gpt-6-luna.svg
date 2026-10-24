@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1f4e79"/>
+    </marker>
+    <marker id="dim" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <!-- seesaw plank -->
+  <rect x="105" y="198" width="390" height="24" rx="4" fill="#c58b45" stroke="#5b3a1e" stroke-width="3"/>
+  <line x1="300" y1="185" x2="300" y2="235" stroke="#333" stroke-width="3"/>
+
+  <!-- pivot -->
+  <path d="M270 285 L300 225 L330 285 Z" fill="#777" stroke="#333" stroke-width="3"/>
+  <line x1="258" y1="285" x2="342" y2="285" stroke="#333" stroke-width="4"/>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">pivot</text>
+
+  <!-- left mass and hanger -->
+  <line x1="200" y1="222" x2="200" y2="265" stroke="#333" stroke-width="3"/>
+  <rect x="172" y="265" width="56" height="48" rx="5" fill="#d9534f" stroke="#8b1e1e" stroke-width="3"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">6 kg</text>
+
+  <!-- right mass and hanger -->
+  <line x1="450" y1="222" x2="450" y2="265" stroke="#333" stroke-width="3"/>
+  <rect x="422" y="265" width="56" height="48" rx="5" fill="#4f81bd" stroke="#1f4e79" stroke-width="3"/>
+  <text x="450" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">4 kg</text>
+
+  <!-- force arrows -->
+  <line x1="200" y1="125" x2="200" y2="188" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="200" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f4e79">6g downward</text>
+  <line x1="450" y1="125" x2="450" y2="188" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="450" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f4e79">4g downward</text>
+
+  <!-- distance dimensions -->
+  <line x1="200" y1="345" x2="300" y2="345" stroke="#555" stroke-width="2" marker-start="url(#dim)" marker-end="url(#dim)"/>
+  <line x1="200" y1="325" x2="200" y2="355" stroke="#555" stroke-width="2"/>
+  <line x1="300" y1="325" x2="300" y2="355" stroke="#555" stroke-width="2"/>
+  <text x="250" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#333">2 m</text>
+
+  <line x1="300" y1="345" x2="450" y2="345" stroke="#555" stroke-width="2" marker-start="url(#dim)" marker-end="url(#dim)"/>
+  <line x1="450" y1="325" x2="450" y2="355" stroke="#555" stroke-width="2"/>
+  <text x="375" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#333">x = 3 m</text>
+
+  <!-- equation and result -->
+  <text x="300" y=" fifty" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#222">6 × 2 = 4 × 3</text>
+  <text x="300" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#287233">BALANCED</text>
+</svg>

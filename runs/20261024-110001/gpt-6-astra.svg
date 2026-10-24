@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f4e79"/>
+    </marker>
+    <style>
+      .label { font: 18px Arial, sans-serif; fill: #222; }
+      .small { font: 16px Arial, sans-serif; fill: #222; }
+      .equation { font: bold 22px Arial, sans-serif; fill: #222; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <!-- level seesaw beam -->
+  <rect x="100" y="188" width="400" height="24" rx="5" fill="#b8793b" stroke="#6b421f" stroke-width="3"/>
+  <line x1="300" y1="175" x2="300" y2="225" stroke="#333" stroke-width="3"/>
+
+  <!-- pivot -->
+  <polygon points="300,212 265,275 335,275" fill="#777" stroke="#333" stroke-width="3"/>
+  <line x1="245" y1="275" x2="355" y2="275" stroke="#333" stroke-width="5"/>
+  <text x="300" y="302" text-anchor="middle" class="small">pivot</text>
+
+  <!-- left suspension and mass -->
+  <line x1="150" y1="212" x2="150" y2="270" stroke="#333" stroke-width="3"/>
+  <rect x="120" y="270" width="60" height="48" rx="5" fill="#8ecae6" stroke="#1f4e79" stroke-width="3"/>
+  <text x="150" y="300" text-anchor="middle" class="label">6 kg</text>
+
+  <!-- right suspension and mass -->
+  <line x1="450" y1="212" x2="450" y2="270" stroke="#333" stroke-width="3"/>
+  <rect x="420" y="270" width="60" height="48" rx="5" fill="#ffb703" stroke="#9a6700" stroke-width="3"/>
+  <text x="450" y="300" text-anchor="middle" class="label">4 kg</text>
+
+  <!-- force arrows -->
+  <line x1="150" y1="250" x2="150" y2="225" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="150" y="345" text-anchor="middle" class="small">weight force</text>
+  <line x1="450" y1="250" x2="450" y2="225" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="450" y="345" text-anchor="middle" class="small">weight force</text>
+
+  <!-- distance labels -->
+  <line x1="150" y1="155" x2="300" y2="155" stroke="#333" stroke-width="2"/>
+  <line x1="150" y1="148" x2="150" y2="162" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="148" x2="300" y2="162" stroke="#333" stroke-width="2"/>
+  <text x="225" y="143" text-anchor="middle" class="label">2 m</text>
+
+  <line x1="300" y1="155" x2="450" y2="155" stroke="#333" stroke-width="2"/>
+  <line x1="450" y1="148" x2="450" y2="162" stroke="#333" stroke-width="2"/>
+  <text x="375" y="143" text-anchor="middle" class="label">x = 3 m</text>
+
+  <!-- balance indicator -->
+  <text x="300" y="55" text-anchor="middle" class="equation">6 × 2 = 4 × 3</text>
+  <text x="300" y="85" text-anchor="middle" class="equation" fill="#237a3b">balanced</text>
+</svg>
