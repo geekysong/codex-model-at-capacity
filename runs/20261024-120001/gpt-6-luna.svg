@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f2937"/>
+    </marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #111827; }
+      .label { font-size: 18px; }
+      .small { font-size: 16px; }
+      .bold { font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <!-- Level seesaw -->
+  <rect x="100" y="180" width="400" height="20" rx="8" fill="#b77938" stroke="#5b3718" stroke-width="3"/>
+  <line x1="100" y1="190" x2="500" y2="190" stroke="#f4c27a" stroke-width="3"/>
+
+  <!-- Pivot -->
+  <polygon points="300,200 265,270 335,270" fill="#64748b" stroke="#334155" stroke-width="3"/>
+  <circle cx="300" cy="190" r="8" fill="#f8fafc" stroke="#334155" stroke-width="3"/>
+  <text x="300" y="296" text-anchor="middle" class="label bold">pivot</text>
+
+  <!-- Hanging masses -->
+  <line x1="180" y1="200" x2="180" y2="270" stroke="#334155" stroke-width="3"/>
+  <rect x="145" y="270" width="70" height="48" rx="6" fill="#60a5fa" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="180" y="300" text-anchor="middle" class="label bold">6 kg</text>
+
+  <line x1="420" y1="200" x2="420" y2="270" stroke="#334155" stroke-width="3"/>
+  <rect x="385" y="270" width="70" height="48" rx="6" fill="#fbbf24" stroke="#b45309" stroke-width="3"/>
+  <text x="420" y="300" text-anchor="middle" class="label bold">4 kg</text>
+
+  <!-- Force arrows -->
+  <line x1="180" y1="245" x2="180" y2="265" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="180" y="235" text-anchor="middle" class="small">F = 6g</text>
+
+  <line x1="420" y1="245" x2="420" y2="265" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="420" y="235" text-anchor="middle" class="small">F = 4g</text>
+
+  <!-- Distance dimensions -->
+  <line x1="180" y1="155" x2="300" y2="155" stroke="#111827" stroke-width="2"
+        marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line x1="180" y1="160" x2="180" y2="180" stroke="#111827" stroke-width="2"/>
+  <line x1="300" y1="160" x2="300" y2="180" stroke="#111827" stroke-width="2"/>
+  <text x="240" y="145" text-anchor="middle" class="label">2 m</text>
+
+  <line x1="300" y1="155" x2="420" y2="155" stroke="#111827" stroke-width="2"
+        marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line x1="420" y1="160" x2="420" y2="180" stroke="#111827" stroke-width="2"/>
+  <text x="360" y="145" text-anchor="middle" class="label">x = 3 m</text>
+
+  <!-- Equilibrium statement -->
+  <text x="300" y=" fifty" text-anchor="middle" class="label bold">balanced</text>
+  <text x="300" y=" ninety" text-anchor="middle" class="label">6 × 2 = 4 × 3</text>
+</svg>
