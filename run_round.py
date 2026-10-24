@@ -29,14 +29,16 @@ MODELS = [
     "gpt-6-luna",
     "gpt-5.6-terra",
 ]
-PER_MODEL_TIMEOUT = 180  # seconds; hard cap, no retry after this
+PER_MODEL_TIMEOUT = 600  # seconds; hard cap, no retry after this
 PROMPTS = {
 "pelican": (
     "Draw a satirical cartoon as ONE single self-contained SVG document "
     "(viewBox=\"0 0 800 600\"). Theme: a pelican riding a bicycle. Make it funny "
     "and visually expressive, with a clear single scene, readable characters, and "
-    "a bold title plus a short caption about the pelican on the bicycle. Output ONLY "
-    "the SVG code: no markdown fences, no explanation, no text outside the document."
+    "a bold title plus a short caption about the pelican on the bicycle. Make it an "
+    "actual looping SVG animation using embedded SMIL or CSS animation: animate the "
+    "bicycle wheels and a small pedaling or bobbing motion while keeping text readable. "
+    "Output ONLY the SVG code: no markdown fences, no explanation, no text outside the document."
 ),
 "substitution": (
     "Draw a satirical cartoon as ONE single self-contained SVG document "
@@ -49,8 +51,10 @@ PROMPTS = {
     "Create one self-contained SVG with viewBox=\"0 0 600 400\" showing a level "
     "seesaw in static equilibrium. A 6 kg mass hangs 2 m left of the pivot, and a "
     "4 kg mass hangs x m right. Solve and show x=3 m. Draw the pivot, force arrows, "
-    "distance labels, torque equation 6×2 = 4×3, and the word balanced. Keep the "
-    "seesaw level, labels readable, and output only the SVG."
+    "distance labels, torque equation 6×2 = 4×3, and the word balanced. Make it an "
+    "actual looping SVG animation using embedded SMIL or CSS animation: keep the "
+    "seesaw level while gently pulsing the force arrows or weights to visualize balance. "
+    "Keep labels readable, and output only the SVG."
 ),
 }
 PROMPT, PROMPT_DATE, PROMPT_SHA = load_daily_prompt()
@@ -258,7 +262,7 @@ a{{color:var(--cyan)}} .links{{white-space:nowrap}} .links a{{border:1px solid v
 .pairs{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}} .pair{{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#0e151e;border:1px solid var(--line);border-radius:12px;padding:9px}} .pair small{{display:block;color:var(--muted);font:10px ui-monospace,monospace;margin:2px 3px 7px}} .pair .cost{{color:var(--amber);margin:6px 3px 0}} .pair img{{width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;border-radius:7px;display:block}} details summary{{cursor:pointer;color:var(--cyan);font-weight:700}} .prompt{{white-space:pre-wrap;color:#c8d5e0;background:#0b1118;border:1px solid var(--line);padding:14px;border-radius:8px;font:12px/1.55 ui-monospace,monospace;margin:14px 0 0}}
 .chart{{display:flex;gap:8px;align-items:flex-end;height:150px;padding:14px 4px 0;overflow:auto}} .bar-wrap{{min-width:42px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px}} .bar{{width:26px;min-height:3px;background:linear-gradient(#6ee7f9,#347d9a);border-radius:5px 5px 2px 2px}} .bar.zero{{background:var(--red)}} .bar-label{{color:var(--muted);font:10px ui-monospace,monospace;writing-mode:vertical-rl;transform:rotate(180deg)}}
 .toolbar{{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}} input,select{{background:#0b1118;border:1px solid var(--line);border-radius:8px;color:var(--ink);padding:9px 11px;font:inherit}} input{{min-width:240px;flex:1}} .table-wrap{{overflow:auto}} table{{border-collapse:collapse;width:100%;font-size:12px;min-width:1000px}} th,td{{border-bottom:1px solid #202b38;padding:9px 8px;text-align:left;vertical-align:top}} th{{color:var(--muted);font-size:11px;letter-spacing:.04em;text-transform:uppercase;position:sticky;top:0;background:#121923}} td.n{{text-align:right;font-variant-numeric:tabular-nums}} td.errtxt{{color:var(--red);max-width:300px;word-break:break-word}} .pager{{display:flex;justify-content:space-between;align-items:center;margin-top:12px;color:var(--muted)}} button{{background:#172331;border:1px solid var(--line);border-radius:7px;color:var(--ink);padding:7px 11px;cursor:pointer}} button:disabled{{opacity:.4;cursor:not-allowed}}
-@media(max-width:760px){{main{{padding:24px 14px 48px}}header{{display:block}}.links{{margin-top:18px}}.metrics{{grid-template-columns:repeat(2,1fr)}}.panel{{padding:14px}}}}
+@media(max-width:760px){{main{{padding:24px 14px 48px}}header{{display:block}}.links{{margin-top:18px}}.metrics{{grid-template-columns:repeat(2,1fr)}}.panel{{padding:14px}}.pairs{{grid-template-columns:1fr}}}}
 </style></head><body><main>
 <header><div><div class="eyebrow">PUBLIC ACCOUNT MONITOR · 5 MINUTE CENSUS</div><h1>When the door says <span>at capacity</span>.</h1><p class="lede">One Codex account, eight models in parallel, one attempt each. The SVGs are the probe; timestamps, latency, token drift and failures are the evidence.</p></div><div class="links"><a href="stats.json">raw stats.json</a><a href="https://github.com/geekysong/codex-model-at-capacity">source ↗</a></div></header>
 <section class="metrics"><div class="metric"><small>Latest round</small><b>{ok_n}/{len(latest_recs)}</b><small>models returned an SVG</small></div><div class="metric"><small>All attempts</small><b>{attempts}</b><small>{len(rounds)} rounds · {all_ok / attempts * 100 if attempts else 0:.1f}% success</small></div><div class="metric"><small>Median latency</small><b>{median if median is not None else "—"}<small> s</small></b><small>across recorded attempts</small></div><div class="metric"><small>Last seen</small><b style="font-size:16px">{latest or "—"}</b><small>{updated}</small></div></section>

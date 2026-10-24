@@ -95,7 +95,7 @@ Claude runs once per day as the control group:
 ```
 
 The Codex runner acquires `.round.lock`, invokes the four paired models once in
-parallel with reasoning effort `low`, waits at most 180 seconds per model, appends the results, rebuilds
+parallel with reasoning effort `low`, waits at most 600 seconds per model, appends the results, rebuilds
 `index.html`, writes the round metadata, then commits and pushes `main` and
 `main:gh-pages`. Push failures are left for the next round to retry. To run a
 local page build without making model calls, use:

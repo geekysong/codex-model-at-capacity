@@ -37,8 +37,10 @@ PROMPTS = {
     "Draw a satirical cartoon as ONE single self-contained SVG document "
     '(viewBox="0 0 800 600"). Theme: a pelican riding a bicycle. Make it funny '
     "and visually expressive, with a clear single scene, readable characters, and "
-    "a bold title plus a short caption about the pelican on the bicycle. Output ONLY "
-    "the SVG code: no markdown fences, no explanation, no text outside the document. "
+    "a bold title plus a short caption about the pelican on the bicycle. Make it an "
+    "actual looping SVG animation using embedded SMIL or CSS animation: animate the "
+    "bicycle wheels and a small pedaling or bobbing motion while keeping text readable. "
+    "Output ONLY the SVG code: no markdown fences, no explanation, no text outside the document. "
     "Keep the SVG compact (under 2500 tokens)."
 ),
 "substitution": (
@@ -52,8 +54,10 @@ PROMPTS = {
     "Create one self-contained SVG with viewBox=\"0 0 600 400\" showing a level "
     "seesaw in static equilibrium. A 6 kg mass hangs 2 m left of the pivot, and a "
     "4 kg mass hangs x m right. Solve and show x=3 m. Draw the pivot, force arrows, "
-    "distance labels, torque equation 6×2 = 4×3, and the word balanced. Keep the "
-    "seesaw level, labels readable, and output only the SVG."
+    "distance labels, torque equation 6×2 = 4×3, and the word balanced. Make it an "
+    "actual looping SVG animation using embedded SMIL or CSS animation: keep the "
+    "seesaw level while gently pulsing the force arrows or weights to visualize balance. "
+    "Keep labels readable, and output only the SVG."
 ),
 }
 PROMPT, PROMPT_DATE, PROMPT_SHA = load_daily_prompt()

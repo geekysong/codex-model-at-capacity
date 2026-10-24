@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9edfff"/>
+      <stop offset="1" stop-color="#f7fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59616b"/>
+      <stop offset="1" stop-color="#30363d"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#263238" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#20252b; stroke-width:7; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#20252b; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+      .wheelSpin { transform-box:fill-box; transform-origin:center; animation: spin 1.1s linear infinite; }
+      .rideBob { animation: bob .55s ease-in-out infinite alternate; transform-box:fill-box; transform-origin:center bottom; }
+      .pedal { animation: pedal .55s linear infinite; transform-box:fill-box; transform-origin:center; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0) rotate(-1deg); } to { transform:translateY(-7px) rotate(1deg); } }
+      @keyframes pedal { to { transform:rotate(360deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="90" r="48" fill="#ffe38a" opacity=".85"/>
+  <path d="M0 360 Q120 285 245 355 T500 345 T800 330 V430 H0Z" fill="#91bf80"/>
+  <path d="M0 405 Q160 350 315 405 T610 390 T800 400 V600 H0Z" fill="#659b68"/>
+  <path d="M0 450 Q180 405 350 450 T800 440 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#f4d35e" stroke-width="10" stroke-dasharray="55 35" opacity=".9"/>
+
+  <g fill="#fff" opacity=".9">
+    <path d="M115 120 q18-25 36 0 q25-10 39 12 q-35 18-83 4 q-18-12 8-16z"/>
+    <path d="M500 145 q18-25 36 0 q25-10 39 12 q-35 18-83 4 q-18-12 8-16z"/>
+  </g>
+
+  <g text-anchor="middle" font-family="Arial, Helvetica, sans-serif">
+    <text x="400" y="70" font-size="44" font-weight="900" fill="#20252b" stroke="#fff" stroke-width="9" paint-order="stroke">
+      THE PELICAN EXPRESS
+    </text>
+    <text x="400" y="108" font-size="18" font-weight="700" fill="#20252b">
+      “When your beak is bigger than your basket, improvise.”
+    </text>
+  </g>
+
+  <g transform="translate(0 8)" filter="url(#shadow)">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M210 455 L315 330 L430 455 Z"/>
+      <path d="M315 330 L375 455"/>
+      <path d="M315 330 L285 300"/>
+      <path d="M285 300 L323 295"/>
+      <path d="M430 455 L470 315"/>
+      <path d="M460 315 L490 315"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="ink" fill="#d8f3ff">
+      <circle cx="210" cy="455" r="75"/>
+      <circle cx="430" cy="455" r="75"/>
+    </g>
+    <g class="wheelSpin thin" fill="none">
+      <circle cx="210" cy="455" r="9" fill="#20252b"/>
+      <path d="M210 380 V530 M135 455 H285 M157 402 L263 508 M263 402 L157 508"/>
+    </g>
+    <g class="wheelSpin thin" fill="none">
+      <circle cx="430" cy="455" r="9" fill="#20252b"/>
+      <path d="M430 380 V530 M355 455 H505 M377 402 L483 508 M483 402 L377 508"/>
+    </g>
+
+    <!-- handlebars and seat -->
+    <path d="M272 295 Q300 280 323 295" class="ink" fill="none"/>
+    <path d="M270 290 L300 290" class="ink"/>
+    <path d="M368 300 L402 300" class="ink"/>
+    <path d="M372 292 L398 292" class="ink"/>
+
+    <!-- rotating crank -->
+    <g class="pedal">
+      <circle cx="375" cy="455" r="13" fill="#f5b642" class="ink"/>
+      <path d="M375 455 L397 430 M375 455 L351 477" class="thin" fill="none"/>
+      <path d="M397 430 h18 M351 477 h-18" class="thin" fill="none"/>
+    </g>
+
+    <!-- pelican body and motion -->
+    <g class="rideBob">
+      <ellipse cx="342" cy="260" rx="78" ry="92" fill="#f2f4f5" class="ink"/>
+      <path d="M292 273 Q255 330 300 352 Q338 360 360 316" fill="#d8dde0" class="ink"/>
+      <ellipse cx="340" cy="250" rx="39" ry="52" fill="#fff" class="thin"/>
+      <path d="M362 203 Q405 183 423 218 Q432 243 405 260 Q381 274 358 253" fill="#f2f4f5" class="ink"/>
+      <circle cx="393" cy="219" r="8" fill="#20252b"/>
+      <path d="M409 235 Q477 223 538 252 Q550 259 536 269 Q469 277 406 258Z" fill="#f6a235" class="ink"/>
+      <path d="M425 250 Q475 258 533 255" class="thin" fill="none"/>
+      <path d="M404 265 Q435 303 414 334 Q395 352 370 327" fill="#d9dee1" class="ink"/>
+      <path d="M337 337 L332 407" class="ink" fill="none"/>
+      <path d="M369 337 L378 407" class="ink" fill="none"/>
+      <path d="M320 407 Q333 399 346 407 L350 417 Q327 423 315 415Z" fill="#f6a235" class="ink"/>
+      <path d="M366 407 Q380 399 393 407 L398 417 Q375 423 362 415Z" fill="#f6a235" class="ink"/>
+      <path d="M279 225 Q245 194 265 164" class="ink" fill="none"/>
+      <path d="M265 164 l-18 10 M265 164 l2-22" class="thin" fill="none"/>
+      <path d="M328 222 Q347 204 365 224" class="thin" fill="none"/>
+      <path d="M326 247 Q347 260 368 247" class="thin" fill="none"/>
+      <text x="326" y="294" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" fill="#20252b" transform="rotate(-8 326 294)">WHEEE!</text>
+    </g>
+
+    <!-- absurd cargo -->
+    <g transform="translate(500 235)">
+      <path d="M0 0 h100 l-12 100 H12Z" fill="#f7c948" class="ink"/>
+      <path d="M15 22 h72 M13 48 h69 M10 74 h67" class="thin" fill="none"/>
+      <text x="50" y="125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="900" fill="#20252b">SNACKS</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <rect x="215" y="535" width="370" height="42" rx="21" fill="#fff" stroke="#20252b" stroke-width="5"/>
+    <text x="400" y="562" font-size="20" font-weight="800" fill="#20252b">
+      A beak-first commute, with absolutely no brakes.
+    </text>
+  </g>
+</svg>

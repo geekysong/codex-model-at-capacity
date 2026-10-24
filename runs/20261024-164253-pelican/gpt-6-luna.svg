@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle while carrying an absurdly tiny helmet.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#8ed9f2"/>
+      <stop offset="1" stop-color="#d9f5d2"/>
+    </linearGradient>
+    <linearGradient id="road" x2="0" y2="1">
+      <stop stop-color="#59636c"/>
+      <stop offset="1" stop-color="#313840"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <style>
+      .ink{stroke:#202830;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#202830;stroke-width:9}
+      .spoke{stroke:#202830;stroke-width:3;opacity:.75}
+      .leg{transform-box:fill-box;transform-origin:center;animation:pedal .9s ease-in-out infinite alternate}
+      .body{animation:bob .9s ease-in-out infinite alternate}
+      .roadmark{animation:dash 1.2s linear infinite}
+      @keyframes pedal{from{transform:rotate(-12deg)}to{transform:rotate(15deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+      @keyframes dash{from{transform:translateX(0)}to{transform:translateX(-90px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="685" cy="105" r="55" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 255 Q130 190 270 250 T550 235 T800 250 V360 H0Z" fill="#83bd82"/>
+  <path d="M0 325 Q170 280 330 325 T800 315 V420 H0Z" fill="#5d9a6b"/>
+  <path d="M0 402 H800 V600 H0Z" fill="url(#road)"/>
+  <g class="roadmark" fill="#e9d98e">
+    <rect x="20" y="488" width="72" height="10" rx="5"/>
+    <rect x="160" y="488" width="72" height="10" rx="5"/>
+    <rect x="300" y="488" width="72" height="10" rx="5"/>
+    <rect x="440" y="488" width="72" height="10" rx="5"/>
+    <rect x="580" y="488" width="72" height="10" rx="5"/>
+    <rect x="720" y="488" width="72" height="10" rx="5"/>
+  </g>
+
+  <text x="400" y="70" text-anchor="middle" font-family="Impact,Arial Black,sans-serif" font-size="49" fill="#202830" stroke="#fff4a8" stroke-width="3" paint-order="stroke">PELICAN PEDAL PANIC</text>
+  <text x="400" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="bold" fill="#202830">“A beak-first solution to traffic congestion.”</text>
+
+  <ellipse cx="415" cy="522" rx="250" ry="24" fill="#111820" opacity=".35" filter="url(#shadow)"/>
+
+  <!-- bicycle -->
+  <g>
+    <circle class="wheel" cx="260" cy="430" r="78" fill="#b9e8ef"/>
+    <circle class="wheel" cx="590" cy="430" r="78" fill="#b9e8ef"/>
+    <g>
+      <path class="spoke" d="M260 352V508M182 430H338M205 375L315 485M205 485L315 375"/>
+      <path class="spoke" d="M590 352V508M512 430H668M535 375L645 485M535 485L645 375"/>
+    </g>
+    <path d="M260 430 L350 315 L475 430 L260 430 M350 315 L385 430 M475 430 L530 325" fill="none" class="ink" stroke="#ef6f55"/>
+    <path d="M350 315 L320 284 M530 325 L566 300" class="ink"/>
+    <path d="M302 284 H340 M550 300 H590" class="ink"/>
+    <circle cx="385" cy="430" r="18" fill="#ef6f55" class="ink"/>
+    <g class="leg">
+      <path d="M385 430 L430 465 L448 445" fill="none" class="ink"/>
+      <circle cx="430" cy="465" r="8" fill="#f2c14e" class="ink"/>
+    </g>
+    <path d="M378 430 L335 466 L315 447" fill="none" class="ink"/>
+    <path d="M335 466 L310 466" class="ink"/>
+  </g>
+
+  <!-- pelican -->
+  <g class="body">
+    <ellipse cx="410" cy="270" rx="105" ry="105" fill="#f7f5e9" class="ink"/>
+    <path d="M340 295 Q390 248 460 294 Q438 345 382 345 Q350 335 340 295Z" fill="#dbe7ea" class="ink"/>
+    <path d="M428 198 Q477 157 532 190 Q570 215 551 264 Q531 301 481 285 Q451 270 428 236Z" fill="#f7f5e9" class="ink"/>
+    <path d="M505 207 Q595 205 686 248 Q600 290 500 266 Q478 243 505 207Z" fill="#ef9c55" class="ink"/>
+    <path d="M510 251 Q600 269 679 248" fill="none" class="ink" stroke="#c76b43"/>
+    <circle cx="515" cy="214" r="9" fill="#202830"/>
+    <path d="M449 192 Q476 165 511 181 L523 196 Q485 183 456 210Z" fill="#e94f4f" class="ink"/>
+    <path d="M391 352 L383 425" class="ink"/>
+    <path d="M437 350 L455 425" class="ink"/>
+    <path d="M370 425 L397 425 M444 425 L471 425" class="ink"/>
+    <path d="M360 250 Q390 220 424 240" fill="none" class="ink"/>
+    <path d="M424 276 Q447 292 466 274" fill="none" class="ink"/>
+    <path d="M319 225 Q285 200 266 225 Q293 242 329 246Z" fill="#dbe7ea" class="ink"/>
+    <path d="M320 231 Q291 254 278 286 Q318 282 349 255Z" fill="#c6d9df" class="ink"/>
+    <path d="M396 170 Q390 140 414 121 Q442 132 454 162" fill="#ef9c55" class="ink"/>
+    <text x="390" y="292" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#202830">HONK!</text>
+  </g>
+
+  <!-- absurd helmet and speech -->
+  <path d="M619 168 Q655 127 704 159 L714 188 H622Z" fill="#e94f4f" class="ink"/>
+  <path d="M649 158 Q666 144 688 159" fill="none" class="ink" stroke="#fff4a8"/>
+  <path d="M612 152 Q584 124 553 145 Q575 159 607 166Z" fill="#fff" class="ink"/>
+  <text x="568" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#202830">SAFETY!</text>
+
+  <path d="M93 183 Q108 138 165 151 Q185 157 190 182 Q185 213 143 216 Q105 214 93 183Z" fill="#fff" class="ink"/>
+  <path d="M190 182 L222 194 L190 202Z" fill="#fff" class="ink"/>
+  <text x="142" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#202830">WHO</text>
+  <text x="142" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#202830">NEEDS A CAR?</text>
+</svg>

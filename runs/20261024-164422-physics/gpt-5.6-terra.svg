@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <style>
+    .label{font-family:Arial,sans-serif;fill:#17202a;font-size:20px}
+    .small{font-size:17px}
+    .mass{fill:#4da3ff;stroke:#12395b;stroke-width:3}
+    .arrow{stroke:#d62828;stroke-width:5;stroke-linecap:round;marker-end:url(#arrowhead)}
+    .pulse{animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.72;transform:scaleY(1)}50%{opacity:1;transform:scaleY(1.12)}}
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#d62828"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="300" y="34" text-anchor="middle" class="label" font-size="24">Level Seesaw in Static Equilibrium</text>
+
+  <!-- Seesaw beam -->
+  <rect x="85" y="190" width="430" height="20" rx="8" fill="#c58b45" stroke="#704214" stroke-width="3"/>
+  <line x1="300" y1="180" x2="300" y2="220" stroke="#704214" stroke-width="3"/>
+
+  <!-- Pivot -->
+  <polygon points="300,210 260,285 340,285" fill="#7f8c8d" stroke="#34495e" stroke-width="3"/>
+  <text x="300" y="310" text-anchor="middle" class="label small">pivot</text>
+
+  <!-- Hanging masses -->
+  <g class="pulse" style="transform-origin:145px 190px">
+    <line x1="145" y1="190" x2="145" y2="245" stroke="#17202a" stroke-width="3"/>
+    <rect x="110" y="245" width="70" height="52" rx="8" class="mass"/>
+    <text x="145" y="278" text-anchor="middle" class="label" fill="#ffffff">6 kg</text>
+  </g>
+
+  <g class="pulse" style="transform-origin:455px 190px;animation-delay:1s">
+    <line x1="455" y1="190" x2="455" y2="245" stroke="#17202a" stroke-width="3"/>
+    <rect x="420" y="245" width="70" height="52" rx="8" class="mass"/>
+    <text x="455" y="278" text-anchor="middle" class="label" fill="#ffffff">4 kg</text>
+  </g>
+
+  <!-- Force arrows -->
+  <g class="pulse" style="transform-origin:145px 235px">
+    <line x1="145" y1="215" x2="145" y2="240" class="arrow"/>
+    <text x="145" y="165" text-anchor="middle" class="label small">F = 6g</text>
+  </g>
+  <g class="pulse" style="transform-origin:455px 235px;animation-delay:1s">
+    <line x1="455" y1="215" x2="455" y2="240" class="arrow"/>
+    <text x="455" y="165" text-anchor="middle" class="label small">F = 4g</text>
+  </g>
+
+  <!-- Distance indicators -->
+  <line x1="145" y1="335" x2="300" y2="335" stroke="#34495e" stroke-width="2"/>
+  <line x1="145" y1="327" x2="145" y2="343" stroke="#34495e" stroke-width="2"/>
+  <line x1="300" y1="327" x2="300" y2="343" stroke="#34495e" stroke-width="2"/>
+  <text x="222" y="358" text-anchor="middle" class="label small">2 m</text>
+
+  <line x1="300" y1="335" x2="455" y2="335" stroke="#34495e" stroke-width="2"/>
+  <line x1="455" y1="327" x2="455" y2="343" stroke="#34495e" stroke-width="2"/>
+  <text x="378" y="358" text-anchor="middle" class="label small">x = 3 m</text>
+
+  <!-- Equation and balance -->
+  <text x="300" y=" ninety" text-anchor="middle" class="label" style="font-size:22px">6 × 2 = 4 × 3</text>
+  <text x="300" y="390" text-anchor="middle" class="label" style="font-size:25px;fill:#16803c">BALANCED</text>
+</svg>
