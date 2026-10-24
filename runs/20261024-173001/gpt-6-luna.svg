@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1f2937"/>
+    </marker>
+    <style>
+      .label { font: 18px Arial, sans-serif; fill: #111827; }
+      .title { font: bold 24px Arial, sans-serif; fill: #111827; }
+      .eq { font: bold 22px Arial, sans-serif; fill: #111827; }
+    </style>
+  </defs>
+
+  <text x="300" y="38" text-anchor="middle" class="title">Level Seesaw in Static Equilibrium</text>
+
+  <!-- seesaw beam -->
+  <rect x="90" y="211" width="420" height="18" rx="5" fill="#8b5e34" stroke="#4b3420" stroke-width="2"/>
+
+  <!-- pivot -->
+  <path d="M300 229 L270 285 L330 285 Z" fill="#64748b" stroke="#334155" stroke-width="2"/>
+  <circle cx="300" cy="220" r="7" fill="#334155"/>
+  <text x="300" y="313" text-anchor="middle" class="label">pivot</text>
+
+  <!-- left mass -->
+  <rect x="145" y="145" width="70" height="55" rx="6" fill="#60a5fa" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="180" y="178" text-anchor="middle" class="label">6 kg</text>
+  <line x1="180" y1="130" x2="180" y2="198" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="180" y="118" text-anchor="middle" class="label">force</text>
+
+  <!-- right mass -->
+  <rect x="385" y="145" width="70" height="55" rx="6" fill="#fbbf24" stroke="#92400e" stroke-width="2"/>
+  <text x="420" y="178" text-anchor="middle" class="label">4 kg</text>
+  <line x1="420" y1="130" x2="420" y2="198" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="420" y="118" text-anchor="middle" class="label">force</text>
+
+  <!-- pivot reaction -->
+  <line x1="300" y1="285" x2="300" y2="235" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="315" y="268" class="label">support force</text>
+
+  <!-- distance dimensions -->
+  <line x1="180" y1="345" x2="300" y2="345" stroke="#374151" stroke-width="2"/>
+  <line x1="180" y1="337" x2="180" y2="353" stroke="#374151" stroke-width="2"/>
+  <line x1="300" y1="337" x2="300" y2="353" stroke="#374151" stroke-width="2"/>
+  <text x="240" y="370" text-anchor="middle" class="label">2 m</text>
+
+  <line x1="300" y1="345" x2="420" y2="345" stroke="#374151" stroke-width="2"/>
+  <line x1="420" y1="337" x2="420" y2="353" stroke="#374151" stroke-width="2"/>
+  <text x="360" y="370" text-anchor="middle" class="label">x = 3 m</text>
+
+  <!-- torque equation and result -->
+  <text x="300" y=" eighty" text-anchor="middle" class="eq">6 × 2 = 4 × 3</text>
+  <text x="300" y=" eighty" text-anchor="middle" class="eq">6 × 2 = 4 × 3</text>
+  <text x="300" y="395" text-anchor="middle" class="title">balanced</text>
+</svg>
