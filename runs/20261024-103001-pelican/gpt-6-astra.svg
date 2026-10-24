@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8bdcff"/>
+      <stop offset="1" stop-color="#d9f7ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596575"/>
+      <stop offset="1" stop-color="#303945"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#17212b" flood-opacity=".3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="47" fill="#ffe27a" opacity=".95"/>
+  <path d="M0 355 Q130 290 255 350 T510 340 T800 330 V450 H0Z" fill="#79bf78"/>
+  <path d="M0 410 Q160 365 310 410 T590 400 T800 390 V600 H0Z" fill="#5aa765"/>
+  <path d="M0 470 H800 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#e9d77d" stroke-width="8" stroke-dasharray="55 35" opacity=".9"/>
+
+  <g font-family="Trebuchet MS, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="72" font-size="42" font-weight="900" fill="#17324d" stroke="#fff" stroke-width="5" paint-order="stroke">
+      PEDAL TO THE BEAK!
+    </text>
+    <text x="400" y="108" font-size="19" font-weight="700" fill="#17324d">
+      “Why fly when you can wobble with style?”
+    </text>
+  </g>
+
+  <g filter="url(#shadow)" stroke="#18232d" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- bicycle wheels -->
+    <circle cx="235" cy="455" r="76" fill="#d9e6ed"/>
+    <circle cx="605" cy="455" r="76" fill="#d9e6ed"/>
+    <circle cx="235" cy="455" r="61" fill="none" stroke="#f05c53" stroke-width="10"/>
+    <circle cx="605" cy="455" r="61" fill="none" stroke="#f05c53" stroke-width="10"/>
+    <g stroke="#8294a1" stroke-width="3">
+      <path d="M235 394V516 M174 455H296 M192 412L278 498 M278 412L192 498"/>
+      <path d="M605 394V516 M544 455H666 M562 412L648 498 M648 412L562 498"/>
+    </g>
+
+    <!-- bicycle frame -->
+    <path d="M235 455 L330 330 L430 455 L235 455 Z" fill="#ffbd3f"/>
+    <path d="M330 330 L392 330 L430 455" fill="none"/>
+    <path d="M330 330 L285 455" fill="none"/>
+    <path d="M430 455 L605 455 L540 330 L430 455" fill="none"/>
+    <path d="M540 330 L577 305" fill="none"/>
+    <path d="M548 306 L595 306" fill="none"/>
+    <circle cx="430" cy="455" r="17" fill="#f05c53"/>
+    <path d="M430 455 l-34 30 M430 455 l32 28" fill="none"/>
+    <path d="M396 485 h-22 M462 483 h22" fill="none"/>
+
+    <!-- seat -->
+    <path d="M311 320 Q330 307 355 320" fill="none" stroke="#3b2b28" stroke-width="12"/>
+
+    <!-- pelican body -->
+    <path d="M300 310 Q275 247 317 187 Q360 126 438 161 Q497 188 491 268 Q486 334 430 357 Q357 380 300 310Z" fill="#f4f1e8"/>
+    <path d="M339 191 Q369 154 424 169 Q468 181 475 224 Q439 207 404 217 Q370 226 339 191Z" fill="#f6a84c"/>
+    <path d="M374 211 Q422 188 475 224 L523 265 Q540 280 519 291 L466 301 Q426 303 389 279Z" fill="#f38d3d"/>
+    <path d="M389 279 Q443 284 519 291" fill="none" stroke="#bf592b" stroke-width="5"/>
+    <path d="M409 171 Q449 172 477 207" fill="none" stroke="#d8d5cc" stroke-width="17"/>
+
+    <!-- pelican eye and brow -->
+    <circle cx="411" cy="190" r="12" fill="#fff"/>
+    <circle cx="414" cy="191" r="5" fill="#18232d" stroke="none"/>
+    <path d="M394 174 Q418 158 442 174" fill="none" stroke="#18232d" stroke-width="9"/>
+
+    <!-- wing gripping handlebar -->
+    <path d="M440 246 Q486 255 535 303" fill="none" stroke="#f4f1e8" stroke-width="31"/>
+    <path d="M535 303 l25 1" fill="none" stroke="#f4f1e8" stroke-width="19"/>
+    <path d="M533 303 l25 0" fill="none" stroke="#18232d" stroke-width="7"/>
+
+    <!-- legs and feet -->
+    <path d="M360 325 L349 403 L391 438" fill="none" stroke="#ef9a3c" stroke-width="17"/>
+    <path d="M391 438 Q405 447 418 440" fill="none" stroke="#ef9a3c" stroke-width="13"/>
+    <path d="M424 333 L448 400 L477 430" fill="none" stroke="#ef9a3c" stroke-width="17"/>
+    <path d="M477 430 Q491 439 505 430" fill="none" stroke="#ef9a3c" stroke-width="13"/>
+
+    <!-- jaunty helmet -->
+    <path d="M348 172 Q372 117 432 122 Q474 126 490 164 L472 181 Q420 157 348 172Z" fill="#ec4f55"/>
+    <path d="M356 160 Q393 138 443 148" fill="none" stroke="#ffd85a" stroke-width="9"/>
+    <circle cx="420" cy="123" r="8" fill="#ffd85a"/>
+
+    <!-- comic motion marks -->
+    <path d="M190 350 l-28 -18 M187 374 l-36 -2 M658 353 l30 -17 M664 378 l36 3" fill="none" stroke="#fff" stroke-width="8"/>
+  </g>
+
+  <!-- caption panel -->
+  <g transform="translate(72 535)">
+    <rect x="0" y="0" width="656" height="47" rx="18" fill="#fff7cf" stroke="#18232d" stroke-width="4"/>
+    <text x="328" y="31" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="20" font-weight="800" fill="#263847">
+      “No wings today, folks — my beak is doing the heavy lifting!”
+    </text>
+  </g>
+</svg>

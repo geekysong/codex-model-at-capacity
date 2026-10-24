@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>The Pelican Commute</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle while carrying a fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#d9f5f2"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b66"/>
+      <stop offset="1" stop-color="#292e38"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#18212b" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#202833;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#202833;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;font-weight:900}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="105" cy="105" r="42" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 360 Q150 285 300 355 T600 340 T800 350 V430 H0Z" fill="#9dcf9b"/>
+  <path d="M0 410 Q180 360 350 410 T800 395 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 512 H800" stroke="#f7d66a" stroke-width="10" stroke-dasharray="54 32"/>
+  <path d="M0 575 Q180 548 360 574 T800 568" fill="none" stroke="#161b22" stroke-width="10" opacity=".45"/>
+
+  <g filter="url(#shadow)">
+    <rect x="67" y="38" width="666" height="86" rx="23" fill="#fff" class="ink"/>
+    <text x="400" y="96" text-anchor="middle" font-size="42" class="label" fill="#e34f3d">THE PELICAN COMMUTE</text>
+  </g>
+
+  <g transform="translate(650 180) rotate(8)">
+    <rect x="0" y="0" width="92" height="112" rx="8" fill="#f7e8be" class="ink"/>
+    <path d="M46 112 V155" class="ink" fill="none"/>
+    <path d="M12 30 Q46 5 80 30" fill="none" class="thin"/>
+    <text x="46" y="59" text-anchor="middle" font-size="15" class="label" fill="#202833">LOW</text>
+    <text x="46" y="79" text-anchor="middle" font-size="15" class="label" fill="#202833">FLYING</text>
+    <path d="M26 91 Q46 75 66 91" fill="none" class="thin"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <!-- bicycle wheels -->
+    <circle cx="234" cy="475" r="78" fill="#e8edf0" class="ink"/>
+    <circle cx="570" cy="475" r="78" fill="#e8edf0" class="ink"/>
+    <circle cx="234" cy="475" r="10" fill="#e34f3d" class="ink"/>
+    <circle cx="570" cy="475" r="10" fill="#e34f3d" class="ink"/>
+    <g stroke="#9aa6ad" stroke-width="3">
+      <path d="M234 397 V553 M156 475 H312 M179 420 L289 530 M289 420 L179 530"/>
+      <path d="M570 397 V553 M492 475 H648 M515 420 L625 530 M625 420 L515 530"/>
+    </g>
+    <!-- bicycle frame -->
+    <path d="M234 475 L330 348 L440 475 H234 M330 348 L570 475 M440 475 L474 365" fill="none" class="ink"/>
+    <path d="M474 365 H526" class="ink" fill="none"/>
+    <path d="M322 348 H365" class="ink" fill="none"/>
+    <circle cx="440" cy="475" r="18" fill="#f7c948" class="ink"/>
+    <path d="M440 475 L405 450 M440 475 L470 504" class="thin" fill="none"/>
+    <path d="M405 450 l-16 -3 M470 504 l16 2" class="thin" fill="none"/>
+    <path d="M541 411 Q570 390 598 411" fill="none" class="ink"/>
+    <!-- seat -->
+    <path d="M307 337 Q337 324 365 337" fill="none" class="ink"/>
+    <!-- pelican body -->
+    <ellipse cx="399" cy="278" rx="94" ry="111" fill="#f4f1df" class="ink"/>
+    <path d="M348 287 Q397 306 454 280 Q444 357 397 375 Q350 353 348 287Z" fill="#d9d4c3" class="thin"/>
+    <!-- wing -->
+    <path d="M365 253 Q421 232 463 272 Q437 317 388 323 Q366 301 365 253Z" fill="#c8c2b0" class="ink"/>
+    <path d="M386 279 Q418 269 445 282" fill="none" class="thin"/>
+    <!-- neck -->
+    <path d="M367 205 Q353 152 382 121 Q416 92 457 126 Q484 150 470 207" fill="#f4f1df" class="ink"/>
+    <!-- head -->
+    <ellipse cx="415" cy="111" rx="70" ry="62" fill="#f4f1df" class="ink"/>
+    <!-- helmet -->
+    <path d="M354 91 Q374 33 429 34 Q477 39 487 89 Q444 71 354 91Z" fill="#e34f3d" class="ink"/>
+    <path d="M374 56 Q411 39 453 55" fill="none" stroke="#ffcf4a" stroke-width="10"/>
+    <path d="M358 91 Q414 72 484 91" fill="none" class="ink"/>
+    <!-- eye -->
+    <circle cx="447" cy="103" r="12" fill="#fff" class="thin"/>
+    <circle cx="451" cy="105" r="5" fill="#202833"/>
+    <path d="M453 87 Q470 79 482 91" fill="none" class="thin"/>
+    <!-- beak and fish -->
+    <path d="M466 124 Q548 113 615 142 Q556 177 470 150 Q447 142 466 124Z" fill="#f3a73f" class="ink"/>
+    <path d="M610 142 l29 -17 l-8 23 l12 18 l-32 -8" fill="#70b7d1" class="ink"/>
+    <circle cx="572" cy="139" r="4" fill="#202833"/>
+    <path d="M497 132 Q545 143 586 145" fill="none" stroke="#d4792c" stroke-width="4"/>
+    <!-- legs -->
+    <path d="M384 355 L361 445 L405 475" fill="none" class="ink"/>
+    <path d="M427 357 L470 430 L440 475" fill="none" class="ink"/>
+    <path d="M345 447 Q360 440 376 447" fill="none" class="ink"/>
+    <path d="M454 430 Q470 423 486 431" fill="none" class="ink"/>
+    <!-- handlebars grip -->
+    <path d="M520 363 Q548 344 575 357" fill="none" class="ink"/>
+  </g>
+
+  <g transform="translate(95 425) rotate(-8)">
+    <path d="M0 37 Q44 0 91 28 Q59 55 0 37Z" fill="#fff" class="ink"/>
+    <text x="45" y="34" text-anchor="middle" font-size="17" class="label" fill="#202833">HONK!</text>
+  </g>
+
+  <g transform="translate(540 520)">
+    <rect x="0" y="0" width="215" height="52" rx="16" fill="#fff4a8" class="ink"/>
+    <text x="107" y="33" text-anchor="middle" font-size="19" class="label" fill="#202833">“NO WINGMAN NEEDED.”</text>
+  </g>
+
+  <path d="M125 205 q20 -20 40 0 M170 205 q20 -20 40 0" fill="none" class="thin" opacity=".6"/>
+</svg>

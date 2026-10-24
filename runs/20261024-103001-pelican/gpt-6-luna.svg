@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#91d8f2"/>
+      <stop offset="1" stop-color="#eaf8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b65"/>
+      <stop offset="1" stop-color="#30343b"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#1d2933" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#20262d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#20262d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .title{font-family:Impact,Arial Black,sans-serif;font-size: fortypx;font-weight:900;letter-spacing:2px}
+      .label{font-family:Arial,sans-serif;font-weight:700}
+    </style>
+  </defs>
+
+  <!-- sky and setting -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="685" cy="108" r="48" fill="#ffe17a" stroke="#d99435" stroke-width="5"/>
+  <g fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".8">
+    <path d="M95 128 q25-24 50 0 q25-24 50 0"/>
+    <path d="M540 155 q22-21 44 0 q22-21 44 0"/>
+  </g>
+  <path d="M0 337 Q130 278 255 329 T510 326 T800 300 L800 410 L0 410Z" fill="#8ac878" stroke="#477c51" stroke-width="5"/>
+  <path d="M0 389 Q170 350 330 390 T800 372 L800 434 L0 434Z" fill="#62a95d"/>
+  <g fill="#f3a83b" stroke="#7e5428" stroke-width="3">
+    <path d="M104 327 l10-22 10 22 22 10-22 10-10 22-10-22-22-10z"/>
+    <path d="M705 345 l8-18 8 18 18 8-18 8-8 18-8-18-18-8z"/>
+  </g>
+
+  <!-- title -->
+  <g filter="url(#shadow)">
+    <rect x="42" y="28" width="716" height="78" rx="18" fill="#fff4cc" stroke="#20262d" stroke-width="7"/>
+    <text x="400" y="83" text-anchor="middle" class="title" font-size="40" fill="#e34b35" stroke="#20262d" stroke-width="2" paint-order="stroke">THE PELICAN PEDAL PUSHER</text>
+  </g>
+
+  <!-- road -->
+  <path d="M0 432 Q180 410 365 431 T800 426 L800 600 L0 600Z" fill="url(#road)" stroke="#20262d" stroke-width="6"/>
+  <g stroke="#f9d45c" stroke-width="9" stroke-linecap="round">
+    <path d="M48 510h85"/><path d="M240 486h90"/><path d="M464 526h95"/><path d="M684 485h72"/>
+  </g>
+
+  <!-- bicycle -->
+  <g filter="url(#shadow)">
+    <circle cx="225" cy="470" r="76" fill="#b9e7ee" fill-opacity=".18" class="ink"/>
+    <circle cx="575" cy="470" r="76" fill="#b9e7ee" fill-opacity=".18" class="ink"/>
+    <g fill="none" class="thin">
+      <path d="M225 470 L347 396 L575 470 L225 470 L347 396"/>
+      <path d="M347 396 L399 470 L575 470"/>
+      <path d="M399 470 l-13 33 M399 470 l28 10"/>
+      <path d="M347 396 l-4-38 M332 357h31"/>
+      <path d="M575 470 l26-45 M590 422h28"/>
+    </g>
+    <circle cx="399" cy="470" r="19" fill="#f2b544" class="ink"/>
+    <circle cx="399" cy="470" r="6" fill="#20262d"/>
+    <g stroke="#20262d" stroke-width="3" opacity=".55">
+      <path d="M225 394v152 M149 470h152 M171 416l108 108 M171 524l108-108"/>
+      <path d="M575 394v152 M499 470h152 M521 416l108 108 M521 524l108-108"/>
+    </g>
+  </g>
+
+  <!-- pelican body -->
+  <g filter="url(#shadow)">
+    <ellipse cx="402" cy="274" rx="105" ry="125" fill="#f4f0df" class="ink"/>
+    <path d="M349 232 Q297 265 312 340 Q323 374 366 366 Q394 351 388 316Z" fill="#d7d9d2" class="ink"/>
+    <path d="M463 220 Q532 245 534 332 Q527 365 488 350 Q464 331 470 286Z" fill="#d7d9d2" class="ink"/>
+    <!-- head -->
+    <circle cx="404" cy="181" r="76" fill="#f7f3e4" class="ink"/>
+    <path d="M359 146 Q398 104 451 135 L466 169 Q412 153 359 178Z" fill="#d9dcd5" class="thin"/>
+    <!-- beak pouch -->
+    <path d="M444 184 Q520 179 636 220 Q663 231 636 251 Q535 260 451 225Z" fill="#f4a64b" class="ink"/>
+    <path d="M451 225 Q535 260 636 251 Q605 312 515 289 Q465 270 449 235Z" fill="#e8893c" class="ink"/>
+    <path d="M520 242 q40 9 77 0" fill="none" class="thin" opacity=".7"/>
+    <!-- eye and brow -->
+    <circle cx="432" cy="167" r="12" fill="#20262d"/>
+    <circle cx="436" cy="163" r="4" fill="#fff"/>
+    <path d="M413 143 q27-20 49 2" fill="none" class="ink"/>
+    <!-- helmet -->
+    <path d="M344 136 Q397 73 465 123 L478 151 Q408 123 342 164Z" fill="#ed4e43" class="ink"/>
+    <path d="M355 119 Q400 83 447 112" fill="none" stroke="#ffd45a" stroke-width="10"/>
+    <path d="M350 145 Q391 126 470 146" fill="none" class="thin"/>
+    <!-- wing arms -->
+    <path d="M332 277 Q279 303 274 352 Q282 368 300 356 L353 314Z" fill="#f4f0df" class="ink"/>
+    <path d="M475 275 Q530 302 554 346 Q551 365 532 354 L463 316Z" fill="#f4f0df" class="ink"/>
+    <!-- legs -->
+    <path d="M367 359 L352 419" fill="none" class="ink"/>
+    <path d="M439 360 L466 417" fill="none" class="ink"/>
+    <path d="M347 416 q-13 12-28 5 q-11-8 4-15 l28-3Z" fill="#ef9f3b" class="ink"/>
+    <path d="M462 415 q15 11 31 5 q10-8-5-15 l-29-2Z" fill="#ef9f3b" class="ink"/>
+  </g>
+
+  <!-- comic motion and joke -->
+  <g fill="none" stroke="#20262d" stroke-width="6" stroke-linecap="round">
+    <path d="M123 430 q-30-18-43 4"/>
+    <path d="M668 399 q30-15 43 7"/>
+    <path d="M173 366 l-23-16"/>
+    <path d="M620 353 l24-18"/>
+  </g>
+  <g transform="translate(556 285) rotate(8)">
+    <path d="M0 34 Q55-8 115 20 Q136 31 113 47 Q61 70 0 50Z" fill="#fff4cc" class="ink"/>
+    <text x="57" y="42" text-anchor="middle" class="label" font-size="18" fill="#20262d">HONK!</text>
+  </g>
+
+  <!-- caption -->
+  <g filter="url(#shadow)">
+    <rect x="92" y="548" width="616" height="38" rx="12" fill="#fff4cc" stroke="#20262d" stroke-width="5"/>
+    <text x="400" y="574" text-anchor="middle" class="label" font-size="20" fill="#20262d">“I pedal because walking makes my feet look tiny.”</text>
+  </g>
+</svg>
