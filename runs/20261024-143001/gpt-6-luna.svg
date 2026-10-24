@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f4e79"/>
+    </marker>
+    <style>
+      .label { font-family: Arial, sans-serif; fill: #17202a; font-size: 20px; }
+      .small { font-family: Arial, sans-serif; fill: #17202a; font-size: 17px; }
+      .bold { font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="300" y="38" text-anchor="middle" class="label bold">Level Seesaw in Static Equilibrium</text>
+
+  <!-- seesaw beam -->
+  <rect x="85" y="178" width="430" height="24" rx="6" fill="#d69e2e" stroke="#8b6415" stroke-width="3"/>
+
+  <!-- pivot -->
+  <path d="M300 202 L264 270 L336 270 Z" fill="#718096" stroke="#2d3748" stroke-width="3"/>
+  <circle cx="300" cy="190" r="8" fill="#2d3748"/>
+  <text x="300" y="296" text-anchor="middle" class="small">pivot</text>
+
+  <!-- left mass -->
+  <line x1="160" y1="202" x2="160" y2="238" stroke="#2d3748" stroke-width="3"/>
+  <rect x="125" y="238" width="70" height="48" rx="5" fill="#e53e3e" stroke="#9b2c2c" stroke-width="3"/>
+  <text x="160" y="268" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">6 kg</text>
+
+  <!-- right mass -->
+  <line x1="440" y1="202" x2="440" y2="238" stroke="#2d3748" stroke-width="3"/>
+  <rect x="405" y="238" width="70" height="48" rx="5" fill="#3182ce" stroke="#2c5282" stroke-width="3"/>
+  <text x="440" y="268" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">4 kg</text>
+
+  <!-- force arrows -->
+  <line x1="160" y1="125" x2="160" y2="228" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="160" y="105" text-anchor="middle" class="small bold">F = 6g</text>
+  <line x1="440" y1="125" x2="440" y2="228" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="440" y="105" text-anchor="middle" class="small bold">F = 4g</text>
+
+  <!-- distance dimension lines -->
+  <line x1="160" y1="330" x2="300" y2="330" stroke="#4a5568" stroke-width="2"/>
+  <line x1="160" y1="320" x2="160" y2="340" stroke="#4a5568" stroke-width="2"/>
+  <line x1="300" y1="320" x2="300" y2="340" stroke="#4a5568" stroke-width="2"/>
+  <text x="230" y="355" text-anchor="middle" class="small">2 m left</text>
+
+  <line x1="300" y1="330" x2="440" y2="330" stroke="#4a5568" stroke-width="2"/>
+  <line x1="440" y1="320" x2="440" y2="340" stroke="#4a5568" stroke-width="2"/>
+  <text x="370" y="355" text-anchor="middle" class="small">x = 3 m right</text>
+
+  <!-- balance statement -->
+  <text x="300" y="385" text-anchor="middle" class="label bold" fill="#276749">balanced</text>
+  <text x="300" y="75" text-anchor="middle" class="label bold">6 × 2 = 4 × 3</text>
+</svg>
