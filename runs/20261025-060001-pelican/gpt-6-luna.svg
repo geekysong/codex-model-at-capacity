@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A determined pelican rides a bicycle, pedaling furiously while a fish rides in its beak.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { fill: #fff8e7; stroke: #26384a; stroke-width: 8; }
+      .spoke { stroke: #8ba0a7; stroke-width: 2; }
+      .frame { fill: none; stroke: #e45f3c; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .ink { stroke: #26384a; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .small-ink { stroke: #26384a; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .wheelspin { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .48s ease-in-out infinite alternate; }
+      .pedal { transform-box: fill-box; transform-origin: center; animation: spin .8s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+      @media (prefers-reduced-motion: reduce) {
+        .wheelspin, .rider, .pedal { animation-duration: 8s; }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bce8ed"/>
+  <rect y="432" width="800" height="112" fill="#f4d995"/>
+  <path d="M0 432 Q180 402 355 432 T800 424" fill="none" stroke="#fff5d7" stroke-width="8"/>
+  <circle cx="681" cy="114" r="42" fill="#ffd16a"/>
+  <g fill="#fff" opacity=".82">
+    <path d="M80 114c4-20 31-26 42-9 14-7 32 4 31 20H76c-9-2-7-10 4-11z"/>
+    <path d="M550 202c4-17 27-22 37-8 12-6 28 4 26 17h-69c-8-2-5-8 6-9z"/>
+  </g>
+  <path d="M74 363q18-24 36 0t36 0m37-22q14-19 28 0t28 0" fill="none" stroke="#6fb7b6" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="57" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1.5" fill="#26384a">THE PELICAN COMMUTE</text>
+  <path d="M252 70h296" stroke="#e45f3c" stroke-width="5" stroke-linecap="round"/>
+  <text x="400" y="99" text-anchor="middle" font-size="16" font-weight="700" fill="#385568">“I’m taking the lane. The fish can navigate.”</text>
+
+  <!-- Bicycle wheels -->
+  <g class="wheelspin">
+    <circle class="wheel" cx="242" cy="389" r="68"/>
+    <path class="spoke" d="M242 321v136M174 389h136M194 341l96 96m0-96-96 96"/>
+    <circle cx="242" cy="389" r="7" fill="#e45f3c"/>
+  </g>
+  <g class="wheelspin">
+    <circle class="wheel" cx="547" cy="389" r="68"/>
+    <path class="spoke" d="M547 321v136M479 389h136M499 341l96 96m0-96-96 96"/>
+    <circle cx="547" cy="389" r="7" fill="#e45f3c"/>
+  </g>
+
+  <!-- Frame, fork, and handlebars -->
+  <path class="frame" d="M242 389l88-112 89 112H242l54-69m34-43 82 6m-82-6-5-19"/>
+  <path class="frame" d="M419 389l103-123m-9 0h36m-42 0h-17"/>
+  <path class="frame" d="M317 275h38m-34-8h31"/>
+  <path d="M292 320l-18 0" stroke="#26384a" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Pedals and crank -->
+  <g class="pedal">
+    <circle cx="330" cy="389" r="13" fill="#ffd16a" stroke="#26384a" stroke-width="4"/>
+    <path d="M330 389l31 19m-36-26l-12-10" stroke="#26384a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M354 412h20m-67-63h-18" stroke="#26384a" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <!-- legs -->
+    <path d="M355 286q-7 40-25 70l-3 29" fill="none" stroke="#e5a13d" stroke-width="18" stroke-linecap="round"/>
+    <path d="M403 286q20 39 2 73l-47 22" fill="none" stroke="#e5a13d" stroke-width="18" stroke-linecap="round"/>
+    <path d="M317 389h22m7-10 18 12" fill="none" stroke="#26384a" stroke-width="8" stroke-linecap="round"/>
+    <!-- body -->
+    <path d="M343 204q-18 34 4 79 18 27 62 14 31-15 14-54-17-37-80-39z" fill="#fffaf0" class="ink"/>
+    <path d="M353 229q-16 31 5 54 28 20 51 2-8-43-56-56z" fill="#e8f1eb" stroke="#26384a" stroke-width="3"/>
+    <path d="M394 279q-17 13-36 7" fill="none" stroke="#26384a" stroke-width="4" stroke-linecap="round"/>
+    <!-- neck and head -->
+    <path d="M356 217q-4-43 19-67 17-17 42-2 18 12 14 36-5 24-33 35l-2 24" fill="#fffaf0" class="ink"/>
+    <path d="M390 176q12-28 39-23 21 4 28 21-20 11-46 8" fill="#fffaf0" class="small-ink"/>
+    <circle cx="421" cy="171" r="5" fill="#26384a"/>
+    <path d="M437 181q9 5 17 0" fill="none" stroke="#e45f3c" stroke-width="3" stroke-linecap="round"/>
+    <!-- enormous beak and pouch -->
+    <path d="M443 186q41-19 101-1-30 15-88 18z" fill="#f3a844" stroke="#26384a" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M457 201q27 42 66 17 17-11 21-32-37 13-87 15z" fill="#f29a47" stroke="#26384a" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M474 204q28 2 56-9" fill="none" stroke="#d36b3a" stroke-width="3"/>
+    <!-- fish stuck in beak -->
+    <path d="M502 177q11-10 23 0-12 12-23 0zm-1 0-9-7v14z" fill="#62b8c1" stroke="#26384a" stroke-width="2"/>
+    <circle cx="519" cy="176" r="1.8" fill="#26384a"/>
+    <!-- wings -->
+    <path d="M349 234q-33 4-34 29 17 10 43 1" fill="#fff" class="small-ink"/>
+    <path d="M326 252l20-2m-15 10 20-4" fill="none" stroke="#9aabb0" stroke-width="2"/>
+    <!-- helmet -->
+    <path d="M387 150q6-31 37-29 25 2 31 25z" fill="#e45f3c" stroke="#26384a" stroke-width="4"/>
+    <path d="M384 151h76" stroke="#26384a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M411 124l5 23m17-21 2 21" stroke="#ffd9bc" stroke-width="3"/>
+  </g>
+
+  <!-- motion marks and comic detail -->
+  <path d="M133 293h48m-36 15h30m392-29h35m-24 14h21" stroke="#e45f3c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M575 338q13-16 26 0t26 0" fill="none" stroke="#6fb7b6" stroke-width="4"/>
+  <text x="609" y="322" font-size="17" font-weight="800" fill="#385568">HONK!</text>
+  <path d="M253 475h284" stroke="#d5b567" stroke-width="3" stroke-dasharray="9 11"/>
+
+  <!-- Dedicated footer -->
+  <rect y="544" width="800" height="56" fill="#26384a"/>
+  <text x="400" y="579" text-anchor="middle" font-size="18" font-weight="700" fill="#fff8e7">2026-10-25 06:02:07 SGT (UTC+08:00)</text>
+</svg>

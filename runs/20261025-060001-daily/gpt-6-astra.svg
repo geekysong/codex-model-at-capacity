@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#172433">
+    <text x="50" y="30" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="50" y="55">Initial velocity: (20, 15) m/s · Gravity: 10 m/s²</text>
+    <text x="50" y="79">Total flight time: 3 s</text>
+    <text x="50" y="103">Scale: 10 px/m; horizontal axis break omits 35–55 m.</text>
+    <text x="50" y="125">Without this break, landing would be at canvas x = 700.</text>
+  </g>
+
+  <path d="M50 350 H550" fill="none" stroke="#465565" stroke-width="2"/>
+  
+  <!-- x = 100 + 200t, y = 350 - 150t + 50t².
+       The second segment shifts x left by 200 px across the indicated break. -->
+  <path d="M100 350 Q275 218.75 450 240.625"
+        fill="none" stroke="#146fc0" stroke-width="3"/>
+  <path d="M500 315.625 Q525 331.25 550 350"
+        fill="none" stroke="#146fc0" stroke-width="3"/>
+
+  <g stroke="#146fc0" stroke-width="2" fill="none">
+    <path d="M447 233 L453 248 M455 235 L461 250"/>
+    <path d="M488 305 L494 320 M496 307 L502 322"/>
+  </g>
+  <text x="462" y="278" font-family="Arial, sans-serif" font-size="12" fill="#465565">break</text>
+
+  <g fill="#146fc0">
+    <circle cx="100" cy="350" r="4"/>
+    <circle cx="400" cy="237.5" r="4"/>
+    <circle cx="550" cy="350" r="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172433">
+    <text x="55" y="312">launch: 0 m, 0 m</text>
+    <text x="325" y="215">apex: 30 m, 11.25 m</text>
+    <text x="413" y="371">landing: 60 m, 0 m</text>
+  </g>
+
+  <text x="300" y="393" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" fill="#172433">2026-10-25 06:03:17 SGT (UTC+08:00)</text>
+</svg>
