@@ -22,6 +22,14 @@ API_URL = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com").rstr
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-20250514")
 MAX_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "4096"))
 SGT = ZoneInfo("Asia/Singapore")
+# USD per million standard input/output tokens. Keep this table versioned with
+# the run so historical estimates remain explainable when provider prices change.
+PRICE_USD_PER_MTOK = {
+    "claude-fable-5-1": (10.0, 50.0),
+    "claude-opus-5-5": (4.0, 20.0),
+    "claude-haiku-5-5": (0.10, 0.50),
+    "claude-sonnet-5-5": (2.0, 10.0),
+}
 
 PROMPTS = {
 "pelican": (
@@ -114,6 +122,16 @@ def main() -> int:
         "status": "ok" if match else "error",
         "error": None if match else "response did not contain an SVG",
     }
+    input_price, output_price = PRICE_USD_PER_MTOK.get(MODEL, (None, None))
+    if input_price is not None and metadata["input_tokens"] is not None and metadata["output_tokens"] is not None:
+        metadata["price_usd_per_million"] = {"input": input_price, "output": output_price}
+        metadata["estimated_cost_usd"] = round(
+            metadata["input_tokens"] * input_price / 1_000_000
+            + metadata["output_tokens"] * output_price / 1_000_000, 6
+        )
+    else:
+        metadata["price_usd_per_million"] = None
+        metadata["estimated_cost_usd"] = None
     (out_dir / "meta.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if not match:
         print("Claude response did not contain an SVG; metadata saved", file=sys.stderr)
