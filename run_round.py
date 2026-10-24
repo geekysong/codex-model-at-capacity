@@ -160,6 +160,14 @@ def run_model(model: str, round_id: str) -> dict:
 
 
 def build_index(records: list[dict]) -> str:
+    def public_error(value: object) -> str:
+        """Keep operational error context while removing common secrets/PII."""
+        text = str(value or "unknown error")
+        text = re.sub(r"(?i)(api[_ -]?key|authorization|bearer|token)\s*[:=]\s*[^\s|,;]+", r"\1=[redacted]", text)
+        text = re.sub(r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}", "[email redacted]", text)
+        text = re.sub(r"(?:/home|/Users|/tmp|/var)/[^\s|]+", "[path redacted]", text)
+        return html.escape(text[:240])
+
     rounds = sorted({r["round"] for r in records}, reverse=True)
     latest = rounds[0] if rounds else None
     latest_recs = [r for r in records if r["round"] == latest]
@@ -175,7 +183,7 @@ def build_index(records: list[dict]) -> str:
         if r["svg"]:
             art = f'<img src="{html.escape(r["svg"])}" alt="SVG by {html.escape(r["model"])}" loading="lazy">'
         else:
-            art = f'<div class="noart">✕ no SVG<small>{html.escape((r["error"] or "")[:140])}</small></div>'
+            art = f'<div class="noart">✕ no SVG<small>{public_error(r["error"])}</small></div>'
         state = "PASS" if r["status"] == "ok" else "FAIL"
         cards.append(
             f'<figure class="card"><div class="art">{art}</div><figcaption><div><b>{html.escape(r["model"])}</b>'
@@ -199,7 +207,7 @@ def build_index(records: list[dict]) -> str:
             if not codex and not claude:
                 continue
             left = (f'<img src="{html.escape(codex["svg"])}" alt="{html.escape(codex_model)}" loading="lazy">'
-                    if codex else '<div class="noart">No Codex image</div>')
+                    if codex else f'<div class="noart">No Codex image<small>{public_error(next((r.get("error") for r in variant_latest if r["model"] == codex_model), "no record"))}</small></div>')
             if claude:
                 rel = claude.relative_to(REPO).as_posix()
                 cost = ""
@@ -211,7 +219,14 @@ def build_index(records: list[dict]) -> str:
                     pass
                 right = f'<img src="{html.escape(rel)}" alt="{html.escape(claude_label)}" loading="lazy"><small class="cost">{html.escape(str(meta.get("input_tokens", "—")))} in · {html.escape(str(meta.get("output_tokens", "—")))} out{cost}</small>'
             else:
-                right = '<div class="noart">No Claude image yet</div>'
+                error = "no Claude record"
+                meta_path = claude_paths[-1].with_name("meta.json") if claude_paths else None
+                if meta_path and meta_path.exists():
+                    try:
+                        error = json.loads(meta_path.read_text(encoding="utf-8")).get("error") or "Claude returned no image"
+                    except (OSError, ValueError):
+                        error = "Claude metadata unavailable"
+                right = f'<div class="noart">No Claude image<small>{public_error(error)}</small></div>'
             pair_cards.append(f'<article class="pair"><div><small>CODEX · {html.escape(codex_model)}</small>{left}</div>'
                               f'<div><small>CLAUDE API · {html.escape(claude_label)}</small>{right}</div></article>')
         if pair_cards:
