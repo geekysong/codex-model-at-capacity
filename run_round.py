@@ -332,6 +332,38 @@ def git(*args: str) -> subprocess.CompletedProcess:
                           capture_output=True, text=True, timeout=120)
 
 
+def sync_publication() -> bool:
+    """Merge remote changes before publishing; never force-push research history."""
+    fetched = git("fetch", "origin")
+    if fetched.returncode:
+        print("Publication fetch failed:", fetched.stderr, flush=True)
+        return False
+    for ref in ("origin/main", "origin/gh-pages"):
+        merged = git("merge", "--no-edit", ref)
+        if merged.returncode:
+            conflicts = git("diff", "--name-only", "--diff-filter=U").stdout.splitlines()
+            if not conflicts or not set(conflicts) <= {"index.html", "history.html"}:
+                git("merge", "--abort")
+                print("Publication needs manual merge:", ref, merged.stderr, flush=True)
+                return False
+        # Reload the merged generator so remote template updates are preserved.
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("publication_builder", REPO / "run_round.py")
+        builder = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(builder)
+        records = json.loads((REPO / "stats.json").read_text(encoding="utf-8"))
+        (REPO / "index.html").write_text(builder.build_index(records), encoding="utf-8")
+        (REPO / "history.html").write_text(builder.build_history(records), encoding="utf-8")
+        git("add", "index.html", "history.html")
+        if merged.returncode:
+            if git("commit", "--no-edit").returncode:
+                return False
+        elif git("diff", "--cached", "--quiet").returncode:
+            if git("commit", "-m", "Rebuild pages after publication sync").returncode:
+                return False
+    return True
+
+
 def main() -> int:
     lock_path = REPO / ".round.lock"
     lock_fd = open(lock_path, "w")
@@ -366,6 +398,8 @@ def main() -> int:
                  f"Verified-By: Alberto (Muse Wonder)")
     if commit.returncode != 0:
         print("commit failed:", commit.stdout, commit.stderr, flush=True)
+    if not sync_publication():
+        return 1
     # Publish both refs independently. A transient failure on main must not
     # prevent the Pages branch from receiving the generated index.html.
     push = git("push", "origin", "main")

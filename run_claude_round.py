@@ -48,6 +48,8 @@ def main() -> int:
     commit = runner.git("commit", "-m", f"Claude daily control {stamp}")
     if commit.returncode != 0:
         print("commit failed:", (commit.stderr or commit.stdout).strip()[:300], flush=True)
+    if not runner.sync_publication():
+        return 1
     for ref in [("main",), ("main:gh-pages",)]:
         pushed = runner.git("push", "origin", *ref)
         print("pushed" if pushed.returncode == 0 else "push failed", ref[0], flush=True)
