@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f4e79"/>
+    </marker>
+    <marker id="dimArrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <text x="300" y="38" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="25" font-weight="bold" fill="#1d3557">Level Seesaw in Static Equilibrium</text>
+
+  <!-- Seesaw beam -->
+  <rect x="110" y="174" width="380" height="18" rx="4" fill="#b87932" stroke="#6b431f" stroke-width="2"/>
+  <line x1="300" y1="160" x2="300" y2="205" stroke="#333" stroke-width="3"/>
+
+  <!-- Pivot -->
+  <polygon points="300,192 265,255 335,255" fill="#6c757d" stroke="#343a40" stroke-width="2"/>
+  <line x1="245" y1="255" x2="355" y2="255" stroke="#343a40" stroke-width="5"/>
+  <text x="300" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#333">pivot</text>
+
+  <!-- Left mass and hanger -->
+  <line x1="150" y1="192" x2="150" y2="230" stroke="#333" stroke-width="3"/>
+  <rect x="120" y="230" width="60" height="48" rx="5" fill="#4f81bd" stroke="#244a73" stroke-width="2"/>
+  <text x="150" y="260" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="18" font-weight="bold" fill="white">6 kg</text>
+
+  <!-- Right mass and hanger -->
+  <line x1="450" y1="192" x2="450" y2="230" stroke="#333" stroke-width="3"/>
+  <rect x="420" y="230" width="60" height="48" rx="5" fill="#e07a5f" stroke="#9b3d2b" stroke-width="2"/>
+  <text x="450" y="260" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="18" font-weight="bold" fill="white">4 kg</text>
+
+  <!-- Force arrows -->
+  <line x1="150" y1="105" x2="150" y2="222" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="150" y="88" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="16" fill="#1f4e79">6g downward</text>
+
+  <line x1="450" y1="105" x2="450" y2="222" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="450" y="88" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="16" fill="#1f4e79">4g downward</text>
+
+  <!-- Distance dimensions -->
+  <line x1="150" y1="315" x2="300" y2="315" stroke="#555" stroke-width="2"
+        marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+  <line x1="150" y1="295" x2="150" y2="325" stroke="#555" stroke-width="2"/>
+  <line x1="300" y1="295" x2="300" y2="325" stroke="#555" stroke-width="2"/>
+  <text x="225" y="340" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="18" fill="#333">2 m</text>
+
+  <line x1="300" y1="315" x2="450" y2="315" stroke="#555" stroke-width="2"
+        marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+  <line x1="450" y1="295" x2="450" y2="325" stroke="#555" stroke-width="2"/>
+  <text x="375" y="340" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="18" fill="#333">x = 3 m</text>
+
+  <!-- Torque equation and status -->
+  <text x="300" y="375" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="21" font-weight="bold" fill="#1d3557">6 × 2 = 4 × 3</text>
+  <text x="525" y="220" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="22" font-weight="bold" fill="#2a9d8f" transform="rotate(90 525 220)">BALANCED</text>
+</svg>
