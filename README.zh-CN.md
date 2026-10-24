@@ -15,7 +15,7 @@
 ## 运行方式
 
 树莓派上的 cron 每 5 分钟错开执行两个 prompt round。每个 round 使用 4 个对应的 Codex
-模型并行、每个只尝试一次，使用 `low` reasoning effort，单模型最多等待 600 秒。Claude
+模型串行、每个只尝试一次，使用 `low` reasoning effort，单模型最多等待 600 秒。Claude
 API 每 30 分钟对两个 round 各跑一次，结果追加进 `stats.json` 对应的 Codex 记录，页面由
 `build_index()` 重建，然后提交并推送 `main` 和 `gh-pages`。
 

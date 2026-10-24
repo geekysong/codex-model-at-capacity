@@ -18,7 +18,6 @@ import time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from concurrent.futures import ThreadPoolExecutor
 from daily_prompt import load_daily_prompt
 
 REPO = Path(__file__).resolve().parent
@@ -264,7 +263,7 @@ a{{color:var(--cyan)}} .links{{white-space:nowrap}} .links a{{border:1px solid v
 .toolbar{{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}} input,select{{background:#0b1118;border:1px solid var(--line);border-radius:8px;color:var(--ink);padding:9px 11px;font:inherit}} input{{min-width:240px;flex:1}} .table-wrap{{overflow:auto}} table{{border-collapse:collapse;width:100%;font-size:12px;min-width:1000px}} th,td{{border-bottom:1px solid #202b38;padding:9px 8px;text-align:left;vertical-align:top}} th{{color:var(--muted);font-size:11px;letter-spacing:.04em;text-transform:uppercase;position:sticky;top:0;background:#121923}} td.n{{text-align:right;font-variant-numeric:tabular-nums}} td.errtxt{{color:var(--red);max-width:300px;word-break:break-word}} .pager{{display:flex;justify-content:space-between;align-items:center;margin-top:12px;color:var(--muted)}} button{{background:#172331;border:1px solid var(--line);border-radius:7px;color:var(--ink);padding:7px 11px;cursor:pointer}} button:disabled{{opacity:.4;cursor:not-allowed}}
 @media(max-width:760px){{main{{padding:24px 14px 48px}}header{{display:block}}.links{{margin-top:18px}}.metrics{{grid-template-columns:repeat(2,1fr)}}.panel{{padding:14px}}.pairs{{grid-template-columns:1fr}}}}
 </style></head><body><main>
-<header><div><div class="eyebrow">PUBLIC ACCOUNT MONITOR · 5 MINUTE CENSUS</div><h1>When the door says <span>at capacity</span>.</h1><p class="lede">One Codex account, eight models in parallel, one attempt each. The SVGs are the probe; timestamps, latency, token drift and failures are the evidence.</p></div><div class="links"><a href="stats.json">raw stats.json</a><a href="https://github.com/geekysong/codex-model-at-capacity">source ↗</a></div></header>
+<header><div><div class="eyebrow">PUBLIC ACCOUNT MONITOR · 5 MINUTE CENSUS</div><h1>When the door says <span>at capacity</span>.</h1><p class="lede">One Codex account, eight models in sequence, one attempt each. The SVGs are the probe; timestamps, latency, token drift and failures are the evidence.</p></div><div class="links"><a href="stats.json">raw stats.json</a><a href="https://github.com/geekysong/codex-model-at-capacity">source ↗</a></div></header>
 <section class="metrics"><div class="metric"><small>Latest round</small><b>{ok_n}/{len(latest_recs)}</b><small>models returned an SVG</small></div><div class="metric"><small>All attempts</small><b>{attempts}</b><small>{len(rounds)} rounds · {all_ok / attempts * 100 if attempts else 0:.1f}% success</small></div><div class="metric"><small>Median latency</small><b>{median if median is not None else "—"}<small> s</small></b><small>across recorded attempts</small></div><div class="metric"><small>Last seen</small><b style="font-size:16px">{latest or "—"}</b><small>{updated}</small></div></section>
 <section class="panel"><div class="section-head"><h2>Latest round · {latest or "—"}</h2><p>{ok_n}/{len(latest_recs)} passed · once per model · no retries</p></div><div class="grid">{''.join(cards)}</div></section>
 <section class="panel"><div class="section-head"><h2>Cross-provider pairs</h2><p>Codex subscription vs Claude API · four models · two prompt rounds</p></div>{''.join(pair_sections) or '<p class="muted">Claude comparison images are not available yet.</p>'}</section>
@@ -296,11 +295,9 @@ def main() -> int:
         return 0
     round_id = datetime.now(SGT).strftime("%Y%m%d-%H%M%S")
     print(f"round {round_id}: {len(MODELS)} models, one attempt each", flush=True)
-    # All models run concurrently: each codex exec mostly waits on the API,
-    # so the Pi handles 8 in parallel fine, and a round takes ~max(duration)
-    # instead of the sum. Each model's duration is still its own wall-clock.
-    with ThreadPoolExecutor(max_workers=len(MODELS)) as pool:
-        results = list(pool.map(lambda m: run_model(m, round_id), MODELS))
+    # Run models one at a time so a round resembles ordinary account use and
+    # does not create a burst of simultaneous requests.
+    results = [run_model(model, round_id) for model in MODELS]
     for rec in results:
         print(f"  {rec['model']}: {rec['status']} {rec['duration_s']}s "
               f"tok={rec['total_tokens']} err={(rec['error'] or '')[:80]}", flush=True)
