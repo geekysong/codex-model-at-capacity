@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152f"/>
+      <stop offset="1" stop-color="#090914"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#29203e"/>
+      <stop offset=".5" stop-color="#5a244d"/>
+      <stop offset="1" stop-color="#201c3b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <style>
+      .ink{stroke:#11101d;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;font-weight:900}
+      .small{font-family:Arial,Helvetica,sans-serif;font-weight:700}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="110" cy="120" r="90" fill="#43256c" opacity=".35"/>
+  <circle cx="710" cy="150" r="125" fill="#194f67" opacity=".25"/>
+  <path d="M0 430 Q200 390 400 430 T800 425 V600 H0Z" fill="url(#floor)"/>
+  <path d="M0 510 Q200 460 400 510 T800 500" fill="none" stroke="#dd4b86" stroke-width="4" opacity=".45"/>
+  <path d="M0 550 Q200 500 400 550 T800 540" fill="none" stroke="#39d5d8" stroke-width="3" opacity=".3"/>
+
+  <text x="400" y="55" text-anchor="middle" class="label" font-size="31" fill="#fff4c7">CODEX NIGHTCLUB</text>
+  <text x="400" y="86" text-anchor="middle" class="small" font-size="17" fill="#f08bb5" letter-spacing="4">THE CLUB FOR MODELS WHO NEVER SLEEP</text>
+
+  <!-- glowing FULL sign -->
+  <rect x="282" y="112" width="236" height="84" rx="15" fill="#e31e55" opacity=".3" filter="url(#glow)"/>
+  <rect x="288" y="118" width="224" height="72" rx="12" fill="#331323" stroke="#ff527e" stroke-width="6"/>
+  <text x="400" y="169" text-anchor="middle" class="label" font-size="48" fill="#fff27c" filter="url(#glow)">FULL</text>
+  <circle cx="306" cy="136" r="5" fill="#fff27c"/>
+  <circle cx="494" cy="136" r="5" fill="#fff27c"/>
+
+  <!-- club entrance -->
+  <rect x="540" y="236" width="220" height="225" rx="18" fill="#100e1d" stroke="#34304e" stroke-width="8"/>
+  <path d="M570 455 V290 Q650 225 730 290 V455" fill="#241432" stroke="#e54d83" stroke-width="5"/>
+  <path d="M590 432 V310 Q650 268 710 310 V432" fill="#070711"/>
+  <text x="650" y="350" text-anchor="middle" class="label" font-size="18" fill="#f6d66a">EXCLUSIVE</text>
+  <text x="650" y="375" text-anchor="middle" class="label" font-size="16" fill="#f6d66a">MODEL LOUNGE</text>
+
+  <!-- lone model inside -->
+  <g transform="translate(650 402)">
+    <ellipse cx="0" cy="28" rx="38" ry="9" fill="#000" opacity=".6"/>
+    <rect x="-25" y="-20" width="50" height="48" rx="13" fill="#87e7e2" class="ink"/>
+    <circle cx="-10" cy="-1" r="5" fill="#16152a"/>
+    <circle cx="10" cy="-1" r="5" fill="#16152a"/>
+    <path d="M-12 14 Q0 22 12 14" fill="none" class="ink"/>
+    <path d="M-25 0 L-43 -13 M25 0 L43 -13" class="ink"/>
+    <path d="M-18 28 L-22 50 M18 28 L22 50" class="ink"/>
+    <path d="M-43 -13 l-8 5 M43 -13 l8 5" class="ink"/>
+    <text x="0" y="70" text-anchor="middle" class="small" font-size="12" fill="#9dfff0">MODEL 1</text>
+  </g>
+
+  <!-- bouncer -->
+  <g transform="translate(500 300)">
+    <ellipse cx="0" cy="166" rx="88" ry="14" fill="#080811" opacity=".65"/>
+    <rect x="-58" y="30" width="116" height="137" rx="25" fill="#303149" class="ink"/>
+    <path d="M-49 75 Q0 105 49 75 L58 165 H-58Z" fill="#202137" class="ink"/>
+    <rect x="-60" y="104" width="120" height="18" rx="8" fill="#f5c64b" class="ink"/>
+    <path d="M-48 52 L-95 80 M48 52 L93 71" fill="none" stroke="#303149" stroke-width="25" stroke-linecap="round"/>
+    <path d="M-95 80 l-22 -8 M93 71 l22 7" fill="none" stroke="#f0b75c" stroke-width="16" stroke-linecap="round"/>
+    <rect x="-67" y="-43" width="134" height="91" rx="25" fill="#8be0dc" class="ink"/>
+    <rect x="-50" y="-25" width="100" height="48" rx="15" fill="#111526" stroke="#11101d" stroke-width="5"/>
+    <circle cx="-25" cy="-1" r="9" fill="#ff4e74"/>
+    <circle cx="25" cy="-1" r="9" fill="#ff4e74"/>
+    <path d="M-28 27 Q0 39 28 27" fill="none" stroke="#11101d" stroke-width="6"/>
+    <path d="M0 -43 V-63" class="ink"/>
+    <circle cx="0" cy="-70" r="9" fill="#ffdb5c" class="ink"/>
+    <text x="0" y="193" text-anchor="middle" class="label" font-size="15" fill="#f7d87c">BOUNCER.exe</text>
+    <path d="M76 -18 Q126 -47 158 -15" fill="none" stroke="#f6f0c4" stroke-width="4"/>
+    <path d="M155 -15 l-16 -7 M155 -15 l-10 13" fill="none" stroke="#f6f0c4" stroke-width="4"/>
+    <text x="164" y="-23" class="small" font-size="14" fill="#fff4c7">NOPE.</text>
+  </g>
+
+  <!-- velvet rope -->
+  <path d="M82 451 Q235 390 412 451" fill="none" stroke="#d72b5f" stroke-width="10"/>
+  <path d="M82 451 Q235 390 412 451" fill="none" stroke="#ff7591" stroke-width="3" opacity=".7"/>
+  <g fill="#d8ad59" class="ink">
+    <circle cx="82" cy="451" r="12"/><circle cx="412" cy="451" r="12"/>
+    <path d="M72 451 L68 548 H96 L92 451Z"/>
+    <path d="M402 451 L398 548 H426 L422 451Z"/>
+  </g>
+
+  <!-- tired developer queue -->
+  <g class="ink">
+    <!-- dev 1 -->
+    <g transform="translate(98 390)">
+      <ellipse cx="0" cy="150" rx="46" ry="9" fill="#080811" opacity=".6"/>
+      <path d="M-29 58 Q0 39 29 58 L39 143 H-39Z" fill="#5c82d8"/>
+      <circle cx="0" cy="30" r="27" fill="#e4ad83"/>
+      <path d="M-25 28 Q-16 -12 22 0 Q38 15 25 31 L15 17 Q-5 8 -25 28Z" fill="#403047"/>
+      <path d="M-10 40 Q0 47 10 40" fill="none"/>
+      <path d="M-45 74 L-75 99 M45 74 L75 91" stroke="#e4ad83" stroke-width="14"/>
+      <path d="M-25 142 L-28 174 M25 142 L31 174" stroke="#27324e" stroke-width="15"/>
+      <text x="0" y="200" text-anchor="middle" class="small" font-size="13" fill="#fff4c7">DEV_01</text>
+      <text x="0" y="222" text-anchor="middle" class="small" font-size="12" fill="#ff9ab2">been waiting 6 hrs</text>
+    </g>
+    <!-- dev 2 -->
+    <g transform="translate(225 406)">
+      <ellipse cx="0" cy="134" rx="43" ry="9" fill="#080811" opacity=".6"/>
+      <path d="M-31 56 Q0 38 31 56 L38 129 H-38Z" fill="#d75b75"/>
+      <circle cx="0" cy="28" r="26" fill="#b97854"/>
+      <path d="M-27 25 Q-22 -12 18 -2 Q35 8 26 28 Q3 12 -27 25Z" fill="#1e1b2e"/>
+      <path d="M-12 40 Q0 35 12 40" fill="none"/>
+      <path d="M-44 74 L-72 91 M44 74 L72 87" stroke="#b97854" stroke-width="14"/>
+      <path d="M-22 129 L-30 160 M22 129 L30 160" stroke="#29233c" stroke-width="15"/>
+      <text x="0" y="185" text-anchor="middle" class="small" font-size="13" fill="#fff4c7">DEV_02</text>
+    </g>
+    <!-- dev 3 -->
+    <g transform="translate(344 390)">
+      <ellipse cx="0" cy="150" rx="46" ry="9" fill="#080811" opacity=".6"/>
+      <path d="M-30 59 Q0 38 30 59 L39 144 H-39Z" fill="#55b79b"/>
+      <circle cx="0" cy="29" r="26" fill="#d79a72"/>
+      <path d="M-25 24 Q-12 -14 26 4 L27 27 Q3 13 -25 24Z" fill="#a44e55"/>
+      <path d="M-14 41 Q0 33 14 41" fill="none"/>
+      <path d="M-44 76 L-73 94 M44 76 L75 96" stroke="#d79a72" stroke-width="14"/>
+      <path d="M-23 143 L-28 174 M23 143 L30 174" stroke="#29233c" stroke-width="15"/>
+      <text x="0" y="200" text-anchor="middle" class="small" font-size="13" fill="#fff4c7">DEV_03</text>
+      <text x="0" y="222" text-anchor="middle" class="small" font-size="12" fill="#ff9ab2">rebooting hope...</text>
+    </g>
+  </g>
+
+  <!-- laptop and error bubble -->
+  <g transform="translate(245 245)">
+    <path d="M-45 48 L-27 -12 H45 L27 48Z" fill="#9da5b8" class="ink"/>
+    <rect x="-21" y="-4" width="50" height="40" fill="#292844" transform="skewX(-14)"/>
+    <path d="M-55 50 H40 L53 61 H-66Z" fill="#b8bfce" class="ink"/>
+    <text x="3" y="20" text-anchor="middle" class="small" font-size="8" fill="#ff7899" transform="skewX(-14)">ERROR</text>
+    <path d="M-4 -12 Q10 -55 74 -52 Q122 -48 123 -14 Q124 16 83 19 L47 35 L51 16 Q10 17 -4 -12Z" fill="#fff8dd" class="ink"/>
+    <text x="60" y="-17" text-anchor="middle" class="label" font-size="11" fill="#cf315d">Selected model</text>
+    <text x="60" y="-2" text-anchor="middle" class="label" font-size="11" fill="#cf315d">is at capacity.</text>
+    <text x="60" y="12" text-anchor="middle" class="small" font-size="9" fill="#29233c">Try again tomorrow.</text>
+  </g>
+
+  <!-- melting hamster-wheel servers -->
+  <g transform="translate(74 155)">
+    <path d="M0 80 Q35 55 70 80 L78 145 Q40 165 4 145Z" fill="#353650" class="ink"/>
+    <circle cx="39" cy="106" r="30" fill="none" stroke="#f06d5f" stroke-width="9"/>
+    <path d="M18 89 L60 125 M60 89 L18 125" stroke="#f06d5f" stroke-width="5"/>
+    <ellipse cx="39" cy="145" rx="48" ry="9" fill="#ef5b54" opacity=".8" filter="url(#soft)"/>
+    <path d="M8 75 Q-4 52 8 36 M36 67 Q29 37 46 19 M65 75 Q67 51 83 42" fill="none" stroke="#ffbe57" stroke-width="7"/>
+    <text x="39" y="184" text-anchor="middle" class="label" font-size="13" fill="#ffbf69">SERVER FARM</text>
+  </g>
+  <g transform="translate(690 105) scale(.72)">
+    <path d="M0 80 Q35 55 70 80 L78 145 Q40 165 4 145Z" fill="#353650" class="ink"/>
+    <circle cx="39" cy="106" r="30" fill="none" stroke="#f06d5f" stroke-width="9"/>
+    <path d="M18 89 L60 125 M60 89 L18 125" stroke="#f06d5f" stroke-width="5"/>
+    <path d="M8 75 Q-4 52 8 36 M36 67 Q29 37 46 19 M65 75 Q67 51 83 42" fill="none" stroke="#ffbe57" stroke-width="7"/>
+  </g>
+
+  <!-- caption -->
+  <rect x="118" y="560" width="564" height="30" rx="15" fill="#11101d" stroke="#f2c95c" stroke-width="2"/>
+  <text x="400" y="582" text-anchor="middle" class="label" font-size="16" fill="#fff4c7">WHEN THE CLUB IS “AT CAPACITY,” BUT THE SERVERS ARE LITERALLY MELTING.</text>
+</svg>

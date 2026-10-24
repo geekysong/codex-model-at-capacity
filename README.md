@@ -51,3 +51,65 @@ Models surveyed: `gpt-6-astra`, `gpt-6.1-sol`, `gpt-6-sol`, `gpt-6-luna`,
 to `low` for all models so timings are comparable.
 
 Commits are authored as geekysong <geekysong@gmail.com>.
+
+## What “degradation” means here
+
+This project deliberately does **not** trust Codex with important work. The
+probe is a small, reversible drawing task; it measures availability and a few
+observable cost signals without putting a real deliverable at risk. A passing
+SVG is therefore not evidence that a model is intelligent, and a slow round is
+not by itself evidence of a regression.
+
+The stronger signal we want to add is an independent, subjective review. For a
+fixed set of benchmark prompts, Claude Code can judge each Codex answer using
+the same rubric and a 0–4 score for: instruction following, factual accuracy,
+reasoning, completeness, and usefulness. The judge must receive the prompt and
+answer, not the model name or timing, and the prompt set and rubric must remain
+versioned. We will store one record per judged answer with the prompt-set
+version, Codex model, judge model, rubric scores, total score, and a short
+reason. This creates a separate “quality” series alongside the operational
+series in `stats.json`; it must never be inferred from SVG success alone.
+
+Until those benchmark reviews are collected, the site should describe the
+subjective quality signal as planned rather than display an invented score.
+
+## Data format
+
+`stats.json` is an append-only JSON array. Each attempt has these fields:
+
+| Field | Meaning |
+| --- | --- |
+| `round` | SGT round identifier, `YYYYMMDD-HHMMSS` |
+| `time_sgt` | Timestamp when that model attempt started |
+| `model` | Codex model passed to `codex exec` |
+| `status` | `ok` when a complete SVG was extracted, otherwise `error` |
+| `duration_s` | Wall-clock seconds, including failed attempts and timeouts |
+| `input_tokens`, `cached_input_tokens`, `output_tokens`, `reasoning_tokens`, `total_tokens` | Usage reported by the JSON event stream; unavailable values are `null` |
+| `error` | Truncated error text, when present |
+| `svg` | Relative path to the generated SVG, or `null` |
+
+Each round also has `runs/<round>/meta.json`, containing the eight records from
+that invocation. The SVG files are kept as the original public artifacts.
+
+## Reproduce or operate it
+
+The Raspberry Pi runs this user cron entry every five minutes:
+
+```cron
+*/5 * * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_round.py >> /home/songyy/codex-model-at-capacity/round.log 2>&1
+```
+
+The runner acquires `.round.lock`, invokes each model once with reasoning effort
+`low`, waits at most 180 seconds per model, appends the results, rebuilds
+`index.html`, writes the round metadata, then commits and pushes `main` and
+`main:gh-pages`. Push failures are left for the next round to retry. To run a
+local page build without making model calls, use:
+
+```bash
+python3 -m py_compile run_round.py
+```
+
+The generated page is intentionally self-contained: it has no CDN or build
+step, so GitHub Pages can serve it directly. `index.html` is generated output;
+make UI changes in `build_index()` inside `run_round.py`, otherwise the next
+cron run will overwrite them.
