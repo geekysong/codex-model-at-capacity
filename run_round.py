@@ -208,17 +208,21 @@ def build_index(records: list[dict]) -> str:
         # Records from the original capacity probe have no variant field and
         # must not be mistaken for the newer pelican round.
         variant_records = [r for r in records if r.get("variant", "legacy") == variant]
-        variant_round = max((r["round"] for r in variant_records), default=None)
-        variant_latest = [r for r in variant_records if r["round"] == variant_round]
         pair_cards = []
         for codex_model, claude_id, claude_label in PAIRINGS:
-            codex = next((r for r in variant_latest if r["model"] == codex_model and r.get("svg")), None)
+            latest_model = max(
+                (r for r in variant_records if r["model"] == codex_model),
+                key=lambda r: (r["round"], r["time_sgt"]), default=None,
+            )
+            codex = latest_model if latest_model and latest_model.get("svg") else None
             claude_paths = [p for p in comparison_files if p.parent.name == claude_id and p.parent.parent.name == variant]
             claude = claude_paths[-1] if claude_paths else None
             if not codex and not claude:
                 continue
             left = (f'<img src="{html.escape(codex["svg"])}" alt="{html.escape(codex_model)}" loading="lazy">'
-                    if codex else f'<div class="noart">No Codex image<small>{public_error(next((r.get("error") for r in variant_latest if r["model"] == codex_model), "no record"))}</small></div>')
+                    if codex else f'<div class="noart">No Codex image<small>{public_error(latest_model.get("error") if latest_model else "no record")}</small></div>')
+            if latest_model:
+                left += f'<small>{html.escape(latest_model["time_sgt"])} SGT</small>'
             if claude:
                 rel = claude.relative_to(REPO).as_posix()
                 cost = ""
