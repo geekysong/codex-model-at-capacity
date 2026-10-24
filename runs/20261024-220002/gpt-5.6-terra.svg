@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Balanced seesaw torque equation</title>
+  <desc id="desc">A level seesaw in static equilibrium: 6 kilogram mass two metres left of pivot and 4 kilogram mass three metres right of pivot.</desc>
+  <defs>
+    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#263238"/>
+    </marker>
+    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M8,0 L0,4 L8,8 Z" fill="#263238"/>
+    </marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #1b2630; }
+      .label { font-size: 18px; font-weight: 600; }
+      .small { font-size: 16px; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="#f7fbfd"/>
+  <text x="300" y="42" text-anchor="middle" font-size="25" font-weight="bold">Static Equilibrium</text>
+
+  <!-- Level beam -->
+  <rect x="75" y="192" width="450" height="16" rx="8" fill="#d98b36" stroke="#804715" stroke-width="3"/>
+  <line x1="300" y1="184" x2="300" y2="136" stroke="#263238" stroke-width="3" marker-end="url(#arrowUp)"/>
+  <text x="315" y="151" class="small">support force</text>
+
+  <!-- Pivot -->
+  <path d="M300 208 L267 278 L333 278 Z" fill="#4f7ea5" stroke="#263238" stroke-width="3"/>
+  <circle cx="300" cy="200" r="8" fill="#263238"/>
+  <text x="300" y="302" text-anchor="middle" class="label">pivot</text>
+
+  <!-- Left hanging mass -->
+  <line x1="140" y1="200" x2="140" y2="235" stroke="#263238" stroke-width="3"/>
+  <rect x="108" y="235" width="64" height="48" rx="5" fill="#6aaed6" stroke="#263238" stroke-width="3"/>
+  <text x="140" y="265" text-anchor="middle" class="label">6 kg</text>
+  <line x1="140" y1="289" x2="140" y2="334" stroke="#263238" stroke-width="3" marker-end="url(#arrowDown)"/>
+  <text x="104" y="327" text-anchor="end" class="small">weight</text>
+
+  <!-- Right hanging mass -->
+  <line x1="420" y1="200" x2="420" y2="235" stroke="#263238" stroke-width="3"/>
+  <rect x="388" y="235" width="64" height="48" rx="5" fill="#81bf7a" stroke="#263238" stroke-width="3"/>
+  <text x="420" y="265" text-anchor="middle" class="label">4 kg</text>
+  <line x1="420" y1="289" x2="420" y2="334" stroke="#263238" stroke-width="3" marker-end="url(#arrowDown)"/>
+  <text x="456" y="327" class="small">weight</text>
+
+  <!-- Distance dimensions -->
+  <line x1="140" y1="166" x2="300" y2="166" stroke="#455a64" stroke-width="2"/>
+  <line x1="140" y1="157" x2="140" y2="175" stroke="#455a64" stroke-width="2"/>
+  <line x1="300" y1="157" x2="300" y2="175" stroke="#455a64" stroke-width="2"/>
+  <text x="220" y="157" text-anchor="middle" class="label">2 m</text>
+
+  <line x1="300" y1="166" x2="420" y2="166" stroke="#455a64" stroke-width="2"/>
+  <line x1="420" y1="157" x2="420" y2="175" stroke="#455a64" stroke-width="2"/>
+  <text x="360" y="157" text-anchor="middle" class="label">x = 3 m</text>
+
+  <text x="300" y="365" text-anchor="middle" font-size="23" font-weight="bold">6 × 2 = 4 × 3</text>
+  <text x="300" y="392" text-anchor="middle" font-size="20" font-weight="bold" fill="#28723b">BALANCED</text>
+</svg>
