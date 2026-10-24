@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f4e79"/>
+    </marker>
+    <style>
+      .label { font-family: Arial, sans-serif; fill: #222; font-size: 20px; }
+      .small { font-family: Arial, sans-serif; fill: #222; font-size: 17px; }
+      .title { font-family: Arial, sans-serif; fill: #17365d; font-size: 28px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="#ffffff"/>
+
+  <text x="300" y="38" text-anchor="middle" class="title">Level Seesaw in Static Equilibrium</text>
+
+  <!-- Seesaw beam -->
+  <rect x="85" y="165" width="430" height="18" rx="6" fill="#c98b45" stroke="#704214" stroke-width="3"/>
+  <circle cx="300" cy="174" r="6" fill="#704214"/>
+
+  <!-- Pivot -->
+  <path d="M270 290 L300 180 L330 290 Z" fill="#8fa3b8" stroke="#34495e" stroke-width="3"/>
+  <line x1="250" y1="290" x2="350" y2="290" stroke="#34495e" stroke-width="6"/>
+  <text x="300" y="322" text-anchor="middle" class="label">pivot</text>
+
+  <!-- Left suspension and mass -->
+  <line x1="145" y1="183" x2="145" y2="225" stroke="#333" stroke-width="3"/>
+  <rect x="117" y="225" width="56" height="48" rx="5" fill="#d9534f" stroke="#8c2f2b" stroke-width="3"/>
+  <text x="145" y="256" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20" font-weight="bold">6 kg</text>
+
+  <!-- Right suspension and mass -->
+  <line x1="450" y1="183" x2="450" y2="225" stroke="#333" stroke-width="3"/>
+  <rect x="422" y="225" width="56" height="48" rx="5" fill="#4f81bd" stroke="#2d4f7c" stroke-width="3"/>
+  <text x="450" y="256" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20" font-weight="bold">4 kg</text>
+
+  <!-- Force arrows -->
+  <line x1="145" y1="214" x2="145" y2="285" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="145" y="307" text-anchor="middle" class="small">6g downward</text>
+
+  <line x1="450" y1="214" x2="450" y2="285" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="450" y="307" text-anchor="middle" class="small">4g downward</text>
+
+  <!-- Distance dimensions -->
+  <line x1="145" y1="135" x2="300" y2="135" stroke="#555" stroke-width="2"/>
+  <line x1="145" y1="128" x2="145" y2="142" stroke="#555" stroke-width="2"/>
+  <line x1="300" y1="128" x2="300" y2="142" stroke="#555" stroke-width="2"/>
+  <text x="222.5" y="124" text-anchor="middle" class="label">2 m</text>
+
+  <line x1="300" y1="105" x2="450" y2="105" stroke="#555" stroke-width="2"/>
+  <line x1="300" y1="98" x2="300" y2="112" stroke="#555" stroke-width="2"/>
+  <line x1="450" y1="98" x2="450" y2="112" stroke="#555" stroke-width="2"/>
+  <text x="375" y="94" text-anchor="middle" class="label">x m</text>
+
+  <!-- Equation and result -->
+  <text x="300" y="355" text-anchor="middle" class="label">6 × 2 = 4 × 3</text>
+  <text x="300" y="382" text-anchor="middle" class="title">x = 3 m   •   BALANCED</text>
+</svg>
