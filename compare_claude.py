@@ -23,17 +23,27 @@ MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-20250514")
 MAX_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "4096"))
 SGT = ZoneInfo("Asia/Singapore")
 
-PROMPT = (
+PROMPTS = {
+"pelican": (
     "Draw a satirical cartoon as ONE single self-contained SVG document "
-    '(viewBox="0 0 800 600"). Theme: OpenAI Codex keeps refusing work with '
-    '"Selected model is at capacity. Please try a different model." Make fun of '
-    "that: a robot nightclub bouncer turning away a long queue of tired developers, "
-    "a velvet rope and a glowing FULL sign, hamster-wheel servers melting, an "
-    "exclusive club where only one model got in — pick ONE scene and make it funny. "
-    'Include inside the SVG a bold title and a caption containing the words "at capacity". '
-    "Output ONLY the SVG code: no markdown fences, no explanation, no text outside the "
-    "<svg>...</svg> document. Keep the SVG compact (under 2500 tokens)."
-)
+    '(viewBox="0 0 800 600"). Theme: a pelican riding a bicycle. Make it funny '
+    "and visually expressive, with a clear single scene, readable characters, and "
+    "a bold title plus a short caption about the pelican on the bicycle. Output ONLY "
+    "the SVG code: no markdown fences, no explanation, no text outside the document. "
+    "Keep the SVG compact (under 2500 tokens)."
+),
+"substitution": (
+    "Draw a satirical cartoon as ONE single self-contained SVG document "
+    '(viewBox="0 0 800 600"). Theme: a service promises a premium model but quietly '
+    "substitutes a cheap weak model. Show the bait-and-switch clearly and humorously, "
+    "with a bold title and short caption. Output ONLY the SVG code: no markdown fences, "
+    "no explanation, no text outside the <svg>...</svg> document. Keep the SVG compact."
+),
+}
+PROMPT_VARIANT = os.environ.get("PROBE_VARIANT", "pelican")
+if PROMPT_VARIANT not in PROMPTS:
+    raise ValueError(f"unknown PROBE_VARIANT: {PROMPT_VARIANT}")
+PROMPT = PROMPTS[PROMPT_VARIANT]
 
 
 def read_key() -> str:
@@ -83,10 +93,11 @@ def main() -> int:
     match = re.search(r"<svg[\s\S]*?</svg>", text)
     stamp = started.strftime("%Y%m%d-%H%M%S")
     model_slug = re.sub(r"[^A-Za-z0-9._-]+", "_", MODEL)
-    out_dir = REPO / "comparisons" / stamp / model_slug
+    out_dir = REPO / "comparisons" / stamp / PROMPT_VARIANT / model_slug
     out_dir.mkdir(parents=True, exist_ok=True)
     metadata = {
         "provider": "anthropic",
+        "variant": PROMPT_VARIANT,
         "model": result.get("model", MODEL),
         "time_sgt": started.strftime("%Y-%m-%d %H:%M:%S"),
         "duration_s": round(time.monotonic() - t0, 2),

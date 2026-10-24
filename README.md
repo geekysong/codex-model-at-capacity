@@ -86,14 +86,16 @@ that invocation. The SVG files are kept as the original public artifacts.
 
 ## Reproduce or operate it
 
-The Raspberry Pi runs this user cron entry every five minutes:
+The Raspberry Pi runs the Codex census every five minutes and the Claude API
+comparison every thirty minutes:
 
 ```cron
 */5 * * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_round.py >> /home/songyy/codex-model-at-capacity/round.log 2>&1
+*/30 * * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_claude_round.py >> /home/songyy/codex-model-at-capacity/claude_round.log 2>&1
 ```
 
-The runner acquires `.round.lock`, invokes each model once with reasoning effort
-`low`, waits at most 180 seconds per model, appends the results, rebuilds
+The Codex runner acquires `.round.lock`, invokes the four paired models once in
+parallel with reasoning effort `low`, waits at most 180 seconds per model, appends the results, rebuilds
 `index.html`, writes the round metadata, then commits and pushes `main` and
 `main:gh-pages`. Push failures are left for the next round to retry. To run a
 local page build without making model calls, use:
@@ -118,7 +120,12 @@ python3 compare_claude.py
 ```
 
 The model can be selected without changing the script, for example with
-`CLAUDE_MODEL=claude-sonnet-4-20250514`. The output and non-secret request
+`CLAUDE_MODEL=claude-sonnet-5-5`. The output and non-secret request
 metadata are written to `comparisons/<timestamp>/`; the key is never written
 there or printed. This comparison is intentionally separate from the cron
 health series and is not automatically published to GitHub Pages.
+
+There are two prompt rounds: `pelican` asks for a pelican riding a bicycle;
+`substitution` satirizes a service promising a premium model while quietly
+substituting a weak one. `run_claude_round.py` runs all four Claude pairings for
+both variants every 30 minutes and publishes their side-by-side results.
