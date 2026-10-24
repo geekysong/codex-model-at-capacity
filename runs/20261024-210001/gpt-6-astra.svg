@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Balanced seesaw in static equilibrium</title>
+  <desc id="desc">A 6 kilogram mass hangs 2 metres left of the pivot and a 4 kilogram mass hangs 3 metres right. Equal opposing torques keep the seesaw level.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#db543e"/>
+    </marker>
+  </defs>
+  <rect width="600" height="400" fill="#fff"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#193247">
+    <text x="300" y="40" font-size="26" font-weight="700" fill="#237850">balanced</text>
+
+    <!-- Distances share the same scale: 70 pixels per metre. -->
+    <g fill="none" stroke="#587084" stroke-width="1.5">
+      <path d="M110 82V113 M250 82V113 M460 82V113"/>
+      <path d="M110 96H250 M250 96H460"/>
+    </g>
+    <rect x="150" y="82" width="60" height="27" fill="#fff"/>
+    <rect x="303" y="82" width="104" height="27" fill="#fff"/>
+    <text x="180" y="102" font-size="20">2 m</text>
+    <text x="355" y="102" font-size="20" font-weight="700">x = 3 m</text>
+
+    <!-- Horizontal beam and fulcrum. -->
+    <rect x="75" y="130" width="420" height="14" rx="4" fill="#375971"/>
+    <path d="M250 144 219 211H281Z" fill="#b9c9d3" stroke="#375971" stroke-width="2"/>
+    <path d="M207 213H293" stroke="#375971" stroke-width="4" stroke-linecap="round"/>
+    <text x="250" y="238" font-size="16">pivot</text>
+
+    <!-- Hanging masses. -->
+    <g stroke="#375971" stroke-width="3">
+      <path d="M110 144V174 M460 144V174"/>
+    </g>
+    <rect x="72" y="174" width="76" height="52" rx="6" fill="#e6eff5" stroke="#375971" stroke-width="2"/>
+    <rect x="422" y="174" width="76" height="52" rx="6" fill="#e6eff5" stroke="#375971" stroke-width="2"/>
+    <text x="110" y="207" font-size="22" font-weight="700">6 kg</text>
+    <text x="460" y="207" font-size="22" font-weight="700">4 kg</text>
+
+    <!-- Downward weight forces. -->
+    <g stroke="#db543e" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M110 230V284"/>
+      <path d="M460 230V266"/>
+    </g>
+    <text x="162" y="263" font-size="18" fill="#b53e2c">6g ↓</text>
+    <text x="512" y="254" font-size="18" fill="#b53e2c">4g ↓</text>
+
+    <text x="300" y="318" font-size="18">Equal opposing torques: 6g × 2 = 4g × x</text>
+    <text x="300" y="351" font-size="25" font-weight="700">6×2 = 4×3</text>
+    <text x="300" y="382" font-size="21" font-weight="700" fill="#237850">x = (6 × 2) / 4 = 3 m</text>
+  </g>
+</svg>

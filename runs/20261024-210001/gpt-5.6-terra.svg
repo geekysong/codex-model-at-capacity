@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Balanced seesaw torque equation</title>
+  <desc id="desc">A level seesaw in static equilibrium: 6 kilogram mass at 2 metres left balances 4 kilogram mass at 3 metres right.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#d94b3d"/>
+    </marker>
+    <style>
+      .label { font-family: Arial, sans-serif; fill: #1d2939; }
+      .small { font-size: 16px; }
+      .main { font-size: 22px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="#f8fbff"/>
+  <text x="300" y="45" text-anchor="middle" class="label main">Static Equilibrium</text>
+
+  <!-- Level seesaw -->
+  <line x1="80" y1="205" x2="520" y2="205" stroke="#334e68" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="300" cy="205" r="7" fill="#1d2939"/>
+
+  <!-- Pivot -->
+  <path d="M300 212 L258 300 L342 300 Z" fill="#6b9ac4" stroke="#334e68" stroke-width="4"/>
+  <text x="300" y="327" text-anchor="middle" class="label small">pivot</text>
+
+  <!-- Left mass -->
+  <line x1="160" y1="205" x2="160" y2="245" stroke="#334e68" stroke-width="3"/>
+  <rect x="125" y="245" width="70" height="50" rx="5" fill="#f5b041" stroke="#9a5b12" stroke-width="3"/>
+  <text x="160" y="276" text-anchor="middle" class="label main">6 kg</text>
+  <line x1="160" y1="300" x2="160" y2="342" stroke="#d94b3d" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="174" y="335" class="label small" fill="#d94b3d">weight</text>
+
+  <!-- Right mass -->
+  <line x1="510" y1="205" x2="510" y2="245" stroke="#334e68" stroke-width="3"/>
+  <rect x="475" y="245" width="70" height="50" rx="5" fill="#7bc67b" stroke="#397239" stroke-width="3"/>
+  <text x="510" y="276" text-anchor="middle" class="label main">4 kg</text>
+  <line x1="510" y1="300" x2="510" y2="342" stroke="#d94b3d" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="524" y="335" class="label small" fill="#d94b3d">weight</text>
+
+  <!-- Distance labels -->
+  <line x1="160" y1="170" x2="300" y2="170" stroke="#577590" stroke-width="2"/>
+  <line x1="160" y1="162" x2="160" y2="178" stroke="#577590" stroke-width="2"/>
+  <line x1="300" y1="162" x2="300" y2="178" stroke="#577590" stroke-width="2"/>
+  <text x="230" y="158" text-anchor="middle" class="label main">2 m</text>
+
+  <line x1="300" y1="170" x2="510" y2="170" stroke="#577590" stroke-width="2"/>
+  <line x1="510" y1="162" x2="510" y2="178" stroke="#577590" stroke-width="2"/>
+  <text x="405" y="158" text-anchor="middle" class="label main">x m = 3 m</text>
+
+  <!-- Equation and balance -->
+  <text x="300" y="370" text-anchor="middle" class="label main">Torque: 6 × 2 = 4 × 3</text>
+  <text x="300" y="395" text-anchor="middle" class="label main" fill="#2e7d32">balanced</text>
+</svg>
