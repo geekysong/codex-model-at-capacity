@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="white"/>
+  <style>
+    .line{stroke:#222;stroke-width:4;fill:none}
+    .thin{stroke:#333;stroke-width:2;fill:none}
+    .label{font-family:Arial,sans-serif;font-size:20px;fill:#111}
+    .title{font-family:Arial,sans-serif;font-size:28px;font-weight:bold;fill:#176b3a}
+    .mass{fill:#d94b4b;stroke:#8f2020;stroke-width:2}
+  </style>
+
+  <text x="300" y="42" text-anchor="middle" class="title">Balanced Seesaw</text>
+
+  <!-- level seesaw -->
+  <line x1="150" y1="190" x2="450" y2="190" class="line"/>
+  <line x1="150" y1="184" x2="450" y2="184" class="thin"/>
+
+  <!-- pivot -->
+  <polygon points="285,190 315,190 300,245" fill="#777" stroke="#333" stroke-width="2"/>
+  <circle cx="300" cy="190" r="6" fill="#222"/>
+  <text x="300" y="270" text-anchor="middle" class="label">pivot</text>
+
+  <!-- left hanger and mass -->
+  <line x1="220" y1="190" x2="220" y2="245" class="line"/>
+  <rect x="188" y="245" width="64" height="42" rx="5" class="mass"/>
+  <text x="220" y="272" text-anchor="middle" class="label" fill="white">6 kg</text>
+
+  <!-- right hanger and mass -->
+  <line x1="420" y1="190" x2="420" y2="245" class="line"/>
+  <rect x="388" y="245" width="64" height="42" rx="5" class="mass"/>
+  <text x="420" y="272" text-anchor="middle" class="label" fill="white">4 kg</text>
+
+  <!-- force arrows -->
+  <line x1="220" y1="145" x2="220" y2="235" stroke="#b21f1f" stroke-width="4"/>
+  <polygon points="220,245 211,228 229,228" fill="#b21f1f"/>
+  <text x="220" y="130" text-anchor="middle" class="label">6g</text>
+
+  <line x1="420" y1="145" x2="420" y2="235" stroke="#b21f1f" stroke-width="4"/>
+  <polygon points="420,245 411,228 429,228" fill="#b21f1f"/>
+  <text x="420" y="130" text-anchor="middle" class="label">4g</text>
+
+  <!-- distance annotations -->
+  <line x1="220" y1="315" x2="300" y2="315" class="thin"/>
+  <line x1="220" y1="308" x2="220" y2="322" class="thin"/>
+  <line x1="300" y1="308" x2="300" y2="322" class="thin"/>
+  <text x="260" y="345" text-anchor="middle" class="label">2 m</text>
+
+  <line x1="300" y1="315" x2="420" y2="315" class="thin"/>
+  <line x1="420" y1="308" x2="420" y2="322" class="thin"/>
+  <text x="360" y="345" text-anchor="middle" class="label">x = 3 m</text>
+
+  <!-- equation -->
+  <text x="300" y="380" text-anchor="middle" class="label">6 × 2 = 4 × 3</text>
+</svg>
