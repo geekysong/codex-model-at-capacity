@@ -81,7 +81,7 @@ subjective quality signal as planned rather than display an invented score.
 | `error` | Truncated error text, when present |
 | `svg` | Relative path to the generated SVG, or `null` |
 
-Each round also has `runs/<round>/meta.json`, containing the eight records from
+Each round also has `runs/<round>/meta.json`, containing the four records from
 that invocation. The SVG files are kept as the original public artifacts.
 
 ## Reproduce or operate it
