@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="50" y="30" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="50" y="56">Initial velocity: horizontal 20 m/s, vertical 15 m/s</text>
+    <text x="50" y="80">Gravity: 10 m/s² · No air resistance</text>
+    <text x="50" y="104">Total flight time: 3 s</text>
+    <text x="50" y="136">Scale: 10 px/m; horizontal distances measured from launch.</text>
+    <text x="50" y="158">Axis break omits 20 m so the landing fits on the canvas.</text>
+    <text x="50" y="180">The two blue curve segments retain the specified scale.</text>
+  </g>
+
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#455064" stroke-width="2"/>
+
+  <!-- Exact trajectory: x=100+200t, y=350-150t+50t².
+       Omit horizontal coordinates 440 through 640; translate
+       the remaining final segment left by 200 pixels. -->
+  <g fill="none" stroke="#1769ba" stroke-width="3">
+    <path d="M100 350 Q250 237.5 400 237.5 Q420 237.5 440 239.5"/>
+    <path d="M440 309.5 Q470 327.5 500 350"/>
+  </g>
+
+  <g stroke="#455064" stroke-width="2">
+    <path d="M432 356 L438 344 M442 356 L448 344"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="12" fill="#455064">
+    <text x="455" y="267">20 m omitted</text>
+    <text x="455" y="285">between segments</text>
+  </g>
+
+  <g fill="#172033">
+    <circle cx="100" cy="350" r="4"/>
+    <circle cx="400" cy="237.5" r="4"/>
+    <circle cx="500" cy="350" r="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="66" y="371">launch: 0 m, 0 m</text>
+    <text x="335" y="217">apex: 30 m, 11.25 m</text>
+    <text x="411" y="371">landing: 60 m, 0 m</text>
+  </g>
+
+  <text x="300" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#172033">2026-10-25 07:32:52 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals the Promenade</title>
+  <desc id="desc">A satirical cartoon of an expressive pelican proudly riding a tiny bicycle.</desc>
+  <style>
+    .spin { transform-box: fill-box; transform-origin: center; animation: spin 1.15s linear infinite; }
+    .bob { animation: bob .58s ease-in-out infinite alternate; }
+    .pedal { transform-box: fill-box; transform-origin: center; animation: pedal .58s linear infinite; }
+    .blink { animation: blink 3.2s step-end infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedal { to { transform: rotate(360deg); } }
+    @keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 94%, 97% { transform: scaleY(.08); } }
+  </style>
+
+  <rect width="800" height="600" fill="#b9e7f4"/>
+  <path d="M0 260 Q100 205 200 260 T400 250 T600 255 T800 225 V410 H0Z" fill="#7ac9da"/>
+  <path d="M0 310 Q110 280 230 318 T480 305 T800 314 V410 H0Z" fill="#4aaac1"/>
+  <path d="M0 397 H800 V515 H0Z" fill="#f5d17e"/>
+  <path d="M0 432 Q100 412 200 438 T400 427 T600 436 T800 418" fill="none" stroke="#d39e51" stroke-width="8"/>
+  <path d="M50 395 V290 M68 395 V306 M53 315 L102 277 M65 328 L118 296" stroke="#6e9850" stroke-width="8" stroke-linecap="round"/>
+  <path d="M719 397 V275 M737 397 V294 M722 304 L671 267 M734 320 L781 282" stroke="#6e9850" stroke-width="8" stroke-linecap="round"/>
+
+  <rect x="73" y="35" width="654" height="74" rx="34" fill="#fff7da" stroke="#283747" stroke-width="5"/>
+  <text x="400" y="83" text-anchor="middle" font-family="Verdana, sans-serif" font-size="34" font-weight="900" fill="#263747">PELICAN PEDALS THE PROMENADE</text>
+
+  <g class="bob">
+    <!-- bicycle frame -->
+    <path d="M273 390 L392 390 L338 304 L273 390 L425 304 L392 390" fill="none" stroke="#d94a45" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M338 304 H387 M425 304 L454 287 M338 304 L319 286" fill="none" stroke="#283747" stroke-width="9" stroke-linecap="round"/>
+    <path d="M444 284 H474" stroke="#283747" stroke-width="10" stroke-linecap="round"/>
+    <path d="M305 283 H334" stroke="#283747" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- wheels -->
+    <g class="spin">
+      <circle cx="273" cy="390" r="69" fill="#f7f3dc" stroke="#283747" stroke-width="10"/>
+      <circle cx="273" cy="390" r="9" fill="#d94a45"/>
+      <path d="M273 321V459 M204 390H342 M224 341L322 439 M322 341L224 439" stroke="#8297a4" stroke-width="4"/>
+    </g>
+    <g class="spin">
+      <circle cx="481" cy="390" r="69" fill="#f7f3dc" stroke="#283747" stroke-width="10"/>
+      <circle cx="481" cy="390" r="9" fill="#d94a45"/>
+      <path d="M481 321V459 M412 390H550 M432 341L530 439 M530 341L432 439" stroke="#8297a4" stroke-width="4"/>
+    </g>
+
+    <!-- crank -->
+    <g class="pedal">
+      <circle cx="392" cy="390" r="19" fill="#f4c64d" stroke="#283747" stroke-width="5"/>
+      <path d="M392 390 L421 412 M392 390 L363 368" stroke="#283747" stroke-width="6"/>
+      <path d="M414 416 H438 M346 364 H370" stroke="#283747" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <!-- pelican -->
+    <path d="M333 318 Q322 238 365 188 Q402 149 449 179 Q477 197 470 248 L457 329 Z" fill="#f7f3dc" stroke="#283747" stroke-width="7"/>
+    <path d="M369 215 Q342 151 381 130 Q422 110 452 153 Q471 183 450 204 Q420 222 369 215Z" fill="#f7f3dc" stroke="#283747" stroke-width="7"/>
+    <path d="M391 152 Q417 125 442 158" fill="none" stroke="#6d8896" stroke-width="9" stroke-linecap="round"/>
+    <ellipse cx="405" cy="174" rx="13" ry="17" fill="white" stroke="#283747" stroke-width="5"/>
+    <ellipse class="blink" cx="407" cy="177" rx="5" ry="8" fill="#283747"/>
+    <path d="M394 181 Q405 189 418 181" fill="none" stroke="#283747" stroke-width="3"/>
+
+    <!-- magnificent bill -->
+    <path d="M421 184 Q516 170 549 206 Q563 225 540 239 Q493 266 426 238 Q407 224 421 184Z" fill="#f5b94a" stroke="#283747" stroke-width="7"/>
+    <path d="M425 238 Q484 278 535 247 Q543 282 506 299 Q452 315 416 254Z" fill="#f59a57" stroke="#283747" stroke-width="7"/>
+    <path d="M446 209 Q494 198 525 215" fill="none" stroke="#b96d3f" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- wings and handlebars -->
+    <path d="M370 250 Q317 255 301 305 Q313 327 345 315 L390 280Z" fill="#dce9e5" stroke="#283747" stroke-width="7"/>
+    <path d="M448 253 Q474 263 484 285 L462 293 Q443 277 426 268" fill="#dce9e5" stroke="#283747" stroke-width="7"/>
+    <path d="M472 285 L465 297" stroke="#283747" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- legs, socks, and giant feet -->
+    <path d="M370 315 L368 363 M421 316 L429 363" stroke="#e99e56" stroke-width="13" stroke-linecap="round"/>
+    <path d="M357 360 H379 M418 360 H440" stroke="#fff7da" stroke-width="13"/>
+    <path d="M347 370 Q370 359 388 373 Q376 388 345 384Z M412 373 Q433 358 451 373 Q440 388 412 385Z" fill="#f5b94a" stroke="#283747" stroke-width="5"/>
+
+    <!-- satirical helmet -->
+    <path d="M358 142 Q381 104 431 119 Q457 128 460 158 L350 160Z" fill="#d94a45" stroke="#283747" stroke-width="7"/>
+    <path d="M370 130 L432 142" stroke="#f5d17e" stroke-width="8"/>
+  </g>
+
+  <g font-family="Verdana, sans-serif">
+    <path d="M548 145 Q600 117 652 151 L640 211 Q592 222 550 198Z" fill="#fff" stroke="#283747" stroke-width="5"/>
+    <path d="M553 194 L531 218 L574 201" fill="#fff" stroke="#283747" stroke-width="5" stroke-linejoin="round"/>
+    <text x="598" y="170" text-anchor="middle" font-size="19" font-weight="800" fill="#283747">“I'M CARBON</text>
+    <text x="598" y="193" text-anchor="middle" font-size="19" font-weight="800" fill="#283747">NEUTRAL-ISH!”</text>
+  </g>
+
+  <rect x="54" y="472" width="692" height="94" rx="19" fill="#283747"/>
+  <text x="400" y="506" text-anchor="middle" font-family="Verdana, sans-serif" font-size="21" font-weight="700" fill="#fff7da">A pelican on a bicycle: proof that balance is mostly confidence.</text>
+  <text x="400" y="542" text-anchor="middle" font-family="monospace" font-size="16" fill="#b9e7f4">2026-10-25 07:32:08 SGT (UTC+08:00)</text>
+</svg>
