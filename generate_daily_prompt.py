@@ -13,7 +13,7 @@ from daily_prompt import PROMPT_FILE, SGT
 ROOT = Path(__file__).resolve().parent
 KEY_FILE = ROOT / ".secrets" / "anthropic_api_key"
 MODEL = "claude-fable-5-1"
-GENERATOR_PROMPT = """Write one concise benchmark instruction for an AI that must output a single self-contained SVG. The task should fit a 600x400 canvas and test visual reasoning or basic physics with an objectively checkable answer. Prefer a small diagram with 2-4 numeric constraints. Return only the instruction, no markdown, no solution, and no SVG. It must explicitly require output only SVG code and readable non-overlapping labels."""
+GENERATOR_PROMPT = """Write one concise benchmark instruction for an AI that must output a single self-contained SVG. The task should fit a 600x400 canvas and test a varied daily visual reasoning challenge with an objectively checkable answer. Vary topics across geometry, spatial puzzles, patterns, data visualization, and everyday reasoning; do not limit challenges to physics. Prefer 2-4 clear constraints. Return only the instruction, no markdown, no solution, and no SVG. It must explicitly require output only SVG code and readable non-overlapping labels."""
 
 
 def main() -> int:

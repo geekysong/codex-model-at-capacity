@@ -32,36 +32,10 @@ PRICE_USD_PER_MTOK = {
     "claude-sonnet-5-5": (2.0, 10.0),
 }
 
-PROMPTS = {
-"pelican": (
-    "Draw a satirical cartoon as ONE single self-contained SVG document "
-    '(viewBox="0 0 800 600"). Theme: a pelican riding a bicycle. Make it funny '
-    "and visually expressive, with a clear single scene, readable characters, and "
-    "a bold title plus a short caption about the pelican on the bicycle. Make it an "
-    "actual looping SVG animation using embedded SMIL or CSS animation: animate the "
-    "bicycle wheels and a small pedaling or bobbing motion while keeping text readable. "
-    "Output ONLY the SVG code: no markdown fences, no explanation, no text outside the document. "
-    "Keep the SVG compact (under 2500 tokens)."
-),
-"substitution": (
-    "Draw a satirical cartoon as ONE single self-contained SVG document "
-    '(viewBox="0 0 800 600"). Theme: a service promises a premium model but quietly '
-    "substitutes a cheap weak model. Show the bait-and-switch clearly and humorously, "
-    "with a bold title and short caption. Output ONLY the SVG code: no markdown fences, "
-    "no explanation, no text outside the <svg>...</svg> document. Keep the SVG compact."
-),
-"physics": (
-    "Create one self-contained SVG with viewBox=\"0 0 600 400\" showing a level "
-    "seesaw in static equilibrium. A 6 kg mass hangs 2 m left of the pivot, and a "
-    "4 kg mass hangs x m right. Solve and show x=3 m. Draw the pivot, force arrows, "
-    "distance labels, torque equation 6×2 = 4×3, and the word balanced. Make it an "
-    "actual looping SVG animation using embedded SMIL or CSS animation: keep the "
-    "seesaw level while gently pulsing the force arrows or weights to visualize balance. "
-    "Keep labels readable, and output only the SVG."
-),
-}
-PROMPT, PROMPT_DATE, PROMPT_SHA = load_daily_prompt()
-PROMPT_VARIANT = "daily"
+from probe_prompts import ACTIVE_VARIANTS, load_prompt, timestamped_prompt
+PROMPTS = {variant: load_prompt(variant)[0] for variant in ACTIVE_VARIANTS}
+PROMPT_VARIANT = os.environ.get("PROBE_VARIANT", "daily")
+PROMPT, PROMPT_DATE, PROMPT_SHA = load_prompt(PROMPT_VARIANT)
 
 
 def read_key() -> str:
@@ -83,11 +57,12 @@ def main() -> int:
         print(f"configuration error: {exc}", file=sys.stderr)
         return 2
     started = datetime.now(SGT)
+    request_timestamp, request_prompt = timestamped_prompt(PROMPT, started)
     t0 = time.monotonic()
     body = json.dumps({
         "model": MODEL,
         "max_tokens": MAX_TOKENS,
-        "messages": [{"role": "user", "content": PROMPT}],
+        "messages": [{"role": "user", "content": request_prompt}],
     }).encode("utf-8")
     request = Request(API_URL, data=body, method="POST", headers={
         "x-api-key": key,
@@ -118,6 +93,7 @@ def main() -> int:
         "variant": PROMPT_VARIANT,
         "prompt_date": PROMPT_DATE,
         "prompt_sha": PROMPT_SHA,
+        "request_timestamp": request_timestamp,
         "model": result.get("model", MODEL),
         "time_sgt": started.strftime("%Y-%m-%d %H:%M:%S"),
         "duration_s": round(time.monotonic() - t0, 2),

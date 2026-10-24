@@ -20,11 +20,11 @@ MODELS = ["claude-fable-5-1", "claude-opus-5-5", "claude-haiku-5-5", "claude-son
 SGT = ZoneInfo("Asia/Singapore")
 
 
-def call(model: str) -> tuple[str, int]:
-    env = dict(os.environ, CLAUDE_MODEL=model, CLAUDE_MAX_TOKENS="16384")
+def call(model: str, variant: str = "daily") -> tuple[str, int]:
+    env = dict(os.environ, CLAUDE_MODEL=model, CLAUDE_MAX_TOKENS="16384", PROBE_VARIANT=variant)
     proc = subprocess.run(["python3", str(REPO / "compare_claude.py")], cwd=REPO, env=env,
                           capture_output=True, text=True, timeout=240)
-    return model, proc.returncode
+    return f"{variant}/{model}", proc.returncode
 
 
 def main() -> int:
@@ -34,10 +34,9 @@ def main() -> int:
     except BlockingIOError:
         print("another round is still running; skipping", flush=True)
         return 0
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        results = list(pool.map(call, MODELS))
+    results = [call(model, variant) for variant in ("pelican", "daily") for model in MODELS]
     for model, code in results:
-        print(f"  daily/{model}: {'ok' if code == 0 else 'error'}", flush=True)
+        print(f"  {model}: {'ok' if code == 0 else 'error'}", flush=True)
     spec = importlib.util.spec_from_file_location("runner", REPO / "run_round.py")
     runner = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(runner)

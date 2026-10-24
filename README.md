@@ -130,3 +130,7 @@ providers receive it unchanged; its SGT date and SHA-256 prefix are recorded in
 every result so a Codex observation is compared only with Claude's same-day
 control. Change that file once per day to start a new question. The page keeps
 older Pelican, substitution, and physics experiments as historical rounds.
+
+### Active benchmarks and visible timestamps
+
+Each scheduled Codex execution now runs Pelican and Daily Challenge sequentially, with four models per benchmark. Claude control runs also cover both benchmarks. Each request includes its own timestamp and requires a visible SVG footer with the date and time in Asia/Singapore (SGT, UTC+08:00). Existing historical images are unchanged. Physics and substitution remain archived rather than separate active benchmarks.

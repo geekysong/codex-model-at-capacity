@@ -30,36 +30,10 @@ MODELS = [
     "gpt-5.6-terra",
 ]
 PER_MODEL_TIMEOUT = 600  # seconds; hard cap, no retry after this
-PROMPTS = {
-"pelican": (
-    "Draw a satirical cartoon as ONE single self-contained SVG document "
-    "(viewBox=\"0 0 800 600\"). Theme: a pelican riding a bicycle. Make it funny "
-    "and visually expressive, with a clear single scene, readable characters, and "
-    "a bold title plus a short caption about the pelican on the bicycle. Make it an "
-    "actual looping SVG animation using embedded SMIL or CSS animation: animate the "
-    "bicycle wheels and a small pedaling or bobbing motion while keeping text readable. "
-    "Output ONLY the SVG code: no markdown fences, no explanation, no text outside the document."
-),
-"substitution": (
-    "Draw a satirical cartoon as ONE single self-contained SVG document "
-    "(viewBox=\"0 0 800 600\"). Theme: a service promises a premium model but quietly "
-    "substitutes a cheap weak model. Show the bait-and-switch clearly and humorously, "
-    "with a bold title and short caption. Output ONLY the SVG code: no markdown fences, "
-    "no explanation, no text outside the <svg>...</svg> document."
-),
-"physics": (
-    "Create one self-contained SVG with viewBox=\"0 0 600 400\" showing a level "
-    "seesaw in static equilibrium. A 6 kg mass hangs 2 m left of the pivot, and a "
-    "4 kg mass hangs x m right. Solve and show x=3 m. Draw the pivot, force arrows, "
-    "distance labels, torque equation 6×2 = 4×3, and the word balanced. Make it an "
-    "actual looping SVG animation using embedded SMIL or CSS animation: keep the "
-    "seesaw level while gently pulsing the force arrows or weights to visualize balance. "
-    "Keep labels readable, and output only the SVG."
-),
-}
-PROMPT, PROMPT_DATE, PROMPT_SHA = load_daily_prompt()
-PROMPT_VARIANT = "daily"
-PROMPTS["daily"] = PROMPT
+from probe_prompts import ACTIVE_VARIANTS, load_prompt, timestamped_prompt
+PROMPT_VARIANT = os.environ.get("PROBE_VARIANT", "daily")
+PROMPT, PROMPT_DATE, PROMPT_SHA = load_prompt(PROMPT_VARIANT)
+PROMPTS = {variant: load_prompt(variant)[0] for variant in ACTIVE_VARIANTS}
 
 # The small cross-provider panel on the site compares only these four pairs.
 # Claude outputs are produced separately by compare_claude.py via Anthropic's API.
@@ -75,12 +49,7 @@ def run_model(model: str, round_id: str) -> dict:
     env = dict(os.environ)
     env["PATH"] = str(Path.home() / ".local" / "bin") + ":" + env.get("PATH", "")
     started = datetime.now(SGT)
-    request_timestamp = started.isoformat(timespec="microseconds")
-    request_prompt = (
-        f"Request timestamp: {request_timestamp}\n"
-        "This timestamp is request metadata only; do not include it in the SVG.\n\n"
-        + PROMPT
-    )
+    request_timestamp, request_prompt = timestamped_prompt(PROMPT, started)
     t0 = time.monotonic()
     rec = {
         "round": round_id,
@@ -247,7 +216,7 @@ def build_index(records: list[dict]) -> str:
         if pair_cards:
             round_prompt = html.escape(variant_prompt)
             pair_sections.append(
-                f'<h3>{html.escape(variant.title())} round</h3>'
+                f'<h3>{html.escape("Pelican" if variant == "pelican" else "Daily Challenge")}</h3>'
                 f'<details class="round-prompt"><summary>Prompt for this round</summary><pre class="prompt">{round_prompt}</pre></details>'
                 f'<div class="pairs">{"".join(pair_cards)}</div>'
             )
@@ -376,6 +345,7 @@ def sync_publication() -> bool:
 
 
 def main() -> int:
+    global PROMPT, PROMPT_VARIANT, PROMPT_DATE, PROMPT_SHA
     lock_path = REPO / ".round.lock"
     lock_fd = open(lock_path, "w")
     try:
@@ -387,7 +357,16 @@ def main() -> int:
     print(f"round {round_id}: {len(MODELS)} models, one attempt each", flush=True)
     # Run models one at a time so a round resembles ordinary account use and
     # does not create a burst of simultaneous requests.
-    results = [run_model(model, round_id) for model in MODELS]
+    results = []
+    for variant in ACTIVE_VARIANTS:
+        PROMPT_VARIANT = variant
+        PROMPT, PROMPT_DATE, PROMPT_SHA = load_prompt(variant)
+        variant_round = f"{round_id}-{variant}"
+        batch = [run_model(model, variant_round) for model in MODELS]
+        directory = REPO / "runs" / variant_round
+        directory.mkdir(parents=True, exist_ok=True)
+        (directory / "meta.json").write_text(json.dumps(batch, ensure_ascii=False, indent=1), encoding="utf-8")
+        results.extend(batch)
     for rec in results:
         print(f"  {rec['model']}: {rec['status']} {rec['duration_s']}s "
               f"tok={rec['total_tokens']} err={(rec['error'] or '')[:80]}", flush=True)
@@ -399,8 +378,6 @@ def main() -> int:
     stats_path.write_text(json.dumps(records, ensure_ascii=False, indent=1), encoding="utf-8")
     (REPO / "index.html").write_text(build_index(records), encoding="utf-8")
     (REPO / "history.html").write_text(build_history(records), encoding="utf-8")
-    (REPO / "runs" / round_id / "meta.json").write_text(
-        json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
     ok_n = sum(1 for r in results if r["status"] == "ok")
     git("add", "-A")
     commit = git("commit", "-m",
