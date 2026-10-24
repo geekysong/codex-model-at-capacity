@@ -15,6 +15,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
+from daily_prompt import load_daily_prompt
 
 REPO = Path(__file__).resolve().parent
 KEY_FILE = REPO / ".secrets" / "anthropic_api_key"
@@ -55,10 +56,8 @@ PROMPTS = {
     "seesaw level, labels readable, and output only the SVG."
 ),
 }
-PROMPT_VARIANT = os.environ.get("PROBE_VARIANT", "pelican")
-if PROMPT_VARIANT not in PROMPTS:
-    raise ValueError(f"unknown PROBE_VARIANT: {PROMPT_VARIANT}")
-PROMPT = PROMPTS[PROMPT_VARIANT]
+PROMPT, PROMPT_DATE, PROMPT_SHA = load_daily_prompt()
+PROMPT_VARIANT = "daily"
 
 
 def read_key() -> str:
@@ -113,6 +112,8 @@ def main() -> int:
     metadata = {
         "provider": "anthropic",
         "variant": PROMPT_VARIANT,
+        "prompt_date": PROMPT_DATE,
+        "prompt_sha": PROMPT_SHA,
         "model": result.get("model", MODEL),
         "time_sgt": started.strftime("%Y-%m-%d %H:%M:%S"),
         "duration_s": round(time.monotonic() - t0, 2),

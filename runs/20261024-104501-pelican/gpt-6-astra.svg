@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#e8f7e9"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4c5967"/>
+      <stop offset="1" stop-color="#273441"/>
+    </linearGradient>
+    <linearGradient id="beak" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffcf54"/>
+      <stop offset="1" stop-color="#ed8b35"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#19303a" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#24333b;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#24333b;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:2px}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="688" cy="112" r="54" fill="#ffe88a" opacity=".9"/>
+  <path d="M0 205 Q120 165 250 205 T500 198 T800 185 V330 H0Z" fill="#b7dfb2"/>
+  <path d="M0 285 Q130 240 270 286 T545 278 T800 265 V385 H0Z" fill="#82c48b"/>
+  <path d="M0 365 Q150 330 310 368 T610 355 T800 350 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 453 Q176 421 347 452 T800 438" fill="none" stroke="#f7d982" stroke-width="9" stroke-dasharray="42 28" opacity=".9"/>
+
+  <g opacity=".65" fill="#fff">
+    <path d="M105 106c13-22 45-22 57 0 20-14 54-2 54 23 0 17-15 29-36 29H89c-25 0-40-12-40-29 0-22 31-33 56-23z"/>
+    <path d="M476 78c12-18 39-18 49 0 17-11 44-2 44 20 0 15-12 25-30 25h-78c-21 0-34-10-34-25 0-19 25-28 49-20z"/>
+  </g>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="34" fill="#20343b">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#31545b">NO LICENSE. NO PROBLEM. JUST A VERY LARGE BEAK.</text>
+
+  <g filter="url(#shadow)">
+    <!-- bicycle -->
+    <circle cx="264" cy="450" r="76" fill="#eef6f3" class="ink"/>
+    <circle cx="602" cy="450" r="76" fill="#eef6f3" class="ink"/>
+    <circle cx="264" cy="450" r="10" fill="#e65b52" class="thin"/>
+    <circle cx="602" cy="450" r="10" fill="#e65b52" class="thin"/>
+    <path d="M264 450 L350 318 L475 450 L264 450 L415 450 L350 318 L520 316 L602 450" fill="none" stroke="#d5443d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M475 450 Q487 405 520 316" fill="none" stroke="#d5443d" stroke-width="10"/>
+    <path d="M350 318 L328 292" class="ink" fill="none"/>
+    <path d="M314 291 Q350 272 385 290" class="ink" fill="none"/>
+    <path d="M520 316 L548 294" class="ink" fill="none"/>
+    <path d="M535 294 L567 294" class="ink" fill="none"/>
+    <path d="M415 450 l-18 28 M415 450 l24 17" class="thin" fill="none"/>
+    <circle cx="415" cy="450" r="13" fill="#ffd34f" class="thin"/>
+    <path d="M221 392 Q264 367 306 393 M559 392 Q602 367 645 393" fill="none" stroke="#fff" stroke-width="3" opacity=".8"/>
+
+    <!-- pelican body -->
+    <ellipse cx="421" cy="245" rx="105" ry="122" fill="#f5f1df" class="ink"/>
+    <ellipse cx="408" cy="280" rx="59" ry="73" fill="#fffdf1" class="thin"/>
+    <path d="M352 206 Q395 164 466 191 Q496 205 507 242 Q469 229 442 243 Q402 263 362 249Z" fill="#d6e0dd" class="thin"/>
+    <path d="M447 205 Q490 160 524 174 Q550 185 529 217 Q513 240 469 238Z" fill="#f5f1df" class="ink"/>
+    <path d="M506 216 Q568 203 648 229 Q676 238 649 258 Q574 284 473 247Z" fill="url(#beak)" class="ink"/>
+    <path d="M512 243 Q570 247 649 229" fill="none" class="thin"/>
+    <path d="M613 237 Q633 230 650 232" fill="none" stroke="#8e4d28" stroke-width="4"/>
+    <circle cx="507" cy="194" r="16" fill="#fff" class="thin"/>
+    <circle cx="511" cy="197" r="7" fill="#24333b"/>
+    <path d="M487 177 Q514 156 539 177" fill="none" stroke="#24333b" stroke-width="8"/>
+    <path d="M394 164 Q382 139 397 120 Q415 139 421 164" fill="#e4a83c" class="thin"/>
+
+    <!-- wing and arm -->
+    <path d="M350 232 Q300 270 323 337 Q337 374 370 352 Q390 335 384 290Z" fill="#d9e3df" class="ink"/>
+    <path d="M367 300 Q407 333 445 352" fill="none" stroke="#24333b" stroke-width="13"/>
+    <path d="M440 350 Q461 365 479 347" fill="none" stroke="#24333b" stroke-width="10"/>
+
+    <!-- legs -->
+    <path d="M393 345 Q383 391 408 432" fill="none" stroke="#e6a742" stroke-width="17"/>
+    <path d="M459 346 Q475 389 452 430" fill="none" stroke="#e6a742" stroke-width="17"/>
+    <path d="M408 432 l-30 16 M408 432 l26 11 M452 430 l-27 18 M452 430 l30 10" fill="none" stroke="#24333b" stroke-width="8"/>
+
+    <!-- helmet -->
+    <path d="M361 151 Q411 101 471 139 Q488 150 489 177 L366 180Z" fill="#e95d52" class="ink"/>
+    <path d="M377 143 Q410 122 447 133" fill="none" stroke="#ffad68" stroke-width="10"/>
+    <path d="M361 178 Q420 191 489 176" fill="none" class="ink"/>
+
+    <!-- comic motion lines -->
+    <path d="M177 336 l-41 -16 M184 363 l-50 0 M188 391 l-43 17" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M672 327 l43 -16 M680 355 l51 0 M675 382 l44 17" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(92 492) rotate(-6)">
+    <path d="M0 0 Q67-28 141 0 L127 62 Q65 82 8 54Z" fill="#fff4c7" class="ink"/>
+    <text x="70" y="27" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="900" fill="#24333b">HONK IF YOU</text>
+    <text x="70" y="48" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="900" fill="#e25748">LIKE FISH</text>
+  </g>
+
+  <text x="400" y="570" text-anchor="middle" class="label" font-size="23" fill="#fff4c7">“I’M LATE FOR WORK — BUT MY BEAK IS RIGHT ON TIME!”</text>
+</svg>

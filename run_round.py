@@ -19,6 +19,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor
+from daily_prompt import load_daily_prompt
 
 REPO = Path(__file__).resolve().parent
 SGT = ZoneInfo("Asia/Singapore")
@@ -52,10 +53,9 @@ PROMPTS = {
     "seesaw level, labels readable, and output only the SVG."
 ),
 }
-PROMPT_VARIANT = os.environ.get("PROBE_VARIANT", "pelican")
-if PROMPT_VARIANT not in PROMPTS:
-    raise ValueError(f"unknown PROBE_VARIANT: {PROMPT_VARIANT}")
-PROMPT = PROMPTS[PROMPT_VARIANT]
+PROMPT, PROMPT_DATE, PROMPT_SHA = load_daily_prompt()
+PROMPT_VARIANT = "daily"
+PROMPTS["daily"] = PROMPT
 
 # The small cross-provider panel on the site compares only these four pairs.
 # Claude outputs are produced separately by compare_claude.py via Anthropic's API.
@@ -75,6 +75,8 @@ def run_model(model: str, round_id: str) -> dict:
     rec = {
         "round": round_id,
         "variant": PROMPT_VARIANT,
+        "prompt_date": PROMPT_DATE,
+        "prompt_sha": PROMPT_SHA,
         "time_sgt": started.strftime("%Y-%m-%d %H:%M:%S"),
         "model": model,
         "status": "error",
@@ -273,7 +275,7 @@ def main() -> int:
     except BlockingIOError:
         print("another round is still running; skipping", flush=True)
         return 0
-    round_id = datetime.now(SGT).strftime("%Y%m%d-%H%M%S") + "-" + PROMPT_VARIANT
+    round_id = datetime.now(SGT).strftime("%Y%m%d-%H%M%S")
     print(f"round {round_id}: {len(MODELS)} models, one attempt each", flush=True)
     # All models run concurrently: each codex exec mostly waits on the API,
     # so the Pi handles 8 in parallel fine, and a round takes ~max(duration)

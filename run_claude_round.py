@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the four Claude comparison probes for both prompt variants.
+"""Run the four Claude comparison probes for today's shared prompt.
 
 This is intentionally separate from the five-minute Codex census. Schedule it
 every 30 minutes; it uses the ignored Anthropic key through compare_claude.py,
@@ -17,16 +17,14 @@ from zoneinfo import ZoneInfo
 
 REPO = Path(__file__).resolve().parent
 MODELS = ["claude-fable-5-1", "claude-opus-5-5", "claude-haiku-5-5", "claude-sonnet-5-5"]
-VARIANTS = ["pelican", "substitution"]
 SGT = ZoneInfo("Asia/Singapore")
 
 
-def call(item: tuple[str, str]) -> tuple[str, str, int]:
-    variant, model = item
-    env = dict(os.environ, PROBE_VARIANT=variant, CLAUDE_MODEL=model, CLAUDE_MAX_TOKENS="16384")
+def call(model: str) -> tuple[str, int]:
+    env = dict(os.environ, CLAUDE_MODEL=model, CLAUDE_MAX_TOKENS="16384")
     proc = subprocess.run(["python3", str(REPO / "compare_claude.py")], cwd=REPO, env=env,
                           capture_output=True, text=True, timeout=240)
-    return variant, model, proc.returncode
+    return model, proc.returncode
 
 
 def main() -> int:
@@ -37,9 +35,9 @@ def main() -> int:
         print("another round is still running; skipping", flush=True)
         return 0
     with ThreadPoolExecutor(max_workers=4) as pool:
-        results = list(pool.map(call, [(v, m) for v in VARIANTS for m in MODELS]))
-    for variant, model, code in results:
-        print(f"  {variant}/{model}: {'ok' if code == 0 else 'error'}", flush=True)
+        results = list(pool.map(call, MODELS))
+    for model, code in results:
+        print(f"  daily/{model}: {'ok' if code == 0 else 'error'}", flush=True)
     spec = importlib.util.spec_from_file_location("runner", REPO / "run_round.py")
     runner = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(runner)
@@ -47,13 +45,13 @@ def main() -> int:
     (REPO / "index.html").write_text(runner.build_index(records), encoding="utf-8")
     stamp = datetime.now(SGT).strftime("%Y%m%d-%H%M%S")
     runner.git("add", "-A")
-    commit = runner.git("commit", "-m", f"Claude comparison {stamp}: two prompt rounds")
+    commit = runner.git("commit", "-m", f"Claude daily control {stamp}")
     if commit.returncode != 0:
         print("commit failed:", (commit.stderr or commit.stdout).strip()[:300], flush=True)
     for ref in [("main",), ("main:gh-pages",)]:
         pushed = runner.git("push", "origin", *ref)
         print("pushed" if pushed.returncode == 0 else "push failed", ref[0], flush=True)
-    return 0 if all(code == 0 for _, _, code in results) else 1
+    return 0 if all(code == 0 for _, code in results) else 1
 
 
 if __name__ == "__main__":
