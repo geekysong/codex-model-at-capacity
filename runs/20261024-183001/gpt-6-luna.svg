@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+
+  <text x="300" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#222">
+    Static Equilibrium
+  </text>
+
+  <!-- Seesaw beam -->
+  <rect x="120" y="190" width="360" height="20" rx="5" fill="#8b5a2b" stroke="#4d3218" stroke-width="2"/>
+
+  <!-- Pivot -->
+  <polygon points="300,210 265,275 335,275" fill="#607d8b" stroke="#263238" stroke-width="2"/>
+  <circle cx="300" cy="200" r="7" fill="#263238"/>
+  <text x="300" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">pivot</text>
+
+  <!-- Left suspension and mass -->
+  <line x1="230" y1="210" x2="230" y2="275" stroke="#333" stroke-width="3"/>
+  <rect x="195" y="275" width="70" height="48" rx="6" fill="#4f81bd" stroke="#244a73" stroke-width="2"/>
+  <text x="230" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">6 kg</text>
+  <line x1="230" y1="245" x2="230" y2="270" stroke="#c62828" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="230" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#c62828">force</text>
+
+  <!-- Right suspension and mass -->
+  <line x1="405" y1="210" x2="405" y2="275" stroke="#333" stroke-width="3"/>
+  <rect x="370" y="275" width="70" height="48" rx="6" fill="#e67e22" stroke="#9a4d0b" stroke-width="2"/>
+  <text x="405" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">4 kg</text>
+  <line x1="405" y1="245" x2="405" y2="270" stroke="#c62828" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="405" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#c62828">force</text>
+
+  <!-- Distance markers -->
+  <line x1="230" y1="165" x2="300" y2="165" stroke="#333" stroke-width="2" marker-start="url(#tick)" marker-end="url(#tick)"/>
+  <line x1="300" y1="165" x2="405" y2="165" stroke="#333" stroke-width="2" marker-start="url(#tick)" marker-end="url(#tick)"/>
+  <line x1="230" y1="158" x2="230" y2="172" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="158" x2="300" y2="172" stroke="#333" stroke-width="2"/>
+  <line x1="405" y1="158" x2="405" y2="172" stroke="#333" stroke-width="2"/>
+  <text x="265" y="153" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">2 m</text>
+  <text x="352" y="153" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">x = 3 m</text>
+
+  <!-- Torque equation -->
+  <text x="300" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#222">
+    6 × 2 = 4 × 3
+  </text>
+  <text x="300" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2e7d32">
+    balanced
+  </text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c62828"/>
+    </marker>
+    <marker id="tick" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 4 0 L 4 8" stroke="#333" stroke-width="2"/>
+    </marker>
+  </defs>
+</svg>

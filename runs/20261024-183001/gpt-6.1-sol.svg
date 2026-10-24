@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f4e79"/>
+    </marker>
+    <marker id="dim" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,4 L8,0 L8,8 Z" fill="#444"/>
+    </marker>
+    <style>
+      .label { font-family: Arial, sans-serif; fill: #222; }
+      .small { font-size: 16px; }
+      .med { font-size: 20px; font-weight: bold; }
+      .large { font-size: 25px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <!-- Level seesaw beam -->
+  <rect x="95" y="190" width="410" height="18" rx="6" fill="#c98b45" stroke="#633d1d" stroke-width="3"/>
+  <line x1="105" y1="199" x2="495" y2="199" stroke="#f0c078" stroke-width="3"/>
+
+  <!-- Pivot -->
+  <polygon points="300,208 260,280 340,280" fill="#777" stroke="#333" stroke-width="3"/>
+  <circle cx="300" cy="199" r="8" fill="#333"/>
+  <text x="300" y="307" text-anchor="middle" class="label med">pivot</text>
+
+  <!-- Left mass and force arrow -->
+  <line x1="200" y1="118" x2="200" y2="188" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="167" y="75" width="66" height="43" rx="6" fill="#d9534f" stroke="#8b1e1e" stroke-width="2"/>
+  <text x="200" y="102" text-anchor="middle" class="label med" fill="white">6 kg</text>
+  <text x="200" y="62" text-anchor="middle" class="label small">F = 6g</text>
+
+  <!-- Right mass and force arrow -->
+  <line x1="450" y1="118" x2="450" y2="188" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="417" y="75" width="66" height="43" rx="6" fill="#4f81bd" stroke="#214a73" stroke-width="2"/>
+  <text x="450" y="102" text-anchor="middle" class="label med" fill="white">4 kg</text>
+  <text x="450" y="62" text-anchor="middle" class="label small">F = 4g</text>
+
+  <!-- Distance dimensions -->
+  <line x1="200" y1="335" x2="300" y2="335" stroke="#444" stroke-width="2"
+        marker-start="url(#dim)" marker-end="url(#dim)"/>
+  <line x1="200" y1="320" x2="200" y2="345" stroke="#444" stroke-width="2"/>
+  <line x1="300" y1="320" x2="300" y2="345" stroke="#444" stroke-width="2"/>
+  <text x="250" y="362" text-anchor="middle" class="label med">2 m</text>
+
+  <line x1="300" y1="335" x2="450" y2="335" stroke="#444" stroke-width="2"
+        marker-start="url(#dim)" marker-end="url(#dim)"/>
+  <line x1="450" y1="320" x2="450" y2="345" stroke="#444" stroke-width="2"/>
+  <text x="375" y="362" text-anchor="middle" class="label med">x = 3 m</text>
+
+  <!-- Equation and state -->
+  <text x="300" y="25" text-anchor="middle" class="label large">6 × 2 = 4 × 3</text>
+  <text x="300" y="52" text-anchor="middle" class="label med" fill="#237a3b">balanced</text>
+</svg>
