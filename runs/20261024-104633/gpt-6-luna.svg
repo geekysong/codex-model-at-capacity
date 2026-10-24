@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f4e79"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#b22222"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <text x="300" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#222">
+    Level Seesaw — Static Equilibrium
+  </text>
+
+  <!-- level seesaw beam -->
+  <rect x="105" y="188" width="390" height="18" rx="4" fill="#8b5a2b" stroke="#4e3218" stroke-width="2"/>
+  <line x1="105" y1="197" x2="495" y2="197" stroke="#d9a066" stroke-width="2"/>
+
+  <!-- pivot -->
+  <polygon points="300,206 260,282 340,282" fill="#6b7280" stroke="#374151" stroke-width="2"/>
+  <circle cx="300" cy="197" r="8" fill="#374151"/>
+  <text x="300" y="307" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">pivot</text>
+
+  <!-- upward pivot force -->
+  <line x1="300" y1="275" x2="300" y2="225" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="312" y="253" font-family="Arial, sans-serif" font-size="16" fill="#1f4e79">pivot force</text>
+
+  <!-- left hanging mass -->
+  <line x1="200" y1="206" x2="200" y2="245" stroke="#333" stroke-width="3"/>
+  <rect x="167" y="245" width="66" height="48" rx="5" fill="#d9534f" stroke="#7f1d1d" stroke-width="2"/>
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">6 kg</text>
+
+  <!-- right hanging mass -->
+  <line x1="450" y1="206" x2="450" y2="245" stroke="#333" stroke-width="3"/>
+  <rect x="417" y="245" width="66" height="48" rx="5" fill="#4f86c6" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="450" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">4 kg</text>
+
+  <!-- force arrows -->
+  <line x1="200" y1="220" x2="200" y2="242" stroke="#b22222" stroke-width="4" marker-end="url(#arrowRed)"/>
+  <text x="200" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#b22222">downward force</text>
+
+  <line x1="450" y1="220" x2="450" y2="242" stroke="#b22222" stroke-width="4" marker-end="url(#arrowRed)"/>
+  <text x="450" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#b22222">downward force</text>
+
+  <!-- distance dimensions -->
+  <line x1="200" y1="158" x2="300" y2="158" stroke="#333" stroke-width="2"/>
+  <line x1="200" y1="151" x2="200" y2="165" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="151" x2="300" y2="165" stroke="#333" stroke-width="2"/>
+  <text x="250" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">2 m</text>
+
+  <line x1="300" y1="125" x2="450" y2="125" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="118" x2="300" y2="132" stroke="#333" stroke-width="2"/>
+  <line x1="450" y1="118" x2="450" y2="132" stroke="#333" stroke-width="2"/>
+  <text x="375" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#222">3 m (x)</text>
+
+  <!-- torque equation -->
+  <text x="300" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#222">
+    6 × 2 = 4 × 3
+  </text>
+  <text x="300" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#16803c">
+    x = 3 m   •   BALANCED
+  </text>
+</svg>
