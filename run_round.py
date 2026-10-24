@@ -185,6 +185,15 @@ a{{color:#58a6ff}}
 to draw a satirical SVG about exactly that error. Timing, token usage and failures are recorded verbatim.
 Latest round: <b>{latest}</b> · {ok_n}/{len(latest_recs)} models produced an SVG · page rebuilt {updated} ·
 <a href="stats.json">raw stats.json</a></div>
+<div class="sub" style="border:1px solid #30363d;border-radius:10px;padding:12px 16px;background:#161b22">
+<b>Why this exists:</b> in October 2026 this Codex account kept hitting two problems — models refusing work
+with “Selected model is at capacity” despite barely-used quota, and suspected silent quality degradation
+（降智）: the same models answering noticeably worse, with no announcement and no official record of either.
+This page is a continuous, public health-check for one specific account: a rising error rate exposes the
+capacity problem, while drifting durations, token patterns and sudden task failures are the early-warning
+signal for degradation. The satirical SVG is just the probe — the data is the point.<br>
+<span style="color:#8b949e">背景：这个账号频繁遇到「at capacity」误拒和疑似模型降智，官方不留任何记录。
+本页每 5 分钟轮询一次，给这个账号留一份带时间戳、公开可查的体检档案。</span></div>
 <div class="grid">{''.join(cards)}</div>
 <h2>All rounds</h2>
 <table><thead><tr><th>Time (SGT)</th><th>Model</th><th>Status</th><th>Duration (s)</th>
@@ -236,7 +245,14 @@ def main() -> int:
         print("PUSH FAILED (will retry next round):",
               (push.stderr or push.stdout).strip()[:300], flush=True)
     else:
-        print("pushed", flush=True)
+        print("pushed main", flush=True)
+        # GitHub Pages is served from the gh-pages branch (same tree as main).
+        push_gh = git("push", "origin", "main:gh-pages")
+        if push_gh.returncode != 0:
+            print("GH-PAGES PUSH FAILED (will retry next round):",
+                  (push_gh.stderr or push_gh.stdout).strip()[:300], flush=True)
+        else:
+            print("pushed gh-pages", flush=True)
     print(f"round {round_id} done: {ok_n}/{len(results)} ok", flush=True)
     return 0
 
