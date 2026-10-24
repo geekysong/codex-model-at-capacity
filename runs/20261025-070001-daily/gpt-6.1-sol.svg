@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="50" y="30" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="50" y="55">vₓ = 20 m/s · vᵧ = 15 m/s · g = 10 m/s²</text>
+    <text x="50" y="79">Total flight time: 3 s</text>
+    <text x="50" y="106">Scale: 10 px/m; horizontal distance break shown below.</text>
+    <text x="50" y="129">The full 60 m range exceeds the available canvas width.</text>
+  </g>
+
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#374151" stroke-width="2"/>
+
+  <!-- Physical coordinates: x=100+200t, y=350-150t+50t².
+       Omit horizontal coordinates 420 through 620, then shift by 180 px.
+       Each visible trajectory segment retains the requested 10 px/m scale. -->
+  <path d="M100 350 Q260 230 420 238"
+        fill="none" stroke="#1769aa" stroke-width="3"/>
+  <path d="M440 298 Q480 320 520 350"
+        fill="none" stroke="#1769aa" stroke-width="3"/>
+
+  <g stroke="#1769aa" stroke-width="2" fill="none">
+    <path d="M414 246 l5 -14 l5 14 l5 -14"/>
+    <path d="M434 306 l5 -14 l5 14 l5 -14"/>
+  </g>
+
+  <g fill="#1769aa">
+    <circle cx="100" cy="350" r="4"/>
+    <circle cx="400" cy="237.5" r="4"/>
+    <circle cx="520" cy="350" r="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="56" y="324">launch: 0 m, 0 m</text>
+    <text x="286" y="213">apex: 30 m, 11.25 m</text>
+    <text x="436" y="324">landing:</text>
+    <text x="436" y="342">60 m, 0 m</text>
+    <text x="252" y="284" font-size="12">horizontal break: 32–52 m</text>
+  </g>
+
+  <rect x="0" y="365" width="600" height="35" fill="#eef2f6"/>
+  <text x="300" y="387" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="14" fill="#172033">2026-10-25 07:03:37 SGT (UTC+08:00)</text>
+</svg>

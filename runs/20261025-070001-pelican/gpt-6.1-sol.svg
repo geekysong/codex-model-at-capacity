@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Fish</title>
+  <desc id="desc">An animated pelican pedals a bicycle with a fish-filled bill pouch, insisting it is aerodynamic. Wheels spin, legs pedal, and the rider bobs.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#bceaf4"/>
+      <stop offset="1" stop-color="#fff5d8"/>
+    </linearGradient>
+    <linearGradient id="pouch" x2="0" y2="1">
+      <stop stop-color="#ffd36b"/>
+      <stop offset="1" stop-color="#efa144"/>
+    </linearGradient>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .outline { stroke: #213747; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .spoke { stroke: #8babb6; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <path fill="url(#sky)" d="M0 0h800v600H0z"/>
+  <circle cx="696" cy="144" r="43" fill="#ffdc75"/>
+  <path d="M41 167q18-26 39-5 16-39 43-14 29-3 32 22H41M548 124q17-25 38-9 23-33 49-1h31" fill="#fff" opacity=".8"/>
+  <text x="400" y="63" text-anchor="middle" font-size="47" font-weight="900" fill="#213747" letter-spacing="3">TOUR DE FISH</text>
+  <text x="400" y="95" text-anchor="middle" font-size="18" fill="#405c6a">THE COMMUTE HAS GONE COMPLETELY OFF THE HOOK.</text>
+
+  <path d="M0 361Q166 324 330 359T800 342V490H0Z" fill="#afd3ab"/>
+  <path d="M0 399Q326 375 800 402V490H0Z" fill="#6a8489"/>
+  <path d="M0 459H800" stroke="#e9e3bc" stroke-width="5" stroke-dasharray="45 27"/>
+  <ellipse cx="399" cy="449" rx="241" ry="16" fill="#273f49" opacity=".19"/>
+
+  <!-- Roadside satire -->
+  <path d="M696 279v110" stroke="#53646a" stroke-width="8"/>
+  <rect x="637" y="237" width="118" height="67" rx="7" fill="#fff8df" class="outline"/>
+  <text x="696" y="262" text-anchor="middle" font-size="17" font-weight="bold" fill="#213747">BIKE LANE</text>
+  <text x="696" y="286" text-anchor="middle" font-size="15" fill="#213747">NO TRAWLING</text>
+
+  <!-- Wheels: each rotates around its own hub -->
+  <g transform="translate(238 377)">
+    <circle r="73" fill="#e4f2ed" stroke="#213747" stroke-width="12"/>
+    <circle r="65" fill="none" stroke="#fff4d6" stroke-width="3"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-64 0H64M0-64V64M-45-45l90 90M-45 45l90-90" class="spoke"/>
+      <path d="M42-44l9 9" stroke="#f7b844" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <circle r="9" fill="#213747"/>
+  </g>
+  <g transform="translate(550 377)">
+    <circle r="73" fill="#e4f2ed" stroke="#213747" stroke-width="12"/>
+    <circle r="65" fill="none" stroke="#fff4d6" stroke-width="3"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-64 0H64M0-64V64M-45-45l90 90M-45 45l90-90" class="spoke"/>
+      <path d="M42-44l9 9" stroke="#f7b844" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <circle r="9" fill="#213747"/>
+  </g>
+
+  <!-- Bicycle -->
+  <g fill="none" class="outline">
+    <path d="M238 377l84-116 64 116H238l54-94h205L386 377" stroke="#e75b4d" stroke-width="10"/>
+    <path d="M550 377l-60-139 25-26h30" stroke="#213747" stroke-width="9"/>
+    <path d="M322 261l-13-28" stroke-width="8"/>
+    <path d="M280 231h57" stroke-width="13"/>
+  </g>
+  <circle cx="386" cy="377" r="20" fill="#ffcd62" class="outline"/>
+  <g transform="translate(386 377)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-25 0h50" stroke="#213747" stroke-width="6"/>
+      <path d="M-32 0h14M18 0h14" stroke="#213747" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Pelican and pedaling legs -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M326 252q-14 43 30 67l30 54" fill="none" stroke="#da8b37" stroke-width="12" stroke-linecap="round">
+      <animate attributeName="d" values="M326 252q-14 43 30 67l30 54;M326 252q38 26 53 53l31 73;M326 252q-14 43 30 67l30 54" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M306 247q52 35 63 63l-10 55" fill="none" stroke="#f4b64c" stroke-width="14" stroke-linecap="round">
+      <animate attributeName="d" values="M306 247q52 35 63 63l-10 55;M306 247q-2 49 33 76l57 62;M306 247q52 35 63 63l-10 55" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M344 365l18-4 15 9-33 5z" fill="#f4b64c" stroke="#213747" stroke-width="3">
+      <animateTransform attributeName="transform" type="translate" values="0 0;37 20;0 0" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+
+    <path d="M264 215l-43-24 14 38-27 6 60 22" fill="#fff9e9" class="outline"/>
+    <path d="M266 171q-42 25-22 66 19 37 82 27 48-8 53-50l-25-56z" fill="#fffdf0" class="outline"/>
+    <path d="M273 190q43-22 66 12-16 42-55 30" fill="#dde8e5" class="outline"/>
+    <path d="M333 178q-1-45 19-61 23-18 45 3 11 13-2 32-20 28-14 56" fill="#fffdf0" class="outline"/>
+    <path d="M340 204q51 30 121 10l34 12" fill="none" stroke="#213747" stroke-width="18" stroke-linecap="round"/>
+    <path d="M339 200q51 30 122 10" fill="none" stroke="#edf0df" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Oversized grocery pouch -->
+    <path d="M389 145l216 19q-30 83-119 52-62-21-97-71z" fill="url(#pouch)" class="outline"/>
+    <path d="M391 144l221 15-10 15-211-16" fill="#ffd86c" class="outline"/>
+    <path d="M474 187q21-15 43 1l15-10-1 23-15-8q-23 12-42-6z" fill="#70b8b8" stroke="#385567" stroke-width="3"/>
+    <circle cx="481" cy="185" r="2.5" fill="#213747"/>
+    <path d="M543 190q15-9 29-1l10-9v20l-11-6q-17 10-28-4" fill="#86a6d0" stroke="#385567" stroke-width="3"/>
+    <circle cx="550" cy="189" r="2" fill="#213747"/>
+    <circle cx="384" cy="132" r="13" fill="white" stroke="#213747" stroke-width="3"/>
+    <circle cx="389" cy="131" r="5" fill="#213747"/>
+    <path d="M368 113l25-4" stroke="#213747" stroke-width="5" stroke-linecap="round"/>
+    <path d="M348 119q-6-31 21-36 31-5 40 25z" fill="#e95b4e" class="outline"/>
+    <path d="M361 93l6 14m10-17 6 15" stroke="#fff0cf" stroke-width="4"/>
+  </g>
+
+  <!-- Speech balloon -->
+  <path d="M51 122h208q16 0 16 16v43q0 16-16 16h-25l31 26-57-26H51q-16 0-16-16v-43q0-16 16-16z" fill="#fffdf2" stroke="#213747" stroke-width="3"/>
+  <text x="155" y="150" text-anchor="middle" font-size="20" font-weight="bold" fill="#213747">“IT’S AN</text>
+  <text x="155" y="176" text-anchor="middle" font-size="20" font-weight="bold" fill="#213747">AERO POUCH.”</text>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <path d="M0 490h800v110H0z" fill="#fff6df"/>
+  <path d="M29 490h742" stroke="#213747" stroke-width="3"/>
+  <text x="400" y="526" text-anchor="middle" font-size="23" font-weight="bold" fill="#213747">One pelican. Two wheels. Six unpaid passengers.</text>
+  <text x="400" y="570" text-anchor="middle" font-size="18" fill="#405563">2026-10-25 07:00:55 SGT (UTC+08:00)</text>
+</svg>
