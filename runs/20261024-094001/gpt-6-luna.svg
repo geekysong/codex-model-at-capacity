@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152d"/>
+      <stop offset="1" stop-color="#34204c"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#21142f"/>
+      <stop offset=".5" stop-color="#5b2458"/>
+      <stop offset="1" stop-color="#21142f"/>
+    </linearGradient>
+    <linearGradient id="sign" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff6b7f"/>
+      <stop offset="1" stop-color="#c92552"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="95" cy="120" r="58" fill="#ef4e96" opacity=".13" filter="url(#soft)"/>
+  <circle cx="705" cy="155" r="72" fill="#43d8e8" opacity=".13" filter="url(#soft)"/>
+  <path d="M0 446 Q180 410 400 445 T800 432 V600 H0Z" fill="url(#floor)"/>
+
+  <text x="400" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#ffe9a8" letter-spacing="2">CODEX NIGHTCLUB</text>
+  <text x="400" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="#b7f7ff">THE EXCLUSIVE MODEL LOUNGE</text>
+
+  <!-- club entrance -->
+  <rect x="258" y="108" width="284" height="318" rx="22" fill="#0e0d1c" stroke="#e94f92" stroke-width="6"/>
+  <rect x="280" y="130" width="240" height="270" rx="12" fill="#19152b" stroke="#50396b" stroke-width="3"/>
+  <path d="M300 352 Q400 285 500 352" fill="none" stroke="#2b2442" stroke-width="26"/>
+  <path d="M305 175 Q400 112 495 175" fill="none" stroke="#6d3c81" stroke-width="5"/>
+  <circle cx="330" cy="205" r="8" fill="#61e3f2"/>
+  <circle cx="465" cy="228" r="7" fill="#ff567f"/>
+  <circle cx="388" cy="160" r="5" fill="#ffe887"/>
+
+  <!-- FULL sign -->
+  <g filter="url(#glow)">
+    <rect x="300" y="94" width="200" height="72" rx="12" fill="url(#sign)" stroke="#ffb2bb" stroke-width="4"/>
+    <text x="400" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="39" font-weight="900" fill="#fff5df">FULL</text>
+  </g>
+  <path d="M330 94 L338 77 M470 94 L462 77" stroke="#ffb2bb" stroke-width="5"/>
+
+  <!-- bouncer -->
+  <g>
+    <ellipse cx="400" cy="407" rx="61" ry="12" fill="#090914" opacity=".7"/>
+    <rect x="363" y="267" width="74" height="126" rx="24" fill="#252b3c" stroke="#101321" stroke-width="5"/>
+    <path d="M366 322 Q400 300 434 322 L436 388 Q400 404 364 388Z" fill="#4b5368"/>
+    <path d="M377 334 L423 334 L414 358 L386 358Z" fill="#ffdc5b"/>
+    <rect x="372" y="196" width="56" height="72" rx="20" fill="#687487" stroke="#101321" stroke-width="5"/>
+    <rect x="378" y="211" width="44" height="30" rx="9" fill="#161c2a"/>
+    <circle cx="390" cy="226" r="6" fill="#ff4c87"/>
+    <circle cx="410" cy="226" r="6" fill="#ff4c87"/>
+    <path d="M386 251 Q400 260 414 251" fill="none" stroke="#151927" stroke-width="4"/>
+    <path d="M371 286 L340 318" stroke="#687487" stroke-width="16" stroke-linecap="round"/>
+    <path d="M429 286 L458 313" stroke="#687487" stroke-width="16" stroke-linecap="round"/>
+    <path d="M340 317 L315 302" stroke="#687487" stroke-width="12" stroke-linecap="round"/>
+    <path d="M458 313 L486 300" stroke="#687487" stroke-width="12" stroke-linecap="round"/>
+    <rect x="324" y="294" width="54" height="23" rx="8" fill="#202838" stroke="#9ee8ef" stroke-width="2"/>
+    <text x="351" y="311" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#d9ffff">NOPE</text>
+  </g>
+
+  <!-- velvet rope -->
+  <path d="M236 404 Q304 458 400 430 Q496 458 564 404" fill="none" stroke="#e14b77" stroke-width="8"/>
+  <path d="M236 404 V464 M564 404 V464" stroke="#e6b26c" stroke-width="8"/>
+  <circle cx="236" cy="404" r="11" fill="#ffd27a"/>
+  <circle cx="564" cy="404" r="11" fill="#ffd27a"/>
+
+  <!-- queue developers -->
+  <g font-family="Arial, sans-serif" stroke="#151424" stroke-width="4">
+    <!-- dev 1 -->
+    <g transform="translate(70 395)">
+      <circle cx="0" cy="0" r="24" fill="#e0a178"/>
+      <path d="M-24 -3 Q-18 -34 15 -27 Q31 -19 22 3 Q0 -8 -24 -3" fill="#332646"/>
+      <rect x="-28" y="29" width="56" height="65" rx="16" fill="#4ca4b3"/>
+      <path d="M-26 46 L-48 74 M26 46 L48 73" stroke="#e0a178" stroke-width="12" stroke-linecap="round"/>
+      <rect x="-22" y="54" width="44" height="25" rx="4" fill="#1a2033"/>
+      <text x="0" y="72" text-anchor="middle" fill="#a9f3ff" font-size="10" stroke="none">retry</text>
+    </g>
+    <!-- dev 2 -->
+    <g transform="translate(150 420)">
+      <circle cx="0" cy="0" r="23" fill="#8d5b42"/>
+      <path d="M-22 -4 Q-10 -32 20 -22 L22 7 Q0 -4 -22 -4" fill="#e3b14f"/>
+      <rect x="-28" y="28" width="56" height="65" rx="16" fill="#e95d68"/>
+      <path d="M-27 50 L-48 78 M27 50 L49 78" stroke="#8d5b42" stroke-width="12" stroke-linecap="round"/>
+      <path d="M-9 5 L-4 10 M8 5 L13 10" stroke="#151424"/>
+      <path d="M-8 17 Q0 11 8 17" fill="none"/>
+    </g>
+    <!-- dev 3 -->
+    <g transform="translate(625 414)">
+      <circle cx="0" cy="0" r="24" fill="#c98767"/>
+      <path d="M-24 -2 Q-18 -33 18 -25 Q28 -14 20 1 Q2 -8 -24 -2" fill="#d8d8e7"/>
+      <rect x="-29" y="28" width="58" height="67" rx="16" fill="#6b6ed0"/>
+      <path d="M-28 50 L-49 79 M28 50 L49 78" stroke="#c98767" stroke-width="12" stroke-linecap="round"/>
+      <path d="M-12 8 L-5 4 M7 4 L14 8" stroke="#151424"/>
+      <path d="M-10 17 Q0 25 10 17" fill="none"/>
+    </g>
+    <!-- dev 4 -->
+    <g transform="translate(716 395)">
+      <circle cx="0" cy="0" r="24" fill="#6f443c"/>
+      <path d="M-24 -2 Q-14 -34 22 -24 L24 4 Q0 -5 -24 -2" fill="#191927"/>
+      <rect x="-28" y="29" width="56" height="65" rx="16" fill="#e0a43f"/>
+      <path d="M-26 48 L-50 72 M26 48 L49 72" stroke="#6f443c" stroke-width="12" stroke-linecap="round"/>
+      <path d="M-12 8 L-5 5 M7 5 L14 8" stroke="#151424"/>
+      <path d="M-10 21 Q0 13 10 21" fill="none"/>
+    </g>
+  </g>
+
+  <!-- melting server hamster wheels -->
+  <g transform="translate(103 190)">
+    <ellipse cx="0" cy="0" rx="58" ry="42" fill="none" stroke="#6ee5e9" stroke-width="8" opacity=".7"/>
+    <ellipse cx="0" cy="0" rx="35" ry="26" fill="none" stroke="#6ee5e9" stroke-width="5" opacity=".7"/>
+    <path d="M-20 19 Q-8 31 5 21 Q18 12 29 25" fill="none" stroke="#ff8b4e" stroke-width="10" stroke-linecap="round"/>
+    <rect x="-31" y="-24" width="63" height="48" rx="8" fill="#454d64" stroke="#16182a" stroke-width="4"/>
+    <circle cx="-15" cy="-2" r="5" fill="#ff526c"/>
+    <circle cx="0" cy="-2" r="5" fill="#ffd45e"/>
+    <circle cx="15" cy="-2" r="5" fill="#66e5a4"/>
+    <path d="M-29 26 Q0 40 30 24" fill="none" stroke="#ff623d" stroke-width="7"/>
+  </g>
+  <g transform="translate(690 190)">
+    <ellipse cx="0" cy="0" rx="58" ry="42" fill="none" stroke="#6ee5e9" stroke-width="8" opacity=".7"/>
+    <ellipse cx="0" cy="0" rx="35" ry="26" fill="none" stroke="#6ee5e9" stroke-width="5" opacity=".7"/>
+    <path d="M-22 18 Q-8 32 5 20 Q19 10 30 24" fill="none" stroke="#ff8b4e" stroke-width="10" stroke-linecap="round"/>
+    <rect x="-31" y="-24" width="63" height="48" rx="8" fill="#454d64" stroke="#16182a" stroke-width="4"/>
+    <circle cx="-15" cy="-2" r="5" fill="#ff526c"/>
+    <circle cx="0" cy="-2" r="5" fill="#ffd45e"/>
+    <circle cx="15" cy="-2" r="5" fill="#66e5a4"/>
+    <path d="M-29 26 Q0 40 30 24" fill="none" stroke="#ff623d" stroke-width="7"/>
+  </g>
+
+  <!-- speech bubble -->
+  <path d="M520 267 Q600 220 685 256 Q730 276 698 315 Q660 345 574 323 L543 345 L548 319 Q510 302 520 267Z" fill="#fff6d8" stroke="#17152d" stroke-width="5"/>
+  <text x="620" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#2b2040">Selected model</text>
+  <text x="620" y="301" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#c52c58">is at capacity.</text>
+
+  <text x="400" y="538" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#ffe9a8">“PLEASE TRY A DIFFERENT MODEL.”</text>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#d8c9ee">The only model inside is busy explaining why everyone else is outside.</text>
+</svg>
