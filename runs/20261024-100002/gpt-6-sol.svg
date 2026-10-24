@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17152d"/>
+      <stop offset="1" stop-color="#302044"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4fd8"/>
+      <stop offset="1" stop-color="#5cf7ff"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9c4d4"/>
+      <stop offset="1" stop-color="#596579"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 455 Q180 420 350 458 T800 445 V600 H0Z" fill="#121225"/>
+  <g opacity=".18" fill="#fff">
+    <circle cx="80" cy="92" r="2"/><circle cx="150" cy="155" r="2"/><circle cx="680" cy="90" r="2"/>
+    <circle cx="740" cy="180" r="2"/><circle cx="590" cy="140" r="2"/><circle cx="330" cy="80" r="2"/>
+  </g>
+
+  <text x="400" y="48" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="26" font-weight="900" letter-spacing="2">
+    CODEX NIGHTCLUB
+  </text>
+  <text x="400" y="78" text-anchor="middle" fill="#ff8de9" font-family="Arial, sans-serif" font-size="15" font-weight="700">
+    THE EXCLUSIVE MODEL EXPERIENCE
+  </text>
+
+  <!-- club facade -->
+  <rect x="505" y="110" width="250" height="340" rx="18" fill="#211d38" stroke="#8b5dca" stroke-width="4"/>
+  <path d="M525 170 H735" stroke="#ff4fd8" stroke-width="5" filter="url(#glow)"/>
+  <path d="M530 405 H730" stroke="#5cf7ff" stroke-width="5" filter="url(#glow)"/>
+  <rect x="555" y="125" width="150" height="68" rx="12" fill="#11101d" stroke="#ff4fd8" stroke-width="4"/>
+  <text x="630" y="172" text-anchor="middle" fill="#ff4f67" font-family="Arial, sans-serif" font-size="40" font-weight="900" filter="url(#glow)">FULL</text>
+  <text x="630" y="218" text-anchor="middle" fill="#b9a8d8" font-family="Arial, sans-serif" font-size="13">ONE MODEL INSIDE</text>
+  <circle cx="525" cy="250" r="7" fill="#5cf7ff" filter="url(#glow)"/>
+  <circle cx="735" cy="250" r="7" fill="#ff4fd8" filter="url(#glow)"/>
+  <path d="M545 275 H715 M545 300 H715 M545 325 H715" stroke="#594b79" stroke-width="3"/>
+  <text x="630" y="370" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="700">VIP: MODEL-X</text>
+
+  <!-- melting servers -->
+  <g transform="translate(25 350)">
+    <rect x="0" y="0" width="145" height="92" rx="12" fill="#313a4b" stroke="#7a8ca5" stroke-width="4"/>
+    <rect x="15" y="18" width="115" height="18" rx="5" fill="#121827"/>
+    <circle cx="28" cy="27" r="5" fill="#ff4f67"/>
+    <circle cx="45" cy="27" r="5" fill="#ffd35c"/>
+    <circle cx="62" cy="27" r="5" fill="#5cf7ff"/>
+    <path d="M20 62 Q35 54 50 66 T80 62 T110 68 T135 58" fill="none" stroke="#ff6d55" stroke-width="8"/>
+    <path d="M20 90 Q35 108 52 94 T85 101 T118 92 T145 106" fill="none" stroke="#ff9a5c" stroke-width="9"/>
+    <text x="72" y="130" text-anchor="middle" fill="#ffbd71" font-family="Arial, sans-serif" font-size="14" font-weight="700">SERVERS: OVERHEATED</text>
+  </g>
+
+  <!-- hamster wheel server -->
+  <g transform="translate(195 365)">
+    <ellipse cx="62" cy="54" rx="62" ry="46" fill="none" stroke="#8795ad" stroke-width="8"/>
+    <path d="M8 54 H116 M20 30 L104 78 M20 78 L104 30" stroke="#8795ad" stroke-width="5"/>
+    <circle cx="62" cy="54" r="8" fill="#ff6d55"/>
+    <path d="M48 46 q14 -22 28 0 q-4 22 -28 0" fill="#c28b63" stroke="#6e4638" stroke-width="3"/>
+    <circle cx="56" cy="42" r="2" fill="#17152d"/><circle cx="66" cy="42" r="2" fill="#17152d"/>
+    <path d="M42 95 q20 13 40 0" stroke="#ff5e49" stroke-width="9" stroke-linecap="round"/>
+    <text x="62" y="126" text-anchor="middle" fill="#ffbd71" font-family="Arial, sans-serif" font-size="13" font-weight="700">CAPACITY CPU</text>
+  </g>
+
+  <!-- velvet rope -->
+  <path d="M390 310 Q450 355 515 310" fill="none" stroke="#d22e68" stroke-width="8"/>
+  <circle cx="390" cy="310" r="12" fill="#ffd35c" stroke="#fff" stroke-width="3"/>
+  <circle cx="515" cy="310" r="12" fill="#ffd35c" stroke="#fff" stroke-width="3"/>
+  <path d="M390 310 V455 M515 310 V455" stroke="#ffd35c" stroke-width="6"/>
+
+  <!-- robot bouncer -->
+  <g transform="translate(330 185)">
+    <rect x="0" y="0" width="155" height="155" rx="30" fill="url(#metal)" stroke="#d9e5f2" stroke-width="4"/>
+    <rect x="18" y="30" width="119" height="72" rx="18" fill="#16182a" stroke="#7e91ab" stroke-width="4"/>
+    <circle cx="53" cy="66" r="13" fill="#ff4f67" filter="url(#glow)"/>
+    <circle cx="103" cy="66" r="13" fill="#ff4f67" filter="url(#glow)"/>
+    <path d="M45 88 Q78 105 110 88" fill="none" stroke="#ffcf6e" stroke-width="6"/>
+    <path d="M78 0 V-25" stroke="#bdcad8" stroke-width="6"/>
+    <circle cx="78" cy="-34" r="10" fill="#5cf7ff" filter="url(#glow)"/>
+    <path d="M0 118 H-30 M155 118 H185" stroke="#bdcad8" stroke-width="12"/>
+    <rect x="25" y="145" width="32" height="45" rx="9" fill="#69778c"/>
+    <rect x="98" y="145" width="32" height="45" rx="9" fill="#69778c"/>
+    <text x="78" y="132" text-anchor="middle" fill="#202437" font-family="Arial, sans-serif" font-size="13" font-weight="900">BOUNCER.BOT</text>
+    <path d="M-20 58 Q-70 50 -85 18" stroke="#bdcad8" stroke-width="8" fill="none"/>
+    <path d="M175 58 Q215 45 225 18" stroke="#bdcad8" stroke-width="8" fill="none"/>
+    <path d="M-88 18 l-13 -8 M-88 18 l-2 15" stroke="#bdcad8" stroke-width="6"/>
+    <path d="M225 18 l13 -8 M225 18 l2 15" stroke="#bdcad8" stroke-width="6"/>
+    <rect x="-90" y="0" width="112" height="34" rx="8" fill="#ffdf77" transform="rotate(-12 -90 0)"/>
+    <text x="-35" y="22" text-anchor="middle" fill="#3b2444" font-family="Arial, sans-serif" font-size="12" font-weight="900" transform="rotate(-12 -35 22)">SORRY!</text>
+  </g>
+
+  <!-- developers queue -->
+  <g font-family="Arial, sans-serif" font-weight="700">
+    <g transform="translate(35 195)">
+      <circle cx="28" cy="20" r="17" fill="#d69a76"/><path d="M10 18 Q28 -5 46 18" fill="#4a2d36"/>
+      <rect x="8" y="40" width="42" height="68" rx="12" fill="#4e83bc"/><path d="M15 70 h28" stroke="#d7f0ff" stroke-width="5"/>
+      <path d="M10 108 l-8 30 M48 108 l8 30" stroke="#22283c" stroke-width="9"/>
+    </g>
+    <g transform="translate(115 220)">
+      <circle cx="28" cy="20" r="17" fill="#8f5d48"/><path d="M10 16 Q28 -10 47 17" fill="#1b1b29"/>
+      <rect x="8" y="40" width="42" height="68" rx="12" fill="#ef765f"/><path d="M16 61 h27 M16 74 h20" stroke="#fff1db" stroke-width="4"/>
+      <path d="M10 108 l-8 30 M48 108 l8 30" stroke="#22283c" stroke-width="9"/>
+    </g>
+    <g transform="translate(205 195)">
+      <circle cx="28" cy="20" r="17" fill="#e3b18d"/><path d="M10 18 Q28 -7 46 18" fill="#5c3b29"/>
+      <rect x="8" y="40" width="42" height="68" rx="12" fill="#6dc48b"/><path d="M18 63 q10 -12 20 0" fill="none" stroke="#173c38" stroke-width="4"/>
+      <path d="M10 108 l-8 30 M48 108 l8 30" stroke="#22283c" stroke-width="9"/>
+    </g>
+  </g>
+
+  <g fill="#e8e8f5" font-family="Arial, sans-serif" font-size="13" font-weight="700">
+    <text x="48" y="180">“I only need one tiny prompt...”</text>
+    <text x="120" y="390">“My deadline is melting!”</text>
+    <text x="225" y="178">“Can I try the backup model?”</text>
+  </g>
+
+  <!-- speech bubble -->
+  <path d="M280 95 Q280 65 315 65 H470 Q500 65 500 95 V130 Q500 160 470 160 H365 L340 180 L342 160 H315 Q280 160 280 130Z" fill="#fff" stroke="#392850" stroke-width="4"/>
+  <text x="390" y="103" text-anchor="middle" fill="#2d2145" font-family="Arial, sans-serif" font-size="15" font-weight="900">Selected model is at</text>
+  <text x="390" y="126" text-anchor="middle" fill="#d82f74" font-family="Arial, sans-serif" font-size="18" font-weight="900">capacity.</text>
+
+  <text x="400" y="550" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="900">
+    “THE CLUB IS FULL — PLEASE TRY A DIFFERENT MODEL.”
+  </text>
+</svg>

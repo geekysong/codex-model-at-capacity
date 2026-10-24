@@ -113,3 +113,19 @@ The generated page is intentionally self-contained: it has no CDN or build
 step, so GitHub Pages can serve it directly. `index.html` is generated output;
 make UI changes in `build_index()` inside `run_round.py`, otherwise the next
 cron run will overwrite them.
+
+## Local Claude comparison
+
+`compare_claude.py` sends the exact same SVG probe directly to Anthropic's
+official Messages API. Put the API key by itself in the ignored file
+`.secrets/anthropic_api_key` (mode `600`), then run:
+
+```bash
+python3 compare_claude.py
+```
+
+The model can be selected without changing the script, for example with
+`CLAUDE_MODEL=claude-sonnet-4-20250514`. The output and non-secret request
+metadata are written to `comparisons/<timestamp>/`; the key is never written
+there or printed. This comparison is intentionally separate from the cron
+health series and is not automatically published to GitHub Pages.
