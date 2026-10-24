@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Balanced seesaw in static equilibrium</title>
+  <desc id="desc">A level seesaw with a 6 kilogram mass 2 metres left of the pivot and a 4 kilogram mass 3 metres right. Equal opposing torques give 6 times 2 equals 4 times 3, so x equals 3 metres.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#dc493a"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="#fff"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#233247">
+    <text x="300" y="39" font-size="25" font-weight="700" fill="#168065">balanced</text>
+
+    <!-- Distance guides -->
+    <g stroke="#69788a" stroke-width="1.5">
+      <path d="M100 87V124M260 87V124M500 87V124" stroke-dasharray="4 4"/>
+      <path d="M100 100H260M260 100H500"/>
+      <path d="M105 95L100 100L105 105M255 95L260 100L255 105M265 95L260 100L265 105M495 95L500 100L495 105" fill="none"/>
+    </g>
+    <rect x="151" y="84" width="58" height="30" fill="#fff"/>
+    <text x="180" y="106" font-size="20">2 m</text>
+    <rect x="315" y="84" width="130" height="30" fill="#fff"/>
+    <text x="380" y="106" font-size="20">x = 3 m</text>
+
+    <!-- Level beam and pivot -->
+    <rect x="65" y="132" width="470" height="14" rx="5" fill="#345b80"/>
+    <path d="M260 146L226 218H294Z" fill="#b8c6d4" stroke="#345b80" stroke-width="2"/>
+    <circle cx="260" cy="146" r="5" fill="#233247"/>
+    <path d="M211 220H309" stroke="#69788a" stroke-width="3" stroke-linecap="round"/>
+    <text x="260" y="246" font-size="17">pivot</text>
+
+    <!-- Hanging masses -->
+    <g stroke="#233247" stroke-width="2">
+      <path d="M100 146V176M500 146V176"/>
+      <rect x="62" y="176" width="76" height="58" rx="7" fill="#e2edf7"/>
+      <rect x="462" y="176" width="76" height="58" rx="7" fill="#e2edf7"/>
+    </g>
+    <text x="100" y="212" font-size="22" font-weight="700">6 kg</text>
+    <text x="500" y="212" font-size="22" font-weight="700">4 kg</text>
+
+    <!-- Downward gravitational force arrows -->
+    <g stroke="#dc493a" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M100 241V291"/>
+      <path d="M500 241V291"/>
+    </g>
+    <text x="143" y="278" font-size="18" fill="#bc392e">6g ↓</text>
+    <text x="543" y="278" font-size="18" fill="#bc392e">4g ↓</text>
+
+    <!-- Torque balance and solution -->
+    <text x="300" y="326" font-size="17">Equal opposing torques about the pivot</text>
+    <text x="300" y="356" font-size="25" font-weight="700">6×2 = 4×3</text>
+    <text x="300" y="385" font-size="20" fill="#168065">x = (6×2)/4 = 3 m</text>
+  </g>
+</svg>
