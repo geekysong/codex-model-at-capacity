@@ -53,18 +53,13 @@ observable cost signals without putting a real deliverable at risk. A passing
 SVG is therefore not evidence that a model is intelligent, and a slow round is
 not by itself evidence of a regression.
 
-The stronger signal we want to add is an independent, subjective review. For a
-fixed set of benchmark prompts, Claude Code can judge each Codex answer using
-the same rubric and a 0–4 score for: instruction following, factual accuracy,
-reasoning, completeness, and usefulness. The judge must receive the prompt and
-answer, not the model name or timing, and the prompt set and rubric must remain
-versioned. We will store one record per judged answer with the prompt-set
-version, Codex model, judge model, rubric scores, total score, and a short
-reason. This creates a separate “quality” series alongside the operational
-series in `stats.json`; it must never be inferred from SVG success alone.
-
-Until those benchmark reviews are collected, the site should describe the
-subjective quality signal as planned rather than display an invented score.
+Pelican results now receive an independent visual review against a frozen Astra
+reference. The image judge scores bird shape, softness, cycling coherence and
+readability from 0 (acceptable) to 4 (major visual failure), with source images,
+Chinese reasons and versioned hashes. The hourly interactive graph shows each
+model's worst reviewed score in that hour. Missing reviews and generation failures
+are unscored. This is a subjective image-quality series, not a measure of general
+intelligence. See [QUALITY.md](QUALITY.md) for the schema, rubric and setup.
 
 ## Data format
 

@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "rubric_version",
+    "baseline",
+    "reviews"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "rubric_version": {
+      "const": "pelican-v1"
+    },
+    "baseline": {
+      "type": "object",
+      "required": [
+        "svg",
+        "svg_sha256",
+        "source_round"
+      ]
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "round": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "variant": {
+            "type": "string"
+          },
+          "time_sgt": {
+            "type": "string"
+          },
+          "baseline_sha256": {
+            "type": "string"
+          },
+          "judge": {
+            "type": "string"
+          },
+          "reviewed_at": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "reviewed",
+              "generation_error",
+              "review_error",
+              "render_error"
+            ]
+          },
+          "severity": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "dimensions": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "bird_shape": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4
+                  },
+                  "softness": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4
+                  },
+                  "riding": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4
+                  },
+                  "readability": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4
+                  }
+                },
+                "required": [
+                  "bird_shape",
+                  "softness",
+                  "riding",
+                  "readability"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "svg": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "svg_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "round",
+          "model",
+          "variant",
+          "time_sgt",
+          "baseline_sha256",
+          "judge",
+          "reviewed_at",
+          "status",
+          "severity",
+          "confidence",
+          "dimensions",
+          "reasons",
+          "svg",
+          "svg_sha256"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "reviewed"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "severity": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 4
+                },
+                "dimensions": {
+                  "type": "object",
+                  "properties": {
+                    "bird_shape": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 4
+                    },
+                    "softness": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 4
+                    },
+                    "riding": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 4
+                    },
+                    "readability": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 4
+                    }
+                  },
+                  "required": [
+                    "bird_shape",
+                    "softness",
+                    "riding",
+                    "readability"
+                  ],
+                  "additionalProperties": false
+                },
+                "confidence": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "severity": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

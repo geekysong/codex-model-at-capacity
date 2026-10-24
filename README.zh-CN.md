@@ -48,3 +48,7 @@ python3 compare_claude.py
 `gpt-6.1-sol ↔ claude-opus-5-5`、`gpt-6-luna ↔ claude-haiku-5-5`、
 `gpt-5.6-terra ↔ claude-sonnet-5-5`。两边使用同一个 SVG prompt；Codex 走订阅登录，
 Claude 走 Anthropic API。其它 Claude 模型不生成。
+
+## 鹈鹕视觉评审
+
+以固定的 Astra 图片为基准，由独立 Claude 视觉评审检查鸟形、柔和度、骑车关系和整体可读性，各项问题程度 0–4 分，总分取最高问题分。首页按新加坡时间的小时绘图，可点击查看每次尝试的原图和中文理由。缺图和评审失败不计分；此评分只描述画面，不代表模型整体能力。数据结构、评审规则和运行方法见 [QUALITY.md](QUALITY.md)。
