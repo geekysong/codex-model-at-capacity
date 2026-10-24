@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f2937"/>
+    </marker>
+    <marker id="dimArrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <text x="300" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#111827">
+    Level Seesaw — Static Equilibrium
+  </text>
+
+  <!-- Seesaw beam -->
+  <rect x="90" y="196" width="420" height="18" rx="6" fill="#8b5e3c" stroke="#4b2e1f" stroke-width="2"/>
+
+  <!-- Pivot -->
+  <polygon points="300,214 265,285 335,285" fill="#64748b" stroke="#334155" stroke-width="2"/>
+  <circle cx="300" cy="205" r="8" fill="#fbbf24" stroke="#92400e" stroke-width="2"/>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#334155">pivot</text>
+
+  <!-- Masses -->
+  <rect x="145" y="135" width="70" height="55" rx="8" fill="#60a5fa" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="180" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">6 kg</text>
+
+  <rect x="385" y="135" width="70" height="55" rx="8" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+  <text x="420" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">4 kg</text>
+
+  <!-- Force arrows -->
+  <line x1="180" y1="105" x2="180" y2="132" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="180" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1f2937">F = 6g</text>
+
+  <line x1="420" y1="105" x2="420" y2="132" stroke="#1f2937" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="420" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1f2937">F = 4g</text>
+
+  <!-- Distance dimensions -->
+  <line x1="180" y1="340" x2="300" y2="340" stroke="#2563eb" stroke-width="2"
+        marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+  <line x1="180" y1="320" x2="180" y2="350" stroke="#2563eb" stroke-width="2"/>
+  <line x1="300" y1="320" x2="300" y2="350" stroke="#2563eb" stroke-width="2"/>
+  <text x="240" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1d4ed8">2 m</text>
+
+  <line x1="300" y1="340" x2="420" y2="340" stroke="#2563eb" stroke-width="2"
+        marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+  <line x1="420" y1="320" x2="420" y2="350" stroke="#2563eb" stroke-width="2"/>
+  <text x="360" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1d4ed8">3 m</text>
+
+  <!-- Equation and conclusion -->
+  <text x="300" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#111827">
+    6 × 2 = 4 × 3
+  </text>
+  <text x="520" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#15803d">
+    balanced
+  </text>
+  <text x="520" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#15803d">
+    x = 3 m
+  </text>
+</svg>

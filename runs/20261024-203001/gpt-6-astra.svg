@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f4e79"/>
+    </marker>
+    <style>
+      .label { font-family: Arial, sans-serif; fill: #1f2937; font-size: 20px; }
+      .small { font-family: Arial, sans-serif; fill: #1f2937; font-size: 17px; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="#ffffff"/>
+
+  <!-- Level seesaw -->
+  <line x1="90" y1="190" x2="510" y2="190" stroke="#6b4f2a" stroke-width="14" stroke-linecap="round"/>
+  <line x1="300" y1="180" x2="300" y2="200" stroke="#333" stroke-width="4"/>
+
+  <!-- Pivot -->
+  <polygon points="270,290 330,290 300,205" fill="#8aa6b8" stroke="#334155" stroke-width="3"/>
+  <circle cx="300" cy="190" r="8" fill="#334155"/>
+  <text x="300" y="325" text-anchor="middle" class="label">pivot</text>
+
+  <!-- Left mass and rope -->
+  <line x1="150" y1="190" x2="150" y2="245" stroke="#334155" stroke-width="3"/>
+  <rect x="115" y="245" width="70" height="55" rx="5" fill="#d97706" stroke="#7c2d12" stroke-width="3"/>
+  <text x="150" y="279" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20" font-weight="bold">6 kg</text>
+
+  <!-- Right mass and rope -->
+  <line x1="450" y1="190" x2="450" y2="245" stroke="#334155" stroke-width="3"/>
+  <rect x="415" y="245" width="70" height="55" rx="5" fill="#2563eb" stroke="#1e3a8a" stroke-width="3"/>
+  <text x="450" y="279" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20" font-weight="bold">4 kg</text>
+
+  <!-- Force arrows -->
+  <line x1="150" y1="225" x2="150" y2="315" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="165" y="315" class="small">6g downward</text>
+  <line x1="450" y1="225" x2="450" y2="315" stroke="#1f4e79" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="465" y="315" class="small">4g downward</text>
+
+  <!-- Distance labels -->
+  <line x1="150" y1="155" x2="300" y2="155" stroke="#475569" stroke-width="2"/>
+  <line x1="150" y1="148" x2="150" y2="162" stroke="#475569" stroke-width="2"/>
+  <line x1="300" y1="148" x2="300" y2="162" stroke="#475569" stroke-width="2"/>
+  <text x="225" y="143" text-anchor="middle" class="label">2 m</text>
+
+  <line x1="300" y1="155" x2="450" y2="155" stroke="#475569" stroke-width="2"/>
+  <line x1="450" y1="148" x2="450" y2="162" stroke="#475569" stroke-width="2"/>
+  <text x="375" y="143" text-anchor="middle" class="label">x = 3 m</text>
+
+  <!-- Equation and status -->
+  <text x="300" y=" fifty" text-anchor="middle" class="label">6 × 2 = 4 × 3</text>
+  <text x="300" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#15803d">BALANCED</text>
+</svg>

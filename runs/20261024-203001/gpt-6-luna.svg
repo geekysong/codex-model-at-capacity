@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#245"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <text x="300" y="42" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="25" font-weight="bold" fill="#16324f">Static Equilibrium</text>
+
+  <!-- Seesaw beam -->
+  <rect x="82" y="211" width="436" height="18" rx="9" fill="#c98b45" stroke="#6f431f" stroke-width="3"/>
+
+  <!-- Pivot -->
+  <path d="M300 229 L265 292 L335 292 Z" fill="#6c8799" stroke="#29495f" stroke-width="3"/>
+  <circle cx="300" cy="220" r="8" fill="#29495f"/>
+  <text x="300" y="318" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="18" fill="#29495f">pivot</text>
+
+  <!-- Masses -->
+  <rect x="112" y="139" width="56" height="56" rx="8" fill="#d9534f" stroke="#8d2522" stroke-width="3"/>
+  <text x="140" y="174" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="22" font-weight="bold" fill="white">6 kg</text>
+
+  <rect x="432" y="139" width="56" height="56" rx="8" fill="#4b86c5" stroke="#24517d" stroke-width="3"/>
+  <text x="460" y="174" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="22" font-weight="bold" fill="white">4 kg</text>
+
+  <!-- Force arrows -->
+  <line x1="140" y1="106" x2="140" y2="136" stroke="#245" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="140" y="92" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="17" fill="#16324f">6g downward</text>
+
+  <line x1="460" y1="106" x2="460" y2="136" stroke="#245" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="460" y="92" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="17" fill="#16324f">4g downward</text>
+
+  <!-- Distance guides -->
+  <line x1="140" y1="246" x2="300" y2="246" stroke="#555" stroke-width="2"/>
+  <line x1="140" y1="238" x2="140" y2="254" stroke="#555" stroke-width="2"/>
+  <line x1="300" y1="238" x2="300" y2="254" stroke="#555" stroke-width="2"/>
+  <text x="220" y="270" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="19" fill="#333">2 m left</text>
+
+  <line x1="300" y1="246" x2="460" y2="246" stroke="#555" stroke-width="2"/>
+  <line x1="460" y1="238" x2="460" y2="254" stroke="#555" stroke-width="2"/>
+  <text x="380" y="270" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="19" fill="#333">x = 3 m right</text>
+
+  <!-- Torque equation -->
+  <text x="300" y="355" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="23" font-weight="bold" fill="#16324f">6 × 2 = 4 × 3</text>
+  <text x="300" y="383" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="24" font-weight="bold" fill="#198754">BALANCED</text>
+</svg>
