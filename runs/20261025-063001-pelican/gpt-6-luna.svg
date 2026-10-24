@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Two-Wheeled Tax Plan</title>
+  <desc id="desc">A smug pelican pedals a bicycle, carrying a comically oversized fish-tax ledger in its beak.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#183044;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#183044;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.8s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .7s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#d8f3ef"/>
+  <circle cx="690" cy="105" r="54" fill="#ffd166"/>
+  <path d="M0 335 Q130 295 245 333 T500 323 T800 330 V510 H0Z" fill="#9bd4a6"/>
+  <path d="M0 388 Q180 365 340 389 T800 380" fill="none" stroke="#79bd88" stroke-width="5"/>
+  <path d="M0 456 Q175 438 330 461 T800 450" fill="none" stroke="#79bd88" stroke-width="5"/>
+
+  <text x="400" y="52" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="31" font-weight="900" fill="#183044">THE PELICAN’S TWO-WHEELED TAX PLAN</text>
+  <text x="400" y="83" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="17" font-weight="700" fill="#35596b">“I’ll pedal the bills away. The fish are still taxable.”</text>
+
+  <g class="wheel" aria-label="spinning rear wheel">
+    <circle cx="225" cy="414" r="76" fill="#f7fff9" class="ink"/>
+    <circle cx="225" cy="414" r="9" fill="#183044"/>
+    <path d="M225 338V490 M149 414H301 M171 360L279 468 M279 360L171 468" class="thin" fill="none"/>
+  </g>
+  <g class="wheel" aria-label="spinning front wheel">
+    <circle cx="575" cy="414" r="76" fill="#f7fff9" class="ink"/>
+    <circle cx="575" cy="414" r="9" fill="#183044"/>
+    <path d="M575 338V490 M499 414H651 M521 360L629 468 M629 360L521 468" class="thin" fill="none"/>
+  </g>
+
+  <g fill="none" class="ink">
+    <path d="M225 414L335 414L390 315L465 414L575 414L465 414L450 350"/>
+    <path d="M335 414L305 340 M292 340H326"/>
+    <path d="M575 414L590 329 M574 329H607"/>
+  </g>
+  <circle cx="390" cy="414" r="15" fill="#ff9f1c" class="ink"/>
+  <path d="M390 414L433 442 M390 414L360 447" class="thin" fill="none"/>
+  <path d="M351 317H425" class="ink" fill="none"/>
+  <path d="M387 306L399 317L387 328" fill="#ff9f1c" class="thin"/>
+
+  <g class="rider">
+    <!-- tail and legs -->
+    <path d="M327 256 Q282 229 263 260 Q295 275 332 272" fill="#f7b84b" class="thin"/>
+    <path d="M387 273L408 333L431 365" fill="none" class="ink"/>
+    <path d="M431 365L410 382" fill="none" class="ink"/>
+    <path d="M390 278L361 330L388 362" fill="none" class="ink"/>
+    <path d="M388 362L416 374" fill="none" class="ink"/>
+    <path d="M399 376L419 382M405 370L427 377" class="thin" fill="none"/>
+
+    <!-- body -->
+    <ellipse cx="375" cy="247" rx="60" ry="72" fill="#f5b642" class="ink"/>
+    <path d="M338 251Q375 278 415 244" fill="none" stroke="#e99c2d" stroke-width="6"/>
+
+    <!-- neck and head -->
+    <path d="M376 210Q405 160 441 153" fill="none" stroke="#f5b642" stroke-width="35" stroke-linecap="round"/>
+    <ellipse cx="455" cy="147" rx="43" ry="35" fill="#f5b642" class="ink"/>
+    <path d="M480 153Q541 143 578 161Q547 183 483 177Z" fill="#f07b46" class="ink"/>
+    <path d="M481 165Q535 165 565 166" fill="none" stroke="#c95b35" stroke-width="4"/>
+    <circle cx="464" cy="136" r="6" fill="#183044"/>
+    <path d="M449 123Q459 115 469 123" fill="none" class="thin"/>
+    <path d="M442 146Q451 157 460 146" fill="none" stroke="#183044" stroke-width="3"/>
+    <!-- helmet -->
+    <path d="M419 129Q423 93 459 93Q489 95 497 127Z" fill="#ff5964" class="ink"/>
+    <path d="M416 130H500" class="ink" fill="none"/>
+    <path d="M455 98L458 125" class="thin" fill="none"/>
+
+    <!-- wing and handlebar reach -->
+    <path d="M351 231Q384 216 402 243Q386 270 350 263Q367 250 351 231Z" fill="#ffd166" class="thin"/>
+    <path d="M402 244L451 318L461 349" fill="none" class="ink"/>
+    <path d="M451 349L465 350" fill="none" class="ink"/>
+  </g>
+
+  <!-- ledger in the bill -->
+  <g transform="rotate(-5 554 130)">
+    <rect x="530" y="106" width="85" height="42" rx="5" fill="#fff7d6" class="thin"/>
+    <path d="M543 118H601M543 129H594M543 139H580" stroke="#183044" stroke-width="3"/>
+    <text x="572" y="103" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="800" fill="#183044">FISH TAX</text>
+  </g>
+
+  <path d="M259 503H545" stroke="#183044" stroke-width="5" stroke-linecap="round"/>
+  <text x="400" y="534" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="17" font-weight="800" fill="#183044">“A balanced budget,” he squawks, “and a very unbalanced ride!”</text>
+  <rect x="0" y="558" width="800" height="42" fill="#183044"/>
+  <text x="400" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">2026-10-25 06:31:36 SGT (UTC+08:00)</text>
+</svg>
