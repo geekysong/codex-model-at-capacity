@@ -177,7 +177,9 @@ def build_index(records: list[dict]) -> str:
     comparison_root = REPO / "comparisons"
     comparison_files = sorted(comparison_root.glob("*/*/claude-*/claude.svg")) if comparison_root.exists() else []
     for variant, variant_prompt in PROMPTS.items():
-        variant_records = [r for r in records if r.get("variant", "pelican") == variant]
+        # Records from the original capacity probe have no variant field and
+        # must not be mistaken for the newer pelican round.
+        variant_records = [r for r in records if r.get("variant", "legacy") == variant]
         variant_round = max((r["round"] for r in variant_records), default=None)
         variant_latest = [r for r in variant_records if r["round"] == variant_round]
         pair_cards = []
@@ -197,9 +199,12 @@ def build_index(records: list[dict]) -> str:
             pair_cards.append(f'<article class="pair"><div><small>CODEX · {html.escape(codex_model)}</small>{left}</div>'
                               f'<div><small>CLAUDE API · {html.escape(claude_label)}</small>{right}</div></article>')
         if pair_cards:
-            pair_sections.append(f'<h3>{html.escape(variant.title())} round</h3><div class="pairs">{"".join(pair_cards)}</div>')
-    prompt_text = "\n\n".join(f"[{name}]\n{text}" for name, text in PROMPTS.items())
-    prompt_text = html.escape(prompt_text)
+            round_prompt = html.escape(variant_prompt)
+            pair_sections.append(
+                f'<h3>{html.escape(variant.title())} round</h3>'
+                f'<details class="round-prompt"><summary>Prompt for this round</summary><pre class="prompt">{round_prompt}</pre></details>'
+                f'<div class="pairs">{"".join(pair_cards)}</div>'
+            )
     payload = html.escape(json.dumps(sorted(records, key=lambda x: (x["round"], x["time_sgt"]), reverse=True), ensure_ascii=False), quote=False)
     # The JSON is inserted into a script tag; escaping '<' prevents a data value from closing it.
     payload = payload.replace("&lt;", "\\u003c").replace("&gt;", "\\u003e").replace("&amp;", "&")
@@ -227,7 +232,6 @@ a{{color:var(--cyan)}} .links{{white-space:nowrap}} .links a{{border:1px solid v
 <header><div><div class="eyebrow">PUBLIC ACCOUNT MONITOR · 5 MINUTE CENSUS</div><h1>When the door says <span>at capacity</span>.</h1><p class="lede">One Codex account, eight models in parallel, one attempt each. The SVGs are the probe; timestamps, latency, token drift and failures are the evidence.</p></div><div class="links"><a href="stats.json">raw stats.json</a><a href="https://github.com/geekysong/codex-model-at-capacity">source ↗</a></div></header>
 <section class="metrics"><div class="metric"><small>Latest round</small><b>{ok_n}/{len(latest_recs)}</b><small>models returned an SVG</small></div><div class="metric"><small>All attempts</small><b>{attempts}</b><small>{len(rounds)} rounds · {all_ok / attempts * 100 if attempts else 0:.1f}% success</small></div><div class="metric"><small>Median latency</small><b>{median if median is not None else "—"}<small> s</small></b><small>across recorded attempts</small></div><div class="metric"><small>Last seen</small><b style="font-size:16px">{latest or "—"}</b><small>{updated}</small></div></section>
 <section class="panel"><div class="section-head"><h2>Latest round · {latest or "—"}</h2><p>{ok_n}/{len(latest_recs)} passed · once per model · no retries</p></div><div class="grid">{''.join(cards)}</div></section>
-<section class="panel"><details><summary>Probe prompt used for every image</summary><pre class="prompt">{prompt_text}</pre></details></section>
 <section class="panel"><div class="section-head"><h2>Cross-provider pairs</h2><p>Codex subscription vs Claude API · four models · two prompt rounds</p></div>{''.join(pair_sections) or '<p class="muted">Claude comparison images are not available yet.</p>'}</section>
 <section class="panel"><div class="section-head"><h2>Capacity signal by round</h2><p>bar height = successful attempts</p></div><div id="chart" class="chart"></div></section>
 <section class="panel"><div class="section-head"><h2>Full attempt log</h2><p>raw records, searchable and paginated</p></div><div class="toolbar"><input id="search" type="search" placeholder="Filter model, status, error or round…"><select id="model"><option value="">All models</option></select><select id="status"><option value="">All statuses</option><option value="ok">ok</option><option value="error">error</option></select></div><div class="table-wrap"><table><thead><tr><th>Time (SGT)</th><th>Round</th><th>Model</th><th>Status</th><th>Duration</th><th>Input</th><th>Cached</th><th>Output</th><th>Reasoning</th><th>Total</th><th>Error</th><th>SVG</th></tr></thead><tbody id="tbody"></tbody></table></div><div class="pager"><span id="count"></span><span><button id="prev">Previous</button> <button id="next">Next</button></span></div></section>

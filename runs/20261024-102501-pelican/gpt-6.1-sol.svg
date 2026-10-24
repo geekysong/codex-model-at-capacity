@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#fff4c7"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#727b87"/>
+      <stop offset="1" stop-color="#353d49"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#17212b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#17212b;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#17212b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;font-weight:900;fill:#17212b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="125" r="58" fill="#ffe27a" opacity=".9"/>
+  <path d="M0 225 Q90 175 180 225 T360 225 T540 225 T800 220 L800 350 L0 350Z" fill="#74bf8b" opacity=".65"/>
+  <path d="M0 290 Q130 240 260 290 T520 285 T800 280 L800 370 L0 370Z" fill="#438d69" opacity=".7"/>
+  <path d="M0 355 L800 330 L800 600 L0 600Z" fill="url(#road)"/>
+  <path d="M0 465 L800 438" stroke="#e4d77b" stroke-width="8" stroke-dasharray="42 28" opacity=".9"/>
+  <path d="M0 545 L800 516" stroke="#e4d77b" stroke-width="6" stroke-dasharray="32 24" opacity=".55"/>
+
+  <g transform="translate(48 35)">
+    <path d="M8 65 Q85 20 180 60" fill="none" class="ink"/>
+    <path d="M28 65 Q85 47 151 61" fill="none" class="thin"/>
+    <text x="18" y="42" class="label" font-size="28" transform="rotate(-5 18 42)">BEAKING NEWS!</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <circle cx="215" cy="455" r="92" fill="#f7f7f2" class="ink"/>
+    <circle cx="600" cy="455" r="92" fill="#f7f7f2" class="ink"/>
+    <circle cx="215" cy="455" r="12" fill="#f04d48" class="ink"/>
+    <circle cx="600" cy="455" r="12" fill="#f04d48" class="ink"/>
+    <g class="thin" opacity=".9">
+      <path d="M215 375V535M135 455H295M158 398L272 512M158 512L272 398"/>
+      <path d="M600 375V535M520 455H680M543 398L657 512M543 512L657 398"/>
+    </g>
+
+    <path d="M215 455 L350 300 L600 455 L215 455 L470 455 L350 300" fill="none" stroke="#e54d43" stroke-width="13" stroke-linejoin="round"/>
+    <path d="M350 300 L425 285 L470 455" fill="none" stroke="#e54d43" stroke-width="13" stroke-linecap="round"/>
+    <path d="M425 285 L463 255" fill="none" class="ink"/>
+    <path d="M448 250 L495 250" fill="none" class="ink"/>
+    <path d="M470 455 L505 482" fill="none" class="ink"/>
+    <path d="M505 482 L538 482" fill="none" class="ink"/>
+    <path d="M350 300 L334 267" fill="none" class="ink"/>
+    <path d="M317 265 L352 265" fill="none" class="ink"/>
+
+    <ellipse cx="406" cy="252" rx="92" ry="108" fill="#f4f1df" class="ink"/>
+    <path d="M349 205 Q378 157 431 170 Q478 184 491 225 Q454 208 420 221 Q383 232 349 205Z" fill="#374957" class="ink"/>
+    <path d="M377 190 Q389 161 421 153" fill="none" class="thin"/>
+    <ellipse cx="445" cy="213" rx="10" ry="12" fill="#fff" class="ink"/>
+    <circle cx="448" cy="215" r="4" fill="#17212b"/>
+    <path d="M456 231 Q500 219 557 244 Q584 257 550 274 Q496 286 451 259Z" fill="#f6a34a" class="ink"/>
+    <path d="M465 247 Q515 252 553 257" fill="none" class="thin"/>
+    <path d="M479 259 Q507 276 531 273" fill="none" class="thin"/>
+    <path d="M355 260 Q313 282 320 343 Q329 390 370 369 Q395 354 386 309Z" fill="#eef0e5" class="ink"/>
+    <path d="M375 303 Q406 323 435 295" fill="none" class="thin"/>
+
+    <path d="M379 346 Q344 384 326 432" fill="none" class="ink"/>
+    <path d="M435 347 Q464 393 470 441" fill="none" class="ink"/>
+    <path d="M326 432 Q305 449 279 444" fill="none" class="ink"/>
+    <path d="M470 441 Q491 458 517 456" fill="none" class="ink"/>
+    <path d="M278 444 Q267 438 258 448 Q273 465 300 457" fill="#f6a34a" class="ink"/>
+    <path d="M516 456 Q528 448 540 459 Q522 475 497 463" fill="#f6a34a" class="ink"/>
+
+    <path d="M385 177 Q382 127 410 112 Q439 98 463 119" fill="none" class="ink"/>
+    <path d="M406 112 Q420 88 442 104 Q455 116 446 132" fill="#ef6b58" class="ink"/>
+    <path d="M408 108 Q407 77 431 70" fill="none" class="ink"/>
+    <path d="M431 70 Q453 59 462 79" fill="none" class="ink"/>
+
+    <path d="M397 438 Q423 425 449 438" fill="none" class="ink"/>
+    <path d="M390 455 Q420 442 453 455" fill="none" class="thin"/>
+    <path d="M406 438 L421 424" fill="none" class="thin"/>
+  </g>
+
+  <g transform="translate(586 104) rotate(9)">
+    <path d="M0 0 Q37 -35 75 0 Q38 23 0 0Z" fill="#fff" class="ink"/>
+    <path d="M10 2 Q38 4 65 2" fill="none" class="thin"/>
+    <text x="18" y="7" font-family="Arial" font-size="15" font-weight="900" fill="#17212b">HONK!</text>
+  </g>
+
+  <g transform="translate(96 485) rotate(-7)">
+    <path d="M0 0 Q28 -34 56 0 Q29 18 0 0Z" fill="#fff" class="ink"/>
+    <text x="12" y="4" font-family="Arial" font-size="14" font-weight="900" fill="#17212b">WHEE!</text>
+  </g>
+
+  <rect x="150" y="22" width="500" height="82" rx="22" fill="#fff7d6" stroke="#17212b" stroke-width="8" transform="rotate(-2 400 63)"/>
+  <text x="400" y="80" text-anchor="middle" class="label" font-size="49" transform="rotate(-2 400 80)">THE BEAK-BIKE BANDIT</text>
+  <text x="400" y="570" text-anchor="middle" class="label" font-size="25">“WHY WALK WHEN YOU CAN WOBBLE IN STYLE?”</text>
+</svg>
