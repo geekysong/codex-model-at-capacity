@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1">
+      <stop stop-color="#17142b"/>
+      <stop offset="1" stop-color="#30204d"/>
+    </linearGradient>
+    <linearGradient id="floor" x2="0" y2="1">
+      <stop stop-color="#39234d"/>
+      <stop offset="1" stop-color="#120f22"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <style>
+      .ink{stroke:#14121d;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .small{font-family:Arial,sans-serif;font-weight:700}
+      .mono{font-family:monospace}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 430 Q180 390 400 430 T800 420 V600 H0Z" fill="url(#floor)"/>
+  <path d="M0 455 Q200 420 400 455 T800 445" fill="none" stroke="#6d397d" stroke-width="5"/>
+
+  <text x="400" y="53" text-anchor="middle" class="small" font-size="30" fill="#fff">CODEX NIGHTCLUB</text>
+  <text x="400" y="82" text-anchor="middle" class="small" font-size="17" fill="#ff92de">THE EXCLUSIVE MODEL LOUNGE</text>
+
+  <!-- club entrance -->
+  <rect x="270" y="105" width="300" height="300" rx="18" fill="#0d0b18" class="ink"/>
+  <rect x="292" y="127" width="256" height="250" rx="10" fill="#261438" stroke="#7d418c" stroke-width="5"/>
+  <path d="M320 350 V176 Q320 145 350 145 H490 Q520 145 520 176 V350" fill="#120d20" stroke="#b74d9d" stroke-width="5"/>
+  <path d="M350 350 V194 Q350 173 371 173 H469 Q490 173 490 194 V350" fill="#23132f"/>
+
+  <!-- glowing FULL sign -->
+  <rect x="327" y="102" width="186" height="68" rx="12" fill="#ff244f" stroke="#ffd2dc" stroke-width="5" filter="url(#glow)"/>
+  <text x="420" y="148" text-anchor="middle" class="small" font-size="42" fill="#fff">FULL</text>
+  <text x="420" y="187" text-anchor="middle" class="mono" font-size="13" fill="#ff9be2">NO MORE TOKENS</text>
+
+  <!-- bouncer robot -->
+  <ellipse cx="423" cy="336" rx="78" ry="18" fill="#090811" opacity=".6"/>
+  <rect x="375" y="220" width="96" height="104" rx="22" fill="#8794a8" class="ink"/>
+  <rect x="363" y="201" width="120" height="78" rx="18" fill="#aab8c8" class="ink"/>
+  <rect x="378" y="216" width="90" height="42" rx="9" fill="#151827" stroke="#505d77" stroke-width="4"/>
+  <circle cx="400" cy="237" r="8" fill="#ff315b" filter="url(#glow)"/>
+  <circle cx="446" cy="237" r="8" fill="#ff315b" filter="url(#glow)"/>
+  <path d="M399 259 Q423 272 449 258" fill="none" stroke="#14121d" stroke-width="6"/>
+  <path d="M386 324 L367 365 M460 324 L480 365" class="ink" fill="none"/>
+  <path d="M367 365 h-22 M480 365 h22" class="ink" fill="none"/>
+  <path d="M375 244 L342 265 M471 244 L502 260" class="ink" fill="none"/>
+  <path d="M341 265 L318 253" class="ink" fill="none"/>
+  <rect x="493" y="250" width="54" height="42" rx="8" fill="#e4edf2" class="ink"/>
+  <text x="520" y="267" text-anchor="middle" class="mono" font-size="10">MODEL</text>
+  <text x="520" y="282" text-anchor="middle" class="mono" font-size="10">VIP</text>
+
+  <!-- velvet rope -->
+  <path d="M229 400 Q290 452 372 421 Q430 398 508 420 Q570 437 625 395" fill="none" stroke="#e71955" stroke-width="12"/>
+  <path d="M229 400 V475 M625 395 V470" stroke="#d4a15c" stroke-width="10"/>
+  <circle cx="229" cy="400" r="13" fill="#f1c16b" class="ink"/>
+  <circle cx="625" cy="395" r="13" fill="#f1c16b" class="ink"/>
+
+  <!-- sign bouncer speech -->
+  <path d="M532 209 Q611 178 676 215 L652 275 Q588 285 536 260Z" fill="#fff5d8" class="ink"/>
+  <text x="604" y="225" text-anchor="middle" class="small" font-size="16" fill="#17142b">SORRY!</text>
+  <text x="604" y="247" text-anchor="middle" class="small" font-size="13" fill="#17142b">SELECTED MODEL</text>
+  <text x="604" y="264" text-anchor="middle" class="small" font-size="13" fill="#d51d55">AT CAPACITY.</text>
+
+  <!-- queue of tired developers -->
+  <!-- person 1 -->
+  <g transform="translate(62 345)">
+    <ellipse cx="55" cy="146" rx="56" ry="13" fill="#090811" opacity=".6"/>
+    <circle cx="55" cy="42" r="28" fill="#c98763" class="ink"/>
+    <path d="M28 39 Q53 3 83 32 L78 17 Q48 -4 24 26Z" fill="#40302c" class="ink"/>
+    <path d="M27 85 Q55 68 82 85 L90 142 H18Z" fill="#4b79b7" class="ink"/>
+    <path d="M26 96 L-3 119 M83 95 L114 113" class="ink" fill="none"/>
+    <rect x="-27" y="111" width="47" height="31" rx="4" fill="#a6d2db" class="ink"/>
+    <path d="M33 55 Q55 66 76 55" fill="none" stroke="#503334" stroke-width="4"/>
+    <path d="M44 47 h-12 M66 47 h12" stroke="#17142b" stroke-width="4"/>
+  </g>
+
+  <!-- person 2 -->
+  <g transform="translate(145 372)">
+    <ellipse cx="55" cy="120" rx="51" ry="12" fill="#090811" opacity=".6"/>
+    <circle cx="55" cy="31" r="27" fill="#e1a77b" class="ink"/>
+    <path d="M29 27 Q49 -3 81 20 L83 7 Q42 -14 24 18Z" fill="#d9d7c8" class="ink"/>
+    <path d="M27 72 Q55 57 84 73 L91 117 H18Z" fill="#d15b69" class="ink"/>
+    <path d="M25 78 L-5 97 M84 80 L109 91" class="ink" fill="none"/>
+    <rect x="-36" y="87" width="48" height="30" rx="4" fill="#cde8ef" class="ink"/>
+    <path d="M39 38 h-9 M66 38 h9" stroke="#17142b" stroke-width="4"/>
+    <path d="M43 51 Q55 45 68 51" fill="none" stroke="#503334" stroke-width="4"/>
+  </g>
+
+  <!-- person 3 -->
+  <g transform="translate(615 350)">
+    <ellipse cx="55" cy="145" rx="57" ry="13" fill="#090811" opacity=".6"/>
+    <circle cx="55" cy="40" r="28" fill="#8e5b45" class="ink"/>
+    <path d="M27 40 Q29 2 78 12 Q90 31 81 47 L70 26 Q50 40 27 40Z" fill="#17131a" class="ink"/>
+    <path d="M26 84 Q54 67 84 84 L91 141 H17Z" fill="#54a878" class="ink"/>
+    <path d="M26 95 L-2 115 M84 95 L112 116" class="ink" fill="none"/>
+    <rect x="92" y="112" width="47" height="30" rx="4" fill="#a6d2db" class="ink"/>
+    <path d="M43 48 Q55 41 68 48" fill="none" stroke="#503334" stroke-width="4"/>
+  </g>
+
+  <!-- melting hamster-wheel servers -->
+  <g transform="translate(38 132)">
+    <circle cx="95" cy="111" r="74" fill="none" stroke="#8c98a8" stroke-width="10" class="ink"/>
+    <path d="M44 147 Q95 55 147 147 M30 110 Q95 160 160 110 M55 54 Q74 112 55 168" fill="none" stroke="#687486" stroke-width="7"/>
+    <ellipse cx="95" cy="178" rx="76" ry="15" fill="#ff704d" opacity=".7" filter="url(#soft)"/>
+    <path d="M45 169 Q58 204 83 181 Q100 215 119 180 Q139 198 152 164" fill="none" stroke="#ff6b3d" stroke-width="9"/>
+    <rect x="42" y="82" width="108" height="57" rx="8" fill="#566273" class="ink"/>
+    <text x="96" y="117" text-anchor="middle" class="mono" font-size="19" fill="#ffced7">SERVER</text>
+    <path d="M77 77 Q83 51 91 72 Q104 38 111 70 Q126 50 125 80" fill="none" stroke="#ffad35" stroke-width="6"/>
+  </g>
+
+  <!-- caption -->
+  <rect x="152" y="522" width="496" height="48" rx="18" fill="#fff1c7" class="ink"/>
+  <text x="400" y="553" text-anchor="middle" class="small" font-size="20" fill="#24152c">
+    “Please try a different model.” — the different model:
+  </text>
+  <text x="400" y="588" text-anchor="middle" class="small" font-size="18" fill="#ff83c8">also at capacity</text>
+</svg>
