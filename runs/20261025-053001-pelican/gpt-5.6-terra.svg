@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon of a determined pelican riding a tiny bicycle with animated spinning wheels and bobbing motion.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.1s linear infinite; }
+    .rider { transform-box: fill-box; transform-origin: 410px 330px; animation: bob .55s ease-in-out infinite alternate; }
+    .leg-a { transform-box: fill-box; transform-origin: 406px 376px; animation: pedalA 1.1s linear infinite; }
+    .leg-b { transform-box: fill-box; transform-origin: 446px 376px; animation: pedalB 1.1s linear infinite; }
+    .dust { animation: puff 1.1s ease-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedalA { 50% { transform: rotate(24deg); } }
+    @keyframes pedalB { 50% { transform: rotate(-24deg); } }
+    @keyframes puff { 0% { opacity: 0; transform: translateX(0) scale(.4); } 35% { opacity: .85; } 100% { opacity: 0; transform: translateX(-35px) scale(1.35); } }
+  </style>
+
+  <rect width="800" height="600" fill="#bfe9f7"/>
+  <path d="M0 270 Q100 205 205 265 T410 255 T610 255 T800 215 V445 H0Z" fill="#83c85e"/>
+  <path d="M0 385 Q100 360 220 387 T430 375 T630 390 T800 366 V472 H0Z" fill="#f2c94c"/>
+  <path d="M0 442 Q150 412 300 440 T590 428 T800 440 V480 H0Z" fill="#6d5036"/>
+
+  <g fill="#fff" opacity=".88">
+    <path d="M68 105c20-30 48-11 47 8 30-22 56 10 31 26H55c-21-10-8-27 13-34Z"/>
+    <path d="M635 93c17-27 43-10 42 7 26-19 50 9 28 24h-78c-18-9-7-24 8-31Z"/>
+  </g>
+
+  <text x="400" y="64" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="39" fill="#263646" stroke="#fff" stroke-width="6" paint-order="stroke" letter-spacing="1">PELICAN PEDAL PANIC!</text>
+  <text x="400" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#34495e">“I was promised a bike lane, not a beak lane!”</text>
+
+  <g class="dust" fill="#d8b56d">
+    <ellipse cx="158" cy="440" rx="18" ry="8"/>
+    <ellipse cx="128" cy="448" rx="12" ry="6"/>
+  </g>
+
+  <g stroke="#25323d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="255" cy="429" r="66" fill="#f7f1dc"/>
+      <circle cx="255" cy="429" r="57" fill="none"/>
+      <path d="M255 372V486M198 429h114M215 389l80 80M295 389l-80 80" stroke="#8999a4" stroke-width="3"/>
+      <circle cx="255" cy="429" r="8" fill="#f05b4f"/>
+    </g>
+    <g class="wheel">
+      <circle cx="550" cy="429" r="66" fill="#f7f1dc"/>
+      <circle cx="550" cy="429" r="57" fill="none"/>
+      <path d="M550 372V486M493 429h114M510 389l80 80M590 389l-80 80" stroke="#8999a4" stroke-width="3"/>
+      <circle cx="550" cy="429" r="8" fill="#f05b4f"/>
+    </g>
+
+    <path d="M255 429 340 326 426 429 255 429 390 429 485 315 550 429 426 429 485 315 448 315" fill="none" stroke="#e84d4f" stroke-width="10"/>
+    <path d="M340 326h-31M485 315l17-43h46" fill="none" stroke-width="9"/>
+    <path d="M502 272q24-19 48 0" fill="none" stroke-width="7"/>
+    <path d="M426 429 443 449M432 456h23" fill="none" stroke-width="6"/>
+  </g>
+
+  <g class="rider" stroke="#25323d" stroke-linecap="round" stroke-linejoin="round">
+    <g class="leg-a" stroke-width="13">
+      <path d="M402 368 Q374 404 421 442" fill="none" stroke="#f7a948"/>
+      <path d="M421 442q25 14 42 0" fill="none" stroke="#f7a948"/>
+    </g>
+    <g class="leg-b" stroke-width="13">
+      <path d="M444 370 Q470 403 429 449" fill="none" stroke="#f7a948"/>
+      <path d="M429 449q-22 15-41 1" fill="none" stroke="#f7a948"/>
+    </g>
+
+    <path d="M388 350q-28-54-3-113 27-61 103-42 48 13 44 89-3 66-61 90Z" fill="#f4f1dc" stroke-width="6"/>
+    <path d="M404 244q-13-58 28-82 41-17 76 18 18 20 23 70Z" fill="#f4f1dc" stroke-width="6"/>
+    <path d="M397 246q-51-9-86 21 39 25 90 13 22-8 42-31Z" fill="#f6ab32" stroke-width="6"/>
+    <path d="M313 267q35 9 85-3-19 34-70 27Z" fill="#e88721" stroke-width="4"/>
+
+    <path d="M443 196q15-28 49-19 28 8 34 42-49 5-83-23Z" fill="#263646" stroke-width="5"/>
+    <path d="M453 199q16-17 39-8" fill="none" stroke="#f05b4f" stroke-width="6"/>
+
+    <ellipse cx="459" cy="222" rx="13" ry="16" fill="#fff" stroke-width="5"/>
+    <circle cx="463" cy="224" r="5" fill="#25323d" stroke="none"/>
+    <path d="M483 236q17 8 29-4" fill="none" stroke-width="4"/>
+
+    <path d="M434 313q-11 33 18 55 26 17 49-1l-3-34" fill="#f4f1dc" stroke-width="5"/>
+    <path d="M409 290q-37 20-52 49" fill="none" stroke="#f4f1dc" stroke-width="17"/>
+    <path d="M357 339q-13 11-23 4" fill="none" stroke="#f7a948" stroke-width="11"/>
+    <path d="M500 286q18 6 27 22l-23 18" fill="none" stroke="#f4f1dc" stroke-width="16"/>
+    <path d="M505 326q14 4 24-7" fill="none" stroke="#f7a948" stroke-width="10"/>
+
+    <path d="M381 336q32 17 83 7" fill="none" stroke="#d8d1b4" stroke-width="4"/>
+  </g>
+
+  <g font-family="Arial Black, sans-serif" text-anchor="middle">
+    <path d="M595 274q81-34 143 15l-13 76q-78 19-128-30Z" fill="#fff9e9" stroke="#25323d" stroke-width="4"/>
+    <path d="M600 305l-23 17 29 3" fill="#fff9e9" stroke="#25323d" stroke-width="4"/>
+    <text x="665" y="306" font-size="15" fill="#e84d4f">TOOT!</text>
+    <text x="665" y="330" font-size="14" fill="#263646">MAKE WAY</text>
+    <text x="665" y="349" font-size="14" fill="#263646">FOR BEAK!</text>
+  </g>
+
+  <rect y="480" width="800" height="120" fill="#263646"/>
+  <text x="400" y="518" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#fff5d6">A pelican rides a bicycle: aerodynamic confidence, questionable steering.</text>
+  <path d="M140 539h520" stroke="#f2c94c" stroke-width="2" opacity=".8"/>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#d9edf5">2026-10-25 05:32:24 SGT (UTC+08:00)</text>
+</svg>
