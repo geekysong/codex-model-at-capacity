@@ -44,6 +44,13 @@ PROMPTS = {
     "with a bold title and short caption. Output ONLY the SVG code: no markdown fences, "
     "no explanation, no text outside the <svg>...</svg> document."
 ),
+"physics": (
+    "Create one self-contained SVG with viewBox=\"0 0 600 400\" showing a level "
+    "seesaw in static equilibrium. A 6 kg mass hangs 2 m left of the pivot, and a "
+    "4 kg mass hangs x m right. Solve and show x=3 m. Draw the pivot, force arrows, "
+    "distance labels, torque equation 6×2 = 4×3, and the word balanced. Keep the "
+    "seesaw level, labels readable, and output only the SVG."
+),
 }
 PROMPT_VARIANT = os.environ.get("PROBE_VARIANT", "pelican")
 if PROMPT_VARIANT not in PROMPTS:

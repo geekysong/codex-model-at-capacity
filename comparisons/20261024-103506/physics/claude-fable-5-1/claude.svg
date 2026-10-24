@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,0 L4,7 Z" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,0 L4,7 Z" fill="#27ae60"/>
+    </marker>
+    <marker id="dimL" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto">
+      <path d="M8,0 L0,4 L8,8 Z" fill="#2c3e50"/>
+    </marker>
+    <marker id="dimR" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="400" fill="#fdfdfd"/>
+
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c3e50">Seesaw in Static Equilibrium</text>
+
+  <!-- Scale: 1 m = 60 px; pivot at x=300, beam y=200 -->
+
+  <!-- Ground -->
+  <line x1="40" y1="290" x2="560" y2="290" stroke="#7f8c8d" stroke-width="2"/>
+
+  <!-- Pivot (fulcrum) -->
+  <polygon points="300,206 270,290 330,290" fill="#95a5a6" stroke="#2c3e50" stroke-width="2"/>
+  <circle cx="300" cy="206" r="5" fill="#2c3e50"/>
+  <text x="300" y="310" text-anchor="middle" font-size="14" fill="#2c3e50">pivot</text>
+
+  <!-- Beam (level) -->
+  <rect x="120" y="194" width="360" height="12" rx="3" fill="#d35400" stroke="#2c3e50" stroke-width="2"/>
+
+  <!-- Left mass: 6 kg at 2 m left (x=180) -->
+  <line x1="180" y1="206" x2="180" y2="235" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="155" y="235" width="50" height="40" rx="4" fill="#3498db" stroke="#2c3e50" stroke-width="2"/>
+  <text x="180" y="261" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">6 kg</text>
+
+  <!-- Right mass: 4 kg at 3 m right (x=480) -->
+  <line x1="480" y1="206" x2="480" y2="238" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="460" y="238" width="40" height="34" rx="4" fill="#9b59b6" stroke="#2c3e50" stroke-width="2"/>
+  <text x="480" y="261" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">4 kg</text>
+
+  <!-- Force arrows (weights, downward) -->
+  <line x1="180" y1="120" x2="180" y2="188" stroke="#c0392b" stroke-width="3" marker-end="url(#arrowDown)"/>
+  <text x="180" y="112" text-anchor="middle" font-size="14" fill="#c0392b">W₁ = 6g ↓</text>
+
+  <line x1="480" y1="135" x2="480" y2="188" stroke="#c0392b" stroke-width="3" marker-end="url(#arrowDown)"/>
+  <text x="480" y="127" text-anchor="middle" font-size="14" fill="#c0392b">W₂ = 4g ↓</text>
+
+  <!-- Normal force at pivot (upward) -->
+  <line x1="300" y1="265" x2="300" y2="214" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowUp)"/>
+  <text x="332" y="262" font-size="14" fill="#27ae60">N = 10g ↑</text>
+
+  <!-- Distance dimension lines -->
+  <line x1="180" y1="170" x2="300" y2="170" stroke="#2c3e50" stroke-width="1.5" marker-start="url(#dimL)" marker-end="url(#dimR)"/>
+  <line x1="180" y1="162" x2="180" y2="178" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="300" y1="162" x2="300" y2="178" stroke="#2c3e50" stroke-width="1"/>
+  <text x="240" y="162" text-anchor="middle" font-size="14" fill="#2c3e50">2 m</text>
+
+  <line x1="300" y1="170" x2="480" y2="170" stroke="#2c3e50" stroke-width="1.5" marker-start="url(#dimL)" marker-end="url(#dimR)"/>
+  <line x1="480" y1="162" x2="480" y2="178" stroke="#2c3e50" stroke-width="1"/>
+  <text x="390" y="162" text-anchor="middle" font-size="14" fill="#2c3e50">x = 3 m</text>
+
+  <!-- Torque equation and solution -->
+  <rect x="60" y="330" width="480" height="58" rx="6" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="300" y="352" text-anchor="middle" font-size="16" fill="#2c3e50">Torque balance about pivot:  m₁d₁ = m₂d₂  →  6 × 2 = 4 × x  →  x = 12 / 4 = 3 m</text>
+  <text x="300" y="378" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50">6 × 2 = 4 × 3   ⇒   12 = 12   ⇒   balanced</text>
+</svg>
