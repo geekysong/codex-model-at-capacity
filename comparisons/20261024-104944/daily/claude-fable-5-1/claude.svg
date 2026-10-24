@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1f5fa8"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="#fbfbf8"/>
+
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">Level Seesaw in Static Equilibrium</text>
+  <text x="300" y="50" text-anchor="middle" font-size="12" fill="#555">(scale: 1 m = 60 px, g ≈ 9.8 m/s²)</text>
+
+  <!-- Distance dimension lines -->
+  <g stroke="#333" stroke-width="1.5">
+    <line x1="180" y1="124" x2="180" y2="146"/>
+    <line x1="300" y1="124" x2="300" y2="146"/>
+    <line x1="480" y1="124" x2="480" y2="146"/>
+    <line x1="180" y1="135" x2="300" y2="135"/>
+    <line x1="300" y1="135" x2="480" y2="135"/>
+  </g>
+  <text x="240" y="119" text-anchor="middle" font-size="15" fill="#333">d₁ = 2 m</text>
+  <text x="390" y="119" text-anchor="middle" font-size="15" fill="#333">d₂ = x = 3 m</text>
+
+  <!-- Upward pivot reaction force -->
+  <line x1="300" y1="192" x2="300" y2="152" stroke="#1f5fa8" stroke-width="3" marker-end="url(#arrowBlue)"/>
+  <text x="308" y="172" font-size="14" fill="#1f5fa8">N = 98 N</text>
+
+  <!-- Seesaw beam (level) -->
+  <rect x="110" y="194" width="390" height="12" rx="3" fill="#b5651d" stroke="#6b3a0f" stroke-width="2"/>
+
+  <!-- Pivot -->
+  <polygon points="300,206 272,260 328,260" fill="#777" stroke="#333" stroke-width="2"/>
+  <line x1="255" y1="260" x2="345" y2="260" stroke="#333" stroke-width="3"/>
+  <circle cx="300" cy="206" r="4" fill="#222"/>
+  <text x="300" y="276" text-anchor="middle" font-size="13" fill="#333">pivot</text>
+
+  <!-- Left mass: 6 kg at 2 m left -->
+  <line x1="180" y1="206" x2="180" y2="236" stroke="#333" stroke-width="2"/>
+  <rect x="152" y="236" width="56" height="44" rx="4" fill="#2e86c1" stroke="#1b4f72" stroke-width="2"/>
+  <text x="180" y="263" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">6 kg</text>
+  <line x1="180" y1="282" x2="180" y2="336" stroke="#c0392b" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="170" y="315" text-anchor="end" font-size="14" fill="#c0392b">W₁ = 59 N</text>
+
+  <!-- Right mass: 4 kg at 3 m right -->
+  <line x1="480" y1="206" x2="480" y2="236" stroke="#333" stroke-width="2"/>
+  <rect x="458" y="236" width="44" height="36" rx="4" fill="#27ae60" stroke="#145a32" stroke-width="2"/>
+  <text x="480" y="259" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">4 kg</text>
+  <line x1="480" y1="274" x2="480" y2="310" stroke="#c0392b" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="490" y="298" text-anchor="start" font-size="14" fill="#c0392b">W₂ = 39 N</text>
+
+  <!-- Torque equation and solution -->
+  <text x="300" y="352" text-anchor="middle" font-size="15" fill="#222">Στ = 0:  6 kg × 2 m = 4 kg × x  ⇒  x = 12 / 4 = 3 m</text>
+  <text x="300" y="382" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">6 × 2 = 4 × 3   —   <tspan fill="#1e8449">BALANCED</tspan></text>
+</svg>

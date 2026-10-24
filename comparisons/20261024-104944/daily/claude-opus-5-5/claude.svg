@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c62828"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1565c0"/>
+    </marker>
+    <marker id="dimEnd" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="#fafafa"/>
+
+  <!-- Title and solution -->
+  <text x="300" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">Seesaw in Static Equilibrium</text>
+  <text x="300" y="54" text-anchor="middle" font-size="15" fill="#444">Solve: 6 × 2 = 4 × x  →  x = 12 ÷ 4 = 3 m</text>
+
+  <!-- Balanced badge -->
+  <rect x="245" y="68" width="110" height="28" rx="14" fill="#2e7d32"/>
+  <text x="300" y="88" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">BALANCED</text>
+
+  <!-- Distance dimension lines (scale: 60 px = 1 m) -->
+  <line x1="180" y1="140" x2="180" y2="186" stroke="#888" stroke-dasharray="3,3"/>
+  <line x1="300" y1="140" x2="300" y2="186" stroke="#888" stroke-dasharray="3,3"/>
+  <line x1="480" y1="140" x2="480" y2="186" stroke="#888" stroke-dasharray="3,3"/>
+  <line x1="184" y1="160" x2="296" y2="160" stroke="#333" stroke-width="1.5" marker-start="url(#dimEnd)" marker-end="url(#dimEnd)"/>
+  <line x1="304" y1="160" x2="476" y2="160" stroke="#333" stroke-width="1.5" marker-start="url(#dimEnd)" marker-end="url(#dimEnd)"/>
+  <rect x="222" y="137" width="36" height="18" fill="#fafafa"/>
+  <text x="240" y="152" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">2 m</text>
+  <rect x="345" y="137" width="90" height="18" fill="#fafafa"/>
+  <text x="390" y="152" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">x = 3 m</text>
+
+  <!-- Level beam -->
+  <rect x="120" y="188" width="420" height="14" rx="3" fill="#8d6e63" stroke="#4e342e" stroke-width="1.5"/>
+
+  <!-- Pivot -->
+  <polygon points="300,202 272,250 328,250" fill="#607d8b" stroke="#263238" stroke-width="1.5"/>
+  <circle cx="300" cy="195" r="3" fill="#263238"/>
+  <line x1="250" y1="250" x2="350" y2="250" stroke="#263238" stroke-width="2"/>
+  <text x="338" y="243" font-size="12" fill="#263238">pivot</text>
+
+  <!-- Strings -->
+  <line x1="180" y1="202" x2="180" y2="230" stroke="#333" stroke-width="2"/>
+  <line x1="480" y1="202" x2="480" y2="232" stroke="#333" stroke-width="2"/>
+
+  <!-- Masses -->
+  <rect x="155" y="230" width="50" height="46" rx="4" fill="#ffb74d" stroke="#e65100" stroke-width="2"/>
+  <text x="180" y="259" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">6 kg</text>
+  <rect x="459" y="232" width="42" height="38" rx="4" fill="#81d4fa" stroke="#0277bd" stroke-width="2"/>
+  <text x="480" y="256" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">4 kg</text>
+
+  <!-- Weight arrows (length proportional to force) -->
+  <line x1="180" y1="278" x2="180" y2="332" stroke="#c62828" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="170" y="312" text-anchor="end" font-size="13" fill="#c62828">W = 58.8 N</text>
+  <line x1="480" y1="272" x2="480" y2="306" stroke="#c62828" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="490" y="295" font-size="13" fill="#c62828">W = 39.2 N</text>
+
+  <!-- Pivot normal force -->
+  <line x1="300" y1="318" x2="300" y2="262" stroke="#1565c0" stroke-width="3" marker-end="url(#arrowBlue)"/>
+  <text x="308" y="300" font-size="13" fill="#1565c0">N = 98 N</text>
+
+  <!-- Torque equation box -->
+  <rect x="195" y="334" width="210" height="58" rx="8" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+  <text x="300" y="358" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">6×2 = 4×3</text>
+  <text x="300" y="382" text-anchor="middle" font-size="13" fill="#444">12 = 12  (τ left = τ right)</text>
+</svg>

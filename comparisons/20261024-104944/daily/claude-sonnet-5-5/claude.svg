@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="redArrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c62828"/>
+    </marker>
+    <marker id="dimL" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M8,0 L0,4 L8,8 Z" fill="#37474f"/>
+    </marker>
+    <marker id="dimR" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#37474f"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="400" fill="#f7f9fc"/>
+
+  <!-- Title and balanced badge -->
+  <text x="300" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#263238">Seesaw in Static Equilibrium</text>
+  <rect x="245" y="45" width="110" height="30" rx="15" fill="#2e7d32"/>
+  <text x="300" y="66" text-anchor="middle" font-size="18" font-weight="bold" fill="#ffffff">balanced</text>
+
+  <!-- Distance labels -->
+  <g stroke="#37474f" stroke-width="1.5" fill="none">
+    <line x1="160" y1="118" x2="160" y2="146" stroke-dasharray="3,3"/>
+    <line x1="300" y1="118" x2="300" y2="146" stroke-dasharray="3,3"/>
+    <line x1="510" y1="118" x2="510" y2="146" stroke-dasharray="3,3"/>
+    <line x1="164" y1="128" x2="296" y2="128" marker-start="url(#dimL)" marker-end="url(#dimR)"/>
+    <line x1="304" y1="128" x2="506" y2="128" marker-start="url(#dimL)" marker-end="url(#dimR)"/>
+  </g>
+  <text x="230" y="118" text-anchor="middle" font-size="16" font-weight="bold" fill="#37474f">2 m</text>
+  <text x="405" y="118" text-anchor="middle" font-size="16" font-weight="bold" fill="#37474f">x = 3 m</text>
+
+  <!-- Pivot and ground -->
+  <line x1="230" y1="290" x2="370" y2="290" stroke="#455a64" stroke-width="4"/>
+  <polygon points="300,164 262,290 338,290" fill="#78909c" stroke="#37474f" stroke-width="2"/>
+  <text x="300" y="309" text-anchor="middle" font-size="14" fill="#37474f">pivot</text>
+
+  <!-- Level beam -->
+  <rect x="60" y="150" width="480" height="14" rx="3" fill="#8d6e63" stroke="#4e342e" stroke-width="2"/>
+  <circle cx="300" cy="157" r="5" fill="#37474f"/>
+
+  <!-- Left mass -->
+  <line x1="160" y1="164" x2="160" y2="200" stroke="#37474f" stroke-width="2"/>
+  <rect x="136" y="200" width="48" height="44" rx="4" fill="#1565c0" stroke="#0d47a1" stroke-width="2"/>
+  <text x="160" y="228" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">6 kg</text>
+  <line x1="160" y1="246" x2="160" y2="306" stroke="#c62828" stroke-width="3" marker-end="url(#redArrow)"/>
+  <text x="160" y="326" text-anchor="middle" font-size="14" fill="#c62828">W = 58.8 N</text>
+
+  <!-- Right mass -->
+  <line x1="510" y1="164" x2="510" y2="200" stroke="#37474f" stroke-width="2"/>
+  <rect x="488" y="200" width="44" height="36" rx="4" fill="#ef6c00" stroke="#bf360c" stroke-width="2"/>
+  <text x="510" y="224" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">4 kg</text>
+  <line x1="510" y1="238" x2="510" y2="288" stroke="#c62828" stroke-width="3" marker-end="url(#redArrow)"/>
+  <text x="510" y="308" text-anchor="middle" font-size="14" fill="#c62828">W = 39.2 N</text>
+
+  <!-- Equations -->
+  <rect x="100" y="333" width="400" height="58" rx="8" fill="#ffffff" stroke="#b0bec5" stroke-width="1.5"/>
+  <text x="300" y="356" text-anchor="middle" font-size="16" fill="#263238">Στ = 0:  4x = 6 × 2  →  x = 12 / 4 = 3 m</text>
+  <text x="300" y="380" text-anchor="middle" font-size="19" font-weight="bold" fill="#263238">6 × 2 = 4 × 3  (12 = 12 kg·m)</text>
+</svg>
