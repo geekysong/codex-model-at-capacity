@@ -21,6 +21,7 @@ from zoneinfo import ZoneInfo
 from daily_prompt import load_daily_prompt
 
 REPO = Path(__file__).resolve().parent
+GA_MEASUREMENT_ID = "G-846Y37CFNX"
 SGT = ZoneInfo("Asia/Singapore")
 MODELS = [
     "gpt-6-astra",
@@ -246,6 +247,13 @@ def build_index(records: list[dict]) -> str:
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', '{GA_MEASUREMENT_ID}');
+</script>
 <title>At capacity census · Codex account monitor</title>
 <style>
 *{{box-sizing:border-box}} :root{{color-scheme:dark;--bg:#0b0f14;--panel:#121923;--line:#263241;--muted:#8b99a8;--ink:#edf3f8;--cyan:#6ee7f9;--green:#73e2a3;--red:#ff7b86;--amber:#f7c66a}}
@@ -307,6 +315,13 @@ def build_history(records: list[dict]) -> str:
         )
     return f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', '{GA_MEASUREMENT_ID}');
+</script>
 <title>History · At capacity census</title><style>
 *{{box-sizing:border-box}}:root{{--bg:#0b0f14;--panel:#121923;--line:#263241;--muted:#8b99a8;--ink:#edf3f8;--cyan:#6ee7f9;--green:#73e2a3;--red:#ff7b86}}body{{margin:0;background:radial-gradient(circle at 80% -20%,#163346 0,#0b0f14 38rem);color:var(--ink);font:14px/1.5 Inter,system-ui,sans-serif}}main{{max-width:1440px;margin:auto;padding:34px 24px 64px}}a{{color:var(--cyan)}}h1{{margin:0 0 8px;letter-spacing:-.04em}}.muted{{color:var(--muted)}}.links{{margin:16px 0 24px}}.links a{{margin-right:12px}}.round{{background:rgba(18,25,35,.9);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0}}summary{{cursor:pointer;color:var(--cyan);font:700 14px ui-monospace,monospace}}.grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:14px}}.card{{background:#0e151e;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0}}.art{{aspect-ratio:4/3;background:#fff;display:grid;place-items:center}}.art img{{width:100%;height:100%;object-fit:contain;display:block}}figcaption{{padding:10px 12px}}figcaption div{{display:flex;justify-content:space-between}}small{{color:var(--muted)}}.pass{{color:var(--green)}}.fail{{color:var(--red)}}.noart{{padding:18px;text-align:center;color:var(--red)}}.noart small{{display:block;margin-top:8px}}@media(max-width:760px){{main{{padding:24px 14px 48px}}.grid{{grid-template-columns:repeat(2,minmax(0,1fr))}}}}
 </style></head><body><main><h1>History rounds</h1><p class="muted">Expand a round to inspect the SVGs, model status and latency recorded at that time.</p><div class="links"><a href="index.html">← dashboard</a><a href="stats.json">raw stats.json</a></div>{"".join(sections)}</main></body></html>'''
