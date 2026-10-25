@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commuter</title>
+  <desc id="desc">A pelican rides a bicycle, carrying an absurdly large fish in its bill.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#203047;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#203047;stroke-width:7}
+      .spoke{stroke:#7a8791;stroke-width:2}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 2.8s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .65s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+      text{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f3"/>
+  <path d="M0 410 Q170 365 330 405 T800 390 V600 H0Z" fill="#b8e7d9"/>
+  <circle cx="685" cy="112" r="48" fill="#ffd36e"/>
+  <path d="M0 438H800" stroke="#4e7776" stroke-width="4" stroke-dasharray="14 12"/>
+  <text x="40" y="54" font-size="30" font-weight="900" fill="#203047">THE PELICAN COMMUTER</text>
+  <text x="42" y="82" font-size="15" font-weight="700" fill="#45616a">He’s late. The fish is not helping.</text>
+
+  <!-- bicycle frame -->
+  <g class="ink" fill="none">
+    <circle class="wheel" cx="235" cy="425" r="67"/>
+    <circle class="wheel" cx="535" cy="425" r="67"/>
+    <g class="spin">
+      <path class="spoke" d="M235 358V492M168 425H302M188 378L282 472M188 472L282 378"/>
+    </g>
+    <g class="spin">
+      <path class="spoke" d="M535 358V492M468 425H602M488 378L582 472M488 472L582 378"/>
+    </g>
+    <path d="M235 425L345 425L302 330L235 425M345 425L410 335L535 425M302 330L410 335M410 335L438 308"/>
+    <path d="M282 317L322 317M420 335L443 335"/>
+    <circle cx="345" cy="425" r="16" fill="#ffbd4a"/>
+    <circle cx="345" cy="425" r="5" fill="#203047"/>
+    <path d="M335 425L371 456M355 425L319 394"/>
+    <path d="M414 326L429 343"/>
+  </g>
+
+  <!-- pelican and pedaling legs -->
+  <g class="rider">
+    <path d="M334 294Q362 288 382 305L405 337L367 351L338 327Z" fill="#f8fbf6" class="ink"/>
+    <path d="M352 329L344 382L375 425M380 349L393 389L371 425" fill="none" class="ink"/>
+    <path d="M375 425L395 434M371 425L361 438" fill="none" class="ink"/>
+    <path d="M329 294Q300 280 289 258Q276 231 298 211Q318 192 341 207Q358 219 351 244L343 286Z" fill="#fffdf5" class="ink"/>
+    <path d="M299 225Q274 226 256 216Q246 210 254 205Q269 199 295 207" fill="#f1a23b" class="ink"/>
+    <path d="M298 229Q282 244 285 262Q291 280 320 276Q338 274 340 255Q328 244 319 230Z" fill="#f4a43e" class="ink"/>
+    <path d="M300 235Q311 231 322 237Q315 247 302 246Z" fill="#f7c66c"/>
+    <circle cx="320" cy="216" r="5.5" fill="#203047"/>
+    <circle cx="321.5" cy="214.5" r="1.7" fill="#fff"/>
+    <path d="M309 197Q317 187 329 194M316 193L318 185M324 193L328 186" fill="none" class="ink"/>
+    <path d="M350 291L402 300L416 286" fill="none" class="ink"/>
+    <path d="M402 300L418 302" fill="none" class="ink"/>
+    <!-- absurdly large fish -->
+    <path d="M418 285Q448 257 490 278Q507 287 490 301Q451 322 418 296Z" fill="#ff806c" class="ink"/>
+    <path d="M489 279L516 266L510 290L516 313L490 301Z" fill="#ffbd4a" class="ink"/>
+    <circle cx="441" cy="284" r="3.5" fill="#203047"/>
+    <path d="M451 278Q460 289 450 300M426 292Q438 296 445 292" fill="none" stroke="#203047" stroke-width="2.5"/>
+    <path d="M418 291Q409 283 405 287" fill="none" class="ink"/>
+  </g>
+
+  <!-- comic speed marks -->
+  <path d="M95 333H151M73 356H143M116 379H161" stroke="#fffdf5" stroke-width="6" stroke-linecap="round"/>
+  <path d="M587 355q14-12 28 0t28 0" fill="none" stroke="#4b9d91" stroke-width="4"/>
+  <text x="598" y="344" font-size="13" font-weight="800" fill="#45616a">HONK?</text>
+
+  <path d="M222 512Q400 534 568 512" fill="none" stroke="#fffdf5" stroke-width="3" opacity=".8"/>
+  <text x="400" y="540" text-anchor="middle" font-size="17" font-weight="800" fill="#203047">“I’m on a seafood diet: I see food, I pedal.”</text>
+  <path d="M0 560H800" stroke="#4e7776" stroke-width="2"/>
+  <text x="400" y="585" text-anchor="middle" font-size="15" font-weight="700" fill="#203047">2026-10-25 13:32:27 SGT (UTC+08:00)</text>
+</svg>
