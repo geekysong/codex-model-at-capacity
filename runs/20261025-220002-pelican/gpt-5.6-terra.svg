@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon of a pelican confidently riding a bicycle while carrying far too many fish in its enormous beak.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1s linear infinite; }
+    .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .55s ease-in-out infinite alternate; }
+    .leg-a { transform-box: fill-box; transform-origin: top center; animation: pedalA 1s linear infinite; }
+    .leg-b { transform-box: fill-box; transform-origin: top center; animation: pedalB 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedalA { 50% { transform: rotate(28deg); } }
+    @keyframes pedalB { 50% { transform: rotate(-28deg); } }
+  </style>
+
+  <rect width="800" height="600" fill="#aee9f5"/>
+  <path d="M0 345 Q95 300 195 342 T390 331 T585 347 T800 323 V480 H0Z" fill="#d6f0b4"/>
+  <path d="M0 410 Q145 378 270 415 T530 400 T800 418 V490 H0Z" fill="#78c878"/>
+  <path d="M0 465 H800" stroke="#4f9d58" stroke-width="12"/>
+  <path d="M80 410 C180 378 260 447 350 410 S550 377 735 421" fill="none" stroke="#f5c84c" stroke-width="7" stroke-linecap="round" stroke-dasharray="20 15"/>
+
+  <text x="400" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="39" font-weight="900" fill="#173951">PELICAN PEDAL PANIC!</text>
+  <text x="400" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#31536a">“I’m not late — I’m aero-dynamic-ish.”</text>
+
+  <g transform="translate(91 155)">
+    <path d="M30 155 Q15 104 44 71 Q73 43 106 69 Q130 88 117 119" fill="#fff" stroke="#34536a" stroke-width="5"/>
+    <circle cx="74" cy="92" r="8" fill="#172936"/>
+    <path d="M85 108 Q134 126 130 183 Q101 214 43 181 Q46 134 85 108Z" fill="#f5b64f" stroke="#34536a" stroke-width="5"/>
+    <path d="M55 158 Q87 176 121 157" fill="none" stroke="#ce722e" stroke-width="4"/>
+    <path d="M106 75 Q132 56 151 70" fill="none" stroke="#34536a" stroke-width="5" stroke-linecap="round"/>
+    <text x="22" y="238" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#34536a">TRAFFIC</text>
+    <text x="25" y="257" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#34536a">IS FOR GULLS</text>
+  </g>
+
+  <g transform="translate(182 210)">
+    <g class="wheel">
+      <circle cx="111" cy="223" r="72" fill="#e7eef0" stroke="#253d4d" stroke-width="10"/>
+      <circle cx="111" cy="223" r="8" fill="#ef6752"/>
+      <path d="M111 151V295 M39 223H183 M60 172L162 274 M162 172L60 274" stroke="#8ca9b3" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="382" cy="223" r="72" fill="#e7eef0" stroke="#253d4d" stroke-width="10"/>
+      <circle cx="382" cy="223" r="8" fill="#ef6752"/>
+      <path d="M382 151V295 M310 223H454 M331 172L433 274 M433 172L331 274" stroke="#8ca9b3" stroke-width="3"/>
+    </g>
+
+    <path d="M111 223 L207 105 L292 223 Z M207 105 L382 223 M292 223 L337 91 L381 91" fill="none" stroke="#e34e47" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M382 223 L337 91 L365 56" fill="none" stroke="#e34e47" stroke-width="12"/>
+    <path d="M347 55 H397" stroke="#253d4d" stroke-width="10" stroke-linecap="round"/>
+    <path d="M189 102 H229" stroke="#253d4d" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="292" cy="223" r="19" fill="#f5c84c" stroke="#253d4d" stroke-width="6"/>
+    <path d="M292 223 L325 242 M292 223 L261 201" stroke="#253d4d" stroke-width="7" stroke-linecap="round"/>
+
+    <g class="rider">
+      <path class="leg-a" d="M232 170 Q248 205 276 224 L309 248" fill="none" stroke="#f29a58" stroke-width="18" stroke-linecap="round"/>
+      <path class="leg-b" d="M268 169 Q274 198 252 216 L231 194" fill="none" stroke="#f29a58" stroke-width="18" stroke-linecap="round"/>
+      <path d="M301 249 Q320 258 334 247" fill="none" stroke="#253d4d" stroke-width="11" stroke-linecap="round"/>
+      <path d="M223 194 Q237 203 249 195" fill="none" stroke="#253d4d" stroke-width="11" stroke-linecap="round"/>
+
+      <path d="M172 137 Q187 80 240 75 Q295 71 314 132 Q299 187 237 190 Q187 187 172 137Z" fill="#f7f7f0" stroke="#253d4d" stroke-width="6"/>
+      <path d="M184 142 Q216 174 286 154 Q282 190 238 190 Q195 187 184 142Z" fill="#d9e4e4"/>
+      <path d="M193 105 Q213 77 252 80 Q288 83 300 114 Q260 103 193 105Z" fill="#eff6f5"/>
+      <path d="M202 159 Q258 147 310 117 Q344 103 357 125 Q365 148 337 175 Q295 202 215 187Z" fill="#f6bd55" stroke="#253d4d" stroke-width="6"/>
+      <path d="M221 177 Q274 161 341 138 Q339 164 316 180 Q278 202 221 190Z" fill="#f19a48"/>
+      <path d="M216 124 Q245 103 278 116" fill="none" stroke="#253d4d" stroke-width="5"/>
+      <circle cx="236" cy="123" r="8" fill="#172936"/>
+      <circle cx="239" cy="120" r="2.5" fill="white"/>
+      <path d="M252 136 Q267 148 282 136" fill="none" stroke="#c46731" stroke-width="4"/>
+      <path d="M186 145 Q151 134 135 153 Q150 181 183 172" fill="#f7f7f0" stroke="#253d4d" stroke-width="6"/>
+      <path d="M294 154 Q320 133 348 99" fill="none" stroke="#f7f7f0" stroke-width="17" stroke-linecap="round"/>
+      <path d="M344 101 L366 83" stroke="#f29a58" stroke-width="12" stroke-linecap="round"/>
+      <path d="M358 85 L389 72" stroke="#253d4d" stroke-width="7" stroke-linecap="round"/>
+      <path d="M218 179 Q235 194 255 186" fill="none" stroke="#253d4d" stroke-width="4"/>
+      <path d="M310 148 q12 -13 23 0 M322 158 q12 -13 23 0" fill="none" stroke="#5d7890" stroke-width="3"/>
+    </g>
+  </g>
+
+  <g transform="translate(591 183)">
+    <path d="M9 137 Q20 59 73 35 Q126 15 159 75 Q174 112 147 145Z" fill="#fffdf2" stroke="#34536a" stroke-width="5"/>
+    <path d="M35 142 Q76 102 137 111 Q148 155 115 176 Q55 181 35 142Z" fill="#f5b64f" stroke="#34536a" stroke-width="5"/>
+    <circle cx="86" cy="81" r="8" fill="#172936"/>
+    <path d="M66 68 Q87 55 109 68" fill="none" stroke="#34536a" stroke-width="5"/>
+    <path d="M25 183 Q90 202 148 181" fill="none" stroke="#34536a" stroke-width="5"/>
+    <text x="15" y="223" font-family="Arial, sans-serif" font-size="17" font-weight="800" fill="#34536a">“SHOW-OFF.”</text>
+  </g>
+
+  <rect y="515" width="800" height="85" fill="#173951"/>
+  <text x="400" y="546" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#fff4cb">A pelican on a bicycle: proving a huge bill can still outrun a tiny budget.</text>
+  <text x="400" y="579" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#bdebf0">2026-10-25 22:03:07 SGT (UTC+08:00)</text>
+</svg>
