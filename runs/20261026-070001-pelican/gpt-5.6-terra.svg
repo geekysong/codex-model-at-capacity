@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Past Common Sense</title>
+  <desc id="desc">A satirical cartoon of an anxious pelican riding a tiny bicycle beneath a dramatic sky.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.1s linear infinite; }
+    .pelican { transform-box: fill-box; transform-origin: 50% 100%; animation: bob .55s ease-in-out infinite alternate; }
+    .leg { transform-box: fill-box; transform-origin: 50% 0%; animation: pedal .55s ease-in-out infinite alternate; }
+    .leg2 { transform-box: fill-box; transform-origin: 50% 0%; animation: pedal .55s ease-in-out infinite alternate-reverse; }
+    .cloud { animation: drift 7s ease-in-out infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(1deg); } }
+    @keyframes pedal { to { transform: rotate(22deg); } }
+    @keyframes drift { to { transform: translateX(24px); } }
+  </style>
+
+  <rect width="800" height="600" fill="#bcecff"/>
+  <path d="M0 294 Q120 250 230 300 T450 285 T650 302 T800 270 V455 H0Z" fill="#86cd78"/>
+  <path d="M0 396 Q135 370 270 402 T550 390 T800 402 V476 H0Z" fill="#52a95a"/>
+  <path d="M0 465 H800 V490 H0Z" fill="#58636b"/>
+  <path d="M0 478 H800" stroke="#f6d64a" stroke-width="7" stroke-dasharray="38 23"/>
+
+  <g class="cloud" fill="#fff" opacity=".88">
+    <path d="M72 115c0-18 16-31 34-28 8-24 44-26 54 1 28-7 47 26 25 43H83c-15 0-23-8-23-16 0-8 5-15 12-17z"/>
+    <path d="M605 135c0-15 14-27 29-24 10-22 41-19 48 5 25-3 38 29 13 42h-91c-14 0-20-8-20-15 0-5 7-10 21-8z"/>
+  </g>
+
+  <text x="400" y="61" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="34" fill="#26313b">PELICAN PEDALS PAST COMMON SENSE</text>
+  <text x="400" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#485661">“It’s not emissions-free if the rider emits panic.”</text>
+
+  <g aria-label="bicycle">
+    <g class="wheel">
+      <circle cx="250" cy="419" r="69" fill="#e9f2f5" stroke="#27333d" stroke-width="10"/>
+      <circle cx="250" cy="419" r="7" fill="#f4b83c"/>
+      <path d="M250 351V487M182 419H318M202 371L298 467M298 371L202 467" stroke="#788895" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="546" cy="419" r="69" fill="#e9f2f5" stroke="#27333d" stroke-width="10"/>
+      <circle cx="546" cy="419" r="7" fill="#f4b83c"/>
+      <path d="M546 351V487M478 419H614M498 371L594 467M594 371L498 467" stroke="#788895" stroke-width="3"/>
+    </g>
+    <path d="M250 419 L338 304 L427 419 Z M338 304 L480 304 L546 419 M427 419 L480 304" fill="none" stroke="#d23d3d" stroke-width="11" stroke-linejoin="round"/>
+    <path d="M338 304 L317 277 M305 274 H339 M480 304 L505 265 M488 262 H531" fill="none" stroke="#27333d" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="427" cy="419" r="18" fill="#f3b639" stroke="#27333d" stroke-width="6"/>
+    <path d="M427 419l31 15m-31-15l-27-19" stroke="#27333d" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g class="pelican">
+    <path d="M355 282 Q316 218 361 157 Q412 116 462 155 Q489 183 472 250 L451 326 L371 337Z" fill="#edf3ed" stroke="#293843" stroke-width="7"/>
+    <path d="M388 168 Q424 126 458 161 Q478 182 461 209 Q436 191 388 168Z" fill="#293843"/>
+    <ellipse cx="408" cy="181" rx="18" ry="22" fill="#fff"/>
+    <circle cx="413" cy="183" r="7" fill="#202934"/>
+    <path d="M377 191 Q309 183 282 212 Q325 247 402 232 Q426 221 417 203Z" fill="#f4af31" stroke="#293843" stroke-width="7"/>
+    <path d="M285 213 Q328 243 400 232 Q372 276 318 260 Q286 251 285 213Z" fill="#f8cf62" stroke="#293843" stroke-width="6"/>
+    <path d="M369 249 Q420 235 453 269 L470 327 Q423 350 374 326Z" fill="#f7f9f3" stroke="#293843" stroke-width="7"/>
+    <path d="M450 270 Q503 286 507 330 Q472 343 445 317Z" fill="#637b88" stroke="#293843" stroke-width="7"/>
+    <path d="M355 276 Q319 294 322 338 Q350 339 374 309Z" fill="#637b88" stroke="#293843" stroke-width="7"/>
+    <path d="M430 242 q14 10 26 0" fill="none" stroke="#293843" stroke-width="5" stroke-linecap="round"/>
+    <g class="leg">
+      <path d="M392 326 Q375 365 402 405 L446 432" fill="none" stroke="#e8a832" stroke-width="15" stroke-linecap="round"/>
+      <path d="M441 430 q21 8 33 0" fill="none" stroke="#f3a92d" stroke-width="13" stroke-linecap="round"/>
+    </g>
+    <g class="leg2">
+      <path d="M431 326 Q455 365 420 405 L394 398" fill="none" stroke="#e8a832" stroke-width="15" stroke-linecap="round"/>
+      <path d="M391 399 q-19 9-29 1" fill="none" stroke="#f3a92d" stroke-width="13" stroke-linecap="round"/>
+    </g>
+    <path d="M344 280 Q326 292 318 310" fill="none" stroke="#293843" stroke-width="8" stroke-linecap="round"/>
+    <path d="M459 285 Q484 274 497 268" fill="none" stroke="#293843" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(575 312)">
+    <path d="M0 40 Q28 0 57 33 Q77 8 101 35 Q92 69 51 70 Q14 68 0 40Z" fill="#fff4d2" stroke="#293843" stroke-width="5"/>
+    <text x="51" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#293843">HONK!</text>
+  </g>
+
+  <rect y="510" width="800" height="90" fill="#26313b"/>
+  <text x="400" y="544" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#f8d45c">One bird. Two wheels. Zero qualified transportation planners.</text>
+  <text x="400" y="577" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">2026-10-26 07:02:26 SGT (UTC+08:00)</text>
+</svg>

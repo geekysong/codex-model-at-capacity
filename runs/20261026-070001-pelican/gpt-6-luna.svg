@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">A Pelican’s Wheel Deal</title>
+  <desc id="desc">A smug pelican pedals a bicycle while a fish rides in its beak basket. The wheels spin and the pelican bobs.</desc>
+  <defs>
+    <style>
+      text{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 3s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .7s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bcecff"/>
+  <circle cx="684" cy="111" r="49" fill="#ffd661"/>
+  <path d="M0 344 Q130 304 260 344 T520 340 T800 331 V500 H0Z" fill="#8dd18b"/>
+  <path d="M0 425 Q185 395 380 426 T800 411 V520 H0Z" fill="#f5d997"/>
+  <path d="M0 491 Q190 468 390 492 T800 479" fill="none" stroke="#d3ad62" stroke-width="5"/>
+  <path d="M75 155 Q90 142 105 155 M104 155 Q119 142 134 155 M595 211 Q609 199 623 211 M619 211 Q633 199 647 211" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="400" y="57" text-anchor="middle" font-size="34" font-weight="900" fill="#153958">A PELICAN’S WHEEL DEAL</text>
+  <text x="400" y="87" text-anchor="middle" font-size="16" font-weight="600" fill="#31546a">“They said I needed a basket. I brought my own.”</text>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#e34d42" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M244 384 L352 384 L310 306 L244 384 M310 306 L390 384 M352 384 L390 384"/>
+    <path d="M310 306 L292 306 M352 384 L363 368"/>
+  </g>
+  <path d="M276 292 L306 292" stroke="#344f61" stroke-width="7" stroke-linecap="round"/>
+  <path d="M388 382 L404 376 M404 376 L414 380" stroke="#344f61" stroke-width="6" stroke-linecap="round"/>
+  <g fill="none" stroke="#344f61" stroke-width="5">
+    <circle cx="244" cy="384" r="61"/>
+    <circle cx="390" cy="384" r="61"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#718696" stroke-width="2">
+    <path d="M244 323V445 M183 384H305 M201 341L287 427 M201 427L287 341"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#718696" stroke-width="2">
+    <path d="M390 323V445 M329 384H451 M347 341L433 427 M347 427L433 341"/>
+  </g>
+  <circle cx="352" cy="384" r="8" fill="#344f61"/>
+  <path d="M352 384 L340 401 M352 384 L365 367" stroke="#344f61" stroke-width="5" stroke-linecap="round"/>
+  <path d="M336 401 L328 401 M364 367 L372 367" stroke="#344f61" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Pelican and ridiculous cargo -->
+  <g class="rider">
+    <!-- legs -->
+    <path d="M338 277 Q350 305 347 326 L367 367 M330 283 Q317 312 326 333 L340 401" fill="none" stroke="#ef8b34" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M363 367 L373 371 M340 401 L330 405" stroke="#ef8b34" stroke-width="8" stroke-linecap="round"/>
+    <!-- body -->
+    <ellipse cx="310" cy="245" rx="62" ry="48" fill="#fffaf0" stroke="#27475a" stroke-width="4"/>
+    <path d="M279 251 Q304 275 339 253 Q325 290 296 286 Q282 276 279 251Z" fill="#f2ad45" stroke="#27475a" stroke-width="3"/>
+    <!-- wing -->
+    <path d="M270 241 Q300 213 332 238 Q311 260 280 259Z" fill="#e9edf0" stroke="#27475a" stroke-width="3"/>
+    <path d="M290 241 Q306 232 320 240" fill="none" stroke="#b3c1c6" stroke-width="3" stroke-linecap="round"/>
+    <!-- neck and head -->
+    <path d="M344 236 Q359 205 354 177" fill="none" stroke="#fffaf0" stroke-width="25" stroke-linecap="round"/>
+    <path d="M344 236 Q359 205 354 177" fill="none" stroke="#27475a" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="355" cy="163" r="34" fill="#fffaf0" stroke="#27475a" stroke-width="4"/>
+    <circle cx="366" cy="157" r="4.5" fill="#172f3c"/>
+    <path d="M381 163 Q408 159 441 170 Q410 183 381 174Z" fill="#f3a324" stroke="#27475a" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M388 174 Q414 179 441 170 Q426 192 397 191 Q386 187 388 174Z" fill="#ef7547" stroke="#27475a" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M401 181 Q414 178 428 175" fill="none" stroke="#d8563d" stroke-width="2"/>
+    <!-- jaunty cap -->
+    <path d="M328 137 Q349 115 379 131 L383 143 Q354 134 332 149Z" fill="#e34d42" stroke="#27475a" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M329 143 Q348 139 376 148" fill="none" stroke="#27475a" stroke-width="4" stroke-linecap="round"/>
+    <!-- fish in the bill -->
+    <path d="M414 164 Q423 153 435 161 Q443 168 435 177 Q423 184 414 174Z" fill="#61c5d4" stroke="#27475a" stroke-width="2"/>
+    <path d="M415 168 L407 162 L407 176Z" fill="#61c5d4" stroke="#27475a" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="433" cy="165" r="1.8" fill="#172f3c"/>
+    <path d="M421 162 Q425 169 421 176" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <!-- handlebar grip -->
+    <path d="M288 294 Q276 287 272 275" fill="none" stroke="#344f61" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M473 270 Q514 252 536 272 Q551 287 536 301 Q521 313 488 300 L470 308 L477 292 Q466 282 473 270Z" fill="#fff" stroke="#27475a" stroke-width="3"/>
+  <text x="505" y="281" text-anchor="middle" font-size="13" font-weight="800" fill="#27475a">FISHER-</text>
+  <text x="505" y="296" text-anchor="middle" font-size="13" font-weight="800" fill="#27475a">CYCLE!</text>
+  <path d="M463 293 L443 283" stroke="#27475a" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M91 369 Q106 343 121 369 Q136 343 151 369" fill="none" stroke="#4c9d60" stroke-width="5" stroke-linecap="round"/>
+  <path d="M674 369 Q689 343 704 369 Q719 343 734 369" fill="none" stroke="#4c9d60" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="0" y="526" width="800" height="74" fill="#183c56"/>
+  <text x="400" y="551" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">A pelican on a bicycle: two wheels, one fish, and absolutely no need for panniers.</text>
+  <text x="400" y="582" text-anchor="middle" font-size="15" font-weight="600" fill="#d6edf7">2026-10-26 07:02:06 SGT (UTC+08:00)</text>
+</svg>
