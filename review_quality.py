@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Visually review historical Codex pelicans against a fixed Astra reference.
 
-Run with /tmp/pelican-review-venv/bin/python review_quality.py. Requires
+Run with .venv-quality/bin/python review_quality.py. Requires
 playwright (and Chromium) plus Pillow. No visual score is inferred from SVG text.
 Only successful, complete image-judge responses become numeric chart points.
 """
@@ -18,8 +18,8 @@ import re
 import tempfile
 import time
 from datetime import datetime
-from urllib.error import HTTPError, URLError
-from urllib.request import Request, urlopen
+import subprocess
+import shutil
 import xml.etree.ElementTree as ET
 from zoneinfo import ZoneInfo
 
@@ -173,29 +173,42 @@ def validate_review(value):
 
 
 def judge_images(baseline, candidate, model, timeout):
-    from compare_claude import read_key, API_URL
-    content = []
-    for label, data in [('A: reference', baseline), ('B: candidate', candidate)]:
-        content.extend([{'type': 'text', 'text': label}, {'type': 'image', 'source': {
-            'type': 'base64', 'media_type': 'image/png', 'data': base64.b64encode(data).decode()}}])
-    body = {'model': model, 'max_tokens': 4096, 'system': SYSTEM,
-            'messages': [{'role': 'user', 'content': content}]}
-    request = Request(API_URL, data=json.dumps(body).encode(), method='POST', headers={
-        'x-api-key': read_key(), 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})
-    try:
-        with urlopen(request, timeout=timeout) as response:
-            reply = json.loads(response.read().decode())
-    except HTTPError as exc:
-        # Deliberately do not log response bodies or request credentials.
-        raise RuntimeError(f'judge HTTP {exc.code}') from None
-    except (URLError, TimeoutError):
-        raise RuntimeError('judge network error or timeout') from None
-    if reply.get('stop_reason') != 'end_turn':
-        raise ValueError('judge response incomplete')
-    text = '\n'.join(b.get('text', '') for b in reply.get('content', []) if b.get('type') == 'text')
-    value = validate_review(json.loads(text))
-    value['judge_actual_model'] = reply.get('model', model)
-    return value
+    # Separate authenticated Codex invocation; no API key or generating-model identity.
+    executable = shutil.which('codex') or str(Path.home() / '.local/bin/codex')
+    with tempfile.TemporaryDirectory(prefix='pelican-judge-') as directory:
+        folder = Path(directory)
+        reference = folder / 'reference.png'
+        image = folder / 'candidate.png'
+        output = folder / 'review.json'
+        schema = folder / 'schema.json'
+        reference.write_bytes(baseline)
+        image.write_bytes(candidate)
+        score = {'type': 'integer', 'minimum': 0, 'maximum': 4}
+        schema.write_text(json.dumps({
+            'type': 'object', 'additionalProperties': False,
+            'required': ['dimensions', 'severity', 'confidence', 'reasons'],
+            'properties': {
+                'dimensions': {'type': 'object', 'additionalProperties': False,
+                               'required': list(DIMENSIONS),
+                               'properties': {key: score for key in DIMENSIONS}},
+                'severity': score,
+                'confidence': {'type': 'number', 'minimum': 0, 'maximum': 1},
+                'reasons': {'type': 'array', 'items': {'type': 'string'}},
+            },
+        }))
+        prompt = SYSTEM + "\nThe first attached image is A (reference); the second is B (candidate). Evaluate visually from these images only. Do not run tools or inspect other files."
+        result = subprocess.run([
+            executable, 'exec', '--ephemeral', '--skip-git-repo-check',
+            '-m', model, '-c', 'model_reasoning_effort="low"',
+            '-s', 'read-only', '-i', str(reference), '-i', str(image),
+            '--output-schema', str(schema), '-o', str(output), prompt,
+        ], cwd=folder, capture_output=True, text=True, timeout=timeout)
+        if result.returncode or not output.exists():
+            raise RuntimeError('Codex visual judge did not produce a complete review')
+        value = validate_review(json.loads(output.read_text()))
+        value['judge_actual_model'] = model
+        value['judge_provider'] = 'codex'
+        return value
 
 
 def run(args):
@@ -211,7 +224,7 @@ def run(args):
         source = ROOT / rec['svg'] if rec.get('svg') else None
         digest = sha(source.read_bytes()) if source and source.is_file() else None
         cached = existing.get((rec['round'], rec['model']))
-        if cached and cached.get('status') in ('reviewed', 'generation_error', 'render_error') and cached.get('svg_sha256') == digest and cached.get('baseline_sha256') == baseline['svg_sha256'] and cached.get('judge') == args.model:
+        if cached and cached.get('status') in ('reviewed', 'generation_error', 'render_error') and cached.get('svg_sha256') == digest and cached.get('baseline_sha256') == baseline['svg_sha256']:
             continue
         todo.append((rec, source, digest))
     if args.limit is not None:
@@ -282,10 +295,10 @@ def run(args):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--limit', type=int, help='review at most this many pending records')
-    parser.add_argument('--model', default=os.environ.get('QUALITY_JUDGE_MODEL', 'claude-fable-5-1'))
-    parser.add_argument('--timeout', type=int, default=180)
-    parser.add_argument('--workers', type=int, choices=range(1, 5), default=1,
-                        help='concurrent image-judge API requests (default: 1; max: 4)')
+    parser.add_argument('--model', default=os.environ.get('QUALITY_JUDGE_MODEL', 'gpt-6-astra'))
+    parser.add_argument('--timeout', type=int, default=600)
+    parser.add_argument('--workers', type=int, choices=(1,), default=1,
+                        help='Codex visual reviews run sequentially (1)')
     args = parser.parse_args()
     if args.limit is not None and args.limit < 0:
         parser.error('--limit must be nonnegative')

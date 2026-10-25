@@ -45,13 +45,39 @@ class ReviewValidationTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             review.sanitize_svg(b'<!DOCTYPE svg [<!ENTITY a "x">]><svg/>')
 
-    def test_truncated_response_cannot_become_score(self):
-        reply = {'stop_reason': 'max_tokens', 'content': [{'type': 'text', 'text': json.dumps(self.good())}]}
-        response = MagicMock()
-        response.__enter__.return_value.read.return_value = json.dumps(reply).encode()
-        with patch('compare_claude.read_key', return_value='test-placeholder'), patch('review_quality.urlopen', return_value=response):
-            with self.assertRaisesRegex(ValueError, 'incomplete'):
-                review.judge_images(b'png', b'png', 'test', 1)
+    def test_incomplete_codex_response_cannot_become_score(self):
+        import subprocess
+        failed = subprocess.CompletedProcess([], 1, '', 'test failure')
+        with patch('review_quality.subprocess.run', return_value=failed):
+            with self.assertRaisesRegex(RuntimeError, 'complete review'):
+                review.judge_images(b'png', b'png', 'gpt-6-astra', 1)
+
+    def test_codex_uses_images_and_preserves_strict_validation(self):
+        import subprocess
+        def invoke(args, **kwargs):
+            self.assertEqual(args[args.index('-m') + 1], 'gpt-6-astra')
+            self.assertEqual(args.count('-i'), 2)
+            Path(args[args.index('-o') + 1]).write_text(json.dumps(self.good()))
+            return subprocess.CompletedProcess(args, 0, '', '')
+        with patch('review_quality.subprocess.run', side_effect=invoke):
+            value = review.judge_images(b'png', b'png', 'gpt-6-astra', 600)
+            self.assertEqual(value['severity'], 0)
+            self.assertEqual(value['judge_provider'], 'codex')
+
+    def test_completed_claude_review_is_not_repeated_after_judge_switch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'candidate.svg').write_bytes(b'<svg/>')
+            baseline = {'svg_sha256': 'reference'}
+            previous = {'round': 'r', 'model': 'generated-model', 'status': 'reviewed',
+                        'svg_sha256': review.sha(b'<svg/>'), 'baseline_sha256': 'reference',
+                        'judge': 'claude-fable-5-1'}
+            (root / 'quality_reviews.json').write_text(json.dumps({
+                'rubric_version': review.RUBRIC, 'baseline': baseline, 'reviews': [previous]}))
+            row = {'round': 'r', 'model': 'generated-model', 'status': 'ok', 'svg': 'candidate.svg'}
+            with patch.object(review, 'ROOT', root), patch.object(review, 'baseline_info', return_value=baseline), patch.object(review, 'records', return_value=[row]), patch.object(review, 'Renderer') as renderer:
+                review.run(SimpleNamespace(limit=None, model='gpt-6-astra', timeout=600, workers=1))
+                renderer.assert_not_called()
 
     def test_parallel_judges_save_every_result_on_main_thread(self):
         with tempfile.TemporaryDirectory() as directory:
