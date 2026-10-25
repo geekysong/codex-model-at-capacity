@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">WHEELS OF FORTUNE</title>
+  <desc id="desc">A smug pelican pedals a bicycle, its enormous beak holding up traffic while a tiny motorist waits. The wheels spin and the pelican bobs gently.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#183044;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#fffdf4;stroke:#183044;stroke-width:8}
+      .spoke{stroke:#718596;stroke-width:2}
+      .frame{fill:none;stroke:#ec5c45;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+      .title{font:900 34px system-ui,sans-serif;letter-spacing:1px;fill:#183044}
+      .label{font:700 16px system-ui,sans-serif;fill:#183044}
+      .small{font:600 13px system-ui,sans-serif;fill:#183044}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .75s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bfe9e5"/>
+  <path d="M0 362 Q145 316 285 358 T560 350 T800 348 V520 H0Z" fill="#a7d6a3"/>
+  <circle cx="690" cy="105" r="42" fill="#ffd76e"/>
+  <g fill="#fffdf4" opacity=".9">
+    <path d="M82 118c4-18 30-21 38-4 17-10 34 3 30 18H75c-6-7-1-14 7-14z"/>
+    <path d="M500 95c4-18 30-21 38-4 17-10 34 3 30 18H493c-6-7-1-14 7-14z"/>
+  </g>
+
+  <text class="title" x="400" y="52" text-anchor="middle">WHEELS OF FORTUNE</text>
+  <text class="label" x="400" y="79" text-anchor="middle">“I’m not late. I’m just carrying the meeting.”</text>
+
+  <g transform="translate(0 0)">
+    <circle class="wheel" cx="263" cy="414" r="69"/>
+    <circle class="wheel" cx="531" cy="414" r="69"/>
+    <g class="spin">
+      <path class="spoke" d="M263 349V479M198 414H328M217 368L309 460M309 368L217 460"/>
+    </g>
+    <g class="spin">
+      <path class="spoke" d="M531 349V479M466 414H596M485 368L577 460M577 368L485 460"/>
+    </g>
+    <path class="frame" d="M263 414L350 414L397 342L463 414L350 414L328 337"/>
+    <path class="frame" d="M397 342L463 414L531 414"/>
+    <path class="ink" fill="none" d="M312 330h34m-8 0 10 13"/>
+    <path class="ink" fill="none" d="M387 337l-7-18h30"/>
+    <circle cx="350" cy="414" r="9" fill="#183044"/>
+    <path class="ink" d="M333 326l-23-8" fill="none"/>
+    <path class="ink" d="M319 318l-8-14" fill="none"/>
+    <path class="ink" d="M340 326l6 16" fill="none"/>
+    <path class="ink" d="M344 342l-17 8m17-8 15 10" fill="none"/>
+  </g>
+
+  <g class="rider">
+    <!-- tail feathers -->
+    <path d="M356 241q-22-28-48-25 11 23 38 37M361 249q-31-13-50 0 21 17 47 15" fill="#f6f0dd" class="ink"/>
+    <!-- body -->
+    <ellipse cx="404" cy="258" rx="56" ry="43" fill="#fffdf4" class="ink"/>
+    <path d="M392 279q24-23 54-7-17 27-45 22z" fill="#f5a648" class="ink"/>
+    <!-- wing -->
+    <path d="M376 247q26-22 54 2-19 30-49 22" fill="#e7e4d7" class="ink"/>
+    <path d="M387 251l27 11m-35-1 25 10" fill="none" class="ink" stroke-width="3"/>
+    <!-- neck and head -->
+    <path d="M433 240q11-53 20-73l28 5q-19 37-10 82" fill="#fffdf4" class="ink"/>
+    <ellipse cx="466" cy="159" rx="38" ry="32" fill="#fffdf4" class="ink"/>
+    <!-- beak -->
+    <path d="M492 157q87-19 164 10-49 44-159 20z" fill="#f5a648" class="ink"/>
+    <path d="M496 168q68 2 150-1" fill="none" stroke="#b8573e" stroke-width="4"/>
+    <!-- eye and smug brow -->
+    <circle cx="477" cy="151" r="5.5" fill="#183044"/>
+    <path d="M466 139q14-10 27 0" fill="none" class="ink" stroke-width="4"/>
+    <!-- cheek -->
+    <circle cx="485" cy="171" r="4" fill="#ec806b"/>
+    <!-- helmet -->
+    <path d="M433 139q6-38 38-39 28 1 38 28l-72 8z" fill="#ec5c45" class="ink"/>
+    <path d="M429 138l86-5" fill="none" class="ink"/>
+    <!-- scarf -->
+    <path d="M446 203q13 10 31 4l-7 18q-15 8-28-5z" fill="#ec5c45" class="ink"/>
+    <path d="M459 217l-9 27 16-11" fill="#ec5c45" class="ink"/>
+    <!-- legs pedaling -->
+    <path d="M383 283q-20 20-33 37l15 10q18-15 38-34" fill="#f5a648" class="ink"/>
+    <path d="M430 282q20 13 24 34l-16 8q-15-17-28-28" fill="#f5a648" class="ink"/>
+    <path d="M349 330l-20 4m127-18 10 13" fill="none" class="ink"/>
+    <path d="M329 334l-13 1m143-8 13 3" fill="none" class="ink"/>
+  </g>
+
+  <!-- tiny, resigned motorist -->
+  <g transform="translate(608 310)">
+    <path d="M8 48h112l-9-28H31z" fill="#718596" class="ink"/>
+    <path d="M31 20l14-17h38l19 17" fill="#9fc5d0" class="ink"/>
+    <circle cx="33" cy="51" r="12" fill="#183044"/>
+    <circle cx="98" cy="51" r="12" fill="#183044"/>
+    <circle cx="36" cy="15" r="10" fill="#f5a648" class="ink"/>
+    <path d="M31 14q6-8 12 0m-7 5h1" fill="none" class="ink" stroke-width="3"/>
+    <path d="M19-4q30-24 60-3" fill="none" stroke="#183044" stroke-width="3" stroke-dasharray="4 7"/>
+    <text class="small" x="66" y="-35" text-anchor="middle">“That’s my lane.”</text>
+  </g>
+
+  <path d="M226 484h358" stroke="#183044" stroke-width="4" stroke-linecap="round" opacity=".35"/>
+  <text class="small" x="400" y="515" text-anchor="middle">Pelican on a bicycle: the beak of the traffic jam.</text>
+  <rect x="0" y="547" width="800" height="53" fill="#183044"/>
+  <text x="400" y="579" text-anchor="middle" fill="#fffdf4" font-family="system-ui,sans-serif" font-size="18" font-weight="700">2026-10-25 08:01:50 SGT (UTC+08:00)</text>
+</svg>
