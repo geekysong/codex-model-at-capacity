@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon of an expressive pelican riding a bicycle.</desc>
+  <style>
+    .ink{stroke:#20232a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .thin{stroke:#20232a;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    text{font-family:Arial,Helvetica,sans-serif;fill:#20232a}
+    .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.15s linear infinite}
+    .rider{transform-origin:390px 355px;animation:bob .42s ease-in-out infinite alternate}
+    .pedal{transform-origin:426px 410px;animation:pedal .58s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{to{transform:translateY(-7px) rotate(-1deg)}}
+    @keyframes pedal{to{transform:rotate(360deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#bdeeff"/>
+  <path d="M0 332 Q105 275 205 330 T405 315 T605 325 T800 290 V478 H0Z" fill="#91d765"/>
+  <path d="M0 462 Q150 430 300 464 T570 443 T800 466 V510 H0Z" fill="#e9c75d"/>
+  <path d="M0 487 H800" stroke="#f8e999" stroke-width="7" stroke-dasharray="24 18"/>
+
+  <text x="400" y="62" text-anchor="middle" font-size="36" font-weight="900">THE PELICAN PEDAL PANIC!</text>
+  <text x="400" y="91" text-anchor="middle" font-size="17" font-weight="700">“Public transit? I AM public transit.”</text>
+
+  <g aria-label="bicycle">
+    <circle cx="280" cy="426" r="80" fill="#f9fafb" class="ink"/>
+    <circle cx="570" cy="426" r="80" fill="#f9fafb" class="ink"/>
+    <g class="wheel">
+      <circle cx="280" cy="426" r="12" fill="#ffcc4d" class="thin"/>
+      <path d="M280 350V502M204 426H356M226 372L334 480M334 372L226 480" class="thin" opacity=".55"/>
+    </g>
+    <g class="wheel">
+      <circle cx="570" cy="426" r="12" fill="#ffcc4d" class="thin"/>
+      <path d="M570 350V502M494 426H646M516 372L624 480M624 372L516 480" class="thin" opacity=".55"/>
+    </g>
+    <path d="M280 426 L355 310 L455 426 Z M355 310 L505 326 L455 426 M505 326 L570 426 M505 326 L535 283" fill="none" class="ink"/>
+    <path d="M333 307h56M526 282h48" class="ink"/>
+    <path d="M455 426h42" class="thin"/>
+    <g class="pedal">
+      <path d="M455 426l39 25M455 426l-39-25" class="thin"/>
+      <path d="M486 452h25M399 401h25" class="ink"/>
+    </g>
+  </g>
+
+  <g class="rider">
+    <path d="M344 312 Q350 233 407 223 Q463 218 487 297 L466 361 L360 355Z" fill="#f4f6ef" class="ink"/>
+    <path d="M370 294 Q330 253 348 197 Q365 146 421 156 Q480 168 467 248 Q457 297 417 312Z" fill="#f8fbf5" class="ink"/>
+    <path d="M352 218 Q282 197 284 239 Q286 286 370 278 Q424 270 455 245 Q445 206 408 204Z" fill="#ffc83d" class="ink"/>
+    <path d="M292 244 Q316 276 367 273 Q331 294 300 279 Q280 269 292 244Z" fill="#f38f4b" class="thin"/>
+    <circle cx="397" cy="197" r="22" fill="white" class="thin"/>
+    <circle cx="398" cy="200" r="8" fill="#20232a"/>
+    <path d="M417 170q18-17 35 1" fill="none" class="thin"/>
+    <path d="M383 168q12-13 25-2" fill="none" class="thin"/>
+    <path d="M408 230q20 13 35-4" fill="none" class="thin"/>
+    <path d="M384 311 Q353 365 371 398 L422 400 L443 343" fill="#f4f6ef" class="ink"/>
+    <path d="M424 310 Q462 347 506 344" fill="none" class="ink"/>
+    <path d="M369 394 L418 405 L406 424 L358 414Z" fill="#ffb13b" class="ink"/>
+    <path d="M423 397 L477 410 L469 429 L415 419Z" fill="#ffb13b" class="ink"/>
+    <path d="M474 344q23-12 42-46" fill="none" class="ink"/>
+    <path d="M510 300q15 5 23-10" fill="none" class="thin"/>
+    <path d="M346 331q-20 28-5 43" fill="none" class="thin"/>
+    <path d="M343 331q-14-23-2-36" fill="none" class="thin"/>
+    <path d="M459 256q27 7 40 31" fill="none" class="thin"/>
+  </g>
+
+  <g aria-label="satirical speech bubble">
+    <path d="M590 159 Q687 126 741 177 Q760 222 711 249 Q650 271 591 238 L565 260 L575 225 Q552 186 590 159Z" fill="white" class="ink"/>
+    <text x="652" y="187" text-anchor="middle" font-size="18" font-weight="800">NO HANDS!</text>
+    <text x="652" y="211" text-anchor="middle" font-size="15" font-weight="700">Mostly because</text>
+    <text x="652" y="231" text-anchor="middle" font-size="15" font-weight="700">they’re wings.</text>
+  </g>
+
+  <g opacity=".8">
+    <path d="M151 402q-30-15-53 4q27 20 54 5" fill="#fff" class="thin"/>
+    <path d="M160 382q-31-17-57 0q26 23 55 8" fill="#fff" class="thin"/>
+  </g>
+
+  <rect y="520" width="800" height="80" fill="#20232a"/>
+  <text x="28" y="549" font-size="18" font-weight="800" fill="#fff">A pelican on a bicycle: proof that confidence has no brakes.</text>
+  <text x="28" y="580" font-size="15" fill="#d8e6ee">2026-10-25 14:32:48 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#17212b">
+    <text x="30" y="30" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="30" y="56">Initial velocity: horizontal 20 m/s; vertical 15 m/s</text>
+    <text x="30" y="79">Gravity: 10 m/s² · No air resistance</text>
+    <text x="30" y="106">Scale: 10 px/m; horizontal axis break omits 18 m</text>
+    <text x="30" y="133">Total flight time: 3 s</text>
+  </g>
+
+  <!-- Physical coordinates: x = 100 + 200t, y = 350 - 150t + 50t².
+       Omit physical x = 420 through 600; shift the continuation left 180 px. -->
+  <path d="M50 350 H420 M440 350 H550" fill="none" stroke="#46525e" stroke-width="2"/>
+  <path d="M100 350 Q260 110 420 238
+           M440 287.5 Q480 312.5 520 350"
+        fill="none" stroke="#176bc0" stroke-width="3"/>
+
+  <g fill="none" stroke="#46525e" stroke-width="2">
+    <path d="M422 344 l5 12 M432 344 l5 12"/>
+    <path d="M422 246 l5 -12 M432 246 l5 -12"/>
+    <path d="M422 295 l5 -12 M432 295 l5 -12"/>
+  </g>
+
+  <g fill="#176bc0">
+    <circle cx="100" cy="350" r="4"/>
+    <circle cx="400" cy="237.5" r="4"/>
+    <circle cx="520" cy="350" r="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#17212b">
+    <text x="55" y="320">launch: 0 m, 0 m</text>
+    <text x="310" y="214">apex: 30 m, 11.25 m</text>
+    <text x="454" y="307">landing:</text>
+    <text x="464" y="327">60 m, 0 m</text>
+  </g>
+
+  <rect x="0" y="367" width="600" height="33" fill="#eef2f6"/>
+  <text x="300" y="389" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="14" fill="#17212b">2026-10-25 14:34:44 SGT (UTC+08:00)</text>
+</svg>

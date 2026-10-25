@@ -3571,9 +3571,113 @@
       "reviewed_at": "2026-10-25T14:05:53.522581+08:00",
       "rubric_version": "pelican-v1",
       "judge_actual_model": "claude-fable-5-1"
+    },
+    {
+      "round": "20261025-143001-pelican",
+      "model": "gpt-6-astra",
+      "time_sgt": "2026-10-25 14:30:01",
+      "svg": "runs/20261025-143001-pelican/gpt-6-astra.svg",
+      "variant": "pelican",
+      "status": "reviewed",
+      "severity": 1,
+      "confidence": 0.7,
+      "reasons": [
+        "鹈鹕头部、带鱼的喙和白色身体可辨认，但头颈与身体衔接较生硬，尾部呈锯齿闪电状略显突兀",
+        "整体仍为圆润柔和的卡通鸟形，无破碎或崩坏，仅细节略硬",
+        "鸟体骑在车架上、翅膀扶把、腿踩踏板，骑行关系基本成立，但车架与座管连接略松散",
+        "构图完整，三帧稳定，仅路牌小字略超出牌面边缘，属轻微裁切"
+      ],
+      "dimensions": {
+        "bird_shape": 1,
+        "softness": 1,
+        "riding": 1,
+        "readability": 1
+      },
+      "svg_sha256": "8fd28e54a10b6e6ee7ba77845c4838ab7e80606132e4cb47db8930533fb61d15",
+      "baseline_sha256": "9f032a20b5612b6a3623fbde08e21196ea7aad9824c74cc6a49c598e4e31a050",
+      "judge": "claude-fable-5-1",
+      "reviewed_at": "2026-10-25T14:35:57.960290+08:00",
+      "rubric_version": "pelican-v1",
+      "judge_actual_model": "claude-fable-5-1"
+    },
+    {
+      "round": "20261025-143001-pelican",
+      "model": "gpt-6.1-sol",
+      "time_sgt": "2026-10-25 14:31:32",
+      "svg": "runs/20261025-143001-pelican/gpt-6.1-sol.svg",
+      "variant": "pelican",
+      "status": "reviewed",
+      "severity": 1,
+      "confidence": 0.8,
+      "reasons": [
+        "鹈鹕头部、长喙带喉囊、圆润身体和翅膀均清晰可辨，三帧结构稳定",
+        "喙呈细长尖三角形，比参考图的圆润喉囊更尖锐棱角，略显生硬",
+        "鸟坐在车座上、翅膀搭把手、双腿连接踏板，骑行姿态可信",
+        "整体构图完整，标题、路牌、文字无裁切或损坏"
+      ],
+      "dimensions": {
+        "bird_shape": 0,
+        "softness": 1,
+        "riding": 0,
+        "readability": 0
+      },
+      "svg_sha256": "feaf2a6d02bdbe347b37e8048597746896b4940700a60fcffc7c33d01bf1bf62",
+      "baseline_sha256": "9f032a20b5612b6a3623fbde08e21196ea7aad9824c74cc6a49c598e4e31a050",
+      "judge": "claude-fable-5-1",
+      "reviewed_at": "2026-10-25T14:36:13.808420+08:00",
+      "rubric_version": "pelican-v1",
+      "judge_actual_model": "claude-fable-5-1"
+    },
+    {
+      "round": "20261025-143001-pelican",
+      "model": "gpt-6-luna",
+      "time_sgt": "2026-10-25 14:32:32",
+      "svg": "runs/20261025-143001-pelican/gpt-6-luna.svg",
+      "variant": "pelican",
+      "status": "render_error",
+      "severity": null,
+      "confidence": null,
+      "reasons": [
+        "SVG 无法解析或渲染，未获得可评审画面。"
+      ],
+      "dimensions": null,
+      "svg_sha256": "f502310cd44e7d3a8732b3f76e6ba3e4a7759b748fdd4e0699ded97e35caa1db",
+      "baseline_sha256": "9f032a20b5612b6a3623fbde08e21196ea7aad9824c74cc6a49c598e4e31a050",
+      "judge": "claude-fable-5-1",
+      "reviewed_at": "2026-10-25T14:36:25.653466+08:00",
+      "rubric_version": "pelican-v1",
+      "render_error": "ParseError"
+    },
+    {
+      "round": "20261025-143001-pelican",
+      "model": "gpt-5.6-terra",
+      "time_sgt": "2026-10-25 14:32:48",
+      "svg": "runs/20261025-143001-pelican/gpt-5.6-terra.svg",
+      "variant": "pelican",
+      "status": "reviewed",
+      "severity": 2,
+      "confidence": 0.7,
+      "reasons": [
+        "鸟形为圆润白色身体加橙色大喙，头、喙、身体基本连贯，但翅膀仅有淡淡线条，略显鸭形，识别为鹈鹕稍弱",
+        "造型圆润柔和，无破碎或尖锐错乱形状",
+        "鸟朝左而车把位于右侧、车架线条穿过鸟身，脚虽在踏板上但骑行方向关系不合理，骑行场景说服力明显不足",
+        "每帧底部有一条深色空白条带，画面未填满，整体构图尚可读但有可见瑕疵"
+      ],
+      "dimensions": {
+        "bird_shape": 1,
+        "softness": 0,
+        "riding": 2,
+        "readability": 1
+      },
+      "svg_sha256": "8e6eca0c6d69423e227e3350d5c5008b126db9ed83a0c5f064585b418a85e8a4",
+      "baseline_sha256": "9f032a20b5612b6a3623fbde08e21196ea7aad9824c74cc6a49c598e4e31a050",
+      "judge": "claude-fable-5-1",
+      "reviewed_at": "2026-10-25T14:36:25.660423+08:00",
+      "rubric_version": "pelican-v1",
+      "judge_actual_model": "claude-fable-5-1"
     }
   ],
-  "updated_at": "2026-10-25T14:06:11.240060+08:00",
+  "updated_at": "2026-10-25T14:36:43.367131+08:00",
   "rendering": {
     "engine": "chromium",
     "frame_times_s": [
