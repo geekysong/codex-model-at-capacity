@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A satirical cartoon of a proud pelican riding a bicycle with spinning wheels and bobbing motion.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#172033;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#172033;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#172033}
+      .spin{transform-origin:center;animation:spin 1s linear infinite}
+      .bob{animation:bob .7s ease-in-out infinite alternate}
+      .pedal{animation:pedal .7s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-7px) rotate(-1deg)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+    <radialGradient id="sky" cx=".5" cy=".2" r=".9">
+      <stop stop-color="#b9edff"/>
+      <stop offset="1" stop-color="#70b5df"/>
+    </radialGradient>
+    <linearGradient id="road" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#566370"/>
+      <stop offset="1" stop-color="#303b47"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff5ce"/>
+  <rect width="800" height="332" fill="url(#sky)"/>
+  <path d="M0 276 Q105 232 210 274 T425 258 T625 276 T800 240 V345 H0Z" fill="#75c883" class="ink"/>
+  <path d="M0 325 H800 V483 H0Z" fill="url(#road)"/>
+  <path d="M-20 405 H90 M155 405 H265 M330 405 H440 M505 405 H615 M680 405 H820" stroke="#ffe66b" stroke-width="12" stroke-linecap="round"/>
+  <path d="M0 483 H800" stroke="#172033" stroke-width="7"/>
+
+  <g opacity=".8">
+    <path d="M73 177 l8 24 24 1-19 14 7 24-20-14-20 14 7-24-19-14 24-1z" fill="#fff8d7" class="thin"/>
+    <path d="M657 111 q23-20 46 0 q-23 18-46 0" fill="#fff8d7" class="thin"/>
+    <path d="M706 148 q17-14 34 0 q-17 13-34 0" fill="#fff8d7" class="thin"/>
+  </g>
+
+  <g class="spin" style="transform-origin:255px 420px">
+    <circle cx="255" cy="420" r="73" fill="#d6e5ed" class="ink"/>
+    <circle cx="255" cy="420" r="58" fill="none" stroke="#172033" stroke-width="4"/>
+    <g class="thin">
+      <path d="M255 350V490 M185 420H325 M206 371l98 98 M304 371l-98 98"/>
+    </g>
+    <circle cx="255" cy="420" r="10" fill="#ffcb4d" class="ink"/>
+  </g>
+  <g class="spin" style="transform-origin:520px 420px">
+    <circle cx="520" cy="420" r="73" fill="#d6e5ed" class="ink"/>
+    <circle cx="520" cy="420" r="58" fill="none" stroke="#172033" stroke-width="4"/>
+    <g class="thin">
+      <path d="M520 350V490 M450 420H590 M471 371l98 98 M569 371l-98 98"/>
+    </g>
+    <circle cx="520" cy="420" r="10" fill="#ffcb4d" class="ink"/>
+  </g>
+
+  <g class="ink" fill="none">
+    <path d="M255 420 L337 337 L425 420 Z"/>
+    <path d="M337 337 L448 336 L520 420"/>
+    <path d="M425 420 L448 336"/>
+    <path d="M448 336 L470 290 L510 290"/>
+    <path d="M337 337 L315 298 L276 298"/>
+    <path d="M425 420 L396 420"/>
+  </g>
+  <path d="M264 294 Q276 284 290 295 L289 304 H264Z" fill="#ef6351" class="ink"/>
+  <path d="M502 286 Q516 275 531 288 L529 297 H503Z" fill="#ef6351" class="ink"/>
+
+  <g class="pedal" style="transform-origin:425px 420px">
+    <circle cx="425" cy="420" r="21" fill="#ffcb4d" class="ink"/>
+    <path d="M410 408 L440 432 M398 398 L415 408 M439 432 L458 441" class="ink" fill="none"/>
+  </g>
+
+  <g class="bob">
+    <path d="M351 205 Q389 166 438 196 Q472 218 467 307 Q462 351 414 358 Q361 358 341 317 Q324 267 351 205Z" fill="#fbfbec" class="ink"/>
+    <path d="M363 283 Q410 309 464 278 L463 319 Q435 358 390 348 Q367 337 363 283Z" fill="#d9e8e2" class="thin"/>
+    <path d="M362 238 Q329 226 308 252 Q327 267 356 265" fill="#f3a83b" class="ink"/>
+    <path d="M308 252 Q292 283 326 300 Q361 299 383 278 Q347 268 308 252Z" fill="#ffc84a" class="ink"/>
+    <path d="M382 213 Q402 193 421 214 Q426 237 398 238Z" fill="#fff" class="ink"/>
+    <circle cx="402" cy="221" r="8" fill="#172033"/>
+    <path d="M428 218 Q445 195 458 219 Q460 241 435 240Z" fill="#fff" class="ink"/>
+    <circle cx="442" cy="222" r="8" fill="#172033"/>
+    <path d="M392 251 Q420 263 447 247" fill="none" class="thin"/>
+    <path d="M357 302 Q324 308 307 333 Q340 337 370 322Z" fill="#fbfbec" class="ink"/>
+    <path d="M448 298 Q481 292 501 318 Q473 331 443 320Z" fill="#fbfbec" class="ink"/>
+    <path d="M388 348 Q391 377 370 397 L397 402 Q416 379 417 353" fill="#f3a83b" class="ink"/>
+    <path d="M429 349 Q440 375 464 390 L449 407 Q417 386 407 354" fill="#f3a83b" class="ink"/>
+    <path d="M365 397 Q379 389 401 401 Q386 417 363 409Z" fill="#ffcb4d" class="ink"/>
+    <path d="M445 402 Q460 387 477 392 Q475 410 451 414Z" fill="#ffcb4d" class="ink"/>
+    <path d="M343 203 Q388 157 442 186 Q414 166 371 175Z" fill="#26394b" class="ink"/>
+    <rect x="366" y="299" width="78" height="23" rx="4" fill="#ef6351" class="ink"/>
+    <text x="405" y="316" text-anchor="middle" class="label" font-size="13" font-weight="bold">HONK</text>
+  </g>
+
+  <g transform="translate(607 269)">
+    <path d="M0 0 h143 l-13 72 H12Z" fill="#fff8d7" class="ink"/>
+    <path d="M20 17 h100" class="thin"/>
+    <text x="71" y="42" text-anchor="middle" class="label" font-size="18" font-weight="bold">FUEL SAVER</text>
+    <text x="71" y="62" text-anchor="middle" class="label" font-size="13">EATS ALL THE FISH</text>
+    <path d="M18 72 v35 M124 72 v35" class="ink"/>
+  </g>
+
+  <path d="M98 472 q37-28 76 0" fill="none" class="thin"/>
+  <text x="136" y="500" text-anchor="middle" class="label" font-size="16" font-weight="bold">NO PARKING.</text>
+  <text x="136" y="518" text-anchor="middle" class="label" font-size="13">EXCEPT FOR BEAKS.</text>
+
+  <rect x="0" y="530" width="800" height="70" fill="#172033"/>
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#172033">THE PELICAN EXPRESS</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="18" font-weight="bold">“Two wheels, one enormous trunk, zero shame.”</text>
+  <text x="400" y="558" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="bold" fill="#fff5ce">Public transit, but make it fishy.</text>
+  <text x="400" y="583" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#b9edff">2026-10-25 23:03:21 SGT (UTC+08:00)</text>
+</svg>

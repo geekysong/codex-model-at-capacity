@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <title>Projectile motion with landing detail</title>
+  <desc>At 10 pixels per meter, the launch is at (100,350), the apex at (400,237.5), and the landing at (700,350), beyond the canvas. A separate inset shows the landing at the same scale. Total flight time is 3 seconds.</desc>
+  <defs>
+    <clipPath id="mainClip">
+      <rect x="50" y="210" width="500" height="145"/>
+    </clipPath>
+  </defs>
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="30" y="30" font-size="19" font-weight="bold">Projectile motion</text>
+    <text x="30" y="56">Initial velocity: horizontal 20 m/s, vertical 15 m/s</text>
+    <text x="30" y="79">g = 10 m/s² · No air resistance · Scale: 10 px/m</text>
+    <text x="30" y="105" font-weight="bold">Total flight time: 3 s</text>
+
+    <rect x="355" y="115" width="210" height="91" rx="5" fill="#f4f7fb" stroke="#c5cdd8"/>
+    <text x="366" y="133" font-size="12">Landing detail, same scale</text>
+    <path d="M 495,140.625 Q 512.5,163.8125 530,190" fill="none" stroke="#2463bd" stroke-width="2.5"/>
+    <path d="M 480,190 H 550" stroke="#485468" stroke-width="2"/>
+    <circle cx="530" cy="190" r="4" fill="#2463bd"/>
+    <text x="366" y="158" font-size="13">landing:</text>
+    <text x="366" y="178" font-size="13">60 m, 0 m</text>
+
+    <path d="M 50,350 H 550" stroke="#485468" stroke-width="2"/>
+    <path d="M 100,350 Q 400,125 700,350" clip-path="url(#mainClip)" fill="none" stroke="#2463bd" stroke-width="3"/>
+    <circle cx="100" cy="350" r="4" fill="#2463bd"/>
+    <circle cx="400" cy="237.5" r="4" fill="#2463bd"/>
+
+    <text x="58" y="325">launch: 0 m, 0 m</text>
+    <text x="310" y="222">apex: 30 m, 11.25 m</text>
+    <text x="355" y="300" font-size="12">Trajectory continues beyond canvas;</text>
+    <text x="355" y="319" font-size="12">landing shown in detail above.</text>
+
+    <path d="M 25,369 H 575" stroke="#d5dbe3"/>
+    <text x="300" y="389" text-anchor="middle" font-size="14">2026-10-25 23:04:38 SGT (UTC+08:00)</text>
+  </g>
+</svg>

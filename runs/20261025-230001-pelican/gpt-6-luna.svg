@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A self-important pelican rides a bicycle, its beak full of traffic tickets, while a duck watches from the roadside.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 3s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .65s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f6e8c8"/>
+  <rect y="0" width="800" height="104" fill="#153b50"/>
+  <text id="title" x="400" y="48" text-anchor="middle" fill="#fff4cf" font-size="30" font-weight="900" letter-spacing="1.3">THE PELICAN COMMUTE</text>
+  <text x="400" y="78" text-anchor="middle" fill="#f7b84b" font-size="16" font-weight="700">“I’m in the fast lane. It’s a pond.”</text>
+
+  <!-- distant scenery -->
+  <circle cx="692" cy="157" r="34" fill="#f4bc58"/>
+  <path d="M0 270 Q115 190 244 263 T504 245 T800 255 V430 H0Z" fill="#b6cc9a"/>
+  <path d="M0 319 Q150 260 300 317 T600 300 T800 311 V440 H0Z" fill="#8dab7b"/>
+  <path d="M0 412 H800 V548 H0Z" fill="#ddc59a"/>
+  <path d="M0 446 Q100 437 200 446 T400 446 T600 446 T800 446" fill="none" stroke="#b79d74" stroke-width="4"/>
+  <path d="M0 503 Q100 494 200 503 T400 503 T600 503 T800 503" fill="none" stroke="#b79d74" stroke-width="3"/>
+
+  <!-- roadside duck and sign -->
+  <g transform="translate(105 367)">
+    <path d="M0 23 Q-7 2 11 -4 Q30 -8 36 11 Q45 22 59 19 L69 25 Q51 34 34 28 Q14 42 0 23Z" fill="#eabf4f" stroke="#684a27" stroke-width="3"/>
+    <circle cx="22" cy="5" r="2.6" fill="#302719"/>
+    <path d="M35 13 L53 17 L38 21Z" fill="#e47636"/>
+    <path d="M8 37 L7 47 M26 37 L27 47" stroke="#684a27" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-4 50 H46" stroke="#684a27" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <path d="M139 326 V290" stroke="#634f39" stroke-width="5"/>
+  <rect x="91" y="268" width="106" height="31" rx="5" fill="#fff4cf" stroke="#634f39" stroke-width="3"/>
+  <text x="144" y="289" text-anchor="middle" fill="#634f39" font-size="12" font-weight="800">SLOW: DUCKS</text>
+
+  <!-- bicycle frame -->
+  <g fill="none" stroke="#183f59" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M307 437 L390 345 L464 437 L307 437 L350 365 L428 365 L464 437"/>
+    <path d="M390 345 L384 329 M373 329 H402"/>
+    <path d="M464 437 L498 344 M483 342 L513 347"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#183f59" stroke-width="4">
+    <circle cx="307" cy="437" r="57"/>
+    <path d="M307 380 V494 M250 437 H364 M267 397 L347 477 M347 397 L267 477"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#183f59" stroke-width="4">
+    <circle cx="464" cy="437" r="57"/>
+    <path d="M464 380 V494 M407 437 H521 M424 397 L504 477 M504 397 L424 477"/>
+  </g>
+  <!-- crank -->
+  <circle cx="390" cy="437" r="7" fill="#f7b84b" stroke="#183f59" stroke-width="3"/>
+  <path d="M390 437 L419 449 M390 437 L373 420" stroke="#183f59" stroke-width="4" stroke-linecap="round"/>
+  <path d="M414 452 H429 M366 416 H381" stroke="#183f59" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- animated rider -->
+  <g class="rider">
+    <!-- tail -->
+    <path d="M326 305 Q282 305 270 324 Q292 334 327 326Z" fill="#f4f0df" stroke="#374d51" stroke-width="3"/>
+    <path d="M282 322 L263 331 L282 334Z" fill="#e0a843"/>
+    <!-- body -->
+    <path d="M326 253 Q355 232 386 254 Q406 275 393 311 Q380 340 346 333 Q319 327 314 298 Q310 274 326 253Z" fill="#f8f3df" stroke="#374d51" stroke-width="4"/>
+    <path d="M343 266 Q365 250 382 270 Q395 288 382 307 Q368 322 346 308 Q332 291 343 266Z" fill="#df6845" stroke="#9c4432" stroke-width="3"/>
+    <!-- neck -->
+    <path d="M365 263 Q378 222 408 207 L430 224 Q412 243 402 282Z" fill="#f8f3df" stroke="#374d51" stroke-width="4"/>
+    <!-- head -->
+    <path d="M391 194 Q407 168 439 178 Q462 186 459 213 Q456 239 427 243 Q400 241 390 218Z" fill="#f8f3df" stroke="#374d51" stroke-width="4"/>
+    <circle cx="437" cy="198" r="4.5" fill="#27333a"/>
+    <path d="M402 209 Q430 203 466 213 Q442 224 407 222Z" fill="#f2b64f" stroke="#9e672e" stroke-width="3"/>
+    <path d="M410 218 Q437 220 460 215" fill="none" stroke="#9e672e" stroke-width="2"/>
+    <!-- traffic tickets in beak -->
+    <path d="M443 205 L449 180 L459 181 L455 211Z" fill="#fff4cf" stroke="#b8493c" stroke-width="2" transform="rotate(12 451 196)"/>
+    <path d="M451 185 L456 185 M450 190 L455 190 M449 195 L454 195" stroke="#b8493c" stroke-width="1.5"/>
+    <path d="M451 213 Q465 220 475 216" fill="none" stroke="#9e672e" stroke-width="2"/>
+    <!-- helmet -->
+    <path d="M390 193 Q396 165 425 165 Q449 165 458 185 L451 190 Q428 180 401 197Z" fill="#ef6d49" stroke="#8b3e33" stroke-width="3"/>
+    <path d="M394 193 Q420 186 455 190" fill="none" stroke="#8b3e33" stroke-width="3"/>
+    <!-- wing and handlebars grip -->
+    <path d="M356 276 Q375 271 382 289 Q378 302 356 303 Q343 293 356 276Z" fill="#f8f3df" stroke="#69777a" stroke-width="3"/>
+    <path d="M381 290 L421 325 L493 345" fill="none" stroke="#374d51" stroke-width="6" stroke-linecap="round"/>
+    <path d="M488 344 L511 347" stroke="#374d51" stroke-width="5" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M347 319 Q365 342 388 357 L409 426" fill="none" stroke="#f2b64f" stroke-width="11" stroke-linecap="round"/>
+    <path d="M369 322 Q374 352 395 370 L378 416" fill="none" stroke="#f2b64f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M402 423 L423 429" stroke="#374d51" stroke-width="6" stroke-linecap="round"/>
+    <path d="M372 414 L389 421" stroke="#374d51" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- comic motion marks -->
+  <path d="M252 313 l-22 -8 M247 327 l-25 2 M520 302 l20 -9" stroke="#ef6d49" stroke-width="4" stroke-linecap="round"/>
+  <text x="591" y="356" fill="#153b50" font-size="14" font-weight="800" transform="rotate(-7 591 356)">HONK?</text>
+  <path d="M585 360 Q567 371 552 382" fill="none" stroke="#153b50" stroke-width="2"/>
+
+  <!-- footer with clear space -->
+  <rect y="548" width="800" height="52" fill="#153b50"/>
+  <text x="400" y="580" text-anchor="middle" fill="#fff4cf" font-size="15" font-weight="700">2026-10-25 23:02:59 SGT (UTC+08:00)</text>
+</svg>
