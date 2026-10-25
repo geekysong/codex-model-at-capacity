@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Fish: a pelican rides a bicycle</title>
+  <desc id="desc">An earnest pelican pedals a tiny bicycle with an enormous beak full of fish. The wheels spin, the pedals turn, and the pelican bobs continuously.</desc>
+  <defs>
+    <pattern id="paper" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="7" r=".7" fill="#dabf91" opacity=".25"/>
+      <circle cx="15" cy="16" r=".6" fill="#dabf91" opacity=".2"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="77" fill="#fff8e5" stroke="#233642" stroke-width="10"/>
+      <circle r="66" fill="none" stroke="#a4b6b8" stroke-width="3"/>
+      <g stroke="#738c96" stroke-width="3">
+        <path d="M-65 0H65M0-65V65M-46-46L46 46M-46 46L46-46"/>
+      </g>
+      <path d="M-14-67H8" stroke="#f6b742" stroke-width="7" stroke-linecap="round"/>
+      <circle r="9" fill="#233642"/>
+    </g>
+  </defs>
+
+  <path fill="#fff5db" d="M0 0H800V600H0z"/>
+  <path fill="url(#paper)" d="M0 0H800V600H0z"/>
+  <path d="M0 340Q150 289 290 330T570 319T800 330V490H0Z" fill="#d6e4cd"/>
+  <g fill="#fffdf2" opacity=".85">
+    <path d="M62 174q9-28 34-16q16-37 42-8q28-8 36 24Z"/>
+    <path d="M635 184q12-27 35-15q19-30 39-2q27-5 32 17Z"/>
+  </g>
+
+  <text x="400" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="47" font-weight="900" letter-spacing="3" fill="#233642">TOUR DE FISH</text>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#aa4934">ONE BIRD. TWO WHEELS. A VERY LARGE LUNCH.</text>
+
+  <!-- Speech balloon -->
+  <path d="M44 210Q44 194 61 194H241Q258 194 258 211V254Q258 270 242 270H201L220 292L177 270H61Q44 270 44 253Z" fill="#fffdf5" stroke="#233642" stroke-width="3"/>
+  <text x="151" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#233642">
+    <tspan x="151">“It’s called</tspan>
+    <tspan x="151" dy="25">carb loading.”</tspan>
+  </text>
+
+  <!-- Road and perpetual motion marks -->
+  <path d="M0 453H800V495H0Z" fill="#e2cda6"/>
+  <path d="M34 457H765" stroke="#233642" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#aa9471" stroke-width="3" stroke-linecap="round">
+    <path d="M85 476H145M420 480H487M648 473H718">
+      <animate attributeName="opacity" values=".3;1;.3" dur="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <ellipse cx="411" cy="450" rx="245" ry="10" fill="#233642" opacity=".12"/>
+
+  <!-- Rotating wheels -->
+  <g transform="translate(263 374)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(565 374)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g stroke="#233642" stroke-width="13" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M263 374L325 282L390 374ZM325 282H510L390 374M510 282L565 374"/>
+  </g>
+  <g stroke="#df6049" stroke-width="7" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M263 374L325 282L390 374ZM325 282H510L390 374M510 282L565 374"/>
+  </g>
+  <path d="M325 282L315 256M510 282L496 241L526 226" fill="none" stroke="#233642" stroke-width="9" stroke-linecap="round"/>
+  <path d="M289 255H340" stroke="#233642" stroke-width="13" stroke-linecap="round"/>
+  <path d="M516 229L539 223" stroke="#c18b57" stroke-width="12" stroke-linecap="round"/>
+  <path d="M263 374H390" stroke="#233642" stroke-width="4"/>
+  <circle cx="390" cy="374" r="24" fill="#f9d066" stroke="#233642" stroke-width="4"/>
+
+  <!-- Bobbing pelican -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".7s" repeatCount="indefinite"/>
+
+    <!-- Tail and plump body -->
+    <path d="M307 216L267 199L282 235L256 226Q271 260 315 262" fill="#fffdf2" stroke="#233642" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M318 178Q357 154 397 185Q431 224 397 261Q358 286 308 258Q284 233 302 199Z" fill="#fffdf2" stroke="#233642" stroke-width="4"/>
+    <path d="M318 205Q346 195 370 223L384 244Q356 258 327 237" fill="#d5dfe0" stroke="#233642" stroke-width="4" stroke-linecap="round"/>
+    <path d="M332 217L356 236M342 211L368 234" stroke="#9caeb1" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Long neck -->
+    <path d="M380 225Q403 203 403 173Q397 141 424 136Q451 136 450 160Q437 197 430 218Q421 245 397 255" fill="#fffdf2" stroke="#233642" stroke-width="4"/>
+
+    <!-- Dramatically overloaded pouch -->
+    <path d="M446 160L681 182Q648 248 568 259Q483 269 447 181Z" fill="#f0b65b" stroke="#233642" stroke-width="4"/>
+    <path d="M467 186Q498 239 554 243" fill="none" stroke="#d28b3c" stroke-width="3"/>
+
+    <!-- Fish passengers -->
+    <g stroke="#233642" stroke-width="3" stroke-linejoin="round">
+      <path d="M493 207Q516 181 545 202L562 188L560 220L544 211Q516 232 493 207Z" fill="#8bbeb4"/>
+      <circle cx="505" cy="205" r="3" fill="#233642" stroke="none"/>
+      <path d="M578 216Q599 188 625 204L641 190L640 220L623 212Q600 237 578 216Z" fill="#a0c6d8"/>
+      <circle cx="590" cy="212" r="3" fill="#233642" stroke="none"/>
+    </g>
+    <path d="M445 156L687 180L449 184" fill="#ffd779" stroke="#233642" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M671 180L688 180L679 189" fill="#d57939" stroke="#233642" stroke-width="3"/>
+
+    <!-- Face and tiny racing helmet -->
+    <circle cx="435" cy="152" r="9" fill="white" stroke="#233642" stroke-width="3"/>
+    <circle cx="439" cy="153" r="4" fill="#233642"/>
+    <path d="M425 138L444 142" stroke="#233642" stroke-width="4" stroke-linecap="round"/>
+    <path d="M400 135Q398 108 426 108Q452 110 455 135Z" fill="#df6049" stroke="#233642" stroke-width="4"/>
+    <path d="M416 113L413 128M429 113L428 128M441 117L443 128" stroke="#233642" stroke-width="4" stroke-linecap="round"/>
+    <path d="M405 135Q408 165 422 168" fill="none" stroke="#233642" stroke-width="3"/>
+
+    <!-- Wing reaches handlebars -->
+    <path d="M376 203Q430 213 462 226L518 227Q521 237 507 240L458 240Q410 234 384 225" fill="#fffdf2" stroke="#233642" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Racing bib -->
+    <path d="M296 228L324 236L316 267L288 259Z" fill="#f7cb52" stroke="#233642" stroke-width="3"/>
+    <text x="307" y="255" text-anchor="middle" transform="rotate(15 307 255)" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#233642">01</text>
+
+    <!-- Flexing leg -->
+    <path d="M356 263L349 304L410 348" fill="none" stroke="#233642" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="d" values="M356 263L349 304L410 348;M356 263L378 312L370 399;M356 263L349 304L410 348" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M356 263L349 304L410 348" fill="none" stroke="#e4a342" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="d" values="M356 263L349 304L410 348;M356 263L378 312L370 399;M356 263L349 304L410 348" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M400 342L425 346L433 356L405 355Z" fill="#edaf4d" stroke="#233642" stroke-width="3">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-40 51;0 0" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Turning crank -->
+  <g transform="translate(390 374)">
+    <g>
+      <path d="M-19 25L19-25" stroke="#233642" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-29 25H-9M9-25H29" stroke="#233642" stroke-width="7" stroke-linecap="round"/>
+      <circle r="6" fill="#fff5db" stroke="#233642" stroke-width="3"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#233642" stroke-width="3" stroke-linecap="round">
+    <path d="M182 302H218M166 317H207M180 332H198"/>
+    <path d="M470 120L475 112M480 132L491 128"/>
+  </g>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <path d="M0 495H800V600H0Z" fill="#233642"/>
+  <text x="400" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff5db">He took up cycling. His lunch came along for the ride.</text>
+  <path d="M90 552H710" stroke="#718088" stroke-width="1"/>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#ffe2a0">2026-10-26 06:30:01 SGT (UTC+08:00)</text>
+</svg>
