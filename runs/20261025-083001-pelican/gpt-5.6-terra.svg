@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Past Common Sense</title>
+  <desc id="desc">A satirical cartoon of an expressive pelican riding a bicycle, with spinning wheels and bobbing motion.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.2s linear infinite; }
+    .rider { transform-box: fill-box; transform-origin: 50% 100%; animation: bob .6s ease-in-out infinite alternate; }
+    .leg { transform-box: fill-box; transform-origin: top center; animation: pedal .6s linear infinite alternate; }
+    .leg2 { transform-box: fill-box; transform-origin: top center; animation: pedal .6s linear infinite alternate-reverse; }
+    .cloud { animation: drift 8s linear infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedal { to { transform: rotate(25deg); } }
+    @keyframes drift { to { transform: translateX(35px); } }
+  </style>
+
+  <rect width="800" height="600" fill="#bcecff"/>
+  <path d="M0 330 Q100 280 200 330 T400 325 T600 330 T800 300 V470 H0Z" fill="#8bd17c"/>
+  <path d="M0 396 Q160 370 310 400 T590 390 T800 405 V470 H0Z" fill="#67b85f"/>
+  <path d="M0 470 H800 V505 H0Z" fill="#545454"/>
+  <path d="M0 495 H800" stroke="#f8dd55" stroke-width="7" stroke-dasharray="42 27"/>
+
+  <g class="cloud" fill="#fff" opacity=".9">
+    <ellipse cx="110" cy="102" rx="45" ry="19"/><ellipse cx="147" cy="94" rx="32" ry="25"/><ellipse cx="177" cy="106" rx="40" ry="17"/>
+    <ellipse cx="608" cy="126" rx="42" ry="17"/><ellipse cx="638" cy="116" rx="27" ry="23"/><ellipse cx="670" cy="128" rx="37" ry="16"/>
+  </g>
+
+  <text x="400" y="58" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="33" fill="#24334a">PELICAN PEDALS PAST COMMON SENSE</text>
+  <text x="400" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#30445e">“If birds can fly, why pay for parking?”</text>
+
+  <g stroke="#26313c" stroke-linecap="round" stroke-linejoin="round">
+    <!-- bicycle frame -->
+    <g fill="none" stroke-width="7">
+      <path d="M254 420 L363 420 L309 332 Z" stroke="#e94747"/>
+      <path d="M363 420 L445 337 L309 332" stroke="#e94747"/>
+      <path d="M445 337 L477 420 L363 420" stroke="#e94747"/>
+      <path d="M309 332 L295 312" stroke="#26313c"/>
+      <path d="M277 310 L316 310" stroke="#26313c"/>
+      <path d="M445 337 L461 297 L486 288" stroke="#26313c"/>
+      <path d="M476 286 L505 292" stroke="#26313c"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="254" cy="420" r="66" fill="#f8f4e9" stroke-width="8"/>
+      <circle cx="254" cy="420" r="8" fill="#26313c" stroke-width="4"/>
+      <path d="M254 354V486 M188 420H320 M207 373L301 467 M301 373L207 467" fill="none" stroke="#87919b" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="477" cy="420" r="66" fill="#f8f4e9" stroke-width="8"/>
+      <circle cx="477" cy="420" r="8" fill="#26313c" stroke-width="4"/>
+      <path d="M477 354V486 M411 420H543 M430 373L524 467 M524 373L430 467" fill="none" stroke="#87919b" stroke-width="3"/>
+    </g>
+
+    <!-- crank -->
+    <circle cx="363" cy="420" r="17" fill="#f4c640" stroke-width="5"/>
+    <path d="M363 420 L391 438 M363 420 L335 402" fill="none" stroke-width="5"/>
+    <path d="M384 441 H404 M321 402 H342" fill="none" stroke-width="7"/>
+
+    <!-- rider -->
+    <g class="rider">
+      <!-- tail/body -->
+      <ellipse cx="330" cy="258" rx="77" ry="100" fill="#f5f1df" stroke-width="6"/>
+      <path d="M267 285 Q225 304 236 345 Q269 320 286 300" fill="#f5f1df" stroke-width="6"/>
+      <!-- wing -->
+      <path d="M323 263 Q260 275 276 347 Q315 327 345 283" fill="#d4d9d1" stroke-width="6"/>
+      <path d="M286 319 Q305 303 321 296" fill="none" stroke="#87919b" stroke-width="4"/>
+
+      <!-- head -->
+      <ellipse cx="337" cy="167" rx="59" ry="69" fill="#f5f1df" stroke-width="6"/>
+      <!-- eye -->
+      <ellipse cx="358" cy="145" rx="15" ry="18" fill="#fff" stroke-width="4"/>
+      <circle cx="362" cy="148" r="7" fill="#26313c"/>
+      <path d="M345 119 Q362 106 380 120" fill="none" stroke-width="6"/>
+      <!-- beak and pouch -->
+      <path d="M374 157 Q452 145 497 177 Q445 207 378 199 Z" fill="#f6b544" stroke-width="6"/>
+      <path d="M382 199 Q442 199 463 217 Q408 255 359 214 Z" fill="#efa54a" stroke-width="6"/>
+      <path d="M396 207 Q426 219 447 207" fill="none" stroke="#b76531" stroke-width="4"/>
+      <!-- smug grin -->
+      <path d="M354 181 Q365 190 376 181" fill="none" stroke-width="4"/>
+
+      <!-- helmet -->
+      <path d="M280 127 Q315 72 376 100 Q394 110 397 130 L278 130Z" fill="#e94747" stroke-width="6"/>
+      <path d="M292 115 Q332 91 374 112" fill="none" stroke="#ff8b70" stroke-width="6"/>
+
+      <!-- trousers -->
+      <path d="M302 337 Q342 322 376 344 L365 390 L317 388Z" fill="#527cc4" stroke-width="6"/>
+      <!-- legs -->
+      <g class="leg">
+        <path d="M325 373 L350 420 L390 438" fill="none" stroke="#f6a95a" stroke-width="15"/>
+        <path d="M385 440 L411 440" fill="none" stroke="#26313c" stroke-width="10"/>
+      </g>
+      <g class="leg2">
+        <path d="M358 373 L337 397 L334 402" fill="none" stroke="#f6a95a" stroke-width="15"/>
+        <path d="M325 402 L348 402" fill="none" stroke="#26313c" stroke-width="10"/>
+      </g>
+      <!-- hand on handlebar -->
+      <path d="M355 274 Q404 279 468 292" fill="none" stroke="#f5f1df" stroke-width="18"/>
+      <circle cx="471" cy="292" r="11" fill="#f6a95a" stroke-width="4"/>
+    </g>
+
+    <!-- roadside satire sign -->
+    <path d="M650 326 V462" stroke="#725239" stroke-width="10"/>
+    <rect x="582" y="253" width="139" height="82" rx="10" fill="#fff5bd" stroke-width="6"/>
+    <text x="651" y="282" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" fill="#26313c">BIKE LANE</text>
+    <text x="651" y="310" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" fill="#e94747">FOR BIRDS?</text>
+  </g>
+
+  <rect y="505" width="800" height="95" fill="#22364d"/>
+  <text x="400" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#fff">A pelican rides two wheels because one bad idea deserved momentum.</text>
+  <text x="400" y="578" text-anchor="middle" font-family="monospace" font-size="15" fill="#bcecff">2026-10-25 08:32:17 SGT (UTC+08:00)</text>
+</svg>

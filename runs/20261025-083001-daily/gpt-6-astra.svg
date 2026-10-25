@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <clipPath id="main-clip">
+      <rect x="50" y="220" width="500" height="135"/>
+    </clipPath>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172334">
+    <text x="30" y="27" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="30" y="52">Initial velocity: horizontal 20 m/s, vertical 15 m/s</text>
+    <text x="30" y="75">g = 10 m/s² · No air resistance · Scale: 10 px/m</text>
+    <text x="30" y="104" font-weight="bold">Total flight time: 3 s</text>
+    <text x="30" y="132">Landing is at x = 700 px;</text>
+    <text x="30" y="152">the inset shows the off-canvas continuation.</text>
+  </g>
+
+  <!-- Main coordinates: x = 100 + 200t, y = 350 - 150t + 50t². -->
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#374151" stroke-width="2"/>
+  <g clip-path="url(#main-clip)">
+    <path d="M 100,350 Q 400,125 700,350"
+          fill="none" stroke="#1769aa" stroke-width="3"/>
+    <circle cx="700" cy="350" r="4" fill="#172334"/>
+  </g>
+  <circle cx="100" cy="350" r="4" fill="#172334"/>
+  <circle cx="400" cy="237.5" r="4" fill="#172334"/>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172334">
+    <text x="55" y="321">launch: 0 m, 0 m</text>
+    <text x="285" y="267">apex: 30 m, 11.25 m</text>
+    <text x="450" y="295" font-size="12">Continues in inset</text>
+  </g>
+
+  <!-- Inset preserves the scale, translating the remaining trajectory by (-140,-160). -->
+  <rect x="395" y="91" width="185" height="126" rx="5"
+        fill="#f4f8fc" stroke="#aab8c5"/>
+  <g transform="translate(-140,-160)">
+    <line x1="550" y1="350" x2="710" y2="350"
+          stroke="#374151" stroke-width="2"/>
+    <path d="M 550,265.625 Q 625,293.75 700,350"
+          fill="none" stroke="#1769aa" stroke-width="3"/>
+    <circle cx="700" cy="350" r="4" fill="#172334"/>
+  </g>
+  <text x="410" y="210" font-family="Arial, sans-serif" font-size="14"
+        fill="#172334">landing: 60 m, 0 m</text>
+
+  <line x1="30" y1="366" x2="570" y2="366" stroke="#d1d5db"/>
+  <text x="300" y="388" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="14" fill="#374151">2026-10-25 08:33:05 SGT (UTC+08:00)</text>
+</svg>
