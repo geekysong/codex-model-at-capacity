@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Great Beak Escape</title>
+  <desc id="desc">A smug pelican pedals a bicycle while a fish rides in its bill. The wheels spin and the pelican bobs.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.8s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-5px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bdeeff"/>
+  <circle cx="682" cy="119" r="48" fill="#ffd166"/>
+  <path d="M0 353 Q118 309 241 351 T487 344 T800 350 V520 H0Z" fill="#70c991"/>
+  <path d="M0 393 Q165 358 328 393 T800 389" fill="none" stroke="#52b47b" stroke-width="5"/>
+  <path d="M0 470 H800" stroke="#4c5364" stroke-width="74"/>
+  <path d="M0 470 H800" stroke="#fff4c4" stroke-width="5" stroke-dasharray="34 28"/>
+
+  <text id="title" x="400" y="54" text-anchor="middle" font-size="32" font-weight="900" fill="#18324b">THE GREAT BEAK ESCAPE</text>
+  <text x="400" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#35536a">“I’m cutting carbs,” he says, carrying lunch in his face.</text>
+
+  <!-- bicycle frame -->
+  <g fill="none" stroke="#e45757" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M206 397 L318 397 L373 313 L277 313 L206 397"/>
+    <path d="M318 397 L350 286 M350 286 L389 286"/>
+    <path d="M373 313 L430 397"/>
+    <path d="M430 397 L463 313"/>
+  </g>
+  <path d="M332 279 H371" stroke="#25364a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M445 307 L476 307" stroke="#25364a" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- spinning wheels -->
+  <g class="wheel" fill="#fff" fill-opacity=".12" stroke="#26384c" stroke-width="8">
+    <circle cx="206" cy="397" r="70"/>
+    <circle cx="206" cy="397" r="7" fill="#e45757"/>
+    <path d="M206 327V467 M136 397H276 M156 347L256 447 M256 347L156 447" stroke-width="3"/>
+  </g>
+  <g class="wheel" fill="#fff" fill-opacity=".12" stroke="#26384c" stroke-width="8">
+    <circle cx="463" cy="397" r="70"/>
+    <circle cx="463" cy="397" r="7" fill="#e45757"/>
+    <path d="M463 327V467 M393 397H533 M413 347L513 447 M513 347L413 447" stroke-width="3"/>
+  </g>
+
+  <!-- pedals and feet -->
+  <circle cx="318" cy="397" r="12" fill="#ffd166" stroke="#26384c" stroke-width="4"/>
+  <g class="rider">
+    <!-- legs -->
+    <path d="M329 271 Q354 304 337 353 L318 397" fill="none" stroke="#f2a900" stroke-width="17" stroke-linecap="round"/>
+    <path d="M329 271 Q302 310 319 346 L358 368" fill="none" stroke="#f2a900" stroke-width="17" stroke-linecap="round"/>
+    <path d="M304 279 Q323 265 348 280" fill="none" stroke="#26384c" stroke-width="10" stroke-linecap="round"/>
+    <path d="M358 368 l19 5 M309 398 l18 5" stroke="#26384c" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- body -->
+    <path d="M280 172 Q333 159 361 202 L343 277 Q307 288 274 260Z" fill="#f7f3e8" stroke="#26384c" stroke-width="5"/>
+    <path d="M298 183 Q331 190 341 222" fill="none" stroke="#e7a93d" stroke-width="8" stroke-linecap="round"/>
+    <!-- wing -->
+    <path d="M288 218 Q321 199 340 229 Q328 253 292 253 Q275 240 288 218Z" fill="#fff" stroke="#26384c" stroke-width="4"/>
+    <path d="M297 226 l25 13 M291 237 l25 10" stroke="#d2d6da" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- neck and head -->
+    <path d="M301 188 Q285 144 303 121 Q318 105 346 119 L358 155 Q347 182 326 196Z" fill="#f7f3e8" stroke="#26384c" stroke-width="5"/>
+    <ellipse cx="334" cy="115" rx="42" ry="34" fill="#f7f3e8" stroke="#26384c" stroke-width="5"/>
+    <!-- bill -->
+    <path d="M365 117 Q411 105 455 119 Q425 137 374 136Z" fill="#ffb52e" stroke="#26384c" stroke-width="4"/>
+    <path d="M375 134 Q408 140 435 132 Q427 157 402 159 Q382 153 375 134Z" fill="#f27c5b" stroke="#26384c" stroke-width="4"/>
+    <!-- fish in bill -->
+    <path d="M403 142 Q418 130 433 142 Q418 154 403 142Z" fill="#5bb7d4" stroke="#26384c" stroke-width="2"/>
+    <path d="M432 142 l10 -8 v16Z" fill="#5bb7d4" stroke="#26384c" stroke-width="2"/>
+    <circle cx="411" cy="140" r="1.8" fill="#26384c"/>
+    <!-- eye and expression -->
+    <circle cx="345" cy="109" r="8" fill="#fff" stroke="#26384c" stroke-width="2"/>
+    <circle cx="348" cy="110" r="3.5" fill="#26384c"/>
+    <path d="M334 96 Q346 88 359 96" fill="none" stroke="#26384c" stroke-width="4" stroke-linecap="round"/>
+    <path d="M293 159 Q277 148 269 158" fill="none" stroke="#f27c5b" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- motion marks and joke bubble -->
+  <path d="M124 262 l-31 -8 M133 278 l-38 2 M135 294 l-29 12" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M501 177 Q510 146 557 146 H680 Q711 146 711 176 V212 Q711 239 681 239 H624 L596 263 L598 239 H557 Q524 239 517 216Z" fill="#fff" stroke="#26384c" stroke-width="4"/>
+  <text x="614" y="181" text-anchor="middle" font-size="15" font-weight="800" fill="#26384c">“No car. I’m</text>
+  <text x="614" y="202" text-anchor="middle" font-size="15" font-weight="800" fill="#26384c">already a vehicle.”</text>
+
+  <!-- roomy footer -->
+  <rect x="0" y="530" width="800" height="70" fill="#20334a"/>
+  <text x="400" y="560" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">Pelican power: one fish, two wheels, absolutely no parking bill.</text>
+  <text x="400" y="585" text-anchor="middle" font-size="15" font-weight="600" fill="#ffe39a">2026-10-26 02:02:15 SGT (UTC+08:00)</text>
+</svg>
