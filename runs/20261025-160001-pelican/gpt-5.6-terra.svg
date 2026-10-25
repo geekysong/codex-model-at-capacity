@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Past the Point of Reason</title>
+  <desc id="desc">A satirical cartoon of a determined pelican riding a bicycle, with spinning wheels and a bobbing ride.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#86d9f4"/>
+      <stop offset="1" stop-color="#eaf8bd"/>
+    </linearGradient>
+    <style>
+      .ink { stroke:#192737; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#192737; stroke-width:3; stroke-linecap:round; }
+      .title { font-family:Arial, sans-serif; font-weight:900; fill:#192737; }
+      .label { font-family:Arial, sans-serif; font-weight:700; fill:#192737; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 1s linear infinite; }
+      .ride { transform-box:fill-box; transform-origin:center bottom; animation:bob .72s ease-in-out infinite alternate; }
+      .foot { transform-box:fill-box; transform-origin:top center; animation:pedal .72s ease-in-out infinite alternate; }
+      .foot2 { transform-box:fill-box; transform-origin:top center; animation:pedal .72s ease-in-out infinite alternate-reverse; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { to { transform:translateY(-8px) rotate(-1deg); } }
+      @keyframes pedal { to { transform:rotate(16deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 312 Q95 270 190 313 T380 300 T575 310 T800 270 V448 H0Z" fill="#77bf71"/>
+  <path d="M0 390 Q130 365 257 393 T530 379 T800 394 V482 H0Z" fill="#3e9759"/>
+  <path d="M0 454 H800 V520 H0Z" fill="#596a74"/>
+  <path d="M0 478 H800" stroke="#f9dc54" stroke-width="8" stroke-dasharray="40 26"/>
+
+  <g opacity=".95">
+    <path d="M80 126v156M47 169h66M62 149l18-22 18 22M65 192h28" class="thin" fill="none"/>
+    <rect x="40" y="181" width="81" height="53" rx="8" fill="#fff8dc" class="ink"/>
+    <text x="80" y="204" text-anchor="middle" class="label" font-size="13">BIRDS</text>
+    <text x="80" y="221" text-anchor="middle" class="label" font-size="13">ONLY?</text>
+  </g>
+
+  <text x="400" y="58" text-anchor="middle" class="title" font-size="35">PELICAN PEDALS PAST THE POINT OF REASON</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="18">“Traffic is for the land birds.”</text>
+
+  <g class="ride">
+    <g class="wheel">
+      <circle cx="282" cy="420" r="72" fill="#eaf1f1" class="ink"/>
+      <circle cx="282" cy="420" r="11" fill="#f8b23d" class="ink"/>
+      <g class="thin" fill="none">
+        <path d="M282 348V492M210 420H354M231 369l102 102M333 369L231 471"/>
+      </g>
+      <circle cx="282" cy="420" r="62" fill="none" stroke="#567078" stroke-width="8"/>
+    </g>
+    <g class="wheel">
+      <circle cx="524" cy="420" r="72" fill="#eaf1f1" class="ink"/>
+      <circle cx="524" cy="420" r="11" fill="#f8b23d" class="ink"/>
+      <g class="thin" fill="none">
+        <path d="M524 348V492M452 420H596M473 369l102 102M575 369L473 471"/>
+      </g>
+      <circle cx="524" cy="420" r="62" fill="none" stroke="#567078" stroke-width="8"/>
+    </g>
+
+    <path d="M282 420 L354 315 L452 420 Z M354 315 L492 318 L524 420 M452 420 L492 318" fill="none" stroke="#e74744" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M492 318 L519 272 L560 272 M519 272 L549 272" fill="none" class="ink"/>
+    <path d="M336 314h42" class="ink"/>
+    <circle cx="452" cy="420" r="22" fill="#f8b23d" class="ink"/>
+    <path d="M452 420l25 13M452 420l-25-13" class="ink"/>
+
+    <g class="foot">
+      <path d="M419 334 Q405 375 431 407" fill="none" stroke="#ef9337" stroke-width="18" stroke-linecap="round"/>
+      <path d="M425 406q17 7 35 0" fill="none" stroke="#f8b23d" stroke-width="13" stroke-linecap="round"/>
+    </g>
+    <g class="foot2">
+      <path d="M461 336 Q484 373 473 431" fill="none" stroke="#ef9337" stroke-width="18" stroke-linecap="round"/>
+      <path d="M468 432q18 7 36-1" fill="none" stroke="#f8b23d" stroke-width="13" stroke-linecap="round"/>
+    </g>
+
+    <path d="M357 303 Q349 223 408 181 Q470 139 528 188 Q561 217 537 297 Q513 344 442 338 Q382 339 357 303Z" fill="#f4f1dd" class="ink"/>
+    <path d="M383 243 Q393 183 447 176 Q502 173 521 219 Q466 231 383 243Z" fill="#4c84a8" class="ink"/>
+    <path d="M381 239 Q323 244 286 275 Q339 294 414 279 Q432 259 381 239Z" fill="#f6aa32" class="ink"/>
+    <path d="M292 275 Q333 291 397 280 Q374 346 323 330 Q294 316 292 275Z" fill="#f9d34f" class="ink"/>
+    <path d="M411 236 Q442 213 481 226" fill="none" class="thin"/>
+    <ellipse cx="449" cy="222" rx="11" ry="14" fill="#fff" class="ink"/>
+    <circle cx="452" cy="224" r="5" fill="#192737"/>
+    <path d="M469 258q25 16 43-2" fill="none" class="thin"/>
+    <path d="M383 287 Q435 315 516 289" fill="none" stroke="#d6d6bd" stroke-width="7" stroke-linecap="round"/>
+    <path d="M356 282 Q317 302 316 336 Q354 327 382 306" fill="#f4f1dd" class="ink"/>
+    <path d="M510 284 Q547 297 563 326" fill="none" stroke="#f4f1dd" stroke-width="22" stroke-linecap="round"/>
+    <path d="M555 323l12-43" class="ink"/>
+    <path d="M567 280l-5-24M567 280l21-15" class="thin"/>
+  </g>
+
+  <g transform="translate(605 168)">
+    <path d="M0 42q47-64 101 0" fill="#fff" class="ink"/>
+    <path d="M9 44h85v48H9z" fill="#fff" class="ink"/>
+    <text x="51" y="68" text-anchor="middle" class="label" font-size="14">NO HANDS!</text>
+    <text x="51" y="85" text-anchor="middle" class="label" font-size="14">JUST WINGS!</text>
+  </g>
+
+  <rect x="0" y="520" width="800" height="80" fill="#192737"/>
+  <text x="28" y="550" class="label" font-size="20" fill="#fff">AERO-DYNAMIC. ECONOMICALLY QUESTIONABLE. ABSOLUTELY ON TWO WHEELS.</text>
+  <text x="28" y="578" font-family="Arial, sans-serif" font-size="15" fill="#d9edf1">2026-10-25 16:02:53 SGT (UTC+08:00)</text>
+</svg>

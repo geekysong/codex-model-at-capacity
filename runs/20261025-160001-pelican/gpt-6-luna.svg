@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Cycle of Beakruptcy</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a sign warning of a steep hill. The wheels spin and the pelican bobs as it rides.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#183044;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f8fbf3;stroke:#183044;stroke-width:8}
+      .spoke{stroke:#88a5aa;stroke-width:2}
+      .type{font-family:Arial,Helvetica,sans-serif}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes ride{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 1.8s linear infinite}
+      .ride{transform-box:fill-box;transform-origin:center;animation:ride .7s ease-in-out infinite}
+      @media(prefers-reduced-motion:reduce){.spin,.ride{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#d8f2ef"/>
+  <rect y="410" width="800" height="112" fill="#a8d179"/>
+  <path d="M0 425 Q150 385 300 425 T600 420 T800 425" fill="none" stroke="#78ad62" stroke-width="6"/>
+  <circle cx="100" cy="95" r="42" fill="#ffd66b"/>
+  <path d="M0 495 Q180 468 360 495 T800 485" fill="none" stroke="#eff2dc" stroke-width="18"/>
+  <path d="M0 508 Q180 481 360 508 T800 498" fill="none" stroke="#183044" stroke-width="3" stroke-dasharray="18 20"/>
+
+  <text id="title" x="400" y="52" text-anchor="middle" class="type" font-size="32" font-weight="900" letter-spacing="1.2" fill="#183044">CYCLE OF BEAKRUPTCY</text>
+  <text x="400" y="80" text-anchor="middle" class="type" font-size="16" font-weight="700" fill="#315469">“I’m not carrying a fish. I’m carrying the team.”</text>
+
+  <!-- A very unhelpful hill sign -->
+  <g transform="translate(633 176)">
+    <path d="M0 87V230" class="ink" fill="none"/>
+    <path d="M-62 0H64V87H-62Z" fill="#fff6d9" class="ink"/>
+    <text x="1" y="30" text-anchor="middle" class="type" font-size="14" font-weight="900" fill="#183044">HILL AHEAD</text>
+    <path d="M-38 65L-8 42L10 57L37 34" fill="none" stroke="#e36c53" stroke-width="6" stroke-linecap="round"/>
+    <path d="M28 34H37V43" fill="none" stroke="#e36c53" stroke-width="5" stroke-linecap="round"/>
+    <text x="1" y="77" text-anchor="middle" class="type" font-size="12" font-weight="800" fill="#183044">GOOD LUCK, BIRD</text>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" class="ink">
+    <path d="M225 420L337 420L394 324L300 324L225 420"/>
+    <path d="M337 420L390 420L394 324"/>
+    <path d="M300 324L286 310M273 310H300"/>
+    <path d="M394 324L413 305M407 301L423 309"/>
+    <path d="M337 420L323 441M308 442H341"/>
+  </g>
+  <g class="spin">
+    <circle class="wheel" cx="225" cy="420" r="69"/>
+    <path class="spoke" d="M225 351V489M156 420H294M176 371L274 469M274 371L176 469"/>
+    <circle cx="225" cy="420" r="7" fill="#e36c53"/>
+  </g>
+  <g class="spin">
+    <circle class="wheel" cx="390" cy="420" r="69"/>
+    <path class="spoke" d="M390 351V489M321 420H459M341 371L439 469M439 371L341 469"/>
+    <circle cx="390" cy="420" r="7" fill="#e36c53"/>
+  </g>
+  <path d="M337 420L359 397" fill="none" class="ink"/>
+  <circle cx="359" cy="397" r="8" fill="#ffd66b" class="ink"/>
+  <path d="M359 397L382 420M359 397L338 374" fill="none" class="ink"/>
+  <path d="M377 420H390M329 374H347" fill="none" class="ink"/>
+
+  <!-- Pedaling pelican -->
+  <g class="ride">
+    <!-- tail feathers -->
+    <path d="M290 238Q262 220 244 233Q262 253 288 253Z" fill="#4fa8a0" class="ink"/>
+    <!-- body -->
+    <ellipse cx="341" cy="242" rx="60" ry="75" fill="#fffdf1" class="ink"/>
+    <path d="M313 252Q344 227 376 247Q363 282 329 290Z" fill="#72c8bf" stroke="#183044" stroke-width="4"/>
+    <!-- neck and head -->
+    <path d="M365 233Q379 189 361 159Q350 141 331 150Q345 178 338 213" fill="#fffdf1" class="ink"/>
+    <ellipse cx="351" cy="145" rx="45" ry="37" fill="#fffdf1" class="ink"/>
+    <!-- crest -->
+    <path d="M326 115L321 99L339 111L347 93L354 111L371 101L367 120" fill="#e36c53" class="ink"/>
+    <!-- beak -->
+    <path d="M386 143Q446 137 469 158Q445 174 389 159Z" fill="#f3ae45" class="ink"/>
+    <path d="M390 157Q429 165 458 158Q440 185 405 177Q391 172 390 157Z" fill="#f27f62" class="ink"/>
+    <path d="M411 163Q424 168 439 164" fill="none" stroke="#9b4a47" stroke-width="3"/>
+    <!-- eye and expression -->
+    <circle cx="365" cy="138" r="5.5" fill="#183044"/>
+    <path d="M355 128Q365 122 376 128" fill="none" stroke="#183044" stroke-width="3"/>
+    <path d="M373 183Q380 190 386 183" fill="none" stroke="#e98b77" stroke-width="4" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M306 137Q311 97 350 97Q380 98 390 126L307 132Z" fill="#f2c84b" class="ink"/>
+    <path d="M309 133Q346 132 389 127" fill="none" stroke="#183044" stroke-width="4"/>
+    <path d="M347 100L344 131M326 106L329 131" fill="none" stroke="#fff3bd" stroke-width="3"/>
+    <!-- scarf -->
+    <path d="M326 195Q348 204 369 192L377 209Q353 222 329 211Z" fill="#e36c53" class="ink"/>
+    <path d="M371 204L389 232L374 227L379 241L357 214Z" fill="#e36c53" class="ink"/>
+    <!-- wing on handlebars -->
+    <path d="M371 239Q395 224 410 239L394 263L378 264" fill="#fffdf1" class="ink"/>
+    <path d="M398 248L413 307" fill="none" class="ink"/>
+    <!-- feet pedaling -->
+    <path d="M329 296Q345 321 353 352L339 374" fill="none" class="ink"/>
+    <path d="M374 291Q365 324 359 397" fill="none" class="ink"/>
+    <path d="M326 372Q337 365 348 373L350 380L324 382Z" fill="#f3ae45" class="ink"/>
+    <path d="M349 394Q360 386 369 395L371 402L347 405Z" fill="#f3ae45" class="ink"/>
+    <!-- tiny briefcase -->
+    <path d="M286 265L314 268L310 295L282 291Z" fill="#8b6b4f" class="ink"/>
+    <path d="M292 266L294 259L307 261L309 267" fill="none" class="ink"/>
+    <text x="298" y="284" text-anchor="middle" class="type" font-size="9" font-weight="900" fill="#fff6d9">DEBT</text>
+  </g>
+
+  <!-- Motion marks and tiny comic beat -->
+  <path d="M125 336L151 329M132 350L158 344M479 334L502 329" stroke="#e36c53" stroke-width="4" stroke-linecap="round"/>
+  <text x="526" y="305" class="type" font-size="13" font-weight="800" fill="#315469">“This is fine.”</text>
+  <path d="M522 312Q511 324 499 329" fill="none" stroke="#315469" stroke-width="2"/>
+
+  <!-- Spacious footer -->
+  <path d="M30 535H770" stroke="#183044" stroke-width="2" opacity=".35"/>
+  <text x="400" y="568" text-anchor="middle" class="type" font-size="15" font-weight="700" fill="#183044">2026-10-25 16:02:30 SGT (UTC+08:00)</text>
+</svg>
