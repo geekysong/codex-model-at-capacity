@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals to Glory</title>
+  <desc id="desc">A satirical cartoon of an overconfident pelican riding a tiny bicycle.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#81d8f7"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <style>
+      .ink { stroke:#173042; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#173042; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { animation: spin 1.2s linear infinite; transform-box:fill-box; transform-origin:center; }
+      .pelican { animation: bob .55s ease-in-out infinite alternate; transform-origin:400px 350px; }
+      .leg { animation: pedal .6s linear infinite; transform-origin:435px 382px; }
+      .leg2 { animation: pedal2 .6s linear infinite; transform-origin:435px 382px; }
+      .cloud { animation: drift 8s linear infinite alternate; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { to { transform:translateY(-7px) rotate(-1deg); } }
+      @keyframes pedal { to { transform:rotate(360deg); } }
+      @keyframes pedal2 { to { transform:rotate(360deg); } }
+      @keyframes drift { to { transform:translateX(35px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 391 Q100 354 204 387 T415 375 T615 382 T800 360 V505 H0Z" fill="#91cb65"/>
+  <path d="M0 430 Q130 397 250 430 T495 414 T800 423 V505 H0Z" fill="#6eaf54"/>
+  <path d="M0 470 Q150 442 310 473 T590 456 T800 469 V505 H0Z" fill="#4d9348"/>
+
+  <g class="cloud" opacity=".9">
+    <path d="M88 138 C88 117 114 111 126 126 C132 98 172 100 176 127 C196 114 221 127 219 146 H87Z" fill="#fff"/>
+    <path d="M600 122 C600 104 622 98 636 112 C645 84 680 91 684 114 C704 103 723 115 722 132 H599Z" fill="#fff"/>
+  </g>
+
+  <rect x="28" y="22" width="744" height="68" rx="23" fill="#fff4b9" class="ink"/>
+  <text x="400" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="35" font-weight="900" fill="#d34b2e">PELICAN PEDALS TO GLORY!</text>
+
+  <g opacity=".95">
+    <path d="M66 295 q21-22 42 0 q-18 8-42 0" fill="#fff" class="thin"/>
+    <path d="M151 334 q18-19 37 0 q-16 7-37 0" fill="#fff" class="thin"/>
+    <path d="M671 315 q20-20 40 0 q-18 7-40 0" fill="#fff" class="thin"/>
+  </g>
+
+  <g>
+    <path d="M207 425 H674" stroke="#f8d64e" stroke-width="17" stroke-dasharray="32 22"/>
+    <path d="M0 437 H800" stroke="#414c52" stroke-width="76"/>
+    <path d="M0 401 H800" stroke="#26363e" stroke-width="9"/>
+  </g>
+
+  <g class="wheel">
+    <circle cx="290" cy="434" r="72" fill="#d7edf4" stroke="#173042" stroke-width="8"/>
+    <circle cx="290" cy="434" r="9" fill="#f4c44e" class="ink"/>
+    <g class="thin" fill="none">
+      <path d="M290 362V506 M218 434H362 M239 383L341 485 M341 383L239 485"/>
+    </g>
+  </g>
+  <g class="wheel">
+    <circle cx="520" cy="434" r="72" fill="#d7edf4" stroke="#173042" stroke-width="8"/>
+    <circle cx="520" cy="434" r="9" fill="#f4c44e" class="ink"/>
+    <g class="thin" fill="none">
+      <path d="M520 362V506 M448 434H592 M469 383L571 485 M571 383L469 485"/>
+    </g>
+  </g>
+
+  <g fill="none" class="ink">
+    <path d="M290 434 L360 346 L435 434 Z"/>
+    <path d="M360 346 L475 350 L520 434"/>
+    <path d="M435 434 L475 350"/>
+    <path d="M357 346 L338 325"/>
+    <path d="M319 325 H355"/>
+    <path d="M475 350 L496 304 L529 304"/>
+  </g>
+  <path d="M523 304 q15-14 29 0" fill="none" class="ink"/>
+  <circle cx="435" cy="434" r="20" fill="#f4c44e" class="ink"/>
+  <path d="M435 434 l34 18 M435 434 l-34-18" class="thin"/>
+
+  <g class="pelican">
+    <path d="M341 324 C306 288 315 216 365 198 C407 183 451 210 450 265 L442 347 L364 350Z" fill="#f5f4e7" class="ink"/>
+    <path d="M351 290 C322 280 318 245 341 224 C356 211 379 213 394 227 C409 242 414 267 403 287Z" fill="#ebeff1" class="thin"/>
+    <path d="M358 216 C370 162 452 153 484 205 C500 231 493 257 476 273 C457 291 423 278 403 261Z" fill="#f5f4e7" class="ink"/>
+    <path d="M390 222 C409 193 451 192 471 218 C481 232 480 251 471 261 C452 274 421 260 403 247Z" fill="#fff" class="thin"/>
+    <circle cx="445" cy="222" r="11" fill="#fff" class="ink"/>
+    <circle cx="448" cy="224" r="4.5" fill="#173042"/>
+    <path d="M393 215 q26-29 57-11" fill="none" class="thin"/>
+    <path d="M450 237 C487 230 533 241 560 272 C539 302 480 298 433 276 C414 267 420 242 450 237Z" fill="#f0a545" class="ink"/>
+    <path d="M432 267 C468 258 518 265 553 279 C532 293 481 294 439 279Z" fill="#f7ce69" class="thin"/>
+    <path d="M535 266 q18-14 26 6" fill="none" class="thin"/>
+    <path d="M380 284 q-28 22-4 66 q39-2 49-38" fill="#edf1e9" class="ink"/>
+    <path d="M385 334 q-13 18-34 23" fill="none" class="thin"/>
+    <path d="M402 293 Q430 308 435 350" fill="none" class="thin"/>
+    <path d="M368 190 q-11-23 8-34 q12 11 7 31" fill="#f5f4e7" class="ink"/>
+    <path d="M398 183 q-4-25 18-29 q8 16-2 31" fill="#f5f4e7" class="ink"/>
+
+    <g class="leg">
+      <path d="M403 347 Q423 370 452 398 L470 430" fill="none" stroke="#f0a545" stroke-width="16" stroke-linecap="round"/>
+      <path d="M461 431 q20 9 34-3" fill="none" stroke="#f0a545" stroke-width="12" stroke-linecap="round"/>
+    </g>
+    <g class="leg2">
+      <path d="M420 348 Q440 372 410 408 L399 441" fill="none" stroke="#ee9950" stroke-width="16" stroke-linecap="round"/>
+      <path d="M391 443 q-19 11-35 0" fill="none" stroke="#ee9950" stroke-width="12" stroke-linecap="round"/>
+    </g>
+
+    <path d="M356 253 q-15-11-31 0 M359 263 q-17 7-29-3" fill="none" class="thin"/>
+    <path d="M466 203 q14-8 29 1" fill="none" class="thin"/>
+  </g>
+
+  <g transform="translate(582 176)">
+    <path d="M0 65 Q15 17 49 22 Q77 28 77 65Z" fill="#e94f3d" class="ink"/>
+    <path d="M17 62 V38 Q37 23 59 38 V62" fill="#fff4b9" class="thin"/>
+    <path d="M38 66 V95" class="ink"/>
+    <path d="M15 96 H62" class="ink"/>
+    <text x="38" y="119" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#173042">HORN OF</text>
+    <text x="38" y="136" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#173042">ENTITLEMENT</text>
+  </g>
+
+  <path d="M110 358 q44-31 101-13" fill="none" stroke="#173042" stroke-width="4" stroke-dasharray="7 9"/>
+  <text x="85" y="335" font-family="Arial, sans-serif" font-size="19" font-weight="800" fill="#173042">“Make way!</text>
+  <text x="89" y="357" font-family="Arial, sans-serif" font-size="19" font-weight="800" fill="#173042">I’m aerodynamic!”</text>
+
+  <rect x="0" y="518" width="800" height="82" fill="#173042"/>
+  <text x="400" y="551" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff4b9">A BIG BIRD, A TINY BIKE, AND ABSOLUTELY NO SELF-DOUBT.</text>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#d7edf4">2026-10-26 05:02:40 SGT (UTC+08:00)</text>
+</svg>
