@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">WHEELS OF FORTUNE</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling furiously while its enormous beak catches the wind. The caption reads: “He said he’d wing it. The bike took that literally.”</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .55s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+      text{font-family:Arial,Helvetica,sans-serif}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#d9f4f1"/>
+  <path d="M0 375 Q130 330 260 370 T520 366 T800 350 V470 H0Z" fill="#b7dfb1"/>
+  <path d="M0 418 Q150 400 310 422 T800 405 V482 H0Z" fill="#94c98e"/>
+
+  <text id="title" x="400" y="62" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="2" fill="#17324d">WHEELS OF FORTUNE</text>
+  <text x="400" y="91" text-anchor="middle" font-size="16" font-weight="700" fill="#466477">A bird with a one-track mind and a two-wheeled problem</text>
+
+  <!-- Wind and road -->
+  <path d="M97 192h112 M65 220h78 M646 184h93 M674 213h65" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".85"/>
+  <path d="M0 476H800" stroke="#17324d" stroke-width="5"/>
+  <path d="M38 495h105 M224 495h105 M410 495h105 M596 495h105" stroke="#f5fbda" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Bicycle -->
+  <g fill="none" class="ink">
+    <g class="wheel">
+      <circle cx="254" cy="405" r="62" stroke="#17324d" stroke-width="8" fill="#eef8ee"/>
+      <circle cx="254" cy="405" r="5" fill="#17324d" stroke="none"/>
+      <path d="M254 343v124 M192 405h124 M210 361l88 88 M298 361l-88 88" stroke="#7598a1" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="535" cy="405" r="62" stroke="#17324d" stroke-width="8" fill="#eef8ee"/>
+      <circle cx="535" cy="405" r="5" fill="#17324d" stroke="none"/>
+      <path d="M535 343v124 M473 405h124 M491 361l88 88 M579 361l-88 88" stroke="#7598a1" stroke-width="3"/>
+    </g>
+    <path d="M254 405 333 326 382 405 254 405 307 405 350 350 535 405 382 405 414 327"/>
+    <path d="M394 321h40 M414 327l-8-20 M535 405l30-74 M550 331h39"/>
+    <circle cx="382" cy="405" r="18" stroke-width="5"/>
+    <path d="M382 405l-29-20 M382 405l28 20" stroke-width="5"/>
+    <circle cx="353" cy="385" r="6" fill="#17324d"/>
+    <circle cx="410" cy="425" r="6" fill="#17324d"/>
+  </g>
+
+  <!-- Pelican and its very questionable sense of balance -->
+  <g class="rider">
+    <!-- tail -->
+    <path d="M333 235 Q294 219 275 240 Q305 250 330 258Z" fill="#fff4d6" class="ink"/>
+    <!-- body -->
+    <ellipse cx="382" cy="250" rx="76" ry="62" fill="#fffaf0" class="ink"/>
+    <path d="M330 252 Q370 211 418 243 Q398 282 350 289Z" fill="#d8e4e0" stroke="#17324d" stroke-width="4"/>
+    <!-- neck -->
+    <path d="M418 256 Q447 230 448 191 Q450 165 472 155" fill="none" stroke="#fffaf0" stroke-width="29" stroke-linecap="round"/>
+    <path d="M418 256 Q447 230 448 191 Q450 165 472 155" fill="none" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+    <!-- head -->
+    <ellipse cx="483" cy="143" rx="36" ry="31" fill="#fffaf0" class="ink"/>
+    <path d="M470 149 Q455 142 454 125 Q471 132 483 143Z" fill="#ffd1bd" stroke="#17324d" stroke-width="4"/>
+    <!-- enormous beak and pouch -->
+    <path d="M505 145 Q568 125 655 144 Q621 166 510 161Z" fill="#f2a33a" class="ink"/>
+    <path d="M510 159 Q584 174 625 157 Q617 203 570 207 Q534 201 510 159Z" fill="#ef786a" class="ink"/>
+    <path d="M525 169 Q564 189 603 170" fill="none" stroke="#c74f50" stroke-width="3"/>
+    <!-- eye, brows, smug smile -->
+    <circle cx="490" cy="137" r="5.5" fill="#17324d"/>
+    <path d="M480 127q12-9 23 0" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+    <path d="M503 151q8 5 13 0" fill="none" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+    <!-- scarf -->
+    <path d="M450 179 Q466 188 484 176 L491 190 Q471 204 448 193Z" fill="#df5961" class="ink"/>
+    <path d="M456 193 Q442 212 451 228 Q467 216 464 198Z" fill="#df5961" class="ink"/>
+    <!-- wings -->
+    <path d="M349 239 Q382 218 415 242 Q396 267 359 269Z" fill="#f1f0e6" stroke="#17324d" stroke-width="4"/>
+    <path d="M365 244q18 10 33 8 M360 254q17 9 32 7" fill="none" stroke="#9aaeb0" stroke-width="3" stroke-linecap="round"/>
+    <!-- legs reaching the pedals -->
+    <path d="M374 294 Q364 331 354 372 M397 296 Q414 330 408 418" fill="none" stroke="#f2a33a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M345 374l18 4 M401 420l18 8" fill="none" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M451 129 Q460 94 495 97 Q517 100 523 124 Q488 114 451 129Z" fill="#df5961" class="ink"/>
+    <path d="M461 123q19-17 43-13" fill="none" stroke="#fff4d6" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion marks and comic sign -->
+  <path d="M209 298l-26-9 M205 315l-31 0 M593 279l29-8" stroke="#df5961" stroke-width="5" stroke-linecap="round"/>
+  <g transform="rotate(-4 645 290)">
+    <path d="M615 248h132v77H615z" fill="#fff4d6" stroke="#17324d" stroke-width="4"/>
+    <text x="681" y="276" text-anchor="middle" font-size="13" font-weight="800" fill="#17324d">SPEED LIMIT</text>
+    <text x="681" y="306" text-anchor="middle" font-size="26" font-weight="900" fill="#df5961">BEAK-ON</text>
+  </g>
+
+  <rect x="105" y="515" width="590" height="43" rx="21" fill="#17324d"/>
+  <text x="400" y="543" text-anchor="middle" font-size="18" font-weight="700" fill="#fffaf0">“He said he’d wing it. The bike took that literally.”</text>
+  <text x="400" y="584" text-anchor="middle" font-size="13" font-weight="700" fill="#17324d">2026-10-25 23:32:44 SGT (UTC+08:00)</text>
+</svg>

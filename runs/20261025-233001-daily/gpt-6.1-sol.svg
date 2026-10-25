@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#17212b">
+    <text x="30" y="28" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="30" y="53">vₓ = 20 m/s · vᵧ = 15 m/s · g = 10 m/s²</text>
+    <text x="30" y="76">Total flight time: 3 s · No air resistance</text>
+    <text x="30" y="99">Scale: 10 px/m; horizontal interval 38–55 m omitted.</text>
+    <text x="30" y="120">Axis break keeps the landing visible at this scale.</text>
+  </g>
+
+  <!-- A horizontal axis break removes 150 pixels from the displayed range. -->
+  <path d="M50 350 H480 M500 350 H550" fill="none" stroke="#374151" stroke-width="2"/>
+  <path d="M482 354 L487 346 M490 354 L495 346" fill="none" stroke="#374151" stroke-width="2"/>
+
+  <!-- x = 100 + 200t; y = 350 - 150t + 50t². -->
+  <path d="M100 350 Q290 207.5 480 245.5"
+        fill="none" stroke="#1769aa" stroke-width="3"/>
+  <!-- Continuation after the omitted horizontal interval; x is shifted by 150 px. -->
+  <path d="M500 315.625 Q525 331.25 550 350"
+        fill="none" stroke="#1769aa" stroke-width="3"/>
+
+  <g fill="#1769aa">
+    <circle cx="100" cy="350" r="4"/>
+    <circle cx="400" cy="237.5" r="4"/>
+    <circle cx="550" cy="350" r="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="13" fill="#17212b">
+    <text x="55" y="310">launch: 0 m, 0 m</text>
+    <text x="335" y="216">apex: 30 m, 11.25 m</text>
+    <text x="420" y="290">landing: 60 m, 0 m</text>
+  </g>
+
+  <path d="M550 298 V338" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M100 318 V338" fill="none" stroke="#9ca3af" stroke-width="1"/>
+
+  <rect x="0" y="370" width="600" height="30" fill="#f1f5f9"/>
+  <text x="300" y="390" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" fill="#17212b">2026-10-25 23:34:50 SGT (UTC+08:00)</text>
+</svg>

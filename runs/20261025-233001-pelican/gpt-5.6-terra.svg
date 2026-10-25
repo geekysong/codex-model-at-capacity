@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon of a pelican riding a bicycle with wildly oversized cargo in its beak.</desc>
+  <style>
+    .wheel { animation: spin 1.3s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .rider { animation: bob .55s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center bottom; }
+    .leg { animation: pedal .65s linear infinite; transform-box: fill-box; transform-origin: 405px 388px; }
+    .leg2 { animation: pedal  .65s linear infinite reverse; transform-box: fill-box; transform-origin: 405px 388px; }
+    .dust { animation: puff 1s ease-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedal { to { transform: rotate(360deg); } }
+    @keyframes puff { 0% { opacity: .9; transform: translateX(0) scale(.5); } 100% { opacity: 0; transform: translateX(-38px) scale(1.5); } }
+  </style>
+
+  <rect width="800" height="600" fill="#9ee6f2"/>
+  <path d="M0 322 Q115 270 220 318 T440 300 T650 314 T800 280 V470 H0Z" fill="#7dcb72"/>
+  <path d="M0 410 Q180 365 350 412 T800 390 V500 H0Z" fill="#f6d465"/>
+  <path d="M0 455 Q180 430 340 459 T800 445 V500 H0Z" fill="#d3a44f"/>
+  <circle cx="95" cy="92" r="45" fill="#ffe67a"/>
+  <g fill="#fff" opacity=".85">
+    <ellipse cx="270" cy="100" rx="55" ry="18"/><ellipse cx="315" cy="95" rx="42" ry="22"/>
+    <ellipse cx="625" cy="142" rx="65" ry="19"/><ellipse cx="680" cy="135" rx="40" ry="25"/>
+  </g>
+
+  <text x="400" y="64" text-anchor="middle" font-family="Impact, sans-serif" font-size="42" fill="#24304c" stroke="#fff" stroke-width="4" paint-order="stroke">PELICAN PEDAL PANIC!</text>
+  <text x="400" y="94" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#24304c">“I said I’d carry the groceries. Nobody asked how.”</text>
+
+  <g class="dust" fill="#f4e3af">
+    <circle cx="155" cy="420" r="12"/><circle cx="128" cy="432" r="8"/><circle cx="105" cy="425" r="5"/>
+  </g>
+
+  <g class="wheel" stroke="#24304c" stroke-width="7" fill="none">
+    <circle cx="250" cy="400" r="75" fill="#d9edf1"/>
+    <path d="M250 325V475M175 400H325M197 347L303 453M303 347L197 453"/>
+    <circle cx="250" cy="400" r="10" fill="#f25c54"/>
+  </g>
+  <g class="wheel" stroke="#24304c" stroke-width="7" fill="none">
+    <circle cx="525" cy="400" r="75" fill="#d9edf1"/>
+    <path d="M525 325V475M450 400H600M472 347L578 453M578 347L472 453"/>
+    <circle cx="525" cy="400" r="10" fill="#f25c54"/>
+  </g>
+
+  <g stroke="#24304c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M250 400 L350 286 L430 400 Z"/>
+    <path d="M350 286 L485 275 L525 400"/>
+    <path d="M485 275 L510 225 L548 225"/>
+    <path d="M335 285 L310 255 L270 255"/>
+    <path d="M430 400 L405 387"/>
+  </g>
+  <path d="M274 249 L318 249" stroke="#24304c" stroke-width="13" stroke-linecap="round"/>
+  <path d="M542 221 q31-19 39 8" fill="none" stroke="#24304c" stroke-width="9" stroke-linecap="round"/>
+
+  <g class="rider" stroke="#24304c" stroke-linejoin="round">
+    <path d="M358 292 Q346 214 405 175 Q468 163 476 245 L453 315Z" fill="#f7f5eb" stroke-width="7"/>
+    <path d="M362 239 Q328 180 354 128 Q376 89 423 116 Q450 138 427 181 L403 225Z" fill="#f7f5eb" stroke-width="7"/>
+    <path d="M393 122 Q414 84 454 106 Q477 123 462 149 Q446 164 414 151Z" fill="#f7f5eb" stroke-width="7"/>
+    <circle cx="416" cy="142" r="8" fill="#24304c" stroke="none"/>
+    <circle cx="419" cy="139" r="2.5" fill="#fff" stroke="none"/>
+    <path d="M375 153 Q312 151 282 183 Q322 223 397 205 Q438 192 439 166 Q424 147 375 153Z" fill="#f6a734" stroke-width="7"/>
+    <path d="M290 184 Q337 182 388 171" fill="none" stroke="#c76b28" stroke-width="5"/>
+    <path d="M393 230 Q448 239 475 283 Q468 316 438 317 L390 276Z" fill="#e0e8e4" stroke-width="7"/>
+    <path d="M372 247 Q335 265 315 305" fill="none" stroke="#f7f5eb" stroke-width="18" stroke-linecap="round"/>
+    <path d="M452 249 Q486 258 506 230" fill="none" stroke="#f7f5eb" stroke-width="18" stroke-linecap="round"/>
+    <path d="M314 307 q-20 14 -34 3" fill="none" stroke="#f6a734" stroke-width="11" stroke-linecap="round"/>
+    <path d="M507 231 q18 7 29-4" fill="none" stroke="#f6a734" stroke-width="11" stroke-linecap="round"/>
+  </g>
+
+  <g class="leg" stroke="#24304c" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M404 285 L405 387 L460 422" fill="none" stroke="#f7f5eb" stroke-width="18"/>
+    <path d="M456 423 q29 8 40-3" fill="none" stroke="#f6a734" stroke-width="13"/>
+  </g>
+  <g class="leg2" stroke="#24304c" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M414 289 L405 387 L354 350" fill="none" stroke="#f7f5eb" stroke-width="18"/>
+    <path d="M355 349 q-23-5-34 8" fill="none" stroke="#f6a734" stroke-width="13"/>
+  </g>
+
+  <g transform="rotate(-8 294 178)" stroke="#24304c" stroke-width="5">
+    <path d="M296 179 Q228 126 181 170 Q212 232 292 207Z" fill="#f6a734"/>
+    <path d="M196 165 L165 130 L219 146 L230 113 L259 151" fill="none"/>
+    <text x="198" y="198" font-family="sans-serif" font-size="15" font-weight="bold" fill="#24304c" stroke="none">EGGS</text>
+  </g>
+
+  <g font-family="sans-serif" fill="#24304c">
+    <path d="M639 274 q27-25 53 2 q-22 20-51 8" fill="#fff" stroke="#24304c" stroke-width="4"/>
+    <circle cx="666" cy="275" r="3" fill="#24304c"/>
+    <text x="608" y="323" font-size="16" font-weight="bold">“HE’S GOT A BAG!”</text>
+  </g>
+
+  <rect y="518" width="800" height="82" fill="#24304c"/>
+  <text x="400" y="550" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#ffe67a">A bicycle: the only vehicle where “carry-on luggage” becomes a lifestyle.</text>
+  <text x="400" y="579" text-anchor="middle" font-family="monospace" font-size="14" fill="#ffffff">2026-10-25 23:33:04 SGT (UTC+08:00)</text>
+</svg>
