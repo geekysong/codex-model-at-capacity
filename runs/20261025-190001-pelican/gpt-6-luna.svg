@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Two-Wheel Tax</title>
+  <desc id="desc">A top-hatted pelican pedals a bicycle while its enormous beak carries a tiny passenger.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#182638;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#182638;stroke-width:7}
+      .spoke{stroke:#537080;stroke-width:2}
+      .sans{font-family:Arial,Helvetica,sans-serif}
+      .bold{font-weight:800}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+      .bob{animation:bob .8s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f7e9bd"/>
+  <path d="M0 385 Q100 368 205 384 T410 380 T610 385 T800 375 V510 H0Z" fill="#b7d9b4"/>
+  <path d="M0 445 Q150 430 300 445 T600 444 T800 438" fill="none" stroke="#fff7dc" stroke-width="5" stroke-dasharray="18 15"/>
+  <circle cx="95" cy="132" r="48" fill="#f8bf56"/>
+  <path d="M0 314 Q92 265 184 314 M610 282 Q698 232 800 284" fill="none" stroke="#7daa82" stroke-width="8"/>
+
+  <text x="400" y="55" text-anchor="middle" class="sans bold" font-size="34" fill="#182638">THE PELICAN’S TWO-WHEEL TAX</text>
+  <text x="400" y="84" text-anchor="middle" class="sans" font-size="16" fill="#405566">“I’m cutting my fish budget. The beak has other plans.”</text>
+
+  <!-- Bicycle frame -->
+  <g class="ink" fill="none">
+    <path d="M205 405 L325 405 L385 300 L260 300 Z" stroke="#df654d" stroke-width="10"/>
+    <path d="M325 405 L448 405 L385 300" stroke="#df654d" stroke-width="10"/>
+    <path d="M205 405 L260 300" stroke="#df654d" stroke-width="8"/>
+    <path d="M260 300 L238 285 M223 285 L255 285" stroke-width="7"/>
+    <path d="M448 405 L468 385 L488 385 M468 385 L480 365" stroke-width="7"/>
+    <path d="M325 405 L315 423 M298 423 L333 423" stroke-width="7"/>
+    <path d="M260 300 L260 284 M244 284 L276 284" stroke-width="7"/>
+  </g>
+  <g>
+    <circle class="wheel" cx="205" cy="405" r="66"/>
+    <circle class="wheel" cx="448" cy="405" r="66"/>
+    <g class="spin" stroke="#537080" stroke-width="2">
+      <path d="M205 339V471 M139 405H271 M158 358L252 452 M158 452L252 358"/>
+      <path d="M448 339V471 M382 405H514 M401 358L495 452 M401 452L495 358"/>
+    </g>
+    <circle cx="205" cy="405" r="6" fill="#182638"/>
+    <circle cx="448" cy="405" r="6" fill="#182638"/>
+  </g>
+
+  <!-- Pedaling leg and foot -->
+  <g class="ink" fill="none">
+    <path d="M346 260 Q368 303 333 354 L325 405" stroke="#e7a451" stroke-width="17"/>
+    <path d="M337 351 Q370 374 385 365" stroke="#e7a451" stroke-width="15"/>
+    <path d="M384 365 L396 371" stroke-width="6"/>
+  </g>
+  <circle cx="325" cy="405" r="8" fill="#e7a451"/>
+  <g class="bob">
+    <!-- Pelican body -->
+    <ellipse cx="344" cy="223" rx="65" ry="73" fill="#fffdf1" class="ink"/>
+    <path d="M299 235 Q341 267 385 226 Q383 278 338 284 Q305 274 299 235Z" fill="#e5a24e" class="ink"/>
+    <path d="M312 204 Q332 222 347 203" fill="none" class="ink"/>
+    <!-- Neck and head -->
+    <path d="M357 192 Q370 146 405 141" fill="none" stroke="#fffdf1" stroke-width="27" stroke-linecap="round"/>
+    <path d="M357 192 Q370 146 405 141" fill="none" class="ink"/>
+    <ellipse cx="416" cy="133" rx="43" ry="35" fill="#fffdf1" class="ink"/>
+    <circle cx="431" cy="125" r="5.5" fill="#182638"/>
+    <path d="M451 139 Q514 133 552 157 Q523 181 461 160Z" fill="#f2a53b" class="ink"/>
+    <path d="M463 160 Q512 176 552 157 Q534 202 479 190 Q464 181 463 160Z" fill="#e97555" class="ink"/>
+    <!-- tiny passenger in beak pouch -->
+    <circle cx="505" cy="169" r="12" fill="#8fbed0" class="ink"/>
+    <circle cx="509" cy="166" r="2.5" fill="#182638"/>
+    <path d="M499 181 L497 190 M511 180 L515 188" class="ink" fill="none"/>
+    <path d="M481 189 Q503 199 527 187" fill="none" stroke="#a9473a" stroke-width="3"/>
+    <!-- hat -->
+    <path d="M380 103 Q414 89 450 104 L451 114 L380 114Z" fill="#27394b" class="ink"/>
+    <path d="M373 114 L458 114" class="ink" fill="none"/>
+    <path d="M389 103 L393 79 L438 79 L443 103Z" fill="#27394b" class="ink"/>
+    <path d="M392 94 L440 94" stroke="#e97555" stroke-width="6"/>
+    <!-- wing -->
+    <path d="M316 218 Q346 193 375 222 Q355 249 322 245Z" fill="#d9e6e2" class="ink"/>
+    <!-- handlebar grip -->
+    <path d="M386 300 L405 282 L424 282" fill="none" class="ink"/>
+  </g>
+
+  <path d="M553 128 Q584 105 604 124" fill="none" stroke="#182638" stroke-width="3"/>
+  <text x="606" y="119" class="sans bold" font-size="15" fill="#182638">“FASTER!</text>
+  <text x="606" y="138" class="sans bold" font-size="15" fill="#182638">THE METER’S</text>
+  <text x="606" y="157" class="sans bold" font-size="15" fill="#182638">RUNNING!”</text>
+
+  <path d="M526 225 Q556 212 574 226" fill="none" stroke="#182638" stroke-width="3"/>
+  <text x="578" y="225" class="sans" font-size="14" fill="#182638">Passenger pays</text>
+  <text x="578" y="243" class="sans" font-size="14" fill="#182638">by the fish.</text>
+
+  <path d="M0 492 H800" stroke="#182638" stroke-width="3"/>
+  <text x="400" y="523" text-anchor="middle" class="sans bold" font-size="17" fill="#182638">“Two wheels, one beak, and absolutely no room for luggage.”</text>
+  <text x="400" y="572" text-anchor="middle" class="sans" font-size="16" fill="#182638">2026-10-25 19:02:33 SGT (UTC+08:00)</text>
+</svg>

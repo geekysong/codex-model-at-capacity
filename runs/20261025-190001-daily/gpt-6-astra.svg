@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="30" y="30" font-size="20" font-weight="bold">Projectile motion</text>
+    <text x="30" y="57" font-size="14">Initial velocity: horizontal 20 m/s, vertical 15 m/s</text>
+    <text x="30" y="80" font-size="14">Gravity: 10 m/s² · No air resistance · Flight time: 3 s</text>
+    <text x="30" y="111" font-size="13">Scale: 10 px/m; downward-positive screen coordinates.</text>
+    <text x="30" y="134" font-size="13">Horizontal axis break omits 20 m to fit the 60 m range.</text>
+    <text x="30" y="157" font-size="13">Without this break, landing would be outside the canvas at x=700.</text>
+  </g>
+
+  <!-- Ground and horizontal-axis break.
+       Left section: x = 100 + 10X.
+       Right section: x = 100 + 10X - 200.
+       The interval 32–54 m is represented by a 20 px break. -->
+  <path d="M50 350 H550" fill="none" stroke="#475569" stroke-width="2"/>
+  <path d="M421 355 L427 345 M433 355 L439 345"
+        fill="none" stroke="#475569" stroke-width="2"/>
+
+  <!-- Exact parabolic segments: X=20t, H=15t-5t².
+       First segment t=0…1.6; second segment t=2.7…3. -->
+  <path d="M100 350 Q260 230 420 238
+           M440 309.5 Q470 327.5 500 350"
+        fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+
+  <g fill="#2563eb">
+    <circle cx="100" cy="350" r="4"/>
+    <circle cx="400" cy="237.5" r="4"/>
+    <circle cx="500" cy="350" r="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="55" y="374">launch: 0 m, 0 m</text>
+    <text x="330" y="218">apex: 30 m, 11.25 m</text>
+    <text x="442" y="289">landing:</text>
+    <text x="472" y="374">60 m, 0 m</text>
+    <text x="399" y="331" font-size="12">break</text>
+  </g>
+
+  <rect x="0" y="381" width="600" height="19" fill="#f1f5f9"/>
+  <text x="300" y="395" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="12" fill="#172033">2026-10-25 19:03:41 SGT (UTC+08:00)</text>
+</svg>

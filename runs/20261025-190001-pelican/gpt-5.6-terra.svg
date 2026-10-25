@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals to Glory</title>
+  <desc id="desc">A satirical cartoon of a pompous pelican riding a tiny bicycle.</desc>
+  <style>
+    .ink{stroke:#18233b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .thin{stroke:#18233b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#18233b}
+    #rider{animation:bob 1s ease-in-out infinite}
+    #leg{animation:pedal .65s linear infinite;transform-origin:410px 414px}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes pedal{to{transform:rotate(360deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#b9e8f7"/>
+  <path d="M0 326 Q100 290 205 328 T410 319 T610 330 T800 306 V488 H0Z" fill="#7ecb75"/>
+  <path d="M0 439 Q130 409 260 440 T530 430 T800 442 V490 H0Z" fill="#5caf61"/>
+  <path d="M0 488 H800" class="ink" stroke="#4b8052"/>
+  <g opacity=".55" fill="#fff">
+    <ellipse cx="110" cy="90" rx="74" ry="21"/><ellipse cx="155" cy="82" rx="52" ry="26"/>
+    <ellipse cx="635" cy="113" rx="84" ry="23"/><ellipse cx="687" cy="101" rx="50" ry="27"/>
+  </g>
+
+  <text x="400" y="61" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN PEDALS TO GLORY!</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="17" font-weight="bold">“Why fly when a tiny bicycle can humiliate you publicly?”</text>
+
+  <g class="thin">
+    <path d="M94 425 V358" stroke="#8a6043"/>
+    <path d="M70 368 H117" stroke="#8a6043"/>
+    <path d="M88 351 l-17-24 M99 351 l17-24" stroke="#53984e"/>
+    <path d="M715 430 V367" stroke="#8a6043"/>
+    <path d="M692 377 H739" stroke="#8a6043"/>
+    <path d="M710 360 l-18-25 M722 360 l17-25" stroke="#53984e"/>
+  </g>
+
+  <g id="bike">
+    <g fill="none" class="ink">
+      <circle cx="303" cy="428" r="65"/>
+      <circle cx="524" cy="428" r="65"/>
+    </g>
+    <g class="thin" stroke="#607080">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 303 428" to="360 303 428" dur="1s" repeatCount="indefinite"/>
+        <path d="M303 363V493 M238 428H368 M257 382L349 474 M349 382L257 474"/>
+        <circle cx="303" cy="428" r="10" fill="#ffd85a"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 524 428" to="360 524 428" dur="1s" repeatCount="indefinite"/>
+        <path d="M524 363V493 M459 428H589 M478 382L570 474 M570 382L478 474"/>
+        <circle cx="524" cy="428" r="10" fill="#ffd85a"/>
+      </g>
+    </g>
+    <path d="M303 428 L369 329 L449 428 Z M369 329 L491 330 L449 428 M449 428 L524 428 M491 330 L524 428" fill="none" class="ink" stroke="#e84151"/>
+    <path d="M369 329 L353 302 M337 300 H369 M491 330 L511 292 L548 282" fill="none" class="ink"/>
+    <path d="M327 301 H380" class="ink" stroke="#513d35"/>
+    <path d="M535 276 H566" class="ink"/>
+    <circle cx="449" cy="428" r="18" fill="#ffd85a" class="ink"/>
+  </g>
+
+  <g id="rider">
+    <path d="M400 268 Q423 284 441 335 L476 372 L449 401 L395 345 Q376 316 374 286Z" fill="#f7f1d5" class="ink"/>
+    <path d="M402 294 Q425 322 445 331" fill="none" class="thin"/>
+    <path d="M430 326 L487 320 L504 295" fill="none" class="ink"/>
+    <path d="M502 295 l22 5 l-15 16" fill="#f4a83b" class="ink"/>
+
+    <g id="leg">
+      <path d="M402 338 L445 388 L418 425" fill="none" class="ink" stroke="#ed9f4a"/>
+      <path d="M418 425 L390 427" class="ink" stroke="#3b4d68"/>
+      <path d="M406 340 L463 393 L488 430" fill="none" class="ink" stroke="#ed9f4a"/>
+      <path d="M488 430 L517 430" class="ink" stroke="#3b4d68"/>
+    </g>
+
+    <path d="M357 303 Q322 276 337 210 Q349 156 407 163 Q437 168 436 214 Q433 259 400 280Z" fill="#f7f1d5" class="ink"/>
+    <path d="M365 225 Q310 205 254 236 Q305 264 367 258 Q397 255 402 232 Q396 216 365 225Z" fill="#f4a83b" class="ink"/>
+    <path d="M263 238 Q312 239 355 233" class="thin" fill="none"/>
+    <circle cx="390" cy="199" r="13" fill="white" class="thin"/>
+    <circle cx="394" cy="201" r="5" fill="#18233b"/>
+    <path d="M373 184 Q391 171 409 184" fill="none" class="thin"/>
+    <path d="M358 278 Q383 294 409 276" fill="none" class="thin"/>
+    <path d="M343 171 Q356 139 383 154 Q398 128 417 157" fill="#304d7c" class="ink"/>
+    <path d="M356 166 Q381 151 413 167" fill="none" class="thin" stroke="#ffd85a"/>
+    <path d="M338 188 Q326 180 314 189" fill="none" class="thin"/>
+  </g>
+
+  <g class="label">
+    <path d="M611 186 Q648 167 691 182 Q674 222 628 216Z" fill="#fff7cf" class="ink"/>
+    <path d="M649 217 L646 235 L661 219" fill="#fff7cf" class="ink"/>
+    <text x="650" y="202" text-anchor="middle" font-size="16" font-weight="bold">HONK!</text>
+  </g>
+
+  <rect x="0" y="516" width="800" height="84" fill="#18233b"/>
+  <text x="400" y="548" text-anchor="middle" fill="#fff7cf" font-family="Arial,sans-serif" font-size="20" font-weight="bold">AERODYNAMICS ARE FOR BIRDS. OH, WAIT.</text>
+  <text x="400" y="578" text-anchor="middle" fill="#b9e8f7" font-family="Arial,sans-serif" font-size="16">2026-10-25 19:02:52 SGT (UTC+08:00)</text>
+</svg>
