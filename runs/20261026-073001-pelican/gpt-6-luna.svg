@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican's Two-Wheeled Plan</title>
+  <desc id="desc">A smug pelican pedals a bicycle while a fish rides in its enormous beak.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .48s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+      text{font-family:Arial,Helvetica,sans-serif}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bceeff"/>
+  <circle cx="676" cy="112" r="48" fill="#ffd76c"/>
+  <path d="M0 344 Q95 304 180 340 T360 335 T540 343 T800 326 V600 H0Z" fill="#91d8a1"/>
+  <path d="M0 408 Q140 374 280 404 T560 399 T800 390" fill="none" stroke="#65bd81" stroke-width="5"/>
+
+  <text x="400" y="54" text-anchor="middle" font-size="31" font-weight="900" fill="#17324d">THE PELICAN'S TWO-WHEELED PLAN</text>
+  <text x="400" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="#34546d">“I’m cutting out fish delivery. I’m doing it myself.”</text>
+
+  <!-- Road and bicycle frame -->
+  <path d="M0 494 Q180 481 400 494 T800 487" fill="none" stroke="#fff" stroke-width="8" opacity=".8"/>
+  <g class="wheel" fill="none" stroke="#17324d" stroke-width="6">
+    <circle cx="230" cy="420" r="69"/>
+    <circle cx="550" cy="420" r="69"/>
+    <path d="M230 351V489 M161 420H299 M181 371L279 469 M279 371L181 469"/>
+  </g>
+  <g fill="none" class="ink" stroke-width="8">
+    <path d="M230 420L354 420L309 337L230 420M354 420L435 337L550 420M309 337L435 337M435 337L454 313"/>
+    <path d="M296 329L322 329M448 311L468 311"/>
+  </g>
+  <circle cx="354" cy="420" r="12" fill="#ffca4c" stroke="#17324d" stroke-width="5"/>
+  <path d="M354 420L381 441M354 420L329 398" class="ink" fill="none" stroke-width="7"/>
+  <path d="M374 444L390 444M322 396L311 391" class="ink" fill="none" stroke-width="6"/>
+
+  <!-- Pelican rider bobbing gently -->
+  <g class="rider">
+    <path d="M357 276Q329 248 322 216Q315 182 342 161Q373 139 405 161Q430 180 422 211Q415 240 394 259Z" fill="#fff" class="ink" stroke-width="5"/>
+    <path d="M343 204Q370 218 407 203Q405 244 378 260Q350 245 343 204Z" fill="#f4f7f8" class="ink" stroke-width="4"/>
+    <path d="M408 183Q437 168 468 181Q484 188 472 200Q452 214 414 205Z" fill="#ffad4d" class="ink" stroke-width="4"/>
+    <path d="M419 199Q452 204 474 195Q463 221 433 226Q416 224 419 199Z" fill="#e67d3b" class="ink" stroke-width="4"/>
+    <ellipse cx="466" cy="190" rx="13" ry="9" fill="#ffdf69" class="ink" stroke-width="3"/>
+    <path d="M458 187L469 191L459 194Z" fill="#17324d"/>
+    <circle cx="405" cy="178" r="4.5" fill="#17324d"/>
+    <path d="M372 260L352 300L381 328M395 256L420 294L397 328" fill="none" class="ink" stroke-width="8"/>
+    <path d="M352 300L315 328M420 294L437 326" fill="none" class="ink" stroke-width="7"/>
+    <path d="M311 328L341 328M430 326L451 326" fill="none" class="ink" stroke-width="7"/>
+    <!-- tiny fish passenger -->
+    <path d="M483 185Q494 174 507 185Q494 198 483 185Z" fill="#6ec8e9" class="ink" stroke-width="2"/>
+    <path d="M506 185L514 179L514 191Z" fill="#6ec8e9" class="ink" stroke-width="2"/>
+    <circle cx="491" cy="184" r="1.8" fill="#17324d"/>
+    <path d="M491 187Q497 190 502 187" fill="none" stroke="#17324d" stroke-width="2"/>
+  </g>
+
+  <!-- Comic motion marks and a sign -->
+  <path d="M128 337L108 324M135 355L111 352M641 333L663 319M646 353L672 351" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <g transform="rotate(-5 655 266)">
+    <path d="M655 273V389" stroke="#735d44" stroke-width="7"/>
+    <rect x="590" y="226" width="133" height="64" rx="9" fill="#fff2bd" stroke="#17324d" stroke-width="4"/>
+    <text x="656" y="251" text-anchor="middle" font-size="13" font-weight="900" fill="#17324d">FISH DELIVERY</text>
+    <text x="656" y="272" text-anchor="middle" font-size="13" font-weight="900" fill="#d75d40">NOW BY PELICAN</text>
+  </g>
+
+  <!-- Footer is set apart from the illustrated scene. -->
+  <rect x="0" y="540" width="800" height="60" fill="#17324d"/>
+  <text x="400" y="578" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">2026-10-26 07:32:24 SGT (UTC+08:00)</text>
+</svg>
