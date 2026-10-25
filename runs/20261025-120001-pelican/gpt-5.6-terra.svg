@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN EXPRESS: NO BEAKS ON SPOKES</title>
+  <desc id="desc">A satirical cartoon of an exuberant pelican riding a bicycle, delivering fish faster than common sense allows.</desc>
+  <defs>
+    <style>
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.15s linear infinite; }
+      .bob { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      .pedal { transform-box: fill-box; transform-origin: center; animation: pedal .55s linear infinite; }
+      .blink { animation: blink 3.2s infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+      @keyframes pedal { to { transform: rotate(360deg); } }
+      @keyframes blink { 0%,44%,48%,100% { transform: scaleY(1); } 46% { transform: scaleY(.08); } }
+      text { font-family: Arial, Helvetica, sans-serif; }
+    </style>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#79d9ef"/><stop offset="1" stop-color="#e9fbce"/>
+    </linearGradient>
+    <linearGradient id="road" x2="1">
+      <stop stop-color="#59616b"/><stop offset=".5" stop-color="#777f89"/><stop offset="1" stop-color="#59616b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="104" cy="105" r="46" fill="#ffe66a"/>
+  <path d="M0 250 Q95 195 190 248 T380 239 T570 251 T800 220 V360H0Z" fill="#9bcf78"/>
+  <path d="M0 315 Q170 275 340 325 T800 302 V420H0Z" fill="#69ae62"/>
+  <path d="M0 375H800V526H0Z" fill="url(#road)"/>
+  <path d="M0 446H800" stroke="#fff5a4" stroke-width="12" stroke-dasharray="52 35" opacity=".9"/>
+  <path d="M0 526H800" stroke="#e4b95c" stroke-width="8"/>
+
+  <g fill="#fff" opacity=".92">
+    <path d="M206 100c14-25 45-19 49 0 22-13 46 4 38 21h-101c-6-12 1-20 14-21z"/>
+    <path d="M594 138c12-20 38-18 45-1 18-10 37 5 33 19h-88c-5-11 0-17 10-18z"/>
+  </g>
+
+  <g transform="translate(575 248)">
+    <rect x="0" y="26" width="132" height="74" rx="8" fill="#f7f0d5" stroke="#473f3a" stroke-width="4"/>
+    <path d="M10 30h112v-34H10z" fill="#ed5b4f" stroke="#473f3a" stroke-width="4"/>
+    <text x="66" y="18" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">FISH TAX OFFICE</text>
+    <text x="66" y="63" text-anchor="middle" font-size="14" font-weight="bold" fill="#473f3a">NO FREE LUNCHES</text>
+    <path d="M52 73q12-13 24 0q-12 14-24 0m5 0h14" fill="none" stroke="#4d89a8" stroke-width="3"/>
+  </g>
+
+  <text x="400" y="52" text-anchor="middle" font-size="34" font-weight="900" fill="#273144" stroke="#fff" stroke-width="3" paint-order="stroke">PELICAN EXPRESS</text>
+  <text x="400" y="79" text-anchor="middle" font-size="17" font-weight="bold" fill="#273144">“BECAUSE WALKING WITH A FISH BAG LOOKS SUSPICIOUS.”</text>
+
+  <g>
+    <g class="wheel">
+      <circle cx="245" cy="412" r="74" fill="#dfe9eb" stroke="#26323d" stroke-width="11"/>
+      <circle cx="245" cy="412" r="7" fill="#ef584b"/>
+      <g stroke="#91a6aa" stroke-width="3">
+        <path d="M245 338v148M171 412h148M193 360l104 104M297 360L193 464"/>
+      </g>
+    </g>
+    <g class="wheel">
+      <circle cx="510" cy="412" r="74" fill="#dfe9eb" stroke="#26323d" stroke-width="11"/>
+      <circle cx="510" cy="412" r="7" fill="#ef584b"/>
+      <g stroke="#91a6aa" stroke-width="3">
+        <path d="M510 338v148M436 412h148M458 360l104 104M562 360L458 464"/>
+      </g>
+    </g>
+
+    <g fill="none" stroke="#c73e43" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M245 412L337 300L414 412Z"/>
+      <path d="M337 300L480 300L510 412"/>
+      <path d="M414 412L510 412"/>
+      <path d="M480 300l31-42"/>
+      <path d="M493 258h45"/>
+      <path d="M337 300l-20-39h-46"/>
+    </g>
+    <path d="M280 256h-43" stroke="#26323d" stroke-width="9" stroke-linecap="round"/>
+    <path d="M531 258l23-35" stroke="#26323d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M543 223h35" stroke="#26323d" stroke-width="8" stroke-linecap="round"/>
+    <g class="pedal">
+      <circle cx="414" cy="412" r="18" fill="#f7d348" stroke="#26323d" stroke-width="5"/>
+      <path d="M414 412l35 22m-70-44l-25-16" stroke="#26323d" stroke-width="6" stroke-linecap="round"/>
+      <path d="M442 437h23m-100-67h23" stroke="#26323d" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g class="bob">
+    <path d="M316 247q-31-72 19-119q59-56 128-6q31 25 28 95l-31 105H332z" fill="#f4f5e9" stroke="#273144" stroke-width="5"/>
+    <path d="M329 204q-8-89 60-98q54-7 76 50q-59 34-136 48z" fill="#dfe5d4"/>
+    <path d="M434 147q30-11 53 7q23 18 21 39q-39 24-77 8z" fill="#f3aa38" stroke="#273144" stroke-width="5"/>
+    <path d="M438 171q78 5 99 36q-16 31-91 13z" fill="#f8c45c" stroke="#273144" stroke-width="5"/>
+    <path d="M452 207q58 14 88 1q-14 35-69 35q-23-1-28-15z" fill="#e97a58" stroke="#273144" stroke-width="4"/>
+    <path d="M342 229q-34 12-42 50q39 1 65-26z" fill="#8ea4a8" stroke="#273144" stroke-width="5"/>
+    <path d="M451 238q42 14 48 57q-43-5-62-35z" fill="#8ea4a8" stroke="#273144" stroke-width="5"/>
+    <path d="M351 252q4 84 47 92q38-12 38-101z" fill="#f3f5e8" stroke="#273144" stroke-width="5"/>
+    <path d="M370 321l-35 63h34l35-53m19-3l34 57h33l-46-78" fill="none" stroke="#f3aa38" stroke-width="18" stroke-linecap="round"/>
+    <g class="blink" transform-origin="401 151">
+      <ellipse cx="392" cy="151" rx="8" ry="11" fill="#273144"/>
+      <ellipse cx="421" cy="148" rx="8" ry="11" fill="#273144"/>
+    </g>
+    <circle cx="394" cy="148" r="2.5" fill="#fff"/><circle cx="423" cy="145" r="2.5" fill="#fff"/>
+    <path d="M394 176q14 11 27-2" fill="none" stroke="#273144" stroke-width="4" stroke-linecap="round"/>
+    <path d="M344 276q32 17 80 6" fill="none" stroke="#d0d7c6" stroke-width="4"/>
+    <path d="M360 288q28 13 68 5" fill="none" stroke="#d0d7c6" stroke-width="4"/>
+
+    <path d="M311 282q-43-34-79-13q-20 11-9 31q19 16 59 4l32 5z" fill="#69a9c8" stroke="#273144" stroke-width="5"/>
+    <path d="M221 285q17-14 32-2q-10 19-31 13z" fill="#f7f0d5"/>
+    <text x="267" y="290" text-anchor="middle" font-size="12" font-weight="bold" fill="#273144">FISH</text>
+  </g>
+
+  <g>
+    <path d="M92 342q28-28 58-2v37H92z" fill="#fff8dc" stroke="#273144" stroke-width="4"/>
+    <path d="M105 342v-21h32v21" fill="#f28b4b" stroke="#273144" stroke-width="4"/>
+    <circle cx="112" cy="358" r="5" fill="#273144"/><circle cx="131" cy="358" r="5" fill="#273144"/>
+    <text x="121" y="402" text-anchor="middle" font-size="15" font-weight="bold" fill="#273144">SLOW DOWN!</text>
+  </g>
+
+  <rect y="530" width="800" height="70" fill="#273144"/>
+  <text x="26" y="558" font-size="19" font-weight="bold" fill="#ffe66a">Caption: He said it was “sustainable transport.” The fish remain unconvinced.</text>
+  <text x="26" y="584" font-size="15" fill="#fff">2026-10-25 12:02:38 SGT (UTC+08:00)</text>
+</svg>
