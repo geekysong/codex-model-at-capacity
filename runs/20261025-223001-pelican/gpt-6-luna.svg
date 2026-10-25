@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">The Pelican Commute</title>
+  <desc id="description">A smug pelican pedals a bicycle past a sign that says “SHORTCUT,” which points into a pond.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .6s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f7e9c9"/>
+  <rect y="440" width="800" height="160" fill="#9bd7d1"/>
+  <path d="M0 445 Q100 425 200 445 T400 445 T600 445 T800 445" fill="none" stroke="#58aaa6" stroke-width="5"/>
+  <path d="M0 480 Q90 464 180 480 T360 480 T540 480 T720 480 T900 480" fill="none" stroke="#70bfba" stroke-width="4"/>
+  <path d="M0 520 Q100 502 200 520 T400 520 T600 520 T800 520" fill="none" stroke="#70bfba" stroke-width="4"/>
+
+  <text id="title" x="400" y="58" text-anchor="middle" font-size="34" font-weight="900" fill="#173b4a">THE PELICAN COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" font-size="17" font-weight="700" fill="#365c60">“Traffic was for the birds. The fish were right there.”</text>
+
+  <!-- Shortcut sign pointing directly into the pond -->
+  <path d="M665 280v157" stroke="#73543b" stroke-width="11"/>
+  <rect x="568" y="268" width="194" height="54" rx="8" fill="#fff3c8" stroke="#73543b" stroke-width="4"/>
+  <text x="665" y="302" text-anchor="middle" font-size="23" font-weight="900" fill="#284d4b">SHORTCUT →</text>
+  <path d="M692 329l23 19-23 19" fill="none" stroke="#73543b" stroke-width="5"/>
+  <text x="665" y="419" text-anchor="middle" font-size="15" font-weight="700" fill="#365c60">POND PARKING</text>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#254e5b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M201 390L302 390L363 310L201 390"/>
+    <path d="M302 390L363 310L431 390L302 390"/>
+    <path d="M363 310L405 310"/>
+    <path d="M431 390L455 390"/>
+    <path d="M201 390L180 347"/>
+    <path d="M180 347L159 347"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#284b56" stroke-width="6">
+    <circle cx="201" cy="390" r="67"/>
+    <path d="M201 323V457M134 390H268M154 343L248 437M248 343L154 437"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#284b56" stroke-width="6">
+    <circle cx="431" cy="390" r="67"/>
+    <path d="M431 323V457M364 390H498M384 343L478 437M478 343L384 437"/>
+  </g>
+  <circle cx="302" cy="390" r="10" fill="#f4a43a" stroke="#284b56" stroke-width="4"/>
+  <path d="M302 390l26 20m-52-20l-23-20" stroke="#284b56" stroke-width="6" stroke-linecap="round"/>
+  <path d="M328 410h17m-118-20h-18" stroke="#284b56" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Pelican and its jaunty, slightly overconfident ride -->
+  <g class="rider">
+    <path d="M271 267Q254 225 283 194Q308 169 345 190Q368 204 358 238L341 282Z" fill="#f5f0df" stroke="#284b56" stroke-width="5"/>
+    <path d="M285 224Q312 204 349 222L357 251Q328 273 292 256Z" fill="#e6e0ca" stroke="#284b56" stroke-width="4"/>
+    <path d="M296 247Q324 258 351 244L365 275Q331 298 288 277Z" fill="#ed9e32" stroke="#284b56" stroke-width="5"/>
+    <path d="M347 212Q366 180 394 184Q416 187 411 208Q406 229 374 231L354 241Z" fill="#f5f0df" stroke="#284b56" stroke-width="5"/>
+    <path d="M405 198L478 216L412 226Q396 221 405 198Z" fill="#ef9a2d" stroke="#284b56" stroke-width="5"/>
+    <path d="M410 218Q444 230 476 216Q466 243 432 246Q410 243 410 218Z" fill="#ef725d" stroke="#284b56" stroke-width="4"/>
+    <circle cx="397" cy="198" r="5" fill="#173b4a"/>
+    <path d="M381 182Q386 174 393 180" fill="none" stroke="#284b56" stroke-width="3" stroke-linecap="round"/>
+    <path d="M302 275L295 326L319 350M342 276L354 314L331 332" fill="none" stroke="#284b56" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M294 326L278 344M331 332L322 349" stroke="#ef9a2d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M319 350L302 390M322 349L328 410" fill="none" stroke="#284b56" stroke-width="6" stroke-linecap="round"/>
+    <path d="M300 390l-12 4m39 16 12 7" stroke="#ef9a2d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M290 301q-13 6-21 0m98-79q9-7 17 0" fill="none" stroke="#284b56" stroke-width="3" stroke-linecap="round"/>
+    <path d="M353 169l11-17 8 17 13-13 2 22" fill="#f4c84a" stroke="#284b56" stroke-width="3" stroke-linejoin="round"/>
+    <text x="383" y="164" font-size="13" font-weight="900" fill="#284b56">CEO</text>
+  </g>
+
+  <!-- Comic motion marks and a bewildered fish -->
+  <path d="M112 297l-24-14m29 2-13-25m31 22 2-29" stroke="#ef725d" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="535" cy="493" rx="25" ry="14" fill="#f4a43a" stroke="#284b56" stroke-width="4"/>
+  <path d="M558 493l17-13v26z" fill="#f4a43a" stroke="#284b56" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="526" cy="489" r="3" fill="#173b4a"/>
+  <text x="535" y="466" text-anchor="middle" font-size="14" font-weight="700" fill="#284b56">“That’s my lane!”</text>
+
+  <!-- Footer kept clear below the scene -->
+  <rect x="0" y="550" width="800" height="50" fill="#173b4a"/>
+  <text x="400" y="582" text-anchor="middle" font-size="17" font-weight="700" fill="#fff3c8">2026-10-25 22:32:50 SGT (UTC+08:00)</text>
+</svg>

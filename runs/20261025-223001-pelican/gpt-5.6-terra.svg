@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon of a determined pelican riding a bicycle while commuters look on.</desc>
+  <style>
+    .spin { transform-box: fill-box; transform-origin: center; animation: spin 1s linear infinite; }
+    .bob { animation: bob .55s ease-in-out infinite alternate; }
+    .pedal { transform-box: fill-box; transform-origin: center; animation: pedal 1s linear infinite; }
+    .blink { animation: blink 3s step-end infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedal { to { transform: rotate(360deg); } }
+    @keyframes blink { 0%,92%,100% { transform: scaleY(1); } 94%,98% { transform: scaleY(.08); } }
+  </style>
+
+  <rect width="800" height="600" fill="#bce9f7"/>
+  <path d="M0 267 Q110 230 220 266 T440 260 T650 250 T800 268 V390 H0Z" fill="#91ce76"/>
+  <path d="M0 365 H800 V510 H0Z" fill="#4d5967"/>
+  <path d="M0 437 H800" stroke="#f9d64b" stroke-width="10" stroke-dasharray="45 28"/>
+  <path d="M0 510 H800" stroke="#303946" stroke-width="7"/>
+
+  <g fill="#fff" opacity=".92">
+    <path d="M79 130c13-22 44-22 57 0 25-12 48 7 44 27H49c-3-16 13-31 30-27z"/>
+    <path d="M590 105c12-20 42-18 51 3 21-9 42 8 36 27h-115c-2-16 12-29 28-30z"/>
+  </g>
+
+  <rect x="38" y="190" width="193" height="93" rx="10" fill="#fff4ca" stroke="#283240" stroke-width="5"/>
+  <text x="134" y="222" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="19" fill="#283240">BIKE LANE</text>
+  <text x="134" y="251" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="25" fill="#e24943">FOR BIRDS?</text>
+
+  <text x="400" y="64" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="40" fill="#243142">PELICAN PEDALS HARD</text>
+  <text x="400" y="94" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#40556b">“My carbon footprint is mostly fish.”</text>
+
+  <g class="bob">
+    <g>
+      <path d="M421 233 Q454 163 530 200 Q564 216 557 279 L536 347 L421 329 Q401 280 421 233Z" fill="#edf2ec" stroke="#273240" stroke-width="6"/>
+      <path d="M449 229 Q469 190 502 202 Q522 210 526 246" fill="none" stroke="#aebabc" stroke-width="15" stroke-linecap="round"/>
+      <path d="M424 259 Q381 255 349 278 Q370 314 424 309Z" fill="#f5bf48" stroke="#273240" stroke-width="6"/>
+      <path d="M351 278 Q360 325 416 330 Q436 325 425 305 L397 287Z" fill="#f0a83c" stroke="#273240" stroke-width="6"/>
+      <path d="M433 228 Q455 196 486 211" fill="none" stroke="#273240" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="459" cy="228" r="12" fill="#fff"/>
+      <circle cx="460" cy="229" r="5" fill="#26313c"/>
+      <g class="blink">
+        <path d="M446 222 Q460 212 473 223" fill="none" stroke="#26313c" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <path d="M511 285 Q550 299 573 267" fill="none" stroke="#273240" stroke-width="7" stroke-linecap="round"/>
+      <path d="M509 299 Q545 322 575 297" fill="none" stroke="#273240" stroke-width="7" stroke-linecap="round"/>
+      <path d="M489 336 L469 389" stroke="#f0a83c" stroke-width="17" stroke-linecap="round"/>
+      <path d="M529 340 L555 393" stroke="#f0a83c" stroke-width="17" stroke-linecap="round"/>
+    </g>
+
+    <g fill="none" stroke="#26313c" stroke-width="7" stroke-linejoin="round">
+      <path d="M404 382 L488 382 L448 457 Z"/>
+      <path d="M488 382 L550 456 L448 457"/>
+      <path d="M488 382 L515 336 L550 456"/>
+      <path d="M515 336 L542 336"/>
+      <path d="M404 382 L387 342 L418 342"/>
+      <path d="M448 457 L469 476"/>
+      <path d="M550 456 L570 477"/>
+    </g>
+    <circle cx="448" cy="457" r="13" fill="#f4ca4d" stroke="#26313c" stroke-width="5"/>
+    <g class="pedal">
+      <path d="M448 457 L480 437 M448 457 L416 477" stroke="#26313c" stroke-width="7" stroke-linecap="round"/>
+      <path d="M473 433 H492 M404 480 H424" stroke="#26313c" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g class="spin" fill="none" stroke="#26313c">
+    <circle cx="410" cy="477" r="58" stroke-width="8"/>
+    <path d="M410 419V535M352 477H468M369 436L451 518M451 436L369 518" stroke-width="3"/>
+    <circle cx="410" cy="477" r="7" fill="#f4ca4d" stroke-width="4"/>
+  </g>
+  <g class="spin" fill="none" stroke="#26313c">
+    <circle cx="578" cy="477" r="58" stroke-width="8"/>
+    <path d="M578 419V535M520 477H636M537 436L619 518M619 436L537 518" stroke-width="3"/>
+    <circle cx="578" cy="477" r="7" fill="#f4ca4d" stroke-width="4"/>
+  </g>
+
+  <g transform="translate(652 285)">
+    <ellipse cx="43" cy="78" rx="42" ry="13" fill="#33414d" opacity=".25"/>
+    <circle cx="40" cy="43" r="29" fill="#f5d9bc" stroke="#273240" stroke-width="5"/>
+    <path d="M12 37 Q40 5 68 33" fill="#6b4650" stroke="#273240" stroke-width="5"/>
+    <circle cx="30" cy="45" r="4" fill="#273240"/><circle cx="51" cy="45" r="4" fill="#273240"/>
+    <path d="M29 62 Q41 69 54 60" fill="none" stroke="#273240" stroke-width="4"/>
+    <text x="39" y="116" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#fff">“SHOW-OFF!”</text>
+  </g>
+
+  <rect y="540" width="800" height="60" fill="#243142"/>
+  <text x="25" y="566" font-family="sans-serif" font-size="16" font-weight="700" fill="#fff4ca">Caption: One bird, two wheels, zero patience for traffic.</text>
+  <text x="25" y="588" font-family="monospace" font-size="14" fill="#bce9f7">2026-10-25 22:33:10 SGT (UTC+08:00)</text>
+</svg>
