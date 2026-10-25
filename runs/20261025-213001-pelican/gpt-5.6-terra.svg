@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals the City</title>
+  <desc id="desc">A satirical cartoon of a proud pelican riding a bicycle, animated with spinning wheels and bobbing motion.</desc>
+  <style>
+    .wheel { animation: spin 1.1s linear infinite; transform-origin: center; }
+    .rider { animation: bob .65s ease-in-out infinite alternate; transform-origin: 410px 315px; }
+    .leg { animation: pedal .55s linear infinite alternate; transform-origin: 425px 370px; }
+    .leg2 { animation: pedal .55s linear infinite alternate-reverse; transform-origin: 425px 370px; }
+    .flag { animation: flutter .7s ease-in-out infinite alternate; transform-origin: 548px 245px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedal { to { transform: rotate(18deg); } }
+    @keyframes flutter { to { transform: skewY(8deg) scaleX(1.08); } }
+  </style>
+
+  <rect width="800" height="600" fill="#bde9f4"/>
+  <circle cx="105" cy="95" r="46" fill="#ffd85a"/>
+  <path d="M0 345 Q105 275 205 345 T410 342 T610 330 T800 345 V455 H0Z" fill="#78c4d2"/>
+  <path d="M0 404 Q125 367 252 409 T500 400 T800 402 V486 H0Z" fill="#429ab4"/>
+  <path d="M0 455 H800 V510 H0Z" fill="#f1d26d"/>
+  <path d="M0 474 H800" stroke="#c79d3f" stroke-width="7" stroke-dasharray="26 19"/>
+
+  <text x="400" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="37" font-weight="900" fill="#173c58">PELICAN PEDALS THE CITY</text>
+  <text x="400" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#285f78">“Finally, a commuter with enough room for everyone’s lunch.”</text>
+
+  <g stroke="#26384a" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel" transform-origin="260px 420px">
+      <circle cx="260" cy="420" r="70" fill="#f7f1de" stroke-width="10"/>
+      <circle cx="260" cy="420" r="8" fill="#26384a" stroke="none"/>
+      <path d="M260 350V490 M190 420H330 M211 371L309 469 M309 371L211 469" fill="none" stroke="#8ca1a5" stroke-width="4"/>
+    </g>
+    <g class="wheel" transform-origin="535px 420px">
+      <circle cx="535" cy="420" r="70" fill="#f7f1de" stroke-width="10"/>
+      <circle cx="535" cy="420" r="8" fill="#26384a" stroke="none"/>
+      <path d="M535 350V490 M465 420H605 M486 371L584 469 M584 371L486 469" fill="none" stroke="#8ca1a5" stroke-width="4"/>
+    </g>
+
+    <path d="M260 420 L350 326 L445 420 L260 420 L405 420 L350 326 L500 326 L535 420" fill="none" stroke="#e33e4f" stroke-width="12"/>
+    <path d="M500 326 L529 283 L561 283" fill="none" stroke="#26384a" stroke-width="10"/>
+    <path d="M335 320 L376 320" stroke="#26384a" stroke-width="12"/>
+    <circle cx="405" cy="420" r="15" fill="#ffd85a" stroke-width="6"/>
+    <path d="M405 420 L430 443 M405 420 L379 397" stroke-width="7"/>
+
+    <g class="rider">
+      <path d="M350 345 Q385 325 435 345 L460 385 Q414 408 365 385Z" fill="#f6f4e7" stroke-width="6"/>
+      <path d="M372 350 Q397 373 439 357" fill="none" stroke="#b9bdad" stroke-width="5"/>
+      <path d="M370 373 Q338 400 318 420" fill="none" stroke="#f6a64b" stroke-width="17"/>
+      <path d="M430 374 Q456 398 475 416" fill="none" stroke="#f6a64b" stroke-width="17"/>
+
+      <g class="leg">
+        <path d="M393 382 Q411 401 430 443" fill="none" stroke="#f39d43" stroke-width="19"/>
+        <path d="M430 443 L453 450" fill="none" stroke="#f39d43" stroke-width="13"/>
+      </g>
+      <g class="leg2">
+        <path d="M418 382 Q405 407 379 397" fill="none" stroke="#f39d43" stroke-width="19"/>
+        <path d="M379 397 L357 390" fill="none" stroke="#f39d43" stroke-width="13"/>
+      </g>
+
+      <path d="M365 347 Q338 312 351 254 Q361 198 419 205 Q467 210 460 274 Q454 326 419 349Z" fill="#fbfbeb" stroke-width="6"/>
+      <path d="M360 282 Q402 302 452 278 Q451 337 411 351 Q370 344 360 282Z" fill="#e7e5cc" stroke-width="4"/>
+      <ellipse cx="376" cy="245" rx="12" ry="15" fill="#fff"/>
+      <ellipse cx="432" cy="245" rx="12" ry="15" fill="#fff"/>
+      <circle cx="379" cy="248" r="6" fill="#273746" stroke="none"/>
+      <circle cx="435" cy="248" r="6" fill="#273746" stroke="none"/>
+      <path d="M369 225 Q378 215 387 225 M423 225 Q432 214 442 224" fill="none" stroke-width="5"/>
+      <path d="M355 264 Q296 269 296 300 Q300 336 370 321 Q413 313 422 282 Q390 257 355 264Z" fill="#f6a64b" stroke-width="6"/>
+      <path d="M305 295 Q352 285 407 280" fill="none" stroke="#d8792f" stroke-width="5"/>
+      <path d="M346 314 Q365 328 390 314" fill="none" stroke="#26384a" stroke-width="4"/>
+      <path d="M365 205 Q402 174 442 207 Q424 185 389 184 Q369 185 350 205Z" fill="#26384a" stroke-width="5"/>
+      <path d="M371 190 Q394 169 423 191" fill="none" stroke="#e33e4f" stroke-width="12"/>
+    </g>
+
+    <g class="flag">
+      <path d="M550 284 V205" stroke="#26384a" stroke-width="6"/>
+      <path d="M552 208 Q596 211 618 230 Q586 246 552 236Z" fill="#e33e4f" stroke-width="4"/>
+      <text x="563" y="229" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#fff" stroke="none">HONK!</text>
+    </g>
+
+    <g transform="translate(620 323)">
+      <rect width="130" height="84" rx="9" fill="#f7f1de" stroke-width="5"/>
+      <text x="65" y="29" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="900" fill="#26384a" stroke="none">BIKE LANE</text>
+      <text x="65" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="900" fill="#e33e4f" stroke="none">?</text>
+      <path d="M65 84 V112" stroke-width="7"/>
+    </g>
+  </g>
+
+  <rect y="522" width="800" height="78" fill="#173c58"/>
+  <text x="400" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#f9df76">A pelican on a bicycle: proof that urban transport needs bigger baskets.</text>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">2026-10-25 21:33:19 SGT (UTC+08:00)</text>
+</svg>

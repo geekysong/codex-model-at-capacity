@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Cycle of the Beak</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling furiously while its enormous beak catches the breeze.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { fill: none; stroke: #26384a; stroke-width: 9; }
+      .spoke { stroke: #78909c; stroke-width: 2; }
+      .frame { fill: none; stroke: #ed6548; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .detail { fill: none; stroke: #26384a; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .ink { stroke: #26384a; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .spin { transform-box: fill-box; transform-origin: center; animation: spin 2.2s linear infinite; }
+      .ride { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f6efd9"/>
+  <path d="M0 434 Q140 415 270 434 T540 430 T800 432 V600 H0Z" fill="#d9ebd3"/>
+  <path d="M0 458 H800" stroke="#96b99c" stroke-width="3" stroke-dasharray="12 12"/>
+
+  <text x="400" y="56" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1.5" fill="#26384a">CYCLE OF THE BEAK</text>
+  <text x="400" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#596d78">He’s going places. Mostly because the bike is.</text>
+
+  <g fill="#fffdf4" stroke="#d8cdb2" stroke-width="2">
+    <path d="M83 156 Q83 143 98 143 Q104 123 126 133 Q142 116 157 137 Q179 130 184 150 Q201 152 197 168 H94 Q83 167 83 156Z"/>
+    <path d="M616 137 Q616 125 629 125 Q634 108 653 117 Q667 103 681 122 Q700 115 704 133 Q721 135 718 149 H626 Q616 148 616 137Z"/>
+  </g>
+
+  <g transform="translate(0 10)">
+    <circle class="wheel" cx="235" cy="390" r="77"/>
+    <circle class="wheel" cx="565" cy="390" r="77"/>
+    <g class="spin">
+      <path class="spoke" d="M235 313V467 M158 390H312 M181 336L289 444 M289 336L181 444"/>
+    </g>
+    <g class="spin">
+      <path class="spoke" d="M565 313V467 M488 390H642 M511 336L619 444 M619 336L511 444"/>
+    </g>
+    <path class="frame" d="M235 390 L330 390 L390 310 L460 390 L330 390 L355 335 L460 390 L565 390"/>
+    <path class="detail" d="M390 310 L378 294 M353 294 H405 M450 302 L476 296 M462 296 H492"/>
+    <circle cx="330" cy="390" r="10" fill="#26384a"/>
+    <g class="spin">
+      <path d="M330 390 L352 374 M330 390 L308 406" stroke="#26384a" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="352" cy="374" r="5" fill="#ed6548"/>
+      <circle cx="308" cy="406" r="5" fill="#ed6548"/>
+    </g>
+    <path d="M264 285 Q330 267 396 285 L396 300 Q330 290 264 302Z" fill="#26384a"/>
+    <path d="M292 278 Q326 266 360 278" fill="none" stroke="#fffdf4" stroke-width="3"/>
+    <path d="M384 293 L398 293" stroke="#26384a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g class="ride">
+    <path d="M353 285 Q348 248 366 220 Q379 200 411 208 Q438 215 442 247 L437 293 L399 307 L364 296Z" fill="#fffdf4" class="ink"/>
+    <path d="M372 218 Q387 200 415 211 Q432 218 437 243 Q409 235 389 246 Q371 239 372 218Z" fill="#f3f0e3" stroke="#26384a" stroke-width="3"/>
+    <path d="M404 248 Q430 236 463 243 Q482 247 494 259 Q479 271 457 267 L415 266Z" fill="#f5a645" class="ink"/>
+    <path d="M414 267 Q448 270 479 264 Q476 282 455 287 Q434 291 411 277Z" fill="#e85d54" stroke="#26384a" stroke-width="3"/>
+    <path d="M421 271 Q442 276 467 270" fill="none" stroke="#fff2d4" stroke-width="3"/>
+    <circle cx="422" cy="230" r="5" fill="#26384a"/>
+    <circle cx="423" cy="228" r="1.5" fill="#fff"/>
+    <path d="M390 207 Q390 188 409 184 Q428 182 434 201" fill="#ed6548" stroke="#26384a" stroke-width="4"/>
+    <path d="M408 185 L410 176 M432 198 L442 194" stroke="#26384a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M373 267 Q347 280 330 294 M436 265 Q452 283 460 296" fill="none" stroke="#26384a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M327 294 L342 298 M456 296 L470 299" stroke="#f5a645" stroke-width="8" stroke-linecap="round"/>
+    <path d="M375 287 Q389 301 399 309 M431 285 Q414 300 399 309" fill="none" stroke="#26384a" stroke-width="7" stroke-linecap="round"/>
+    <path d="M399 309 L389 322 M399 309 L412 321" stroke="#26384a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M461 224 Q477 215 489 222 M468 211 Q486 200 499 207" fill="none" stroke="#ed6548" stroke-width="3" stroke-linecap="round"/>
+    <path d="M343 248 Q332 242 326 247 M348 236 Q337 228 330 231" fill="none" stroke="#91b8c1" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(0 0)">
+    <path d="M571 374 Q600 347 626 365 Q641 377 629 394 Q617 410 593 402Z" fill="#fffdf4" stroke="#26384a" stroke-width="3"/>
+    <path d="M598 376 Q608 369 617 375" fill="none" stroke="#26384a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M620 367 L638 357 L631 376Z" fill="#f5a645" stroke="#26384a" stroke-width="3"/>
+    <path d="M588 401 L582 414 M605 403 L602 415" stroke="#26384a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(553 147) rotate(5)">
+    <path d="M0 0 Q44 -17 78 2 L72 50 Q40 36 5 51Z" fill="#fffdf4" stroke="#26384a" stroke-width="3"/>
+    <text x="38" y="19" text-anchor="middle" font-size="11" font-weight="900" fill="#26384a">HONK</text>
+    <text x="38" y="34" text-anchor="middle" font-size="10" font-weight="700" fill="#ed6548">IF YOU</text>
+    <text x="38" y="46" text-anchor="middle" font-size="10" font-weight="900" fill="#26384a">HAVE FISH</text>
+    <path d="M8 47 L-5 59 L20 50" fill="#fffdf4" stroke="#26384a" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <path d="M214 477 Q400 488 586 477" fill="none" stroke="#26384a" stroke-width="2" stroke-dasharray="5 8" opacity=".35"/>
+  <text x="400" y="526" text-anchor="middle" font-size="15" font-weight="700" fill="#596d78">“I’m not late. I’m just taking the scenic route to lunch.”</text>
+  <path d="M0 550 H800" stroke="#c8bda2" stroke-width="1"/>
+  <text x="400" y="579" text-anchor="middle" font-size="14" font-weight="700" letter-spacing=".3" fill="#26384a">2026-10-25 21:32:58 SGT (UTC+08:00)</text>
+</svg>

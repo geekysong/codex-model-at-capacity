@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Beak</title>
+  <desc id="description">A smug pelican pedals a bicycle with spinning wheels, carrying a fish in its enormous bill pouch. A sign advertises the no-fly lane.</desc>
+  <defs>
+    <pattern id="spokes" width="140" height="140" patternUnits="userSpaceOnUse">
+      <path d="M70 0V140M0 70H140M20 20L120 120M20 120L120 20" fill="none" stroke="#729499" stroke-width="3"/>
+    </pattern>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .outline { stroke:#183b43; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { animation:spin 1.3s linear infinite; transform-box:fill-box; transform-origin:center; }
+      .bird { animation:bob .65s ease-in-out infinite; }
+      .pedals { animation:spin 1.3s linear infinite; transform-origin:395px 380px; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-5px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff6dc"/>
+  <path d="M0 335Q130 280 265 332T530 322T800 314V472H0Z" fill="#d7e9ce"/>
+  <circle cx="690" cy="145" r="42" fill="#ffcf66"/>
+  <g fill="#fffdf2">
+    <path d="M72 168c-18-26 19-46 34-25 13-32 55-22 53 5 28-6 38 20 24 28H72Z"/>
+    <path d="M563 113c-12-19 13-35 26-19 11-23 41-16 41 5 25-3 28 17 19 22h-86Z"/>
+  </g>
+
+  <text x="400" y="65" text-anchor="middle" fill="#183b43" font-size="48" font-weight="900" letter-spacing="2">TOUR DE BEAK</text>
+  <text x="400" y="98" text-anchor="middle" fill="#49666a" font-size="19">One bird. Two wheels. Absolutely no aerodynamics.</text>
+
+  <g class="outline">
+    <path d="M681 309V439" fill="none" stroke="#678379" stroke-width="8"/>
+    <path d="M612 262H738V315H612L592 289Z" fill="#fffdf2"/>
+  </g>
+  <text x="671" y="284" text-anchor="middle" fill="#183b43" font-size="17" font-weight="bold">NO-FLY</text>
+  <text x="671" y="304" text-anchor="middle" fill="#183b43" font-size="17" font-weight="bold">LANE</text>
+
+  <path d="M0 445H800V480H0Z" fill="#c7b99a"/>
+  <path d="M0 446H800" stroke="#8fa383" stroke-width="5"/>
+  <path d="M37 465H135M622 465H720" stroke="#fff6dc" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="395" cy="451" rx="224" ry="13" fill="#183b43" opacity=".13"/>
+
+  <g class="outline">
+    <g>
+      <circle cx="255" cy="381" r="69" fill="#fffdf2" stroke-width="9"/>
+      <g class="wheel">
+        <circle cx="255" cy="381" r="62" fill="none" stroke="none"/>
+        <path d="M255 319V443M193 381H317M211 337L299 425M211 425L299 337" fill="none" stroke="#7a999b" stroke-width="3"/>
+        <circle cx="255" cy="329" r="5" fill="#ffc44c" stroke="none"/>
+      </g>
+      <circle cx="255" cy="381" r="8" fill="#183b43"/>
+    </g>
+    <g>
+      <circle cx="535" cy="381" r="69" fill="#fffdf2" stroke-width="9"/>
+      <g class="wheel">
+        <circle cx="535" cy="381" r="62" fill="none" stroke="none"/>
+        <path d="M535 319V443M473 381H597M491 337L579 425M491 425L579 337" fill="none" stroke="#7a999b" stroke-width="3"/>
+        <circle cx="535" cy="329" r="5" fill="#ffc44c" stroke="none"/>
+      </g>
+      <circle cx="535" cy="381" r="8" fill="#183b43"/>
+    </g>
+
+    <path d="M255 381L325 302L395 380L255 381M325 302H493L395 380M493 302L535 381M395 380L320 287" fill="none" stroke="#e26649" stroke-width="9"/>
+    <path d="M294 285H342" stroke-width="12"/>
+    <path d="M493 302L480 271H518Q535 271 529 285" fill="none" stroke-width="7"/>
+    <circle cx="395" cy="380" r="15" fill="#f9d66b"/>
+    <path d="M262 381L390 380" fill="none" stroke="#5b7375" stroke-width="3"/>
+
+    <g class="pedals">
+      <path d="M372 369L418 391" fill="none" stroke-width="5"/>
+      <path d="M362 369H382M408 391H428" stroke-width="7"/>
+    </g>
+  </g>
+
+  <g class="bird">
+    <g class="outline">
+      <path d="M340 279Q334 315 368 337L382 367" fill="none" stroke="#e8a344" stroke-width="11"/>
+      <path d="M382 367L362 378L395 377" fill="#ffc35b"/>
+      <path d="M368 285Q405 303 417 331L408 388" fill="none" stroke="#e8a344" stroke-width="11"/>
+      <path d="M408 388L430 398L398 399" fill="#ffc35b"/>
+
+      <path d="M305 263L265 239L277 275L252 270L284 294" fill="#fffdf2"/>
+      <path d="M300 215Q260 238 287 277Q318 313 376 289Q409 274 412 244L435 219Q457 200 446 173Q432 154 413 170Q399 180 398 211Q350 191 300 215Z" fill="#fffdf2"/>
+      <path d="M309 229Q351 214 381 243Q349 279 311 247" fill="#dbe6df"/>
+      <path d="M370 232Q414 252 447 275L485 277" fill="none" stroke="#183b43" stroke-width="13"/>
+      <path d="M370 232Q414 252 447 275L485 277" fill="none" stroke="#fffdf2" stroke-width="8"/>
+
+      <path d="M442 193L598 209Q574 274 518 260Q477 250 442 212Z" fill="#ffc264"/>
+      <path d="M441 191Q504 182 609 207L443 207Z" fill="#f0a13b"/>
+      <path d="M477 222Q527 249 566 222" fill="none" stroke="#dc8c3d" stroke-width="3"/>
+      <path d="M513 230Q528 217 543 230Q530 243 513 230L503 220V240Z" fill="#67afb1" stroke-width="3"/>
+      <circle cx="535" cy="228" r="2" fill="#183b43" stroke="none"/>
+
+      <circle cx="428" cy="184" r="10" fill="white" stroke-width="3"/>
+      <circle cx="432" cy="183" r="4" fill="#183b43" stroke="none"/>
+      <path d="M416 168L438 173" fill="none" stroke-width="4"/>
+      <path d="M405 160Q426 140 447 160L447 166H406Z" fill="#e7664c"/>
+      <path d="M417 153L423 164M432 151L437 164" fill="none" stroke="#fff2d4" stroke-width="3"/>
+      <path d="M405 208L395 223L411 222L394 244L382 228L392 215Z" fill="#e7664c" stroke-width="3"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#77928b" stroke-width="4" stroke-linecap="round">
+    <path d="M174 326H205M153 343H194M163 360H188"/>
+  </g>
+
+  <path d="M481 120H641Q654 120 654 133V158Q654 171 641 171H497L467 186L478 163Q470 156 470 145V133Q470 120 481 120Z" fill="white" stroke="#183b43" stroke-width="3"/>
+  <text x="562" y="143" text-anchor="middle" fill="#183b43" font-size="17" font-weight="bold">“My bill includes</text>
+  <text x="562" y="163" text-anchor="middle" fill="#183b43" font-size="17" font-weight="bold">free parking.”</text>
+
+  <text x="400" y="516" text-anchor="middle" fill="#183b43" font-size="23" font-weight="bold">He traded frequent flyer miles for frequent tire bills.</text>
+  <path d="M60 542H740" stroke="#c8ba99" stroke-width="2"/>
+  <text x="400" y="574" text-anchor="middle" fill="#425b5f" font-size="18">2026-10-25 21:31:46 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <title>Projectile motion with landing detail</title>
+  <desc>At 10 pixels per meter, the landing lies at x=700, beyond the canvas. The main trajectory is clipped at x=550; an inset shows the final 10 meters at the same scale.</desc>
+  <defs>
+    <clipPath id="main-clip">
+      <rect x="50" y="220" width="500" height="135"/>
+    </clipPath>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="30" y="28" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="30" y="54">Initial velocity: (20, 15) m/s</text>
+    <text x="30" y="78">Gravity: 10 m/s²; no air resistance</text>
+    <text x="30" y="102">Scale: 10 px/m; screen y increases downward</text>
+    <text x="30" y="126" font-weight="bold">Total flight time: 3 s</text>
+    <text x="30" y="158">Landing is beyond the main view.</text>
+    <text x="30" y="180">Inset shows its final 10 m at the same scale.</text>
+  </g>
+
+  <path d="M50 350 H550" fill="none" stroke="#374151" stroke-width="2"/>
+  <path d="M100 350 Q400 125 700 350" clip-path="url(#main-clip)"
+        fill="none" stroke="#176ac1" stroke-width="3"/>
+  <circle cx="100" cy="350" r="4" fill="#172033"/>
+  <circle cx="400" cy="237.5" r="4" fill="#176ac1"/>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="60" y="372">launch: 0 m, 0 m</text>
+    <text x="300" y="218">apex: 30 m, 11.25 m</text>
+    <text x="418" y="302">continues beyond view</text>
+  </g>
+
+  <g aria-label="Landing inset at ten pixels per meter">
+    <rect x="425" y="120" width="145" height="88" rx="4"
+          fill="#f5f9ff" stroke="#b4c4d8"/>
+    <text x="435" y="138" font-family="Arial, sans-serif" font-size="12"
+          fill="#172033">Landing detail: 50–60 m</text>
+    <g transform="translate(-160,-150)">
+      <path d="M600 287.5 Q650 312.5 700 350"
+            fill="none" stroke="#176ac1" stroke-width="3"/>
+      <path d="M595 350 H715" stroke="#374151" stroke-width="2"/>
+      <circle cx="700" cy="350" r="4" fill="#176ac1"/>
+    </g>
+    <text x="438" y="229" font-family="Arial, sans-serif" font-size="14"
+          fill="#172033">landing: 60 m, 0 m</text>
+  </g>
+
+  <text x="300" y="394" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" fill="#374151">2026-10-25 21:33:38 SGT (UTC+08:00)</text>
+</svg>
