@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <title>Projectile motion with a landing continuation inset</title>
+  <desc>At 10 pixels per meter, the landing position is x=700, outside the canvas. A translated inset shows the landing at the same scale. Flight time is 3 seconds, range is 60 meters, and apex height is 11.25 meters.</desc>
+  <defs>
+    <clipPath id="mainClip">
+      <rect x="50" y="225" width="500" height="130"/>
+    </clipPath>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="50" y="28">Projectile motion · total flight time: 3 s</text>
+    <text x="50" y="51">vₓ = 20 m/s · vᵧ = 15 m/s · g = 10 m/s²</text>
+    <text x="50" y="74">Scale: 10 px/m · no air resistance</text>
+
+    <text x="340" y="102">Landing continuation (same scale)</text>
+    <rect x="435" y="112" width="115" height="96" rx="4"
+          fill="#f4f8fc" stroke="#a6b4c4"/>
+    <g transform="translate(-200,-150)">
+      <line x1="645" y1="350" x2="740" y2="350"
+            stroke="#566274" stroke-width="2"/>
+      <path d="M650 315.625 Q675 331.25 700 350"
+            fill="none" stroke="#1672bd" stroke-width="3"/>
+      <circle cx="700" cy="350" r="4" fill="#172033"/>
+    </g>
+    <text x="245" y="132">landing: 60 m, 0 m</text>
+    <text x="245" y="154" font-size="12">Actual canvas position: (700, 350)</text>
+    <text x="245" y="175" font-size="12">Inset translated left 200 px, up 150 px</text>
+
+    <line x1="50" y1="350" x2="550" y2="350"
+          stroke="#566274" stroke-width="2"/>
+    <path d="M100 350 Q400 125 700 350"
+          clip-path="url(#mainClip)"
+          fill="none" stroke="#1672bd" stroke-width="3"/>
+    <circle cx="100" cy="350" r="4" fill="#172033"/>
+    <circle cx="400" cy="237.5" r="4" fill="#172033"/>
+
+    <text x="56" y="323">launch: 0 m, 0 m</text>
+    <text x="290" y="218">apex: 30 m, 11.25 m</text>
+    <text x="421" y="297" font-size="12">Continues to inset</text>
+  </g>
+
+  <line x1="40" y1="367" x2="560" y2="367" stroke="#d4dae2"/>
+  <text x="50" y="389" font-family="Arial, sans-serif" font-size="14" fill="#172033">2026-10-25 13:03:58 SGT (UTC+08:00)</text>
+</svg>

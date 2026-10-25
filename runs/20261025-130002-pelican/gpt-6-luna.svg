@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Beak of the Peloton</title>
+  <desc id="desc">A helmeted pelican pedals a bicycle and declares itself traffic’s new feathered authority.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .ink { stroke: #172b3a; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: roll 2.5s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .6s ease-in-out infinite alternate; }
+      .pedals { transform-box: fill-box; transform-origin: center; animation: pedal .8s linear infinite; }
+      @keyframes roll { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+      @keyframes pedal { to { transform: rotate(360deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4dc"/>
+  <!-- Title -->
+  <text x="400" y="58" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1.4" fill="#172b3a">THE BEAK OF THE PELOTON</text>
+  <text x="400" y="88" text-anchor="middle" font-size="16" font-weight="700" fill="#d85e46">One bird. Two wheels. Absolutely no road sense.</text>
+
+  <!-- Sun and scenery -->
+  <circle cx="684" cy="151" r="42" fill="#f4bd4f"/>
+  <path d="M0 391 Q145 351 279 390 T545 386 T800 375 V481 H0Z" fill="#d7ead3"/>
+  <path d="M0 421 Q150 390 310 419 T615 412 T800 406 V482 H0Z" fill="#b7d9c5"/>
+  <path d="M0 477 H800" stroke="#172b3a" stroke-width="5"/>
+  <path d="M35 477 H119 M178 477 H262 M321 477 H405 M464 477 H548 M607 477 H691 M750 477 H800" stroke="#f4bd4f" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Motion marks -->
+  <path d="M108 213h52 M83 233h59 M113 253h38" stroke="#d85e46" stroke-width="6" stroke-linecap="round"/>
+  <path d="M631 251h39 M651 272h28" stroke="#d85e46" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Bicycle wheels -->
+  <g class="wheel ink" fill="none">
+    <circle cx="244" cy="407" r="73" stroke-width="8"/>
+    <circle cx="556" cy="407" r="73" stroke-width="8"/>
+    <path d="M244 334V480 M171 407H317 M192 355L296 459 M296 355L192 459" stroke-width="3"/>
+    <path d="M556 334V480 M483 407H629 M504 355L608 459 M608 355L504 459" stroke-width="3"/>
+    <circle cx="244" cy="407" r="9" fill="#f4bd4f"/>
+    <circle cx="556" cy="407" r="9" fill="#f4bd4f"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g class="ink" fill="none">
+    <path d="M244 407 L352 407 L420 316 L470 407 L352 407 L312 322"/>
+    <path d="M312 322 L282 322 M420 316 L452 307 L474 307"/>
+    <path d="M470 407 L500 327 L531 327"/>
+    <path d="M337 390 L367 424" stroke-width="7"/>
+  </g>
+  <g class="pedals">
+    <circle cx="352" cy="407" r="18" fill="#f4bd4f" class="ink"/>
+    <path d="M352 407L327 432 M352 407L376 382" class="ink" fill="none" stroke-width="7"/>
+    <path d="M315 434h25 M365 380h25" class="ink" stroke-width="7"/>
+  </g>
+  <path d="M291 315 Q310 300 331 312 L325 324 Q305 322 291 330Z" fill="#d85e46" class="ink"/>
+  <path d="M520 320 Q543 311 555 322 L550 334 Q535 330 519 335Z" fill="#d85e46" class="ink"/>
+
+  <!-- Pelican and rider -->
+  <g class="rider">
+    <!-- tail -->
+    <path d="M342 248 Q300 236 281 263 Q314 270 348 267Z" fill="#f5f0e5" class="ink"/>
+    <!-- body -->
+    <ellipse cx="399" cy="258" rx="81" ry="67" fill="#f5f0e5" class="ink"/>
+    <path d="M359 277 Q399 298 444 276 Q432 313 390 315 Q365 308 359 277Z" fill="#f2a34a" class="ink"/>
+    <!-- wing -->
+    <path d="M361 242 Q397 211 435 244 Q413 269 376 271Z" fill="#dce9e5" class="ink"/>
+    <path d="M377 246 Q399 242 416 251" fill="none" class="ink" stroke-width="3"/>
+    <!-- neck -->
+    <path d="M426 241 Q452 211 442 174 L424 153 Q414 174 424 196 L405 231Z" fill="#f5f0e5" class="ink"/>
+    <!-- head -->
+    <circle cx="438" cy="153" r="34" fill="#f5f0e5" class="ink"/>
+    <!-- helmet -->
+    <path d="M402 147 Q406 105 441 107 Q472 109 479 145 Q445 134 402 147Z" fill="#25a6a0" class="ink"/>
+    <path d="M405 147 Q443 133 478 145" fill="none" class="ink" stroke-width="7"/>
+    <path d="M423 111 Q436 99 449 108" fill="none" stroke="#fff4dc" stroke-width="4" stroke-linecap="round"/>
+    <!-- eye and brow -->
+    <circle cx="450" cy="151" r="5.5" fill="#172b3a"/>
+    <path d="M444 139 Q455 134 463 141" fill="none" class="ink" stroke-width="4"/>
+    <!-- long beak -->
+    <path d="M465 158 Q535 144 584 165 Q548 180 470 174Z" fill="#f4bd4f" class="ink"/>
+    <path d="M468 176 Q515 197 558 175 Q536 216 495 207 Q476 198 468 176Z" fill="#d85e46" class="ink"/>
+    <path d="M489 186 Q518 194 544 181" fill="none" stroke="#f9c7a8" stroke-width="4" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M387 302 L367 349 L350 380" fill="none" class="ink" stroke-width="12"/>
+    <path d="M431 298 L446 344 L370 397" fill="none" class="ink" stroke-width="12"/>
+    <path d="M342 381 Q355 375 366 386 L362 399 Q345 405 334 396Z" fill="#f4bd4f" class="ink"/>
+    <path d="M359 397 Q369 387 380 395 L381 407 Q367 414 354 407Z" fill="#f4bd4f" class="ink"/>
+    <!-- handlebar grip -->
+    <path d="M456 308 L475 303" stroke="#172b3a" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Comic speech bubble -->
+  <path d="M90 125 Q90 108 108 108 H268 Q286 108 286 126 V175 Q286 193 268 193 H177 L151 214 L157 193 H108 Q90 193 90 175Z" fill="#ffffff" class="ink" stroke-width="4"/>
+  <text x="188" y="145" text-anchor="middle" font-size="17" font-weight="900" fill="#172b3a">I HAVE THE RIGHT</text>
+  <text x="188" y="169" text-anchor="middle" font-size="17" font-weight="900" fill="#172b3a">OF WHEY!</text>
+
+  <!-- Ground shadow -->
+  <ellipse cx="401" cy="484" rx="260" ry="12" fill="#7c9d8d" opacity=".28"/>
+
+  <!-- Footer with timestamp -->
+  <rect x="0" y="522" width="800" height="78" fill="#172b3a"/>
+  <text x="400" y="552" text-anchor="middle" font-size="16" font-weight="700" fill="#fff4dc">A pelican pedals into traffic and immediately declares itself mayor.</text>
+  <text x="400" y="581" text-anchor="middle" font-size="14" font-weight="600" fill="#f4bd4f">2026-10-25 13:02:14 SGT (UTC+08:00)</text>
+</svg>

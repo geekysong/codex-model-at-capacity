@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals to Glory</title>
+  <desc id="desc">A satirical cartoon of an expressive pelican riding a bicycle.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#7fd3ff"/>
+      <stop offset="1" stop-color="#e8f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#555"/>
+      <stop offset=".5" stop-color="#737373"/>
+      <stop offset="1" stop-color="#555"/>
+    </linearGradient>
+    <style>
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin .8s linear infinite; }
+      .bob { transform-box: fill-box; transform-origin: center; animation: bob .8s ease-in-out infinite; }
+      .pedal { transform-box: fill-box; transform-origin: 400px 413px; animation: pedal .8s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pedal { to { transform: rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="93" cy="95" r="42" fill="#ffd65a"/>
+  <path d="M0 250 Q95 190 190 250 T380 250 T570 250 T800 245 V330 H0Z" fill="#86cc71"/>
+  <path d="M0 315 Q150 280 310 322 T560 310 T800 318 V465 H0Z" fill="#55a957"/>
+  <path d="M0 399 H800 V512 H0Z" fill="url(#road)"/>
+  <path d="M0 455 H800" stroke="#ffe872" stroke-width="10" stroke-dasharray="42 30"/>
+
+  <text x="400" y="62" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="34" fill="#17344c" stroke="#fff" stroke-width="3" paint-order="stroke">PELICAN FOR MAYOR!</text>
+  <text x="400" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#17344c">“Finally, a candidate who can carry all the baggage.”</text>
+
+  <g class="wheel">
+    <circle cx="280" cy="430" r="70" fill="#222"/>
+    <circle cx="280" cy="430" r="58" fill="#d9f4ff" stroke="#f9fbff" stroke-width="5"/>
+    <g stroke="#78858d" stroke-width="4">
+      <path d="M280 372V488 M222 430H338 M239 389L321 471 M239 471L321 389"/>
+    </g>
+    <circle cx="280" cy="430" r="8" fill="#e73b3b"/>
+  </g>
+  <g class="wheel">
+    <circle cx="520" cy="430" r="70" fill="#222"/>
+    <circle cx="520" cy="430" r="58" fill="#d9f4ff" stroke="#f9fbff" stroke-width="5"/>
+    <g stroke="#78858d" stroke-width="4">
+      <path d="M520 372V488 M462 430H578 M479 389L561 471 M479 471L561 389"/>
+    </g>
+    <circle cx="520" cy="430" r="8" fill="#e73b3b"/>
+  </g>
+
+  <g stroke="#c91f35" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M280 430 L350 337 L438 430 Z"/>
+    <path d="M350 337 L477 336 L520 430"/>
+    <path d="M438 430 L520 430"/>
+    <path d="M477 336 L503 286 L539 286"/>
+    <path d="M350 337 L329 314 L365 314"/>
+  </g>
+  <path d="M503 286 L490 265" stroke="#222" stroke-width="8" stroke-linecap="round"/>
+  <path d="M475 263 H510" stroke="#222" stroke-width="10" stroke-linecap="round"/>
+  <path d="M322 310 H374" stroke="#222" stroke-width="11" stroke-linecap="round"/>
+
+  <g class="pedal">
+    <circle cx="400" cy="413" r="25" fill="#f6c431" stroke="#332b25" stroke-width="6"/>
+    <path d="M400 413 L438 390 M400 413 L362 436" stroke="#332b25" stroke-width="7"/>
+    <path d="M429 384 L450 384 M350 442 L371 442" stroke="#332b25" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <g class="bob">
+    <path d="M332 349 Q335 276 395 252 Q459 235 477 304 L468 369 Q406 396 332 349Z" fill="#f5f5e9" stroke="#26343d" stroke-width="5"/>
+    <path d="M340 350 Q331 308 359 285 Q391 270 418 292 Q400 340 370 365Z" fill="#e2e2d2"/>
+    <path d="M373 274 Q380 188 454 185 Q510 194 490 261 Q470 290 428 282Z" fill="#fbfbec" stroke="#26343d" stroke-width="5"/>
+    <path d="M400 216 Q405 158 451 151 Q501 157 509 202 Q474 221 438 216Z" fill="#fbfbec" stroke="#26343d" stroke-width="5"/>
+    <path d="M439 221 Q501 204 551 238 Q570 253 535 274 Q480 284 427 259Z" fill="#f4a83b" stroke="#26343d" stroke-width="5"/>
+    <path d="M437 252 Q502 250 546 270 Q535 316 462 308 Q426 299 418 276Z" fill="#f7c45a" stroke="#26343d" stroke-width="5"/>
+    <path d="M457 240 Q480 249 501 242" fill="none" stroke="#9c4b21" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="452" cy="198" rx="12" ry="15" fill="#fff"/>
+    <circle cx="455" cy="202" r="6" fill="#15242b"/>
+    <path d="M467 180 Q483 167 493 182" fill="none" stroke="#26343d" stroke-width="6" stroke-linecap="round"/>
+    <path d="M385 288 Q354 288 341 324" fill="none" stroke="#26343d" stroke-width="12" stroke-linecap="round"/>
+    <path d="M340 322 L326 350" fill="none" stroke="#f5f5e9" stroke-width="15" stroke-linecap="round"/>
+    <path d="M342 322 L325 350" fill="none" stroke="#26343d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M463 292 Q494 308 506 286" fill="none" stroke="#26343d" stroke-width="11" stroke-linecap="round"/>
+    <path d="M505 287 L500 265" fill="none" stroke="#f5f5e9" stroke-width="15" stroke-linecap="round"/>
+    <path d="M505 287 L500 265" fill="none" stroke="#26343d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M364 352 Q352 384 379 402 L397 411" fill="none" stroke="#f5f5e9" stroke-width="18" stroke-linecap="round"/>
+    <path d="M365 352 Q352 384 379 402 L397 411" fill="none" stroke="#26343d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M430 359 Q442 394 415 420" fill="none" stroke="#f5f5e9" stroke-width="18" stroke-linecap="round"/>
+    <path d="M430 359 Q442 394 415 420" fill="none" stroke="#26343d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M389 410 L369 431 M416 420 L443 399" stroke="#ef9e31" stroke-width="12" stroke-linecap="round"/>
+    <path d="M343 311 Q318 292 303 305 Q305 330 337 332Z" fill="#ef4d43" stroke="#26343d" stroke-width="4"/>
+    <text x="319" y="319" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="10" fill="#fff">VOTE</text>
+  </g>
+
+  <g transform="translate(620 275)">
+    <rect x="0" y="0" width="120" height="67" rx="7" fill="#fff5bd" stroke="#5d4b32" stroke-width="4"/>
+    <text x="60" y="27" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="15" fill="#b1282c">NO MORE</text>
+    <text x="60" y="48" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="15" fill="#b1282c">PARKING FEES!</text>
+    <path d="M30 67 L18 103 M92 67 L103 103" stroke="#5d4b32" stroke-width="5"/>
+  </g>
+
+  <rect y="512" width="800" height="88" fill="#17344c"/>
+  <text x="400" y="544" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="20" fill="#fff6cf">A pelican on a bicycle: carrying promises, snacks, and absolutely no brakes.</text>
+  <text x="400" y="578" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#bdeaff">2026-10-25 13:02:54 SGT (UTC+08:00)</text>
+</svg>
