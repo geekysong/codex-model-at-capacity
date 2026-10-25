@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A determined pelican pedals a bicycle, carrying a tiny fish passenger and a very large sense of importance.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2s linear infinite; }
+      .rider { animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#c9f1f0"/>
+  <rect y="386" width="800" height="214" fill="#f4dc9e"/>
+  <path d="M0 390 Q130 366 260 390 T520 390 T800 386" fill="none" stroke="#7bc9b1" stroke-width="8"/>
+  <circle cx="680" cy="108" r="44" fill="#ffd66e"/>
+  <g fill="#fff8e9">
+    <path d="M98 124q10-27 37-15 16-27 42-8 26-2 30 23H98z"/>
+    <path d="M500 168q9-23 31-13 14-22 36-7 21-2 24 20h-91z"/>
+  </g>
+
+  <text id="title" x="400" y="55" text-anchor="middle" font-size="31" font-weight="900" letter-spacing="1.5" fill="#164e58">THE PELICAN CYCLE</text>
+  <text x="400" y="82" text-anchor="middle" font-size="15" font-weight="700" fill="#39777a">“He’s not late. He’s making a beak statement.”</text>
+
+  <!-- bicycle -->
+  <g fill="none" stroke="#174f59" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M220 420 L310 420 L365 337 L290 337 Z"/>
+    <path d="M310 420 L365 337 L438 420 L310 420"/>
+    <path d="M438 420 L468 330"/>
+    <path d="M445 330 L491 330"/>
+    <path d="M290 337 L270 325"/>
+    <path d="M365 337 L377 320"/>
+    <circle cx="310" cy="420" r="15" fill="#ffd66e"/>
+    <path d="M310 420 L336 394 M310 420 L282 406"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#174f59" stroke-width="6">
+    <circle cx="220" cy="420" r="58"/>
+    <path d="M220 362v116 M162 420h116 M179 379l82 82 M261 379l-82 82"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#174f59" stroke-width="6">
+    <circle cx="438" cy="420" r="58"/>
+    <path d="M438 362v116 M380 420h116 M397 379l82 82 M479 379l-82 82"/>
+  </g>
+
+  <!-- expressive rider -->
+  <g class="rider">
+    <!-- tail and wing -->
+    <path d="M330 264q-44-28-61 1 24 1 30 22" fill="#f7f5e9" stroke="#174f59" stroke-width="4"/>
+    <ellipse cx="344" cy="247" rx="48" ry="58" fill="#fffdf2" stroke="#174f59" stroke-width="4"/>
+    <path d="M316 244q28-31 56-4-9 35-42 38z" fill="#d6e6df" stroke="#174f59" stroke-width="3"/>
+    <path d="M325 289q-6 26-22 46l15 8 25-36 M359 291q1 24 21 43l14-7-22-41" fill="none" stroke="#174f59" stroke-width="7" stroke-linecap="round"/>
+    <path d="M311 341l-17 4 M390 327l15 7" stroke="#e99039" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- long neck and head -->
+    <path d="M353 217q-2-52 25-77 15-13 32-4 15 8 7 25-10 22-28 42l-4 43z" fill="#fffdf2" stroke="#174f59" stroke-width="4"/>
+    <path d="M402 151q28 3 60 18 15 7 2 15-28 10-69-2" fill="#f1a34a" stroke="#174f59" stroke-width="4"/>
+    <path d="M399 163q31 5 66 7-12 18-54 15" fill="#e77d42" stroke="#174f59" stroke-width="3"/>
+    <circle cx="401" cy="132" r="4.5" fill="#173f48"/>
+    <path d="M390 123q12-10 23 0" fill="none" stroke="#174f59" stroke-width="3" stroke-linecap="round"/>
+    <path d="M417 118l8-8 4 11" fill="#ef6c56" stroke="#174f59" stroke-width="2"/>
+
+    <!-- handlebars and wing arms -->
+    <path d="M365 232q47 10 77 58 M340 233q-23 12-34 43" fill="none" stroke="#174f59" stroke-width="7" stroke-linecap="round"/>
+    <path d="M432 288l13-3 M306 275l-11 6" stroke="#e99039" stroke-width="7" stroke-linecap="round"/>
+    <!-- tiny passenger -->
+    <path d="M288 238q12-18 26-3l7 17-31 2z" fill="#6bb8b2" stroke="#174f59" stroke-width="3"/>
+    <circle cx="304" cy="231" r="9" fill="#6bb8b2" stroke="#174f59" stroke-width="3"/>
+    <path d="M311 230l12 4-12 4" fill="#ef9b42" stroke="#174f59" stroke-width="2"/>
+    <path d="M297 252q9 10 20 1" fill="none" stroke="#174f59" stroke-width="2"/>
+    <text x="260" y="211" font-size="12" font-weight="800" fill="#39777a">“Are we there?”</text>
+  </g>
+
+  <!-- motion marks and ground -->
+  <path d="M118 326h40 M105 343h27 M518 287h34 M528 303h24" stroke="#fff8e9" stroke-width="5" stroke-linecap="round"/>
+  <path d="M143 486h501" stroke="#c79e56" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="524" text-anchor="middle" font-size="17" font-weight="800" fill="#795d35">One bird. Two wheels. Absolutely no sense of direction.</text>
+  <text x="400" y="575" text-anchor="middle" font-size="14" font-weight="700" fill="#164e58">2026-10-25 17:32:22 SGT (UTC+08:00)</text>
+</svg>

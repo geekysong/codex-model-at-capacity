@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <title>Projectile motion with landing shown in a continuation inset</title>
+  <desc>At 10 pixels per meter, the landing is at canvas coordinate (700,350), outside the canvas. The main trajectory retains the requested scale; a translated inset shows its final segment and landing.</desc>
+  <defs>
+    <clipPath id="mainClip">
+      <rect x="50" y="210" width="500" height="141"/>
+    </clipPath>
+  </defs>
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#172033">
+    <text x="30" y="25" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="30" y="49">vₓ = 20 m/s · vᵧ₀ = 15 m/s · g = 10 m/s²</text>
+    <text x="30" y="70">Scale: 10 px/m · No air resistance</text>
+    <text x="30" y="92">Total flight time: 3 s</text>
+    <text x="30" y="119">Landing lies at x = 700 px, beyond this canvas.</text>
+    <text x="30" y="139">Inset below shows the final 12 m at the same scale.</text>
+
+    <text x="340" y="164" font-weight="bold">Landing continuation inset</text>
+    <path d="M400 190 Q460 217 520 262" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+    <path d="M390 262 H550" fill="none" stroke="#64748b" stroke-width="1.5"/>
+    <circle cx="520" cy="262" r="4" fill="#172033"/>
+    <text x="385" y="285">landing: 60 m, 0 m</text>
+    <text x="385" y="304" font-size="12">Inset translated: −180 px, −88 px</text>
+
+    <path d="M50 350 H550" fill="none" stroke="#334155" stroke-width="2"/>
+    <path d="M100 350 Q400 125 700 350" clip-path="url(#mainClip)" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+    <circle cx="100" cy="350" r="4" fill="#172033"/>
+    <circle cx="400" cy="237.5" r="4" fill="#172033"/>
+
+    <text x="57" y="325">launch: 0 m, 0 m</text>
+    <text x="205" y="217">apex: 30 m, 11.25 m</text>
+  </g>
+  <rect x="0" y="365" width="600" height="35" fill="#eef2f7"/>
+  <text x="300" y="387" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#172033">2026-10-25 17:33:32 SGT (UTC+08:00)</text>
+</svg>

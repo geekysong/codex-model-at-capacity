@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="30" y="28" font-size="18" font-weight="bold">Projectile motion</text>
+    <text x="30" y="53">vₓ = 20 m/s · vᵧ = 15 m/s · g = 10 m/s²</text>
+    <text x="30" y="77">Total flight time: 3 s</text>
+    <text x="30" y="101">Scale: 10 px/m; horizontal axis broken at 34–56 m</text>
+    <text x="30" y="125" font-size="12">The break keeps the 60 m landing point inside the canvas.</text>
+  </g>
+
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#596273" stroke-width="2"/>
+
+  <!-- Physical coordinates: x = 100 + 200t, y = 350 - 150t + 50t².
+       After the horizontal break, displayed x = physical x - 200. -->
+  <g fill="none" stroke="#1769aa" stroke-width="3">
+    <path d="M100 350 Q270 222.5 440 239.5"/>
+    <path d="M460 322 Q480 335 500 350"/>
+  </g>
+
+  <g stroke="#596273" stroke-width="2" fill="none">
+    <path d="M442 356 L448 344 M452 356 L458 344"/>
+  </g>
+
+  <g fill="#1769aa">
+    <circle cx="100" cy="350" r="4"/>
+    <circle cx="400" cy="237.5" r="4"/>
+    <circle cx="500" cy="350" r="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="55" y="325">launch: 0 m, 0 m</text>
+    <text x="325" y="215">apex: 30 m, 11.25 m</text>
+    <text x="450" y="288">
+      <tspan x="450">landing:</tspan>
+      <tspan x="450" dy="18">60 m, 0 m</tspan>
+    </text>
+  </g>
+
+  <rect x="0" y="368" width="600" height="32" fill="#eef2f6"/>
+  <text x="300" y="389" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#172033">2026-10-25 17:34:21 SGT (UTC+08:00)</text>
+</svg>
