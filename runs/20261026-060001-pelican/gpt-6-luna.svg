@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE PELICAN COMMUTE</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a sign that says “ROAD CLOSED”; its beak carries an emergency croissant.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#fffdf5;stroke:#17324d;stroke-width:7}
+      .spoke{stroke:#8ba1a8;stroke-width:2}
+      .label{font-family:system-ui,sans-serif;font-weight:800}
+      .bike{fill:none;stroke:#e45b3e;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      @keyframes roll{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .rolling{transform-box:fill-box;transform-origin:center;animation:roll 2.6s linear infinite}
+      .pedaling{transform-box:fill-box;transform-origin:center;animation:pedal .65s ease-in-out infinite}
+      .rider{animation:bob .65s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bce9e6"/>
+  <circle cx="700" cy="110" r="48" fill="#ffd56b"/>
+  <path d="M0 365 Q120 330 235 365 T470 360 T800 350 V520 H0Z" fill="#83c78a"/>
+  <path d="M0 430 H800" stroke="#fff3cf" stroke-width="5" stroke-dasharray="30 22"/>
+  <path d="M0 468 H800" stroke="#17324d" stroke-width="5"/>
+  <text x="34" y="55" class="label" font-size="30" fill="#17324d">THE PELICAN COMMUTE</text>
+  <text x="36" y="84" class="label" font-size="15" fill="#31546a">LOCAL BIRD INSISTS THIS COUNTS AS “CARPOOLING”</text>
+
+  <!-- Roadside sign -->
+  <path d="M104 266 V411" stroke="#6a513e" stroke-width="10"/>
+  <rect x="39" y="205" width="130" height="72" rx="8" fill="#fff4d2" class="ink"/>
+  <text x="104" y="235" text-anchor="middle" class="label" font-size="17" fill="#17324d">ROAD</text>
+  <text x="104" y="260" text-anchor="middle" class="label" font-size="17" fill="#e45b3e">CLOSED</text>
+  <path d="M53 289 L154 289" stroke="#e45b3e" stroke-width="7"/>
+
+  <!-- Bicycle -->
+  <g aria-label="Bicycle">
+    <circle class="wheel" cx="267" cy="416" r="69"/>
+    <circle class="wheel" cx="526" cy="416" r="69"/>
+    <g class="rolling">
+      <path class="spoke" d="M267 347V485M198 416H336M218 367L316 465M316 367L218 465"/>
+    </g>
+    <g class="rolling">
+      <path class="spoke" d="M526 347V485M457 416H595M477 367L575 465M575 367L477 465"/>
+    </g>
+    <path class="bike" d="M267 416 L350 342 L410 416 L267 416 M350 342 L526 416 L410 416 M350 342 L334 319 M326 319 H360 M526 416 L550 335 M535 335 H565"/>
+    <circle cx="410" cy="416" r="10" fill="#17324d"/>
+    <g class="pedaling">
+      <path d="M410 416 L388 390 M410 416 L434 441" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+      <path d="M380 388 H397 M427 443 H444" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <path d="M329 317 H369" stroke="#17324d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M375 337 Q402 324 421 342" fill="none" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <path d="M350 319 Q336 265 366 224 Q394 191 439 205 Q477 217 479 260 Q482 299 447 319 L411 337Z" fill="#fffdf5" class="ink"/>
+    <path d="M369 260 Q396 238 436 254 Q455 262 454 287 Q435 308 403 305 Q376 298 369 260Z" fill="#70b8c5" stroke="#17324d" stroke-width="5"/>
+    <path d="M402 302 Q423 309 455 293 Q467 287 475 294 Q462 322 426 329 Q403 330 390 317Z" fill="#f1a54a" class="ink"/>
+    <path d="M424 208 Q446 182 470 193 Q491 203 489 226 Q486 251 457 259 Q437 259 425 245Z" fill="#fffdf5" class="ink"/>
+    <path d="M476 216 Q519 209 553 222 Q531 243 484 239Z" fill="#f0a342" class="ink"/>
+    <path d="M518 218 Q536 216 549 222 Q535 229 518 226Z" fill="#c9543e"/>
+    <circle cx="466" cy="211" r="5.5" fill="#17324d"/>
+    <path d="M463 192 Q474 177 486 191" fill="none" stroke="#e45b3e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M374 286 Q398 279 416 289" fill="none" stroke="#fffdf5" stroke-width="5" stroke-linecap="round"/>
+    <path d="M356 314 Q344 328 349 344 L369 349 L384 323" fill="#f0a342" class="ink"/>
+    <path d="M433 318 Q445 331 455 342 L476 339" fill="none" stroke="#f0a342" stroke-width="11" stroke-linecap="round"/>
+    <!-- Croissant cargo -->
+    <path d="M552 220 Q565 204 579 217 Q588 227 579 237 Q566 248 553 234 Q546 228 552 220Z" fill="#e8a646" stroke="#17324d" stroke-width="3"/>
+    <path d="M555 220 Q562 224 560 234 M570 218 Q565 228 574 236" fill="none" stroke="#fff0bd" stroke-width="3" stroke-linecap="round"/>
+    <text x="590" y="207" class="label" font-size="13" fill="#17324d">EMERGENCY</text>
+    <text x="590" y="223" class="label" font-size="13" fill="#17324d">CROISSANT</text>
+  </g>
+
+  <!-- comic motion marks -->
+  <path d="M300 208 l-18 -12 M309 225 l-23 -3 M500 302 l18 -12" fill="none" stroke="#e45b3e" stroke-width="5" stroke-linecap="round"/>
+  <text x="605" y="361" class="label" font-size="18" fill="#17324d" transform="rotate(-8 605 361)">HONK!</text>
+  <path d="M600 370 q-12 8 -17 22" fill="none" stroke="#17324d" stroke-width="3"/>
+
+  <rect x="0" y="520" width="800" height="80" fill="#17324d"/>
+  <text x="400" y="550" text-anchor="middle" class="label" font-size="18" fill="#fff4d2">“I’m reducing my carbon footprint. The beak is just for snacks.”</text>
+  <text x="400" y="582" text-anchor="middle" class="label" font-size="16" fill="#bce9e6">2026-10-26 06:02:16 SGT (UTC+08:00)</text>
+</svg>
