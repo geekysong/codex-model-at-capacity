@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals the Bicycle</title>
+  <desc id="desc">A satirical cartoon of an overconfident pelican riding a tiny bicycle.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.1s linear infinite; }
+    .bob { transform-box: fill-box; transform-origin: center bottom; animation: bob .55s ease-in-out infinite alternate; }
+    .legA { transform-box: fill-box; transform-origin: top center; animation: pedalA 1.1s linear infinite; }
+    .legB { transform-box: fill-box; transform-origin: top center; animation: pedalB 1.1s linear infinite; }
+    .dust { animation: puff 1.1s ease-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedalA { 0%,100% { transform: rotate(24deg); } 50% { transform: rotate(-30deg); } }
+    @keyframes pedalB { 0%,100% { transform: rotate(-30deg); } 50% { transform: rotate(24deg); } }
+    @keyframes puff { 0% { opacity: 0; transform: translateX(0); } 25% { opacity: .8; } 100% { opacity: 0; transform: translateX(-32px); } }
+    text { font-family: Arial, Helvetica, sans-serif; }
+  </style>
+
+  <rect width="800" height="600" fill="#b9e9f3"/>
+  <path d="M0 306 Q105 257 205 301 T410 291 T605 305 T800 272 V454 H0Z" fill="#76c660"/>
+  <path d="M0 407 Q165 382 329 409 T800 395 V490 H0Z" fill="#54ae48"/>
+  <path d="M0 454 H800 V492 H0Z" fill="#e4d075"/>
+  <path d="M0 484 Q140 461 272 484 T545 477 T800 485 V510 H0Z" fill="#bd9c51"/>
+
+  <g fill="#fff" opacity=".8">
+    <path d="M94 124c15-28 45-20 51 1 25-14 48 4 42 22H77c-5-10 2-20 17-23z"/>
+    <path d="M617 102c13-24 39-17 44 1 23-13 42 3 38 19h-94c-4-9 2-17 12-20z"/>
+  </g>
+
+  <text x="400" y="62" text-anchor="middle" font-size="38" font-weight="900" fill="#173549" stroke="#fff" stroke-width="5" paint-order="stroke">PELICAN: ROAD WARRIOR</text>
+  <text x="400" y="93" text-anchor="middle" font-size="17" font-weight="700" fill="#285165">“Because public transport has standards.”</text>
+
+  <g class="dust" fill="#d5bd72">
+    <ellipse cx="102" cy="448" rx="17" ry="7"/>
+    <ellipse cx="72" cy="455" rx="10" ry="4"/>
+  </g>
+
+  <!-- bicycle -->
+  <g stroke="#263b44" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <g class="wheel">
+      <circle cx="225" cy="429" r="70" fill="#d7eff0"/>
+      <circle cx="225" cy="429" r="62"/>
+      <path d="M225 367V491M163 429H287M181 385l88 88M269 385l-88 88" stroke-width="3"/>
+      <circle cx="225" cy="429" r="8" fill="#f7bb39"/>
+    </g>
+    <g class="wheel">
+      <circle cx="535" cy="429" r="70" fill="#d7eff0"/>
+      <circle cx="535" cy="429" r="62"/>
+      <path d="M535 367V491M473 429H597M491 385l88 88M579 385l-88 88" stroke-width="3"/>
+      <circle cx="535" cy="429" r="8" fill="#f7bb39"/>
+    </g>
+    <path d="M225 429 330 294 405 429 225 429 350 429 475 305 535 429 405 429 475 305"/>
+    <path d="M330 294h-48M475 305l34-36h45"/>
+    <path d="M350 429 385 448M405 429l-35 20"/>
+    <circle cx="405" cy="429" r="19" fill="#f7bb39"/>
+  </g>
+
+  <!-- pelican -->
+  <g class="bob" stroke="#263b44" stroke-linejoin="round">
+    <path d="M348 306 Q304 271 326 213 Q347 158 405 182 Q448 202 439 283 L420 361 Q391 384 348 306Z" fill="#edf2e8" stroke-width="6"/>
+    <path d="M363 237 Q329 177 370 145 Q415 116 442 171 Q454 196 440 229 Q415 209 363 237Z" fill="#fbfbf2" stroke-width="6"/>
+    <!-- absurd beak -->
+    <path d="M378 186 Q465 162 558 194 Q581 203 562 222 Q501 250 404 229 Q366 221 378 186Z" fill="#f5a536" stroke-width="6"/>
+    <path d="M403 228 Q493 244 560 218 Q544 291 464 282 Q416 273 403 228Z" fill="#f08b32" stroke-width="6"/>
+    <path d="M433 203q39 11 83 2" fill="none" stroke="#c56b28" stroke-width="4"/>
+    <circle cx="399" cy="180" r="18" fill="#fff" stroke-width="5"/>
+    <circle cx="405" cy="182" r="7" fill="#172d35"/>
+    <path d="M384 161q16-15 31-2" fill="none" stroke="#263b44" stroke-width="6"/>
+    <path d="M348 288 Q321 325 343 350 Q366 366 385 335 L397 289" fill="#71899c" stroke-width="6"/>
+    <path d="M420 289 Q461 296 479 330" fill="none" stroke="#263b44" stroke-width="8"/>
+    <path d="M473 328q13-20 28-8" fill="none" stroke="#f5a536" stroke-width="11"/>
+    <path d="M363 299 Q391 318 423 302" fill="none" stroke="#263b44" stroke-width="5"/>
+    <!-- tiny helmet -->
+    <path d="M354 150 Q378 105 424 137 L433 158 Q391 143 354 165Z" fill="#e94c4c" stroke-width="6"/>
+    <path d="M382 128l9-18" stroke="#263b44" stroke-width="6"/>
+    <!-- legs -->
+    <g class="legA">
+      <path d="M366 342 Q354 389 390 429" fill="none" stroke="#f5a536" stroke-width="14" stroke-linecap="round"/>
+      <path d="M387 428h30" fill="none" stroke="#f5a536" stroke-width="12" stroke-linecap="round"/>
+    </g>
+    <g class="legB">
+      <path d="M402 344 Q432 390 405 449" fill="none" stroke="#f5a536" stroke-width="14" stroke-linecap="round"/>
+      <path d="M404 448h31" fill="none" stroke="#f5a536" stroke-width="12" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(576 306)">
+    <path d="M0 11q29-27 58 0v37H0z" fill="#f6e8bd" stroke="#263b44" stroke-width="5"/>
+    <text x="29" y="33" text-anchor="middle" font-size="13" font-weight="800" fill="#263b44">BIKE LANE?</text>
+  </g>
+
+  <rect x="0" y="514" width="800" height="86" fill="#173549"/>
+  <text x="400" y="545" text-anchor="middle" font-size="22" font-weight="800" fill="#ffe47b">A pelican on a bicycle: winging it through rush hour.</text>
+  <text x="400" y="579" text-anchor="middle" font-size="16" fill="#ffffff">2026-10-25 09:02:14 SGT (UTC+08:00)</text>
+</svg>
