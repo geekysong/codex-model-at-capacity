@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#172334">
+    <text x="50" y="30" font-size="20" font-weight="bold">Projectile motion</text>
+    <text x="50" y="57" font-size="14">vₓ = 20 m/s · vᵧ₀ = 15 m/s · g = 10 m/s²</text>
+    <text x="50" y="81" font-size="14">Total flight time: 3 s · No air resistance</text>
+    <text x="50" y="110" font-size="13">Scale: 10 px/m; downward canvas y increases.</text>
+    <text x="50" y="132" font-size="13">Horizontal axis broken: 32–54 m omitted to fit the canvas.</text>
+    <text x="50" y="154" font-size="13">Coordinates below are distance and height from launch.</text>
+  </g>
+
+  <!-- x = 100 + 200t; y = 350 - 150t + 50t².
+       After the axis break, canvas x is shifted left by 200 px. -->
+  <path d="M100 350 Q260 230 420 238 M440 309.5 Q470 327.5 500 350"
+        fill="none" stroke="#1769aa" stroke-width="3"/>
+
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#566171" stroke-width="2"/>
+  <g stroke="#566171" stroke-width="2" fill="none">
+    <path d="M422 356 L428 344 M432 356 L438 344"/>
+  </g>
+  <g stroke="#1769aa" stroke-width="2">
+    <path d="M416 243 L424 233 M436 314.5 L444 304.5"/>
+  </g>
+
+  <g fill="#1769aa">
+    <circle cx="100" cy="350" r="4"/>
+    <circle cx="400" cy="237.5" r="4"/>
+    <circle cx="500" cy="350" r="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172334">
+    <text x="50" y="310">launch: 0 m, 0 m</text>
+    <text x="326" y="216">apex: 30 m, 11.25 m</text>
+    <text x="423" y="289">landing:</text>
+    <text x="458" y="310">60 m, 0 m</text>
+  </g>
+
+  <rect x="0" y="369" width="600" height="31" fill="#edf2f7"/>
+  <text x="300" y="390" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="14" fill="#172334">2026-10-25 20:04:23 SGT (UTC+08:00)</text>
+</svg>
