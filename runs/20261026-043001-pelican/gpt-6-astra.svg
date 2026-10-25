@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Fish: a pelican rides a bicycle</title>
+  <desc id="description">A determined pelican pedals a tiny bicycle, carrying fish in its enormous bill beneath a sign declaring this a no-fly zone. The wheels spin and the rider bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="road" width="110" height="12" patternUnits="userSpaceOnUse">
+      <path d="M15 6h55" stroke="#fff3bf" stroke-width="5" stroke-linecap="round"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .ink { stroke: #213440; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .spokes { stroke: #647e88; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff6de"/>
+  <path d="M0 110H800V445H0Z" fill="#cbeef1"/>
+  <circle cx="686" cy="159" r="38" fill="#ffd465"/>
+  <path d="M36 184q23-33 48-5q32-42 60 5M541 150q20-26 39-4q27-30 48 4" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round"/>
+
+  <text x="400" y="57" text-anchor="middle" font-size="43" font-weight="900" fill="#213440">TOUR DE FISH</text>
+  <text x="400" y="88" text-anchor="middle" font-size="17" font-weight="bold" letter-spacing="3" fill="#41636a">ZERO AIR MILES. MAXIMUM BILL.</text>
+
+  <path d="M0 393Q140 366 278 395T558 390T800 389V454H0Z" fill="#90cdb8"/>
+  <path d="M0 425Q170 408 340 430T800 421V498H0Z" fill="#607b83"/>
+  <rect y="471" width="800" height="12" fill="url(#road)"/>
+  <ellipse cx="383" cy="449" rx="225" ry="13" fill="#334b54" opacity=".25"/>
+
+  <g class="ink">
+    <path d="M677 262v155" stroke="#776a55" stroke-width="9"/>
+    <rect x="602" y="211" width="150" height="64" rx="9" fill="#fff6de"/>
+  </g>
+  <text x="677" y="237" text-anchor="middle" font-size="19" font-weight="900" fill="#213440">NO-FLY ZONE</text>
+  <text x="677" y="259" text-anchor="middle" font-size="13" fill="#213440">YES, EVEN YOU.</text>
+
+  <g>
+    <path d="M63 243q-7-21 13-29h151q23 0 23 23v24q0 21-23 21h-67l-22 24 2-24H86q-23 0-23-23Z" fill="white" stroke="#213440" stroke-width="3"/>
+    <text x="157" y="239" text-anchor="middle" font-size="18" font-weight="bold" fill="#213440">“I was told this</text>
+    <text x="157" y="263" text-anchor="middle" font-size="18" font-weight="bold" fill="#213440">was a flycycle.”</text>
+  </g>
+
+  <!-- Rotating wheels -->
+  <g transform="translate(252 390)">
+    <circle r="66" fill="#d7eff0" class="ink" stroke-width="9"/>
+    <circle r="56" fill="none" stroke="#fff6de" stroke-width="3"/>
+    <g class="spokes">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-56 0H56M0-56V56M-40-40L40 40M-40 40L40-40"/>
+      <path d="M0-55v12" stroke="#f1b446" stroke-width="7"/>
+    </g>
+    <circle r="7" fill="#213440"/>
+  </g>
+  <g transform="translate(524 390)">
+    <circle r="66" fill="#d7eff0" class="ink" stroke-width="9"/>
+    <circle r="56" fill="none" stroke="#fff6de" stroke-width="3"/>
+    <g class="spokes">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-56 0H56M0-56V56M-40-40L40 40M-40 40L40-40"/>
+      <path d="M0-55v12" stroke="#f1b446" stroke-width="7"/>
+    </g>
+    <circle r="7" fill="#213440"/>
+  </g>
+
+  <!-- Tiny bicycle, enormous passenger -->
+  <g fill="none" class="ink">
+    <path d="M252 390L319 302 366 390H252L473 302H319M366 390L473 302" stroke="#df5350" stroke-width="10"/>
+    <path d="M524 390L473 302 461 275" stroke="#df5350" stroke-width="9"/>
+    <path d="M461 275l-8-21h33q17 0 17 13" stroke="#213440" stroke-width="7"/>
+    <path d="M319 302l-8-25" stroke-width="8"/>
+    <path d="M286 277h52" stroke-width="12"/>
+    <path d="M259 395h103" stroke="#213440" stroke-width="3"/>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+    <!-- Tail and round body -->
+    <path d="M278 254l-47-32 17 43-30-9q23 40 72 32" fill="#fffdf2" class="ink"/>
+    <path d="M282 203q-46 36-26 71 15 27 76 19 57-8 68-55l-20-45Z" fill="#fffdf2" class="ink"/>
+    <path d="M279 225q9 47 62 37l-17-11 22-3q-17-34-54-35" fill="#d9e4de" class="ink"/>
+    <!-- Long bent neck -->
+    <path d="M346 231q19-18 10-52-9-37 19-48 30-13 50 9 14 17-2 40-19 29-6 54 5 16-13 29-26 13-44-5" fill="#fffdf2" class="ink"/>
+    <!-- Huge bill pouch -->
+    <path d="M412 159l180 19q-39 66-114 65-52-5-66-84Z" fill="#f9bc54" class="ink"/>
+    <path d="M415 155l180 22-2 12-184-13Z" fill="#f58c43" class="ink"/>
+    <path d="M448 197q34 35 88 8" fill="none" stroke="#de8b3d" stroke-width="3"/>
+    <!-- Fish passengers -->
+    <path d="M489 206q19-20 37-5l17-12-3 24-17-5q-18 13-34-2Z" fill="#6bbab5" stroke="#213440" stroke-width="3"/>
+    <circle cx="501" cy="202" r="3" fill="#213440"/>
+    <path d="M551 195q8-9 15-4l10-8-2 15-9-3q-6 7-14 0" fill="#73a4cf" stroke="#213440" stroke-width="2"/>
+    <!-- Determined face and helmet -->
+    <circle cx="398" cy="150" r="10" fill="white" stroke="#213440" stroke-width="3"/>
+    <circle cx="402" cy="151" r="4" fill="#213440"/>
+    <path d="M386 135l21 5" fill="none" class="ink"/>
+    <path d="M362 129q-2-35 30-36 30-1 40 35Z" fill="#e95c58" class="ink"/>
+    <path d="M379 101l-3 18m17-21 2 20m12-15 6 16" stroke="#fff6de" stroke-width="5"/>
+    <path d="M365 130l12 44 29-6" fill="none" stroke="#213440" stroke-width="3"/>
+    <!-- Wing gripping handlebar -->
+    <path d="M352 216q28 8 53 32l49 4-4 16q-35 7-61-6l-38-24" fill="#fffdf2" class="ink"/>
+    <path d="M440 253l4 13m-14-13 5 13" stroke="#213440" stroke-width="3"/>
+    <!-- Pedaling legs -->
+    <g class="ink" fill="#f6aa43">
+      <path d="M318 284l25 40-8 38" fill="none" stroke="#e7a044" stroke-width="10">
+        <animate attributeName="d" values="M318 284l25 40-8 38;M318 284l4 48 35 57;M318 284l25 40-8 38" dur="1.6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M330 356l24 9-33 9Z">
+        <animateTransform attributeName="transform" type="translate" values="0 0;22 26;0 0" dur="1.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g transform="translate(366 390)">
+    <circle r="17" fill="#ffe3a2" class="ink"/>
+    <g class="ink">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-24 0H24" fill="none"/>
+      <path d="M-31 0h14M17 0h14" stroke-width="8"/>
+    </g>
+  </g>
+  <path d="M156 356h-30m38 19h-51m45 23h-22" stroke="#fff6de" stroke-width="5" stroke-linecap="round"/>
+
+  <rect y="501" width="800" height="99" fill="#fff6de"/>
+  <text x="400" y="534" text-anchor="middle" font-size="22" font-weight="bold" fill="#213440">He gave up flying. The baggage fees followed.</text>
+  <path d="M90 551H710" stroke="#d3c6a9" stroke-width="2"/>
+  <text x="400" y="580" text-anchor="middle" font-size="17" fill="#3f5359">2026-10-26 04:30:01 SGT (UTC+08:00)</text>
+</svg>
