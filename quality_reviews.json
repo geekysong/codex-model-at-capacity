@@ -4683,9 +4683,121 @@
       "reviewed_at": "2026-10-25T19:06:30.527128+08:00",
       "rubric_version": "pelican-v1",
       "judge_actual_model": "claude-fable-5-1"
+    },
+    {
+      "round": "20261025-193001-pelican",
+      "model": "gpt-6-astra",
+      "time_sgt": "2026-10-25 19:30:01",
+      "svg": "runs/20261025-193001-pelican/gpt-6-astra.svg",
+      "variant": "pelican",
+      "status": "reviewed",
+      "severity": 0,
+      "confidence": 0.85,
+      "reasons": [
+        "鹈鹕头部、眼睛、带鱼的大喙袋与白色身体连贯清晰，可明确辨认为鹈鹕",
+        "造型圆润柔和，线条干净，无破碎或不协调的形状",
+        "鸟坐在车架上、翅膀握把、橙色双腿在三帧中踩踏板位置变化，骑行场景自然可信",
+        "标题、路牌、路面、文字与日期栏布局完整，无裁切或视觉损坏"
+      ],
+      "dimensions": {
+        "bird_shape": 0,
+        "softness": 0,
+        "riding": 0,
+        "readability": 0
+      },
+      "svg_sha256": "6d03f7777f8260892317981c5a631d61f7364353a2ef3c1e0eee6998c96369d9",
+      "baseline_sha256": "9f032a20b5612b6a3623fbde08e21196ea7aad9824c74cc6a49c598e4e31a050",
+      "judge": "claude-fable-5-1",
+      "reviewed_at": "2026-10-25T19:35:29.052335+08:00",
+      "rubric_version": "pelican-v1",
+      "judge_actual_model": "claude-fable-5-1"
+    },
+    {
+      "round": "20261025-193001-pelican",
+      "model": "gpt-6.1-sol",
+      "time_sgt": "2026-10-25 19:31:38",
+      "svg": "runs/20261025-193001-pelican/gpt-6.1-sol.svg",
+      "variant": "pelican",
+      "status": "reviewed",
+      "severity": 3,
+      "confidence": 0.85,
+      "reasons": [
+        "鹈鹕头部、头盔、含鱼的大喙和圆润身体清晰可辨，造型柔和自然，与参考相当",
+        "自行车缺少后轮：0.4s与2.2s帧车架后端悬空无轮，骑行场景不成立",
+        "1.2s帧左下角出现一只脱离车身、被画面边缘裁切的车轮，显示后轮位置错误/漂移",
+        "整体构图尚可阅读，但后轮缺失与边缘裁切造成明显视觉破损"
+      ],
+      "dimensions": {
+        "bird_shape": 0,
+        "softness": 0,
+        "riding": 3,
+        "readability": 2
+      },
+      "svg_sha256": "88368f1f92e18d6cc846565ac458ace86d1a587548b39ccc259d5d0206177ade",
+      "baseline_sha256": "9f032a20b5612b6a3623fbde08e21196ea7aad9824c74cc6a49c598e4e31a050",
+      "judge": "claude-fable-5-1",
+      "reviewed_at": "2026-10-25T19:35:44.393692+08:00",
+      "rubric_version": "pelican-v1",
+      "judge_actual_model": "claude-fable-5-1"
+    },
+    {
+      "round": "20261025-193001-pelican",
+      "model": "gpt-6-luna",
+      "time_sgt": "2026-10-25 19:32:49",
+      "svg": "runs/20261025-193001-pelican/gpt-6-luna.svg",
+      "variant": "pelican",
+      "status": "reviewed",
+      "severity": 2,
+      "confidence": 0.78,
+      "reasons": [
+        "鸟为蛋形身体加小尖喙，无鹈鹕特征喉囊，更像企鹅，辨识为鹈鹕较弱",
+        "形体圆润柔和，但身体与细腿衔接生硬",
+        "鸟仅用两条细腿站在车架横梁上，无座垫无踩踏姿态，骑行感不足",
+        "车轮为空心圆，辐条呈橙色放射状碎片脱离车轮漂浮在画面各处，构图出现明显错位"
+      ],
+      "dimensions": {
+        "bird_shape": 2,
+        "softness": 1,
+        "riding": 2,
+        "readability": 2
+      },
+      "svg_sha256": "ca4d6595cb1f8de67ec35ba2108e96274c53d0efcac0e1540c5f88984297b38c",
+      "baseline_sha256": "9f032a20b5612b6a3623fbde08e21196ea7aad9824c74cc6a49c598e4e31a050",
+      "judge": "claude-fable-5-1",
+      "reviewed_at": "2026-10-25T19:36:00.576885+08:00",
+      "rubric_version": "pelican-v1",
+      "judge_actual_model": "claude-fable-5-1"
+    },
+    {
+      "round": "20261025-193001-pelican",
+      "model": "gpt-5.6-terra",
+      "time_sgt": "2026-10-25 19:33:05",
+      "svg": "runs/20261025-193001-pelican/gpt-5.6-terra.svg",
+      "variant": "pelican",
+      "status": "reviewed",
+      "severity": 2,
+      "confidence": 0.7,
+      "reasons": [
+        "鸟有头、眼、橙色大喙，可识别为卡通鹈鹕，但身体偏小且与喙比例失调",
+        "整体圆润柔和，但橙色腿部呈折线状与车架交叉缠绕，略显生硬",
+        "鸟悬浮在车架上方，未明显坐在车座、握把手，腿与踏板关系混乱，骑行感不足",
+        "后轮旁'taxpayer pigeon'文字被车轮遮挡裁切，并有游离的鱼形元素，轻微影响可读性"
+      ],
+      "dimensions": {
+        "bird_shape": 1,
+        "softness": 1,
+        "riding": 2,
+        "readability": 1
+      },
+      "svg_sha256": "6359218baf16bf6848500a3de5e3b093b447bdcdb1f8beb604aa844839f49261",
+      "baseline_sha256": "9f032a20b5612b6a3623fbde08e21196ea7aad9824c74cc6a49c598e4e31a050",
+      "judge": "claude-fable-5-1",
+      "reviewed_at": "2026-10-25T19:36:14.077133+08:00",
+      "rubric_version": "pelican-v1",
+      "judge_actual_model": "claude-fable-5-1"
     }
   ],
-  "updated_at": "2026-10-25T19:06:43.020958+08:00",
+  "updated_at": "2026-10-25T19:36:30.875492+08:00",
   "rendering": {
     "engine": "chromium",
     "frame_times_s": [
