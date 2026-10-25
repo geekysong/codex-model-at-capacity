@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon of a determined pelican riding a tiny bicycle.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1s linear infinite; }
+    .pelican { transform-box: fill-box; transform-origin: center bottom; animation: bob .55s ease-in-out infinite alternate; }
+    .legA { transform-box: fill-box; transform-origin: 50% 0%; animation: pedalA 1s linear infinite; }
+    .legB { transform-box: fill-box; transform-origin: 50% 0%; animation: pedalB 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedalA { 0% { transform: rotate(24deg); } 50% { transform: rotate(-24deg); } 100% { transform: rotate(24deg); } }
+    @keyframes pedalB { 0% { transform: rotate(-24deg); } 50% { transform: rotate(24deg); } 100% { transform: rotate(-24deg); } }
+  </style>
+
+  <rect width="800" height="600" fill="#bdeeff"/>
+  <path d="M0 320 Q100 270 200 315 T400 305 T600 322 T800 290 V510 H0Z" fill="#8dd06d"/>
+  <path d="M0 390 Q150 355 285 395 T550 382 T800 400 V510 H0Z" fill="#72ba59"/>
+  <circle cx="690" cy="90" r="47" fill="#ffd95b"/>
+  <path d="M0 235 Q130 195 265 235 T530 222 T800 232" fill="none" stroke="#fff" stroke-width="14" opacity=".75"/>
+
+  <text x="400" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#183047">PELICAN: TOUR DE SNACK</text>
+  <text x="400" y="96" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#31546a">“I was told this was a bike lane, not a beak lane.”</text>
+
+  <path d="M83 448 H731" stroke="#e7d48b" stroke-width="54" stroke-linecap="round"/>
+  <path d="M83 448 H731" stroke="#5d6266" stroke-width="44" stroke-linecap="round"/>
+  <path d="M95 448 H720" stroke="#f8ecb5" stroke-width="4" stroke-dasharray="34 24" opacity=".85"/>
+
+  <g class="wheel" transform="translate(260 432)">
+    <circle r="67" fill="#252d35" stroke="#111922" stroke-width="6"/>
+    <circle r="56" fill="none" stroke="#d9e2e6" stroke-width="4"/>
+    <g stroke="#bfcbd1" stroke-width="3">
+      <path d="M0-55V55M-55 0H55M-39-39L39 39M39-39L-39 39"/>
+    </g>
+    <circle r="9" fill="#ffce42" stroke="#18242d" stroke-width="4"/>
+  </g>
+  <g class="wheel" transform="translate(505 432)">
+    <circle r="67" fill="#252d35" stroke="#111922" stroke-width="6"/>
+    <circle r="56" fill="none" stroke="#d9e2e6" stroke-width="4"/>
+    <g stroke="#bfcbd1" stroke-width="3">
+      <path d="M0-55V55M-55 0H55M-39-39L39 39M39-39L-39 39"/>
+    </g>
+    <circle r="9" fill="#ffce42" stroke="#18242d" stroke-width="4"/>
+  </g>
+
+  <g stroke="#172833" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M260 432 L330 328 L405 432 Z"/>
+    <path d="M330 328 L467 337 L405 432"/>
+    <path d="M467 337 L505 432"/>
+    <path d="M330 328 L312 302"/>
+    <path d="M291 300 H332"/>
+    <path d="M467 337 L477 276 L525 265"/>
+    <path d="M477 276 L450 269"/>
+    <circle cx="405" cy="432" r="22" fill="#f6bc37"/>
+    <path d="M405 432 L430 447 M405 432 L380 417"/>
+  </g>
+
+  <g class="pelican">
+    <path d="M373 319 Q348 301 338 269 Q329 238 353 219 Q380 199 416 219 Q446 236 443 276 L430 334Z" fill="#f4f3e9" stroke="#172833" stroke-width="6"/>
+    <path d="M400 246 Q432 181 530 205 Q570 216 584 252 Q524 259 469 277 Q435 288 401 282Z" fill="#ffbe4b" stroke="#172833" stroke-width="6"/>
+    <path d="M411 277 Q488 271 584 252 Q571 307 524 325 Q459 344 408 310Z" fill="#f39b37" stroke="#172833" stroke-width="6"/>
+    <path d="M428 218 Q445 189 472 206 Q490 221 472 242 Q449 249 428 237Z" fill="#f7f7ed" stroke="#172833" stroke-width="5"/>
+    <circle cx="453" cy="221" r="8" fill="#172833"/>
+    <circle cx="456" cy="218" r="2.5" fill="#fff"/>
+    <path d="M347 252 Q324 247 305 260 Q325 274 351 270" fill="#f4f3e9" stroke="#172833" stroke-width="5"/>
+    <path d="M375 318 Q403 301 437 321 Q454 351 441 382 Q405 400 364 381 Q350 350 375 318Z" fill="#f4f3e9" stroke="#172833" stroke-width="6"/>
+    <path d="M390 322 Q407 351 405 382" fill="none" stroke="#c6d6d5" stroke-width="7"/>
+    <path d="M429 321 Q459 330 481 305" fill="none" stroke="#f4f3e9" stroke-width="17"/>
+    <path d="M480 306 Q492 284 503 275" fill="none" stroke="#f4f3e9" stroke-width="14"/>
+
+    <g class="legA">
+      <path d="M384 375 Q373 407 399 431" fill="none" stroke="#f2a93b" stroke-width="13" stroke-linecap="round"/>
+      <path d="M398 430 L375 438" fill="none" stroke="#f2a93b" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g class="legB">
+      <path d="M424 376 Q435 405 411 430" fill="none" stroke="#f2a93b" stroke-width="13" stroke-linecap="round"/>
+      <path d="M412 429 L436 438" fill="none" stroke="#f2a93b" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <path d="M373 346 Q397 337 424 349" fill="none" stroke="#172833" stroke-width="4"/>
+  </g>
+
+  <g transform="translate(111 278)">
+    <rect x="0" y="0" width="132" height="67" rx="8" fill="#fff7cf" stroke="#172833" stroke-width="5"/>
+    <path d="M66 67 L75 85 L87 67" fill="#fff7cf" stroke="#172833" stroke-width="5"/>
+    <text x="66" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="900" fill="#172833">NO PARKING</text>
+    <text x="66" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="900" fill="#172833">ON THE BIKE!</text>
+  </g>
+
+  <rect y="510" width="800" height="90" fill="#173447"/>
+  <text x="400" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#fff6d1">A majestic bird tackles carbon-neutral commuting, one wobble at a time.</text>
+  <text x="400" y="578" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#bdeeff">2026-10-26 02:32:54 SGT (UTC+08:00)</text>
+</svg>

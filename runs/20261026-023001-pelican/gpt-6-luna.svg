@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT BEAK ESCAPE</title>
+  <desc id="desc">A determined pelican rides a bicycle, pedaling furiously while a fish rides in the basket.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#17324d;stroke-width:8}
+      .spoke{stroke:#527080;stroke-width:2}
+      .frame{fill:none;stroke:#e45b3c;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .bird{transform-box:fill-box;transform-origin:center;animation:bob .65s ease-in-out infinite alternate}
+      .roll{transform-box:fill-box;transform-origin:center;animation:spin 1.25s linear infinite}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.25s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8edcf"/>
+  <path d="M0 0H800V152Q620 181 420 151T0 164Z" fill="#f2b84b"/>
+  <circle cx="694" cy="88" r="35" fill="#ffe28b"/>
+  <path d="M0 430Q180 408 350 432T800 421V530H0Z" fill="#cde3d2"/>
+  <path d="M0 491H800" stroke="#17324d" stroke-width="4"/>
+  <path d="M80 470h54m68 0h44m369 0h48m55 0h35" stroke="#8aa99a" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="400" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="900" letter-spacing="2" fill="#17324d">THE GREAT BEAK ESCAPE</text>
+  <text x="400" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17324d">He’s late for lunch. The fish is already in the basket.</text>
+
+  <!-- Bicycle -->
+  <g aria-label="Bicycle">
+    <g class="roll">
+      <circle class="wheel" cx="226" cy="398" r="61"/>
+      <path class="spoke" d="M226 337v122m-61-61h122m-104-43 86 86m0-86-86 86"/>
+    </g>
+    <g class="roll">
+      <circle class="wheel" cx="557" cy="398" r="61"/>
+      <path class="spoke" d="M557 337v122m-61-61h122m-104-43 86 86m0-86-86 86"/>
+    </g>
+    <path class="frame" d="M226 398 332 398 286 319 226 398m60-79 86 79 43-104m-129 25h63m23 79h125l-82-104"/>
+    <circle cx="332" cy="398" r="10" fill="#f2b84b" stroke="#17324d" stroke-width="4"/>
+    <path d="M332 398l-28-24m28 24 28 22" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M395 294h48m-6-7 8 7-8 7" fill="none" stroke="#17324d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M274 312h35l-5 12h-35z" fill="#17324d"/>
+    <path d="M407 291l8-12h31l6 7h-27" fill="none" stroke="#17324d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="pedal">
+      <circle cx="332" cy="398" r="20" fill="none" stroke="#e45b3c" stroke-width="4"/>
+      <path d="M332 378v40m-20-20h40" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Front basket and bewildered passenger -->
+  <path d="M459 301h72l-9 45h-55z" fill="#d99248" stroke="#17324d" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M469 313h51m-47 12h43m-39 12h35" stroke="#8a552f" stroke-width="3"/>
+  <path d="M479 297q-9-16 7-23 13-5 17 10 9-10 18 0 7 10-3 18" fill="#a8d9c5" class="ink"/>
+  <ellipse cx="495" cy="291" rx="3" ry="5" fill="#17324d"/>
+  <path d="M501 300q8-5 13 1" fill="none" stroke="#17324d" stroke-width="2.5"/>
+  <text x="494" y="282" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="800" fill="#17324d">“I paid for a taxi!”</text>
+
+  <!-- Pelican -->
+  <g class="bird">
+    <path d="M318 293q-28-32-17-76 10-39 52-44 38-5 56 24 15 25 2 55-10 25-39 42z" fill="#fffdf5" class="ink"/>
+    <path d="M344 274q-20-21-14-47 5-22 27-26 26-4 36 20 10 23-8 44-15 17-41 9z" fill="#d7e8e7" stroke="#17324d" stroke-width="4"/>
+    <path d="M343 185q5-29 28-39 23-9 38 7 12 13 5 30-8 19-29 18-27 0-42-16z" fill="#fffdf5" class="ink"/>
+    <circle cx="390" cy="174" r="5" fill="#17324d"/>
+    <circle cx="392" cy="172" r="1.7" fill="#fff"/>
+    <path d="M402 181q62-29 104-8-25 22-72 27-20 2-33-6z" fill="#f2b84b" stroke="#17324d" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M404 194q46 2 86-9-8 25-43 34-29 7-44-8z" fill="#e45b3c" stroke="#17324d" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M427 209q22 4 38-3-11 19-27 16z" fill="#f2b84b" stroke="#17324d" stroke-width="3"/>
+    <path d="M341 288l-12 28 22 0m18-30 8 29 20 0" fill="none" stroke="#e45b3c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M319 230q-26-5-37 8 19 2 31 13m3-21q-27-14-41-4 14 9 30 19" fill="#fffdf5" stroke="#17324d" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M373 245q9 8 17 1" fill="none" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M367 267q12 7 22-1" fill="none" stroke="#e45b3c" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <path d="M192 319q-20-12-31 0m32 12q-18-3-25 10m414-50q17-13 29-3" fill="none" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+  <text x="400" y="516" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="800" fill="#17324d">“THE FASTEST WAY TO GET THERE IS TO LOOK ABSOLUTELY RIDICULOUS.”</text>
+  <text x="400" y="568" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17324d">2026-10-26 02:32:35 SGT (UTC+08:00)</text>
+</svg>
