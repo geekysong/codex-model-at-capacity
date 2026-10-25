@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A smug pelican pedals a bicycle while carrying a tiny fish in its beak. The wheels spin and the rider bobs.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .6s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#d9f4f3"/>
+  <rect y="390" width="800" height="150" fill="#b6dc89"/>
+  <path d="M0 420 Q110 390 220 420 T440 420 T660 420 T880 420" fill="none" stroke="#8bbd67" stroke-width="5"/>
+  <circle cx="90" cy="95" r="38" fill="#fff4a8"/>
+  <path d="M0 375 Q100 350 200 375 T400 375 T600 375 T800 375" fill="none" stroke="#73b9b4" stroke-width="3"/>
+
+  <text id="title" x="400" y="54" text-anchor="middle" font-size="32" font-weight="900" fill="#173c52" stroke="#fff" stroke-width="6" paint-order="stroke">THE PELICAN COMMUTE</text>
+  <text x="400" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="#41616b">“I’m cutting back on fish—one bite per mile.”</text>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#e64c3c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M245 370 L325 370 L365 285 L290 285 Z"/>
+    <path d="M325 370 L290 285"/>
+    <path d="M365 285 L410 370"/>
+    <path d="M410 370 L325 370"/>
+    <path d="M365 285 L385 260 L408 260"/>
+    <path d="M245 370 L228 285 L210 275"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#173c52" stroke-width="5">
+    <circle cx="245" cy="370" r="66"/>
+    <path d="M245 304V436 M179 370H311 M198 323L292 417 M292 323L198 417"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#173c52" stroke-width="5">
+    <circle cx="410" cy="370" r="66"/>
+    <path d="M410 304V436 M344 370H476 M363 323L457 417 M457 323L363 417"/>
+  </g>
+  <circle cx="325" cy="370" r="10" fill="#f4bc38" stroke="#173c52" stroke-width="4"/>
+  <path d="M325 370 L304 337 M325 370 L352 393" stroke="#173c52" stroke-width="6" stroke-linecap="round"/>
+  <path d="M299 333 L310 341 M347 397 L358 389" stroke="#173c52" stroke-width="5" stroke-linecap="round"/>
+  <path d="M203 274 Q210 267 221 271 M397 257 Q407 250 419 255" fill="none" stroke="#173c52" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Pelican and pedaling legs -->
+  <g class="rider">
+    <!-- legs -->
+    <path d="M324 246 Q315 278 303 311 L304 338" fill="none" stroke="#e69b32" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M355 246 Q350 281 347 311 L352 392" fill="none" stroke="#e69b32" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M297 338 Q286 343 282 337" fill="none" stroke="#e69b32" stroke-width="8" stroke-linecap="round"/>
+    <path d="M348 392 Q361 397 366 391" fill="none" stroke="#e69b32" stroke-width="8" stroke-linecap="round"/>
+    <!-- body -->
+    <ellipse cx="340" cy="219" rx="55" ry="45" fill="#fffdf3" stroke="#173c52" stroke-width="5"/>
+    <path d="M300 223 Q340 251 381 226 Q373 265 336 264 Q309 258 300 223" fill="#f2a53b" stroke="#173c52" stroke-width="4"/>
+    <path d="M326 250 Q323 267 327 278 M356 250 Q358 268 354 279" fill="none" stroke="#e69b32" stroke-width="9" stroke-linecap="round"/>
+    <!-- neck and head -->
+    <path d="M354 208 Q361 165 383 147" fill="none" stroke="#fffdf3" stroke-width="23" stroke-linecap="round"/>
+    <ellipse cx="395" cy="137" rx="31" ry="27" fill="#fffdf3" stroke="#173c52" stroke-width="5"/>
+    <circle cx="405" cy="132" r="5" fill="#173c52"/>
+    <path d="M421 143 Q458 145 476 157 Q453 170 417 159 Z" fill="#f4bc38" stroke="#173c52" stroke-width="4"/>
+    <path d="M430 157 Q455 164 471 158 Q459 181 438 173 Z" fill="#ef7650" stroke="#173c52" stroke-width="3"/>
+    <!-- fish -->
+    <path d="M451 151 Q461 142 472 151 Q461 160 451 151 M472 151 L481 144 L481 158 Z" fill="#6fb9d1" stroke="#173c52" stroke-width="2"/>
+    <circle cx="458" cy="149" r="1.8" fill="#173c52"/>
+    <!-- wing -->
+    <path d="M319 206 Q345 185 370 210 Q352 235 326 229" fill="#f7f0d9" stroke="#173c52" stroke-width="4"/>
+    <path d="M331 211 Q346 207 359 216" fill="none" stroke="#c7c0a9" stroke-width="3"/>
+    <!-- helmet -->
+    <path d="M369 123 Q389 91 421 118 L423 129 L372 129 Z" fill="#3ba6a2" stroke="#173c52" stroke-width="4"/>
+    <path d="M366 129 L429 129" stroke="#173c52" stroke-width="5" stroke-linecap="round"/>
+    <path d="M390 102 L390 124 M407 107 L407 125" stroke="#d8f3e8" stroke-width="3"/>
+    <!-- sweat / attitude -->
+    <path d="M438 112 Q448 101 443 94 Q455 102 449 114" fill="#59b9d0"/>
+    <path d="M391 179 Q401 185 412 179" fill="none" stroke="#173c52" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- motion marks and roadside sign -->
+  <path d="M137 244 L182 244 M125 262 L174 262 M140 280 L180 280" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <g transform="rotate(-5 568 260)">
+    <path d="M568 306 L568 371" stroke="#765b38" stroke-width="9"/>
+    <rect x="510" y="220" width="120" height="88" rx="10" fill="#fff8dc" stroke="#173c52" stroke-width="5"/>
+    <text x="570" y="249" text-anchor="middle" font-size="14" font-weight="900" fill="#173c52">BIKE LANE</text>
+    <text x="570" y="273" text-anchor="middle" font-size="13" font-weight="700" fill="#e64c3c">FISH TAX</text>
+    <text x="570" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#173c52">DUE: 1 SARDINE</text>
+  </g>
+  <path d="M496 391 Q550 378 605 391" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="12 12"/>
+  <text x="580" y="430" text-anchor="middle" font-size="14" font-weight="700" fill="#41616b">traffic report: beak-hour delays</text>
+
+  <!-- Footer reserved for required timestamp -->
+  <rect y="540" width="800" height="60" fill="#173c52"/>
+  <text x="400" y="570" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">2026-10-26 03:02:12 SGT (UTC+08:00)</text>
+</svg>
