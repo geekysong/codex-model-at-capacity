@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">The Pelican’s Climate Commute</title>
+  <desc id="description">A helmeted pelican pedals furiously on a bicycle while a tiny car complains behind it.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { animation: bob .6s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f1"/>
+  <path d="M0 390 Q120 320 235 365 T470 350 T800 370 V600 H0Z" fill="#a9dcae"/>
+  <path d="M0 443 Q170 418 330 441 T800 428" fill="none" stroke="#f8f0d4" stroke-width="70"/>
+  <path d="M0 443 Q170 418 330 441 T800 428" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="22 20"/>
+
+  <text id="title" x="400" y="54" text-anchor="middle" font-size="31" font-weight="900" fill="#173b4a">THE PELICAN’S CLIMATE COMMUTE</text>
+  <text x="400" y="82" text-anchor="middle" font-size="15" font-weight="700" fill="#42646a">He’s saving fuel. His beak is still a gas guzzler.</text>
+
+  <!-- A grumpy little car trails behind -->
+  <g transform="translate(92 343)">
+    <path d="M12 40 L22 17 Q28 8 44 8 H77 Q88 8 94 19 L104 40 V61 H8 V46Z" fill="#ee765b" stroke="#263d43" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M31 17 H52 V34 H24Z M58 17 H76 Q82 18 86 34 H58Z" fill="#bce8e5" stroke="#263d43" stroke-width="3"/>
+    <circle cx="29" cy="60" r="11" fill="#263d43"/><circle cx="29" cy="60" r="4" fill="#f6d574"/>
+    <circle cx="83" cy="60" r="11" fill="#263d43"/><circle cx="83" cy="60" r="4" fill="#f6d574"/>
+    <path d="M40 42 Q46 48 52 42 M65 43 Q71 38 77 43" fill="none" stroke="#263d43" stroke-width="3" stroke-linecap="round"/>
+    <path d="M45 52 Q57 48 68 52" fill="none" stroke="#263d43" stroke-width="3"/>
+  </g>
+  <path d="M91 327 Q73 310 58 324 M103 319 Q92 300 77 307" fill="none" stroke="#71898a" stroke-width="3" stroke-dasharray="5 5"/>
+  <text x="54" y="295" font-size="13" font-weight="800" fill="#38545a">HONK!</text>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#263d43" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M330 405 L421 405 L383 323 L330 405"/>
+    <path d="M421 405 L476 318 L383 323"/>
+    <path d="M476 318 L498 318 M330 405 L312 405"/>
+    <path d="M382 323 L368 306 M355 306 H385"/>
+    <path d="M476 318 L489 299 M478 299 H502"/>
+  </g>
+  <path d="M421 405 L443 426 M434 426 H454" fill="none" stroke="#263d43" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="421" cy="405" r="7" fill="#f0a93d" stroke="#263d43" stroke-width="3"/>
+
+  <!-- Animated wheels and spokes -->
+  <g class="wheel">
+    <circle cx="330" cy="405" r="51" fill="#f8ffff" fill-opacity=".2" stroke="#263d43" stroke-width="6"/>
+    <circle cx="330" cy="405" r="5" fill="#f0a93d" stroke="#263d43" stroke-width="3"/>
+    <path d="M330 354 V456 M279 405 H381 M294 369 L366 441 M294 441 L366 369" stroke="#63858a" stroke-width="2"/>
+  </g>
+  <g class="wheel">
+    <circle cx="476" cy="405" r="51" fill="#f8ffff" fill-opacity=".2" stroke="#263d43" stroke-width="6"/>
+    <circle cx="476" cy="405" r="5" fill="#f0a93d" stroke="#263d43" stroke-width="3"/>
+    <path d="M476 354 V456 M425 405 H527 M440 369 L512 441 M440 441 L512 369" stroke="#63858a" stroke-width="2"/>
+  </g>
+
+  <!-- Cyclist: a dignified pelican with distinctly undignified effort -->
+  <g class="rider">
+    <path d="M362 208 Q370 174 404 176 Q436 177 444 213 L432 270 Q413 291 380 269Z" fill="#fff5df" stroke="#263d43" stroke-width="5"/>
+    <path d="M377 223 Q399 209 428 222 L431 252 Q407 267 380 249Z" fill="#e7a94a" stroke="#263d43" stroke-width="4"/>
+    <path d="M403 245 Q438 255 457 270 Q474 283 462 298 Q452 310 431 297 L397 274Z" fill="#f5b84f" stroke="#263d43" stroke-width="4"/>
+    <path d="M453 276 Q473 278 479 288 Q468 301 454 299Z" fill="#ef7559" stroke="#263d43" stroke-width="3"/>
+    <circle cx="414" cy="205" r="5" fill="#263d43"/>
+    <path d="M410 196 Q419 189 427 196" fill="none" stroke="#263d43" stroke-width="3" stroke-linecap="round"/>
+    <path d="M375 180 Q365 156 386 143 Q408 132 427 151 L436 179Z" fill="#ef765b" stroke="#263d43" stroke-width="4"/>
+    <path d="M370 176 Q401 163 437 175 L435 185 Q401 178 373 187Z" fill="#f4c65e" stroke="#263d43" stroke-width="4"/>
+    <path d="M390 144 Q398 132 407 143" fill="none" stroke="#263d43" stroke-width="4"/>
+    <!-- wing / handlebars reach -->
+    <path d="M387 252 Q360 270 355 300 L370 307 Q391 287 409 272" fill="#fff5df" stroke="#263d43" stroke-width="5"/>
+    <path d="M355 300 L370 306" stroke="#263d43" stroke-width="7" stroke-linecap="round"/>
+    <!-- legs and frantic pedals -->
+    <path d="M397 271 Q414 294 422 317 L397 338" fill="none" stroke="#f2b84f" stroke-width="12" stroke-linecap="round"/>
+    <path d="M421 316 L438 333" fill="none" stroke="#263d43" stroke-width="6" stroke-linecap="round"/>
+    <path d="M411 271 Q393 297 384 315 L402 336" fill="none" stroke="#f2b84f" stroke-width="12" stroke-linecap="round"/>
+    <path d="M384 315 L368 329" fill="none" stroke="#263d43" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pedal crank, with a looping turn -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 421 405" to="360 421 405" dur="1.2s" repeatCount="indefinite"/>
+    <path d="M421 405 L443 426 M421 405 L399 384" stroke="#e1774e" stroke-width="5" stroke-linecap="round"/>
+    <path d="M434 426 H454 M390 384 H408" stroke="#263d43" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M505 221 Q544 190 569 222 Q581 239 562 251 L529 255 L516 273 L513 250 Q494 242 505 221Z" fill="#fff" stroke="#263d43" stroke-width="3"/>
+  <text x="538" y="229" text-anchor="middle" font-size="12" font-weight="900" fill="#263d43">I’M ON A</text>
+  <text x="538" y="244" text-anchor="middle" font-size="12" font-weight="900" fill="#263d43">WING AND A PEDAL!</text>
+
+  <text x="400" y="520" text-anchor="middle" font-size="17" font-weight="900" fill="#173b4a">“Two wheels, zero parking tickets, one enormous lunch pouch.”</text>
+  <text x="400" y="573" text-anchor="middle" font-size="14" font-weight="700" fill="#38545a">2026-10-25 21:02:53 SGT (UTC+08:00)</text>
+</svg>
