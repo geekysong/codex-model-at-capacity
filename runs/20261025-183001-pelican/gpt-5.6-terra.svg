@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon of an expressive pelican riding a bicycle.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.2s linear infinite; }
+    .bob { transform-box: fill-box; transform-origin: center bottom; animation: bob .55s ease-in-out infinite alternate; }
+    .legA { transform-box: fill-box; transform-origin: 50% 10%; animation: pedalA .6s ease-in-out infinite alternate; }
+    .legB { transform-box: fill-box; transform-origin: 50% 10%; animation: pedalB .6s ease-in-out infinite alternate; }
+    .flap { transform-box: fill-box; transform-origin: 10% 80%; animation: flap .55s ease-in-out infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedalA { to { transform: rotate(28deg); } }
+    @keyframes pedalB { to { transform: rotate(-28deg); } }
+    @keyframes flap { to { transform: rotate(-12deg); } }
+  </style>
+
+  <rect width="800" height="600" fill="#bfeeff"/>
+  <path d="M0 310 Q120 270 235 315 T460 300 T800 315 V470 H0Z" fill="#87d676"/>
+  <path d="M0 403 Q155 365 300 407 T580 390 T800 405 V470 H0Z" fill="#5eaf59"/>
+  <path d="M35 344 Q90 290 145 342 M620 346 Q676 282 730 342" fill="none" stroke="#4a9451" stroke-width="12" stroke-linecap="round"/>
+  <path d="M0 442 H800" stroke="#40454d" stroke-width="18"/>
+  <path d="M0 454 H800" stroke="#f7d34d" stroke-width="5" stroke-dasharray="42 25"/>
+
+  <text x="400" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="39" fill="#24364b">THE PELICAN PEDAL PANIC</text>
+  <text x="400" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#31475c">“I carry fish, bills, and apparently the entire commute.”</text>
+
+  <g class="bob">
+    <!-- bicycle frame -->
+    <path d="M274 383 L389 383 L335 297 L274 383 L425 383 L335 297 L389 383 L430 300" fill="none" stroke="#d4323f" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M425 300 L462 300 M390 383 L407 403" fill="none" stroke="#303b47" stroke-width="10" stroke-linecap="round"/>
+    <path d="M328 291 H365" stroke="#303b47" stroke-width="12" stroke-linecap="round"/>
+    <path d="M425 299 L458 271 L481 274" fill="none" stroke="#303b47" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="274" cy="383" r="69" fill="#f7f1dc" stroke="#283643" stroke-width="11"/>
+      <circle cx="274" cy="383" r="7" fill="#d4323f"/>
+      <path d="M274 314V452 M205 383H343 M225 334L323 432 M323 334L225 432" stroke="#81909c" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="425" cy="383" r="69" fill="#f7f1dc" stroke="#283643" stroke-width="11"/>
+      <circle cx="425" cy="383" r="7" fill="#d4323f"/>
+      <path d="M425 314V452 M356 383H494 M376 334L474 432 M474 334L376 432" stroke="#81909c" stroke-width="3"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="347" cy="252" rx="72" ry="104" fill="#f5f3e7" stroke="#263a4a" stroke-width="6"/>
+    <path d="M293 228 Q239 245 251 299 Q269 317 319 287" fill="#d9e2dd" stroke="#263a4a" stroke-width="6"/>
+    <path class="flap" d="M299 260 Q237 294 274 337 Q312 330 336 284" fill="#9daeb0" stroke="#263a4a" stroke-width="6"/>
+
+    <!-- legs -->
+    <g class="legA">
+      <path d="M331 332 L357 383 L399 404" fill="none" stroke="#e68b39" stroke-width="13" stroke-linecap="round"/>
+      <path d="M392 404 h27" stroke="#e68b39" stroke-width="11" stroke-linecap="round"/>
+    </g>
+    <g class="legB">
+      <path d="M369 334 L347 378 L315 402" fill="none" stroke="#e68b39" stroke-width="13" stroke-linecap="round"/>
+      <path d="M307 402 h27" stroke="#e68b39" stroke-width="11" stroke-linecap="round"/>
+    </g>
+
+    <!-- enormous beak and face -->
+    <path d="M313 165 Q183 152 160 197 Q183 233 310 226 Q342 217 343 190 Q342 169 313 165Z" fill="#f1b83b" stroke="#263a4a" stroke-width="6"/>
+    <path d="M169 198 Q234 187 316 198" fill="none" stroke="#bc7830" stroke-width="5"/>
+    <ellipse cx="313" cy="158" rx="39" ry="34" fill="#f5f3e7" stroke="#263a4a" stroke-width="6"/>
+    <circle cx="302" cy="155" r="12" fill="#fff"/>
+    <circle cx="305" cy="157" r="6" fill="#263a4a"/>
+    <path d="M326 142 q15 -15 27 -1" fill="none" stroke="#263a4a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M284 129 q12 -14 24 -4" fill="none" stroke="#263a4a" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- messenger bag -->
+    <path d="M381 227 Q431 245 412 337 Q382 356 357 328 Q371 277 381 227Z" fill="#7d4a98" stroke="#263a4a" stroke-width="6"/>
+    <path d="M373 230 Q404 213 432 231" fill="none" stroke="#263a4a" stroke-width="7"/>
+    <text x="386" y="293" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#fff">FISH</text>
+  </g>
+
+  <g transform="translate(536 182)">
+    <path d="M0 41 Q23 0 49 41" fill="#fff" stroke="#263a4a" stroke-width="5"/>
+    <path d="M48 41 Q74 0 99 41" fill="#fff" stroke="#263a4a" stroke-width="5"/>
+    <path d="M100 41 Q123 0 150 41" fill="#fff" stroke="#263a4a" stroke-width="5"/>
+    <text x="75" y="69" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#263a4a">NO PARKING!</text>
+  </g>
+
+  <rect y="480" width="800" height="120" fill="#fff8df"/>
+  <path d="M0 480 H800" stroke="#263a4a" stroke-width="6"/>
+  <text x="400" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#263a4a">A pelican on a bicycle: proof that delivery fees have gone too far.</text>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#435464">2026-10-25 18:32:56 SGT (UTC+08:00)</text>
+</svg>

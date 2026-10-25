@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <clipPath id="main-scene">
+      <rect x="50" y="220" width="500" height="132"/>
+    </clipPath>
+    <clipPath id="landing-detail">
+      <rect x="425" y="70" width="130" height="90"/>
+    </clipPath>
+  </defs>
+
+  <rect width="600" height="400" fill="white"/>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="50" y="30">Projectile motion · total flight time: 3 s</text>
+    <text x="50" y="55">vₓ = 20 m/s · vᵧ = 15 m/s · g = 10 m/s²</text>
+    <text x="50" y="80">Scale: 10 px/m · distances measured from launch</text>
+    <text x="50" y="105">Landing at canvas coordinate (700, 350): shown in inset.</text>
+  </g>
+
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#475569" stroke-width="2"/>
+
+  <!-- Exact trajectory: x = 100 + 200t, y = 350 - 150t + 50t². -->
+  <g clip-path="url(#main-scene)">
+    <path d="M100 350 Q400 -100 700 350"
+          fill="none" stroke="#2563eb" stroke-width="3"/>
+  </g>
+
+  <circle cx="100" cy="350" r="4" fill="#172033"/>
+  <circle cx="400" cy="237.5" r="4" fill="#172033"/>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#172033">
+    <text x="60" y="280">launch: 0 m, 0 m</text>
+    <text x="265" y="215">apex: 30 m, 11.25 m</text>
+  </g>
+
+  <!-- Translated detail preserves the same 10 px/m scale. -->
+  <rect x="415" y="125" width="150" height="75" rx="4"
+        fill="#f8fafc" stroke="#94a3b8"/>
+  <text x="425" y="143" font-family="Arial, sans-serif" font-size="12" fill="#475569">Landing detail · 10 px/m</text>
+  <svg x="425" y="150" width="130" height="40" viewBox="0 0 130 40">
+    <line x1="0" y1="35" x2="130" y2="35" stroke="#475569" stroke-width="2"/>
+    <path d="M-500 35 Q-200 -415 100 35"
+          fill="none" stroke="#2563eb" stroke-width="3"/>
+    <circle cx="100" cy="35" r="4" fill="#172033"/>
+  </svg>
