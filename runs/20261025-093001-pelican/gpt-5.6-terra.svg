@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Into History</title>
+  <desc id="desc">A satirical cartoon of a determined pelican riding a bicycle.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.1s linear infinite; }
+    .bird { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+    .leg { transform-box: fill-box; transform-origin: top center; animation: pedal .55s linear infinite alternate; }
+    .leg.back { animation-delay: -.55s; }
+    .dust { animation: puff 1.1s ease-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedal { to { transform: rotate(20deg); } }
+    @keyframes puff { 0% { opacity: .75; transform: translateX(0) scale(.4); } 100% { opacity: 0; transform: translateX(-38px) scale(1.2); } }
+  </style>
+
+  <rect width="800" height="600" fill="#b9e9f5"/>
+  <path d="M0 330 Q115 270 220 326 T430 318 T625 320 T800 290 V475 H0Z" fill="#8dcc63"/>
+  <path d="M0 394 Q175 365 330 397 T620 380 T800 395 V475 H0Z" fill="#559d4e"/>
+  <path d="M0 462 H800" stroke="#444b4d" stroke-width="13"/>
+  <path d="M0 475 H800" stroke="#f6cf4b" stroke-width="7" stroke-dasharray="34 24"/>
+
+  <g opacity=".8">
+    <path d="M102 293 l-12-54 22 46 9-70 9 70 25-44-17 55" fill="#3f873e"/>
+    <path d="M680 306 l-8-47 19 38 7-62 10 62 25-37-17 48" fill="#3f873e"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="67" font-size="42" font-weight="900" fill="#173e55" stroke="#fff" stroke-width="3" paint-order="stroke">PELICAN PEDALS INTO HISTORY</text>
+    <text x="400" y="98" font-size="18" font-weight="700" fill="#24596a">“Because waiting for fish to come to you is for amateurs.”</text>
+  </g>
+
+  <g class="dust" fill="#e9ddbd">
+    <circle cx="104" cy="444" r="11"/><circle cx="80" cy="450" r="7"/><circle cx="58" cy="455" r="4"/>
+  </g>
+
+  <g stroke="#263940" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel" fill="none">
+      <circle cx="238" cy="420" r="77" stroke="#202a2e" stroke-width="10"/>
+      <circle cx="238" cy="420" r="68" stroke="#dde7e5" stroke-width="3"/>
+      <path d="M238 352V488M170 420H306M190 372l96 96M286 372l-96 96" stroke="#82999d" stroke-width="3"/>
+      <circle cx="238" cy="420" r="10" fill="#f2bd37" stroke-width="5"/>
+    </g>
+    <g class="wheel" fill="none">
+      <circle cx="511" cy="420" r="77" stroke="#202a2e" stroke-width="10"/>
+      <circle cx="511" cy="420" r="68" stroke="#dde7e5" stroke-width="3"/>
+      <path d="M511 352V488M443 420H579M463 372l96 96M559 372l-96 96" stroke="#82999d" stroke-width="3"/>
+      <circle cx="511" cy="420" r="10" fill="#f2bd37" stroke-width="5"/>
+    </g>
+
+    <g fill="none" stroke-width="9">
+      <path d="M238 420 L315 312 L404 420 Z" stroke="#d94b3d"/>
+      <path d="M315 312 L421 317 L511 420 L404 420" stroke="#d94b3d"/>
+      <path d="M421 317 L450 260" stroke="#263940"/>
+      <path d="M430 258 H479" stroke="#263940"/>
+      <path d="M315 312 L291 267" stroke="#263940"/>
+      <path d="M271 266 H319" stroke="#263940"/>
+      <path d="M404 420 L376 445" stroke="#263940"/>
+      <circle cx="404" cy="420" r="19" fill="#f2bd37" stroke-width="6"/>
+    </g>
+
+    <g class="bird">
+      <path d="M331 291 Q327 220 370 181 Q427 137 483 188 Q524 229 482 316 Q435 350 367 326Z" fill="#f7f5df" stroke-width="6"/>
+      <path d="M370 198 Q391 138 443 163 Q486 183 472 232 Q442 245 392 231Z" fill="#edf0d8" stroke-width="6"/>
+      <path d="M394 203 Q441 186 492 207 Q535 225 521 253 Q484 272 416 250Z" fill="#f3c844" stroke-width="6"/>
+      <path d="M412 232 Q468 246 520 241 Q510 307 451 312 Q403 304 389 272Z" fill="#f7c43f" stroke-width="6"/>
+      <path d="M409 259 Q448 285 501 259 Q484 289 452 294 Q425 290 409 259Z" fill="#de9d2c" stroke="none"/>
+      <circle cx="425" cy="191" r="12" fill="#fff" stroke-width="5"/>
+      <circle cx="428" cy="193" r="5" fill="#172b35" stroke="none"/>
+      <path d="M446 174 Q458 162 471 174" fill="none" stroke-width="5"/>
+      <path d="M370 249 Q326 251 310 294 Q340 310 382 283Z" fill="#e8ecdc" stroke-width="6"/>
+      <path d="M466 249 Q510 255 529 294 Q498 310 461 283Z" fill="#e8ecdc" stroke-width="6"/>
+
+      <g class="leg">
+        <path d="M389 318 Q377 361 398 407 L423 430" fill="none" stroke="#d88a35" stroke-width="13"/>
+        <path d="M412 429 H447" fill="none" stroke="#d88a35" stroke-width="13"/>
+      </g>
+      <g class="leg back">
+        <path d="M448 316 Q467 355 438 398 L416 420" fill="none" stroke="#d88a35" stroke-width="13"/>
+        <path d="M397 420 H431" fill="none" stroke="#d88a35" stroke-width="13"/>
+      </g>
+      <path d="M359 310 Q410 338 480 313" fill="none" stroke="#24485a" stroke-width="10"/>
+      <path d="M358 312 Q369 337 392 343" fill="none" stroke="#24485a" stroke-width="7"/>
+      <path d="M476 313 Q470 338 451 344" fill="none" stroke="#24485a" stroke-width="7"/>
+    </g>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-weight="800">
+    <path d="M557 174 Q652 147 680 203 Q650 247 568 230 L546 250 L551 221 Q530 194 557 174Z" fill="#fffdf0" stroke="#263940" stroke-width="4"/>
+    <text x="614" y="199" text-anchor="middle" font-size="18" fill="#263940">NO LICENCE?</text>
+    <text x="614" y="220" text-anchor="middle" font-size="18" fill="#263940">NO PROBLEM!</text>
+  </g>
+
+  <rect x="0" y="510" width="800" height="90" fill="#173e55"/>
+  <text x="400" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#f8df6d">A pelican on a bicycle: proof that confidence outruns qualifications.</text>
+  <text x="400" y="576" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">2026-10-25 09:32:19 SGT (UTC+08:00)</text>
+</svg>
