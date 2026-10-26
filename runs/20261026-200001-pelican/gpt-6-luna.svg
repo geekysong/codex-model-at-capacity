@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a sign that reads “I brake for absolutely nothing.”</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#dff5f2;stroke:#17324d;stroke-width:7}
+      .spoke{stroke:#4d8190;stroke-width:2.5}
+      .frame{fill:none;stroke:#ef684c;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:system-ui,sans-serif;fill:#17324d}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 1.8s linear infinite}
+      .ride{transform-box:fill-box;transform-origin:center;animation:bob .55s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <!-- Sky and road -->
+  <rect width="800" height="600" fill="#c9eff1"/>
+  <circle cx="690" cy="122" r="54" fill="#ffd166"/>
+  <path d="M0 348 Q180 294 344 342 T800 325 V470 H0Z" fill="#a9d995"/>
+  <path d="M0 408 Q210 385 400 409 T800 395 V600 H0Z" fill="#f4d7a1"/>
+  <path d="M0 477 H800" stroke="#fff6dc" stroke-width="8" stroke-dasharray="32 24"/>
+
+  <!-- Title and caption -->
+  <text id="title" x="40" y="58" class="label" font-size="34" font-weight="900" letter-spacing="1">THE PELICAN CYCLE</text>
+  <text x="42" y="88" class="label" font-size="17" font-weight="600">“I’m just winging it.” — the bird with a basket for a face</text>
+
+  <!-- Gag sign -->
+  <g transform="translate(68 214)">
+    <path d="M8 104V5" stroke="#805c3a" stroke-width="9" stroke-linecap="round"/>
+    <rect x="0" y="0" width="182" height="95" rx="12" fill="#fff3ce" class="ink"/>
+    <text x="91" y="34" text-anchor="middle" class="label" font-size="14" font-weight="800">CAUTION</text>
+    <text x="91" y="59" text-anchor="middle" class="label" font-size="13" font-weight="700">PELICAN IN</text>
+    <text x="91" y="80" text-anchor="middle" class="label" font-size="13" font-weight="700">A HURRY-ish</text>
+  </g>
+
+  <!-- Bicycle -->
+  <g aria-label="Bicycle">
+    <g class="spin">
+      <circle class="wheel" cx="275" cy="410" r="78"/>
+      <circle cx="275" cy="410" r="8" fill="#17324d"/>
+      <path class="spoke" d="M275 332V488M197 410H353M220 355L330 465M330 355L220 465"/>
+    </g>
+    <g class="spin">
+      <circle class="wheel" cx="565" cy="410" r="78"/>
+      <circle cx="565" cy="410" r="8" fill="#17324d"/>
+      <path class="spoke" d="M565 332V488M487 410H643M510 355L620 465M620 355L510 465"/>
+    </g>
+    <path class="frame" d="M275 410L365 410L420 330L475 410L365 410L335 348M420 330L438 330"/>
+    <path d="M319 344H352M430 321H465" stroke="#17324d" stroke-width="9" stroke-linecap="round"/>
+    <path d="M475 410L490 410" stroke="#17324d" stroke-width="7"/>
+    <circle cx="365" cy="410" r="17" fill="#ffd166" stroke="#17324d" stroke-width="5"/>
+    <path d="M365 410L342 386M365 410L389 432" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="342" cy="386" r="7" fill="#ef684c"/>
+    <circle cx="389" cy="432" r="7" fill="#ef684c"/>
+  </g>
+
+  <!-- Animated rider -->
+  <g class="ride">
+    <!-- Tail feathers -->
+    <path d="M381 252Q344 227 333 204Q370 211 395 237" fill="#fffdf4" class="ink"/>
+    <path d="M393 251Q365 217 367 192Q398 210 411 242" fill="#fffdf4" class="ink"/>
+    <!-- Body -->
+    <ellipse cx="437" cy="260" rx="76" ry="91" fill="#fffdf4" class="ink"/>
+    <path d="M424 286Q438 298 454 286" fill="none" stroke="#ef684c" stroke-width="7" stroke-linecap="round"/>
+    <!-- Neck and head -->
+    <path d="M458 239Q464 190 493 166" fill="none" stroke="#fffdf4" stroke-width="34" stroke-linecap="round"/>
+    <path d="M458 239Q464 190 493 166" fill="none" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="510" cy="151" rx="43" ry="36" fill="#fffdf4" class="ink"/>
+    <circle cx="524" cy="143" r="5.5" fill="#17324d"/>
+    <path d="M540 156Q594 149 633 169Q601 192 542 178Z" fill="#f39a38" class="ink"/>
+    <path d="M550 176Q594 191 631 170Q612 213 570 213Q546 209 550 176Z" fill="#f57959" class="ink"/>
+    <path d="M577 191Q590 197 603 191" fill="none" stroke="#c34e4c" stroke-width="3"/>
+    <!-- Cocky brow and helmet -->
+    <path d="M515 122Q532 111 542 125" fill="none" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M475 143Q479 106 515 103Q545 104 554 133L540 130Q525 116 493 129Z" fill="#ef684c" class="ink"/>
+    <path d="M485 139L544 136" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+    <!-- Wing on handlebars -->
+    <path d="M463 256Q489 267 470 303L438 335Q426 341 421 329L446 294Q440 278 463 256Z" fill="#fffdf4" class="ink"/>
+    <path d="M445 302L460 309M438 314L452 321" stroke="#b9c7c2" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs pedaling -->
+    <path d="M405 326Q385 350 367 383" fill="none" stroke="#f39a38" stroke-width="13" stroke-linecap="round"/>
+    <path d="M465 331Q476 365 390 410" fill="none" stroke="#f39a38" stroke-width="13" stroke-linecap="round"/>
+    <path d="M358 385L342 387M387 410L389 432" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+    <!-- Scarf -->
+    <path d="M480 191Q454 204 443 221Q464 216 483 211L501 195Z" fill="#ef684c" class="ink"/>
+    <path d="M453 216Q425 208 410 219Q432 225 446 234" fill="#ef684c" class="ink"/>
+  </g>
+
+  <!-- Little motion marks -->
+  <path d="M648 258l26-10M655 277l31-2M646 296l24 8" fill="none" stroke="#ef684c" stroke-width="5" stroke-linecap="round"/>
+  <text x="650" y="235" class="label" font-size="16" font-weight="800" transform="rotate(-8 650 235)">HONK!</text>
+
+  <!-- Footer with clear separation from scene -->
+  <rect x="0" y="526" width="800" height="74" fill="#17324d"/>
+  <text x="400" y="573" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#ffffff">2026-10-26 20:02:59 SGT (UTC+08:00)</text>
+</svg>

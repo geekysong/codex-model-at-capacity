@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">The Pelican Commuter</title>
+  <desc id="description">A smug pelican pedals a tiny bicycle with a huge bill, passing a sign that charges extra for oversized baggage. Wheels spin and the pelican bobs in a continuous animation.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#bfeaf3"/>
+      <stop offset="1" stop-color="#fff5d8"/>
+    </linearGradient>
+    <linearGradient id="pouch" x2="0" y2="1">
+      <stop stop-color="#ffcc66"/>
+      <stop offset="1" stop-color="#ee9650"/>
+    </linearGradient>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; fill: #20333b; }
+      .ink { stroke: #20333b; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .spoke { stroke: #71858a; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <path fill="#fff9eb" d="M0 0h800v600H0z"/>
+  <path fill="url(#sky)" d="M0 95h800v365H0z"/>
+  <circle cx="701" cy="149" r="38" fill="#ffdc78"/>
+  <g fill="#fff" opacity=".8">
+    <path d="M30 172c-8-22 22-35 37-20 7-31 51-29 55 4 30-10 44 16 29 25H30z"/>
+    <path d="M545 194c-5-17 16-28 28-17 10-23 42-19 44 5 24-6 35 11 24 20h-96z"/>
+  </g>
+
+  <text x="400" y="49" text-anchor="middle" font-size="36" font-weight="900">THE PELICAN COMMUTER</text>
+  <text x="400" y="79" text-anchor="middle" font-size="18" letter-spacing="2">ZERO EMISSIONS. ENORMOUS BILL.</text>
+
+  <!-- One coastal cycle lane -->
+  <path d="M0 372Q150 344 288 374T570 368T800 373V446H0z" fill="#90c4ac"/>
+  <path d="M0 415Q220 399 800 416V512H0z" fill="#697d81"/>
+  <path d="M0 475H800" stroke="#ffedb1" stroke-width="5" stroke-dasharray="42 30"/>
+  <ellipse cx="373" cy="467" rx="244" ry="15" fill="#243b40" opacity=".17"/>
+
+  <!-- Baggage fee sign -->
+  <path d="M675 314v106" class="ink" fill="none"/>
+  <rect x="590" y="248" width="183" height="85" rx="9" fill="#fff7dc" class="ink"/>
+  <text x="681" y="274" text-anchor="middle" font-size="15" font-weight="bold">OVERSIZED BAGGAGE</text>
+  <text x="681" y="301" text-anchor="middle" font-size="25" font-weight="900">EXTRA $20</text>
+  <text x="681" y="321" text-anchor="middle" font-size="12">YES, THAT INCLUDES BEAKS.</text>
+
+  <!-- Speech bubble -->
+  <path d="M94 119h213q16 0 16 16v51q0 16-16 16h-66l-29 27 6-27H94q-16 0-16-16v-51q0-16 16-16z" fill="#fffdf4" stroke="#20333b" stroke-width="3"/>
+  <text x="201" y="151" text-anchor="middle" font-size="21" font-weight="bold">“I brought my own</text>
+  <text x="201" y="178" text-anchor="middle" font-size="21" font-weight="bold">carry-on.”</text>
+
+  <!-- Wheels: rims remain steady, spokes rotate -->
+  <g transform="translate(230 409)">
+    <circle r="66" fill="#e1e6dd" class="ink"/>
+    <circle r="57" fill="#f8f4dd" stroke="#9eaca7" stroke-width="3"/>
+    <g class="spoke">
+      <path d="M-56 0H56M0-56V56M-40-40l80 80M-40 40l80-80"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+    <circle r="7" fill="#20333b"/>
+  </g>
+  <g transform="translate(517 409)">
+    <circle r="66" fill="#e1e6dd" class="ink"/>
+    <circle r="57" fill="#f8f4dd" stroke="#9eaca7" stroke-width="3"/>
+    <g class="spoke">
+      <path d="M-56 0H56M0-56V56M-40-40l80 80M-40 40l80-80"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+    <circle r="7" fill="#20333b"/>
+  </g>
+
+  <!-- Ridiculously small bicycle -->
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M230 409l69-105 62 105H230l209-102-79 102M299 304h141M517 409l-87-136" stroke="#20333b" stroke-width="12"/>
+    <path d="M230 409l69-105 62 105H230l209-102-79 102M299 304h141M517 409l-87-136" stroke="#ec6256" stroke-width="6"/>
+    <path d="M299 304l-13-30M265 273h49M430 273l-8-25h35" stroke="#20333b" stroke-width="8"/>
+  </g>
+  <circle cx="458" cy="247" r="7" fill="#f8cf60" stroke="#20333b" stroke-width="3"/>
+
+  <!-- Bobbing rider -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".7s" repeatCount="indefinite"/>
+    <!-- Tail and body -->
+    <path d="M278 263l-48-19 15 35-26-2 35 36" fill="#eef1e6" class="ink"/>
+    <path d="M266 260c-13-40 5-70 43-75 34-5 61 16 64 53 3 34-19 65-58 65-36 0-56-15-49-43z" fill="#fffef0" class="ink"/>
+    <!-- Long bent neck -->
+    <path d="M329 226c47 1 60-26 49-53-10-24-1-49 25-48 32 1 37 35 23 60-5 10-9 19-9 30 0 34-28 57-63 57" fill="#fffef0" class="ink"/>
+    <!-- Wing gripping bars -->
+    <path d="M291 232q18 54 65 37l64-23q11-3 13 6t-9 14l-57 31q-51 23-75-20" fill="#e0e6dc" class="ink"/>
+    <path d="M308 258l30 21M320 247l28 22" stroke="#a8b6ad" stroke-width="3" fill="none"/>
+    <!-- Face -->
+    <path d="M418 150l156 17q17 2 1 12l-147 24z" fill="#ffc65c" class="ink"/>
+    <path d="M426 178l150-7c-39 84-108 79-150 7z" fill="url(#pouch)" class="ink"/>
+    <path d="M437 188q26 36 71 25" fill="none" stroke="#d57e47" stroke-width="3"/>
+    <circle cx="408" cy="151" r="8" fill="#20333b"/>
+    <circle cx="410" cy="148" r="2.5" fill="#fff"/>
+    <path d="M395 136l18-5" class="ink" fill="none"/>
+    <!-- Tiny aerodynamic helmet -->
+    <path d="M381 128q0-32 29-32 29 2 29 32z" fill="#ed6156" class="ink"/>
+    <path d="M399 104l-2 13M414 104v13" stroke="#fff6d5" stroke-width="4" stroke-linecap="round"/>
+    <path d="M384 129l13 13" fill="none" stroke="#20333b" stroke-width="3"/>
+    <!-- Commuter badge -->
+    <rect x="269" y="214" width="37" height="23" rx="4" fill="#f8cf60" stroke="#20333b" stroke-width="2" transform="rotate(-12 287 225)"/>
+    <text x="288" y="230" text-anchor="middle" font-size="12" font-weight="bold" transform="rotate(-12 287 225)">CEO</text>
+  </g>
+
+  <!-- Pedaling legs -->
+  <path d="M315 299l-11 44 45 38" fill="none" stroke="#20333b" stroke-width="13" stroke-linecap="round">
+    <animate attributeName="d" values="M315 299l-11 44 45 38;M315 299l49 35 17 63;M315 299l-11 44 45 38" dur="1.4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M315 299l-11 44 45 38" fill="none" stroke="#f4ab48" stroke-width="7" stroke-linecap="round">
+    <animate attributeName="d" values="M315 299l-11 44 45 38;M315 299l49 35 17 63;M315 299l-11 44 45 38" dur="1.4s" repeatCount="indefinite"/>
+  </path>
+  <g transform="translate(361 409)">
+    <circle r="13" fill="#ffcf67" stroke="#20333b" stroke-width="4"/>
+    <g>
+      <path d="M-15-24L15 24" stroke="#20333b" stroke-width="6"/>
+      <path d="M-29-24h28M1 24h28" stroke="#20333b" stroke-width="6" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g stroke="#fff4d5" stroke-width="4" stroke-linecap="round">
+    <path d="M112 346h36M99 360h39M119 374h22"/>
+  </g>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <path fill="#fff9eb" d="M0 512h800v88H0z"/>
+  <path d="M35 513h730" stroke="#20333b" stroke-width="2"/>
+  <text x="400" y="544" text-anchor="middle" font-size="21" font-weight="bold">He downsized his commute. The bill stayed enormous.</text>
+  <text x="400" y="578" text-anchor="middle" font-size="17">2026-10-26 20:01:48 SGT (UTC+08:00)</text>
+</svg>
