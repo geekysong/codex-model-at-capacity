@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican's Tour de Pond</title>
+  <desc id="desc">A determined pelican rides a bicycle, its beak full of fish, while a surprised fish watches from a pond.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { fill: #fff9e9; stroke: #263b48; stroke-width: 8; }
+      .spoke { stroke: #71838a; stroke-width: 2; }
+      .ink { stroke: #263b48; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .thin { stroke: #263b48; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .spin { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .ride { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bdeaf0"/>
+  <path d="M0 335 Q120 315 240 336 T480 331 T800 336 V520 H0Z" fill="#74c9ce"/>
+  <path d="M0 356 Q105 345 210 359 T420 356 T630 357 T800 354" fill="none" stroke="#48aeb8" stroke-width="5"/>
+  <circle cx="690" cy="101" r="42" fill="#ffd66e"/>
+  <path d="M0 442 Q123 415 251 442 T505 440 T800 441 V520 H0Z" fill="#e7d89e"/>
+  <path d="M80 462 q24-22 48 0 M685 464 q24-22 48 0" fill="none" stroke="#b3a66e" stroke-width="5"/>
+
+  <text x="400" y="55" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1.2" fill="#263b48">THE PELICAN'S TOUR DE POND</text>
+  <text x="400" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="#355967">A bird with a big beak and absolutely no brakes.</text>
+
+  <!-- Surprised pond spectator -->
+  <g transform="translate(92 336)">
+    <ellipse cx="0" cy="0" rx="35" ry="14" fill="#f5a344" stroke="#263b48" stroke-width="4"/>
+    <path d="M28 0 l24 -8 -8 13z" fill="#f5a344" stroke="#263b48" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="-13" cy="-4" r="5" fill="#fff"/>
+    <circle cx="-12" cy="-4" r="2.5" fill="#263b48"/>
+    <path d="M-21 14 q10 10 20 0" fill="none" stroke="#263b48" stroke-width="3"/>
+    <text x="-2" y="-25" font-size="22" font-weight="900" fill="#263b48">?!</text>
+  </g>
+
+  <!-- Bicycle wheels and spokes rotate together -->
+  <g class="spin">
+    <circle class="wheel" cx="260" cy="397" r="67"/>
+    <path class="spoke" d="M260 330V464 M193 397H327 M213 350L307 444 M307 350L213 444"/>
+  </g>
+  <g class="spin">
+    <circle class="wheel" cx="546" cy="397" r="67"/>
+    <path class="spoke" d="M546 330V464 M479 397H613 M499 350L593 444 M593 350L499 444"/>
+  </g>
+
+  <!-- Frame -->
+  <path d="M260 397 L346 326 L412 397 L260 397 M346 326 L469 326 L546 397 L412 397 L469 326 M346 326 L332 305 M469 326 L491 304" class="ink"/>
+  <path d="M315 305 h36 M477 304 h34" class="ink"/>
+  <circle cx="412" cy="397" r="22" fill="#f3c54f" stroke="#263b48" stroke-width="6"/>
+  <path d="M412 397 L439 371 M412 397 L383 416" class="thin"/>
+  <circle cx="439" cy="371" r="7" fill="#263b48"/>
+  <circle cx="383" cy="416" r="7" fill="#263b48"/>
+
+  <!-- Pelican and rider bob gently as one -->
+  <g class="ride">
+    <path d="M346 264 Q365 224 412 239 Q450 250 456 292 L430 323 L363 321 Q340 300 346 264Z" fill="#fffdf3" stroke="#263b48" stroke-width="6"/>
+    <path d="M369 286 Q401 276 437 295 L423 314 L370 310Z" fill="#f7a54a" stroke="#263b48" stroke-width="5"/>
+    <path d="M400 253 Q405 218 439 207 Q466 197 484 218 Q498 240 477 260 Q457 278 430 264Z" fill="#fffdf3" stroke="#263b48" stroke-width="6"/>
+    <path d="M478 226 Q532 218 578 239 Q542 263 480 249Z" fill="#f2a044" stroke="#263b48" stroke-width="5"/>
+    <path d="M480 246 Q519 248 556 240 Q538 281 500 271 Q483 265 480 246Z" fill="#e97b42" stroke="#263b48" stroke-width="5"/>
+    <circle cx="459" cy="226" r="5" fill="#263b48"/>
+    <path d="M441 206 Q450 194 462 200" fill="none" stroke="#263b48" stroke-width="4"/>
+    <!-- Fish sticking out of the pouch -->
+    <path d="M520 255 q15-15 31 0 q-16 15-31 0 M520 255 l-12-9 v18z" fill="#6cc7cf" stroke="#263b48" stroke-width="3"/>
+    <circle cx="544" cy="253" r="2.5" fill="#263b48"/>
+    <path d="M373 316 L346 350 L366 356 M425 316 L448 345 L468 341" class="ink"/>
+    <path d="M366 356 l-15 5 M468 341 l15 4" class="thin"/>
+    <path d="M394 240 Q377 225 360 236" fill="none" stroke="#263b48" stroke-width="5"/>
+    <!-- jaunty cap -->
+    <path d="M427 204 Q440 183 466 195 L481 209 Q450 208 427 212Z" fill="#ef6757" stroke="#263b48" stroke-width="5"/>
+    <path d="M456 193 q8-10 16-5" fill="none" stroke="#263b48" stroke-width="3"/>
+  </g>
+
+  <!-- Comedic speed marks -->
+  <path d="M112 259 h46 M128 278 h34 M603 287 h48" stroke="#fffdf3" stroke-width="7" stroke-linecap="round"/>
+  <path d="M625 274 l11-11 M615 292 l15-1" stroke="#fffdf3" stroke-width="5" stroke-linecap="round"/>
+  <path d="M300 321 q-8-13 1-21 M313 318 q-1-12 9-18" fill="none" stroke="#263b48" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Footer reserved below the scene -->
+  <rect x="0" y="520" width="800" height="80" fill="#263b48"/>
+  <text x="400" y="548" text-anchor="middle" font-size="14" font-weight="700" fill="#d5f3ef">“Tour de Pond” rules: helmet optional, fish cargo mandatory.</text>
+  <text x="400" y="581" text-anchor="middle" font-size="16" font-weight="700" fill="#fff9e9">2026-10-26 19:32:58 SGT (UTC+08:00)</text>
+</svg>

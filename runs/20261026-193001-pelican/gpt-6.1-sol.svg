@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Fish: a pelican rides a bicycle</title>
+  <desc id="desc">A smug pelican with a huge fish-filled beak pedals a tiny bicycle past a no fishing sign. Its wheels spin and its body bobs in a looping animation.</desc>
+  <defs>
+    <pattern id="road" width="100" height="12" patternUnits="userSpaceOnUse">
+      <path d="M10 6h45" stroke="#fff3cc" stroke-width="5" stroke-linecap="round"/>
+    </pattern>
+    <style>
+      .outline{stroke:#233447;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .type{font-family:Arial,Helvetica,sans-serif;fill:#233447}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff5da"/>
+  <path d="M0 110Q200 80 400 111T800 105V455H0Z" fill="#bfe8e6"/>
+  <circle cx="694" cy="163" r="43" fill="#ffd36b"/>
+  <path d="M40 194q28-25 56 0m27-34q20-18 40 0" fill="none" stroke="#fff9e9" stroke-width="9" stroke-linecap="round"/>
+
+  <text x="400" y="57" text-anchor="middle" class="type" font-size="43" font-weight="900" letter-spacing="2">TOUR DE FISH</text>
+  <text x="400" y="89" text-anchor="middle" class="type" font-size="19">One pelican. Two wheels. Absolutely no restraint.</text>
+
+  <path d="M0 416Q160 389 320 419T800 411V480H0Z" fill="#84b79a"/>
+  <path d="M0 450H800V510H0Z" fill="#6d7b83"/>
+  <rect y="479" width="800" height="12" fill="url(#road)"/>
+  <ellipse cx="400" cy="453" rx="222" ry="12" fill="#233447" opacity=".15"/>
+
+  <!-- The roadside rule meets an inventive loophole. -->
+  <g class="outline">
+    <path d="M687 283v158" stroke="#596671" stroke-width="9"/>
+    <rect x="630" y="230" width="115" height="74" rx="8" fill="#fffbea"/>
+    <path d="M650 252h74m-74 28h74" stroke="none"/>
+  </g>
+  <text x="687" y="260" text-anchor="middle" class="type" font-size="17" font-weight="bold">NO FISHING</text>
+  <text x="687" y="286" text-anchor="middle" class="type" font-size="12">YES, THAT MEANS YOU</text>
+
+  <!-- Wheels rotate around their own hubs. -->
+  <g transform="translate(245 385)">
+    <circle r="66" fill="#f7f4df" class="outline" stroke-width="10"/>
+    <g stroke="#788b95" stroke-width="3">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.8s" repeatCount="indefinite"/>
+      <path d="M-59 0H59M0-59V59M-42-42l84 84M-42 42l84-84"/>
+      <path d="M0-59a59 59 0 0 1 30 8" fill="none" stroke="#f6b936" stroke-width="7"/>
+    </g>
+    <circle r="8" fill="#233447"/>
+  </g>
+  <g transform="translate(545 385)">
+    <circle r="66" fill="#f7f4df" class="outline" stroke-width="10"/>
+    <g stroke="#788b95" stroke-width="3">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.8s" repeatCount="indefinite"/>
+      <path d="M-59 0H59M0-59V59M-42-42l84 84M-42 42l84-84"/>
+      <path d="M0-59a59 59 0 0 1 30 8" fill="none" stroke="#f6b936" stroke-width="7"/>
+    </g>
+    <circle r="8" fill="#233447"/>
+  </g>
+
+  <!-- A comically undersized racing bicycle. -->
+  <g fill="none" class="outline">
+    <path d="M245 385l69-111 61 111H245l93-79h168l-131 79M506 306l39 79" stroke="#d95249" stroke-width="9"/>
+    <path d="M314 274l-9-24m-23 0h53" stroke-width="9"/>
+    <path d="M506 306l-18-61 26-12q23-6 24 14" stroke-width="8"/>
+    <path d="M245 385h130" stroke="#233447" stroke-width="2"/>
+    <circle cx="375" cy="385" r="18" fill="#f7d26a"/>
+  </g>
+
+  <!-- The pelican and its cargo bob gently, leaving all lettering still. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".9s" repeatCount="indefinite"/>
+    <path d="M318 280q-50 35-70 9l32-36" fill="#fffdf0" class="outline"/>
+    <path d="M313 278q-27 33 1 52l50 34" fill="none" stroke="#dc9637" stroke-width="13" stroke-linecap="round"/>
+    <path d="M342 276q50 30 14 66l31 31" fill="none" stroke="#f5b748" stroke-width="15" stroke-linecap="round">
+      <animate attributeName="d" values="M342 276q50 30 14 66l31 31;M342 276q24 43 0 67l19 49;M342 276q50 30 14 66l31 31" dur=".9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M299 205q-34 15-25 58 6 34 58 29 62-4 80-44l8-63-35-17-25 47Z" fill="#fffdf0" class="outline"/>
+    <path d="M304 222q15 51 62 31l-31-26" fill="#dbe7dc" class="outline"/>
+    <path d="M391 235q36 7 91 7" fill="none" class="outline" stroke-width="12"/>
+    <path d="M477 242l16-6" fill="none" stroke="#f4b94f" stroke-width="12" stroke-linecap="round"/>
+    <path d="M373 211q-2-44 3-63 6-28 35-28 33 0 39 32l-8 48q-17 24-44 15" fill="#fffdf0" class="outline"/>
+
+    <!-- A pouch with the storage capacity of a moving van. -->
+    <path d="M432 161l181 22q-25 86-139 50-35-12-42-72Z" fill="#f4b957" class="outline"/>
+    <path d="M438 166l182 17-183 8" fill="#ffdc79" class="outline"/>
+    <path d="M471 209q24-18 49 0l15-12v25l-15-9q-25 12-49-4Z" fill="#75aaa9" stroke="#233447" stroke-width="3"/>
+    <circle cx="483" cy="207" r="2.5" fill="#233447"/>
+    <path d="M548 218q20-13 37-4l11-9v20l-12-6q-16 11-36-1Z" fill="#df7462" stroke="#233447" stroke-width="3"/>
+    <circle cx="557" cy="216" r="2" fill="#233447"/>
+    <path d="M397 151l17 4" class="outline" fill="none"/>
+    <circle cx="413" cy="163" r="7" fill="#233447"/>
+    <circle cx="415" cy="161" r="2" fill="#fff"/>
+    <path d="M376 130q24-28 55-5l-3 11-53 2Z" fill="#e95d50" class="outline"/>
+    <path d="M390 121l4 13m12-15 3 15" fill="none" stroke="#fff5da" stroke-width="4"/>
+    <path d="M377 189l20 10" stroke="#e95d50" stroke-width="10"/>
+    <path d="M387 196l-23 23 24-2" fill="#e95d50"/>
+  </g>
+
+  <g transform="translate(375 385)">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.8s" repeatCount="indefinite" additive="sum"/>
+    <path d="M-23 0h46" stroke="#233447" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-32 0h18m28 0h18" stroke="#233447" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <path d="M94 238q-15-32 8-49h139q24 4 18 31l-7 22-28-4-20 27-1-27Z" fill="#fffdf0" class="outline" stroke-width="3"/>
+  <text x="176" y="212" text-anchor="middle" class="type" font-size="19" font-weight="bold">“It’s a</text>
+  <text x="176" y="234" text-anchor="middle" class="type" font-size="19" font-weight="bold">carb loading pouch.”</text>
+
+  <!-- Dedicated text area remains clear of the animated scene. -->
+  <rect y="510" width="800" height="90" fill="#fff5da"/>
+  <text x="400" y="543" text-anchor="middle" class="type" font-size="20" font-weight="bold">This pelican’s bicycle runs on fish and questionable ambition.</text>
+  <path d="M72 558h656" stroke="#d6c9a8" stroke-width="1"/>
+  <text x="400" y="582" text-anchor="middle" class="type" font-size="16">2026-10-26 19:31:48 SGT (UTC+08:00)</text>
+</svg>
