@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN PEDAL-OFF</title>
+  <desc id="desc">A satirical pelican rides a bicycle while proudly ignoring sensible transportation.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#666"/>
+      <stop offset="1" stop-color="#303030"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#222;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#222}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.4s linear infinite}
+      .bob{animation:bob .7s ease-in-out infinite alternate}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(6px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="105" r="52" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 350 Q120 300 240 350 T480 350 T720 350 T960 350 V430 H0Z" fill="#9bcf83"/>
+  <path d="M0 410 Q200 380 400 420 T800 410 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 505 H800" stroke="#f6d76a" stroke-width="10" stroke-dasharray="42 30" opacity=".9"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#17324d">THE GREAT PELICAN PEDAL-OFF</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="20" font-style="italic">“Why fly when you can wobble with confidence?”</text>
+
+  <g filter="url(#shadow)">
+    <g class="wheel" transform="translate(250 455)">
+      <circle r="72" fill="#1d1d1d" class="ink"/>
+      <circle r="58" fill="#d9eef2" class="thin"/>
+      <path d="M0-58V58M-58 0H58M-41-41L41 41M41-41L-41 41" class="thin" opacity=".65"/>
+      <circle r="10" fill="#e85d4a" class="ink"/>
+    </g>
+    <g class="wheel" transform="translate(555 455)">
+      <circle r="72" fill="#1d1d1d" class="ink"/>
+      <circle r="58" fill="#d9eef2" class="thin"/>
+      <path d="M0-58V58M-58 0H58M-41-41L41 41M41-41L-41 41" class="thin" opacity=".65"/>
+      <circle r="10" fill="#e85d4a" class="ink"/>
+    </g>
+
+    <path d="M250 455 L350 330 L555 455 L250 455 L430 455 L350 330" fill="none" stroke="#e85d4a" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M555 455 L585 350" class="ink" fill="none"/>
+    <path d="M570 350 L620 350" class="ink" fill="none"/>
+    <path d="M350 330 L325 290" class="ink" fill="none"/>
+    <path d="M300 290 H350" class="ink" fill="none"/>
+    <circle cx="430" cy="455" r="18" fill="#f6d76a" class="ink"/>
+    <g class="pedal">
+      <path d="M430 455 L463 428 M430 455 L397 482" class="thin"/>
+      <rect x="458" y="422" width="25" height="9" rx="4" fill="#222"/>
+      <rect x="388" y="478" width="25" height="9" rx="4" fill="#222"/>
+    </g>
+
+    <g class="bob">
+      <path d="M345 310 Q380 275 430 300 L470 340 Q482 365 455 382 L350 360 Q325 345 345 310Z" fill="#f7f1d2" class="ink"/>
+      <ellipse cx="397" cy="290" rx="54" ry="58" fill="#fff8df" class="ink"/>
+      <path d="M430 305 Q500 300 570 328 Q590 340 570 355 Q495 356 430 333Z" fill="#f2a23a" class="ink"/>
+      <path d="M555 329 Q580 335 595 347" fill="none" class="thin"/>
+      <circle cx="415" cy="274" r="9" fill="#222"/>
+      <path d="M370 257 Q395 235 430 250" fill="none" class="ink"/>
+      <path d="M370 355 Q350 390 315 422" class="ink" fill="none"/>
+      <path d="M455 368 Q480 401 465 440" class="ink" fill="none"/>
+      <path d="M315 422 L290 447 M315 422 L335 448" class="ink" fill="none"/>
+      <path d="M465 440 L440 458 M465 440 L490 461" class="ink" fill="none"/>
+      <path d="M360 312 Q390 330 420 315" fill="none" class="thin"/>
+      <path d="M375 205 Q398 180 420 205" fill="#f2a23a" class="ink"/>
+      <path d="M380 195 Q398 170 410 193" fill="#f2a23a" class="ink"/>
+    </g>
+  </g>
+
+  <g transform="translate(80 170) rotate(-8)">
+    <path d="M0 20 Q38-15 76 20" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+    <path d="M22 34 Q60 0 98 34" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(635 260)">
+    <rect width="125" height="70" rx="14" fill="#fff" class="ink"/>
+    <path d="M25 70 L38 88 L52 70" fill="#fff" class="ink"/>
+    <text x="62" y="30" text-anchor="middle" class="label" font-size="16" font-weight="bold">HONK!</text>
+    <text x="62" y="52" text-anchor="middle" class="label" font-size="14">I meant “quack.”</text>
+  </g>
+
+  <rect x="24" y="548" width="752" height="34" rx="10" fill="#ffffff" opacity=".92"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="17" font-weight="bold">2026-10-27 03:30:01 SGT (UTC+08:00)</text>
+</svg>

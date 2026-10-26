@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical pelican rides a bicycle while taking itself far too seriously.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9be7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b68"/>
+      <stop offset="1" stop-color="#2e3340"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#18202c" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202735;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202735}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      .bob{animation:bob .8s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff4a8" opacity=".85"/>
+  <path d="M0 390 Q120 330 240 385 T480 375 T800 365 V600 H0Z" fill="#9bd58c"/>
+  <path d="M0 455 Q170 425 330 455 T650 450 T800 440 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 520 H800" stroke="#f5d76e" stroke-width="8" stroke-dasharray="45 28" opacity=".8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="35" y="28" width="730" height="92" rx="22" fill="#fffdf4" class="ink"/>
+    <text x="400" y="72" text-anchor="middle" class="label" font-size="35" font-weight="900" fill="#e34b3f">PELICAN PEDAL PANIC</text>
+    <text x="400" y="101" text-anchor="middle" class="label" font-size="18" font-weight="700">A beak-first commuter challenges traffic, gravity, and common sense.</text>
+  </g>
+
+  <g class="bob">
+    <g aria-label="bicycle">
+      <g class="wheel">
+        <circle cx="235" cy="438" r="72" fill="#202735" class="ink"/>
+        <circle cx="235" cy="438" r="58" fill="#dbe8ef" class="ink"/>
+        <circle cx="235" cy="438" r="10" fill="#e34b3f" class="ink"/>
+        <path d="M235 380V496 M177 438H293 M194 397L276 479 M276 397L194 479" stroke="#718090" stroke-width="4"/>
+      </g>
+      <g class="wheel">
+        <circle cx="590" cy="438" r="72" fill="#202735" class="ink"/>
+        <circle cx="590" cy="438" r="58" fill="#dbe8ef" class="ink"/>
+        <circle cx="590" cy="438" r="10" fill="#e34b3f" class="ink"/>
+        <path d="M590 380V496 M532 438H648 M549 397L631 479 M631 397L549 479" stroke="#718090" stroke-width="4"/>
+      </g>
+      <path d="M235 438 L355 335 L470 438 L235 438 L420 438 L355 335 L590 438" fill="none" class="ink" stroke="#e34b3f"/>
+      <path d="M355 335 L337 292 M337 292 L305 292" fill="none" class="ink"/>
+      <path d="M470 438 L486 361 M486 361 L520 361" fill="none" class="ink"/>
+      <g class="pedal">
+        <circle cx="420" cy="438" r="19" fill="#f3c84b" class="ink"/>
+        <path d="M420 438 L448 416 M420 438 L394 461" class="ink" fill="none"/>
+        <rect x="444" y="409" width="28" height="9" rx="4" fill="#202735"/>
+        <rect x="380" y="458" width="28" height="9" rx="4" fill="#202735"/>
+      </g>
+    </g>
+
+    <g aria-label="pelican">
+      <ellipse cx="397" cy="267" rx="88" ry="108" fill="#f5f1df" class="ink"/>
+      <path d="M355 300 Q394 329 443 304 Q430 355 382 352 Q350 340 355 300Z" fill="#c8d2d7" class="ink"/>
+      <ellipse cx="404" cy="170" rx="62" ry="57" fill="#f5f1df" class="ink"/>
+      <path d="M447 169 Q531 175 620 218 Q537 252 448 211Z" fill="#f0a83b" class="ink"/>
+      <path d="M448 211 Q535 225 614 219 Q535 279 448 235Z" fill="#df6b4c" class="ink"/>
+      <circle cx="425" cy="154" r="9" fill="#202735"/>
+      <path d="M395 127 Q413 110 437 124" fill="none" class="ink"/>
+      <path d="M360 220 Q314 243 297 299 Q337 287 377 259" fill="#d6dde0" class="ink"/>
+      <path d="M373 344 Q365 393 340 423" fill="none" class="ink"/>
+      <path d="M424 344 Q446 389 473 421" fill="none" class="ink"/>
+      <path d="M338 423 l-25 13 M338 423 l10 22 M473 421 l24 14 M473 421 l-8 23" fill="none" class="ink"/>
+      <path d="M344 235 Q385 208 433 231" fill="none" stroke="#d8a83f" stroke-width="10" opacity=".8"/>
+      <path d="M332 180 Q354 168 372 176" fill="none" class="ink"/>
+      <path d="M467 157 Q482 143 497 151" fill="none" class="ink"/>
+      <path d="M468 110 Q500 89 529 116" fill="none" class="ink"/>
+      <text x="485" y="92" class="label" font-size="19" font-weight="800" fill="#e34b3f">SERIOUSLY?</text>
+    </g>
+  </g>
+
+  <g transform="translate(600 315) rotate(-8)">
+    <rect x="0" y="0" width="145" height="62" rx="12" fill="#fffdf4" class="ink"/>
+    <path d="M22 62 L36 82 L52 62" fill="#fffdf4" class="ink"/>
+    <text x="72" y="27" text-anchor="middle" class="label" font-size="16" font-weight="800">HONK IF</text>
+    <text x="72" y="48" text-anchor="middle" class="label" font-size="16" font-weight="800">YOU'RE A BIRD</text>
+  </g>
+
+  <g transform="translate(45 548)">
+    <rect x="0" y="0" width="710" height="38" rx="10" fill="#fffdf4" class="ink"/>
+    <text x="355" y="25" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-27 03:30:55 SGT (UTC+08:00)</text>
+  </g>
+</svg>
