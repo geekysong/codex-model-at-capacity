@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">The Pelican’s Great Escape</title>
+  <desc id="description">A determined pelican rides a bicycle, pedaling furiously past a sign that says “Fish market: uphill.”</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { animation: bob .6s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d6"/>
+  <path d="M0 420 Q180 390 365 420 T800 408 V600 H0Z" fill="#cbe9dc"/>
+  <path d="M0 474 Q200 458 400 476 T800 460" fill="none" stroke="#a3d2bd" stroke-width="5"/>
+
+  <text id="title" x="400" y="55" text-anchor="middle" font-size="31" font-weight="900" fill="#173c4b">THE PELICAN’S GREAT ESCAPE</text>
+  <text x="400" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="#315c61">“Fish market: uphill.” He took that personally.</text>
+
+  <!-- The deeply unhelpful road sign -->
+  <g transform="translate(660 174)">
+    <path d="M0 61 V232" stroke="#765d45" stroke-width="9"/>
+    <rect x="-83" y="0" width="166" height="69" rx="7" fill="#fffdf4" stroke="#765d45" stroke-width="4"/>
+    <text x="0" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#173c4b">FISH MARKET</text>
+    <text x="0" y="51" text-anchor="middle" font-size="15" font-weight="900" fill="#c65b3f">↑ 3 MILES</text>
+    <path d="M-19 232 Q0 220 19 232" fill="none" stroke="#765d45" stroke-width="5"/>
+  </g>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke="#214e61" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="234" cy="402" r="59" stroke="#173c4b" stroke-width="6"/>
+      <path d="M234 343V461 M175 402H293 M192 360L276 444 M276 360L192 444" stroke="#6b9ca0" stroke-width="2.5"/>
+    </g>
+    <g class="wheel">
+      <circle cx="490" cy="402" r="59" stroke="#173c4b" stroke-width="6"/>
+      <path d="M490 343V461 M431 402H549 M448 360L532 444 M532 360L448 444" stroke="#6b9ca0" stroke-width="2.5"/>
+    </g>
+    <path d="M234 402L321 402L283 326L234 402 M321 402L386 326L490 402 M283 326H386 M386 326L410 326" stroke="#e36c48" stroke-width="8"/>
+    <circle cx="321" cy="402" r="9" fill="#f2b844" stroke="#173c4b" stroke-width="4"/>
+    <path d="M321 402L302 425 M321 402L341 378" stroke="#173c4b" stroke-width="5"/>
+    <path d="M272 326L257 326 M399 326L415 314L435 314" stroke="#173c4b" stroke-width="6"/>
+    <path d="M466 338L485 326" stroke="#173c4b" stroke-width="5"/>
+  </g>
+
+  <!-- Pelican and its enthusiastic pedaling pose -->
+  <g class="rider">
+    <!-- back wing -->
+    <path d="M330 262 Q373 247 403 280 Q378 305 338 292Z" fill="#d9e8dc" stroke="#173c4b" stroke-width="4"/>
+    <path d="M346 273 Q370 264 390 283" fill="none" stroke="#9dbdb6" stroke-width="3"/>
+    <!-- body -->
+    <ellipse cx="342" cy="278" rx="40" ry="48" transform="rotate(-22 342 278)" fill="#fffdf4" stroke="#173c4b" stroke-width="4"/>
+    <path d="M310 280 Q327 304 364 298" fill="none" stroke="#b4cbc4" stroke-width="4"/>
+    <!-- neck -->
+    <path d="M351 262 Q365 228 350 199 Q343 184 356 171" fill="none" stroke="#fffdf4" stroke-width="22" stroke-linecap="round"/>
+    <path d="M351 262 Q365 228 350 199 Q343 184 356 171" fill="none" stroke="#173c4b" stroke-width="4" stroke-linecap="round"/>
+    <!-- head -->
+    <ellipse cx="362" cy="160" rx="29" ry="25" fill="#fffdf4" stroke="#173c4b" stroke-width="4"/>
+    <!-- beak and pouch -->
+    <path d="M379 162 Q425 153 456 168 Q424 181 382 176Z" fill="#f2b844" stroke="#173c4b" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M383 176 Q419 181 446 169 Q435 204 410 207 Q391 204 383 176Z" fill="#ef966d" stroke="#173c4b" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M397 183 Q414 188 432 179" fill="none" stroke="#d46e54" stroke-width="3"/>
+    <!-- eye and expression -->
+    <circle cx="370" cy="153" r="4.5" fill="#173c4b"/>
+    <path d="M363 143 Q372 138 380 144" fill="none" stroke="#173c4b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M358 151 Q353 145 349 149" fill="none" stroke="#e99b72" stroke-width="4" stroke-linecap="round"/>
+    <!-- legs on crank -->
+    <path d="M329 306 Q320 338 340 378" fill="none" stroke="#e36c48" stroke-width="8" stroke-linecap="round"/>
+    <path d="M340 378L350 379" stroke="#173c4b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M350 294 Q374 315 340 378" fill="none" stroke="#e36c48" stroke-width="8" stroke-linecap="round"/>
+    <path d="M340 378L331 385" stroke="#173c4b" stroke-width="6" stroke-linecap="round"/>
+    <!-- wing gripping the handlebar -->
+    <path d="M319 270 Q341 285 389 315" fill="none" stroke="#fffdf4" stroke-width="15" stroke-linecap="round"/>
+    <path d="M319 270 Q341 285 389 315" fill="none" stroke="#173c4b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M383 312L393 319" stroke="#173c4b" stroke-width="5" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M337 150 Q344 123 367 126 Q386 128 390 149Z" fill="#e36c48" stroke="#173c4b" stroke-width="4"/>
+    <path d="M338 150L389 150" stroke="#173c4b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M356 130L360 145 M371 130L376 145" stroke="#ffd890" stroke-width="3"/>
+  </g>
+
+  <!-- Motion marks and comic sweat -->
+  <path d="M136 329H164 M124 348H157 M143 367H166" stroke="#e36c48" stroke-width="5" stroke-linecap="round"/>
+  <path d="M414 129 Q408 137 414 141 Q421 137 414 129Z" fill="#69b6c4"/>
+  <path d="M400 137 Q395 144 400 147" fill="none" stroke="#69b6c4" stroke-width="3"/>
+  <text x="118" y="294" font-size="15" font-weight="900" fill="#c65b3f" transform="rotate(-12 118 294)">PEDAL FASTER!</text>
+
+  <!-- Ground and scene details -->
+  <path d="M92 462H708" stroke="#638c7c" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#f2b844">
+    <circle cx="108" cy="443" r="5"/><circle cx="126" cy="449" r="3"/>
+    <circle cx="580" cy="446" r="4"/><circle cx="601" cy="440" r="6"/>
+  </g>
+  <path d="M570 453q9-20 18 0q9-20 18 0" fill="none" stroke="#638c7c" stroke-width="3"/>
+
+  <!-- Dedicated footer with readable timestamp -->
+  <rect x="0" y="520" width="800" height="80" fill="#173c4b"/>
+  <path d="M0 520H800" stroke="#f2b844" stroke-width="5"/>
+  <text x="400" y="552" text-anchor="middle" font-size="16" font-weight="700" fill="#fff4d6">One bird. Two wheels. Absolutely no fish in the basket.</text>
+  <text x="400" y="582" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">2026-10-26 15:02:14 SGT (UTC+08:00)</text>
+</svg>
