@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Fish: a pelican riding a bicycle</title>
+  <desc id="description">A determined pelican pedals a bicycle with a fish in its enormous bill pouch. The wheels spin, the pedals turn, and the pelican bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="paper" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="0.7" fill="#183f49" opacity=".055"/>
+    </pattern>
+    <style>
+      .ink{stroke:#183f49;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#183f49}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4dc"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M0 364 Q180 310 352 355 T800 339 V509 H0Z" fill="#c9e9db"/>
+  <circle cx="689" cy="155" r="43" fill="#ffc960"/>
+  <path d="M44 176h81m-57 15h39m538 70h88" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+
+  <text x="400" y="67" text-anchor="middle" class="label" font-size="47" font-weight="900" letter-spacing="2">TOUR DE FISH</text>
+  <text x="400" y="100" text-anchor="middle" class="label" font-size="17" letter-spacing="3">ALL BEAK. NO BRAKES.</text>
+
+  <!-- One coastal road, one very ambitious rider. -->
+  <path d="M0 452 Q400 435 800 452 V509 H0Z" fill="#e7c99d"/>
+  <path d="M34 478h76m76 0h76m76 0h76m76 0h76m76 0h76" stroke="#fff4dc" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="392" cy="451" rx="236" ry="13" fill="#183f49" opacity=".12"/>
+
+  <!-- Rotating wheel spokes retain fixed hubs and rims. -->
+  <g fill="#fff8e9" class="ink">
+    <circle cx="252" cy="389" r="72"/>
+    <circle cx="552" cy="389" r="72"/>
+  </g>
+  <g stroke="#6c9c98" stroke-width="3">
+    <g>
+      <path d="M252 319v140m-70-70h140m-120-50 100 100m-100 0 100-100"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 252 389" to="360 252 389" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <path d="M552 319v140m-70-70h140m-120-50 100 100m-100 0 100-100"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 552 389" to="360 552 389" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g fill="none" class="ink">
+    <circle cx="252" cy="389" r="72" stroke-width="10"/>
+    <circle cx="552" cy="389" r="72" stroke-width="10"/>
+    <path d="M252 389 326 283 386 389H252L465 293 386 389M326 283l139 10" stroke="#e75f50" stroke-width="9"/>
+    <path d="m552 389-71-136h35M465 293l16-40" stroke-width="8"/>
+    <path d="m326 283-11-33" stroke-width="7"/>
+    <path d="M293 249h51" stroke-width="13"/>
+    <circle cx="386" cy="389" r="20" fill="#f6c858"/>
+    <path d="M267 312h-46m35 12h-46" stroke="#e75f50" stroke-width="4"/>
+  </g>
+  <circle cx="252" cy="389" r="7" fill="#183f49"/>
+  <circle cx="552" cy="389" r="7" fill="#183f49"/>
+
+  <!-- Pedal crank revolves around the bottom bracket. -->
+  <g class="ink">
+    <path d="M362 389h48" fill="none"/>
+    <path d="M351 389h19m32 0h19" stroke-width="9"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 386 389" to="360 386 389" dur="1.4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Bobbing rider, with animated legs. -->
+  <g class="ink">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".7s" repeatCount="indefinite"/>
+    <path d="m341 275 37 44-20 46" fill="none" stroke="#d7953c" stroke-width="12">
+      <animate attributeName="d" values="m341 275 37 44-20 46;m341 275 12 52 46 55;m341 275 37 44-20 46" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="m356 362-17 8 31 5" fill="#efb442" stroke-width="4">
+      <animateTransform attributeName="transform" type="translate" values="0 0;41 17;0 0" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+
+    <path d="M271 240 243 215l7 41-30 2 51 27" fill="#fffdf2"/>
+    <path d="M270 227q33-38 86-14 36 17 33 48-10 34-58 32-44 0-61-30Z" fill="#fffdf2"/>
+    <path d="M290 234q31-9 59 12l-33 17 36 6q-36 15-59-5" fill="#d8e8e4" stroke-width="4"/>
+
+    <!-- Neck, head, helmet, and a magnificently impractical bill. -->
+    <path d="M359 241q-13-33-3-63 8-27 36-24 25 3 18 27-6 19-19 28l6 46q-20 17-38-14Z" fill="#fffdf2"/>
+    <path d="M383 178q67-1 170 23-37 20-145 3Z" fill="#ffca56"/>
+    <path d="M407 204q53 97 127 3-61 16-127-3Z" fill="#efab70"/>
+    <path d="M419 218q42 49 93-1" fill="none" stroke="#d38258" stroke-width="3"/>
+
+    <!-- The passenger has reservations. -->
+    <path d="m451 231 12-12q22-7 34 5-13 17-34 8l-12 7Z" fill="#74c6c2" stroke-width="3"/>
+    <circle cx="487" cy="224" r="2.5" fill="#183f49" stroke="none"/>
+
+    <circle cx="396" cy="178" r="5" fill="#183f49" stroke="none"/>
+    <path d="m387 166 16 3" fill="none" stroke-width="3"/>
+    <path d="M352 157q-1-36 33-38 29 0 34 32Z" fill="#e75f50"/>
+    <path d="m374 124-3 27m17-29 5 27" fill="none" stroke="#fff4dc" stroke-width="4"/>
+    <path d="m353 157 70-7" fill="none" stroke-width="7"/>
+    <path d="m360 160 10 35 14-9" fill="none" stroke-width="3"/>
+
+    <path d="M361 233q38-7 58 12l60 14" fill="none" stroke="#fffdf2" stroke-width="17"/>
+    <path d="m474 255 10 8 11-2" fill="none" stroke="#efa741" stroke-width="8"/>
+    <path d="M339 278 371 329 405 382" fill="none" stroke="#efb442" stroke-width="12">
+      <animate attributeName="d" values="M339 278 371 329 405 382;M339 278 400 316 367 365;M339 278 371 329 405 382" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="m402 378 23 8-30 5" fill="#efb442" stroke-width="4">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-38 -17;0 0" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Speech balloon is stationary so its lettering stays readable. -->
+  <path d="M563 145h162q19 0 19 19v52q0 19-19 19H604l-35 25 10-25h-16q-19 0-19-19v-52q0-19 19-19Z" fill="#fffdf2" class="ink" stroke-width="3"/>
+  <text x="644" y="181" text-anchor="middle" class="label" font-size="19" font-weight="bold">
+    <tspan x="644">“It's called</tspan>
+    <tspan x="644" dy="26">carp-pooling.”</tspan>
+  </text>
+  <path d="m189 302-27-5m34-10-18-16m8 45-30 7" fill="none" stroke="#183f49" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Reserved footer keeps all text clear of the animated scene. -->
+  <rect x="0" y="509" width="800" height="91" fill="#183f49"/>
+  <text x="400" y="541" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="bold" fill="#fff4dc">He packed a lunch. The lunch requested a taxi.</text>
+  <text x="400" y="577" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#c9e9db">2026-10-26 12:01:20 SGT (UTC+08:00)</text>
+</svg>

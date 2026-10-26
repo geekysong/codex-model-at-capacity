@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Getaway</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a sign that says “NO FISHING,” with a fish tucked in its beak.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bceeff"/>
+  <circle cx="690" cy="110" r="48" fill="#ffd65a"/>
+  <path d="M0 390 Q110 350 220 388 T440 384 T660 390 T900 370 V530 H0Z" fill="#8ed48b"/>
+  <path d="M0 455 Q200 430 400 458 T800 445 V540 H0Z" fill="#6aba72"/>
+  <path d="M0 493 H800" stroke="#4c5960" stroke-width="5"/>
+  <path d="M0 510 H800" stroke="#f8f4d7" stroke-width="3" stroke-dasharray="30 24"/>
+
+  <text x="400" y="55" text-anchor="middle" font-size="32" font-weight="900" fill="#173b57">THE PELICAN’S GETAWAY</text>
+  <text x="400" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="#31576d">He’s cycling through the neighborhood fish market.</text>
+
+  <!-- Sign gag -->
+  <g transform="translate(648 245)">
+    <path d="M28 64 V171" stroke="#79583b" stroke-width="9"/>
+    <rect x="-20" y="0" width="140" height="67" rx="8" fill="#fff6df" stroke="#3b4e58" stroke-width="4"/>
+    <text x="50" y="25" text-anchor="middle" font-size="13" font-weight="900" fill="#c44">NO FISHING</text>
+    <text x="50" y="47" text-anchor="middle" font-size="11" font-weight="700" fill="#344">unless you’re</text>
+    <text x="50" y="61" text-anchor="middle" font-size="11" font-weight="700" fill="#344">the cyclist</text>
+  </g>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke="#263b4a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="250" cy="430" r="62" stroke="#263b4a" stroke-width="5"/>
+      <circle cx="250" cy="430" r="5" fill="#263b4a"/>
+      <path d="M250 368V492 M188 430H312 M206 386L294 474 M294 386L206 474" stroke-width="2"/>
+    </g>
+    <g class="wheel">
+      <circle cx="480" cy="430" r="62" stroke="#263b4a" stroke-width="5"/>
+      <circle cx="480" cy="430" r="5" fill="#263b4a"/>
+      <path d="M480 368V492 M418 430H542 M436 386L524 474 M524 386L436 474" stroke-width="2"/>
+    </g>
+    <path d="M250 430 L330 430 L292 360 L250 430 M330 430 L388 360 L480 430 L388 360 L377 330 M292 360 L270 346 M388 360 L425 356"/>
+    <path d="M316 430 L335 446 M330 430 L346 412" stroke-width="4"/>
+    <path d="M272 346 H303 M363 326 H391" stroke-width="5"/>
+  </g>
+  <circle cx="330" cy="430" r="10" fill="#ffd65a" stroke="#263b4a" stroke-width="4"/>
+
+  <!-- Pelican and its tiny stolen lunch -->
+  <g class="rider">
+    <path d="M325 339 Q335 307 367 299 L403 319 L390 356 L354 372 L321 360Z" fill="#fffdf1" stroke="#314555" stroke-width="4"/>
+    <path d="M344 325 Q354 292 383 289 Q410 290 418 315 Q421 336 396 345 L372 345Z" fill="#fffdf1" stroke="#314555" stroke-width="4"/>
+    <path d="M409 310 Q443 299 469 316 Q446 329 415 326Z" fill="#f5a52d" stroke="#814d20" stroke-width="4"/>
+    <path d="M412 324 Q443 326 466 317 Q450 342 420 339Z" fill="#f08d26" stroke="#814d20" stroke-width="3"/>
+    <ellipse cx="435" cy="321" rx="7" ry="4" fill="#ffef9a"/>
+    <path d="M463 316 Q480 310 486 318 Q480 328 467 325Z" fill="#77c5de" stroke="#31576d" stroke-width="2"/>
+    <path d="M480 318 L489 314 L486 321Z" fill="#e66d4c"/>
+    <circle cx="400" cy="306" r="3.5" fill="#162a36"/>
+    <path d="M383 289 Q381 276 393 276 Q406 278 403 291" fill="#fffdf1" stroke="#314555" stroke-width="3"/>
+    <path d="M353 369 L360 394 L388 394 L378 359" fill="#fffdf1" stroke="#314555" stroke-width="4"/>
+    <path d="M359 392 L350 411 L371 411 L381 393" fill="#fffdf1" stroke="#314555" stroke-width="4"/>
+    <path d="M349 412 L339 423 M371 412 L364 424" stroke="#e69a26" stroke-width="5" stroke-linecap="round"/>
+    <path d="M359 411 L340 423 M366 411 L385 423" stroke="#e69a26" stroke-width="5" stroke-linecap="round"/>
+    <path d="M337 337 Q319 333 314 348" fill="none" stroke="#314555" stroke-width="4"/>
+    <path d="M380 350 Q396 359 405 374" fill="none" stroke="#314555" stroke-width="4"/>
+    <path d="M352 308 Q365 299 379 302" fill="none" stroke="#314555" stroke-width="3"/>
+  </g>
+
+  <!-- Motion marks and comic dust -->
+  <path d="M184 365 l-23 -9 M178 381 l-28 -1 M196 350 l-16 -18" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="554" cy="450" r="8" fill="#fff4bd"/>
+  <circle cx="573" cy="438" r="5" fill="#fff4bd"/>
+  <path d="M560 425 q-12 -15 2 -23 q14 7 2 18" fill="#fff4bd"/>
+
+  <rect x="0" y="536" width="800" height="64" fill="#18384d"/>
+  <text x="400" y="562" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">“I’m not late. The fish was making a break for it.”</text>
+  <text x="400" y="588" text-anchor="middle" font-size="13" font-weight="700" fill="#ffe28a">2026-10-26 12:02:29 SGT (UTC+08:00)</text>
+</svg>
