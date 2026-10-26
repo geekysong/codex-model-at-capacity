@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals the City</title>
+  <desc id="desc">A satirical cartoon of a cheerful pelican riding an undersized bicycle.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#82dcf5"/>
+      <stop offset="1" stop-color="#fdf0ae"/>
+    </linearGradient>
+    <style>
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.2s linear infinite; }
+      .bob { transform-box: fill-box; transform-origin: center; animation: bob .6s ease-in-out infinite alternate; }
+      .leg { transform-box: fill-box; transform-origin: top center; animation: pedal .6s ease-in-out infinite alternate; }
+      .leg2 { transform-box: fill-box; transform-origin: top center; animation: pedal .6s ease-in-out infinite alternate-reverse; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+      @keyframes pedal { to { transform: rotate(16deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="94" cy="92" r="42" fill="#ffe05c"/>
+  <path d="M0 253 Q110 195 230 250 T450 240 T800 220 V430 H0Z" fill="#9bcf83"/>
+  <path d="M0 362 Q145 334 284 366 T535 345 T800 367 V493 H0Z" fill="#71ae64"/>
+  <path d="M0 447 Q180 416 347 451 T800 430 V502 H0Z" fill="#45494b"/>
+  <path d="M0 479 H800" stroke="#f7d452" stroke-width="8" stroke-dasharray="48 31"/>
+
+  <g fill="#fff" opacity=".85">
+    <path d="M145 113 q20-22 41 0 q28-22 48 5 q-41 13-90 4Z"/>
+    <path d="M562 91 q16-18 35 0 q21-17 40 6 q-34 10-75 3Z"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="57" font-size="35" font-weight="900" fill="#283447" stroke="#fff" stroke-width="5" paint-order="stroke">PELICAN PEDALS THE CITY</text>
+    <text x="400" y="87" font-size="16" font-weight="700" fill="#283447">“Finally, a commute with enough room for snacks.”</text>
+  </g>
+
+  <g class="wheel" stroke="#20262c" fill="#dcecf2">
+    <circle cx="269" cy="416" r="73" stroke-width="8"/>
+    <circle cx="269" cy="416" r="8" fill="#20262c"/>
+    <path d="M269 343V489M196 416H342M217 364l104 104M321 364L217 468" stroke="#7d99a5" stroke-width="3"/>
+  </g>
+  <g class="wheel" stroke="#20262c" fill="#dcecf2">
+    <circle cx="535" cy="416" r="73" stroke-width="8"/>
+    <circle cx="535" cy="416" r="8" fill="#20262c"/>
+    <path d="M535 343V489M462 416H608M483 364l104 104M587 364L483 468" stroke="#7d99a5" stroke-width="3"/>
+  </g>
+
+  <g stroke="#20262c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M269 416 L355 300 L446 416 Z"/>
+    <path d="M446 416 L535 416 L485 282"/>
+    <path d="M355 300 L485 282"/>
+    <path d="M485 282 l20-45 h42"/>
+    <path d="M337 298 h45"/>
+    <path d="M446 416 l25 16"/>
+  </g>
+  <path d="M522 230 q28-16 56 0" stroke="#20262c" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="470" cy="432" rx="28" ry="10" fill="#f5bc32" stroke="#20262c" stroke-width="5"/>
+
+  <g class="bob" stroke="#20262c" stroke-linejoin="round">
+    <path d="M386 259 q-56 25-42 104 q13 67 92 48 q53-13 41-83 q-9-58-91-69Z" fill="#e7edf0" stroke-width="6"/>
+    <path d="M374 293 q26-21 61-7 q19 32 5 70 q-48 20-71-18Z" fill="#7e98a0" stroke="none"/>
+    <path d="M366 277 q-45-30-30-96 q9-39 49-48 q39-7 61 32 q17 29 1 63 q-21 42-81 49Z" fill="#e7edf0" stroke-width="6"/>
+    <path d="M353 201 q-52 20-91 4 q38-54 90-31 q31 15 20 39 q-6 14-19-12Z" fill="#f5bc32" stroke-width="6"/>
+    <path d="M264 205 q44 12 95 16 q-29 33-76 26 q-31-4-19-42Z" fill="#f6ce46" stroke-width="4"/>
+    <circle cx="395" cy="175" r="10" fill="#fff" stroke-width="4"/>
+    <circle cx="397" cy="177" r="4" fill="#20262c"/>
+    <path d="M416 208 q13 16 26 2" fill="none" stroke-width="4"/>
+
+    <path d="M385 300 q-68 1-86-39 q-7-18 10-26 q16-6 25 13 q14 24 61 24" fill="#e7edf0" stroke-width="6"/>
+    <path d="M391 303 q57 5 93-32 q13-13 25-1 q10 13-5 27 q-43 47-109 45" fill="#e7edf0" stroke-width="6"/>
+    <path d="M300 246 l-17 2" stroke-width="7"/>
+    <path d="M497 280 l18-11" stroke-width="7"/>
+
+    <path class="leg" d="M397 365 q-11 39 35 62 l39 6" fill="none" stroke="#f5bc32" stroke-width="14" stroke-linecap="round"/>
+    <path class="leg2" d="M430 360 q8 37 40 48 l22 23" fill="none" stroke="#f5bc32" stroke-width="14" stroke-linecap="round"/>
+    <path d="M459 434 h31M484 431 h29" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <path d="M92 292 q0-39 50-39 h75 q18 0 18 18 v39 q0 18-18 18 h-75 q-50 0-50-36Z" fill="#fff" stroke="#283447" stroke-width="4"/>
+    <path d="M215 324 l24 18-35-10" fill="#fff" stroke="#283447" stroke-width="4"/>
+    <text x="164" y="287" text-anchor="middle" font-size="17" font-weight="800" fill="#283447">BIKE LANE?</text>
+    <text x="164" y="309" text-anchor="middle" font-size="17" font-weight="800" fill="#283447">I AM THE LANE.</text>
+  </g>
+
+  <rect y="510" width="800" height="90" fill="#283447"/>
+  <text x="400" y="543" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#fceba0">A pelican, a bicycle, and absolutely no respect for aerodynamic design.</text>
+  <text x="400" y="578" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">2026-10-26 21:04:04 SGT (UTC+08:00)</text>
+</svg>
