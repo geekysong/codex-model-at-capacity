@@ -69,3 +69,28 @@ October 25 Claude push failures had already been recovered by subsequent Codex
 publication: both remote branches reached the October 26 16:00 round before the
 repair. The original Claude push log omitted diagnostics, so its historical
 failure reason cannot be established. API failure is not the established cause.
+
+## Repair verification, 2026-10-26 16:42 SGT
+
+- Fix commit `8c2fa56`, integrated to Pi main by merge `07cc127`.
+- 9 daily-control regression checks plus 7 existing quality checks passed on Pi.
+- Controlled recovery: only today's Daily variant, one API request per model;
+  4/4 successful, no Pelican/history backfill. Snapshot date `2026-10-26`, SHA
+  `83e3cc3e6646`, exact prompt verified in all four metadata records.
+- Artifacts: `comparisons/20261026-163840/daily/claude-fable-5-1/claude.svg`,
+  `comparisons/20261026-163901/daily/claude-opus-5-5/claude.svg`,
+  `comparisons/20261026-163918/daily/claude-haiku-5-5/claude.svg`,
+  `comparisons/20261026-163929/daily/claude-sonnet-5-5/claude.svg`.
+- Publication commit `11f2a73`, followed by existing sync rebuild `ae795ac`;
+  pushes to both main and gh-pages returned success. After normal Pages build
+  propagation, the public page contained all four paths and every public SVG
+  returned HTTP 200 with a SHA-256 matching its Pi artifact. Browser inspection
+  showed the new Daily Challenge images and their source timestamps.
+- SVG text independently matched the knight challenge (4 reachable squares:
+  4, 12, 13, 15); this is a pipeline acceptance check, not a general model rating.
+- Total estimated API cost from existing versioned rates: USD 0.171884, not a
+  provider invoice. Repeat dry-run reports all four complete; repeated generator
+  invocation reports today's prompt already exists and makes no API call.
+- Existing crontab unchanged. Next prompt: 2026-10-27 00:00 SGT; next Claude job:
+  2026-10-27 00:05 SGT (2026-10-26 16:05 UTC). This future scheduled execution has
+  not yet been observed. No new daemon, account, credential or scheduler installed.
