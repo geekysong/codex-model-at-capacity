@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon of a determined pelican riding a bicycle through town.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.1s linear infinite; }
+    .bob { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+    .legA { transform-box: fill-box; transform-origin: 50% 0%; animation: pedalA 1.1s linear infinite; }
+    .legB { transform-box: fill-box; transform-origin: 50% 0%; animation: pedalB 1.1s linear infinite; }
+    .blink { animation: blink 3.5s step-end infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedalA { 0%,100% { transform: rotate(27deg); } 50% { transform: rotate(-28deg); } }
+    @keyframes pedalB { 0%,100% { transform: rotate(-28deg); } 50% { transform: rotate(27deg); } }
+    @keyframes blink { 0%,92%,100% { transform: scaleY(1); } 94%,96% { transform: scaleY(.08); } }
+  </style>
+
+  <rect width="800" height="600" fill="#bdeaff"/>
+  <path d="M0 270 Q130 205 260 260 T520 238 T800 266 V420 H0Z" fill="#81d17b"/>
+  <path d="M0 345 Q170 302 340 350 T800 330 V455 H0Z" fill="#5ab66b"/>
+  <path d="M0 425 H800" stroke="#424a53" stroke-width="13"/>
+  <path d="M0 445 H800" stroke="#f8d34f" stroke-width="7" stroke-dasharray="42 29"/>
+
+  <g opacity=".85">
+    <path d="M100 170v112M78 200h44M78 231h44" stroke="#6b7f8d" stroke-width="8"/>
+    <path d="M680 158v130M654 194h52M654 232h52" stroke="#6b7f8d" stroke-width="8"/>
+    <rect x="560" y="115" width="139" height="65" rx="5" fill="#f6d45a" stroke="#465460" stroke-width="6"/>
+    <text x="629" y="143" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#37414c">BIKE LANE</text>
+    <text x="629" y="164" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#37414c">for everyone*</text>
+  </g>
+
+  <text x="400" y="62" text-anchor="middle" font-family="sans-serif" font-size="41" font-weight="900" fill="#21344b">PELICAN PEDAL PANIC!</text>
+  <text x="400" y="91" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#406078">“They said: use your bill to pay the bill.”</text>
+
+  <g transform="translate(165 315)">
+    <g class="wheel">
+      <circle cx="105" cy="118" r="75" fill="#eaf6fb" stroke="#273948" stroke-width="12"/>
+      <circle cx="105" cy="118" r="7" fill="#273948"/>
+      <g stroke="#718696" stroke-width="3">
+        <path d="M105 43v150M30 118h150M52 65l106 106M158 65L52 171"/>
+      </g>
+    </g>
+    <g class="wheel">
+      <circle cx="395" cy="118" r="75" fill="#eaf6fb" stroke="#273948" stroke-width="12"/>
+      <circle cx="395" cy="118" r="7" fill="#273948"/>
+      <g stroke="#718696" stroke-width="3">
+        <path d="M395 43v150M320 118h150M342 65l106 106M448 65L342 171"/>
+      </g>
+    </g>
+
+    <g stroke="#263b48" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M105 118 L187 21 L282 118 Z"/>
+      <path d="M187 21 L245 118 L395 118"/>
+      <path d="M282 118 L337 15 L385 15"/>
+      <path d="M337 15 L360 8"/>
+      <path d="M176 21h36"/>
+      <path d="M245 118 L280 143"/>
+    </g>
+    <circle cx="282" cy="118" r="19" fill="#f5c84d" stroke="#263b48" stroke-width="7"/>
+    <path d="M282 118l40-25M282 118l-38 26" stroke="#263b48" stroke-width="7" stroke-linecap="round"/>
+    <path d="M226 13h40" stroke="#263b48" stroke-width="10" stroke-linecap="round"/>
+    <path d="M369 7h35" stroke="#263b48" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <g class="bob">
+    <path d="M382 337 Q372 384 334 402" class="legA" fill="none" stroke="#e2a84c" stroke-width="18" stroke-linecap="round"/>
+    <path d="M422 342 Q446 385 477 401" class="legB" fill="none" stroke="#e2a84c" stroke-width="18" stroke-linecap="round"/>
+    <path d="M320 400h37M465 400h38" stroke="#e7933a" stroke-width="13" stroke-linecap="round"/>
+
+    <ellipse cx="390" cy="272" rx="76" ry="103" fill="#f7f3df" stroke="#293d49" stroke-width="7"/>
+    <path d="M339 271 Q305 311 321 353 Q355 383 391 352 L385 275Z" fill="#566978"/>
+    <path d="M430 268 Q470 307 450 351 Q417 374 387 348 L394 273Z" fill="#566978"/>
+    <path d="M341 300 Q385 335 436 296" fill="none" stroke="#e6d5aa" stroke-width="10"/>
+    <path d="M358 217 Q385 182 422 216" fill="#eef1e8" stroke="#293d49" stroke-width="7"/>
+
+    <g class="blink">
+      <ellipse cx="369" cy="229" rx="13" ry="16" fill="#253845"/>
+      <ellipse cx="411" cy="229" rx="13" ry="16" fill="#253845"/>
+    </g>
+    <circle cx="366" cy="225" r="4" fill="white"/>
+    <circle cx="408" cy="225" r="4" fill="white"/>
+    <path d="M354 206q14-12 27-3M398 203q14-10 27 3" fill="none" stroke="#293d49" stroke-width="6" stroke-linecap="round"/>
+
+    <path d="M340 246 Q388 236 440 251 Q447 267 429 279 Q386 293 345 275 Q333 264 340 246Z" fill="#f4b643" stroke="#293d49" stroke-width="7"/>
+    <path d="M342 256 Q385 265 435 254" fill="none" stroke="#c66e2d" stroke-width="5"/>
+    <path d="M351 272 Q392 315 427 276 Q410 344 356 329 Q339 306 351 272Z" fill="#f3b33c" stroke="#293d49" stroke-width="7"/>
+    <path d="M367 296 Q391 306 414 294" fill="none" stroke="#9c582b" stroke-width="5"/>
+
+    <path d="M324 294 Q285 300 272 342 Q285 358 304 345 L345 315" fill="#f7f3df" stroke="#293d49" stroke-width="7"/>
+    <path d="M449 295 Q490 304 507 340 Q495 360 475 342 L435 314" fill="#f7f3df" stroke="#293d49" stroke-width="7"/>
+    <path d="M277 343l-17 10M287 346l-14 17M497 344l15 12M487 347l12 18" stroke="#f4b643" stroke-width="7" stroke-linecap="round"/>
+
+    <path d="M355 342 Q390 363 427 343 L436 383 Q391 406 347 382Z" fill="#ef5d55" stroke="#293d49" stroke-width="7"/>
+    <text x="391" y="372" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="900" fill="white">HONK</text>
+  </g>
+
+  <g transform="translate(560 330)">
+    <path d="M0 54q31-46 62 0" fill="#fff" stroke="#445563" stroke-width="5"/>
+    <path d="M15 49q16-22 32 0" fill="none" stroke="#445563" stroke-width="4"/>
+    <text x="31" y="86" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#344956">TAXI!</text>
+  </g>
+
+  <rect x="0" y="510" width="800" height="90" fill="#243947"/>
+  <text x="400" y="543" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#f7d65b">A beak in motion: cycling past every inconvenient truth.</text>
+  <text x="400" y="578" text-anchor="middle" font-family="monospace" font-size="15" fill="#d8edf4">2026-10-26 19:03:22 SGT (UTC+08:00)</text>
+</svg>
