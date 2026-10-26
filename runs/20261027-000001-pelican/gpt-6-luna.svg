@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A determined pelican pedals a bicycle, its enormous beak full of fish, while a tiny fish offers directions.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#fff8e8;stroke:#17324d;stroke-width:7}
+      .spoke{stroke:#6d8794;stroke-width:2}
+      .frame{fill:none;stroke:#e85d3f;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .title{font:900 38px system-ui,sans-serif;fill:#17324d;letter-spacing:1px}
+      .caption{font:600 17px system-ui,sans-serif;fill:#31556b}
+      .small{font:700 13px system-ui,sans-serif;fill:#17324d}
+    </style>
+    <g id="wheelArt">
+      <circle class="wheel" r="48"/>
+      <circle r="7" fill="#e85d3f" stroke="#17324d" stroke-width="3"/>
+      <g class="spokes">
+        <path class="spoke" d="M0-44V-7M0 7V44M-44 0H-7M7 0H44M-31-31l26 26M5 5l26 26M31-31 5-5M-5 5l-26 26"/>
+      </g>
+      <g fill="#17324d">
+        <circle cx="0" cy="-48" r="3"/><circle cx="48" cy="0" r="3"/>
+        <circle cx="0" cy="48" r="3"/><circle cx="-48" cy="0" r="3"/>
+      </g>
+    </g>
+    <g id="bike">
+      <path class="frame" d="M205 420 276 420 250 350 205 420 340 420 276 420 315 350 250 350 340 420"/>
+      <path class="ink" fill="none" d="M238 350h28m-20-7 12 7m71 70h26m-8-8 8 8-8 8"/>
+      <path class="ink" fill="none" d="M315 350h23l10 7"/>
+      <circle cx="276" cy="420" r="11" fill="#f2c14e" stroke="#17324d" stroke-width="4"/>
+      <path class="ink" fill="none" d="M276 420l-22-16m22 16 21 15"/>
+      <circle cx="205" cy="420" r="48" fill="none" stroke="#17324d" stroke-width="7"/>
+      <circle cx="340" cy="420" r="48" fill="none" stroke="#17324d" stroke-width="7"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#bde9e5"/>
+  <path d="M0 360 Q130 320 270 363T540 355T800 350V500H0Z" fill="#8bc9a5"/>
+  <circle cx="686" cy="106" r="45" fill="#ffd166"/>
+  <g fill="#fff8e8" opacity=".9">
+    <path d="M92 121q8-22 30-10 14-29 38-8 25-2 27 21H92z"/>
+    <path d="M515 167q6-19 26-10 14-24 34-7 22-2 24 17h-84z"/>
+  </g>
+  <text x="400" y="58" text-anchor="middle" class="title">BEAKS &amp; GEARS!</text>
+  <text x="400" y="84" text-anchor="middle" class="caption">The pelican pedals. The fish files a complaint.</text>
+
+  <!-- Tiny passenger's road sign -->
+  <path d="M613 279v72" stroke="#17324d" stroke-width="5"/>
+  <path d="M613 279h107l-14 22 14 22H613z" fill="#fff8e8" stroke="#17324d" stroke-width="4"/>
+  <text x="666" y="307" text-anchor="middle" class="small">WATER?</text>
+  <text x="666" y="319" text-anchor="middle" class="small">← THAT WAY</text>
+
+  <!-- Bicycle and rotating wheels -->
+  <g>
+    <use href="#wheelArt" x="205" y="420">
+      <animateTransform attributeName="transform" type="rotate" from="0 205 420" to="360 205 420" dur="2s" repeatCount="indefinite"/>
+    </use>
+    <use href="#wheelArt" x="340" y="420">
+      <animateTransform attributeName="transform" type="rotate" from="0 340 420" to="360 340 420" dur="2s" repeatCount="indefinite"/>
+    </use>
+    <use href="#bike"/>
+  </g>
+
+  <!-- Pelican rider, gently bouncing as it pedals -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".55s" repeatCount="indefinite"/>
+    <!-- tail feathers -->
+    <path d="M421 292q-29-21-46-8 13 10 23 20-23-5-34 9 26 9 50 1z" fill="#fff8e8" class="ink"/>
+    <!-- body -->
+    <ellipse cx="471" cy="294" rx="59" ry="77" fill="#fff8e8" class="ink"/>
+    <path d="M442 332q30 14 57-1" fill="none" stroke="#b8c8c8" stroke-width="4"/>
+    <!-- wing -->
+    <path d="M435 279q36-34 71 1-21 41-58 38-18-12-13-39z" fill="#dce9e6" class="ink"/>
+    <path d="M449 287q23-8 40 7m-34 5 28 12" fill="none" stroke="#829da4" stroke-width="3" stroke-linecap="round"/>
+    <!-- long neck -->
+    <path d="M469 235q-17-31-4-57 8-16 29-13 20 3 18 22l-10 48z" fill="#fff8e8" class="ink"/>
+    <!-- head -->
+    <path d="M465 180q5-39 43-41 33-1 42 27 7 25-17 40-19 13-47 1-24-8-21-27z" fill="#fff8e8" class="ink"/>
+    <!-- enormous comic beak -->
+    <path d="M520 186q83-7 131 15-44 36-116 15-19-6-15-30z" fill="#f2a65a" class="ink"/>
+    <path d="M520 204q47 20 105 3-21 38-72 36-30-1-33-39z" fill="#f08b55" class="ink"/>
+    <path d="M532 212q39 10 75 0" fill="none" stroke="#c65e46" stroke-width="3"/>
+    <!-- eye and expression -->
+    <circle cx="504" cy="165" r="8" fill="#17324d"/>
+    <circle cx="506" cy="162" r="2.5" fill="#fff"/>
+    <path d="M490 151q16-12 31-3" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+    <!-- fish peeking from the pouch -->
+    <g transform="translate(574 220)">
+      <path d="M-14 0q16-18 34 0-18 18-34 0l-13 10v-20z" fill="#f7d65b" stroke="#17324d" stroke-width="3"/>
+      <circle cx="10" cy="-3" r="2.5" fill="#17324d"/>
+      <path d="M-3-8q4 8 0 16" fill="none" stroke="#e89d39" stroke-width="2"/>
+    </g>
+    <path d="M452 353l-8 35m49-35 9 33" stroke="#f2a65a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M430 390l27 2m36-4 25 3" class="ink" fill="none"/>
+    <path d="M464 219q-10 28-1 47" fill="none" stroke="#b8c8c8" stroke-width="4"/>
+    <!-- helmet -->
+    <path d="M478 148q7-28 34-27 23 2 31 24z" fill="#e85d3f" class="ink"/>
+    <path d="M471 148h78" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M510 124v19" stroke="#ffd166" stroke-width="4"/>
+  </g>
+
+  <!-- Flying motion marks and startled fish -->
+  <path d="M110 298h31m-20 12h24m-42 12h30" stroke="#fff8e8" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(128 365)">
+    <ellipse cx="0" cy="0" rx="20" ry="12" fill="#f7d65b" stroke="#17324d" stroke-width="3"/>
+    <path d="M-18 0l-14-11v22z" fill="#f7d65b" stroke="#17324d" stroke-width="3"/>
+    <circle cx="8" cy="-3" r="2" fill="#17324d"/>
+    <path d="M-4-8q4 8 0 16" stroke="#e89d39" stroke-width="2" fill="none"/>
+    <text x="-1" y="-20" text-anchor="middle" class="small">“NO BRAKES?!”</text>
+  </g>
+
+  <path d="M0 491H800" stroke="#17324d" stroke-width="4"/>
+  <rect x="0" y="495" width="800" height="105" fill="#fff8e8"/>
+  <text x="400" y="530" text-anchor="middle" class="caption">Local bird insists this is a “two wheeler.” Fish remain unconvinced.</text>
+  <text x="400" y="570" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#17324d">2026-10-27 00:03:21 SGT (UTC+08:00)</text>
+</svg>

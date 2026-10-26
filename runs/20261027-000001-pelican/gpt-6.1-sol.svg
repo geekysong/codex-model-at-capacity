@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Beak</title>
+  <desc id="description">An indignant pelican pedals a bicycle with a fish dangling from its enormous bill. The wheels spin and the bird bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="paper" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="3" r=".7" fill="#d7cbb3" opacity=".35"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="79" fill="#fff9e9" stroke="#243746" stroke-width="9"/>
+      <circle r="68" fill="none" stroke="#c5c6b9" stroke-width="2"/>
+      <g stroke="#71818a" stroke-width="2.3">
+        <path d="M-68 0H68M0-68V68M-48-48L48 48M-48 48L48-48"/>
+        <path d="M-26-63L26 63M-63-26L63 26M-63 26L63-26M-26 63L26-63"/>
+      </g>
+      <circle r="10" fill="#f7bd43" stroke="#243746" stroke-width="3"/>
+      <path d="M49-49L57-42" stroke="#f16a48" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff6df"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M0 346Q125 303 249 344T508 338T800 329V500H0Z" fill="#d7e5ce"/>
+  <g fill="#fffdf2" opacity=".9">
+    <path d="M61 178Q47 151 76 145Q89 112 118 140Q149 132 155 160Q177 180 145 185H72Z"/>
+    <path d="M603 155Q587 130 616 121Q631 92 655 120Q683 111 691 138Q718 158 682 163H615Z"/>
+  </g>
+
+  <text x="400" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="47" font-weight="900" letter-spacing="3" fill="#243746">TOUR DE BEAK</text>
+  <text x="400" y="93" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#a44830">ZERO EMISSIONS. OUTRAGEOUS BAGGAGE.</text>
+
+  <!-- Road and moving dashes -->
+  <path d="M0 475H800V503H0Z" fill="#c8bfa8"/>
+  <path d="M0 476H800" stroke="#243746" stroke-width="4"/>
+  <g stroke="#fff6df" stroke-width="4" stroke-dasharray="28 30">
+    <path d="M-58 491H858">
+      <animate attributeName="stroke-dashoffset" from="0" to="58" dur="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <ellipse cx="398" cy="473" rx="254" ry="10" fill="#243746" opacity=".13"/>
+
+  <!-- Bicycle wheels -->
+  <g transform="translate(239 391)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(568 391)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M239 391L324 282L393 391ZM324 282H521L393 391M521 282L568 391" stroke="#243746" stroke-width="15"/>
+    <path d="M239 391L324 282L393 391ZM324 282H521L393 391M521 282L568 391" stroke="#e95e47" stroke-width="9"/>
+    <path d="M324 282L315 257M521 282L509 237L541 221L559 230" stroke="#243746" stroke-width="9"/>
+    <path d="M292 256H337" stroke="#243746" stroke-width="13"/>
+    <path d="M543 222L559 230" stroke="#d69a42" stroke-width="13"/>
+  </g>
+
+  <!-- Rear luggage: a very small fish basket -->
+  <path d="M172 303H265L253 338H183Z" fill="#cf9c61" stroke="#243746" stroke-width="4"/>
+  <path d="M185 312H253M190 324H250M204 305V335M230 305V336" fill="none" stroke="#96663e" stroke-width="3"/>
+  <text x="219" y="331" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#243746">SNACKS</text>
+
+  <!-- Pelican and pedaling legs -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".7s" repeatCount="indefinite"/>
+    <path d="M314 261L364 304L389 377" fill="none" stroke="#d78c32" stroke-width="13" stroke-linecap="round">
+      <animate attributeName="d" values="M314 261L364 304L389 377;M314 261L340 324L412 401;M314 261L364 304L389 377" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M281 258L330 320L376 406" fill="none" stroke="#edaa43" stroke-width="15" stroke-linecap="round">
+      <animate attributeName="d" values="M281 258L330 320L376 406;M281 258L367 306L398 372;M281 258L330 320L376 406" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M363 406L389 410L382 397Z" fill="#edaa43" stroke="#243746" stroke-width="3">
+      <animateTransform attributeName="transform" type="translate" values="0 0;22 -34;0 0" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+
+    <path d="M271 234L226 216L244 251L222 256L268 275" fill="#fffdf4" stroke="#243746" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M266 210Q290 183 331 197Q364 205 376 237Q360 274 313 278Q273 276 258 253Z" fill="#fffdf4" stroke="#243746" stroke-width="4"/>
+    <path d="M287 223Q321 207 348 237Q330 256 294 251Q310 244 315 238Q298 241 287 223Z" fill="#d8e0de" stroke="#243746" stroke-width="3"/>
+    <path d="M342 218Q368 193 368 156Q367 124 391 117Q420 110 430 133Q440 156 422 175Q406 190 409 220L434 243L411 260Q369 250 352 234" fill="#fffdf4" stroke="#243746" stroke-width="4"/>
+
+    <!-- Overloaded bill and elastic pouch -->
+    <path d="M421 151L625 176Q579 223 475 218Q436 212 421 166Z" fill="#f6bf50" stroke="#243746" stroke-width="4"/>
+    <path d="M425 149L632 173L424 177Z" fill="#f09836" stroke="#243746" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M455 185Q514 218 584 190" fill="none" stroke="#d59035" stroke-width="3"/>
+    <circle cx="407" cy="142" r="11" fill="white" stroke="#243746" stroke-width="3"/>
+    <circle cx="412" cy="143" r="4" fill="#243746"/>
+    <path d="M394 124L420 128" stroke="#243746" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Cycling helmet -->
+    <path d="M368 127Q363 94 397 96Q426 96 434 126Z" fill="#e95e47" stroke="#243746" stroke-width="4"/>
+    <path d="M383 104L385 117M399 102L402 117M415 108L419 119" stroke="#fff6df" stroke-width="5" stroke-linecap="round"/>
+    <path d="M377 130L392 169L413 169" fill="none" stroke="#243746" stroke-width="3"/>
+
+    <!-- Wing reaching the handlebars -->
+    <path d="M331 217Q372 220 407 238Q459 253 542 225" fill="none" stroke="#243746" stroke-width="17" stroke-linecap="round"/>
+    <path d="M331 217Q372 220 407 238Q459 253 542 225" fill="none" stroke="#fffdf4" stroke-width="11" stroke-linecap="round"/>
+    <path d="M534 222L548 219M537 229L550 226" stroke="#243746" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish passenger -->
+  <g transform="translate(598 209)">
+    <animateTransform attributeName="transform" type="translate" values="598 209;601 214;598 209" dur=".7s" repeatCount="indefinite"/>
+    <path d="M0-29L0-5" stroke="#243746" stroke-width="2"/>
+    <path d="M0-6Q-21 11 0 36Q22 11 0-6ZM0 36L-13 47L13 47Z" fill="#65b8b5" stroke="#243746" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="3" cy="5" r="3" fill="#243746"/>
+    <path d="M-5 16L5 16" stroke="#243746" stroke-width="2"/>
+  </g>
+
+  <!-- Speech balloon -->
+  <path d="M79 119H273Q288 119 288 135V180Q288 196 273 196H238L252 216L211 196H79Q64 196 64 180V135Q64 119 79 119Z" fill="white" stroke="#243746" stroke-width="3"/>
+  <text x="176" y="149" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#243746">
+    <tspan x="176">“IT’S CALLED</tspan>
+    <tspan x="176" dy="26">BEAK PERFORMANCE.”</tspan>
+  </text>
+
+  <g fill="none" stroke="#243746" stroke-width="3" stroke-linecap="round">
+    <path d="M126 359H164M112 375H157M137 391H165"/>
+  </g>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <rect x="0" y="507" width="800" height="93" fill="#fff6df"/>
+  <text x="400" y="539" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#243746">He bought a bicycle. The baggage fees followed.</text>
+  <path d="M90 554H710" stroke="#c8b997" stroke-width="1"/>
+  <text x="400" y="579" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#43515a">2026-10-27 00:02:02 SGT (UTC+08:00)</text>
+</svg>
