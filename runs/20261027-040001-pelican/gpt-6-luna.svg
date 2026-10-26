@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PEL-I-CAN DO IT!</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee8ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596273"/>
+      <stop offset="1" stop-color="#303846"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#18212d" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#17202b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;font-weight:900;fill:#17202b}
+      .small{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#17202b}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      .bob{animation:bob 1.1s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      .wheel{animation:spin 1.4s linear infinite;transform-box:fill-box;transform-origin:center}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 385 Q120 325 240 380 T480 370 T800 350 V470 H0Z" fill="#8bd18a"/>
+  <path d="M0 430 Q150 395 300 425 T600 420 T800 400 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#d7e2e8" stroke-width="8" stroke-dasharray="42 30" opacity=".8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="28" width="720" height="92" rx="24" fill="#ffd33d" class="ink"/>
+    <text x="400" y="78" text-anchor="middle" class="label" font-size="42">PEL-I-CAN DO IT!</text>
+    <text x="400" y="105" text-anchor="middle" class="small" font-size="16">One bird. One bike. Absolutely no sensible transportation plan.</text>
+  </g>
+
+  <g transform="translate(0,6)">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M245 442 L335 360 L438 442 L245 442 L390 442 L335 360 L300 442"/>
+      <path d="M335 360 L322 334"/>
+      <path d="M310 334 H345"/>
+      <path d="M438 442 L468 350"/>
+      <path d="M452 350 H485"/>
+      <path d="M468 350 L500 442"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="245" cy="442" r="78" fill="#1d2733" class="ink"/>
+      <circle cx="245" cy="442" r="64" fill="none" stroke="#aebdca" stroke-width="5"/>
+      <g stroke="#aebdca" stroke-width="3">
+        <path d="M245 378 V506 M181 442 H309 M200 397 L290 487 M290 397 L200 487"/>
+      </g>
+    </g>
+    <g class="wheel">
+      <circle cx="500" cy="442" r="78" fill="#1d2733" class="ink"/>
+      <circle cx="500" cy="442" r="64" fill="none" stroke="#aebdca" stroke-width="5"/>
+      <g stroke="#aebdca" stroke-width="3">
+        <path d="M500 378 V506 M436 442 H564 M455 397 L545 487 M545 397 L455 487"/>
+      </g>
+    </g>
+
+    <!-- pedals -->
+    <g class="wheel" stroke="#17202b" stroke-width="7" fill="none">
+      <circle cx="390" cy="442" r="18"/>
+      <path d="M390 442 L370 420 M390 442 L410 464"/>
+      <path d="M357 417 H378 M402 466 H423"/>
+    </g>
+
+    <!-- pelican -->
+    <g class="bob">
+      <ellipse cx="380" cy="305" rx="73" ry="92" fill="#f4f1e6" class="ink"/>
+      <path d="M325 294 Q274 271 249 299 Q282 330 336 329Z" fill="#f7a52b" class="ink"/>
+      <path d="M249 299 Q218 313 190 299 Q218 343 274 330" fill="#e8861b" class="ink"/>
+      <circle cx="363" cy="246" r="33" fill="#f4f1e6" class="ink"/>
+      <circle cx="375" cy="242" r="9" fill="#17202b"/>
+      <path d="M376 232 Q391 217 405 231" fill="none" class="ink"/>
+      <path d="M352 253 Q372 270 393 253" fill="none" stroke="#17202b" stroke-width="5"/>
+      <path d="M351 328 Q387 350 424 326" fill="none" stroke="#d8d1c1" stroke-width="13"/>
+      <path d="M358 380 Q350 408 330 426" fill="none" class="ink"/>
+      <path d="M408 378 Q421 407 443 425" fill="none" class="ink"/>
+      <path d="M330 426 L312 431 M330 426 L321 440 M443 425 L461 430 M443 425 L451 439" class="ink"/>
+      <path d="M415 276 Q455 248 480 281 Q452 291 423 305Z" fill="#dce9ef" class="ink"/>
+      <path d="M390 291 Q436 304 462 335" fill="none" stroke="#17202b" stroke-width="7"/>
+      <!-- fish prop -->
+      <g transform="translate(470,270) rotate(10)">
+        <path d="M0 25 Q40 -8 92 25 Q40 58 0 25Z" fill="#8ad0db" class="ink"/>
+        <path d="M92 25 L120 4 L113 25 L120 46Z" fill="#63aebc" class="ink"/>
+        <circle cx="24" cy="19" r="5" fill="#17202b"/>
+        <path d="M53 12 Q62 25 53 38" fill="none" stroke="#397681" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(575,235)">
+    <path d="M0 42 Q45 7 86 40" fill="none" stroke="#17202b" stroke-width="5"/>
+    <text x="43" y="5" text-anchor="middle" class="label" font-size="20">HONK!</text>
+    <text x="43" y="29" text-anchor="middle" class="small" font-size="14">Move, fish taxi!</text>
+  </g>
+
+  <g transform="translate(0,535)">
+    <rect x="36" y="0" width="728" height="42" rx="12" fill="#ffffff" opacity=".9" class="ink"/>
+    <text x="400" y="28" text-anchor="middle" class="small" font-size="17">2026-10-27 04:01:07 SGT (UTC+08:00)</text>
+  </g>
+</svg>

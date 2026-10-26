@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN VELO-CITY</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly ignoring traffic rules.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe8ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#586572"/>
+      <stop offset="1" stop-color="#27323d"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#18212b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#18212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;font-weight:900;fill:#18212b}
+      .small{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#18212b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff7b1" opacity=".9"/>
+  <path d="M0 360 Q130 300 250 355 T500 350 T800 330 V470 H0Z" fill="#7acb8a"/>
+  <path d="M0 410 Q160 370 300 420 T560 410 T800 390 V470 H0Z" fill="#4fa66d"/>
+  <rect y="440" width="800" height="160" fill="url(#road)"/>
+  <path d="M0 530 H800" stroke="#d7e0e5" stroke-width="8" stroke-dasharray="50 34" opacity=".9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="46" y="34" width="708" height="92" rx="22" fill="#fff3c4" class="ink"/>
+    <text x="400" y="78" text-anchor="middle" class="label" font-size="34">THE GREAT PELICAN VELO-CITY</text>
+    <text x="400" y="108" text-anchor="middle" class="small" font-size="17">“Why walk when you can waddle with wheels?”</text>
+  </g>
+
+  <g transform="translate(0 4)">
+    <!-- bicycle -->
+    <g class="ink" fill="none">
+      <circle cx="240" cy="470" r="67" fill="#bde9f2"/>
+      <circle cx="570" cy="470" r="67" fill="#bde9f2"/>
+      <path d="M240 470 L350 470 L430 345 L570 470 L430 470 L350 470 L300 385 L430 345"/>
+      <path d="M430 345 L470 322"/>
+      <path d="M462 322 L489 322"/>
+      <path d="M350 470 L329 505"/>
+      <path d="M329 505 L350 505"/>
+      <path d="M350 470 L371 435"/>
+    </g>
+    <g transform="translate(350 470)">
+      <circle r="27" fill="#f6c543" class="ink"/>
+      <path d="M0 0 L25 -12 M0 0 L-18 20" class="ink"/>
+      <circle r="7" fill="#18212b"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+    <g fill="none" class="ink">
+      <path d="M240 470 L240 403 M570 470 L570 403"/>
+      <path d="M240 470 L205 432 M570 470 L605 432"/>
+    </g>
+    <g stroke="#f8fbff" stroke-width="5" opacity=".8">
+      <path d="M240 410 V530 M180 470 H300 M198 428 L282 512 M198 512 L282 428"/>
+      <path d="M570 410 V530 M510 470 H630 M528 428 L612 512 M528 512 L612 428"/>
+    </g>
+    <g>
+      <circle cx="240" cy="470" r="67" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 240 470" to="360 240 470" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="570" cy="470" r="67" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 570 470" to="360 570 470" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- pelican -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.4s" repeatCount="indefinite"/>
+      <path d="M391 294 Q360 246 373 195 Q388 145 438 146 Q493 147 514 198 Q532 243 498 293Z" fill="#f4f1e7" class="ink"/>
+      <path d="M424 160 Q438 114 479 105 Q523 95 548 126 Q573 158 548 195 Q533 217 505 212 L474 186Z" fill="#f4f1e7" class="ink"/>
+      <path d="M528 150 Q600 137 654 165 Q665 171 653 184 Q598 211 525 193Z" fill="#f2a43a" class="ink"/>
+      <path d="M530 174 Q594 168 647 179" fill="none" stroke="#b76424" stroke-width="5"/>
+      <circle cx="518" cy="145" r="10" fill="#18212b"/>
+      <circle cx="521" cy="141" r="3.5" fill="#fff"/>
+      <path d="M458 204 Q482 224 506 205" fill="none" stroke="#18212b" stroke-width="5"/>
+      <path d="M399 212 Q350 210 325 246 Q360 257 405 244" fill="#d9e2e6" class="ink"/>
+      <path d="M449 286 L438 345 L481 345 L492 286" fill="#f2a43a" class="ink"/>
+      <path d="M438 345 L422 365 M481 345 L497 365" class="ink" fill="none"/>
+      <path d="M418 366 L443 366 M490 366 L515 366" class="ink" fill="none"/>
+      <path d="M438 345 L407 402 L350 432" class="ink" fill="none"/>
+      <path d="M481 345 L505 397 L530 430" class="ink" fill="none"/>
+      <path d="M347 430 L370 432 M527 430 L548 430" class="ink" fill="none"/>
+      <path d="M418 232 Q389 260 407 286" fill="none" stroke="#18212b" stroke-width="5"/>
+      <path d="M505 232 Q525 258 508 286" fill="none" stroke="#18212b" stroke-width="5"/>
+      <path d="M381 284 Q431 307 500 284" fill="none" stroke="#c8d1d5" stroke-width="9"/>
+      <text x="450" y="265" text-anchor="middle" class="small" font-size="13">NO BRAKES</text>
+    </g>
+  </g>
+
+  <g transform="translate(612 300) rotate(8)">
+    <path d="M0 35 Q36 0 72 35 L72 103 Q36 126 0 103Z" fill="#ff6d5a" class="ink"/>
+    <path d="M20 35 V103 M52 35 V103" stroke="#fff3c4" stroke-width="5"/>
+    <text x="36" y="68" text-anchor="middle" class="label" font-size="16" fill="#fff3c4">HORN</text>
+    <text x="36" y="91" text-anchor="middle" class="label" font-size="15" fill="#fff3c4">HONK!</text>
+  </g>
+
+  <g transform="translate(86 392)">
+    <path d="M0 38 Q35 8 70 38" fill="none" stroke="#18212b" stroke-width="5"/>
+    <text x="35" y="20" text-anchor="middle" class="small" font-size="18">MOVE OVER!</text>
+  </g>
+
+  <rect x="24" y="557" width="752" height="30" rx="9" fill="#fff3c4" class="ink"/>
+  <text x="400" y="578" text-anchor="middle" class="small" font-size="15">2026-10-27 04:00:17 SGT (UTC+08:00)</text>
+</svg>

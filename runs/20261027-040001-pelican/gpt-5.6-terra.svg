@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Peloton</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9ecff"/>
+      <stop offset="1" stop-color="#f7fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#18465a" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink { stroke:#173746; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#173746; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 425 Q130 375 260 420 T520 410 T800 420 V500 H0Z" fill="#a8d88b"/>
+  <path d="M0 493 Q170 470 340 493 T800 488 V540 H0Z" fill="#74b86d"/>
+  <path d="M0 526 H800" stroke="#173746" stroke-width="8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE PELICAN PELOTON</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="20" font-weight="700">“When your beak is bigger than your bike, commit to the bit.”</text>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="400" cy="462" rx="260" ry="24" fill="#376b55" opacity=".25"/>
+
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M250 445 L350 300 L445 445 Z"/>
+      <path d="M350 300 L410 445"/>
+      <path d="M350 300 L325 270"/>
+      <path d="M325 270 L365 270"/>
+      <path d="M445 445 L520 320"/>
+      <path d="M520 320 L553 320"/>
+      <path d="M520 320 L540 285"/>
+      <path d="M540 285 L575 285"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="ink" fill="#d8f4ff">
+      <circle cx="250" cy="445" r="72"/>
+      <circle cx="555" cy="445" r="72"/>
+    </g>
+    <g stroke="#4f9db4" stroke-width="3">
+      <g id="spokesLeft">
+        <path d="M250 373V517M178 445H322M199 394L301 496M199 496L301 394"/>
+      </g>
+      <g id="spokesRight">
+        <path d="M555 373V517M483 445H627M504 394L606 496M504 496L606 394"/>
+      </g>
+    </g>
+    <g fill="#173746">
+      <circle cx="250" cy="445" r="9"/>
+      <circle cx="555" cy="445" r="9"/>
+    </g>
+
+    <!-- spinning wheel animation -->
+    <use href="#spokesLeft" transform="rotate(360 250 445)">
+      <animateTransform attributeName="transform" type="rotate" from="0 250 445" to="360 250 445" dur="2s" repeatCount="indefinite"/>
+    </use>
+    <use href="#spokesRight" transform="rotate(360 555 445)">
+      <animateTransform attributeName="transform" type="rotate" from="0 555 445" to="360 555 445" dur="2s" repeatCount="indefinite"/>
+    </use>
+
+    <!-- pedals -->
+    <g transform="translate(410 445)">
+      <circle r="17" fill="#f5b642" class="ink"/>
+      <path d="M0 0 L35 -18 M0 0 L-28 22" class="ink" fill="none"/>
+      <rect x="31" y="-24" width="28" height="10" rx="5" fill="#e56d3d" class="ink"/>
+      <rect x="-50" y="18" width="28" height="10" rx="5" fill="#e56d3d" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- pelican bobbing -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.2s" repeatCount="indefinite"/>
+
+      <!-- body and wing -->
+      <ellipse cx="380" cy="245" rx="95" ry="116" fill="#f4f1df" class="ink"/>
+      <path d="M330 224 Q380 190 438 233 Q411 285 342 286 Q316 266 330 224Z" fill="#d9d8c4" class="ink"/>
+      <path d="M348 240 Q382 223 416 246" fill="none" stroke="#8aa0a0" stroke-width="6"/>
+
+      <!-- neck -->
+      <path d="M405 180 Q425 125 474 135 L495 220 Q462 242 423 219Z" fill="#f4f1df" class="ink"/>
+
+      <!-- head -->
+      <ellipse cx="475" cy="128" rx="61" ry="55" fill="#f4f1df" class="ink"/>
+      <path d="M455 94 Q474 62 512 82 L522 119 L473 126Z" fill="#ef6d4d" class="ink"/>
+      <circle cx="494" cy="116" r="10" fill="#173746"/>
+      <circle cx="497" cy="112" r="3" fill="#fff"/>
+      <path d="M518 137 Q574 126 630 155 Q574 185 516 166Z" fill="#f2a646" class="ink"/>
+      <path d="M519 151 Q571 166 622 157" fill="none" stroke="#d46d36" stroke-width="5"/>
+      <path d="M441 83 Q475 48 515 77" fill="#4d90c5" class="ink"/>
+      <path d="M456 72 L472 48 L482 76" fill="#4d90c5" class="ink"/>
+
+      <!-- feet on pedals -->
+      <path d="M362 345 Q350 382 371 412" fill="none" class="ink"/>
+      <path d="M430 348 Q447 378 429 415" fill="none" class="ink"/>
+      <path d="M356 410 l-25 8 M359 415 l-27 12" class="ink" fill="none"/>
+      <path d="M428 414 l25 8 M426 420 l28 12" class="ink" fill="none"/>
+
+      <!-- fish cargo -->
+      <path d="M288 200 Q237 167 199 191 Q226 220 288 220Z" fill="#e98945" class="ink"/>
+      <path d="M205 191 l-28 -21 l8 31 l-12 25 l31 -12" fill="#f2b04e" class="ink"/>
+      <circle cx="225" cy="197" r="4" fill="#173746"/>
+      <path d="M250 190 Q267 201 279 211" fill="none" stroke="#9d4d39" stroke-width="5"/>
+      <path d="M302 191 Q289 174 276 166" class="ink" fill="none"/>
+    </g>
+
+    <!-- comic speech bubble -->
+    <path d="M585 212 Q688 174 735 223 Q758 271 706 298 Q652 322 594 287 L570 305 L578 277 Q548 247 585 212Z" fill="#fffdf1" class="ink"/>
+    <text x="650" y="241" text-anchor="middle" class="label" font-size="22" font-weight="900">I'M ON A</text>
+    <text x="650" y="268" text-anchor="middle" class="label" font-size="22" font-weight="900">ROLL!</text>
+  </g>
+
+  <text x="400" y="555" text-anchor="middle" class="label" font-size="18" font-weight="700">A pelican on a bicycle: maximum beak, minimum brakes.</text>
+  <text x="400" y="583" text-anchor="middle" class="label" font-size="14">2026-10-27 04:01:57 SGT (UTC+08:00)</text>
+</svg>
