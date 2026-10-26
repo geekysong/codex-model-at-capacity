@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commuter</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a tiny traffic jam of fish. The wheels spin and the rider bobs. Caption: “He’s in the fast lane. The fish are in the bag.”</desc>
+  <defs>
+    <style>
+      .ink{stroke:#19324a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#19324a;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .6s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px) rotate(-1deg)}}
+      text{font-family:Arial,Helvetica,sans-serif}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f7df9c"/>
+  <circle cx="681" cy="103" r="45" fill="#f6a83a"/>
+  <path d="M0 330 Q120 285 245 326 T500 320 T800 314 V468 H0Z" fill="#b8d8c8"/>
+  <path d="M0 388 Q130 356 260 383 T520 379 T800 366 V478 H0Z" fill="#86b8a7"/>
+  <path d="M0 467H800V600H0Z" fill="#3c5362"/>
+  <path d="M0 482H800" stroke="#f7df9c" stroke-width="7" stroke-dasharray="34 25"/>
+
+  <text x="40" y="62" fill="#19324a" font-size="34" font-weight="900" letter-spacing="1">THE PELICAN COMMUTER</text>
+  <text x="42" y="94" fill="#19324a" font-size="17" font-weight="700">“He’s in the fast lane. The fish are in the bag.”</text>
+
+  <!-- tiny fish traffic jam -->
+  <g transform="translate(94 348)">
+    <path d="M0 15 Q22 -6 45 15 Q22 36 0 15Z" fill="#f17c64" class="thin"/>
+    <path d="M0 15L-15 4V26Z" fill="#f17c64" class="thin"/>
+    <circle cx="33" cy="11" r="2.5" fill="#19324a"/>
+    <path d="M60 15 Q82 -6 105 15 Q82 36 60 15Z" fill="#f3c84c" class="thin"/>
+    <path d="M60 15L45 4V26Z" fill="#f3c84c" class="thin"/>
+    <circle cx="93" cy="11" r="2.5" fill="#19324a"/>
+    <path d="M6 48h88" class="thin" fill="none"/>
+    <text x="-5" y="72" font-size="13" font-weight="800" fill="#19324a">FISH TRAFFIC</text>
+  </g>
+
+  <!-- bicycle frame -->
+  <g fill="none" class="ink">
+    <path d="M252 425L345 425L392 342L315 342Z"/>
+    <path d="M345 425L392 342L439 425L345 425"/>
+    <path d="M392 342L422 342"/>
+    <path d="M439 425L457 384"/>
+    <path d="M425 377L466 377"/>
+    <path d="M300 342L328 342"/>
+    <path d="M314 342L298 321"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#19324a" stroke-width="6">
+    <circle cx="252" cy="425" r="57"/>
+    <path d="M195 425h114M252 368v114M212 385l80 80M292 385l-80 80"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#19324a" stroke-width="6">
+    <circle cx="439" cy="425" r="57"/>
+    <path d="M382 425h114M439 368v114M399 385l80 80M479 385l-80 80"/>
+  </g>
+  <circle cx="345" cy="425" r="9" fill="#f6a83a" class="thin"/>
+  <path d="M345 425l24-18M345 425l-25 17" class="thin" fill="none"/>
+
+  <!-- rider, animated as one readable silhouette -->
+  <g class="rider">
+    <!-- tail -->
+    <path d="M321 254Q288 245 275 265Q301 275 324 270Z" fill="#fffdf2" class="thin"/>
+    <!-- body -->
+    <path d="M304 188Q333 151 380 175Q406 188 398 228Q390 261 348 266Q310 263 294 231Z" fill="#fffdf2" class="ink"/>
+    <path d="M319 232Q349 215 385 232Q371 259 344 261Q323 257 319 232Z" fill="#f0bb55" class="thin"/>
+    <!-- neck -->
+    <path d="M364 191Q384 137 422 135Q448 136 448 160Q447 180 426 189L402 221Z" fill="#fffdf2" class="ink"/>
+    <!-- head -->
+    <ellipse cx="430" cy="130" rx="39" ry="31" fill="#fffdf2" class="ink"/>
+    <path d="M454 135Q495 127 531 142Q503 158 466 157Q449 153 454 135Z" fill="#ef8b35" class="ink"/>
+    <path d="M461 153Q491 172 518 153Q501 183 474 172Z" fill="#df6d49" class="thin"/>
+    <circle cx="439" cy="125" r="4.5" fill="#19324a"/>
+    <path d="M419 114Q430 104 441 111" fill="none" class="thin"/>
+    <!-- helmet -->
+    <path d="M399 118Q406 82 438 86Q466 88 471 116Z" fill="#52a9a0" class="ink"/>
+    <path d="M397 119Q431 113 470 120" fill="none" class="thin"/>
+    <!-- wing and arm on handlebars -->
+    <path d="M336 195Q365 189 390 207L424 237L412 249L376 224L345 225Z" fill="#fffdf2" class="thin"/>
+    <path d="M412 247L439 377" fill="none" class="ink"/>
+    <!-- legs -->
+    <path d="M346 251Q367 279 369 319L345 365" fill="none" class="ink"/>
+    <path d="M369 319L322 413" fill="none" class="ink"/>
+    <path d="M345 365L370 385L355 398L329 377Z" fill="#ef8b35" class="thin"/>
+    <path d="M322 413L307 420L319 432L343 423Z" fill="#ef8b35" class="thin"/>
+    <!-- scarf -->
+    <path d="M394 157Q411 174 431 161L439 177Q413 196 388 177Z" fill="#e75f54" class="thin"/>
+    <path d="M397 174Q376 184 373 205L389 198L405 181Z" fill="#e75f54" class="thin"/>
+  </g>
+
+  <!-- speed marks and comic honk -->
+  <path d="M496 221h42M510 237h31M488 253h35" stroke="#19324a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M536 112Q553 91 568 112L585 116L571 126Q562 145 542 137Z" fill="#fffdf2" class="thin"/>
+  <text x="541" y="125" fill="#19324a" font-size="13" font-weight="900">HONK!</text>
+  <text x="614" y="370" fill="#19324a" font-size="14" font-weight="800" transform="rotate(-8 614 370)">COMMUTE?</text>
+
+  <!-- roomy footer -->
+  <rect x="0" y="531" width="800" height="69" fill="#19324a"/>
+  <text x="400" y="573" text-anchor="middle" fill="#fffdf2" font-size="18" font-weight="700">2026-10-26 10:02:46 SGT (UTC+08:00)</text>
+</svg>
