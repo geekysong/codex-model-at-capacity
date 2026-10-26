@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a sign that says “Bike lane? I thought you said beak lane.”</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .6s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <!-- Sky and road -->
+  <rect width="800" height="600" fill="#bdeeff"/>
+  <circle cx="700" cy="108" r="42" fill="#ffd35a"/>
+  <path d="M0 355 Q180 320 350 355 T800 345 V470 H0Z" fill="#8ed17d"/>
+  <rect y="425" width="800" height="175" fill="#4e5966"/>
+  <path d="M0 450 H800" stroke="#f8e9a8" stroke-width="5" stroke-dasharray="34 25"/>
+
+  <!-- Title -->
+  <text id="title" x="400" y="55" text-anchor="middle" font-size="34" font-weight="900" fill="#12334a">THE PELICAN COMMUTE</text>
+  <text x="400" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#24566b">Two wheels. One enormous sense of right-of-way.</text>
+
+  <!-- Street sign -->
+  <g transform="rotate(-3 116 225)">
+    <path d="M75 270 V185" stroke="#596b77" stroke-width="9"/>
+    <rect x="29" y="128" width="178" height="67" rx="8" fill="#fff8dc" stroke="#183c50" stroke-width="4"/>
+    <text x="118" y="153" text-anchor="middle" font-size="14" font-weight="900" fill="#183c50">BIKE LANE?</text>
+    <text x="118" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#183c50">I heard “BEAK LANE.”</text>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#e84f3d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M276 405 L360 405 L329 333 L276 405"/>
+    <path d="M360 405 L420 330 L329 333"/>
+    <path d="M420 330 L447 405 L360 405"/>
+    <path d="M420 330 L451 326"/>
+    <path d="M329 333 L315 318"/>
+  </g>
+  <path d="M300 318 H333" stroke="#263f4a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M438 321 L449 308" stroke="#263f4a" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Wheels -->
+  <g class="wheel" fill="none" stroke="#182d39" stroke-width="5">
+    <circle cx="276" cy="405" r="51"/>
+    <path d="M276 354 V456 M225 405 H327 M240 369 L312 441 M312 369 L240 441"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#182d39" stroke-width="5">
+    <circle cx="447" cy="405" r="51"/>
+    <path d="M447 354 V456 M396 405 H498 M411 369 L483 441 M483 369 L411 441"/>
+  </g>
+  <circle cx="276" cy="405" r="6" fill="#f2bd45"/>
+  <circle cx="447" cy="405" r="6" fill="#f2bd45"/>
+
+  <!-- Pedal crank -->
+  <path d="M360 405 L378 425 M360 405 L343 385" stroke="#263f4a" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="360" cy="405" r="8" fill="#f2bd45"/>
+  <path d="M369 427 H386 M334 383 H350" stroke="#263f4a" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <!-- tail feathers -->
+    <path d="M349 263 Q324 255 306 274 Q330 278 347 284" fill="#f8f7ec" stroke="#253d47" stroke-width="4"/>
+    <path d="M347 276 Q324 278 310 295 Q337 292 352 289" fill="#dce9e7" stroke="#253d47" stroke-width="4"/>
+    <!-- body -->
+    <ellipse cx="372" cy="275" rx="48" ry="58" fill="#fffdf1" stroke="#253d47" stroke-width="5"/>
+    <path d="M355 299 Q370 314 392 301" fill="none" stroke="#c8d6d4" stroke-width="5" stroke-linecap="round"/>
+    <!-- neck and head -->
+    <path d="M390 266 Q400 224 411 205" fill="none" stroke="#fffdf1" stroke-width="24" stroke-linecap="round"/>
+    <path d="M390 266 Q400 224 411 205" fill="none" stroke="#253d47" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="423" cy="194" rx="29" ry="25" fill="#fffdf1" stroke="#253d47" stroke-width="5"/>
+    <!-- beak -->
+    <path d="M444 192 Q494 184 523 202 Q493 214 444 207Z" fill="#f3b832" stroke="#253d47" stroke-width="4"/>
+    <path d="M451 204 Q477 206 496 211 Q482 238 460 229 Q449 219 451 204Z" fill="#f07c55" stroke="#253d47" stroke-width="4"/>
+    <!-- eye and expression -->
+    <circle cx="430" cy="187" r="4.5" fill="#172d36"/>
+    <path d="M424 178 Q434 173 441 179" fill="none" stroke="#253d47" stroke-width="3" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M398 183 Q403 153 430 158 Q448 162 452 181 L398 183Z" fill="#328db0" stroke="#253d47" stroke-width="4"/>
+    <path d="M399 183 H454" stroke="#253d47" stroke-width="4" stroke-linecap="round"/>
+    <!-- wing -->
+    <path d="M352 263 Q376 244 397 263 Q387 285 361 289Z" fill="#e6eeee" stroke="#253d47" stroke-width="4"/>
+    <path d="M362 270 Q378 269 389 262" fill="none" stroke="#bacac9" stroke-width="3"/>
+    <!-- legs pedaling -->
+    <path d="M365 314 Q352 340 343 382" fill="none" stroke="#e9a728" stroke-width="8" stroke-linecap="round"/>
+    <path d="M383 315 Q398 340 378 423" fill="none" stroke="#e9a728" stroke-width="8" stroke-linecap="round"/>
+    <!-- feet -->
+    <path d="M338 380 Q326 382 329 389 L352 389" fill="none" stroke="#e9a728" stroke-width="7" stroke-linecap="round"/>
+    <path d="M374 421 Q365 427 371 432 L390 431" fill="none" stroke="#e9a728" stroke-width="7" stroke-linecap="round"/>
+    <!-- wing hand on handlebars -->
+    <path d="M401 268 Q422 286 444 319" fill="none" stroke="#fffdf1" stroke-width="14" stroke-linecap="round"/>
+    <path d="M401 268 Q422 286 444 319" fill="none" stroke="#253d47" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="445" cy="319" r="6" fill="#f3b832" stroke="#253d47" stroke-width="3"/>
+  </g>
+
+  <!-- Motion marks and comic flourish -->
+  <path d="M224 300 H190 M218 318 H176 M245 284 H220" stroke="#fffdf1" stroke-width="5" stroke-linecap="round"/>
+  <path d="M529 178 Q542 167 550 178 M535 171 Q542 160 550 166" fill="none" stroke="#e84f3d" stroke-width="4" stroke-linecap="round"/>
+  <text x="585" y="254" font-size="15" font-weight="800" fill="#264b5b" transform="rotate(7 585 254)">HONK IF YOU</text>
+  <text x="585" y="274" font-size="15" font-weight="800" fill="#264b5b" transform="rotate(7 585 274)">HAVE FISH!</text>
+
+  <!-- Footer -->
+  <rect x="0" y="520" width="800" height="80" fill="#173c50"/>
+  <text x="400" y="547" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">He’s pedaling furiously. His beak is still in the fast lane.</text>
+  <text x="400" y="580" text-anchor="middle" font-size="14" font-weight="600" fill="#d5edf4">2026-10-26 18:32:54 SGT (UTC+08:00)</text>
+</svg>
