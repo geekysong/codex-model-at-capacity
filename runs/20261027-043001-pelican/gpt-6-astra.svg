@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Patrol</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly claiming it is late for a very important fish meeting.</desc>
+  <style>
+    .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:none;stroke:#17212b;stroke-width:9}
+    .spoke{stroke:#5b6b75;stroke-width:3}
+    .caption{font:700 22px Arial,sans-serif;fill:#17212b}
+    .small{font:600 16px Arial,sans-serif;fill:#17212b}
+    .title{font:900 38px Arial,sans-serif;fill:#17212b;letter-spacing:1px}
+    .label{font:700 18px Arial,sans-serif;fill:#fff}
+    .bike{animation:bikeBob 1.2s ease-in-out infinite}
+    .wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+    .pedalSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+    .beak{animation:beakWag 1.2s ease-in-out infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bikeBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+    @keyframes beakWag{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-3deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#dff4f5"/>
+  <rect y="430" width="800" height="170" fill="#b9d98c"/>
+  <path d="M0 455 Q120 420 240 452 T480 448 T800 450" fill="none" stroke="#86b565" stroke-width="8"/>
+  <path d="M0 500 Q170 475 340 503 T680 495 T800 500" fill="none" stroke="#9bc875" stroke-width="5"/>
+
+  <text x="40" y="62" class="title">PELICAN PEDAL PATROL</text>
+  <text x="42" y="94" class="caption">“No road rage—just beak rage!”</text>
+
+  <g transform="translate(600 115)">
+    <rect x="0" y="0" width="155" height="62" rx="14" fill="#ef6b5b" class="ink"/>
+    <text x="78" y="27" text-anchor="middle" class="label">URGENT</text>
+    <text x="78" y="49" text-anchor="middle" class="label">FISH MEETING</text>
+    <path d="M18 62 l-8 18 25-18" fill="#ef6b5b" class="ink"/>
+  </g>
+
+  <g class="bike" transform="translate(0 0)">
+    <g>
+      <circle cx="235" cy="418" r="82" class="wheel"/>
+      <circle cx="575" cy="418" r="82" class="wheel"/>
+      <g class="wheelSpin">
+        <path d="M235 336v164M153 418h164M177 360l116 116M293 360L177 476" class="spoke"/>
+      </g>
+      <g class="wheelSpin">
+        <path d="M575 336v164M493 418h164M517 360l116 116M633 360L517 476" class="spoke"/>
+      </g>
+    </g>
+
+    <path d="M235 418 L330 285 L455 418 Z" fill="none" class="ink"/>
+    <path d="M330 285 L395 418" fill="none" class="ink"/>
+    <path d="M330 285 L300 245" fill="none" class="ink"/>
+    <path d="M285 245 Q310 232 335 245" fill="none" class="ink"/>
+    <path d="M455 418 L500 270" fill="none" class="ink"/>
+    <path d="M480 270 Q505 255 530 270" fill="none" class="ink"/>
+    <path d="M500 270 L540 245" fill="none" class="ink"/>
+
+    <g class="pedalSpin">
+      <circle cx="395" cy="418" r="17" fill="#f6c85f" class="ink"/>
+      <path d="M395 418 l-31 22 M395 418 l30 -23" class="ink"/>
+      <circle cx="364" cy="440" r="7" fill="#ef6b5b" class="ink"/>
+      <circle cx="425" cy="395" r="7" fill="#ef6b5b" class="ink"/>
+    </g>
+
+    <path d="M302 250 Q325 235 350 250" fill="none" class="ink"/>
+    <path d="M490 265 Q515 250 540 265" fill="none" class="ink"/>
+
+    <g transform="translate(315 120)">
+      <ellipse cx="75" cy="112" rx="72" ry="96" fill="#f5f2e9" class="ink"/>
+      <path d="M35 78 Q48 20 93 18 Q135 22 145 78 L132 146 Q103 175 66 157 Q40 140 35 78Z" fill="#f5f2e9" class="ink"/>
+      <path d="M55 48 Q75 25 103 41" fill="none" stroke="#8e9aa0" stroke-width="8"/>
+      <circle cx="108" cy="61" r="9" fill="#17212b"/>
+      <path d="M125 78 Q185 74 225 102 Q188 128 125 113Z" fill="#f2a93b" class="ink beak"/>
+      <path d="M175 103 Q190 111 207 106" fill="none" stroke="#c46c21" stroke-width="5" class="beak"/>
+      <path d="M58 155 Q15 190 30 244 Q62 227 87 177" fill="#d5dce0" class="ink"/>
+      <path d="M102 158 Q137 190 151 238 Q118 229 92 181" fill="#d5dce0" class="ink"/>
+      <path d="M63 189 L45 268" fill="none" class="ink"/>
+      <path d="M110 190 L126 268" fill="none" class="ink"/>
+      <path d="M37 267 Q51 257 65 267" fill="none" class="ink"/>
+      <path d="M117 267 Q132 257 145 267" fill="none" class="ink"/>
+      <path d="M58 138 Q77 151 100 140" fill="none" stroke="#ef6b5b" stroke-width="8"/>
+      <path d="M64 116 Q82 126 99 116" fill="none" stroke="#17212b" stroke-width="5"/>
+      <path d="M92 91 Q105 103 119 92" fill="none" stroke="#17212b" stroke-width="5"/>
+    </g>
+
+    <path d="M390 285 Q420 300 455 330" fill="none" class="ink"/>
+    <path d="M455 330 Q472 346 480 370" fill="none" class="ink"/>
+    <path d="M345 286 Q365 318 395 350" fill="none" class="ink"/>
+    <path d="M395 350 L395 418" fill="none" class="ink"/>
+    <path d="M385 350 L422 350" fill="none" class="ink"/>
+  </g>
+
+  <g transform="translate(75 355)">
+    <rect x="0" y="0" width="170" height="58" rx="12" fill="#fff6c7" class="ink"/>
+    <text x="85" y="24" text-anchor="middle" class="small">PELICAN POLICY:</text>
+    <text x="85" y="45" text-anchor="middle" class="small">“FLYING IS SO LAST SEASON.”</text>
+    <path d="M150 58 l20 18 -8-26" fill="#fff6c7" class="ink"/>
+  </g>
+
+  <text x="400" y="555" text-anchor="middle" class="small">2026-10-27 04:30:01 SGT (UTC+08:00)</text>
+</svg>

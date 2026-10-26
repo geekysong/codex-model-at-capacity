@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bdefff"/>
+      <stop offset="1" stop-color="#fff5cf"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d9e5ee"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#24313d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#24313d;stroke-width:8}
+      .spoke{stroke:#6b7c89;stroke-width:3}
+      .label{font-family:Arial,sans-serif;fill:#24313d}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+      .pelicanMotion{animation:bob 0.8s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd45a" opacity=".9"/>
+  <path d="M0 430 Q130 375 260 430 T520 425 T800 420 V600 H0Z" fill="#8fd08c"/>
+  <path d="M0 475 Q170 430 330 478 T650 470 T800 460 V600 H0Z" fill="#5fa96b"/>
+
+  <text x="400" y="42" text-anchor="middle" class="label" font-size="30" font-weight="800">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="70" text-anchor="middle" class="label" font-size="17" font-style="italic">“When your beak is bigger than your budget, pedal anyway.”</text>
+
+  <g aria-label="bicycle">
+    <g>
+      <circle cx="245" cy="455" r="78" class="wheel"/>
+      <circle cx="560" cy="455" r="78" class="wheel"/>
+      <g class="spoke">
+        <path d="M245 377V533M167 455H323M190 400L300 510M300 400L190 510"/>
+        <path d="M560 377V533M482 455H638M505 400L615 510M615 400L505 510"/>
+      </g>
+      <circle cx="245" cy="455" r="10" fill="#f28f3b" class="ink"/>
+      <circle cx="560" cy="455" r="10" fill="#f28f3b" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 245 455" to="360 245 455" dur="2s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <path d="M245 455 L350 330 L470 455 L245 455 L390 455 L350 330" fill="none" class="ink"/>
+      <path d="M470 455 L560 455 L520 350" fill="none" class="ink"/>
+      <path d="M505 350 L545 350" class="ink"/>
+      <path d="M330 330 L315 295" class="ink"/>
+      <path d="M298 292 Q320 277 344 292" fill="none" class="ink"/>
+      <circle cx="390" cy="455" r="13" fill="#f28f3b" class="ink"/>
+      <g transform="translate(390 455)">
+        <path d="M0 0 L-28 -17" class="ink"/>
+        <path d="M0 0 L28 17" class="ink"/>
+        <ellipse cx="-38" cy="-22" rx="12" ry="6" fill="#f28f3b" class="ink"/>
+        <ellipse cx="38" cy="22" rx="12" ry="6" fill="#f28f3b" class="ink"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  </g>
+
+  <g class="pelicanMotion">
+    <ellipse cx="390" cy="270" rx="95" ry="112" fill="url(#body)" class="ink"/>
+    <path d="M335 300 Q390 350 445 300" fill="#c9d7e1" class="ink"/>
+    <path d="M350 205 Q392 145 434 205 Q410 233 350 205Z" fill="#f28f3b" class="ink"/>
+    <path d="M430 218 Q493 220 540 250 Q498 281 430 266Z" fill="#f7a84a" class="ink"/>
+    <path d="M531 249 Q556 257 548 270 Q536 281 517 270" fill="#e67d35" class="ink"/>
+    <circle cx="412" cy="198" r="8" fill="#24313d"/>
+    <path d="M365 174 Q392 145 425 164" fill="none" class="ink"/>
+    <path d="M343 252 Q300 270 282 322 Q320 334 365 290" fill="#b9cad6" class="ink"/>
+    <path d="M440 286 Q474 318 478 355" fill="none" class="ink"/>
+    <path d="M359 350 L350 405" class="ink"/>
+    <path d="M432 350 L447 405" class="ink"/>
+    <path d="M340 405 Q350 413 364 405" fill="none" class="ink"/>
+    <path d="M437 405 Q450 414 462 405" fill="none" class="ink"/>
+    <path d="M355 195 Q390 170 428 195" fill="none" stroke="#e74c3c" stroke-width="12"/>
+    <text x="390" y="126" text-anchor="middle" class="label" font-size="15" font-weight="700">LICENSED TO WING IT</text>
+  </g>
+
+  <path d="M110 365 q24 -18 48 0" fill="none" stroke="#4d8192" stroke-width="5"/>
+  <path d="M120 382 q24 -18 48 0" fill="none" stroke="#4d8192" stroke-width="5"/>
+  <text x="650" y="355" class="label" font-size="18" font-weight="700" transform="rotate(-8 650 355)">HONK IF YOU'RE LATE!</text>
+  <path d="M620 370 q-25 22 -48 20" fill="none" class="ink"/>
+
+  <rect x="18" y="548" width="764" height="34" rx="10" fill="#fffdf2" stroke="#24313d" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-27 04:31:17 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Satirical cartoon of a pelican riding a bicycle">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="feather" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf2"/>
+      <stop offset="1" stop-color="#d9e4e8"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;fill:#17324d}
+      .small{font-family:Arial,sans-serif;font-size:15px;fill:#17324d}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="105" r="48" fill="#ffd85c" opacity=".9"/>
+  <path d="M0 410 Q150 360 300 410 T600 400 T800 405 V555 H0Z" fill="#8bcf78"/>
+  <path d="M0 470 Q180 425 360 470 T800 462 V555 H0Z" fill="#67b866"/>
+
+  <text x="400" y="56" text-anchor="middle" class="label" font-size="34" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="18" font-weight="700">“Why fly when you can wobble with confidence?”</text>
+
+  <g transform="translate(0,4)">
+    <!-- bicycle -->
+    <g class="ink" fill="none">
+      <circle cx="250" cy="438" r="78" stroke-width="9"/>
+      <circle cx="575" cy="438" r="78" stroke-width="9"/>
+      <path d="M250 438 L355 320 L470 438 L250 438 M355 320 L575 438 M355 320 L325 275 M325 275 L375 275 M470 438 L505 350 L552 350"/>
+      <path d="M335 349 L375 349 M497 350 L535 350"/>
+    </g>
+    <g stroke="#5b7891" stroke-width="3">
+      <g>
+        <line x1="250" y1="438" x2="250" y2="360"/><line x1="250" y1="438" x2="250" y2="516"/>
+        <line x1="250" y1="438" x2="172" y2="438"/><line x1="250" y1="438" x2="328" y2="438"/>
+        <line x1="250" y1="438" x2="195" y2="383"/><line x1="250" y1="438" x2="305" y2="493"/>
+        <line x1="250" y1="438" x2="305" y2="383"/><line x1="250" y1="438" x2="195" y2="493"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 250 438" to="360 250 438" dur="2s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <line x1="575" y1="438" x2="575" y2="360"/><line x1="575" y1="438" x2="575" y2="516"/>
+        <line x1="575" y1="438" x2="497" y2="438"/><line x1="575" y1="438" x2="653" y2="438"/>
+        <line x1="575" y1="438" x2="520" y2="383"/><line x1="575" y1="438" x2="630" y2="493"/>
+        <line x1="575" y1="438" x2="630" y2="383"/><line x1="575" y1="438" x2="520" y2="493"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 575 438" to="360 575 438" dur="2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- pelican bobbing -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="405" cy="265" rx="95" ry="112" fill="url(#feather)" class="ink"/>
+      <path d="M350 268 Q315 340 350 385 Q390 360 414 286Z" fill="#c4d4da" class="ink"/>
+      <ellipse cx="415" cy="160" rx="68" ry="58" fill="url(#feather)" class="ink"/>
+      <path d="M452 171 Q570 175 612 222 Q540 255 449 210Z" fill="#f6a84d" class="ink"/>
+      <path d="M452 210 Q540 255 612 222 Q565 292 455 244Z" fill="#ed8b39" class="ink"/>
+      <circle cx="435" cy="151" r="10" fill="#17324d"/>
+      <circle cx="438" cy="147" r="3.5" fill="#fff"/>
+      <path d="M374 125 Q405 93 445 108" fill="none" class="ink" stroke-width="10"/>
+      <path d="M378 123 Q405 83 444 107" fill="#ef4f5f" class="ink"/>
+      <path d="M374 365 Q405 387 438 365" fill="none" class="ink"/>
+      <!-- legs and pedaling -->
+      <g fill="none" class="ink">
+        <path d="M382 352 Q360 392 338 420"/>
+        <path d="M432 352 Q458 395 482 420"/>
+        <path d="M338 420 L315 430 M482 420 L505 430"/>
+        <animateTransform attributeName="transform" type="rotate" values="-5 410 370;6 410 370;-5 410 370" dur="1.2s" repeatCount="indefinite"/>
+      </g>
+      <path d="M357 293 Q405 322 455 292" fill="none" class="ink"/>
+      <text x="404" y="300" text-anchor="middle" class="label" font-size="18" font-weight="800">HONK!</text>
+    </g>
+  </g>
+
+  <path d="M120 515 Q400 500 680 515" fill="none" stroke="#3f8f55" stroke-width="5" stroke-dasharray="12 12"/>
+  <text x="400" y="548" text-anchor="middle" class="label" font-size="20" font-weight="800">A beak-first approach to personal transportation.</text>
+  <text x="400" y="581" text-anchor="middle" class="small">2026-10-27 04:30:40 SGT (UTC+08:00)</text>
+</svg>
