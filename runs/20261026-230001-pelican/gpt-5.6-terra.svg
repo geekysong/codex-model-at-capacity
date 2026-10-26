@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon of a proud pelican riding a tiny bicycle while a sign questions whether this is environmentally efficient.</desc>
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.1s linear infinite; }
+    .bird { transform-box: fill-box; transform-origin: center bottom; animation: bob .7s ease-in-out infinite alternate; }
+    .leg { transform-box: fill-box; transform-origin: top center; animation: pedal .7s ease-in-out infinite alternate; }
+    .leg2 { transform-box: fill-box; transform-origin: top center; animation: pedal .7s ease-in-out infinite alternate-reverse; }
+    .dust { animation: puff 1.1s ease-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedal { to { transform: rotate(23deg); } }
+    @keyframes puff { 0% { opacity: .1; transform: translateX(0) scale(.4); } 45% { opacity: .8; } 100% { opacity: 0; transform: translateX(-35px) scale(1.3); } }
+  </style>
+
+  <rect width="800" height="600" fill="#aee8f5"/>
+  <path d="M0 332 Q115 280 230 328 T460 316 T800 325 V465 H0Z" fill="#8dd17d"/>
+  <path d="M0 405 Q135 375 270 408 T540 390 T800 410 V500 H0Z" fill="#56ad66"/>
+  <path d="M0 464 Q135 435 275 465 T560 450 T800 468 V530 H0Z" fill="#dcb66d"/>
+  <path d="M0 481 Q190 449 365 481 T800 472 V530 H0Z" fill="#f2d98a"/>
+  <circle cx="97" cy="102" r="48" fill="#ffe66c"/>
+  <path d="M0 190 Q60 153 123 186 T247 177 T377 185" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".8"/>
+
+  <g stroke="#315047" stroke-width="5" stroke-linejoin="round">
+    <path d="M670 192 L693 184 L704 206 L681 214Z" fill="#fff1cc"/>
+    <path d="M678 207 L662 281" fill="none"/>
+    <path d="M635 252 L680 244" fill="none"/>
+    <path d="M635 237 Q666 219 700 232 L704 267 Q663 255 635 274Z" fill="#fff8df"/>
+    <text x="647" y="248" font-family="sans-serif" font-size="14" font-weight="bold" fill="#315047" stroke="none">BIKE LANE</text>
+    <text x="648" y="266" font-family="sans-serif" font-size="12" fill="#315047" stroke="none">FOR BIRDS?</text>
+  </g>
+
+  <g class="dust" fill="#b89054" opacity=".7">
+    <circle cx="135" cy="449" r="9"/><circle cx="112" cy="459" r="5"/><circle cx="89" cy="451" r="3"/>
+  </g>
+
+  <g stroke="#293d48" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="240" cy="429" r="72" stroke="#263b46" stroke-width="11"/>
+      <circle cx="240" cy="429" r="7" fill="#f6bf4b"/>
+      <path d="M240 357V501M168 429H312M189 378L291 480M291 378L189 480" stroke="#7192a0" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="501" cy="429" r="72" stroke="#263b46" stroke-width="11"/>
+      <circle cx="501" cy="429" r="7" fill="#f6bf4b"/>
+      <path d="M501 357V501M429 429H573M450 378L552 480M552 378L450 480" stroke="#7192a0" stroke-width="3"/>
+    </g>
+    <path d="M240 429 L330 300 L406 429 Z M330 300 L459 302 L501 429 M406 429 L501 429 M459 302 L430 270 M411 270 L453 270 M330 300 L306 267" stroke="#e8463d"/>
+    <path d="M286 267 L329 267" stroke="#293d48" stroke-width="12"/>
+    <circle cx="406" cy="429" r="23" fill="#f6bf4b" stroke-width="6"/>
+    <path d="M406 429 L445 455 M406 429 L368 403" stroke-width="7"/>
+  </g>
+
+  <g class="bird" stroke="#293d48" stroke-linejoin="round">
+    <path d="M350 317 Q376 286 416 309 L443 365 Q403 389 361 359Z" fill="#f8f6e9" stroke-width="6"/>
+    <path d="M369 353 Q346 376 334 409 L355 417 Q380 380 393 367" fill="#f8f6e9" stroke-width="6"/>
+    <path class="leg" d="M349 407 L381 426 L421 449" fill="none" stroke="#ef9c43" stroke-width="13" stroke-linecap="round"/>
+    <path class="leg2" d="M386 394 L418 421 L370 397" fill="none" stroke="#ef9c43" stroke-width="13" stroke-linecap="round"/>
+    <path d="M365 298 Q350 234 383 196 Q435 154 484 204 Q517 240 488 312 Q455 343 365 298Z" fill="#f8f6e9" stroke-width="7"/>
+    <path d="M383 215 Q408 181 447 198 Q469 210 477 234 Q432 220 383 238Z" fill="#f0b857" stroke-width="5"/>
+    <path d="M374 239 Q427 226 485 246 Q501 254 493 285 Q445 304 379 281Z" fill="#f0b857" stroke-width="6"/>
+    <path d="M382 266 Q433 276 489 255 Q478 303 425 312 Q392 306 382 266Z" fill="#f7c66b" stroke-width="4"/>
+    <ellipse cx="429" cy="217" rx="13" ry="15" fill="white" stroke-width="5"/>
+    <circle cx="432" cy="219" r="6" fill="#293d48" stroke="none"/>
+    <path d="M394 201 Q414 183 438 195" fill="none" stroke="#293d48" stroke-width="7"/>
+    <path d="M396 313 Q424 330 459 309 L476 356 Q433 383 389 353Z" fill="#d9e1dd" stroke-width="5"/>
+    <path d="M393 317 Q361 326 342 348 Q360 362 381 350" fill="#d9e1dd" stroke-width="5"/>
+    <path d="M450 357 Q476 345 489 324" fill="none" stroke="#293d48" stroke-width="7" stroke-linecap="round"/>
+    <path d="M482 326 L492 307 L497 332" fill="#ef9c43" stroke-width="4"/>
+  </g>
+
+  <g transform="rotate(-7 178 294)">
+    <path d="M145 261 L210 261 L201 322 L153 322Z" fill="#fff8df" stroke="#315047" stroke-width="5"/>
+    <text x="155" y="283" font-family="sans-serif" font-size="15" font-weight="bold" fill="#315047">HONK IF</text>
+    <text x="150" y="304" font-family="sans-serif" font-size="15" font-weight="bold" fill="#315047">YOU RECYCLE</text>
+    <path d="M176 322 L166 357 M183 322 L194 357" stroke="#315047" stroke-width="5"/>
+  </g>
+
+  <rect x="0" y="530" width="800" height="70" fill="#263b46"/>
+  <text x="400" y="57" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="900" fill="#263b46">PELICAN PEDAL PANIC</text>
+  <text x="400" y="91" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#315047">“I carry my lunch in the front basket. It carries emotional baggage.”</text>
+  <text x="400" y="560" text-anchor="middle" font-family="monospace" font-size="16" fill="#fff8df">2026-10-26 23:03:33 SGT (UTC+08:00)</text>
+  <text x="400" y="583" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#aee8f5">A pelican proves that sustainable transport can still be gloriously ridiculous.</text>
+</svg>
