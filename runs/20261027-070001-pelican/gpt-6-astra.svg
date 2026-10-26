@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Against All Odds</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an absurdly large fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f5"/>
+      <stop offset="1" stop-color="#d8f4ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#707782"/>
+      <stop offset="1" stop-color="#3e434d"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#26313a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#252b35;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#252b35}
+      .wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .riderBob{animation:bob .8s ease-in-out infinite alternate}
+      .pedalSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="710" cy="92" r="48" fill="#fff3a8" opacity=".9"/>
+  <path d="M0 330 Q120 260 250 330 T520 325 T800 315 V430 H0Z" fill="#8dc77c"/>
+  <path d="M0 382 Q155 335 310 378 T620 372 T800 360 V458 H0Z" fill="#5ea86d"/>
+  <path d="M0 438 Q200 415 400 438 T800 425 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 505 H800" stroke="#d7d9dc" stroke-width="9" stroke-dasharray="55 35" opacity=".85"/>
+  <g opacity=".55" fill="#3c855a">
+    <path d="M85 340 l18 -38 18 38z"/>
+    <path d="M130 350 l22 -50 22 50z"/>
+    <path d="M650 335 l20 -44 20 44z"/>
+    <path d="M700 345 l18 -35 18 35z"/>
+  </g>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="34" font-weight="900" fill="#fff" stroke="#252b35" stroke-width="2" paint-order="stroke">
+    PELICAN PEDALS AGAINST ALL ODDS
+  </text>
+  <text x="400" y="95" text-anchor="middle" class="label" font-size="18" font-weight="700">
+    “Why fly when you can wobble with commitment?”
+  </text>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="422" cy="405" rx="184" ry="22" fill="#252b35" opacity=".3"/>
+    <g class="wheelSpin">
+      <circle cx="286" cy="432" r="72" fill="#e9edf0" class="ink"/>
+      <circle cx="286" cy="432" r="10" fill="#f4b942" class="ink"/>
+      <g stroke="#68727d" stroke-width="3">
+        <path d="M286 360V504M214 432H358M235 381L337 483M337 381L235 483"/>
+      </g>
+    </g>
+    <g class="wheelSpin">
+      <circle cx="594" cy="432" r="72" fill="#e9edf0" class="ink"/>
+      <circle cx="594" cy="432" r="10" fill="#f4b942" class="ink"/>
+      <g stroke="#68727d" stroke-width="3">
+        <path d="M594 360V504M522 432H666M543 381L645 483M645 381L543 483"/>
+      </g>
+    </g>
+
+    <path d="M286 432 L382 330 L500 432 L286 432 M382 330 L430 432 M430 432 L594 432 M500 432 L560 345" fill="none" stroke="#e5483f" stroke-width="13" stroke-linejoin="round"/>
+    <path d="M548 343 L575 343" stroke="#252b35" stroke-width="8"/>
+    <path d="M365 321 L395 321" stroke="#252b35" stroke-width="8"/>
+    <circle cx="430" cy="432" r="16" fill="#f4b942" class="ink"/>
+    <g class="pedalSpin">
+      <path d="M430 432 l35 -25 M430 432 l-33 25" stroke="#252b35" stroke-width="7"/>
+      <circle cx="468" cy="405" r="7" fill="#252b35"/>
+      <circle cx="397" cy="457" r="7" fill="#252b35"/>
+    </g>
+
+    <g class="riderBob">
+      <ellipse cx="415" cy="285" rx="75" ry="91" fill="#f7f5e8" class="ink"/>
+      <path d="M350 288 Q410 350 476 290 L500 350 Q420 392 334 344Z" fill="#f4b942" class="ink"/>
+      <path d="M474 272 Q548 222 632 270 Q555 330 474 313Z" fill="#f59d43" class="ink"/>
+      <path d="M620 270 Q662 252 692 270 Q663 288 620 281Z" fill="#f59d43" class="ink"/>
+      <circle cx="429" cy="245" r="9" fill="#252b35"/>
+      <path d="M390 226 Q420 202 451 218" fill="none" stroke="#252b35" stroke-width="7"/>
+      <path d="M390 312 Q418 330 448 311" fill="none" stroke="#252b35" stroke-width="6"/>
+      <path d="M350 281 Q316 250 292 228" fill="none" stroke="#f7f5e8" stroke-width="22" class="ink"/>
+      <path d="M478 294 Q528 320 545 365" fill="none" stroke="#f7f5e8" stroke-width="20" class="ink"/>
+      <path d="M400 349 L382 424" fill="none" stroke="#f7f5e8" stroke-width="20" class="ink"/>
+      <path d="M455 350 L472 424" fill="none" stroke="#f7f5e8" stroke-width="20" class="ink"/>
+      <path d="M367 424 L400 424" stroke="#252b35" stroke-width="10"/>
+      <path d="M458 424 L490 424" stroke="#252b35" stroke-width="10"/>
+      <path d="M392 214 Q415 170 461 190 Q485 202 489 235" fill="#f7f5e8" class="ink"/>
+      <path d="M395 199 Q425 172 462 187" fill="none" stroke="#f4b942" stroke-width="12"/>
+      <path d="M365 180 Q395 153 425 168" fill="none" stroke="#252b35" stroke-width="6"/>
+      <text x="405" y="278" text-anchor="middle" class="label" font-size="16" font-weight="900" fill="#b3322b">NO WINGS</text>
+    </g>
+
+    <g transform="translate(525 235) rotate(-8)">
+      <path d="M0 0 Q40 -35 91 0 L77 86 Q38 103 0 78Z" fill="#7ac7e8" class="ink"/>
+      <path d="M16 30 Q47 12 78 31" fill="none" stroke="#252b35" stroke-width="5"/>
+      <path d="M18 54 Q47 36 75 54" fill="none" stroke="#252b35" stroke-width="5"/>
+      <text x="44" y="78" text-anchor="middle" class="label" font-size="15" font-weight="900">FISH</text>
+    </g>
+  </g>
+
+  <g transform="translate(38 530)">
+    <rect x="0" y="0" width="724" height="44" rx="12" fill="#fff7d6" stroke="#252b35" stroke-width="3"/>
+    <text x="362" y="28" text-anchor="middle" class="label" font-size="16" font-weight="700">
+      A bold beak, a tiny bell, and absolutely no idea where the brakes are.
+    </text>
+  </g>
+
+  <text x="400" y="594" text-anchor="middle" class="label" font-size="14" font-weight="700">
+    2026-10-27 07:00:01 SGT (UTC+08:00)
+  </text>
+</svg>
