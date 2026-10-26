@@ -117,15 +117,35 @@ python3 compare_claude.py
 The model can be selected without changing the script, for example with
 `CLAUDE_MODEL=claude-sonnet-5-5`. The output and non-secret request
 metadata are written to `comparisons/<timestamp>/`; the key is never written
-there or printed. This comparison is intentionally separate from the cron
-health series and is not automatically published to GitHub Pages.
+there or printed. The scheduled Claude control publishes these artifacts through the existing
+GitHub Pages path; a standalone invocation only writes local artifacts.
 
-`daily_prompt.txt` is the single source of truth for the current question. Both
-providers receive it unchanged; its SGT date and SHA-256 prefix are recorded in
+`daily_prompt_meta.json` is the dated source of truth for the current question,
+with `daily_prompt.txt` as its readable mirror. Both providers receive the same prompt; its SGT date and SHA-256 prefix are recorded in
 every result so a Codex observation is compared only with Claude's same-day
-control. Change that file once per day to start a new question. The page keeps
+control. The scheduled generator creates one atomic snapshot each day. The page keeps
 older Pelican, substitution, and physics experiments as historical rounds.
 
 ### Active benchmarks and visible timestamps
 
 Each scheduled Codex execution now runs Pelican and Daily Challenge sequentially, with four models per benchmark. Claude control runs also cover both benchmarks. Each request includes its own timestamp and requires a visible SVG footer with the date and time in Asia/Singapore (SGT, UTC+08:00). Existing historical images are unchanged. Physics and substitution remain archived rather than separate active benchmarks.
+
+### Daily control reliability
+
+The operational contract and regression checklist are in
+[specs/claude-daily.md](specs/claude-daily.md). The existing Pi jobs run in
+Asia/Singapore: prompt generation at 00:00 and Claude at 00:05. Claude waits up to
+two hours for the shared Codex lock and attempts each challenge/model only once.
+The dated JSON prompt snapshot is authoritative; the `.txt` file is a mirror.
+The live comparison panel requires the same challenge date and hash.
+
+```bash
+python3 -m unittest -v test_claude_daily
+python3 run_claude_round.py --dry-run
+python3 run_claude_round.py --publish-only  # no model calls
+```
+
+A failed/uncertain request remains in ignored `.claude-state/` for operator
+inspection; rerunning the daily job does not repeat it. Publication failures exit
+nonzero and keep local artifacts. API outputs retain their actual provider and
+model provenance.

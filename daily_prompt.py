@@ -1,6 +1,6 @@
-"""The single prompt shared by the Codex and Claude daily control runs."""
+"""Read the dated challenge snapshot; never relabel yesterday's prompt as today."""
 import hashlib
-from datetime import datetime
+import json
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -10,9 +10,13 @@ SGT = ZoneInfo("Asia/Singapore")
 
 
 def load_daily_prompt() -> tuple[str, str, str]:
-    text = PROMPT_FILE.read_text(encoding="utf-8").strip()
+    # Metadata is atomically replaced by the generator. The txt file is a mirror.
+    meta = json.loads((ROOT / "daily_prompt_meta.json").read_text(encoding="utf-8"))
+    text = meta["prompt"].strip()
+    day = meta["date_sgt"]
+    from datetime import date
+    date.fromisoformat(day)
     if not text:
-        raise RuntimeError(f"daily prompt is empty: {PROMPT_FILE}")
-    day = datetime.now(SGT).strftime("%Y-%m-%d")
+        raise RuntimeError("daily prompt snapshot is empty")
     digest = hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
     return text, day, digest

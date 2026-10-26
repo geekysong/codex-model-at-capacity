@@ -19,6 +19,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from daily_prompt import load_daily_prompt
+from claude_daily import matching_artifacts
 
 REPO = Path(__file__).resolve().parent
 GA_MEASUREMENT_ID = "G-846Y37CFNX"
@@ -173,10 +174,12 @@ def build_index(records: list[dict]) -> str:
     pair_sections = []
     comparison_root = REPO / "comparisons"
     comparison_files = sorted(comparison_root.glob("*/*/claude-*/claude.svg")) if comparison_root.exists() else []
-    for variant, variant_prompt in PROMPTS.items():
+    for variant in ACTIVE_VARIANTS:
+        variant_prompt, challenge_day, challenge_sha = load_prompt(variant)
         # Records from the original capacity probe have no variant field and
         # must not be mistaken for the newer pelican round.
-        variant_records = [r for r in records if r.get("variant", "legacy") == variant]
+        variant_records = [r for r in records if r.get("variant", "legacy") == variant
+                           and r.get("prompt_date") == challenge_day and r.get("prompt_sha") == challenge_sha]
         pair_cards = []
         for codex_model, claude_id, claude_label in PAIRINGS:
             latest_model = max(
@@ -184,10 +187,8 @@ def build_index(records: list[dict]) -> str:
                 key=lambda r: (r["round"], r["time_sgt"]), default=None,
             )
             codex = latest_model if latest_model and latest_model.get("svg") else None
-            claude_paths = [p for p in comparison_files if p.parent.name == claude_id and p.parent.parent.name == variant]
+            claude_paths = matching_artifacts(REPO, variant, claude_id, challenge_day, challenge_sha)
             claude = claude_paths[-1] if claude_paths else None
-            if not codex and not claude:
-                continue
             left = (f'<img src="{html.escape(codex["svg"])}" alt="{html.escape(codex_model)}" loading="lazy">'
                     if codex else f'<div class="noart">No Codex image<small>{public_error(latest_model.get("error") if latest_model else "no record")}</small></div>')
             if latest_model:
@@ -202,8 +203,9 @@ def build_index(records: list[dict]) -> str:
                 except (OSError, ValueError, KeyError, TypeError):
                     pass
                 right = f'<img src="{html.escape(rel)}" alt="{html.escape(claude_label)}" loading="lazy">'
+                right += f'<small>{html.escape(meta.get("time_sgt", challenge_day))} SGT · {html.escape(challenge_sha)}{cost}</small>'
             else:
-                error = "no Claude record"
+                error = f"No successful Claude control for {challenge_day} / {challenge_sha}; awaiting daily run"
                 meta_path = claude_paths[-1].with_name("meta.json") if claude_paths else None
                 if meta_path and meta_path.exists():
                     try:

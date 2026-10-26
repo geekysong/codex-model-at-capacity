@@ -16,6 +16,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 from daily_prompt import load_daily_prompt
+from claude_daily import valid_svg
 
 REPO = Path(__file__).resolve().parent
 KEY_FILE = REPO / ".secrets" / "anthropic_api_key"
@@ -36,6 +37,8 @@ from probe_prompts import ACTIVE_VARIANTS, load_prompt, timestamped_prompt
 PROMPTS = {variant: load_prompt(variant)[0] for variant in ACTIVE_VARIANTS}
 PROMPT_VARIANT = os.environ.get("PROBE_VARIANT", "daily")
 PROMPT, PROMPT_DATE, PROMPT_SHA = load_prompt(PROMPT_VARIANT)
+if os.environ.get("CLAUDE_PROMPT_SNAPSHOT"):
+    PROMPT, PROMPT_DATE, PROMPT_SHA = json.loads(os.environ["CLAUDE_PROMPT_SNAPSHOT"])
 
 
 def read_key() -> str:
@@ -95,13 +98,15 @@ def main() -> int:
         "prompt_sha": PROMPT_SHA,
         "request_timestamp": request_timestamp,
         "model": result.get("model", MODEL),
+        "requested_model": MODEL,
+        "prompt": PROMPT,
         "time_sgt": started.strftime("%Y-%m-%d %H:%M:%S"),
         "duration_s": round(time.monotonic() - t0, 2),
         "input_tokens": (result.get("usage") or {}).get("input_tokens"),
         "output_tokens": (result.get("usage") or {}).get("output_tokens"),
         "stop_reason": result.get("stop_reason"),
-        "status": "ok" if match else "error",
-        "error": None if match else "response did not contain an SVG",
+        "status": "ok" if match and result.get("stop_reason") == "end_turn" else "error",
+        "error": None if match and result.get("stop_reason") == "end_turn" else "missing SVG or incomplete response",
     }
     input_price, output_price = PRICE_USD_PER_MTOK.get(MODEL, (None, None))
     if input_price is not None and metadata["input_tokens"] is not None and metadata["output_tokens"] is not None:
@@ -114,14 +119,19 @@ def main() -> int:
         metadata["price_usd_per_million"] = None
         metadata["estimated_cost_usd"] = None
     (out_dir / "meta.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    if not match:
+    if metadata["status"] != "ok":
         print("Claude response did not contain an SVG; metadata saved", file=sys.stderr)
         return 1
     svg = match.group(0)
     if "xmlns" not in svg.split(">", 1)[0]:
         svg = svg.replace("<svg", '<svg xmlns="http://www.w3.org/2000/svg"', 1)
     (out_dir / "claude.svg").write_text(svg, encoding="utf-8")
-    print(f"saved comparisons/{stamp}/claude.svg ({metadata['duration_s']}s, model={metadata['model']})")
+    if not valid_svg(out_dir / "claude.svg"):
+        metadata.update(status="error", error="invalid SVG XML")
+        (out_dir / "meta.json").write_text(json.dumps(metadata, indent=2) + "\n")
+        print("Claude returned invalid SVG XML; metadata saved", file=sys.stderr)
+        return 1
+    print(f"saved {out_dir.relative_to(REPO)}/claude.svg ({metadata['duration_s']}s, model={metadata['model']})")
     return 0
 
 
