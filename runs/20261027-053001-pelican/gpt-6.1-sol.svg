@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical pelican rides a bicycle while trying to balance a giant fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#252525"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#14303d" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#17242b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17242b}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.3s linear infinite}
+      .pedal{transform-box:fill-box;transform-origin:50% 50%;animation:spin 1.1s linear infinite}
+      .bob{animation:bob .65s ease-in-out infinite alternate}
+      .fish{animation:fishflip 1.8s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+      @keyframes fishflip{from{transform:rotate(-3deg)}to{transform:rotate(5deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="48" fill="#ffe58a" opacity=".9"/>
+  <path d="M0 360 Q130 300 270 350 T540 340 T800 350 V430 H0Z" fill="#7cc778"/>
+  <path d="M0 405 Q170 370 330 410 T650 398 T800 410 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 487 H800" stroke="#f7d96a" stroke-width="8" stroke-dasharray="45 28" opacity=".9"/>
+  <g opacity=".55" fill="#fff">
+    <path d="M95 130 q30-25 60 0 q-30 18-60 0Z"/>
+    <path d="M250 95 q25-21 50 0 q-25 16-50 0Z"/>
+    <path d="M500 145 q32-24 64 0 q-32 18-64 0Z"/>
+  </g>
+
+  <text x="400" y="55" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#173d4a">PELICAN PEDAL PANIC!</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="19" font-weight="700">A beak-first commute with absolutely no bird-brained planning.</text>
+
+  <g filter="url(#shadow)">
+    <g class="wheel">
+      <circle cx="220" cy="455" r="72" fill="#eef7fa" class="ink"/>
+      <circle cx="220" cy="455" r="10" fill="#ffcf42" class="ink"/>
+      <g stroke="#5c7882" stroke-width="3">
+        <path d="M220 383V527 M148 455H292 M169 404L271 506 M271 404L169 506"/>
+      </g>
+    </g>
+    <g class="wheel">
+      <circle cx="570" cy="455" r="72" fill="#eef7fa" class="ink"/>
+      <circle cx="570" cy="455" r="10" fill="#ffcf42" class="ink"/>
+      <g stroke="#5c7882" stroke-width="3">
+        <path d="M570 383V527 M498 455H642 M519 404L621 506 M621 404L519 506"/>
+      </g>
+    </g>
+
+    <path d="M220 455 L350 350 L570 455 L220 455 L430 455 L350 350" fill="none" stroke="#e44f45" stroke-width="10"/>
+    <path d="M350 350 L330 300" stroke="#17242b" stroke-width="8"/>
+    <path d="M315 298 L350 298" stroke="#17242b" stroke-width="8"/>
+    <path d="M570 455 L590 330" stroke="#17242b" stroke-width="8"/>
+    <path d="M570 335 Q605 318 632 335" fill="none" stroke="#17242b" stroke-width="8"/>
+
+    <g class="pedal">
+      <circle cx="430" cy="455" r="19" fill="#ffcf42" class="ink"/>
+      <path d="M430 455 L460 475 M430 455 L400 435" stroke="#17242b" stroke-width="6"/>
+      <path d="M458 475 h24 M376 430 h24" stroke="#17242b" stroke-width="7"/>
+    </g>
+  </g>
+
+  <g class="bob">
+    <path d="M350 354 Q345 295 370 247 Q395 205 438 215 Q479 224 493 273 Q500 302 478 354Z" fill="#f4f0dc" class="ink"/>
+    <path d="M368 256 Q398 218 441 230 Q467 240 477 274 Q445 260 414 274 Q390 285 368 256Z" fill="#d8e6e2" class="ink"/>
+    <ellipse cx="426" cy="292" rx="73" ry="49" fill="#f7f3dc" class="ink"/>
+    <path d="M371 287 Q327 272 289 294 Q257 312 278 334 Q313 353 372 329Z" fill="#ffad55" class="ink"/>
+    <path d="M289 314 Q329 322 367 310" fill="none" stroke="#d47a35" stroke-width="5"/>
+    <circle cx="447" cy="268" r="8" fill="#17242b"/>
+    <path d="M431 244 q20-24 41-3" fill="none" stroke="#e44f45" stroke-width="7"/>
+    <path d="M390 332 Q374 366 365 405" fill="none" stroke="#f4f0dc" stroke-width="18" class="ink"/>
+    <path d="M461 332 Q481 361 495 404" fill="none" stroke="#f4f0dc" stroke-width="18" class="ink"/>
+    <path d="M365 404 L342 432 M495 404 L518 432" stroke="#e8a33c" stroke-width="12" class="ink"/>
+    <path d="M375 284 Q405 318 433 286" fill="none" stroke="#17242b" stroke-width="5"/>
+    <path d="M416 303 Q433 316 449 302" fill="none" stroke="#17242b" stroke-width="5"/>
+    <path d="M405 351 Q432 364 458 348" fill="none" stroke="#17242b" stroke-width="6"/>
+  </g>
+
+  <g class="fish" transform="translate(535 185)">
+    <path d="M0 35 Q45 0 106 35 Q45 70 0 35Z" fill="#66c6d8" class="ink"/>
+    <path d="M104 35 l34-25 l-8 25 l8 25Z" fill="#66c6d8" class="ink"/>
+    <circle cx="25" cy="29" r="5" fill="#17242b"/>
+    <path d="M54 8 L61 -18 L72 8" fill="#ffad55" class="ink"/>
+    <path d="M55 62 L62 88 L73 62" fill="#ffad55" class="ink"/>
+    <text x="44" y="42" text-anchor="middle" font-size="14" font-weight="900" class="label">WHOOPS!</text>
+  </g>
+
+  <path d="M128 350 q18-22 38 0" fill="none" stroke="#17242b" stroke-width="5"/>
+  <path d="M655 300 q18-22 38 0" fill="none" stroke="#17242b" stroke-width="5"/>
+  <text x="680" y="335" text-anchor="middle" class="label" font-size="18" font-weight="800">HONK!</text>
+  <text x="115" y="390" class="label" font-size="17" font-weight="700" transform="rotate(-12 115 390)">NO BRAKES</text>
+
+  <rect x="28" y="548" width="744" height="34" rx="10" fill="#ffffff" opacity=".9"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-27 05:30:44 SGT (UTC+08:00)</text>
+</svg>
