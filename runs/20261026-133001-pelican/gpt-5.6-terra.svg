@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals to Glory</title>
+  <desc id="desc">A satirical cartoon of an oversized pelican proudly riding a tiny bicycle.</desc>
+  <style>
+    .wheel { animation: spin 1.4s linear infinite; transform-origin: center; }
+    .pelican { animation: bob .7s ease-in-out infinite alternate; transform-origin: 410px 365px; }
+    .leg-a { animation: pedalA 1.4s linear infinite; transform-origin: 425px 407px; }
+    .leg-b { animation: pedalB 1.4s linear infinite; transform-origin: 425px 407px; }
+    .dust { animation: puff 1.4s ease-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+    @keyframes pedalA { 50% { transform: rotate(28deg); } }
+    @keyframes pedalB { 50% { transform: rotate(-28deg); } }
+    @keyframes puff { 0% { opacity:0; transform:translate(0,0) scale(.5) } 30% { opacity:.8 } 100% { opacity:0; transform:translate(-30px,-13px) scale(1.4) } }
+    text { font-family: Arial, Helvetica, sans-serif; }
+  </style>
+
+  <rect width="800" height="600" fill="#aee7f4"/>
+  <path d="M0 305 Q95 258 183 300 T365 292 T548 303 T800 270 V456 H0Z" fill="#78c86a"/>
+  <path d="M0 382 Q120 350 265 383 T530 370 T800 390 V456 H0Z" fill="#52aa56"/>
+  <path d="M0 454 H800" stroke="#47563c" stroke-width="8"/>
+  <path d="M0 439 Q160 422 320 441 T650 431 T800 442" fill="none" stroke="#f2d05c" stroke-width="7" stroke-dasharray="20 17"/>
+
+  <g fill="#fff" opacity=".9">
+    <ellipse cx="122" cy="94" rx="47" ry="19"/>
+    <ellipse cx="160" cy="89" rx="39" ry="24"/>
+    <ellipse cx="627" cy="107" rx="56" ry="22"/>
+    <ellipse cx="673" cy="98" rx="41" ry="29"/>
+  </g>
+
+  <text x="400" y="61" text-anchor="middle" font-size="39" font-weight="900" fill="#26334d" stroke="#fff" stroke-width="5" paint-order="stroke">PELICAN PEDALS TO GLORY!</text>
+  <text x="400" y="91" text-anchor="middle" font-size="17" font-weight="700" fill="#38465d">“Finally, a transport policy with a big enough pouch.”</text>
+
+  <g class="dust" fill="#d7bd8b">
+    <ellipse cx="182" cy="438" rx="15" ry="7"/>
+    <ellipse cx="164" cy="444" rx="9" ry="5"/>
+  </g>
+
+  <g stroke="#273342" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel" transform-origin="238px 429px">
+      <circle cx="238" cy="429" r="64" fill="#354352" stroke-width="9"/>
+      <circle cx="238" cy="429" r="54" fill="#eaf2ed" stroke-width="4"/>
+      <g stroke="#92a0a9" stroke-width="3">
+        <path d="M238 375V483M184 429H292M200 391L276 467M276 391L200 467"/>
+      </g>
+      <circle cx="238" cy="429" r="8" fill="#e3a73f" stroke-width="3"/>
+    </g>
+    <g class="wheel" transform-origin="499px 429px">
+      <circle cx="499" cy="429" r="64" fill="#354352" stroke-width="9"/>
+      <circle cx="499" cy="429" r="54" fill="#eaf2ed" stroke-width="4"/>
+      <g stroke="#92a0a9" stroke-width="3">
+        <path d="M499 375V483M445 429H553M461 391L537 467M537 391L461 467"/>
+      </g>
+      <circle cx="499" cy="429" r="8" fill="#e3a73f" stroke-width="3"/>
+    </g>
+
+    <g fill="none" stroke-width="8">
+      <path d="M238 429 L322 338 L410 429 Z" stroke="#d94f47"/>
+      <path d="M322 338 L455 345 L499 429 L410 429" stroke="#d94f47"/>
+      <path d="M455 345 L478 291 L516 278" stroke="#d94f47"/>
+      <path d="M309 339 L287 323 L249 323" stroke="#d94f47"/>
+      <path d="M410 429 L425 407" stroke="#273342"/>
+      <circle cx="425" cy="407" r="16" fill="#e3a73f"/>
+      <path d="M425 407 L453 420" stroke="#273342"/>
+    </g>
+  </g>
+
+  <g class="pelican" stroke="#273342" stroke-linejoin="round">
+    <path d="M366 308 Q373 222 457 219 Q538 218 539 310 L524 379 Q462 407 386 373Z" fill="#f9f7e7" stroke-width="6"/>
+    <path d="M452 227 Q438 167 472 134 Q511 105 545 140 Q570 168 543 230Z" fill="#f9f7e7" stroke-width="6"/>
+    <path d="M473 149 Q504 114 534 143" fill="none" stroke="#4b5a71" stroke-width="10"/>
+    <circle cx="517" cy="163" r="16" fill="#fff" stroke-width="5"/>
+    <circle cx="521" cy="165" r="6" fill="#273342" stroke="none"/>
+    <path d="M473 181 Q414 184 368 215 Q415 242 488 229 Q526 219 534 192 Q510 181 473 181Z" fill="#f2ad47" stroke-width="6"/>
+    <path d="M369 215 Q380 259 448 271 Q490 270 500 231 Q425 243 369 215Z" fill="#f6cf65" stroke-width="5"/>
+    <path d="M451 272 Q496 272 524 242 Q526 299 497 327Z" fill="#f9f7e7" stroke-width="6"/>
+    <path d="M400 328 Q436 299 476 330 Q449 364 400 358Z" fill="#627e9d" stroke-width="5"/>
+    <path d="M409 330 L467 341" stroke="#f5d66c" stroke-width="5"/>
+    <path d="M390 358 Q358 373 342 399" fill="none" stroke="#f9f7e7" stroke-width="17"/>
+    <path d="M390 358 Q358 373 342 399" fill="none" stroke="#273342" stroke-width="6"/>
+    <path d="M342 399 L329 391" fill="none" stroke="#f2ad47" stroke-width="14"/>
+    <g class="leg-a">
+      <path d="M444 368 Q433 389 424 407 L453 420" fill="none" stroke="#f2ad47" stroke-width="15"/>
+      <path d="M453 420 L472 420" fill="none" stroke="#273342" stroke-width="7"/>
+    </g>
+    <g class="leg-b">
+      <path d="M475 367 Q460 393 425 407 L397 395" fill="none" stroke="#f2ad47" stroke-width="15"/>
+      <path d="M397 395 L379 395" fill="none" stroke="#273342" stroke-width="7"/>
+    </g>
+    <path d="M522 277 Q560 270 575 300" fill="none" stroke="#f9f7e7" stroke-width="17"/>
+    <path d="M522 277 Q560 270 575 300" fill="none" stroke="#273342" stroke-width="6"/>
+    <path d="M575 300 L522 278" fill="none" stroke="#f2ad47" stroke-width="12"/>
+  </g>
+
+  <g transform="translate(605 275) rotate(-10)">
+    <path d="M0 0 L72 0 L63 54 L9 54Z" fill="#fff5c9" stroke="#273342" stroke-width="4"/>
+    <text x="36" y="23" text-anchor="middle" font-size="13" font-weight="900" fill="#d94f47">BIKE LANE</text>
+    <text x="36" y="41" text-anchor="middle" font-size="12" font-weight="900" fill="#26334d">FOR BIRDS!</text>
+    <path d="M36 54V112" stroke="#273342" stroke-width="6"/>
+  </g>
+
+  <rect y="501" width="800" height="99" fill="#26334d"/>
+  <text x="400" y="536" text-anchor="middle" font-size="21" font-weight="700" fill="#f9f7e7">A majestic commuter, carrying both groceries and impossible optimism.</text>
+  <text x="400" y="576" text-anchor="middle" font-size="17" fill="#aee7f4">2026-10-26 13:32:37 SGT (UTC+08:00)</text>
+</svg>

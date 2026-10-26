@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">The Beak Has a Bike</title>
+  <desc id="description">A smug pelican pedals a bicycle while a fish rides in its beak. The wheels spin and the pelican bobs.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#18313b;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#d9f4ec;stroke:#18313b;stroke-width:7}
+      .spoke{stroke:#53818a;stroke-width:2}
+      .frame{fill:none;stroke:#ef654f;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .title{font:900  thirtypx Georgia,serif;font-size:34px;fill:#18313b}
+      .label{font:700 17px 'Trebuchet MS',sans-serif;fill:#18313b}
+      .small{font:600 14px 'Trebuchet MS',sans-serif;fill:#18313b}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 2.5s linear infinite}
+      .ride{animation:bob .75s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d8"/>
+  <path d="M0 0h800v125c-110-22-184 15-281 0S331 97 235 119 88 147 0 125z" fill="#b8e8df"/>
+  <circle cx="690" cy="75" r="34" fill="#ffd166"/>
+  <text id="title" x="40" y="55" class="title">THE BEAK HAS A BIKE</text>
+  <text x="42" y="84" class="small">A high-speed lesson in fish-based transportation</text>
+
+  <!-- road -->
+  <path d="M0 459c161-22 268-4 402 0s262-21 398 0v55H0z" fill="#d5c6a3"/>
+  <path d="M0 481h800" stroke="#fff4d8" stroke-width="5" stroke-dasharray="34 24"/>
+
+  <!-- pelican and rider motion -->
+  <g class="ride">
+    <!-- tail -->
+    <path d="M290 268l-39-14 28 31-35 7 49 11" fill="#fff" class="ink"/>
+    <!-- body -->
+    <ellipse cx="350" cy="267" rx="76" ry="53" fill="#fff" class="ink"/>
+    <path d="M305 278q43 35 93 5" fill="none" stroke="#d3e5df" stroke-width="7" stroke-linecap="round"/>
+    <!-- long neck -->
+    <path d="M381 241q-16-75 19-115 17-20 41-5 18 11 5 31-21 27-7 78" fill="#fff" class="ink"/>
+    <!-- head -->
+    <ellipse cx="431" cy="119" rx="43" ry="33" fill="#fff" class="ink"/>
+    <path d="M451 116q57-21 112-4-31 21-87 22z" fill="#f39a36" class="ink"/>
+    <!-- pouch -->
+    <path d="M468 132q42 14 79-2-7 47-44 50-30-4-35-48" fill="#f48d45" class="ink"/>
+    <!-- fish -->
+    <path d="M500 152q14-12 31 0-17 13-31 0zm31 0 9-7v14z" fill="#6ec6d2" stroke="#18313b" stroke-width="2"/>
+    <circle cx="505" cy="151" r="1.8" fill="#18313b"/>
+    <!-- eye and brow -->
+    <circle cx="438" cy="113" r="7" fill="#18313b"/>
+    <path d="M425 99q15-12 28 0" fill="none" stroke="#18313b" stroke-width="4" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M397 104q7-34 37-36 28 0 39 26l-73 12z" fill="#ef654f" class="ink"/>
+    <path d="M405 93q24-14 52-6" fill="none" stroke="#ffd166" stroke-width="5" stroke-linecap="round"/>
+    <!-- wing -->
+    <path d="M319 254q38-29 76 1-20 40-65 28" fill="#e8f3ee" stroke="#18313b" stroke-width="4"/>
+    <path d="M330 263l40 10m-33-19 38 10" stroke="#9dbdb7" stroke-width="3" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M360 302l-14 53m50-49 8 49" fill="none" stroke="#f39a36" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- bicycle wheels -->
+  <g>
+    <circle class="wheel" cx="220" cy="414" r="61"/>
+    <g class="spin" transform="translate(220 414)">
+      <path class="spoke" d="M0-54V54M-54 0H54M-38-38l76 76m0-76-76 76"/>
+    </g>
+    <circle cx="220" cy="414" r="8" fill="#ef654f" stroke="#18313b" stroke-width="3"/>
+    <circle class="wheel" cx="480" cy="414" r="61"/>
+    <g class="spin" transform="translate(480 414)">
+      <path class="spoke" d="M0-54V54M-54 0H54M-38-38l76 76m0-76-76 76"/>
+    </g>
+    <circle cx="480" cy="414" r="8" fill="#ef654f" stroke="#18313b" stroke-width="3"/>
+  </g>
+
+  <!-- bicycle frame -->
+  <path class="frame" d="M220 414l83-102 68 102H220l48-70h103l24-65"/>
+  <!-- seat and handlebars -->
+  <path d="M283 305h-42m51 0 13 7" stroke="#18313b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M415 277l25-3m-19 0-8 18m8-18 12 13" fill="none" stroke="#18313b" stroke-width="6" stroke-linecap="round"/>
+  <!-- crank/pedals -->
+  <circle cx="303" cy="414" r="8" fill="#ffd166" stroke="#18313b" stroke-width="3"/>
+  <path d="M303 414l18-15m-18 15-18 15" stroke="#18313b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M315 397h15m-57 40h15" stroke="#18313b" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- comic annotations -->
+  <path d="M565 234q57-44 118-4l-8 45q-57 15-107-3z" fill="#fff" class="ink"/>
+  <text x="584" y="250" class="label">“I call it</text>
+  <text x="584" y="272" class="label">beak-to-wheel!”</text>
+  <path d="M563 253l-27-40" fill="none" stroke="#18313b" stroke-width="3" stroke-dasharray="4 5"/>
+  <path d="M148 325q-20-17-40-1m25-20q-25-10-40 5" fill="none" stroke="#ef654f" stroke-width="4" stroke-linecap="round"/>
+  <text x="42" y="382" class="small">No hands. No plans.</text>
+
+  <!-- footer kept clear of the scene -->
+  <rect x="0" y="530" width="800" height="70" fill="#18313b"/>
+  <text x="40" y="558" font-family="Trebuchet MS, sans-serif" font-size="17" font-weight="700" fill="#fff4d8">A pelican on a bicycle: one fish in the bag, zero brakes in the plan.</text>
+  <text x="40" y="585" font-family="Trebuchet MS, sans-serif" font-size="16" font-weight="600" fill="#ffd166">2026-10-26 13:32:14 SGT (UTC+08:00)</text>
+</svg>
