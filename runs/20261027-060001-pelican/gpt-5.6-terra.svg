@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN GRAND PRIX</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an absurdly large fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e8f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596675"/>
+      <stop offset="1" stop-color="#303944"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#203040" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202735;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202735}
+      .title{font-size: thirtypx;font-weight:900;letter-spacing:2px}
+      .small{font-size:18px;font-weight:700}
+      .tiny{font-size:14px}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#fff5a8" opacity=".9"/>
+  <path d="M0 190 Q90 145 180 190 T360 190 T540 190 T800 175 L800 350 L0 350Z" fill="#b7e6bb"/>
+  <path d="M0 270 Q110 220 220 270 T440 265 T660 250 T800 260 L800 390 L0 390Z" fill="#78bf87"/>
+  <path d="M0 350 Q180 320 360 350 T800 340 L800 600 L0 600Z" fill="url(#road)"/>
+
+  <g opacity=".9" fill="none" stroke="#d9e3ea" stroke-width="7" stroke-dasharray="38 28">
+    <path d="M0 462 H800"/>
+    <path d="M0 540 H800"/>
+  </g>
+
+  <g class="label" filter="url(#shadow)">
+    <rect x="34" y="26" width="732" height="68" rx="20" fill="#fff" stroke="#202735" stroke-width="6"/>
+    <text x="400" y="70" text-anchor="middle" font-size="30" font-weight="900" letter-spacing="2">THE GREAT PELICAN GRAND PRIX</text>
+  </g>
+  <text class="label small" x="400" y="124" text-anchor="middle">“WHY WALK WHEN YOU CAN WOBBLE WITH STYLE?”</text>
+
+  <g transform="translate(0 8)" filter="url(#shadow)">
+    <!-- bicycle -->
+    <g id="bike">
+      <g fill="none" class="ink">
+        <circle cx="240" cy="456" r="76" fill="#ecf3f7"/>
+        <circle cx="585" cy="456" r="76" fill="#ecf3f7"/>
+        <path d="M240 456 L350 390 L445 456 L240 456 L390 456 L350 390 L585 456"/>
+        <path d="M350 390 L332 350"/>
+        <path d="M310 350 H350"/>
+        <path d="M445 456 L455 375"/>
+        <path d="M438 368 H477"/>
+      </g>
+      <g id="wheelSpin" fill="none" stroke="#7f9aaa" stroke-width="3">
+        <path d="M240 456 L240 380 M240 456 L240 532 M240 456 L164 456 M240 456 L316 456 M240 456 L186 402 M240 456 L294 510 M240 456 L186 510 M240 456 L294 402"/>
+        <path d="M585 456 L585 380 M585 456 L585 532 M585 456 L509 456 M585 456 L661 456 M585 456 L531 402 M585 456 L639 510 M585 456 L531 510 M585 456 L639 402"/>
+      </g>
+      <circle cx="240" cy="456" r="9" fill="#202735"/>
+      <circle cx="585" cy="456" r="9" fill="#202735"/>
+      <path d="M385 456 q28 -24 54 0" fill="none" class="ink"/>
+      <circle cx="404" cy="456" r="14" fill="#ffcc3d" class="ink"/>
+      <path d="M404 456 l23 -13 M404 456 l-17 22" class="ink"/>
+      <path d="M375 390 l-22 -17" class="ink"/>
+      <path d="M353 373 h-30" class="ink"/>
+    </g>
+
+    <!-- pelican body and bobbing group -->
+    <g id="pelican" class="ink">
+      <ellipse cx="405" cy="287" rx="77" ry="93" fill="#f7f9fb"/>
+      <path d="M360 274 Q310 323 337 369 Q369 380 399 345" fill="#d7e1e8"/>
+      <ellipse cx="420" cy="178" rx="63" ry="66" fill="#f7f9fb"/>
+      <path d="M378 188 Q420 203 477 178 L554 205 Q570 216 550 229 L474 241 Q420 230 378 211Z" fill="#f28b3c"/>
+      <path d="M474 178 Q498 153 522 163 Q511 185 474 193Z" fill="#f28b3c"/>
+      <circle cx="444" cy="163" r="10" fill="#202735" stroke="none"/>
+      <circle cx="447" cy="159" r="3.5" fill="#fff" stroke="none"/>
+      <path d="M408 119 Q430 91 459 111" fill="none"/>
+      <path d="M398 232 Q430 255 463 230" fill="none"/>
+      <path d="M346 287 Q304 263 283 292 Q309 318 360 323Z" fill="#e8eef2"/>
+      <path d="M371 350 Q351 398 364 429" fill="none"/>
+      <path d="M446 348 Q463 398 450 429" fill="none"/>
+      <path d="M349 429 q15 15 31 0 M434 429 q16 15 32 0" fill="none"/>
+      <!-- absurd fish -->
+      <path d="M478 264 Q568 224 653 265 Q568 307 478 277Z" fill="#77c8d2"/>
+      <path d="M652 265 l39 -25 l-9 25 l9 25Z" fill="#4aa3b0"/>
+      <circle cx="626" cy="260" r="5" fill="#202735" stroke="none"/>
+      <path d="M493 272 Q565 293 625 271" fill="none" stroke="#31858f" stroke-width="4"/>
+      <text class="label" x="552" y="252" text-anchor="middle" font-size="15" font-weight="900" stroke="none" fill="#174a52">LUNCH?</text>
+    </g>
+
+    <!-- feet on pedals -->
+    <path d="M366 429 Q394 453 419 465" fill="none" class="ink"/>
+    <path d="M449 429 Q428 454 407 465" fill="none" class="ink"/>
+    <ellipse cx="423" cy="466" rx="18" ry="7" fill="#f28b3c"/>
+    <ellipse cx="403" cy="466" rx="18" ry="7" fill="#f28b3c"/>
+  </g>
+
+  <g class="label">
+    <path d="M92 205 Q163 170 245 207" fill="none" stroke="#fff" stroke-width="5" opacity=".8"/>
+    <path d="M105 227 Q170 194 236 225" fill="none" stroke="#fff" stroke-width="5" opacity=".8"/>
+    <text x="126" y="270" font-size="22" font-weight="900" transform="rotate(-8 126 270)">HONK!</text>
+    <text x="642" y="352" font-size="20" font-weight="900" transform="rotate(8 642 352)">SERIOUSLY?</text>
+  </g>
+
+  <rect x="25" y="548" width="750" height="38" rx="12" fill="#fff" stroke="#202735" stroke-width="4"/>
+  <text class="label tiny" x="400" y="573" text-anchor="middle">2026-10-27 06:01:39 SGT (UTC+08:00)</text>
+
+  <style>
+    #wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.4s linear infinite}
+    #pelican{transform-box:fill-box;transform-origin:center bottom;animation:bob .7s ease-in-out infinite alternate}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{from{transform:translateY(0) rotate(-1deg)}to{transform:translateY(-7px) rotate(1deg)}}
+  </style>
+</svg>
