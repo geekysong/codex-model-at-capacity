@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commuter</title>
+  <desc id="desc">A proud pelican pedals a bicycle along a sunny road, carrying a fish in its beak.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#8eddf0"/>
+      <stop offset="1" stop-color="#e5f8ee"/>
+    </linearGradient>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .48s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-5px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="135" r="54" fill="#ffd45e"/>
+  <g fill="#fff" opacity=".85">
+    <ellipse cx="135" cy="115" rx="50" ry="17"/><ellipse cx="168" cy="108" rx="33" ry="22"/>
+    <ellipse cx="555" cy="85" rx="39" ry="13"/><ellipse cx="580" cy="78" rx="25" ry="17"/>
+  </g>
+
+  <text id="title" x="400" y="54" text-anchor="middle" font-size="31" font-weight="900" letter-spacing="1.5" fill="#17324d">THE PELICAN COMMUTER</text>
+  <text x="400" y="82" text-anchor="middle" font-size="15" font-weight="700" fill="#31546a">“If it fits in the beak, it counts as a carry-on.”</text>
+
+  <path d="M0 390 Q160 340 330 385 T800 365 V505 H0Z" fill="#a6d68d"/>
+  <path d="M0 430 Q190 393 390 427 T800 408 V520 H0Z" fill="#79b875"/>
+  <path d="M0 478 H800 V550 H0Z" fill="#48515a"/>
+  <path d="M0 510 H800" stroke="#f8e7a2" stroke-width="5" stroke-dasharray="36 28"/>
+
+  <g fill="#4b8d61">
+    <path d="M86 393l20-64 20 64z"/><path d="M110 393l25-78 25 78z"/>
+    <path d="M640 390l22-69 22 69z"/><path d="M675 390l28-84 28 84z"/>
+  </g>
+
+  <g class="wheel" aria-label="spinning rear wheel">
+    <circle cx="245" cy="443" r="65" fill="#273641" stroke="#172630" stroke-width="7"/>
+    <circle cx="245" cy="443" r="51" fill="#dce8e5" stroke="#fff" stroke-width="3"/>
+    <g stroke="#7b9193" stroke-width="2">
+      <path d="M245 392v102M194 443h102M209 407l72 72M281 407l-72 72"/>
+    </g>
+    <circle cx="245" cy="443" r="7" fill="#293a44"/>
+  </g>
+  <g class="wheel" aria-label="spinning front wheel">
+    <circle cx="535" cy="443" r="65" fill="#273641" stroke="#172630" stroke-width="7"/>
+    <circle cx="535" cy="443" r="51" fill="#dce8e5" stroke="#fff" stroke-width="3"/>
+    <g stroke="#7b9193" stroke-width="2">
+      <path d="M535 392v102M484 443h102M499 407l72 72M571 407l-72 72"/>
+    </g>
+    <circle cx="535" cy="443" r="7" fill="#293a44"/>
+  </g>
+
+  <g stroke="#e65b3e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M245 443L345 443 405 350 455 443 535 443 405 350"/>
+    <path d="M455 443L495 344"/>
+    <path d="M474 340h49"/>
+    <path d="M332 432h38"/>
+  </g>
+  <circle cx="345" cy="443" r="9" fill="#f3bf44" stroke="#8e5b29" stroke-width="3"/>
+  <g class="rider">
+    <path d="M342 443l-18 34M350 443l27 29" fill="none" stroke="#25495e" stroke-width="9" stroke-linecap="round"/>
+    <path d="M324 477l-17 3M377 472l17 5" stroke="#263a44" stroke-width="8" stroke-linecap="round"/>
+    <path d="M405 350l-25-48M405 350l38-33" fill="none" stroke="#f2b844" stroke-width="11" stroke-linecap="round"/>
+    <path d="M380 302l-16 4M443 317l16 6" stroke="#263a44" stroke-width="8" stroke-linecap="round"/>
+    <path d="M374 291q22-43 61-20l20 37q-31 22-66 1z" fill="#fff" stroke="#29485a" stroke-width="4"/>
+    <path d="M417 282q26-21 49-5l-18 26q-21 7-31-21z" fill="#f2b844" stroke="#29485a" stroke-width="4"/>
+    <path d="M456 282q34-17 67-4-31 17-61 23z" fill="#f3a52d" stroke="#b96921" stroke-width="3"/>
+    <path d="M462 290q24-3 48-8" fill="none" stroke="#b96921" stroke-width="2"/>
+    <ellipse cx="466" cy="266" rx="6" ry="8" fill="#fff"/>
+    <circle cx="468" cy="267" r="3.2" fill="#172d3b"/>
+    <path d="M373 279q23-31 54-7l-5 9q-27-13-47 7z" fill="#e65b3e"/>
+    <path d="M379 277q15-22 36-10" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M500 274q-7-17 9-19 14 2 8 19" fill="#fff" stroke="#25495e" stroke-width="3"/>
+    <path d="M505 256v-7M513 256v-7" stroke="#25495e" stroke-width="3"/>
+  </g>
+  <path d="M533 339q22-18 38 0l-10 14h-30z" fill="#f2b844" stroke="#29485a" stroke-width="3"/>
+  <path d="M543 337l8-14 8 14" fill="#f2b844" stroke="#29485a" stroke-width="3"/>
+
+  <g transform="translate(550 214) rotate(10)">
+    <path d="M0 0q25-17 47 0-22 17-47 0z" fill="#71b8d0" stroke="#27536a" stroke-width="3"/>
+    <path d="M0 0l-13-11v22z" fill="#f2b844" stroke="#27536a" stroke-width="2"/>
+    <circle cx="37" cy="-3" r="2.5" fill="#17324d"/>
+  </g>
+  <path d="M510 222q-14-16 2-25M524 216q-4-19 14-24" fill="none" stroke="#e65b3e" stroke-width="4" stroke-linecap="round"/>
+  <text x="565" y="190" font-size="14" font-weight="800" fill="#9b4d36">FRESH DELIVERY!</text>
+
+  <path d="M98 457q22-21 44 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="555" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">ON TIME. OVERBEAKED. UNDERCARRIED.</text>
+  <rect x="0" y="572" width="800" height="28" fill="#17324d"/>
+  <text x="400" y="592" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">2026-10-26 15:33:08 SGT (UTC+08:00)</text>
+</svg>
