@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT WHEEL DEAL</title>
+  <desc id="desc">A smug pelican rides a bicycle while its enormous beak carries a tiny fish. The wheels spin and the pelican bobs along.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 3s linear infinite; }
+      .rider { animation: bob .65s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-5px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8e9c8"/>
+  <path d="M0 356 Q120 332 240 354 T480 350 T800 351 V600 H0Z" fill="#b5d9c1"/>
+  <path d="M0 380 Q170 360 340 378 T800 372" fill="none" stroke="#8bbca0" stroke-width="3"/>
+  <circle cx="701" cy="112" r="45" fill="#f2b84b"/>
+  <path d="M0 447 H800" stroke="#344c49" stroke-width="8"/>
+  <path d="M0 454 H800" stroke="#f8e9c8" stroke-width="3" stroke-dasharray="28 26"/>
+
+  <text id="title" x="400" y="52" text-anchor="middle" font-size="30" font-weight="900" letter-spacing="1.5" fill="#243c3a">THE GREAT WHEEL DEAL</text>
+  <text x="400" y="79" text-anchor="middle" font-size="15" font-weight="700" fill="#49645c">A pelican pedals past the fish market. The fish remains unconvinced.</text>
+
+  <g fill="#fff8e8" stroke="#344c49" stroke-width="3">
+    <path d="M84 123 h152 a13 13 0 0 1 13 13 v42 a13 13 0 0 1-13 13 h-78 l-22 19 6-19 H84 a13 13 0 0 1-13-13 v-42 a13 13 0 0 1 13-13Z"/>
+    <path d="M555 158 h157 a13 13 0 0 1 13 13 v38 a13 13 0 0 1-13 13 h-91 l-19 18 4-18 h-51 a13 13 0 0 1-13-13 v-38 a13 13 0 0 1 13-13Z"/>
+  </g>
+  <text x="161" y="151" text-anchor="middle" font-size="14" font-weight="900" fill="#344c49">I'M ON A</text>
+  <text x="161" y="170" text-anchor="middle" font-size="14" font-weight="900" fill="#344c49">SEAT DIET.</text>
+  <text x="634" y="184" text-anchor="middle" font-size="13" font-weight="900" fill="#344c49">THAT'S NOT</text>
+  <text x="634" y="202" text-anchor="middle" font-size="13" font-weight="900" fill="#344c49">HOW BIKES WORK.</text>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#d85e42" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M220 360 L328 360 L390 270 L286 270 Z"/>
+    <path d="M328 360 L390 270 L470 360 L328 360"/>
+    <path d="M390 270 L421 245"/>
+    <path d="M410 245 L439 245"/>
+    <path d="M286 270 L273 249"/>
+    <path d="M258 249 L286 249"/>
+  </g>
+  <g fill="none" stroke="#344c49" stroke-width="5">
+    <circle class="wheel" cx="220" cy="360" r="83"/>
+    <circle class="wheel" cx="470" cy="360" r="83"/>
+    <circle cx="328" cy="360" r="9" fill="#f2b84b"/>
+    <path d="M328 360 l22-24 m-22 24 24 21"/>
+    <path d="M220 277 V443 M137 360 H303 M161 301 L279 419 M161 419 L279 301"/>
+    <path d="M470 277 V443 M387 360 H553 M411 301 L529 419 M411 419 L529 301"/>
+  </g>
+
+  <!-- Pelican and little fish bounce together -->
+  <g class="rider">
+    <path d="M314 263 Q292 223 315 190 Q338 162 374 174 Q403 183 406 216 Q409 243 387 261Z" fill="#fff8e8" stroke="#344c49" stroke-width="4"/>
+    <path d="M323 230 Q337 210 367 216 Q390 221 395 243 Q374 264 342 256Z" fill="#e58b56" stroke="#344c49" stroke-width="3"/>
+    <path d="M375 192 Q398 170 424 179 Q440 185 451 199 L512 205 Q527 207 521 217 L448 224 Q425 240 398 231Z" fill="#f2b84b" stroke="#344c49" stroke-width="4"/>
+    <path d="M451 199 Q479 198 512 205 Q524 207 521 217 Q486 224 448 224" fill="#df704c" stroke="#344c49" stroke-width="3"/>
+    <circle cx="395" cy="190" r="5" fill="#243c3a"/>
+    <circle cx="396" cy="189" r="1.5" fill="#fff"/>
+    <path d="M421 178 Q435 162 449 175" fill="none" stroke="#344c49" stroke-width="3" stroke-linecap="round"/>
+    <path d="M336 255 L323 270 M378 256 L392 270" stroke="#344c49" stroke-width="6" stroke-linecap="round"/>
+    <path d="M321 269 L307 271 M391 269 L405 271" stroke="#344c49" stroke-width="5" stroke-linecap="round"/>
+    <path d="M346 257 L340 283 M382 256 L395 279" stroke="#344c49" stroke-width="5" stroke-linecap="round"/>
+    <!-- tiny fish caught in the beak -->
+    <g transform="translate(474 178) rotate(-12)">
+      <path d="M0 10 Q14 -3 29 10 Q14 23 0 10Z" fill="#78b9be" stroke="#344c49" stroke-width="2"/>
+      <path d="M28 10 L39 2 V18Z" fill="#78b9be" stroke="#344c49" stroke-width="2"/>
+      <circle cx="8" cy="8" r="1.7" fill="#243c3a"/>
+    </g>
+  </g>
+
+  <path d="M115 332 q-16-12 0-24 M555 315 q16-12 0-24 M602 353 q18-8 23-22" fill="none" stroke="#fff8e8" stroke-width="5" stroke-linecap="round"/>
+  <text x="400" y="500" text-anchor="middle" font-size="19" font-weight="900" fill="#344c49">“I said I wanted to get a little more pedal to the metal.”</text>
+  <text x="400" y="524" text-anchor="middle" font-size="13" font-weight="700" fill="#557068">He heard “beak to the street.” The fish is filing a complaint.</text>
+
+  <rect x="0" y="552" width="800" height="48" fill="#243c3a"/>
+  <text x="400" y="582" text-anchor="middle" font-size="17" font-weight="800" letter-spacing=".5" fill="#fff8e8">2026-10-26 21:33:27 SGT (UTC+08:00)</text>
+</svg>
