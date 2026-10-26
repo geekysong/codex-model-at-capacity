@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon of a pelican proudly riding a tiny bicycle while fish attempt to escape from its enormous beak.</desc>
+  <style>
+    .ink { stroke:#17212b; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+    .thin { stroke:#17212b; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+    .wheel { animation: spin 1.15s linear infinite; transform-origin:center; }
+    .bob { animation: bob .58s ease-in-out infinite alternate; transform-origin:400px 310px; }
+    .legA { animation: pedalA 1.15s linear infinite; transform-origin:390px 397px; }
+    .legB { animation: pedalB 1.15s linear infinite; transform-origin:430px 397px; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    @keyframes bob { to { transform:translateY(-7px) rotate(-1deg); } }
+    @keyframes pedalA { 50% { transform:rotate(28deg); } }
+    @keyframes pedalB { 50% { transform:rotate(-28deg); } }
+  </style>
+
+  <rect width="800" height="600" fill="#bdeaff"/>
+  <path d="M0 314 C126 270 211 335 330 300 S568 278 800 320 V472 H0Z" fill="#85d56b"/>
+  <path d="M0 447 C164 426 274 455 426 437 S652 421 800 448 V510 H0Z" fill="#f7ca61"/>
+  <path d="M0 470 H800" class="thin" fill="none" stroke="#d99942" stroke-dasharray="12 14"/>
+
+  <g fill="#fff">
+    <path d="M85 102c18-28 57-28 72 0 21-13 52 2 52 27H67c0-15 8-23 18-27Z"/>
+    <path d="M592 83c14-23 47-23 59 0 18-11 43 2 45 25H567c1-14 11-22 25-25Z"/>
+  </g>
+
+  <text x="400" y="64" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="38" fill="#17212b">PELICAN PEDAL PANIC</text>
+  <text x="400" y="96" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#31485b">“Sustainable transport, unsustainable fish anxiety.”</text>
+
+  <g class="wheel">
+    <circle cx="242" cy="422" r="69" fill="#d9f4ff" class="ink"/>
+    <circle cx="242" cy="422" r="8" fill="#f6b544" class="thin"/>
+    <path d="M242 353V491M173 422H311M193 373l98 98M291 373l-98 98" class="thin" fill="none" stroke="#63818c"/>
+  </g>
+  <g class="wheel">
+    <circle cx="526" cy="422" r="69" fill="#d9f4ff" class="ink"/>
+    <circle cx="526" cy="422" r="8" fill="#f6b544" class="thin"/>
+    <path d="M526 353V491M457 422H595M477 373l98 98M575 373l-98 98" class="thin" fill="none" stroke="#63818c"/>
+  </g>
+
+  <g fill="none" class="ink">
+    <path d="M242 422L338 315 434 422 242 422 373 422 526 422 434 315 482 284"/>
+    <path d="M338 315L390 315"/>
+    <path d="M526 422L480 286"/>
+  </g>
+  <path d="M468 280h42" class="ink" fill="none"/>
+  <circle cx="434" cy="422" r="16" fill="#f6b544" class="ink"/>
+  <path d="M434 422l36 25M434 422l-35-22" class="ink" fill="none"/>
+
+  <g class="bob">
+    <path d="M363 264c-36-52-8-122 49-126 57-4 91 44 68 102-11 28-31 45-55 56Z" fill="#f4f6f1" class="ink"/>
+    <path d="M390 172c-15 42-9 104 35 149l-67 12c-30-34-35-99-12-142Z" fill="#7c9ca1" class="ink"/>
+    <path d="M431 181c59-36 127-14 158 16-39 17-90 44-158 46Z" fill="#f6ae37" class="ink"/>
+    <path d="M431 243c51 8 107 7 142-15-9 45-62 91-139 59Z" fill="#ffd268" class="ink"/>
+    <path d="M452 222c23-13 50-16 79-9" class="thin" fill="none" stroke="#d98628"/>
+
+    <circle cx="419" cy="178" r="19" fill="#fff" class="thin"/>
+    <circle cx="423" cy="180" r="7" fill="#17212b"/>
+    <path d="M389 158q28-18 48 0" class="thin" fill="none"/>
+    <path d="M434 199q-16 12-29 2" class="thin" fill="none"/>
+
+    <path d="M386 285c-38 18-72 24-100 8 13-26 55-33 92-31Z" fill="#f4f6f1" class="ink"/>
+    <path d="M405 284c29 21 52 47 55 76-29 3-55-31-64-62Z" fill="#f4f6f1" class="ink"/>
+
+    <g class="legA">
+      <path d="M387 320c9 27 15 56 44 77" fill="none" stroke="#f5a332" class="ink"/>
+      <path d="M426 397h34" class="ink" fill="none"/>
+    </g>
+    <g class="legB">
+      <path d="M424 321c0 34-4 60-27 82" fill="none" stroke="#f5a332" class="ink"/>
+      <path d="M386 404h31" class="ink" fill="none"/>
+    </g>
+  </g>
+
+  <g transform="translate(585 323)">
+    <path d="M0 34c19-24 44-24 61 0-21 10-40 11-61 0Z" fill="#65b9da" class="thin"/>
+    <path d="M18 34v17M45 34v17" class="thin" fill="none"/>
+    <circle cx="19" cy="29" r="3" fill="#17212b"/>
+    <path d="M65 17c26-20 49-9 60 5-20 8-38 8-60-5Z" fill="#65b9da" class="thin"/>
+    <path d="M107 22l18-7-9 15Z" fill="#f6ae37" class="thin"/>
+  </g>
+  <path d="M592 281q25-23 48-3" class="thin" fill="none"/>
+  <text x="619" y="273" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#17212b">RUN, FINN!</text>
+
+  <rect y="520" width="800" height="80" fill="#17212b"/>
+  <text x="400" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#fff">A pelican on a bicycle: proof that every commute needs more beak power.</text>
+  <text x="400" y="579" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#bdeaff">2026-10-26 12:32:37 SGT (UTC+08:00)</text>
+</svg>

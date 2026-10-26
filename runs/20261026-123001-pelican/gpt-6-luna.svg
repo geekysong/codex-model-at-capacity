@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Beak Pedals</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling furiously while a fish rides in its beak.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#18343b;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f8f2df;stroke:#18343b;stroke-width:8}
+      .spoke{stroke:#74a6a3;stroke-width:2}
+      .frame{fill:none;stroke:#e45d43;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .type{font-family:Arial,Helvetica,sans-serif}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bce8e1"/>
+  <path d="M0 350 Q140 302 260 344 T520 332 T800 340 V540 H0Z" fill="#8ac9ad"/>
+  <path d="M0 424 Q180 397 360 423 T800 414" fill="none" stroke="#62ad91" stroke-width="5"/>
+  <circle cx="700" cy="104" r="43" fill="#ffd36b"/>
+  <path d="M0 492 Q210 477 400 493 T800 483" fill="none" stroke="#18343b" stroke-width="4"/>
+
+  <text id="title" x="400" y="55" text-anchor="middle" class="type" font-size="33" font-weight="900" letter-spacing="1.5" fill="#18343b">THE BEAK PEDALS</text>
+  <text x="400" y="83" text-anchor="middle" class="type" font-size="16" font-weight="700" fill="#31565a">Tour de Pond: all beak, absolutely no brakes.</text>
+
+  <!-- Bicycle wheels spin in a seamless loop. -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 255 422" to="360 255 422" dur="2.4s" repeatCount="indefinite"/>
+    <circle class="wheel" cx="255" cy="422" r="62"/>
+    <circle class="spoke" cx="255" cy="422" r="4" fill="#18343b"/>
+    <path class="spoke" d="M255 360V484 M193 422H317 M211 378L299 466 M299 378L211 466"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 545 422" to="360 545 422" dur="2.4s" repeatCount="indefinite"/>
+    <circle class="wheel" cx="545" cy="422" r="62"/>
+    <circle class="spoke" cx="545" cy="422" r="4" fill="#18343b"/>
+    <path class="spoke" d="M545 360V484 M483 422H607 M501 378L589 466 M589 378L501 466"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <path class="frame" d="M255 422 L346 354 L420 422 L255 422 M346 354 L491 354 L420 422 L545 422 M491 354 L545 422"/>
+  <path d="M255 422 L346 354 M346 354 L420 422" fill="none" stroke="#f29a54" stroke-width="3"/>
+  <circle cx="420" cy="422" r="17" fill="#ffd36b" class="ink"/>
+  <path d="M420 422 L431 388 M420 422 L392 439" fill="none" stroke="#18343b" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="431" cy="388" r="5" fill="#18343b"/>
+  <circle cx="392" cy="439" r="5" fill="#18343b"/>
+  <path d="M346 354 L334 340 M316 340 H350 M491 354 L503 332 M490 332 H520" fill="none" stroke="#18343b" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Pelican and its jaunty riding bob -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0;0 3;0 0" dur=".8s" repeatCount="indefinite"/>
+    <!-- body -->
+    <path d="M353 275 Q377 226 432 237 Q477 248 479 293 Q476 332 438 351 L390 351 Q355 334 353 275Z" fill="#fff8e8" class="ink"/>
+    <path d="M375 296 Q402 270 449 282 Q446 318 416 328 Q393 323 375 296Z" fill="#d9e5dc" stroke="#18343b" stroke-width="4"/>
+    <!-- tail feathers -->
+    <path d="M462 286 L496 273 L480 300 M462 300 L494 301 L476 314" fill="#fff8e8" class="ink"/>
+    <!-- neck -->
+    <path d="M388 269 Q378 219 400 180 Q418 150 452 165 Q474 178 457 207 L436 250" fill="#fff8e8" class="ink"/>
+    <!-- head -->
+    <ellipse cx="440" cy="161" rx="41" ry="35" fill="#fff8e8" class="ink"/>
+    <path d="M462 170 Q514 169 557 186 Q514 203 464 187Z" fill="#f2a447" class="ink"/>
+    <path d="M467 181 Q508 186 544 188 Q520 216 479 205 Q466 201 467 181Z" fill="#ef7859" stroke="#18343b" stroke-width="4"/>
+    <!-- fish in bill -->
+    <path d="M500 185 Q514 170 530 183 Q539 191 530 199 Q514 209 500 193 L490 200 L492 181Z" fill="#77c8c3" stroke="#18343b" stroke-width="3"/>
+    <circle cx="523" cy="187" r="2.5" fill="#18343b"/>
+    <!-- eye and brow -->
+    <circle cx="449" cy="153" r="5.5" fill="#18343b"/>
+    <path d="M440 141 Q451 133 461 140" fill="none" stroke="#18343b" stroke-width="4" stroke-linecap="round"/>
+    <!-- aviator cap -->
+    <path d="M402 146 Q414 117 448 124 Q468 128 476 147 L465 151 Q440 135 410 153Z" fill="#e45d43" stroke="#18343b" stroke-width="4"/>
+    <path d="M410 147 L405 158 M468 143 L474 151" stroke="#18343b" stroke-width="4" stroke-linecap="round"/>
+    <!-- wing -->
+    <path d="M402 267 Q431 253 455 278 Q437 295 406 294 Q394 286 402 267Z" fill="#fff" stroke="#18343b" stroke-width="4"/>
+    <path d="M414 276 Q431 277 443 284" fill="none" stroke="#aec9bf" stroke-width="3" stroke-linecap="round"/>
+    <!-- legs and pedals -->
+    <path d="M404 345 Q391 372 402 395 L392 420 M447 345 Q457 370 446 393 L431 388" fill="none" stroke="#ef7859" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M390 420 L376 422 M431 388 L444 384" fill="none" stroke="#18343b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M390 420 L392 439 M431 388 L420 422" fill="none" stroke="#18343b" stroke-width="3"/>
+    <circle cx="390" cy="420" r="4" fill="#ffd36b" stroke="#18343b" stroke-width="2"/>
+    <circle cx="431" cy="388" r="4" fill="#ffd36b" stroke="#18343b" stroke-width="2"/>
+  </g>
+
+  <!-- Motion marks and comic aside -->
+  <path d="M220 316 L191 304 M218 334 L180 331 M574 298 L602 283 M580 318 L616 316" fill="none" stroke="#18343b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M579 222 Q592 204 609 215 Q620 195 638 207 Q657 220 635 240 L610 255Z" fill="#fff8e8" class="ink"/>
+  <text x="617" y="230" text-anchor="middle" class="type" font-size="14" font-weight="800" fill="#18343b">MINE!</text>
+  <text x="535" y="270" class="type" font-size="13" font-weight="700" fill="#31565a" transform="rotate(-8 535 270)">fish-powered</text>
+
+  <rect x="0" y="520" width="800" height="80" fill="#18343b"/>
+  <text x="400" y="563" text-anchor="middle" class="type" font-size="17" font-weight="700" fill="#fff8e8">“I’m not late. I’m just taking the scenic route to lunch.”</text>
+  <text x="400" y="588" text-anchor="middle" class="type" font-size="13" font-weight="600" fill="#ffd36b">2026-10-26 12:32:18 SGT (UTC+08:00)</text>
+</svg>
