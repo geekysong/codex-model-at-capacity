@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe4ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59616b"/>
+      <stop offset="1" stop-color="#252b32"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#17212b}
+      .small{font-size:16px;font-weight:bold}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="45" fill="#fff2a6" opacity=".9"/>
+  <path d="M0 365 Q120 315 235 360 T470 350 T800 345 L800 600 L0 600Z" fill="#9bd38c"/>
+  <path d="M0 430 Q200 400 400 425 T800 415 L800 600 L0 600Z" fill="url(#road)"/>
+  <path d="M0 515 H800" stroke="#f5d66a" stroke-width="8" stroke-dasharray="48 30"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#ffffff"
+        stroke="#17212b" stroke-width="3" paint-order="stroke">THE GREAT BEAK ESCAPE</text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="20" font-weight="700">
+    A pelican proves that “taking the lane” is mostly about taking lunch.
+  </text>
+
+  <g opacity=".8" fill="#ffffff">
+    <path d="M95 150 q25-22 50 0 q25-22 50 0 q-25 20-100 0Z"/>
+    <path d="M540 175 q20-18 40 0 q20-18 40 0 q-20 17-80 0Z"/>
+  </g>
+
+  <!-- bicycle -->
+  <g id="bicycle">
+    <g id="rearWheel">
+      <circle cx="250" cy="438" r="72" fill="#202832" class="ink"/>
+      <circle cx="250" cy="438" r="57" fill="none" stroke="#d7e1e8" stroke-width="5"/>
+      <circle cx="250" cy="438" r="9" fill="#f2c94c" class="ink"/>
+      <g stroke="#d7e1e8" stroke-width="3">
+        <path d="M250 381V495M193 438H307M210 398L290 478M290 398L210 478"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 250 438" to="360 250 438" dur="2s" repeatCount="indefinite"/>
+    </g>
+    <g id="frontWheel">
+      <circle cx="575" cy="438" r="72" fill="#202832" class="ink"/>
+      <circle cx="575" cy="438" r="57" fill="none" stroke="#d7e1e8" stroke-width="5"/>
+      <circle cx="575" cy="438" r="9" fill="#f2c94c" class="ink"/>
+      <g stroke="#d7e1e8" stroke-width="3">
+        <path d="M575 381V495M518 438H632M535 398L615 478M615 398L535 478"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 575 438" to="360 575 438" dur="2s" repeatCount="indefinite"/>
+    </g>
+
+    <path d="M250 438 L355 335 L470 438 L250 438 L410 438 L355 335 L575 438 L545 320" fill="none" stroke="#e94f37" stroke-width="12" class="ink"/>
+    <path d="M470 438 L410 438" stroke="#e94f37" stroke-width="12" class="ink"/>
+    <path d="M535 320 L575 438" stroke="#17212b" stroke-width="7" class="ink"/>
+    <path d="M510 317 L560 317" stroke="#17212b" stroke-width="7" class="ink"/>
+    <path d="M335 330 L315 300" stroke="#17212b" stroke-width="8" class="ink"/>
+    <path d="M300 299 H340" stroke="#17212b" stroke-width="8" class="ink"/>
+
+    <g id="pedal">
+      <circle cx="410" cy="438" r="14" fill="#f2c94c" class="ink"/>
+      <path d="M410 438 L386 420 M410 438 L435 458" stroke="#17212b" stroke-width="7" class="ink"/>
+      <path d="M373 416 H393 M427 458 H447" stroke="#17212b" stroke-width="7" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 410 438" to="360 410 438" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- pelican -->
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="390" cy="285" rx="92" ry="112" fill="#f4f0df" class="ink"/>
+    <ellipse cx="390" cy="315" rx="60" ry="82" fill="#ffffff" opacity=".9"/>
+    <path d="M337 263 Q285 250 278 290 Q325 304 370 286Z" fill="#f4f0df" class="ink"/>
+    <path d="M300 286 Q250 300 226 333 Q286 337 350 305Z" fill="#f39b45" class="ink"/>
+    <path d="M226 333 Q283 359 350 305 Q300 335 226 333Z" fill="#ffbf68" class="ink"/>
+    <circle cx="365" cy="230" r="34" fill="#f4f0df" class="ink"/>
+    <circle cx="375" cy="225" r="7" fill="#17212b"/>
+    <path d="M348 196 Q365 176 389 195" fill="none" stroke="#e94f37" stroke-width="8" class="ink"/>
+    <path d="M350 356 Q340 405 318 438" fill="none" stroke="#f39b45" stroke-width="14" class="ink"/>
+    <path d="M430 356 Q440 405 468 438" fill="none" stroke="#f39b45" stroke-width="14" class="ink"/>
+    <path d="M318 438 l-24 13 M318 438 l20 13 M468 438 l-22 13 M468 438 l25 8" fill="none" stroke="#17212b" stroke-width="7" class="ink"/>
+    <path d="M350 300 Q390 330 430 300" fill="none" stroke="#17212b" stroke-width="5"/>
+    <text x="390" y="275" text-anchor="middle" class="label small" fill="#d84b32">NO FLY ZONE</text>
+  </g>
+
+  <g transform="translate(620 275) rotate(8)">
+    <path d="M0 0 q35-25 70 0 q-35 25-70 0Z" fill="#ffffff" class="ink"/>
+    <text x="35" y="6" text-anchor="middle" class="label small">HONK!</text>
+  </g>
+
+  <text x="400" y="548" text-anchor="middle" class="label" font-size="19" font-weight="700">
+    Caption: “He said he was cycling for fish… then billed the peloton for snacks.”
+  </text>
+  <text x="400" y="582" text-anchor="middle" class="label" font-size="15" font-weight="700">
+    2026-10-27 05:02:06 SGT (UTC+08:00)
+  </text>
+</svg>
