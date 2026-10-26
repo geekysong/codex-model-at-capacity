@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals to Glory</title>
+  <desc id="desc">A satirical cartoon of an enthusiastic pelican riding a bicycle.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#18213a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#18213a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      text{font-family:Arial,Helvetica,sans-serif;fill:#18213a}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+      .bob{animation:bob .55s ease-in-out infinite alternate}
+      .leg{transform-box:fill-box;transform-origin:top center;animation:pedal .55s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-7px) rotate(-1deg)}}
+      @keyframes pedal{to{transform:rotate(19deg)}}
+    </style>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#8cdaff"/><stop offset="1" stop-color="#eaf9ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="104" cy="102" r="47" fill="#ffe36a"/>
+  <path d="M0 330 Q100 270 205 325 T410 315 T610 320 T800 292 V465 H0Z" fill="#8ed47b"/>
+  <path d="M0 438 Q155 411 306 439 T590 421 T800 442 V512 H0Z" fill="#617a59"/>
+  <path d="M0 466 H800" stroke="#f5d85e" stroke-width="13" stroke-dasharray="35 22"/>
+
+  <g transform="translate(55 148)">
+    <rect x="0" y="0" width="164" height="86" rx="12" fill="#fff7d2" class="ink"/>
+    <text x="82" y="35" text-anchor="middle" font-weight="bold" font-size="17">BIKE LANE</text>
+    <text x="82" y="61" text-anchor="middle" font-size="15">FOR BIRDS*</text>
+    <text x="82" y="105" text-anchor="middle" font-size="12">*apparently</text>
+    <path d="M82 86v67" class="ink"/>
+  </g>
+
+  <text x="400" y="59" text-anchor="middle" font-size="38" font-weight="900" fill="#ef4d4d">PELICAN PEDALS TO GLORY!</text>
+  <text x="400" y="89" text-anchor="middle" font-size="18" font-weight="bold">“I was promised an all-you-can-eat bike lane.”</text>
+
+  <g class="spin" transform="translate(293 414)">
+    <circle r="74" fill="#dfe9ef" class="ink"/>
+    <circle r="12" fill="#ffcf57" class="ink"/>
+    <g class="thin" opacity=".8">
+      <path d="M0-62V62M-62 0H62M-44-44L44 44M44-44L-44 44"/>
+    </g>
+  </g>
+  <g class="spin" transform="translate(538 414)">
+    <circle r="74" fill="#dfe9ef" class="ink"/>
+    <circle r="12" fill="#ffcf57" class="ink"/>
+    <g class="thin" opacity=".8">
+      <path d="M0-62V62M-62 0H62M-44-44L44 44M44-44L-44 44"/>
+    </g>
+  </g>
+
+  <g class="thin" fill="none">
+    <path d="M293 414 L365 290 L438 414 Z"/>
+    <path d="M365 290 L490 290 L538 414"/>
+    <path d="M438 414 L490 290"/>
+    <path d="M490 290 L505 246 L548 225"/>
+    <path d="M352 281h47"/>
+    <path d="M536 223h39"/>
+  </g>
+  <path d="M378 278h43" class="ink"/>
+  <circle cx="438" cy="414" r="18" fill="#ffcf57" class="ink"/>
+  <path d="M438 414l-31 23M438 414l34-22" class="ink"/>
+
+  <g class="bob">
+    <path d="M393 288 Q420 250 454 286 L443 352 Q412 367 381 340Z" fill="#f5f4e8" class="ink"/>
+    <path d="M400 320 Q379 353 347 377" fill="none" class="ink"/>
+    <path d="M347 377l-17 44" fill="none" class="ink"/>
+    <path d="M407 323 Q436 351 465 366" fill="none" class="ink"/>
+    <path d="M465 366l-17 41" fill="none" class="ink"/>
+
+    <g class="leg">
+      <path d="M418 344 Q396 375 408 408" fill="none" class="ink"/>
+      <path d="M408 408l-26 19" fill="none" class="ink"/>
+    </g>
+    <g class="leg" style="animation-direction:alternate-reverse">
+      <path d="M434 346 Q452 380 446 410" fill="none" class="ink"/>
+      <path d="M446 410l28-18" fill="none" class="ink"/>
+    </g>
+
+    <path d="M403 285 Q387 230 423 187 Q465 145 511 183 Q533 214 511 258 Q482 293 445 291Z" fill="#f7f5e9" class="ink"/>
+    <path d="M419 203 Q457 163 499 190" fill="none" stroke="#b8d7e7" stroke-width="17" stroke-linecap="round"/>
+    <path d="M435 229 Q443 243 453 229" fill="none" class="thin"/>
+    <circle cx="463" cy="212" r="8" fill="#18213a"/>
+    <circle cx="466" cy="209" r="2.5" fill="white"/>
+    <path d="M493 217 Q550 219 583 249 Q542 290 482 273 Q464 245 493 217Z" fill="#ffbd42" class="ink"/>
+    <path d="M497 232 Q537 239 563 250" fill="none" class="thin"/>
+    <path d="M423 187 Q447 151 481 168 Q461 181 462 198Z" fill="#f2a348" class="ink"/>
+    <path d="M391 274 Q364 301 373 326 Q399 320 415 293" fill="#9fcfe0" class="ink"/>
+  </g>
+
+  <g transform="translate(624 213)">
+    <path d="M16 55 Q45 8 78 48 Q65 93 22 87Z" fill="#f4f4ee" class="ink"/>
+    <path d="M43 50l38 4-29 21" fill="#ffbd42" class="ink"/>
+    <circle cx="50" cy="41" r="4" fill="#18213a"/>
+    <path d="M3 99q34-16 75 0" fill="none" class="thin"/>
+    <text x="42" y="123" text-anchor="middle" font-size="14" font-weight="bold">SHOW-OFF.</text>
+  </g>
+
+  <rect y="526" width="800" height="74" fill="#18213a"/>
+  <text x="400" y="555" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff7d2">One bird. Two wheels. Zero respect for traffic regulations.</text>
+  <text x="400" y="583" text-anchor="middle" font-size="14" fill="#d7edf7">2026-10-26 13:02:40 SGT (UTC+08:00)</text>
+</svg>

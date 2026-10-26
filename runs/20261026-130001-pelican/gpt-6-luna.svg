@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commuter</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling past a sign that says “No fish in the bike lane.”</desc>
+  <defs>
+    <style>
+      .ink{stroke:#18313a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .55s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#c8eff0"/>
+  <circle cx="680" cy="110" r="47" fill="#ffd26b"/>
+  <path d="M0 330 Q110 290 220 328 T440 323 T660 324 T860 325 V600 H0Z" fill="#81c99b"/>
+  <path d="M0 420 H800 V600 H0Z" fill="#f4d39c"/>
+  <path d="M0 474 H800" stroke="#18313a" stroke-width="6" stroke-dasharray="32 24" opacity=".55"/>
+
+  <text x="400" y="54" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size=" thirty" fill="#18313a" style="font-size:30px">THE PELICAN COMMUTER</text>
+  <text x="400" y="83" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="17" fill="#31535a">He’s late for the fish market. Again.</text>
+
+  <g transform="translate(83 250)">
+    <rect x="0" y="0" width="130" height="82" rx="8" fill="#fff8df" class="ink"/>
+    <text x="65" y="29" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="800" fill="#18313a">BIKE LANE</text>
+    <text x="65" y="52" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="800" fill="#18313a">NO FISHING</text>
+    <path d="M28 61 L102 18" stroke="#ed6751" stroke-width="7" stroke-linecap="round"/>
+    <path d="M65 82 V150" class="ink"/>
+  </g>
+
+  <!-- Bicycle wheels and spokes -->
+  <g class="wheel">
+    <circle cx="270" cy="425" r="65" fill="#fffdf4" stroke="#18313a" stroke-width="7"/>
+    <circle cx="270" cy="425" r="7" fill="#18313a"/>
+    <path d="M270 360V490 M205 425H335 M224 379L316 471 M316 379L224 471" stroke="#57949a" stroke-width="3"/>
+  </g>
+  <g class="wheel">
+    <circle cx="540" cy="425" r="65" fill="#fffdf4" stroke="#18313a" stroke-width="7"/>
+    <circle cx="540" cy="425" r="7" fill="#18313a"/>
+    <path d="M540 360V490 M475 425H605 M494 379L586 471 M586 379L494 471" stroke="#57949a" stroke-width="3"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" class="ink">
+    <path d="M270 425 L355 425 L405 345 L470 425 L355 425 L330 350"/>
+    <path d="M330 350 L300 350 M390 345 L420 345"/>
+    <path d="M470 425 L520 350 M505 350 H540"/>
+    <path d="M355 425 L367 440 M367 440 L388 440"/>
+  </g>
+  <circle cx="367" cy="440" r="8" fill="#ed6751" stroke="#18313a" stroke-width="4"/>
+  <path d="M367 440 L345 458 M367 440 L389 459" class="ink" fill="none"/>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <!-- tail feathers -->
+    <path d="M389 253 Q430 230 445 253 Q421 267 393 266Z" fill="#f5f0dc" class="ink"/>
+    <!-- body -->
+    <ellipse cx="380" cy="255" rx="57" ry="42" fill="#f8f5e8" class="ink"/>
+    <path d="M343 266 Q380 283 413 258 Q397 298 363 294Z" fill="#ed6751" class="ink"/>
+    <!-- neck -->
+    <path d="M359 250 Q341 215 365 177 Q385 148 421 170 L412 191 Q390 183 379 201 Q368 220 389 239Z" fill="#f8f5e8" class="ink"/>
+    <!-- head -->
+    <ellipse cx="428" cy="163" rx="39" ry="32" fill="#f8f5e8" class="ink"/>
+    <path d="M451 167 Q507 169 528 184 Q503 207 453 190Z" fill="#f4a640" class="ink"/>
+    <path d="M459 184 Q485 203 509 189 Q500 218 469 206Z" fill="#ed6751" class="ink"/>
+    <!-- eye / expression -->
+    <circle cx="438" cy="155" r="5" fill="#18313a"/>
+    <path d="M426 145 Q438 138 449 144" fill="none" class="ink"/>
+    <path d="M455 143 Q474 132 488 139" fill="none" stroke="#18313a" stroke-width="4" stroke-linecap="round"/>
+    <!-- jaunty helmet -->
+    <path d="M395 143 Q405 112 439 118 Q462 122 468 144Z" fill="#4bb7b2" class="ink"/>
+    <path d="M390 145 Q427 139 474 148" fill="none" class="ink"/>
+    <!-- wing -->
+    <path d="M353 246 Q379 215 408 244 Q395 270 363 270Z" fill="#fffdf4" class="ink"/>
+    <path d="M364 245 Q382 249 394 258" fill="none" stroke="#96b7b1" stroke-width="3"/>
+    <!-- legs pedaling -->
+    <path d="M374 287 Q378 319 367 340 L350 359" fill="none" class="ink"/>
+    <path d="M403 282 Q413 311 397 332 L388 440" fill="none" class="ink"/>
+    <path d="M340 359 Q350 353 360 361 L354 369 Q345 369 338 365Z" fill="#f4a640" class="ink"/>
+    <path d="M380 440 Q389 433 399 439 L398 448 Q389 452 380 447Z" fill="#f4a640" class="ink"/>
+    <!-- wings on handlebars -->
+    <path d="M417 225 Q444 226 467 252 L457 263 Q431 250 409 247Z" fill="#f8f5e8" class="ink"/>
+  </g>
+
+  <!-- Tiny fish passenger -->
+  <g transform="translate(500 288)">
+    <ellipse cx="0" cy="0" rx="18" ry="10" fill="#64b7cb" stroke="#18313a" stroke-width="3"/>
+    <path d="M17 0 L30 -10 L30 10Z" fill="#64b7cb" stroke="#18313a" stroke-width="3"/>
+    <circle cx="-7" cy="-2" r="2" fill="#18313a"/>
+    <path d="M-18 0 H18" stroke="#fff" stroke-width="2"/>
+    <text x="0" y="31" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#18313a">“I called a taxi.”</text>
+  </g>
+
+  <path d="M610 270 Q645 247 680 267" fill="none" stroke="#18313a" stroke-width="3" stroke-dasharray="5 7"/>
+  <text x="652" y="247" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="#18313a">HONK!</text>
+
+  <rect x="0" y="530" width="800" height="70" fill="#18313a"/>
+  <text x="400" y="557" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#fff8df">A beak ahead of traffic, a fish behind schedule.</text>
+  <text x="400" y="584" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#ffd26b">2026-10-26 13:02:17 SGT (UTC+08:00)</text>
+</svg>
