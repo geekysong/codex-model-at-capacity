@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Past the Parking Police</title>
+  <desc id="desc">A satirical cartoon of a pelican riding a bicycle, with spinning wheels and a bobbing rider.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <style>
+      .spin { transform-box: fill-box; transform-origin: center; animation: spin 1.2s linear infinite; }
+      .bob { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      .pedal { transform-box: fill-box; transform-origin: center; animation: pedal .7s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-7px) rotate(-1deg); } }
+      @keyframes pedal { to { transform: rotate(360deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 360 Q100 310 200 355 T400 345 T600 350 T800 320 V475 H0Z" fill="#79c95b"/>
+  <path d="M0 429 Q170 397 320 430 T600 417 T800 435 V500 H0Z" fill="#58656b"/>
+  <path d="M0 469 H800" stroke="#f8df4d" stroke-width="10" stroke-dasharray="45 28"/>
+
+  <g fill="#fff" opacity=".9">
+    <path d="M90 100 q28-31 56 0 q25-22 49 4 q-50 18-113 3Z"/>
+    <path d="M615 90 q22-25 45 0 q22-18 43 6 q-44 14-91 3Z"/>
+  </g>
+
+  <g stroke="#2a363d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M650 359 v-121 q0-18 18-18 h37" fill="none"/>
+    <rect x="659" y="177" width="108" height="53" rx="8" fill="#ffe75a"/>
+    <path d="M675 193 h75 M675 210 h53" opacity=".65"/>
+    <path d="M690 242 h54" fill="none"/>
+    <text x="713" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" stroke="none" fill="#263238">NO BIKES!</text>
+  </g>
+
+  <g class="spin" stroke="#24313a" stroke-width="8" fill="none">
+    <circle cx="258" cy="416" r="78"/>
+    <path d="M258 338V494 M180 416H336 M203 361L313 471 M313 361L203 471" stroke-width="4" opacity=".7"/>
+    <circle cx="258" cy="416" r="10" fill="#f5d84b"/>
+  </g>
+  <g class="spin" stroke="#24313a" stroke-width="8" fill="none">
+    <circle cx="500" cy="416" r="78"/>
+    <path d="M500 338V494 M422 416H578 M445 361L555 471 M555 361L445 471" stroke-width="4" opacity=".7"/>
+    <circle cx="500" cy="416" r="10" fill="#f5d84b"/>
+  </g>
+
+  <g stroke="#24313a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M258 416 L328 300 L408 416 Z"/>
+    <path d="M328 300 L455 306 L500 416"/>
+    <path d="M408 416 L455 306"/>
+    <path d="M328 300 L305 286"/>
+    <path d="M286 286 h38"/>
+    <path d="M455 306 L478 265 L516 256"/>
+    <path d="M516 256 q17-16 28 0"/>
+  </g>
+  <g class="pedal" stroke="#24313a" stroke-width="7" stroke-linecap="round" fill="none">
+    <circle cx="408" cy="416" r="24" fill="#ffd84d"/>
+    <path d="M408 416 l35 21 M408 416 l-35-21"/>
+    <path d="M438 438 h22 M356 394 h22"/>
+  </g>
+
+  <g class="bob" stroke="#24313a" stroke-linejoin="round">
+    <path d="M304 297 q13-75 70-88 q64-21 108 24 q14 15 6 43 l-39 72 q-83 23-145-51Z" fill="#f2f3e8" stroke-width="7"/>
+    <path d="M352 228 q-4-60 44-75 q47 7 55 65 q-37 26-99 10Z" fill="#f4f5ea" stroke-width="7"/>
+    <path d="M397 224 q69-10 112 28 q-23 54-93 34 q-40-9-47-31Z" fill="#f7b947" stroke-width="7"/>
+    <path d="M399 235 q52-7 87 15 q-19 18-72 16Z" fill="#f18b37" stroke-width="4"/>
+    <ellipse cx="382" cy="199" rx="13" ry="16" fill="#fff" stroke-width="5"/>
+    <circle cx="385" cy="201" r="5" fill="#24313a" stroke="none"/>
+    <path d="M410 185 q22-17 40-2" fill="none" stroke-width="7"/>
+    <path d="M346 279 q47-12 93 12 q-20 35-65 30Z" fill="#e3e5d9" stroke-width="5"/>
+    <path d="M369 323 q-13 41-3 71" fill="none" stroke-width="11"/>
+    <path d="M430 327 q37 23 39 65" fill="none" stroke-width="11"/>
+    <path d="M362 392 h25 M463 393 h26" fill="none" stroke-width="12"/>
+    <path d="M340 275 q-47 5-65 42" fill="none" stroke-width="12"/>
+    <path d="M275 317 q-25 0-32 20" fill="none" stroke-width="10"/>
+    <path d="M447 274 q34-17 62 9" fill="none" stroke-width="12"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="63" font-size="40" font-weight="900" fill="#24313a">THE PELICAN PEDAL PROTEST</text>
+    <text x="400" y="98" font-size="20" font-weight="bold" fill="#38505c">“If cars get lanes, I get a beak lane!”</text>
+    <text x="400" y="535" font-size="22" font-weight="bold" fill="#24313a">A pelican on a bicycle: parking enforcement’s worst feathered nightmare.</text>
+  </g>
+
+  <rect y="556" width="800" height="44" fill="#24313a"/>
+  <text x="400" y="584" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#ffffff">2026-10-26 17:03:33 SGT (UTC+08:00)</text>
+</svg>
