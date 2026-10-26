@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Commute</title>
+  <desc id="desc">A very serious pelican rides a bicycle, carrying a fish in its beak and a tiny briefcase.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#18324a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#18324a;stroke-width:7}
+      .spoke{stroke:#52728a;stroke-width:2}
+      .frame{fill:none;stroke:#e04f35;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .sans{font-family:Arial,Helvetica,sans-serif}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .rolling{transform-origin:0px 0px;animation:spin 2.5s linear infinite}
+      .rider{transform-origin:415px 335px;animation:bob .7s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8edcf"/>
+  <path d="M0 412 Q150 392 300 412 T600 410 T800 405 V600 H0Z" fill="#c8e6d5"/>
+  <path d="M0 430H800" stroke="#7ba895" stroke-width="3" stroke-dasharray="12 12"/>
+  <circle cx="95" cy="105" r="42" fill="#f2b544"/>
+  <path d="M76 105h38M95 86v38" stroke="#fff3cf" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="54" text-anchor="middle" class="sans" font-size="32" font-weight="900" letter-spacing="2" fill="#18324a">THE PELICAN’S COMMUTE</text>
+  <text x="400" y="82" text-anchor="middle" class="sans" font-size="16" font-weight="700" fill="#e04f35">“I’m cutting down on fish emissions.”</text>
+
+  <!-- Bicycle wheels -->
+  <g class="wheel">
+    <circle cx="245" cy="390" r="69"/>
+    <circle cx="545" cy="390" r="69"/>
+  </g>
+  <g class="rolling">
+    <g transform="translate(245 390)">
+      <path class="spoke" d="M0-63V63M-63 0H63M-45-45L45 45M45-45L-45 45"/>
+    </g>
+  </g>
+  <g class="rolling">
+    <g transform="translate(545 390)">
+      <path class="spoke" d="M0-63V63M-63 0H63M-45-45L45 45M45-45L-45 45"/>
+    </g>
+  </g>
+  <path class="frame" d="M245 390L345 390L405 300L455 390L545 390L455 390L345 390L315 310"/>
+  <path class="ink" fill="none" d="M405 300L430 275M418 271L448 271M315 310L285 303M272 303H300"/>
+  <circle cx="345" cy="390" r="8" fill="#18324a"/>
+  <path d="M345 390L372 420M345 390L320 419" stroke="#18324a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M307 420H330M360 420H384" stroke="#18324a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M385 287H425" stroke="#18324a" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Expressive rider -->
+  <g class="rider">
+    <!-- body and tail -->
+    <path d="M396 290Q365 280 350 258Q346 253 354 251Q375 257 405 269Z" fill="#fffdf2" class="ink"/>
+    <path d="M397 285Q420 278 440 293L430 339Q408 347 385 331Z" fill="#fffdf2" class="ink"/>
+    <path d="M406 302Q424 304 433 315" fill="none" stroke="#d8d1be" stroke-width="4"/>
+    <!-- neck and head -->
+    <path d="M416 292Q427 260 419 225Q413 204 431 191Q449 179 468 193Q488 209 473 228Q461 244 448 248L444 292Z" fill="#fffdf2" class="ink"/>
+    <path d="M433 190Q447 170 468 184Q485 195 480 213Q470 231 450 224Q431 219 433 190Z" fill="#fffdf2" class="ink"/>
+    <!-- beak -->
+    <path d="M473 205Q520 200 554 213Q562 216 553 222Q522 239 473 222Z" fill="#f2a52e" class="ink"/>
+    <path d="M493 216Q522 220 549 217Q536 238 506 239Q495 235 493 216Z" fill="#e98724" stroke="#18324a" stroke-width="3"/>
+    <path d="M494 216Q514 221 531 218" fill="none" stroke="#c56d21" stroke-width="2"/>
+    <circle cx="462" cy="198" r="4.5" fill="#18324a"/>
+    <path d="M451 188Q460 181 469 186" fill="none" stroke="#18324a" stroke-width="3"/>
+    <!-- scarf -->
+    <path d="M426 238Q445 249 466 232L470 243Q451 260 427 251Z" fill="#e04f35" class="ink"/>
+    <path d="M448 249Q458 265 451 280L469 267L465 246Z" fill="#e04f35" class="ink"/>
+    <!-- wing -->
+    <path d="M399 291Q416 283 431 298Q422 313 403 319Q393 313 399 291Z" fill="#e9e5d7" stroke="#18324a" stroke-width="4"/>
+    <!-- legs on pedals -->
+    <path d="M412 333L373 389L345 390M430 334L390 354L370 415" fill="none" stroke="#f2a52e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M334 390H353M360 415H381" stroke="#18324a" stroke-width="5" stroke-linecap="round"/>
+    <!-- tiny briefcase -->
+    <path d="M386 303L369 326L393 342L409 317Z" fill="#8c6042" class="ink"/>
+    <path d="M384 305L392 299L401 306" fill="none" stroke="#18324a" stroke-width="4"/>
+    <path d="M383 321L395 329" stroke="#e5b76e" stroke-width="3"/>
+  </g>
+
+  <!-- comic motion marks -->
+  <path d="M585 280l17-10M590 294l22-3M183 278l-18-10" stroke="#e04f35" stroke-width="4" stroke-linecap="round"/>
+  <text x="614" y="270" class="sans" font-size="15" font-weight="800" fill="#18324a" transform="rotate(8 614 270)">HONK!</text>
+  <path d="M0 478H800" stroke="#18324a" stroke-width="3"/>
+  <text x="400" y="510" text-anchor="middle" class="sans" font-size="19" font-weight="800" fill="#18324a">He’s late for the fish market. The fish is already in the meeting.</text>
+  <text x="400" y="572" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#18324a">2026-10-26 14:33:27 SGT (UTC+08:00)</text>
+</svg>
