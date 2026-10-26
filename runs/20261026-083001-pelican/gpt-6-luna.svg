@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>The Great Beak Escape</title>
+  <desc>A smug pelican pedals a bicycle past a sign that says “FISH? I prefer the chase.” The wheels spin and the rider bobs gently.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9e8f2"/>
+      <stop offset="1" stop-color="#f5f1cf"/>
+    </linearGradient>
+    <linearGradient id="beak" x2="0" y2="1">
+      <stop stop-color="#ffcf4a"/>
+      <stop offset="1" stop-color="#f28b35"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#243348;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#243348;stroke-width:7}
+      .spoke{stroke:#60758a;stroke-width:2}
+      .title{font:900 34px system-ui,sans-serif;letter-spacing:1px;fill:#243348}
+      .caption{font:600 15px system-ui,sans-serif;fill:#35485b}
+      .small{font:700 12px system-ui,sans-serif;fill:#35485b}
+      .wheelspin{transform-box:fill-box;transform-origin:center;animation:spin 1.5s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .75s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px) rotate(-1deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="120" r="44" fill="#ffd56a"/>
+  <path d="M0 338 Q110 307 218 340 T435 332 T650 341 T800 324 V500 H0Z" fill="#83c982"/>
+  <path d="M0 390 Q160 370 300 397 T590 388 T800 394 V515 H0Z" fill="#59a96c"/>
+  <path d="M0 480 H800 V546 H0Z" fill="#d5c69a"/>
+  <path d="M0 495 H800" stroke="#f5e8c4" stroke-width="5" stroke-dasharray="32 24"/>
+  <path d="M100 346 l14-65 17 65 M114 309h12 M108 323h15" fill="none" stroke="#4d805c" stroke-width="5"/>
+  <path d="M690 355 l11-55 14 55 M700 326h12" fill="none" stroke="#4d805c" stroke-width="5"/>
+
+  <text x="400" y="53" text-anchor="middle" class="title">THE GREAT BEAK ESCAPE</text>
+  <text x="400" y="78" text-anchor="middle" class="caption">He’s pedaling furiously. The fish are still unimpressed.</text>
+
+  <!-- Roadside gag -->
+  <path d="M105 292v128" stroke="#805e3d" stroke-width="8"/>
+  <rect x="43" y="235" width="126" height="62" rx="8" fill="#fff4d1" class="ink"/>
+  <text x="106" y="259" text-anchor="middle" class="small">FISH?</text>
+  <text x="106" y="280" text-anchor="middle" class="small">I prefer the chase.</text>
+
+  <!-- Bicycle frame -->
+  <g class="ink" fill="none">
+    <path d="M270 424 L360 424 L327 338 Z" stroke="#df4c4d"/>
+    <path d="M360 424 L432 337 L327 338" stroke="#df4c4d"/>
+    <path d="M432 337 L464 424 L360 424" stroke="#df4c4d"/>
+    <path d="M420 337h26l18-13" />
+    <path d="M316 338h22l-12-13" />
+    <path d="M348 424h24" />
+  </g>
+  <g class="wheelspin">
+    <circle cx="270" cy="424" r="61" class="wheel"/>
+    <circle cx="270" cy="424" r="6" fill="#243348"/>
+    <path d="M270 363v122 M209 424h122 M227 381l86 86 M313 381l-86 86" class="spoke"/>
+  </g>
+  <g class="wheelspin">
+    <circle cx="464" cy="424" r="61" class="wheel"/>
+    <circle cx="464" cy="424" r="6" fill="#243348"/>
+    <path d="M464 363v122 M403 424h122 M421 381l86 86 M507 381l-86 86" class="spoke"/>
+  </g>
+  <g class="ink" fill="none">
+    <circle cx="360" cy="424" r="12" fill="#ffcf4a"/>
+    <path d="M360 424l-23-20 M360 424l26 18" stroke-width="7"/>
+    <path d="M333 404l-9 2 M386 442l9-3" stroke-width="5"/>
+  </g>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <!-- tail and body -->
+    <path d="M329 306q-40-27-56-9 20 1 25 17-18 7-14 19 24-16 55-4" fill="#f7f4e9" class="ink"/>
+    <ellipse cx="358" cy="292" rx="49" ry="39" fill="#f8f5e9" class="ink"/>
+    <path d="M333 294q24-25 48-3-13 16-38 17" fill="#d7e6e7" stroke="#243348" stroke-width="3"/>
+    <!-- neck -->
+    <path d="M381 293q-2-40 13-69 9-18 31-11 16 6 7 22-15 20-15 60" fill="#f8f5e9" class="ink"/>
+    <!-- head -->
+    <ellipse cx="419" cy="201" rx="35" ry="30" fill="#f8f5e9" class="ink"/>
+    <path d="M438 195q60-15 93 3-24 17-82 19-14 0-20-7z" fill="url(#beak)" class="ink"/>
+    <path d="M445 216q37 10 73-1-18 24-47 27-19-2-26-26" fill="#f28b35" class="ink"/>
+    <path d="M464 216q4 17 15 24" fill="none" stroke="#d96b2b" stroke-width="3"/>
+    <circle cx="427" cy="193" r="4.5" fill="#243348"/>
+    <path d="M421 182q8-8 16-2" fill="none" stroke="#243348" stroke-width="3"/>
+    <path d="M393 207q-12 2-18 13" fill="none" stroke="#d6d0bf" stroke-width="4"/>
+    <!-- jaunty helmet -->
+    <path d="M387 177q9-31 37-30 24 1 31 27z" fill="#df4c4d" class="ink"/>
+    <path d="M384 177h77" class="ink"/>
+    <path d="M416 151l-3 24" stroke="#fff0e2" stroke-width="3"/>
+    <!-- wing, legs, pedals -->
+    <path d="M341 284q22-23 46-7-9 23-34 29-15-6-12-22" fill="#e6ece6" stroke="#243348" stroke-width="4"/>
+    <path d="M357 318l-17 34 21 14" fill="none" stroke="#f28b35" stroke-width="7"/>
+    <path d="M391 314l7 34-12 20" fill="none" stroke="#f28b35" stroke-width="7"/>
+    <path d="M359 366l-18 3 M386 368l16 2" fill="none" stroke="#243348" stroke-width="6"/>
+    <path d="M395 348l15-11" fill="none" stroke="#243348" stroke-width="5"/>
+    <!-- tiny tie -->
+    <path d="M392 243l9 8-9 13-5-13z" fill="#55a9b5" class="ink"/>
+  </g>
+
+  <!-- motion marks -->
+  <path d="M528 289h31 M536 302h21 M230 328h-22" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+  <path d="M554 275q8-9 16 0" fill="none" stroke="#243348" stroke-width="3"/>
+  <text x="572" y="272" class="small" transform="rotate(-8 572 272)">HONK!</text>
+
+  <rect x="0" y="520" width="800" height="80" fill="#fff9e9"/>
+  <path d="M0 520H800" stroke="#243348" stroke-width="3"/>
+  <text x="400" y="549" text-anchor="middle" class="caption">“I’m not late. I’m just taking the scenic route to lunch.”</text>
+  <text x="400" y="581" text-anchor="middle" style="font:600 14px system-ui,sans-serif;fill:#243348">2026-10-26 08:32:23 SGT (UTC+08:00)</text>
+</svg>
