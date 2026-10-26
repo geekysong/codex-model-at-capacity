@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical pelican pedals furiously while carrying an oversized briefcase.</desc>
+  <style>
+    .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#d8f3ff;stroke:#17202a;stroke-width:7}
+    .spoke{stroke:#5b7180;stroke-width:3}
+    .text{font-family:Arial,Helvetica,sans-serif;fill:#17202a}
+    .small{font-size:18px}
+  </style>
+
+  <rect width="800" height="600" fill="#fff7df"/>
+  <rect y="410" width="800" height="190" fill="#b9e6a3"/>
+  <path d="M0 455 Q150 430 300 455 T600 450 T800 455" fill="none" stroke="#83c879" stroke-width="8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="text" font-size="42" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="94" text-anchor="middle" class="text" font-size="22">One bird. One bicycle. Zero sense of traffic laws.</text>
+
+  <!-- bicycle -->
+  <g id="bike">
+    <g>
+      <circle class="wheel" cx="225" cy="430" r="82"/>
+      <circle class="wheel" cx="585" cy="430" r="82"/>
+      <g class="spoke">
+        <path d="M225 348V512M143 430H307M167 372L283 488M167 488L283 372"/>
+        <path d="M585 348V512M503 430H667M527 372L643 488M527 488L643 372"/>
+      </g>
+      <circle cx="225" cy="430" r="10" fill="#17202a"/>
+      <circle cx="585" cy="430" r="10" fill="#17202a"/>
+    </g>
+    <path d="M225 430 L350 300 L470 430 L225 430 L420 430 L350 300 L500 300 L585 430" fill="none" class="ink" stroke="#e85d4a"/>
+    <path d="M470 430 L500 300 M500 300 L530 270" fill="none" class="ink"/>
+    <path d="M515 270 Q548 252 572 270" fill="none" class="ink"/>
+    <path d="M335 305 L320 270" fill="none" class="ink"/>
+    <path d="M300 268 H340" class="ink"/>
+    <g>
+      <circle cx="420" cy="430" r="28" fill="#ffd166" class="ink"/>
+      <path d="M420 430 L450 410 M420 430 L390 450" class="ink"/>
+    </g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- rider -->
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="1s" repeatCount="indefinite"/>
+    <ellipse cx="396" cy="230" rx="72" ry="92" fill="#f4f1e8" class="ink"/>
+    <path d="M350 205 Q300 170 315 120 Q340 78 390 105 Q425 122 420 170" fill="#f4f1e8" class="ink"/>
+    <circle cx="371" cy="132" r="10" fill="#17202a"/>
+    <path d="M324 150 Q270 155 215 135 Q205 130 215 119 Q280 110 345 122" fill="#f4a261" class="ink"/>
+    <path d="M215 135 Q275 155 333 145" fill="none" stroke="#c66d35" stroke-width="4"/>
+    <path d="M366 175 Q415 165 450 205 L438 250 Q400 270 360 245" fill="#d9dde1" class="ink"/>
+    <path d="M375 250 L350 330 M425 250 L455 330" class="ink"/>
+    <path d="M350 330 L320 355 M455 330 L485 350" class="ink"/>
+    <path d="M386 312 Q420 330 450 312" fill="none" class="ink"/>
+    <path d="M407 318 L420 350" class="ink"/>
+    <!-- briefcase gag -->
+    <rect x="465" y="170" width="115" height="82" rx="10" fill="#8d5524" class="ink"/>
+    <path d="M500 170 V150 Q500 138 512 138 H535 Q547 138 547 150 V170" fill="none" class="ink"/>
+    <text x="522" y="220" text-anchor="middle" fill="#fff7df" font-family="Arial" font-size="17" font-weight="bold">URGENT</text>
+    <!-- wing and pedal legs -->
+    <path d="M415 205 Q470 245 490 300" fill="none" class="ink"/>
+    <path d="M385 290 Q420 330 445 400" fill="none" class="ink"/>
+    <path d="M445 400 Q465 415 480 410" fill="none" class="ink"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" values="-2 400 300;2 400 300;-2 400 300" dur="1s" repeatCount="indefinite"/>
+  </g>
+
+  <g font-family="Arial,Helvetica,sans-serif" fill="#17202a" font-size="20" font-weight="bold">
+    <text x="72" y="360">HONK!</text>
+    <text x="650" y="330">MOVE IT,</text>
+    <text x="650" y="354">HUMANS!</text>
+  </g>
+  <path d="M95 375 Q70 390 90 405" fill="none" class="ink"/>
+  <path d="M675 375 Q700 390 680 405" fill="none" class="ink"/>
+
+  <rect x="34" y="548" width="732" height="34" rx="10" fill="#fff" stroke="#17202a" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="text small">2026-10-27 06:30:01 SGT (UTC+08:00)</text>
+</svg>
