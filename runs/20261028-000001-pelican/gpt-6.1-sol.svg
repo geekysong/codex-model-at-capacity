@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e7f8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#225" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#17212b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 430 Q120 370 240 430 T480 430 T720 430 T960 430 V600 H0Z" fill="#91c96b"/>
+  <path d="M0 480 Q170 425 340 480 T680 480 T1000 480" fill="none" stroke="#5a9e55" stroke-width="18"/>
+  <path d="M80 150 Q125 115 170 150 Q125 130 80 150 M625 125 Q670 90 715 125 Q670 105 625 125" fill="none" stroke="#fff" stroke-width="9" opacity=".8"/>
+
+  <text x="400" y="65" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#fff" stroke="#17212b" stroke-width="2" paint-order="stroke">
+    THE GREAT PELICAN COMMUTE
+  </text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="20" font-weight="700">“Beak power beats horsepower.”</text>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <g fill="none" class="ink">
+        <circle cx="270" cy="430" r="78" fill="#d9f1ff"/>
+        <circle cx="570" cy="430" r="78" fill="#d9f1ff"/>
+        <path d="M270 430 L370 300 L470 430 L270 430 M370 300 L570 430 M470 430 L520 305"/>
+        <path d="M500 305 L555 305 M520 305 L505 280"/>
+      </g>
+      <g stroke="#61a9c8" stroke-width="4" opacity=".8">
+        <path d="M270 352V508 M192 430H348 M215 375L325 485 M215 485L325 375"/>
+        <path d="M570 352V508 M492 430H648 M515 375L625 485 M515 485L625 375"/>
+      </g>
+      <circle cx="370" cy="430" r="20" fill="#ffcc33" class="ink"/>
+      <path d="M370 430 l-38 22 M370 430 l38 22" class="ink"/>
+      <circle cx="332" cy="452" r="8" fill="#17212b"/>
+      <circle cx="408" cy="452" r="8" fill="#17212b"/>
+      <path d="M365 300 Q370 280 385 270" fill="none" class="ink"/>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1s" repeatCount="indefinite"/>
+      <ellipse cx="415" cy="250" rx="88" ry="108" fill="#f4f0df" class="ink"/>
+      <path d="M365 245 Q320 285 345 345 Q375 320 398 275Z" fill="#d9d1b8" class="ink"/>
+      <path d="M405 170 Q442 128 490 156 Q516 174 500 214 Q470 241 425 220Z" fill="#f4f0df" class="ink"/>
+      <path d="M478 185 Q555 185 610 215 Q565 253 485 230Z" fill="#f0a43c" class="ink"/>
+      <path d="M510 220 Q562 242 600 220 Q570 274 505 250Z" fill="#f7c85b" class="ink"/>
+      <circle cx="470" cy="185" r="10" fill="#17212b"/>
+      <circle cx="473" cy="181" r="3" fill="#fff"/>
+      <path d="M415 350 Q448 370 480 350" fill="none" class="ink"/>
+      <path d="M380 333 L340 390 M450 335 L475 390" fill="none" class="ink"/>
+      <path d="M338 390 L315 405 M338 390 L355 408 M475 390 L455 408 M475 390 L495 402" fill="none" class="ink"/>
+      <path d="M398 275 Q425 305 455 275" fill="none" stroke="#d2b98b" stroke-width="12"/>
+    </g>
+  </g>
+
+  <g class="label" font-size="22" font-weight="800">
+    <text x="105" y="300" transform="rotate(-8 105 300)">HONK!</text>
+    <text x="625" y="355" transform="rotate(8 625 355)">WHEE!</text>
+  </g>
+  <path d="M95 325 q25 15 50 0 M635 380 q25 15 50 0" fill="none" stroke="#17212b" stroke-width="5"/>
+
+  <rect x="40" y="535" width="720" height="42" rx="12" fill="#fff8dc" stroke="#17212b" stroke-width="3"/>
+  <text x="400" y="562" text-anchor="middle" class="label" font-size="17" font-weight="700">2026-10-28 00:01:05 SGT (UTC+08:00)</text>
+
+  <animateTransform xlink:href="#bike" attributeName="transform" type="translate" values="0 0;3 0;0 0;-3 0;0 0" dur="1s" repeatCount="indefinite"/>
+  <animateTransform xlink:href="#bike" attributeName="transform" type="rotate" values="0 420 430;2 420 430;0 420 430;-2 420 430;0 420 430" dur="1s" repeatCount="indefinite" additive="sum"/>
+</svg>
