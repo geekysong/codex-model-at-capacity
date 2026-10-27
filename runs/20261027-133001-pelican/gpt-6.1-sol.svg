@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican pedals furiously on a bicycle while claiming it is a perfectly normal commute.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59636b"/>
+      <stop offset="1" stop-color="#30373d"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#20252b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#20252b}
+      .title{font-size:42px;font-weight:900;letter-spacing:2px}
+      .caption{font-size:21px;font-weight:700}
+      .small{font-size:16px}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd45a" stroke="#20252b" stroke-width="5"/>
+  <path d="M0 365 Q120 300 245 360 T500 350 T800 335 V430 H0Z" fill="#9bd18b"/>
+  <path d="M0 420 Q180 385 350 420 T800 410 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 512 H800" stroke="#f6d35f" stroke-width="8" stroke-dasharray="38 28"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label title">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="91" text-anchor="middle" class="label caption">“I’m cutting traffic!” — says the bird causing it.</text>
+
+  <!-- Bicycle -->
+  <g>
+    <g class="ink" fill="none">
+      <circle cx="245" cy="452" r="78" stroke="#161b20" stroke-width="10">
+        <animateTransform attributeName="transform" type="rotate" from="0 245 452" to="360 245 452" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="585" cy="452" r="78" stroke="#161b20" stroke-width="10">
+        <animateTransform attributeName="transform" type="rotate" from="0 585 452" to="360 585 452" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M245 452 L338 330 L450 452 L245 452 L390 452 L338 330 L430 325 L470 452 L585 452 L520 320"/>
+      <path d="M430 325 L470 300"/>
+      <path d="M470 300 L505 300"/>
+      <path d="M338 330 L320 295"/>
+    </g>
+    <g stroke="#8fd3e8" stroke-width="3" opacity=".8">
+      <path d="M245 374V530 M167 452H323"/>
+      <path d="M585 374V530 M507 452H663"/>
+    </g>
+    <g transform="translate(390 452)">
+      <circle r="14" fill="#f4c542" class="ink"/>
+      <path d="M0 0 L-30 -24 M0 0 L29 25" class="ink"/>
+      <rect x="-42" y="-31" width="20" height="9" rx="4" fill="#e95d4f" class="ink"/>
+      <rect x="25" y="23" width="20" height="9" rx="4" fill="#e95d4f" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.1s" repeatCount="indefinite"/>
+    </g>
+    <path d="M500 320 Q530 300 565 315" fill="none" class="ink"/>
+    <path d="M495 300 Q520 285 545 297" fill="none" class="ink"/>
+  </g>
+
+  <!-- Pelican -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.1s" repeatCount="indefinite"/>
+    <ellipse cx="402" cy="260" rx="94" ry="105" fill="#f5f1df" class="ink"/>
+    <ellipse cx="438" cy="278" rx="45" ry="66" fill="#d8d1bd" stroke="#20252b" stroke-width="5"/>
+    <path d="M346 250 Q300 285 322 350 Q355 374 392 335" fill="#f5f1df" class="ink"/>
+    <path d="M327 337 Q361 365 393 335" fill="#f4a64b" class="ink"/>
+    <circle cx="425" cy="175" r="57" fill="#f5f1df" class="ink"/>
+    <circle cx="443" cy="166" r="9" fill="#20252b"/>
+    <path d="M457 184 Q541 172 590 205 Q543 242 458 218 Q434 207 457 184Z" fill="#f3a943" class="ink"/>
+    <path d="M458 209 Q520 222 565 207" fill="none" stroke="#20252b" stroke-width="4"/>
+    <path d="M405 130 Q430 105 454 125" fill="none" class="ink"/>
+    <path d="M383 199 Q350 216 337 244" fill="none" class="ink"/>
+    <path d="M371 343 L350 405" class="ink" fill="none"/>
+    <path d="M420 348 L445 407" class="ink" fill="none"/>
+    <path d="M346 405 L326 416 M346 405 L357 419" class="ink" fill="none"/>
+    <path d="M445 407 L426 418 M445 407 L457 420" class="ink" fill="none"/>
+    <path d="M354 252 Q385 230 414 250" fill="none" stroke="#20252b" stroke-width="5"/>
+    <path d="M350 282 Q382 300 415 277" fill="none" stroke="#20252b" stroke-width="5"/>
+    <text x="402" y="265" text-anchor="middle" class="label small" font-weight="900">HONK!</text>
+  </g>
+
+  <!-- motion marks -->
+  <g stroke="#20252b" stroke-width="5" stroke-linecap="round" opacity=".7">
+    <path d="M126 405 l-35 -18"/>
+    <path d="M135 430 l-42 -2"/>
+    <path d="M663 388 l38 -22"/>
+  </g>
+
+  <rect x="34" y="548" width="732" height="34" rx="12" fill="#fff4c7" stroke="#20252b" stroke-width="4"/>
+  <text x="400" y="571" text-anchor="middle" class="label small" font-weight="700">2026-10-27 13:30:28 SGT (UTC+08:00)</text>
+</svg>

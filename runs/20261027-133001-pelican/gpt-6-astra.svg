@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Against the Current</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#d9f5fa"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4db5c8"/>
+      <stop offset="1" stop-color="#19728e"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#17495c" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#173744;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#173744}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 390 Q120 350 240 390 T480 390 T720 390 T960 390 V600 H0Z" fill="url(#water)"/>
+  <path d="M0 455 Q110 430 220 455 T440 455 T660 455 T880 455" fill="none" stroke="#a8edf2" stroke-width="8" opacity=".7"/>
+  <path d="M0 510 Q130 485 260 510 T520 510 T780 510" fill="none" stroke="#8ce0e8" stroke-width="6" opacity=".55"/>
+
+  <text x="400" y="66" text-anchor="middle" class="label" font-size="36" font-weight="900">PELICAN PEDALS AGAINST THE CURRENT</text>
+  <text x="400" y="100" text-anchor="middle" class="label" font-size="19" font-weight="700">“Local bird insists this is a totally normal commute.”</text>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <g stroke="#173744" stroke-width="8" fill="none">
+        <circle cx="250" cy="430" r="78"/>
+        <circle cx="560" cy="430" r="78"/>
+      </g>
+      <g id="spokes" stroke="#6fe2ec" stroke-width="3">
+        <path d="M250 352V508 M172 430H328 M195 375L305 485 M195 485L305 375"/>
+        <path d="M560 352V508 M482 430H638 M505 375L615 485 M505 485L615 375"/>
+      </g>
+      <path d="M250 430 L350 300 L470 430 L250 430 L390 430 L350 300 L560 430" fill="none" stroke="#e84f4f" stroke-width="11"/>
+      <path d="M350 300 L335 270 M335 270 H385" fill="none" stroke="#173744" stroke-width="8"/>
+      <path d="M470 430 L500 390" fill="none" stroke="#173744" stroke-width="8"/>
+      <circle cx="390" cy="430" r="18" fill="#ffd45c" class="ink"/>
+      <path d="M390 430 l-30 35 M390 430 l35 -28" class="ink" fill="none"/>
+      <path d="M355 466 h-28 M425 402 h28" class="ink" fill="none"/>
+      <path d="M500 390 q35 -12 55 5" class="ink" fill="none"/>
+      <path d="M545 395 l24 -18" class="ink" fill="none"/>
+      <path d="M560 376 q15 -4 23 6" class="ink" fill="none"/>
+    </g>
+
+    <g id="pelican">
+      <ellipse cx="398" cy="245" rx="82" ry="104" fill="#f5f0df" class="ink"/>
+      <path d="M350 207 Q310 170 330 125 Q365 145 391 181" fill="#d9d5c4" class="ink"/>
+      <path d="M445 218 Q487 180 470 130 Q435 147 410 182" fill="#d9d5c4" class="ink"/>
+      <circle cx="365" cy="145" r="48" fill="#f5f0df" class="ink"/>
+      <circle cx="390" cy="145" r="48" fill="#f5f0df" class="ink"/>
+      <path d="M347 165 Q400 200 454 165 L507 212 Q432 245 329 206 Z" fill="#f39a43" class="ink"/>
+      <path d="M350 183 Q406 220 468 188" fill="none" stroke="#c5672b" stroke-width="5"/>
+      <circle cx="374" cy="140" r="8" fill="#173744"/>
+      <circle cx="422" cy="140" r="8" fill="#173744"/>
+      <path d="M382 176 Q400 188 418 176" fill="none" stroke="#173744" stroke-width="5"/>
+      <path d="M352 270 Q390 292 441 270" fill="none" stroke="#d8d1bd" stroke-width="16"/>
+      <path d="M360 289 Q350 334 365 357" class="ink" fill="none"/>
+      <path d="M433 289 Q445 330 430 357" class="ink" fill="none"/>
+      <path d="M362 357 l-25 12 M430 357 l27 12" class="ink" fill="none"/>
+      <path d="M338 232 Q300 259 283 301" fill="none" stroke="#f5f0df" stroke-width="26" class="ink"/>
+      <path d="M457 232 Q500 250 515 288" fill="none" stroke="#f5f0df" stroke-width="26" class="ink"/>
+      <g transform="translate(476 275) rotate(8)">
+        <path d="M0 0 q55 -28 108 0 q-54 28 -108 0Z" fill="#f7c84b" class="ink"/>
+        <path d="M22 0 q43 -12 82 0 q-40 12 -82 0Z" fill="#f28f3b"/>
+        <circle cx="93" cy="-3" r="5" fill="#173744"/>
+      </g>
+      <text x="400" y="245" text-anchor="middle" class="label" font-size="15" font-weight="900" fill="#173744">I BRAKE FOR FISH</text>
+    </g>
+  </g>
+
+  <g class="label" font-weight="900" font-size="18">
+    <path d="M604 175 q45 -30 105 -4" fill="none" stroke="#173744" stroke-width="4"/>
+    <text x="610" y="160">EXECUTIVE</text>
+    <text x="610" y="182">TRANSPORT!</text>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <text x="400" y="548" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-27 13:30:01 SGT (UTC+08:00)</text>
+  </g>
+
+  <animateTransform href="#bike" attributeName="transform" type="rotate" values="0 390 430;2 390 430;0 390 430;-2 390 430;0 390 430" dur="1.2s" repeatCount="indefinite"/>
+  <animateTransform href="#spokes" attributeName="transform" type="rotate" from="0 250 430" to="360 250 430" dur="1.4s" repeatCount="indefinite"/>
+</svg>
