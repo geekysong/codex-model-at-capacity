@@ -28,7 +28,7 @@ MODELS = [
     "gpt-6-astra",
     "gpt-6.1-sol",
     "gpt-6-luna",
-    "gpt-5.6-terra",
+    "gpt-6.1-terra",
 ]
 PER_MODEL_TIMEOUT = 600  # seconds; hard cap, no retry after this
 from probe_prompts import ACTIVE_VARIANTS, load_prompt, timestamped_prompt
@@ -42,7 +42,7 @@ PAIRINGS = [
     ("gpt-6-astra", "claude-fable-5-1", "Fable 5.1"),
     ("gpt-6.1-sol", "claude-opus-5-5", "Opus 5.5"),
     ("gpt-6-luna", "claude-haiku-5-5", "Haiku 5.5"),
-    ("gpt-5.6-terra", "claude-sonnet-5-5", "Sonnet 5.5"),
+    ("gpt-6.1-terra", "claude-sonnet-5-5", "Sonnet 5.5"),
 ]
 
 

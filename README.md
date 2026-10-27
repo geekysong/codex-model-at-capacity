@@ -1,13 +1,15 @@
-# Selected model is at capacity — a 5-minute SVG census
+# Selected model is at capacity — a 30-minute SVG census
 
-## Why this exists — 背景
+**English** | [中文](README.zh-CN.md)
+
+## Why this exists
 
 In October 2026, this Codex account kept running into two problems:
 
 1. **"Selected model is at capacity."** Models refuse work with that error even
    though the account's quota is barely touched — no warning, no recourse, and
    no official record that it ever happened.
-2. **Suspected silent degradation （降智）.** The same models seem to answer
+2. **Suspected silent degradation.** The same models seem to answer
    noticeably worse than they used to — slower, dumber, or failing tasks they
    previously handled — with no announcement and no way to prove it.
 
@@ -20,9 +22,11 @@ probe — the data is the point.
 
 ## How it works
 
-Every 5 minutes, a job on a home Raspberry Pi asks each OpenAI Codex model —
-**once, with no retries** — to draw a satirical SVG about Codex's own
-"Selected model is at capacity. Please try a different model." error.
+Every 30 minutes, a job on a home Raspberry Pi runs two benchmarks —
+**Pelican** (a fixed prompt) and **Daily Challenge** (one shared prompt
+generated fresh each day) — and asks each surveyed OpenAI Codex model,
+**once, with no retries**, to draw an SVG for each benchmark. Models run
+sequentially so a round resembles ordinary account use.
 
 For every attempt we record, verbatim:
 
@@ -33,19 +37,35 @@ For every attempt we record, verbatim:
 
 Results are published on GitHub Pages: **https://geekysong.github.io/codex-model-at-capacity/**
 
-- `index.html` — gallery of the latest round + full history table (regenerated each round)
+- `index.html` — gallery of the latest round (regenerated each round)
+- `history.html` — the full history table (regenerated each round)
 - `stats.json` — the raw, append-only record of every attempt
-- `runs/<round-id>/<model>.svg` — the SVGs themselves
+- `runs/<round-id>-<variant>/<model>.svg` — the SVGs themselves
 - `run_round.py` — the whole pipeline (Pi → codex exec → stats → page → commit → push)
 
-Models surveyed: `gpt-6-astra`, `gpt-6.1-sol`, `gpt-6-sol`, `gpt-6-luna`,
-`gpt-reserve`, `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`
+Models surveyed: `gpt-6-astra`, `gpt-6.1-sol`, `gpt-6.1-terra`, `gpt-6-luna`
 (the `codex-auto-review` internal model is excluded). Reasoning effort is pinned
 to `low` for all models so timings are comparable.
 
+**Terra upgrade (2026-10-27):** `gpt-6.1-terra` replaced `gpt-5.6-terra` as the
+surveyed Terra model, matching the latest Terra generation available in Codex
+(verified against the Pi's `~/.codex/models_cache.json`, fetched 2026-10-27,
+and with a live probe call). Earlier rounds in `stats.json` that used
+`gpt-5.6-terra` remain untouched as historical data.
+
+The small cross-provider panel on the site compares only these four pairs.
+Claude outputs are produced separately (see *Local Claude comparison* below):
+
+| Codex model | Claude control |
+| --- | --- |
+| `gpt-6-astra` | `claude-fable-5-1` (Fable 5.1) |
+| `gpt-6.1-sol` | `claude-opus-5-5` (Opus 5.5) |
+| `gpt-6.1-terra` | `claude-sonnet-5-5` (Sonnet 5.5) |
+| `gpt-6-luna` | `claude-haiku-5-5` (Haiku 5.5) |
+
 Commits are authored as geekysong <geekysong@gmail.com>.
 
-## What “degradation” means here
+## What "degradation" means here
 
 This project deliberately does **not** trust Codex with important work. The
 probe is a small, reversible drawing task; it measures availability and a few
@@ -76,8 +96,9 @@ intelligence. See [QUALITY.md](QUALITY.md) for the schema, rubric and setup.
 | `error` | Truncated error text, when present |
 | `svg` | Relative path to the generated SVG, or `null` |
 
-Each round also has `runs/<round>/meta.json`, containing the four records from
-that invocation. The SVG files are kept as the original public artifacts.
+Each benchmark in a round also has `runs/<round>-<variant>/meta.json`,
+containing the four records from that benchmark run. The SVG files are kept
+as the original public artifacts.
 
 ## Reproduce or operate it
 
@@ -85,15 +106,17 @@ The Raspberry Pi uses one shared daily prompt. Codex runs every thirty minutes;
 Claude runs once per day as the control group:
 
 ```cron
+0 0 * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/generate_daily_prompt.py >> /home/songyy/codex-model-at-capacity/claude_round.log 2>&1
 */30 * * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_round.py >> /home/songyy/codex-model-at-capacity/round.log 2>&1
 5 0 * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_claude_round.py >> /home/songyy/codex-model-at-capacity/claude_round.log 2>&1
 ```
 
-The Codex runner acquires `.round.lock`, invokes the four paired models once in
-sequentially with reasoning effort `low`, waits at most 600 seconds per model, appends the results, rebuilds
-`index.html`, writes the round metadata, then commits and pushes `main` and
-`main:gh-pages`. Push failures are left for the next round to retry. To run a
-local page build without making model calls, use:
+The Codex runner acquires `.round.lock`, invokes the four surveyed models once
+sequentially per benchmark with reasoning effort `low`, waits at most 600 seconds
+per model, appends the results, rebuilds `index.html` and `history.html`, writes
+the round metadata, then commits and pushes `main` and `main:gh-pages`. Push
+failures are left for the next round to retry. To check the runner without
+making model calls, use:
 
 ```bash
 python3 -m py_compile run_round.py
