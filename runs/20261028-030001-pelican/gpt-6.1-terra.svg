@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#d9f7ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#222"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#20252b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .wheel{fill:none;stroke:#e9f2f7;stroke-width:8}
+      .spoke{stroke:#9bb4c1;stroke-width:3}
+      .label{font-family:Arial,sans-serif;fill:#20252b}
+      .title{font:bold 34px Arial,sans-serif}
+      .caption{font:20px Arial,sans-serif}
+      .small{font:16px Arial,sans-serif}
+      @keyframes roll{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+      @keyframes flap{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-14deg)}}
+      .rolling{transform-box:fill-box;transform-origin:center;animation:roll 1.4s linear infinite}
+      .rider{animation:bob .7s ease-in-out infinite}
+      .wing{transform-origin:425px 275px;animation:flap .7s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe58a" opacity=".9"/>
+  <path d="M0 365 Q120 320 240 360 T480 350 T800 355 V430 H0Z" fill="#8bcf7a"/>
+  <path d="M0 415 Q190 390 380 420 T800 410 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#f4d35e" stroke-width="8" stroke-dasharray="35 25"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label title">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" class="label caption">A bird-brained cyclist proves the beak is mightier than the brake.</text>
+
+  <g class="rolling">
+    <circle cx="270" cy="425" r="77" class="wheel"/>
+    <circle cx="270" cy="425" r="8" fill="#e9f2f7"/>
+    <g class="spoke">
+      <path d="M270 348V502M193 425H347M215 370L325 480M325 370L215 480"/>
+    </g>
+  </g>
+  <g class="rolling">
+    <circle cx="560" cy="425" r="77" class="wheel"/>
+    <circle cx="560" cy="425" r="8" fill="#e9f2f7"/>
+    <g class="spoke">
+      <path d="M560 348V502M483 425H637M505 370L615 480M615 370L505 480"/>
+    </g>
+  </g>
+
+  <g class="ink" fill="none">
+    <path d="M270 425 L385 335 L560 425 L420 425 Z" fill="#e85d4a"/>
+    <path d="M385 335 L420 425"/>
+    <path d="M385 335 L350 285"/>
+    <path d="M350 285 L405 285"/>
+    <path d="M560 425 L535 300"/>
+    <path d="M535 300 L570 280"/>
+    <path d="M270 425 L315 300"/>
+    <circle cx="420" cy="425" r="18" fill="#f4d35e"/>
+    <path d="M420 425 L392 392 M420 425 L452 447"/>
+  </g>
+
+  <g class="rider">
+    <ellipse cx="420" cy="306" rx="54" ry="68" fill="#f6a623" class="ink"/>
+    <ellipse cx="420" cy="225" rx="43" ry="38" fill="#f6a623" class="ink"/>
+    <path d="M385 228 Q420 185 455 228 L450 252 Q420 270 390 252Z" fill="#f7c96b" class="ink"/>
+    <circle cx="435" cy="218" r="7" fill="#20252b"/>
+    <path d="M455 232 Q535 226 585 253 Q535 285 455 258Z" fill="#f6a623" class="ink"/>
+    <path d="M520 250 Q558 260 585 253" fill="none" stroke="#20252b" stroke-width="5"/>
+    <path d="M398 287 Q350 255 335 300 Q360 330 408 322Z" fill="#ef8d16" class="ink wing"/>
+    <path d="M430 360 L405 407 M455 360 L480 407" fill="none" class="ink"/>
+    <path d="M405 407 L380 415 M480 407 L505 415" fill="none" class="ink"/>
+    <path d="M405 338 Q430 353 455 338" fill="none" stroke="#20252b" stroke-width="5"/>
+    <path d="M395 285 Q420 300 445 285" fill="none" stroke="#20252b" stroke-width="4"/>
+  </g>
+
+  <path d="M615 205 q20 -22 40 0 q-20 14 -40 0Z" fill="#fff" opacity=".9"/>
+  <path d="M625 205 q20 -22 40 0" fill="none" stroke="#20252b" stroke-width="3"/>
+  <text x="618" y="185" class="label small">“No worms,</text>
+  <text x="618" y="204" class="label small">only rush hour!”</text>
+
+  <rect x="25" y="548" width="750" height="34" rx="8" fill="#ffffff" opacity=".88"/>
+  <text x="400" y="571" text-anchor="middle" class="label small">2026-10-28 03:02:23 SGT (UTC+08:00)</text>
+</svg>

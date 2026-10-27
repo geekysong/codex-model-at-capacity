@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#245" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#17324d}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.5s linear infinite}
+      .rider{animation:bob 1.1s ease-in-out infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="695" cy="95" r="48" fill="#ffd85a" opacity=".9"/>
+  <path d="M0 410 Q130 350 260 405 T520 395 T800 405 V520 H0Z" fill="#8ed081"/>
+  <path d="M0 470 Q170 420 320 468 T650 460 T800 470 V540 H0Z" fill="#5eae67"/>
+  <path d="M0 520 H800" stroke="#315f4c" stroke-width="12"/>
+
+  <g class="rider" filter="url(#shadow)">
+    <text x="400" y="72" text-anchor="middle" class="label" font-size="42" font-weight="900" fill="#d33">PELICAN PEDAL POWER!</text>
+    <text x="400" y="108" text-anchor="middle" class="label" font-size="21" font-weight="700">A beak-first commute with absolutely no traffic plan.</text>
+
+    <!-- bicycle -->
+    <g class="ink" fill="none">
+      <g class="wheel">
+        <circle cx="235" cy="425" r="78" fill="#f7f7f2"/>
+        <circle cx="235" cy="425" r="8" fill="#17324d"/>
+        <path d="M235 347V503M157 425H313M180 370L290 480M290 370L180 480"/>
+      </g>
+      <g class="wheel">
+        <circle cx="565" cy="425" r="78" fill="#f7f7f2"/>
+        <circle cx="565" cy="425" r="8" fill="#17324d"/>
+        <path d="M565 347V503M487 425H643M510 370L620 480M620 370L510 480"/>
+      </g>
+      <path d="M235 425 L345 350 L445 425 L235 425 M345 350 L565 425 M445 425 L490 330 L565 425"/>
+      <path d="M335 350 L315 318 M300 318 H350"/>
+      <path d="M490 330 L515 300 M500 300 H530"/>
+      <circle cx="445" cy="425" r="16" fill="#ffcc4d"/>
+      <path d="M445 425 l-28 22 M445 425 l29-22"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="405" cy="255" rx="92" ry="74" fill="#f5f2e8" class="ink"/>
+    <path d="M350 260 Q385 235 430 260 Q455 275 470 320 Q420 340 370 312Z" fill="#d9e4e5" class="ink"/>
+    <ellipse cx="378" cy="196" rx="54" ry="49" fill="#f5f2e8" class="ink"/>
+    <path d="M337 205 Q275 211 207 190 Q270 244 353 231Z" fill="#f2a447" class="ink"/>
+    <path d="M210 190 Q268 201 334 198" fill="none" class="ink"/>
+    <circle cx="389" cy="187" r="9" fill="#17324d"/>
+    <path d="M374 157 Q400 139 426 156" fill="none" class="ink"/>
+    <path d="M368 317 Q350 350 326 365 M438 318 Q458 350 480 365" fill="none" class="ink"/>
+    <path d="M326 365 l-25 15 M326 365 l12 26 M480 365 l25 15 M480 365 l-10 26" fill="none" class="ink"/>
+    <path d="M372 260 Q404 278 440 257" fill="none" stroke="#d65a48" stroke-width="7"/>
+    <path d="M360 225 Q395 215 432 228" fill="none" stroke="#17324d" stroke-width="5"/>
+    
+    <!-- feet on pedals -->
+    <path d="M357 330 Q375 370 420 398" fill="none" class="ink"/>
+    <path d="M446 329 Q430 370 404 397" fill="none" class="ink"/>
+    <ellipse cx="421" cy="398" rx="18" ry="8" fill="#f2a447" class="ink"/>
+    <ellipse cx="405" cy="398" rx="18" ry="8" fill="#f2a447" class="ink"/>
+    
+    <!-- speech bubble -->
+    <path d="M560 170 Q690 125 748 190 Q760 250 695 270 Q620 280 575 245 L545 260 L558 230 Q535 200 560 170Z" fill="#fff" class="ink"/>
+    <text x="650" y="205" text-anchor="middle" class="label" font-size="20" font-weight="800">HONK IF YOU</text>
+    <text x="650" y="231" text-anchor="middle" class="label" font-size="20" font-weight="800">LIKE FISH!</text>
+  </g>
+
+  <g class="label" font-size="17" font-weight="700">
+    <text x="28" y="555">Caption: “He said it was a cycle of beak-and-take.”</text>
+    <text x="772" y="555" text-anchor="end">2026-10-28 03:00:01 SGT (UTC+08:00)</text>
+  </g>
+</svg>

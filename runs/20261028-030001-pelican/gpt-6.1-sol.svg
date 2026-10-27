@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon of a pelican riding a bicycle while carrying an absurdly large briefcase.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#e9f7d1"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#68727d"/>
+      <stop offset="1" stop-color="#303943"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#1d2933" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202a33;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202a33}
+      .roadmark{stroke:#f6dc66;stroke-width:8;stroke-linecap:round;stroke-dasharray:42 28}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd85e" opacity=".9"/>
+  <path d="M0 270 Q120 220 240 270 T480 260 T800 250 V390 H0Z" fill="#9ccc78"/>
+  <path d="M0 350 Q150 300 310 350 T620 340 T800 350 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 485 H800" class="roadmark" opacity=".9"/>
+
+  <text x="400" y="66" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#173b4d">THE PELICAN PEDAL EXPRESS</text>
+  <text x="400" y="101" text-anchor="middle" class="label" font-size="19" font-weight="700">“Why fly when you can commute inefficiently?”</text>
+
+  <!-- bicycle -->
+  <g filter="url(#shadow)">
+    <g transform="translate(0 0)">
+      <circle cx="250" cy="443" r="78" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 250 443" to="360 250 443" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="555" cy="443" r="78" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 555 443" to="360 555 443" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <g stroke="#42515c" stroke-width="3" opacity=".75">
+        <path d="M250 365V521M172 443H328M195 388L305 498M195 498L305 388"/>
+        <path d="M555 365V521M477 443H633M500 388L610 498M500 498L610 388"/>
+      </g>
+      <path d="M250 443 L355 330 L555 443 L430 443 Z" fill="none" class="ink"/>
+      <path d="M355 330 L430 443 M355 330 L320 300 M320 300 H370" fill="none" class="ink"/>
+      <path d="M555 443 L585 315 H620" fill="none" class="ink"/>
+      <circle cx="430" cy="443" r="13" fill="#f2b544" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 430 443" to="360 430 443" dur="1s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M430 443 L390 470 M430 443 L468 415" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" values="-18 430 443;18 430 443;-18 430 443" dur="1s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- pelican body and motion -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1s" repeatCount="indefinite"/>
+      <ellipse cx="424" cy="270" rx="78" ry="105" fill="#f4f0e3" class="ink"/>
+      <path d="M370 286 Q420 250 478 286 L486 343 Q425 375 365 338Z" fill="#d9e4e6" class="ink"/>
+      <path d="M384 210 Q420 165 475 202 Q500 220 482 258 Q450 286 402 262 Q374 245 384 210Z" fill="#fffaf0" class="ink"/>
+      <ellipse cx="462" cy="207" rx="8" ry="11" fill="#202a33"/>
+      <path d="M478 220 Q560 230 590 269 Q548 298 474 267 Q450 250 478 220Z" fill="#f2a43e" class="ink"/>
+      <path d="M478 244 Q540 261 580 267" fill="none" stroke="#b96c2a" stroke-width="5"/>
+      <path d="M405 203 Q371 170 352 189 Q370 224 397 231" fill="#f4f0e3" class="ink"/>
+      <path d="M365 294 Q316 305 303 352 Q349 361 393 330" fill="#f4f0e3" class="ink"/>
+      <path d="M465 294 Q513 300 534 345 Q490 360 451 330" fill="#f4f0e3" class="ink"/>
+      <path d="M391 348 L380 416 M458 348 L470 416" fill="none" class="ink"/>
+      <path d="M368 416 Q381 407 397 416 M457 416 Q471 407 487 416" fill="none" class="ink"/>
+      <path d="M382 416 Q402 430 421 438 M470 416 Q449 431 430 438" fill="none" class="ink"/>
+      <path d="M374 257 Q420 280 480 254" fill="none" stroke="#202a33" stroke-width="5"/>
+      <path d="M399 273 Q422 285 449 274" fill="none" stroke="#202a33" stroke-width="4"/>
+    </g>
+
+    <!-- absurd briefcase -->
+    <g transform="translate(0 0)">
+      <rect x="505" y="280" width="118" height="82" rx="10" fill="#9c5a32" class="ink"/>
+      <path d="M535 280 V258 Q535 246 547 246 H581 Q593 246 593 258 V280" fill="none" class="ink"/>
+      <path d="M505 315 H623" stroke="#e8b45b" stroke-width="5"/>
+      <circle cx="565" cy="315" r="7" fill="#e8b45b"/>
+      <text x="564" y="343" text-anchor="middle" font-size="15" font-weight="900" class="label" fill="#fff2c7">URGENT</text>
+    </g>
+  </g>
+
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="22" font-weight="800">A beak-first approach to work-life balance.</text>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 03:00:39 SGT (UTC+08:00)</text>
+</svg>
