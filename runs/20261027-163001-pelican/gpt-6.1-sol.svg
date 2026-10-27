@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8dd7ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#17324d" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink{stroke:#17324d;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#17324d}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 430 Q130 385 260 425 T520 420 T800 415 V600 H0Z" fill="#8ccf72"/>
+  <path d="M0 470 Q180 425 350 465 T800 455 V600 H0Z" fill="#65b95a"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="20" font-style="italic">“Why walk when you can wobble with style?”</text>
+
+  <g opacity=".8" fill="#fff">
+    <ellipse cx="120" cy="145" rx="62" ry="22"/>
+    <ellipse cx="170" cy="145" rx="48" ry="18"/>
+    <ellipse cx="650" cy="150" rx="70" ry="24"/>
+    <ellipse cx="705" cy="150" rx="45" ry="17"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <circle cx="250" cy="430" r="76" fill="#d7eef4" class="ink"/>
+      <circle cx="585" cy="430" r="76" fill="#d7eef4" class="ink"/>
+      <g fill="none" class="ink">
+        <path d="M250 430 L350 300 L455 430 L250 430"/>
+        <path d="M350 300 L390 430"/>
+        <path d="M350 300 L315 270"/>
+        <path d="M315 270 L285 270"/>
+        <path d="M455 430 L520 300 L560 300"/>
+        <path d="M520 300 L545 275"/>
+        <path d="M545 275 L575 275"/>
+      </g>
+      <g class="ink" fill="none">
+        <circle cx="350" cy="430" r="18"/>
+        <path d="M350 430 l-35 -25 M350 430 l37 28"/>
+      </g>
+      <g stroke="#6aa9bd" stroke-width="3" opacity=".75">
+        <path d="M250 354v152 M174 430h152 M196 376l108 108 M196 484l108-108"/>
+        <path d="M585 354v152 M509 430h152 M531 376l108 108 M531 484l108-108"/>
+      </g>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="390" cy="245" rx="92" ry="112" fill="#f4f0df" class="ink"/>
+      <path d="M335 205 Q390 155 447 205 Q420 250 350 255Z" fill="#d7d2be" class="ink"/>
+      <ellipse cx="405" cy="156" rx="68" ry="60" fill="#f4f0df" class="ink"/>
+      <path d="M445 163 Q540 158 590 192 Q548 235 445 205Z" fill="#f2a33c" class="ink"/>
+      <path d="M445 163 Q525 173 576 195 Q525 205 447 202Z" fill="#f6bf58"/>
+      <circle cx="432" cy="148" r="9" fill="#17324d"/>
+      <path d="M365 285 Q320 330 328 390" fill="none" class="ink"/>
+      <path d="M430 286 Q474 330 461 390" fill="none" class="ink"/>
+      <path d="M330 390 l-25 22 M330 390 l28 15 M461 390 l-24 22 M461 390 l30 12" fill="none" class="ink"/>
+      <path d="M343 265 Q295 230 275 260 Q315 305 360 302" fill="#ebe6d3" class="ink"/>
+      <path d="M430 265 Q480 235 500 267 Q462 302 420 301" fill="#ebe6d3" class="ink"/>
+      <path d="M374 220 Q398 236 422 220" fill="none" class="ink"/>
+      <text x="394" y="335" text-anchor="middle" class="label" font-size="18" font-weight="700">HONK!</text>
+    </g>
+
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 350 430;18 350 430;0 350 430;-18 350 430;0 350 430" dur="1.2s" repeatCount="indefinite"/>
+      <circle cx="350" cy="430" r="10" fill="#f2a33c" class="ink"/>
+      <path d="M350 430 l-38 -28 M350 430 l40 28" fill="none" class="ink"/>
+    </g>
+  </g>
+
+  <path d="M82 350 q28 -28 56 0" fill="none" class="ink"/>
+  <path d="M675 340 q28 -28 56 0" fill="none" class="ink"/>
+  <text x="400" y="548" text-anchor="middle" class="label" font-size="17" font-weight="700">2026-10-27 16:31:33 SGT (UTC+08:00)</text>
+</svg>

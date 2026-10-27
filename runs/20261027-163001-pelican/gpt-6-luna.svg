@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Power Pedaler</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly carrying an absurdly oversized beak.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#eafcff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#66717d"/>
+      <stop offset="1" stop-color="#353d47"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#202b35;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202b35}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="100" r="45" fill="#ffd866" opacity=".9"/>
+  <path d="M0 315 Q120 260 240 315 T480 315 T720 315 T960 315 V425 H0Z" fill="#8bd37d"/>
+  <path d="M0 360 Q170 325 340 365 T680 355 T900 370 V425 H0Z" fill="#62b96d"/>
+  <rect y="410" width="800" height="145" fill="url(#road)"/>
+  <path d="M0 480 H800" stroke="#f7d66a" stroke-width="8" stroke-dasharray="55 35"/>
+  <path d="M0 550 H800" stroke="#222a32" stroke-width="10"/>
+
+  <g filter="url(#shadow)">
+    <rect x="38" y="25" width="724" height="74" rx="18" fill="#fff7d6" class="ink"/>
+    <text x="400" y="62" text-anchor="middle" class="label" font-size="34" font-weight="900">PELICAN POWER PEDALER</text>
+    <text x="400" y="86" text-anchor="middle" class="label" font-size="16" font-weight="700">“If the beak fits, the bike goes!”</text>
+  </g>
+
+  <g id="bike" class="ink" fill="none">
+    <g id="rearWheel">
+      <circle cx="250" cy="450" r="73" fill="#e9f7ff"/>
+      <circle cx="250" cy="450" r="12" fill="#ef6b5b"/>
+      <path d="M250 377 V523 M177 450 H323 M198 398 L302 502 M198 502 L302 398"/>
+    </g>
+    <g id="frontWheel">
+      <circle cx="570" cy="450" r="73" fill="#e9f7ff"/>
+      <circle cx="570" cy="450" r="12" fill="#ef6b5b"/>
+      <path d="M570 377 V523 M497 450 H643 M518 398 L622 502 M518 502 L622 398"/>
+    </g>
+    <path d="M250 450 L350 350 L450 450 L250 450 M350 350 L570 450 M450 450 L510 350 L570 450 M350 350 L320 315"/>
+    <path d="M510 350 L540 320"/>
+    <path d="M307 315 H342"/>
+    <path d="M535 320 H570"/>
+    <circle cx="350" cy="450" r="20" fill="#ffd866"/>
+    <path d="M350 450 L322 427 M350 450 L378 474"/>
+  </g>
+
+  <g id="pelican" class="ink">
+    <g id="bodyBob">
+      <ellipse cx="405" cy="270" rx="93" ry="119" fill="#f4f7f7"/>
+      <path d="M355 292 Q405 335 470 290 Q485 345 445 370 Q380 385 340 335Z" fill="#d8e2e5"/>
+      <path d="M365 226 Q390 195 445 212" fill="none"/>
+      <path d="M372 254 Q405 282 443 252" fill="none" stroke="#7d98a3" stroke-width="8"/>
+      <circle cx="443" cy="174" r="47" fill="#f4f7f7"/>
+      <circle cx="460" cy="166" r="8" fill="#202b35" stroke="none"/>
+      <path d="M475 180 Q565 185 638 225 Q566 253 475 220Z" fill="#f4a43d"/>
+      <path d="M480 220 Q555 258 625 225 Q565 286 476 239Z" fill="#e98332"/>
+      <path d="M490 212 Q555 215 613 228" fill="none" stroke="#bd652b" stroke-width="4"/>
+      <path d="M380 365 L365 432 M425 365 L455 432" fill="none"/>
+      <path d="M350 431 Q370 422 382 435 M445 433 Q465 423 478 438" fill="#f4a43d"/>
+      <path d="M355 300 Q318 330 298 365 Q333 359 357 345" fill="#c2d1d6"/>
+      <path d="M455 300 Q490 330 505 365 Q474 359 453 345" fill="#c2d1d6"/>
+    </g>
+    <path d="M360 345 L320 315" fill="none"/>
+    <path d="M425 350 L450 430" fill="none"/>
+    <path d="M450 430 L472 454" fill="none"/>
+  </g>
+
+  <g class="label" font-weight="700">
+    <path d="M575 150 Q640 120 700 150" fill="none" stroke="#202b35" stroke-width="4"/>
+    <text x="700" y="142" text-anchor="end" font-size="20">“HONK!”</text>
+    <text x="700" y="166" text-anchor="end" font-size="15">Premium beak-powered transport</text>
+  </g>
+
+  <g class="label">
+    <rect x="42" y="505" width="716" height="38" rx="10" fill="#fff7d6" stroke="#202b35" stroke-width="4"/>
+    <text x="400" y="531" text-anchor="middle" font-size="16" font-weight="700">2026-10-27 16:32:27 SGT (UTC+08:00)</text>
+  </g>
+
+  <animateTransform href="#rearWheel" attributeName="transform" type="rotate" from="0 250 450" to="360 250 450" dur="2s" repeatCount="indefinite"/>
+  <animateTransform href="#frontWheel" attributeName="transform" type="rotate" from="0 570 450" to="360 570 450" dur="2s" repeatCount="indefinite"/>
+  <animateTransform href="#bodyBob" attributeName="transform" type="translate" values="0 0;0 -7;0 0;0 7;0 0" dur="1s" repeatCount="indefinite"/>
+</svg>
