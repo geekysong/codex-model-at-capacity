@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#d8f5ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#777"/>
+      <stop offset="1" stop-color="#343434"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#17232b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;font-weight:800;fill:#17232b}
+      .small{font-family:Arial,sans-serif;font-weight:700;fill:#17232b}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+      @keyframes pedal{0%,100%{transform:rotate(0deg)}50%{transform:rotate(180deg)}}
+      .pelican{animation:bob 1.2s ease-in-out infinite}
+      .crank{transform-origin:440px 435px;animation:pedal .8s linear infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="48" fill="#ffe58a" opacity=".85"/>
+  <path d="M0 355 Q120 300 245 350 T500 345 T800 350 V425 H0Z" fill="#8bcf7b"/>
+  <path d="M0 410 Q190 385 380 410 T800 405 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 515 H800" stroke="#ffd65a" stroke-width="10" stroke-dasharray="42 28"/>
+  <path d="M0 462 Q80 440 160 462 M620 455 Q700 435 800 455" fill="none" stroke="#9cdbed" stroke-width="7"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="34">THE PELICAN PEDAL EXPRESS</text>
+  <text x="400" y="91" text-anchor="middle" class="small" font-size="18">“Why fly when you can make traffic regret everything?”</text>
+
+  <g id="bicycle">
+    <g class="wheel">
+      <circle cx="265" cy="455" r="78" fill="#e7edf0" class="ink"/>
+      <circle cx="585" cy="455" r="78" fill="#e7edf0" class="ink"/>
+      <circle cx="265" cy="455" r="10" fill="#17232b"/>
+      <circle cx="585" cy="455" r="10" fill="#17232b"/>
+      <g stroke="#65747c" stroke-width="3">
+        <path d="M265 377V533M187 455H343M210 400L320 510M320 400L210 510"/>
+        <path d="M585 377V533M507 455H663M530 400L640 510M640 400L530 510"/>
+      </g>
+    </g>
+    <path d="M265 455 L365 395 L440 455 L585 455 L365 395 L330 455 Z" fill="none" class="ink" stroke="#e44f4f"/>
+    <path d="M365 395 L350 350" class="ink" fill="none"/>
+    <path d="M333 348 H380" class="ink" fill="none"/>
+    <path d="M440 455 L440 420" class="ink" fill="none"/>
+    <g class="crank">
+      <circle cx="440" cy="435" r="13" fill="#f5c542" class="ink"/>
+      <path d="M440 435 L470 455 M440 435 L410 415" class="ink" fill="none"/>
+      <path d="M468 452 h24 M408 412 h-24" class="ink" fill="none"/>
+    </g>
+    <path d="M585 455 L612 350 L630 350" class="ink" fill="none"/>
+  </g>
+
+  <g class="pelican">
+    <ellipse cx="410" cy="305" rx="95" ry="82" fill="#f5f1df" class="ink"/>
+    <path d="M355 280 Q315 225 350 170 Q390 125 445 160 Q478 180 474 225 Q470 275 430 300Z" fill="#fffdf2" class="ink"/>
+    <path d="M350 205 Q275 215 205 250 Q178 264 198 284 Q220 305 260 294 L374 257Z" fill="#f2a33a" class="ink"/>
+    <path d="M208 252 Q285 255 365 240 Q310 280 230 279Z" fill="#f7bd4d"/>
+    <circle cx="403" cy="190" r="10" fill="#17232b"/>
+    <path d="M450 215 Q500 230 525 270" fill="none" class="ink"/>
+    <path d="M525 270 Q548 290 530 313 Q508 329 488 304" fill="#f2a33a" class="ink"/>
+    <path d="M365 365 Q400 390 438 365" fill="none" class="ink"/>
+    <path d="M370 370 L350 430 M435 370 L455 430" fill="none" class="ink"/>
+    <path d="M350 430 Q365 445 380 430 M455 430 Q470 445 485 430" fill="none" class="ink"/>
+    <path d="M388 238 Q420 260 455 238" fill="none" stroke="#e1b98a" stroke-width="8"/>
+    <text x="410" y="320" text-anchor="middle" class="small" font-size="17" fill="#b14b32">LICENSED TO WING IT</text>
+  </g>
+
+  <g transform="translate(515 185) rotate(8)">
+    <path d="M0 0 Q58 -35 108 5 L92 70 Q43 83 0 43Z" fill="#7abf62" class="ink"/>
+    <path d="M15 15 Q58 -5 93 18" fill="none" stroke="#fff" stroke-width="6"/>
+    <text x="52" y="42" text-anchor="middle" font-size="18" class="label" fill="#fff">FISH</text>
+  </g>
+
+  <path d="M95 330 Q130 300 160 330" fill="none" stroke="#fff" stroke-width="8" opacity=".8"/>
+  <path d="M120 320 Q145 290 175 320" fill="none" stroke="#fff" stroke-width="5" opacity=".8"/>
+  <text x="400" y="568" text-anchor="middle" class="small" font-size="16">2026-10-27 08:00:01 SGT (UTC+08:00)</text>
+</svg>

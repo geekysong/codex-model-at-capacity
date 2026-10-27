@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon pelican rides a bicycle while trying to deliver fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#d8f5ff"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#182533;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#182533}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff3a6" stroke="#182533" stroke-width="5"/>
+  <path d="M0 390 Q130 330 260 390 T520 390 T800 380 V520 H0Z" fill="#82c96b" class="ink"/>
+  <path d="M0 470 Q180 420 360 470 T800 455 V540 H0Z" fill="#4d9b57"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="42" font-weight="900">PELICAN PEDAL PANIC</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="20" font-weight="700">“Local bird discovers that beaks make terrible handlebars.”</text>
+
+  <!-- bicycle -->
+  <g id="bike">
+    <g>
+      <circle cx="250" cy="430" r="78" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 250 430" to="360 250 430" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="550" cy="430" r="78" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 550 430" to="360 550 430" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M250 430 L350 300 L450 430 L250 430 M350 300 L550 430 M450 430 L520 300 L575 300 M350 300 L320 265" fill="none" class="ink"/>
+      <circle cx="350" cy="430" r="16" fill="#f4b942" class="ink"/>
+      <path d="M350 430 L315 397 M350 430 L382 463" fill="none" class="ink"/>
+    </g>
+  </g>
+
+  <!-- pelican body bob -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="1s" repeatCount="indefinite"/>
+    <ellipse cx="390" cy="260" rx="92" ry="105" fill="#f4f1e8" class="ink"/>
+    <path d="M325 285 Q390 340 455 285 L447 350 Q390 383 333 350Z" fill="#f0a83c" class="ink"/>
+    <circle cx="385" cy="170" r="58" fill="#f4f1e8" class="ink"/>
+    <path d="M340 170 Q282 168 205 205 Q282 225 350 207Z" fill="#ed9d31" class="ink"/>
+    <path d="M214 205 Q275 212 337 197" fill="none" stroke="#b36c1e" stroke-width="4"/>
+    <circle cx="400" cy="158" r="10" fill="#182533"/>
+    <path d="M424 190 Q452 206 438 232" fill="none" class="ink"/>
+    <path d="M357 350 L330 405 M421 350 L448 405" fill="none" class="ink"/>
+    <path d="M330 405 L310 420 M330 405 L340 425 M448 405 L430 420 M448 405 L460 422" fill="none" class="ink"/>
+    <path d="M345 255 Q390 280 435 255" fill="none" class="ink"/>
+    <text x="470" y="225" class="label" font-size="23" font-weight="700">HONK!</text>
+    <path d="M470 235 l25 10 M478 220 l28 -5" stroke="#d94b3d" stroke-width="5"/>
+  </g>
+
+  <!-- wings gripping handlebars -->
+  <path d="M335 245 Q300 275 320 315 L365 300" fill="#f4f1e8" class="ink"/>
+  <path d="M440 245 Q475 270 455 312 L420 300" fill="#f4f1e8" class="ink"/>
+
+  <rect x="28" y="520" width="744" height="54" rx="14" fill="#fff8dc" stroke="#182533" stroke-width="4"/>
+  <text x="400" y="544" text-anchor="middle" class="label" font-size="17" font-weight="700">Breaking news: cyclist claims the fish are “in the trunk,” but the trunk is his beak.</text>
+  <text x="400" y="565" text-anchor="middle" class="label" font-size="14">2026-10-27 08:01:21 SGT (UTC+08:00)</text>
+</svg>
