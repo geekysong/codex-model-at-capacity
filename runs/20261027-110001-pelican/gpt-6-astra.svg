@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon of a pelican riding a bicycle while proudly delivering absolutely nothing.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#17212b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bfeeff"/>
+  <path d="M0 470 Q180 430 350 465 T800 450 V600 H0Z" fill="#91d36b"/>
+  <path d="M0 500 Q220 465 410 500 T800 485" fill="none" stroke="#4d9b52" stroke-width="7"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="40" font-weight="900">THE PELICAN PEDAL EXPRESS</text>
+  <text x="400" y="94" text-anchor="middle" class="label" font-size="20" font-weight="700">Delivering fishy business at one beak per hour</text>
+
+  <g opacity=".7" fill="#fff">
+    <ellipse cx="120" cy="145" rx="58" ry="20"/>
+    <ellipse cx="170" cy="145" rx="42" ry="16"/>
+    <ellipse cx="680" cy="150" rx="70" ry="22"/>
+    <ellipse cx="735" cy="150" rx="45" ry="17"/>
+  </g>
+
+  <!-- bicycle -->
+  <g class="ink" fill="none">
+    <circle cx="235" cy="448" r="78" stroke="#263746" stroke-width="10"/>
+    <circle cx="590" cy="448" r="78" stroke="#263746" stroke-width="10"/>
+    <path d="M235 448 L345 330 L470 448 L235 448 L410 448 L345 330 L590 448 L550 300"/>
+    <path d="M550 300 L585 270"/>
+    <path d="M530 270 Q560 250 590 270"/>
+    <path d="M345 330 L330 292"/>
+    <circle cx="410" cy="448" r="18" fill="#f5b335"/>
+    <path d="M410 448 l-35 -28 M410 448 l35 28"/>
+    <path d="M410 420 l-18 -8 M445 476 l18 8"/>
+  </g>
+
+  <!-- spinning wheel spokes -->
+  <g class="ink" opacity=".65">
+    <g>
+      <path d="M235 448v-70 M235 448l-50-50 M235 448h-70 M235 448l-50 50 M235 448v70 M235 448l50 50 M235 448h70 M235 448l50-50"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 235 448" to="360 235 448" dur="2s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <path d="M590 448v-70 M590 448l-50-50 M590 448h-70 M590 448l-50 50 M590 448v70 M590 448l50 50 M590 448h70 M590 448l50-50"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 590 448" to="360 590 448" dur="2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- pelican rider -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="390" cy="280" rx="78" ry="92" fill="#f7f3e8" class="ink"/>
+    <path d="M350 240 Q300 190 335 138 Q370 105 420 135 Q448 160 430 220" fill="#f7f3e8" class="ink"/>
+    <circle cx="383" cy="150" r="9" fill="#17212b"/>
+    <path d="M350 175 Q300 175 255 205 Q300 238 370 205 Q390 194 350 175Z" fill="#f29f38" class="ink"/>
+    <path d="M260 205 Q300 210 350 198" fill="none" stroke="#bd6928" stroke-width="4"/>
+    <path d="M365 245 Q410 260 448 305" fill="none" class="ink"/>
+    <path d="M448 305 Q485 330 505 365" fill="none" class="ink"/>
+    <path d="M505 365 l20 -10 M505 365 l4 22" fill="none" class="ink"/>
+    <path d="M365 245 Q330 275 315 330" fill="none" class="ink"/>
+    <path d="M315 330 Q300 365 330 395" fill="none" class="ink"/>
+    <path d="M330 395 l-16 16 M330 395 l20 7" fill="none" class="ink"/>
+    <path d="M375 360 Q410 345 448 360" fill="none" stroke="#d95a4e" stroke-width="7"/>
+    <path d="M385 265 Q420 280 440 265" fill="none" stroke="#17212b" stroke-width="5"/>
+    <path d="M390 380 Q420 398 450 380" fill="none" stroke="#f29f38" stroke-width="14"/>
+  </g>
+
+  <!-- motion lines and joke sign -->
+  <path d="M115 365 h55 M95 390 h75 M650 350 h65" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <g transform="rotate(-5 650 255)">
+    <rect x="600" y="210" width="150" height="75" rx="12" fill="#fff4a8" class="ink"/>
+    <text x="675" y="240" text-anchor="middle" class="label" font-size="17" font-weight="800">NO FISH?</text>
+    <text x="675" y="263" text-anchor="middle" class="label" font-size="17" font-weight="800">NO PROBLEM!</text>
+  </g>
+
+  <rect x="0" y="548" width="800" height="52" fill="#fff" opacity=".92"/>
+  <text x="400" y="578" text-anchor="middle" class="label" font-size="18" font-weight="700">2026-10-27 11:00:01 SGT (UTC+08:00)</text>
+</svg>

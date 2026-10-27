@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe8ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#262626"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17324d" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17324d}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .rider{animation:bob 1.1s ease-in-out infinite}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe58a" stroke="#17324d" stroke-width="5"/>
+  <path d="M0 365 Q120 320 235 365 T470 360 T800 350 V430 H0Z" fill="#7cc96d" opacity=".9"/>
+  <path d="M0 405 Q160 375 320 408 T650 400 T800 390 V470 H0Z" fill="#4ea95c"/>
+  <path d="M0 448 Q200 430 400 450 T800 445 V600 H0Z" fill="url(#road)"/>
+  <path d="M30 525 H770" stroke="#ffd866" stroke-width="8" stroke-dasharray="45 30" opacity=".8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="105" y="35" width="590" height="88" rx="24" fill="#fff5c2" class="ink"/>
+    <text x="400" y="76" text-anchor="middle" class="label" font-size="34" font-weight="900">THE GREAT PELICAN</text>
+    <text x="400" y="108" text-anchor="middle" class="label" font-size="24" font-weight="700">BIRD OF WHEEL FORTUNE</text>
+  </g>
+
+  <g class="rider">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M235 455 L330 350 L430 455 L235 455 L385 455 L330 350 L470 350 L430 455"/>
+      <path d="M470 350 L515 315"/>
+      <path d="M500 315 H540"/>
+      <path d="M330 350 L315 315"/>
+      <path d="M292 315 H340"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="235" cy="455" r="67" fill="#eaf7ff" class="ink"/>
+      <circle cx="235" cy="455" r="8" fill="#17324d"/>
+      <path d="M235 388V522 M168 455H302 M188 408L282 502 M188 502L282 408" stroke="#6a91a8" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="430" cy="455" r="67" fill="#eaf7ff" class="ink"/>
+      <circle cx="430" cy="455" r="8" fill="#17324d"/>
+      <path d="M430 388V522 M363 455H497 M383 408L477 502 M383 502L477 408" stroke="#6a91a8" stroke-width="3"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="365" cy="255" rx="82" ry="94" fill="#fffdf4" class="ink"/>
+    <path d="M314 270 Q350 315 398 285 Q420 270 431 235 Q405 205 370 210 Q330 215 314 270Z" fill="#dceaf0" class="ink"/>
+    <path d="M328 205 Q355 170 390 190 Q418 205 410 245 Q390 264 360 252 Q330 240 328 205Z" fill="#fffdf4" class="ink"/>
+    <circle cx="380" cy="211" r="7" fill="#17324d"/>
+    <path d="M405 224 Q470 230 530 268 Q482 294 412 258 Q395 247 405 224Z" fill="#f3a33b" class="ink"/>
+    <path d="M415 258 Q474 270 530 268" fill="none" stroke="#d67c24" stroke-width="5"/>
+    <path d="M339 287 Q366 313 395 287" fill="none" stroke="#17324d" stroke-width="5"/>
+    <path d="M335 185 Q305 165 290 140" fill="none" class="ink"/>
+    <path d="M344 180 Q325 150 335 125" fill="none" class="ink"/>
+
+    <!-- wing and wingtip handlebar gag -->
+    <path d="M318 250 Q274 265 282 330 Q319 312 348 280" fill="#c9dce5" class="ink"/>
+    <path d="M300 325 Q325 337 350 326" fill="none" class="ink"/>
+    <path d="M350 327 L385 350" class="ink" fill="none"/>
+
+    <!-- legs -->
+    <path d="M345 330 L315 405 L360 430" fill="none" class="ink"/>
+    <path d="M398 330 L420 404 L390 430" fill="none" class="ink"/>
+    <ellipse cx="360" cy="430" rx="17" ry="8" fill="#f3a33b" class="ink"/>
+    <ellipse cx="390" cy="430" rx="17" ry="8" fill="#f3a33b" class="ink"/>
+
+    <!-- pedal -->
+    <g class="pedal">
+      <circle cx="375" cy="455" r="14" fill="#f3a33b" class="ink"/>
+      <path d="M375 455 L402 470 M375 455 L348 440" class="ink" fill="none"/>
+      <path d="M402 470 h20 M348 440 h-20" class="ink" fill="none"/>
+    </g>
+
+    <!-- speech bubble -->
+    <path d="M520 155 Q640 120 710 180 Q730 230 670 254 Q608 270 540 235 L500 255 L513 220 Q490 190 520 155Z" fill="#fff" class="ink"/>
+    <text x="610" y="185" text-anchor="middle" class="label" font-size="22" font-weight="800">I’m all beak</text>
+    <text x="610" y="213" text-anchor="middle" class="label" font-size="22" font-weight="800">and no brakes!</text>
+  </g>
+
+  <g class="label" font-weight="700">
+    <text x="400" y="555" text-anchor="middle" font-size="22">A pelican pedals into the beak lane.</text>
+    <text x="400" y="582" text-anchor="middle" font-size="15">2026-10-27 11:02:35 SGT (UTC+08:00)</text>
+  </g>
+</svg>
