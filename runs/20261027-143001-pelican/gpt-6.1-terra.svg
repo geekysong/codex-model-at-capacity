@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Through the Paperwork</title>
+  <desc id="desc">A satirical pelican rides a bicycle while carrying an absurdly large briefcase.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c6670"/>
+      <stop offset="1" stop-color="#252c34"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#18212b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#20252b; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#20252b; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2.2s linear infinite; }
+      .rider { animation:bob .7s ease-in-out infinite alternate; transform-origin:380px 250px; }
+      .pedal { animation:pedal .7s linear infinite; transform-box:fill-box; transform-origin:center; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-5px); } }
+      @keyframes pedal { to { transform:rotate(360deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="100" r="48" fill="#ffe77a" opacity=".9"/>
+  <path d="M0 360 Q120 300 250 350 T520 335 T800 345 V430 H0Z" fill="#8cc47b"/>
+  <path d="M0 410 Q190 380 400 420 T800 405 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 510 L800 490" stroke="#f6d365" stroke-width="8" stroke-dasharray="42 30" opacity=".8"/>
+
+  <g class="label" text-anchor="middle">
+    <rect x="55" y="28" width="690" height="72" rx="18" fill="#fffdf4" stroke="#20252b" stroke-width="5" filter="url(#shadow)"/>
+    <text x="400" y="62" font-size="31" font-weight="900">PELICAN PEDALS THROUGH THE PAPERWORK</text>
+    <text x="400" y="88" font-size="17" font-weight="700">“Going nowhere fast, but with excellent beak-to-wheel torque.”</text>
+  </g>
+
+  <!-- bicycle -->
+  <g fill="none" class="ink">
+    <g class="wheel">
+      <circle cx="235" cy="455" r="73" fill="#e7eef2"/>
+      <circle cx="235" cy="455" r="12" fill="#20252b"/>
+      <path d="M235 382V528 M162 455H308 M184 404L286 506 M286 404L184 506"/>
+    </g>
+    <g class="wheel">
+      <circle cx="575" cy="455" r="73" fill="#e7eef2"/>
+      <circle cx="575" cy="455" r="12" fill="#20252b"/>
+      <path d="M575 382V528 M502 455H648 M524 404L626 506 M626 404L524 506"/>
+    </g>
+    <path d="M235 455 L350 350 L470 455 Z M350 350 L575 455 M470 455 L515 335 L575 455 M515 335 L555 335" stroke-width="10"/>
+    <path d="M340 350 L315 315 M300 315 H335" stroke-width="10"/>
+  </g>
+
+  <!-- rider -->
+  <g class="rider">
+    <!-- oversized briefcase gag -->
+    <g transform="rotate(-8 425 275)">
+      <rect x="420" y="230" width="150" height="106" rx="12" fill="#b94d4d" class="ink"/>
+      <path d="M465 230v-24q0-14 14-14h34q14 0 14 14v24" fill="none" class="ink"/>
+      <path d="M440 263h110 M440 292h110" stroke="#f8c66d" stroke-width="6"/>
+      <text x="495" y="322" text-anchor="middle" font-size="15" font-weight="900" class="label">URGENT</text>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="380" cy="265" rx="78" ry="92" fill="#f4f1e8" class="ink"/>
+    <path d="M325 265 Q375 230 432 272 Q406 315 346 320 Q320 300 325 265Z" fill="#d8e1e5" class="ink"/>
+    <!-- wing -->
+    <path d="M347 245 Q392 258 414 302 Q384 325 348 294Z" fill="#aab8bf" class="ink"/>
+    <!-- neck/head -->
+    <path d="M350 205 Q332 135 390 126 Q443 121 452 180 L434 231 Q395 240 350 205Z" fill="#f4f1e8" class="ink"/>
+    <circle cx="410" cy="163" r="9" fill="#20252b"/>
+    <path d="M430 188 Q500 183 557 211 Q515 235 432 215Z" fill="#efb15a" class="ink"/>
+    <path d="M450 212 Q500 238 548 213" fill="none" stroke="#20252b" stroke-width="5"/>
+    <path d="M371 138 Q405 108 438 137" fill="none" stroke="#20252b" stroke-width="7"/>
+    <text x="391" y="190" text-anchor="middle" font-size="14" font-weight="900" class="label">?</text>
+
+    <!-- legs -->
+    <path d="M365 330 L330 392 L390 420" fill="none" class="ink"/>
+    <path d="M410 330 L455 388 L420 423" fill="none" class="ink"/>
+    <path d="M382 420 L420 420" fill="none" class="ink"/>
+    <path d="M390 420 L350 420" fill="none" class="ink"/>
+    <!-- feet / pedal -->
+    <g class="pedal">
+      <circle cx="405" cy="420" r="16" fill="#f2c35e" class="ink"/>
+      <path d="M405 420l31-16 M405 420l-29 16" class="ink"/>
+    </g>
+
+    <!-- handlebars and comic motion -->
+    <path d="M510 330 q22-18 45 0" fill="none" class="ink"/>
+    <path d="M515 320 l20-13 M525 327 l25-4" stroke="#20252b" stroke-width="5"/>
+    <path d="M300 160 q-22-20-40-4 M301 176 q-27-8-42 8" fill="none" stroke="#d85a4a" stroke-width="6"/>
+  </g>
+
+  <g class="label">
+    <path d="M86 176 Q86 133 130 133 H245 Q276 133 276 164 V208 Q276 239 245 239 H154 L116 266 V239 H130 Q86 239 86 196Z" fill="#fffdf4" class="ink"/>
+    <text x="181" y="176" text-anchor="middle" font-size="21" font-weight="900">“I OBJECT!”</text>
+    <text x="181" y="202" text-anchor="middle" font-size="16">— the beak of bureaucracy</text>
+  </g>
+
+  <g class="label">
+    <rect x="54" y="548" width="692" height="35" rx="9" fill="#fffdf4" stroke="#20252b" stroke-width="3"/>
+    <text x="400" y="572" text-anchor="middle" font-size="16" font-weight="700">2026-10-27 14:32:09 SGT (UTC+08:00)</text>
+  </g>
+</svg>
