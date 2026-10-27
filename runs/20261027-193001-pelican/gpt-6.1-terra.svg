@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican pedals furiously on a bicycle while pretending to be an athlete.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#dff6ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b66"/>
+      <stop offset="1" stop-color="#252a33"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#18202a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202936;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202936}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      .ride{animation:bob .6s ease-in-out infinite alternate}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="44" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 350 Q120 290 240 345 T480 330 T800 340 V430 H0Z" fill="#a8d58b"/>
+  <path d="M0 395 Q160 350 320 392 T640 380 T800 395 V470 H0Z" fill="#78b66e"/>
+  <path d="M0 430 Q160 410 320 430 T640 420 T800 430 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 505 H800" stroke="#f7d46b" stroke-width="8" stroke-dasharray="55 38"/>
+  <path d="M0 570 H800" stroke="#11161c" stroke-width="5"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#fff" stroke="#202936" stroke-width="3" paint-order="stroke">
+    THE GREAT PELICAN GRAND PRIX
+  </text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="18" font-weight="700" fill="#263746">
+    “Why walk when you can wobble with confidence?”
+  </text>
+
+  <g class="ride" filter="url(#shadow)">
+    <!-- bicycle -->
+    <g fill="none" class="ink">
+      <circle cx="245" cy="445" r="76" fill="#edf5fa" stroke-width="8" class="wheel"/>
+      <circle cx="565" cy="445" r="76" fill="#edf5fa" stroke-width="8" class="wheel"/>
+      <path d="M245 445 L350 445 L415 350 L565 445 L350 445 L305 365 Z" fill="#ff6b4a"/>
+      <path d="M350 445 L305 365 M415 350 L450 320 M450 320 L480 320" />
+      <path d="M305 365 L275 345" />
+      <path d="M415 350 L425 305" />
+      <circle cx="350" cy="445" r="18" fill="#ffd166"/>
+      <g class="pedal" stroke-width="5">
+        <path d="M350 445 L375 470 M350 445 L325 420"/>
+        <path d="M375 470 l18 0 M325 420 l-18 0"/>
+      </g>
+      <path d="M565 445 L552 365" />
+      <path d="M552 365 L565 350" />
+    </g>
+
+    <!-- pelican -->
+    <g>
+      <ellipse cx="405" cy="285" rx="72" ry="82" fill="#f4f0e6" class="ink"/>
+      <path d="M356 284 Q315 245 330 198 Q350 155 396 178 Q430 195 425 239 Q418 273 391 292Z" fill="#fffdf5" class="ink"/>
+      <path d="M348 215 Q385 195 424 218 L486 254 Q505 266 487 279 L418 271 Q382 260 348 245Z" fill="#f3a94b" class="ink"/>
+      <path d="M477 254 Q514 250 530 268 Q510 290 486 279" fill="#e8953a" class="ink"/>
+      <circle cx="390" cy="208" r="9" fill="#202936"/>
+      <path d="M385 180 Q405 151 430 168" fill="none" class="ink"/>
+      <path d="M381 360 Q395 386 419 365" fill="none" class="ink"/>
+      <path d="M371 356 L350 421 M431 358 L452 422" fill="none" class="ink"/>
+      <path d="M350 421 l-23 16 M350 421 l25 10 M452 422 l-20 16 M452 422 l26 8" fill="none" class="ink"/>
+      <path d="M370 264 Q405 285 443 263" fill="none" stroke="#d7cfc1" stroke-width="8"/>
+      <path d="M350 284 Q315 310 335 337 Q359 355 381 326" fill="#e7dfd1" class="ink"/>
+      <path d="M420 285 Q455 305 474 337 Q448 354 420 328" fill="#e7dfd1" class="ink"/>
+      <path d="M339 153 Q359 136 381 151" fill="none" stroke="#ef5b4c" stroke-width="8"/>
+    </g>
+  </g>
+
+  <g transform="translate(570 155)">
+    <path d="M0 28 Q38 0 76 28 Q38 57 0 28Z" fill="#fff" stroke="#202936" stroke-width="4"/>
+    <text x="38" y="34" text-anchor="middle" class="label" font-size="17" font-weight="800">I TRAINED</text>
+  </g>
+
+  <text x="400" y="548" text-anchor="middle" class="label" font-size="19" font-weight="700">
+    Pelican on a bicycle: maximum beak, minimum brakes.
+  </text>
+  <text x="400" y="588" text-anchor="middle" class="label" font-size="14" font-weight="600">
+    2026-10-27 19:33:10 SGT (UTC+08:00)
+  </text>
+</svg>

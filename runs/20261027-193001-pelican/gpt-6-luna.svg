@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pigeon? No, Pelican on a Bicycle!</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an oversized fish-shaped briefcase.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#f6fcff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#58636d"/>
+      <stop offset="1" stop-color="#2f3840"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#1c2630" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#18232c;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;fill:#18232c}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="44" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 365 Q125 320 250 360 T500 350 T800 360 V470 H0Z" fill="#8fcf8a"/>
+  <path d="M0 425 Q170 395 330 430 T650 420 T800 430 V520 H0Z" fill="#6cae73"/>
+  <rect y="455" width="800" height="105" fill="url(#road)"/>
+  <path d="M0 510 H800" stroke="#f7d96a" stroke-width="8" stroke-dasharray="46 32" opacity=".9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="28" width="720" height="78" rx="20" fill="#fff" stroke="#18232c" stroke-width="6"/>
+    <text x="400" y="80" text-anchor="middle" class="label" font-size="36" font-weight="900">THE BEAK GOES ON TOUR</text>
+  </g>
+  <text x="400" y="138" text-anchor="middle" class="label" font-size="20" font-weight="700">
+    “Why fly when you can pedal your problems downhill?”
+  </text>
+
+  <!-- motion lines -->
+  <g stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".8">
+    <path d="M92 235h75"/><path d="M62 270h105"/><path d="M105 305h58"/>
+  </g>
+
+  <!-- bicycle -->
+  <g class="ink" fill="none">
+    <circle cx="275" cy="455" r="78" fill="#27343d"/>
+    <circle cx="275" cy="455" r="61" stroke="#b9e6ef" stroke-width="5"/>
+    <circle cx="570" cy="455" r="78" fill="#27343d"/>
+    <circle cx="570" cy="455" r="61" stroke="#b9e6ef" stroke-width="5"/>
+    <g stroke="#b9e6ef" stroke-width="3" opacity=".8">
+      <path d="M275 394v122M214 455h122M232 412l86 86M318 412l-86 86"/>
+      <path d="M570 394v122M509 455h122M527 412l86 86M613 412l-86 86"/>
+    </g>
+    <path d="M275 455 L365 365 L470 455 L275 455 L420 455 L365 365 L570 455"/>
+    <path d="M365 365 L345 325 M338 325h48"/>
+    <path d="M470 455 L500 340 M485 340h42"/>
+  </g>
+
+  <!-- spinning wheel highlights -->
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".75">
+    <path d="M275 379 A76 76 0 0 1 335 409">
+      <animateTransform attributeName="transform" type="rotate" from="0 275 455" to="360 275 455" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M570 379 A76 76 0 0 1 630 409">
+      <animateTransform attributeName="transform" type="rotate" from="0 570 455" to="360 570 455" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- pedaling crank -->
+  <g class="ink">
+    <circle cx="420" cy="455" r="13" fill="#f4c542"/>
+    <path d="M420 455l-28 25 M420 455l30-22" fill="none"/>
+    <path d="M392 480h-25 M450 433h25" fill="none"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 420 455" to="360 420 455" dur="1.2s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- pelican body bobbing -->
+  <g id="pelican" transform="translate(0 0)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0;0 5;0 0" dur="1.2s" repeatCount="indefinite"/>
+
+    <!-- tail -->
+    <path d="M355 300 Q295 272 264 305 Q305 325 361 327Z" fill="#d9e7ed" class="ink"/>
+    <!-- body -->
+    <ellipse cx="410" cy="300" rx="92" ry="103" fill="#f6fbfd" class="ink"/>
+    <path d="M355 284 Q420 246 477 294 Q463 337 420 355 Q375 340 355 284Z" fill="#d8e7ed" class="ink"/>
+    <!-- wing -->
+    <path d="M425 281 Q492 278 504 337 Q474 367 432 349 Q450 321 425 281Z" fill="#a8c4cf" class="ink"/>
+    <path d="M451 315 Q475 330 490 351" fill="none" stroke="#6f929f" stroke-width="5"/>
+    <!-- neck -->
+    <path d="M389 236 Q395 185 427 164 L487 192 L463 260Z" fill="#f6fbfd" class="ink"/>
+    <!-- head -->
+    <circle cx="450" cy="155" r="62" fill="#f6fbfd" class="ink"/>
+    <!-- crest -->
+    <path d="M414 105 Q427 72 448 101 Q470 68 478 111" fill="#f6fbfd" class="ink"/>
+    <!-- eye and glasses -->
+    <circle cx="468" cy="143" r="9" fill="#18232c"/>
+    <path d="M448 142h-35 M478 142h30" fill="none"/>
+    <circle cx="438" cy="142" r="18" fill="none"/>
+    <circle cx="488" cy="142" r="18" fill="none"/>
+    <!-- beak -->
+    <path d="M487 158 Q600 148 650 185 Q594 227 486 190 Q470 175 487 158Z" fill="#f2a33b" class="ink"/>
+    <path d="M490 179 Q565 181 632 185" fill="none" stroke="#c46e23" stroke-width="4"/>
+    <path d="M560 172 Q570 191 559 209" fill="none" stroke="#c46e23" stroke-width="4"/>
+    <!-- beak gag label -->
+    <text x="534" y="166" class="label" font-size="14" font-weight="900" transform="rotate(8 534 166)">NO REFUNDS</text>
+
+    <!-- feet and legs -->
+    <path d="M390 365 L392 445 M442 365 L455 445" fill="none" class="ink"/>
+    <path d="M392 445 q-25 8-38 0 M455 445 q25 8 38 0" fill="none" class="ink"/>
+    <path d="M392 445 L420 455 M455 445 L420 455" fill="none" class="ink"/>
+    <!-- handlebars grip -->
+    <path d="M487 260 Q505 246 527 253" fill="none" class="ink"/>
+    <circle cx="527" cy="253" r="7" fill="#f2a33b" class="ink"/>
+  </g>
+
+  <!-- fish briefcase -->
+  <g transform="translate(0 0) rotate(-8 300 260)">
+    <path d="M212 238 Q250 202 325 220 L350 265 Q285 292 220 273Z" fill="#f28d57" class="ink"/>
+    <path d="M210 238l-28-22 8 43 30 14" fill="#f28d57" class="ink"/>
+    <circle cx="287" cy="241" r="6" fill="#18232c"/>
+    <path d="M243 255 Q274 268 310 252" fill="none" stroke="#a94d32" stroke-width="4"/>
+    <text x="260" y="232" class="label" font-size="13" font-weight="900">TAXES</text>
+  </g>
+
+  <!-- caption plaque -->
+  <g filter="url(#shadow)">
+    <rect x="84" y="548" width="632" height="34" rx="12" fill="#fff" stroke="#18232c" stroke-width="4"/>
+    <text x="400" y="572" text-anchor="middle" class="label" font-size="18" font-weight="700">
+      A pelican on a bicycle: because carrying a heavy load is easier with better spokes.
+    </text>
+  </g>
+
+  <!-- required visible timestamp footer -->
+  <text x="400" y="596" text-anchor="middle" class="label" font-size="13" font-weight="700">
+    2026-10-27 19:31:42 SGT (UTC+08:00)
+  </text>
+</svg>

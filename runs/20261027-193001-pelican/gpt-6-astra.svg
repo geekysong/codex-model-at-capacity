@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN PEDAL-OFF</title>
+  <desc id="desc">A smug pelican rides a bicycle while fish applaud from the roadside.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f0"/>
+      <stop offset="1" stop-color="#d9f5c9"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#65717d"/>
+      <stop offset="1" stop-color="#333b46"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink{stroke:#202936;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;font-weight:900;fill:#202936}
+      .small{font-family:Arial,sans-serif;font-weight:700;fill:#202936}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 375 Q120 320 245 365 T500 350 T800 365 V470 H0Z" fill="#7fc37b"/>
+  <path d="M0 430 Q180 400 350 430 T800 420 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 505 H800" stroke="#f7dc68" stroke-width="10" stroke-dasharray="55 38"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="35">THE GREAT PELICAN PEDAL-OFF</text>
+  <text x="400" y="96" text-anchor="middle" class="small" font-size="19">“Why walk when you can wobble with style?”</text>
+
+  <g transform="translate(92 275)" filter="url(#shadow)">
+    <ellipse cx="46" cy="168" rx="43" ry="13" fill="#202936" opacity=".25"/>
+    <circle cx="44" cy="111" r="45" fill="#fff" class="ink"/>
+    <circle cx="205" cy="111" r="45" fill="#fff" class="ink"/>
+    <g>
+      <circle cx="44" cy="111" r="7" fill="#ef6d45"/>
+      <circle cx="205" cy="111" r="7" fill="#ef6d45"/>
+      <path d="M44 111 L98 56 L145 111 L44 111 M98 56 L205 111 M98 56 L86 111 M86 111 L145 111" fill="none" class="ink"/>
+      <path d="M145 111 L166 83 M161 81 L178 81" fill="none" class="ink"/>
+      <g>
+        <circle cx="145" cy="111" r="13" fill="#ffd45b" class="ink"/>
+        <path d="M145 111 L137 94 M145 111 L160 120" class="ink"/>
+      </g>
+      <path d="M168 83 Q187 66 203 77" fill="none" class="ink"/>
+      <path d="M80 53 L98 44 L110 56" fill="none" class="ink"/>
+    </g>
+    <g id="wheelSpin">
+      <circle cx="44" cy="111" r="39" fill="none" stroke="#cde7ee" stroke-width="3" stroke-dasharray="10 8"/>
+      <circle cx="205" cy="111" r="39" fill="none" stroke="#cde7ee" stroke-width="3" stroke-dasharray="10 8"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 124 111" to="360 124 111" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g transform="translate(250 165)">
+    <animateTransform attributeName="transform" type="translate" values="250 165;250 158;250 165" dur="1.1s" repeatCount="indefinite"/>
+    <ellipse cx="135" cy="220" rx="105" ry="17" fill="#202936" opacity=".22"/>
+    <path d="M110 148 Q85 106 105 55 Q128 4 184 20 Q225 33 226 82 L211 153Z" fill="#f5f2e9" class="ink"/>
+    <path d="M114 132 Q73 144 58 110 Q77 93 116 101" fill="#d9e4e8" class="ink"/>
+    <path d="M178 30 Q205 11 228 30 Q246 49 228 71 L209 61Z" fill="#f5f2e9" class="ink"/>
+    <circle cx="212" cy="43" r="8" fill="#202936"/>
+    <path d="M227 66 Q285 68 313 90 Q286 113 226 94Z" fill="#f29a4a" class="ink"/>
+    <path d="M245 90 Q276 91 307 94" fill="none" stroke="#202936" stroke-width="4"/>
+    <path d="M133 148 L122 186 M183 148 L204 184" fill="none" class="ink"/>
+    <path d="M112 186 Q122 197 139 187 M194 185 Q209 195 221 182" fill="none" class="ink"/>
+    <path d="M130 74 Q149 89 168 72" fill="none" stroke="#202936" stroke-width="6"/>
+    <text x="145" y="27" text-anchor="middle" class="label" font-size="17" fill="#d9534f">PROFESSIONAL</text>
+  </g>
+
+  <g transform="translate(600 300)">
+    <path d="M0 95 Q32 70 64 95 T128 95" fill="none" stroke="#5b9b57" stroke-width="9"/>
+    <g transform="translate(18 15)">
+      <ellipse cx="35" cy="62" rx="27" ry="18" fill="#8ed1e8" class="ink"/>
+      <circle cx="16" cy="55" r="13" fill="#8ed1e8" class="ink"/>
+      <path d="M5 58 L-18 63 L7 69" fill="#f29a4a" class="ink"/>
+      <circle cx="13" cy="52" r="3" fill="#202936"/>
+      <path d="M43 77 L49 92 M28 77 L22 92" class="ink"/>
+    </g>
+    <text x="62" y="128" text-anchor="middle" class="small" font-size="16">“10/10 beak!”</text>
+  </g>
+
+  <g transform="translate(35 535)">
+    <rect x="0" y="0" width="730" height="45" rx="12" fill="#fff5c2" stroke="#202936" stroke-width="4"/>
+    <text x="365" y="29" text-anchor="middle" class="small" font-size="16">2026-10-27 19:30:01 SGT (UTC+08:00)</text>
+  </g>
+</svg>
