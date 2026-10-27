@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN COMMUTE</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an enormous fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e8f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596273"/>
+      <stop offset="1" stop-color="#303642"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202b" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#20252d;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#20252d}
+      .wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .pelicanBob{animation:bob .8s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+      .pedal{animation:pedal .8s linear infinite;transform-box:fill-box;transform-origin:0 0}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd35a" stroke="#20252d" stroke-width="5"/>
+  <path d="M80 150 Q135 115 190 150 T300 150" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" opacity=".8"/>
+  <path d="M525 120 Q565 92 605 120 T680 120" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="35" font-weight="900" letter-spacing="2">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="95" text-anchor="middle" class="label" font-size="18" font-weight="700">“When the fish are late, bring the bike.”</text>
+
+  <rect y="405" width="800" height="195" fill="url(#road)"/>
+  <path d="M0 490 H800" stroke="#f7d35b" stroke-width="8" stroke-dasharray="54 34"/>
+  <path d="M0 430 H800" stroke="#8791a0" stroke-width="4" opacity=".6"/>
+
+  <!-- bicycle -->
+  <g filter="url(#shadow)">
+    <g class="wheelSpin">
+      <circle cx="238" cy="452" r="67" fill="#26313c" class="ink"/>
+      <circle cx="238" cy="452" r="52" fill="none" stroke="#e9edf2" stroke-width="5"/>
+      <g stroke="#e9edf2" stroke-width="3">
+        <path d="M238 400v104M186 452h104M201 415l74 74M275 415l-74 74"/>
+      </g>
+      <circle cx="238" cy="452" r="8" fill="#f0a83b" class="ink"/>
+    </g>
+    <g class="wheelSpin">
+      <circle cx="528" cy="452" r="67" fill="#26313c" class="ink"/>
+      <circle cx="528" cy="452" r="52" fill="none" stroke="#e9edf2" stroke-width="5"/>
+      <g stroke="#e9edf2" stroke-width="3">
+        <path d="M528 400v104M476 452h104M491 415l74 74M565 415l-74 74"/>
+      </g>
+      <circle cx="528" cy="452" r="8" fill="#f0a83b" class="ink"/>
+    </g>
+    <path d="M238 452 L330 350 L438 452 L238 452 L370 452 L330 350" fill="none" stroke="#e74c3c" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M438 452 L528 452 M438 452 L421 350 L390 330" fill="none" stroke="#e74c3c" stroke-width="10" stroke-linecap="round"/>
+    <path d="M382 330 L430 330" stroke="#20252d" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="370" cy="452" r="13" fill="#f0a83b" class="ink"/>
+    <g class="pedal">
+      <path d="M370 452 l42 -24 M370 452 l-36 28" stroke="#20252d" stroke-width="7" stroke-linecap="round"/>
+      <path d="M412 428 h20 M334 480 h-20" stroke="#20252d" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- pelican -->
+  <g class="pelicanBob" filter="url(#shadow)">
+    <ellipse cx="360" cy="286" rx="83" ry="95" fill="#f7f2df" class="ink"/>
+    <path d="M306 260 Q258 230 270 174 Q283 125 334 143 Q376 158 373 204 Q368 245 340 274Z" fill="#fffaf0" class="ink"/>
+    <path d="M318 174 Q363 132 413 164 Q442 184 420 215 Q396 240 345 228Z" fill="#f0a83b" class="ink"/>
+    <path d="M333 205 Q392 214 431 203 Q444 228 422 245 Q374 264 332 238Z" fill="#f5b84a" class="ink"/>
+    <circle cx="345" cy="177" r="10" fill="#20252d"/>
+    <circle cx="348" cy="174" r="3" fill="#fff"/>
+    <path d="M321 151 Q350 120 381 143" fill="none" stroke="#e74c3c" stroke-width="9" stroke-linecap="round"/>
+    <path d="M391 265 Q444 286 469 334" fill="none" stroke="#f7f2df" stroke-width="24" class="ink"/>
+    <path d="M470 334 q-24 16 -47 0" fill="none" stroke="#20252d" stroke-width="6"/>
+    <path d="M333 365 L330 414 M395 364 L410 414" fill="none" stroke="#f0a83b" stroke-width="12" stroke-linecap="round"/>
+    <path d="M330 412 l-20 12 M410 412 l22 12" fill="none" stroke="#20252d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M330 300 Q365 322 399 300" fill="none" stroke="#20252d" stroke-width="5"/>
+    <text x="360" y="315" text-anchor="middle" class="label" font-size="17" font-weight="900" fill="#e74c3c">HONK!</text>
+  </g>
+
+  <!-- fish cargo gag -->
+  <g transform="rotate(-8 570 290)">
+    <path d="M520 300 Q575 245 650 276 Q678 289 650 314 Q575 350 520 300Z" fill="#6bc7d8" class="ink"/>
+    <path d="M650 276 l35 -24 l-7 40 l25 28 l-42 -6" fill="#6bc7d8" class="ink"/>
+    <circle cx="554" cy="291" r="6" fill="#20252d"/>
+    <path d="M588 282 q18 14 0 28" fill="none" stroke="#20252d" stroke-width="4"/>
+    <text x="590" y="265" text-anchor="middle" class="label" font-size="16" font-weight="900">LUNCH</text>
+  </g>
+
+  <path d="M495 335 Q535 320 555 300" fill="none" stroke="#20252d" stroke-width="6" stroke-dasharray="10 10"/>
+  <text x="605" y="374" text-anchor="middle" class="label" font-size="20" font-weight="800" transform="rotate(-8 605 374)">NO FISHING<br/>DURING RUSH HOUR</text>
+
+  <rect x="28" y="548" width="744" height="34" rx="10" fill="#fff7d6" stroke="#20252d" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 04:31:11 SGT (UTC+08:00)</text>
+</svg>
