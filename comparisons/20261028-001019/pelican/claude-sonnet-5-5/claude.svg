@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#e8f7ff"/>
+    </linearGradient>
+    <pattern id="spokes" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="none"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .title { font: bold 38px 'Comic Sans MS', 'Trebuchet MS', Arial, sans-serif; fill: #b3261e; stroke: #fff; stroke-width: 6px; paint-order: stroke; }
+    .caption { font: italic 17px 'Trebuchet MS', Arial, sans-serif; fill: #222; }
+    .footer { font: 15px 'Courier New', monospace; fill: #fff; }
+    .bob { animation: bob 0.8s ease-in-out infinite alternate; }
+    @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-6px); } }
+    .scroll { animation: scroll 2s linear infinite; }
+    @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-160px); } }
+    .spin { animation: spin 1s linear infinite; transform-box: view-box; }
+    .wf { transform-origin: 590px 400px; }
+    .wr { transform-origin: 270px 400px; }
+    .crank { transform-origin: 420px 410px; animation: spin 1.2s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .wing { transform-origin: 455px 270px; animation: flap 0.6s ease-in-out infinite alternate; }
+    @keyframes flap { from { transform: rotate(-8deg); } to { transform: rotate(10deg); } }
+    .fish { transform-origin: 600px 230px; animation: wig 0.5s ease-in-out infinite alternate; }
+    @keyframes wig { from { transform: rotate(-6deg); } to { transform: rotate(6deg); } }
+    .cloud { animation: drift 8s ease-in-out infinite alternate; }
+    @keyframes drift { from { transform: translateX(-15px); } to { transform: translateX(15px); } }
+    .sweat { animation: drip 1s ease-in infinite; }
+    @keyframes drip { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(18px); opacity: 0; } }
+  </style>
+
+  <!-- background -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="710" cy="80" r="40" fill="#ffd84a"/>
+  <g class="cloud" fill="#fff">
+    <ellipse cx="150" cy="90" rx="50" ry="22"/><ellipse cx="190" cy="80" rx="40" ry="24"/><ellipse cx="115" cy="82" rx="32" ry="18"/>
+  </g>
+  <g class="cloud" fill="#fff" opacity="0.9">
+    <ellipse cx="520" cy="130" rx="40" ry="16"/><ellipse cx="550" cy="122" rx="30" ry="18"/>
+  </g>
+
+  <!-- title -->
+  <text x="400" y="50" text-anchor="middle" class="title">PELICAN-POWERED COMMUTE™</text>
+
+  <!-- ground -->
+  <rect x="0" y="440" width="800" height="100" fill="#6b6f76"/>
+  <rect x="0" y="432" width="800" height="10" fill="#9a9ea6"/>
+  <g class="scroll" fill="#f5e663">
+    <rect x="0" y="488" width="80" height="8"/><rect x="160" y="488" width="80" height="8"/>
+    <rect x="320" y="488" width="80" height="8"/><rect x="480" y="488" width="80" height="8"/>
+    <rect x="640" y="488" width="80" height="8"/><rect x="800" y="488" width="80" height="8"/>
+  </g>
+
+  <!-- speed lines -->
+  <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <line x1="30" y1="300" x2="130" y2="300"><animate attributeName="x1" values="60;10;60" dur="0.5s" repeatCount="indefinite"/></line>
+    <line x1="50" y1="340" x2="150" y2="340"><animate attributeName="x1" values="20;80;20" dur="0.6s" repeatCount="indefinite"/></line>
+    <line x1="20" y1="380" x2="110" y2="380"/>
+  </g>
+
+  <!-- bike + pelican bobbing -->
+  <g class="bob">
+    <!-- rear wheel -->
+    <g class="wr spin">
+      <circle cx="270" cy="400" r="52" fill="none" stroke="#222" stroke-width="7"/>
+      <g stroke="#555" stroke-width="2">
+        <line x1="270" y1="348" x2="270" y2="452"/><line x1="218" y1="400" x2="322" y2="400"/>
+        <line x1="233" y1="363" x2="307" y2="437"/><line x1="307" y1="363" x2="233" y2="437"/>
+      </g>
+      <circle cx="270" cy="348" r="5" fill="#e33"/>
+    </g>
+    <!-- front wheel -->
+    <g class="wf spin">
+      <circle cx="590" cy="400" r="52" fill="none" stroke="#222" stroke-width="7"/>
+      <g stroke="#555" stroke-width="2">
+        <line x1="590" y1="348" x2="590" y2="452"/><line x1="538" y1="400" x2="642" y2="400"/>
+        <line x1="553" y1="363" x2="627" y2="437"/><line x1="627" y1="363" x2="553" y2="437"/>
+      </g>
+      <circle cx="590" cy="348" r="5" fill="#e33"/>
+    </g>
+
+    <!-- frame -->
+    <g stroke="#d62828" stroke-width="8" stroke-linecap="round" fill="none">
+      <line x1="270" y1="400" x2="400" y2="290"/>
+      <line x1="270" y1="400" x2="420" y2="410"/>
+      <line x1="420" y1="410" x2="400" y2="290"/>
+      <line x1="400" y1="290" x2="560" y2="290"/>
+      <line x1="420" y1="410" x2="560" y2="290"/>
+      <line x1="560" y1="290" x2="590" y2="400"/>
+      <line x1="560" y1="290" x2="575" y2="265"/>
+    </g>
+    <line x1="555" y1="265" x2="610" y2="262" stroke="#222" stroke-width="7" stroke-linecap="round"/>
+    <rect x="375" y="278" width="50" height="12" rx="6" fill="#222"/>
+    <line x1="400" y1="290" x2="400" y2="280" stroke="#222" stroke-width="6"/>
+
+    <!-- pelican tail -->
+    <path d="M385 255 L335 270 L345 240 Z" fill="#cfd8dc" stroke="#555" stroke-width="2"/>
+    <!-- body -->
+    <ellipse cx="430" cy="245" rx="58" ry="40" fill="#fff" stroke="#555" stroke-width="3"/>
+    <!-- neck -->
+    <path d="M465 225 Q500 200 490 160 Q485 140 500 130 L520 150 Q520 190 505 235 Z" fill="#fff" stroke="#555" stroke-width="3"/>
+    <!-- head -->
+    <circle cx="510" cy="130" r="26" fill="#fff" stroke="#555" stroke-width="3"/>
+    <!-- helmet -->
+    <path d="M484 124 Q510 85 538 120 Z" fill="#2a9d8f" stroke="#145" stroke-width="3"/>
+    <rect x="492" y="108" width="12" height="6" fill="#fff" opacity="0.7"/>
+    <!-- beak -->
+    <path d="M525 128 L632 138 Q640 142 632 148 L525 150 Z" fill="#ffb703" stroke="#b36b00" stroke-width="3"/>
+    <path d="M530 150 Q585 210 632 148 Z" fill="#ffc933" stroke="#b36b00" stroke-width="3"/>
+    <!-- fish in pouch -->
+    <g class="fish">
+      <ellipse cx="590" cy="168" rx="20" ry="9" fill="#4aa3df" stroke="#1b5f8c" stroke-width="2"/>
+      <path d="M572 168 L558 158 L558 178 Z" fill="#4aa3df" stroke="#1b5f8c" stroke-width="2"/>
+      <circle cx="600" cy="165" r="2" fill="#000"/>
+    </g>
+    <!-- eye -->
+    <circle cx="517" cy="122" r="9" fill="#fff" stroke="#333" stroke-width="2"/>
+    <circle cx="520" cy="123" r="4" fill="#000"/>
+    <path d="M505 108 L530 114" stroke="#333" stroke-width="3"/>
+    <!-- sweat -->
+    <path class="sweat" d="M492 140 q-6 10 0 14 q6 -4 0 -14z" fill="#6ec6ff"/>
+    <!-- wing on handlebar -->
+    <g class="wing">
+      <path d="M455 255 Q520 270 600 262 Q560 240 500 230 Q460 225 440 235 Z" fill="#e3e8eb" stroke="#555" stroke-width="3"/>
+    </g>
+
+    <!-- legs and pedals -->
+    <g stroke="#ff9f1c" stroke-width="7" stroke-linecap="round">
+      <line x1="410" y1="275" x2="385" y2="335"/>
+      <line x1="385" y1="335" x2="410" y2="410" />
+    </g>
+    <g class="crank">
+      <line x1="420" y1="410" x2="420" y2="440" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+      <rect x="406" y="438" width="28" height="8" rx="3" fill="#222"/>
+      <line x1="420" y1="410" x2="420" y2="380" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+      <rect x="406" y="372" width="28" height="8" rx="3" fill="#222"/>
+    </g>
+    <circle cx="420" cy="410" r="12" fill="#999" stroke="#333" stroke-width="3"/>
+    <!-- feet -->
+    <path d="M405 412 l-8 8 l22 0 l18 0 z" fill="#ff9f1c" stroke="#b36b00" stroke-width="2"/>
+  </g>
+
+  <!-- speech bubble -->
+  <g>
+    <path d="M60 130 h200 a14 14 0 0 1 14 14 v50 a14 14 0 0 1 -14 14 h-120 l-30 24 l6 -24 h-56 a14 14 0 0 1 -14 -14 v-50 a14 14 0 0 1 14 -14z" fill="#fff" stroke="#333" stroke-width="3"/>
+    <text x="167" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#222">I can carry 12 liters of fish,</text>
+    <text x="167" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#222">but no bike lock. Hmm.</text>
+  </g>
+
+  <!-- caption band -->
+  <rect x="0" y="512" width="800" height="48" fill="#fff8dc"/>
+  <text x="400" y="542" text-anchor="middle" class="caption">"Breaking news: local pelican beats traffic, steals lunch, ignores all bike lanes."</text>
+
+  <!-- footer -->
+  <rect x="0" y="560" width="800" height="40" fill="#1d3557"/>
+  <text x="400" y="585" text-anchor="middle" class="footer">2026-10-28 00:10:19 SGT (UTC+08:00)</text>
+</svg>

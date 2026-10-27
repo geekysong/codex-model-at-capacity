@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#e8f7ff"/>
+    </linearGradient>
+    <style>
+      .title{font-family:'Arial Black',Impact,Arial,sans-serif;font-weight:900;font-size:38px;fill:#1d2a44}
+      .cap{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:18px;fill:#1d2a44}
+      .foot{font-family:'Courier New',monospace;font-size:15px;fill:#ffffff}
+      .bub{font-family:'Comic Sans MS','Trebuchet MS',sans-serif;font-size:15px;fill:#222}
+      .sign{font-family:Arial,sans-serif;font-weight:bold;font-size:13px;fill:#fff}
+    </style>
+  </defs>
+
+  <!-- Sky -->
+  <rect x="0" y="0" width="800" height="600" fill="url(#sky)"/>
+
+  <!-- Clouds drifting -->
+  <g fill="#ffffff" opacity="0.9">
+    <g>
+      <ellipse cx="150" cy="120" rx="50" ry="18"/>
+      <ellipse cx="180" cy="108" rx="30" ry="18"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-60 0;0 0" dur="12s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <ellipse cx="420" cy="150" rx="45" ry="15"/>
+      <ellipse cx="445" cy="140" rx="25" ry="14"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-40 0;0 0" dur="9s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="400" y="58" text-anchor="middle">THE PELICAN COMMUTE</text>
+
+  <!-- Distant hills -->
+  <path d="M0 400 Q120 330 240 390 T480 380 T800 370 L800 460 L0 460 Z" fill="#9fd38a"/>
+
+  <!-- Road -->
+  <rect x="0" y="460" width="800" height="70" fill="#5b5f66"/>
+  <line x1="0" y1="497" x2="800" y2="497" stroke="#f5d547" stroke-width="5" stroke-dasharray="40 30">
+    <animate attributeName="stroke-dashoffset" from="0" to="70" dur="0.6s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Satirical sign -->
+  <g>
+    <rect x="676" y="340" width="8" height="120" fill="#777"/>
+    <rect x="625" y="300" width="110" height="52" rx="6" fill="#2a7d3c" stroke="#fff" stroke-width="3"/>
+    <text class="sign" x="680" y="322" text-anchor="middle">BIKE LANE</text>
+    <text class="sign" x="680" y="341" text-anchor="middle">ENDS HERE</text>
+  </g>
+
+  <!-- Speed lines -->
+  <g stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-dasharray="30 25">
+    <line x1="60" y1="300" x2="220" y2="300"><animate attributeName="stroke-dashoffset" from="0" to="55" dur="0.4s" repeatCount="indefinite"/></line>
+    <line x1="90" y1="340" x2="230" y2="340"><animate attributeName="stroke-dashoffset" from="0" to="55" dur="0.35s" repeatCount="indefinite"/></line>
+    <line x1="40" y1="380" x2="220" y2="380"><animate attributeName="stroke-dashoffset" from="0" to="55" dur="0.45s" repeatCount="indefinite"/></line>
+  </g>
+
+  <!-- Shadow -->
+  <ellipse cx="400" cy="463" rx="170" ry="8" fill="#000" opacity="0.25"/>
+
+  <!-- Rear wheel -->
+  <g>
+    <circle cx="300" cy="400" r="60" fill="none" stroke="#222" stroke-width="8"/>
+    <g stroke="#999" stroke-width="2">
+      <line x1="300" y1="342" x2="300" y2="458"/>
+      <line x1="242" y1="400" x2="358" y2="400"/>
+      <line x1="259" y1="359" x2="341" y2="441"/>
+      <line x1="341" y1="359" x2="259" y2="441"/>
+      <circle cx="300" cy="350" r="4" fill="#e33" stroke="none"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 400" to="360 300 400" dur="0.8s" repeatCount="indefinite"/>
+    </g>
+    <circle cx="300" cy="400" r="6" fill="#444"/>
+  </g>
+
+  <!-- Front wheel -->
+  <g>
+    <circle cx="500" cy="400" r="60" fill="none" stroke="#222" stroke-width="8"/>
+    <g stroke="#999" stroke-width="2">
+      <line x1="500" y1="342" x2="500" y2="458"/>
+      <line x1="442" y1="400" x2="558" y2="400"/>
+      <line x1="459" y1="359" x2="541" y2="441"/>
+      <line x1="541" y1="359" x2="459" y2="441"/>
+      <circle cx="500" cy="350" r="4" fill="#e33" stroke="none"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 500 400" to="360 500 400" dur="0.8s" repeatCount="indefinite"/>
+    </g>
+    <circle cx="500" cy="400" r="6" fill="#444"/>
+  </g>
+
+  <!-- Frame -->
+  <g stroke="#d6336c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="300,400 390,400 370,320 300,400"/>
+    <polyline points="370,320 480,318 390,400"/>
+    <line x1="480" y1="318" x2="500" y2="400"/>
+    <line x1="480" y1="318" x2="472" y2="296"/>
+  </g>
+  <path d="M458 296 L486 292" stroke="#222" stroke-width="6" stroke-linecap="round"/>
+  <!-- Basket with fish -->
+  <path d="M500 300 L545 300 L538 330 L506 330 Z" fill="#c8964f" stroke="#7a5326" stroke-width="2"/>
+  <path d="M510 300 q10 -18 22 -4 l8 -8 v16 l-8 -6 q-12 10 -22 2" fill="#7fb3d5" stroke="#3b6e8f" stroke-width="2"/>
+  <line x1="486" y1="305" x2="502" y2="312" stroke="#7a5326" stroke-width="3"/>
+  <!-- Seat -->
+  <path d="M352 316 q18 -8 36 0 q-18 6 -36 0z" fill="#222"/>
+
+  <!-- Back leg (opposite phase) -->
+  <g stroke="#f08c00" stroke-width="6" stroke-linecap="round">
+    <line x1="382" y1="305" x2="368" y2="400">
+      <animate attributeName="x2" values="368;390;412;390;368" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="400;378;400;422;400" dur="0.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Crank -->
+  <g>
+    <circle cx="390" cy="400" r="12" fill="#555" stroke="#222" stroke-width="2"/>
+    <g stroke="#222" stroke-width="5" stroke-linecap="round">
+      <line x1="368" y1="400" x2="412" y2="400"/>
+      <rect x="404" y="397" width="16" height="6" fill="#222" stroke="none"/>
+      <rect x="360" y="397" width="16" height="6" fill="#222" stroke="none"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 390 400" to="360 390 400" dur="0.8s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Pelican upper body (bobbing) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="0.4s" repeatCount="indefinite"/>
+    <!-- Tail -->
+    <path d="M330 280 L300 270 L310 292 Z" fill="#e9ecef" stroke="#555" stroke-width="2"/>
+    <!-- Body -->
+    <ellipse cx="380" cy="282" rx="55" ry="38" fill="#ffffff" stroke="#555" stroke-width="3"/>
+    <!-- Wing reaching for handlebar -->
+    <path d="M360 270 Q420 255 470 294 Q430 300 400 300 Q365 298 360 270 Z" fill="#dee2e6" stroke="#555" stroke-width="2.5"/>
+    <path d="M375 282 q20 4 40 2 M380 290 q18 3 34 2" stroke="#888" stroke-width="1.5" fill="none"/>
+    <!-- Neck -->
+    <path d="M410 262 Q440 240 425 205" stroke="#ffffff" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <path d="M421 265 Q452 240 437 205" stroke="#555" stroke-width="2.5" fill="none"/>
+    <!-- Head (extra bob) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 430 195;-4 430 195;0 430 195;3 430 195;0 430 195" dur="0.8s" repeatCount="indefinite"/>
+      <circle cx="432" cy="190" r="24" fill="#ffffff" stroke="#555" stroke-width="3"/>
+      <!-- Pouch -->
+      <path d="M445 200 Q500 250 565 208 L455 204 Z" fill="#ffa94d" stroke="#c4651a" stroke-width="2.5"/>
+      <!-- Upper beak -->
+      <path d="M448 186 L572 200 Q575 206 566 208 L450 204 Z" fill="#ffd43b" stroke="#c4651a" stroke-width="2.5"/>
+      <!-- Fish tail poking out of pouch -->
+      <path d="M548 213 l22 -10 l-4 14 l6 12 z" fill="#7fb3d5" stroke="#3b6e8f" stroke-width="2"/>
+      <!-- Eye -->
+      <circle cx="438" cy="184" r="7" fill="#fff" stroke="#222" stroke-width="1.5"/>
+      <circle cx="441" cy="184" r="3.5" fill="#222"/>
+      <path d="M430 174 l16 4" stroke="#222" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Tiny helmet -->
+      <path d="M408 182 Q412 152 440 156 Q458 160 456 176 Z" fill="#4dabf7" stroke="#1c4f7a" stroke-width="2.5"/>
+      <path d="M420 160 l4 16 M434 157 l2 18 M446 161 l0 14" stroke="#1c4f7a" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Front leg -->
+  <g stroke="#ff922b" stroke-width="6" stroke-linecap="round">
+    <line x1="388" y1="305" x2="412" y2="400">
+      <animate attributeName="x2" values="412;390;368;390;412" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="400;422;400;378;400" dur="0.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Speech bubble from fish -->
+  <g>
+    <path d="M560 95 h170 a14 14 0 0 1 14 14 v36 a14 14 0 0 1 -14 14 h-120 l-30 40 l6 -40 h-26 a14 14 0 0 1 -14 -14 v-36 a14 14 0 0 1 14 -14 z" fill="#fff" stroke="#222" stroke-width="2.5"/>
+    <text class="bub" x="645" y="122" text-anchor="middle">"Is this the scenic</text>
+    <text class="bub" x="645" y="142" text-anchor="middle">route to lunch?"</text>
+  </g>
+
+  <!-- Caption -->
+  <text class="cap" x="400" y="552" text-anchor="middle">Zero emissions, zero brakes, one very full pouch — the pelican insists the bicycle is "for the fish's health."</text>
+
+  <!-- Footer -->
+  <rect x="0" y="565" width="800" height="35" fill="#1d2a44"/>
+  <text class="foot" x="400" y="588" text-anchor="middle">2026-10-28 00:09:08 SGT (UTC+08:00)</text>
+</svg>
