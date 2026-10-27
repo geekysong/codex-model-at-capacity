@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Against the Current</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an absurdly large fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe8ff"/>
+      <stop offset="1" stop-color="#dff8ff"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#42b9d3"/>
+      <stop offset="1" stop-color="#1683ad"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#173b55" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#173b55;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#173b55}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.8s linear infinite}
+      .rider{animation:bob .9s ease-in-out infinite alternate}
+      .wave{animation:drift 3s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+      @keyframes drift{from{transform:translateX(0)}to{transform:translateX(18px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="105" r="48" fill="#fff5ad" opacity=".9"/>
+  <path d="M0 360 Q100 330 200 360 T400 360 T600 360 T800 360 V600 H0Z" fill="url(#water)"/>
+  <path class="wave" d="M0 410 Q70 390 140 410 T280 410 T420 410 T560 410 T700 410 T840 410" fill="none" stroke="#b7f4ff" stroke-width="8" opacity=".8"/>
+  <path class="wave" d="M-30 485 Q50 465 130 485 T290 485 T450 485 T610 485 T770 485 T930 485" fill="none" stroke="#8fe4f5" stroke-width="6" opacity=".75"/>
+
+  <rect x="35" y="28" width="730" height="88" rx="20" fill="#fffdf3" stroke="#173b55" stroke-width="5" filter="url(#shadow)"/>
+  <text x="400" y="68" text-anchor="middle" class="label" font-size="31" font-weight="800">PELICAN PEDALS AGAINST THE CURRENT</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="18" font-weight="700" fill="#d34a38">“When the beak is full, every hill becomes a policy debate.”</text>
+
+  <g class="rider" filter="url(#shadow)">
+    <!-- bicycle -->
+    <g fill="none" class="ink">
+      <circle cx="245" cy="447" r="78" fill="#d8f5ff"/>
+      <circle cx="545" cy="447" r="78" fill="#d8f5ff"/>
+      <g class="wheel">
+        <circle cx="245" cy="447" r="68" stroke="#e74d3c" stroke-width="8"/>
+        <path d="M245 379V515M177 447H313M197 399L293 495M293 399L197 495" stroke="#e74d3c" stroke-width="3"/>
+      </g>
+      <g class="wheel">
+        <circle cx="545" cy="447" r="68" stroke="#e74d3c" stroke-width="8"/>
+        <path d="M545 379V515M477 447H613M497 399L593 495M593 399L497 495" stroke="#e74d3c" stroke-width="3"/>
+      </g>
+      <path d="M245 447 L340 330 L445 447 L245 447 M340 330 L545 447 M445 447 L410 350 L365 350" stroke="#173b55" stroke-width="8"/>
+      <path d="M405 338 L445 320" stroke="#173b55" stroke-width="7"/>
+      <path d="M438 315 Q462 315 474 329" stroke="#173b55" stroke-width="7"/>
+      <circle cx="445" cy="447" r="18" fill="#f5c542"/>
+      <path d="M445 447 l28 12 M445 447 l-25 15" stroke="#173b55" stroke-width="6"/>
+      <path d="M472 459 l17 8 M420 462 l-17 8" stroke="#173b55" stroke-width="6"/>
+    </g>
+
+    <!-- pelican body and head -->
+    <ellipse cx="358" cy="255" rx="83" ry="105" fill="#f7f4e9" class="ink"/>
+    <path d="M315 318 Q350 350 408 321 L431 374 Q369 410 294 355Z" fill="#e7ded0" class="ink"/>
+    <ellipse cx="354" cy="157" rx="71" ry="62" fill="#fffdf3" class="ink"/>
+    <path d="M390 166 Q500 170 578 208 Q493 258 392 218Z" fill="#f5a63a" class="ink"/>
+    <path d="M398 184 Q487 195 555 213 Q480 231 405 213Z" fill="#ef7042"/>
+    <circle cx="374" cy="144" r="10" fill="#173b55"/>
+    <circle cx="378" cy="140" r="3" fill="#fff"/>
+    <path d="M327 120 Q350 98 374 111" fill="none" class="ink"/>
+    <path d="M301 223 Q265 203 250 169 Q288 166 315 194Z" fill="#d9e5e7" class="ink"/>
+    <path d="M321 339 Q287 363 270 407" fill="none" class="ink"/>
+    <path d="M391 338 Q420 361 430 407" fill="none" class="ink"/>
+
+    <!-- feet and pedaling -->
+    <path d="M270 407 Q252 423 240 444" fill="none" class="ink"/>
+    <path d="M430 407 Q450 426 460 447" fill="none" class="ink"/>
+    <path d="M229 445 q-25 10-35 0" fill="none" stroke="#f5a63a" stroke-width="10"/>
+    <path d="M466 448 q22 12 38 1" fill="none" stroke="#f5a63a" stroke-width="10"/>
+
+    <!-- absurd fish cargo -->
+    <path d="M286 255 Q224 230 171 252 Q218 278 285 269Z" fill="#79cbd1" class="ink"/>
+    <path d="M171 252 l-28 -24 l8 31 l-8 29 l28 -20" fill="#58aebc" class="ink"/>
+    <circle cx="198" cy="253" r="5" fill="#173b55"/>
+    <path d="M226 253 q18 -12 34 0" fill="none" stroke="#173b55" stroke-width="3"/>
+    <text x="210" y="286" class="label" font-size="14" font-weight="700" text-anchor="middle">EMERGENCY SNACK</text>
+  </g>
+
+  <g transform="translate(603 290)">
+    <path d="M0 0 q35 -35 70 0 q-35 35 -70 0Z" fill="#fffdf3" class="ink"/>
+    <path d="M12 0 q25 -22 48 0 q-24 22 -48 0Z" fill="#f5a63a" class="ink"/>
+    <text x="35" y="66" text-anchor="middle" class="label" font-size="16" font-weight="700">HONK IF YOU</text>
+    <text x="35" y="85" text-anchor="middle" class="label" font-size="16" font-weight="700">UNDERSTAND TAXES</text>
+  </g>
+
+  <rect x="28" y="548" width="744" height="34" rx="10" fill="#fffdf3" stroke="#173b55" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 02:32:53 SGT (UTC+08:00)</text>
+</svg>
