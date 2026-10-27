@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican pedals a tiny bicycle while proudly causing a traffic jam.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ddcff"/>
+      <stop offset="1" stop-color="#eef9ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17324d" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17324d}
+      .wheelSpin{transform-origin:center;animation:spin 2s linear infinite}
+      .pelicanBob{animation:bob 1s ease-in-out infinite alternate}
+      .pedalSpin{transform-origin:475px 416px;animation:spin 1.1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 425 Q120 390 240 425 T480 425 T720 425 T960 425 V600 H0Z" fill="#9acb78"/>
+  <path d="M0 470 Q180 430 360 470 T720 470 T1080 470" fill="none" stroke="#69a857" stroke-width="14"/>
+  <path d="M0 515 H800" stroke="#5d6874" stroke-width="34"/>
+  <path d="M0 515 H800" stroke="#f6d35b" stroke-width="5" stroke-dasharray="42 28"/>
+
+  <g class="label" font-weight="900" text-anchor="middle">
+    <text x="400" y="70" font-size="48" fill="#fff" stroke="#17324d" stroke-width="10" paint-order="stroke">
+      PELICAN ON A BICYCLE
+    </text>
+    <text x="400" y="108" font-size="22" font-weight="700">
+      “Because traffic already needed a bird-brained solution.”
+    </text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="605" y="155" width="145" height="90" rx="16" fill="#fff4c7" class="ink"/>
+    <path d="M635 245 l-18 25 38-24" fill="#fff4c7" class="ink"/>
+    <text x="678" y="190" class="label" font-size="21" font-weight="800" text-anchor="middle">MOVE OVER!</text>
+    <text x="678" y="218" class="label" font-size="17" text-anchor="middle">I’m commuting.</text>
+  </g>
+
+  <g class="pelicanBob">
+    <ellipse cx="420" cy="320" rx="78" ry="100" fill="#f7f4ed" class="ink"/>
+    <path d="M365 315 Q420 355 480 315 Q470 390 420 410 Q370 390 365 315Z" fill="#d9e2e8" class="ink"/>
+    <path d="M375 350 Q420 380 462 347" fill="none" stroke="#aab9c4" stroke-width="8"/>
+    <circle cx="420" cy="235" r="67" fill="#f7f4ed" class="ink"/>
+    <path d="M368 235 Q420 205 475 235 L560 270 Q570 280 558 291 L470 283 Q420 275 368 255Z" fill="#f2a93b" class="ink"/>
+    <path d="M470 253 Q520 263 560 270" fill="none" stroke="#c47716" stroke-width="7"/>
+    <circle cx="444" cy="220" r="12" fill="#17324d"/>
+    <circle cx="448" cy="216" r="4" fill="#fff"/>
+    <path d="M374 190 Q410 150 458 181" fill="none" stroke="#17324d" stroke-width="10"/>
+    <path d="M373 310 Q330 335 325 385" fill="none" class="ink"/>
+    <path d="M467 310 Q505 340 510 385" fill="none" class="ink"/>
+    <path d="M328 385 l-24 15 M510 385 l24 15" fill="none" class="ink"/>
+    <path d="M397 410 Q420 430 444 410" fill="none" class="ink"/>
+    <text x="420" y="470" class="label" font-size="18" font-weight="800" text-anchor="middle">HONK IF YOU’RE A FISH</text>
+  </g>
+
+  <g class="ink" fill="none">
+    <circle cx="300" cy="475" r="72" fill="#dcecf4"/>
+    <circle cx="575" cy="475" r="72" fill="#dcecf4"/>
+  </g>
+  <g class="wheelSpin" stroke="#4c7487" stroke-width="4">
+    <path d="M300 403 V547 M228 475 H372 M249 424 L351 526 M351 424 L249 526"/>
+    <path d="M575 403 V547 M503 475 H647 M524 424 L626 526 M626 424 L524 526"/>
+  </g>
+  <g class="ink" fill="none">
+    <path d="M300 475 L390 380 L475 475 L300 475 M390 380 L430 475 M390 380 L455 380 L475 475"/>
+    <path d="M430 475 Q455 445 480 475"/>
+    <path d="M450 380 L475 365"/>
+    <path d="M445 365 H490"/>
+  </g>
+  <g class="pedalSpin" class="ink">
+    <circle cx="475" cy="416" r="12" fill="#f2a93b" stroke="#17324d" stroke-width="5"/>
+    <path d="M475 416 L505 435 M475 416 L447 397" fill="none" stroke="#17324d" stroke-width="6"/>
+    <circle cx="510" cy="438" r="8" fill="#f2a93b" stroke="#17324d" stroke-width="4"/>
+    <circle cx="444" cy="395" r="8" fill="#f2a93b" stroke="#17324d" stroke-width="4"/>
+  </g>
+
+  <g fill="#fff" class="ink">
+    <path d="M120 220 q-30-35-5-65 q25-28 56-4 q30-38 61-4 q32 35-2 68 q-40 37-110 5Z"/>
+  </g>
+  <g class="label" font-size="19" font-weight="800">
+    <text x="135" y="210">BIRD</text>
+    <text x="132" y="232">LANE?</text>
+  </g>
+
+  <rect x="22" y="555" width="756" height="34" rx="8" fill="#fff" opacity=".9"/>
+  <text x="400" y="579" class="label" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    2026-10-28 07:31:05 SGT (UTC+08:00)
+  </text>
+</svg>

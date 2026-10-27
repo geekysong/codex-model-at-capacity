@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Power Ride</title>
+  <desc>A satirical cartoon pelican riding a bicycle.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69727c"/>
+      <stop offset="1" stop-color="#343a40"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#1c252c" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202a31;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202a31}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .ride{animation:bob 1.1s ease-in-out infinite}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff4a8" opacity=".85"/>
+  <path d="M0 370 Q130 320 260 365 T520 350 T800 365 V600 H0Z" fill="#9bd18a"/>
+  <path d="M0 430 Q180 395 350 425 T800 415 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 515 H800" stroke="#f3d36a" stroke-width="8" stroke-dasharray="45 32" opacity=".9"/>
+
+  <g class="label" filter="url(#shadow)">
+    <rect x="34" y="25" width="470" height="82" rx="18" fill="#fff" stroke="#202a31" stroke-width="5"/>
+    <text x="58" y="62" font-size="31" font-weight="800">PELICAN POWER RIDE</text>
+    <text x="59" y="91" font-size="19" font-weight="700" fill="#c94b3b">“Why drive when you can wing it?”</text>
+  </g>
+
+  <g class="ride">
+    <!-- bicycle -->
+    <g fill="none" class="ink">
+      <circle cx="255" cy="470" r="78" fill="#d9eef4" class="wheel"/>
+      <circle cx="570" cy="470" r="78" fill="#d9eef4" class="wheel"/>
+      <path d="M255 470 L350 333 L430 470 L255 470 M350 333 L570 470 M430 470 L510 350"/>
+      <path d="M510 350 L548 338 M510 350 L493 320"/>
+      <circle cx="430" cy="470" r="21" fill="#f5c84b" class="pedal"/>
+      <path d="M430 470 L451 454 M430 470 L408 486"/>
+      <path d="M350 333 L333 313 M330 313 L365 313"/>
+    </g>
+
+    <!-- pelican body -->
+    <g class="ink">
+      <ellipse cx="404" cy="270" rx="86" ry="104" fill="#f7f4e9"/>
+      <path d="M350 242 Q368 170 430 165 Q488 162 510 225 Q479 205 450 213 Q408 223 350 242Z" fill="#d8e8ec"/>
+      <ellipse cx="426" cy="151" rx="57" ry="60" fill="#f7f4e9"/>
+      <path d="M385 154 Q453 127 523 164 Q546 177 530 194 Q470 211 388 184Z" fill="#e8a146"/>
+      <path d="M390 168 Q458 160 525 184 Q486 202 416 188Z" fill="#f4bb5d" stroke="none"/>
+      <circle cx="445" cy="143" r="10" fill="#202a31" stroke="none"/>
+      <circle cx="448" cy="140" r="3.5" fill="#fff" stroke="none"/>
+      <path d="M377 113 Q407 87 438 98" fill="none"/>
+      <path d="M385 247 Q426 274 474 247" fill="none"/>
+      <path d="M389 343 L379 405 M455 343 L472 405" fill="none"/>
+      <path d="M369 405 L393 405 M461 405 L486 405" fill="none"/>
+      <!-- wing as arm -->
+      <path d="M356 247 Q318 284 345 319 Q366 337 391 310" fill="#d8e8ec"/>
+      <path d="M468 241 Q504 267 494 308 Q486 331 462 315" fill="#d8e8ec"/>
+      <!-- helmet -->
+      <path d="M380 111 Q405 74 458 89 Q481 96 490 119 L379 127Z" fill="#e64c3c"/>
+      <path d="M374 125 L492 125" fill="none"/>
+      <path d="M420 86 L426 72" fill="none"/>
+    </g>
+
+    <!-- feet on pedals -->
+    <g class="ink" fill="#e8a146">
+      <path d="M376 405 Q395 417 414 436 Q420 448 408 455 Q396 458 386 445 L366 420Z"/>
+      <path d="M472 405 Q454 420 446 440 Q443 453 456 457 Q468 458 477 444 L490 420Z"/>
+    </g>
+
+    <!-- speed lines -->
+    <g stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".8">
+      <path d="M92 397h90"/><path d="M55 430h112"/><path d="M112 463h80"/>
+    </g>
+  </g>
+
+  <!-- satire caption -->
+  <g class="label">
+    <rect x="548" y="190" width="220" height="92" rx="14" fill="#fff6d7" stroke="#202a31" stroke-width="4" transform="rotate(4 658 236)"/>
+    <text x="570" y="222" font-size="18" font-weight="800" transform="rotate(4 658 236)">TRAFFIC REPORT:</text>
+    <text x="570" y="247" font-size="17" transform="rotate(4 658 236)">Beak-first commuting</text>
+    <text x="570" y="269" font-size="17" transform="rotate(4 658 236)">is officially faster.</text>
+  </g>
+
+  <g class="label">
+    <rect x="28" y="548" width="744" height="36" rx="10" fill="#ffffff" opacity=".94" stroke="#202a31" stroke-width="3"/>
+    <text x="400" y="573" text-anchor="middle" font-size="17" font-weight="700">2026-10-28 07:30:32 SGT (UTC+08:00)</text>
+  </g>
+</svg>
