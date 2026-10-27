@@ -20,6 +20,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 from daily_prompt import load_daily_prompt
 from claude_daily import matching_artifacts
+from challenge_validation import validate_daily_artifact
 
 REPO = Path(__file__).resolve().parent
 GA_MEASUREMENT_ID = "G-846Y37CFNX"
@@ -44,6 +45,17 @@ PAIRINGS = [
     ("gpt-6-luna", "claude-haiku-5-5", "Haiku 5.5"),
     ("gpt-6.1-terra", "claude-sonnet-5-5", "Sonnet 5.5"),
 ]
+
+
+def apply_artifact_validation(rec: dict, svg_path: Path, prompt: str, prompt_date: str, prompt_sha: str) -> dict:
+    """Mark recognized Daily answer failures without retrying or discarding SVGs."""
+    error = validate_daily_artifact(svg_path, rec, prompt_date, prompt_sha, prompt)
+    if error:
+        rec["status"] = "error" if error.startswith("invalid SVG:") else "semantic_error"
+        rec["error"] = error[:400]
+    else:
+        rec["status"] = "ok"
+    return rec
 
 
 def run_model(model: str, round_id: str) -> dict:
@@ -128,8 +140,7 @@ def run_model(model: str, round_id: str) -> dict:
             svg_text = svg_text.replace("<svg", '<svg xmlns="http://www.w3.org/2000/svg"', 1)
         svg_path.write_text(svg_text, encoding="utf-8")
         rec["svg"] = svg_rel
-        rec["status"] = "ok"
-        return rec
+        return apply_artifact_validation(rec, svg_path, PROMPT, PROMPT_DATE, PROMPT_SHA)
     except subprocess.TimeoutExpired:
         rec["duration_s"] = round(time.monotonic() - t0, 2)
         rec["error"] = f"timeout after {PER_MODEL_TIMEOUT}s (no retry, per spec)"

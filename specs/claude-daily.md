@@ -107,3 +107,21 @@ model identities, shared locking, dedupe, prompt/date/hash checks, retry policy,
 publication behavior. The Claude schedule remains 00:00 prompt generation and
 00:05 control execution in Asia/Singapore; the Codex schedule remains every 30
 minutes. No API generation was run for this change.
+
+
+## Codex Daily semantic validation, 2026-10-27
+
+`run_round.py` now runs a deterministic, no-model validator after a Daily SVG is
+written. When the prompt is the recognized 4x4 prime/perfect-square challenge, it
+checks every cell's effective fill (including inherited group fills and overlays),
+all 1-16 labels, declared blue/orange counts (6/4), the visible challenge date,
+and the record's prompt date/hash identity. A parseable but wrong answer remains
+available as a raw SVG and is recorded as `semantic_error`; it is shown as FAIL and
+is not counted in the round's successful attempts. Malformed SVG remains an error.
+Pelican and unrecognized future Daily prompts are not subjected to this
+model-specific grid rule; identity/date checks still protect recognized Daily
+artifacts. No model request, retry, cron, key, lock, dedupe, or publication path
+was changed.
+
+Regression coverage is in `test_challenge_validation.py`: correct grids, missing
+squares, wrong fills, date/hash mismatch, and Pelican isolation.
