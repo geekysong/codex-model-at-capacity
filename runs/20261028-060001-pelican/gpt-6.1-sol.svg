@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN COMMUTE</title>
+  <desc id="desc">A dramatic pelican rides a bicycle while carrying an absurdly oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e6873"/>
+      <stop offset="1" stop-color="#303944"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#20303a" flood-opacity=".35"/>
+    </filter>
+    <g id="wheel">
+      <circle r="58" fill="#edf5f7" stroke="#17232d" stroke-width="9"/>
+      <circle r="7" fill="#17232d"/>
+      <g stroke="#17232d" stroke-width="3">
+        <line x1="0" y1="-7" x2="0" y2="-51"/>
+        <line x1="0" y1="7" x2="0" y2="51"/>
+        <line x1="-7" y1="0" x2="-51" y2="0"/>
+        <line x1="7" y1="0" x2="51" y2="0"/>
+        <line x1="-5" y1="-5" x2="-36" y2="-36"/>
+        <line x1="5" y1="5" x2="36" y2="36"/>
+        <line x1="5" y1="-5" x2="36" y2="-36"/>
+        <line x1="-5" y1="5" x2="-36" y2="36"/>
+      </g>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="700" cy="95" r="42" fill="#ffd86b"/>
+  <path d="M0 360 Q120 315 245 360 T500 350 T800 340 V430 H0Z" fill="#79bd78"/>
+  <path d="M0 410 Q170 380 330 415 T800 400 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 495 H800" stroke="#f8d87b" stroke-width="8" stroke-dasharray="48 28" opacity=".8"/>
+
+  <g font-family="Trebuchet MS, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="58" font-size="34" font-weight="900" fill="#173448" stroke="#fff" stroke-width="6" paint-order="stroke">
+      THE GREAT PELICAN COMMUTE
+    </text>
+    <text x="400" y="91" font-size="17" font-weight="700" fill="#23485b">
+      “When the beak is full, let the legs do the talking.”
+    </text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(275 445)">
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.4s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(560 445)">
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.4s" repeatCount="indefinite"/>
+    </g>
+
+    <g fill="none" stroke="#17232d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M275 445 L375 350 L470 445 L275 445 L420 445 L375 350 L560 445"/>
+      <path d="M470 445 L505 365 L560 445"/>
+      <path d="M505 365 L535 335"/>
+      <path d="M525 334 L564 334"/>
+    </g>
+    <circle cx="470" cy="445" r="10" fill="#ef6d4f" stroke="#17232d" stroke-width="5"/>
+    <path d="M456 445 l-28 20 M456 445 l30 19" stroke="#17232d" stroke-width="6" stroke-linecap="round"/>
+
+    <g>
+      <ellipse cx="405" cy="285" rx="86" ry="104" fill="#f5f1df" stroke="#17232d" stroke-width="7"/>
+      <path d="M350 258 Q330 205 355 170 Q390 140 435 165 Q470 185 463 250 Q442 230 420 226 Q385 220 350 258Z" fill="#d9e3e4" stroke="#17232d" stroke-width="7"/>
+      <circle cx="410" cy="188" r="10" fill="#17232d"/>
+      <circle cx="413" cy="185" r="3" fill="#fff"/>
+      <path d="M438 205 Q515 215 615 256 Q625 265 613 273 Q520 272 445 244Z" fill="#f6b44b" stroke="#17232d" stroke-width="7"/>
+      <path d="M603 256 Q635 270 646 292 Q610 294 585 278Z" fill="#e79a35" stroke="#17232d" stroke-width="6"/>
+      <path d="M367 236 Q335 270 343 325" fill="none" stroke="#17232d" stroke-width="13" stroke-linecap="round"/>
+      <path d="M443 242 Q480 270 493 316" fill="none" stroke="#17232d" stroke-width="13" stroke-linecap="round"/>
+      <path d="M350 316 Q325 355 350 385" fill="none" stroke="#ef6d4f" stroke-width="11" stroke-linecap="round"/>
+      <path d="M493 316 Q510 355 490 385" fill="none" stroke="#ef6d4f" stroke-width="11" stroke-linecap="round"/>
+      <path d="M337 382 l-32 13 M337 382 l28 12 M493 382 l-30 13 M493 382 l30 10" stroke="#17232d" stroke-width="7" stroke-linecap="round"/>
+      <path d="M360 286 Q402 315 448 286" fill="none" stroke="#d6a23e" stroke-width="8" stroke-linecap="round"/>
+      <path d="M381 292 Q403 308 426 292" fill="none" stroke="#ef6d4f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M375 346 Q400 365 425 346" fill="none" stroke="#17232d" stroke-width="5"/>
+      <path d="M400 345 Q395 360 404 366" fill="none" stroke="#17232d" stroke-width="4"/>
+      <path d="M330 180 Q300 145 267 170" fill="none" stroke="#17232d" stroke-width="7" stroke-linecap="round"/>
+      <path d="M267 170 l-18 -14 M267 170 l-22 4" stroke="#17232d" stroke-width="5" stroke-linecap="round"/>
+      <path d="M455 177 Q480 145 510 168" fill="none" stroke="#17232d" stroke-width="7" stroke-linecap="round"/>
+      <path d="M510 168 l18 -14 M510 168 l21 5" stroke="#17232d" stroke-width="5" stroke-linecap="round"/>
+
+      <g transform="translate(522 225) rotate(-8)">
+        <ellipse cx="0" cy="0" rx="53" ry="28" fill="#f47b52" stroke="#17232d" stroke-width="6"/>
+        <path d="M-45 -3 Q-5 -25 38 -5 Q5 8 -35 13Z" fill="#ffd070"/>
+        <path d="M42 -4 l24 -18 l-7 27Z" fill="#f47b52" stroke="#17232d" stroke-width="6" stroke-linejoin="round"/>
+        <circle cx="27" cy="-7" r="4" fill="#17232d"/>
+      </g>
+
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g font-family="Trebuchet MS, Arial, sans-serif" fill="#173448">
+    <text x="70" y="145" font-size="18" font-weight="700">CITY ORDINANCE:</text>
+    <text x="70" y="169" font-size="16">All commuters must</text>
+    <text x="70" y="191" font-size="16">carry their own lunch.</text>
+    <path d="M185 202 Q230 230 300 250" fill="none" stroke="#173448" stroke-width="3"/>
+    <path d="M300 250 l-12 -3 M300 250 l-6 -10" fill="none" stroke="#173448" stroke-width="3"/>
+  </g>
+
+  <rect x="0" y="555" width="800" height="45" fill="#162631"/>
+  <text x="400" y="583" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">
+    2026-10-28 06:00:32 SGT (UTC+08:00)
+  </text>
+</svg>
