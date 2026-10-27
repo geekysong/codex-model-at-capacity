@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f8"/>
+      <stop offset="1" stop-color="#d9f5ff"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#17212b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd95a" stroke="#17212b" stroke-width="5"/>
+  <path d="M0 410 Q130 360 260 410 T520 410 T800 400 V600 H0Z" fill="#8ccf72"/>
+  <path d="M0 455 Q160 420 330 458 T800 448 V600 H0Z" fill="#5eae58"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE PEDELICAN EXPRESS</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="20" font-weight="700">“Why walk when you can wobble?”</text>
+
+  <!-- bicycle -->
+  <g class="ink" fill="none">
+    <g>
+      <circle cx="250" cy="445" r="78" stroke="#263746" stroke-width="10">
+        <animateTransform attributeName="transform" type="rotate" from="0 250 445" to="360 250 445" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="560" cy="445" r="78" stroke="#263746" stroke-width="10">
+        <animateTransform attributeName="transform" type="rotate" from="0 560 445" to="360 560 445" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M250 445 L340 330 L430 445 L250 445 M340 330 L560 445 M430 445 L505 320 M475 320 H535 M325 330 H365" stroke="#e84d4d" stroke-width="10"/>
+      <circle cx="430" cy="445" r="17" fill="#ffd95a"/>
+      <path d="M430 445 l-34 -28 M430 445 l33 26" stroke="#17212b" stroke-width="7"/>
+    </g>
+  </g>
+
+  <!-- pelican bobbing -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0;0 -6;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="390" cy="270" rx="82" ry="102" fill="#f3f1e8" class="ink"/>
+    <path d="M337 283 Q300 245 322 203 Q350 172 390 195 Q423 166 458 201 Q482 235 450 282 Q420 321 337 283Z" fill="#ffffff" class="ink"/>
+    <circle cx="371" cy="225" r="11" fill="#17212b"/>
+    <circle cx="433" cy="221" r="11" fill="#17212b"/>
+    <path d="M397 245 Q470 242 548 277 Q565 287 548 300 Q470 306 397 273Z" fill="#f4a62a" class="ink"/>
+    <path d="M543 278 l28 9 -25 14" fill="#db7424" class="ink"/>
+    <path d="M350 304 Q390 325 438 301" fill="none" stroke="#e3b49e" stroke-width="10"/>
+    <path d="M350 345 L332 405 M430 345 L448 405" class="ink" fill="none"/>
+    <path d="M330 405 l-30 18 M448 405 l30 18" class="ink" fill="none"/>
+    <path d="M348 383 L392 425 L439 383" fill="none" stroke="#e84d4d" stroke-width="9"/>
+    <path d="M373 393 L399 425 L421 392" fill="none" stroke="#17212b" stroke-width="6"/>
+    <path d="M305 250 Q276 230 286 202" fill="none" stroke="#ffffff" stroke-width="18"/>
+    <path d="M466 249 Q495 228 485 200" fill="none" stroke="#ffffff" stroke-width="18"/>
+  </g>
+
+  <path d="M112 185 q30 -28 60 0 q30 -28 60 0" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M80 250 q22 -20 44 0" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+
+  <rect x="120" y="510" width="560" height="48" rx="18" fill="#fff6d6" stroke="#17212b" stroke-width="4"/>
+  <text x="400" y="540" text-anchor="middle" class="label" font-size="21" font-weight="700">A beak, two wheels, and absolutely no sense of direction.</text>
+
+  <text x="400" y="585" text-anchor="middle" class="label" font-size="14">2026-10-27 09:01:04 SGT (UTC+08:00)</text>
+</svg>

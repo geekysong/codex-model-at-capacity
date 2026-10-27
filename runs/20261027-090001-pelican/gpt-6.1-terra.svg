@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle.</desc>
+  <style>
+    .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#17324d}
+    .small{font-size:18px}
+  </style>
+
+  <rect width="800" height="600" fill="#fff4d6"/>
+  <rect x="24" y="22" width="752" height="554" rx="24" fill="#f9d875" class="ink"/>
+  <path d="M55 455 Q190 430 320 456 T585 450 T750 455" fill="none" stroke="#d59b35" stroke-width="8"/>
+  <path d="M70 485 Q220 463 360 487 T730 482" fill="none" stroke="#e8b94c" stroke-width="5"/>
+
+  <text x="400" y="78" text-anchor="middle" class="label" font-size="42" font-weight="900">PELICAN PEDAL PANIC</text>
+  <text x="400" y="112" text-anchor="middle" class="label" font-size="22" font-style="italic">“Why fly when you can clog traffic?”</text>
+
+  <g id="bike">
+    <g class="wheel">
+      <circle cx="250" cy="405" r="78" fill="#d8edf2" class="ink"/>
+      <circle cx="250" cy="405" r="10" fill="#17324d"/>
+      <path d="M250 327V483 M172 405H328 M195 350L305 460 M305 350L195 460" fill="none" stroke="#5a8ea3" stroke-width="4"/>
+    </g>
+    <g class="wheel">
+      <circle cx="555" cy="405" r="78" fill="#d8edf2" class="ink"/>
+      <circle cx="555" cy="405" r="10" fill="#17324d"/>
+      <path d="M555 327V483 M477 405H633 M500 350L610 460 M610 350L500 460" fill="none" stroke="#5a8ea3" stroke-width="4"/>
+    </g>
+    <path d="M250 405 L355 300 L555 405 L430 405 Z" fill="none" class="ink"/>
+    <path d="M355 300 L390 405 M355 300 L320 270" fill="none" class="ink"/>
+    <path d="M315 270 H365" fill="none" class="ink"/>
+    <path d="M430 405 L470 300" fill="none" class="ink"/>
+    <path d="M450 300 H493" fill="none" class="ink"/>
+    <circle cx="430" cy="405" r="16" fill="#f28b3c" class="ink"/>
+    <path d="M430 405 L400 435 M430 405 L463 378" fill="none" class="ink"/>
+    <circle cx="398" cy="437" r="8" fill="#f28b3c" class="ink"/>
+    <circle cx="464" cy="377" r="8" fill="#f28b3c" class="ink"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="418" cy="240" rx="92" ry="112" fill="#f7f7f2" class="ink"/>
+    <path d="M370 205 Q320 165 350 130 Q390 105 432 145 L468 192 Q440 220 370 205Z" fill="#e9eef0" class="ink"/>
+    <circle cx="395" cy="157" r="10" fill="#17324d"/>
+    <circle cx="398" cy="153" r="3" fill="#fff"/>
+    <path d="M428 173 Q485 180 548 222 Q505 264 428 218Z" fill="#f28b3c" class="ink"/>
+    <path d="M548 222 Q505 238 454 220" fill="none" stroke="#b85d2d" stroke-width="5"/>
+    <path d="M370 248 Q320 275 335 340 Q370 365 408 315" fill="#dce8eb" class="ink"/>
+    <path d="M458 245 Q500 275 486 335 Q455 360 423 310" fill="#dce8eb" class="ink"/>
+    <path d="M397 343 L405 390 M455 341 L447 390" fill="none" stroke="#f28b3c" stroke-width="12"/>
+    <path d="M392 388 Q410 398 422 388 M434 388 Q450 398 464 388" fill="none" class="ink"/>
+    <path d="M390 192 Q420 210 452 193" fill="none" stroke="#b6c5c9" stroke-width="5"/>
+    <text x="415" y="285" text-anchor="middle" class="label" font-size="20" font-weight="bold">HONK!</text>
+  </g>
+
+  <g class="wheelSpin">
+    <animateTransform attributeName="transform" type="rotate" from="0 250 405" to="360 250 405" dur="1.4s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="400" y="530" text-anchor="middle" class="label" font-size="21" font-weight="bold">
+    Local bird insists this is “the beak of transportation.”
+  </text>
+  <text x="400" y="559" text-anchor="middle" class="label small">
+    2026-10-27 09:02:27 SGT (UTC+08:00)
+  </text>
+</svg>
