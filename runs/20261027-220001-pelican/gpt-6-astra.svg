@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Power</title>
+  <desc>A satirical pelican rides a bicycle while chasing fish-shaped traffic signs.</desc>
+  <style>
+    .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#d9f0f2;stroke:#17212b;stroke-width:7}
+    .spoke{stroke:#4d7780;stroke-width:3}
+    .label{font-family:Arial,sans-serif;fill:#17212b}
+  </style>
+
+  <rect width="800" height="600" fill="#b9e8f2"/>
+  <circle cx="690" cy="92" r="45" fill="#ffd66b" stroke="#17212b" stroke-width="5"/>
+  <path d="M0 430 Q140 390 280 430 T560 430 T800 420 V600 H0Z" fill="#8bcf8a"/>
+  <path d="M0 480 Q180 450 360 480 T800 470" fill="none" stroke="#4b9864" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="35" font-weight="900">PELICAN PEDAL POWER!</text>
+  <text x="400" y="90" text-anchor="middle" class="label" font-size="18" font-weight="700">“Why fly when you can wobble?”</text>
+
+  <g id="bike">
+    <g id="rearWheel">
+      <circle class="wheel" cx="245" cy="430" r="72"/>
+      <g class="spoke">
+        <path d="M245 358V502M173 430H317M194 379L296 481M296 379L194 481"/>
+      </g>
+      <circle cx="245" cy="430" r="10" fill="#f4a261" class="ink"/>
+    </g>
+    <g id="frontWheel">
+      <circle class="wheel" cx="570" cy="430" r="72"/>
+      <g class="spoke">
+        <path d="M570 358V502M498 430H642M519 379L621 481M621 379L519 481"/>
+      </g>
+      <circle cx="570" cy="430" r="10" fill="#f4a261" class="ink"/>
+    </g>
+    <path d="M245 430 L355 355 L455 430 L245 430 M355 355 L400 430 L455 430 M400 430 L490 350 L570 430" fill="none" class="ink"/>
+    <path d="M475 332 L510 315" fill="none" class="ink"/>
+    <path d="M490 350 L500 300" fill="none" class="ink"/>
+    <path d="M492 300 Q520 280 548 300" fill="none" class="ink"/>
+    <circle cx="400" cy="430" r="19" fill="#f4a261" class="ink"/>
+    <path d="M400 430 L365 465 M400 430 L438 462" class="ink"/>
+    <path d="M350 466 L377 470 M433 463 L458 454" class="ink"/>
+  </g>
+
+  <g id="pelican" transform="translate(0,0)">
+    <ellipse cx="395" cy="250" rx="92" ry="108" fill="#f7f4e9" class="ink"/>
+    <path d="M350 215 Q300 245 315 300 Q340 285 370 265" fill="#d7e7e8" class="ink"/>
+    <ellipse cx="415" cy="145" rx="67" ry="66" fill="#f7f4e9" class="ink"/>
+    <path d="M380 155 Q445 130 535 165 Q475 205 390 185Z" fill="#f6b84b" class="ink"/>
+    <path d="M392 183 Q450 192 510 177 Q480 235 420 220 Q395 211 392 183Z" fill="#e99b35" class="ink"/>
+    <circle cx="435" cy="135" r="9" fill="#17212b"/>
+    <path d="M405 108 Q435 85 466 104" fill="none" class="ink"/>
+    <path d="M362 280 Q420 320 476 278" fill="none" stroke="#d9a63c" stroke-width="12"/>
+    <path d="M375 325 L350 390 M450 325 L475 390" fill="none" class="ink"/>
+    <path d="M350 390 L325 398 M475 390 L500 398" fill="none" class="ink"/>
+    <path d="M355 255 Q390 240 425 260" fill="none" stroke="#17212b" stroke-width="5"/>
+    <path d="M330 200 Q300 175 320 145" fill="none" stroke="#17212b" stroke-width="6"/>
+  </g>
+
+  <g transform="translate(615 225)">
+    <path d="M0 0 Q30 -28 60 0 L48 58 Q30 75 12 58Z" fill="#fff2b2" class="ink"/>
+    <path d="M12 22 Q30 8 48 22" fill="none" class="ink"/>
+    <text x="30" y="45" text-anchor="middle" class="label" font-size="15" font-weight="900">HONK!</text>
+  </g>
+
+  <g transform="translate(92 285)">
+    <path d="M0 0 Q55 -22 110 0 L100 54 Q55 72 10 54Z" fill="#fff2b2" class="ink"/>
+    <text x="55" y="35" text-anchor="middle" class="label" font-size="16" font-weight="900">NO FLYING</text>
+  </g>
+
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="20" font-weight="700">A beak, two wheels, and absolutely no sense of balance.</text>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="14">2026-10-27 22:00:01 SGT (UTC+08:00)</text>
+
+  <style>
+    #bike{transform-box:fill-box;transform-origin:center;animation:roll 3s linear infinite}
+    #rearWheel,#frontWheel{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+    #pelican{animation:bob 1.2s ease-in-out infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes roll{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+    @keyframes bob{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-9px) rotate(2deg)}}
+  </style>
+</svg>

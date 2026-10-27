@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e8f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#183047" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#182536; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family: Trebuchet MS, Arial, sans-serif; fill:#182536; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="46" fill="#ffe16b" opacity=".9"/>
+  <path d="M0 315 Q120 270 240 315 T480 315 T720 315 T960 315 V430 H0Z" fill="#8fcf82"/>
+  <path d="M0 365 Q140 330 280 365 T560 365 T840 365 V445 H0Z" fill="#6faf68"/>
+  <path d="M0 420 H800 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 438 H800" stroke="#f8d36a" stroke-width="8" stroke-dasharray="34 24"/>
+  <path d="M110 458 H190 M300 458 H380 M490 458 H570 M680 458 H760" stroke="#fff" stroke-width="5" opacity=".7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="34" width="720" height="92" rx="24" fill="#fff8dc" class="ink"/>
+    <text x="400" y="78" text-anchor="middle" class="label" font-size="34" font-weight="900">THE GREAT PELICAN GRAND PRIX</text>
+    <text x="400" y="108" text-anchor="middle" class="label" font-size="19" font-weight="700">One bird. Two wheels. Absolutely no idea where the brakes are.</text>
+  </g>
+
+  <g transform="translate(0,4)">
+    <g id="bike">
+      <g fill="none" class="ink">
+        <circle cx="220" cy="405" r="73" fill="#d8f4ff"/>
+        <circle cx="580" cy="405" r="73" fill="#d8f4ff"/>
+      </g>
+      <g id="spokes" stroke="#477187" stroke-width="3">
+        <g transform="translate(220 405)">
+          <path d="M0-67V67 M-67 0H67 M-47-47L47 47 M47-47L-47 47"/>
+        </g>
+        <g transform="translate(580 405)">
+          <path d="M0-67V67 M-67 0H67 M-47-47L47 47 M47-47L-47 47"/>
+        </g>
+      </g>
+      <g fill="none" class="ink">
+        <path d="M220 405 L325 315 L420 405 L220 405 L365 405 L325 315"/>
+        <path d="M420 405 L500 300 L580 405"/>
+        <path d="M500 300 L528 278"/>
+        <path d="M528 278 L550 278"/>
+        <path d="M365 405 L350 355"/>
+      </g>
+      <path d="M493 297 Q500 281 519 284" fill="none" class="ink"/>
+      <path d="M340 344 Q365 332 390 344" fill="none" class="ink"/>
+      <g id="crank" transform-origin="365px 405px">
+        <circle cx="365" cy="405" r="12" fill="#ffcf4a" class="ink"/>
+        <path d="M365 405 L338 380 M365 405 L394 430" class="ink"/>
+        <rect x="323" y="373" width="22" height="8" rx="4" fill="#182536"/>
+        <rect x="392" y="426" width="22" height="8" rx="4" fill="#182536"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 365 405" to="360 365 405" dur="1.2s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <rect x="292" y="286" width="92" height="18" rx="9" fill="#ff6b5f" class="ink"/>
+        <path d="M304 302 Q300 322 315 332" fill="none" class="ink"/>
+      </g>
+    </g>
+
+    <g id="pelican" class="ink">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="378" cy="250" rx="82" ry="92" fill="#f4f0e6"/>
+      <path d="M322 228 Q288 205 300 166 Q320 119 365 144 Q391 159 389 201 Z" fill="#f4f0e6"/>
+      <path d="M337 166 Q358 125 397 138 Q431 149 432 185 Q431 223 391 236 Q357 245 337 220Z" fill="#fffaf0"/>
+      <path d="M405 185 Q454 184 510 210 Q525 218 512 231 Q462 246 402 222Z" fill="#f2a44c"/>
+      <path d="M410 205 Q462 219 509 220" fill="none" stroke="#bd6c29" stroke-width="4"/>
+      <circle cx="385" cy="171" r="8" fill="#182536" stroke="none"/>
+      <circle cx="388" cy="168" r="3" fill="#fff" stroke="none"/>
+      <path d="M352 252 Q390 274 427 250" fill="#e9a3b4"/>
+      <path d="M350 245 Q388 260 424 241" fill="none" stroke="#182536" stroke-width="4"/>
+      <path d="M344 304 L335 350 L362 365" fill="none"/>
+      <path d="M406 304 L417 350 L391 365" fill="none"/>
+      <path d="M335 350 L316 360 M335 350 L337 369 M335 350 L351 362" fill="none"/>
+      <path d="M417 350 L437 360 M417 350 L417 369 M417 350 L402 362" fill="none"/>
+      <path d="M323 235 Q284 250 278 285 Q305 277 334 262" fill="#d9e8ed"/>
+      <path d="M429 235 Q467 252 474 285 Q446 276 419 262" fill="#d9e8ed"/>
+      <path d="M350 196 Q331 210 330 232" fill="none" stroke="#c6d4da" stroke-width="5"/>
+      <path d="M425 196 Q444 211 445 232" fill="none" stroke="#c6d4da" stroke-width="5"/>
+      <path d="M361 282 Q378 294 394 282" fill="none" stroke="#182536" stroke-width="4"/>
+    </g>
+
+    <g class="label" font-weight="900" font-size="18">
+      <path d="M535 164 Q610 135 674 170" fill="none" stroke="#182536" stroke-width="4"/>
+      <path d="M674 170 l-18 -10 l5 20z" fill="#182536"/>
+      <text x="545" y="128">FASTER?</text>
+      <text x="545" y="149">I OBJECT!</text>
+    </g>
+    <g fill="#fff8dc" class="ink">
+      <ellipse cx="280" cy="168" rx="23" ry="15"/>
+      <ellipse cx="560" cy="250" rx="19" ry="13"/>
+    </g>
+    <text x="280" y="174" text-anchor="middle" class="label" font-size="17" font-weight="900">HONK</text>
+    <text x="560" y="255" text-anchor="middle" class="label" font-size="15" font-weight="900">WHEE!</text>
+  </g>
+
+  <g class="label">
+    <rect x="72" y="500" width="656" height="42" rx="14" fill="#fff8dc" class="ink"/>
+    <text x="400" y="528" text-anchor="middle" font-size="22" font-weight="800">Caption: He trained for years… mostly by chasing breadcrumbs.</text>
+  </g>
+
+  <text x="400" y="578" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-27 22:01:00 SGT (UTC+08:00)</text>
+</svg>

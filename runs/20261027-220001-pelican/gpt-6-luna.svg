@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd8f2"/>
+      <stop offset="1" stop-color="#e9f8df"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#263238;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#263238;stroke-width:8}
+      .spoke{stroke:#546e7a;stroke-width:3}
+      .caption{font:700 21px sans-serif;fill:#263238}
+      .small{font:600 15px sans-serif;fill:#37474f}
+      .title{font:900 38px sans-serif;fill:#263238;letter-spacing:2px}
+      .motion{animation:roll 2.2s linear infinite}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:pedal .7s ease-in-out infinite alternate}
+      .bob{transform-box:fill-box;transform-origin:center;animation:bob .7s ease-in-out infinite alternate}
+      @keyframes roll{to{transform:rotate(360deg)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px) rotate(-2deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 390 Q130 330 260 390 T520 385 T800 380 V600 H0Z" fill="#9bd18b"/>
+  <path d="M0 450 Q160 405 320 455 T640 445 T800 455 V600 H0Z" fill="#6eb56b"/>
+
+  <text x="400" y="58" text-anchor="middle" class="title">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" class="caption">“Why fly when you can pedal dramatically?”</text>
+
+  <g class="bob">
+    <!-- pelican body -->
+    <ellipse cx="407" cy="252" rx="92" ry="70" fill="#f7f4e9" class="ink"/>
+    <path d="M338 249 Q306 185 346 142 Q385 105 429 140 Q459 164 449 214" fill="#f7f4e9" class="ink"/>
+    <path d="M347 145 Q374 111 416 132 Q447 147 456 181 Q430 170 399 185 Q371 197 347 185Z" fill="#d9e2e3" class="ink"/>
+    <circle cx="389" cy="157" r="8" fill="#263238"/>
+    <path d="M351 178 Q302 168 267 187 Q305 207 356 204 Q391 201 420 184Z" fill="#f2a65a" class="ink"/>
+    <path d="M268 187 Q306 190 349 184" fill="none" class="ink"/>
+    <path d="M421 214 Q467 205 492 235 Q463 250 424 244" fill="#d9e2e3" class="ink"/>
+    <path d="M382 315 L375 365 M435 314 L446 364" class="ink"/>
+    <path d="M366 365 q14 -13 28 0 M436 365 q14 -13 28 0" fill="#f2a65a" class="ink"/>
+    <path d="M367 231 Q401 250 439 229" fill="none" stroke="#90a4ae" stroke-width="6"/>
+
+    <!-- bicycle frame -->
+    <path d="M294 415 L390 415 L455 330 L344 330 Z" fill="none" class="ink"/>
+    <path d="M390 415 L455 330 L497 414" fill="none" class="ink"/>
+    <path d="M344 330 L328 297" class="ink"/>
+    <path d="M322 296 L350 296" class="ink"/>
+    <path d="M455 330 L475 295" class="ink"/>
+    <path d="M467 294 L492 294" class="ink"/>
+    <path d="M390 415 L390 448" class="ink"/>
+    <circle cx="390" cy="448" r="18" fill="#f2a65a" class="ink pedal"/>
+    <path d="M390 448 L410 435 M390 448 L370 461" class="ink"/>
+
+    <!-- seat -->
+    <path d="M326 293 Q347 282 367 293" fill="none" class="ink"/>
+    <!-- handlebars -->
+    <path d="M467 294 q20 -12 27 0 q-8 14 -22 9" fill="none" class="ink"/>
+
+    <!-- feet on pedals -->
+    <path d="M375 365 L384 430 M446 364 L405 438" class="ink"/>
+    <path d="M376 430 q13 -8 24 4 M399 438 q13 7 24 -3" fill="#f2a65a" class="ink"/>
+  </g>
+
+  <!-- wheels -->
+  <g transform="translate(294 415)">
+    <circle r="78" class="wheel"/>
+    <g class="motion">
+      <path d="M0 -78V78 M-78 0H78 M-55 -55L55 55 M55 -55L-55 55" class="spoke"/>
+    </g>
+  </g>
+  <g transform="translate(497 414)">
+    <circle r="78" class="wheel"/>
+    <g class="motion">
+      <path d="M0 -78V78 M-78 0H78 M-55 -55L55 55 M55 -55L-55 55" class="spoke"/>
+    </g>
+  </g>
+
+  <!-- comic motion marks -->
+  <path d="M190 330 l-42 -16 M181 360 l-49 -2 M610 335 l43 -18" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+  <text x="594" y="260" class="caption" transform="rotate(8 594 260)">HONK!</text>
+  <path d="M574 270 q18 15 34 0" fill="none" class="ink"/>
+
+  <rect x="70" y="515" width="660" height="55" rx="16" fill="#fff8df" stroke="#263238" stroke-width="3"/>
+  <text x="400" y="538" text-anchor="middle" class="small">Pelican-powered transport: maximum beak, minimum brakes.</text>
+  <text x="400" y="559" text-anchor="middle" class="small">2026-10-27 22:02:16 SGT (UTC+08:00)</text>
+</svg>

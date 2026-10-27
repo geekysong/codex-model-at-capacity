@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Power Ride</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an absurdly large fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596579"/>
+      <stop offset="1" stop-color="#263142"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#102033" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#172235;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#172235}
+      .small{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#172235}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="92" cy="112" r="42" fill="#fff" opacity=".75"/>
+  <circle cx="127" cy="105" r="30" fill="#fff" opacity=".75"/>
+  <circle cx="153" cy="120" r="38" fill="#fff" opacity=".75"/>
+  <path d="M0 360 Q130 315 260 355 T520 345 T800 355 V440 H0Z" fill="#9bd17e"/>
+  <path d="M0 405 Q190 370 380 407 T800 398 V470 H0Z" fill="#6eae67"/>
+  <rect y="440" width="800" height="160" fill="url(#road)"/>
+  <path d="M0 520 H800" stroke="#f4d35e" stroke-width="9" stroke-dasharray="55 35"/>
+  <path d="M0 468 Q200 448 400 468 T800 465" fill="none" stroke="#9ba7b7" stroke-width="6" opacity=".7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="30" width="716" height="78" rx="22" fill="#fff7d6" class="ink"/>
+    <text x="400" y="76" text-anchor="middle" class="label" font-size="39">PELICAN POWER RIDE!</text>
+  </g>
+  <text x="400" y="132" text-anchor="middle" class="small" font-size="19">“When your beak is bigger than your budget, pedal harder.”</text>
+
+  <!-- bicycle -->
+  <g>
+    <g id="wheelBack">
+      <circle cx="276" cy="451" r="83" fill="#d9e4ee" class="ink"/>
+      <circle cx="276" cy="451" r="12" fill="#f4d35e" class="ink"/>
+      <g stroke="#627286" stroke-width="3">
+        <path d="M276 368V534M193 451H359M217 392L335 510M335 392L217 510"/>
+      </g>
+    </g>
+    <g id="wheelFront">
+      <circle cx="590" cy="451" r="83" fill="#d9e4ee" class="ink"/>
+      <circle cx="590" cy="451" r="12" fill="#f4d35e" class="ink"/>
+      <g stroke="#627286" stroke-width="3">
+        <path d="M590 368V534M507 451H673M531 392L649 510M649 392L531 510"/>
+      </g>
+    </g>
+    <path d="M276 451 L365 392 L466 451 L590 451 L466 451 L415 350 Z" fill="none" class="ink"/>
+    <path d="M365 392 L415 350 L442 350" fill="none" class="ink"/>
+    <path d="M590 451 L570 350 L547 330" fill="none" class="ink"/>
+    <path d="M533 329 H580" class="ink"/>
+    <path d="M350 381 H385" class="ink"/>
+    <g id="pedal" transform="translate(466 451)">
+      <circle r="22" fill="#f4d35e" class="ink"/>
+      <path d="M0 0 L25 19 M0 0 L-24 -18" class="ink"/>
+      <rect x="22" y="16" width="25" height="8" rx="4" fill="#ef6b59" class="ink"/>
+      <rect x="-47" y="-23" width="25" height="8" rx="4" fill="#ef6b59" class="ink"/>
+    </g>
+  </g>
+
+  <!-- pelican -->
+  <g id="pelican" transform="translate(0 0)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="421" cy="295" rx="72" ry="88" fill="#f4f0df" class="ink"/>
+    <path d="M373 272 Q382 205 438 202 Q486 207 489 264 Q487 310 455 328 Q397 325 373 272Z" fill="#fffaf0" class="ink"/>
+    <circle cx="452" cy="235" r="9" fill="#172235"/>
+    <circle cx="455" cy="232" r="3" fill="#fff"/>
+    <path d="M478 254 Q571 250 637 277 Q570 303 478 285Z" fill="#f6a84f" class="ink"/>
+    <path d="M493 280 Q558 305 621 288 Q584 329 500 305Z" fill="#ef704f" class="ink"/>
+    <path d="M387 216 Q364 168 401 145 Q425 167 424 207" fill="#f4f0df" class="ink"/>
+    <path d="M407 207 Q444 162 469 186 Q476 215 457 230" fill="#f4f0df" class="ink"/>
+    <path d="M383 301 Q349 337 370 363 Q397 365 415 327" fill="#f4f0df" class="ink"/>
+    <path d="M453 319 Q480 350 464 374 Q436 375 426 335" fill="#f4f0df" class="ink"/>
+    <path d="M394 350 L385 390" class="ink"/>
+    <path d="M454 356 L463 394" class="ink"/>
+    <path d="M374 391 H410" class="ink"/>
+    <path d="M448 395 H481" class="ink"/>
+    <path d="M384 257 Q414 275 443 259" fill="none" stroke="#d5a65c" stroke-width="5"/>
+    <path d="M384 277 Q414 296 445 278" fill="none" stroke="#d5a65c" stroke-width="5"/>
+    <!-- oversized fish -->
+    <g transform="translate(520 205) rotate(12)">
+      <path d="M0 42 Q55 -8 128 32 Q61 85 0 42Z" fill="#75c6d8" class="ink"/>
+      <path d="M128 32 L158 5 L153 65Z" fill="#f4a261" class="ink"/>
+      <circle cx="29" cy="34" r="7" fill="#172235"/>
+      <path d="M64 15 L77 -12 L91 18 M64 69 L77 94 L90 66" fill="#f4a261" class="ink"/>
+      <path d="M50 42 Q75 53 101 39" fill="none" stroke="#172235" stroke-width="4"/>
+    </g>
+    <text x="542" y="188" class="small" font-size="16" transform="rotate(12 542 188)">LUNCH?</text>
+  </g>
+
+  <g transform="translate(640 350) rotate(-8)">
+    <path d="M0 45 Q28 0 57 45" fill="none" stroke="#ef6b59" stroke-width="8"/>
+    <circle cx="28" cy="22" r="9" fill="#ef6b59"/>
+    <text x="0" y="78" class="small" font-size="15">HONK!</text>
+  </g>
+
+  <rect x="24" y="555" width="752" height="34" rx="10" fill="#fff7d6" class="ink"/>
+  <text x="400" y="579" text-anchor="middle" class="small" font-size="16">2026-10-27 22:03:18 SGT (UTC+08:00)</text>
+
+  <style>
+    #wheelBack,#wheelFront{transform-box:fill-box;transform-origin:center;animation:spin 1.5s linear infinite}
+    #pedal{transform-box:fill-box;transform-origin:center;animation:pedal 1.5s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes pedal{to{transform:translate(466px,451px) rotate(360deg)}}
+  </style>
+</svg>
