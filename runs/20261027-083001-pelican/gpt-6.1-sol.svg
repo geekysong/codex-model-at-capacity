@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e8f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b68"/>
+      <stop offset="1" stop-color="#2d313b"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#18202b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#17202a; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#17202a; }
+      .wheelSpin { transform-origin:0 0; animation:spin 1.5s linear infinite; }
+      .pedal { transform-origin:0 0; animation:spin 1.2s linear infinite; }
+      .bob { animation:bob .8s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-5px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe27a" opacity=".9"/>
+  <path d="M0 360 Q130 300 250 355 T510 345 T800 335 V470 H0Z" fill="#9dcc82"/>
+  <path d="M0 405 Q180 370 350 410 T800 395 V470 H0Z" fill="#6eaf68"/>
+  <path d="M0 455 H800 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 515 H800" stroke="#f8d96b" stroke-width="8" stroke-dasharray="50 28" opacity=".9"/>
+
+  <text x="400" y="57" text-anchor="middle" class="label" font-size="36" font-weight="900" fill="#10212f">THE GREAT PELICYCLE</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="19" font-weight="700" fill="#314657">A bird-brained commute with excellent beak torque</text>
+
+  <g transform="translate(0 4)" filter="url(#shadow)">
+    <g class="wheelSpin">
+      <circle cx="238" cy="444" r="73" fill="#edf2f5" class="ink"/>
+      <circle cx="238" cy="444" r="11" fill="#f05b4f" class="ink"/>
+      <g stroke="#788693" stroke-width="4">
+        <path d="M238 371V517M165 444H311M186 392L290 496M290 392L186 496"/>
+      </g>
+    </g>
+    <g class="wheelSpin">
+      <circle cx="590" cy="444" r="73" fill="#edf2f5" class="ink"/>
+      <circle cx="590" cy="444" r="11" fill="#f05b4f" class="ink"/>
+      <g stroke="#788693" stroke-width="4">
+        <path d="M590 371V517M517 444H663M538 392L642 496M642 392L538 496"/>
+      </g>
+    </g>
+
+    <path d="M238 444 L360 350 L590 444 L455 444 Z" fill="none" class="ink"/>
+    <path d="M360 350 L402 444" fill="none" class="ink"/>
+    <path d="M590 444 L560 328" fill="none" class="ink"/>
+    <path d="M536 327 H594" fill="none" class="ink"/>
+    <path d="M348 347 H390" fill="none" class="ink"/>
+    <circle cx="455" cy="444" r="28" fill="#f7b733" class="ink"/>
+    <g class="pedal">
+      <path d="M455 444 L482 418 M455 444 L428 470" fill="none" class="ink"/>
+      <path d="M477 414 h24 M423 474 h-24" class="ink" fill="none"/>
+    </g>
+    <path d="M220 392 Q184 376 182 347" fill="none" class="ink"/>
+    <path d="M182 347 q-12 -13 -20 0 q8 15 24 10" fill="#f7b733" class="ink"/>
+  </g>
+
+  <g class="bob" filter="url(#shadow)">
+    <ellipse cx="421" cy="326" rx="81" ry="67" fill="#f7f3e8" class="ink"/>
+    <path d="M369 300 Q395 244 448 264 Q488 279 491 328 Q475 350 438 346 Q392 342 369 300Z" fill="#dce8e8" class="ink"/>
+    <path d="M395 273 Q414 226 450 236 Q476 245 480 278 Q447 266 421 289Z" fill="#f7f3e8" class="ink"/>
+    <path d="M454 290 Q535 285 577 317 Q586 327 572 340 Q519 348 452 330 Q438 319 454 290Z" fill="#f39a4a" class="ink"/>
+    <path d="M571 318 l34 11 l-30 14" fill="#ef7041" class="ink"/>
+    <circle cx="450" cy="270" r="9" fill="#17202a"/>
+    <circle cx="453" cy="267" r="3" fill="#fff"/>
+    <path d="M405 344 Q414 366 438 372" fill="none" class="ink"/>
+    <path d="M438 372 q18 7 29 -2" fill="none" class="ink"/>
+    <path d="M393 351 Q366 366 357 397" fill="none" class="ink"/>
+    <path d="M357 397 L383 414" fill="none" class="ink"/>
+    <path d="M464 347 Q490 367 507 398" fill="none" class="ink"/>
+    <path d="M507 398 L481 414" fill="none" class="ink"/>
+    <path d="M405 288 Q383 275 366 285" fill="none" class="ink"/>
+    <path d="M372 252 q-19 -20 -38 -6" fill="none" class="ink"/>
+    <text x="428" y="408" text-anchor="middle" class="label" font-size="16" font-weight="800" fill="#fff">HONK!</text>
+  </g>
+
+  <path d="M112 223 q20 -23 40 0 q20 -23 40 0" fill="none" stroke="#5b8494" stroke-width="6" stroke-linecap="round"/>
+  <path d="M620 216 q18 -20 36 0 q18 -20 36 0" fill="none" stroke="#5b8494" stroke-width="6" stroke-linecap="round"/>
+
+  <g transform="translate(36 548)">
+    <rect x="0" y="0" width="728" height="38" rx="12" fill="#fff6d7" stroke="#17202a" stroke-width="3"/>
+    <text x="364" y="25" text-anchor="middle" class="label" font-size="16" font-weight="700">Caption: “Why fly south when you can pedal with superior beak aerodynamics?”</text>
+  </g>
+
+  <text x="400" y="594" text-anchor="middle" class="label" font-size="13" font-weight="700">2026-10-27 08:30:21 SGT (UTC+08:00)</text>
+</svg>

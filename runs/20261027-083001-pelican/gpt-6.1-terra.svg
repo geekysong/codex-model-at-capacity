@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon pelican pedals furiously while pretending to be a serious commuter.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9ecff"/>
+      <stop offset="1" stop-color="#fff4c7"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b66"/>
+      <stop offset="1" stop-color="#30343c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#1e2630" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202934;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202934}
+      .wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+      .pedalSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+      .bob{animation:bob .75s ease-in-out infinite alternate}
+      .flag{animation:wave 1.2s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+      @keyframes wave{from{transform:skewY(0deg)}to{transform:skewY(-8deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="112" r="48" fill="#ffd76a" opacity=".85"/>
+  <path d="M0 340 Q120 290 240 335 T480 330 T800 320 V440 H0Z" fill="#9bd18b"/>
+  <path d="M0 390 Q180 355 360 390 T800 375 V470 H0Z" fill="#72b878"/>
+  <path d="M0 442 H800 V570 H0Z" fill="url(#road)"/>
+  <path d="M0 485 H800" stroke="#f7d66a" stroke-width="8" stroke-dasharray="48 34"/>
+  <g opacity=".45" fill="#fff">
+    <ellipse cx="125" cy="110" rx="72" ry="20"/>
+    <ellipse cx="170" cy="96" rx="45" ry="16"/>
+    <ellipse cx="350" cy="155" rx="78" ry="22"/>
+  </g>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="34" font-weight="900" fill="#c43d2f">THE GREAT BEAK ESCAPE</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="18" font-weight="700">A pelican discovers that “winging it” works better with wheels.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="76" y="125" width="180" height="78" rx="18" fill="#fffdf5" class="ink"/>
+    <path d="M185 203 l18 25 25-25" fill="#fffdf5" class="ink"/>
+    <text x="166" y="158" text-anchor="middle" class="label" font-size="19" font-weight="800">I asked for</text>
+    <text x="166" y="182" text-anchor="middle" class="label" font-size="19" font-weight="800">a fish taxi!</text>
+  </g>
+
+  <g transform="translate(0 4)">
+    <g class="wheelSpin">
+      <circle cx="264" cy="456" r="69" fill="#e6f8ff" fill-opacity=".22" class="ink"/>
+      <circle cx="264" cy="456" r="10" fill="#ef6b4a" class="ink"/>
+      <path d="M264 387V525 M195 456H333 M215 407L313 505 M313 407L215 505" class="ink" stroke-width="3"/>
+    </g>
+    <g class="wheelSpin">
+      <circle cx="560" cy="456" r="69" fill="#e6f8ff" fill-opacity=".22" class="ink"/>
+      <circle cx="560" cy="456" r="10" fill="#ef6b4a" class="ink"/>
+      <path d="M560 387V525 M491 456H629 M511 407L609 505 M609 407L511 505" class="ink" stroke-width="3"/>
+    </g>
+    <path d="M264 456 L370 345 L560 456 L426 456 Z" fill="#ef6b4a" fill-opacity=".2" class="ink"/>
+    <path d="M370 345 L426 456 M370 345 L349 420 M560 456 L585 350" fill="none" class="ink"/>
+    <path d="M575 350 q20-18 45 0" fill="none" class="ink"/>
+    <path d="M344 418 h-35" class="ink"/>
+    <g class="pedalSpin">
+      <circle cx="426" cy="456" r="14" fill="#ffcb47" class="ink"/>
+      <path d="M426 456 l-30-22 M426 456 l29 24" class="ink"/>
+      <circle cx="394" cy="433" r="7" fill="#202934"/>
+      <circle cx="458" cy="480" r="7" fill="#202934"/>
+    </g>
+    <path d="M242 526 Q410 555 580 526" fill="none" stroke="#202934" stroke-width="5" opacity=".35"/>
+  </g>
+
+  <g class="bob">
+    <path d="M343 347 Q321 270 363 214 Q402 162 463 188 Q514 210 511 277 L498 353 Z" fill="#f6f0dc" class="ink"/>
+    <path d="M365 220 Q405 175 466 196 Q505 210 513 263 Q467 244 431 262 Q395 279 365 220Z" fill="#e6d6b7" class="ink"/>
+    <ellipse cx="438" cy="202" rx="34" ry="29" fill="#f6f0dc" class="ink"/>
+    <circle cx="448" cy="194" r="8" fill="#202934"/>
+    <path d="M469 212 Q544 206 579 236 Q535 268 466 245Z" fill="#f39a42" class="ink"/>
+    <path d="M571 235 q30 16 2 34 q-20 7-36-5" fill="#ed7e35" class="ink"/>
+    <path d="M397 228 Q382 274 420 300 Q455 320 485 282" fill="none" stroke="#c9b995" stroke-width="17"/>
+    <path d="M392 279 Q350 316 332 367" fill="none" class="ink"/>
+    <path d="M486 275 Q523 312 531 359" fill="none" class="ink"/>
+    <path d="M332 367 q-29 17-7 32 q30 10 48-11" fill="#f39a42" class="ink"/>
+    <path d="M531 359 q31 15 12 34 q-28 12-45-8" fill="#f39a42" class="ink"/>
+    <path d="M409 300 Q431 337 416 382" fill="none" class="ink"/>
+    <path d="M481 295 Q462 337 482 382" fill="none" class="ink"/>
+    <path d="M405 382 q-25 12-1 27 q28 7 39-14" fill="#f39a42" class="ink"/>
+    <path d="M481 382 q25 12 2 27 q-28 7-39-14" fill="#f39a42" class="ink"/>
+    <path d="M377 259 Q407 285 450 272" fill="none" stroke="#d4c39e" stroke-width="8"/>
+    <path d="M476 263 Q492 283 496 303" fill="none" stroke="#d4c39e" stroke-width="8"/>
+    <text x="414" y="238" class="label" font-size="15" font-weight="900" transform="rotate(-8 414 238)">HONK!</text>
+  </g>
+
+  <g class="flag">
+    <path d="M585 350 V245" class="ink"/>
+    <path d="M585 247 Q646 229 704 255 Q648 278 585 268Z" fill="#ef554c" class="ink"/>
+    <text x="644" y="260" text-anchor="middle" class="label" font-size="16" font-weight="900" fill="#fff">BEAK LANE</text>
+  </g>
+
+  <text x="400" y="553" text-anchor="middle" class="label" font-size="18" font-weight="700">“Pedal faster! The bread is getting away!”</text>
+  <text x="400" y="583" text-anchor="middle" class="label" font-size="14">2026-10-27 08:31:47 SGT (UTC+08:00)</text>
+</svg>
