@@ -94,3 +94,16 @@ failure reason cannot be established. API failure is not the established cause.
 - Existing crontab unchanged. Next prompt: 2026-10-27 00:00 SGT; next Claude job:
   2026-10-27 00:05 SGT (2026-10-26 16:05 UTC). This future scheduled execution has
   not yet been observed. No new daemon, account, credential or scheduler installed.
+
+
+## Model fallback correction, 2026-10-27
+
+`compare_claude.py` uses `claude-sonnet-5-5` as its standalone default when
+`CLAUDE_MODEL` is absent. The old `claude-sonnet-4-20250514` fallback was removed
+because it is not in the current Anthropic `/v1/models` catalog and is prohibited
+for this project. The scheduled runner already passes each configured model
+explicitly, so this correction does not change cron frequency, the four scheduled
+model identities, shared locking, dedupe, prompt/date/hash checks, retry policy, or
+publication behavior. The Claude schedule remains 00:00 prompt generation and
+00:05 control execution in Asia/Singapore; the Codex schedule remains every 30
+minutes. No API generation was run for this change.

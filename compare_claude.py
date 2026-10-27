@@ -21,7 +21,7 @@ from claude_daily import valid_svg
 REPO = Path(__file__).resolve().parent
 KEY_FILE = REPO / ".secrets" / "anthropic_api_key"
 API_URL = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com").rstrip("/") + "/v1/messages"
-MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-20250514")
+MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")
 MAX_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "1000000"))
 SGT = ZoneInfo("Asia/Singapore")
 # USD per million standard input/output tokens. Keep this table versioned with
