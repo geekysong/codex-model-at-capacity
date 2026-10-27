@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an enormous fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b68"/>
+      <stop offset="1" stop-color="#303541"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#153047" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink { stroke:#172437; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#172437; }
+      .small { font-size:18px; font-weight:700; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="685" cy="102" r="48" fill="#fff6b1" opacity=".9"/>
+  <path d="M0 180 Q110 125 220 180 T440 180 T660 180 T900 180 L900 300 L0 300Z" fill="#7dcf9a" opacity=".62"/>
+  <path d="M0 250 Q120 205 250 250 T500 250 T800 250 L800 390 L0 390Z" fill="#4db878" opacity=".7"/>
+  <path d="M0 342 Q180 300 370 342 T800 342 L800 510 L0 510Z" fill="#2d9b62"/>
+  <path d="M0 398 Q200 360 400 400 T800 398 L800 540 L0 540Z" fill="url(#road)"/>
+  <path d="M0 468 L800 468" stroke="#f6d86a" stroke-width="9" stroke-dasharray="42 28" opacity=".9"/>
+  <path d="M0 535 Q240 510 450 535 T800 535" fill="none" stroke="#1b2430" stroke-width="8"/>
+
+  <g class="label" text-anchor="middle">
+    <text x="400" y="58" font-size="39" font-weight="900" fill="#ffffff" stroke="#172437" stroke-width="3" paint-order="stroke">THE PELICAN PEDAL EXPRESS</text>
+    <text x="400" y="91" font-size="20" font-weight="700" fill="#17334a">“Because walking is for birds with less ambition.”</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <!-- bicycle -->
+    <g fill="none" class="ink">
+      <circle cx="245" cy="425" r="73" stroke="#202b3b" stroke-width="10"/>
+      <circle cx="585" cy="425" r="73" stroke="#202b3b" stroke-width="10"/>
+      <path d="M245 425 L340 330 L430 425 L245 425 M340 330 L385 425 L585 425 M430 425 L470 330 L520 330" />
+      <path d="M470 330 L500 300 M464 331 L493 331" />
+      <path d="M340 330 L325 295 M311 295 L337 295" />
+      <circle cx="430" cy="425" r="14" fill="#f6d86a"/>
+      <path d="M430 425 l-35 -24 M430 425 l35 25" />
+      <path d="M392 401 l-23 -4 M465 450 l25 4" />
+    </g>
+    <g fill="none" stroke="#cbd6df" stroke-width="3" opacity=".8">
+      <path d="M245 352 V498 M172 425 H318 M194 374 L296 476 M296 374 L194 476"/>
+      <path d="M585 352 V498 M512 425 H658 M534 374 L636 476 M636 374 L534 476"/>
+    </g>
+
+    <!-- animated rider -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <!-- body -->
+      <ellipse cx="403" cy="278" rx="67" ry="83" fill="#f4f0d5" class="ink"/>
+      <path d="M365 308 Q405 340 444 303 L461 358 Q406 391 352 352Z" fill="#ef7d42" class="ink"/>
+      <!-- wing -->
+      <path d="M365 270 Q322 294 344 340 Q370 349 397 315Z" fill="#d9d4b7" class="ink"/>
+      <path d="M364 283 Q349 311 366 331" fill="none" class="ink"/>
+      <!-- neck and head -->
+      <path d="M376 227 Q347 175 380 132 Q412 105 454 130 Q480 150 468 190 L450 239Z" fill="#f4f0d5" class="ink"/>
+      <ellipse cx="421" cy="144" rx="55" ry="48" fill="#f4f0d5" class="ink"/>
+      <!-- crest -->
+      <path d="M382 111 Q392 82 414 110 Q429 78 443 113 Q467 91 470 126" fill="#f3b34d" class="ink"/>
+      <!-- beak -->
+      <path d="M457 145 Q536 146 587 178 Q544 212 457 187 Q444 170 457 145Z" fill="#f2a83b" class="ink"/>
+      <path d="M484 178 Q536 186 580 177" fill="none" class="ink"/>
+      <circle cx="436" cy="137" r="8" fill="#172437"/>
+      <circle cx="439" cy="134" r="3" fill="#ffffff"/>
+      <!-- fish in beak -->
+      <path d="M549 173 Q588 137 636 165 Q615 193 573 196Z" fill="#73c6d6" class="ink"/>
+      <path d="M628 166 l27 -18 l-7 28 l16 18 l-30 -2" fill="#73c6d6" class="ink"/>
+      <circle cx="592" cy="170" r="4" fill="#172437"/>
+      <!-- hat -->
+      <path d="M377 112 Q418 83 461 112 L466 126 L371 126Z" fill="#e84d4d" class="ink"/>
+      <path d="M386 104 Q417 76 451 104" fill="none" stroke="#f5d66b" stroke-width="9"/>
+      <!-- feet and pedaling -->
+      <path d="M383 350 Q369 386 397 425" fill="none" class="ink"/>
+      <path d="M438 350 Q457 386 430 425" fill="none" class="ink"/>
+      <ellipse cx="393" cy="426" rx="22" ry="8" fill="#ef7d42" class="ink"/>
+      <ellipse cx="433" cy="426" rx="22" ry="8" fill="#ef7d42" class="ink"/>
+      <!-- comic motion lines -->
+      <path d="M312 233 l-32 -16 M315 249 l-38 -3 M506 262 l32 -14" stroke="#ffffff" stroke-width="6" fill="none"/>
+    </g>
+  </g>
+
+  <g class="label">
+    <rect x="26" y="118" width="178" height="76" rx="16" fill="#fff8d6" stroke="#172437" stroke-width="5" transform="rotate(-5 26 118)"/>
+    <text x="115" y="148" text-anchor="middle" font-size="18" font-weight="800">LOCAL HERO:</text>
+    <text x="115" y="174" text-anchor="middle" font-size="17">“I brake for snacks!”</text>
+    <path d="M198 180 Q245 210 300 239" fill="none" stroke="#172437" stroke-width="4"/>
+  </g>
+
+  <g class="label" text-anchor="middle">
+    <text x="400" y="558" class="small">Pelican-powered transportation: maximum drama, minimum feathers on the pavement.</text>
+    <text x="400" y="584" font-size="16" font-weight="700">2026-10-27 23:33:21 SGT (UTC+08:00)</text>
+  </g>
+
+  <!-- looping wheel rotation -->
+  <g fill="none" stroke="#ffffff" stroke-width="4" opacity=".75">
+    <path d="M245 425 l0 -57 M245 425 l52 30 M245 425 l-52 30"/>
+    <path d="M585 425 l0 -57 M585 425 l52 30 M585 425 l-52 30"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 245 425" to="360 245 425" dur="1.6s" repeatCount="indefinite"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="4" opacity=".75">
+    <path d="M585 425 l0 -57 M585 425 l52 30 M585 425 l-52 30"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 585 425" to="360 585 425" dur="1.6s" repeatCount="indefinite"/>
+  </g>
+</svg>

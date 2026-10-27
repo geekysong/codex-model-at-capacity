@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4d5862"/>
+      <stop offset="1" stop-color="#252d35"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <style>
+      .ink{stroke:#18232b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#18232b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe27a" opacity=".8"/>
+  <path d="M70 155 Q145 110 220 155 T370 155" fill="none" stroke="#fff" stroke-width="10" opacity=".65"/>
+  <path d="M470 120 Q535 82 600 120" fill="none" stroke="#fff" stroke-width="9" opacity=".6"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="36" font-weight="900">THE GREAT PELICAN GRAND PRIX</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="18" font-weight="700">One bird. Two wheels. Absolutely no sense of direction.</text>
+
+  <path d="M0 430 Q170 400 330 430 T800 425 L800 555 L0 555Z" fill="url(#road)"/>
+  <path d="M0 493 H800" stroke="#f8d66d" stroke-width="8" stroke-dasharray="46 30" opacity=".9"/>
+  <ellipse cx="405" cy="452" rx="245" ry="23" fill="#111820" opacity=".35" filter="url(#shadow)"/>
+
+  <g id="bike">
+    <g id="wheels">
+      <circle cx="245" cy="430" r="73" fill="#dce8ee" class="ink"/>
+      <circle cx="565" cy="430" r="73" fill="#dce8ee" class="ink"/>
+      <g fill="none" stroke="#60717b" stroke-width="3">
+        <path d="M245 357V503 M172 430H318 M194 379L296 481 M296 379L194 481"/>
+        <path d="M565 357V503 M492 430H638 M514 379L616 481 M616 379L514 481"/>
+      </g>
+      <circle cx="245" cy="430" r="11" fill="#18232b"/>
+      <circle cx="565" cy="430" r="11" fill="#18232b"/>
+    </g>
+    <path d="M245 430 L335 330 L455 430 L245 430 M335 330 L565 430 M455 430 L510 315" fill="none" class="ink" stroke="#e64d39"/>
+    <path d="M500 314 Q530 294 557 312" fill="none" class="ink"/>
+    <path d="M555 311 Q573 299 588 310" fill="none" class="ink"/>
+    <circle cx="397" cy="430" r="19" fill="#f6c447" class="ink"/>
+    <path d="M397 430 L365 400 M397 430 L429 457" fill="none" class="ink"/>
+    <circle cx="360" cy="395" r="8" fill="#18232b"/>
+    <circle cx="435" cy="462" r="8" fill="#18232b"/>
+  </g>
+
+  <g id="pelican" transform="translate(0,0)">
+    <ellipse cx="405" cy="247" rx="83" ry="99" fill="#f2f5f4" class="ink"/>
+    <path d="M356 218 Q324 270 358 323 Q387 341 413 310 Q437 274 420 228Z" fill="#d9e2e4" class="ink"/>
+    <ellipse cx="401" cy="154" rx="60" ry="61" fill="#f8fbfb" class="ink"/>
+    <path d="M430 166 Q538 174 601 208 Q615 218 600 231 Q527 234 430 201Z" fill="#f0a43e" class="ink"/>
+    <path d="M430 201 Q511 211 575 221 Q530 260 438 232Z" fill="#f6bd53" class="ink"/>
+    <circle cx="419" cy="145" r="10" fill="#18232b"/>
+    <circle cx="422" cy="142" r="3" fill="#fff"/>
+    <path d="M370 137 Q387 119 404 132" fill="none" class="ink"/>
+    <path d="M380 244 Q413 263 444 242" fill="none" class="ink"/>
+    <path d="M367 321 L345 390 M438 320 L469 390" fill="none" class="ink"/>
+    <path d="M345 390 Q356 397 370 390 M469 390 Q481 398 495 390" fill="none" class="ink"/>
+    <path d="M347 269 Q300 280 315 314 Q329 329 366 298" fill="#c8d4d7" class="ink"/>
+    <path d="M447 264 Q491 280 478 316 Q466 329 436 299" fill="#c8d4d7" class="ink"/>
+    <path d="M374 186 Q399 198 427 185" fill="none" stroke="#d77d2b" stroke-width="5"/>
+  </g>
+
+  <g transform="translate(0,0)">
+    <path d="M620 350 q28 -28 56 0" fill="none" stroke="#18232b" stroke-width="5"/>
+    <text x="650" y="335" text-anchor="middle" class="label" font-size="17" font-weight="700">HONK!</text>
+  </g>
+
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="20" font-weight="800">“I said pedal power, not paddle power!”</text>
+  <rect x="185" y="558" width="430" height="30" rx="8" fill="#fff" opacity=".82"/>
+  <text x="400" y="579" text-anchor="middle" class="label" font-size="14" font-weight="700">2026-10-27 23:31:06 SGT (UTC+08:00)</text>
+
+  <g>
+    <animateTransform href="#wheels" attributeName="transform" type="rotate" from="0 245 430" to="360 245 430" dur="1.2s" repeatCount="indefinite"/>
+    <animateTransform href="#bike" attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <animateTransform href="#pelican" attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+  </g>
+</svg>
