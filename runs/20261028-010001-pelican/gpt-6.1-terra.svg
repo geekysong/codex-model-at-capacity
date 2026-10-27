@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican pedals a bicycle while proudly declaring itself traffic.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17202a}
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#17202a" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="#bdefff"/>
+  <rect y="430" width="800" height="95" fill="#78c878"/>
+  <path d="M0 470 Q180 430 350 470 T800 465" fill="none" stroke="#4b9b55" stroke-width="8"/>
+  <path d="M0 525 H800" stroke="#17202a" stroke-width="7"/>
+  <path d="M35 525 H120 M205 525 H290 M375 525 H460 M545 525 H630 M715 525 H790" stroke="#f8e36a" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN ON A BICYCLE</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="20" font-weight="700">“Making traffic jams look feather-brained since breakfast.”</text>
+
+  <g filter="url(#shadow)">
+    <path d="M250 385 Q400 350 550 385" fill="none" stroke="#d84343" stroke-width="15"/>
+    <g id="bike">
+      <g id="wheelLeft">
+        <circle cx="250" cy="445" r="72" fill="#e9f6ff" class="ink"/>
+        <circle cx="250" cy="445" r="9" fill="#17202a"/>
+        <g stroke="#17202a" stroke-width="4">
+          <path d="M250 373V517 M178 445H322 M199 394L301 496 M301 394L199 496"/>
+        </g>
+      </g>
+      <g id="wheelRight">
+        <circle cx="550" cy="445" r="72" fill="#e9f6ff" class="ink"/>
+        <circle cx="550" cy="445" r="9" fill="#17202a"/>
+        <g stroke="#17202a" stroke-width="4">
+          <path d="M550 373V517 M478 445H622 M499 394L601 496 M601 394L499 496"/>
+        </g>
+      </g>
+      <path d="M250 445 L335 345 L455 445 L250 445 M335 345 L550 445 M455 445 L480 350" fill="none" class="ink"/>
+      <path d="M470 350 H520" class="ink" fill="none"/>
+      <path d="M320 342 H365" class="ink" fill="none"/>
+      <circle cx="390" cy="415" r="20" fill="#f5b335" class="ink"/>
+      <path d="M390 415 L370 390 M390 415 L415 438" class="ink" fill="none"/>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="393" cy="255" rx="86" ry="104" fill="#f7f3e8" class="ink"/>
+      <path d="M350 310 Q390 360 438 320 L452 370 Q390 405 330 357Z" fill="#e9d7ba" class="ink"/>
+      <ellipse cx="402" cy="188" rx="70" ry="63" fill="#fffdf5" class="ink"/>
+      <path d="M436 188 Q520 192 590 226 Q520 264 436 239Z" fill="#f28c28" class="ink"/>
+      <path d="M438 225 Q515 245 585 226" fill="none" stroke="#c9651b" stroke-width="5"/>
+      <circle cx="422" cy="174" r="10" fill="#17202a"/>
+      <path d="M370 169 Q350 145 327 159" fill="none" class="ink"/>
+      <path d="M385 346 L365 422 M430 346 L453 422" class="ink" fill="none"/>
+      <path d="M355 420 Q370 435 385 420 M445 420 Q460 435 475 420" fill="none" class="ink"/>
+      <path d="M328 245 Q277 270 285 337 Q300 357 324 334 L350 277" fill="#f7f3e8" class="ink"/>
+      <path d="M467 246 Q510 270 500 331" fill="none" class="ink"/>
+      <path d="M330 215 Q300 190 280 212" fill="none" stroke="#d84343" stroke-width="11"/>
+      <path d="M283 212 Q270 203 264 217" fill="none" stroke="#17202a" stroke-width="5"/>
+      <path d="M375 300 Q402 322 430 300" fill="none" stroke="#17202a" stroke-width="5"/>
+    </g>
+  </g>
+
+  <path d="M590 285 Q640 245 700 280" fill="none" stroke="#17202a" stroke-width="5"/>
+  <text x="650" y="255" text-anchor="middle" class="label" font-size="18" font-weight="700">HONK!</text>
+  <text x="650" y="278" text-anchor="middle" class="label" font-size="16">I have wings!</text>
+
+  <rect x="110" y="548" width="580" height="35" rx="12" fill="#fff6c7" stroke="#17202a" stroke-width="4"/>
+  <text x="400" y="572" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 01:03:17 SGT (UTC+08:00)</text>
+
+  <animateTransform xlink:href="#wheelLeft" attributeName="transform" type="rotate" from="0 250 445" to="360 250 445" dur="2s" repeatCount="indefinite"/>
+  <animateTransform xlink:href="#wheelRight" attributeName="transform" type="rotate" from="0 550 445" to="360 550 445" dur="2s" repeatCount="indefinite"/>
+  <animateTransform xlink:href="#bike" attributeName="transform" type="translate" values="0 0;8 0;0 0" dur="2s" repeatCount="indefinite"/>
+</svg>
