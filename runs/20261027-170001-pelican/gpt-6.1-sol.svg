@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while delivering fish and paperwork.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ddcff"/>
+      <stop offset="1" stop-color="#e8f9ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#68727e"/>
+      <stop offset="1" stop-color="#3f4650"/>
+    </linearGradient>
+    <linearGradient id="beak" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffcf54"/>
+      <stop offset="1" stop-color="#f28c35"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#15202b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202a35;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Trebuchet MS,Arial,sans-serif;fill:#202a35}
+      .small{font-family:Trebuchet MS,Arial,sans-serif;font-size:16px;fill:#202a35}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.4s linear infinite}
+      .rider{animation:bob .7s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="48" fill="#fff3ae" opacity=".9"/>
+  <path d="M0 250 Q120 205 240 245 T480 240 T800 235 V350 H0Z" fill="#9bd27d"/>
+  <path d="M0 302 Q140 270 280 307 T560 300 T800 285 V375 H0Z" fill="#6fba68"/>
+  <path d="M0 365 Q180 340 360 368 T800 360 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 447 Q190 425 390 451 T800 446" fill="none" stroke="#f7d46b" stroke-width="8" stroke-dasharray="34 28"/>
+
+  <g opacity=".8" fill="#fff">
+    <path d="M95 110 q25-28 50 0 q28-18 50 8 q-35 22-100 7z"/>
+    <path d="M490 105 q20-24 42 0 q25-15 44 8 q-28 18-86 8z"/>
+  </g>
+
+  <g transform="translate(400 58)">
+    <rect x="-270" y="0" width="540" height="76" rx="18" fill="#fff" stroke="#202a35" stroke-width="5" filter="url(#shadow)"/>
+    <text class="label" x="0" y="38" text-anchor="middle" font-size="34" font-weight="900">THE PELICAN PEDAL EXPRESS</text>
+    <text class="label" x="0" y="62" text-anchor="middle" font-size="15" font-weight="700">“Because traffic is for birds who can afford parking.”</text>
+  </g>
+
+  <g class="rider" filter="url(#shadow)">
+    <!-- bicycle -->
+    <g class="ink" fill="none">
+      <circle cx="270" cy="430" r="70" fill="#d9f4ff"/>
+      <circle cx="555" cy="430" r="70" fill="#d9f4ff"/>
+      <path d="M270 430 L355 330 L445 430 L270 430 M355 330 L395 430 M355 330 L335 290 M395 430 L480 350 L555 430 M480 350 L445 430"/>
+      <path d="M480 350 L505 320 M496 320 L520 320"/>
+      <path d="M335 290 L315 270 M305 270 L325 270"/>
+    </g>
+    <g class="wheel" fill="none" stroke="#6b7c8b" stroke-width="3">
+      <path d="M270 365v130 M205 430h130 M224 384l92 92 M224 476l92-92"/>
+    </g>
+    <g class="wheel" fill="none" stroke="#6b7c8b" stroke-width="3">
+      <path d="M555 365v130 M490 430h130 M509 384l92 92 M509 476l92-92"/>
+    </g>
+    <circle cx="395" cy="430" r="13" fill="#f4b942" class="ink"/>
+    <path d="M395 430 l-30 20 M395 430 l31-18" class="ink" fill="none"/>
+    <path d="M355 330 Q385 280 430 305 Q460 320 480 350" fill="none" stroke="#202a35" stroke-width="14"/>
+    <!-- pelican body -->
+    <ellipse cx="395" cy="255" rx="82" ry="105" fill="#f5f7f9" class="ink"/>
+    <path d="M350 230 Q300 265 315 340 Q350 365 380 315" fill="#d9e2e8" class="ink"/>
+    <path d="M432 180 Q500 165 525 215 Q530 270 470 286 L430 260Z" fill="#f5f7f9" class="ink"/>
+    <circle cx="460" cy="190" r="10" fill="#202a35"/>
+    <path d="M470 212 Q540 220 625 245 Q640 252 625 268 Q535 270 455 246Z" fill="url(#beak)" class="ink"/>
+    <path d="M505 244 Q560 250 616 255" fill="none" stroke="#c56a2f" stroke-width="4"/>
+    <path d="M420 300 Q455 320 470 360" fill="none" stroke="#f2a93b" stroke-width="13"/>
+    <path d="M390 330 Q420 370 420 420" fill="none" stroke="#f2a93b" stroke-width="13"/>
+    <!-- wing and satirical paperwork -->
+    <path d="M350 250 Q390 235 425 270 Q400 315 355 305 Q330 290 350 250Z" fill="#c5d1d9" class="ink"/>
+    <rect x="355" y="255" width="70" height="48" rx="4" fill="#fff" stroke="#202a35" stroke-width="3" transform="rotate(-12 355 255)"/>
+    <path d="M365 270h48 M362 282h38 M358 294h29" stroke="#e06c55" stroke-width="3"/>
+    <!-- feet -->
+    <path d="M410 420 q-15 15-30 2 M430 420 q18 14 32 0" fill="none" stroke="#f2a93b" stroke-width="9"/>
+    <!-- helmet -->
+    <path d="M405 168 Q450 125 494 160 L500 180 L405 180Z" fill="#e85d5d" class="ink"/>
+    <path d="M420 155 Q455 135 480 157" fill="none" stroke="#ffd66b" stroke-width="7"/>
+    <!-- speech bubble -->
+    <path d="M540 115 Q650 75 735 135 Q750 190 680 210 L645 238 L642 202 Q560 195 540 115Z" fill="#fff" class="ink"/>
+    <text class="label" x="645" y="140" text-anchor="middle" font-size="21" font-weight="800">I’m on a</text>
+    <text class="label" x="645" y="166" text-anchor="middle" font-size="21" font-weight="800">roll!</text>
+  </g>
+
+  <g transform="translate(35 515)">
+    <rect x="0" y="0" width="730" height="58" rx="12" fill="#fff6d8" stroke="#202a35" stroke-width="4"/>
+    <text class="small" x="365" y="24" text-anchor="middle" font-weight="700">A beak, two wheels, and absolutely no sense of lane discipline.</text>
+    <text class="small" x="365" y="46" text-anchor="middle" font-size="14">2026-10-27 17:00:56 SGT (UTC+08:00)</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Great Pelican Bicycle Escape</title>
+  <desc id="desc">A satirical pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596574"/>
+      <stop offset="1" stop-color="#303844"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#13202b" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17212b}
+      .small{font-size:18px}
+      .caption{font-size:22px;font-weight:700}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff4aa" opacity=".9"/>
+  <path d="M70 150 C125 115 160 115 210 150 C165 142 132 153 95 178 Z" fill="#fff" opacity=".8"/>
+  <path d="M555 126 C595 96 628 98 667 126 C632 120 605 129 579 148 Z" fill="#fff" opacity=".75"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE GREAT PELICAN BICYCLE ESCAPE</text>
+  <text x="400" y="94" text-anchor="middle" class="label caption">“No license, no problem — just wing it!”</text>
+
+  <path d="M0 430 Q190 395 390 424 T800 416 L800 600 L0 600 Z" fill="url(#road)"/>
+  <path d="M0 492 H800" stroke="#f8d85a" stroke-width="8" stroke-dasharray="42 30" opacity=".9"/>
+  <path d="M0 557 H800" stroke="#202a33" stroke-width="3" opacity=".5"/>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <g id="rearWheel">
+        <circle cx="246" cy="430" r="74" fill="#e9eef2" class="ink"/>
+        <circle cx="246" cy="430" r="10" fill="#f05d4f" class="ink"/>
+        <g stroke="#596574" stroke-width="3">
+          <path d="M246 356V504M172 430H320M194 378L298 482M298 378L194 482"/>
+        </g>
+        <animateTransform attributeName="transform" type="rotate" from="0 246 430" to="360 246 430" dur="2.5s" repeatCount="indefinite"/>
+      </g>
+      <g id="frontWheel">
+        <circle cx="570" cy="430" r="74" fill="#e9eef2" class="ink"/>
+        <circle cx="570" cy="430" r="10" fill="#f05d4f" class="ink"/>
+        <g stroke="#596574" stroke-width="3">
+          <path d="M570 356V504M496 430H644M518 378L622 482M622 378L518 482"/>
+        </g>
+        <animateTransform attributeName="transform" type="rotate" from="0 570 430" to="360 570 430" dur="2.5s" repeatCount="indefinite"/>
+      </g>
+
+      <path d="M246 430 L350 335 L466 430 L246 430 L410 430 L350 335" fill="none" class="ink" stroke="#e54f43" stroke-width="10"/>
+      <path d="M466 430 L550 320 L570 430" fill="none" class="ink" stroke="#e54f43" stroke-width="10"/>
+      <path d="M550 320 L578 300" class="ink" stroke="#e54f43" stroke-width="8"/>
+      <path d="M338 329 L365 329" class="ink" stroke="#17212b" stroke-width="8"/>
+      <path d="M401 430 L423 461 M401 430 L378 399" class="ink" stroke="#17212b" stroke-width="6"/>
+      <circle cx="401" cy="430" r="15" fill="#f4c542" class="ink"/>
+      <g>
+        <path d="M401 430 L430 447" class="ink" stroke="#f4c542" stroke-width="7"/>
+        <path d="M401 430 L373 414" class="ink" stroke="#f4c542" stroke-width="7"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 401 430" to="360 401 430" dur="1.2s" repeatCount="indefinite"/>
+      </g>
+      <path d="M535 300 Q550 286 568 301" fill="none" class="ink" stroke="#17212b" stroke-width="6"/>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="395" cy="246" rx="82" ry="98" fill="#f4f1e9" class="ink"/>
+      <path d="M343 219 Q369 166 429 182 Q470 196 464 245 Q457 293 420 319 L374 299 Q344 272 343 219Z" fill="#d8e2e5" class="ink"/>
+      <path d="M382 276 Q427 255 470 280 Q506 302 541 279 Q519 326 467 335 Q415 345 374 312Z" fill="#f08b43" class="ink"/>
+      <path d="M381 276 Q430 282 470 280" fill="none" class="ink" stroke="#b24e35" stroke-width="4"/>
+      <ellipse cx="429" cy="202" rx="9" ry="12" fill="#17212b"/>
+      <circle cx="432" cy="198" r="3" fill="#fff"/>
+      <path d="M393 178 Q404 153 429 157" fill="none" class="ink" stroke="#f4c542" stroke-width="9"/>
+      <path d="M370 304 L352 370 M418 321 L430 375" class="ink" stroke="#e08b2d" stroke-width="8"/>
+      <path d="M345 368 Q355 379 370 369 M423 375 Q438 386 451 375" fill="none" class="ink" stroke="#e08b2d" stroke-width="7"/>
+      <path d="M352 232 Q320 250 315 286" fill="none" class="ink" stroke="#b8c7ca" stroke-width="18"/>
+      <path d="M325 285 Q305 294 294 314" fill="none" class="ink" stroke="#b8c7ca" stroke-width="13"/>
+      <path d="M325 285 Q350 299 371 287" fill="none" class="ink" stroke="#b8c7ca" stroke-width="13"/>
+      <path d="M320 184 Q298 163 280 177" fill="none" class="ink" stroke="#d8e2e5" stroke-width="14"/>
+      <path d="M320 184 Q340 159 360 170" fill="none" class="ink" stroke="#d8e2e5" stroke-width="14"/>
+      <path d="M281 177 Q294 184 306 181" fill="none" class="ink" stroke="#17212b" stroke-width="5"/>
+      <path d="M288 173 Q280 160 290 151" fill="none" class="ink" stroke="#17212b" stroke-width="4"/>
+    </g>
+
+    <g transform="translate(455 170) rotate(-10)">
+      <path d="M0 35 Q34 -2 77 16 Q100 30 91 54 Q67 73 28 64Z" fill="#79b85a" class="ink"/>
+      <path d="M82 23 Q111 10 128 31 Q112 49 88 48Z" fill="#f08b43" class="ink"/>
+      <circle cx="105" cy="27" r="3" fill="#17212b"/>
+      <path d="M18 25 Q39 40 60 52 M31 15 Q53 28 76 42" fill="none" stroke="#4b7e42" stroke-width="4"/>
+    </g>
+  </g>
+
+  <path d="M118 337 Q159 301 207 320" fill="none" stroke="#17212b" stroke-width="5"/>
+  <text x="115" y="315" class="label" font-size="20" font-weight="700">LOCAL HERO</text>
+  <text x="598" y="338" class="label" font-size="20" font-weight="700">HONK IF YOU</text>
+  <text x="598" y="362" class="label" font-size="20" font-weight="700">LOVE FISH</text>
+
+  <rect x="35" y="535" width="730" height="43" rx="12" fill="#fff8df" stroke="#17212b" stroke-width="3"/>
+  <text x="400" y="563" text-anchor="middle" class="label small" font-weight="700">2026-10-27 17:02:26 SGT (UTC+08:00)</text>
+</svg>
