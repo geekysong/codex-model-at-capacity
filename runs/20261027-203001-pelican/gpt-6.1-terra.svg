@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle, animated with looping wheels and pedaling.</desc>
+  <style>
+    .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#17202a}
+    .wheel{fill:none;stroke:#17202a;stroke-width:8}
+    .spoke{stroke:#607080;stroke-width:3}
+    .motion{fill:none;stroke:#7f8c8d;stroke-width:4;stroke-dasharray:12 12;opacity:.75}
+  </style>
+
+  <rect width="800" height="600" fill="#dff5ff"/>
+  <rect y="430" width="800" height="170" fill="#9bd27d"/>
+  <path d="M0 452 Q180 425 350 452 T800 445" fill="none" stroke="#5d9b55" stroke-width="7"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="42" font-weight="900" fill="#b52b35">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="20" font-weight="700">He has a bike, a beak, and absolutely no map.</text>
+
+  <path class="motion" d="M74 290 C36 310 36 356 72 373"/>
+  <path class="motion" d="M724 279 C766 299 766 350 731 369"/>
+
+  <g id="bike">
+    <g transform="translate(220 430)">
+      <circle class="wheel" r="82"/>
+      <g class="spokes">
+        <path class="spoke" d="M0-76V76M-76 0H76M-54-54L54 54M54-54L-54 54"/>
+      </g>
+    </g>
+    <g transform="translate(590 430)">
+      <circle class="wheel" r="82"/>
+      <g class="spokes">
+        <path class="spoke" d="M0-76V76M-76 0H76M-54-54L54 54M54-54L-54 54"/>
+      </g>
+    </g>
+
+    <path d="M220 430 L350 300 L470 430 L220 430 L410 430 L350 300 L590 430" fill="none" class="ink" stroke="#d34b3b"/>
+    <path d="M350 300 L326 255" class="ink" fill="none"/>
+    <path d="M307 252 L349 252" class="ink" fill="none"/>
+    <path d="M470 430 L492 358" class="ink" fill="none"/>
+    <path d="M472 351 L516 351" class="ink" fill="none"/>
+
+    <g id="pedals" transform="translate(410 430)">
+      <circle r="13" fill="#f3b43f" class="ink"/>
+      <path d="M0 0 L34 -18 M0 0 L-30 20" class="ink" fill="none"/>
+      <path d="M34-18h18 M-30 20h-18" class="ink" fill="none"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 410 430" to="360 410 430" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.4s" repeatCount="indefinite"/>
+    <ellipse cx="402" cy="252" rx="92" ry="112" fill="#f7f1df" class="ink"/>
+    <path d="M345 293 Q396 335 456 296 Q438 353 386 350 Q350 343 345 293Z" fill="#e1d3b5" class="ink"/>
+    <path d="M337 190 Q380 145 430 173 Q462 192 447 230 Q430 260 388 247 Q351 235 337 190Z" fill="#fffaf0" class="ink"/>
+    <circle cx="417" cy="193" r="10" fill="#17202a"/>
+    <circle cx="421" cy="189" r="3" fill="#fff"/>
+    <path d="M430 211 L560 238 Q579 244 565 256 L451 258 Q427 248 430 211Z" fill="#f4a62a" class="ink"/>
+    <path d="M555 239 Q582 250 557 263" fill="none" class="ink"/>
+    <path d="M377 161 Q348 120 382 101 Q410 111 421 147" fill="#f7f1df" class="ink"/>
+    <path d="M360 117 Q386 92 407 111" fill="none" class="ink"/>
+    <path d="M342 260 Q293 289 310 334 Q328 350 357 316" fill="#f7f1df" class="ink"/>
+    <path d="M449 258 Q499 279 481 325 Q465 343 440 311" fill="#f7f1df" class="ink"/>
+    <path d="M351 333 L329 401" class="ink" fill="none"/>
+    <path d="M429 331 L454 401" class="ink" fill="none"/>
+    <path d="M315 402 Q334 414 350 403" fill="none" class="ink"/>
+    <path d="M440 403 Q458 414 475 402" fill="none" class="ink"/>
+    <path d="M346 300 Q374 279 402 301" fill="none" stroke="#b52b35" stroke-width="7"/>
+    <text x="401" y="286" text-anchor="middle" class="label" font-size="18" font-weight="900" fill="#b52b35">HONK!</text>
+  </g>
+
+  <g transform="translate(642 151) rotate(9)">
+    <rect x="0" y="0" width="112" height="70" rx="12" fill="#fff5bd" class="ink"/>
+    <path d="M20 70 L8 91 L42 70" fill="#fff5bd" class="ink"/>
+    <text x="56" y="30" text-anchor="middle" class="label" font-size="18" font-weight="900">NO PARKING</text>
+    <text x="56" y="52" text-anchor="middle" class="label" font-size="16">EXCEPT BIRDS</text>
+  </g>
+
+  <text x="400" y="525" text-anchor="middle" class="label" font-size="25" font-weight="800">Caption: When your wings are busy, pedal with your feet.</text>
+  <text x="400" y="570" text-anchor="middle" class="label" font-size="16">2026-10-27 20:33:50 SGT (UTC+08:00)</text>
+</svg>

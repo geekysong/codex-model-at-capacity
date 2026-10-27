@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical pelican rides a bicycle while pretending to be a serious commuter.</desc>
+  <style>
+    .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#17202a}
+    .small{font-size:18px}
+  </style>
+
+  <rect width="800" height="600" fill="#bfe9ff"/>
+  <circle cx="675" cy="105" r="58" fill="#ffd86b" class="ink"/>
+  <path d="M0 430 Q150 390 300 430 T600 425 T800 430 V600 H0Z" fill="#8ed081"/>
+  <path d="M0 470 Q180 445 350 470 T800 465" fill="none" stroke="#4d9b58" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN PEDAL PANIC</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="21" font-style="italic">“Late for brunch, early for nonsense.”</text>
+
+  <!-- bicycle frame -->
+  <g class="ink" fill="none">
+    <circle cx="245" cy="430" r="82" fill="#f7f7f7"/>
+    <circle cx="570" cy="430" r="82" fill="#f7f7f7"/>
+    <path d="M245 430 L350 300 L470 430 Z"/>
+    <path d="M350 300 L390 430"/>
+    <path d="M470 430 L520 315"/>
+    <path d="M495 315 L545 315"/>
+    <path d="M338 300 L320 275"/>
+    <path d="M300 275 H345"/>
+    <path d="M390 430 L360 465"/>
+    <path d="M360 465 H415"/>
+  </g>
+
+  <!-- spinning wheels -->
+  <g class="ink" fill="none">
+    <g>
+      <circle cx="245" cy="430" r="12" fill="#ff6b6b"/>
+      <path d="M245 348V512 M163 430H327 M187 372L303 488 M303 372L187 488"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 245 430" to="360 245 430" dur="2s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="570" cy="430" r="12" fill="#ff6b6b"/>
+      <path d="M570 348V512 M488 430H652 M512 372L628 488 M628 372L512 488"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 570 430" to="360 570 430" dur="2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- pedaling crank -->
+  <g class="ink" fill="none">
+    <circle cx="390" cy="430" r="15" fill="#ffd166"/>
+    <path d="M390 430 L420 455 M390 430 L360 405"/>
+    <path d="M420 455 H455 M360 405 H330"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 390 430" to="360 390 430" dur="1s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- pelican body bob -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1s" repeatCount="indefinite"/>
+    <ellipse cx="400" cy="225" rx="92" ry="112" fill="#f4f1e8" class="ink"/>
+    <path d="M345 190 Q275 205 260 250 Q315 275 372 240Z" fill="#f59e56" class="ink"/>
+    <path d="M260 250 Q310 285 372 240" fill="none" class="ink"/>
+    <circle cx="430" cy="145" r="58" fill="#f4f1e8" class="ink"/>
+    <circle cx="450" cy="132" r="9" fill="#17202a"/>
+    <path d="M478 157 Q555 140 585 175 Q535 220 470 185Z" fill="#f59e56" class="ink"/>
+    <path d="M585 175 Q535 205 472 185" fill="none" class="ink"/>
+    <path d="M405 112 Q430 80 458 108" fill="#e9d9b5" class="ink"/>
+    <path d="M370 300 Q350 340 365 365" fill="none" class="ink"/>
+    <path d="M440 300 Q460 340 445 365" fill="none" class="ink"/>
+    <path d="M365 365 L345 382 M445 365 L468 382" class="ink"/>
+    <path d="M350 215 Q395 180 450 220" fill="none" stroke="#d4c9b0" stroke-width="10"/>
+    <text x="398" y="252" text-anchor="middle" class="label" font-size="17" font-weight="bold">HONK!</text>
+  </g>
+
+  <!-- comic speech bubble -->
+  <path d="M590 225 Q700 175 748 235 Q760 290 675 300 L645 330 L640 295 Q580 285 590 225Z" fill="#fffdf2" class="ink"/>
+  <text x="670" y="245" text-anchor="middle" class="label" font-size="20" font-weight="bold">I demand</text>
+  <text x="670" y="270" text-anchor="middle" class="label" font-size="20" font-weight="bold">fish-lane priority!</text>
+
+  <text x="400" y="548" text-anchor="middle" class="label small" font-weight="bold">2026-10-27 20:30:01 SGT (UTC+08:00)</text>
+</svg>

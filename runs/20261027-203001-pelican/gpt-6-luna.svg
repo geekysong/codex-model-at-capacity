@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an oversized fish, proudly ignoring traffic rules.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59636e"/>
+      <stop offset="1" stop-color="#303841"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#18232d; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#18232d; }
+      .small { font-size:18px; font-weight:700; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 1.4s linear infinite; }
+      .rider { transform-box:fill-box; transform-origin:center bottom; animation:bob .7s ease-in-out infinite alternate; }
+      .pedal { transform-box:fill-box; transform-origin:center; animation:spin 1.1s linear infinite reverse; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0) rotate(-1deg); } to { transform:translateY(-5px) rotate(1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="700" cy="105" r="48" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 300 Q120 245 245 300 T500 292 T800 285 L800 430 L0 430Z" fill="#83b98a"/>
+  <path d="M0 365 Q170 320 335 365 T670 355 T800 360 L800 430 L0 430Z" fill="#5f9d70"/>
+
+  <g class="label" text-anchor="middle">
+    <rect x="95" y="30" width="610" height="76" rx="20" fill="#fff" stroke="#18232d" stroke-width="6" filter="url(#shadow)"/>
+    <text x="400" y="75" font-size="34" font-weight="900">THE PELICAN PEDAL EXPRESS</text>
+    <text x="400" y="98" font-size="15" font-weight="700" fill="#d34b3f">“NO LICENSE. NO PROBLEM. JUST BEAK.”</text>
+  </g>
+
+  <rect y="425" width="800" height="175" fill="url(#road)"/>
+  <path d="M0 510 H800" stroke="#f7d85c" stroke-width="9" stroke-dasharray="48 35"/>
+  <path d="M0 455 H800" stroke="#aeb9c2" stroke-width="4" opacity=".6"/>
+
+  <g class="rider" filter="url(#shadow)">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M255 470 L365 470 L435 370 L315 370 Z"/>
+      <path d="M365 470 L435 370 L500 470"/>
+      <path d="M435 370 L485 350"/>
+      <path d="M485 350 L520 368"/>
+      <path d="M315 370 L292 345"/>
+      <path d="M275 345 H315"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel" fill="none" stroke="#16232d" stroke-width="9">
+      <circle cx="255" cy="470" r="72" fill="#26313b"/>
+      <circle cx="500" cy="470" r="72" fill="#26313b"/>
+      <circle cx="255" cy="470" r="62" stroke="#dbe6ec" stroke-width="4"/>
+      <circle cx="500" cy="470" r="62" stroke="#dbe6ec" stroke-width="4"/>
+      <path d="M255 408V532 M193 470H317 M211 426L299 514 M299 426L211 514"/>
+      <path d="M500 408V532 M438 470H562 M456 426L544 514 M544 426L456 514"/>
+    </g>
+    <circle cx="255" cy="470" r="10" fill="#e5b83d" class="ink"/>
+    <circle cx="500" cy="470" r="10" fill="#e5b83d" class="ink"/>
+
+    <!-- pedal crank -->
+    <g class="pedal">
+      <circle cx="365" cy="470" r="18" fill="#e5b83d" class="ink"/>
+      <path d="M365 470 L332 495 M365 470 L396 445" class="ink" fill="none"/>
+      <path d="M318 497 H345 M386 443 H412" class="ink" fill="none"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="375" cy="270" rx="91" ry="117" fill="#f6f0df" class="ink"/>
+    <path d="M325 235 Q280 205 296 160 Q315 125 349 150 Q379 177 382 221" fill="#f6f0df" class="ink"/>
+    <path d="M347 168 Q374 135 407 150 Q440 165 427 205 Q416 233 380 235" fill="#f6f0df" class="ink"/>
+    <ellipse cx="365" cy="181" rx="8" ry="11" fill="#18232d"/>
+    <path d="M380 205 Q430 185 534 218 Q548 224 537 239 Q446 255 375 226 Z" fill="#f0a43c" class="ink"/>
+    <path d="M386 226 Q452 247 533 239" fill="none" class="ink"/>
+    <path d="M412 234 Q463 265 520 258" fill="none" stroke="#d27a2b" stroke-width="5"/>
+
+    <!-- wing and necktie -->
+    <path d="M333 263 Q285 274 300 337 Q314 365 350 333 L374 292" fill="#d9e4e5" class="ink"/>
+    <path d="M387 262 L407 294 L391 342 L374 294 Z" fill="#d74b42" class="ink"/>
+    <path d="M371 244 L390 263" class="ink" fill="none"/>
+
+    <!-- legs -->
+    <path d="M352 360 Q360 415 341 470" fill="none" class="ink"/>
+    <path d="M397 361 Q383 420 395 445" fill="none" class="ink"/>
+    <ellipse cx="337" cy="473" rx="26" ry="9" fill="#f0a43c" class="ink"/>
+    <ellipse cx="405" cy="446" rx="25" ry="9" fill="#f0a43c" class="ink"/>
+
+    <!-- fish in beak -->
+    <path d="M474 211 Q525 176 578 208 Q541 238 474 211Z" fill="#79c6d6" class="ink"/>
+    <path d="M578 208 L603 190 L597 221 Z" fill="#f0a43c" class="ink"/>
+    <circle cx="555" cy="207" r="4" fill="#18232d"/>
+    <path d="M520 202 Q533 211 546 202" fill="none" stroke="#287b8e" stroke-width="4"/>
+
+    <!-- handlebar and sign -->
+    <path d="M515 370 Q550 325 588 350" class="ink" fill="none"/>
+    <path d="M570 350 L570 292" class="ink" fill="none"/>
+    <rect x="532" y="252" width="138" height="45" rx="9" fill="#ffef72" class="ink"/>
+    <text x="601" y="281" text-anchor="middle" class="label small">BEAK LANE</text>
+  </g>
+
+  <g class="label">
+    <path d="M93 178 Q155 138 220 178" fill="none" stroke="#18232d" stroke-width="5"/>
+    <text x="156" y="160" text-anchor="middle" font-size="22" font-weight="900">HONK!</text>
+    <text x="156" y="185" text-anchor="middle" font-size="16" font-weight="700">I’M LATE FOR FISH SCHOOL</text>
+  </g>
+
+  <g class="label" text-anchor="middle">
+    <rect x="120" y="535" width="560" height="42" rx="12" fill="#fff" stroke="#18232d" stroke-width="4"/>
+    <text x="400" y="563" font-size="20" font-weight="800">A bird-brained commute with excellent beak-onics.</text>
+    <text x="400" y="594" font-size="14" font-weight="700">2026-10-27 20:32:14 SGT (UTC+08:00)</text>
+  </g>
+</svg>
