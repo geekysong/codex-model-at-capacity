@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Patrol</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly delivering fishy news.</desc>
+  <style>
+    .ink{stroke:#182433;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .small{font:700 18px Arial,sans-serif;fill:#182433}
+    .caption{font:600 20px Arial,sans-serif;fill:#243447}
+    .title{font:900 38px Arial,sans-serif;fill:#102a43;letter-spacing:1px}
+    .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+    .ride{animation:bob .7s ease-in-out infinite alternate}
+    .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+  </style>
+
+  <rect width="800" height="600" fill="#d9f3ff"/>
+  <rect y="430" width="800" height="95" fill="#b8df9b"/>
+  <path d="M0 430 Q120 400 240 430 T480 430 T720 430 T960 430" fill="none" stroke="#79ad68" stroke-width="8"/>
+  <circle cx="110" cy="105" r="42" fill="#fff7c2" opacity=".9"/>
+  <path d="M52 150 Q95 122 138 150" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round"/>
+  <path d="M610 110 q28-28 56 0 q28-28 56 0" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+
+  <text x="400" y="58" text-anchor="middle" class="title">PELICAN PEDAL PATROL</text>
+  <text x="400" y="88" text-anchor="middle" class="caption">“Going where the fishy stories are!”</text>
+
+  <g class="ride">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M245 410 L330 300 L440 410 L245 410 L385 410 L330 300"/>
+      <path d="M330 300 L300 265"/>
+      <path d="M300 265 L270 265"/>
+      <path d="M440 410 L485 300 L520 300"/>
+      <path d="M485 300 L455 280"/>
+      <path d="M442 410 L505 410"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel ink" fill="#eaf8ff">
+      <circle cx="245" cy="410" r="72"/>
+      <circle cx="245" cy="410" r="8" fill="#182433"/>
+      <path d="M245 338V482 M173 410H317 M194 359L296 461 M194 461L296 359"/>
+    </g>
+    <g class="wheel ink" fill="#eaf8ff">
+      <circle cx="505" cy="410" r="72"/>
+      <circle cx="505" cy="410" r="8" fill="#182433"/>
+      <path d="M505 338V482 M433 410H577 M454 359L556 461 M454 461L556 359"/>
+    </g>
+
+    <!-- crank and pedal -->
+    <g class="pedal ink" fill="none">
+      <circle cx="385" cy="410" r="17" fill="#ffd166"/>
+      <path d="M385 410 L410 385 M410 385 h24"/>
+    </g>
+
+    <!-- pelican body -->
+    <path d="M325 292 Q345 220 420 225 Q465 230 475 278 Q480 315 445 338 L365 340 Q325 330 325 292Z" fill="#f7fbff" class="ink"/>
+    <path d="M355 335 Q390 350 430 335 L450 390 Q405 420 350 390Z" fill="#d8e5ef" class="ink"/>
+    <path d="M357 240 Q320 190 350 156 Q380 124 420 150 Q446 168 430 215" fill="#f7fbff" class="ink"/>
+    <path d="M350 174 Q305 185 270 214 Q250 231 270 246 Q305 260 365 230Z" fill="#f5a65b" class="ink"/>
+    <path d="M270 214 Q305 222 354 218" fill="none" stroke="#d47738" stroke-width="5"/>
+    <circle cx="383" cy="181" r="8" fill="#182433"/>
+    <path d="M370 155 Q390 138 414 154" fill="none" class="ink"/>
+    <path d="M414 154 q25-20 42 4 q-18 12-35 7" fill="#f5a65b" class="ink"/>
+
+    <!-- wing and expressive feather -->
+    <path d="M390 250 Q440 245 456 285 Q428 300 392 286Z" fill="#c7d8e5" class="ink"/>
+    <path d="M417 247 Q450 218 478 245" fill="none" class="ink"/>
+    <path d="M414 245 q25-30 46-10" fill="none" stroke="#f5a65b" stroke-width="9"/>
+
+    <!-- legs -->
+    <g class="ink" fill="none">
+      <path d="M365 340 L350 390 L370 410"/>
+      <path d="M430 338 L438 385 L420 410"/>
+    </g>
+    <path d="M360 405 h25" class="ink" fill="none"/>
+    <path d="M410 405 h25" class="ink" fill="none"/>
+
+    <!-- tiny newspaper -->
+    <path d="M475 260 q38-20 70 4 l-8 62 q-35 8-64-8Z" fill="#fffdf4" class="ink"/>
+    <text x="486" y="281" class="small" font-size="14">SQUAWK!</text>
+    <path d="M486 292 h43 M486 302 h35 M486 312 h28" stroke="#182433" stroke-width="3"/>
+  </g>
+
+  <!-- motion lines -->
+  <path d="M170 350 h-55 M180 375 h-75" stroke="#5a8ca8" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+  <path d="M570 350 h55 M580 375 h75" stroke="#5a8ca8" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+
+  <text x="400" y="550" text-anchor="middle" class="caption">A beak, two wheels, and absolutely no license to drive.</text>
+  <text x="400" y="582" text-anchor="middle" class="small">2026-10-28 05:30:01 SGT (UTC+08:00)</text>
+</svg>
