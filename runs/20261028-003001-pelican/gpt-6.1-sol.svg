@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Against the Tide</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while pigeons cheer from a seaside promenade.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#87d9ef"/>
+      <stop offset="1" stop-color="#d9f6ee"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2b9fc2"/>
+      <stop offset="1" stop-color="#76d5cf"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#15434d" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#173b43;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;font-weight:800;fill:#173b43}
+      .small{font-family:Arial,sans-serif;font-weight:700;fill:#173b43}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="675" cy="104" r="48" fill="#fff3ad" opacity=".9"/>
+  <path d="M0 250 Q135 220 270 250 T540 245 T800 250 V420 H0Z" fill="url(#sea)"/>
+  <path d="M0 300 Q90 275 180 300 T360 300 T540 300 T720 300 T900 300" fill="none" stroke="#c4f1e8" stroke-width="8" opacity=".8"/>
+  <path d="M0 347 Q100 325 200 347 T400 347 T600 347 T800 347" fill="none" stroke="#c4f1e8" stroke-width="6" opacity=".7"/>
+  <path d="M0 415 H800 V520 H0Z" fill="#f5c86b"/>
+  <path d="M0 455 Q140 430 280 455 T560 455 T840 455" fill="none" stroke="#d19b43" stroke-width="7"/>
+  <path d="M0 505 H800" stroke="#b77837" stroke-width="10"/>
+
+  <g transform="translate(55 58)">
+    <rect x="0" y="0" width="420" height="88" rx="18" fill="#fff8dc" class="ink" filter="url(#shadow)"/>
+    <text x="20" y="38" font-size="28" class="label">PELICAN PEDALS</text>
+    <text x="20" y="70" font-size="23" class="small">Against the Tide!</text>
+    <path d="M332 22 l26 18 -27 15z" fill="#f36c58" class="ink"/>
+    <text x="350" y="67" font-size="17" class="small" fill="#f36c58">LIVE</text>
+  </g>
+
+  <g transform="translate(0 5)" filter="url(#shadow)">
+    <g id="bike">
+      <g fill="none" class="ink">
+        <circle cx="270" cy="430" r="73" fill="#eaf7f2"/>
+        <circle cx="575" cy="430" r="73" fill="#eaf7f2"/>
+        <path d="M270 430 L390 310 L575 430 L450 430 L390 310 L350 430 Z" fill="#ef6b58"/>
+        <path d="M390 310 L420 268 L474 268" />
+        <path d="M420 268 l-8 -22 M420 268 l35 0" />
+        <path d="M575 430 L600 300 L634 285" />
+        <circle cx="450" cy="430" r="25" fill="#ffd86b"/>
+        <path d="M450 430 l-33 -20 M450 430 l30 23" />
+      </g>
+      <g id="wheelSpin" fill="none" stroke="#4c8890" stroke-width="4" opacity=".8">
+        <path d="M270 430v-73 M270 430l-52-52 M270 430l52-52 M270 430l-69 0 M270 430l69 0 M270 430l-52 52 M270 430l52 52"/>
+        <path d="M575 430v-73 M575 430l-52-52 M575 430l52-52 M575 430l-69 0 M575 430l69 0 M575 430l-52 52 M575 430l52 52"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 270 430" to="360 270 430" dur="2s" repeatCount="indefinite"/>
+      </g>
+      <use href="#wheelSpin" transform="translate(305 0)"/>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="425" cy="260" rx="65" ry="78" fill="#f7f1df" class="ink"/>
+      <path d="M378 252 Q340 292 365 339 Q414 359 456 318 Q442 283 378 252Z" fill="#dc6b52" class="ink"/>
+      <path d="M373 200 Q396 162 442 178 Q471 194 455 240 Q425 255 389 231Z" fill="#fffaf0" class="ink"/>
+      <circle cx="423" cy="198" r="8" fill="#173b43"/>
+      <path d="M448 220 Q500 209 535 233 Q498 265 448 249Z" fill="#ef9f42" class="ink"/>
+      <path d="M498 233 q30 9 48 0" fill="none" class="ink"/>
+      <path d="M403 332 L390 379 M442 328 L466 377" class="ink"/>
+      <path d="M382 380 q20 12 37 0 M452 377 q22 11 38 0" fill="none" class="ink"/>
+      <path d="M378 260 Q330 275 321 316" fill="none" stroke="#173b43" stroke-width="20" stroke-linecap="round"/>
+      <path d="M468 263 Q504 281 514 318" fill="none" stroke="#173b43" stroke-width="20" stroke-linecap="round"/>
+      <path d="M390 379 L420 430 M466 377 L450 430" fill="none" class="ink"/>
+      <path d="M425 429 l-20 -19 M425 429 l20 -19" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" values="0 425 429;25 425 429;0 425 429;-25 425 429;0 425 429" dur="1.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g class="label" font-size="20">
+    <text x="565" y="190">“I was promised</text>
+    <text x="585" y="216">a luxury beak!”</text>
+    <path d="M585 225 Q540 240 500 242" fill="none" class="ink"/>
+  </g>
+
+  <g transform="translate(625 342)">
+    <ellipse cx="45" cy="44" rx="38" ry="27" fill="#f5f0df" class="ink"/>
+    <circle cx="32" cy="35" r="5" fill="#173b43"/>
+    <path d="M10 43 L-18 51 L10 60" fill="#ef9f42" class="ink"/>
+    <path d="M60 37 l23 -25 M67 41 l29 -10" fill="none" class="ink"/>
+    <text x="-5" y="94" font-size="16" class="small">taxpayer</text>
+  </g>
+
+  <g transform="translate(18 530)">
+    <rect x="0" y="0" width="764" height="48" rx="12" fill="#fff8dc" class="ink"/>
+    <text x="18" y="30" font-size="18" class="small">CAPTION: When the pelican says “eco commute,” the beak does all the heavy lifting.</text>
+  </g>
+  <text x="400" y="596" text-anchor="middle" font-size="15" class="small">2026-10-28 00:31:05 SGT (UTC+08:00)</text>
+</svg>

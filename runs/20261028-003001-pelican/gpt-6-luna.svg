@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Power Ride</title>
+  <desc>A satirical pelican rides a bicycle while proudly claiming it is all about balance.</desc>
+  <style>
+    .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#d9f1ff;stroke:#17324d;stroke-width:7}
+    .spoke{stroke:#5b89a8;stroke-width:3}
+    .label{font-family:Arial,sans-serif;fill:#17324d}
+  </style>
+
+  <rect width="800" height="600" fill="#fff7df"/>
+  <rect y="410" width="800" height="190" fill="#b9dfb0"/>
+  <path d="M0 458 Q180 430 360 460 T800 450" fill="none" stroke="#7db77b" stroke-width="8"/>
+
+  <text x="400" y="68" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN POWER RIDE!</text>
+  <text x="400" y="103" text-anchor="middle" class="label" font-size="20">“I’m not late... I’m on a beak-based schedule.”</text>
+
+  <g id="bike">
+    <g>
+      <circle class="wheel" cx="245" cy="405" r="74"/>
+      <circle class="wheel" cx="555" cy="405" r="74"/>
+      <g class="spokes">
+        <path class="spoke" d="M245 331V479M171 405H319M193 353L297 457M193 457L297 353"/>
+        <path class="spoke" d="M555 331V479M481 405H629M503 353L607 457M503 457L607 353"/>
+      </g>
+      <circle cx="245" cy="405" r="9" fill="#17324d"/>
+      <circle cx="555" cy="405" r="9" fill="#17324d"/>
+    </g>
+    <path d="M245 405 L330 300 L455 405 L245 405 L390 405 L330 300 L420 300" fill="none" class="ink" stroke="#e34f42"/>
+    <path d="M455 405 L420 300" fill="none" class="ink" stroke="#e34f42"/>
+    <path d="M420 300 l38 -20" fill="none" class="ink"/>
+    <path d="M450 279 q28 -8 48 7" fill="none" class="ink"/>
+    <circle cx="390" cy="405" r="15" fill="#f2b84b" class="ink"/>
+    <path d="M390 405 l-35 22 M390 405 l34 22" class="ink"/>
+    <path d="M355 427 h-20 M424 427 h20" class="ink"/>
+    <path d="M330 300 h-30" class="ink"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="382" cy="230" rx="78" ry="91" fill="#f4f1e8" class="ink"/>
+    <path d="M327 203 Q284 168 303 135 Q347 119 391 157 Q412 190 387 221 Q358 238 327 203Z" fill="#6c9fc0" class="ink"/>
+    <circle cx="365" cy="169" r="10" fill="#17324d"/>
+    <path d="M305 136 Q246 150 224 181 Q285 199 342 177" fill="#f2a34a" class="ink"/>
+    <path d="M230 181 Q279 207 343 177" fill="none" class="ink"/>
+    <path d="M350 300 q-18 45 -4 81 M416 300 q20 44 7 81" fill="none" class="ink"/>
+    <path d="M346 380 l-28 15 M422 380 l28 15" class="ink"/>
+    <path d="M331 252 Q383 278 437 244" fill="none" class="ink"/>
+    <path d="M340 225 q38 24 72 0" fill="none" stroke="#e34f42" stroke-width="8"/>
+    <path d="M350 245 Q377 264 406 243" fill="none" class="ink"/>
+    <path d="M330 213 Q300 245 322 276" fill="none" class="ink"/>
+    <path d="M431 213 Q460 245 438 276" fill="none" class="ink"/>
+    <path d="M354 192 q14 -12 28 0" fill="none" class="ink"/>
+    <path d="M420 192 q14 -12 28 0" fill="none" class="ink"/>
+    <text x="490" y="198" class="label" font-size="18" font-weight="700">NO WINGS?</text>
+    <text x="500" y="221" class="label" font-size="18" font-weight="700">NO PROBLEM!</text>
+  </g>
+
+  <g id="motion">
+    <path d="M125 338 h55 M105 370 h38" stroke="#e34f42" stroke-width="7" stroke-linecap="round">
+      <animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M635 330 h45 M660 360 h28" stroke="#e34f42" stroke-width="7" stroke-linecap="round">
+      <animate attributeName="opacity" values="1;0;1" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="21" font-weight="700">Pelican on a bicycle: aerodynamic? Absolutely not. Determined? Absolutely.</text>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="16">2026-10-28 00:32:16 SGT (UTC+08:00)</text>
+</svg>
