@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an oversized fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#d8f5e7"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59636d"/>
+      <stop offset="1" stop-color="#303842"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17212b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#17212b}
+      .small{font-size:18px;font-weight:bold}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .pedal{transform-box:fill-box;transform-origin:0 0;animation:pedal 1s ease-in-out infinite}
+      .pelican{animation:bob 1s ease-in-out infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:rotate(18deg)}50%{transform:rotate(-18deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#fff5b8" opacity=".8"/>
+  <path d="M0 350 Q120 285 240 350 T480 345 T800 350 V600 H0Z" fill="#a8d99a"/>
+  <path d="M0 405 Q170 360 330 407 T650 402 T800 410 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 490 H800" stroke="#f6d36a" stroke-width="8" stroke-dasharray="42 30" opacity=".9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="32" width="704" height="86" rx="22" fill="#fff8df" class="ink"/>
+    <text x="400" y="72" text-anchor="middle" class="label" font-size="34" font-weight="900">PELICAN PEDAL PANIC</text>
+    <text x="400" y="99" text-anchor="middle" class="label" font-size="17">“He ordered a feather-light commute… then brought lunch.”</text>
+  </g>
+
+  <g aria-label="pelican riding bicycle">
+    <g class="wheel">
+      <circle cx="245" cy="448" r="75" fill="#dce8ed" class="ink"/>
+      <circle cx="245" cy="448" r="10" fill="#f06b52" class="ink"/>
+      <path d="M245 373V523 M170 448H320 M192 395L298 501 M298 395L192 501" stroke="#53707c" stroke-width="4"/>
+    </g>
+    <g class="wheel">
+      <circle cx="565" cy="448" r="75" fill="#dce8ed" class="ink"/>
+      <circle cx="565" cy="448" r="10" fill="#f06b52" class="ink"/>
+      <path d="M565 373V523 M490 448H640 M512 395L618 501 M618 395L512 501" stroke="#53707c" stroke-width="4"/>
+    </g>
+
+    <path d="M245 448 L348 352 L565 448 L470 448 L348 352 Z" fill="none" class="ink"/>
+    <path d="M348 352 L317 286" class="ink" fill="none"/>
+    <path d="M317 286 H370" class="ink" fill="none"/>
+    <path d="M565 448 L579 330" class="ink" fill="none"/>
+    <path d="M548 330 H608" class="ink" fill="none"/>
+    <path d="M470 448 L430 487 M470 448 L506 480" class="ink" fill="none"/>
+
+    <g class="pelican">
+      <ellipse cx="382" cy="263" rx="64" ry="90" fill="#f4f0dc" class="ink"/>
+      <path d="M343 219 Q298 166 326 133 Q360 107 393 150 Q415 181 404 226Z" fill="#f4f0dc" class="ink"/>
+      <circle cx="360" cy="169" r="10" fill="#17212b"/>
+      <path d="M337 190 Q289 197 248 180 Q220 168 226 151 Q233 135 262 143 L365 171Z" fill="#f4a64f" class="ink"/>
+      <path d="M247 151 Q283 170 337 171" fill="none" stroke="#c97732" stroke-width="5"/>
+      <path d="M345 245 Q385 220 419 260 Q439 287 425 322 Q384 350 345 310Z" fill="#d9e9dc" class="ink"/>
+      <path d="M420 300 Q465 337 486 354" class="ink" fill="none"/>
+      <path d="M486 354 Q498 359 506 349" class="ink" fill="none"/>
+      <path d="M350 327 L335 375 M403 328 L425 375" class="ink" fill="none"/>
+      <path d="M329 375 Q345 386 361 375 M418 375 Q434 386 449 375" class="ink" fill="none"/>
+      <path d="M327 236 Q346 247 367 238" fill="none" stroke="#17212b" stroke-width="5"/>
+      <path d="M305 283 Q337 301 359 284" fill="none" stroke="#17212b" stroke-width="5"/>
+      <path d="M343 350 Q357 363 373 350" fill="none" stroke="#17212b" stroke-width="5"/>
+    </g>
+
+    <g class="pedal">
+      <circle cx="470" cy="448" r="17" fill="#f06b52" class="ink"/>
+      <path d="M470 448 L442 422 M470 448 L501 474" class="ink" fill="none"/>
+      <path d="M428 414 h-25 M500 476 h25" class="ink" fill="none"/>
+    </g>
+
+    <path d="M475 176 Q550 145 610 187 Q635 205 621 227 Q606 245 574 228 L486 204Z" fill="#e87956" class="ink"/>
+    <path d="M497 190 Q556 185 604 213" fill="none" stroke="#b64f40" stroke-width="5"/>
+    <text x="560" y="171" class="label small" text-anchor="middle">EMERGENCY</text>
+    <text x="560" y="191" class="label small" text-anchor="middle">SNACK</text>
+  </g>
+
+  <g class="label" font-weight="bold">
+    <text x="92" y="285" font-size="22" fill="#27636b">CITY COUNCIL APPROVED</text>
+    <path d="M205 295 Q245 325 282 340" fill="none" stroke="#27636b" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="640" y="300" font-size="21" fill="#8b3d35">NO HANDBARS?</text>
+    <text x="640" y="326" font-size="18" fill="#8b3d35">NO PROBLEM.</text>
+  </g>
+
+  <g transform="translate(0,0)">
+    <path d="M80 560 Q130 530 180 560" fill="none" stroke="#8ac277" stroke-width="12"/>
+    <path d="M650 560 Q700 530 750 560" fill="none" stroke="#8ac277" stroke-width="12"/>
+  </g>
+
+  <rect x="24" y="568" width="752" height="24" rx="8" fill="#fff8df" opacity=".95"/>
+  <text x="400" y="586" text-anchor="middle" class="label" font-size="15" font-weight="700">2026-10-27 21:03:07 SGT (UTC+08:00)</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#27636b"/>
+    </marker>
+  </defs>
+</svg>

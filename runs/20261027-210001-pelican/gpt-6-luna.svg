@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle.</desc>
+  <style>
+    .ink{stroke:#18212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,Helvetica,sans-serif;fill:#18212b}
+  </style>
+
+  <rect width="800" height="600" fill="#b9e8f2"/>
+  <circle cx="675" cy="125" r="58" fill="#ffd66b" opacity=".9"/>
+  <path d="M0 410 Q120 360 245 410 T500 405 T800 390 V600 H0Z" fill="#8bcf83"/>
+  <path d="M0 475 Q160 430 320 475 T640 465 T800 455" fill="none" stroke="#5da36b" stroke-width="8"/>
+  <path d="M0 520 Q170 490 340 520 T680 510 T800 500" fill="none" stroke="#5da36b" stroke-width="6"/>
+
+  <text x="38" y="58" class="label" font-size="36" font-weight="800">PELICAN PEDAL PANIC</text>
+  <text x="40" y="91" class="label" font-size="19">“Why fly when you can wobble dramatically?”</text>
+
+  <g id="bike">
+    <g class="wheel" transform="translate(270 455)">
+      <circle r="74" fill="#eef7f2" class="ink"/>
+      <circle r="10" fill="#18212b"/>
+      <g stroke="#5b7180" stroke-width="3">
+        <path d="M0 0V-68M0 0V68M0 0H68M0 0H-68M0 0L48-48M0 0L-48 48M0 0L48 48M0 0L-48-48"/>
+      </g>
+    </g>
+    <g class="wheel" transform="translate(585 455)">
+      <circle r="74" fill="#eef7f2" class="ink"/>
+      <circle r="10" fill="#18212b"/>
+      <g stroke="#5b7180" stroke-width="3">
+        <path d="M0 0V-68M0 0V68M0 0H68M0 0H-68M0 0L48-48M0 0L-48 48M0 0L48 48M0 0L-48-48"/>
+      </g>
+    </g>
+    <path d="M270 455 L370 335 L480 455 L270 455 M370 335 L585 455 M480 455 L530 330 L585 455 M530 330 L585 330" fill="none" class="ink"/>
+    <path d="M515 320 L548 300" fill="none" class="ink"/>
+    <circle cx="480" cy="455" r="24" fill="#f3b64b" class="ink"/>
+    <path d="M480 455 L448 432 M480 455 L513 478" class="ink"/>
+    <circle cx="448" cy="432" r="8" fill="#18212b"/>
+    <circle cx="513" cy="478" r="8" fill="#18212b"/>
+    <path d="M370 335 L350 300" class="ink"/>
+    <path d="M344 298 L376 298" class="ink"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="1s" repeatCount="indefinite"/>
+    <path d="M345 315 Q330 260 365 220 Q402 180 454 205 Q492 224 494 276 Q491 320 450 340 Q390 353 345 315Z" fill="#f5f1df" class="ink"/>
+    <path d="M389 237 Q425 208 466 232 Q493 251 478 285 Q461 305 430 294 Q398 280 389 237Z" fill="#d8e4e0" class="ink"/>
+    <ellipse cx="433" cy="228" rx="22" ry="18" fill="#f5f1df" class="ink"/>
+    <circle cx="440" cy="224" r="6" fill="#18212b"/>
+    <path d="M452 232 Q510 232 560 256 Q516 283 456 269 Q430 258 452 232Z" fill="#f29b58" class="ink"/>
+    <path d="M555 257 Q589 270 600 290 Q565 292 540 274Z" fill="#e67f43" class="ink"/>
+    <path d="M394 320 Q420 355 447 365 L470 342" fill="none" class="ink"/>
+    <path d="M447 365 L454 415 M470 342 L510 382" fill="none" class="ink"/>
+    <path d="M454 415 L438 425 M454 415 L470 425 M510 382 L500 394 M510 382 L527 389" fill="none" class="ink"/>
+    <path d="M365 257 Q325 280 330 320 Q350 337 377 300" fill="#c6d8d2" class="ink"/>
+    <path d="M338 286 Q365 300 378 321" fill="none" stroke="#809b9b" stroke-width="5"/>
+    <text x="370" y="180" class="label" font-size="18" font-weight="700">I regret my career choices.</text>
+  </g>
+
+  <g>
+    <path d="M625 350 Q655 330 686 350" fill="none" class="ink"/>
+    <path d="M653 349 L653 305" class="ink"/>
+    <path d="M653 305 Q666 286 679 305 L679 350" fill="#f6d365" class="ink"/>
+    <text x="625" y="280" class="label" font-size="16" font-weight="700">HONK!</text>
+  </g>
+
+  <rect x="24" y="548" width="752" height="34" rx="8" fill="#ffffff" opacity=".9"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-27 21:02:07 SGT (UTC+08:00)</text>
+
+  <style>
+    .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</svg>

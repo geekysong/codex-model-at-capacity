@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic!</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly delivering absolutely nothing.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#b9ecff"/>
+      <stop offset="1" stop-color="#fff6d5"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#252525;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#252525}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 420 Q150 380 300 425 T600 415 T800 425 V520 H0Z" fill="#8bd17c"/>
+  <path d="M0 505 Q200 470 400 505 T800 500 V545 H0Z" fill="#5baa68"/>
+  <path d="M0 545 H800" stroke="#252525" stroke-width="8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="42" font-weight="900" fill="#e04b35">PELICAN PEDAL PANIC!</text>
+  <text x="400" y="94" text-anchor="middle" class="label" font-size="20" font-weight="700">“Delivering big beaks, tiny brakes, and absolutely no packages.”</text>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <g class="wheels">
+        <circle cx="245" cy="430" r="78" fill="#f4f4f4" class="ink"/>
+        <circle cx="575" cy="430" r="78" fill="#f4f4f4" class="ink"/>
+        <g stroke="#6d8891" stroke-width="3">
+          <path d="M245 352V508M167 430H323M190 375L300 485M300 375L190 485"/>
+          <path d="M575 352V508M497 430H653M520 375L630 485M630 375L520 485"/>
+        </g>
+        <circle cx="245" cy="430" r="10" fill="#252525"/>
+        <circle cx="575" cy="430" r="10" fill="#252525"/>
+      </g>
+      <path d="M245 430 L335 335 L445 430 L245 430 L400 430 L475 325 L575 430" fill="none" class="ink" stroke="#d7473e"/>
+      <path d="M335 335 L320 300 M475 325 L500 292" class="ink"/>
+      <path d="M300 300 H350 M480 292 H530" class="ink"/>
+      <path d="M390 430 l-28 34 M390 430 l34-30 M350 464 h35 M420 400 h30" class="ink"/>
+      <circle cx="390" cy="430" r="17" fill="#ffd34d" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 390 430" to="360 390 430" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="402" cy="245" rx="92" ry="112" fill="#f7f1df" class="ink"/>
+      <path d="M365 250 Q300 295 325 350 Q370 330 403 275Z" fill="#f0b342" class="ink"/>
+      <path d="M368 248 Q335 180 380 145 Q440 112 480 170 Q500 230 455 270 Q410 290 368 248Z" fill="#fffaf0" class="ink"/>
+      <path d="M445 176 Q520 170 625 215 Q650 228 625 247 Q520 270 450 235Z" fill="#ef9d36" class="ink"/>
+      <path d="M449 181 Q528 194 620 225" fill="none" stroke="#8a552c" stroke-width="5"/>
+      <circle cx="425" cy="177" r="10" fill="#252525"/>
+      <path d="M414 157 Q430 140 447 153" fill="none" class="ink"/>
+      <path d="M382 337 Q420 370 470 345" fill="none" class="ink"/>
+      <path d="M410 340 L390 405 M455 345 L480 405" class="ink"/>
+      <path d="M382 405 h-28 M480 405 h28" class="ink"/>
+      <path d="M350 200 Q300 150 320 105" fill="none" stroke="#252525" stroke-width="7"/>
+      <path d="M320 105 l-15 20 M320 105 l18 8" class="ink"/>
+      <text x="492" y="145" class="label" font-size="18" font-weight="800" transform="rotate(8 492 145)">HONK!</text>
+    </g>
+  </g>
+
+  <path d="M110 330 Q140 300 170 330" fill="none" class="ink"/>
+  <path d="M645 315 Q675 285 705 315" fill="none" class="ink"/>
+  <text x="400" y="560" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-27 21:01:12 SGT (UTC+08:00)</text>
+</svg>
