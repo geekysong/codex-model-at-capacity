@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe8ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#707783"/>
+      <stop offset="1" stop-color="#424752"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff8ba" opacity=".9"/>
+  <path d="M0 355 Q120 300 240 350 T480 345 T800 330 V430 H0Z" fill="#8ccf86"/>
+  <path d="M0 410 Q180 365 350 405 T800 390 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 486 H800" stroke="#f8e57a" stroke-width="8" stroke-dasharray="55 35" opacity=".85"/>
+
+  <text x="400" y="54" text-anchor="middle" font-family="Verdana, sans-serif" font-size="34" font-weight="900" fill="#17324d">
+    THE GREAT PELICAN COMMUTE
+  </text>
+  <text x="400" y="84" text-anchor="middle" font-family="Verdana, sans-serif" font-size="17" font-weight="700" fill="#26556b">
+    “Why fly when you can pedal dramatically?”
+  </text>
+
+  <g filter="url(#shadow)">
+    <!-- bicycle -->
+    <g stroke="#17202a" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g>
+        <circle cx="245" cy="450" r="67" fill="#d9f4ff"/>
+        <circle cx="585" cy="450" r="67" fill="#d9f4ff"/>
+        <g opacity=".55">
+          <path d="M245 383 V517 M178 450 H312 M197 402 L293 498 M293 402 L197 498"/>
+          <path d="M585 383 V517 M518 450 H652 M537 402 L633 498 M633 402 L537 498"/>
+        </g>
+        <animateTransform attributeName="transform" type="rotate" from="0 415 450" to="360 415 450" dur="2.4s" repeatCount="indefinite"/>
+      </g>
+      <path d="M245 450 L355 360 L455 450 L245 450 L405 450 L355 360"/>
+      <path d="M455 450 L535 350 L585 450"/>
+      <path d="M535 350 L575 328"/>
+      <path d="M575 328 L603 338"/>
+      <path d="M355 360 L345 334"/>
+      <path d="M325 332 H365"/>
+    </g>
+
+    <!-- pelican bobbing -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0;0 7;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <!-- body -->
+      <ellipse cx="415" cy="260" rx="82" ry="100" fill="#f4f0e6" stroke="#17202a" stroke-width="6"/>
+      <path d="M365 220 Q330 160 367 130 Q420 92 470 137 Q500 165 474 220" fill="#d9e2e6" stroke="#17202a" stroke-width="6"/>
+      <ellipse cx="422" cy="153" rx="58" ry="56" fill="#f8f5eb" stroke="#17202a" stroke-width="6"/>
+      <path d="M450 167 Q520 174 595 210 Q610 218 596 231 Q519 242 445 205Z" fill="#f2a13b" stroke="#17202a" stroke-width="6"/>
+      <path d="M505 202 Q560 211 598 220" stroke="#c86d23" stroke-width="4" fill="none"/>
+      <circle cx="446" cy="143" r="8" fill="#17202a"/>
+      <circle cx="449" cy="140" r="3" fill="#fff"/>
+      <path d="M385 201 Q420 220 454 201" stroke="#17202a" stroke-width="5" fill="none"/>
+      <path d="M382 250 Q420 278 462 250 L480 340 Q420 380 356 340Z" fill="#c6d3d8" stroke="#17202a" stroke-width="6"/>
+      <path d="M375 340 Q410 362 450 340" stroke="#17202a" stroke-width="6"/>
+      <!-- wings -->
+      <path d="M357 235 Q300 260 306 340 Q342 330 380 285Z" fill="#e4ebee" stroke="#17202a" stroke-width="6"/>
+      <path d="M472 235 Q530 260 524 340 Q488 330 450 285Z" fill="#e4ebee" stroke="#17202a" stroke-width="6"/>
+      <!-- legs -->
+      <path d="M390 337 L375 400 L405 420" stroke="#e49a32" stroke-width="10" fill="none"/>
+      <path d="M445 337 L460 400 L430 420" stroke="#e49a32" stroke-width="10" fill="none"/>
+      <!-- feet on pedals -->
+      <ellipse cx="405" cy="421" rx="19" ry="9" fill="#e49a32" stroke="#17202a" stroke-width="4">
+        <animateTransform attributeName="transform" type="rotate" values="0 405 421;180 405 421;360 405 421" dur="1.2s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="430" cy="421" rx="19" ry="9" fill="#e49a32" stroke="#17202a" stroke-width="4">
+        <animateTransform attributeName="transform" type="rotate" values="180 430 421;360 430 421;540 430 421" dur="1.2s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- helmet -->
+      <path d="M372 116 Q421 78 470 116 L468 132 L374 132Z" fill="#ee5a55" stroke="#17202a" stroke-width="6"/>
+      <path d="M387 103 Q420 85 454 103" stroke="#fff" stroke-width="5" fill="none"/>
+    </g>
+  </g>
+
+  <text x="400" y="548" text-anchor="middle" font-family="Verdana, sans-serif" font-size="18" font-weight="700" fill="#ffffff">
+    A beak-first commuter conquers traffic, one wobbly pedal at a time.
+  </text>
+  <text x="400" y="580" text-anchor="middle" font-family="Verdana, sans-serif" font-size="16" font-weight="700" fill="#17324d">
+    2026-10-27 10:12:28 SGT (UTC+08:00)
+  </text>
+</svg>
