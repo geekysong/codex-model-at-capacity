@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical pelican rides a bicycle while proudly causing a traffic jam.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#d8f5ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#18232b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;font-weight:700;fill:#18232b}
+      .small{font-family:Arial,sans-serif;font-size:16px;fill:#fff}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="46" fill="#ffd35a" stroke="#18232b" stroke-width="5"/>
+  <path d="M0 315 Q120 255 245 315 T500 315 T800 300 V390 H0Z" fill="#82bd72" class="ink"/>
+  <path d="M0 390 H800 V570 H0Z" fill="url(#road)"/>
+  <path d="M0 475 H800" stroke="#f7db66" stroke-width="9" stroke-dasharray="70 38"/>
+  <path d="M0 550 H800" stroke="#f7db66" stroke-width="5"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" fill="#fff" stroke="#18232b" stroke-width="2" paint-order="stroke">PELICAN PEDAL PANIC!</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="19">“Why fly when you can clog traffic in style?”</text>
+
+  <g id="bike" class="ink">
+    <g>
+      <circle cx="270" cy="445" r="77" fill="none"/>
+      <circle cx="570" cy="445" r="77" fill="none"/>
+      <g stroke="#a9d6e5" stroke-width="3">
+        <path d="M270 368V522M193 445H347M216 391L324 499M324 391L216 499"/>
+        <path d="M570 368V522M493 445H647M516 391L624 499M624 391L516 499"/>
+      </g>
+      <path d="M270 445 L365 350 L470 445 L270 445 L420 445 L365 350"/>
+      <path d="M470 445 L570 368"/>
+      <path d="M365 350 L347 317"/>
+      <path d="M337 315 H380"/>
+      <path d="M570 368 L600 335"/>
+      <path d="M590 334 H625"/>
+      <circle cx="365" cy="350" r="13" fill="#ff7b54"/>
+      <path d="M355 360 L392 415"/>
+      <path d="M385 415 L425 380"/>
+      <circle cx="392" cy="415" r="10" fill="#ff7b54"/>
+      <path d="M392 415 L370 455M392 415 L420 455"/>
+    </g>
+
+    <g id="pelican">
+      <ellipse cx="402" cy="274" rx="67" ry="84" fill="#f5f1dc"/>
+      <path d="M355 250 Q327 194 370 158 Q422 125 464 174 Q488 205 463 263 Q432 292 355 250Z" fill="#f5f1dc"/>
+      <path d="M371 178 Q404 145 444 174 L469 200 Q421 194 383 218Z" fill="#d9e3e5"/>
+      <circle cx="426" cy="180" r="9" fill="#18232b"/>
+      <path d="M438 201 Q512 199 555 232 Q514 254 438 232 Q410 221 438 201Z" fill="#f2a447"/>
+      <path d="M438 232 Q500 255 545 238" fill="none" stroke="#18232b" stroke-width="5"/>
+      <path d="M375 245 Q333 276 350 329 Q379 306 414 270Z" fill="#c7d7dc"/>
+      <path d="M432 249 Q476 282 459 328 Q431 307 402 272Z" fill="#c7d7dc"/>
+      <path d="M380 330 L390 370M430 330 L420 370" fill="none"/>
+      <path d="M377 368 Q390 378 400 368M410 368 Q423 378 435 368" fill="none" stroke="#f2a447" stroke-width="10"/>
+      <path d="M361 216 Q340 206 328 219" fill="none" stroke="#18232b" stroke-width="5"/>
+      <text x="296" y="142" class="label" font-size="22" transform="rotate(-8 296 142)">HONK!</text>
+    </g>
+  </g>
+
+  <g transform="translate(0 0)">
+    <path d="M615 335 Q665 315 705 340 Q727 355 710 374 Q666 386 625 369Z" fill="#fff" class="ink"/>
+    <circle cx="650" cy="346" r="5" fill="#18232b"/>
+    <path d="M667 353 q22 8 30 0" fill="none" stroke="#18232b" stroke-width="4"/>
+    <text x="647" y="323" text-anchor="middle" class="label" font-size="15">MOVE, FEATHERWEIGHT!</text>
+  </g>
+
+  <g>
+    <rect x="26" y="505" width="748" height="55" rx="15" fill="#18232b" opacity=".88"/>
+    <text x="400" y="529" text-anchor="middle" class="small">A bold bird. A tiny bicycle. An enormous beak for unsolicited road advice.</text>
+    <text x="400" y="550" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#ffd35a">2026-10-27 15:31:16 SGT (UTC+08:00)</text>
+  </g>
+
+  <animateTransform href="#bike" attributeName="transform" type="translate" values="0 0;0 -7;0 0;0 5;0 0" dur="1.4s" repeatCount="indefinite"/>
+  <animateTransform href="#bike" attributeName="transform" type="rotate" values="0 420 445;360 420 445" dur="3s" repeatCount="indefinite" additive="sum"/>
+</svg>
