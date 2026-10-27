@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while trying to deliver an absurdly oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#eaf8f4"/>
+    </linearGradient>
+    <linearGradient id="bird" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf5"/>
+      <stop offset="1" stop-color="#d8e7e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#264653" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink{stroke:#19324a;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .thin{stroke:#19324a;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#19324a}
+      .bold{font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:1px}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="700" cy="112" r="52" fill="#ffe38a" opacity=".8"/>
+  <path d="M75 145 Q125 112 175 145 Q220 107 270 145" fill="none" stroke="#fff" stroke-width="10" opacity=".7"/>
+  <path d="M555 165 Q600 132 642 165 Q683 133 730 165" fill="none" stroke="#fff" stroke-width="9" opacity=".7"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label bold" font-size="34">PELICAN PEDAL PANIC</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="17">A beak-first commute with absolutely no cargo regulations</text>
+
+  <path d="M0 430 Q150 398 300 430 T600 430 T800 425 L800 495 L0 495Z" fill="#9bd27c"/>
+  <path d="M0 486 Q180 465 360 488 T800 480" fill="none" stroke="#6eac5c" stroke-width="8"/>
+  <path d="M0 505 H800" stroke="#19324a" stroke-width="7"/>
+
+  <!-- Bicycle -->
+  <g filter="url(#shadow)">
+    <g fill="none" class="ink">
+      <circle cx="235" cy="430" r="77" fill="#f8fbf5"/>
+      <circle cx="565" cy="430" r="77" fill="#f8fbf5"/>
+    </g>
+    <g id="rearSpokes" transform="translate(235 430)" stroke="#5d8290" stroke-width="3">
+      <path d="M0-70V70M-70 0H70M-49-49L49 49M49-49L-49 49"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+    <g id="frontSpokes" transform="translate(565 430)" stroke="#5d8290" stroke-width="3">
+      <path d="M0-70V70M-70 0H70M-49-49L49 49M49-49L-49 49"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+    <path d="M235 430 L330 330 L455 430 L565 430 L435 315 L330 330 Z" fill="#f06c52" class="ink"/>
+    <path d="M330 330 L365 275" fill="none" class="ink"/>
+    <path d="M344 275 H396" fill="none" class="ink"/>
+    <path d="M455 430 L480 317" fill="none" class="ink"/>
+    <path d="M470 317 H520" fill="none" class="ink"/>
+    <circle cx="455" cy="430" r="18" fill="#ffd166" class="ink"/>
+    <path d="M455 430 L414 406 M455 430 L487 461" fill="none" class="thin"/>
+    <circle cx="235" cy="430" r="8" fill="#19324a"/>
+    <circle cx="565" cy="430" r="8" fill="#19324a"/>
+  </g>
+
+  <!-- Pelican bobbing group -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0;0 5;0 0" dur="1.1s" repeatCount="indefinite"/>
+    <!-- body -->
+    <ellipse cx="390" cy="238" rx="105" ry="86" fill="url(#bird)" class="ink"/>
+    <path d="M330 210 Q278 242 294 311 Q345 291 373 248Z" fill="#c5dadd" class="ink"/>
+    <path d="M338 224 Q304 250 315 278" fill="none" class="thin"/>
+    <!-- neck and head -->
+    <path d="M397 220 Q368 164 397 125 Q425 88 473 113 Q515 135 500 180 Q488 217 454 237Z" fill="url(#bird)" class="ink"/>
+    <ellipse cx="459" cy="130" rx="47" ry="40" fill="#f8fbf5" class="ink"/>
+    <circle cx="474" cy="120" r="8" fill="#19324a"/>
+    <circle cx="477" cy="117" r="3" fill="#fff"/>
+    <!-- beak and pouch -->
+    <path d="M493 139 Q594 125 645 161 Q595 179 497 169Z" fill="#f5a84a" class="ink"/>
+    <path d="M496 169 Q570 205 640 161 Q607 247 525 219 Q495 207 487 176Z" fill="#f7b95a" class="ink"/>
+    <path d="M523 181 Q569 193 611 173" fill="none" stroke="#b86c32" stroke-width="4"/>
+    <!-- fish in pouch -->
+    <path d="M544 185 Q581 157 619 182 L646 170 L638 198 L650 219 L618 211 Q580 231 544 205Z" fill="#f06c52" class="thin"/>
+    <circle cx="600" cy="185" r="4" fill="#19324a"/>
+    <path d="M633 184 Q646 190 650 199" fill="none" class="thin"/>
+    <!-- wing -->
+    <path d="M395 224 Q450 245 455 310 Q411 291 368 256Z" fill="#b9d0d5" class="ink"/>
+    <path d="M393 247 Q420 266 438 293" fill="none" class="thin"/>
+    <!-- legs -->
+    <path d="M372 296 L363 365 M435 299 L448 365" fill="none" class="ink"/>
+    <path d="M350 365 Q366 353 380 365 L388 381 Q363 390 342 378Z" fill="#f5a84a" class="ink"/>
+    <path d="M437 365 Q454 353 469 365 L478 381 Q452 390 430 378Z" fill="#f5a84a" class="ink"/>
+    <!-- pedaling linkage -->
+    <g>
+      <circle cx="405" cy="408" r="9" fill="#ffd166" class="thin"/>
+      <path d="M405 408 L374 389 M405 408 L436 427" fill="none" class="thin"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 405 408" to="360 405 408" dur="1.1s" repeatCount="indefinite"/>
+    </g>
+    <!-- expression -->
+    <path d="M445 102 Q464 92 482 102" fill="none" class="thin"/>
+    <path d="M468 145 Q482 153 493 144" fill="none" class="thin"/>
+    <path d="M500 93 Q528 75 551 96" fill="none" stroke="#19324a" stroke-width="6"/>
+    <text x="555" y="91" class="label bold" font-size="18" fill="#d94b3d">HONK!</text>
+  </g>
+
+  <path d="M115 380 q18-26 36 0 q18-26 36 0" fill="none" stroke="#4d8b52" stroke-width="5"/>
+  <path d="M650 382 q16-24 32 0 q16-24 32 0" fill="none" stroke="#4d8b52" stroke-width="5"/>
+
+  <rect x="58" y="522" width="684" height="50" rx="15" fill="#fffdf5" stroke="#19324a" stroke-width="4"/>
+  <text x="400" y="545" text-anchor="middle" class="label" font-size="16">CAPTION: When your beak is bigger than your budget, pedal faster.</text>
+  <text x="400" y="562" text-anchor="middle" class="label" font-size="13">2026-10-28 02:01:27 SGT (UTC+08:00)</text>
+</svg>

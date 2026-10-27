@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly carrying absolutely nothing in its enormous beak.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f5"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b68"/>
+      <stop offset="1" stop-color="#292d38"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#243044" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202534;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202534}
+      .wheel{fill:#202534;stroke:#f3d35c;stroke-width:7}
+      .spoke{stroke:#f3d35c;stroke-width:3}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe06b" opacity=".9"/>
+  <path d="M0 310 Q120 255 240 310 T480 305 T800 300 L800 430 L0 430Z" fill="#8dc47c"/>
+  <path d="M0 380 Q150 345 300 385 T600 375 T800 385 L800 455 L0 455Z" fill="#68a95f"/>
+  <rect y="430" width="800" height="125" fill="url(#road)"/>
+  <path d="M0 492 H800" stroke="#f4d35e" stroke-width="7" stroke-dasharray="54 34" opacity=".9"/>
+  <path d="M0 552 H800" stroke="#151923" stroke-width="7"/>
+  <g fill="#f4d35e" opacity=".8">
+    <path d="M115 409 l14 0 -8 20 -14 0z"/>
+    <path d="M675 398 l14 0 -8 20 -14 0z"/>
+    <path d="M755 350 l14 0 -8 20 -14 0z"/>
+  </g>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#fff" stroke="#202534" stroke-width="2" paint-order="stroke">
+    PELICAN PEDAL PANIC!
+  </text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="19" font-weight="700">
+    “He’s carrying the whole commute in his beak.”
+  </text>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <g>
+        <circle class="wheel" cx="250" cy="455" r="73"/>
+        <circle cx="250" cy="455" r="9" fill="#f4d35e"/>
+        <g class="spokes">
+          <path class="spoke" d="M250 382 V528 M177 455 H323 M198 403 L302 507 M302 403 L198 507"/>
+        </g>
+        <circle class="wheel" cx="560" cy="455" r="73"/>
+        <circle cx="560" cy="455" r="9" fill="#f4d35e"/>
+        <g class="spokes">
+          <path class="spoke" d="M560 382 V528 M487 455 H633 M508 403 L612 507 M612 403 L508 507"/>
+        </g>
+      </g>
+      <path d="M250 455 L355 362 L560 455 L438 455 L355 362 L315 455 Z" fill="none" class="ink" stroke="#e34f55"/>
+      <path d="M355 362 L330 320" class="ink"/>
+      <path d="M315 455 L286 420" class="ink"/>
+      <path d="M286 420 H326" class="ink"/>
+      <path d="M438 455 L470 410" class="ink"/>
+      <path d="M460 400 H493" class="ink"/>
+      <path d="M470 410 L493 400" class="ink"/>
+      <path d="M350 359 Q365 343 382 359" fill="none" stroke="#202534" stroke-width="9"/>
+      <g id="pedal" transform="translate(438 455)">
+        <circle r="18" fill="#e34f55" class="ink"/>
+        <path d="M0 0 L-20 25 M0 0 L22 -23" class="ink"/>
+        <path d="M-30 27 H-12 M22 -28 H40" class="ink"/>
+      </g>
+    </g>
+
+    <g id="pelican" transform="translate(0 4)">
+      <animateTransform attributeName="transform" type="translate" values="0 4;0 -3;0 4" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="404" cy="300" rx="77" ry="91" fill="#f4f1e8" class="ink"/>
+      <path d="M348 280 Q310 307 322 371 Q356 350 382 318Z" fill="#d5dce2" class="ink"/>
+      <path d="M384 315 Q428 343 469 327 Q457 371 408 359Z" fill="#d24f58" class="ink"/>
+      <path d="M467 327 Q505 319 525 338 Q492 363 454 350Z" fill="#e87967" class="ink"/>
+      <ellipse cx="430" cy="218" rx="59" ry="67" fill="#f4f1e8" class="ink"/>
+      <path d="M388 227 Q350 214 314 229 Q346 267 407 252Z" fill="#ed7d65" class="ink"/>
+      <path d="M314 229 Q346 255 407 252" fill="none" stroke="#202534" stroke-width="5"/>
+      <circle cx="449" cy="207" r="10" fill="#202534"/>
+      <circle cx="452" cy="203" r="3" fill="#fff"/>
+      <path d="M413 159 Q450 132 480 157" fill="none" stroke="#202534" stroke-width="8"/>
+      <path d="M407 359 Q386 399 390 435 M457 355 Q465 398 455 432" fill="none" class="ink"/>
+      <path d="M386 434 q18 10 31 0 M450 432 q18 10 31 0" fill="none" class="ink"/>
+      <path d="M360 278 Q391 293 414 286" fill="none" stroke="#202534" stroke-width="7"/>
+      <path d="M452 278 q17 12 29 0" fill="none" stroke="#202534" stroke-width="6"/>
+      <text x="395" y="128" text-anchor="middle" class="label" font-size="16" font-weight="700">NO GUTS, NO GLORY</text>
+    </g>
+  </g>
+
+  <g fill="#fff" stroke="#202534" stroke-width="4">
+    <path d="M84 184 q0-34 42-34 h66 q42 0 42 34t-42 34h-28l-22 24-5-24h-11q-42 0-42-34z"/>
+  </g>
+  <text x="125" y="181" class="label" font-size="17" font-weight="800">I demand</text>
+  <text x="125" y="202" class="label" font-size="17" font-weight="800">more snacks!</text>
+
+  <g transform="translate(0 0)">
+    <animateTransform attributeName="transform" type="rotate" values="0 438 455;360 438 455" dur="2s" repeatCount="indefinite"/>
+    <circle cx="438" cy="455" r="5" fill="#fff"/>
+  </g>
+
+  <rect x="0" y="565" width="800" height="35" fill="#202534"/>
+  <text x="400" y="589" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700">
+    2026-10-28 02:00:02 SGT (UTC+08:00)
+  </text>
+</svg>
