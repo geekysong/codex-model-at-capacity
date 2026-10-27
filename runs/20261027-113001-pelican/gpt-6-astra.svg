@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly delivering absolutely nothing.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe8ff"/>
+      <stop offset="1" stop-color="#e6fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69727a"/>
+      <stop offset="1" stop-color="#3b4248"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#24313a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202b33;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202b33}
+      .bold{font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 390 Q130 320 255 380 T520 365 T800 375 V600 H0Z" fill="#b7df9c"/>
+  <path d="M0 430 Q180 390 350 420 T800 405 V600 H0Z" fill="#8fc276"/>
+  <path d="M0 475 Q190 450 400 470 T800 455 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 520 H800" stroke="#d8c47b" stroke-width="10" stroke-dasharray="55 35" opacity=".9"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label bold" font-size="38">THE PELICAN PEDAL EXPRESS</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="19">“Delivering fish, feathers, and questionable traffic decisions.”</text>
+
+  <g opacity=".75" fill="#fff">
+    <path d="M90 150 q35-28 70 0 q-35 18-70 0Z"/>
+    <path d="M650 145 q42-30 84 0 q-42 20-84 0Z"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="397" cy="535" rx="270" ry="20" fill="#202b33" opacity=".28"/>
+
+    <!-- bicycle -->
+    <g class="ink" fill="none">
+      <circle cx="225" cy="448" r="75" fill="#d9f4ff"/>
+      <circle cx="570" cy="448" r="75" fill="#d9f4ff"/>
+      <g>
+        <path d="M225 448 L350 300 L455 448 L225 448 L390 448 L350 300 L570 448"/>
+        <path d="M455 448 L500 318 L550 318"/>
+        <path d="M500 318 L525 290"/>
+      </g>
+      <path d="M335 302 L315 278 M317 278 L290 278"/>
+      <circle cx="390" cy="448" r="18" fill="#f6c945"/>
+      <path d="M390 448 l-36 28 M390 448 l38 25"/>
+      <path d="M350 300 L335 280"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="0.8s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- wheel spokes -->
+    <g stroke="#5b707b" stroke-width="3">
+      <g>
+        <path d="M225 373V523 M150 448H300 M172 395L278 501 M278 395L172 501"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 225 448" to="360 225 448" dur="2s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <path d="M570 373V523 M495 448H645 M517 395L623 501 M623 395L517 501"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 570 448" to="360 570 448" dur="2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- pelican body and motion -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="0.8s" repeatCount="indefinite"/>
+      <ellipse cx="395" cy="245" rx="92" ry="112" fill="#f4f1e8" class="ink"/>
+      <path d="M333 272 Q390 308 456 268 Q435 344 365 337 Q332 325 333 272Z" fill="#d8e0e1" class="ink"/>
+      <path d="M355 240 Q395 205 438 239 L425 275 Q395 294 362 272Z" fill="#fff" class="ink"/>
+      <path d="M355 241 Q300 218 257 240 Q300 266 360 265Z" fill="#f29b47" class="ink"/>
+      <path d="M257 240 Q232 246 211 260 Q247 271 282 264" fill="#f5b15f" class="ink"/>
+      <circle cx="409" cy="219" r="10" fill="#202b33"/>
+      <circle cx="412" cy="216" r="3" fill="#fff"/>
+      <path d="M368 200 Q394 174 428 198" fill="none" class="ink"/>
+      <path d="M391 337 L375 420 M427 337 L449 420" fill="none" class="ink"/>
+      <path d="M375 420 l-28 18 M449 420 l29 18" fill="none" class="ink"/>
+      <path d="M348 438 l25 0 M476 438 l-25 0" fill="none" class="ink"/>
+      <!-- wing -->
+      <path d="M340 260 Q292 292 319 345 Q350 331 375 286Z" fill="#c8d2d4" class="ink"/>
+      <!-- comic thought bubble -->
+      <path d="M515 185 q35-35 68 0 q32 36-6 65 q-42 28-75-7 q-17-24 13-58Z" fill="#fff" class="ink"/>
+      <circle cx="499" cy="264" r="8" fill="#fff" class="ink"/>
+      <circle cx="483" cy="282" r="5" fill="#fff" class="ink"/>
+      <text x="546" y="214" text-anchor="middle" class="label bold" font-size="17">NO FISH?</text>
+      <text x="546" y="237" text-anchor="middle" class="label" font-size="15">JUST VIBES.</text>
+    </g>
+  </g>
+
+  <text x="400" y="570" text-anchor="middle" class="label" font-size="16">2026-10-27 11:30:01 SGT (UTC+08:00)</text>
+</svg>
