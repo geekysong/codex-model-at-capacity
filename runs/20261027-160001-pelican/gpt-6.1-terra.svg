@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8ed8f5"/>
+      <stop offset="100%" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#1d3557" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#243447;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#243447}
+      .wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      .bob{animation:bob .6s ease-in-out infinite alternate}
+      .pedalSpin{transform-box:fill-box;transform-origin:center;animation:spin 1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="105" r="48" fill="#ffd166" opacity=".9"/>
+  <g fill="#fff" opacity=".8">
+    <path d="M90 120c18-24 50-23 64 0 20-10 45 4 45 27H62c0-18 10-27 28-27z"/>
+    <path d="M540 150c14-19 39-18 50 0 18-8 38 4 38 22h-109c0-14 8-22 21-22z"/>
+  </g>
+
+  <text x="400" y="43" text-anchor="middle" class="label" font-size="30" font-weight="900" fill="#19324d">PELICAN PEDAL PANIC</text>
+  <text x="400" y="70" text-anchor="middle" class="label" font-size="16" font-weight="700">“Why fly when you can wobble dramatically?”</text>
+
+  <path d="M0 470 Q180 450 350 470 T800 465 L800 540 L0 540Z" fill="#83b96b"/>
+  <path d="M0 505 Q180 480 350 505 T800 500 L800 560 L0 560Z" fill="#4d5968"/>
+  <path d="M0 545 H800" stroke="#f7d774" stroke-width="8" stroke-dasharray="36 24"/>
+
+  <g filter="url(#shadow)">
+    <g class="wheelSpin">
+      <circle cx="250" cy="430" r="66" fill="#f5f7fa" class="ink"/>
+      <circle cx="250" cy="430" r="9" fill="#ef476f" class="ink"/>
+      <path d="M250 364V496M184 430H316M203 383l94 94M297 383l-94 94" stroke="#6c7a89" stroke-width="3"/>
+    </g>
+    <g class="wheelSpin">
+      <circle cx="535" cy="430" r="66" fill="#f5f7fa" class="ink"/>
+      <circle cx="535" cy="430" r="9" fill="#ef476f" class="ink"/>
+      <path d="M535 364V496M469 430H601M488 383l94 94M582 383l-94 94" stroke="#6c7a89" stroke-width="3"/>
+    </g>
+
+    <path d="M250 430 L355 350 L535 430 L250 430 L420 430 L355 350" fill="none" stroke="#d62839" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M355 350 L333 315 M333 315h47" fill="none" stroke="#243447" stroke-width="8"/>
+    <path d="M535 430 L548 318" fill="none" stroke="#243447" stroke-width="7"/>
+    <path d="M535 318h34" fill="none" stroke="#243447" stroke-width="7"/>
+
+    <g class="pedalSpin">
+      <circle cx="420" cy="430" r="17" fill="#ffd166" class="ink"/>
+      <path d="M420 430l28-17M420 430l-25 20" stroke="#243447" stroke-width="6"/>
+      <rect x="445" y="406" width="20" height="8" rx="3" fill="#243447"/>
+      <rect x="385" y="447" width="20" height="8" rx="3" fill="#243447"/>
+    </g>
+
+    <g class="bob">
+      <ellipse cx="399" cy="286" rx="77" ry="88" fill="#f4f1de" class="ink"/>
+      <path d="M352 314q47 35 95-4" fill="#e8c46a" class="ink"/>
+      <path d="M360 239q-31-40-58-17 8 43 51 52" fill="#f4f1de" class="ink"/>
+      <path d="M437 244q34-43 62-21-9 43-48 53" fill="#f4f1de" class="ink"/>
+      <ellipse cx="400" cy="188" rx="49" ry="42" fill="#f4f1de" class="ink"/>
+      <path d="M364 195 Q400 215 436 195 L493 224 Q500 241 479 246 L431 229 Q399 242 367 222Z" fill="#f28c28" class="ink"/>
+      <circle cx="383" cy="181" r="7" fill="#243447"/>
+      <circle cx="418" cy="181" r="7" fill="#243447"/>
+      <path d="M383 166q10-10 20 0M418 166q10-10 20 0" fill="none" class="ink"/>
+      <path d="M385 274q18 16 37 0" fill="none" stroke="#243447" stroke-width="5"/>
+      <path d="M388 322l-16 61M425 322l20 61" fill="none" stroke="#e58f2a" stroke-width="10"/>
+      <path d="M372 383l-22 18M445 383l24 18" fill="none" stroke="#e58f2a" stroke-width="8"/>
+      <path d="M340 295l-46 30M455 295l51 28" fill="none" stroke="#e58f2a" stroke-width="9"/>
+      <path d="M294 325l-12-5M506 323l13-5" stroke="#243447" stroke-width="6"/>
+      <path d="M334 283q-28-33-48-5 18 24 44 22" fill="#e8c46a" class="ink"/>
+      <path d="M466 283q27-33 48-5-18 24-44 22" fill="#e8c46a" class="ink"/>
+    </g>
+
+    <path d="M535 294q38-33 58 5" fill="none" stroke="#243447" stroke-width="5"/>
+    <path d="M570 299l20-12" stroke="#243447" stroke-width="5"/>
+  </g>
+
+  <g transform="translate(92 350)">
+    <rect x="0" y="0" width="142" height="62" rx="14" fill="#fff3bf" class="ink"/>
+    <path d="M142 39l26 15-27-3" fill="#fff3bf" class="ink"/>
+    <text x="71" y="27" text-anchor="middle" class="label" font-size="16" font-weight="800">HONK!</text>
+    <text x="71" y="47" text-anchor="middle" class="label" font-size="12">Move, amateurs!</text>
+  </g>
+
+  <text x="400" y="570" text-anchor="middle" class="label" font-size="14" font-weight="700">2026-10-27 16:02:35 SGT (UTC+08:00)</text>
+</svg>

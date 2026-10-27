@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly delivering absolutely nothing.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b66"/>
+      <stop offset="1" stop-color="#252a33"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#202733; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#202733; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2.2s linear infinite; }
+      .rider { transform-box:fill-box; transform-origin:center bottom; animation:bob .65s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0) rotate(-1deg); } to { transform:translateY(-6px) rotate(1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="685" cy="110" r="55" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 360 Q120 300 240 360 T480 355 T800 345 V430 H0Z" fill="#9bc49a"/>
+  <path d="M0 398 Q140 350 280 398 T560 395 T800 385 V455 H0Z" fill="#6da477"/>
+
+  <text x="400" y="66" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#123047">
+    THE PELICAN PEDAL EXPRESS
+  </text>
+  <text x="400" y="101" text-anchor="middle" class="label" font-size="18" font-weight="700">
+    “Delivering fresh air, one heroic wobble at a time.”
+  </text>
+
+  <g filter="url(#shadow)">
+    <path d="M0 455 Q180 425 360 455 T800 450 V600 H0Z" fill="url(#road)"/>
+    <path d="M30 515 H170 M250 515 H390 M470 515 H610 M690 515 H790" stroke="#f6d86b" stroke-width="10" stroke-linecap="round" opacity=".85"/>
+  </g>
+
+  <!-- bicycle -->
+  <g class="ink" fill="none">
+    <g class="wheel">
+      <circle cx="250" cy="455" r="72" fill="#d9edf2"/>
+      <circle cx="250" cy="455" r="8" fill="#202733"/>
+      <path d="M250 383 V527 M178 455 H322 M199 404 L301 506 M301 404 L199 506"/>
+    </g>
+    <g class="wheel">
+      <circle cx="550" cy="455" r="72" fill="#d9edf2"/>
+      <circle cx="550" cy="455" r="8" fill="#202733"/>
+      <path d="M550 383 V527 M478 455 H622 M499 404 L601 506 M601 404 L499 506"/>
+    </g>
+    <path d="M250 455 L347 360 L430 455 L250 455 M347 360 L550 455 M430 455 L470 365 L550 455" stroke-width="10"/>
+    <path d="M470 365 L484 332 M468 331 H520" stroke-width="9"/>
+    <path d="M347 360 L330 328" stroke-width="9"/>
+    <circle cx="430" cy="455" r="17" fill="#ffbd45"/>
+    <path d="M430 455 l33 24 M430 455 l-28 -25" stroke-width="8"/>
+  </g>
+
+  <!-- satirical pelican rider -->
+  <g class="rider">
+    <ellipse cx="405" cy="300" rx="68" ry="82" fill="#f4f0df" class="ink"/>
+    <path d="M360 282 Q391 245 437 265 Q462 279 460 323 Q445 352 405 354 Q367 347 360 282Z" fill="#d8d4c6" class="ink"/>
+    <ellipse cx="416" cy="226" rx="51" ry="48" fill="#f4f0df" class="ink"/>
+    <path d="M390 224 Q405 203 436 216 Q451 225 446 244 Q426 258 399 246Z" fill="#fff" class="ink"/>
+    <circle cx="418" cy="230" r="7" fill="#202733"/>
+    <path d="M381 239 Q335 249 287 234 Q274 229 286 216 Q336 201 390 211Z" fill="#f4a53b" class="ink"/>
+    <path d="M287 234 Q337 227 383 239 Q344 267 290 251 Q277 245 287 234Z" fill="#f6bd52" class="ink"/>
+    <path d="M386 257 Q370 272 353 283" fill="none" class="ink"/>
+    <path d="M437 273 Q467 300 488 329" fill="none" class="ink"/>
+    <path d="M488 329 l-25 12 M488 329 l19 23" fill="none" class="ink"/>
+    <path d="M370 287 Q340 310 321 349" fill="none" class="ink"/>
+    <path d="M321 349 l-18 9 M321 349 l18 8" fill="none" class="ink"/>
+    <path d="M363 343 L345 400 M440 343 L456 400" fill="none" class="ink" stroke-width="12"/>
+    <path d="M345 400 l-28 7 M456 400 l29 8" fill="none" class="ink" stroke-width="10"/>
+    <path d="M392 191 Q407 171 430 184" fill="none" class="ink"/>
+    <path d="M386 186 Q375 174 365 182 M434 183 Q446 171 456 183" fill="none" class="ink"/>
+    <path d="M371 302 Q402 320 440 302" fill="none" class="ink" stroke-width="5"/>
+    <path d="M395 335 Q408 344 422 335" fill="none" class="ink" stroke-width="5"/>
+    <text x="400" y="294" text-anchor="middle" class="label" font-size="15" font-weight="900" fill="#8b3c24" transform="rotate(-8 400 294)">NO MAIL</text>
+  </g>
+
+  <path d="M535 250 Q595 215 662 252" fill="none" stroke="#202733" stroke-width="5" stroke-dasharray="8 10"/>
+  <text x="660" y="237" class="label" font-size="17" font-weight="700" text-anchor="end">URGENT!</text>
+  <text x="660" y="258" class="label" font-size="14" text-anchor="end">Absolutely nothing inside.</text>
+
+  <rect x="20" y="555" width="760" height="32" rx="8" fill="#fff" opacity=".92"/>
+  <text x="400" y="577" text-anchor="middle" class="label" font-size="15" font-weight="700">
+    2026-10-27 16:01:49 SGT (UTC+08:00)
+  </text>
+</svg>
