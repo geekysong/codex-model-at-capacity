@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596273"/>
+      <stop offset="1" stop-color="#252b38"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#202431;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202431}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="100" r="45" fill="#ffd35a" opacity=".9"/>
+  <path d="M0 390 Q120 320 240 390 T480 385 T800 380 V470 H0Z" fill="#8bd36b"/>
+  <path d="M0 455 Q170 405 330 455 T650 448 T800 450 V540 H0Z" fill="#67b956"/>
+  <path d="M0 500 L800 470 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 545 L800 515" stroke="#f7e7a0" stroke-width="8" stroke-dasharray="45 35" opacity=".9"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#163b63">THE GREAT PELICAN GETAWAY</text>
+  <text x="400" y="94" text-anchor="middle" class="label" font-size="20" font-style="italic">“Why walk when you can wing it?”</text>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <circle cx="250" cy="455" r="83" fill="none" class="ink"/>
+      <circle cx="570" cy="455" r="83" fill="none" class="ink"/>
+      <g stroke="#9fd8ff" stroke-width="3">
+        <path d="M250 372V538M167 455H333M191 396L309 514M191 514L309 396"/>
+        <path d="M570 372V538M487 455H653M511 396L629 514M511 514L629 396"/>
+      </g>
+      <g transform="translate(250 455)">
+        <circle r="12" fill="#ffcf4a" class="ink"/>
+        <path d="M0 0 L-58 -32 M0 0 L43 42" class="ink"/>
+        <circle cx="-58" cy="-32" r="9" fill="#ffcf4a" class="ink"/>
+        <circle cx="43" cy="42" r="9" fill="#ffcf4a" class="ink"/>
+      </g>
+      <path d="M250 455 L350 335 L570 455 L430 455 Z" fill="none" class="ink"/>
+      <path d="M350 335 L320 292 M320 292 L278 292" class="ink"/>
+      <path d="M570 455 L600 330 M600 330 L630 310" class="ink"/>
+      <path d="M630 310 L650 325" class="ink"/>
+
+      <g id="rider">
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-7;0,0" dur="1.1s" repeatCount="indefinite"/>
+        <ellipse cx="408" cy="265" rx="75" ry="94" fill="#f5f0d0" class="ink"/>
+        <path d="M370 222 Q405 178 456 208 Q485 225 485 280 Q462 257 427 267 Q395 276 370 262Z" fill="#f7d95c" class="ink"/>
+        <ellipse cx="410" cy="298" rx="58" ry="44" fill="#f3eac5" class="ink"/>
+        <path d="M452 292 Q535 300 575 333 Q540 369 449 341Z" fill="#f28c55" class="ink"/>
+        <path d="M458 307 Q515 316 551 335" fill="none" stroke="#202431" stroke-width="5"/>
+        <circle cx="397" cy="276" r="8" fill="#202431"/>
+        <circle cx="425" cy="275" r="8" fill="#202431"/>
+        <path d="M390 326 Q420 344 447 327" fill="none" stroke="#202431" stroke-width="5"/>
+        <path d="M375 245 Q340 205 302 216 Q331 250 370 269Z" fill="#ffd966" class="ink"/>
+        <path d="M390 350 L356 414 L396 438 L430 365" fill="#f28c55" class="ink"/>
+        <path d="M430 365 L478 418 L450 445 L404 400" fill="#f28c55" class="ink"/>
+        <path d="M356 414 L330 447" class="ink"/>
+        <path d="M478 418 L505 449" class="ink"/>
+        <path d="M327 447 L344 449 M501 449 L518 448" class="ink"/>
+        <path d="M391 205 Q405 181 425 205" fill="none" stroke="#202431" stroke-width="5"/>
+        <path d="M405 184 L420 165 L435 184" fill="#ef5b5b" class="ink"/>
+      </g>
+    </g>
+  </g>
+
+  <g class="label" font-weight="700">
+    <path d="M596 176 Q660 145 720 180" fill="none" stroke="#202431" stroke-width="4"/>
+    <text x="620" y="145" font-size="22">“Beakfast</text>
+    <text x="630" y="170" font-size="22">delivery!”</text>
+    <path d="M590 179 L548 250" stroke="#202431" stroke-width="4" fill="none"/>
+  </g>
+
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="17" font-weight="700">2026-10-28 07:00:28 SGT (UTC+08:00)</text>
+
+  <style>
+    #bike > circle { animation: spin 2.2s linear infinite; transform-box:fill-box; transform-origin:center; }
+    @keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+  </style>
+</svg>
