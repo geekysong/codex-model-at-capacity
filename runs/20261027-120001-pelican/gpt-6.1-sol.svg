@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an enormous fish.</desc>
+  <style>
+    .ink{stroke:#263238;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#263238}
+    .small{font-size:18px}
+  </style>
+
+  <rect width="800" height="600" fill="#bdefff"/>
+  <circle cx="680" cy="105" r="54" fill="#ffe27a" stroke="#263238" stroke-width="5"/>
+  <path d="M0 430 Q150 390 300 430 T600 425 T800 430 V600 H0Z" fill="#98d47c"/>
+  <path d="M0 480 Q180 445 360 480 T800 475" fill="none" stroke="#5aa35a" stroke-width="8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE PELICAN PEDAL PANIC</text>
+  <text x="400" y="94" text-anchor="middle" class="label" font-size="20" font-style="italic">“Why fly when you can make traffic flap?”</text>
+
+  <!-- bicycle -->
+  <g id="bike">
+    <g class="wheel" transform="translate(255 450)">
+      <circle r="78" fill="#f5f7fa" class="ink"/>
+      <circle r="8" fill="#263238"/>
+      <path d="M0-8V-70 M0 8V70 M-8 0H-70 M8 0H70 M-6-6L-50-50 M6 6L50 50 M6-6L50-50 M-6 6L-50 50" stroke="#607d8b" stroke-width="4"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 255 450" to="360 255 450" dur="2.2s" repeatCount="indefinite"/>
+    </g>
+    <g class="wheel" transform="translate(545 450)">
+      <circle r="78" fill="#f5f7fa" class="ink"/>
+      <circle r="8" fill="#263238"/>
+      <path d="M0-8V-70 M0 8V70 M-8 0H-70 M8 0H70 M-6-6L-50-50 M6 6L50 50 M6-6L50-50 M-6 6L-50 50" stroke="#607d8b" stroke-width="4"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 545 450" to="360 545 450" dur="2.2s" repeatCount="indefinite"/>
+    </g>
+    <path d="M255 450 L350 335 L455 450 L255 450 L405 450 L545 450 L455 450 L430 350" fill="none" class="ink" stroke="#e45757"/>
+    <path d="M350 335 L320 300 M320 300 L285 300" fill="none" class="ink"/>
+    <path d="M430 350 L470 320 L500 320" fill="none" class="ink"/>
+    <circle cx="405" cy="450" r="20" fill="#ffd166" class="ink"/>
+    <path d="M405 450 L370 425 M405 450 L438 475" class="ink"/>
+    <path d="M365 422 l-26 -8 M438 475 l25 7" class="ink"/>
+    <path d="M347 335 Q360 320 378 335" fill="none" class="ink"/>
+  </g>
+
+  <!-- pelican body and bobbing motion -->
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="1.1s" repeatCount="indefinite"/>
+    <ellipse cx="405" cy="280" rx="92" ry="78" fill="#f4f1e8" class="ink"/>
+    <path d="M350 280 Q315 245 340 185 Q370 135 425 155 Q470 170 470 225 Q460 265 430 285Z" fill="#f4f1e8" class="ink"/>
+    <path d="M420 205 Q500 205 565 235 Q515 275 420 245 Q390 230 420 205Z" fill="#f39a55" class="ink"/>
+    <path d="M446 229 Q505 243 556 238" fill="none" stroke="#c8663d" stroke-width="5"/>
+    <circle cx="414" cy="194" r="9" fill="#263238"/>
+    <path d="M385 165 Q405 145 430 154" fill="none" class="ink"/>
+    <path d="M365 305 Q330 345 300 370" fill="none" class="ink"/>
+    <path d="M445 305 Q475 340 505 365" fill="none" class="ink"/>
+    <path d="M300 370 L270 405 M505 365 L535 400" class="ink"/>
+    <!-- pedaling legs -->
+    <g>
+      <path d="M380 330 L405 450" fill="none" stroke="#f39a55" stroke-width="16"/>
+      <path d="M435 330 L405 450" fill="none" stroke="#f39a55" stroke-width="16"/>
+      <animateTransform attributeName="transform" type="rotate" values="-10 405 450;10 405 450;-10 405 450" dur="1.1s" repeatCount="indefinite"/>
+    </g>
+    <path d="M335 255 Q365 275 390 260" fill="none" stroke="#d7d0c2" stroke-width="8"/>
+    <path d="M375 220 Q395 230 415 220" fill="none" stroke="#263238" stroke-width="4"/>
+  </g>
+
+  <!-- oversized fish gag -->
+  <g transform="translate(570 300) rotate(-12)">
+    <path d="M0 20 Q55-35 120 20 Q55 75 0 20Z" fill="#7bc7d9" class="ink"/>
+    <path d="M120 20 l42-30 l-8 30 l8 30Z" fill="#7bc7d9" class="ink"/>
+    <circle cx="32" cy="12" r="6" fill="#263238"/>
+    <path d="M65 0 Q80 20 65 40" fill="none" stroke="#3d8fa2" stroke-width="5"/>
+    <animateTransform attributeName="transform" type="translate" values="570 300;570 294;570 300" dur="1.1s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="610" y="370" class="label small" font-weight="700" transform="rotate(-8 610 370)">FRESHLY<br/>PEDALED!</text>
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="22" font-weight="700">A beak-first commute: maximum splash, minimum dignity.</text>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="16">2026-10-27 12:00:32 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle while carrying an oversized fish.</desc>
+  <style>
+    .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:none;stroke:#17212b;stroke-width:8}
+    .spoke{stroke:#647786;stroke-width:3}
+    .label{font-family:Arial,sans-serif;fill:#17212b}
+    .small{font-size:20px}
+    .title{font-size:42px;font-weight:800;letter-spacing:2px}
+    .caption{font-size:24px;font-weight:700}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes pedal{to{transform:rotate(360deg)}}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    .spin{transform-box:fill-box;transform-origin:center;animation:spin 1.4s linear infinite}
+    .pedal{transform-box:fill-box;transform-origin:center;animation:pedal 1.1s linear infinite}
+    .bob{animation:bob .7s ease-in-out infinite}
+  </style>
+
+  <rect width="800" height="600" fill="#bde9f4"/>
+  <rect y="420" width="800" height="180" fill="#f6d98b"/>
+  <path d="M0 420 Q120 380 240 420 T480 420 T720 420 T960 420" fill="none" stroke="#e6bd67" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label title">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="92" text-anchor="middle" class="label caption">“Why drive when you can wing it?”</text>
+
+  <g transform="translate(0,4)">
+    <g class="wheel spin" transform="translate(245 430)">
+      <circle r="74" class="wheel"/>
+      <path d="M0-74V74M-74 0H74M-52-52L52 52M52-52L-52 52" class="spoke"/>
+      <circle r="9" fill="#f4a62a" class="ink"/>
+    </g>
+    <g class="wheel spin" transform="translate(555 430)">
+      <circle r="74" class="wheel"/>
+      <path d="M0-74V74M-74 0H74M-52-52L52 52M52-52L-52 52" class="spoke"/>
+      <circle r="9" fill="#f4a62a" class="ink"/>
+    </g>
+
+    <path d="M245 430 L350 300 L555 430 L420 430 L350 300" fill="none" class="ink" stroke="#df4e3d"/>
+    <path d="M555 430 L598 300" fill="none" class="ink" stroke="#df4e3d"/>
+    <path d="M578 300 H625" fill="none" class="ink"/>
+    <path d="M350 300 L315 260" fill="none" class="ink"/>
+    <path d="M300 260 H335" fill="none" class="ink"/>
+
+    <g class="pedal">
+      <circle cx="420" cy="430" r="15" fill="#f4a62a" class="ink"/>
+      <path d="M420 430 l42 -18 M420 430 l-40 20" class="ink"/>
+      <path d="M458 412 h22 M380 450 h-22" class="ink"/>
+    </g>
+
+    <g class="bob">
+      <ellipse cx="390" cy="275" rx="78" ry="88" fill="#f7f1dc" class="ink"/>
+      <path d="M350 300 Q305 330 286 382 Q340 374 385 335" fill="#d9e8ed" class="ink"/>
+      <path d="M430 286 Q478 325 500 370 Q445 361 405 329" fill="#d9e8ed" class="ink"/>
+      <circle cx="390" cy="205" r="55" fill="#f7f1dc" class="ink"/>
+      <path d="M418 213 Q505 205 573 237 Q505 273 418 247 Z" fill="#f28c3c" class="ink"/>
+      <path d="M470 232 Q525 242 573 237" fill="none" class="ink"/>
+      <circle cx="411" cy="191" r="9" fill="#17212b"/>
+      <path d="M373 154 Q390 125 417 151" fill="#f28c3c" class="ink"/>
+      <path d="M360 238 Q332 270 350 295" fill="none" class="ink"/>
+      <path d="M430 310 L447 392 M381 314 L365 392" class="ink"/>
+      <path d="M442 391 H470 M357 391 H385" class="ink"/>
+      <path d="M493 231 Q530 205 552 221" fill="none" stroke="#17212b" stroke-width="5"/>
+      <text x="389" y="354" text-anchor="middle" class="label small" font-weight="700">HONK!</text>
+    </g>
+
+    <g transform="translate(535 150) rotate(-8)">
+      <path d="M0 20 Q55-5 105 22 L94 104 Q45 120 4 96 Z" fill="#79b7d1" class="ink"/>
+      <path d="M15 35 Q50 50 90 34 M12 61 Q50 76 92 59" fill="none" stroke="#397a99" stroke-width="5"/>
+      <path d="M18 96 Q55 112 86 96" fill="none" class="ink"/>
+      <text x="52" y="75" text-anchor="middle" class="label small" font-weight="800">FISH</text>
+    </g>
+    <path d="M515 260 Q545 245 560 270" fill="none" class="ink"/>
+  </g>
+
+  <text x="400" y="522" text-anchor="middle" class="label caption">Official bird lane: feathers, pedals, and zero turn signals.</text>
+  <text x="400" y="570" text-anchor="middle" class="label small">2026-10-27 12:00:01 SGT (UTC+08:00)</text>
+</svg>
