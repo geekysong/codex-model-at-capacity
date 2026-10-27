@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly delivering fishy news.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#666"/>
+      <stop offset="1" stop-color="#303030"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#ffd75a"/>
+  <path d="M0 355 Q120 305 240 350 T480 345 T800 330 V600 H0Z" fill="#8ccf72"/>
+  <path d="M0 425 Q170 395 350 430 T800 415 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 490 H800" stroke="#f4d35e" stroke-width="8" stroke-dasharray="45 28" opacity=".9"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="400" y="62" font-size="34" font-weight="900" fill="#16324f" stroke="#fff" stroke-width="3" paint-order="stroke">
+      THE PELICAN PEDAL EXPRESS
+    </text>
+    <text x="400" y="96" font-size="18" font-weight="700" fill="#16324f">
+      “Delivering fishy news at beakneck speed!”
+    </text>
+  </g>
+
+  <!-- motion lines -->
+  <g stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".8">
+    <path d="M95 250h72"/>
+    <path d="M55 280h95"/>
+    <path d="M120 310h48"/>
+  </g>
+
+  <!-- bicycle -->
+  <g filter="url(#shadow)">
+    <g fill="none" stroke="#e94f37" stroke-width="9">
+      <circle cx="285" cy="430" r="78"/>
+      <circle cx="570" cy="430" r="78"/>
+      <path d="M285 430 L380 330 L470 430 Z"/>
+      <path d="M380 330 L420 430"/>
+      <path d="M420 430 L570 430"/>
+      <path d="M470 430 L505 350"/>
+      <path d="M505 350 L545 350"/>
+      <path d="M355 330 L390 330"/>
+    </g>
+
+    <!-- animated spokes -->
+    <g transform="translate(285 430)" stroke="#ffd2c7" stroke-width="3">
+      <g>
+        <path d="M0-70V70M-70 0H70M-49-49L49 49M49-49L-49 49"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <g transform="translate(570 430)" stroke="#ffd2c7" stroke-width="3">
+      <g>
+        <path d="M0-70V70M-70 0H70M-49-49L49 49M49-49L-49 49"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- crank and pedals -->
+    <g transform="translate(420 430)">
+      <circle r="15" fill="#ffd75a" stroke="#6b2d2d" stroke-width="5"/>
+      <g stroke="#ffd75a" stroke-width="7" stroke-linecap="round">
+        <path d="M0 0L38-22"/>
+        <path d="M38-22h20"/>
+        <path d="M0 0L-34 27"/>
+        <path d="M-34 27h-20"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- pelican rider -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <!-- body -->
+    <ellipse cx="420" cy="245" rx=" seventy" ry="92" fill="#f7f3e8"/>
+    <ellipse cx="420" cy="245" rx="70" ry="92" fill="#f7f3e8"/>
+    <path d="M375 245 Q410 210 453 245 Q430 285 380 280Z" fill="#d9e0e4"/>
+    <!-- neck and head -->
+    <path d="M398 205 Q370 150 414 125 Q450 105 475 145 L455 220Z" fill="#fff"/>
+    <ellipse cx="430" cy="130" rx="50" ry="43" fill="#fff"/>
+    <!-- crest -->
+    <path d="M395 103 L405 75 L420 101 L438 70 L445 108" fill="#ef7d32"/>
+    <!-- beak and pouch -->
+    <path d="M466 133 Q535 130 610 162 Q540 190 464 164Z" fill="#f5a623" stroke="#9b5a16" stroke-width="4"/>
+    <path d="M472 158 Q533 169 580 162 Q548 230 478 187Z" fill="#f18f3b" stroke="#9b5a16" stroke-width="4"/>
+    <!-- eye -->
+    <circle cx="449" cy="124" r="9" fill="#222"/>
+    <circle cx="452" cy="121" r="3" fill="#fff"/>
+    <!-- wing -->
+    <path d="M390 220 Q330 250 365 330 Q415 310 438 260Z" fill="#c8d1d8" stroke="#71808a" stroke-width="4"/>
+    <!-- legs -->
+    <g stroke="#e57d28" stroke-width="10" stroke-linecap="round" fill="none">
+      <path d="M405 315 L420 390"/>
+      <path d="M450 315 L430 390"/>
+    </g>
+    <g fill="#ef9a2f" stroke="#9b5a16" stroke-width="3">
+      <path d="M418 388 q-20 0-30 15 q22 8 42 0Z"/>
+      <path d="M430 388 q20 0 32 15 q-20 8-40 0Z"/>
+    </g>
+    <!-- tiny helmet -->
+    <path d="M390 115 Q430 75 470 115 L465 125 L395 125Z" fill="#e94f37"/>
+    <path d="M405 103 Q430 87 455 103" fill="none" stroke="#ffd75a" stroke-width="6"/>
+  </g>
+
+  <!-- comic speech bubble -->
+  <g>
+    <path d="M565 220 Q690 180 735 245 Q760 290 700 315 Q630 335 570 300 L540 325 L548 290 Q520 260 565 220Z" fill="#fff" stroke="#16324f" stroke-width="5"/>
+    <text x="640" y="260" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#16324f">I’m winging it!</text>
+    <text x="640" y="283" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle" fill="#16324f">Literally.</text>
+  </g>
+
+  <!-- footer -->
+  <rect x="22" y="548" width="756" height="34" rx="10" fill="#16324f" opacity=".94"/>
+  <text x="400" y="571" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#fff">
+    2026-10-27 13:01:05 SGT (UTC+08:00)
+  </text>
+</svg>

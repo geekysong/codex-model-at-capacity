@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Patrol</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an absurdly large fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#53c7d9"/>
+      <stop offset="1" stop-color="#1b8fb1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#17324d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17324d}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="115" r="48" fill="#fff5a8" opacity=".9"/>
+  <path d="M0 390 Q110 350 220 390 T440 390 T660 390 T880 390 V600 H0Z" fill="url(#water)"/>
+  <path d="M0 450 Q130 420 260 450 T520 450 T800 450" fill="none" stroke="#baf4f2" stroke-width="7" opacity=".8"/>
+  <path d="M0 505 Q150 475 300 505 T600 505 T850 505" fill="none" stroke="#baf4f2" stroke-width="5" opacity=".65"/>
+  <path d="M0 548 H800" stroke="#17324d" stroke-width="8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="34" font-weight="900" fill="#ef5b4f">THE PELICAN PEDAL PATROL</text>
+  <text x="400" y="94" text-anchor="middle" class="label" font-size="18" font-weight="700">“Why fly when you can make traffic worse?”</text>
+
+  <!-- bicycle -->
+  <g id="bike" filter="url(#shadow)">
+    <g class="wheel" transform="translate(255 430)">
+      <circle r="82" fill="#eef8fb" class="ink"/>
+      <circle r="12" fill="#ef5b4f" class="thin"/>
+      <g stroke="#17324d" stroke-width="3">
+        <path d="M0 0V-76M0 0V76M0 0H-76M0 0H76M0 0L54-54M0 0L-54-54M0 0L54 54M0 0L-54 54"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="2s" repeatCount="indefinite"/>
+    </g>
+    <g class="wheel" transform="translate(560 430)">
+      <circle r="82" fill="#eef8fb" class="ink"/>
+      <circle r="12" fill="#ef5b4f" class="thin"/>
+      <g stroke="#17324d" stroke-width="3">
+        <path d="M0 0V-76M0 0V76M0 0H-76M0 0H76M0 0L54-54M0 0L-54-54M0 0L54 54M0 0L-54 54"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="2s" repeatCount="indefinite"/>
+    </g>
+
+    <path d="M255 430 L350 300 L455 430 Z M350 300 L560 430 M455 430 L505 295 L560 430 M505 295 L540 270" fill="none" class="ink"/>
+    <path d="M345 303 L320 270" fill="none" class="ink"/>
+    <path d="M304 269 H338" fill="none" class="ink"/>
+    <circle cx="455" cy="430" r="18" fill="#ef5b4f" class="thin"/>
+    <path d="M455 430 L430 390 M455 430 L478 465" fill="none" class="thin"/>
+  </g>
+
+  <!-- bobbing pelican -->
+  <g id="pelican" filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="1.2s" repeatCount="indefinite"/>
+
+    <!-- body and wing -->
+    <ellipse cx="390" cy="248" rx="92" ry="112" fill="#f4f1e8" class="ink"/>
+    <path d="M345 220 Q390 165 444 215 Q410 247 355 261Z" fill="#d5e7e8" class="thin"/>
+    <path d="M352 236 Q395 205 428 223" fill="none" class="thin"/>
+
+    <!-- neck and head -->
+    <path d="M430 205 Q447 166 438 129" fill="none" stroke="#f4f1e8" stroke-width="44" stroke-linecap="round"/>
+    <ellipse cx="438" cy="116" rx="58" ry="53" fill="#f4f1e8" class="ink"/>
+    <path d="M468 128 Q540 130 635 173 Q660 184 636 203 Q548 211 465 167Z" fill="#f39b45" class="ink"/>
+    <path d="M474 161 Q548 166 626 190" fill="none" stroke="#d36b2b" stroke-width="5"/>
+    <ellipse cx="462" cy="105" rx="8" ry="11" fill="#17324d"/>
+    <path d="M408 73 Q438 49 473 72 L479 91 Q439 78 404 93Z" fill="#ef5b4f" class="ink"/>
+    <path d="M421 70 L414 48 M441 66 L445 42 M460 69 L475 49" class="thin" fill="none"/>
+
+    <!-- feet and legs -->
+    <path d="M365 332 L350 393 M425 335 L444 393" fill="none" stroke="#ef8f3d" stroke-width="16" stroke-linecap="round"/>
+    <path d="M350 393 Q330 406 350 418 Q370 406 350 393 M444 393 Q424 406 444 418 Q464 406 444 393" fill="#ef8f3d" class="thin"/>
+
+    <!-- absurd fish -->
+    <g transform="translate(485 226) rotate(12)">
+      <path d="M0 0 Q65 -42 133 0 Q65 42 0 0Z" fill="#ffcf4a" class="ink"/>
+      <path d="M133 0 L166 -24 L159 0 L166 24Z" fill="#ef5b4f" class="ink"/>
+      <circle cx="23" cy="-5" r="6" fill="#17324d"/>
+      <path d="M55 -20 Q62 0 55 20" fill="none" class="thin"/>
+      <text x="62" y="7" text-anchor="middle" font-size="16" font-weight="900" class="label">FISH?</text>
+    </g>
+
+    <!-- handlebars and pedal connection -->
+    <path d="M505 295 Q475 275 463 290" fill="none" class="ink"/>
+    <path d="M430 390 L455 430" fill="none" class="ink"/>
+    <circle cx="430" cy="390" r="8" fill="#ef5b4f" class="thin"/>
+  </g>
+
+  <g transform="translate(80 155) rotate(-6)">
+    <path d="M0 22 Q55 -8 118 18" fill="none" stroke="#17324d" stroke-width="5"/>
+    <text x="0" y="0" class="label" font-size="19" font-weight="800">OFFICIAL</text>
+    <text x="0" y="23" class="label" font-size="19" font-weight="800">BEAK-BASED</text>
+    <text x="0" y="46" class="label" font-size="19" font-weight="800">TRANSPORT</text>
+  </g>
+
+  <rect x="70" y="548" width="660" height="36" rx="18" fill="#fff9df" stroke="#17324d" stroke-width="3"/>
+  <text x="400" y="572" text-anchor="middle" class="label" font-size="17" font-weight="700">
+    2026-10-27 13:03:31 SGT (UTC+08:00)
+  </text>
+</svg>
