@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#d9f6ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69727d"/>
+      <stop offset="1" stop-color="#3d444d"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#22303a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202832;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202832}
+      .small{font-size:18px}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="104" r="48" fill="#ffe99a" opacity=".8"/>
+  <path d="M0 390 Q130 320 260 380 T520 365 T800 350 V600 H0Z" fill="#9bd58d"/>
+  <path d="M0 470 Q180 420 350 470 T800 450 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 535 H800" stroke="#f5d66a" stroke-width="8" stroke-dasharray="34 28" opacity=".8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#fff" stroke="#202832" stroke-width="3" paint-order="stroke">
+    THE GREAT PELICAN GETAWAY
+  </text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="21" font-weight="700">
+    One bird. Two wheels. Absolutely no sense of direction.
+  </text>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <g id="rearWheel">
+        <circle cx="230" cy="430" r="68" fill="#202832"/>
+        <circle cx="230" cy="430" r="58" fill="#dbe7ee" stroke="#202832" stroke-width="5"/>
+        <g stroke="#7b8b97" stroke-width="3">
+          <path d="M230 372V488M172 430H288M189 389L271 471M271 389L189 471"/>
+        </g>
+        <circle cx="230" cy="430" r="8" fill="#202832"/>
+      </g>
+      <g id="frontWheel">
+        <circle cx="570" cy="430" r="68" fill="#202832"/>
+        <circle cx="570" cy="430" r="58" fill="#dbe7ee" stroke="#202832" stroke-width="5"/>
+        <g stroke="#7b8b97" stroke-width="3">
+          <path d="M570 372V488M512 430H628M529 389L611 471M611 389L529 471"/>
+        </g>
+        <circle cx="570" cy="430" r="8" fill="#202832"/>
+      </g>
+
+      <path d="M230 430 L335 330 L455 430 L570 430 L455 430 L405 330 L335 330 Z" fill="none" class="ink"/>
+      <path d="M405 330 L430 275" class="ink" fill="none"/>
+      <path d="M418 274 L468 274" class="ink" fill="none"/>
+      <path d="M335 330 L300 285" class="ink" fill="none"/>
+      <path d="M288 285 L323 285" class="ink" fill="none"/>
+      <path d="M455 430 L405 330" class="ink" fill="none"/>
+      <circle cx="405" cy="430" r="13" fill="#f0b323" class="ink"/>
+      <path d="M405 430 L371 398 M405 430 L437 463" class="ink" fill="none"/>
+      <ellipse cx="364" cy="391" rx="20" ry="8" fill="#202832"/>
+      <ellipse cx="444" cy="468" rx="20" ry="8" fill="#202832"/>
+      <rect x="292" y="269" width="48" height="16" rx="7" fill="#e7473c" class="ink"/>
+      <path d="M302 268 Q318 245 334 268" fill="#e7473c" class="ink"/>
+    </g>
+
+    <g id="pelican">
+      <ellipse cx="395" cy="220" rx="92" ry="112" fill="#f5f1df" class="ink"/>
+      <path d="M338 235 Q285 205 294 160 Q341 177 375 214 Z" fill="#d9e4e8" class="ink"/>
+      <path d="M421 173 Q456 123 497 142 Q475 183 441 202 Z" fill="#d9e4e8" class="ink"/>
+      <circle cx="389" cy="132" r="59" fill="#f5f1df" class="ink"/>
+      <path d="M414 143 Q518 133 575 166 Q518 203 414 180 Q396 170 414 143Z" fill="#f2a548" class="ink"/>
+      <path d="M418 151 Q493 157 546 170 Q496 184 421 174Z" fill="#f8c875"/>
+      <circle cx="407" cy="128" r="10" fill="#202832"/>
+      <circle cx="410" cy="125" r="3" fill="#fff"/>
+      <path d="M370 96 Q390 72 414 96" fill="none" class="ink"/>
+      <path d="M352 271 Q378 294 404 274" fill="none" class="ink"/>
+      <path d="M369 332 L357 382" class="ink" fill="none"/>
+      <path d="M429 329 L446 379" class="ink" fill="none"/>
+      <path d="M347 383 Q365 373 377 386" fill="#f2a548" class="ink"/>
+      <path d="M436 380 Q453 370 465 383" fill="#f2a548" class="ink"/>
+      <path d="M341 209 Q369 225 391 245" fill="none" stroke="#202832" stroke-width="5"/>
+      <text x="398" y="250" text-anchor="middle" class="label small" font-weight="900">HONK!</text>
+    </g>
+  </g>
+
+  <g transform="translate(0,0)">
+    <path d="M590 220 Q650 178 710 214" fill="none" stroke="#202832" stroke-width="5"/>
+    <path d="M710 214 l-18 -6 M710 214 l-12 14" stroke="#202832" stroke-width="5" fill="none"/>
+    <text x="650" y="188" text-anchor="middle" class="label" font-size="20" font-weight="900">NO BRAKES!</text>
+  </g>
+
+  <g>
+    <rect x="42" y="505" width="716" height="66" rx="14" fill="#fff8d6" stroke="#202832" stroke-width="4"/>
+    <text x="400" y="532" text-anchor="middle" class="label" font-size="19" font-weight="700">
+      Caption: “He said he wanted to wing it... so he got a bicycle.”
+    </text>
+    <text x="400" y="557" text-anchor="middle" class="label" font-size="16" font-weight="700">
+      2026-10-27 08:22:10 SGT (UTC+08:00)
+    </text>
+  </g>
+
+  <animateTransform href="#bike" attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+  <animateTransform href="#pelican" attributeName="transform" type="rotate" values="0 395 220;2 395 220;0 395 220;-2 395 220;0 395 220" dur="1.2s" repeatCount="indefinite"/>
+  <animateTransform href="#rearWheel" attributeName="transform" type="rotate" from="0 230 430" to="360 230 430" dur="1.2s" repeatCount="indefinite"/>
+  <animateTransform href="#frontWheel" attributeName="transform" type="rotate" from="0 570 430" to="360 570 430" dur="1.2s" repeatCount="indefinite"/>
+</svg>

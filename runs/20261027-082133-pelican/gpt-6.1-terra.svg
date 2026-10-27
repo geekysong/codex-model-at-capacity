@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN PEDAL PARADE</title>
+  <desc id="desc">A comic pelican rides a bicycle while proudly hauling a fish-shaped lunchbox.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#d7f5e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#23505c" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#173b45;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;font-weight:800;fill:#173b45}
+      .small{font-family:Arial,sans-serif;font-weight:700;fill:#173b45}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 420 Q120 370 240 420 T480 420 T800 410 V600 H0Z" fill="#75c68c"/>
+  <path d="M0 470 Q180 420 360 470 T800 455 V600 H0Z" fill="#4ca36f"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="34">THE GREAT PELICAN PEDAL PARADE</text>
+  <text x="400" y="94" text-anchor="middle" class="small" font-size="18">“Why fly when you can wobble dramatically?”</text>
+
+  <g opacity=".75" fill="#fff">
+    <ellipse cx="120" cy="145" rx="58" ry="22"/>
+    <ellipse cx="165" cy="140" rx="42" ry="18"/>
+    <ellipse cx="675" cy="155" rx="66" ry="23"/>
+    <ellipse cx="720" cy="150" rx="44" ry="18"/>
+  </g>
+
+  <!-- bicycle -->
+  <g filter="url(#shadow)">
+    <g fill="none" class="ink">
+      <circle cx="215" cy="430" r="82" fill="#eaf7fa"/>
+      <circle cx="585" cy="430" r="82" fill="#eaf7fa"/>
+      <path d="M215 430 L345 285 L455 430 L215 430 M345 285 L585 430 M455 430 L520 300"/>
+      <path d="M500 300 L553 300 M520 300 L500 265"/>
+      <path d="M345 285 L325 255"/>
+    </g>
+    <g stroke="#4f9fb2" stroke-width="4" opacity=".75">
+      <path d="M215 348V512 M133 430H297 M157 372L273 488 M157 488L273 372"/>
+      <path d="M585 348V512 M503 430H667 M527 372L643 488 M527 488L643 372"/>
+    </g>
+    <g id="wheelSpin">
+      <circle cx="215" cy="430" r="11" fill="#f28c52" class="ink"/>
+      <circle cx="585" cy="430" r="11" fill="#f28c52" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 215 430" to="360 215 430" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(455 430)">
+      <circle r="20" fill="#f6c744" class="ink"/>
+      <path d="M0 0L33 12 M0 0L-25 22" class="ink"/>
+      <circle r="7" fill="#fff" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+    <path d="M470 290 q35 -25 68 0" fill="none" class="ink"/>
+    <text x="510" y="273" text-anchor="middle" class="small" font-size="15">HANDLEBAR OF DESTINY</text>
+  </g>
+
+  <!-- pelican -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="395" cy="250" rx="75" ry="92" fill="#f8f4df" class="ink"/>
+    <path d="M340 230 Q300 180 320 120 Q370 145 405 205 Q390 235 340 230Z" fill="#dceaf0" class="ink"/>
+    <path d="M320 125 Q250 116 205 150 Q270 185 340 165Z" fill="#f39b45" class="ink"/>
+    <path d="M210 150 Q275 160 335 165 Q290 208 235 184Z" fill="#ef7540" class="ink"/>
+    <circle cx="352" cy="145" r="10" fill="#173b45"/>
+    <circle cx="355" cy="142" r="3.5" fill="#fff"/>
+    <path d="M405 205 Q445 226 461 275" fill="none" class="ink"/>
+    <path d="M390 325 Q420 350 447 330" fill="none" class="ink"/>
+    <path d="M350 329 Q325 360 300 350" fill="none" class="ink"/>
+    <path d="M299 350 L275 385 M447 330 L470 360" class="ink"/>
+    <path d="M270 385 q-18 8 -31 -4 M470 360 q18 10 30 -2" fill="none" class="ink"/>
+    <path d="M350 244 Q390 270 430 245" fill="none" stroke="#e5b94b" stroke-width="9"/>
+    <text x="405" y="220" class="small" font-size="16" transform="rotate(-8 405 220)">HONK!</text>
+    <g transform="translate(470 265) rotate(12)">
+      <path d="M0 0 Q45 -28 82 0 Q45 28 0 0Z" fill="#f4c542" class="ink"/>
+      <circle cx="62" cy="-4" r="4" fill="#173b45"/>
+      <path d="M15 -2 Q35 10 55 2" fill="none" class="ink"/>
+      <text x="42" y="-38" text-anchor="middle" class="small" font-size="14">LUNCH</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="95" y="515" width="610" height="42" rx="20" fill="#fff8dc" stroke="#173b45" stroke-width="4"/>
+    <text x="400" y="542" text-anchor="middle" class="small" font-size="18">A beak, two wheels, and absolutely no sense of direction.</text>
+  </g>
+
+  <text x="400" y="585" text-anchor="middle" class="small" font-size="13">2026-10-27 08:23:07 SGT (UTC+08:00)</text>
+</svg>
