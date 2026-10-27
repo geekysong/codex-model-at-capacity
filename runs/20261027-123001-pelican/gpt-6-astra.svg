@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon pelican pedals furiously while riding a bicycle.</desc>
+  <style>
+    .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#17202a}
+  </style>
+
+  <rect width="800" height="600" fill="#bfe8f5"/>
+  <circle cx="685" cy="92" r="48" fill="#ffd86b" class="ink"/>
+  <path d="M0 430 Q150 390 300 430 T600 425 T800 430 V540 H0Z" fill="#83c878"/>
+  <path d="M0 500 Q190 470 380 505 T800 495" fill="none" stroke="#4d9d59" stroke-width="8"/>
+  <path d="M70 410 q20-42 40 0 q20-42 40 0" fill="none" stroke="#4d9d59" stroke-width="7"/>
+
+  <rect x="42" y="28" width="716" height="74" rx="18" fill="#fff4c7" class="ink"/>
+  <text x="400" y="73" text-anchor="middle" class="label" font-size="38" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+
+  <g id="bike" transform="translate(0 0)">
+    <g class="wheel" transform="translate(245 445)">
+      <circle r="70" fill="#e9f3f6" class="ink"/>
+      <circle r="10" fill="#17202a"/>
+      <path d="M0-64V64 M-64 0H64 M-45-45L45 45 M45-45L-45 45" stroke="#6f8791" stroke-width="3"/>
+    </g>
+    <g class="wheel" transform="translate(570 445)">
+      <circle r="70" fill="#e9f3f6" class="ink"/>
+      <circle r="10" fill="#17202a"/>
+      <path d="M0-64V64 M-64 0H64 M-45-45L45 45 M45-45L-45 45" stroke="#6f8791" stroke-width="3"/>
+    </g>
+    <path d="M245 445 L350 340 L470 445 L245 445 L420 445 L350 340 L570 445 L500 325" fill="none" class="ink"/>
+    <path d="M470 445 L500 325 L525 325" fill="none" class="ink"/>
+    <path d="M330 340 h-55" fill="none" class="ink"/>
+    <circle cx="470" cy="445" r="27" fill="none" class="ink"/>
+    <path d="M470 445 l-24-20 M470 445 l23 19" class="ink"/>
+    <circle cx="446" cy="425" r="7" fill="#ef6f4e" class="ink"/>
+    <circle cx="493" cy="464" r="7" fill="#ef6f4e" class="ink"/>
+    <path d="M500 325 l-5-25" class="ink"/>
+    <path d="M495 300 q18-8 35 0" fill="none" class="ink"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1s" repeatCount="indefinite"/>
+    <ellipse cx="410" cy="265" rx="92" ry="108" fill="#f7f5ed" class="ink"/>
+    <path d="M350 285 q-58 5-92-26 q-25-22 9-34 q54-20 116 5Z" fill="#f39a52" class="ink"/>
+    <path d="M267 227 q-24-7-35-25 q-6-13 11-13 q34 2 58 25" fill="#f6b56b" class="ink"/>
+    <circle cx="421" cy="190" r="12" fill="#17202a"/>
+    <circle cx="425" cy="186" r="4" fill="#fff"/>
+    <path d="M458 205 q35 23 39 66" fill="none" class="ink"/>
+    <path d="M382 355 q-14 38-33 64 M428 358 q10 35 31 57" fill="none" class="ink"/>
+    <path d="M349 419 q-18 8-32 1 M459 416 q18 8 33 0" fill="none" class="ink"/>
+    <path d="M355 255 q45 25 83 0" fill="none" stroke="#d47b43" stroke-width="5"/>
+    <path d="M347 295 q-25 37-7 73" fill="none" stroke="#d47b43" stroke-width="5"/>
+    <path d="M470 275 q24 28 16 65" fill="none" stroke="#d47b43" stroke-width="5"/>
+    <path d="M374 300 q-28 35-4 77" fill="none" stroke="#17202a" stroke-width="7"/>
+    <path d="M454 298 q28 38 4 77" fill="none" stroke="#17202a" stroke-width="7"/>
+    <path d="M368 376 q20-14 39 0 M430 376 q20-14 39 0" fill="none" class="ink"/>
+    <path d="M401 166 q-18-30 12-42 q33-14 50 18" fill="#f7f5ed" class="ink"/>
+    <path d="M457 142 q16-28 33-13 q12 11-9 31" fill="#f7f5ed" class="ink"/>
+  </g>
+
+  <path d="M585 255 q40-35 78 0" fill="none" stroke="#17202a" stroke-width="6"/>
+  <text x="625" y="238" class="label" font-size="22" font-weight="700">NO WINGS?</text>
+  <text x="625" y="262" class="label" font-size="22" font-weight="700">NO PROBLEM!</text>
+
+  <rect x="125" y="525" width="550" height="38" rx="12" fill="#fff4c7" class="ink"/>
+  <text x="400" y="551" text-anchor="middle" class="label" font-size="23" font-weight="700">He heard “bird commute” and took it literally.</text>
+
+  <text x="400" y="588" text-anchor="middle" class="label" font-size="16">2026-10-27 12:30:01 SGT (UTC+08:00)</text>
+
+  <style>
+    #bike .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2s linear infinite; }
+    #bike .wheel:nth-of-type(2) { animation-delay:-1s; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</svg>

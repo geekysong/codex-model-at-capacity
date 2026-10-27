@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN COMMUTE</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an enormous fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f4"/>
+      <stop offset="1" stop-color="#dff7ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#50586a"/>
+      <stop offset="1" stop-color="#252b38"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202d" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#202637; stroke-width:6; stroke-linejoin:round; stroke-linecap:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#202637; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2.2s linear infinite; }
+      .bike-bob { animation:bob .8s ease-in-out infinite alternate; }
+      .pedal { transform-box:fill-box; transform-origin:center; animation:pedal .9s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-5px); } }
+      @keyframes pedal { to { transform:rotate(360deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="104" r="47" fill="#ffe680" stroke="#d59a2a" stroke-width="6"/>
+  <path d="M0 360 Q110 300 230 350 T470 340 T800 330 V455 H0Z" fill="#8cc58b"/>
+  <path d="M0 420 Q170 385 340 420 T800 405 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 505 H800" stroke="#e8d47a" stroke-width="8" stroke-dasharray="50 28" opacity=".9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="34" y="28" width="510" height="92" rx="18" fill="#fff8df" class="ink"/>
+    <text x="58" y="70" class="label" font-size="31" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+    <text x="60" y="101" class="label" font-size="20" font-weight="700">“Finally, a bird with a one-fish cargo policy.”</text>
+  </g>
+
+  <g class="bike-bob">
+    <g class="wheel" aria-label="spinning rear wheel">
+      <circle cx="245" cy="438" r="78" fill="#eef4f7" class="ink"/>
+      <circle cx="245" cy="438" r="10" fill="#f2a33b" class="ink"/>
+      <path d="M245 360V516 M167 438H323 M190 383L300 493 M300 383L190 493" stroke="#697487" stroke-width="4"/>
+    </g>
+    <g class="wheel" aria-label="spinning front wheel">
+      <circle cx="585" cy="438" r="78" fill="#eef4f7" class="ink"/>
+      <circle cx="585" cy="438" r="10" fill="#f2a33b" class="ink"/>
+      <path d="M585 360V516 M507 438H663 M530 383L640 493 M640 383L530 493" stroke="#697487" stroke-width="4"/>
+    </g>
+
+    <path d="M245 438 L355 310 L470 438 L245 438 M355 310 L585 438 M470 438 L430 330 L385 330" fill="none" stroke="#e84f4f" stroke-width="13" stroke-linejoin="round"/>
+    <path d="M585 438 L575 300" fill="none" stroke="#202637" stroke-width="8"/>
+    <path d="M555 300 Q582 283 614 300" fill="none" stroke="#202637" stroke-width="8"/>
+    <path d="M343 308 Q354 278 377 273" fill="none" stroke="#202637" stroke-width="8"/>
+
+    <g class="pedal">
+      <circle cx="430" cy="438" r="18" fill="#f2a33b" class="ink"/>
+      <path d="M430 438 l38 -25 M430 438 l-37 25" stroke="#202637" stroke-width="6"/>
+      <rect x="463" y="407" width="25" height="8" rx="4" fill="#202637"/>
+      <rect x="369" y="459" width="25" height="8" rx="4" fill="#202637"/>
+    </g>
+
+    <g class="ink">
+      <path d="M420 270 Q437 190 511 183 Q566 179 590 231 L571 293 Q528 321 464 308Z" fill="#f8fbf1"/>
+      <path d="M468 225 Q500 192 541 211 Q558 220 567 246 Q522 245 484 267Z" fill="#d8e8e7"/>
+      <path d="M512 190 Q525 151 568 136 Q598 125 618 143 Q584 158 574 197Z" fill="#f8fbf1"/>
+      <path d="M603 140 Q646 141 688 164 Q658 193 593 176Z" fill="#f2a33b"/>
+      <path d="M684 164 l22 6 -19 13" fill="#d87c25"/>
+      <circle cx="578" cy="157" r="8" fill="#202637" stroke="none"/>
+      <path d="M485 279 Q455 320 425 350" fill="none"/>
+      <path d="M425 350 L430 421" fill="none"/>
+      <path d="M520 288 Q555 332 540 390" fill="none"/>
+      <path d="M540 390 L474 438" fill="none"/>
+      <path d="M430 421 q-20 14 -36 4" fill="none"/>
+      <path d="M474 438 q-18 16 -34 5" fill="none"/>
+      <path d="M466 260 Q422 237 385 254" fill="none"/>
+      <path d="M385 254 L337 304" fill="none"/>
+      <path d="M337 304 L355 310" fill="none"/>
+    </g>
+
+    <g transform="translate(380 205) rotate(-8)">
+      <ellipse cx="0" cy="0" rx="70" ry="35" fill="#f28f52" class="ink"/>
+      <path d="M-68 0 Q-92 -25 -78 -48 Q-45 -38 -25 -20" fill="#f28f52" class="ink"/>
+      <path d="M58 -8 Q83 -25 92 -45" fill="none" class="ink"/>
+      <circle cx="-30" cy="-8" r="5" fill="#202637" stroke="none"/>
+      <path d="M-4 17 Q17 25 34 12" fill="none" class="ink"/>
+      <text x="-42" y="7" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="900" fill="#202637" stroke="none">FISH</text>
+    </g>
+  </g>
+
+  <g transform="translate(625 286)">
+    <path d="M0 36 Q30 8 62 36" fill="none" stroke="#202637" stroke-width="5"/>
+    <text x="2" y="0" class="label" font-size="17" font-weight="800">HONK!</text>
+  </g>
+
+  <rect x="18" y="555" width="764" height="34" rx="10" fill="#fff8df" stroke="#202637" stroke-width="3"/>
+  <text x="400" y="578" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-27 12:32:09 SGT (UTC+08:00)</text>
+</svg>
