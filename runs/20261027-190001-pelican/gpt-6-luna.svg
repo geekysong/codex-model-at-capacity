@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bdeeff"/>
+      <stop offset="1" stop-color="#fff7d6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#4d3d5b" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#3b2946;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;fill:#3b2946}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="115" r="55" fill="#ffd75a" opacity=".9"/>
+  <path d="M0 405 Q135 355 270 405 T540 405 T800 395 V600 H0Z" fill="#9bd38b"/>
+  <path d="M0 470 Q170 425 335 475 T680 460 T800 470 V600 H0Z" fill="#6fbd78"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#e84f68">THE PELICAN EXPRESS</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="21" font-weight="700">“Why walk when you can wobble with style?”</text>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="405" cy="520" rx="292" ry="25" fill="#3b2946" opacity=".2"/>
+
+    <!-- bicycle -->
+    <g fill="none" class="ink">
+      <circle cx="245" cy="440" r="78" fill="#f9fbff"/>
+      <circle cx="585" cy="440" r="78" fill="#f9fbff"/>
+      <path d="M245 440 L345 330 L465 440 L245 440 M345 330 L405 440 M465 440 L520 320 M470 320 L550 320"/>
+      <circle cx="405" cy="440" r="18" fill="#ffcc4d"/>
+      <path d="M405 440 l-38 -30 M405 440 l40 29"/>
+      <path d="M328 324 q20 -22 43 0"/>
+    </g>
+    <g opacity=".75" class="ink">
+      <path d="M245 373v134 M178 440h134 M530 385l110 110 M640 385L530 495"/>
+    </g>
+
+    <!-- basket -->
+    <path d="M505 270 L635 270 L615 350 L525 350Z" fill="#e9a84d" class="ink"/>
+    <path d="M520 290h105 M518 315h102 M532 270v80 M562 270v80 M592 270v80" fill="none" stroke="#8b542d" stroke-width="4"/>
+
+    <!-- pelican body bobbing -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0;0 5;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="400" cy="235" rx="88" ry="108" fill="#f7f4ed" class="ink"/>
+      <path d="M350 245 Q400 275 454 240 Q440 315 389 322 Q350 300 350 245Z" fill="#d7d9df" class="ink"/>
+      <path d="M367 147 Q400 115 435 148 L466 220 Q431 205 398 220 Q375 205 343 220Z" fill="#fff" class="ink"/>
+      <circle cx="378" cy="176" r="12" fill="#3b2946"/>
+      <circle cx="424" cy="176" r="12" fill="#3b2946"/>
+      <circle cx="374" cy="172" r="4" fill="#fff"/>
+      <circle cx="420" cy="172" r="4" fill="#fff"/>
+      <path d="M345 205 Q400 188 460 205 L525 230 Q548 240 525 253 L455 268 Q400 278 345 250Z" fill="#f39a45" class="ink"/>
+      <path d="M470 238 Q500 243 525 230" fill="none" class="ink"/>
+      <path d="M379 322 L365 382 M430 320 L448 378" fill="none" class="ink"/>
+      <path d="M356 382 q-20 8 -28 1 M448 378 q20 10 30 1" fill="none" class="ink"/>
+      <path d="M365 270 Q325 292 300 330" fill="none" class="ink"/>
+      <path d="M438 270 Q478 285 503 319" fill="none" class="ink"/>
+      <path d="M300 330 q-18 18 -32 4" fill="none" class="ink"/>
+      <path d="M503 319 q16 18 27 4" fill="none" class="ink"/>
+      <text x="400" y="365" text-anchor="middle" class="label" font-size="18" font-weight="900">HONK!</text>
+    </g>
+
+    <!-- pedals -->
+    <g class="ink">
+      <circle cx="405" cy="440" r="8" fill="#3b2946">
+        <animateTransform attributeName="transform" type="rotate" from="0 405 440" to="360 405 440" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M405 440 l-38 -30 M405 440 l40 29"/>
+      <path d="M359 405h-22 M443 469h22"/>
+    </g>
+  </g>
+
+  <path d="M105 245 q28 -25 56 0 M630 210 q25 -23 50 0" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+  <text x="400" y="565" text-anchor="middle" class="label" font-size="17" font-weight="700">2026-10-27 19:01:40 SGT (UTC+08:00)</text>
+</svg>
