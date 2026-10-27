@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN ON WHEELS!</title>
+  <desc id="desc">A smug pelican pedals a bicycle, insisting its enormous beak is the aerodynamic advantage. The wheels turn and the bird bobs in a loop.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { fill: none; stroke: #263746; stroke-width: 9; }
+      .spoke { stroke: #82929b; stroke-width: 2; }
+      .frame { fill: none; stroke: #e65b38; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .ink { stroke: #263746; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pedal { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(18deg); } }
+      @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+      .rotor { transform-origin: 245px 431px; animation: spin 2s linear infinite; }
+      .bird { transform-origin: 404px 339px; animation: bob 1s ease-in-out infinite; }
+      .crank { transform-origin: 390px 431px; animation: pedal .5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8e9c9"/>
+  <path d="M0 441 Q180 425 350 442 T800 432 V600 H0Z" fill="#dce8d4"/>
+  <path d="M0 450 H800" stroke="#839b87" stroke-width="3"/>
+  <circle cx="93" cy="117" r="38" fill="#f2bd55"/>
+  <path d="M54 117h78M93 78v78M66 90l54 54M120 90l-54 54" stroke="#f2bd55" stroke-width="5" opacity=".7"/>
+
+  <text x="400" y="58" text-anchor="middle" font-size="34" font-weight="1000" letter-spacing="1.5" fill="#263746">PELICAN ON WHEELS!</text>
+  <text x="400" y="87" text-anchor="middle" font-size="17" font-weight="700" fill="#536775">“It’s not a big beak. It’s a wind tunnel.”</text>
+
+  <g aria-label="Bicycle">
+    <g class="rotor">
+      <circle class="wheel" cx="245" cy="431" r="91"/>
+      <path class="spoke" d="M245 340V522M154 431H336M181 367L309 495M309 367L181 495"/>
+    </g>
+    <circle class="wheel" cx="558" cy="431" r="91"/>
+    <g stroke="#82929b" stroke-width="2">
+      <path d="M558 340V522M467 431H649M494 367L622 495M622 367L494 495"/>
+    </g>
+    <path class="frame" d="M245 431L337 431L294 351L245 431M337 431L405 351L294 351M405 351L558 431M405 351L430 329"/>
+    <path d="M270 343h49M396 321l45 10" stroke="#263746" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="337" cy="431" r="12" fill="#f2bd55" stroke="#263746" stroke-width="4"/>
+    <g class="crank">
+      <path d="M337 431l31 29M337 431l-30-29" stroke="#263746" stroke-width="5" stroke-linecap="round"/>
+      <path d="M361 460h20M297 402h-20" stroke="#263746" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <path d="M245 431l-20-19M558 431l19-20" stroke="#263746" stroke-width="5"/>
+  </g>
+
+  <g class="bird" aria-label="Pelican rider">
+    <path d="M345 327Q331 286 366 266Q403 245 430 275Q448 295 429 325L408 356L361 354Z" fill="#fffdf5" class="ink"/>
+    <path d="M355 316Q366 282 402 282Q422 283 430 306L414 337L366 338Z" fill="#fbfbf1" stroke="#263746" stroke-width="3"/>
+    <path d="M370 335Q406 328 438 344Q456 352 449 365Q440 382 405 371L364 361Z" fill="#f1a13b" class="ink"/>
+    <path d="M374 343Q407 340 444 355Q425 368 399 363L369 355Z" fill="#df6548" stroke="#263746" stroke-width="2"/>
+    <path d="M413 297Q433 290 449 302" fill="none" stroke="#263746" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="413" cy="298" r="5" fill="#263746"/>
+    <circle cx="415" cy="297" r="1.7" fill="#fff"/>
+    <path d="M360 303Q382 264 427 281L432 292Q397 277 371 313Z" fill="#e65b38" stroke="#263746" stroke-width="3"/>
+    <path d="M373 282L389 258L403 281" fill="#e65b38" stroke="#263746" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M385 354L365 386L337 414M410 365L397 396L372 419" fill="none" stroke="#263746" stroke-width="8" stroke-linecap="round"/>
+    <path d="M329 414l22 5M365 420l20 3" stroke="#e65b38" stroke-width="8" stroke-linecap="round"/>
+    <path d="M374 308q8 7 15 0" fill="none" stroke="#e99d91" stroke-width="3" stroke-linecap="round"/>
+    <path d="M451 339q20-22 31-5" fill="none" stroke="#263746" stroke-width="3"/>
+    <text x="484" y="332" font-size="23" fill="#e65b38" font-weight="900">!</text>
+  </g>
+
+  <path d="M568 262q35-27 83-5l-9 42q-38-15-68 1Z" fill="#fffdf5" stroke="#263746" stroke-width="3"/>
+  <path d="M580 270l47 10" stroke="#263746" stroke-width="2"/>
+  <text x="608" y="275" text-anchor="middle" font-size="12" font-weight="800" fill="#263746">SPEED</text>
+  <text x="608" y="290" text-anchor="middle" font-size="12" font-weight="800" fill="#263746">LIMIT?</text>
+
+  <path d="M191 534q206 18 423 0" fill="none" stroke="#839b87" stroke-width="3" stroke-dasharray="10 12"/>
+  <text x="400" y="560" text-anchor="middle" font-size="15" font-weight="700" fill="#536775">He’s doing 12 mph. His beak is doing 40.</text>
+  <path d="M0 574H800" stroke="#c8b998" stroke-width="2"/>
+  <text x="400" y="592" text-anchor="middle" font-size="13" font-weight="700" letter-spacing=".3" fill="#263746">2026-10-27 10:33:00 SGT (UTC+08:00)</text>
+</svg>
