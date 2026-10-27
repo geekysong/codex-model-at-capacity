@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Patrol</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly causing a traffic jam.</desc>
+  <style>
+    .ink{stroke:#20242b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .thin{stroke:#20242b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#20242b}
+    .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.8s linear infinite}
+    .bird{animation:bob 1.4s ease-in-out infinite}
+    .pedal{animation:pedal 1.4s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes pedal{to{transform:rotate(360deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#b9e7f2"/>
+  <rect y="438" width="800" height="162" fill="#85a3ad"/>
+  <path d="M0 470H800" stroke="#d9e5e8" stroke-width="8" stroke-dasharray="34 24"/>
+  <path d="M0 515H800" stroke="#667e87" stroke-width="4"/>
+
+  <g aria-label="title">
+    <rect x="28" y="24" width="744" height="78" rx="18" fill="#fff5c8" class="ink"/>
+    <text x="400" y="61" text-anchor="middle" class="label" font-size="34" font-weight="900">PELICAN PEDAL PATROL</text>
+    <text x="400" y="88" text-anchor="middle" class="label" font-size="16" font-weight="700">“One beak, two wheels, zero regard for the bike lane.”</text>
+  </g>
+
+  <g aria-label="clouds" fill="#fff" opacity=".8">
+    <path d="M78 160c0-22 18-40 40-40 11 0 21 5 28 13 7-18 24-30 44-30 26 0 47 21 47 47h8c16 0 29 13 29 29H78c-12 0-22-9-22-21s10-21 22-21z"/>
+    <path d="M594 145c0-17 14-31 31-31 9 0 17 4 22 10 6-14 19-23 35-23 21 0 37 16 37 37h7c13 0 23 10 23 23H594c-9 0-17-7-17-16s8-16 17-16z"/>
+  </g>
+
+  <g aria-label="bicycle">
+    <g class="wheel">
+      <circle cx="254" cy="438" r="72" fill="#edf7f8" class="ink"/>
+      <circle cx="254" cy="438" r="9" fill="#f26b5b" class="ink"/>
+      <path d="M254 366V510M182 438H326M203 387l102 102M305 387L203 489" class="thin"/>
+    </g>
+    <g class="wheel">
+      <circle cx="566" cy="438" r="72" fill="#edf7f8" class="ink"/>
+      <circle cx="566" cy="438" r="9" fill="#f26b5b" class="ink"/>
+      <path d="M566 366V510M494 438H638M515 387l102 102M617 387L515 489" class="thin"/>
+    </g>
+    <path d="M254 438L350 438 430 330 566 438 430 438 350 438 300 350 430 330" fill="none" class="ink"/>
+    <path d="M300 350l-30-25M270 325h45M430 330l5-37M435 293h43" fill="none" class="ink"/>
+    <path d="M566 438l25-88M591 350h30" fill="none" class="ink"/>
+    <circle cx="430" cy="438" r="22" fill="#ffd166" class="ink"/>
+    <g class="pedal" style="transform-origin:430px 438px">
+      <path d="M430 438l33-22M430 438l-28 25" class="thin"/>
+      <path d="M458 414h22M398 463h-22" class="thin"/>
+    </g>
+  </g>
+
+  <g class="bird" aria-label="pelican">
+    <path d="M365 353c-12-42 3-96 48-121 43-24 98-9 119 31 20 38 1 84-39 102-43 19-99 12-128-12z" fill="#f5f0df" class="ink"/>
+    <path d="M420 238c-12-39 5-80 39-91 34-12 71 8 79 43 8 35-14 70-50 78z" fill="#f5f0df" class="ink"/>
+    <path d="M467 192c37-13 85-3 120 23 34 25 52 53 42 66-11 15-53 5-92-11l-77-31z" fill="#f7a54a" class="ink"/>
+    <path d="M540 246c30 11 61 18 83 16" fill="none" class="thin"/>
+    <circle cx="494" cy="201" r="8" fill="#20242b"/>
+    <path d="M450 271c20 18 39 20 57 10" fill="none" class="thin"/>
+    <path d="M398 254c-27 19-40 50-34 77 7 30 30 43 53 32 24-11 34-42 25-68z" fill="#4e9f9b" class="ink"/>
+    <path d="M400 285c18 10 28 25 31 43" fill="none" class="thin"/>
+    <path d="M405 353l-12 55M476 349l15 58" fill="none" class="ink"/>
+    <path d="M388 408h34M487 407h34" fill="none" class="ink"/>
+    <path d="M405 354l-18 84M476 350l-18 88" fill="none" class="ink"/>
+    <path d="M387 438l18-2M458 438l18-2" fill="none" class="ink"/>
+    <path d="M377 224l-18-20M388 214l-8-26" fill="none" class="ink"/>
+    <path d="M520 158c14-9 27-10 39-2" fill="none" class="thin"/>
+  </g>
+
+  <g aria-label="speech bubble">
+    <path d="M574 188c0-34 40-58 91-58s91 24 91 58-40 58-91 58c-16 0-31-2-44-7l-28 18 7-29c-16-10-26-24-26-40z" fill="#fff" class="ink"/>
+    <text x="665" y="181" text-anchor="middle" class="label" font-size="20" font-weight="800">HONK!</text>
+    <text x="665" y="207" text-anchor="middle" class="label" font-size="15">I’m late for my</text>
+    <text x="665" y="227" text-anchor="middle" class="label" font-size="15">fish meeting!</text>
+  </g>
+
+  <g aria-label="caption">
+    <rect x="58" y="532" width="684" height="38" rx="12" fill="#fff5c8" class="ink"/>
+    <text x="400" y="557" text-anchor="middle" class="label" font-size="16" font-weight="700">A pelican on a bicycle: proof that traffic can be both feathered and furious.</text>
+  </g>
+
+  <text x="400" y="590" text-anchor="middle" class="label" font-size="13" font-weight="700">2026-10-28 05:01:14 SGT (UTC+08:00)</text>
+</svg>

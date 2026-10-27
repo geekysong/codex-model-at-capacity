@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59636d"/>
+      <stop offset="1" stop-color="#303840"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#17212b;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#17212b}
+      .small{font-family:Arial,sans-serif;font-size:18px;fill:#17212b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="95" r="42" fill="#ffd86b" opacity=".9"/>
+  <path d="M0 365 Q120 320 245 360 T500 350 T800 355 V470 H0Z" fill="#9bd48a"/>
+  <path d="M0 455 Q190 425 390 450 T800 445 V535 H0Z" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#f8d56b" stroke-width="8" stroke-dasharray="38 28" opacity=".9"/>
+
+  <text x="400" y="48" text-anchor="middle" class="label" font-size="34" font-weight="800">
+    THE GREAT PELICAN EXPRESS
+  </text>
+  <text x="400" y="78" text-anchor="middle" class="small" font-size="20">
+    “Why fly when you can pedal dramatically?”
+  </text>
+
+  <g id="bike">
+    <g>
+      <circle cx="250" cy="430" r="70" fill="#e9eef2" class="ink"/>
+      <circle cx="550" cy="430" r="70" fill="#e9eef2" class="ink"/>
+      <g stroke="#53616d" stroke-width="4">
+        <path d="M250 360V500M180 430H320M200 380L300 480M300 380L200 480"/>
+        <path d="M550 360V500M480 430H620M500 380L600 480M600 380L500 480"/>
+      </g>
+      <circle cx="250" cy="430" r="9" fill="#17212b"/>
+      <circle cx="550" cy="430" r="9" fill="#17212b"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 250 430" to="360 250 430" dur="2s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 550 430" to="360 550 430" dur="2s" repeatCount="indefinite"/>
+      <circle cx="550" cy="430" r="70" fill="none" class="ink"/>
+      <g stroke="#53616d" stroke-width="4">
+        <path d="M550 360V500M480 430H620M500 380L600 480M600 380L500 480"/>
+      </g>
+      <circle cx="550" cy="430" r="9" fill="#17212b"/>
+    </g>
+
+    <path d="M250 430 L345 430 L430 350 L550 430 L430 430 L345 430 Z" fill="#f05b4f" class="ink"/>
+    <path d="M430 350 L470 300" fill="none" class="ink"/>
+    <path d="M470 300 L505 300" fill="none" class="ink"/>
+    <path d="M345 430 L315 385" fill="none" class="ink"/>
+    <path d="M315 385 L285 385" fill="none" class="ink"/>
+    <circle cx="430" cy="430" r="15" fill="#ffd34f" class="ink"/>
+    <path d="M430 430 L465 457 M430 430 L398 400" fill="none" stroke="#17212b" stroke-width="7"/>
+    <circle cx="465" cy="457" r="7" fill="#17212b"/>
+    <circle cx="398" cy="400" r="7" fill="#17212b"/>
+    <path d="M550 430 L570 360" fill="none" class="ink"/>
+    <path d="M570 360 Q590 350 600 365" fill="none" class="ink"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="405" cy="272" rx="86" ry="103" fill="#f7f4e8" class="ink"/>
+    <ellipse cx="386" cy="292" rx="54" ry="70" fill="#d7e5e7" opacity=".9"/>
+    <path d="M360 250 Q300 280 335 322 Q370 335 402 295" fill="#f0a343" class="ink"/>
+    <path d="M352 275 Q310 300 337 331" fill="none" stroke="#c36d2c" stroke-width="5"/>
+    <circle cx="390" cy="174" r="55" fill="#f7f4e8" class="ink"/>
+    <path d="M427 184 Q507 173 548 207 Q507 230 426 222 Z" fill="#f39b38" class="ink"/>
+    <path d="M426 222 Q486 242 548 207" fill="none" stroke="#c36d2c" stroke-width="5"/>
+    <circle cx="407" cy="166" r="9" fill="#17212b"/>
+    <path d="M370 132 Q395 108 424 132" fill="none" stroke="#f39b38" stroke-width="14"/>
+    <path d="M375 338 Q390 365 415 382" fill="none" class="ink"/>
+    <path d="M414 338 Q430 365 455 379" fill="none" class="ink"/>
+    <path d="M410 380 L395 399 M448 378 L465 395" fill="none" stroke="#f39b38" stroke-width="10"/>
+    <path d="M395 399 L380 399 M395 399 L388 410 M465 395 L480 395 M465 395 L472 406" fill="none" stroke="#17212b" stroke-width="6"/>
+    <path d="M340 250 Q282 230 294 190 Q331 203 371 240" fill="#e5eef0" class="ink">
+      <animateTransform attributeName="transform" type="rotate" values="0 350 245;8 350 245;0 350 245;-8 350 245;0 350 245" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M430 245 Q470 225 492 250" fill="none" class="ink"/>
+  </g>
+
+  <text x="400" y="550" text-anchor="middle" class="small" font-size="19" font-weight="700">
+    Pelican-powered transport: maximum beak, minimum brakes.
+  </text>
+  <text x="400" y="582" text-anchor="middle" class="small" font-size="15">
+    2026-10-28 05:01:53 SGT (UTC+08:00)
+  </text>
+</svg>
