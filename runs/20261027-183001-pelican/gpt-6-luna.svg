@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican pedaling a bicycle, animated with spinning wheels and a bobbing rider.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9edbff"/>
+      <stop offset="1" stop-color="#f8e7b0"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#242424"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#20242a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#20242a}
+      .wheel{fill:none;stroke:#20242a;stroke-width:7}
+      .spoke{stroke:#9aa5ad;stroke-width:3}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd86b" opacity=".9"/>
+  <path d="M0 335 Q130 265 265 330 T520 320 T800 300 V430 H0Z" fill="#8bc27a"/>
+  <path d="M0 382 Q180 335 350 380 T800 365 V430 H0Z" fill="#67a965"/>
+  <rect y="420" width="800" height="180" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#f2d36b" stroke-width="8" stroke-dasharray="52 34"/>
+  <path d="M0 448 Q200 435 400 450 T800 445" fill="none" stroke="#777" stroke-width="4"/>
+
+  <text x="40" y="62" class="label" font-size="34" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+  <text x="42" y="94" class="label" font-size="19" font-style="italic">“Why fly when you can pedal irresponsibly?”</text>
+
+  <g id="bike">
+    <g class="wheel">
+      <circle cx="225" cy="442" r="78" fill="#dce8ef"/>
+      <circle cx="590" cy="442" r="78" fill="#dce8ef"/>
+    </g>
+    <g class="spokes" opacity=".9">
+      <g>
+        <path class="spoke" d="M225 364V520 M147 442H303 M170 387L280 497 M170 497L280 387"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 225 442" to="360 225 442" dur="2s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <path class="spoke" d="M590 364V520 M512 442H668 M535 387L645 497 M535 497L645 387"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 590 442" to="360 590 442" dur="2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <path d="M225 442 L350 350 L470 442 L225 442 M350 350 L410 442 M470 442 L590 442 M410 442 L410 405 M350 350 L330 319" fill="none" class="ink"/>
+    <circle cx="410" cy="442" r="19" fill="#efb33d" class="ink"/>
+    <path d="M410 442 L380 470 M410 442 L445 416" class="ink"/>
+    <path d="M325 315 L355 315" class="ink"/>
+    <path d="M579 420 Q606 408 625 420" fill="none" class="ink"/>
+    <path d="M580 420 Q590 402 608 399" fill="none" class="ink"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="400" cy="255" rx="78" ry="92" fill="#f4f1e8" class="ink"/>
+    <path d="M352 235 Q318 190 337 145 Q370 107 418 133 Q448 151 438 198" fill="#f4f1e8" class="ink"/>
+    <circle cx="394" cy="160" r="9" fill="#20242a"/>
+    <path d="M340 177 Q287 170 238 193 Q286 222 345 207 Q374 197 340 177Z" fill="#ef9f38" class="ink"/>
+    <path d="M241 193 Q290 207 341 206 Q300 232 249 214Z" fill="#d97d2b" class="ink"/>
+    <path d="M368 257 Q413 270 445 303 L422 330 Q382 302 347 291Z" fill="#d9dde1" class="ink"/>
+    <path d="M357 332 Q390 352 425 342" fill="none" class="ink"/>
+    <path d="M382 340 L365 392 M420 342 L440 390" class="ink"/>
+    <path d="M357 391 L383 391 M430 390 L454 390" class="ink"/>
+    <path d="M350 212 Q372 223 390 214" fill="none" stroke="#20242a" stroke-width="4"/>
+    <text x="463" y="210" class="label" font-size="22" font-weight="bold">HONK!</text>
+    <path d="M455 218 Q470 230 479 245" fill="none" stroke="#20242a" stroke-width="4" stroke-dasharray="5 7"/>
+  </g>
+
+  <g class="caption">
+    <rect x="90" y="528" width="620" height="38" rx="19" fill="#fff7d6" stroke="#20242a" stroke-width="4"/>
+    <text x="400" y="554" text-anchor="middle" class="label" font-size="20" font-weight="700">A beak-first solution to traffic, deadlines, and common sense.</text>
+  </g>
+
+  <text x="400" y="590" text-anchor="middle" class="label" font-size="13">2026-10-27 18:32:26 SGT (UTC+08:00)</text>
+</svg>
