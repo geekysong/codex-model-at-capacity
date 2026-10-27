@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on Patrol</title>
+  <desc id="desc">A satirical pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+  <style>
+    .ink{stroke:#263238;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#f5f7fa;stroke:#263238;stroke-width:8}
+    .spoke{stroke:#90a4ae;stroke-width:3}
+    .label{font-family:Arial,sans-serif;fill:#263238}
+  </style>
+
+  <rect width="800" height="600" fill="#bde7f2"/>
+  <rect y="430" width="800" height="170" fill="#8bcf76"/>
+  <path d="M0 470 Q130 440 260 470 T520 470 T800 470" fill="none" stroke="#5fa95a" stroke-width="8"/>
+  <path d="M0 520 Q180 495 360 520 T800 520" fill="none" stroke="#6bb35f" stroke-width="6"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN ON PATROL</text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="20" font-weight="700">“No license, no problem — just a very large beak.”</text>
+
+  <g id="bike">
+    <g id="rearWheel">
+      <circle cx="250" cy="430" r="74" class="wheel"/>
+      <g class="spoke">
+        <path d="M250 356V504M176 430H324M198 378L302 482M302 378L198 482"/>
+      </g>
+      <circle cx="250" cy="430" r="9" fill="#263238"/>
+    </g>
+    <g id="frontWheel">
+      <circle cx="580" cy="430" r="74" class="wheel"/>
+      <g class="spoke">
+        <path d="M580 356V504M506 430H654M528 378L632 482M632 378L528 482"/>
+      </g>
+      <circle cx="580" cy="430" r="9" fill="#263238"/>
+    </g>
+    <path d="M250 430 L365 330 L470 430 L250 430 L420 430 L580 430 L470 330" fill="none" class="ink" stroke="#d84315"/>
+    <path d="M365 330 L350 285 M335 285 H370" fill="none" class="ink"/>
+    <path d="M470 330 L505 292 H545" fill="none" class="ink"/>
+    <circle cx="420" cy="430" r="22" fill="#ffca28" class="ink"/>
+    <path d="M420 430 l-35 -25 M420 430 l36 24" class="ink"/>
+    <path d="M385 405 l-15 -8 M456 454 l16 8" class="ink"/>
+    <path d="M505 292 l28 -20" class="ink"/>
+    <path d="M532 272 h28" class="ink"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="405" cy="245" rx="78" ry="92" fill="#f4f1e8" class="ink"/>
+    <path d="M350 213 Q330 150 373 116 Q422 78 466 116 Q499 145 476 205 Q438 188 405 211Z" fill="#d9e2e5" class="ink"/>
+    <circle cx="429" cy="142" r="10" fill="#263238"/>
+    <circle cx="432" cy="139" r="3" fill="#fff"/>
+    <path d="M470 165 Q548 154 638 184 Q565 224 474 204 Q447 195 470 165Z" fill="#f6a623" class="ink"/>
+    <path d="M638 184 Q575 194 490 190" fill="none" stroke="#b56b17" stroke-width="5"/>
+    <path d="M492 178 Q550 146 620 178" fill="none" stroke="#b56b17" stroke-width="4"/>
+    <path d="M364 218 Q310 246 294 300 Q340 288 385 255" fill="#c9d4d8" class="ink"/>
+    <path d="M447 222 Q493 255 509 308 Q463 292 430 257" fill="#c9d4d8" class="ink"/>
+    <path d="M378 310 L370 370 M438 310 L450 370" class="ink"/>
+    <path d="M370 370 l-22 18 M450 370 l25 18" class="ink"/>
+    <path d="M352 385 Q373 397 391 385 M455 385 Q474 397 493 385" fill="none" class="ink"/>
+    <path d="M365 238 Q405 258 450 235" fill="none" stroke="#263238" stroke-width="5"/>
+    <path d="M397 263 Q412 277 428 263" fill="none" stroke="#263238" stroke-width="5"/>
+    <path d="M470 178 Q525 160 598 181" fill="none" stroke="#fff" stroke-width="13" opacity=".7"/>
+    <text x="407" y="252" text-anchor="middle" class="label" font-size="16" font-weight="800">HONK!</text>
+  </g>
+
+  <g>
+    <path d="M145 340 Q125 305 146 278 Q165 255 190 275 Q205 294 192 322" fill="#f4f1e8" class="ink"/>
+    <path d="M150 278 Q132 250 147 227" fill="none" class="ink"/>
+    <path d="M180 276 Q185 244 206 231" fill="none" class="ink"/>
+    <text x="110" y="245" class="label" font-size="19" font-weight="800" transform="rotate(-12 110 245)">BIKE LANE?</text>
+  </g>
+
+  <g>
+    <path d="M640 326 q30 -35 60 0" fill="none" class="ink"/>
+    <path d="M655 326 q15 -18 30 0" fill="none" class="ink"/>
+    <text x="625" y="300" class="label" font-size="18" font-weight="800">TOTALLY LEGAL</text>
+  </g>
+
+  <rect x="24" y="548" width="752" height="34" rx="10" fill="#fff8df" stroke="#263238" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-27 15:00:01 SGT (UTC+08:00)</text>
+
+  <style>
+    #rearWheel,#frontWheel{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</svg>

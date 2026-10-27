@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle.</desc>
+  <style>
+    .ink{stroke:#252525;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#30343b;stroke:#111;stroke-width:6}
+    .spoke{stroke:#b9c2cc;stroke-width:3}
+    .label{font-family:Arial,Helvetica,sans-serif;fill:#252525}
+    .motion{animation:spin 1.2s linear infinite}
+    .bob{animation:bob .7s ease-in-out infinite alternate}
+    .pedal{animation:pedal .55s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:50% 50%}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{to{transform:translateY(-7px)}}
+    @keyframes pedal{to{transform:rotate(32deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#bde8f5"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe98a" stroke="#252525" stroke-width="5"/>
+  <path d="M0 410 Q120 355 240 410 T480 410 T800 405 V500 H0Z" fill="#8fd18b"/>
+  <path d="M0 465 Q160 420 320 465 T640 460 T800 455 V520 H0Z" fill="#6fba71"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#d43f3f">PELICAN PEDAL PANIC!</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="19" font-weight="700">“No hands, no map, no idea where this bike came from.”</text>
+
+  <!-- bicycle -->
+  <g>
+    <circle cx="245" cy="430" r="83" class="wheel"/>
+    <circle cx="570" cy="430" r="83" class="wheel"/>
+    <g class="motion" transform="translate(245 430)">
+      <path d="M0-77V77 M-77 0H77 M-54-54L54 54 M54-54L-54 54" class="spoke"/>
+    </g>
+    <g class="motion" transform="translate(570 430)">
+      <path d="M0-77V77 M-77 0H77 M-54-54L54 54 M54-54L-54 54" class="spoke"/>
+    </g>
+    <path d="M245 430 L350 300 L455 430 L245 430 M350 300 L570 430 M350 300 L330 250" fill="none" class="ink" stroke="#d43f3f"/>
+    <path d="M315 250h55" class="ink"/>
+    <path d="M455 430 L500 365" class="ink"/>
+    <circle cx="455" cy="430" r="13" fill="#f4c542" class="ink"/>
+    <path d="M455 430 l38 12 M455 430 l-20-30" class="ink pedal"/>
+    <path d="M485 442h24 M427 400h-24" class="ink"/>
+    <path d="M320 250 Q350 230 378 250" fill="none" class="ink"/>
+    <path d="M320 250 L298 220" class="ink"/>
+    <path d="M298 220h-30" class="ink"/>
+  </g>
+
+  <!-- pelican rider -->
+  <g class="bob">
+    <ellipse cx="360" cy="270" rx="65" ry="82" fill="#f5f1e6" class="ink"/>
+    <path d="M330 333 Q360 355 394 330 L405 380 Q360 405 315 380Z" fill="#e3d8c2" class="ink"/>
+    <path d="M340 207 Q375 165 430 190 Q461 203 463 239 Q463 277 420 291 Q374 302 340 272Z" fill="#f5f1e6" class="ink"/>
+    <path d="M425 224 Q510 225 578 258 Q520 298 425 270 Q398 255 425 224Z" fill="#f29b62" class="ink"/>
+    <path d="M500 250 Q548 258 579 258" fill="none" stroke="#252525" stroke-width="4"/>
+    <circle cx="426" cy="218" r="8" fill="#252525"/>
+    <path d="M365 185 Q340 146 358 122 Q380 142 389 178" fill="#f5f1e6" class="ink"/>
+    <path d="M390 182 Q405 140 433 132 Q440 160 420 193" fill="#f5f1e6" class="ink"/>
+    <path d="M335 267 Q300 292 282 324" fill="none" class="ink"/>
+    <path d="M395 270 Q430 294 454 325" fill="none" class="ink"/>
+    <path d="M282 324 L300 337 M454 325 L438 340" class="ink"/>
+    <path d="M340 337 Q358 360 368 388" fill="none" class="ink"/>
+    <path d="M405 340 Q389 363 382 390" fill="none" class="ink"/>
+    <path d="M368 388 l-18 8 M382 390 l19 7" class="ink pedal"/>
+    <path d="M332 252 Q350 266 368 252" fill="none" stroke="#252525" stroke-width="4"/>
+    <text x="364" y="300" text-anchor="middle" class="label" font-size="16" font-weight="700">HONK!</text>
+  </g>
+
+  <!-- comic accents -->
+  <path d="M112 250 l-25 -18 M105 278 l-30 -4 M120 222 l-17 -28" stroke="#d43f3f" stroke-width="6" fill="none"/>
+  <path d="M650 300 l28 -18 M660 330 l32 -3 M645 270 l18 -25" stroke="#d43f3f" stroke-width="6" fill="none"/>
+  <text x="690" y="375" text-anchor="middle" class="label" font-size="20" font-weight="800" fill="#d43f3f">QUACK?</text>
+
+  <!-- footer -->
+  <rect x="0" y="540" width="800" height="60" fill="#fff7dc" stroke="#252525" stroke-width="3"/>
+  <text x="400" y="563" text-anchor="middle" class="label" font-size="18" font-weight="700">A beak, two wheels, and absolutely no traffic plan.</text>
+  <text x="400" y="587" text-anchor="middle" class="label" font-size="15">2026-10-27 15:00:45 SGT (UTC+08:00)</text>
+</svg>
