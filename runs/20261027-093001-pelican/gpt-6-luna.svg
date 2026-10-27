@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .ink{stroke:#18212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#18212b;stroke-width:9}
+      .spoke{stroke:#557080;stroke-width:3}
+      .label{font-family:Arial,sans-serif;fill:#18212b}
+      .title{font-size:42px;font-weight:900;letter-spacing:2px}
+      .caption{font-size:20px;font-weight:700}
+      .small{font-size:15px}
+      @keyframes roll{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+      @keyframes pedal{0%,100%{transform:rotate(0deg)}50%{transform:rotate(180deg)}}
+      .rolling{animation:roll 1.4s linear infinite;transform-box:fill-box;transform-origin:center}
+      .bobbing{animation:bob .7s ease-in-out infinite}
+      .pedaling{animation:pedal .7s linear infinite;transform-box:fill-box;transform-origin:0 0}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bde8f4"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd86b" class="ink"/>
+  <path d="M0 410 Q150 350 300 410 T600 400 T800 405 V600 H0Z" fill="#8dcc72"/>
+  <path d="M0 470 Q180 430 360 470 T800 465" fill="none" stroke="#5da85a" stroke-width="9"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label title">THE GREAT PELICYCLE</text>
+  <text x="400" y="94" text-anchor="middle" class="label caption">A bird with a beak full of ambition—and absolutely no brakes.</text>
+
+  <g id="bike">
+    <circle cx="235" cy="420" r="82" class="wheel"/>
+    <circle cx="565" cy="420" r="82" class="wheel"/>
+    <g class="rolling">
+      <path d="M235 338V502 M153 420H317 M177 362L293 478 M293 362L177 478" class="spoke"/>
+    </g>
+    <g class="rolling">
+      <path d="M565 338V502 M483 420H647 M507 362L623 478 M623 362L507 478" class="spoke"/>
+    </g>
+    <path d="M235 420 L350 300 L565 420 L430 420 Z" fill="#ef5b5b" class="ink"/>
+    <path d="M350 300 L430 420 M350 300 L320 255 M565 420 L590 300" fill="none" class="ink"/>
+    <path d="M300 255 H345" class="ink"/>
+    <path d="M570 300 H625" class="ink"/>
+    <circle cx="430" cy="420" r="17" fill="#ffd86b" class="ink"/>
+    <g class="pedaling">
+      <path d="M430 420 L475 448 M430 420 L397 389" fill="none" class="ink"/>
+      <circle cx="475" cy="448" r="7" fill="#18212b"/>
+      <circle cx="397" cy="389" r="7" fill="#18212b"/>
+    </g>
+  </g>
+
+  <g class="bobbing">
+    <ellipse cx="402" cy="270" rx="98" ry="78" fill="#f7f4e8" class="ink"/>
+    <path d="M330 267 Q300 220 328 178 Q354 143 392 169 Q425 192 414 244" fill="#f7f4e8" class="ink"/>
+    <circle cx="365" cy="185" r="9" fill="#18212b"/>
+    <path d="M324 208 Q263 197 220 221 Q268 255 333 239 Q359 231 368 215Z" fill="#f3a83b" class="ink"/>
+    <path d="M330 239 Q280 254 239 239" fill="none" stroke="#c56d25" stroke-width="5"/>
+    <path d="M444 238 Q482 199 519 211 Q540 219 525 242 Q495 279 447 283" fill="#f7f4e8" class="ink"/>
+    <path d="M396 325 Q402 350 431 357" fill="none" class="ink"/>
+    <path d="M376 327 Q359 350 332 352" fill="none" class="ink"/>
+    <path d="M332 352 L310 365 M332 352 L338 371 M431 357 L454 369 M431 357 L426 376" fill="none" class="ink"/>
+    <path d="M345 170 Q375 132 412 160" fill="none" stroke="#e85d5d" stroke-width="10"/>
+    <text x="395" y="285" text-anchor="middle" class="label" font-size="18" font-weight="bold">HONK!</text>
+  </g>
+
+  <path d="M96 325 Q130 300 160 325" fill="none" stroke="#18212b" stroke-width="5"/>
+  <path d="M115 300 Q145 275 175 300" fill="none" stroke="#18212b" stroke-width="5"/>
+  <text x="400" y="550" text-anchor="middle" class="label small">2026-10-27 09:31:50 SGT (UTC+08:00)</text>
+</svg>
