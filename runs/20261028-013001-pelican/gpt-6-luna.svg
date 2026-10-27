@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon of a pelican riding a bicycle while carrying an oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#e5f7d2"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#252525"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#20252b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#20252b}
+      .wheel{transform-box:fill-box;transform-origin:center}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+      .spinning{animation:spin 1.4s linear infinite}
+      .bobbing{animation:bob .7s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#ffe78a" opacity=".9"/>
+  <path d="M0 330 Q130 265 260 325 T520 315 T800 300 V430 H0Z" fill="#8fc76f"/>
+  <path d="M0 385 Q170 330 330 385 T800 365 V450 H0Z" fill="#65a95e"/>
+  <path d="M0 435 H800 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#f6dc65" stroke-width="8" stroke-dasharray="54 34"/>
+
+  <g class="label" font-weight="900" text-anchor="middle">
+    <text x="400" y="63" font-size="36" fill="#fff" stroke="#20252b" stroke-width="10" paint-order="stroke">
+      THE PELICAN PEDAL PANIC
+    </text>
+    <text x="400" y="98" font-size="18" fill="#20252b">“He wanted a fish supper. He got a two-wheeled delivery job.”</text>
+  </g>
+
+  <g transform="translate(0 4)" filter="url(#shadow)">
+    <g>
+      <circle class="wheel spinning" cx="280" cy="425" r="67" fill="#30343a" stroke="#15181c" stroke-width="8"/>
+      <circle cx="280" cy="425" r="10" fill="#e9c34d" class="ink"/>
+      <g stroke="#aeb7bd" stroke-width="3">
+        <path d="M280 358V492M213 425H347M233 378L327 472M327 378L233 472"/>
+      </g>
+    </g>
+    <g>
+      <circle class="wheel spinning" cx="555" cy="425" r="67" fill="#30343a" stroke="#15181c" stroke-width="8"/>
+      <circle cx="555" cy="425" r="10" fill="#e9c34d" class="ink"/>
+      <g stroke="#aeb7bd" stroke-width="3">
+        <path d="M555 358V492M488 425H622M508 378L602 472M602 378L508 472"/>
+      </g>
+    </g>
+
+    <path d="M280 425 L370 315 L555 425 L420 425 Z" fill="none" class="ink"/>
+    <path d="M370 315 L420 425 M370 315 L350 276 M555 425 L575 323" fill="none" class="ink"/>
+    <path d="M336 276 H382" class="ink"/>
+    <path d="M552 323 H600" class="ink"/>
+    <circle cx="420" cy="425" r="17" fill="#e9c34d" class="ink"/>
+    <path d="M420 425 L390 451 M420 425 L448 398" class="ink"/>
+    <path d="M390 451 h-30 M448 398 h28" class="ink"/>
+
+    <g class="bobbing">
+      <ellipse cx="420" cy="286" rx="58" ry="80" fill="#f7f4e8" class="ink"/>
+      <path d="M377 249 Q420 191 466 241 Q493 271 469 313 Q431 339 388 318 Q363 291 377 249Z" fill="#f7f4e8" class="ink"/>
+      <path d="M381 247 Q405 229 431 245 Q449 259 440 274 Q414 287 387 272Z" fill="#ef8d45" class="ink"/>
+      <circle cx="428" cy="238" r="7" fill="#20252b"/>
+      <path d="M468 248 Q525 264 558 291 Q533 315 467 293Z" fill="#f2a34c" class="ink"/>
+      <path d="M479 280 Q523 293 552 292" fill="none" stroke="#20252b" stroke-width="4"/>
+      <path d="M388 318 Q420 338 451 316" fill="none" class="ink"/>
+      <path d="M397 340 L390 392 M450 339 L464 392" class="ink"/>
+      <path d="M390 392 l-20 16 M464 392 l21 14" class="ink"/>
+      <path d="M384 268 Q355 286 342 322" fill="none" class="ink"/>
+      <path d="M457 267 Q479 284 493 310" fill="none" class="ink"/>
+    </g>
+
+    <g transform="rotate(-10 512 290)">
+      <ellipse cx="520" cy="281" rx="51" ry="25" fill="#ff9d3f" class="ink"/>
+      <path d="M475 281 Q520 246 568 281 Q520 309 475 281Z" fill="#ffd05a" class="ink"/>
+      <circle cx="551" cy="273" r="4" fill="#20252b"/>
+      <path d="M568 281 l25 8 l-24 9" fill="#f17838" class="ink"/>
+      <path d="M500 292 Q522 301 543 292" fill="none" stroke="#20252b" stroke-width="3"/>
+    </g>
+  </g>
+
+  <g class="label">
+    <path d="M90 180 Q120 145 170 170" fill="none" stroke="#20252b" stroke-width="4"/>
+    <text x="88" y="155" font-size="19" font-weight="700">“No wings today—</text>
+    <text x="88" y="178" font-size="19" font-weight="700">I’m in a hurry!”</text>
+  </g>
+
+  <rect x="32" y="548" width="736" height="38" rx="10" fill="#fff8d8" stroke="#20252b" stroke-width="3"/>
+  <text x="400" y="573" class="label" text-anchor="middle" font-size="16" font-weight="700">
+    2026-10-28 01:32:04 SGT (UTC+08:00)
+  </text>
+</svg>

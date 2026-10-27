@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly delivering one fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bde9ff"/>
+      <stop offset="1" stop-color="#f9f0c8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#5b4b3a" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink{stroke:#27323a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#27323a}
+      .bold{font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 390 Q130 335 270 382 T540 370 T800 385 V515 H0Z" fill="#b9d88c"/>
+  <path d="M0 465 Q170 420 340 458 T800 445 V530 H0Z" fill="#8ec46d"/>
+  <path d="M0 515 H800" stroke="#5c8e55" stroke-width="7"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label bold" font-size="38">THE PELICAN PEDAL EXPRESS</text>
+  <text x="400" y="95" text-anchor="middle" class="label" font-size="20">“Why fly when you can make traffic worse?”</text>
+
+  <g filter="url(#shadow)">
+    <!-- bicycle -->
+    <g id="bike">
+      <circle cx="250" cy="405" r="73" fill="none" class="ink"/>
+      <circle cx="570" cy="405" r="73" fill="none" class="ink"/>
+      <g stroke="#60717a" stroke-width="3">
+        <path d="M250 405 L250 332 M250 405 L180 430 M250 405 L320 430 M250 405 L207 372 M250 405 L293 372"/>
+        <path d="M570 405 L570 332 M570 405 L500 430 M570 405 L640 430 M570 405 L527 372 M570 405 L613 372"/>
+      </g>
+      <path d="M250 405 L355 405 L455 335 L570 405 L455 405 L355 405 L305 335 L250 405" fill="none" class="ink"/>
+      <path d="M455 335 L470 300 L500 300" fill="none" class="ink"/>
+      <path d="M305 335 L286 305 L255 305" fill="none" class="ink"/>
+      <path d="M286 305 L270 292" fill="none" class="ink"/>
+      <path d="M470 300 L492 282" fill="none" class="ink"/>
+      <path d="M348 405 L370 430" fill="none" class="ink"/>
+      <path d="M348 405 L326 382" fill="none" class="ink"/>
+      <g id="crank" transform="translate(348 405)">
+        <circle r="13" fill="#f5b544" class="ink"/>
+        <path d="M0 0 L28 18 M0 0 L-25 -19" class="ink"/>
+        <rect x="24" y="14" width="18" height="7" rx="3" fill="#27323a"/>
+        <rect x="-42" y="-24" width="18" height="7" rx="3" fill="#27323a"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 250 405" to="360 250 405" dur="2.2s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 570 405" to="360 570 405" dur="2.2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- pelican -->
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.4s" repeatCount="indefinite"/>
+      <ellipse cx="408" cy="244" rx="82" ry="92" fill="#f4f1e7" class="ink"/>
+      <path d="M356 214 Q320 158 350 120 Q400 82 452 121 Q475 147 457 191" fill="#f4f1e7" class="ink"/>
+      <path d="M356 159 Q319 130 282 155 Q269 170 286 183 Q326 188 360 178" fill="#f2a54a" class="ink"/>
+      <path d="M285 172 Q338 184 380 174 Q405 168 430 178 Q394 212 335 202 Q302 195 285 172" fill="#f6b653" class="ink"/>
+      <circle cx="406" cy="142" r="9" fill="#27323a"/>
+      <path d="M429 185 Q461 203 470 240" fill="none" class="ink"/>
+      <path d="M379 225 Q350 257 360 311" fill="none" class="ink"/>
+      <path d="M436 226 Q468 255 456 311" fill="none" class="ink"/>
+      <path d="M360 309 Q383 321 403 310" fill="none" class="ink"/>
+      <path d="M456 309 Q477 320 493 307" fill="none" class="ink"/>
+      <path d="M356 247 Q323 270 311 307" fill="none" class="ink"/>
+      <path d="M459 247 Q493 270 506 304" fill="none" class="ink"/>
+      <path d="M309 307 L326 321 M309 307 L296 323" class="ink"/>
+      <path d="M506 304 L523 317 M506 304 L494 320" class="ink"/>
+      <!-- fish parcel -->
+      <path d="M374 274 Q407 252 441 274 L441 315 Q407 332 374 315Z" fill="#d95d4f" class="ink"/>
+      <path d="M374 274 L441 274" class="ink"/>
+      <text x="407" y="301" text-anchor="middle" font-family="Arial" font-size="16" font-weight="800" fill="#fff">FISH</text>
+      <path d="M436 287 Q468 274 493 288" fill="none" class="ink"/>
+    </g>
+  </g>
+
+  <g>
+    <path d="M83 184 Q112 158 144 178" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M107 204 Q137 180 169 201" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    <text x="93" y="250" class="label bold" font-size="22">NO WINGS?</text>
+    <text x="93" y="276" class="label" font-size="20">NO PROBLEM.</text>
+  </g>
+
+  <g>
+    <path d="M600 170 Q655 130 717 167" fill="none" stroke="#27323a" stroke-width="4"/>
+    <text x="658" y="145" text-anchor="middle" class="label bold" font-size="18">CITY COUNCIL</text>
+    <text x="658" y="165" text-anchor="middle" class="label" font-size="17">APPROVED ONE LANE</text>
+  </g>
+
+  <rect x="34" y="535" width="732" height="47" rx="12" fill="#fff9e8" stroke="#27323a" stroke-width="3"/>
+  <text x="400" y="565" text-anchor="middle" class="label" font-size="17">2026-10-28 01:31:05 SGT (UTC+08:00)</text>
+</svg>

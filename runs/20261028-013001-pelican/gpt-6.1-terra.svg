@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while trying to deliver an enormous fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#eaf8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69727c"/>
+      <stop offset="1" stop-color="#353b43"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink { stroke:#222936; stroke-width:7; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#222936; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2s linear infinite; }
+      .ride { animation:bob .7s ease-in-out infinite alternate; transform-box:fill-box; transform-origin:center bottom; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0) rotate(-1deg); } to { transform:translateY(-7px) rotate(1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="92" cy="108" r="48" fill="#fff7b0" opacity=".9"/>
+  <path d="M0 335 Q120 285 240 330 T480 325 T800 315 V430 H0Z" fill="#8bc47b"/>
+  <path d="M0 405 Q170 365 330 405 T650 395 T800 390 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 484 Q170 448 340 484 T680 470 T800 475" fill="none" stroke="#e9d77d" stroke-width="9" stroke-dasharray="34 24"/>
+
+  <g class="label" filter="url(#shadow)">
+    <rect x="70" y="35" width="660" height="82" rx="18" fill="#fff" stroke="#222936" stroke-width="6"/>
+    <text x="400" y="73" text-anchor="middle" font-size="34" font-weight="900">PELICAN PEDAL PANIC</text>
+    <text x="400" y="101" text-anchor="middle" font-size="17" font-weight="700">“Delivering fish… one wobbly revolution at a time.”</text>
+  </g>
+
+  <g class="ride">
+    <!-- bicycle frame -->
+    <g fill="none" class="ink">
+      <path d="M235 438 L325 438 L385 330 L235 438 L290 330 L385 330 L450 438"/>
+      <path d="M290 330 L270 305"/>
+      <path d="M375 330 L405 303"/>
+      <path d="M402 300 L430 300"/>
+      <path d="M325 438 L350 382"/>
+    </g>
+
+    <!-- rotating wheels -->
+    <g class="wheel">
+      <circle cx="235" cy="438" r="62" fill="#202832" class="ink"/>
+      <circle cx="235" cy="438" r="48" fill="#d8e2e8" stroke="#222936" stroke-width="5"/>
+      <path d="M235 390 V486 M187 438 H283 M201 404 L269 472 M269 404 L201 472" stroke="#687581" stroke-width="4"/>
+      <circle cx="235" cy="438" r="8" fill="#222936"/>
+    </g>
+    <g class="wheel">
+      <circle cx="450" cy="438" r="62" fill="#202832" class="ink"/>
+      <circle cx="450" cy="438" r="48" fill="#d8e2e8" stroke="#222936" stroke-width="5"/>
+      <path d="M450 390 V486 M402 438 H498 M416 404 L484 472 M484 404 L416 472" stroke="#687581" stroke-width="4"/>
+      <circle cx="450" cy="438" r="8" fill="#222936"/>
+    </g>
+
+    <!-- crank and pedals -->
+    <g class="ink" fill="none">
+      <circle cx="325" cy="438" r="15" fill="#f4c542"/>
+      <path d="M325 438 L348 420 M344 416 H361"/>
+      <path d="M325 438 L303 455 M287 459 H304"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="330" cy="275" rx="82" ry="92" fill="#f5f1df" class="ink"/>
+    <path d="M270 273 Q328 223 391 270 Q373 315 327 329 Q285 315 270 273Z" fill="#d7e5ea" class="ink"/>
+    <path d="M303 255 Q330 232 356 255" fill="none" stroke="#7aa6b6" stroke-width="8"/>
+    <path d="M291 331 Q327 352 368 330 L375 369 Q328 388 282 367Z" fill="#e9c24c" class="ink"/>
+
+    <!-- pelican head and beak -->
+    <circle cx="340" cy="188" r="61" fill="#f8f2df" class="ink"/>
+    <path d="M299 196 Q254 214 208 196 Q250 168 310 169 Q339 170 363 188 Q331 206 299 196Z" fill="#f2a73b" class="ink"/>
+    <path d="M208 196 Q256 204 299 196" fill="none" stroke="#d47e24" stroke-width="5"/>
+    <circle cx="355" cy="174" r="10" fill="#222936"/>
+    <circle cx="358" cy="170" r="3.5" fill="#fff"/>
+    <path d="M377 190 Q397 203 387 224" fill="none" class="ink"/>
+
+    <!-- wings -->
+    <path d="M286 252 Q245 264 246 322 Q275 338 306 300Z" fill="#b9d2dc" class="ink"/>
+    <path d="M371 249 Q414 261 413 320 Q385 337 355 298Z" fill="#b9d2dc" class="ink"/>
+
+    <!-- feet pedaling -->
+    <g fill="#f2a73b" class="ink">
+      <path d="M306 357 Q286 381 298 406 L325 419 L339 407 L316 391 L328 367Z"/>
+      <path d="M363 357 Q386 380 374 405 L348 419 L334 407 L357 391 L344 367Z"/>
+    </g>
+
+    <!-- enormous fish cargo -->
+    <g transform="translate(470 205) rotate(-8)">
+      <path d="M0 47 Q55 0 143 39 Q177 54 194 85 Q168 111 128 118 Q50 130 0 78 Q-17 63 0 47Z" fill="#e58b65" class="ink"/>
+      <path d="M193 85 L228 53 L226 112Z" fill="#e58b65" class="ink"/>
+      <circle cx="35" cy="58" r="8" fill="#222936"/>
+      <path d="M71 28 Q88 49 106 29" fill="none" class="ink"/>
+      <path d="M73 106 Q101 89 126 105" fill="none" stroke="#a65348" stroke-width="6"/>
+      <path d="M8 78 Q-22 93 -35 116 Q8 117 34 99" fill="#f2a73b" class="ink"/>
+      <text x="87" y="74" text-anchor="middle" font-size="18" font-weight="900" class="label">URGENT!</text>
+    </g>
+
+    <!-- speech bubble -->
+    <g class="label">
+      <path d="M548 145 Q640 105 719 151 Q755 173 726 211 Q695 240 601 220 L567 245 L574 211 Q531 191 548 145Z" fill="#fff" class="ink"/>
+      <text x="643" y="173" text-anchor="middle" font-size="20" font-weight="900">I regret choosing</text>
+      <text x="643" y="198" text-anchor="middle" font-size="20" font-weight="900">“fast delivery”!</text>
+    </g>
+  </g>
+
+  <g class="label">
+    <rect x="42" y="540" width="716" height="42" rx="10" fill="#fff" stroke="#222936" stroke-width="4"/>
+    <text x="400" y="567" text-anchor="middle" font-size="16" font-weight="700">2026-10-28 01:33:00 SGT (UTC+08:00)</text>
+  </g>
+</svg>
