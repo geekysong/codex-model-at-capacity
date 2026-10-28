@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Power Pedal</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle.</desc>
+  <style>
+    .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#17324d}
+    .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.6s linear infinite}
+    .rider{animation:bob .8s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center bottom}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{to{transform:translateY(-6px) rotate(-1deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#d9f4ff"/>
+  <rect y="470" width="800" height="130" fill="#f7d98b"/>
+  <path d="M0 470 Q150 445 300 470 T600 470 T800 470" fill="none" stroke="#b78345" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN POWER PEDAL</text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="20" font-weight="700">“Why fly when you can commute dramatically?”</text>
+
+  <g class="rider">
+    <!-- bicycle frame -->
+    <path d="M245 430 L335 320 L430 430 L245 430 L375 430 L335 320" fill="none" class="ink" stroke="#e34b36"/>
+    <path d="M430 430 L485 320 L535 430" fill="none" class="ink" stroke="#e34b36"/>
+    <path d="M485 320 L520 300" fill="none" class="ink"/>
+    <path d="M315 320 L285 292" fill="none" class="ink"/>
+    <path d="M275 290 L320 290" fill="none" class="ink"/>
+    <path d="M505 299 L545 299" fill="none" class="ink"/>
+    <circle cx="375" cy="430" r="18" fill="#ffd34e" class="ink"/>
+    <path d="M375 430 L350 392 M375 430 L405 460" class="ink" fill="none"/>
+    <path d="M345 390 L325 382 M405 460 L428 470" class="ink" fill="none"/>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="245" cy="430" r="78" fill="#f8fbff" class="ink"/>
+      <path d="M245 352V508 M167 430H323 M190 375L300 485 M300 375L190 485" fill="none" stroke="#6b91a8" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="535" cy="430" r="78" fill="#f8fbff" class="ink"/>
+      <path d="M535 352V508 M457 430H613 M480 375L590 485 M590 375L480 485" fill="none" stroke="#6b91a8" stroke-width="3"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="395" cy="245" rx="88" ry="105" fill="#fffdf4" class="ink"/>
+    <path d="M350 207 Q300 175 285 126 Q340 139 382 177" fill="#e8eef2" class="ink"/>
+    <path d="M350 205 Q295 190 255 207 Q292 235 352 230" fill="#f6a43a" class="ink"/>
+    <path d="M255 207 Q285 220 350 230" fill="none" stroke="#c75a2c" stroke-width="4"/>
+    <circle cx="391" cy="171" r="11" fill="#17324d"/>
+    <path d="M420 255 Q465 285 470 340" fill="none" class="ink"/>
+    <path d="M370 330 Q390 350 420 348" fill="none" class="ink"/>
+    <path d="M410 120 Q430 88 462 106" fill="none" class="ink"/>
+    <path d="M445 105 Q457 83 475 92" fill="none" class="ink"/>
+    <path d="M430 276 Q472 250 498 273 Q465 300 430 300" fill="#e8eef2" class="ink"/>
+
+    <!-- wing and absurd tie -->
+    <path d="M385 225 Q430 210 450 260 Q420 250 395 275" fill="#dfe8ed" class="ink"/>
+    <path d="M402 205 L420 270 L404 300 L389 270 Z" fill="#e34b36" class="ink"/>
+    <path d="M404 300 L395 322 L386 300" fill="#e34b36" class="ink"/>
+
+    <!-- legs -->
+    <path d="M365 325 L350 385 L325 400" fill="none" class="ink"/>
+    <path d="M425 325 L440 385 L465 400" fill="none" class="ink"/>
+    <path d="M317 400 L340 405 M458 400 L480 405" class="ink" fill="none"/>
+  </g>
+
+  <g transform="translate(625 150)">
+    <path d="M0 60 Q35 30 70 60" fill="none" stroke="#7bb7c9" stroke-width="8"/>
+    <path d="M10 80 Q45 50 80 80" fill="none" stroke="#7bb7c9" stroke-width="8"/>
+    <text x="40" y="118" text-anchor="middle" class="label" font-size="18" font-weight="700">HONK!</text>
+  </g>
+
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="18" font-weight="700">Pelican transit: all beak, no brakes.</text>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="16">2026-10-29 01:32:36 SGT (UTC+08:00)</text>
+</svg>

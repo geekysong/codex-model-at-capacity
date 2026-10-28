@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican pedals a bicycle while proudly claiming it is commuting sustainably.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f8"/>
+      <stop offset="1" stop-color="#e7f7ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555c68"/>
+      <stop offset="1" stop-color="#303640"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#18202b" flood-opacity=".35"/>
+    </filter>
+    <g id="wheel">
+      <circle r="66" fill="#1c2430" stroke="#111820" stroke-width="7"/>
+      <circle r="55" fill="none" stroke="#d9edf4" stroke-width="3"/>
+      <g stroke="#d9edf4" stroke-width="3">
+        <line y2="-55"/><line y2="55"/><line x2="-55"/><line x2="55"/>
+        <line x1="-39" y1="-39" x2="39" y2="39"/>
+        <line x1="-39" y1="39" x2="39" y2="-39"/>
+      </g>
+      <circle r="8" fill="#ffcc45" stroke="#141a22" stroke-width="3"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="105" cy="105" r="42" fill="#fff5a6" opacity=".9"/>
+  <g fill="#ffffff" opacity=".8">
+    <path d="M170 125c15-28 58-27 68 3 33-16 74 7 70 39H145c-6-19 6-35 25-42z"/>
+    <path d="M580 105c11-22 45-24 56 3 27-13 60 7 57 33H560c-5-16 3-29 20-36z"/>
+  </g>
+
+  <path d="M0 382 Q140 330 285 373 T565 365 T800 350 V475 H0Z" fill="#8bcf74"/>
+  <path d="M0 425 Q185 387 360 420 T800 402 V520 H0Z" fill="#5a9b58"/>
+  <path d="M0 470 H800 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 520 H800" stroke="#f7d76a" stroke-width="7" stroke-dasharray="50 28"/>
+
+  <g transform="translate(400 245)" filter="url(#shadow)">
+    <rect x="-210" y="-205" width="420" height="86" rx="22" fill="#fff8dc" stroke="#26313b" stroke-width="6"/>
+    <text x="0" y="-161" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#d94f3d">PELICAN POWER!</text>
+    <text x="0" y="-132" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#26313b">“Because traffic is for people with smaller beaks.”</text>
+
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="47" rx="104" ry="115" fill="#f4f1df" stroke="#26313b" stroke-width="7"/>
+      <path d="M-76 10 Q-135 53-91 126 Q-35 102-22 54Z" fill="#d6d5ca" stroke="#26313b" stroke-width="6"/>
+      <path d="M-39 13 Q-6-20 45 12 L71 78 Q35 99-9 75Z" fill="#f9f7e9" stroke="#26313b" stroke-width="6"/>
+      <circle cx="-12" cy="-9" r="15" fill="#fff" stroke="#26313b" stroke-width="5"/>
+      <circle cx="-8" cy="-7" r="6" fill="#26313b"/>
+      <path d="M-18 9 Q-79 31-174 10 Q-202 3-181-19 Q-101-35-19-25 Q14-20 20-3 Q17 8-18 9Z" fill="#ef9b45" stroke="#26313b" stroke-width="7"/>
+      <path d="M-171 5 Q-129 24-91 17" fill="none" stroke="#c36c2d" stroke-width="5"/>
+      <path d="M-65 143 Q-30 163 2 145" fill="none" stroke="#26313b" stroke-width="7" stroke-linecap="round"/>
+      <path d="M-45 150 L-76 205" stroke="#e89a42" stroke-width="10" stroke-linecap="round"/>
+      <path d="M35 145 L71 201" stroke="#e89a42" stroke-width="10" stroke-linecap="round"/>
+      <path d="M-91 207 Q-62 194-39 211" fill="none" stroke="#26313b" stroke-width="8" stroke-linecap="round"/>
+      <path d="M52 204 Q79 190 101 209" fill="none" stroke="#26313b" stroke-width="8" stroke-linecap="round"/>
+
+      <g transform="translate(0 245)">
+        <use href="#wheel" x="-128"/>
+        <use href="#wheel" x="128"/>
+        <path d="M-128 0 L-40-72 L128 0 L-40 0 Z" fill="none" stroke="#e84f45" stroke-width="8" stroke-linejoin="round"/>
+        <path d="M-40-72 L-20-123 M-20-123 L18-123 M-40 0 L-30 36" fill="none" stroke="#e84f45" stroke-width="8" stroke-linecap="round"/>
+        <path d="M18-123 L43-142" stroke="#26313b" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="-40" cy="0" r="13" fill="#ffcc45" stroke="#26313b" stroke-width="4"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0 -40 0" to="360 -40 0" dur="1.2s" repeatCount="indefinite"/>
+          <path d="M-40 0 L-8 22 M-40 0 L-69-25" stroke="#26313b" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="-8" cy="22" r="7" fill="#ffcc45" stroke="#26313b" stroke-width="3"/>
+          <circle cx="-69" cy="-25" r="7" fill="#ffcc45" stroke="#26313b" stroke-width="3"/>
+        </g>
+        <path d="M-40-72 L-64-96" stroke="#26313b" stroke-width="7" stroke-linecap="round"/>
+        <path d="M-75-96 L-49-96" stroke="#26313b" stroke-width="7" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(620 350)">
+    <path d="M0 0 Q32-42 64 0" fill="none" stroke="#26313b" stroke-width="6"/>
+    <text x="32" y="-55" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#26313b">HONK!</text>
+    <text x="32" y="-32" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#26313b">Move, commuters!</text>
+  </g>
+
+  <rect x="18" y="548" width="764" height="38" rx="10" fill="#16202a" opacity=".94"/>
+  <text x="400" y="573" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">2026-10-29 01:33:32 SGT (UTC+08:00)</text>
+</svg>
