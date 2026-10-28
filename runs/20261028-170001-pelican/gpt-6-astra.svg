@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an absurdly oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9edcff"/>
+      <stop offset="1" stop-color="#e8f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#707781"/>
+      <stop offset="1" stop-color="#3f454d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#263238" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink { stroke:#24323a; stroke-width:6; stroke-linejoin:round; stroke-linecap:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#24323a; }
+      .wheel { fill:none; stroke:#202a30; stroke-width:9; }
+      .spoke { stroke:#65727b; stroke-width:3; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd96a" opacity=".9"/>
+  <path d="M0 300 Q130 250 260 300 T520 295 T800 285 L800 390 L0 390Z" fill="#82b96e"/>
+  <path d="M0 350 Q160 325 300 355 T580 345 T800 335 L800 410 L0 410Z" fill="#5e995c"/>
+  <path d="M0 405 L800 405 L800 600 L0 600Z" fill="url(#road)"/>
+  <path d="M0 477 Q200 455 400 480 T800 470" fill="none" stroke="#c9d1d5" stroke-width="7" stroke-dasharray="28 22" opacity=".9"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="34" font-weight="900" fill="#173642">
+    THE PELICAN PEDAL EXPRESS
+  </text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="18" font-weight="700">
+    “Because traffic laws never said anything about beaks.”
+  </text>
+
+  <g id="bike" filter="url(#shadow)">
+    <g id="rearWheel">
+      <circle class="wheel" cx="245" cy="430" r="74"/>
+      <g class="spoke">
+        <path d="M245 356V504 M171 430H319 M193 378L297 482 M297 378L193 482"/>
+      </g>
+      <circle cx="245" cy="430" r="10" fill="#ef6c4d" class="ink"/>
+    </g>
+    <g id="frontWheel">
+      <circle class="wheel" cx="575" cy="430" r="74"/>
+      <g class="spoke">
+        <path d="M575 356V504 M501 430H649 M523 378L627 482 M627 378L523 482"/>
+      </g>
+      <circle cx="575" cy="430" r="10" fill="#ef6c4d" class="ink"/>
+    </g>
+    <path d="M245 430 L355 342 L445 430 L575 430 L445 430 L390 342 L355 342" fill="none" stroke="#e85d3f" stroke-width="10"/>
+    <path d="M390 342 L420 300" fill="none" stroke="#24323a" stroke-width="8"/>
+    <path d="M405 300 Q430 286 456 300" fill="none" stroke="#24323a" stroke-width="8"/>
+    <path d="M445 430 L423 470 M445 430 L467 470" fill="none" stroke="#24323a" stroke-width="7"/>
+    <ellipse cx="422" cy="475" rx="25" ry="8" fill="#f2c14e" class="ink"/>
+    <ellipse cx="468" cy="475" rx="25" ry="8" fill="#f2c14e" class="ink"/>
+    <path d="M575 430 L575 327 M575 327 L600 300" fill="none" stroke="#24323a" stroke-width="7"/>
+    <path d="M592 298 Q620 288 640 301" fill="none" stroke="#24323a" stroke-width="8"/>
+  </g>
+
+  <g id="pelican" class="ink">
+    <g id="bodyBob">
+      <path d="M349 308 Q330 235 381 184 Q432 142 491 181 Q530 207 520 272 Q511 324 453 338 Q395 350 349 308Z" fill="#f4f1e7"/>
+      <path d="M390 184 Q397 126 452 130 Q507 135 512 194 Q478 176 446 190Z" fill="#f4f1e7"/>
+      <path d="M441 158 Q457 135 484 150 Q502 162 498 185" fill="#f28a53"/>
+      <path d="M489 190 Q544 193 604 225 Q623 237 604 252 Q541 266 485 238Z" fill="#f28a53"/>
+      <path d="M493 221 Q548 231 596 242" fill="none" stroke="#9f4f3b" stroke-width="4"/>
+      <circle cx="474" cy="171" r="8" fill="#24323a" stroke="none"/>
+      <circle cx="477" cy="168" r="3" fill="#fff" stroke="none"/>
+      <path d="M388 225 Q356 242 350 278 Q376 267 402 250Z" fill="#d8e0df"/>
+      <path d="M395 300 Q372 345 375 382" fill="none" stroke="#24323a" stroke-width="9"/>
+      <path d="M464 307 Q482 350 468 382" fill="none" stroke="#24323a" stroke-width="9"/>
+      <path d="M365 382 Q378 390 394 382 M457 382 Q473 390 486 382" fill="none" stroke="#f2c14e" stroke-width="11"/>
+      <path d="M352 232 Q317 213 306 183" fill="none" stroke="#24323a" stroke-width="10"/>
+      <path d="M306 183 Q294 174 302 163" fill="none" stroke="#f28a53" stroke-width="13"/>
+      <path d="M505 265 Q535 292 548 318" fill="none" stroke="#24323a" stroke-width="9"/>
+      <path d="M548 318 Q530 328 514 320" fill="none" stroke="#f28a53" stroke-width="12"/>
+      <path d="M385 265 Q411 278 441 265" fill="none" stroke="#c7d0d0" stroke-width="7"/>
+      <path d="M401 207 Q426 220 450 207" fill="none" stroke="#c7d0d0" stroke-width="6"/>
+    </g>
+    <g id="fish" transform="translate(535 202) rotate(10)">
+      <path d="M0 20 Q47 -17 106 20 Q47 57 0 20Z" fill="#68b8c4"/>
+      <path d="M105 20 L130 2 L126 38Z" fill="#68b8c4"/>
+      <circle cx="22" cy="17" r="5" fill="#24323a" stroke="none"/>
+      <path d="M40 11 Q57 20 40 29" fill="none" stroke="#2d7682" stroke-width="4"/>
+      <text x="39" y="82" text-anchor="middle" class="label" font-size="15" font-weight="800" transform="rotate(-10)">EMERGENCY LUNCH</text>
+    </g>
+  </g>
+
+  <g transform="translate(0 0)">
+    <path d="M128 185 Q152 165 177 185" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M155 165 Q180 145 205 165" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g class="label">
+    <rect x="48" y="120" width="214" height="72" rx="16" fill="#fff8d7" stroke="#24323a" stroke-width="5"/>
+    <text x="155" y="149" text-anchor="middle" font-size="17" font-weight="800">PELICAN CEO:</text>
+    <text x="155" y="174" text-anchor="middle" font-size="16">“I bill by the beak!”</text>
+    <path d="M230 190 L315 218" fill="none" stroke="#24323a" stroke-width="4"/>
+  </g>
+
+  <text x="400" y="555" text-anchor="middle" class="label" font-size="17" font-weight="700">
+    A feathered commuter pedals boldly into peak fish-hour.
+  </text>
+  <text x="400" y="584" text-anchor="middle" class="label" font-size="15" font-weight="700">
+    2026-10-28 17:00:01 SGT (UTC+08:00)
+  </text>
+
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 245 430" to="360 245 430" dur="2s" repeatCount="indefinite"/>
+    <use href="#rearWheel" opacity="0"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 575 430" to="360 575 430" dur="2s" repeatCount="indefinite"/>
+    <use href="#frontWheel" opacity="0"/>
+  </g>
+  <style>
+    #rearWheel, #frontWheel { animation: spin 2s linear infinite; transform-box: fill-box; }
+    #rearWheel { transform-origin: 245px 430px; }
+    #frontWheel { transform-origin: 575px 430px; }
+    #bodyBob { animation: bob .8s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-7px); } }
+  </style>
+</svg>
