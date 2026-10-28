@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while fishing for applause.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe4ff"/>
+      <stop offset="1" stop-color="#fff3c4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#252338;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;font-weight:700;fill:#252338}
+      .small{font-family:Arial,sans-serif;font-size:16px;font-weight:700;fill:#252338}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 430 Q130 370 260 430 T520 425 T800 420 V600 H0Z" fill="#78c778"/>
+  <path d="M0 470 Q180 420 350 470 T800 465 V600 H0Z" fill="#4f9d5b"/>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="28" width="716" height="78" rx="20" fill="#fff8df" class="ink"/>
+    <text x="400" y="78" text-anchor="middle" font-size="42" class="label">PELICAN PEDAL PANIC</text>
+  </g>
+  <text x="400" y="132" text-anchor="middle" font-size="21" class="label">“Why fly when you can make traffic flap?”</text>
+
+  <g transform="translate(0 8)">
+    <g id="bike">
+      <circle cx="275" cy="420" r="78" fill="#eef7ff" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 275 420" to="360 275 420" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="560" cy="420" r="78" fill="#eef7ff" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 560 420" to="360 560 420" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <g stroke="#7d9bb5" stroke-width="3">
+        <path d="M275 342V498M197 420H353M220 365L330 475M330 365L220 475"/>
+        <path d="M560 342V498M482 420H638M505 365L615 475M615 365L505 475"/>
+      </g>
+      <path d="M275 420 L365 330 L470 420 L560 420 L455 330 L365 330 L275 420 M470 420 L455 330" fill="none" class="ink"/>
+      <path d="M350 328 L320 292" fill="none" class="ink"/>
+      <path d="M307 287 L350 287" fill="none" class="ink"/>
+      <path d="M446 327 L470 292 L500 292" fill="none" class="ink"/>
+      <circle cx="410" cy="408" r="13" fill="#ffcf3d" class="ink"/>
+      <path d="M410 408 L370 445 M410 408 L450 445" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" values="0 410 408;360 410 408" dur="1.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="410" cy="250" rx="82" ry="104" fill="#f7f4e8" class="ink"/>
+      <path d="M360 205 Q320 150 345 107 Q385 126 410 174" fill="#d9e6ea" class="ink"/>
+      <ellipse cx="414" cy="140" rx="62" ry="58" fill="#fffdf1" class="ink"/>
+      <path d="M448 150 Q520 155 586 191 Q530 221 449 196 Q423 185 448 150Z" fill="#f0a84b" class="ink"/>
+      <path d="M451 182 Q515 190 568 197" fill="none" stroke="#c66e2a" stroke-width="5"/>
+      <circle cx="435" cy="132" r="10" fill="#252338"/>
+      <circle cx="438" cy="128" r="3" fill="#fff"/>
+      <path d="M375 236 Q340 280 365 317" fill="none" class="ink"/>
+      <path d="M448 236 Q485 273 470 319" fill="none" class="ink"/>
+      <path d="M365 315 L350 357 M470 318 L490 357" fill="none" class="ink"/>
+      <path d="M337 357 Q350 370 365 357 M475 357 Q490 370 505 357" fill="none" class="ink"/>
+      <path d="M366 211 Q410 232 458 210" fill="none" stroke="#d4b25b" stroke-width="8"/>
+      <text x="415" y="278" text-anchor="middle" font-size="18" class="label">HONK!</text>
+    </g>
+  </g>
+
+  <g transform="translate(610 210)">
+    <path d="M0 55 Q45 10 92 55" fill="none" stroke="#fff" stroke-width="8"/>
+    <text x="45" y="88" text-anchor="middle" class="small">COMMUTE OF THE SPECIES</text>
+  </g>
+
+  <rect x="34" y="548" width="732" height="34" rx="10" fill="#fff8df" class="ink"/>
+  <text x="400" y="571" text-anchor="middle" font-size="16" class="label">2026-10-28 23:01:16 SGT (UTC+08:00)</text>
+</svg>
