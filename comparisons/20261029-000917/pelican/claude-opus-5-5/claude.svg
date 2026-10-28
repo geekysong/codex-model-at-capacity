@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#fff3d6"/>
+    </linearGradient>
+    <g id="wheel">
+      <circle r="68" fill="none" stroke="#222" stroke-width="9"/>
+      <circle r="62" fill="none" stroke="#999" stroke-width="2"/>
+      <g stroke="#555" stroke-width="2">
+        <line x1="-62" y1="0" x2="62" y2="0"/>
+        <line x1="0" y1="-62" x2="0" y2="62"/>
+        <line x1="-44" y1="-44" x2="44" y2="44"/>
+        <line x1="-44" y1="44" x2="44" y2="-44"/>
+        <line x1="-24" y1="-57" x2="24" y2="57"/>
+        <line x1="-57" y1="24" x2="57" y2="-24"/>
+      </g>
+      <circle r="7" fill="#333"/>
+      <circle cx="0" cy="-62" r="4" fill="#e63946"/>
+    </g>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="700" cy="150" r="40" fill="#ffd166"/>
+
+  <!-- Clouds -->
+  <g fill="#fff" opacity="0.9">
+    <g>
+      <ellipse cx="120" cy="150" rx="50" ry="18"/>
+      <ellipse cx="150" cy="138" rx="30" ry="18"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -40 0; 0 0" dur="12s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <ellipse cx="560" cy="120" rx="45" ry="15"/>
+      <ellipse cx="585" cy="110" rx="25" ry="15"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -30 0; 0 0" dur="9s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Title & caption -->
+  <text x="400" y="52" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="40" font-weight="bold" fill="#1d3557" stroke="#fff" stroke-width="1.5">THE PELICAN TOUR DE FRANCE</text>
+  <text x="400" y="86" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="19" fill="#333">“Aerodynamic? No. But I brought lunch, and it's in my face.”</text>
+
+  <!-- Hills -->
+  <path d="M0 420 Q150 360 300 410 T600 400 T800 390 L800 505 L0 505 Z" fill="#8ac926"/>
+
+  <!-- Sign -->
+  <g>
+    <rect x="683" y="330" width="8" height="175" fill="#6b4f2a"/>
+    <rect x="622" y="290" width="130" height="58" rx="6" fill="#2a9d8f" stroke="#fff" stroke-width="3"/>
+    <text x="687" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#fff">BIKE LANE</text>
+    <text x="687" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#fff">NO FISH CARGO</text>
+  </g>
+
+  <!-- Road -->
+  <rect x="0" y="505" width="800" height="55" fill="#555"/>
+  <line x1="0" y1="533" x2="800" y2="533" stroke="#fff" stroke-width="5" stroke-dasharray="40 30">
+    <animate attributeName="stroke-dashoffset" from="0" to="70" dur="0.6s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Speed lines -->
+  <g stroke="#1d3557" stroke-width="4" stroke-linecap="round" opacity="0.6">
+    <line x1="140" y1="360" x2="200" y2="360"><animate attributeName="x1" values="140;110;140" dur="0.5s" repeatCount="indefinite"/></line>
+    <line x1="120" y1="400" x2="200" y2="400"><animate attributeName="x1" values="120;150;120" dur="0.5s" repeatCount="indefinite"/></line>
+    <line x1="150" y1="440" x2="205" y2="440"><animate attributeName="x1" values="150;120;150" dur="0.5s" repeatCount="indefinite"/></line>
+  </g>
+
+  <!-- Shadow -->
+  <ellipse cx="400" cy="512" rx="170" ry="8" fill="#000" opacity="0.25"/>
+
+  <!-- Wheels -->
+  <g transform="translate(290 440)">
+    <use href="#wheel">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.8s" repeatCount="indefinite"/>
+    </use>
+  </g>
+  <g transform="translate(510 440)">
+    <use href="#wheel">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.8s" repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <!-- Frame -->
+  <g stroke="#e63946" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="390" y1="440" x2="290" y2="440"/>
+    <line x1="368" y1="362" x2="290" y2="440"/>
+    <line x1="390" y1="440" x2="368" y2="362"/>
+    <line x1="368" y1="362" x2="485" y2="355"/>
+    <line x1="390" y1="440" x2="487" y2="368"/>
+    <line x1="485" y1="350" x2="510" y2="440"/>
+  </g>
+  <line x1="484" y1="352" x2="478" y2="318" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+  <path d="M462 318 L494 314 Q505 316 500 328" stroke="#333" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Seat -->
+  <path d="M345 358 Q368 348 392 356 L388 364 L350 364 Z" fill="#222"/>
+
+  <!-- Crank -->
+  <g transform="translate(390 440)">
+    <circle r="12" fill="#444"/>
+    <g>
+      <line x1="-24" y1="0" x2="24" y2="0" stroke="#222" stroke-width="5"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.8s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Far leg -->
+  <g stroke="#f4a261" stroke-width="7" stroke-linecap="round">
+    <line x1="380" y1="368" x2="366" y2="440">
+      <animate attributeName="x2" values="366;373;390;407;414;407;390;373;366" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="440;423;416;423;440;457;464;457;440" dur="0.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  <ellipse rx="12" ry="5" cx="366" cy="440" fill="#e76f51">
+    <animate attributeName="cx" values="366;373;390;407;414;407;390;373;366" dur="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="440;423;416;423;440;457;464;457;440" dur="0.8s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Pelican (bobbing) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -4; 0 0; 0 -4; 0 0" dur="0.8s" repeatCount="indefinite"/>
+    <!-- Tail -->
+    <path d="M330 330 L292 315 L300 335 L288 345 L332 350 Z" fill="#ddd" stroke="#333" stroke-width="2"/>
+    <!-- Body -->
+    <ellipse cx="375" cy="333" rx="55" ry="36" fill="#fff" stroke="#333" stroke-width="3" transform="rotate(-12 375 333)"/>
+    <!-- Race number -->
+    <rect x="352" y="318" width="34" height="26" fill="#fff8dc" stroke="#333" stroke-width="1.5" transform="rotate(-12 369 331)"/>
+    <text x="369" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#e63946" transform="rotate(-12 369 331)">0</text>
+    <!-- Neck -->
+    <path d="M405 315 Q440 290 425 260 Q415 235 450 222" fill="none" stroke="#333" stroke-width="24" stroke-linecap="round"/>
+    <path d="M405 315 Q440 290 425 260 Q415 235 450 222" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="458" cy="222" r="22" fill="#fff" stroke="#333" stroke-width="3"/>
+    <!-- Helmet -->
+    <path d="M434 218 Q440 188 470 192 Q488 198 484 214 Z" fill="#ffbe0b" stroke="#333" stroke-width="2.5"/>
+    <path d="M444 200 L452 212 M458 194 L462 210 M472 196 L472 210" stroke="#333" stroke-width="2"/>
+    <!-- Goggles -->
+    <circle cx="465" cy="223" r="8" fill="#bde0fe" stroke="#333" stroke-width="2.5"/>
+    <circle cx="467" cy="223" r="3" fill="#111"/>
+    <line x1="440" y1="222" x2="457" y2="223" stroke="#333" stroke-width="2.5"/>
+    <!-- Pouch with fish -->
+    <path d="M472 234 Q500 290 560 262 Q585 252 590 244 L476 230 Z" fill="#f4a261" stroke="#333" stroke-width="2.5"/>
+    <path d="M520 262 L536 252 L534 270 Z" fill="#6c9bd2" stroke="#333" stroke-width="1.5"/>
+    <path d="M506 258 Q518 248 528 262" fill="none" stroke="#333" stroke-width="1.5"/>
+    <!-- Upper bill -->
+    <path d="M474 222 L594 238 Q600 244 592 246 L476 234 Z" fill="#ffb703" stroke="#333" stroke-width="2.5"/>
+    <!-- Fish tail sticking out -->
+    <path d="M592 244 L612 232 L608 252 Z" fill="#6c9bd2" stroke="#333" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="-8 592 244; 8 592 244; -8 592 244" dur="0.4s" repeatCount="indefinite"/>
+    </path>
+    <!-- Wing gripping handlebar -->
+    <path d="M370 312 Q430 290 470 318 Q480 324 470 330 Q430 330 385 345 Z" fill="#eee" stroke="#333" stroke-width="2.5"/>
+    <path d="M395 320 L430 312 M398 332 L440 322" stroke="#999" stroke-width="2"/>
+    <!-- Sweat drops -->
+    <path d="M430 190 Q426 198 430 202 Q434 198 430 190 Z" fill="#4cc9f0">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -6 10; 0 0" dur="0.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M418 206 Q414 214 418 218 Q422 214 418 206 Z" fill="#4cc9f0">
+      <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Near leg -->
+  <g stroke="#f4a261" stroke-width="8" stroke-linecap="round">
+    <line x1="385" y1="368" x2="414" y2="440">
+      <animate attributeName="x2" values="414;407;390;373;366;373;390;407;414" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="440;457;464;457;440;423;416;423;440" dur="0.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  <ellipse rx="13" ry="5" cx="414" cy="440" fill="#e76f51">
+    <animate attributeName="cx" values="414;407;390;373;366;373;390;407;414" dur="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="440;457;464;457;440;423;416;423;440" dur="0.8s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Footer -->
+  <rect x="0" y="560" width="800" height="40" fill="#1d3557"/>
+  <text x="400" y="586" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ffffff">2026-10-29 00:09:17 SGT (UTC+08:00)</text>
+</svg>
