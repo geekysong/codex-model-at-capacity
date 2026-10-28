@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#243447;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#243447}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="105" r="48" fill="#ffd166" opacity=".9"/>
+  <path d="M0 430 Q140 385 280 430 T560 430 T800 420 V520 H0Z" fill="#8acb6b"/>
+  <path d="M0 475 Q160 440 320 475 T640 470 T800 465" fill="none" stroke="#5b9e55" stroke-width="10"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE GREAT PELICAN GETAWAY</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="20" font-style="italic">“Why waddle when you can pedal?”</text>
+
+  <!-- bicycle -->
+  <g class="ink" fill="none">
+    <circle cx="245" cy="420" r="78" stroke="#263238" stroke-width="9">
+      <animateTransform attributeName="transform" type="rotate" from="0 245 420" to="360 245 420" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="575" cy="420" r="78" stroke="#263238" stroke-width="9">
+      <animateTransform attributeName="transform" type="rotate" from="0 575 420" to="360 575 420" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M245 420 L340 300 L440 420 L245 420 L390 420 L340 300 L500 300 L575 420" stroke="#d1495b" stroke-width="10"/>
+    <path d="M500 300 L535 270 M510 300 L555 300" stroke="#263238" stroke-width="8"/>
+    <circle cx="440" cy="420" r="20" fill="#ffd166"/>
+    <path d="M440 420 l-34 -28 M440 420 l34 25" stroke="#263238" stroke-width="7"/>
+  </g>
+
+  <!-- pelican body with bobbing animation -->
+  <g class="ink" transform="translate(0,0)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1s" repeatCount="indefinite"/>
+    <ellipse cx="410" cy="245" rx="105" ry="92" fill="#f4f1de"/>
+    <path d="M340 240 Q280 225 260 270 Q300 300 365 286Z" fill="#f29f58"/>
+    <path d="M350 175 Q392 105 458 155 Q486 178 470 222 Q450 255 408 248 Q365 238 350 175Z" fill="#f4f1de"/>
+    <circle cx="422" cy="181" r="10" fill="#243447"/>
+    <path d="M430 203 Q470 218 493 207" fill="none"/>
+    <path d="M390 320 L370 380 M445 320 L470 380" stroke="#f29f58" stroke-width="12"/>
+    <path d="M365 380 l-30 8 M470 380 l30 8" stroke="#f29f58" stroke-width="10"/>
+    <path d="M382 235 Q420 260 463 240" fill="#f29f58"/>
+    <path d="M364 180 Q335 145 300 164" fill="none" stroke="#f4f1de" stroke-width="18"/>
+    <path d="M465 175 Q505 145 530 178" fill="none" stroke="#f4f1de" stroke-width="18"/>
+    <path d="M375 315 Q410 340 450 315" fill="none" stroke="#d1495b" stroke-width="8"/>
+  </g>
+
+  <path d="M555 240 q35 -35 70 0" fill="none" class="ink"/>
+  <text x="624" y="228" class="label" font-size="18" font-weight="bold">HONK!</text>
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="24" font-weight="700">A beak-first commute through absolutely no traffic.</text>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="16">2026-10-29 04:01:47 SGT (UTC+08:00)</text>
+</svg>
