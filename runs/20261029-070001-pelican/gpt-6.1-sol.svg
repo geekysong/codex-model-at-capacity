@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN COMMUTE</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an absurdly large fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b68"/>
+      <stop offset="1" stop-color="#292d39"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#17202b; stroke-width:6; stroke-linejoin:round; stroke-linecap:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#17202b; }
+      .wheel { fill:none; stroke:#17202b; stroke-width:9; }
+      .spoke { stroke:#7fd4e8; stroke-width:3; }
+      .motion { fill:none; stroke:#ffffff; stroke-width:5; stroke-linecap:round; opacity:.75; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#fff59a" opacity=".9"/>
+  <path d="M0 255 Q110 205 220 255 T440 250 T660 245 T800 255 L800 420 L0 420Z" fill="#93d69b"/>
+  <path d="M0 335 Q150 285 300 335 T600 330 T800 340 L800 430 L0 430Z" fill="#6bb77d"/>
+  <path d="M0 398 L800 398 L800 600 L0 600Z" fill="url(#road)"/>
+  <path d="M0 430 L800 430" stroke="#f7d66a" stroke-width="8"/>
+  <path d="M40 522 L170 522 M260 522 L390 522 M480 522 L610 522 M700 522 L790 522" stroke="#f7d66a" stroke-width="8" stroke-linecap="round"/>
+
+  <g transform="translate(400 68)">
+    <rect x="-300" y="-35" width="600" height="84" rx="22" fill="#fff" stroke="#17202b" stroke-width="6" filter="url(#shadow)"/>
+    <text x="0" y="3" text-anchor="middle" class="label" font-size="38" font-weight="900" letter-spacing="2">THE GREAT PELICAN</text>
+    <text x="0" y="38" text-anchor="middle" class="label" font-size="28" font-weight="800" fill="#e85b4a">COMMUTE</text>
+  </g>
+
+  <g class="label">
+    <text x="400" y="174" text-anchor="middle" font-size="21" font-weight="700">“If the beak fits, it ships.”</text>
+    <path d="M225 185 Q400 208 575 185" fill="none" stroke="#e85b4a" stroke-width="4"/>
+  </g>
+
+  <g id="bicycle" transform="translate(0 7)">
+    <g id="rearWheel">
+      <circle class="wheel" cx="250" cy="455" r="67"/>
+      <g>
+        <path class="spoke" d="M250 388V522 M183 455H317 M202 407L298 503 M298 407L202 503"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 250 455" to="360 250 455" dur="2s" repeatCount="indefinite"/>
+      </g>
+      <circle cx="250" cy="455" r="8" fill="#e85b4a" class="ink"/>
+    </g>
+    <g id="frontWheel">
+      <circle class="wheel" cx="555" cy="455" r="67"/>
+      <g>
+        <path class="spoke" d="M555 388V522 M488 455H622 M507 407L603 503 M603 407L507 503"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 555 455" to="360 555 455" dur="2s" repeatCount="indefinite"/>
+      </g>
+      <circle cx="555" cy="455" r="8" fill="#e85b4a" class="ink"/>
+    </g>
+    <path d="M250 455 L360 375 L455 455 L250 455 M360 375 L555 455 M455 455 L430 340 M430 340 L500 320" fill="none" class="ink"/>
+    <path d="M330 375 L395 375" class="ink"/>
+    <path d="M430 340 L410 318" class="ink"/>
+    <circle cx="360" cy="375" r="12" fill="#e85b4a" class="ink"/>
+    <circle cx="455" cy="455" r="17" fill="#f7d66a" class="ink"/>
+    <g>
+      <path d="M455 455 L405 410 M455 455 L480 505" class="ink"/>
+      <circle cx="405" cy="410" r="7" fill="#e85b4a" class="ink"/>
+      <circle cx="480" cy="505" r="7" fill="#e85b4a" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 455 455;360 455 455" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+    <path d="M555 388 L575 330 L520 320" fill="none" class="ink"/>
+    <path d="M520 320 L550 305" class="ink"/>
+    <path d="M575 330 L610 345" class="ink"/>
+    <path d="M610 345 Q620 350 612 360" fill="none" class="ink"/>
+  </g>
+
+  <g id="pelican" filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.4s" repeatCount="indefinite"/>
+    <ellipse cx="390" cy="290" rx="88" ry="103" fill="#f7f4e8" class="ink"/>
+    <path d="M330 286 Q302 353 347 386 Q390 408 425 360 Q390 348 374 320Z" fill="#d9d6c6" class="ink"/>
+    <path d="M335 277 Q300 250 318 214 Q346 169 405 184 Q446 195 450 242 Q455 283 414 300 Q370 317 335 277Z" fill="#fffdf4" class="ink"/>
+    <path d="M405 225 Q473 206 548 241 Q574 253 545 275 Q475 304 403 272Z" fill="#f39a43" class="ink"/>
+    <path d="M541 242 Q577 250 589 268 Q568 285 544 275" fill="#e85b4a" class="ink"/>
+    <circle cx="421" cy="220" r="9" fill="#17202b"/>
+    <circle cx="424" cy="217" r="3" fill="#fff"/>
+    <path d="M357 184 Q336 157 347 132 Q367 145 378 177" fill="#f39a43" class="ink"/>
+    <path d="M392 181 Q387 148 408 128 Q424 148 417 184" fill="#f39a43" class="ink"/>
+    <path d="M336 304 Q279 325 281 364 Q321 375 363 337" fill="#f7f4e8" class="ink"/>
+    <path d="M432 305 Q489 322 494 362 Q452 376 415 338" fill="#f7f4e8" class="ink"/>
+    <path d="M354 362 L337 420 M416 363 L430 420" class="ink"/>
+    <path d="M324 420 Q342 430 356 419 M417 420 Q435 431 450 419" fill="none" class="ink"/>
+    <path d="M327 258 Q368 273 404 258" fill="none" stroke="#e85b4a" stroke-width="5"/>
+  </g>
+
+  <g transform="translate(75 275) rotate(-8)">
+    <rect x="0" y="0" width="178" height="74" rx="14" fill="#fff" stroke="#17202b" stroke-width="5"/>
+    <text x="89" y="30" text-anchor="middle" class="label" font-size="19" font-weight="800">CITY NOTICE:</text>
+    <text x="89" y="56" text-anchor="middle" class="label" font-size="16">BIKE LANES ARE</text>
+    <text x="89" y="74" text-anchor="middle" class="label" font-size="16">FOR BIRDS TOO</text>
+    <path d="M178 48 L205 62 L178 66Z" fill="#fff" stroke="#17202b" stroke-width="5"/>
+  </g>
+
+  <g class="label">
+    <text x="400" y="570" text-anchor="middle" font-size="18" font-weight="700">2026-10-29 07:00:46 SGT (UTC+08:00)</text>
+  </g>
+
+  <path class="motion" d="M120 450 Q145 430 170 450"/>
+  <path class="motion" d="M625 420 Q650 400 675 420"/>
+</svg>

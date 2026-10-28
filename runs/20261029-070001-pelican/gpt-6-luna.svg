@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9edfff"/>
+      <stop offset="1" stop-color="#e8f9ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596575"/>
+      <stop offset="1" stop-color="#303844"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202b" flood-opacity=".3"/>
+    </filter>
+    <g id="spokeWheel">
+      <circle r="48" fill="#222936" stroke="#111721" stroke-width="7"/>
+      <circle r="38" fill="none" stroke="#a8c4d1" stroke-width="3"/>
+      <g stroke="#a8c4d1" stroke-width="2">
+        <line y1="-38" y2="38"/>
+        <line x1="-38" x2="38"/>
+        <line x1="-27" y1="-27" x2="27" y2="27"/>
+        <line x1="-27" y1="27" x2="27" y2="-27"/>
+      </g>
+      <circle r="7" fill="#f7c948" stroke="#161c26" stroke-width="3"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="115" r="48" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 190 Q110 120 220 190 T440 185 T680 175 T900 190 L900 360 L0 360Z" fill="#78bd91" opacity=".7"/>
+  <path d="M0 250 Q130 190 260 245 T530 235 T820 250 L820 360 L0 360Z" fill="#54a878" opacity=".72"/>
+  <rect y="350" width="800" height="250" fill="url(#road)"/>
+  <path d="M0 410 Q120 390 240 410 T480 410 T720 410 T960 410" fill="none" stroke="#f7d36b" stroke-width="8" stroke-dasharray="38 26"/>
+
+  <g font-family="Trebuchet MS, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="58" font-size="38" font-weight="900" fill="#17202b" stroke="#fff" stroke-width="6" paint-order="stroke">THE PELICAN EXPRESS</text>
+    <text x="400" y="92" font-size="19" font-weight="700" fill="#263746">Same-day delivery. Fish-day delivery. Every day is fish-day.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(250 438)">
+      <use href="#spokeWheel">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.3s" repeatCount="indefinite"/>
+      </use>
+    </g>
+    <g transform="translate(555 438)">
+      <use href="#spokeWheel">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.3s" repeatCount="indefinite"/>
+      </use>
+    </g>
+
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="1.3s" repeatCount="indefinite"/>
+      <path d="M250 438 L360 330 L555 438 L250 438 L420 438 L360 330" fill="none" stroke="#e84b3c" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M360 330 L385 270" stroke="#e84b3c" stroke-width="9"/>
+      <path d="M385 270 L430 270" stroke="#e84b3c" stroke-width="9" stroke-linecap="round"/>
+      <path d="M555 438 L535 324" stroke="#e84b3c" stroke-width="9"/>
+      <path d="M515 320 L555 320" stroke="#e84b3c" stroke-width="9" stroke-linecap="round"/>
+
+      <circle cx="360" cy="438" r="12" fill="#f7c948" stroke="#202734" stroke-width="4"/>
+      <path d="M360 438 L320 470 M360 438 L395 475" stroke="#202734" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="316" cy="473" r="7" fill="#f7c948" stroke="#202734" stroke-width="3"/>
+      <circle cx="399" cy="478" r="7" fill="#f7c948" stroke="#202734" stroke-width="3"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="1.3s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="1.3s" repeatCount="indefinite"/>
+      <path d="M395 320 Q430 245 485 252 Q535 260 532 320 L500 350 Q450 360 395 320Z" fill="#f7f1d2" stroke="#202734" stroke-width="6"/>
+      <path d="M455 270 Q470 210 530 205 Q575 202 594 235 Q565 260 520 270Z" fill="#fff8dc" stroke="#202734" stroke-width="6"/>
+      <ellipse cx="548" cy="197" rx="24" ry="30" fill="#f7f1d2" stroke="#202734" stroke-width="6"/>
+      <circle cx="556" cy="188" r="5" fill="#202734"/>
+      <path d="M567 207 Q650 205 675 230 Q646 260 568 234 Q548 228 567 207Z" fill="#f39b45" stroke="#202734" stroke-width="6"/>
+      <path d="M589 232 Q625 246 660 235" fill="none" stroke="#202734" stroke-width="4"/>
+      <path d="M475 252 Q500 220 520 245" fill="none" stroke="#202734" stroke-width="5"/>
+      <path d="M422 303 L380 270" stroke="#202734" stroke-width="10" stroke-linecap="round"/>
+      <path d="M380 270 L350 286" stroke="#202734" stroke-width="8" stroke-linecap="round"/>
+      <path d="M420 335 L390 385" stroke="#f39b45" stroke-width="12" stroke-linecap="round"/>
+      <path d="M390 385 L360 438" stroke="#f39b45" stroke-width="9" stroke-linecap="round"/>
+      <path d="M485 338 L505 385" stroke="#f39b45" stroke-width="12" stroke-linecap="round"/>
+      <path d="M505 385 L530 438" stroke="#f39b45" stroke-width="9" stroke-linecap="round"/>
+      <path d="M540 245 Q610 220 650 270 Q620 300 550 285Z" fill="#8dc9e8" stroke="#202734" stroke-width="5"/>
+      <path d="M610 257 Q635 245 660 253" fill="none" stroke="#202734" stroke-width="4"/>
+      <text x="500" y="305" font-size="17" font-weight="900" fill="#263746">HONK IF HUNGRY</text>
+    </g>
+  </g>
+
+  <g font-family="Trebuchet MS, Arial, sans-serif">
+    <path d="M105 285 Q135 250 170 285" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M130 305 Q160 270 195 305" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    <text x="80" y="325" font-size="20" font-weight="900" fill="#17202b" transform="rotate(-8 80 325)">MOVE IT, BEAK!</text>
+    <text x="400" y="545" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">2026-10-29 07:01:43 SGT (UTC+08:00)</text>
+  </g>
+</svg>
