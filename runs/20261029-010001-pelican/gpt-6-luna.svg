@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#24506a" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#17384a;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17384a}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#ffe27a" opacity=".9"/>
+  <path d="M0 430 Q130 390 260 430 T520 425 T800 430 V600 H0Z" fill="#7ecf7d"/>
+  <path d="M0 470 Q170 430 330 470 T650 462 T800 470 V600 H0Z" fill="#4fae66"/>
+  <path d="M0 505 Q180 475 360 505 T800 505" fill="none" stroke="#2f8056" stroke-width="8" opacity=".7"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="34" font-weight="900">THE GREAT PELICAN GETAWAY</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="19" font-style="italic">“No fish? Fine. I’ll pedal to the nearest snack bar!”</text>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <g fill="none" class="ink">
+        <circle cx="250" cy="430" r="82" fill="#dff7ff"/>
+        <circle cx="590" cy="430" r="82" fill="#dff7ff"/>
+        <path d="M250 430 L355 310 L470 430 L250 430 M355 310 L405 430 M470 430 L540 300"/>
+        <path d="M515 300 L565 300 M540 300 L555 270"/>
+        <path d="M355 310 L335 285"/>
+      </g>
+      <g id="spokes" fill="none" stroke="#6aa5bb" stroke-width="3">
+        <path d="M250 348V512 M168 430H332 M192 372L308 488 M192 488L308 372"/>
+        <path d="M590 348V512 M508 430H672 M532 372L648 488 M532 488L648 372"/>
+      </g>
+      <g fill="#f5a623" class="ink">
+        <circle cx="355" cy="430" r="12"/>
+        <path d="M355 430 L325 455 M355 430 L385 405"/>
+      </g>
+      <path d="M315 457 Q335 470 355 455" fill="none" class="ink"/>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <path d="M334 315 Q305 250 350 202 Q395 157 456 192 Q492 213 485 260 Q477 308 429 322 Q379 337 334 315Z" fill="#f5f1df" class="ink"/>
+      <path d="M373 206 Q342 161 382 125 Q420 91 459 121 Q488 143 473 181 Q454 213 420 220Z" fill="#fffdf2" class="ink"/>
+      <path d="M455 154 Q503 153 566 181 Q580 188 567 199 Q515 214 465 196Z" fill="#f5a623" class="ink"/>
+      <path d="M497 181 Q527 203 564 195" fill="none" stroke="#c87717" stroke-width="5"/>
+      <circle cx="438" cy="150" r="8" fill="#17384a"/>
+      <path d="M401 219 Q447 250 456 307" fill="none" stroke="#d8cdb1" stroke-width="17"/>
+      <path d="M367 225 Q330 250 319 300" fill="none" stroke="#d8cdb1" stroke-width="17"/>
+      <path d="M324 300 L355 310 M452 305 L481 300" fill="none" class="ink"/>
+      <path d="M355 310 Q373 332 395 352 M481 300 Q457 326 440 350" fill="none" stroke="#f5a623" stroke-width="10" class="ink"/>
+      <path d="M390 350 Q420 367 440 350" fill="none" stroke="#17384a" stroke-width="7"/>
+      <path d="M386 350 Q407 330 428 350" fill="none" stroke="#f5a623" stroke-width="9"/>
+      <path d="M405 430 L390 350 M405 430 L430 350" fill="none" stroke="#17384a" stroke-width="7"/>
+      <path d="M390 350 L428 350" fill="none" stroke="#f5a623" stroke-width="8"/>
+      <path d="M383 427 Q401 441 420 430 M420 430 Q439 442 456 427" fill="none" stroke="#17384a" stroke-width="7"/>
+      <path d="M360 245 Q400 270 430 245" fill="none" stroke="#17384a" stroke-width="6"/>
+    </g>
+  </g>
+
+  <g fill="#fff" stroke="#17384a" stroke-width="5">
+    <path d="M92 175 Q92 130 145 130 H250 Q286 130 286 166 Q286 202 250 202 H170 L135 225 V202 Q92 202 92 175Z"/>
+  </g>
+  <text x="189" y="173" text-anchor="middle" class="label" font-size="20" font-weight="700">I call this</text>
+  <text x="189" y="195" text-anchor="middle" class="label" font-size="20" font-weight="700">beak performance!</text>
+
+  <g>
+    <circle cx="250" cy="430" r="82" fill="none" stroke="transparent">
+      <animateTransform attributeName="transform" type="rotate" from="0 250 430" to="360 250 430" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <animateTransform xlink:href="#spokes" attributeName="transform" type="rotate" from="0 420 430" to="360 420 430" dur="2.4s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="400" y="548" text-anchor="middle" class="label" font-size="17" font-weight="700">2026-10-29 01:00:47 SGT (UTC+08:00)</text>
+</svg>

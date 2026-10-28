@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized bill.</desc>
+
+  <style>
+    .ink { stroke:#17202a; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+    .label { font-family:Arial,Helvetica,sans-serif; fill:#17202a; }
+    .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2.2s linear infinite; }
+    .rider { animation:bob .7s ease-in-out infinite alternate; transform-box:fill-box; transform-origin:center bottom; }
+    .pedal { animation:pedal .9s linear infinite; transform-box:fill-box; transform-origin:center; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-7px); } }
+    @keyframes pedal { to { transform:rotate(360deg); } }
+  </style>
+
+  <rect width="800" height="600" fill="#d9f3ff"/>
+  <rect y="455" width="800" height="145" fill="#9bd18b"/>
+  <path d="M0 455 Q120 420 240 455 T480 455 T720 455 T960 455" fill="none" stroke="#5a9b57" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="42" font-weight="900" fill="#e85d3f">THE PELICAN CYCLE</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="20" font-weight="700">“Why walk when you can bill the road for mileage?”</text>
+
+  <g aria-label="satirical pelican riding bicycle">
+    <g class="wheel">
+      <circle cx="238" cy="420" r="78" fill="#f8fbff" class="ink"/>
+      <circle cx="238" cy="420" r="10" fill="#e85d3f" class="ink"/>
+      <path d="M238 342V498 M160 420H316 M183 365L293 475 M293 365L183 475" stroke="#5d7d91" stroke-width="4"/>
+    </g>
+    <g class="wheel">
+      <circle cx="548" cy="420" r="78" fill="#f8fbff" class="ink"/>
+      <circle cx="548" cy="420" r="10" fill="#e85d3f" class="ink"/>
+      <path d="M548 342V498 M470 420H626 M493 365L603 475 M603 365L493 475" stroke="#5d7d91" stroke-width="4"/>
+    </g>
+
+    <path d="M238 420 L352 302 L548 420 L238 420 M352 302 L390 420 L548 420" fill="none" class="ink"/>
+    <path d="M352 302 L335 270 M335 270 L370 270" fill="none" class="ink"/>
+    <path d="M548 420 L575 300 M575 300 L610 300" fill="none" class="ink"/>
+    <circle cx="390" cy="420" r="24" fill="#ffd166" class="ink"/>
+    <g class="pedal">
+      <path d="M390 420 L420 394 M390 420 L360 446" fill="none" class="ink"/>
+      <circle cx="426" cy="390" r="8" fill="#e85d3f" class="ink"/>
+      <circle cx="354" cy="450" r="8" fill="#e85d3f" class="ink"/>
+    </g>
+
+    <g class="rider">
+      <ellipse cx="405" cy="245" rx="82" ry="104" fill="#f5f1e8" class="ink"/>
+      <path d="M351 207 Q391 166 445 190 L478 240 Q434 266 374 252Z" fill="#ffcf66" class="ink"/>
+      <path d="M358 258 Q408 232 465 260 Q445 328 375 326 Q346 305 358 258Z" fill="#d9e2e8" class="ink"/>
+      <circle cx="414" cy="190" r="10" fill="#17202a"/>
+      <path d="M423 186 Q453 179 462 198" fill="none" class="ink"/>
+      <path d="M461 218 Q528 238 555 282 Q520 305 463 274Z" fill="#f3a83b" class="ink"/>
+      <path d="M550 282 Q566 292 565 306 Q541 310 526 300" fill="#e85d3f" class="ink"/>
+      <path d="M374 325 Q350 365 328 398" fill="none" class="ink"/>
+      <path d="M430 326 Q459 362 477 397" fill="none" class="ink"/>
+      <path d="M319 399 Q335 405 345 414" fill="none" class="ink"/>
+      <path d="M471 398 Q487 407 498 416" fill="none" class="ink"/>
+      <path d="M354 218 Q328 199 311 177" fill="none" class="ink"/>
+      <path d="M311 177 Q332 166 350 181" fill="#f3a83b" class="ink"/>
+      <path d="M466 237 Q500 208 522 182" fill="none" class="ink"/>
+      <path d="M514 179 Q536 167 550 184 Q532 198 512 194Z" fill="#f3a83b" class="ink"/>
+      <text x="404" y="286" text-anchor="middle" class="label" font-size="18" font-weight="900">HONK!</text>
+      <rect x="405" y="122" width="118" height="56" rx="8" fill="#fff4b8" class="ink"/>
+      <text x="464" y="146" text-anchor="middle" class="label" font-size="15" font-weight="800">I BILL</text>
+      <text x="464" y="165" text-anchor="middle" class="label" font-size="15" font-weight="800">BY THE MILE!</text>
+    </g>
+  </g>
+
+  <path d="M88 494 Q102 475 116 494 Q130 475 144 494" fill="none" stroke="#5a9b57" stroke-width="6"/>
+  <path d="M650 494 Q664 475 678 494 Q692 475 706 494" fill="none" stroke="#5a9b57" stroke-width="6"/>
+
+  <rect x="30" y="548" width="740" height="38" rx="10" fill="#fff7e6" stroke="#17202a" stroke-width="3"/>
+  <text x="400" y="573" text-anchor="middle" class="label" font-size="17" font-weight="700">2026-10-29 01:01:07 SGT (UTC+08:00)</text>
+</svg>
