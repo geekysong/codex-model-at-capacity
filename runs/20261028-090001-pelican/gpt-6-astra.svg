@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#777"/>
+      <stop offset="1" stop-color="#444"/>
+    </linearGradient>
+    <style>
+      .outline{stroke:#202b3a;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;fill:#202b3a}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="105" r="48" fill="#ffd85a"/>
+  <path d="M70 145 Q125 105 180 145 T290 145" fill="none" stroke="#fff" stroke-width="12" opacity=".8"/>
+  <path d="M515 155 Q565 120 615 155 T715 155" fill="none" stroke="#fff" stroke-width="10" opacity=".8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="34" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="94" text-anchor="middle" class="label" font-size="18" font-style="italic">“Why fly when you can wobble with style?”</text>
+
+  <rect x="0" y="420" width="800" height="130" fill="url(#road)"/>
+  <path d="M0 485 H800" stroke="#f8d66d" stroke-width="7" stroke-dasharray="50 32"/>
+  <path d="M0 420 Q130 390 250 420 T500 420 T800 420" fill="none" stroke="#4f9b55" stroke-width="18"/>
+
+  <g id="bike">
+    <g id="wheelBack" transform="translate(245 430)">
+      <circle r="72" fill="#dce8ed" class="outline"/>
+      <circle r="9" fill="#202b3a"/>
+      <g stroke="#607487" stroke-width="3">
+        <path d="M0-67V67M-67 0H67M-47-47L47 47M47-47L-47 47"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 245 430" to="360 245 430" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+    <g id="wheelFront" transform="translate(555 430)">
+      <circle r="72" fill="#dce8ed" class="outline"/>
+      <circle r="9" fill="#202b3a"/>
+      <g stroke="#607487" stroke-width="3">
+        <path d="M0-67V67M-67 0H67M-47-47L47 47M47-47L-47 47"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 555 430" to="360 555 430" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+
+    <path d="M245 430 L350 315 L455 430 L245 430 M350 315 L555 430 M350 315 L405 300" fill="none" stroke="#e74c3c" stroke-width="10" class="outline"/>
+    <path d="M405 300 L430 270" fill="none" stroke="#202b3a" stroke-width="8"/>
+    <path d="M415 270 H463" fill="none" stroke="#202b3a" stroke-width="8"/>
+    <path d="M350 315 L330 280" fill="none" stroke="#202b3a" stroke-width="8"/>
+    <path d="M305 278 H355" fill="none" stroke="#202b3a" stroke-width="8"/>
+    <circle cx="455" cy="430" r="18" fill="#f4c542" class="outline"/>
+    <path d="M455 430 l28 18 M455 430 l-18-25" stroke="#202b3a" stroke-width="6"/>
+    <circle cx="483" cy="448" r="7" fill="#202b3a"/>
+    <circle cx="437" cy="405" r="7" fill="#202b3a"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.5s" repeatCount="indefinite"/>
+    <ellipse cx="380" cy="238" rx="82" ry="105" fill="#f5f1e8" class="outline"/>
+    <path d="M333 212 Q285 235 300 305 Q328 278 365 270" fill="#d9e3e8" class="outline"/>
+    <path d="M403 171 Q430 112 482 126 Q523 137 503 174 L454 212" fill="#f5f1e8" class="outline"/>
+    <path d="M478 137 Q564 144 609 178 Q567 208 477 183 Z" fill="#f5a34a" class="outline"/>
+    <path d="M479 183 Q555 211 605 180 Q571 243 486 210 Z" fill="#f28b3d" class="outline"/>
+    <circle cx="450" cy="151" r="10" fill="#fff" class="outline"/>
+    <circle cx="452" cy="151" r="4" fill="#202b3a"/>
+    <path d="M387 336 Q410 370 430 386" fill="none" stroke="#e77837" stroke-width="12"/>
+    <path d="M430 386 L414 407 M430 386 L449 403" fill="none" stroke="#e77837" stroke-width="8"/>
+    <path d="M365 334 Q350 367 344 391" fill="none" stroke="#e77837" stroke-width="12"/>
+    <path d="M344 391 L326 406 M344 391 L360 408" fill="none" stroke="#e77837" stroke-width="8"/>
+    <path d="M334 236 Q370 205 407 235" fill="none" stroke="#202b3a" stroke-width="6"/>
+    <text x="380" y="278" text-anchor="middle" class="label" font-size="16" font-weight="bold">HONK!</text>
+  </g>
+
+  <path d="M115 350 q35-34 70 0" fill="none" stroke="#202b3a" stroke-width="6"/>
+  <path d="M635 315 q28-28 56 0" fill="none" stroke="#202b3a" stroke-width="6"/>
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="20" font-weight="bold">A beak, two wheels, and absolutely no sense of balance.</text>
+  <text x="400" y="578" text-anchor="middle" class="label" font-size="14">2026-10-28 09:00:01 SGT (UTC+08:00)</text>
+</svg>
