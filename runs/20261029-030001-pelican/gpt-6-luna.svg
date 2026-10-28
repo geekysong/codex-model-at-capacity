@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican rides a tiny bicycle while proudly ignoring traffic rules.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e7f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b68"/>
+      <stop offset="1" stop-color="#252a35"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#17202b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202632;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202632}
+      .bold{font-weight:800}
+      .small{font-size:18px}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="112" r="48" fill="#fff3a6" opacity=".9"/>
+  <path d="M80 150 Q125 120 170 150 T260 150" fill="none" stroke="#fff" stroke-width="8" opacity=".7"/>
+  <path d="M530 180 Q575 150 620 180 T710 180" fill="none" stroke="#fff" stroke-width="8" opacity=".7"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label bold" font-size="36">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="20">A bird with a beak, a bike, and absolutely no sense of lane discipline.</text>
+
+  <rect x="0" y="402" width="800" height="198" fill="url(#road)"/>
+  <path d="M0 430 H800" stroke="#f7d45a" stroke-width="7" stroke-dasharray="42 28" opacity=".9"/>
+  <path d="M0 535 H800" stroke="#9ba2ad" stroke-width="4" opacity=".45"/>
+
+  <g filter="url(#shadow)">
+    <g id="bike" transform="translate(0 0)">
+      <g transform="translate(298 430)">
+        <circle r="72" fill="none" class="ink" stroke="#f5f7fa" stroke-width="8"/>
+        <circle r="8" fill="#f5f7fa" class="ink" stroke-width="3"/>
+        <g stroke="#cbd2dc" stroke-width="3">
+          <path d="M0-68 V68M-68 0 H68M-48-48 L48 48M48-48 L-48 48"/>
+        </g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="2s" repeatCount="indefinite"/>
+      </g>
+
+      <g transform="translate(530 430)">
+        <circle r="72" fill="none" class="ink" stroke="#f5f7fa" stroke-width="8"/>
+        <circle r="8" fill="#f5f7fa" class="ink" stroke-width="3"/>
+        <g stroke="#cbd2dc" stroke-width="3">
+          <path d="M0-68 V68M-68 0 H68M-48-48 L48 48M48-48 L-48 48"/>
+        </g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="2s" repeatCount="indefinite"/>
+      </g>
+
+      <path d="M298 430 L390 320 L530 430 L298 430 L440 430 L390 320" fill="none" stroke="#e94f37" stroke-width="10" class="ink"/>
+      <path d="M390 320 L365 282" fill="none" stroke="#202632" stroke-width="8"/>
+      <path d="M348 278 H385" fill="none" stroke="#202632" stroke-width="8"/>
+      <path d="M530 430 L552 330" fill="none" stroke="#202632" stroke-width="8"/>
+      <path d="M530 330 H575" fill="none" stroke="#202632" stroke-width="8"/>
+      <path d="M575 330 Q594 331 604 343" fill="none" stroke="#202632" stroke-width="8"/>
+
+      <g transform="translate(440 430)">
+        <circle r="28" fill="none" stroke="#202632" stroke-width="6"/>
+        <path d="M0 0 L24-15 M0 0 L-22 18" stroke="#202632" stroke-width="6"/>
+        <path d="M24-15 h18 M-22 18 h-18" stroke="#202632" stroke-width="6"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.1s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="1.1s" repeatCount="indefinite"/>
+
+      <path d="M407 332 Q386 263 426 216 Q465 172 520 207 Q559 231 548 285 Q540 328 500 350 Z" fill="#f4f1e8" class="ink"/>
+      <path d="M438 246 Q474 210 530 229 Q565 243 572 273 Q535 266 503 281 Q476 295 438 314 Z" fill="#d5e6ec" class="ink"/>
+      <path d="M448 286 Q493 270 534 288 Q508 328 468 328 Z" fill="#ffb44e" class="ink"/>
+      <path d="M535 271 Q585 257 655 279 Q682 288 660 307 Q600 321 535 300 Z" fill="#f28b30" class="ink"/>
+      <path d="M645 278 Q680 284 688 296 Q675 315 651 313" fill="#ffc25a" class="ink"/>
+      <circle cx="519" cy="236" r="13" fill="#fff" class="ink"/>
+      <circle cx="523" cy="238" r="6" fill="#202632"/>
+      <path d="M493 210 Q520 180 550 205" fill="none" stroke="#202632" stroke-width="7"/>
+      <path d="M468 332 L451 392 M502 333 L520 392" fill="none" stroke="#e28a27" stroke-width="10"/>
+      <path d="M440 391 Q455 382 470 392 M510 392 Q525 382 540 392" fill="none" stroke="#202632" stroke-width="7"/>
+
+      <path d="M431 234 Q394 206 362 220 Q390 245 427 258" fill="#f4f1e8" class="ink"/>
+      <path d="M392 222 Q365 201 340 215" fill="none" stroke="#202632" stroke-width="6"/>
+      <path d="M432 286 Q401 300 378 326" fill="none" stroke="#202632" stroke-width="8"/>
+
+      <rect x="570" y="198" width="128" height="54" rx="14" fill="#fff" class="ink"/>
+      <path d="M585 252 l-18 20 34-14" fill="#fff" class="ink"/>
+      <text x="634" y="222" text-anchor="middle" class="label bold" font-size="17">MOVE,</text>
+      <text x="634" y="242" text-anchor="middle" class="label bold" font-size="17">MORTALS!</text>
+    </g>
+  </g>
+
+  <g transform="translate(78 310)">
+    <rect x="0" y="0" width="160" height="76" rx="12" fill="#fff4bf" class="ink"/>
+    <path d="M145 76 l24 20 -8-30" fill="#fff4bf" class="ink"/>
+    <text x="80" y="30" text-anchor="middle" class="label bold" font-size="18">LICENSE?</text>
+    <text x="80" y="53" text-anchor="middle" class="label" font-size="16">“I have wings.”</text>
+  </g>
+
+  <text x="400" y="575" text-anchor="middle" class="label small bold">2026-10-29 03:01:56 SGT (UTC+08:00)</text>
+</svg>
