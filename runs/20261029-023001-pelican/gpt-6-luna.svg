@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe8ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#777"/>
+      <stop offset="1" stop-color="#444"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#20252b;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#20252b}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.7s linear infinite}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+      .rider{animation:bob .55s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="46" fill="#ffd75a" stroke="#20252b" stroke-width="4"/>
+  <path d="M0 390 Q130 330 260 385 T520 380 T800 370 V600 H0Z" fill="#9bd47d"/>
+  <path d="M0 455 Q170 420 330 455 T800 440 V600 H0Z" fill="#78b867"/>
+  <rect x="0" y="500" width="800" height="100" fill="url(#road)"/>
+  <path d="M0 548 H800" stroke="#f7d85a" stroke-width="8" stroke-dasharray="46 28"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="36" font-weight="900">THE BEAK BIKER</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="18" font-weight="700">“Why pedal when you can glide... dramatically?”</text>
+
+  <g class="rider">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M245 485 L350 485 L425 390 L300 390 Z" fill="#ef5b5b"/>
+      <path d="M350 485 L425 390 L500 485 Z" fill="#ef5b5b"/>
+      <path d="M300 390 L275 350"/>
+      <path d="M425 390 L455 345"/>
+      <path d="M440 345 L480 345"/>
+      <path d="M265 350 L300 350"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel" transform="translate(245 485)">
+      <circle r="78" fill="#20252b"/>
+      <circle r="67" fill="#d9f1f5" stroke="#20252b" stroke-width="5"/>
+      <g stroke="#7b9299" stroke-width="3">
+        <path d="M0-64V64M-64 0H64M-45-45L45 45M45-45L-45 45"/>
+      </g>
+      <circle r="9" fill="#ef5b5b" stroke="#20252b" stroke-width="4"/>
+    </g>
+    <g class="wheel" transform="translate(500 485)">
+      <circle r="78" fill="#20252b"/>
+      <circle r="67" fill="#d9f1f5" stroke="#20252b" stroke-width="5"/>
+      <g stroke="#7b9299" stroke-width="3">
+        <path d="M0-64V64M-64 0H64M-45-45L45 45M45-45L-45 45"/>
+      </g>
+      <circle r="9" fill="#ef5b5b" stroke="#20252b" stroke-width="4"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="365" cy="270" rx="83" ry="72" fill="#f7f4e8" class="ink"/>
+    <path d="M310 255 Q365 205 420 255 Q405 290 350 300 Q320 290 310 255Z" fill="#d9e7ea" class="ink"/>
+    <ellipse cx="365" cy="215" rx="48" ry="42" fill="#fffdf3" class="ink"/>
+    <circle cx="380" cy="206" r="7" fill="#20252b"/>
+    <path d="M405 218 Q505 205 545 230 Q505 252 405 238Z" fill="#f2a63b" class="ink"/>
+    <path d="M420 236 Q488 252 535 232 Q505 278 430 258Z" fill="#ef8f32" class="ink"/>
+    <path d="M350 178 Q365 150 387 178" fill="#f2a63b" class="ink"/>
+    <path d="M331 275 Q270 300 255 350" fill="none" class="ink"/>
+    <path d="M399 278 Q455 300 470 345" fill="none" class="ink"/>
+    <path d="M333 341 L300 390" class="ink" fill="none"/>
+    <path d="M424 343 L455 390" class="ink" fill="none"/>
+
+    <!-- wing and handlebars -->
+    <path d="M330 260 Q275 275 300 330 Q340 315 360 280Z" fill="#c7dadd" class="ink"/>
+    <path d="M455 345 Q445 320 425 300" class="ink" fill="none"/>
+    <path d="M425 300 L455 345" class="ink" fill="none"/>
+
+    <!-- pedals -->
+    <g class="pedal">
+      <circle cx="350" cy="485" r="13" fill="#f2a63b" class="ink"/>
+      <path d="M350 485 L375 470 M350 485 L325 500" class="ink" fill="none"/>
+      <rect x="370" y="464" width="19" height="7" rx="3" fill="#20252b"/>
+      <rect x="316" y="497" width="19" height="7" rx="3" fill="#20252b"/>
+    </g>
+  </g>
+
+  <g transform="translate(585 270)">
+    <path d="M0 0 Q55-35 105 0" fill="none" stroke="#20252b" stroke-width="5"/>
+    <text x="52" y="-48" text-anchor="middle" class="label" font-size="17" font-weight="700">HONK IF YOU SEE</text>
+    <text x="52" y="-28" text-anchor="middle" class="label" font-size="17" font-weight="700">A BETTER DRIVER</text>
+  </g>
+
+  <text x="400" y="578" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-29 02:32:10 SGT (UTC+08:00)</text>
+</svg>
