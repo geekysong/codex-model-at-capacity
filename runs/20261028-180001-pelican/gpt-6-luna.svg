@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>The Pelican Express</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle.</desc>
+  <style>
+    .ink{stroke:#263238;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#263238}
+    .wheel{fill:none;stroke:#263238;stroke-width:10}
+    .spoke{stroke:#90a4ae;stroke-width:3}
+  </style>
+
+  <rect width="800" height="600" fill="#b9e7f2"/>
+  <rect y="410" width="800" height="190" fill="#9bd18b"/>
+  <path d="M0 455 Q130 425 260 455 T520 455 T800 455" fill="none" stroke="#6cab62" stroke-width="8"/>
+  <path d="M0 500 Q180 470 360 500 T800 500" fill="none" stroke="#6cab62" stroke-width="6"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE PELICAN EXPRESS</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="20" font-weight="700">“Why fly when you can pedal into a traffic jam?”</text>
+
+  <g id="bike">
+    <g>
+      <circle cx="235" cy="425" r="78" class="wheel"/>
+      <circle cx="565" cy="425" r="78" class="wheel"/>
+      <g class="spoke">
+        <path d="M235 347V503 M157 425H313 M180 370L290 480 M290 370L180 480"/>
+        <path d="M565 347V503 M487 425H643 M510 370L620 480 M620 370L510 480"/>
+      </g>
+    </g>
+    <path d="M235 425 L330 315 L450 425 L565 425 L450 315 L330 315 Z" fill="none" class="ink"/>
+    <path d="M450 315 L475 265" fill="none" class="ink"/>
+    <path d="M465 265 H505" fill="none" class="ink"/>
+    <path d="M330 315 L300 275" fill="none" class="ink"/>
+    <path d="M280 275 H320" fill="none" class="ink"/>
+    <circle cx="450" cy="425" r="22" fill="#f6c344" class="ink"/>
+    <path d="M450 425 L420 390 M450 425 L477 458" fill="none" class="ink"/>
+    <circle cx="420" cy="390" r="9" fill="#263238"/>
+    <circle cx="477" cy="458" r="9" fill="#263238"/>
+    <path d="M320 275 H280" fill="none" stroke="#263238" stroke-width="10"/>
+  </g>
+
+  <g id="pelican" class="ink">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="394" cy="247" rx="77" ry="92" fill="#f4f1e8"/>
+    <path d="M342 206 Q300 180 315 125 Q330 78 375 92 Q415 105 419 154 L408 220 Z" fill="#f4f1e8"/>
+    <path d="M330 150 Q268 151 207 184 Q271 216 347 188 Z" fill="#f3a64b"/>
+    <path d="M207 184 Q265 207 347 188" fill="none" stroke="#b96d2d" stroke-width="5"/>
+    <circle cx="365" cy="137" r="10" fill="#263238" stroke="none"/>
+    <circle cx="369" cy="133" r="3" fill="#fff" stroke="none"/>
+    <path d="M386 220 Q435 245 463 221 Q481 206 489 226 Q474 260 425 267" fill="#dedbd0"/>
+    <path d="M355 287 Q342 330 328 352" fill="none"/>
+    <path d="M414 287 Q432 329 450 355" fill="none"/>
+    <path d="M328 352 l-20 18 M328 352 l16 22 M450 355 l-17 20 M450 355 l22 12" fill="none"/>
+    <path d="M365 235 Q389 252 415 235" fill="none" stroke="#b96d2d" stroke-width="4"/>
+  </g>
+
+  <g class="ink">
+    <path d="M105 180 Q135 145 165 180" fill="none" stroke="#fff" stroke-width="12"/>
+    <path d="M650 145 Q680 110 710 145" fill="none" stroke="#fff" stroke-width="12"/>
+    <path d="M90 215 Q120 190 150 215" fill="none" stroke="#fff" stroke-width="8"/>
+  </g>
+
+  <g class="label">
+    <rect x="520" y="185" width="215" height="82" rx="16" fill="#fff3a6" class="ink"/>
+    <path d="M520 245 L492 265 L500 235" fill="#fff3a6" class="ink"/>
+    <text x="628" y="215" text-anchor="middle" font-size="18" font-weight="700">HONK IF YOU</text>
+    <text x="628" y="239" text-anchor="middle" font-size="18" font-weight="700">HATE FLYING!</text>
+  </g>
+
+  <rect x="35" y="548" width="730" height="34" rx="8" fill="#ffffff" opacity="0.9"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 18:01:28 SGT (UTC+08:00)</text>
+
+  <style>
+    #bike{transform-origin:400px 425px}
+    #bike{animation:roll 3s linear infinite}
+    @keyframes roll{
+      0%{transform:translateX(0)}
+      50%{transform:translateX(10px)}
+      100%{transform:translateX(0)}
+    }
+  </style>
+</svg>

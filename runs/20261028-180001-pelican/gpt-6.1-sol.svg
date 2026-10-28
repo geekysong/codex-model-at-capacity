@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Problem</title>
+  <desc id="desc">A satirical pelican rides a bicycle while carrying an oversized fish and looking dramatically inconvenienced.</desc>
+  <style>
+    .ink{stroke:#18212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,Helvetica,sans-serif;fill:#18212b}
+    .small{font-size:18px}
+    .wheel{fill:#dff4ff;stroke:#18212b;stroke-width:7}
+    .spoke{stroke:#5b91aa;stroke-width:3}
+    .caption{font-size:22px;font-weight:700}
+    @keyframes ride{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes pedal{0%,100%{transform:rotate(0deg)}50%{transform:rotate(180deg)}}
+    .rider{animation:ride 1.2s ease-in-out infinite}
+    .rotor{transform-box:fill-box;transform-origin:center;animation:spin 1.4s linear infinite}
+    .pedals{transform-box:fill-box;transform-origin:center;animation:pedal 1.1s linear infinite}
+  </style>
+
+  <rect width="800" height="600" fill="#fff7dc"/>
+  <path d="M0 410 Q130 365 260 408 T520 402 T800 390 V600 H0Z" fill="#b8e3a2"/>
+  <path d="M0 470 Q170 430 340 472 T800 455" fill="none" stroke="#78b878" stroke-width="9"/>
+  <path d="M0 510 Q180 475 360 515 T800 500" fill="none" stroke="#8fc889" stroke-width="5"/>
+
+  <text x="400" y="64" text-anchor="middle" class="label" font-size="42" font-weight="900">THE PELICAN PEDAL PROBLEM</text>
+  <text x="400" y="96" text-anchor="middle" class="label caption">“I asked for a beak-friendly commute!”</text>
+
+  <g class="rider">
+    <ellipse cx="462" cy="284" rx="108" ry="34" fill="#f4b942" class="ink" transform="rotate(-8 462 284)"/>
+    <path d="M382 278 Q340 240 355 188 Q372 139 429 151 Q475 160 473 218 Q468 266 430 286Z" fill="#f7d36d" class="ink"/>
+    <path d="M356 188 Q317 178 300 201 Q328 218 367 215Z" fill="#ef7d32" class="ink"/>
+    <path d="M301 201 Q332 198 366 208 Q331 225 300 201Z" fill="#ff9b3d" class="ink"/>
+    <circle cx="419" cy="181" r="11" fill="#fff" class="ink"/>
+    <circle cx="423" cy="183" r="4" fill="#18212b"/>
+    <path d="M399 238 Q432 253 454 235" fill="none" class="ink"/>
+    <path d="M400 267 Q438 282 474 264" fill="none" class="ink"/>
+    <path d="M432 286 L456 332" fill="none" class="ink"/>
+    <path d="M466 274 L507 317" fill="none" class="ink"/>
+    <path d="M454 332 L431 348 M456 332 L475 350 M507 317 L532 333 M507 317 L492 340" fill="none" class="ink"/>
+    <path d="M408 214 Q458 196 493 225 L519 246 Q484 265 438 249Z" fill="#f7d36d" class="ink"/>
+    <path d="M480 233 Q515 220 543 241" fill="none" class="ink"/>
+
+    <g transform="translate(0 0)">
+      <path d="M520 245 Q558 216 590 239 Q617 258 605 292 Q592 324 559 322 Q532 320 526 292Z" fill="#9d6b3f" class="ink"/>
+      <path d="M546 245 Q581 259 604 288" fill="none" stroke="#f4c26b" stroke-width="13"/>
+      <path d="M555 267 Q573 281 589 300" fill="none" stroke="#f4c26b" stroke-width="10"/>
+      <path d="M580 237 Q612 217 635 229" fill="none" class="ink"/>
+      <path d="M628 230 l18 -11 l-10 22Z" fill="#ef7d32" class="ink"/>
+      <circle cx="622" cy="226" r="4" fill="#18212b"/>
+    </g>
+  </g>
+
+  <g aria-label="bicycle">
+    <circle cx="270" cy="430" r="82" class="wheel"/>
+    <circle cx="570" cy="430" r="82" class="wheel"/>
+    <g class="rotor" transform="translate(270 430)">
+      <path d="M0 -76V76 M-76 0H76 M-54 -54L54 54 M54 -54L-54 54" class="spoke"/>
+    </g>
+    <g class="rotor" transform="translate(570 430)">
+      <path d="M0 -76V76 M-76 0H76 M-54 -54L54 54 M54 -54L-54 54" class="spoke"/>
+    </g>
+    <path d="M270 430 L365 335 L465 430 L570 430 L430 430 L365 335 L405 430" fill="none" class="ink"/>
+    <path d="M365 335 L350 306 L381 306" fill="none" class="ink"/>
+    <path d="M465 430 L485 350 L520 350" fill="none" class="ink"/>
+    <path d="M520 350 L548 337" fill="none" class="ink"/>
+    <circle cx="405" cy="430" r="14" fill="#ef7d32" class="ink"/>
+    <g class="pedals">
+      <path d="M405 430 l34 22 M405 430 l-27 -24" fill="none" class="ink"/>
+      <circle cx="439" cy="452" r="6" fill="#18212b"/>
+      <circle cx="378" cy="406" r="6" fill="#18212b"/>
+    </g>
+    <path d="M245 354 Q270 337 296 354" fill="none" class="ink"/>
+    <path d="M245 354 L236 374 M296 354 L305 374" fill="none" class="ink"/>
+  </g>
+
+  <path d="M665 175 q34 -25 62 0 q-20 2 -27 18 q-12 -13 -35 -18Z" fill="#fff" class="ink"/>
+  <text x="697" y="177" text-anchor="middle" class="label small" font-weight="700">HONK!</text>
+
+  <text x="400" y="548" text-anchor="middle" class="label small">2026-10-28 18:00:47 SGT (UTC+08:00)</text>
+</svg>

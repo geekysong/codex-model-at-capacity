@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon pelican rides a bicycle while chasing a fish-powered dream.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#777"/>
+      <stop offset="1" stop-color="#343434"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <style>
+      .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17212b}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+      .bob{animation:bob .7s ease-in-out infinite alternate}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:pedal .9s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-7px)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe16b" stroke="#d59826" stroke-width="5"/>
+  <path d="M0 330 Q110 275 220 330 T440 325 T660 330 T800 315 V420 H0Z" fill="#8bcf78"/>
+  <path d="M0 385 Q120 350 250 390 T500 380 T800 370 V450 H0Z" fill="#65ae62"/>
+  <path d="M0 420 H800 V570 H0Z" fill="url(#road)"/>
+  <path d="M0 495 H800" stroke="#f4d35e" stroke-width="8" stroke-dasharray="55 35"/>
+  <ellipse cx="395" cy="505" rx="230" ry="22" fill="#111" opacity=".25" filter="url(#shadow)"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#fff" stroke="#17212b" stroke-width="2" paint-order="stroke">
+    PELICAN PEDAL PANIC
+  </text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="18" font-weight="700">
+    “Why fly when you can wobble with confidence?”
+  </text>
+
+  <g class="bob">
+    <!-- bicycle frame -->
+    <g fill="none" class="ink">
+      <path d="M235 438 L330 438 L385 350 L285 350 Z"/>
+      <path d="M330 438 L455 438 L385 350"/>
+      <path d="M285 350 L258 320"/>
+      <path d="M255 320 L300 320"/>
+      <path d="M455 438 L493 330"/>
+      <path d="M473 330 L515 330"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="235" cy="438" r="70" fill="#262d33" class="ink"/>
+      <circle cx="235" cy="438" r="57" fill="#b9e4ee" stroke="#17212b" stroke-width="4"/>
+      <path d="M235 381V495 M178 438H292 M195 398L275 478 M275 398L195 478" stroke="#65747c" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="455" cy="438" r="70" fill="#262d33" class="ink"/>
+      <circle cx="455" cy="438" r="57" fill="#b9e4ee" stroke="#17212b" stroke-width="4"/>
+      <path d="M455 381V495 M398 438H512 M415 398L495 478 M495 398L415 478" stroke="#65747c" stroke-width="3"/>
+    </g>
+
+    <!-- crank and pedals -->
+    <g class="pedal">
+      <circle cx="330" cy="438" r="12" fill="#f4d35e" class="ink"/>
+      <path d="M330 438 L355 415 M350 410 L365 410 M330 438 L305 461 M300 466 L285 466" class="ink"/>
+    </g>
+
+    <!-- pelican -->
+    <g>
+      <ellipse cx="350" cy="274" rx="67" ry="82" fill="#f5f1df" class="ink"/>
+      <path d="M308 258 Q350 229 399 252 Q420 264 405 286 Q354 306 308 280Z" fill="#f28b4b" class="ink"/>
+      <path d="M311 270 Q355 283 407 270 Q398 322 347 316 Q315 309 311 270Z" fill="#ffb15c" class="ink"/>
+      <ellipse cx="368" cy="205" rx="48" ry="45" fill="#f5f1df" class="ink"/>
+      <path d="M386 190 Q465 194 505 225 Q466 248 387 230Z" fill="#ef8746" class="ink"/>
+      <path d="M388 208 Q454 215 497 228 Q449 265 390 237Z" fill="#ffb15c" class="ink"/>
+      <circle cx="382" cy="190" r="8" fill="#17212b"/>
+      <path d="M405 171 Q439 144 462 170" fill="none" class="ink"/>
+      <path d="M410 176 Q449 157 475 179" fill="none" class="ink"/>
+      <path d="M326 304 Q290 332 282 373" fill="none" class="ink"/>
+      <path d="M379 307 Q407 335 414 374" fill="none" class="ink"/>
+      <path d="M282 373 L271 393 M414 374 L426 393" class="ink"/>
+      <path d="M315 255 Q290 228 303 207 Q331 218 345 243" fill="#d5e7e8" class="ink"/>
+      <path d="M390 251 Q420 232 429 207 Q449 231 425 270" fill="#d5e7e8" class="ink"/>
+      <path d="M340 367 Q330 395 325 420" class="ink"/>
+      <path d="M395 367 Q402 398 405 420" class="ink"/>
+    </g>
+
+    <!-- handlebars and comic motion -->
+    <path d="M503 314 q25 -22 43 0" fill="none" class="ink"/>
+    <path d="M535 300 l16 -18 M542 317 l22 -5" stroke="#ef5b5b" stroke-width="5"/>
+    <text x="525" y="277" class="label" font-size="18" font-weight="900" fill="#ef5b5b">WOBBLE!</text>
+  </g>
+
+  <g transform="translate(65 170)">
+    <path d="M0 26 Q24 0 53 20 Q74 35 95 20" fill="none" stroke="#fff" stroke-width="8" opacity=".9"/>
+    <path d="M18 52 Q40 32 66 47 Q84 57 103 47" fill="none" stroke="#fff" stroke-width="6" opacity=".8"/>
+  </g>
+
+  <text x="400" y="548" text-anchor="middle" class="label" font-size="16" font-weight="700">
+    2026-10-28 18:00:01 SGT (UTC+08:00)
+  </text>
+</svg>
