@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>The Pelican Pedal Parade</title>
+  <desc>A satirical pelican rides a bicycle while proudly carrying an oversized beak and tiny briefcase.</desc>
+  <style>
+    .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .txt{font-family:Arial,Helvetica,sans-serif;fill:#17202a}
+    .wheel{fill:#d9f1ff;stroke:#17202a;stroke-width:7}
+    .spoke{stroke:#6b8794;stroke-width:2}
+  </style>
+
+  <rect width="800" height="600" fill="#fff7dc"/>
+  <path d="M0 465 Q160 440 320 466 T640 460 T800 470 V600 H0Z" fill="#b9e6a3"/>
+  <path d="M0 492 Q160 475 320 496 T640 490 T800 500" fill="none" stroke="#74b879" stroke-width="5"/>
+
+  <text x="400" y="62" text-anchor="middle" class="txt" font-size="38" font-weight="900">THE PELICAN PEDAL PARADE</text>
+  <text x="400" y="98" text-anchor="middle" class="txt" font-size="20" font-style="italic">“When your commute has a beak, traffic gets the bird.”</text>
+
+  <!-- bicycle -->
+  <g>
+    <g>
+      <circle class="wheel" cx="255" cy="420" r="78"/>
+      <circle class="wheel" cx="585" cy="420" r="78"/>
+      <g class="spokes">
+        <path d="M255 342V498M177 420H333M200 365L310 475M200 475L310 365"/>
+        <path d="M585 342V498M507 420H663M530 365L640 475M530 475L640 365"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 420 420" to="360 420 420" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <path d="M255 420 L365 330 L465 420 L585 420 L365 330 L410 255" fill="none" class="ink"/>
+    <path d="M410 255 L445 255" class="ink"/>
+    <circle cx="365" cy="420" r="18" fill="#f2b84b" class="ink"/>
+    <path d="M365 420 L335 455 M365 420 L400 450" class="ink"/>
+    <path d="M335 455 l-20 0 M400 450 l18 8" class="ink"/>
+    <path d="M450 320 Q470 300 493 315" fill="none" class="ink"/>
+  </g>
+
+  <!-- pelican -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="425" cy="250" rx="92" ry="105" fill="#f4f0e7" class="ink"/>
+    <path d="M367 190 Q335 130 387 118 Q445 105 472 155 L454 215Z" fill="#d9e2e6" class="ink"/>
+    <circle cx="414" cy="154" r="10" fill="#17202a"/>
+    <path d="M390 174 Q425 192 463 176" fill="none" class="ink"/>
+    <path d="M381 185 Q330 215 278 195 Q246 183 260 158 Q275 139 315 151 L405 165Z" fill="#f0a83a" class="ink"/>
+    <path d="M279 195 Q332 205 392 178 Q350 226 285 214Z" fill="#e78e2c" class="ink"/>
+    <path d="M395 244 Q450 222 493 252 Q520 270 505 300 Q474 323 419 296Z" fill="#c9d8de" class="ink"/>
+    <path d="M404 325 Q430 347 458 325" fill="none" class="ink"/>
+    <path d="M402 345 L390 412 M455 344 L474 411" class="ink"/>
+    <path d="M385 410 l-20 14 M475 410 l22 12" class="ink"/>
+    <path d="M465 235 Q510 205 544 229 L521 268 Q489 257 465 235Z" fill="#e8a83a" class="ink"/>
+    <rect x="505" y="270" width="58" height="48" rx="5" fill="#e95d54" class="ink"/>
+    <path d="M517 270 Q534 247 551 270" fill="none" class="ink"/>
+    <text x="534" y="300" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">TAXES</text>
+    <path d="M340 220 Q315 245 335 273" fill="none" class="ink"/>
+    <path d="M332 236 q-18 12 -26 2 M331 250 q-20 12 -28 3 M334 264 q-18 13 -25 5" fill="none" class="ink"/>
+    <animateTransform attributeName="transform" type="rotate" values="-2 425 350;2 425 350;-2 425 350" dur="1.2s" repeatCount="indefinite"/>
+  </g>
+
+  <g fill="#17202a">
+    <circle cx="120" cy="395" r="5"/><circle cx="145" cy="380" r="4"/><circle cx="680" cy="370" r="5"/>
+  </g>
+  <text x="400" y="548" text-anchor="middle" class="txt" font-size="18" font-weight="bold">2026-10-29 00:30:01 SGT (UTC+08:00)</text>
+</svg>
