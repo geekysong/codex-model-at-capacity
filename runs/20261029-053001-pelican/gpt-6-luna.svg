@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican pedals a bicycle while carrying an absurdly oversized fish.</desc>
+  <style>
+    .ink{stroke:#263238;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#263238}
+  </style>
+
+  <rect width="800" height="600" fill="#bde7f2"/>
+  <rect y="410" width="800" height="115" fill="#8bcf78"/>
+  <path d="M0 470 Q160 430 320 470 T640 470 T960 470" fill="none" stroke="#5da85b" stroke-width="8"/>
+  <path d="M0 525 Q180 500 360 525 T720 525 T1000 525" fill="none" stroke="#4c914e" stroke-width="7"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="34" font-weight="bold">THE GREAT PELICAN GETAWAY</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="19">A beak-first commute with absolutely no traffic plan.</text>
+
+  <g opacity=".8" fill="#fff">
+    <ellipse cx="130" cy="135" rx="62" ry="24"/>
+    <ellipse cx="185" cy="125" rx="48" ry="20"/>
+    <ellipse cx="670" cy="155" rx="70" ry="25"/>
+    <ellipse cx="730" cy="145" rx="50" ry="21"/>
+  </g>
+
+  <g id="bike" class="ink" fill="none">
+    <circle cx="265" cy="435" r="67" fill="#eaf7fa"/>
+    <circle cx="555" cy="435" r="67" fill="#eaf7fa"/>
+    <g id="spokes1" stroke="#76a9b5" stroke-width="3">
+      <path d="M265 368V502M198 435H332M218 388L312 482M218 482L312 388"/>
+    </g>
+    <g id="spokes2" stroke="#76a9b5" stroke-width="3">
+      <path d="M555 368V502M488 435H622M508 388L602 482M508 482L602 388"/>
+    </g>
+    <path d="M265 435 L350 335 L455 435 L265 435 M350 335 L405 435 M405 435 L555 435 M350 335 L326 308 M326 308 L365 308" stroke="#d84d45" stroke-width="10"/>
+    <path d="M444 435 L405 435 M405 435 L389 457 M405 435 L422 414" stroke="#263238" stroke-width="7"/>
+    <circle cx="405" cy="435" r="12" fill="#f4c542"/>
+    <path d="M405 435 L369 458 M405 435 L438 463" stroke="#263238" stroke-width="6"/>
+  </g>
+
+  <g id="pelican" class="ink">
+    <g id="bodyBob">
+      <ellipse cx="392" cy="265" rx="74" ry="93" fill="#f5f1df"/>
+      <path d="M340 275 Q300 295 315 350 Q338 381 370 345" fill="#f5f1df"/>
+      <path d="M452 274 Q494 293 480 347 Q461 380 431 342" fill="#f5f1df"/>
+      <path d="M356 206 Q384 170 429 192 Q463 210 454 260 Q445 299 402 301 Q356 296 345 255Z" fill="#fffdf3"/>
+      <path d="M438 205 Q476 225 553 244 Q585 252 557 272 Q495 281 444 258Z" fill="#f2a23a"/>
+      <path d="M444 259 Q502 278 558 270 Q530 310 457 292Z" fill="#ef8d32"/>
+      <circle cx="420" cy="220" r="9" fill="#263238"/>
+      <circle cx="423" cy="217" r="3" fill="#fff"/>
+      <path d="M383 191 Q399 171 423 186" fill="none" stroke="#e2a52d" stroke-width="9"/>
+      <path d="M385 299 Q373 329 378 355 M425 299 Q439 330 432 355" fill="none"/>
+      <path d="M378 355 l-26 22 M378 355 l27 20 M432 355 l-26 22 M432 355 l29 18" fill="none" stroke="#f2a23a" stroke-width="9"/>
+      <path d="M350 244 Q328 251 319 271" fill="none" stroke="#d8d1bb" stroke-width="8"/>
+      <path d="M454 246 Q474 251 485 270" fill="none" stroke="#d8d1bb" stroke-width="8"/>
+      <text x="400" y="135" text-anchor="middle" class="label" font-size="17" font-weight="bold">“MOVE OVER, FISH!”</text>
+    </g>
+  </g>
+
+  <g id="fish" transform="translate(505 300) rotate(-12)" class="ink">
+    <path d="M0 22 Q54 -12 111 22 Q54 56 0 22Z" fill="#6fc1d1"/>
+    <path d="M111 22 L142 0 L136 22 L142 44Z" fill="#6fc1d1"/>
+    <circle cx="22" cy="17" r="4" fill="#263238"/>
+    <path d="M58 3 Q70 22 58 41" fill="none" stroke="#3d8fa1" stroke-width="4"/>
+  </g>
+
+  <path d="M180 320 q-25 12 -7 30 M175 350 q-22 12 -4 28" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <text x="95" y="300" class="label" font-size="18" font-weight="bold">HONK!</text>
+
+  <g class="label" text-anchor="middle">
+    <rect x="210" y="548" width="380" height="34" rx="10" fill="#fff8d6" stroke="#263238" stroke-width="3"/>
+    <text x="400" y="571" font-size="15">Pelican on a bicycle: because walking is for smaller beaks.</text>
+  </g>
+  <text x="400" y="594" text-anchor="middle" class="label" font-size="13">2026-10-29 05:30:55 SGT (UTC+08:00)</text>
+
+  <style>
+    #bike{transform-origin:410px 435px;animation:roll 2.2s linear infinite}
+    #spokes1,#spokes2{transform-box:fill-box;transform-origin:center;animation:spin .8s linear infinite}
+    #bodyBob{transform-box:fill-box;transform-origin:center bottom;animation:bob .65s ease-in-out infinite alternate}
+    #fish{animation:fishbob .65s ease-in-out infinite alternate}
+    @keyframes roll{0%{transform:translateX(-8px)}50%{transform:translateX(8px)}100%{transform:translateX(-8px)}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{from{transform:translateY(0) rotate(-1deg)}to{transform:translateY(7px) rotate(2deg)}}
+    @keyframes fishbob{from{transform:translate(505px,300px) rotate(-12deg)}to{transform:translate(505px,307px) rotate(-9deg)}}
+  </style>
+</svg>

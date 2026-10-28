@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8bd8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c6673"/>
+      <stop offset="1" stop-color="#303846"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#16202c" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#182536; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#182536; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2.2s linear infinite; }
+      .rider { transform-box:fill-box; transform-origin:center bottom; animation:bob .8s ease-in-out infinite alternate; }
+      .pedal { transform-box:fill-box; transform-origin:center; animation:spin 1.2s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-5px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff3a6" opacity=".9"/>
+  <path d="M0 300 Q120 245 240 300 T480 300 T720 300 T960 300 V390 H0Z" fill="#8ccf91"/>
+  <path d="M0 350 Q180 305 360 350 T720 350 T1080 350 V420 H0Z" fill="#65ad72"/>
+  <rect y="390" width="800" height="150" fill="url(#road)"/>
+  <path d="M0 465 H800" stroke="#f8d86a" stroke-width="8" stroke-dasharray="42 28"/>
+  <path d="M0 540 H800" stroke="#202936" stroke-width="8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="28" width="716" height="88" rx="22" fill="#fffdf5" class="ink"/>
+    <text x="400" y="67" text-anchor="middle" class="label" font-size="34" font-weight="800">THE GREAT PELICAN GRAND PRIX</text>
+    <text x="400" y="96" text-anchor="middle" class="label" font-size="18" font-weight="700" fill="#d34d3f">“Why pedal when you can simply wing it?”</text>
+  </g>
+
+  <g transform="translate(0,8)">
+    <g class="wheel">
+      <circle cx="265" cy="470" r="67" fill="#eaf3f5" class="ink"/>
+      <circle cx="265" cy="470" r="10" fill="#e65b4f" class="ink"/>
+      <path d="M265 403V537 M198 470H332 M218 423L312 517 M312 423L218 517" stroke="#6c7b88" stroke-width="4"/>
+    </g>
+    <g class="wheel">
+      <circle cx="570" cy="470" r="67" fill="#eaf3f5" class="ink"/>
+      <circle cx="570" cy="470" r="10" fill="#e65b4f" class="ink"/>
+      <path d="M570 403V537 M503 470H637 M523 423L617 517 M617 423L523 517" stroke="#6c7b88" stroke-width="4"/>
+    </g>
+
+    <path d="M265 470 L355 360 L570 470 L430 470 L355 360 L265 470 M430 470 L385 390 L455 390" fill="none" class="ink"/>
+    <path d="M570 470 L595 350" fill="none" class="ink"/>
+    <path d="M575 350 Q606 338 627 353" fill="none" class="ink"/>
+    <path d="M355 360 L333 334" fill="none" class="ink"/>
+    <path d="M320 334 H350" class="ink" fill="none"/>
+    <circle cx="430" cy="470" r="17" fill="#f4c84b" class="ink"/>
+    <g class="pedal">
+      <path d="M430 470 L460 445 M430 470 L401 495" stroke="#182536" stroke-width="6"/>
+      <rect x="456" y="438" width="20" height="8" rx="4" fill="#e65b4f" class="ink"/>
+      <rect x="385" y="492" width="20" height="8" rx="4" fill="#e65b4f" class="ink"/>
+    </g>
+
+    <g class="rider">
+      <ellipse cx="402" cy="300" rx="93" ry="78" fill="#f4f0df" class="ink"/>
+      <path d="M350 315 Q404 345 458 314 Q449 370 402 374 Q360 368 350 315Z" fill="#d8d5c5" class="ink"/>
+      <path d="M353 307 Q319 286 292 305 Q324 326 359 329" fill="#f4f0df" class="ink"/>
+      <path d="M291 305 Q267 315 253 335 Q286 342 318 324" fill="#ed9e36" class="ink"/>
+      <ellipse cx="383" cy="272" rx="10" ry="14" fill="#182536"/>
+      <ellipse cx="433" cy="272" rx="10" ry="14" fill="#182536"/>
+      <circle cx="386" cy="268" r="3" fill="#fff"/>
+      <circle cx="436" cy="268" r="3" fill="#fff"/>
+      <path d="M378 327 Q403 343 430 326" fill="none" class="ink"/>
+      <path d="M346 240 Q374 204 412 217 Q447 196 476 239" fill="#f4f0df" class="ink"/>
+      <path d="M364 231 Q392 184 431 218" fill="#f4f0df" class="ink"/>
+      <path d="M355 349 L332 407 L386 407 L405 350" fill="#4b7fc4" class="ink"/>
+      <path d="M438 348 L488 405 L448 425 L408 372" fill="#4b7fc4" class="ink"/>
+      <path d="M332 407 L315 453" fill="none" class="ink"/>
+      <path d="M488 405 L502 453" fill="none" class="ink"/>
+      <ellipse cx="310" cy="458" rx="29" ry="10" fill="#e65b4f" class="ink"/>
+      <ellipse cx="509" cy="458" rx="29" ry="10" fill="#e65b4f" class="ink"/>
+      <path d="M350 347 Q320 370 305 397" fill="none" class="ink"/>
+      <path d="M454 347 Q475 364 493 392" fill="none" class="ink"/>
+      <path d="M303 397 L332 407 M493 392 L488 405" fill="none" class="ink"/>
+      <path d="M364 226 Q405 211 449 228" fill="none" stroke="#e65b4f" stroke-width="10"/>
+    </g>
+
+    <g>
+      <path d="M610 250 q38 -32 69 0" fill="none" stroke="#fffdf5" stroke-width="7" stroke-linecap="round"/>
+      <path d="M650 271 q30 -22 54 0" fill="none" stroke="#fffdf5" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(520 150)">
+    <path d="M0 0 q22 -22 44 0" fill="none" stroke="#182536" stroke-width="5"/>
+    <text x="22" y="35" text-anchor="middle" class="label" font-size="17" font-weight="700">HONK!</text>
+  </g>
+
+  <rect x="42" y="552" width="716" height="34" rx="10" fill="#fffdf5" class="ink"/>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-29 05:30:37 SGT (UTC+08:00)</text>
+</svg>
