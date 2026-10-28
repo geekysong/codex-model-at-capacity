@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Parade</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#fff0bd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#242b35;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;font-weight:700}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 455 Q120 410 245 452 T490 445 T800 450 V600 H0Z" fill="#8bd477"/>
+  <path d="M0 500 Q180 468 360 502 T800 493 V600 H0Z" fill="#5ab463"/>
+  <path d="M0 535 Q180 510 360 536 T800 530" fill="none" stroke="#378c4e" stroke-width="7"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" fill="#17354b">THE PELICAN PEDAL PARADE</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="18" fill="#7b3e28">“When the beak is full, take the scenic route.”</text>
+
+  <g filter="url(#shadow)">
+    <!-- bicycle frame -->
+    <g fill="none" class="ink">
+      <path d="M205 450 L300 320 L420 450 L205 450 L365 450 L475 335 L420 450"/>
+      <path d="M475 335 L525 335"/>
+      <path d="M300 320 L275 285"/>
+      <path d="M260 285 L300 285"/>
+      <path d="M365 450 L350 475"/>
+      <path d="M335 475 L375 475"/>
+    </g>
+
+    <!-- rotating wheels -->
+    <g class="ink" fill="#e9f7ff">
+      <g>
+        <circle cx="205" cy="450" r="67"/>
+        <circle cx="205" cy="450" r="10" fill="#242b35"/>
+        <g stroke="#5c9bb5" stroke-width="3">
+          <path d="M205 393V507M148 450H262M165 410L245 490M245 410L165 490"/>
+        </g>
+        <animateTransform attributeName="transform" type="rotate" from="0 205 450" to="360 205 450" dur="2s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <circle cx="525" cy="450" r="67"/>
+        <circle cx="525" cy="450" r="10" fill="#242b35"/>
+        <g stroke="#5c9bb5" stroke-width="3">
+          <path d="M525 393V507M468 450H582M485 410L565 490M565 410L485 490"/>
+        </g>
+        <animateTransform attributeName="transform" type="rotate" from="0 525 450" to="360 525 450" dur="2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- spinning crank and pedal -->
+    <g class="ink" fill="none">
+      <circle cx="365" cy="450" r="15" fill="#f2bf3b"/>
+      <path d="M365 450 L390 425 M390 425 H420"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 365 450" to="360 365 450" dur="1s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- pelican body with bobbing -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1s" repeatCount="indefinite"/>
+      <ellipse cx="365" cy="250" rx="103" ry="92" fill="#f7f4ea" class="ink"/>
+      <path d="M292 260 Q345 225 421 260 L405 335 Q350 355 300 320Z" fill="#e3e8e5" class="ink"/>
+      <path d="M328 300 Q365 340 397 300 L405 410 Q365 438 325 408Z" fill="#f7f4ea" class="ink"/>
+      <!-- neck and head -->
+      <ellipse cx="390" cy="170" rx="70" ry="65" fill="#fffdf4" class="ink"/>
+      <path d="M420 171 Q505 155 610 190 Q520 232 421 205 Q399 194 420 171Z" fill="#f2a83b" class="ink"/>
+      <path d="M443 194 Q515 204 587 190 Q515 255 438 220Z" fill="#ef8e32" class="ink"/>
+      <circle cx="417" cy="154" r="10" fill="#242b35"/>
+      <path d="M420 128 Q444 112 465 128" fill="none" class="ink"/>
+      <path d="M435 116 Q450 95 468 112" fill="none" class="ink"/>
+      <!-- wing -->
+      <path d="M300 245 Q345 225 380 270 L350 330 Q312 313 290 280Z" fill="#cfd8d7" class="ink"/>
+      <path d="M320 262 Q345 280 356 305" fill="none" stroke="#7d9697" stroke-width="5"/>
+      <!-- legs -->
+      <path d="M337 330 L323 408 L365 450" fill="none" class="ink"/>
+      <path d="M395 330 L410 410 L375 450" fill="none" class="ink"/>
+      <path d="M360 450 L390 450" fill="none" class="ink"/>
+      <!-- fish in beak -->
+      <path d="M545 177 Q585 140 625 178 Q585 215 545 177Z" fill="#74c7d9" class="ink"/>
+      <path d="M625 178 L650 158 L646 195Z" fill="#4da8bd" class="ink"/>
+      <circle cx="590" cy="171" r="4" fill="#242b35"/>
+      <path d="M564 177 Q580 180 590 177" fill="none" stroke="#24758a" stroke-width="3"/>
+    </g>
+  </g>
+
+  <g transform="translate(92 150)">
+    <path d="M0 0 Q40 -22 80 0 L70 58 Q40 78 10 58Z" fill="#fff5c7" stroke="#8b5b2b" stroke-width="4"/>
+    <text x="40" y="28" text-anchor="middle" class="label" font-size="16" fill="#6b4321">HONK!</text>
+    <text x="40" y="48" text-anchor="middle" font-size="13" fill="#6b4321">CLEAR THE LANE!</text>
+  </g>
+
+  <text x="400" y="570" text-anchor="middle" class="label" font-size="16" fill="#183b45">2026-10-29 03:30:01 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e6f8ff"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#25323b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#25323b}
+      .wheel{transform-box:fill-box;transform-origin:center}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 430 Q160 370 320 430 T640 425 T800 430 V540 H0Z" fill="#b9e58d"/>
+  <path d="M0 500 Q180 470 360 500 T800 490 V560 H0Z" fill="#78c96a"/>
+
+  <text x="400" y="64" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#173b52">
+    THE GREAT PELICAN GETAWAY
+  </text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="20" font-weight="700">
+    One bird. One bicycle. Absolutely no license.
+  </text>
+
+  <g aria-label="pelican riding a bicycle">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <circle cx="280" cy="405" r="78" fill="#f6fbff"/>
+      <circle cx="590" cy="405" r="78" fill="#f6fbff"/>
+      <path d="M280 405 L380 300 L470 405 L280 405 L430 405 L380 300 L350 245"/>
+      <path d="M470 405 L520 300 L575 300"/>
+      <path d="M520 300 L500 270"/>
+      <path d="M575 300 L605 270"/>
+      <path d="M430 405 L450 330"/>
+    </g>
+
+    <!-- spinning wheel spokes -->
+    <g class="wheel" fill="none" stroke="#5b7380" stroke-width="3">
+      <animateTransform attributeName="transform" type="rotate" from="0 280 405" to="360 280 405" dur="2.4s" repeatCount="indefinite"/>
+      <path d="M280 327V483 M202 405H358 M225 350L335 460 M335 350L225 460"/>
+    </g>
+    <g class="wheel" fill="none" stroke="#5b7380" stroke-width="3">
+      <animateTransform attributeName="transform" type="rotate" from="0 590 405" to="360 590 405" dur="2.4s" repeatCount="indefinite"/>
+      <path d="M590 327V483 M512 405H668 M535 350L645 460 M645 350L535 460"/>
+    </g>
+
+    <!-- pelican bobbing -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <!-- body -->
+      <ellipse cx="408" cy="235" rx="92" ry="82" fill="#f7f2e8" class="ink"/>
+      <path d="M355 198 Q320 150 343 108 Q378 76 420 105 Q448 128 438 182" fill="#f7f2e8" class="ink"/>
+      <!-- head -->
+      <circle cx="390" cy="128" r="48" fill="#fffaf0" class="ink"/>
+      <circle cx="405" cy="120" r="8" fill="#25323b"/>
+      <path d="M425 135 Q482 120 548 146 Q563 153 548 165 Q474 176 422 157Z" fill="#f2a63b" class="ink"/>
+      <path d="M480 151 Q530 160 555 178" fill="none" class="ink"/>
+      <path d="M345 190 Q390 220 443 194" fill="none" stroke="#d9cbb2" stroke-width="10"/>
+      <!-- wing -->
+      <path d="M425 210 Q492 210 500 270 Q462 288 420 254Z" fill="#ded7c8" class="ink"/>
+      <!-- feet and pedals -->
+      <path d="M382 294 L365 345 M445 288 L470 345" fill="none" class="ink"/>
+      <path d="M365 345 L338 354 M470 345 L500 355" fill="none" class="ink"/>
+      <circle cx="430" cy="405" r="13" fill="#f2a63b" class="ink"/>
+      <path d="M430 405 L397 380 M430 405 L458 430" fill="none" class="ink"/>
+      <path d="M392 378 h-28 M456 431 h28" class="ink"/>
+      <!-- helmet -->
+      <path d="M347 108 Q392 65 438 105 L440 120 L350 120Z" fill="#e84f4f" class="ink"/>
+      <path d="M360 101 Q390 82 420 98" fill="none" stroke="#ffcccb" stroke-width="6"/>
+    </g>
+  </g>
+
+  <!-- comic accents -->
+  <path d="M112 190 l22 12 -18 18" fill="none" stroke="#f2a63b" stroke-width="8"/>
+  <path d="M670 205 l20 -14 -3 28" fill="none" stroke="#f2a63b" stroke-width="8"/>
+  <text x="96" y="250" class="label" font-size="22" font-weight="800" transform="rotate(-12 96 250)">FLAP!</text>
+  <text x="658" y="270" class="label" font-size="22" font-weight="800" transform="rotate(12 658 270)">HONK!</text>
+
+  <rect x="70" y="525" width="660" height="48" rx="18" fill="#fff7d6" stroke="#25323b" stroke-width="4"/>
+  <text x="400" y="556" text-anchor="middle" class="label" font-size="19" font-weight="700">
+    Caption: “I pedal because flying is exhausting—and parking is impossible.”
+  </text>
+
+  <text x="400" y="592" text-anchor="middle" class="label" font-size="14" font-weight="700">
+    2026-10-29 03:31:20 SGT (UTC+08:00)
+  </text>
+</svg>
