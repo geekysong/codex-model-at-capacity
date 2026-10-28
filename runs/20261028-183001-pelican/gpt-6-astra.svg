@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8ecff"/>
+      <stop offset="1" stop-color="#f8fdff"/>
+    </linearGradient>
+    <linearGradient id="feather" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf3"/>
+      <stop offset="1" stop-color="#d9e8ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 475 Q120 445 240 470 T480 462 T800 470 L800 555 L0 555Z" fill="#b9df9d"/>
+  <path d="M0 505 Q140 480 280 500 T560 495 T800 505" fill="none" stroke="#82b96d" stroke-width="5"/>
+  <ellipse cx="410" cy="520" rx="285" ry="20" fill="#6f8f63" opacity=".35" filter="url(#shadow)"/>
+
+  <text x="400" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#17324d">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#26485c">“Why pedal when you can let the beak do the heavy lifting?”</text>
+
+  <!-- bicycle -->
+  <g stroke="#203746" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="245" cy="438" r="78" fill="#eff8fb"/>
+    <circle cx="585" cy="438" r="78" fill="#eff8fb"/>
+    <path d="M245 438 L350 320 L455 438 L245 438 L390 438 L350 320"/>
+    <path d="M455 438 L505 335 L585 438"/>
+    <path d="M505 335 L558 315"/>
+    <path d="M548 302 L575 312"/>
+    <path d="M350 320 L365 288"/>
+    <path d="M345 287 L382 287"/>
+  </g>
+
+  <g stroke="#7ea7b7" stroke-width="2">
+    <g id="spokesL">
+      <path d="M245 360V516 M167 438H323 M190 383L300 493 M190 493L300 383"/>
+    </g>
+    <g id="spokesR">
+      <path d="M585 360V516 M507 438H663 M530 383L640 493 M530 493L640 383"/>
+    </g>
+  </g>
+  <g fill="#203746">
+    <circle cx="245" cy="438" r="8"/>
+    <circle cx="585" cy="438" r="8"/>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <!-- pelican body -->
+    <ellipse cx="390" cy="250" rx="88" ry="105" fill="url(#feather)" stroke="#203746" stroke-width="6"/>
+    <path d="M338 285 Q390 330 442 285" fill="none" stroke="#9db5bf" stroke-width="5"/>
+    <!-- wing -->
+    <path d="M407 220 Q480 235 449 314 Q416 286 389 254Z" fill="#b8cbd2" stroke="#203746" stroke-width="5"/>
+    <path d="M420 244 Q438 265 439 291" fill="none" stroke="#809aa5" stroke-width="4"/>
+    <!-- neck and head -->
+    <path d="M356 190 Q338 145 370 112 Q411 69 460 104 Q485 121 478 164 Q472 202 438 216Z" fill="url(#feather)" stroke="#203746" stroke-width="6"/>
+    <ellipse cx="430" cy="122" rx="9" ry="12" fill="#203746"/>
+    <circle cx="433" cy="118" r="3" fill="#fff"/>
+    <!-- beak -->
+    <path d="M461 141 Q552 137 623 169 Q549 207 458 174 Q444 157 461 141Z" fill="#f4a83a" stroke="#203746" stroke-width="6"/>
+    <path d="M472 169 Q540 181 606 169" fill="none" stroke="#c87820" stroke-width="4"/>
+    <path d="M526 158 Q547 165 562 176" fill="none" stroke="#d07d21" stroke-width="3"/>
+    <!-- fish in beak -->
+    <path d="M535 149 Q571 113 611 139 L638 128 L632 154 L650 171 L616 166 Q581 194 544 171Z" fill="#ef6b65" stroke="#203746" stroke-width="5"/>
+    <circle cx="575" cy="145" r="4" fill="#203746"/>
+    <!-- legs -->
+    <path d="M365 330 L350 393 M424 330 L446 393" fill="none" stroke="#d78328" stroke-width="9"/>
+    <path d="M339 394 Q353 402 369 394 M435 394 Q451 402 466 394" fill="none" stroke="#d78328" stroke-width="7"/>
+    <!-- feet on pedals -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 390 438;360 390 438" dur="1.4s" repeatCount="indefinite"/>
+      <circle cx="390" cy="438" r="14" fill="none" stroke="#203746" stroke-width="5"/>
+      <path d="M390 438 L420 458 M390 438 L360 418" stroke="#203746" stroke-width="5"/>
+      <path d="M417 458 h20 M340 418 h20" stroke="#203746" stroke-width="5"/>
+    </g>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0 245 438;360 245 438" dur="2.2s" repeatCount="indefinite"/>
+    <use href="#spokesL"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0 585 438;360 585 438" dur="2.2s" repeatCount="indefinite"/>
+    <use href="#spokesR"/>
+  </g>
+
+  <text x="400" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#17324d">2026-10-28 18:30:01 SGT (UTC+08:00)</text>
+</svg>
