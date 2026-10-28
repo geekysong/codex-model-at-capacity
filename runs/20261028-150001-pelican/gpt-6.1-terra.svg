@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican pedaling furiously while carrying an absurdly large beak.</desc>
+  <style>
+    .ink{stroke:#20242b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#d9edf7;stroke:#20242b;stroke-width:8}
+    .spoke{stroke:#5c7f91;stroke-width:3}
+    .txt{font-family:Arial,Helvetica,sans-serif;fill:#20242b}
+    .dash{stroke-dasharray:12 12;animation:road 1.2s linear infinite}
+    @keyframes road{to{stroke-dashoffset:-48}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes pedal{0%,100%{transform:rotate(0deg)}50%{transform:rotate(180deg)}}
+    .spin{transform-box:fill-box;transform-origin:center;animation:spin 1.5s linear infinite}
+    .bob{animation:bob .8s ease-in-out infinite}
+    .pedal{transform-box:fill-box;transform-origin:top left;animation:pedal .8s linear infinite}
+  </style>
+
+  <rect width="800" height="600" fill="#fff7df"/>
+  <rect x="24" y="22" width="752" height="88" rx="18" fill="#ffcf4a" class="ink"/>
+  <text x="400" y="64" text-anchor="middle" class="txt" font-size="34" font-weight="900">THE GREAT PELICAN GRAND PRIX</text>
+  <text x="400" y="94" text-anchor="middle" class="txt" font-size="18" font-weight="700">One bird. One bicycle. Absolutely no sense of balance.</text>
+
+  <path d="M70 468 H730" fill="none" stroke="#20242b" stroke-width="7"/>
+  <path d="M80 500 H720" fill="none" stroke="#f29b38" stroke-width="8" class="dash"/>
+
+  <!-- bicycle -->
+  <g>
+    <circle cx="235" cy="414" r="83" class="wheel"/>
+    <circle cx="574" cy="414" r="83" class="wheel"/>
+    <g class="spin">
+      <path d="M235 331V497M152 414H318M176 355L294 473M294 355L176 473" class="spoke"/>
+    </g>
+    <g class="spin">
+      <path d="M574 331V497M491 414H657M515 355L633 473M633 355L515 473" class="spoke"/>
+    </g>
+    <path d="M235 414 L350 330 L454 414 L335 414 Z" fill="none" class="ink"/>
+    <path d="M350 330 L405 414 L574 414" fill="none" class="ink"/>
+    <path d="M350 330 L333 286" fill="none" class="ink"/>
+    <path d="M316 286 H357" fill="none" class="ink"/>
+    <path d="M454 414 L475 348" fill="none" class="ink"/>
+    <path d="M464 348 H493" fill="none" class="ink"/>
+    <circle cx="405" cy="414" r="14" fill="#ffcf4a" class="ink"/>
+    <g class="pedal">
+      <path d="M405 414 L377 453" fill="none" class="ink"/>
+      <path d="M365 456 H389" fill="none" class="ink"/>
+    </g>
+  </g>
+
+  <!-- pelican -->
+  <g class="bob">
+    <ellipse cx="394" cy="276" rx="82" ry="91" fill="#f4f1e8" class="ink"/>
+    <path d="M344 229 Q395 174 451 220 Q470 236 466 278 Q457 330 405 342 Q350 330 337 284 Z" fill="#f4f1e8" class="ink"/>
+    <path d="M361 226 Q383 197 423 205" fill="none" stroke="#d8d2c6" stroke-width="13"/>
+    <circle cx="425" cy="228" r="11" fill="#20242b"/>
+    <circle cx="429" cy="224" r="4" fill="#fff"/>
+    <path d="M435 250 Q503 234 623 268 Q644 275 623 291 Q510 312 435 280 Z" fill="#f29b38" class="ink"/>
+    <path d="M469 272 Q520 286 603 280" fill="none" stroke="#c96728" stroke-width="5"/>
+    <path d="M355 271 Q315 301 330 356 Q346 382 382 348" fill="#e3ded2" class="ink"/>
+    <path d="M436 318 Q466 347 484 382" fill="none" class="ink"/>
+    <path d="M484 382 Q504 402 522 390" fill="none" class="ink"/>
+    <path d="M371 336 Q350 370 367 398" fill="none" class="ink"/>
+    <path d="M367 398 Q384 415 400 401" fill="none" class="ink"/>
+    <path d="M356 354 Q330 376 312 400" fill="none" class="ink"/>
+    <path d="M312 400 Q296 415 281 402" fill="none" class="ink"/>
+    <path d="M400 342 Q430 357 454 348" fill="none" class="ink"/>
+    <text x="392" y="180" text-anchor="middle" class="txt" font-size="17" font-weight="700">HONK!</text>
+    <path d="M390 168 q-8 -18 4 -28 M407 168 q5 -20 18 -25" fill="none" class="ink"/>
+  </g>
+
+  <g class="txt">
+    <text x="400" y="548" text-anchor="middle" font-size="18" font-weight="700">Caption: He insisted the beak was aerodynamic. The bicycle disagreed.</text>
+    <text x="400" y="580" text-anchor="middle" font-size="14" font-weight="700">2026-10-28 15:03:07 SGT (UTC+08:00)</text>
+  </g>
+</svg>
