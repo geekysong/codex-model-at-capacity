@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9edcff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59636d"/>
+      <stop offset="1" stop-color="#303841"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#20252b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#20252b}
+      .bold{font-weight:900}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe98a" opacity=".9"/>
+  <path d="M0 360 Q120 300 240 360 T480 360 T800 350 V470 H0Z" fill="#8acb83"/>
+  <path d="M0 430 Q180 395 350 430 T800 420 V520 H0Z" fill="#67ad69"/>
+  <rect y="465" width="800" height="95" fill="url(#road)"/>
+  <path d="M0 515 H800" stroke="#f7d66d" stroke-width="8" stroke-dasharray="45 28"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label bold" font-size="38">PELICAN PEDAL PANIC</text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="20">“When the beak is bigger than the handlebars, improvise.”</text>
+
+  <!-- speech bubble -->
+  <path d="M88 154 Q88 112 132 112 H315 Q359 112 359 154 V205 Q359 247 315 247 H190 L145 278 L151 247 H132 Q88 247 88 205Z" fill="#fff" class="ink"/>
+  <text x="223" y="157" text-anchor="middle" class="label bold" font-size="23">I asked for a</text>
+  <text x="223" y="187" text-anchor="middle" class="label bold" font-size="23">fish delivery job!</text>
+  <text x="223" y="217" text-anchor="middle" class="label" font-size="19">They gave me wheels.</text>
+
+  <!-- animated pelican rider -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <!-- body -->
+    <ellipse cx="430" cy="285" rx="92" ry="68" fill="#f4f0e5" class="ink"/>
+    <path d="M373 272 Q390 195 463 197 Q520 200 531 267 Q500 244 467 250 Q420 260 373 272Z" fill="#d9e0e4" class="ink"/>
+    <!-- wing -->
+    <path d="M411 275 Q469 241 511 280 Q478 322 421 326 Q399 307 411 275Z" fill="#b9c8cf" class="ink"/>
+    <path d="M434 286 Q468 282 492 294" fill="none" class="ink"/>
+    <!-- neck and head -->
+    <path d="M466 218 Q475 151 531 140 Q582 131 610 169 Q626 193 607 219 Q583 244 531 231Z" fill="#f4f0e5" class="ink"/>
+    <ellipse cx="565" cy="166" rx="10" ry="13" fill="#20252b"/>
+    <path d="M601 181 Q679 181 716 207 Q730 217 716 228 Q664 243 600 216Z" fill="#f2a84b" class="ink"/>
+    <path d="M612 207 Q660 215 710 216" fill="none" stroke="#b86c27" stroke-width="4"/>
+    <!-- hat -->
+    <path d="M508 137 Q548 101 594 127 L609 148 Q554 137 511 154Z" fill="#e45858" class="ink"/>
+    <path d="M500 151 Q556 132 616 153" fill="none" class="ink"/>
+    <!-- legs -->
+    <path d="M429 335 L405 391 L453 410" fill="none" class="ink"/>
+    <path d="M474 334 L502 389 L536 401" fill="none" class="ink"/>
+    <ellipse cx="458" cy="410" rx="18" ry="9" fill="#f2a84b" class="ink"/>
+    <ellipse cx="537" cy="402" rx="18" ry="9" fill="#f2a84b" class="ink"/>
+  </g>
+
+  <!-- bicycle frame -->
+  <g class="ink" fill="none">
+    <circle cx="300" cy="442" r="72"/>
+    <circle cx="570" cy="442" r="72"/>
+    <path d="M300 442 L373 348 L475 442 Z"/>
+    <path d="M373 348 L430 442"/>
+    <path d="M475 442 L500 342"/>
+    <path d="M480 342 H526"/>
+    <path d="M373 348 L350 325"/>
+    <path d="M331 325 H370"/>
+    <path d="M430 442 L460 477"/>
+    <path d="M430 442 L399 474"/>
+    <circle cx="430" cy="442" r="13" fill="#f2a84b"/>
+    <path d="M430 442 L399 474 M430 442 L460 477"/>
+  </g>
+
+  <!-- wheel rotation accents -->
+  <g stroke="#e9f8ff" stroke-width="5" opacity=".8">
+    <path d="M300 381 V503 M239 442 H361"/>
+    <path d="M570 381 V503 M509 442 H631"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 300 442" to="360 300 442" dur="1.4s" repeatCount="indefinite"/>
+    <path d="M300 381 L300 503 M239 442 L361 442" stroke="#e9f8ff" stroke-width="5" opacity=".8"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 570 442" to="360 570 442" dur="1.4s" repeatCount="indefinite"/>
+    <path d="M570 381 L570 503 M509 442 L631 442" stroke="#e9f8ff" stroke-width="5" opacity=".8"/>
+  </g>
+
+  <!-- comic speed lines -->
+  <path d="M120 390 H220 M92 420 H180 M650 350 H735" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  <text x="690" y="335" class="label bold" font-size="22" transform="rotate(-8 690 335)">FLAP!</text>
+
+  <!-- footer -->
+  <rect x="20" y="565" width="760" height="25" rx="8" fill="#ffffff" opacity=".9"/>
+  <text x="400" y="583" text-anchor="middle" class="label" font-size="16">2026-10-28 22:34:01 SGT (UTC+08:00)</text>
+</svg>

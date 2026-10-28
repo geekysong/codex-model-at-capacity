@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedals Against the Tide</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly ignoring sensible transportation advice.</desc>
+  <style>
+    .ink{stroke:#20252b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:none;stroke:#20252b;stroke-width:9}
+    .spoke{stroke:#65727d;stroke-width:3}
+    .label{font-family:Arial,sans-serif;fill:#20252b}
+    .spin{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+    .bob{animation:bob .75s ease-in-out infinite alternate}
+    .pedal{animation:pedal .75s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{to{transform:translateY(-8px)}}
+    @keyframes pedal{to{transform:rotate(360deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#bde8f5"/>
+  <path d="M0 430 Q120 385 240 430 T480 430 T800 420 V600 H0Z" fill="#79c6d0"/>
+  <path d="M0 470 Q160 440 320 470 T640 465 T800 475" fill="none" stroke="#4b9ca8" stroke-width="5"/>
+  <path d="M0 500 Q150 475 300 500 T600 495 T800 505" fill="none" stroke="#4b9ca8" stroke-width="4"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#e85d3f">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="20" font-weight="700">Because flying is apparently too mainstream.</text>
+
+  <g transform="translate(0 8)">
+    <g class="spin">
+      <circle cx="235" cy="425" r="72" class="wheel"/>
+      <circle cx="565" cy="425" r="72" class="wheel"/>
+      <g class="spoke">
+        <path d="M235 353V497 M163 425H307 M184 374L286 476 M286 374L184 476"/>
+        <path d="M565 353V497 M493 425H637 M514 374L616 476 M616 374L514 476"/>
+      </g>
+    </g>
+
+    <path d="M235 425 L350 310 L455 425 L235 425 L405 425 L350 310 L565 425" fill="none" class="ink" stroke="#e85d3f"/>
+    <path d="M455 425 L500 330" fill="none" class="ink"/>
+    <path d="M482 330 H535" fill="none" class="ink"/>
+    <path d="M335 315 H375" fill="none" class="ink"/>
+
+    <g class="bob">
+      <ellipse cx="390" cy="292" rx="82" ry="105" fill="#f5f0df" class="ink"/>
+      <path d="M336 230 Q390 180 447 229 L430 304 Q388 330 343 301Z" fill="#d5e3e6" class="ink"/>
+      <circle cx="414" cy="231" r="9" fill="#20252b"/>
+      <path d="M427 260 Q500 247 548 278 Q499 305 427 288Z" fill="#f0a33b" class="ink"/>
+      <path d="M458 278 Q505 283 536 278" fill="none" stroke="#b66c22" stroke-width="4"/>
+      <path d="M352 215 Q331 175 359 151 Q389 170 384 211" fill="#e85d3f" class="ink"/>
+      <path d="M378 211 Q385 168 418 157 Q432 186 413 224" fill="#e85d3f" class="ink"/>
+      <path d="M348 302 Q320 333 284 344" fill="none" class="ink"/>
+      <path d="M431 303 Q458 334 487 344" fill="none" class="ink"/>
+      <path d="M280 344 l-19 12 M280 344 l-7 20 M487 344 l20 12 M487 344 l7 20" fill="none" class="ink"/>
+      <path d="M345 309 Q367 325 393 320" fill="none" stroke="#e85d3f" stroke-width="9"/>
+      <path d="M355 345 Q389 361 423 345" fill="none" class="ink"/>
+      <circle cx="405" cy="424" r="18" fill="#e85d3f" class="ink"/>
+      <g class="pedal" transform="translate(405 424)">
+        <path d="M0 0 L38 18 M0 0 L-31 22" class="ink"/>
+        <path d="M38 18 h22 M-31 22 h-22" class="ink"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(620 180)">
+    <path d="M0 45 Q50 0 100 45 Q50 90 0 45Z" fill="#fff7d6" class="ink"/>
+    <text x="50" y="41" text-anchor="middle" class="label" font-size="18" font-weight="700">HONK!</text>
+  </g>
+
+  <text x="400" y="548" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 22:33:05 SGT (UTC+08:00)</text>
+</svg>

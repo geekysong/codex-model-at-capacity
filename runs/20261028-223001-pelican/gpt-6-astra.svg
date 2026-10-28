@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Great Pelican Commute</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an absurdly tiny briefcase.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#eaf8d4"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#565d68"/>
+      <stop offset="1" stop-color="#303641"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#1b2630" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink { stroke:#202936; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#202936; }
+      .motion { fill:none; stroke:#fff; stroke-width:5; stroke-linecap:round; opacity:.7; }
+    </style>
+  </defs>
+
+  <!-- sky and city -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="46" fill="#fff4a8" opacity=".85"/>
+  <g opacity=".85">
+    <path d="M0 315V230h55v85h24v-120h66v120h28v-65h56v65h30v-150h78v150h38v-95h62v95h32v-135h74v135h38v-75h58v75h62v-115h75v115h37v-55h55v55h22v285H0Z" fill="#9ac3c7"/>
+    <path d="M0 330h800" stroke="#668f95" stroke-width="5"/>
+    <g fill="#e8f6d7">
+      <path d="M25 253h18v10H25zm0 23h18v10H25zm47-8h25v12H72zm90-46h25v13h-25zm55 25h25v13h-25zm68-60h29v14h-29zm42 32h21v12h-21zm74-11h26v13h-26zm68 36h22v12h-22zm63-20h26v13h-26zm73 38h21v12h-21zm60-56h26v13h-26z"/>
+    </g>
+  </g>
+
+  <!-- title -->
+  <g filter="url(#shadow)">
+    <rect x="42" y="28" width="716" height="91" rx="22" fill="#fff9df" class="ink"/>
+    <text x="400" y="72" text-anchor="middle" class="label" font-size="37" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+    <text x="400" y="101" text-anchor="middle" class="label" font-size="17" font-weight="700" fill="#d64e3f">“Traffic is for birds who have nowhere better to be.”</text>
+  </g>
+
+  <!-- distant birds -->
+  <g fill="none" stroke="#3e6870" stroke-width="5" stroke-linecap="round">
+    <path d="M92 160q12-12 24 0q12-12 24 0"/>
+    <path d="M645 185q10-10 20 0q10-10 20 0"/>
+  </g>
+
+  <!-- road -->
+  <path d="M0 395 Q220 365 420 390 T800 378 V600H0Z" fill="url(#road)"/>
+  <path d="M0 456 Q240 428 430 455 T800 439" fill="none" stroke="#f7d86b" stroke-width="9" stroke-dasharray="48 30"/>
+  <path d="M0 520 Q220 492 430 518 T800 500" fill="none" stroke="#aab5bd" stroke-width="4" opacity=".45"/>
+
+  <!-- motion marks -->
+  <path d="M147 343h-56M160 365h-78M642 331h47" class="motion"/>
+  <path d="M104 382h-31M676 360h43" class="motion"/>
+
+  <!-- bicycle -->
+  <g id="bike" filter="url(#shadow)">
+    <g id="wheelBack">
+      <circle cx="246" cy="425" r="83" fill="#1c222b" class="ink"/>
+      <circle cx="246" cy="425" r="67" fill="#d9edf0" stroke="#202936" stroke-width="5"/>
+      <g stroke="#65757d" stroke-width="3">
+        <path d="M246 358v134M179 425h134M199 378l94 94M293 378l-94 94"/>
+      </g>
+      <circle cx="246" cy="425" r="9" fill="#202936"/>
+    </g>
+    <g id="wheelFront">
+      <circle cx="574" cy="425" r="83" fill="#1c222b" class="ink"/>
+      <circle cx="574" cy="425" r="67" fill="#d9edf0" stroke="#202936" stroke-width="5"/>
+      <g stroke="#65757d" stroke-width="3">
+        <path d="M574 358v134M507 425h134M527 378l94 94M621 378l-94 94"/>
+      </g>
+      <circle cx="574" cy="425" r="9" fill="#202936"/>
+    </g>
+
+    <path d="M246 425L340 330L445 425L246 425L340 330L392 425" fill="none" stroke="#e34e42" stroke-width="11" stroke-linejoin="round"/>
+    <path d="M445 425L540 322M540 322l34 103M540 322h45" fill="none" stroke="#e34e42" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M330 326h-35M435 425h27" stroke="#202936" stroke-width="8" stroke-linecap="round"/>
+    <path d="M531 320q28-17 53-3" fill="none" stroke="#202936" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- animated pedals -->
+    <g id="pedals" transform="translate(340 330)">
+      <circle r="16" fill="#f6c84d" class="ink"/>
+      <path d="M0 0l29 22M0 0l-25-20" stroke="#202936" stroke-width="7" stroke-linecap="round"/>
+      <path d="M29 22h21M-25-20h-20" stroke="#202936" stroke-width="8" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- pelican body with gentle bob -->
+  <g id="pelican" transform="translate(0 0)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0;0 7;0 0" dur="2.2s" repeatCount="indefinite"/>
+    <!-- tail -->
+    <path d="M324 260q-48-38-77-10q28 15 53 43" fill="#f2a83b" class="ink"/>
+    <!-- body -->
+    <ellipse cx="382" cy="257" rx="88" ry="112" fill="#f5f0dc" class="ink"/>
+    <path d="M339 241q-40 43-26 92q33 14 68 5q-21-39-10-87" fill="#e3e8dd" class="ink"/>
+    <!-- wing -->
+    <path d="M389 208q67 12 65 79q-22 42-70 39q20-40 5-118Z" fill="#c9d6d1" class="ink"/>
+    <path d="M409 238q26 19 31 45M399 264q25 15 34 35" fill="none" stroke="#84999b" stroke-width="5"/>
+    <!-- neck -->
+    <path d="M365 185q-4-53 25-76q30 10 43 43q-17 39-10 67" fill="#f5f0dc" class="ink"/>
+    <!-- head -->
+    <ellipse cx="401" cy="105" rx="67" ry="57" fill="#f5f0dc" class="ink"/>
+    <!-- crest -->
+    <path d="M360 62q15-38 34-11q15-39 34-3q20-25 27 12" fill="#ef8d35" class="ink"/>
+    <!-- beak -->
+    <path d="M355 111Q282 104 205 137q-13 8 0 18q87 44 157-2q17-15-7-42Z" fill="#f3a23c" class="ink"/>
+    <path d="M209 140q78 13 139 1" fill="none" stroke="#b9652e" stroke-width="5"/>
+    <path d="M274 153q31 11 61 0" fill="none" stroke="#b9652e" stroke-width="4"/>
+    <!-- eye and monocle -->
+    <circle cx="421" cy="98" r="12" fill="#202936"/>
+    <circle cx="421" cy="98" r="21" fill="none" stroke="#d64e3f" stroke-width="5"/>
+    <path d="M440 111l17 18" stroke="#d64e3f" stroke-width="4"/>
+    <!-- tiny hat -->
+    <path d="M375 49q27-31 59 0v15h-59Z" fill="#d64e3f" class="ink"/>
+    <path d="M366 64h78" stroke="#202936" stroke-width="7" stroke-linecap="round"/>
+    <!-- feet -->
+    <path d="M356 339l-13 29M415 340l15 29" stroke="#202936" stroke-width="9" stroke-linecap="round"/>
+    <path d="M330 369q22-9 42 0M414 369q22-9 43 0" fill="none" stroke="#f3a23c" stroke-width="10" stroke-linecap="round"/>
+    <!-- briefcase -->
+    <g transform="translate(451 205) rotate(12)">
+      <rect x="0" y="0" width="73" height="52" rx="7" fill="#7b4b35" class="ink"/>
+      <path d="M24 0v-15q0-10 13-10t13 10V0" fill="none" stroke="#202936" stroke-width="6"/>
+      <path d="M0 18h73" stroke="#d99b4e" stroke-width="5"/>
+      <circle cx="37" cy="28" r="5" fill="#f6d05d"/>
+    </g>
+  </g>
+
+  <!-- sign -->
+  <g transform="translate(600 214) rotate(-4)" filter="url(#shadow)">
+    <path d="M19 82v120M128 82v120" stroke="#202936" stroke-width="8"/>
+    <rect width="150" height="88" rx="10" fill="#fff9df" class="ink"/>
+    <text x="75" y="34" text-anchor="middle" class="label" font-size="17" font-weight="900">BIKE LANE</text>
+    <text x="75" y="58" text-anchor="middle" class="label" font-size="15" font-weight="700">FOR BIRDS</text>
+    <path d="M38 70h74" stroke="#d64e3f" stroke-width="5"/>
+  </g>
+
+  <!-- caption -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="515" width="690" height="48" rx="16" fill="#fff9df" class="ink"/>
+    <text x="400" y="546" text-anchor="middle" class="label" font-size="20" font-weight="800">A beak, a briefcase, and absolutely no sense of direction.</text>
+  </g>
+
+  <!-- required visible timestamp footer -->
+  <rect x="0" y="574" width="800" height="26" fill="#202936"/>
+  <text x="400" y="593" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#fff9df">2026-10-28 22:30:01 SGT (UTC+08:00)</text>
+</svg>
