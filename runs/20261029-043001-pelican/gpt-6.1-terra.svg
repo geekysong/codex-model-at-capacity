@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly carrying an absurdly oversized beak.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9be7ff"/>
+      <stop offset="1" stop-color="#d9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#505968"/>
+      <stop offset="1" stop-color="#252b38"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#15202b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17202a}
+      .small{font-size:18px}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      .bob{animation:bob .8s ease-in-out infinite alternate}
+      .pedal{animation:pedal 1.2s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="108" r="48" fill="#fff5a3" stroke="#d59e32" stroke-width="5"/>
+  <path d="M0 350 Q140 285 270 350 T540 350 T800 345 V455 H0Z" fill="#8dcc78"/>
+  <path d="M0 410 Q175 360 340 420 T800 405 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 500 Q180 460 360 500 T800 492" fill="none" stroke="#f4d35e" stroke-width="9" stroke-dasharray="38 28"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#fefefe" stroke="#17202a" stroke-width="2" paint-order="stroke">
+    PELICAN PEDAL PANIC!
+  </text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="20" font-weight="700">
+    “He bills by the beak, but still can’t afford a parking spot.”
+  </text>
+
+  <g filter="url(#shadow)">
+    <g class="wheel">
+      <circle cx="250" cy="455" r="76" fill="#202733" class="ink"/>
+      <circle cx="250" cy="455" r="61" fill="#b9d2dc" stroke="#17202a" stroke-width="5"/>
+      <circle cx="250" cy="455" r="9" fill="#ef6c4f" class="ink"/>
+      <path d="M250 394V516M189 455H311M207 412L293 498M293 412L207 498" stroke="#4e6470" stroke-width="4"/>
+    </g>
+    <g class="wheel">
+      <circle cx="590" cy="455" r="76" fill="#202733" class="ink"/>
+      <circle cx="590" cy="455" r="61" fill="#b9d2dc" stroke="#17202a" stroke-width="5"/>
+      <circle cx="590" cy="455" r="9" fill="#ef6c4f" class="ink"/>
+      <path d="M590 394V516M529 455H651M547 412L633 498M633 412L547 498" stroke="#4e6470" stroke-width="4"/>
+    </g>
+
+    <path d="M250 455 L350 355 L470 455 L590 455 L470 355 L350 355 Z" fill="none" class="ink"/>
+    <path d="M470 355 L500 300" fill="none" class="ink"/>
+    <path d="M500 300 L545 300" fill="none" class="ink"/>
+    <path d="M350 355 L330 300" fill="none" class="ink"/>
+    <path d="M315 300 L350 300" fill="none" class="ink"/>
+    <path d="M470 355 L445 400" fill="none" class="ink"/>
+    <path d="M445 400 L410 420" fill="none" class="ink"/>
+    <path d="M445 400 L470 430" fill="none" class="ink"/>
+
+    <g class="bob">
+      <ellipse cx="414" cy="218" rx="72" ry="87" fill="#f6f1df" class="ink"/>
+      <path d="M360 197 Q410 148 466 190 L480 273 Q422 315 357 272Z" fill="#f3bd3f" class="ink"/>
+      <path d="M370 211 Q420 187 472 211" fill="none" stroke="#d98c28" stroke-width="7"/>
+      <ellipse cx="433" cy="132" rx="45" ry="34" fill="#f6f1df" class="ink"/>
+      <circle cx="451" cy="126" r="8" fill="#17202a"/>
+      <path d="M467 137 Q555 120 648 162 Q671 173 649 190 Q548 212 468 172Z" fill="#ef9243" class="ink"/>
+      <path d="M475 160 Q550 163 635 179" fill="none" stroke="#b95c31" stroke-width="5"/>
+      <path d="M386 111 Q412 73 446 98" fill="none" class="ink"/>
+      <path d="M390 105 Q411 84 430 96" fill="none" stroke="#ef9243" stroke-width="12"/>
+      <path d="M383 242 Q330 264 315 325" fill="none" class="ink"/>
+      <path d="M462 242 Q520 259 540 319" fill="none" class="ink"/>
+      <circle cx="315" cy="325" r="11" fill="#ef9243" class="ink"/>
+      <circle cx="540" cy="319" r="11" fill="#ef9243" class="ink"/>
+      <path d="M371 283 Q410 300 457 280" fill="none" class="ink"/>
+      <path d="M391 302 Q417 320 442 300" fill="none" stroke="#ef9243" stroke-width="10"/>
+      <text x="413" y="226" text-anchor="middle" class="label" font-size="18" font-weight="800">HONK!</text>
+    </g>
+
+    <g class="pedal" transform="translate(445 400)">
+      <circle r="17" fill="#ef6c4f" class="ink"/>
+      <path d="M0 0 L36 20 M0 0 L-28 25" stroke="#17202a" stroke-width="6"/>
+      <circle cx="40" cy="22" r="7" fill="#ef6c4f" class="ink"/>
+      <circle cx="-32" cy="29" r="7" fill="#ef6c4f" class="ink"/>
+    </g>
+  </g>
+
+  <path d="M95 245 Q126 220 151 245" fill="none" stroke="#17202a" stroke-width="6"/>
+  <path d="M122 225 L143 210 M137 240 L164 235" stroke="#17202a" stroke-width="5"/>
+  <text x="92" y="278" class="label" font-size="18" font-weight="700" transform="rotate(-8 92 278)">NO BEAK BRAKES!</text>
+
+  <rect x="34" y="548" width="732" height="34" rx="10" fill="#fff9e6" stroke="#17202a" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="label small" font-weight="700">2026-10-29 04:32:26 SGT (UTC+08:00)</text>
+</svg>

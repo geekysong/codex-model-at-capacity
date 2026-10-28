@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICYCLE</title>
+  <desc id="desc">A satirical pelican rides a bicycle while proudly carrying a tiny fish in its enormous bill.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555c68"/>
+      <stop offset="1" stop-color="#282e38"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#17202b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#17202b;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17202b}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center bottom;animation:bob .8s ease-in-out infinite alternate}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="46" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 365 Q120 300 245 355 T495 350 T800 330 V430 H0Z" fill="#8bd28d"/>
+  <path d="M0 405 Q150 350 310 405 T610 390 T800 380 V455 H0Z" fill="#62b875"/>
+  <path d="M0 448 H800 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 474 H800" stroke="#f8d56a" stroke-width="8" stroke-dasharray="70 34" opacity=".9"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="42" font-weight="900" letter-spacing="2">THE GREAT PELICYCLE</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="19" font-weight="700">“Why walk when you can wobble with style?”</text>
+
+  <g class="rider" filter="url(#shadow)">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <circle cx="222" cy="438" r="69" fill="#d7eef4"/>
+      <circle cx="588" cy="438" r="69" fill="#d7eef4"/>
+      <path d="M222 438 L345 330 L430 438 L222 438 L390 438 L345 330"/>
+      <path d="M430 438 L515 335 L588 438"/>
+      <path d="M515 335 L548 300"/>
+      <path d="M548 300 L584 307"/>
+      <path d="M345 330 L327 292"/>
+      <path d="M309 292 H347"/>
+    </g>
+    <g class="wheel" fill="none" stroke="#6f8190" stroke-width="3">
+      <path d="M222 369V507 M153 438H291 M173 389L271 487 M173 487L271 389"/>
+      <path d="M588 369V507 M519 438H657 M539 389L637 487 M539 487L637 389"/>
+    </g>
+    <g class="ink" fill="none">
+      <circle cx="222" cy="438" r="8" fill="#f5c84c"/>
+      <circle cx="588" cy="438" r="8" fill="#f5c84c"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="408" cy="263" rx="91" ry="116" fill="#f4f1e7" class="ink"/>
+    <path d="M354 307 Q407 348 465 312 L476 354 Q405 388 336 345Z" fill="#efb84f" class="ink"/>
+    <path d="M365 192 Q402 141 452 184 L478 235 Q446 255 399 240 Q371 226 365 192Z" fill="#fffdf5" class="ink"/>
+    <ellipse cx="425" cy="181" rx="11" ry="15" fill="#17202b"/>
+    <circle cx="429" cy="176" r="4" fill="#fff"/>
+    <path d="M449 201 Q494 208 542 235 Q550 243 539 251 Q481 250 438 230Z" fill="#f0a63d" class="ink"/>
+    <path d="M535 236 Q573 242 590 257 Q574 271 536 254Z" fill="#e28c32" class="ink"/>
+    <path d="M486 222 Q503 239 505 261" fill="none" class="ink"/>
+    <!-- fish gag -->
+    <path d="M513 242 q20 -22 41 0 q-21 25 -41 0Z" fill="#73c9dc" class="ink"/>
+    <path d="M554 242 l18 -12 v24Z" fill="#73c9dc" class="ink"/>
+    <circle cx="526" cy="238" r="3" fill="#17202b"/>
+
+    <!-- wings and feet -->
+    <path d="M349 246 Q300 263 315 328 Q342 312 372 278Z" fill="#d9d5c9" class="ink"/>
+    <path d="M459 247 Q512 270 497 331 Q468 312 439 278Z" fill="#d9d5c9" class="ink"/>
+    <path d="M386 365 L357 421" class="ink" fill="none"/>
+    <path d="M438 365 L469 421" class="ink" fill="none"/>
+    <path d="M349 419 q-23 8 -31 2 M349 419 q-19 14 -26 10 M469 419 q23 8 31 2 M469 419 q19 14 26 10" class="ink" fill="none"/>
+    <!-- pedal crank -->
+    <g class="pedal">
+      <circle cx="390" cy="438" r="14" fill="#f5c84c" class="ink"/>
+      <path d="M390 438 L420 416 M420 416 h20 M390 438 L365 461 M365 461 h-20" class="ink" fill="none"/>
+    </g>
+  </g>
+
+  <g class="label" font-weight="800">
+    <rect x="35" y="125" width="207" height="58" rx="16" fill="#fff" opacity=".92" class="ink"/>
+    <text x="52" y="150" font-size="17">LOCAL BIRD CLAIMS</text>
+    <text x="52" y="171" font-size="17">“WINGS ARE OPTIONAL.”</text>
+    <path d="M240 168 Q290 197 330 224" fill="none" class="ink"/>
+  </g>
+
+  <g class="label" font-weight="800">
+    <rect x="574" y="303" width="190" height="66" rx="16" fill="#fff" opacity=".92" class="ink"/>
+    <text x="590" y="329" font-size="17">FISH DELIVERY:</text>
+    <text x="590" y="351" font-size="17">SUSPICIOUSLY FAST</text>
+    <path d="M574 338 Q548 315 527 268" fill="none" class="ink"/>
+  </g>
+
+  <rect x="24" y="548" width="752" height="38" rx="12" fill="#17202b"/>
+  <text x="400" y="573" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#ffffff">2026-10-29 04:30:47 SGT (UTC+08:00)</text>
+</svg>
