@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e8f8ff"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#18324a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#18324a}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 405 Q120 350 245 405 T500 405 T800 390 V600 H0Z" fill="#7fc96f"/>
+  <path d="M0 470 Q180 425 350 470 T800 455" fill="none" stroke="#4a9b58" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="20" font-style="italic">“Why walk when you can wobble with style?”</text>
+
+  <g id="bike">
+    <g fill="none" class="ink">
+      <circle cx="245" cy="438" r="78" fill="#d9f3ff"/>
+      <circle cx="555" cy="438" r="78" fill="#d9f3ff"/>
+      <path d="M245 438 L350 300 L430 438 L245 438 M350 300 L555 438 M430 438 L500 320"/>
+      <path d="M485 320 L520 300 M500 320 L470 295"/>
+      <path d="M332 300 L318 282"/>
+    </g>
+    <g stroke="#74a9bd" stroke-width="3">
+      <path d="M245 360V516 M167 438H323 M190 383L300 493 M190 493L300 383"/>
+      <path d="M555 360V516 M477 438H633 M500 383L610 493 M500 493L610 383"/>
+    </g>
+    <circle cx="350" cy="300" r="13" fill="#f3b23d" class="ink"/>
+    <g id="pedals">
+      <path d="M350 300 L320 335 M350 300 L382 278" class="ink" fill="none"/>
+      <circle cx="320" cy="335" r="8" fill="#f3b23d" class="ink"/>
+      <circle cx="382" cy="278" r="8" fill="#f3b23d" class="ink"/>
+    </g>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="393" cy="230" rx="90" ry="112" fill="#f7f5ed" class="ink"/>
+    <path d="M335 190 Q300 130 342 108 Q400 88 446 132 L465 202 Q405 175 335 190Z" fill="#dce5e7" class="ink"/>
+    <circle cx="398" cy="136" r="12" fill="#fff" class="ink"/>
+    <circle cx="401" cy="136" r="5" fill="#18324a"/>
+    <path d="M444 154 Q525 160 582 202 Q530 238 440 195Z" fill="#f2a13b" class="ink"/>
+    <path d="M440 195 Q510 218 570 207" fill="none" class="ink"/>
+    <path d="M363 317 L350 365 M425 320 L445 365" class="ink" fill="none"/>
+    <path d="M343 365 Q355 378 371 365 M437 365 Q454 378 468 365" fill="none" class="ink"/>
+    <path d="M350 244 Q300 275 285 315 Q330 330 374 286" fill="#c9d8dc" class="ink"/>
+    <path d="M450 244 Q495 270 510 310 Q470 324 430 286" fill="#c9d8dc" class="ink"/>
+    <path d="M368 205 Q393 220 418 205" fill="none" class="ink"/>
+    <text x="398" y="246" text-anchor="middle" class="label" font-size="18" font-weight="700">HONK!</text>
+  </g>
+
+  <g class="label" font-size="18" font-weight="700">
+    <text x="90" y="335">BIRD LANE</text>
+    <path d="M180 330 L260 350" fill="none" stroke="#18324a" stroke-width="3"/>
+  </g>
+
+  <rect x="42" y="535" width="716" height="43" rx="10" fill="#ffffff" opacity=".88"/>
+  <text x="400" y="562" text-anchor="middle" class="label" font-size="17" font-weight="700">2026-10-28 08:30:01 SGT (UTC+08:00)</text>
+
+  <animateTransform xlink:href="#bike" attributeName="transform" type="translate" values="0 0;4 0;0 0;-4 0;0 0" dur="2.4s" repeatCount="indefinite"/>
+  <animateTransform xlink:href="#pedals" attributeName="transform" type="rotate" values="0 350 300;360 350 300" dur="1s" repeatCount="indefinite"/>
+  <animateTransform xlink:href="#bike circle:nth-of-type(1), #bike circle:nth-of-type(2)" attributeName="transform" type="rotate" values="0 245 438;360 245 438" dur="1.4s" repeatCount="indefinite"/>
+</svg>

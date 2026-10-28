@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical pelican rides a bicycle while proudly causing a traffic jam.</desc>
+  <style>
+    .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#d9f0ff;stroke:#17202a;stroke-width:8}
+    .spoke{stroke:#6b7c8f;stroke-width:3}
+    .label{font-family:Arial,sans-serif;fill:#17202a}
+  </style>
+
+  <rect width="800" height="600" fill="#bfe8ff"/>
+  <rect y="395" width="800" height="205" fill="#79b86b"/>
+  <path d="M0 420 Q150 390 300 420 T600 420 T800 420" fill="none" stroke="#4f914d" stroke-width="7"/>
+  <path d="M0 510 Q200 490 400 510 T800 510" fill="none" stroke="#5f9f57" stroke-width="5"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN PEDAL PANIC</text>
+  <text x="400" y="94" text-anchor="middle" class="label" font-size="20" font-style="italic">“He said the beak is aerodynamic. The traffic disagrees.”</text>
+
+  <g transform="translate(0 0)">
+    <g id="bike">
+      <g id="rearWheel">
+        <circle cx="245" cy="430" r="92" class="wheel"/>
+        <g class="spoke">
+          <path d="M245 338V522M153 430H337M180 365L310 495M180 495L310 365"/>
+        </g>
+        <circle cx="245" cy="430" r="11" fill="#17202a"/>
+      </g>
+      <g id="frontWheel">
+        <circle cx="585" cy="430" r="92" class="wheel"/>
+        <g class="spoke">
+          <path d="M585 338V522M493 430H677M520 365L650 495M520 495L650 365"/>
+        </g>
+        <circle cx="585" cy="430" r="11" fill="#17202a"/>
+      </g>
+
+      <path d="M245 430 L355 315 L470 430 L245 430 L405 430 L585 430 L470 430 L455 300" fill="none" class="ink" stroke="#e24a3b"/>
+      <path d="M355 315 L405 430" fill="none" class="ink" stroke="#e24a3b"/>
+      <path d="M455 300 L585 430" fill="none" class="ink" stroke="#e24a3b"/>
+      <path d="M440 292 Q458 276 478 292" fill="none" class="ink"/>
+      <path d="M455 300 L475 270" fill="none" class="ink"/>
+      <path d="M470 430 l34 18" fill="none" class="ink"/>
+      <circle cx="405" cy="430" r="18" fill="#ffd34e" class="ink"/>
+      <path d="M405 430 l-28 -23 M405 430 l28 23" class="ink" fill="none"/>
+      <circle cx="375" cy="407" r="7" fill="#17202a"/>
+      <circle cx="433" cy="453" r="7" fill="#17202a"/>
+      <path d="M585 430 L610 315" class="ink" fill="none"/>
+      <path d="M565 300 Q605 285 630 305" class="ink" fill="none"/>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="424" cy="246" rx="92" ry="112" fill="#f4f1e8" class="ink"/>
+      <path d="M375 230 Q322 215 290 245 Q335 270 391 258Z" fill="#f3a642" class="ink"/>
+      <path d="M292 245 Q335 260 391 258" fill="none" stroke="#b86b22" stroke-width="4"/>
+      <circle cx="456" cy="175" r="43" fill="#f4f1e8" class="ink"/>
+      <path d="M470 152 Q493 163 495 188" fill="none" class="ink"/>
+      <circle cx="470" cy="171" r="8" fill="#17202a"/>
+      <path d="M424 198 Q447 215 473 198" fill="none" stroke="#e24a3b" stroke-width="5"/>
+      <path d="M398 337 Q385 370 379 402" class="ink" fill="none"/>
+      <path d="M453 340 Q466 370 474 402" class="ink" fill="none"/>
+      <path d="M373 401 l-18 10 M474 401 l18 10" class="ink" fill="none"/>
+      <path d="M370 250 Q330 285 350 320" fill="#f4f1e8" class="ink"/>
+      <path d="M470 245 Q520 280 500 320" fill="#f4f1e8" class="ink"/>
+      <path d="M420 135 Q405 108 425 95 Q446 110 438 139" fill="#e24a3b" class="ink"/>
+      <text x="420" y="285" text-anchor="middle" class="label" font-size="18" font-weight="700">HONK!</text>
+    </g>
+  </g>
+
+  <g font-family="Arial,sans-serif" font-size="18" font-weight="700">
+    <rect x="52" y="325" width="150" height="48" rx="14" fill="#fff5b8" class="ink"/>
+    <text x="127" y="355" text-anchor="middle" fill="#17202a">BIKE LANE?</text>
+    <path d="M202 350 L285 315" fill="none" class="ink"/>
+  </g>
+
+  <rect x="35" y="548" width="730" height="34" rx="10" fill="#eaf7ff" stroke="#17202a" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 08:31:25 SGT (UTC+08:00)</text>
+
+  <style>
+    #rearWheel,#frontWheel{transform-box:fill-box;transform-origin:center}
+    #rearWheel{animation:spin 2s linear infinite}
+    #frontWheel{animation:spin 2s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</svg>
