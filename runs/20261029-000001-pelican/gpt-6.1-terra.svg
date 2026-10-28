@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      .ink{stroke:#263238;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#263238}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5ff"/>
+  <rect y="430" width="800" height="170" fill="#b8e3a0"/>
+  <path d="M0 470 Q160 440 320 470 T640 470 T960 470" fill="none" stroke="#7eb56b" stroke-width="8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="42" font-weight="900" fill="#173b57">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="22" font-weight="700">“Why flap when you can pedal?”</text>
+
+  <!-- bicycle frame -->
+  <g class="ink" fill="none">
+    <path d="M205 425 L300 300 L390 425 L205 425 L350 425 L300 300 L455 300 L390 425"/>
+    <path d="M455 300 L520 425"/>
+    <path d="M455 300 L490 270"/>
+    <path d="M472 265 L512 265"/>
+    <path d="M290 300 L270 270"/>
+    <path d="M250 270 L292 270"/>
+  </g>
+
+  <!-- wheels -->
+  <g class="ink" fill="#f7fbff">
+    <circle cx="205" cy="425" r="78"/>
+    <circle cx="520" cy="425" r="78"/>
+  </g>
+  <g id="wheelSpokes" class="ink" stroke-width="3">
+    <g>
+      <line x1="205" y1="425" x2="205" y2="347"/>
+      <line x1="205" y1="425" x2="205" y2="503"/>
+      <line x1="205" y1="425" x2="127" y2="425"/>
+      <line x1="205" y1="425" x2="283" y2="425"/>
+      <line x1="205" y1="425" x2="150" y2="370"/>
+      <line x1="205" y1="425" x2="260" y2="480"/>
+      <line x1="205" y1="425" x2="260" y2="370"/>
+      <line x1="205" y1="425" x2="150" y2="480"/>
+    </g>
+    <g transform="translate(315 0)">
+      <line x1="205" y1="425" x2="205" y2="347"/>
+      <line x1="205" y1="425" x2="205" y2="503"/>
+      <line x1="205" y1="425" x2="127" y2="425"/>
+      <line x1="205" y1="425" x2="283" y2="425"/>
+      <line x1="205" y1="425" x2="150" y2="370"/>
+      <line x1="205" y1="425" x2="260" y2="480"/>
+      <line x1="205" y1="425" x2="260" y2="370"/>
+      <line x1="205" y1="425" x2="150" y2="480"/>
+    </g>
+    <animateTransform attributeName="transform" type="rotate" from="0 205 425" to="360 205 425" dur="1.2s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- pelican body and motion -->
+  <g id="pelican" transform="translate(0 0)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="0.8s" repeatCount="indefinite"/>
+    <ellipse cx="365" cy="235" rx="78" ry="92" fill="#fffdf3" class="ink"/>
+    <path d="M310 210 Q250 160 285 120 Q335 138 365 190" fill="#d9edf2" class="ink"/>
+    <circle cx="365" cy="142" r="58" fill="#fffdf3" class="ink"/>
+    <path d="M395 150 Q475 130 550 165 Q475 205 395 178 Z" fill="#f4a641" class="ink"/>
+    <path d="M397 174 Q470 185 535 170" fill="none" class="ink" stroke="#c77a22" stroke-width="4"/>
+    <circle cx="382" cy="132" r="8" fill="#263238"/>
+    <path d="M345 235 Q390 250 430 225" fill="none" class="ink" stroke-width="5"/>
+    <path d="M344 310 L315 368" class="ink" fill="none"/>
+    <path d="M405 310 L435 365" class="ink" fill="none"/>
+    <path d="M315 368 L278 350 M315 368 L300 390" class="ink" fill="none"/>
+    <path d="M435 365 L470 350 M435 365 L452 389" class="ink" fill="none"/>
+    <path d="M300 390 Q315 400 330 390" fill="none" class="ink"/>
+    <path d="M452 389 Q467 399 480 388" fill="none" class="ink"/>
+    <!-- wing gripping handlebar -->
+    <path d="M416 220 Q470 235 490 270" fill="none" class="ink" stroke-width="13"/>
+    <path d="M310 225 Q270 260 270 300" fill="none" class="ink" stroke-width="13"/>
+    <text x="365" y="285" text-anchor="middle" class="label" font-size="18" font-weight="700">HONK!</text>
+  </g>
+
+  <!-- pedals -->
+  <g class="ink" fill="none">
+    <circle cx="350" cy="425" r="15"/>
+    <path d="M350 425 L375 405 M350 425 L325 445"/>
+    <path d="M375 405 l18 0 M325 445 l-18 0"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 350 425" to="360 350 425" dur="0.8s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="23" font-weight="800">A beak built for snacks. A bicycle built for speed.</text>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="17">2026-10-29 00:03:28 SGT (UTC+08:00)</text>
+</svg>

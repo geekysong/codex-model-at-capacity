@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#f8f4cf"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59636b"/>
+      <stop offset="1" stop-color="#303841"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17212b" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#18232b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#18232b}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .rider{animation:bob 1.1s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd66d" opacity=".9"/>
+  <path d="M0 365 Q120 300 250 350 T520 340 T800 320 V470 H0Z" fill="#78b879"/>
+  <path d="M0 410 Q180 350 340 400 T800 365 V470 H0Z" fill="#4f9d67"/>
+  <path d="M0 445 Q190 420 390 448 T800 420 V535 H0Z" fill="url(#road)"/>
+  <path d="M0 492 Q180 470 360 495 T800 472" fill="none" stroke="#f7d96b" stroke-width="8" stroke-dasharray="34 26"/>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="35" width="470" height="92" rx="22" fill="#fff8df" class="ink"/>
+    <text x="68" y="79" class="label" font-size="38" font-weight="900">BEAKING THE ROAD</text>
+    <text x="70" y="108" class="label" font-size="20" font-weight="700">A pelican pedals where common sense fears to fly.</text>
+  </g>
+
+  <g class="rider">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M270 430 L350 300 L470 430 Z"/>
+      <path d="M350 300 L420 430"/>
+      <path d="M350 300 L326 274"/>
+      <path d="M320 272 L350 272"/>
+      <path d="M470 430 L510 300"/>
+      <path d="M492 300 L530 300"/>
+      <path d="M270 430 L245 300"/>
+      <path d="M232 300 L265 300"/>
+      <path d="M245 300 L218 270"/>
+      <path d="M210 268 L240 268"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="245" cy="430" r="76" fill="#d9eef1" class="ink"/>
+      <circle cx="245" cy="430" r="8" fill="#18232b"/>
+      <g stroke="#718b92" stroke-width="3">
+        <path d="M245 354V506 M169 430H321 M191 376L299 484 M299 376L191 484"/>
+      </g>
+    </g>
+    <g class="wheel">
+      <circle cx="510" cy="430" r="76" fill="#d9eef1" class="ink"/>
+      <circle cx="510" cy="430" r="8" fill="#18232b"/>
+      <g stroke="#718b92" stroke-width="3">
+        <path d="M510 354V506 M434 430H586 M456 376L564 484 M564 376L456 484"/>
+      </g>
+    </g>
+
+    <!-- crank and pedaling legs -->
+    <g class="ink" fill="none">
+      <circle cx="420" cy="430" r="17" fill="#f3c44e"/>
+      <path d="M420 430 L390 400 M420 430 L452 455"/>
+      <path d="M378 397 H402 M449 455 H475"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="382" cy="244" rx="78" ry="91" fill="#f4f0dd" class="ink"/>
+    <path d="M340 229 Q382 190 430 226 Q411 267 353 270Z" fill="#d7e0df" class="ink"/>
+    <path d="M350 184 Q374 143 425 165 Q451 177 446 216 Q414 195 350 214Z" fill="#f4f0dd" class="ink"/>
+    <!-- wing -->
+    <path d="M350 235 Q305 250 327 307 Q363 287 387 249Z" fill="#c4d5d6" class="ink"/>
+    <!-- neck/head -->
+    <ellipse cx="398" cy="140" rx="53" ry="58" fill="#f4f0dd" class="ink"/>
+    <circle cx="420" cy="125" r="9" fill="#18232b"/>
+    <path d="M438 143 Q481 150 533 177 Q483 203 434 182Z" fill="#edaa45" class="ink"/>
+    <path d="M438 171 Q487 184 523 178" fill="none" stroke="#9b5d28" stroke-width="5"/>
+    <path d="M450 157 Q473 163 491 175" fill="none" stroke="#9b5d28" stroke-width="4"/>
+    <!-- comic goggles -->
+    <path d="M375 115 Q395 98 416 114" fill="none" stroke="#18232b" stroke-width="7"/>
+    <circle cx="389" cy="119" r="14" fill="#8ee4ef" class="ink"/>
+    <circle cx="423" cy="119" r="14" fill="#8ee4ef" class="ink"/>
+    <path d="M403 119 H409" class="ink"/>
+    <!-- feet -->
+    <path d="M360 319 Q341 342 363 360" fill="none" class="ink"/>
+    <path d="M414 323 Q443 345 432 365" fill="none" class="ink"/>
+  </g>
+
+  <!-- motion lines and gag -->
+  <path d="M150 320 q-30 -20 -52 0 M155 340 q-34 -14 -57 8" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <path d="M560 260 q34 -22 65 0 M565 280 q30 -14 58 5" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <g transform="translate(610 260)">
+    <path d="M0 52 Q25 8 74 0 Q105 0 121 24 Q87 23 65 41 Q42 61 0 52Z" fill="#fff8df" class="ink"/>
+    <text x="18" y="36" class="label" font-size="18" font-weight="800">HONK!</text>
+  </g>
+
+  <g transform="translate(0 0)">
+    <rect x="34" y="548" width="732" height="36" rx="10" fill="#fff8df" stroke="#18232b" stroke-width="3"/>
+    <text x="400" y="573" text-anchor="middle" class="label" font-size="18" font-weight="700">2026-10-29 00:00:01 SGT (UTC+08:00)</text>
+  </g>
+</svg>
