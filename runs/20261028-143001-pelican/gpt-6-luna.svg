@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e8f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59616d"/>
+      <stop offset="1" stop-color="#343a44"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#20252b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#20252b}
+      .wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.25s linear infinite}
+      .ride{animation:bob 1.25s ease-in-out infinite}
+      .pedalSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.25s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#ffd85a" stroke="#20252b" stroke-width="5"/>
+  <path d="M0 355 Q120 300 240 350 T480 345 T800 340 V430 H0Z" fill="#75b96b" class="ink"/>
+  <path d="M0 430 Q190 395 400 430 T800 425 V600 H0Z" fill="url(#road)"/>
+  <path d="M30 515 H770" stroke="#f5df72" stroke-width="8" stroke-dasharray="42 30"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#ffffff" stroke="#20252b" stroke-width="3" paint-order="stroke">
+    THE GREAT PELICYCLE
+  </text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="19" font-weight="700">
+    One bird. Two wheels. Absolutely no license.
+  </text>
+
+  <g class="ride">
+    <g aria-label="bicycle">
+      <circle cx="245" cy="435" r="76" fill="#dce7ef" class="ink"/>
+      <circle cx="575" cy="435" r="76" fill="#dce7ef" class="ink"/>
+      <g class="wheelSpin" stroke="#65717e" stroke-width="4">
+        <path d="M245 359V511M169 435H321M191 381L299 489M299 381L191 489"/>
+      </g>
+      <g class="wheelSpin" stroke="#65717e" stroke-width="4">
+        <path d="M575 359V511M499 435H651M521 381L629 489M629 381L521 489"/>
+      </g>
+      <path d="M245 435 L350 350 L465 435 L350 435 Z" fill="none" class="ink"/>
+      <path d="M350 350 L385 286" fill="none" class="ink"/>
+      <path d="M385 286 L430 286" fill="none" class="ink"/>
+      <path d="M465 435 L505 315" fill="none" class="ink"/>
+      <path d="M505 315 L545 315" fill="none" class="ink"/>
+      <path d="M335 347 L365 347" class="ink"/>
+      <circle cx="350" cy="435" r="20" fill="#f4b942" class="ink"/>
+      <g class="pedalSpin">
+        <path d="M350 435 L320 462 M350 435 L380 408" class="ink"/>
+        <circle cx="317" cy="465" r="7" fill="#f4b942" class="ink"/>
+        <circle cx="383" cy="405" r="7" fill="#f4b942" class="ink"/>
+      </g>
+    </g>
+
+    <g aria-label="pelican">
+      <ellipse cx="392" cy="250" rx="82" ry="96" fill="#f4f1e8" class="ink"/>
+      <path d="M350 250 Q300 290 324 345 Q354 326 381 287Z" fill="#d8dee3" class="ink"/>
+      <path d="M365 162 Q390 126 438 145 Q469 158 467 194 Q463 226 425 238 Q383 241 365 213Z" fill="#f4f1e8" class="ink"/>
+      <circle cx="421" cy="176" r="10" fill="#20252b"/>
+      <circle cx="424" cy="173" r="3" fill="#ffffff"/>
+      <path d="M386 198 Q438 200 520 226 Q535 232 520 245 Q453 251 390 225Z" fill="#f3a43b" class="ink"/>
+      <path d="M389 218 Q451 237 520 226 Q491 270 410 249Z" fill="#e47735" class="ink"/>
+      <path d="M386 270 Q420 303 450 345" fill="none" class="ink"/>
+      <path d="M450 345 L470 404" fill="none" class="ink"/>
+      <path d="M470 404 l-25 12 M470 404 l28 4" fill="none" class="ink"/>
+      <path d="M367 270 Q340 314 336 352" fill="none" class="ink"/>
+      <path d="M336 352 L320 407" fill="none" class="ink"/>
+      <path d="M320 407 l-24 9 M320 407 l27 7" fill="none" class="ink"/>
+      <path d="M349 236 Q326 214 333 184" fill="none" class="ink"/>
+      <path d="M333 184 Q345 166 360 175" fill="none" class="ink"/>
+      <path d="M396 271 Q424 286 449 273" fill="none" class="ink"/>
+      <text x="530" y="190" class="label" font-size="18" font-weight="800" fill="#20252b">HONK!</text>
+      <path d="M518 196 q18 9 27 27" fill="none" stroke="#20252b" stroke-width="4"/>
+    </g>
+  </g>
+
+  <g transform="translate(95 300)">
+    <path d="M0 40 Q45 0 92 40 L82 92 Q45 112 10 92Z" fill="#fff4c7" class="ink"/>
+    <text x="46" y="58" text-anchor="middle" class="label" font-size="16" font-weight="800">SAFETY</text>
+    <text x="46" y="78" text-anchor="middle" class="label" font-size="16" font-weight="800">WING</text>
+  </g>
+
+  <text x="400" y="555" text-anchor="middle" class="label" font-size="21" font-weight="700">
+    Caption: He pedals with purpose, but the beak still chooses the route.
+  </text>
+  <text x="400" y="584" text-anchor="middle" class="label" font-size="16" font-weight="600">
+    2026-10-28 14:32:00 SGT (UTC+08:00)
+  </text>
+</svg>
