@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly delivering absolutely nothing.</desc>
+
+  <defs>
+    <style>
+      .ink{stroke:#18202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#18202a;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .title{font:900 42px sans-serif;fill:#18202a;letter-spacing:1px}
+      .caption{font:700 20px sans-serif;fill:#18202a}
+      .label{font:700 16px sans-serif;fill:#18202a}
+      .footer{font:600 14px sans-serif;fill:#18202a}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      .ride{animation:bob .6s ease-in-out infinite alternate}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin .8s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+    </style>
+    <pattern id="roadDots" width="24" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="5" r="2" fill="#a8b7c4"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff4ff"/>
+  <circle cx="695" cy="92" r="48" fill="#ffd96a" class="thin"/>
+  <path d="M0 360 Q130 315 260 355 T520 350 T800 342 V470 H0Z" fill="#b8dfb0"/>
+  <path d="M0 450 H800 V545 H0Z" fill="#586573"/>
+  <path d="M0 485 H800" stroke="#eef5f7" stroke-width="8" stroke-dasharray="38 26"/>
+  <rect x="0" y="540" width="800" height="60" fill="#f4c95d"/>
+  <path d="M0 540 H800" stroke="#18202a" stroke-width="6"/>
+  <rect x="0" y="540" width="800" height="60" fill="url(#roadDots)" opacity=".35"/>
+
+  <text x="40" y="65" class="title">PELICAN PEDAL PANIC</text>
+  <text x="42" y="97" class="caption">He has a big bill, a tiny plan, and absolutely no cargo.</text>
+
+  <g class="ride">
+    <g aria-label="bicycle">
+      <circle cx="270" cy="438" r="76" fill="#eaf7ff" class="ink"/>
+      <circle cx="548" cy="438" r="76" fill="#eaf7ff" class="ink"/>
+      <g class="wheel">
+        <circle cx="270" cy="438" r="62" fill="none" class="thin"/>
+        <path d="M270 362V514 M194 438H346 M216 384L324 492 M324 384L216 492" class="thin"/>
+      </g>
+      <g class="wheel">
+        <circle cx="548" cy="438" r="62" fill="none" class="thin"/>
+        <path d="M548 362V514 M472 438H624 M494 384L602 492 M602 384L494 492" class="thin"/>
+      </g>
+      <path d="M270 438 L360 330 L452 438 Z M360 330 L548 438 M452 438 L548 438 M360 330 L335 286" fill="none" class="ink"/>
+      <path d="M330 286 H375" class="ink"/>
+      <path d="M452 438 A42 42 0 1 0 536 438 A42 42 0 1 0 452 438" fill="none" class="thin"/>
+      <g class="pedal">
+        <circle cx="494" cy="438" r="10" fill="#ffd96a" class="ink"/>
+        <path d="M494 438 L522 458 M494 438 L466 418" class="thin"/>
+        <rect x="518" y="455" width="20" height="7" rx="3" fill="#18202a"/>
+        <rect x="448" y="414" width="20" height="7" rx="3" fill="#18202a"/>
+      </g>
+      <path d="M548 438 L570 390 L604 371" fill="none" class="ink"/>
+      <path d="M596 367 L620 371" class="ink"/>
+    </g>
+
+    <g aria-label="pelican">
+      <ellipse cx="394" cy="264" rx="83" ry="103" fill="#f7f8f3" class="ink"/>
+      <path d="M352 215 Q313 170 330 121 Q349 83 393 103 Q426 120 420 161 L403 221Z" fill="#f7f8f3" class="ink"/>
+      <path d="M394 142 Q454 118 512 146 Q535 158 514 177 L432 190Z" fill="#f6a94a" class="ink"/>
+      <path d="M431 188 Q478 203 523 191 Q543 187 535 210 Q494 239 427 219Z" fill="#ed9140" class="ink"/>
+      <circle cx="379" cy="137" r="8" fill="#18202a"/>
+      <path d="M351 115 Q369 98 393 104" fill="none" class="thin"/>
+      <path d="M364 236 Q404 262 429 309 L400 333 Q362 302 346 268Z" fill="#d7e0e4" class="ink"/>
+      <path d="M410 238 Q448 255 468 296 L438 311 Q419 281 389 271Z" fill="#d7e0e4" class="ink"/>
+      <path d="M364 329 L342 389" class="ink"/>
+      <path d="M438 310 L454 382" class="ink"/>
+      <path d="M335 388 L369 388" class="ink"/>
+      <path d="M448 382 L481 382" class="ink"/>
+      <path d="M382 219 Q402 229 420 219" fill="none" class="thin"/>
+      <path d="M329 168 Q306 191 315 219" fill="none" class="thin"/>
+      <path d="M484 150 Q510 132 541 148" fill="none" class="thin"/>
+      <path d="M344 279 Q310 266 294 291" fill="none" class="thin"/>
+      <text x="286" y="356" class="label" transform="rotate(-12 286 356)">NO MAIL</text>
+    </g>
+  </g>
+
+  <path d="M585 270 Q650 240 713 272" fill="none" stroke="#18202a" stroke-width="5" stroke-dasharray="10 12"/>
+  <text x="594" y="250" class="label">“HONK!”</text>
+  <path d="M640 300 q18 -18 36 0 q18 18 36 0" fill="none" class="thin"/>
+
+  <rect x="32" y="558" width="736" height="30" rx="8" fill="#fff4c2" stroke="#18202a" stroke-width="3"/>
+  <text x="400" y="579" text-anchor="middle" class="footer">2026-10-28 13:02:08 SGT (UTC+08:00)</text>
+</svg>
