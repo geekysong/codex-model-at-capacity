@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle.</desc>
+  <style>
+    .ink{stroke:#24313a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:none;stroke:#24313a;stroke-width:9}
+    .spoke{stroke:#6b7b83;stroke-width:3}
+    .label{font-family:Arial,sans-serif;fill:#24313a}
+    .small{font-size:18px}
+    .caption{font-size:22px;font-weight:bold}
+    .title{font-size:42px;font-weight:900;letter-spacing:2px}
+    @keyframes ride{
+      0%,100%{transform:translateY(0) rotate(0deg)}
+      50%{transform:translateY(-7px) rotate(-1deg)}
+    }
+    @keyframes pedal{
+      from{transform:rotate(0deg)}
+      to{transform:rotate(360deg)}
+    }
+    @keyframes spin{
+      from{transform:rotate(0deg)}
+      to{transform:rotate(360deg)}
+    }
+    .rider{animation:ride 1.2s ease-in-out infinite}
+    .crank{transform-origin:450px 410px;animation:pedal .9s linear infinite}
+    .spokes{transform-origin:center;animation:spin 1.6s linear infinite}
+  </style>
+
+  <rect width="800" height="600" fill="#d8f3ff"/>
+  <rect x="0" y="0" width="800" height="112" fill="#ffd166"/>
+  <text x="400" y="58" text-anchor="middle" class="label title">PELICAN PEDAL PANIC</text>
+  <text x="400" y="91" text-anchor="middle" class="label caption">“If the beak fits, the bike ships!”</text>
+
+  <path d="M0 475 Q120 445 240 475 T480 475 T720 475 T900 475" fill="none" stroke="#8ccf78" stroke-width="70"/>
+  <path d="M0 505 Q180 480 360 505 T720 505 T900 505" fill="none" stroke="#5da65b" stroke-width="22"/>
+  <path d="M0 545 H800" stroke="#24313a" stroke-width="8"/>
+  <path d="M70 534 l30 -12 M170 543 l35 -8 M650 534 l35 -12 M735 546 l28 -9" stroke="#f7f1df" stroke-width="6"/>
+
+  <!-- bicycle -->
+  <g aria-label="bicycle">
+    <circle cx="245" cy="438" r="78" class="wheel"/>
+    <circle cx="575" cy="438" r="78" class="wheel"/>
+    <g class="spokes">
+      <g transform="translate(245 438)">
+        <path d="M0-70V70 M-70 0H70 M-50-50L50 50 M50-50L-50 50" class="spoke"/>
+      </g>
+      <g transform="translate(575 438)">
+        <path d="M0-70V70 M-70 0H70 M-50-50L50 50 M50-50L-50 50" class="spoke"/>
+      </g>
+    </g>
+    <path d="M245 438 L350 330 L450 438 L245 438 M350 330 L575 438 M350 330 L380 270 M355 337 L325 278" fill="none" class="ink" stroke="#e85d4a"/>
+    <path d="M375 270 Q405 260 428 274" fill="none" class="ink"/>
+    <path d="M568 360 Q610 330 633 350" fill="none" class="ink"/>
+    <circle cx="450" cy="438" r="14" fill="#f4a261" class="ink"/>
+    <g class="crank">
+      <path d="M450 438 l34 24 M450 438 l-30 -23" class="ink"/>
+      <circle cx="489" cy="464" r="7" fill="#24313a"/>
+      <circle cx="414" cy="411" r="7" fill="#24313a"/>
+    </g>
+  </g>
+
+  <!-- rider -->
+  <g class="rider">
+    <path d="M382 267 Q360 235 376 208" fill="none" class="ink"/>
+    <ellipse cx="397" cy="195" rx="48" ry="58" fill="#f7f1df" class="ink"/>
+    <path d="M424 205 Q482 184 544 215 Q568 227 548 244 Q480 260 423 239Z" fill="#f4a261" class="ink"/>
+    <path d="M522 224 Q568 230 599 246 Q579 261 548 244" fill="#e76f51" class="ink"/>
+    <circle cx="402" cy="182" r="7" fill="#24313a"/>
+    <path d="M386 153 Q404 132 430 145" fill="none" class="ink"/>
+    <path d="M365 226 Q325 270 344 328 Q356 348 383 332 L419 285" fill="#f7f1df" class="ink"/>
+    <path d="M419 285 Q440 302 458 330" fill="none" class="ink"/>
+    <path d="M458 330 Q472 355 460 389" fill="none" class="ink"/>
+    <path d="M382 332 Q407 359 426 390" fill="none" class="ink"/>
+    <path d="M458 389 l-18 17 M426 390 l-20 12" class="ink"/>
+    <path d="M344 328 Q319 344 294 330" fill="none" class="ink"/>
+    <path d="M294 330 Q270 317 251 327" fill="none" class="ink"/>
+    <path d="M368 264 Q338 286 320 304" fill="none" class="ink"/>
+    <path d="M320 304 Q304 317 287 303" fill="none" class="ink"/>
+    <path d="M389 170 Q400 158 416 164" fill="none" stroke="#e85d4a" stroke-width="8"/>
+    <path d="M376 142 Q400 117 430 132 L447 151" fill="#ef476f" class="ink"/>
+    <path d="M377 143 Q400 120 430 134" fill="none" stroke="#ffd166" stroke-width="8"/>
+  </g>
+
+  <!-- gag labels -->
+  <path d="M92 188 Q160 153 230 180" fill="none" stroke="#24313a" stroke-width="3"/>
+  <text x="105" y="165" class="label small">NO HANDS!</text>
+  <text x="105" y="185" class="label small">NO BRAINS!</text>
+  <path d="M650 210 Q690 180 744 198" fill="none" stroke="#24313a" stroke-width="3"/>
+  <text x="654" y="177" class="label small">BEAK</text>
+  <text x="654" y="197" class="label small">OVERDRIVE</text>
+
+  <rect x="42" y="560" width="716" height="30" rx="8" fill="#fff4d6" stroke="#24313a" stroke-width="3"/>
+  <text x="400" y="581" text-anchor="middle" class="label small">2026-10-28 11:31:13 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle while pretending to be an expert cyclist.</desc>
+  <style>
+    .ink{stroke:#243447;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#dff4ff;stroke:#243447;stroke-width:8}
+    .spoke{stroke:#5b7c93;stroke-width:2}
+    .label{font-family:Arial,sans-serif;fill:#243447}
+    .motion{animation:roll 2s linear infinite;transform-box:fill-box;transform-origin:center}
+    .bob{animation:bob .8s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center bottom}
+    .pedal{animation:pedal .8s linear infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes roll{to{transform:rotate(360deg)}}
+    @keyframes bob{to{transform:translateY(-5px)}}
+    @keyframes pedal{to{transform:rotate(360deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#fff7df"/>
+  <rect x="28" y="24" width="744" height="74" rx="18" fill="#ffcc4d" class="ink"/>
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="32" font-weight="900">THE GREAT PELICAN GRAND PRIX</text>
+  <text x="400" y="84" text-anchor="middle" class="label" font-size="16" font-weight="700">One bird. Two wheels. Absolutely no sense of direction.</text>
+
+  <path d="M82 473 Q400 440 718 473" fill="none" stroke="#b48b5a" stroke-width="9"/>
+  <path d="M110 468 l-18 18 M170 460 l-12 22 M650 461 l12 21 M710 470 l18 16" stroke="#b48b5a" stroke-width="6"/>
+
+  <g class="motion">
+    <circle cx="248" cy="430" r="74" class="wheel"/>
+    <circle cx="595" cy="430" r="74" class="wheel"/>
+    <g class="spoke">
+      <path d="M248 356v148 M174 430h148 M196 378l104 104 M300 378L196 482"/>
+      <path d="M595 356v148 M521 430h148 M543 378l104 104 M647 378L543 482"/>
+    </g>
+    <circle cx="248" cy="430" r="10" fill="#243447"/>
+    <circle cx="595" cy="430" r="10" fill="#243447"/>
+  </g>
+
+  <g class="ink" fill="none">
+    <path d="M248 430 L350 315 L500 430 L248 430 L430 430 L350 315"/>
+    <path d="M500 430 L595 430"/>
+    <path d="M350 315 L330 270"/>
+    <path d="M315 270 Q350 254 380 270"/>
+    <path d="M500 430 L520 365"/>
+    <path d="M500 365 h42"/>
+  </g>
+
+  <g class="pedal">
+    <circle cx="430" cy="430" r="17" fill="#ff7043" class="ink"/>
+    <path d="M430 430 L458 449 M430 430 L403 408" class="ink" fill="none"/>
+    <rect x="454" y="445" width="27" height="8" rx="4" fill="#243447"/>
+    <rect x="390" y="401" width="27" height="8" rx="4" fill="#243447"/>
+  </g>
+
+  <g class="bob">
+    <ellipse cx="421" cy="302" rx="91" ry="67" fill="#f4f0e8" class="ink"/>
+    <path d="M368 278 Q392 223 439 224 Q494 226 507 282 Q478 260 448 269 Q410 282 368 278Z" fill="#f4f0e8" class="ink"/>
+    <circle cx="455" cy="238" r="31" fill="#f4f0e8" class="ink"/>
+    <circle cx="465" cy="231" r="7" fill="#243447"/>
+    <path d="M478 248 Q552 245 587 268 Q548 292 476 269Z" fill="#ff9f43" class="ink"/>
+    <path d="M486 266 Q541 278 578 269" fill="none" class="ink"/>
+    <path d="M397 346 L382 404 M453 347 L470 404" class="ink" fill="none"/>
+    <path d="M374 405 q-18 8-25 22 M470 405 q18 8 27 21" class="ink" fill="none"/>
+    <path d="M352 294 Q320 315 300 350" class="ink" fill="none"/>
+    <path d="M300 350 q-12 18 6 24" class="ink" fill="none"/>
+    <path d="M380 255 q-18-20-36-12" class="ink" fill="none"/>
+    <path d="M400 302 q20 14 39 0" fill="none" class="ink"/>
+    <path d="M415 320 q17 12 33 0" fill="none" class="ink"/>
+  </g>
+
+  <path d="M610 195 q45-25 78 4" fill="none" stroke="#ff7043" stroke-width="7"/>
+  <text x="650" y="185" text-anchor="middle" class="label" font-size="18" font-weight="900">HONK!</text>
+  <text x="124" y="342" class="label" font-size="20" font-weight="900" transform="rotate(-12 124 342)">Tour de Beak</text>
+
+  <rect x="28" y="535" width="744" height="45" rx="12" fill="#243447"/>
+  <text x="400" y="563" text-anchor="middle" fill="#fff7df" font-family="Arial,sans-serif" font-size="16" font-weight="700">2026-10-28 11:30:01 SGT (UTC+08:00)</text>
+</svg>
