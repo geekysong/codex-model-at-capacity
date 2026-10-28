@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical pelican rides a bicycle while proudly ignoring traffic rules.</desc>
+  <style>
+    .ink{stroke:#18212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .text{font-family:Arial,Helvetica,sans-serif;fill:#18212b}
+    .small{font-size:18px}
+    .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+    .bob{animation:bob .9s ease-in-out infinite alternate}
+    .pedal{animation:pedal .9s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-8px)}}
+    @keyframes pedal{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#dff5ff"/>
+  <rect y="440" width="800" height="160" fill="#9bd27c"/>
+  <path d="M0 470 Q140 430 280 470 T560 470 T800 465" fill="none" stroke="#6cab58" stroke-width="8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="text" font-size="42" font-weight="900">PELICAN PEDAL PANIC</text>
+  <text x="400" y="94" text-anchor="middle" class="text" font-size="20" font-weight="700">“Why obey traffic laws when you have wings?”</text>
+
+  <g class="bob">
+    <!-- bicycle frame -->
+    <path d="M220 420 L330 300 L430 420 Z" fill="none" class="ink"/>
+    <path d="M330 300 L385 420" fill="none" class="ink"/>
+    <path d="M330 300 L300 270" fill="none" class="ink"/>
+    <path d="M300 270 L270 270" fill="none" class="ink"/>
+    <path d="M430 420 L470 300" fill="none" class="ink"/>
+    <path d="M450 300 L492 300" fill="none" class="ink"/>
+    <path d="M470 300 L500 275" fill="none" class="ink"/>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="220" cy="420" r="72" fill="#f8fbff" class="ink"/>
+      <circle cx="220" cy="420" r="10" fill="#ef6b5b" class="ink"/>
+      <path d="M220 348V492 M148 420H292 M169 369L271 471 M271 369L169 471" fill="none" stroke="#7b9cac" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="470" cy="420" r="72" fill="#f8fbff" class="ink"/>
+      <circle cx="470" cy="420" r="10" fill="#ef6b5b" class="ink"/>
+      <path d="M470 348V492 M398 420H542 M419 369L521 471 M521 369L419 471" fill="none" stroke="#7b9cac" stroke-width="3"/>
+    </g>
+
+    <!-- pedal crank -->
+    <g class="pedal">
+      <circle cx="385" cy="420" r="16" fill="#ffd34e" class="ink"/>
+      <path d="M385 420L410 395 M410 395h28 M385 420L360 445 M360 445h-28" fill="none" class="ink"/>
+    </g>
+
+    <!-- pelican -->
+    <g>
+      <ellipse cx="345" cy="235" rx="73" ry="92" fill="#f4f0df" class="ink"/>
+      <path d="M294 213 Q335 180 382 215 Q365 255 315 256 Z" fill="#d9e9ef" class="ink"/>
+      <circle cx="357" cy="177" r="49" fill="#f4f0df" class="ink"/>
+      <circle cx="372" cy="169" r="8" fill="#18212b"/>
+      <path d="M397 184 Q468 188 505 220 Q458 245 392 217 Z" fill="#f08b4f" class="ink"/>
+      <path d="M397 215 Q455 245 499 220" fill="none" stroke="#b95738" stroke-width="5"/>
+      <path d="M334 269 Q365 286 395 272" fill="none" class="ink"/>
+      <path d="M326 298 L305 337 M372 298 L390 337" fill="none" stroke="#e28d3d" stroke-width="9"/>
+      <path d="M305 337 L285 347 M390 337 L412 347" fill="none" stroke="#e28d3d" stroke-width="8"/>
+      <path d="M302 220 Q258 194 245 155 Q292 166 326 202" fill="#f4f0df" class="ink"/>
+      <path d="M385 224 Q430 198 446 158 Q402 170 369 204" fill="#f4f0df" class="ink"/>
+
+      <!-- helmet -->
+      <path d="M315 142 Q350 111 391 139 L401 160 L306 160 Z" fill="#ef6b5b" class="ink"/>
+      <path d="M327 134 L319 117 M350 127 L350 108 M374 130 L383 114" fill="none" class="ink"/>
+
+      <!-- speech bubble -->
+      <path d="M515 125 Q650 88 720 145 Q744 198 690 224 Q624 247 544 214 L507 235 L518 201 Q486 167 515 125 Z" fill="#fffdf2" class="ink"/>
+      <text x="615" y="155" text-anchor="middle" class="text" font-size="22" font-weight="800">NO BRAKES.</text>
+      <text x="615" y="184" text-anchor="middle" class="text" font-size="19">ONLY BEAKS!</text>
+    </g>
+  </g>
+
+  <path d="M105 390 Q125 360 145 390" fill="none" stroke="#5d9b58" stroke-width="8"/>
+  <path d="M125 390v35 M105 410h40" stroke="#5d9b58" stroke-width="6"/>
+  <path d="M650 390 Q670 360 690 390" fill="none" stroke="#5d9b58" stroke-width="8"/>
+  <path d="M670 390v35 M650 410h40" stroke="#5d9b58" stroke-width="6"/>
+
+  <rect x="40" y="545" width="720" height="38" rx="10" fill="#fffdf2" stroke="#18212b" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="text small" font-weight="700">2026-10-28 16:02:58 SGT (UTC+08:00)</text>
+</svg>
