@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee8ff"/>
+      <stop offset="1" stop-color="#eaffff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b68"/>
+      <stop offset="1" stop-color="#252a35"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink{stroke:#202733;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#202733}
+      .wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .bikeBob{animation:bob .8s ease-in-out infinite alternate}
+      .pedalSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="105" cy="110" r="48" fill="#fff5a8" opacity=".9"/>
+  <path d="M0 375 Q110 325 225 370 T450 365 T680 350 T800 370 V460 H0Z" fill="#8ed081"/>
+  <path d="M0 430 Q180 395 360 430 T800 425 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 515 H800" stroke="#f7dc65" stroke-width="9" stroke-dasharray="44 28" opacity=".9"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#d53d3d" stroke="#fff" stroke-width="3" paint-order="stroke">
+    THE PELICAN PEDAL EXPRESS
+  </text>
+  <text x="400" y="95" text-anchor="middle" class="label" font-size="19" font-weight="700">
+    “Why fly when you can honk your way through traffic?”
+  </text>
+
+  <g filter="url(#shadow)">
+    <g class="wheelSpin">
+      <circle cx="215" cy="442" r="67" fill="#e9eef2" class="ink"/>
+      <circle cx="215" cy="442" r="9" fill="#e7b83e" class="ink"/>
+      <path d="M215 375V509 M148 442H282 M168 395L262 489 M262 395L168 489" stroke="#6f7b8b" stroke-width="4"/>
+    </g>
+    <g class="wheelSpin">
+      <circle cx="585" cy="442" r="67" fill="#e9eef2" class="ink"/>
+      <circle cx="585" cy="442" r="9" fill="#e7b83e" class="ink"/>
+      <path d="M585 375V509 M518 442H652 M538 395L632 489 M632 395L538 489" stroke="#6f7b8b" stroke-width="4"/>
+    </g>
+
+    <path d="M215 442 L330 347 L468 442 L585 442 L468 347 Z" fill="none" class="ink" stroke="#d94242" stroke-width="12"/>
+    <path d="M330 347 L395 442 M468 347 L395 442" fill="none" class="ink" stroke="#d94242" stroke-width="10"/>
+    <path d="M468 347 L503 310" fill="none" class="ink" stroke="#202733" stroke-width="8"/>
+    <path d="M490 305 Q530 292 561 310" fill="none" class="ink" stroke="#202733" stroke-width="9"/>
+
+    <g class="pedalSpin">
+      <circle cx="395" cy="442" r="16" fill="#e7b83e" class="ink"/>
+      <path d="M395 442 L421 460 M395 442 L369 424" fill="none" class="ink" stroke="#202733" stroke-width="6"/>
+      <ellipse cx="429" cy="466" rx="17" ry="7" fill="#202733"/>
+      <ellipse cx="365" cy="418" rx="17" ry="7" fill="#202733"/>
+    </g>
+
+    <g class="bikeBob">
+      <ellipse cx="407" cy="286" rx="73" ry="82" fill="#f3f5f2" class="ink"/>
+      <path d="M355 269 Q390 225 440 245 Q475 260 482 305 Q455 335 405 329 Q365 321 355 269Z" fill="#ffffff" class="ink"/>
+      <circle cx="432" cy="254" r="9" fill="#202733"/>
+      <path d="M449 267 Q507 254 563 281 Q523 311 460 302Z" fill="#f2a33a" class="ink"/>
+      <path d="M560 281 Q583 275 594 285 Q580 300 561 297Z" fill="#f2a33a" class="ink"/>
+      <path d="M383 329 Q370 367 351 396" fill="none" class="ink" stroke="#f3f5f2" stroke-width="18"/>
+      <path d="M438 327 Q463 359 484 392" fill="none" class="ink" stroke="#f3f5f2" stroke-width="18"/>
+      <path d="M348 395 L330 421" fill="none" class="ink" stroke="#e7a33a" stroke-width="10"/>
+      <path d="M484 392 L505 420" fill="none" class="ink" stroke="#e7a33a" stroke-width="10"/>
+      <path d="M370 235 Q354 208 373 187 Q402 208 413 237" fill="#f3f5f2" class="ink"/>
+      <path d="M418 236 Q436 204 458 194 Q459 226 445 251" fill="#f3f5f2" class="ink"/>
+      <path d="M373 185 Q397 174 421 187" fill="none" class="ink" stroke="#f2a33a" stroke-width="7"/>
+      <path d="M380 326 Q397 348 421 353" fill="none" class="ink" stroke="#d94242" stroke-width="7"/>
+    </g>
+
+    <g transform="translate(555 224) rotate(8)">
+      <path d="M0 0 Q62 -23 112 8 Q75 37 8 29Z" fill="#8bc34a" class="ink"/>
+      <path d="M7 28 Q61 50 110 24" fill="none" class="ink" stroke="#f2a33a" stroke-width="10"/>
+      <circle cx="102" cy="10" r="5" fill="#202733"/>
+      <text x="50" y="22" text-anchor="middle" class="label" font-size="14" font-weight="900" fill="#fff">FISH</text>
+    </g>
+
+    <path d="M318 355 Q286 340 275 313" fill="none" class="ink" stroke="#f2a33a" stroke-width="12"/>
+    <path d="M275 313 L252 302" fill="none" class="ink" stroke="#f2a33a" stroke-width="9"/>
+  </g>
+
+  <g transform="translate(70 335)">
+    <path d="M0 48 Q35 0 78 25 Q47 47 0 48Z" fill="#fff" class="ink"/>
+    <path d="M92 40 Q130 6 161 36 Q129 56 92 40Z" fill="#fff" class="ink"/>
+  </g>
+
+  <rect x="20" y="548" width="760" height="36" rx="12" fill="#fff" opacity=".9"/>
+  <text x="400" y="572" text-anchor="middle" class="label" font-size="17" font-weight="700">
+    2026-10-28 11:02:51 SGT (UTC+08:00)
+  </text>
+</svg>
