@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Patrol</title>
+  <desc>A satirical cartoon pelican rides a bicycle while delivering extremely important fish news.</desc>
+  <style>
+    .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .thin{stroke:#17202a;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#17202a}
+    .spin{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+    .bob{animation:bob .8s ease-in-out infinite alternate}
+    .pedal{animation:pedal .8s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{to{transform:translateY(5px)}}
+    @keyframes pedal{to{transform:rotate(360deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#bde9f2"/>
+  <circle cx="690" cy="120" r="55" fill="#ffe37b" class="ink"/>
+  <path d="M0 430 Q120 390 240 430 T480 430 T800 420 V600 H0Z" fill="#78c889" class="ink"/>
+  <path d="M0 475 Q140 445 280 475 T560 470 T800 465" fill="none" stroke="#3a9e66" stroke-width="8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="40" font-weight="900">PELICAN PEDAL PATROL</text>
+  <text x="400" y="100" text-anchor="middle" class="label" font-size="20" font-weight="700">“Fresh fish, fresh opinions, zero traffic laws.”</text>
+
+  <g class="bob">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <circle cx="270" cy="430" r="72" fill="#e8f7fa"/>
+      <circle cx="560" cy="430" r="72" fill="#e8f7fa"/>
+      <path d="M270 430 L355 315 L455 430 Z"/>
+      <path d="M355 315 L415 430"/>
+      <path d="M355 315 L330 286"/>
+      <path d="M330 286 L370 286"/>
+      <path d="M455 430 L500 315 L560 430"/>
+      <path d="M500 315 L535 300"/>
+      <path d="M520 300 L550 300"/>
+    </g>
+
+    <!-- wheel spokes -->
+    <g class="spin thin" fill="none">
+      <path d="M270 362V498 M202 430H338 M222 382L318 478 M222 478L318 382"/>
+    </g>
+    <g class="spin thin" fill="none">
+      <path d="M560 362V498 M492 430H628 M512 382L608 478 M512 478L608 382"/>
+    </g>
+
+    <!-- crank and pedals -->
+    <g class="pedal" transform-box="fill-box" transform-origin="415px 430px">
+      <circle cx="415" cy="430" r="13" fill="#f4b942" class="ink"/>
+      <path d="M415 430 L450 450 M415 430 L383 405" class="thin" fill="none"/>
+      <path d="M448 450h25 M358 405h25" class="thin" fill="none"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="405" cy="250" rx="92" ry="70" fill="#f5f1df" class="ink"/>
+    <path d="M350 260 Q400 285 460 255 Q450 315 390 320 Q345 305 350 260Z" fill="#d8d2be" class="ink"/>
+    <path d="M365 235 Q400 215 438 238" fill="none" class="thin"/>
+
+    <!-- neck and head -->
+    <path d="M365 245 Q330 210 350 145 Q370 95 425 120 Q455 140 440 205 L425 245Z" fill="#f5f1df" class="ink"/>
+    <ellipse cx="403" cy="132" rx="56" ry="47" fill="#f5f1df" class="ink"/>
+    <path d="M440 146 Q505 150 566 184 Q580 193 561 207 Q505 215 432 185Z" fill="#f2a84b" class="ink"/>
+    <path d="M558 184 Q594 193 566 207" fill="#e78b36" class="ink"/>
+    <circle cx="423" cy="122" r="8" fill="#17202a"/>
+    <path d="M385 100 Q407 78 435 101" fill="none" class="thin"/>
+    <path d="M378 151 Q399 170 425 151" fill="none" class="thin"/>
+
+    <!-- wing and fish -->
+    <path d="M390 235 Q445 225 480 270 Q445 285 402 270Z" fill="#eee8d5" class="ink"/>
+    <path d="M467 266 Q500 245 529 265 Q500 282 467 266Z" fill="#6cc4d8" class="ink"/>
+    <path d="M520 265 l18 -10 l-5 14 l12 10 l-22 0Z" fill="#4da7bc" class="thin"/>
+    <circle cx="495" cy="263" r="3" fill="#17202a"/>
+
+    <!-- feet on pedals -->
+    <path d="M381 315 Q395 350 415 373" fill="none" class="ink"/>
+    <path d="M430 316 Q420 350 446 373" fill="none" class="ink"/>
+    <ellipse cx="415" cy="375" rx="22" ry="9" fill="#f2a84b" class="ink"/>
+    <ellipse cx="447" cy="375" rx="22" ry="9" fill="#f2a84b" class="ink"/>
+
+    <!-- handlebars -->
+    <path d="M500 315 Q535 320 548 300" fill="none" class="ink"/>
+    <path d="M545 299 Q559 293 568 302" fill="none" class="ink"/>
+  </g>
+
+  <!-- satire signs -->
+  <g transform="rotate(-7 120 290)">
+    <rect x="45" y="220" width="160" height="100" rx="12" fill="#fff7d6" class="ink"/>
+    <text x="125" y="255" text-anchor="middle" class="label" font-size="18" font-weight="800">BREAKING:</text>
+    <text x="125" y="280" text-anchor="middle" class="label" font-size="16">LOCAL BIRD</text>
+    <text x="125" y="302" text-anchor="middle" class="label" font-size="16">DISCOVERS LEGS</text>
+    <path d="M125 320v55" class="ink" fill="none"/>
+  </g>
+
+  <path d="M620 285 q35 -35 70 0" fill="none" class="thin"/>
+  <text x="655" y="315" text-anchor="middle" class="label" font-size="18" font-weight="700">HONK!</text>
+
+  <rect x="30" y="545" width="740" height="38" rx="10" fill="#fff7d6" class="ink"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 19:30:02 SGT (UTC+08:00)</text>
+</svg>

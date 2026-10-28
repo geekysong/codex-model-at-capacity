@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly ignoring traffic rules.</desc>
+  <style>
+    .ink{stroke:#20242b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .thin{stroke:#20242b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .text{font-family:Arial,Helvetica,sans-serif;fill:#20242b}
+  </style>
+
+  <rect width="800" height="600" fill="#d9f3ff"/>
+  <rect y="430" width="800" height="105" fill="#9bd17b"/>
+  <path d="M0 450 Q130 420 260 450 T520 450 T800 450" fill="none" stroke="#5caa62" stroke-width="10"/>
+  <path d="M0 500 H800" stroke="#6b8b55" stroke-width="5" stroke-dasharray="25 18"/>
+
+  <text x="400" y="62" text-anchor="middle" class="text" font-size="42" font-weight="900" fill="#e85d3f">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="98" text-anchor="middle" class="text" font-size="21" font-weight="700">“Why follow traffic when you can swallow it?”</text>
+
+  <g transform="translate(0,0)">
+    <!-- bicycle -->
+    <g class="ink" fill="none">
+      <circle cx="260" cy="410" r="78" fill="#f8fbff">
+        <animateTransform attributeName="transform" type="rotate" from="0 260 410" to="360 260 410" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="585" cy="410" r="78" fill="#f8fbff">
+        <animateTransform attributeName="transform" type="rotate" from="0 585 410" to="360 585 410" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M260 410 L365 305 L470 410 Z M365 305 L585 410 M470 410 L430 280 L365 305 M430 280 L500 270" stroke="#d84b3d" stroke-width="9"/>
+      <path d="M365 305 L350 265 M330 265 H370 M500 270 L520 245 M505 245 H535" stroke="#20242b" stroke-width="7"/>
+      <circle cx="365" cy="305" r="13" fill="#f5bd38"/>
+      <circle cx="470" cy="410" r="13" fill="#f5bd38"/>
+    </g>
+
+    <!-- pelican bobbing -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0;0 6;0 0" dur="1.1s" repeatCount="indefinite"/>
+      <!-- body -->
+      <ellipse cx="405" cy="220" rx="92" ry="108" fill="#f4f1e8" class="ink"/>
+      <path d="M350 180 Q405 120 462 175 L450 235 Q405 260 350 225 Z" fill="#c9d2d8" class="thin"/>
+      <!-- head -->
+      <circle cx="405" cy="128" r="63" fill="#f4f1e8" class="ink"/>
+      <path d="M373 96 Q405 70 438 96" fill="none" class="thin"/>
+      <circle cx="425" cy="119" r="9" fill="#20242b"/>
+      <circle cx="428" cy="116" r="3" fill="white"/>
+      <!-- beak -->
+      <path d="M450 137 Q555 115 620 160 Q550 205 450 170 Z" fill="#f0a83b" class="ink"/>
+      <path d="M450 168 Q530 190 598 164" fill="none" class="thin"/>
+      <path d="M511 143 Q533 157 548 176" fill="none" stroke="#c77928" stroke-width="4"/>
+      <!-- wing -->
+      <path d="M355 205 Q300 220 320 290 Q350 315 385 272 L395 220 Z" fill="#d6dee2" class="ink"/>
+      <path d="M337 245 Q355 260 373 254" fill="none" class="thin"/>
+      <!-- feet pedaling -->
+      <path d="M382 295 L355 350 L400 372" fill="none" class="ink"/>
+      <path d="M436 292 L470 345 L430 370" fill="none" class="ink"/>
+      <ellipse cx="397" cy="373" rx="25" ry="9" fill="#f0a83b" class="thin"/>
+      <ellipse cx="430" cy="371" rx="25" ry="9" fill="#f0a83b" class="thin"/>
+      <!-- helmet -->
+      <path d="M350 107 Q405 52 460 107 L455 122 H355 Z" fill="#e85d3f" class="ink"/>
+      <path d="M372 82 Q405 66 438 82" fill="none" stroke="#ffd05a" stroke-width="8"/>
+      <!-- speech bubble -->
+      <path d="M575 225 Q670 180 744 232 Q774 275 730 312 Q664 340 587 305 L557 327 L568 292 Q540 260 575 225 Z" fill="#fffdf3" class="ink"/>
+      <text x="655" y="254" text-anchor="middle" class="text" font-size="20" font-weight="800">MOVE OVER,</text>
+      <text x="655" y="280" text-anchor="middle" class="text" font-size="20" font-weight="800">I’M IMPORTANT!</text>
+    </g>
+  </g>
+
+  <text x="400" y="555" text-anchor="middle" class="text" font-size="18" font-weight="700">A pelican pedals boldly, proving every commute needs more beak and less brake.</text>
+  <text x="400" y="584" text-anchor="middle" class="text" font-size="15">2026-10-28 19:31:43 SGT (UTC+08:00)</text>
+</svg>

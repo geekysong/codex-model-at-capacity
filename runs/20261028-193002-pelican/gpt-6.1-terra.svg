@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>The Pelican Commuter</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle while proudly ignoring traffic rules.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#656b78"/>
+      <stop offset="1" stop-color="#363b46"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#202733;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#202733}
+      .wobble{animation:bob 1.2s ease-in-out infinite}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:pedal .8s linear infinite}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="95" r="42" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 335 Q120 285 245 330 T500 325 T800 320 V425 H0Z" fill="#86b978"/>
+  <path d="M0 398 Q180 355 360 395 T800 382 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 510 L800 475" stroke="#f5d76e" stroke-width="8" stroke-dasharray="42 28" opacity=".9"/>
+
+  <g class="label" text-anchor="middle">
+    <text x="400" y="65" font-size="40" font-weight="900" fill="#17212b">THE PELICAN COMMUTER</text>
+    <text x="400" y="101" font-size="19" font-weight="700">“Why follow traffic when you can swallow it?”</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(0 4)">
+      <g class="ink" fill="none">
+        <circle cx="255" cy="438" r="78" fill="#c9edf7"/>
+        <circle cx="610" cy="438" r="78" fill="#c9edf7"/>
+      </g>
+      <g class="ink" fill="none">
+        <g>
+          <circle cx="255" cy="438" r="13" fill="#f6c453"/>
+          <path d="M255 438 L255 360 M255 438 L255 516 M255 438 L177 438 M255 438 L333 438 M255 438 L200 383 M255 438 L310 493 M255 438 L310 383 M255 438 L200 493"/>
+          <animateTransform attributeName="transform" type="rotate" from="0 255 438" to="360 255 438" dur="1.4s" repeatCount="indefinite"/>
+        </g>
+        <g>
+          <circle cx="610" cy="438" r="13" fill="#f6c453"/>
+          <path d="M610 438 L610 360 M610 438 L610 516 M610 438 L532 438 M610 438 L688 438 M610 438 L555 383 M610 438 L665 493 M610 438 L665 383 M610 438 L555 493"/>
+          <animateTransform attributeName="transform" type="rotate" from="0 610 438" to="360 610 438" dur="1.4s" repeatCount="indefinite"/>
+        </g>
+      </g>
+      <g class="ink" fill="none">
+        <path d="M255 438 L367 315 L505 438 L610 438 L472 326 L367 315"/>
+        <path d="M367 315 L418 438"/>
+        <path d="M472 326 L505 438"/>
+        <path d="M455 291 L504 291"/>
+        <path d="M367 315 L347 285"/>
+      </g>
+      <g class="pedal" fill="none" stroke="#202733" stroke-width="6">
+        <circle cx="418" cy="438" r="24" fill="#f6c453"/>
+        <path d="M418 438 L390 416 M418 438 L449 462"/>
+        <circle cx="386" cy="413" r="7" fill="#202733"/>
+        <circle cx="453" cy="465" r="7" fill="#202733"/>
+      </g>
+    </g>
+
+    <g class="wobble">
+      <path d="M361 300 Q355 242 382 198 Q408 157 460 168 Q514 178 523 235 Q532 286 493 314 Q445 345 394 322Z" fill="#f4f1df" class="ink"/>
+      <path d="M398 222 Q446 192 493 222 L512 269 Q460 293 407 270Z" fill="#d9e1e4" class="ink"/>
+      <path d="M397 249 Q450 269 513 242" fill="none" class="ink"/>
+      <path d="M489 207 Q526 183 552 202 Q567 214 550 229 L493 254Z" fill="#f4a43c" class="ink"/>
+      <path d="M550 202 Q584 210 601 231 Q581 243 552 229Z" fill="#e57f26" class="ink"/>
+      <circle cx="448" cy="207" r="8" fill="#202733"/>
+      <path d="M435 188 Q458 171 479 184" fill="none" class="ink"/>
+      <path d="M391 185 Q357 144 378 125 Q402 104 427 165" fill="#f4f1df" class="ink"/>
+      <path d="M477 180 Q501 132 532 145 Q551 154 515 207" fill="#f4f1df" class="ink"/>
+      <path d="M378 125 Q399 112 427 165" fill="none" class="ink"/>
+      <path d="M532 145 Q540 169 515 207" fill="none" class="ink"/>
+      <path d="M399 315 L382 365 L420 373 L443 318" fill="#f4a43c" class="ink"/>
+      <path d="M483 315 L498 365 L535 355 L515 298" fill="#f4a43c" class="ink"/>
+      <path d="M383 365 L357 379 L419 381" fill="#e57f26" class="ink"/>
+      <path d="M498 365 L531 374 L486 386" fill="#e57f26" class="ink"/>
+      <path d="M361 289 Q330 271 320 238" fill="none" class="ink"/>
+      <path d="M320 238 Q301 224 309 207" fill="none" class="ink"/>
+      <path d="M309 207 l-17 9 M309 207 l-4 -18" stroke="#e57f26" stroke-width="6"/>
+      <path d="M365 286 Q339 304 327 329" fill="none" class="ink"/>
+      <path d="M327 329 l-24 4 M327 329 l10 19" stroke="#e57f26" stroke-width="6"/>
+    </g>
+  </g>
+
+  <g class="label">
+    <rect x="34" y="132" width="220" height="88" rx="16" fill="#fff" opacity=".9" stroke="#202733" stroke-width="4"/>
+    <text x="52" y="163" font-size="18" font-weight="800">LOCAL NEWS:</text>
+    <text x="52" y="188" font-size="17">Bird claims bike lane</text>
+    <text x="52" y="209" font-size="17">is “just a suggestion.”</text>
+    <path d="M254 190 L332 235" fill="none" stroke="#202733" stroke-width="4"/>
+    <path d="M332 235 l-14 -2 l7 -12" fill="#202733"/>
+  </g>
+
+  <g class="label">
+    <rect x="25" y="548" width="750" height="34" rx="8" fill="#ffffff" opacity=".88"/>
+    <text x="400" y="571" text-anchor="middle" font-size="16" font-weight="700">2026-10-28 19:32:48 SGT (UTC+08:00)</text>
+  </g>
+</svg>
