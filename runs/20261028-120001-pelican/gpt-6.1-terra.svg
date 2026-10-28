@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly causing a little traffic chaos.</desc>
+  <style>
+    .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,Helvetica,sans-serif;fill:#17324d}
+    .small{font-size:18px}
+    .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+    .bob{animation:bob .9s ease-in-out infinite alternate}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{to{transform:translateY(-7px)}}
+  </style>
+
+  <rect width="800" height="600" fill="#bfe8f5"/>
+  <rect y="405" width="800" height="195" fill="#f7d889"/>
+  <path d="M0 438 Q120 420 240 438 T480 438 T800 438" fill="none" stroke="#d19b45" stroke-width="5"/>
+  <path d="M0 490 Q180 470 360 490 T800 490" fill="none" stroke="#d19b45" stroke-width="4"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="40" font-weight="800">PELICAN PEDAL PANIC</text>
+  <text x="400" y="88" text-anchor="middle" class="label small" font-weight="700">“One bird. Two wheels. Absolutely no road sense.”</text>
+
+  <g class="bob">
+    <!-- bicycle frame -->
+    <g fill="none" class="ink">
+      <path d="M245 390 L330 285 L425 390 L245 390 Z"/>
+      <path d="M330 285 L390 285"/>
+      <path d="M425 390 L470 285"/>
+      <path d="M390 285 L470 285"/>
+      <path d="M470 285 L492 260"/>
+      <path d="M470 285 L505 285"/>
+      <path d="M330 285 L315 260"/>
+      <path d="M300 260 L330 260"/>
+      <path d="M390 285 L370 250"/>
+      <path d="M355 250 L385 250"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel" fill="#f9fafb" class="ink">
+      <circle cx="235" cy="405" r="78" fill="#fff"/>
+      <circle cx="235" cy="405" r="9" fill="#17324d"/>
+      <path d="M235 327V483 M157 405H313 M180 350L290 460 M290 350L180 460" fill="none" class="ink" stroke-width="3"/>
+    </g>
+    <g class="wheel" fill="#f9fafb" class="ink">
+      <circle cx="510" cy="405" r="78" fill="#fff"/>
+      <circle cx="510" cy="405" r="9" fill="#17324d"/>
+      <path d="M510 327V483 M432 405H588 M455 350L565 460 M565 350L455 460" fill="none" class="ink" stroke-width="3"/>
+    </g>
+
+    <!-- crank and pedals -->
+    <circle cx="330" cy="390" r="14" fill="#f2b134" class="ink"/>
+    <path d="M330 390 L300 365 M330 390 L360 415" fill="none" class="ink"/>
+    <path d="M285 360h28 M350 420h28" class="ink"/>
+
+    <!-- pelican body -->
+    <ellipse cx="365" cy="220" rx="92" ry="78" fill="#f5f2e8" class="ink"/>
+    <path d="M300 215 Q340 170 400 190 Q430 205 438 245 Q395 270 340 255 Z" fill="#d9e3e8" class="ink"/>
+    <path d="M320 235 Q355 245 405 230" fill="none" stroke="#a7bcc7" stroke-width="5"/>
+    <circle cx="405" cy="158" r="48" fill="#f5f2e8" class="ink"/>
+    <circle cx="420" cy="151" r="8" fill="#17324d"/>
+    <path d="M445 174 Q505 175 555 205 Q505 238 440 215 Q425 198 445 174Z" fill="#f0a83a" class="ink"/>
+    <path d="M449 211 Q500 225 545 207" fill="none" stroke="#c77a1c" stroke-width="5"/>
+
+    <!-- hat -->
+    <path d="M375 120 Q410 88 448 116 L455 138 L380 138Z" fill="#e64b3c" class="ink"/>
+    <path d="M368 138 Q410 126 460 141" fill="none" class="ink"/>
+
+    <!-- wing and foot -->
+    <path d="M330 220 Q365 205 395 235 L370 270 Q335 258 315 240Z" fill="#eef4f6" class="ink"/>
+    <path d="M350 270 L345 330" fill="none" class="ink"/>
+    <path d="M345 330 Q325 345 307 338 Q325 325 345 330Z" fill="#f0a83a" class="ink"/>
+    <path d="M400 270 L420 332" fill="none" class="ink"/>
+    <path d="M420 332 Q440 350 458 340 Q440 325 420 332Z" fill="#f0a83a" class="ink"/>
+
+    <!-- speech bubble -->
+    <path d="M570 125 Q690 85 748 145 Q770 195 705 225 Q650 240 590 210 L555 230 L570 195 Q545 165 570 125Z" fill="#fff" class="ink"/>
+    <text x="655" y="153" text-anchor="middle" class="label" font-size="22" font-weight="800">MOVE OVER,</text>
+    <text x="655" y="180" text-anchor="middle" class="label" font-size="22" font-weight="800">I’M MIGRATING!</text>
+  </g>
+
+  <!-- motion lines -->
+  <path d="M105 350h75 M85 375h70 M605 335h70" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+  <text x="400" y="548" text-anchor="middle" class="label small" font-weight="700">2026-10-28 12:02:43 SGT (UTC+08:00)</text>
+</svg>

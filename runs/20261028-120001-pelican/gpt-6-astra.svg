@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9e8ff"/>
+      <stop offset="1" stop-color="#f5fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#234" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#17242b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17242b}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.4s linear infinite}
+      .bob{animation:bob .7s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 425 Q120 380 240 425 T480 425 T720 425 T960 425 V600 H0Z" fill="#8bd17c"/>
+  <path d="M0 470 Q160 430 320 470 T640 470 T960 470" fill="none" stroke="#4c9f5d" stroke-width="8"/>
+  <path d="M0 520 Q180 485 360 520 T720 520" fill="none" stroke="#d8b06b" stroke-width="28"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE GREAT PELICAN GRAND PRIX</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="20" font-weight="700">One bird. Two wheels. Zero sense of balance.</text>
+
+  <g class="bob" filter="url(#shadow)">
+    <!-- bicycle frame -->
+    <path d="M235 414 L350 414 L430 302 L510 414 L350 414 L305 335 L430 302" fill="none" class="ink" stroke="#d94141"/>
+    <path d="M430 302 L470 270" fill="none" class="ink"/>
+    <path d="M465 269 L515 269" fill="none" class="ink"/>
+    <path d="M305 335 L270 335" fill="none" class="ink"/>
+    <path d="M270 335 L250 314" fill="none" class="ink"/>
+    <path d="M336 413 L320 455 M352 414 L370 455" fill="none" class="ink"/>
+    <circle cx="350" cy="414" r="14" fill="#f4c542" class="ink"/>
+    <path d="M350 414 L382 438 M350 414 L318 390" fill="none" class="ink"/>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="235" cy="414" r="76" fill="#e9f7ff" class="ink"/>
+      <circle cx="235" cy="414" r="8" fill="#17242b"/>
+      <path d="M235 338V490 M159 414H311 M181 360L289 468 M289 360L181 468" fill="none" stroke="#4d7d8b" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="510" cy="414" r="76" fill="#e9f7ff" class="ink"/>
+      <circle cx="510" cy="414" r="8" fill="#17242b"/>
+      <path d="M510 338V490 M434 414H586 M456 360L564 468 M564 360L456 468" fill="none" stroke="#4d7d8b" stroke-width="3"/>
+    </g>
+
+    <!-- pelican body and neck -->
+    <ellipse cx="390" cy="250" rx="82" ry="72" fill="#f5f0df" class="ink"/>
+    <path d="M343 258 Q328 190 365 140 Q395 105 431 140 Q451 165 430 230" fill="#f5f0df" class="ink"/>
+    <ellipse cx="404" cy="137" rx="37" ry="43" fill="#f5f0df" class="ink"/>
+    <circle cx="418" cy="126" r="7" fill="#17242b"/>
+    <path d="M430 145 Q525 140 588 174 Q530 207 432 181Z" fill="#f2a93b" class="ink"/>
+    <path d="M438 176 Q515 191 566 180" fill="none" stroke="#c27820" stroke-width="5"/>
+    <path d="M370 166 Q331 155 314 184 Q341 194 376 192" fill="#dce7e8" class="ink"/>
+    <path d="M358 284 Q317 322 304 365" fill="none" class="ink"/>
+    <path d="M421 286 Q457 320 468 360" fill="none" class="ink"/>
+    <path d="M303 365 L280 382 M303 365 L314 389 M468 360 L490 379 M468 360 L459 386" fill="none" class="ink"/>
+    <path d="M349 242 Q388 268 430 244" fill="none" stroke="#c8bfa8" stroke-width="5"/>
+    <path d="M370 211 Q398 226 425 210" fill="none" stroke="#17242b" stroke-width="4"/>
+    
+    <!-- pedaling legs -->
+    <path d="M365 304 Q350 355 350 414" fill="none" class="ink"/>
+    <path d="M430 303 Q410 350 382 438" fill="none" class="ink"/>
+    <path d="M350 414 L322 426 M382 438 L405 450" fill="none" class="ink"/>
+  </g>
+
+  <g transform="translate(605 245)">
+    <path d="M0 45 Q22 15 48 45" fill="none" stroke="#17242b" stroke-width="6"/>
+    <path d="M12 45 V76 M36 45 V76" stroke="#17242b" stroke-width="6"/>
+    <text x="24" y="112" text-anchor="middle" class="label" font-size="18" font-weight="700">HONK!</text>
+  </g>
+
+  <text x="400" y="555" text-anchor="middle" class="label" font-size="18" font-weight="700">2026-10-28 12:00:01 SGT (UTC+08:00)</text>
+</svg>
