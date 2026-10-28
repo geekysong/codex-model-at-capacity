@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Express</title>
+  <desc id="desc">A satirical cartoon of a pelican riding a bicycle while carrying an oversized fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ef"/>
+      <stop offset="1" stop-color="#e5f8f4"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#585b66"/>
+      <stop offset="1" stop-color="#30323b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#222" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink{stroke:#252733;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#252733}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .rider{animation:bob 1.2s ease-in-out infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="42" fill="#ffe37c" opacity=".9"/>
+  <path d="M0 350 Q150 300 300 345 T600 335 T800 345 V430 H0Z" fill="#7ecb82"/>
+  <path d="M0 405 Q180 370 360 408 T800 400 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 492 H800" stroke="#f5d56b" stroke-width="7" stroke-dasharray="36 28" opacity=".85"/>
+
+  <g class="label" font-weight="900" text-anchor="middle">
+    <rect x="400" y="28" width="650" height="72" rx="18" fill="#fff7d6" stroke="#252733" stroke-width="5"/>
+    <text x="400" y="73" font-size="34">THE PELICAN PEDAL EXPRESS</text>
+  </g>
+
+  <g class="label" font-weight="700">
+    <path d="M93 176 q50-38 103 0" fill="none" stroke="#fff" stroke-width="10" opacity=".8"/>
+    <path d="M125 206 q38-28 80 0" fill="none" stroke="#fff" stroke-width="8" opacity=".8"/>
+    <text x="58" y="300" font-size="20" transform="rotate(-8 58 300)">NO LICENSE.</text>
+    <text x="58" y="326" font-size="20" transform="rotate(-8 58 326)">NO BRAKES.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g class="wheel">
+      <circle cx="235" cy="447" r="72" fill="#d7e1e6" class="ink"/>
+      <circle cx="235" cy="447" r="9" fill="#252733"/>
+      <path d="M235 375V519 M163 447H307 M184 396L286 498 M286 396L184 498" stroke="#68727b" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="560" cy="447" r="72" fill="#d7e1e6" class="ink"/>
+      <circle cx="560" cy="447" r="9" fill="#252733"/>
+      <path d="M560 375V519 M488 447H632 M509 396L611 498 M611 396L509 498" stroke="#68727b" stroke-width="3"/>
+    </g>
+
+    <path d="M235 447 L360 350 L560 447 L430 447 Z" fill="none" class="ink"/>
+    <path d="M360 350 L430 447 M560 447 L535 335" fill="none" class="ink"/>
+    <path d="M522 335 H565" fill="none" class="ink"/>
+    <path d="M535 335 L552 316" fill="none" class="ink"/>
+
+    <g class="rider">
+      <ellipse cx="404" cy="324" rx="60" ry="78" fill="#f5f1dc" class="ink"/>
+      <path d="M359 319 Q327 347 337 388 Q370 371 398 340" fill="#e8e0bd" class="ink"/>
+      <path d="M450 330 Q493 359 510 390 Q475 396 435 361" fill="#e8e0bd" class="ink"/>
+
+      <ellipse cx="405" cy="232" rx="55" ry="53" fill="#f5f1dc" class="ink"/>
+      <path d="M368 218 Q405 179 444 211 L434 251 Q400 266 369 246Z" fill="#fff9e8" class="ink"/>
+      <circle cx="424" cy="218" r="8" fill="#252733"/>
+      <path d="M445 235 Q510 247 538 276 Q512 303 448 278Z" fill="#f39b52" class="ink"/>
+      <path d="M487 269 Q524 279 548 268" fill="none" stroke="#252733" stroke-width="5"/>
+      <path d="M373 187 Q404 157 438 184" fill="none" stroke="#252733" stroke-width="6"/>
+
+      <path d="M426 351 L475 414 L438 447" fill="none" class="ink"/>
+      <path d="M438 447 L402 447" fill="none" class="ink"/>
+      <path d="M374 348 L340 415 L376 447" fill="none" class="ink"/>
+      <path d="M376 447 L409 447" fill="none" class="ink"/>
+
+      <path d="M456 301 Q500 305 533 333" fill="none" class="ink"/>
+      <path d="M533 333 L552 316" fill="none" class="ink"/>
+
+      <g>
+        <ellipse cx="393" cy="252" rx="43" ry="21" fill="#f7c94c" class="ink" transform="rotate(12 393 252)"/>
+        <path d="M350 253 l-28 17 l13-28Z" fill="#f7c94c" class="ink"/>
+        <path d="M430 246 l24-14 l-8 25Z" fill="#f7c94c" class="ink"/>
+        <circle cx="381" cy="246" r="4" fill="#252733"/>
+      </g>
+
+      <circle cx="430" cy="447" r="20" fill="none" class="ink"/>
+      <path d="M430 447 L400 420 M430 447 L459 474" fill="none" class="ink"/>
+      <path d="M400 420 h-24 M459 474 h24" fill="none" class="ink"/>
+    </g>
+  </g>
+
+  <g class="label" text-anchor="middle">
+    <rect x="205" y="525" width="390" height="43" rx="12" fill="#fff7d6" stroke="#252733" stroke-width="4"/>
+    <text x="400" y="553" font-size="21">“FLYING SOLO, PEDALING SLOW!”</text>
+  </g>
+
+  <g class="label" text-anchor="middle">
+    <rect x="116" y="571" width="568" height="24" rx="8" fill="#ffffff" opacity=".92"/>
+    <text x="400" y="589" font-size="15">2026-10-28 21:33:22 SGT (UTC+08:00)</text>
+  </g>
+</svg>

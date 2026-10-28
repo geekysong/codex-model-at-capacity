@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle, with animated wheels and pedaling motion.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#566273"/>
+      <stop offset="1" stop-color="#273241"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#17202b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17202b}
+      .small{font-size:18px;font-weight:bold}
+      .wheelspin{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      .bob{animation:bob .8s ease-in-out infinite alternate}
+      .pedal{animation:pedal .8s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#ffe68a" opacity=".9"/>
+  <path d="M0 390 Q120 340 240 385 T480 378 T800 370 V470 H0Z" fill="#8bcf83"/>
+  <path d="M0 430 Q180 400 360 430 T800 420 V520 H0Z" fill="#65a968"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#163e59">THE GREAT BEAK ESCAPE</text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="21" font-weight="700">A pelican discovers that traffic laws are mostly suggestions.</text>
+
+  <path d="M0 470 Q200 445 400 470 T800 465 V600 H0Z" fill="url(#road)"/>
+  <path d="M35 536 H140 M205 536 H310 M375 536 H480 M545 536 H650 M715 536 H790" stroke="#e9d77a" stroke-width="10" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)">
+    <g class="wheelspin">
+      <circle cx="238" cy="454" r="70" fill="#202b38" class="ink"/>
+      <circle cx="238" cy="454" r="57" fill="#c9e8ef" stroke="#17202b" stroke-width="5"/>
+      <path d="M238 397 V511 M181 454 H295 M198 414 L278 494 M278 414 L198 494" stroke="#718491" stroke-width="4"/>
+      <circle cx="238" cy="454" r="9" fill="#e45b45" class="ink"/>
+    </g>
+    <g class="wheelspin">
+      <circle cx="570" cy="454" r="70" fill="#202b38" class="ink"/>
+      <circle cx="570" cy="454" r="57" fill="#c9e8ef" stroke="#17202b" stroke-width="5"/>
+      <path d="M570 397 V511 M513 454 H627 M530 414 L610 494 M610 414 L530 494" stroke="#718491" stroke-width="4"/>
+      <circle cx="570" cy="454" r="9" fill="#e45b45" class="ink"/>
+    </g>
+
+    <path d="M238 454 L352 355 L570 454 L238 454 M352 355 L430 454 M430 454 L520 350 L570 454" fill="none" class="ink" stroke="#e45b45"/>
+    <path d="M352 355 L334 326 M520 350 L540 322" class="ink" fill="none"/>
+    <path d="M316 323 H355 M527 319 H563" class="ink" fill="none"/>
+    <circle cx="430" cy="454" r="29" fill="none" class="ink" stroke="#e45b45"/>
+    <g class="pedal">
+      <path d="M430 454 L404 431 M430 454 L458 477" class="ink" fill="none" stroke="#e45b45"/>
+      <path d="M394 428 h-28 M456 480 h28" class="ink" fill="none"/>
+    </g>
+
+    <g class="bob">
+      <ellipse cx="421" cy="285" rx="88" ry="104" fill="#f5f1dc" class="ink"/>
+      <path d="M363 281 Q319 302 300 356 Q346 349 389 322" fill="#d9d3bb" class="ink"/>
+      <path d="M465 294 Q525 310 551 357 Q497 352 455 323" fill="#d9d3bb" class="ink"/>
+      <path d="M390 202 Q401 171 433 171 Q465 173 478 205" fill="#f5f1dc" class="ink"/>
+      <ellipse cx="434" cy="158" rx="48" ry="43" fill="#f5f1dc" class="ink"/>
+      <path d="M408 172 Q458 182 549 211 Q570 218 550 236 Q474 243 408 213 Q388 202 408 172Z" fill="#f0a24a" class="ink"/>
+      <path d="M544 214 Q567 221 580 229" class="ink" fill="none"/>
+      <circle cx="448" cy="149" r="8" fill="#17202b"/>
+      <path d="M403 133 Q428 111 455 126" fill="none" class="ink"/>
+      <path d="M413 208 Q445 224 474 213" fill="none" stroke="#d45b45" stroke-width="5"/>
+      <path d="M421 369 L410 407 M470 365 L484 405" class="ink" fill="none"/>
+      <path d="M401 408 l-25 7 M484 405 l27 7" class="ink" fill="none"/>
+      <path d="M379 386 Q430 402 477 385" fill="none" stroke="#f0a24a" stroke-width="14" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <path d="M630 250 Q665 218 699 250" fill="none" class="ink"/>
+  <path d="M652 250 Q683 225 714 250" fill="none" class="ink"/>
+  <text x="650" y="290" class="label small">HONK!</text>
+  <text x="90" y="330" class="label small" fill="#2c5d3b">LOCAL MAYOR:</text>
+  <text x="90" y="354" class="label small" fill="#2c5d3b">“HE'S IN THE FAST LANE.”</text>
+
+  <rect x="28" y="560" width="744" height="28" rx="8" fill="#f7f2d7" stroke="#17202b" stroke-width="3"/>
+  <text x="400" y="580" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 21:30:02 SGT (UTC+08:00)</text>
+</svg>
