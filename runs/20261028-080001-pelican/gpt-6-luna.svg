@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e7fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b66"/>
+      <stop offset="1" stop-color="#30343c"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17202a}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .rider{animation:bob .8s ease-in-out infinite alternate}
+      .pedal{animation:pedal .8s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd45a" opacity=".9"/>
+  <path d="M0 250 Q120 180 250 245 T510 235 T800 220 V390 H0Z" fill="#8dcf8e"/>
+  <path d="M0 325 Q180 285 350 330 T800 300 V440 H0Z" fill="#65b776"/>
+  <path d="M0 420 Q170 385 330 425 T800 395 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 476 Q170 445 340 480 T800 450" fill="none" stroke="#f7e8a4" stroke-width="10" stroke-dasharray="34 24"/>
+  <path d="M0 530 Q160 500 340 535 T800 505" fill="none" stroke="#20252c" stroke-width="8" opacity=".35"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#ffffff" stroke="#17202a" stroke-width="2" paint-order="stroke">
+    THE BEAK-YCLE EXPRESS
+  </text>
+  <text x="400" y="97" text-anchor="middle" class="label" font-size="20" font-weight="700">
+    “Why pedal when you can glide dramatically?”
+  </text>
+
+  <g class="rider" filter="url(#shadow)">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M245 425 L355 425 L430 320 L300 320 Z"/>
+      <path d="M355 425 L430 320 L520 425"/>
+      <path d="M300 320 L270 280"/>
+      <path d="M430 320 L455 275"/>
+      <path d="M445 270 L490 270"/>
+      <path d="M248 425 L205 425"/>
+    </g>
+
+    <!-- wheels -->
+    <g class="wheel">
+      <circle cx="205" cy="425" r="76" fill="#e9eef2" class="ink"/>
+      <circle cx="205" cy="425" r="9" fill="#17202a"/>
+      <path d="M205 349V501 M129 425H281 M151 371L259 479 M259 371L151 479" stroke="#65717d" stroke-width="4"/>
+    </g>
+    <g class="wheel">
+      <circle cx="520" cy="425" r="76" fill="#e9eef2" class="ink"/>
+      <circle cx="520" cy="425" r="9" fill="#17202a"/>
+      <path d="M520 349V501 M444 425H596 M466 371L574 479 M574 371L466 479" stroke="#65717d" stroke-width="4"/>
+    </g>
+
+    <!-- handlebars and seat -->
+    <path d="M446 274 Q466 250 493 264" fill="none" class="ink"/>
+    <path d="M270 278 H325" class="ink"/>
+    <path d="M289 284 L270 278" class="ink"/>
+
+    <!-- pelican body -->
+    <ellipse cx="376" cy="220" rx="77" ry="91" fill="#f5f2e8" class="ink"/>
+    <path d="M329 189 Q382 152 430 190 L417 245 Q367 266 329 238Z" fill="#dce5ea" class="ink"/>
+    <ellipse cx="382" cy="137" rx="48" ry="53" fill="#f7f3e9" class="ink"/>
+    <path d="M413 143 Q505 133 552 166 Q505 202 416 181Z" fill="#f2a43b" class="ink"/>
+    <path d="M420 176 Q487 180 531 166" fill="none" stroke="#bd6826" stroke-width="5"/>
+    <circle cx="397" cy="126" r="7" fill="#17202a"/>
+    <path d="M366 110 Q383 93 404 106" fill="none" class="ink"/>
+
+    <!-- wing, feet, pedals -->
+    <path d="M340 202 Q286 225 313 285 Q343 271 368 237Z" fill="#c7d2d9" class="ink"/>
+    <path d="M417 236 Q451 259 449 299" fill="none" class="ink"/>
+    <path d="M371 307 L355 365" class="ink"/>
+    <path d="M411 307 L429 365" class="ink"/>
+    <path d="M344 366 Q359 375 373 365" fill="none" class="ink"/>
+    <path d="M420 366 Q436 375 451 365" fill="none" class="ink"/>
+
+    <g class="pedal">
+      <circle cx="355" cy="425" r="17" fill="#f7c84b" class="ink"/>
+      <path d="M355 425 L330 402 M355 425 L380 448" class="ink"/>
+      <circle cx="330" cy="402" r="7" fill="#17202a"/>
+      <circle cx="380" cy="448" r="7" fill="#17202a"/>
+    </g>
+
+    <!-- satirical sign -->
+    <path d="M568 246 L690 246 L690 333 L568 333Z" fill="#fff6c7" class="ink"/>
+    <text x="629" y="278" text-anchor="middle" class="label" font-size="18" font-weight="900">BEAK</text>
+    <text x="629" y="302" text-anchor="middle" class="label" font-size="18" font-weight="900">LANE</text>
+    <path d="M588 316 L670 316" stroke="#e85d4a" stroke-width="5"/>
+    <path d="M588 316 L600 306 M588 316 L600 326 M670 316 L658 306 M670 316 L658 326" stroke="#e85d4a" stroke-width="5"/>
+  </g>
+
+  <g>
+    <rect x="24" y="548" width="752" height="36" rx="10" fill="#ffffff" opacity=".92"/>
+    <text x="400" y="572" text-anchor="middle" class="label" font-size="16" font-weight="700">
+      2026-10-28 08:01:18 SGT (UTC+08:00)
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f7ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="700" cy="105" r="48" fill="#ffd85e" opacity=".9"/>
+  <path d="M0 335 Q140 290 275 335 T540 325 T800 330 V410 H0Z" fill="#9ac88d"/>
+  <path d="M0 375 Q160 335 320 375 T640 365 T800 370 V430 H0Z" fill="#70a875"/>
+  <rect y="410" width="800" height="140" fill="url(#road)"/>
+  <path d="M0 480 H800" stroke="#f3d36b" stroke-width="8" stroke-dasharray="55 34"/>
+
+  <text x="400" y="62" text-anchor="middle" font-family="Verdana, sans-serif" font-size="34" font-weight="700" fill="#17324d" stroke="#fff" stroke-width="2" paint-order="stroke">
+    THE GREAT PELICAN COMMUTE
+  </text>
+  <text x="400" y="94" text-anchor="middle" font-family="Verdana, sans-serif" font-size="18" font-style="italic" fill="#17324d">
+    “Why waddle when you can pedal?”
+  </text>
+
+  <g id="bike" filter="url(#shadow)">
+    <g id="rearWheel">
+      <circle cx="250" cy="450" r="72" fill="#222" stroke="#111" stroke-width="5"/>
+      <circle cx="250" cy="450" r="62" fill="none" stroke="#c9d2d8" stroke-width="4"/>
+      <g stroke="#c9d2d8" stroke-width="2">
+        <path d="M250 388V512 M188 450H312 M206 406L294 494 M294 406L206 494"/>
+      </g>
+      <circle cx="250" cy="450" r="8" fill="#e85d4a"/>
+    </g>
+    <g id="frontWheel">
+      <circle cx="555" cy="450" r="72" fill="#222" stroke="#111" stroke-width="5"/>
+      <circle cx="555" cy="450" r="62" fill="none" stroke="#c9d2d8" stroke-width="4"/>
+      <g stroke="#c9d2d8" stroke-width="2">
+        <path d="M555 388V512 M493 450H617 M511 406L599 494 M599 406L511 494"/>
+      </g>
+      <circle cx="555" cy="450" r="8" fill="#e85d4a"/>
+    </g>
+    <path d="M250 450 L350 350 L455 450 L250 450 L405 450 L350 350 L555 450" fill="none" stroke="#e85d4a" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M455 450 L470 365 L510 365" fill="none" stroke="#e85d4a" stroke-width="8"/>
+    <path d="M505 365 Q530 350 550 365" fill="none" stroke="#222" stroke-width="8" stroke-linecap="round"/>
+    <path d="M335 355 L318 330" stroke="#222" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="350" cy="450" r="18" fill="none" stroke="#222" stroke-width="5"/>
+    <path d="M350 450 L320 480 M350 450 L382 470" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="0.7s" repeatCount="indefinite"/>
+  </g>
+
+  <g id="pelican" transform="translate(0,0)" filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="0.7s" repeatCount="indefinite"/>
+    <path d="M367 355 Q360 270 405 220 Q452 168 515 215 Q555 245 530 315 Q515 355 480 370Z" fill="#f4f1e8" stroke="#263238" stroke-width="5"/>
+    <path d="M420 235 Q452 180 505 196 Q550 209 560 252 Q530 273 494 255 Q460 239 420 235Z" fill="#fffdf5" stroke="#263238" stroke-width="5"/>
+    <path d="M505 245 Q585 237 650 275 Q662 284 648 296 Q573 316 502 280Z" fill="#f2a94b" stroke="#263238" stroke-width="5"/>
+    <path d="M520 280 Q600 298 656 326 Q668 334 654 343 Q575 350 505 308Z" fill="#e98b3a" stroke="#263238" stroke-width="5"/>
+    <circle cx="493" cy="222" r="8" fill="#263238"/>
+    <circle cx="496" cy="219" r="2.5" fill="#fff"/>
+    <path d="M423 300 Q455 330 486 305" fill="none" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <path d="M414 270 Q395 310 408 355" fill="none" stroke="#d6d1c5" stroke-width="18" stroke-linecap="round"/>
+    <path d="M440 352 L420 414 M485 350 L470 414" stroke="#f2a94b" stroke-width="10" stroke-linecap="round"/>
+    <path d="M410 414 L445 414 M462 414 L497 414" stroke="#263238" stroke-width="6" stroke-linecap="round"/>
+    <path d="M420 414 Q405 430 420 446 M470 414 Q455 430 470 446" fill="none" stroke="#263238" stroke-width="5"/>
+    <path d="M405 265 Q375 250 370 220" fill="none" stroke="#263238" stroke-width="6" stroke-linecap="round"/>
+    <path d="M370 220 l-15 -16 M370 220 l-4 -22" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <path d="M455 356 L430 405 M487 355 L515 405" stroke="#263238" stroke-width="6" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="rotate" values="-1 450 350;1 450 350;-1 450 350" dur="0.7s" repeatCount="indefinite" additive="sum"/>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 350 450" to="360 350 450" dur="1.8s" repeatCount="indefinite"/>
+    <circle cx="350" cy="450" r="7" fill="#ffd85e"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 555 450" to="360 555 450" dur="1.8s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="400" y="535" text-anchor="middle" font-family="Verdana, sans-serif" font-size="17" font-weight="600" fill="#fff">
+    Local bird insists this is “peak beak performance.”
+  </text>
+  <text x="400" y="578" text-anchor="middle" font-family="Verdana, sans-serif" font-size="14" fill="#17324d">
+    2026-10-28 08:01:57 SGT (UTC+08:00)
+  </text>
+</svg>

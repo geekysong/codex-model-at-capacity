@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Power Ride</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying a tiny fish-powered motor.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9edcff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596574"/>
+      <stop offset="1" stop-color="#303846"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#17202b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#17202b; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Verdana,Arial,sans-serif; fill:#17202b; }
+      .wheelSpin { transform-box:fill-box; transform-origin:center; animation:spin 1.4s linear infinite; }
+      .riderBob { animation:bob .7s ease-in-out infinite alternate; transform-origin:390px 260px; }
+      .pedal { animation:pedal .7s linear infinite; transform-origin:410px 422px; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-7px); } }
+      @keyframes pedal { to { transform:rotate(360deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 350 Q130 290 260 350 T520 345 T800 350 V430 H0Z" fill="#8acb91"/>
+  <path d="M0 390 Q180 340 360 392 T800 388 V455 H0Z" fill="#65aa75"/>
+  <path d="M0 430 H800 V560 H0Z" fill="url(#road)"/>
+  <path d="M0 495 H800" stroke="#f5d96b" stroke-width="8" stroke-dasharray="42 34"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="36" font-weight="900" fill="#fff" stroke="#17202b" stroke-width="2" paint-order="stroke">
+    PELICAN POWER RIDE!
+  </text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="18" font-weight="700">
+    “Why pedal when your beak already has excellent aerodynamics?”
+  </text>
+
+  <g filter="url(#shadow)">
+    <g class="wheelSpin">
+      <circle cx="250" cy="425" r="76" fill="#202936" class="ink"/>
+      <circle cx="250" cy="425" r="61" fill="#d7e4ed" class="ink"/>
+      <circle cx="250" cy="425" r="11" fill="#ef6a4c" class="ink"/>
+      <path d="M250 364V486 M189 425H311 M207 382L293 468 M293 382L207 468" stroke="#778897" stroke-width="4"/>
+    </g>
+    <g class="wheelSpin">
+      <circle cx="550" cy="425" r="76" fill="#202936" class="ink"/>
+      <circle cx="550" cy="425" r="61" fill="#d7e4ed" class="ink"/>
+      <circle cx="550" cy="425" r="11" fill="#ef6a4c" class="ink"/>
+      <path d="M550 364V486 M489 425H611 M507 382L593 468 M593 382L507 468" stroke="#778897" stroke-width="4"/>
+    </g>
+
+    <path d="M250 425 L350 315 L440 425 L250 425 L390 425 L550 425 L505 315 L440 425" fill="none" stroke="#ef6a4c" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M350 315 L330 278" stroke="#17202b" stroke-width="8"/>
+    <path d="M315 275 Q350 258 385 275" fill="none" class="ink"/>
+    <path d="M505 315 L535 275" stroke="#17202b" stroke-width="8"/>
+    <path d="M520 270 Q550 253 580 270" fill="none" class="ink"/>
+    <path d="M440 425 L410 395" stroke="#17202b" stroke-width="8"/>
+    <g class="pedal">
+      <circle cx="410" cy="395" r="13" fill="#f2c14e" class="ink"/>
+      <path d="M410 395 L438 414 M410 395 L383 376" stroke="#17202b" stroke-width="7"/>
+    </g>
+  </g>
+
+  <g class="riderBob">
+    <ellipse cx="390" cy="282" rx="70" ry="94" fill="#f4c66a" class="ink"/>
+    <path d="M347 245 Q390 204 437 244 L421 279 Q386 258 355 282Z" fill="#e99f45" class="ink"/>
+    <path d="M353 280 Q391 258 429 280 L466 330 Q402 365 326 327Z" fill="#f7d27c" class="ink"/>
+    <circle cx="365" cy="245" r="12" fill="#fff" class="ink"/>
+    <circle cx="368" cy="245" r="5" fill="#17202b"/>
+    <circle cx="419" cy="245" r="12" fill="#fff" class="ink"/>
+    <circle cx="416" cy="245" r="5" fill="#17202b"/>
+    <path d="M350 287 Q390 315 438 286" fill="#ef6a4c" class="ink"/>
+    <path d="M355 310 Q390 342 425 310" fill="none" stroke="#17202b" stroke-width="5"/>
+    <path d="M449 325 Q489 346 510 386" fill="none" class="ink"/>
+    <path d="M330 327 Q300 365 278 401" fill="none" class="ink"/>
+    <path d="M278 401 L250 425 M510 386 L550 425" fill="none" class="ink"/>
+    <path d="M432 300 Q478 284 501 315" fill="none" stroke="#ef6a4c" stroke-width="9"/>
+    <path d="M501 315 L525 336" fill="none" class="ink"/>
+    <path d="M477 291 Q505 278 530 294" fill="none" class="ink"/>
+    <rect x="470" y="218" width="88" height="48" rx="12" fill="#fff7dc" class="ink"/>
+    <text x="514" y="249" text-anchor="middle" class="label" font-size="18" font-weight="900">HONK!</text>
+    <path d="M386 194 Q400 172 414 194" fill="none" stroke="#ef6a4c" stroke-width="7"/>
+    <path d="M400 178 L400 157 M382 183 L370 164 M418 183 L430 164" stroke="#ef6a4c" stroke-width="6"/>
+  </g>
+
+  <g transform="translate(82 315)">
+    <path d="M0 58 Q22 25 52 58" fill="none" stroke="#fff" stroke-width="7"/>
+    <path d="M8 70 Q34 45 66 70" fill="none" stroke="#fff" stroke-width="7"/>
+  </g>
+  <g transform="translate(675 330)">
+    <path d="M0 55 Q24 25 55 55" fill="none" stroke="#fff" stroke-width="7"/>
+    <path d="M10 68 Q35 44 68 68" fill="none" stroke="#fff" stroke-width="7"/>
+  </g>
+
+  <rect x="28" y="548" width="744" height="34" rx="10" fill="#fff8df" stroke="#17202b" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="16" font-weight="700">
+    2026-10-28 08:00:01 SGT (UTC+08:00)
+  </text>
+</svg>
