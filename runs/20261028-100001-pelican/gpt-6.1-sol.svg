@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican pedaling furiously while balancing on a bicycle.</desc>
+  <style>
+    .ink{stroke:#263238;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,Helvetica,sans-serif;fill:#263238}
+    .small{font-size:18px}
+  </style>
+
+  <rect width="800" height="600" fill="#b9e8f5"/>
+  <path d="M0 430 Q180 385 350 425 T800 410 V600 H0Z" fill="#8fd18b"/>
+  <path d="M0 485 Q200 450 400 490 T800 470" fill="none" stroke="#5caa62" stroke-width="8"/>
+  <circle cx="110" cy="110" r="45" fill="#fff5b8" opacity=".8"/>
+  <path d="M70 170 Q105 140 140 170" fill="none" stroke="#ffffff" stroke-width="10" opacity=".8"/>
+  <path d="M650 135 q35 -25 70 0 q-35 15 -70 0Z" fill="#ffffff" opacity=".8"/>
+
+  <text x="400" y="55" text-anchor="middle" class="label" font-size="34" font-weight="bold">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="20" font-style="italic">“Why walk when you can wobble with style?”</text>
+
+  <!-- motion streaks -->
+  <path d="M105 355 H180 M80 385 H155 M615 350 H690" stroke="#ffffff" stroke-width="8" opacity=".75"/>
+
+  <!-- bicycle -->
+  <g class="ink" fill="none">
+    <circle cx="235" cy="445" r="82" fill="#e6f7ff"/>
+    <circle cx="565" cy="445" r="82" fill="#e6f7ff"/>
+    <path d="M235 445 L330 300 L430 445 L235 445 M330 300 L565 445 M430 445 L565 445"/>
+    <path d="M315 300 L350 300 M330 300 L305 270"/>
+    <path d="M565 445 L590 305 M565 305 L615 305"/>
+    <circle cx="430" cy="445" r="18" fill="#ffca5c"/>
+    <path d="M430 445 l-36 -35 M430 445 l38 34"/>
+    <circle cx="394" cy="410" r="8" fill="#263238"/>
+    <circle cx="468" cy="479" r="8" fill="#263238"/>
+  </g>
+
+  <!-- spinning wheel highlights -->
+  <g fill="none" stroke="#ff8a65" stroke-width="6">
+    <path d="M235 378 A67 67 0 0 1 292 410"/>
+    <path d="M565 378 A67 67 0 0 1 622 410"/>
+  </g>
+  <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 235 445" to="360 235 445" dur="1.4s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 565 445" to="360 565 445" dur="1.4s" repeatCount="indefinite"/>
+
+  <!-- pelican body and bobbing motion -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.1s" repeatCount="indefinite"/>
+    <ellipse cx="383" cy="235" rx="78" ry="105" fill="#f7f3e7" class="ink"/>
+    <path d="M350 304 L342 365 L382 365 L396 300" fill="#f7f3e7" class="ink"/>
+    <path d="M414 300 L427 365 L465 365 L445 285" fill="#f7f3e7" class="ink"/>
+    <path d="M343 365 L330 395 M455 365 L470 395" class="ink" fill="none"/>
+    <path d="M329 395 q18 10 34 0 M464 395 q18 10 34 0" class="ink" fill="none"/>
+    <ellipse cx="385" cy="135" rx="63" ry="58" fill="#f7f3e7" class="ink"/>
+    <path d="M338 143 Q270 120 190 158 Q275 205 351 171Z" fill="#ffb74d" class="ink"/>
+    <path d="M205 161 Q275 176 341 164" fill="none" stroke="#d9792b" stroke-width="4"/>
+    <circle cx="407" cy="126" r="9" fill="#263238"/>
+    <path d="M430 100 q23 -25 47 2" fill="none" class="ink"/>
+    <path d="M439 112 q18 -18 37 3" fill="none" stroke="#263238" stroke-width="4"/>
+    <path d="M351 194 Q386 214 422 194" fill="none" class="ink"/>
+    <path d="M353 194 q30 20 60 0" fill="none" stroke="#e57373" stroke-width="7"/>
+    <path d="M345 220 Q380 250 420 220" fill="none" stroke="#cfd8dc" stroke-width="7"/>
+    <path d="M427 250 Q470 275 495 315" fill="none" class="ink"/>
+    <path d="M497 315 q15 12 0 27 q-16 6 -26 -8" fill="#ffb74d" class="ink"/>
+    <path d="M351 250 Q310 280 295 315" fill="none" class="ink"/>
+  </g>
+
+  <!-- pedal animation -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 430 445" to="360 430 445" dur="1.1s" repeatCount="indefinite"/>
+    <path d="M430 445 l-36 -35 M430 445 l38 34" class="ink" fill="none"/>
+    <rect x="383" y="403" width="22" height="8" rx="3" fill="#ff8a65" class="ink"/>
+    <rect x="466" y="474" width="22" height="8" rx="3" fill="#ff8a65" class="ink"/>
+  </g>
+
+  <!-- comic labels -->
+  <path d="M610 185 q72 -45 132 5 v70 q-60 38 -132 0Z" fill="#fff" class="ink"/>
+  <text x="676" y="215" text-anchor="middle" class="label small" font-weight="bold">HONK!</text>
+  <text x="676" y="238" text-anchor="middle" class="label small">I demand</text>
+  <text x="676" y="259" text-anchor="middle" class="label small">fish-lane rights!</text>
+
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="22" font-weight="bold">A beak, two wheels, and absolutely no sense of balance.</text>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="16">2026-10-28 10:01:06 SGT (UTC+08:00)</text>
+</svg>

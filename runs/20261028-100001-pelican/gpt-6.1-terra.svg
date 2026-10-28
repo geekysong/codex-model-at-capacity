@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Pedal Patrol</title>
+  <desc>A satirical pelican rides a bicycle while proudly breaking every bird traffic rule.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#e9f7c6"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#626878"/>
+      <stop offset="1" stop-color="#343944"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#23303a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202b35;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;font-weight:700;fill:#202b35}
+      .small{font-size:16px}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+      .pelican{animation:bob 1s ease-in-out infinite}
+      .pedal{animation:pedal 1s ease-in-out infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+      @keyframes pedal{0%,100%{transform:rotate(0deg)}50%{transform:rotate(180deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="100" r="52" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 370 Q120 315 240 365 T480 355 T800 350 V470 H0Z" fill="#8acb78"/>
+  <path d="M0 425 Q200 385 400 430 T800 415 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#f7db65" stroke-width="8" stroke-dasharray="45 28"/>
+  <path d="M70 350 q35-42 70 0 M105 350 q35-42 70 0" fill="none" class="ink" stroke="#4a8d5b" stroke-width="9"/>
+  <path d="M610 345 q28-45 56 0 M638 345 q28-45 56 0" fill="none" class="ink" stroke="#4a8d5b" stroke-width="9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="38" width="430" height="82" rx="18" fill="#fffdf3" class="ink"/>
+    <text x="70" y="76" class="label" font-size="31">PELICAN PEDAL PATROL</text>
+    <text x="72" y="103" class="label" font-size="17" fill="#d14d45">“Beak first, brakes optional.”</text>
+  </g>
+
+  <g transform="translate(555 200)">
+    <rect x="0" y="0" width="170" height="92" rx="14" fill="#fffdf3" class="ink"/>
+    <text x="18" y="33" class="label" font-size="18">LOCAL NEWS:</text>
+    <text x="18" y="58" class="label small">Bird claims cycle lane</text>
+    <text x="18" y="79" class="label small">is “for dramatic wings.”</text>
+    <path d="M18 92 l-10 20 30-20" fill="#fffdf3" class="ink"/>
+  </g>
+
+  <g class="pelican" transform="translate(355 145)">
+    <!-- body -->
+    <ellipse cx="0" cy="155" rx="92" ry="112" fill="#f5f0df" class="ink"/>
+    <ellipse cx="-30" cy="170" rx="49" ry="77" fill="#d8e4e4" class="ink"/>
+    <!-- wing -->
+    <path d="M-45 125 Q-120 145 -94 235 Q-56 214 -10 178Z" fill="#b8cbd0" class="ink"/>
+    <path d="M-70 168 q30 12 52 38" fill="none" class="ink" stroke-width="4"/>
+    <!-- neck and head -->
+    <path d="M-18 82 Q-8 38 24 20 L55 39 Q34 76 48 119Z" fill="#f5f0df" class="ink"/>
+    <ellipse cx="40" cy="12" rx="67" ry="58" fill="#f5f0df" class="ink"/>
+    <!-- crest -->
+    <path d="M4-29 q15-34 29 0 q23-30 27 5" fill="#d14d45" class="ink"/>
+    <!-- beak/pouch -->
+    <path d="M74 18 Q165 20 184 53 Q143 103 71 70 Q55 47 74 18Z" fill="#f2a64a" class="ink"/>
+    <path d="M82 64 Q130 92 177 54 Q152 115 92 95 Q69 83 82 64Z" fill="#e67b47" class="ink"/>
+    <circle cx="59" cy="0" r="8" fill="#202b35"/>
+    <path d="M53 25 q17 10 32 0" fill="none" class="ink" stroke-width="4"/>
+    <!-- scarf -->
+    <path d="M-20 70 Q30 93 67 72 L80 95 Q28 120 -29 92Z" fill="#e34f55" class="ink"/>
+    <path d="M58 92 l40 43 -34 13 -24-50" fill="#e34f55" class="ink"/>
+    <!-- legs -->
+    <path d="M-20 245 L-10 320 M42 245 L58 316" fill="none" class="ink" stroke-width="10"/>
+    <path d="M-25 320 q20-10 39 5 M43 316 q20-9 39 6" fill="none" class="ink" stroke-width="9"/>
+  </g>
+
+  <!-- bicycle -->
+  <g class="ink" fill="none">
+    <g class="wheel">
+      <circle cx="270" cy="470" r="78" stroke="#202b35" stroke-width="10" fill="#b8e3ea"/>
+      <circle cx="270" cy="470" r="8" fill="#202b35"/>
+      <path d="M270 392V548 M192 470H348 M215 415L325 525 M325 415L215 525" stroke="#5d8390" stroke-width="4"/>
+    </g>
+    <g class="wheel">
+      <circle cx="540" cy="470" r="78" stroke="#202b35" stroke-width="10" fill="#b8e3ea"/>
+      <circle cx="540" cy="470" r="8" fill="#202b35"/>
+      <path d="M540 392V548 M462 470H618 M485 415L595 525 M595 415L485 525" stroke="#5d8390" stroke-width="4"/>
+    </g>
+    <path d="M270 470 L360 350 L455 470 L270 470 M360 350 L540 470 M455 470 L500 350 L560 350" stroke-width="9"/>
+    <path d="M345 345 L332 315 M322 315 H350" stroke-width="8"/>
+    <path d="M495 350 L530 322" stroke-width="8"/>
+    <path d="M520 319 h35" stroke-width="7"/>
+    <circle cx="360" cy="470" r="18" fill="#f2a64a"/>
+    <g class="pedal" transform="translate(360 470)">
+      <path d="M0 0 L-35 28 M0 0 L34-28" stroke-width="7"/>
+      <path d="M-48 30 h25 M28-30 h25" stroke-width="7"/>
+    </g>
+  </g>
+
+  <!-- handlebars and motion marks -->
+  <path d="M522 318 q30-18 53 3" fill="none" class="ink" stroke-width="6"/>
+  <path d="M180 430 l-32-12 M175 448 l-36-4 M184 410 l-27-20" fill="none" class="ink" stroke="#fff" stroke-width="6"/>
+
+  <g transform="translate(40 545)">
+    <rect x="0" y="0" width="720" height="38" rx="10" fill="#fffdf3" opacity=".96" class="ink"/>
+    <text x="360" y="26" text-anchor="middle" class="label small">2026-10-28 10:03:15 SGT (UTC+08:00)</text>
+  </g>
+</svg>

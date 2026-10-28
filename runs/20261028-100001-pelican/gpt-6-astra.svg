@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de5ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6c7785"/>
+      <stop offset="1" stop-color="#323946"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#233142" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink { stroke:#202938; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#202938; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2.5s linear infinite; }
+      .ride { animation:bob 1.25s ease-in-out infinite; transform-origin:430px 335px; }
+      .pedal { animation:pedal 1.25s ease-in-out infinite; transform-origin:423px 416px; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform:translateY(0) rotate(-1deg); } 50% { transform:translateY(-7px) rotate(1deg); } }
+      @keyframes pedal { 0%,100% { transform:rotate(0deg); } 50% { transform:rotate(180deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="42" fill="#ffd45c" stroke="#202938" stroke-width="5"/>
+  <path d="M0 365 Q115 300 230 355 T465 345 T800 350 V430 H0Z" fill="#79c77b"/>
+  <path d="M0 405 Q160 370 320 405 T640 395 T800 410 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 505 H800" stroke="#dfe6ee" stroke-width="8" stroke-dasharray="44 26" opacity=".8"/>
+
+  <text x="400" y="60" text-anchor="middle" class="label" font-size="38" font-weight="900"
+        fill="#fff" stroke="#202938" stroke-width="2" paint-order="stroke">
+    THE PELICAN EXPRESS
+  </text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="19" font-weight="700">
+    “Why pedal when you can let the beak do the steering?”
+  </text>
+
+  <g class="ride" filter="url(#shadow)">
+    <g class="wheel">
+      <circle cx="285" cy="445" r="67" fill="#e9f1f5" class="ink"/>
+      <circle cx="285" cy="445" r="10" fill="#ef6b4f" class="ink"/>
+      <path d="M285 378V512 M218 445H352 M238 398L332 492 M332 398L238 492" stroke="#607080" stroke-width="4"/>
+    </g>
+    <g class="wheel">
+      <circle cx="575" cy="445" r="67" fill="#e9f1f5" class="ink"/>
+      <circle cx="575" cy="445" r="10" fill="#ef6b4f" class="ink"/>
+      <path d="M575 378V512 M508 445H642 M528 398L622 492 M622 398L528 492" stroke="#607080" stroke-width="4"/>
+    </g>
+
+    <path d="M285 445 L390 350 L575 445 L470 445 Z" fill="none" class="ink"/>
+    <path d="M390 350 L470 445 L575 445" fill="none" class="ink"/>
+    <path d="M390 350 L368 320" class="ink" fill="none"/>
+    <path d="M350 320 H390" class="ink" fill="none"/>
+    <path d="M575 445 L607 350" class="ink" fill="none"/>
+    <path d="M607 350 L635 340" class="ink" fill="none"/>
+    <path d="M602 345 L641 350" class="ink" fill="none"/>
+    <path d="M385 445 H430" class="ink" fill="none"/>
+    <circle cx="423" cy="416" r="18" fill="#f7b84b" class="ink"/>
+    <g class="pedal">
+      <path d="M423 416 L448 397 M423 416 L398 435" class="ink" fill="none"/>
+      <path d="M444 394 H460 M394 432 H378" class="ink" fill="none"/>
+    </g>
+
+    <ellipse cx="427" cy="286" rx="74" ry="91" fill="#f4f0df" class="ink"/>
+    <path d="M373 293 Q350 342 389 371 Q431 397 474 359" fill="#f4f0df" class="ink"/>
+    <path d="M392 318 Q430 343 461 320" fill="none" stroke="#d9cfae" stroke-width="8"/>
+    <ellipse cx="448" cy="200" rx="51" ry="58" fill="#f4f0df" class="ink"/>
+    <path d="M408 210 Q350 214 294 246 Q350 280 421 249 Z" fill="#f39b4b" class="ink"/>
+    <path d="M300 247 Q356 248 418 235" fill="none" stroke="#c65d36" stroke-width="5"/>
+    <circle cx="460" cy="183" r="8" fill="#202938"/>
+    <path d="M477 154 Q502 130 526 157" fill="none" class="ink"/>
+    <path d="M476 156 Q505 147 522 170" fill="none" class="ink"/>
+    <path d="M405 165 Q385 145 366 160" fill="none" class="ink"/>
+    <path d="M424 170 Q448 149 466 158" fill="none" class="ink"/>
+
+    <path d="M391 274 Q352 284 335 322" fill="none" class="ink"/>
+    <path d="M463 277 Q505 290 532 324" fill="none" class="ink"/>
+    <path d="M334 322 L315 349" class="ink" fill="none"/>
+    <path d="M532 324 L557 348" class="ink" fill="none"/>
+
+    <path d="M401 366 Q431 383 460 364" fill="none" class="ink"/>
+    <path d="M406 371 L390 414" class="ink" fill="none"/>
+    <path d="M456 371 L459 414" class="ink" fill="none"/>
+    <path d="M379 414 H406 M447 414 H475" class="ink" fill="none"/>
+  </g>
+
+  <g transform="translate(92 170)">
+    <path d="M0 43 Q45 0 92 43" fill="#fff4cf" class="ink"/>
+    <text x="46" y="38" text-anchor="middle" class="label" font-size="16" font-weight="700">HONK!</text>
+  </g>
+
+  <g transform="translate(628 285)">
+    <path d="M0 34 Q37 0 75 34" fill="#fff4cf" class="ink"/>
+    <text x="38" y="30" text-anchor="middle" class="label" font-size="15" font-weight="700">NO BRAKES?</text>
+  </g>
+
+  <rect x="0" y="548" width="800" height="52" fill="#f6f0dc" stroke="#202938" stroke-width="4"/>
+  <text x="400" y="570" text-anchor="middle" class="label" font-size="17" font-weight="700">
+    A feathered commuter proves that every road leads to lunch.
+  </text>
+  <text x="400" y="591" text-anchor="middle" class="label" font-size="14">
+    2026-10-28 10:00:01 SGT (UTC+08:00)
+  </text>
+</svg>

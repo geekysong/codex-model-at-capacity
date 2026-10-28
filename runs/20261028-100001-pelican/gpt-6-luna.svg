@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle while proudly ignoring traffic rules.</desc>
+  <style>
+    .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#17324d}
+    .wheel{fill:#dff3ff;stroke:#17324d;stroke-width:8}
+    .spoke{stroke:#6fa6c1;stroke-width:3}
+  </style>
+
+  <rect width="800" height="600" fill="#fff7df"/>
+  <rect x="35" y="30" width="730" height="500" rx="28" fill="#bfe9f5" class="ink"/>
+  <path d="M35 430 Q170 390 300 430 T565 430 T765 420 V530 H35Z" fill="#8fd19e"/>
+  <path d="M70 455 Q210 425 350 455 T690 450" fill="none" stroke="#4d9b68" stroke-width="7"/>
+
+  <text x="400" y="82" text-anchor="middle" class="label" font-size="42" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="116" text-anchor="middle" class="label" font-size="21" font-weight="700">“I only ride in the bike lane when fish are watching.”</text>
+
+  <g id="bike">
+    <g>
+      <circle cx="255" cy="405" r="88" class="wheel"/>
+      <circle cx="555" cy="405" r="88" class="wheel"/>
+      <g class="spoke">
+        <path d="M255 317V493 M167 405H343 M193 343L317 467 M317 343L193 467"/>
+        <path d="M555 317V493 M467 405H643 M493 343L617 467 M617 343L493 467"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 405 405" to="360 405 405" dur="2.2s" repeatCount="indefinite"/>
+    </g>
+    <path d="M255 405 L350 330 L455 405 L555 405 L455 330 L350 330 Z" fill="none" class="ink"/>
+    <path d="M350 330 L325 275 M455 330 L480 265" fill="none" class="ink"/>
+    <path d="M306 273 H345 M462 263 H505" fill="none" class="ink"/>
+    <circle cx="405" cy="405" r="18" fill="#f6a623" class="ink"/>
+    <path d="M405 405 L365 370 M405 405 L438 438" fill="none" class="ink"/>
+    <g class="ink" fill="none">
+      <path d="M365 370 l-30 -18"/>
+      <path d="M438 438 l28 18"/>
+    </g>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.1s" repeatCount="indefinite"/>
+    <ellipse cx="406" cy="260" rx="82" ry="92" fill="#f4f4ee" class="ink"/>
+    <path d="M356 232 Q315 205 302 155 Q350 170 389 205" fill="#f4f4ee" class="ink"/>
+    <path d="M302 155 Q342 158 385 198 L330 222 Q307 198 302 155Z" fill="#f0a84f" class="ink"/>
+    <path d="M344 186 Q375 196 393 222" fill="none" stroke="#c9792e" stroke-width="5"/>
+    <circle cx="380" cy="178" r="11" fill="#17324d"/>
+    <circle cx="383" cy="175" r="3" fill="#fff"/>
+    <path d="M383 210 Q430 184 466 216 Q484 234 468 255 Q430 270 392 245Z" fill="#f4f4ee" class="ink"/>
+    <path d="M389 245 Q438 250 475 229" fill="none" stroke="#17324d" stroke-width="5"/>
+    <path d="M379 330 Q410 350 448 330" fill="none" class="ink"/>
+    <path d="M353 325 L335 374 M444 324 L465 374" fill="none" class="ink"/>
+    <path d="M335 374 l-32 8 M465 374 l32 8" fill="none" class="ink"/>
+    <path d="M345 210 Q370 238 397 244" fill="none" stroke="#d8d8cf" stroke-width="12"/>
+    <path d="M420 210 Q446 240 453 277" fill="none" stroke="#d8d8cf" stroke-width="12"/>
+    <path d="M341 281 Q395 308 458 281" fill="none" stroke="#f6a623" stroke-width="15"/>
+    <path d="M364 278 L348 335 M445 278 L458 333" fill="none" stroke="#f6a623" stroke-width="12"/>
+    <path d="M348 335 L365 370 M458 333 L438 369" fill="none" stroke="#f6a623" stroke-width="10"/>
+    <path d="M365 370 l-25 5 M438 369 l25 6" fill="none" class="ink"/>
+  </g>
+
+  <g transform="translate(600 165)">
+    <path d="M0 55 Q55 5 112 55" fill="none" class="ink"/>
+    <path d="M22 55 L22 105 M90 55 L90 105" fill="none" class="ink"/>
+    <text x="56" y="38" text-anchor="middle" class="label" font-size="18" font-weight="800">NO FISH</text>
+  </g>
+
+  <text x="400" y="558" text-anchor="middle" class="label" font-size="18" font-weight="700">2026-10-28 10:02:14 SGT (UTC+08:00)</text>
+</svg>
