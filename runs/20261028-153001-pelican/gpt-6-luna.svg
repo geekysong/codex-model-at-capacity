@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN COMMUTE</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an absurdly large fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9edff2"/>
+      <stop offset="1" stop-color="#e8f7f2"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#586274"/>
+      <stop offset="1" stop-color="#303743"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#17202a;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17202a}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.3s linear infinite}
+      .pelican{transform-box:fill-box;transform-origin:center;animation:bob .9s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff6c5" opacity=".9"/>
+  <path d="M0 250 Q120 185 245 245 T500 230 T800 220 V390 H0Z" fill="#7bbd9a" opacity=".65"/>
+  <path d="M0 315 Q170 270 330 315 T800 295 V390 H0Z" fill="#4f9b7b" opacity=".75"/>
+
+  <g class="label">
+    <text x="400" y="62" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="2">THE GREAT PELICAN COMMUTE</text>
+    <text x="400" y="94" text-anchor="middle" font-size="18" font-weight="700">“WHY FLY WHEN YOU CAN PEDAL INTO TRAFFIC?”</text>
+  </g>
+
+  <rect x="0" y="390" width="800" height="150" fill="url(#road)"/>
+  <path d="M0 470 H800" stroke="#f5d76e" stroke-width="8" stroke-dasharray="42 28"/>
+  <path d="M0 410 H800" stroke="#242b35" stroke-width="5"/>
+
+  <g class="wheel ink" fill="#d9edf0">
+    <circle cx="245" cy="430" r="82"/>
+    <circle cx="585" cy="430" r="82"/>
+    <circle cx="245" cy="430" r="12" fill="#17202a"/>
+    <circle cx="585" cy="430" r="12" fill="#17202a"/>
+    <g stroke="#6b7b86" stroke-width="3">
+      <path d="M245 348V512M163 430H327M187 372L303 488M303 372L187 488"/>
+      <path d="M585 348V512M503 430H667M527 372L643 488M643 372L527 488"/>
+    </g>
+  </g>
+
+  <g class="ink" fill="none">
+    <path d="M245 430 L350 345 L470 430 L245 430 L350 345 L405 430"/>
+    <path d="M470 430 L585 430"/>
+    <path d="M350 345 L325 315"/>
+    <path d="M315 315 H365"/>
+    <path d="M470 430 L500 365"/>
+    <path d="M490 365 H525"/>
+  </g>
+
+  <g class="pedal ink">
+    <circle cx="405" cy="430" r="18" fill="#f08a4b"/>
+    <path d="M405 430 L432 452 M405 430 L378 408" stroke="#17202a"/>
+    <path d="M430 452 h22 M356 405 h22" stroke="#17202a"/>
+  </g>
+
+  <g class="pelican">
+    <ellipse cx="391" cy="295" rx="82" ry="94" fill="#f6f3e8" class="ink"/>
+    <path d="M335 270 Q375 215 437 250 Q465 270 450 315 Q400 295 335 270Z" fill="#d6e8eb" class="ink"/>
+    <path d="M430 252 Q478 230 533 266 Q555 281 530 300 L431 286Z" fill="#f2a34b" class="ink"/>
+    <path d="M527 267 Q555 281 530 300 Q508 292 490 285" fill="#e9823e"/>
+    <circle cx="433" cy="240" r="10" fill="#fff" class="ink"/>
+    <circle cx="437" cy="241" r="4" fill="#17202a"/>
+    <path d="M349 335 Q385 360 426 340" fill="none" class="ink"/>
+    <path d="M372 373 L360 407 M420 373 L436 408" class="ink" fill="none"/>
+    <path d="M360 407 l-25 9 M436 408 l24 8" class="ink" fill="none"/>
+
+    <path d="M345 300 Q300 323 277 349 Q264 365 278 379 Q300 390 320 365 L365 330Z" fill="#c5dfe3" class="ink"/>
+    <path d="M458 310 Q493 340 504 367 Q510 386 494 394 Q474 395 462 368 L430 337Z" fill="#c5dfe3" class="ink"/>
+
+    <path d="M330 246 Q350 203 392 202 Q421 203 440 224" fill="none" stroke="#d24d44" stroke-width="9"/>
+    <path d="M322 247 Q349 222 376 222" fill="none" stroke="#17202a" stroke-width="6"/>
+
+    <g transform="translate(470 180) rotate(12)">
+      <ellipse cx="42" cy="58" rx="64" ry="25" fill="#7cc56f" class="ink"/>
+      <path d="M-18 60 Q37 17 100 48" fill="none" stroke="#3e8f54" stroke-width="10"/>
+      <path d="M26 39 L26 10 M57 37 L69 9" stroke="#3e8f54" stroke-width="7"/>
+      <text x="42" y="64" text-anchor="middle" font-size="16" font-weight="900" class="label">FISH</text>
+    </g>
+  </g>
+
+  <g class="label">
+    <path d="M92 150 Q92 115 132 115 H270 Q304 115 304 150 V180 Q304 210 270 210 H170 L132 232 V210 Q92 210 92 180Z" fill="#fffdf4" class="ink"/>
+    <text x="198" y="154" text-anchor="middle" font-size="20" font-weight="900">I’M LATE!</text>
+    <text x="198" y="180" text-anchor="middle" font-size="16">THE FISH HAS A MEETING.</text>
+  </g>
+
+  <g class="label">
+    <text x="400" y="565" text-anchor="middle" font-size="15" font-weight="700">2026-10-28 15:31:21 SGT (UTC+08:00)</text>
+  </g>
+</svg>
