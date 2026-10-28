@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#17212b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bde9f5"/>
+  <circle cx="680" cy="105" r="52" fill="#ffe27a" opacity=".85"/>
+  <path d="M0 430 Q140 385 280 430 T560 425 T800 415 V600 H0Z" fill="#91d47b"/>
+  <path d="M0 480 Q180 450 360 485 T800 470" fill="none" stroke="#65b85d" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="92" text-anchor="middle" class="label" font-size="20" font-weight="700">One bird. Two wheels. Zero sense of direction.</text>
+
+  <!-- bicycle -->
+  <g>
+    <g>
+      <circle cx="240" cy="430" r="82" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 240 430" to="360 240 430" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="560" cy="430" r="82" fill="none" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 560 430" to="360 560 430" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M240 430 L330 310 L430 430 L240 430 M330 310 L560 430 M430 430 L500 300 L560 430 M475 300 L525 300" fill="none" class="ink"/>
+      <circle cx="330" cy="310" r="11" fill="#ff6b5b" class="ink"/>
+      <circle cx="430" cy="430" r="11" fill="#ff6b5b" class="ink"/>
+      <path d="M430 430 q38 18 68 0" fill="none" class="ink"/>
+      <circle cx="497" cy="430" r="13" fill="#ffd45c" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 497 430" to="360 497 430" dur="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- pelican -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.4s" repeatCount="indefinite"/>
+      <ellipse cx="390" cy="245" rx="86" ry="105" fill="#f5f1df" class="ink"/>
+      <path d="M350 205 Q310 145 345 115 Q385 120 405 175" fill="#f5f1df" class="ink"/>
+      <circle cx="372" cy="150" r="35" fill="#f5f1df" class="ink"/>
+      <circle cx="382" cy="143" r="8" fill="#17212b"/>
+      <path d="M397 164 Q470 145 540 180 Q475 225 398 193Z" fill="#f39b45" class="ink"/>
+      <path d="M405 183 Q470 196 532 180" fill="none" stroke="#b9652e" stroke-width="5"/>
+      <path d="M350 200 Q285 230 315 275" fill="none" class="ink"/>
+      <path d="M430 220 Q490 245 475 290" fill="none" class="ink"/>
+      <path d="M350 330 L330 390 M420 330 L445 390" class="ink"/>
+      <path d="M330 390 q-22 8 -35 0 M445 390 q22 8 35 0" fill="none" class="ink"/>
+      <path d="M340 285 Q390 320 445 285" fill="none" stroke="#e07b6a" stroke-width="7"/>
+      <path d="M385 350 L430 430" fill="none" class="ink"/>
+      <path d="M430 430 L475 390" fill="none" class="ink"/>
+      <circle cx="315" cy="275" r="7" fill="#ff6b5b"/>
+      <circle cx="475" cy="290" r="7" fill="#ff6b5b"/>
+    </g>
+  </g>
+
+  <path d="M120 360 q-35 -25 -60 0" fill="none" stroke="#ffffff" stroke-width="8" opacity=".8"/>
+  <path d="M650 300 q-35 -25 -60 0" fill="none" stroke="#ffffff" stroke-width="8" opacity=".8"/>
+
+  <rect x="34" y="548" width="732" height="34" rx="10" fill="#fff7d6" stroke="#17212b" stroke-width="3"/>
+  <text x="400" y="571" text-anchor="middle" class="label" font-size="17" font-weight="700">2026-10-28 14:03:44 SGT (UTC+08:00)</text>
+</svg>
