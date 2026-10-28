@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8bd8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6d747d"/>
+      <stop offset="1" stop-color="#343940"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#20242a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#20242a}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob 1s ease-in-out infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="95" r="45" fill="#ffe36e" opacity=".9"/>
+  <path d="M0 390 Q130 330 260 385 T520 375 T800 380 V470 H0Z" fill="#9bcf87"/>
+  <path d="M0 450 Q180 420 350 452 T800 445 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 515 H800" stroke="#f7d76b" stroke-width="9" stroke-dasharray="42 28"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE GREAT PELICAN GETAWAY</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="20" font-style="italic">“Why walk when you can wobble with style?”</text>
+
+  <g class="wheel" aria-label="spinning rear wheel">
+    <circle cx="245" cy="445" r="72" fill="#20242a"/>
+    <circle cx="245" cy="445" r="58" fill="#dbe7ef" stroke="#20242a" stroke-width="5"/>
+    <circle cx="245" cy="445" r="9" fill="#20242a"/>
+    <g stroke="#20242a" stroke-width="3">
+      <path d="M245 387V503M187 445H303M204 404L286 486M286 404L204 486"/>
+    </g>
+  </g>
+  <g class="wheel" aria-label="spinning front wheel">
+    <circle cx="560" cy="445" r="72" fill="#20242a"/>
+    <circle cx="560" cy="445" r="58" fill="#dbe7ef" stroke="#20242a" stroke-width="5"/>
+    <circle cx="560" cy="445" r="9" fill="#20242a"/>
+    <g stroke="#20242a" stroke-width="3">
+      <path d="M560 387V503M502 445H618M519 404L601 486M601 404L519 486"/>
+    </g>
+  </g>
+
+  <g class="ink" fill="none">
+    <path d="M245 445 L330 335 L475 335 L560 445 L390 445 Z"/>
+    <path d="M330 335 L390 445 L475 335"/>
+    <path d="M475 335 L500 285"/>
+    <path d="M486 285 H535"/>
+    <path d="M330 335 L305 285 H260"/>
+  </g>
+  <circle cx="390" cy="445" r="18" fill="#ffcc4d" class="ink"/>
+  <g stroke="#20242a" stroke-width="7" stroke-linecap="round">
+    <path d="M390 445 L355 390"/>
+    <path d="M390 445 L430 490"/>
+  </g>
+  <circle cx="355" cy="390" r="11" fill="#ffcc4d" class="ink"/>
+  <circle cx="430" cy="490" r="11" fill="#ffcc4d" class="ink"/>
+
+  <g class="rider">
+    <ellipse cx="388" cy="278" rx="78" ry="92" fill="#f4f0d6" class="ink"/>
+    <path d="M350 300 Q315 330 345 365 Q378 382 407 347" fill="#f4f0d6" class="ink"/>
+    <path d="M425 278 Q470 260 515 282" fill="none" class="ink"/>
+    <path d="M515 282 Q548 295 579 281 Q551 269 522 262Z" fill="#f6a63b" class="ink"/>
+    <ellipse cx="424" cy="247" rx="14" ry="18" fill="#fff" class="ink"/>
+    <circle cx="428" cy="249" r="6" fill="#20242a"/>
+    <path d="M371 222 Q393 195 420 215" fill="none" class="ink"/>
+    <path d="M353 276 Q324 262 302 277" fill="none" class="ink"/>
+    <path d="M302 277 Q286 289 270 278" fill="none" class="ink"/>
+    <path d="M365 350 Q390 376 420 352" fill="none" class="ink"/>
+    <path d="M352 365 L334 402" fill="none" class="ink"/>
+    <path d="M420 354 L445 397" fill="none" class="ink"/>
+    <path d="M330 402 L309 420" fill="none" class="ink"/>
+    <path d="M445 397 L468 412" fill="none" class="ink"/>
+    <path d="M360 210 Q390 177 430 202 Q421 171 387 167 Q352 174 360 210Z" fill="#e94f4f" class="ink"/>
+    <text x="388" y="307" text-anchor="middle" class="label" font-size="16" font-weight="bold">HONK!</text>
+  </g>
+
+  <path d="M120 315 Q160 285 198 312" fill="none" stroke="#20242a" stroke-width="5"/>
+  <text x="112" y="300" class="label" font-size="22" font-weight="bold">NO</text>
+  <text x="95" y="325" class="label" font-size="22" font-weight="bold">FLY ZONE?</text>
+
+  <rect x="40" y="548" width="720" height="36" rx="10" fill="#ffffff" opacity=".88"/>
+  <text x="400" y="572" text-anchor="middle" class="label" font-size="17">2026-10-28 09:31:15 SGT (UTC+08:00)</text>
+</svg>

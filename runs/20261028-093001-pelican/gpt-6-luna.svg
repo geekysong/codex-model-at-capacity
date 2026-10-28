@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican pedals a bicycle while carrying an oversized fish.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e7f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#707782"/>
+      <stop offset="1" stop-color="#343943"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#263238" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#20242b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#20242b}
+      .wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .pedalSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      .bob{animation:bob .8s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="52" fill="#fff5ae" opacity=".9"/>
+  <path d="M0 355 Q115 315 230 350 T470 340 T800 350 V450 H0Z" fill="#86b96b"/>
+  <path d="M0 410 Q170 380 330 414 T650 405 T800 415 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#f7df69" stroke-width="8" stroke-dasharray="42 28" opacity=".85"/>
+
+  <g class="label" text-anchor="middle">
+    <text x="400" y="64" font-size="42" font-weight="900" fill="#143b59">THE GREAT BEAK ESCAPE</text>
+    <text x="400" y="98" font-size="20" font-weight="700" fill="#245b73">A pelican pedals where common sense fears to fly.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g class="wheelSpin">
+      <circle cx="225" cy="465" r="72" fill="#20242b" stroke="#f4f7f9" stroke-width="8"/>
+      <circle cx="225" cy="465" r="10" fill="#f4b942"/>
+      <path d="M225 393V537M153 465H297M174 414L276 516M276 414L174 516" stroke="#c9d1d8" stroke-width="4"/>
+    </g>
+    <g class="wheelSpin">
+      <circle cx="575" cy="465" r="72" fill="#20242b" stroke="#f4f7f9" stroke-width="8"/>
+      <circle cx="575" cy="465" r="10" fill="#f4b942"/>
+      <path d="M575 393V537M503 465H647M524 414L626 516M626 414L524 516" stroke="#c9d1d8" stroke-width="4"/>
+    </g>
+
+    <path d="M225 465 L350 365 L575 465 L225 465 L425 465 L350 365" fill="none" class="ink" stroke="#d94f4f"/>
+    <path d="M575 465 L540 350" fill="none" class="ink"/>
+    <path d="M515 350 H565" fill="none" class="ink"/>
+    <path d="M350 365 L330 315" fill="none" class="ink"/>
+    <path d="M305 315 H350" fill="none" class="ink"/>
+    <circle cx="425" cy="465" r="18" fill="#f4b942" class="ink"/>
+    <g class="pedalSpin">
+      <path d="M425 465 L456 438 M425 465 L394 492" fill="none" class="ink"/>
+      <rect x="452" y="432" width="25" height="9" rx="4" fill="#20242b"/>
+      <rect x="382" y="488" width="25" height="9" rx="4" fill="#20242b"/>
+    </g>
+  </g>
+
+  <g class="bob">
+    <path d="M338 337 Q365 285 429 286 Q472 287 498 326 L474 366 Q419 382 360 365Z" fill="#f4f1e8" class="ink"/>
+    <path d="M355 335 Q306 296 278 252 Q266 233 282 221 Q302 207 320 228 L385 302Z" fill="#f4f1e8" class="ink"/>
+    <path d="M286 222 Q238 210 197 228 Q168 241 192 257 Q239 279 303 263Z" fill="#f29b38" class="ink"/>
+    <circle cx="355" cy="280" r="9" fill="#20242b"/>
+    <path d="M389 305 Q420 319 449 302" fill="none" stroke="#20242b" stroke-width="5"/>
+    <path d="M398 349 L378 416" fill="none" class="ink"/>
+    <path d="M454 348 L482 417" fill="none" class="ink"/>
+    <path d="M365 414 H397 M468 414 H500" fill="none" class="ink"/>
+    <path d="M374 322 Q411 347 453 322" fill="#d9e7ed" class="ink"/>
+    <path d="M439 289 Q486 244 540 271 Q560 281 546 297 L487 327Z" fill="#7bc0d8" class="ink"/>
+    <path d="M470 275 Q520 238 563 252" fill="none" class="ink"/>
+    <text x="412" y="250" class="label" font-size="17" font-weight="700" text-anchor="middle">“I call this</text>
+    <text x="412" y="270" class="label" font-size="17" font-weight="700" text-anchor="middle">beak-to-beak transit!”</text>
+  </g>
+
+  <g class="label">
+    <text x="64" y="552" font-size="18" font-weight="700">Pelican Express: one fish, two wheels, zero brakes.</text>
+    <text x="400" y="585" font-size="16" text-anchor="middle">2026-10-28 09:32:12 SGT (UTC+08:00)</text>
+  </g>
+</svg>

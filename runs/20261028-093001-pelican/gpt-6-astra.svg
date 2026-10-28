@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while pretending to be a serious commuter.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bcecff"/>
+      <stop offset="1" stop-color="#f8fdff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b68"/>
+      <stop offset="1" stop-color="#282d39"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202b" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink { stroke:#202631; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#202631; }
+      .small { font-size:16px; font-weight:700; letter-spacing:.4px; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe58a" opacity=".8"/>
+  <path d="M0 385 Q140 335 280 380 T560 370 T800 360 V445 H0Z" fill="#a9d59c"/>
+  <path d="M0 425 Q180 390 365 430 T800 410 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 505 H800" stroke="#f4d35e" stroke-width="8" stroke-dasharray="46 30" opacity=".9"/>
+
+  <g aria-label="title">
+    <rect x="38" y="28" width="724" height="74" rx="22" fill="#fff8db" class="ink" filter="url(#shadow)"/>
+    <text x="400" y="76" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN PEDAL PANIC!</text>
+  </g>
+  <text x="400" y="130" text-anchor="middle" class="label" font-size="20" font-weight="700">
+    “When your beak is bigger than your commute, take the scenic route.”
+  </text>
+
+  <g id="bikeScene" filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="1.6s" repeatCount="indefinite"/>
+
+    <g id="bike">
+      <g transform="translate(0 0)">
+        <circle cx="270" cy="455" r="72" fill="none" class="ink">
+          <animateTransform attributeName="transform" type="rotate" from="0 270 455" to="360 270 455" dur="2.2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="560" cy="455" r="72" fill="none" class="ink">
+          <animateTransform attributeName="transform" type="rotate" from="0 560 455" to="360 560 455" dur="2.2s" repeatCount="indefinite"/>
+        </circle>
+        <g stroke="#778291" stroke-width="3" opacity=".9">
+          <path d="M270 383V527M198 455H342M219 404L321 506M321 404L219 506"/>
+          <path d="M560 383V527M488 455H632M509 404L611 506M611 404L509 506"/>
+        </g>
+        <path d="M270 455 L370 350 L470 455 L270 455 M370 350 L430 455 M370 350 L405 300 M470 455 L560 455 M430 455 L405 300" fill="none" class="ink"/>
+        <path d="M392 300 Q420 292 440 304" fill="none" class="ink"/>
+        <path d="M398 295 Q390 278 400 264" fill="none" class="ink"/>
+        <circle cx="430" cy="455" r="16" fill="#f0b84a" class="ink"/>
+        <path d="M430 455 L392 420 M430 455 L468 490" class="ink"/>
+        <ellipse cx="388" cy="418" rx="18" ry="9" fill="#f0b84a" class="ink">
+          <animateTransform attributeName="transform" type="rotate" values="0 430 455;180 430 455;360 430 455" dur="1.1s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="470" cy="490" rx="18" ry="9" fill="#f0b84a" class="ink">
+          <animateTransform attributeName="transform" type="rotate" values="180 430 455;360 430 455;540 430 455" dur="1.1s" repeatCount="indefinite"/>
+        </ellipse>
+        <path d="M535 374 L575 365" class="ink"/>
+        <path d="M575 365 L600 377" class="ink"/>
+      </g>
+    </g>
+
+    <g id="pelican">
+      <ellipse cx="400" cy="277" rx="74" ry="102" fill="#f5f1e8" class="ink"/>
+      <path d="M350 283 Q302 308 293 366 Q345 350 382 314" fill="#d5d9df" class="ink"/>
+      <path d="M447 285 Q493 315 499 369 Q456 350 423 315" fill="#d5d9df" class="ink"/>
+      <path d="M360 210 Q399 172 443 211 L470 246 Q446 275 402 265 Q368 263 342 240Z" fill="#f5f1e8" class="ink"/>
+      <path d="M350 238 Q399 251 465 232 L533 251 Q548 256 535 268 Q482 283 427 275 Q380 269 350 254Z" fill="#ef9b4c" class="ink"/>
+      <path d="M430 275 Q468 294 480 329 Q442 343 410 308Z" fill="#e7843b" class="ink"/>
+      <circle cx="397" cy="222" r="11" fill="#202631"/>
+      <circle cx="401" cy="218" r="4" fill="#fff"/>
+      <path d="M372 198 Q400 180 428 198" fill="none" stroke="#e7843b" stroke-width="12" stroke-linecap="round"/>
+      <path d="M380 343 Q397 363 411 343" fill="none" class="ink"/>
+      <path d="M386 365 L370 408 M423 365 L440 408" class="ink"/>
+      <path d="M367 408 Q350 414 335 407 M439 408 Q456 414 471 407" fill="none" class="ink"/>
+      <path d="M382 241 Q408 251 431 242" fill="none" stroke="#202631" stroke-width="4"/>
+      <path d="M328 285 Q299 263 279 277" fill="none" class="ink"/>
+      <path d="M279 277 Q266 286 275 298" fill="none" class="ink"/>
+      <rect x="319" y="157" width="118" height="38" rx="9" fill="#ffdf62" class="ink" transform="rotate(-8 378 176)"/>
+      <text x="378" y="183" text-anchor="middle" class="label" font-size="18" font-weight="900" transform="rotate(-8 378 176)">CEO OF BEAKS</text>
+      <path d="M338 330 Q320 344 307 332" fill="none" stroke="#202631" stroke-width="5"/>
+      <path d="M462 330 Q480 344 493 332" fill="none" stroke="#202631" stroke-width="5"/>
+    </g>
+
+    <g>
+      <path d="M560 268 Q600 245 632 267" fill="none" class="ink"/>
+      <text x="642" y="248" class="label" font-size="19" font-weight="900">HONK!</text>
+      <text x="642" y="270" class="label" font-size="16" font-weight="700">I demand a bike lane!</text>
+    </g>
+  </g>
+
+  <g aria-label="caption">
+    <rect x="62" y="535" width="676" height="38" rx="12" fill="#fff8db" class="ink"/>
+    <text x="400" y="560" text-anchor="middle" class="label" font-size="18" font-weight="800">
+      A pelican on a bicycle: all the balance of a board meeting, none of the brakes.
+    </text>
+  </g>
+
+  <text x="400" y="592" text-anchor="middle" class="label small">
+    2026-10-28 09:30:01 SGT (UTC+08:00)
+  </text>
+</svg>
