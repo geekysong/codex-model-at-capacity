@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT PELICAN PEDAL-OFF</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an oversized fishy briefcase.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e7f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b66"/>
+      <stop offset="1" stop-color="#272c35"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17212b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#20252b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#20252b}
+      .small{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#20252b}
+      @keyframes wheelspin{to{transform:rotate(360deg)}}
+      @keyframes pedalbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      @keyframes beakbob{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-3deg)}}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:wheelspin 2.2s linear infinite}
+      .rider{animation:pedalbob .65s ease-in-out infinite}
+      .beak{transform-origin:575px 235px;animation:beakbob .65s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="95" cy="105" r="42" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 330 Q150 270 300 325 T600 315 T800 330 V420 H0Z" fill="#9bd18b"/>
+  <path d="M0 390 Q150 355 290 390 T560 382 T800 395 V470 H0Z" fill="#70ad6d"/>
+  <path d="M0 470 H800 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 520 H800" stroke="#f6d45b" stroke-width="8" stroke-dasharray="48 32"/>
+  <path d="M40 460 Q180 445 320 460 T600 458 T800 462" fill="none" stroke="#20252b" stroke-width="5" opacity=".35"/>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="30" width="690" height="82" rx="22" fill="#fff7df" class="ink"/>
+    <text x="400" y="70" text-anchor="middle" class="label" font-size="31">THE GREAT PELICAN</text>
+    <text x="400" y="98" text-anchor="middle" class="label" font-size="25" fill="#d24e39">PEDAL-OFF</text>
+  </g>
+
+  <g class="rider">
+    <!-- bicycle frame -->
+    <g>
+      <circle cx="250" cy="445" r="77" fill="none" class="ink wheel"/>
+      <circle cx="565" cy="445" r="77" fill="none" class="ink wheel"/>
+      <g class="wheel" transform="translate(250 445)">
+        <path d="M0-70V70M-70 0H70M-49-49L49 49M49-49L-49 49" stroke="#9fd3e5" stroke-width="3"/>
+      </g>
+      <g class="wheel" transform="translate(565 445)">
+        <path d="M0-70V70M-70 0H70M-49-49L49 49M49-49L-49 49" stroke="#9fd3e5" stroke-width="3"/>
+      </g>
+      <path d="M250 445 L350 330 L455 445 L250 445 L405 405 L350 330" fill="none" stroke="#d94c3f" stroke-width="10" stroke-linejoin="round"/>
+      <path d="M455 445 L505 335 L535 330" fill="none" stroke="#d94c3f" stroke-width="10" stroke-linecap="round"/>
+      <path d="M493 327 L535 330" stroke="#20252b" stroke-width="7" stroke-linecap="round"/>
+      <path d="M338 334 L324 305" stroke="#20252b" stroke-width="7" stroke-linecap="round"/>
+      <path d="M316 303 H342" stroke="#20252b" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="405" cy="405" r="17" fill="#ffd35c" class="ink"/>
+      <path d="M405 405 l35 18 M405 405 l-26 30" stroke="#20252b" stroke-width="5"/>
+    </g>
+
+    <!-- pelican body -->
+    <g>
+      <ellipse cx="395" cy="245" rx="92" ry="112" fill="#f2f0df" class="ink"/>
+      <path d="M340 248 Q285 285 315 340 Q355 367 394 330 Q414 285 395 252Z" fill="#d6d9cf" class="ink"/>
+      <ellipse cx="432" cy="163" rx="58" ry="61" fill="#f7f5e8" class="ink"/>
+      <circle cx="451" cy="148" r="8" fill="#20252b"/>
+      <path d="M455 178 Q514 175 589 205 Q612 216 589 239 Q520 251 451 218Z" fill="#f2a84b" class="ink beak"/>
+      <path d="M475 211 Q538 222 589 216" fill="none" stroke="#b65a2f" stroke-width="4"/>
+      <path d="M386 113 Q422 83 456 111" fill="none" stroke="#20252b" stroke-width="7"/>
+      <path d="M380 205 Q333 173 319 128" fill="none" stroke="#20252b" stroke-width="9"/>
+      <path d="M319 128 Q300 108 282 125" fill="none" stroke="#20252b" stroke-width="8"/>
+      <path d="M395 330 L378 391" stroke="#e5a23f" stroke-width="9"/>
+      <path d="M430 330 L450 392" stroke="#e5a23f" stroke-width="9"/>
+      <path d="M378 390 L350 407 M450 392 L478 409" stroke="#20252b" stroke-width="7"/>
+      <path d="M350 407 Q367 416 380 405 M478 409 Q462 419 450 408" fill="none" stroke="#20252b" stroke-width="5"/>
+      <!-- comically oversized briefcase -->
+      <rect x="302" y="238" width="116" height="70" rx="12" fill="#4e78a8" class="ink" transform="rotate(-8 360 273)"/>
+      <path d="M337 235 Q339 214 359 216 Q379 218 380 233" fill="none" class="ink"/>
+      <path d="M316 273 H405" stroke="#f6d45b" stroke-width="7"/>
+      <text x="360" y="264" text-anchor="middle" class="small" font-size="15" fill="#fff">FISH</text>
+      <!-- feet on pedals -->
+      <path d="M378 390 Q399 407 414 421" fill="none" stroke="#e5a23f" stroke-width="9"/>
+      <path d="M450 392 Q430 407 414 421" fill="none" stroke="#e5a23f" stroke-width="9"/>
+    </g>
+  </g>
+
+  <g>
+    <path d="M625 300 Q670 270 717 300" fill="none" stroke="#20252b" stroke-width="5"/>
+    <text x="670" y="285" text-anchor="middle" class="small" font-size="19">HONK!</text>
+    <text x="670" y="322" text-anchor="middle" class="small" font-size="16">I HAVE A LICENSE</text>
+    <text x="670" y="342" text-anchor="middle" class="small" font-size="16">TO WING IT.</text>
+  </g>
+
+  <g>
+    <rect x="105" y="550" width="590" height="34" rx="10" fill="#fff7df" opacity=".96"/>
+    <text x="400" y="573" text-anchor="middle" class="small" font-size="16">A bird of leisure discovers that traffic laws are mostly suggestions.</text>
+  </g>
+  <text x="400" y="597" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#ffffff">2026-10-29 06:30:15 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical pelican rides a bicycle while proudly pretending to be a serious commuter.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#252525;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#252525;stroke-width:8}
+      .spoke{stroke:#777;stroke-width:3}
+      .label{font-family:Arial,sans-serif;fill:#252525}
+      .motion{animation:roll 2.4s linear infinite}
+      .bob{transform-box:fill-box;transform-origin:center;animation:bob .8s ease-in-out infinite alternate}
+      .pedal{transform-box:fill-box;transform-origin:50% 50%;animation:pedal .8s linear infinite}
+      @keyframes roll{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-7px)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff4ff"/>
+  <rect y="405" width="800" height="195" fill="#f4d58d"/>
+  <path d="M0 430 Q130 395 260 430 T520 430 T800 430" fill="none" stroke="#d2a95c" stroke-width="10"/>
+  <path d="M50 470 Q190 450 330 470 T610 470 T790 465" fill="none" stroke="#d2a95c" stroke-width="7"/>
+
+  <text x="400" y="55" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN PEDAL PANIC</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="19">“Traffic? I prefer to wing it.”</text>
+
+  <g class="bob">
+    <!-- bicycle frame -->
+    <path d="M190 405 L305 405 L390 290 L260 290 Z" fill="#ef5b4d" class="ink"/>
+    <path d="M305 405 L390 290 L470 405" fill="none" class="ink"/>
+    <path d="M390 290 L440 275" fill="none" class="ink"/>
+    <path d="M438 275 L462 288" fill="none" class="ink"/>
+    <path d="M260 290 L245 270" fill="none" class="ink"/>
+    <path d="M229 270 L264 270" fill="none" class="ink"/>
+
+    <!-- wheels -->
+    <g>
+      <circle cx="190" cy="405" r="72" class="wheel"/>
+      <g class="motion">
+        <path d="M190 333V477 M118 405H262 M139 354L241 456 M241 354L139 456" class="spoke"/>
+      </g>
+    </g>
+    <g>
+      <circle cx="470" cy="405" r="72" class="wheel"/>
+      <g class="motion">
+        <path d="M470 333V477 M398 405H542 M419 354L521 456 M521 354L419 456" class="spoke"/>
+      </g>
+    </g>
+
+    <!-- pedals -->
+    <circle cx="305" cy="405" r="15" fill="#ffd166" class="ink"/>
+    <g class="pedal">
+      <path d="M305 405 L335 425 M305 405 L275 385" class="ink"/>
+      <rect x="332" y="422" width="22" height="8" rx="3" fill="#252525"/>
+      <rect x="268" y="378" width="22" height="8" rx="3" fill="#252525"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="355" cy="215" rx="92" ry="105" fill="#f7f7f2" class="ink"/>
+    <ellipse cx="382" cy="145" rx="58" ry="55" fill="#f7f7f2" class="ink"/>
+    <path d="M420 153 Q535 158 548 192 Q505 222 416 188 Z" fill="#f2a33b" class="ink"/>
+    <path d="M420 177 Q500 190 536 198" fill="none" stroke="#c87922" stroke-width="5"/>
+    <circle cx="400" cy="132" r="9" fill="#252525"/>
+    <path d="M349 198 Q383 221 415 198" fill="none" class="ink"/>
+    <path d="M330 220 Q360 240 386 229" fill="none" stroke="#d8d8d0" stroke-width="12"/>
+    <path d="M300 276 L283 340" fill="none" class="ink"/>
+    <path d="M405 275 L430 338" fill="none" class="ink"/>
+    <path d="M270 342 Q290 350 310 340" fill="none" class="ink"/>
+    <path d="M416 339 Q438 348 454 337" fill="none" class="ink"/>
+    <path d="M315 170 Q280 150 266 116" fill="none" class="ink"/>
+    <path d="M273 119 Q250 105 258 84 Q282 91 292 112" fill="#f7f7f2" class="ink"/>
+
+    <!-- helmet -->
+    <path d="M338 103 Q378 68 424 102 L425 122 L340 122 Z" fill="#4c83d1" class="ink"/>
+    <path d="M350 101 Q379 83 410 99" fill="none" stroke="#9ed0ff" stroke-width="7"/>
+
+    <!-- handlebars and comic sign -->
+    <path d="M438 275 Q470 245 493 266" fill="none" class="ink"/>
+    <path d="M510 245 Q570 220 625 246" fill="none" stroke="#252525" stroke-width="5"/>
+    <rect x="575" y="205" width="150" height="58" rx="12" fill="#fff3b0" class="ink"/>
+    <text x="650" y="229" text-anchor="middle" class="label" font-size="16" font-weight="700">LICENSED</text>
+    <text x="650" y="248" text-anchor="middle" class="label" font-size="16" font-weight="700">BEAK DRIVER</text>
+  </g>
+
+  <path d="M84 326 q18 -20 36 0" fill="none" stroke="#7cb7d6" stroke-width="5"/>
+  <path d="M96 346 q22 -25 44 0" fill="none" stroke="#7cb7d6" stroke-width="5"/>
+  <text x="400" y="535" text-anchor="middle" class="label" font-size="22" font-weight="700">A very serious bird commuting by bicycle.</text>
+  <text x="400" y="578" text-anchor="middle" class="label" font-size="15">2026-10-29 06:30:58 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>The Great Pelican Commute</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle.</desc>
+  <style>
+    .ink{stroke:#243447;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#d9f2ff;stroke:#243447;stroke-width:7}
+    .spoke{stroke:#6b8799;stroke-width:3}
+    .label{font-family:Arial,sans-serif;fill:#243447}
+    .small{font-size:18px}
+    .med{font-size:24px;font-weight:bold}
+    .title{font-size:38px;font-weight:900;letter-spacing:1px}
+    .caption{font-size:21px;font-style:italic}
+    .bob{animation:bob 1.2s ease-in-out infinite}
+    .pedal{animation:pedal .8s linear infinite}
+    .spin{transform-origin:250px 420px;animation:spin 1.5s linear infinite}
+    .spin2{transform-origin:555px 420px;animation:spin 1.5s linear infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes pedal{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+
+  <rect width="800" height="600" fill="#fff8df"/>
+  <rect x="24" y="22" width="752" height="74" rx="18" fill="#ffcf4a" class="ink"/>
+  <text x="400" y="68" text-anchor="middle" class="label title">THE GREAT PELICAN COMMUTE</text>
+
+  <path d="M55 485 Q180 450 300 478 T545 472 T760 480" fill="none" stroke="#8bb8c7" stroke-width="8"/>
+  <path d="M40 510 Q180 480 310 507 T570 500 T790 508" fill="none" stroke="#c2dfe4" stroke-width="5"/>
+
+  <g aria-label="bicycle">
+    <g class="spin">
+      <circle cx="250" cy="420" r="78" class="wheel"/>
+      <path d="M250 342V498M172 420H328M195 365L305 475M305 365L195 475" class="spoke" fill="none"/>
+    </g>
+    <g class="spin2">
+      <circle cx="555" cy="420" r="78" class="wheel"/>
+      <path d="M555 342V498M477 420H633M500 365L610 475M610 365L500 475" class="spoke" fill="none"/>
+    </g>
+    <path d="M250 420 L350 320 L455 420 L350 420 Z" fill="none" class="ink"/>
+    <path d="M350 320 L405 270" fill="none" class="ink"/>
+    <path d="M395 270 L430 270" fill="none" class="ink"/>
+    <path d="M455 420 L500 330" fill="none" class="ink"/>
+    <path d="M475 330 L525 330" fill="none" class="ink"/>
+    <circle cx="350" cy="420" r="18" fill="#ffcf4a" class="ink"/>
+    <g class="pedal">
+      <path d="M350 420 L390 450 M350 420 L315 390" fill="none" class="ink"/>
+      <rect x="386" y="446" width="25" height="9" rx="4" fill="#243447"/>
+      <rect x="301" y="384" width="25" height="9" rx="4" fill="#243447"/>
+    </g>
+    <path d="M300 305 Q320 285 350 300" fill="none" class="ink"/>
+    <text x="370" y="525" class="label small">eco-friendly… allegedly</text>
+  </g>
+
+  <g class="bob" aria-label="pelican">
+    <ellipse cx="395" cy="230" rx="91" ry="105" fill="#f4f0e5" class="ink"/>
+    <path d="M350 180 Q325 115 365 92 Q420 64 461 112 Q485 142 458 185" fill="#f4f0e5" class="ink"/>
+    <ellipse cx="420" cy="123" rx="10" ry="13" fill="#243447"/>
+    <path d="M452 145 Q540 132 625 177 Q548 218 450 179 Q427 163 452 145Z" fill="#f09a58" class="ink"/>
+    <path d="M470 174 Q548 194 625 177 Q558 244 472 201" fill="#ffc078" class="ink"/>
+    <path d="M365 245 Q315 285 300 350" fill="none" class="ink"/>
+    <path d="M300 350 Q290 370 310 380 Q330 387 338 365" fill="none" class="ink"/>
+    <path d="M443 250 Q490 282 510 345" fill="none" class="ink"/>
+    <path d="M510 345 Q520 367 540 357 Q554 348 538 330" fill="none" class="ink"/>
+    <path d="M365 135 Q330 110 315 132" fill="none" stroke="#d9a441" stroke-width="7"/>
+    <path d="M382 290 Q420 308 455 285" fill="none" stroke="#9bb1bb" stroke-width="6"/>
+    <text x="334" y="224" class="label med">HONK!</text>
+    <path d="M465 103 Q500 75 535 101" fill="none" class="ink"/>
+    <text x="523" y="92" class="label small">rush hour</text>
+  </g>
+
+  <path d="M92 150 Q120 126 148 150" fill="none" stroke="#8bb8c7" stroke-width="7"/>
+  <path d="M120 150 Q148 126 176 150" fill="none" stroke="#8bb8c7" stroke-width="7"/>
+  <circle cx="690" cy="130" r="28" fill="#ffcf4a" class="ink"/>
+  <path d="M690 90V72M690 188V170M650 130H632M748 130H730M662 102L649 89M718 158L731 171M718 102L731 89M662 158L649 171" stroke="#ffb52e" stroke-width="6"/>
+
+  <rect x="42" y="545" width="716" height="39" rx="12" fill="#eef7f4" class="ink"/>
+  <text x="400" y="571" text-anchor="middle" class="label caption">A bird with a beak for traffic jams and absolutely no sense of balance.</text>
+  <text x="400" y="596" text-anchor="middle" class="label small">2026-10-29 06:31:36 SGT (UTC+08:00)</text>
+</svg>
