@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Patrol</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly delivering absolutely nothing.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9de7ff"/>
+      <stop offset="1" stop-color="#eefbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#69727b"/>
+      <stop offset="1" stop-color="#343a40"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#20252b;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;fill:#20252b}
+      .small{font-family:Arial,sans-serif;font-size:16px;fill:#fff;font-weight:bold}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd86b" opacity=".9"/>
+  <path d="M0 365 Q110 315 220 365 T440 365 T660 365 T880 365 V600 H0Z" fill="#87c96b"/>
+  <path d="M0 425 Q170 390 330 425 T660 425 T900 425 V600 H0Z" fill="#5daa59"/>
+  <path d="M0 475 H800 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 530 H800" stroke="#f6d36b" stroke-width="7" stroke-dasharray="55 35"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="42" width="660" height="86" rx="20" fill="#fff4b8" class="ink"/>
+    <text x="400" y="82" text-anchor="middle" class="label" font-size="34" font-weight="900">PELICAN PEDAL PATROL</text>
+    <text x="400" y="109" text-anchor="middle" class="label" font-size="18" font-weight="700">“Delivering bills, snacks, and absolutely no solutions.”</text>
+  </g>
+
+  <g id="bike">
+    <g fill="none" class="ink">
+      <circle cx="245" cy="470" r="73" fill="#20252b"/>
+      <circle cx="245" cy="470" r="62" fill="#dce8ed" stroke="#20252b" stroke-width="4"/>
+      <circle cx="590" cy="470" r="73" fill="#20252b"/>
+      <circle cx="590" cy="470" r="62" fill="#dce8ed" stroke="#20252b" stroke-width="4"/>
+    </g>
+    <g stroke="#7d909b" stroke-width="2">
+      <path d="M245 408V532 M183 470H307 M201 426L289 514 M289 426L201 514"/>
+      <path d="M590 408V532 M528 470H652 M546 426L634 514 M634 426L546 514"/>
+    </g>
+    <g fill="none" class="ink">
+      <path d="M245 470 L360 350 L470 470 L245 470 L360 350 L590 470"/>
+      <path d="M470 470 L530 350 L590 470"/>
+      <path d="M530 350 L570 330"/>
+      <path d="M570 330 L600 340"/>
+    </g>
+    <circle cx="360" cy="470" r="16" fill="#f25f5c" class="ink"/>
+    <path d="M360 470 l-30 28 M360 470 l34 -22" class="ink" fill="none"/>
+    <path d="M318 505 h-35 M395 448 h35" class="ink" fill="none"/>
+    <g>
+      <circle cx="245" cy="470" r="9" fill="#f25f5c"/>
+      <circle cx="590" cy="470" r="9" fill="#f25f5c"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 245 470" to="360 245 470" dur="2s" repeatCount="indefinite"/>
+      <g stroke="#f25f5c" stroke-width="4">
+        <path d="M245 415V470 M190 470H245 M245 470L285 430"/>
+      </g>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 590 470" to="360 590 470" dur="2s" repeatCount="indefinite"/>
+      <g stroke="#f25f5c" stroke-width="4">
+        <path d="M590 415V470 M535 470H590 M590 470L630 430"/>
+      </g>
+    </g>
+  </g>
+
+  <g id="pelican" class="ink">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1s" repeatCount="indefinite"/>
+    <ellipse cx="408" cy="278" rx="76" ry="92" fill="#f7f3e8"/>
+    <path d="M355 245 Q315 220 330 170 Q355 128 408 150 Q440 170 432 220 Q420 252 355 245Z" fill="#f7f3e8"/>
+    <path d="M345 190 Q300 180 244 205 Q225 218 246 235 Q310 260 374 222Z" fill="#f3a84f"/>
+    <path d="M345 190 Q300 180 244 205" fill="none"/>
+    <circle cx="382" cy="181" r="9" fill="#20252b" stroke="none"/>
+    <path d="M355 253 Q395 275 443 245 L468 300 Q407 336 348 294Z" fill="#d9e5ea"/>
+    <path d="M370 330 Q360 382 340 424" fill="none"/>
+    <path d="M437 330 Q450 380 470 423" fill="none"/>
+    <path d="M339 423 l-31 14 M339 423 l27 14 M470 423 l-30 14 M470 423 l30 10" fill="none"/>
+    <path d="M358 270 Q410 292 453 263" fill="none" stroke="#d2a23b" stroke-width="8"/>
+    <path d="M390 149 Q410 116 440 135" fill="none" stroke="#f25f5c" stroke-width="8"/>
+    <path d="M366 286 Q405 307 447 286" fill="none"/>
+  </g>
+
+  <g>
+    <path d="M514 216 q28 -27 57 0" fill="none" class="ink"/>
+    <path d="M535 211 q18 -18 36 0" fill="none" class="ink"/>
+    <text x="555" y="191" text-anchor="middle" class="label" font-size="19" font-weight="bold">HONK!</text>
+  </g>
+
+  <g>
+    <rect x="78" y="392" width="138" height="54" rx="12" fill="#f25f5c" class="ink"/>
+    <text x="147" y="416" text-anchor="middle" class="small">OFFICIAL</text>
+    <text x="147" y="436" text-anchor="middle" class="small">BIRD BUSINESS</text>
+  </g>
+
+  <g>
+    <rect x="130" y="555" width="540" height="31" rx="10" fill="#20252b"/>
+    <text x="400" y="577" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#fff">2026-10-28 21:00:01 SGT (UTC+08:00)</text>
+  </g>
+</svg>
