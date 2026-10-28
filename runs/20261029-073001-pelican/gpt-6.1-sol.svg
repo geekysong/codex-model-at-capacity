@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican wobbling proudly along on a bicycle.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17202a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#17202a;stroke-width:8}
+      .spoke{stroke:#607080;stroke-width:2}
+      .label{font-family:Arial,sans-serif;fill:#17202a}
+      .motion{animation:roll 2s linear infinite}
+      .bob{animation:bob .8s ease-in-out infinite alternate}
+      .pedal{animation:pedal .8s linear infinite}
+      @keyframes roll{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#c9f0ff"/>
+  <path d="M0 450 Q120 420 240 450 T480 450 T800 445 V560 H0Z" fill="#8ed47a"/>
+  <path d="M0 500 Q180 470 360 500 T800 495" fill="none" stroke="#57a85a" stroke-width="8"/>
+  <path d="M80 440 Q170 410 260 440" fill="none" stroke="#57a85a" stroke-width="5"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd34d" stroke="#d99a16" stroke-width="5"/>
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="800">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="20">“Why fly when you can wobble with confidence?”</text>
+
+  <!-- bicycle -->
+  <g class="motion" style="transform-origin:400px 425px">
+    <g class="wheel">
+      <circle cx="250" cy="430" r="72" fill="#eaf7ff"/>
+      <circle cx="560" cy="430" r="72" fill="#eaf7ff"/>
+    </g>
+    <g class="motion" style="transform-origin:250px 430px">
+      <path class="spoke" d="M250 358v144M178 430h144M199 379l102 102M301 379L199 481"/>
+    </g>
+    <g class="motion" style="transform-origin:560px 430px">
+      <path class="spoke" d="M560 358v144M488 430h144M509 379l102 102M611 379L509 481"/>
+    </g>
+    <path d="M250 430 L340 330 L470 430 L250 430 M340 330 L390 430 M470 430 L505 320 L560 430 M470 430 L520 350" fill="none" class="ink"/>
+    <path d="M490 319 Q520 305 540 318" fill="none" class="ink"/>
+    <circle cx="390" cy="430" r="13" fill="#f05a47" class="ink"/>
+    <g class="pedal" style="transform-origin:390px 430px">
+      <path d="M390 430 L420 455 M390 430 L360 405" class="ink"/>
+      <path d="M415 457h24 M335 401h24" class="ink"/>
+    </g>
+    <path d="M330 331 Q348 312 370 322" fill="none" class="ink"/>
+    <path d="M505 320 L525 290" fill="none" class="ink"/>
+    <path d="M514 286h35" class="ink"/>
+  </g>
+
+  <!-- pelican -->
+  <g class="bob">
+    <ellipse cx="400" cy="245" rx="92" ry="112" fill="#f7f3e8" class="ink"/>
+    <path d="M345 205 Q300 185 292 230 Q305 250 350 245" fill="#dce9ee" class="ink"/>
+    <path d="M340 252 Q286 255 270 282 Q320 315 385 276Z" fill="#f2a33a" class="ink"/>
+    <path d="M270 282 Q325 292 385 276" fill="none" stroke="#b96d18" stroke-width="4"/>
+    <circle cx="371" cy="187" r="9" fill="#17202a"/>
+    <circle cx="373" cy="184" r="3" fill="white"/>
+    <path d="M425 172 Q470 135 505 175 Q475 205 425 204Z" fill="#dce9ee" class="ink"/>
+    <path d="M425 172 Q455 170 485 183" fill="none" stroke="#9bb4bf" stroke-width="4"/>
+    <path d="M392 352 Q378 385 355 407" fill="none" class="ink"/>
+    <path d="M442 350 Q454 380 478 404" fill="none" class="ink"/>
+    <path d="M345 407 Q330 416 315 408" fill="none" class="ink"/>
+    <path d="M478 404 Q495 412 509 402" fill="none" class="ink"/>
+    <path d="M364 246 Q405 270 446 240" fill="none" stroke="#d6cdbd" stroke-width="5"/>
+    <text x="400" y="120" text-anchor="middle" class="label" font-size="18" font-weight="700">OFFICIAL BIRD-LANE INSPECTOR</text>
+  </g>
+
+  <path d="M104 345 Q125 330 143 345" fill="none" stroke="#17202a" stroke-width="4"/>
+  <path d="M115 355 Q135 340 153 355" fill="none" stroke="#17202a" stroke-width="4"/>
+  <text x="88" y="385" class="label" font-size="17" font-weight="700">HONK!</text>
+  <text x="620" y="285" class="label" font-size="17" font-weight="700">WOBBLE</text>
+  <path d="M625 294l-18 14M652 298l-12 18" stroke="#17202a" stroke-width="4"/>
+
+  <rect x="0" y="548" width="800" height="52" fill="#fff4c7"/>
+  <text x="400" y="580" text-anchor="middle" class="label" font-size="18" font-weight="700">2026-10-29 07:30:44 SGT (UTC+08:00)</text>
+</svg>

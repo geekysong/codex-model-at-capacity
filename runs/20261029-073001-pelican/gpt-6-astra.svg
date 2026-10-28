@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican Power Pedaler</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly causing a traffic jam.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#20252b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#20252b}
+      .wheel{fill:none;stroke:#20252b;stroke-width:9}
+      .spoke{stroke:#53606b;stroke-width:3}
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="#bfe9f3"/>
+  <rect y="420" width="800" height="180" fill="#78b778"/>
+  <path d="M0 440 Q100 410 200 440 T400 440 T600 440 T800 440" fill="none" stroke="#4f8d59" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#e34b38">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="19" font-style="italic">“Why flap when you can pedal and block traffic?”</text>
+
+  <g transform="translate(0 0)" filter="url(#shadow)">
+    <g>
+      <circle cx="245" cy="425" r="82" class="wheel"/>
+      <circle cx="575" cy="425" r="82" class="wheel"/>
+      <g class="spoke">
+        <path d="M245 343V507M163 425H327M187 367L303 483M303 367L187 483"/>
+        <path d="M575 343V507M493 425H657M517 367L633 483M633 367L517 483"/>
+      </g>
+    </g>
+
+    <path d="M245 425 L350 300 L575 425 L470 425 Z" fill="none" class="ink" stroke="#d94d3d"/>
+    <path d="M350 300 L470 425" fill="none" class="ink" stroke="#d94d3d"/>
+    <path d="M350 300 L330 260" fill="none" class="ink"/>
+    <path d="M315 260 H350" fill="none" class="ink"/>
+    <path d="M575 425 L600 285" fill="none" class="ink"/>
+    <path d="M575 300 H625" fill="none" class="ink"/>
+    <circle cx="470" cy="425" r="17" fill="#f3c04f" class="ink"/>
+    <path d="M470 425 L430 385 M470 425 L510 460" fill="none" class="ink"/>
+    <path d="M430 385 L408 395 M510 460 L533 448" fill="none" class="ink"/>
+
+    <g id="pelican">
+      <ellipse cx="402" cy="260" rx="76" ry="92" fill="#f7f1df" class="ink"/>
+      <path d="M356 205 Q300 158 315 120 Q370 135 411 184" fill="#f7f1df" class="ink"/>
+      <path d="M317 120 Q284 105 265 120 Q296 145 337 150" fill="#f2a34d" class="ink"/>
+      <path d="M403 177 Q442 130 490 153 Q514 165 493 185 Q461 210 424 214" fill="#f7f1df" class="ink"/>
+      <circle cx="442" cy="161" r="10" fill="#20252b"/>
+      <circle cx="446" cy="157" r="3" fill="white"/>
+      <path d="M406 277 Q450 255 478 284 Q447 306 409 304" fill="#f2a34d" class="ink"/>
+      <path d="M398 305 Q430 325 461 307" fill="none" class="ink"/>
+      <path d="M365 338 Q333 365 320 394" fill="none" class="ink"/>
+      <path d="M441 338 Q471 365 486 392" fill="none" class="ink"/>
+      <path d="M320 394 l-18 18 M320 394 l8 23 M486 392 l18 18 M486 392 l-8 23" fill="none" class="ink"/>
+      <path d="M356 235 Q395 250 417 238" fill="none" stroke="#d7c9a7" stroke-width="7"/>
+      <path d="M470 205 Q510 236 530 267" fill="none" class="ink"/>
+      <path d="M529 267 q-28 9-48-9" fill="none" class="ink"/>
+      <rect x="356" y="214" width="72" height="25" rx="7" fill="#e34b38" class="ink"/>
+      <text x="392" y="233" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900" fill="white">HONK!</text>
+    </g>
+  </g>
+
+  <g fill="#20252b" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">
+    <text x="95" y="170">BIKE LANE?</text>
+    <text x="95" y="193">I AM THE LANE.</text>
+    <path d="M190 190 Q250 215 300 240" fill="none" stroke="#20252b" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#20252b"/>
+    </marker>
+  </defs>
+
+  <g class="label" font-size="16" font-weight="700">
+    <text x="400" y="540" text-anchor="middle">Pelican on a bicycle: all beak, no brakes, maximum commute drama.</text>
+    <text x="400" y="575" text-anchor="middle" font-size="14">2026-10-29 07:30:01 SGT (UTC+08:00)</text>
+  </g>
+
+  <animateTransform href="#pelican" attributeName="transform" type="translate"
+    values="0 0;0 -7;0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+  <animateTransform href="#pelican" attributeName="transform" type="rotate"
+    values="0 402 260;1.5 402 260;0 402 260;-1.5 402 260;0 402 260" dur="1.2s" repeatCount="indefinite"/>
+  <animateTransform href="#pelican" attributeName="transform" type="translate"
+    additive="sum" values="0 0;0 -7;0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+  <animateTransform href="#pelican" attributeName="transform" type="rotate"
+    additive="sum" values="0 402 260;1.5 402 260;0 402 260;-1.5 402 260;0 402 260" dur="1.2s" repeatCount="indefinite"/>
+
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 245 425" to="360 245 425" dur="2s" repeatCount="indefinite"/>
+    <circle cx="245" cy="425" r="67" fill="none" stroke="#e34b38" stroke-width="4" stroke-dasharray="8 14"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 575 425" to="360 575 425" dur="2s" repeatCount="indefinite"/>
+    <circle cx="575" cy="425" r="67" fill="none" stroke="#e34b38" stroke-width="4" stroke-dasharray="8 14"/>
+  </g>
+</svg>

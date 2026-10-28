@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Power Pedaler</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly delivering absolutely nothing.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee8ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#606a78"/>
+      <stop offset="1" stop-color="#2e3540"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202a" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink { stroke:#202735; stroke-width:6; stroke-linejoin:round; stroke-linecap:round; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#202735; }
+      .small { font-size:18px; font-weight:700; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="92" r="48" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 360 Q120 300 245 355 T500 340 T800 350 L800 600 L0 600 Z" fill="#96cf7b"/>
+  <path d="M0 420 Q175 375 350 420 T800 405 L800 600 L0 600 Z" fill="#6ca95d"/>
+  <path d="M0 465 L800 450 L800 600 L0 600 Z" fill="url(#road)"/>
+
+  <g opacity=".32" fill="#ffffff">
+    <path d="M90 108 q28-20 56 0 q-28 12-56 0z"/>
+    <path d="M180 170 q30-22 62 0 q-31 13-62 0z"/>
+    <path d="M525 135 q25-18 53 0 q-27 12-53 0z"/>
+  </g>
+
+  <g class="label" text-anchor="middle">
+    <text x="400" y="58" font-size="38" font-weight="900" fill="#d83b35" stroke="#fff" stroke-width="3" paint-order="stroke">
+      PELICAN POWER PEDALER
+    </text>
+    <text x="400" y="88" font-size="17" font-weight="700">“Delivering winged transportation solutions... mostly feathers.”</text>
+  </g>
+
+  <!-- motion marks -->
+  <g stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".85">
+    <path d="M95 290h70"/>
+    <path d="M70 315h48"/>
+    <path d="M620 275h72"/>
+  </g>
+
+  <!-- bicycle and rider -->
+  <g id="ride" filter="url(#shadow)">
+    <!-- bicycle wheels -->
+    <g class="wheel">
+      <circle cx="235" cy="445" r="78" fill="#1c2430" stroke="#111722" stroke-width="8"/>
+      <circle cx="235" cy="445" r="63" fill="#dbe7ef" stroke="#202735" stroke-width="5"/>
+      <circle cx="235" cy="445" r="8" fill="#d83b35" class="ink"/>
+      <g stroke="#667585" stroke-width="3">
+        <path d="M235 382v126M172 445h126M191 401l88 88M279 401l-88 88"/>
+      </g>
+    </g>
+    <g class="wheel">
+      <circle cx="595" cy="445" r="78" fill="#1c2430" stroke="#111722" stroke-width="8"/>
+      <circle cx="595" cy="445" r="63" fill="#dbe7ef" stroke="#202735" stroke-width="5"/>
+      <circle cx="595" cy="445" r="8" fill="#d83b35" class="ink"/>
+      <g stroke="#667585" stroke-width="3">
+        <path d="M595 382v126M532 445h126M551 401l88 88M639 401l-88 88"/>
+      </g>
+    </g>
+
+    <!-- frame -->
+    <path d="M235 445 L355 330 L465 445 L235 445 L405 445 L355 330 L535 345 L595 445" fill="none" class="ink" stroke="#d83b35"/>
+    <path d="M535 345 L560 300" fill="none" class="ink"/>
+    <path d="M548 298h42" class="ink" fill="none"/>
+    <path d="M355 330h-30" class="ink" fill="none"/>
+
+    <!-- basket -->
+    <path d="M495 282h100l-12 60h-76z" fill="#e7a642" class="ink"/>
+    <path d="M503 298h84M500 315h89" stroke="#9c5c22" stroke-width="4"/>
+    <text x="545" y="338" class="label small" text-anchor="middle" fill="#fff">URGENT</text>
+
+    <!-- pelican body -->
+    <g id="pelican">
+      <ellipse cx="402" cy="238" rx="76" ry="100" fill="#f6f7f2" class="ink"/>
+      <path d="M352 215 Q405 180 458 215 Q445 270 405 285 Q367 268 352 215z" fill="#c8d2d8" class="ink"/>
+      <ellipse cx="405" cy="142" rx="62" ry="60" fill="#f6f7f2" class="ink"/>
+      <path d="M356 150 Q405 127 456 150 L520 175 Q533 182 520 192 L453 196 Q405 180 356 150z" fill="#f08d32" class="ink"/>
+      <path d="M373 166 Q424 166 491 183 Q431 196 374 181z" fill="#ffc15a"/>
+      <circle cx="387" cy="132" r="9" fill="#202735"/>
+      <circle cx="390" cy="129" r="3" fill="#fff"/>
+      <path d="M350 111 Q323 92 332 70 Q357 77 374 96" fill="#f6f7f2" class="ink"/>
+      <path d="M430 96 Q452 70 470 78 Q469 105 445 117" fill="#f6f7f2" class="ink"/>
+      <path d="M377 246 Q403 267 433 245" fill="none" class="ink"/>
+      <!-- wing -->
+      <path d="M355 220 Q304 240 326 305 Q350 328 382 281" fill="#b6c4cc" class="ink"/>
+      <path d="M338 278l34-33M340 294l38-35" stroke="#71818d" stroke-width="4"/>
+      <!-- legs -->
+      <path d="M378 310 L365 382 M432 307 L445 382" fill="none" class="ink" stroke="#e08a32"/>
+      <path d="M350 382 Q366 373 382 384 Q368 400 348 393z" fill="#e08a32" class="ink"/>
+      <path d="M430 382 Q447 373 462 384 Q449 400 428 393z" fill="#e08a32" class="ink"/>
+      <!-- pedaling crank -->
+      <circle cx="405" cy="445" r="14" fill="#e7a642" class="ink"/>
+      <path d="M405 445l-35 20M405 445l33-19" class="ink" fill="none"/>
+      <circle cx="368" cy="466" r="7" fill="#d83b35" class="ink"/>
+      <circle cx="441" cy="425" r="7" fill="#d83b35" class="ink"/>
+    </g>
+  </g>
+
+  <!-- speech bubble -->
+  <path d="M90 205 Q90 125 205 125 Q300 125 300 205 Q300 270 210 270 L170 300 L172 267 Q90 255 90 205z" fill="#fff" class="ink"/>
+  <text x="195" y="178" class="label" text-anchor="middle" font-size="22" font-weight="900">HONK!</text>
+  <text x="195" y="207" class="label" text-anchor="middle" font-size="17">I’m late for</text>
+  <text x="195" y="230" class="label" text-anchor="middle" font-size="17">my migration meeting!</text>
+
+  <!-- looping animation -->
+  <animateTransform href="#ride" attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+  <animateTransform href="#ride .wheel" attributeName="transform" type="rotate" from="0 235 445" to="360 235 445" dur="1.4s" repeatCount="indefinite"/>
+  <animateTransform href="#ride .wheel:nth-of-type(2)" attributeName="transform" type="rotate" from="0 595 445" to="360 595 445" dur="1.4s" repeatCount="indefinite"/>
+
+  <!-- footer -->
+  <rect x="18" y="548" width="764" height="36" rx="10" fill="#fff" opacity=".92"/>
+  <text x="400" y="572" class="label" text-anchor="middle" font-size="16" font-weight="700">
+    2026-10-29 07:30:59 SGT (UTC+08:00)
+  </text>
+</svg>
