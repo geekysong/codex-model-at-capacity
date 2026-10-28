@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon pelican rides a bicycle while proudly causing a traffic jam.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8bd7ff"/>
+      <stop offset="1" stop-color="#e7f8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/>
+    </filter>
+    <style>
+      .ink{stroke:#222;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;fill:#222}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="95" r="45" fill="#ffd85a" stroke="#222" stroke-width="5"/>
+  <path d="M0 410 Q150 360 300 410 T600 410 T900 410 V600 H0Z" fill="#91cf72"/>
+  <path d="M0 485 Q200 450 400 485 T800 485 V600 H0Z" fill="#5fa85c"/>
+  <path d="M0 530 H800" stroke="#3c6d45" stroke-width="10"/>
+  <path d="M80 455 H720" stroke="#d9d9d9" stroke-width="28"/>
+  <path d="M80 455 H720" stroke="#555" stroke-width="4" stroke-dasharray="22 18"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#fff" stroke="#222" stroke-width="3" paint-order="stroke">THE GREAT BEAK ESCAPE</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="19" font-weight="700">One bird. Two wheels. Zero license.</text>
+
+  <g filter="url(#shadow)">
+    <!-- bicycle -->
+    <g class="ink" fill="none">
+      <circle cx="270" cy="430" r="75" stroke="#222" stroke-width="9">
+        <animateTransform attributeName="transform" type="rotate" from="0 270 430" to="360 270 430" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="575" cy="430" r="75" stroke="#222" stroke-width="9">
+        <animateTransform attributeName="transform" type="rotate" from="0 575 430" to="360 575 430" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M270 430 L365 330 L470 430 L270 430 L420 430 L365 330 L575 430 L520 315 L470 430" stroke="#d73535" stroke-width="10"/>
+      <path d="M520 315 L555 285 M535 285 H580" stroke="#222" stroke-width="9"/>
+      <path d="M350 330 H315" stroke="#222" stroke-width="9"/>
+    </g>
+
+    <!-- pelican body and motion -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1s" repeatCount="indefinite"/>
+      <ellipse cx="405" cy="250" rx="78" ry="92" fill="#f6f2e8" class="ink"/>
+      <path d="M365 300 Q325 342 350 375 Q370 392 388 360" fill="#f6f2e8" class="ink"/>
+      <path d="M445 300 Q490 335 475 370 Q455 388 437 355" fill="#f6f2e8" class="ink"/>
+      <ellipse cx="405" cy="155" rx="68" ry="58" fill="#fffaf0" class="ink"/>
+      <path d="M365 165 Q300 185 245 174 Q295 220 375 198 Q410 188 365 165Z" fill="#f2a33a" class="ink"/>
+      <path d="M247 174 Q300 190 365 165" fill="none" class="ink"/>
+      <circle cx="382" cy="145" r="8" fill="#222"/>
+      <circle cx="430" cy="145" r="8" fill="#222"/>
+      <path d="M380 120 Q405 105 430 120" fill="none" class="ink"/>
+      <path d="M350 205 Q405 235 460 205" fill="#f2a33a" class="ink"/>
+      <path d="M375 235 Q405 255 435 235" fill="none" class="ink"/>
+      <path d="M382 350 L350 405 M438 350 L470 405" class="ink" fill="none"/>
+      <path d="M350 405 L330 420 M470 405 L490 420" class="ink" fill="none"/>
+      <path d="M350 405 L365 430 M470 405 L455 430" class="ink" fill="none"/>
+      <path d="M385 345 L350 405 L390 430" stroke="#f2a33a" stroke-width="10" fill="none"/>
+      <path d="M435 345 L470 405 L430 430" stroke="#f2a33a" stroke-width="10" fill="none"/>
+      <path d="M372 430 L405 430" class="ink" fill="none"/>
+      <path d="M438 430 L405 430" class="ink" fill="none"/>
+    </g>
+  </g>
+
+  <path d="M120 350 Q160 325 200 350" fill="none" stroke="#222" stroke-width="5"/>
+  <text x="130" y="330" class="label" font-size="20" font-weight="700">HONK?</text>
+  <text x="610" y="350" class="label" font-size="20" font-weight="700">I’M ECO-FOWL!</text>
+
+  <rect x="70" y="555" width="660" height="32" rx="10" fill="#fff" stroke="#222" stroke-width="3"/>
+  <text x="400" y="578" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-28 13:30:38 SGT (UTC+08:00)</text>
+</svg>

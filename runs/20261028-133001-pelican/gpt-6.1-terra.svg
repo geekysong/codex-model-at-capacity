@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican pedaling a bicycle, animated in a loop.</desc>
+  <style>
+    .ink{stroke:#20252b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,Helvetica,sans-serif;fill:#20252b}
+    .small{font-family:Arial,Helvetica,sans-serif;font-size:16px;fill:#20252b}
+  </style>
+
+  <rect width="800" height="600" fill="#b9e8f5"/>
+  <circle cx="680" cy="105" r="52" fill="#ffe48a" class="ink"/>
+  <path d="M0 450 Q140 410 280 450 T560 445 T800 450 V600 H0Z" fill="#85c96b"/>
+  <path d="M0 500 Q180 465 360 500 T800 495" fill="none" stroke="#4d9b55" stroke-width="8"/>
+  <path d="M55 438 q18-35 36 0 M92 438 q18-35 36 0 M690 438 q18-35 36 0" fill="none" stroke="#4d9b55" stroke-width="7"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="34" font-weight="800">THE GREAT PELICAN GETAWAY</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="19" font-style="italic">“When the fish stop swimming, pedal harder.”</text>
+
+  <g id="bike" transform="translate(0 0)">
+    <g class="wheel">
+      <circle cx="220" cy="430" r="78" fill="#f7f7f7" class="ink"/>
+      <circle cx="220" cy="430" r="10" fill="#f04d4d" class="ink"/>
+      <path d="M220 352V508 M142 430H298 M165 375L275 485 M275 375L165 485" fill="none" stroke="#82909a" stroke-width="4"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 220 430" to="360 220 430" dur="2s" repeatCount="indefinite"/>
+    </g>
+    <g class="wheel">
+      <circle cx="575" cy="430" r="78" fill="#f7f7f7" class="ink"/>
+      <circle cx="575" cy="430" r="10" fill="#f04d4d" class="ink"/>
+      <path d="M575 352V508 M497 430H653 M520 375L630 485 M630 375L520 485" fill="none" stroke="#82909a" stroke-width="4"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 575 430" to="360 575 430" dur="2s" repeatCount="indefinite"/>
+    </g>
+
+    <path d="M220 430 L345 300 L470 430 L220 430 M345 300 L575 430 M470 430 L520 300" fill="none" stroke="#263b59" stroke-width="12"/>
+    <path d="M505 295 L545 295" class="ink" fill="none"/>
+    <path d="M520 300 L535 270" class="ink" fill="none"/>
+    <path d="M325 298 L300 270" class="ink" fill="none"/>
+    <path d="M285 270 L315 270" class="ink" fill="none"/>
+
+    <circle cx="470" cy="430" r="27" fill="#f7c948" class="ink"/>
+    <path d="M470 430 L430 390 M470 430 L510 470" class="ink" fill="none"/>
+    <circle cx="430" cy="390" r="9" fill="#20252b"/>
+    <circle cx="510" cy="470" r="9" fill="#20252b"/>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1s" repeatCount="indefinite"/>
+      <ellipse cx="390" cy="238" rx="83" ry="95" fill="#f4f1e8" class="ink"/>
+      <path d="M350 190 Q375 135 430 156 Q460 168 466 215 L438 248 Q405 237 350 190Z" fill="#d9e5e8" class="ink"/>
+      <path d="M418 186 Q485 168 615 216 Q628 223 615 237 Q496 247 420 220Z" fill="#f4a340" class="ink"/>
+      <path d="M420 208 Q500 218 595 226 Q510 272 424 235Z" fill="#e98732" class="ink"/>
+      <circle cx="437" cy="183" r="9" fill="#20252b"/>
+      <circle cx="440" cy="180" r="3" fill="#ffffff"/>
+      <path d="M365 300 Q390 330 418 300" fill="none" class="ink"/>
+      <path d="M362 270 Q325 292 309 333 Q350 322 386 286Z" fill="#d9e5e8" class="ink"/>
+      <path d="M418 270 Q455 295 469 334 Q430 320 398 286Z" fill="#d9e5e8" class="ink"/>
+      <path d="M359 315 L340 380 M420 315 L447 380" class="ink" fill="none"/>
+      <path d="M340 380 q-28 5-40 20 q28 7 51-2 M447 380 q28 5 42 20 q-28 7-52-2" fill="#f4a340" class="ink"/>
+      <path d="M330 220 Q302 205 300 178" fill="none" class="ink"/>
+      <text x="388" y="145" text-anchor="middle" class="label" font-size="15" font-weight="700">NO LICENSE. NO REGRETS.</text>
+    </g>
+  </g>
+
+  <g transform="translate(610 315)">
+    <path d="M0 0 Q45-30 90 0" fill="none" stroke="#20252b" stroke-width="5"/>
+    <path d="M15 0 Q45 18 75 0" fill="none" stroke="#20252b" stroke-width="5"/>
+    <text x="45" y="-12" text-anchor="middle" class="label" font-size="17" font-weight="700">HONK!</text>
+  </g>
+
+  <rect x="25" y="545" width="750" height="38" rx="10" fill="#ffffff" opacity="0.88" class="ink"/>
+  <text x="400" y="570" text-anchor="middle" class="small">2026-10-28 13:32:38 SGT (UTC+08:00)</text>
+</svg>
