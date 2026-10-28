@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly hauling a tiny fish market.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#f9f2c7"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17202a}
+      .wheel{fill:none;stroke:#17202a;stroke-width:8}
+      .spoke{stroke:#52616b;stroke-width:3}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 445 Q120 405 245 440 T500 432 T800 438 V600 H0Z" fill="#9bd27b"/>
+  <path d="M0 485 Q180 460 350 488 T800 475" fill="none" stroke="#5b9b55" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900">
+    THE GREAT PELICAN COMMUTE
+  </text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="19" font-style="italic">
+    “Why walk when you can pedal your problems somewhere else?”
+  </text>
+
+  <!-- bicycle -->
+  <g class="ink" fill="none">
+    <circle cx="235" cy="420" r="73" class="wheel"/>
+    <circle cx="590" cy="420" r="73" class="wheel"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 235 420" to="360 235 420" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M235 420L235 347M235 420L235 493M235 420L162 420M235 420L308 420M235 420L287 372M235 420L183 468" class="spoke"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 590 420" to="360 590 420" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M590 420L590 347M590 420L590 493M590 420L517 420M590 420L663 420M590 420L642 372M590 420L538 468" class="spoke"/>
+    </g>
+    <path d="M235 420L350 330L590 420L470 420L350 330L410 420L235 420M470 420L430 350"/>
+    <path d="M430 350L455 320M420 350L390 350"/>
+    <circle cx="410" cy="420" r="16" fill="#f3b63f"/>
+    <path d="M410 420L445 395M410 420L375 445"/>
+    <path d="M445 395l24 7M375 445l-22 7"/>
+    <path d="M350 330L330 305M330 305L300 305"/>
+  </g>
+
+  <!-- animated pedals -->
+  <g class="ink">
+    <animateTransform attributeName="transform" type="rotate" from="0 410 420" to="360 410 420" dur="1.6s" repeatCount="indefinite"/>
+    <path d="M410 420L445 395M410 420L375 445" fill="none"/>
+    <path d="M445 395l24 7M375 445l-22 7" fill="none"/>
+  </g>
+
+  <!-- pelican body -->
+  <g class="ink">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="0.8s" repeatCount="indefinite"/>
+    <ellipse cx="420" cy="245" rx="112" ry="92" fill="#f7f7f2"/>
+    <path d="M350 258 Q405 285 477 252 Q510 270 528 315 Q455 345 370 315 Q340 290 350 258Z" fill="#dce5e8"/>
+    <path d="M370 315 Q420 342 475 316 L493 365 L390 365Z" fill="#f4a62a"/>
+    <ellipse cx="409" cy="170" rx="73" ry="67" fill="#f7f7f2"/>
+    <path d="M350 181 Q405 145 488 181 L620 210 Q635 218 620 229 L487 240 Q415 261 350 230Z" fill="#f4a62a"/>
+    <path d="M486 211 Q552 222 616 220 Q556 250 487 240Z" fill="#ef8f24"/>
+    <circle cx="434" cy="166" r="12" fill="#17202a"/>
+    <circle cx="438" cy="162" r="4" fill="#fff" stroke="none"/>
+    <path d="M367 149 Q337 125 326 102 Q365 112 389 137" fill="#dce5e8"/>
+    <path d="M390 365L370 420M470 365L485 420" fill="none"/>
+    <path d="M370 420l-24 8M485 420l25 8" fill="none"/>
+    <path d="M390 365 Q420 380 450 365" fill="none"/>
+  </g>
+
+  <!-- tiny fish cargo gag -->
+  <g class="ink">
+    <rect x="525" y="278" width="105" height="61" rx="12" fill="#d74b4b"/>
+    <path d="M540 278v-30h75v30" fill="#f4a62a"/>
+    <path d="M548 304 Q565 288 582 304 T616 304" fill="none" stroke="#fff" stroke-width="5"/>
+    <path d="M580 264 q18-24 36 0" fill="none"/>
+    <path d="M585 250l-10-18M605 250l10-18" fill="none"/>
+    <text x="577" y="326" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#fff" stroke="none">FISH TAX</text>
+  </g>
+
+  <!-- motion lines and joke bubble -->
+  <path d="M115 330l-42-12M125 350l-48 0M132 370l-42 13" stroke="#52616b" stroke-width="6" stroke-linecap="round"/>
+  <g class="ink" fill="#fff">
+    <path d="M585 125 Q675 78 730 132 Q755 180 700 204 Q653 220 610 192 L580 205 L590 178 Q563 153 585 125Z"/>
+  </g>
+  <text x="663" y="153" text-anchor="middle" class="label" font-size="19" font-weight="bold">HONK!</text>
+  <text x="663" y="177" text-anchor="middle" class="label" font-size="15">I demand</text>
+  <text x="663" y="195" text-anchor="middle" class="label" font-size="15">more beak room!</text>
+
+  <text x="400" y="540" text-anchor="middle" class="label" font-size="21" font-weight="bold">
+    A pelican on a bicycle: delivering fish, feathers, and unnecessary confidence.
+  </text>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="16">
+    2026-10-29 02:02:26 SGT (UTC+08:00)
+  </text>
+</svg>

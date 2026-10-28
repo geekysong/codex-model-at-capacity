@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A satirical cartoon of a pelican riding a bicycle while delivering questionable fish-based public policy.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#707783"/>
+      <stop offset="1" stop-color="#343a46"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#14202c" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink{stroke:#17202a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17202a}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.6s linear infinite}
+      .rider{animation:bob 1.3s ease-in-out infinite}
+      .pedal{animation:pedal .9s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 390 Q125 335 245 390 T490 382 T800 375 V470 H0Z" fill="#8acb88"/>
+  <path d="M0 445 Q150 405 300 442 T610 435 T800 425 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 515 Q180 495 360 515 T800 510" fill="none" stroke="#e8d98b" stroke-width="8" stroke-dasharray="35 22"/>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="35" width="720" height="92" rx="20" fill="#fffdf5" class="ink"/>
+    <text x="400" y="78" text-anchor="middle" class="label" font-size="34" font-weight="900">THE PELICAN EXPRESS</text>
+    <text x="400" y="108" text-anchor="middle" class="label" font-size="17" font-weight="700">“Delivering fishy policy at bicycle speed.”</text>
+  </g>
+
+  <g class="rider" filter="url(#shadow)">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M214 432 L310 432 L366 330 L270 330 Z"/>
+      <path d="M310 432 L366 330 L430 432"/>
+      <path d="M366 330 L390 300"/>
+      <path d="M384 300 L407 300"/>
+      <path d="M270 330 L250 300"/>
+      <path d="M235 300 L266 300"/>
+    </g>
+
+    <!-- spinning wheels -->
+    <g class="wheel">
+      <circle cx="214" cy="432" r="67" fill="#202733" class="ink"/>
+      <circle cx="214" cy="432" r="53" fill="#aeb8c2" stroke="#17202a" stroke-width="4"/>
+      <g stroke="#65727e" stroke-width="3">
+        <path d="M214 379V485M161 432H267M176 394L252 470M252 394L176 470"/>
+      </g>
+      <circle cx="214" cy="432" r="8" fill="#17202a"/>
+    </g>
+    <g class="wheel">
+      <circle cx="430" cy="432" r="67" fill="#202733" class="ink"/>
+      <circle cx="430" cy="432" r="53" fill="#aeb8c2" stroke="#17202a" stroke-width="4"/>
+      <g stroke="#65727e" stroke-width="3">
+        <path d="M430 379V485M377 432H483M392 394L468 470M468 394L392 470"/>
+      </g>
+      <circle cx="430" cy="432" r="8" fill="#17202a"/>
+    </g>
+
+    <!-- crank and pedals -->
+    <g class="pedal" transform-box="fill-box" transform-origin="310px 432px">
+      <circle cx="310" cy="432" r="13" fill="#f4c542" class="ink"/>
+      <path d="M310 432 L335 410 M330 408h22" class="ink" fill="none"/>
+      <path d="M310 432 L285 454 M280 456h-22" class="ink" fill="none"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="331" cy="255" rx="83" ry="96" fill="#f5f0df" class="ink"/>
+    <path d="M276 267 Q330 220 384 267 Q370 318 330 330 Q291 317 276 267Z" fill="#d9e2e5" class="ink"/>
+    <path d="M299 205 Q327 173 362 201 L382 236 L307 242Z" fill="#f5f0df" class="ink"/>
+    <circle cx="356" cy="204" r="8" fill="#17202a"/>
+    <path d="M365 216 Q429 224 465 249 Q426 273 365 249Z" fill="#f39b39" class="ink"/>
+    <path d="M365 244 Q423 250 458 269 Q411 288 366 258Z" fill="#f7b34b" class="ink"/>
+    <path d="M420 249 q23 11 39 0" fill="none" stroke="#17202a" stroke-width="4"/>
+    <path d="M287 211 Q269 188 284 165" fill="none" class="ink"/>
+    <path d="M303 211 Q291 178 309 158" fill="none" class="ink"/>
+
+    <!-- wing and tail -->
+    <path d="M284 257 Q229 275 236 326 Q272 316 312 286Z" fill="#c6d3d8" class="ink"/>
+    <path d="M274 307 L231 333 L286 327Z" fill="#e3ecee" class="ink"/>
+
+    <!-- legs -->
+    <path d="M304 329 L290 393 L270 426" fill="none" class="ink"/>
+    <path d="M349 329 L369 388 L392 416" fill="none" class="ink"/>
+    <path d="M255 426 q18 -8 30 5 l-5 9 q-22 4 -32 -4Z" fill="#f39b39" class="ink"/>
+    <path d="M380 414 q18 -7 28 5 l-5 9 q-21 3 -30 -5Z" fill="#f39b39" class="ink"/>
+
+    <!-- helmet and sign -->
+    <path d="M292 177 Q329 135 373 171 L378 190 L294 190Z" fill="#ed5d5d" class="ink"/>
+    <path d="M302 166 Q333 144 365 164" fill="none" stroke="#fff" stroke-width="6"/>
+    <path d="M468 249 L468 176" class="ink" fill="none"/>
+    <path d="M468 177 Q522 160 559 181 L559 231 Q518 212 468 228Z" fill="#fffdf5" class="ink"/>
+    <text x="513" y="202" text-anchor="middle" class="label" font-size="16" font-weight="900">VOTE</text>
+    <text x="513" y="220" text-anchor="middle" class="label" font-size="13" font-weight="700">FOR FISH</text>
+  </g>
+
+  <g class="label" font-weight="700">
+    <text x="88" y="190" font-size="18">LOCAL NEWS:</text>
+    <text x="88" y="215" font-size="16">Bird promises to cut</text>
+    <text x="88" y="237" font-size="16">traffic by eating it.</text>
+    <path d="M188 248 Q215 275 260 292" fill="none" stroke="#17202a" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8Z" fill="#17202a"/>
+    </marker>
+  </defs>
+
+  <rect x="24" y="558" width="752" height="30" rx="10" fill="#fffdf5" opacity=".96" class="ink"/>
+  <text x="400" y="579" text-anchor="middle" class="label" font-size="15" font-weight="700">2026-10-29 02:01:13 SGT (UTC+08:00)</text>
+</svg>
