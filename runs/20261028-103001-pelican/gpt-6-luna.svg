@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an enormous fish.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f2"/>
+      <stop offset="1" stop-color="#d9f5ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4e5962"/>
+      <stop offset="1" stop-color="#283038"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#172028" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink { stroke:#20252b; stroke-width:6; stroke-linejoin:round; stroke-linecap:round; }
+      .label { font-family:Verdana,Arial,sans-serif; fill:#20252b; }
+      .wheel { fill:none; stroke:#20252b; stroke-width:9; }
+      .spoke { stroke:#20252b; stroke-width:3; }
+      .motion { stroke:#ffffff; stroke-width:5; stroke-linecap:round; opacity:.72; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="692" cy="92" r="45" fill="#ffe57c" stroke="#20252b" stroke-width="5"/>
+  <path d="M0 390 Q120 335 245 385 T505 375 T800 365 V475 H0Z" fill="#8acb7a" stroke="#20252b" stroke-width="5"/>
+  <path d="M0 445 Q165 418 320 446 T640 438 T800 430 V600 H0Z" fill="url(#road)" stroke="#20252b" stroke-width="5"/>
+  <path d="M30 520 H165 M250 520 H385 M470 520 H605 M690 520 H770" stroke="#ffd86b" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Title -->
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="34" font-weight="900" fill="#ffffff" stroke="#20252b" stroke-width="2" paint-order="stroke">
+    THE PELICAN EXPRESS
+  </text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="17" font-weight="700">
+    “Why walk when you can wing it?”
+  </text>
+
+  <!-- Motion lines -->
+  <path class="motion" d="M86 285 H160"/>
+  <path class="motion" d="M56 322 H140"/>
+  <path class="motion" d="M110 358 H170"/>
+
+  <!-- Bicycle and rider bob -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0;0 4;0 0" dur="1.2s" repeatCount="indefinite"/>
+    
+    <!-- Bicycle frame -->
+    <g filter="url(#shadow)">
+      <circle cx="260" cy="430" r="73" class="wheel"/>
+      <circle cx="585" cy="430" r="73" class="wheel"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 260 430" to="360 260 430" dur="1.4s" repeatCount="indefinite"/>
+        <path class="spoke" d="M260 357V503 M187 430H333 M208 378L312 482 M312 378L208 482"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 585 430" to="360 585 430" dur="1.4s" repeatCount="indefinite"/>
+        <path class="spoke" d="M585 357V503 M512 430H658 M533 378L637 482 M637 378L533 482"/>
+      </g>
+      <path d="M260 430 L370 335 L470 430 L260 430 L420 430 L370 335 L390 284" fill="none" stroke="#d94d45" stroke-width="10"/>
+      <path d="M390 284 H440" stroke="#20252b" stroke-width="8"/>
+      <path d="M460 430 L485 350" stroke="#20252b" stroke-width="8"/>
+      <path d="M470 350 H510" stroke="#20252b" stroke-width="8"/>
+      <path d="M350 330 H390" stroke="#20252b" stroke-width="8"/>
+      <circle cx="470" cy="430" r="16" fill="#f2c94c" class="ink">
+        <animateTransform attributeName="transform" type="rotate" from="0 470 430" to="360 470 430" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M470 430 l-30 -22 M470 430 l30 22" stroke="#20252b" stroke-width="7"/>
+      <path d="M440 408 h-22 M500 452 h22" stroke="#20252b" stroke-width="7"/>
+    </g>
+
+    <!-- Pelican body -->
+    <ellipse cx="382" cy="265" rx="80" ry="98" fill="#f4f0e6" class="ink"/>
+    <path d="M330 300 Q382 335 434 300" fill="none" stroke="#c7c1b7" stroke-width="7"/>
+    <path d="M350 210 Q387 165 428 206 Q401 225 373 235Z" fill="#ffffff" class="ink"/>
+    
+    <!-- Pelican head and beak -->
+    <ellipse cx="391" cy="170" rx="67" ry="57" fill="#f4f0e6" class="ink"/>
+    <path d="M428 176 Q518 175 612 220 Q532 267 421 216 Q450 199 428 176Z" fill="#f5a33b" class="ink"/>
+    <path d="M444 215 Q528 246 606 220" fill="none" stroke="#d36e2b" stroke-width="5"/>
+    <circle cx="415" cy="159" r="10" fill="#20252b"/>
+    <circle cx="419" cy="155" r="3" fill="#ffffff"/>
+    <path d="M365 135 Q387 112 411 129" fill="none" stroke="#20252b" stroke-width="6"/>
+
+    <!-- Pelican wings and feet -->
+    <path d="M338 240 Q282 270 305 340 Q348 322 370 275Z" fill="#d8d3c9" class="ink"/>
+    <path d="M426 248 Q480 282 458 343 Q420 320 398 276Z" fill="#d8d3c9" class="ink"/>
+    <path d="M354 330 Q355 375 345 405" fill="none" stroke="#20252b" stroke-width="9"/>
+    <path d="M416 330 Q430 373 420 406" fill="none" stroke="#20252b" stroke-width="9"/>
+    <path d="M338 405 q18 -13 35 0 M411 405 q18 -13 35 0" fill="none" stroke="#f5a33b" stroke-width="8"/>
+
+    <!-- Fish cargo -->
+    <g transform="translate(235 165) rotate(-8)">
+      <path d="M0 32 Q55 -5 120 32 Q55 70 0 32Z" fill="#7bc4d8" class="ink"/>
+      <path d="M120 32 l35 -28 v56Z" fill="#5aa6bb" class="ink"/>
+      <circle cx="27" cy="27" r="5" fill="#20252b"/>
+      <path d="M50 18 Q70 32 50 46" fill="none" stroke="#347f95" stroke-width="4"/>
+      <path d="M6 32 L-26 11 L-20 53Z" fill="#5aa6bb" class="ink"/>
+    </g>
+    <path d="M256 202 Q275 183 300 204" fill="none" stroke="#20252b" stroke-width="7"/>
+    <text x="178" y="150" class="label" font-size="18" font-weight="800" transform="rotate(-8 178 150)">LUNCH?</text>
+  </g>
+
+  <!-- Caption -->
+  <rect x="104" y="555" width="592" height="28" rx="14" fill="#fff4c7" stroke="#20252b" stroke-width="3"/>
+  <text x="400" y="575" text-anchor="middle" class="label" font-size="16" font-weight="700">
+    A beak, two wheels, and absolutely no license.
+  </text>
+
+  <!-- Required visible timestamp footer -->
+  <text x="400" y="596" text-anchor="middle" class="label" font-size="11" font-weight="700">
+    2026-10-28 10:31:11 SGT (UTC+08:00)
+  </text>
+</svg>
