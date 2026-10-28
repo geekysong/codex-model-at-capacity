@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>THE GREAT PELICYCLE</title>
+  <desc>A satirical cartoon of a pelican riding a bicycle while carrying an absurdly large fish.</desc>
+  <style>
+    .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:none;stroke:#17212b;stroke-width:9}
+    .spoke{stroke:#3d5968;stroke-width:3}
+    .caption{font-family:Verdana,sans-serif;font-size:22px;font-weight:bold;fill:#17212b}
+    .small{font-family:Verdana,sans-serif;font-size:16px;fill:#17212b}
+    .title{font-family:Verdana,sans-serif;font-size:42px;font-weight:900;letter-spacing:2px;fill:#ffffff;stroke:#17212b;stroke-width:2}
+    .bob{animation:bob 1.2s ease-in-out infinite}
+    .spin{transform-box:fill-box;transform-origin:center;animation:spin 1.3s linear infinite}
+    .pedal{transform-box:fill-box;transform-origin:center;animation:spin 1.3s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  </style>
+
+  <rect width="800" height="600" fill="#b8e7f2"/>
+  <rect x="0" y="0" width="800" height="105" fill="#ef6f61"/>
+  <text x="400" y="67" text-anchor="middle" class="title">THE GREAT PELICYCLE</text>
+
+  <circle cx="90" cy="155" r="34" fill="#ffd166" class="ink"/>
+  <path d="M90 112v-18M90 198v18M47 155H29M151 155h18M60 125l-13-13M120 185l13 13M120 125l13-13M60 185l-13 13" class="ink" stroke="#efb83d"/>
+
+  <path d="M0 470 Q160 420 320 460 T640 445 T800 455 V600 H0Z" fill="#77b85c"/>
+  <path d="M0 505 Q180 475 360 500 T800 485" fill="none" stroke="#4c8d46" stroke-width="8"/>
+
+  <g aria-label="bicycle">
+    <g class="spin">
+      <circle cx="230" cy="430" r="82" class="wheel"/>
+      <circle cx="230" cy="430" r="9" fill="#ef6f61" class="ink"/>
+      <path d="M230 348V512M148 430H312M172 372l116 116M288 372L172 488" class="spoke"/>
+    </g>
+    <g class="spin">
+      <circle cx="570" cy="430" r="82" class="wheel"/>
+      <circle cx="570" cy="430" r="9" fill="#ef6f61" class="ink"/>
+      <path d="M570 348V512M488 430H652M512 372l116 116M628 372L512 488" class="spoke"/>
+    </g>
+    <path d="M230 430 L345 330 L455 430 L230 430 M345 330 L390 430 M455 430 L570 430 M390 430 L430 385" fill="none" class="ink"/>
+    <path d="M329 326h-43" class="ink"/>
+    <path d="M430 385l18-42" class="ink"/>
+    <path d="M444 341h38" class="ink"/>
+    <circle cx="390" cy="430" r="18" fill="#f5c542" class="ink"/>
+    <g class="pedal">
+      <path d="M390 430l34-25M390 430l-30 29" class="ink"/>
+      <path d="M422 402h25M357 462h-25" class="ink"/>
+    </g>
+    <path d="M318 326q28-18 54 0" fill="none" class="ink"/>
+  </g>
+
+  <g class="bob" aria-label="pelican rider">
+    <path d="M315 325 Q282 286 301 230 Q318 180 369 177 Q425 175 451 218 Q470 251 451 300 L430 335 Z" fill="#f7f1dc" class="ink"/>
+    <path d="M350 193 Q366 142 418 145 Q464 148 478 186 Q451 174 431 184 Q399 204 350 193Z" fill="#ffffff" class="ink"/>
+    <circle cx="408" cy="171" r="8" fill="#17212b"/>
+    <path d="M431 191 Q485 196 541 224 Q554 231 546 243 Q530 261 501 251 L430 224Z" fill="#f39c4a" class="ink"/>
+    <path d="M439 211 Q492 221 537 235" fill="none" stroke="#d36e32" stroke-width="4"/>
+    <path d="M359 239 Q390 260 422 239" fill="none" class="ink"/>
+    <path d="M350 280 L326 338 M423 282 L448 338" class="ink"/>
+    <path d="M319 338q12 16 28 0M441 338q12 16 28 0" fill="none" class="ink"/>
+    <path d="M327 207 Q292 187 270 210 Q291 228 327 227" fill="#f7f1dc" class="ink"/>
+    <path d="M495 230 Q559 197 607 214 Q623 220 616 234 Q604 249 580 247 L514 244Z" fill="#5ba9d6" class="ink"/>
+    <path d="M547 216q16 8 32 3" fill="none" stroke="#2c6f9a" stroke-width="4"/>
+    <text x="332" y="116" class="small" font-weight="bold">"I regret inventing traffic."</text>
+  </g>
+
+  <path d="M610 330 Q665 310 722 333" fill="none" stroke="#ef6f61" stroke-width="7"/>
+  <text x="665" y="312" text-anchor="middle" class="caption">NO FISHING LICENSE?</text>
+  <text x="665" y="340" text-anchor="middle" class="caption">NO PROBLEM.</text>
+
+  <rect x="42" y="535" width="716" height="38" rx="10" fill="#fff5d6" stroke="#17212b" stroke-width="3"/>
+  <text x="400" y="560" text-anchor="middle" class="small">2026-10-28 23:32:35 SGT (UTC+08:00)</text>
+</svg>

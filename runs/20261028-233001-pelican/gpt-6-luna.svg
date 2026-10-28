@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedals Against the Current</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an absurdly tiny umbrella.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f8"/>
+      <stop offset="1" stop-color="#f8edc4"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2c9ec4"/>
+      <stop offset="1" stop-color="#7bd4d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#143b4a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#173642;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#173642;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#173642}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="95" cy="112" r="44" fill="#ffd56b" opacity=".9"/>
+  <path d="M0 330 Q130 285 250 325 T500 320 T800 300 V600 H0Z" fill="url(#water)"/>
+  <path d="M0 386 Q170 350 330 385 T800 365" fill="none" stroke="#b8f1e7" stroke-width="9" opacity=".75"/>
+  <path d="M0 455 Q180 425 360 455 T800 435" fill="none" stroke="#b8f1e7" stroke-width="7" opacity=".65"/>
+
+  <text x="400" y="56" text-anchor="middle" class="label" font-size="36" font-weight="900" fill="#173642">
+    PELICAN PEDALS AGAINST THE CURRENT
+  </text>
+  <text x="400" y="91" text-anchor="middle" class="label" font-size="18" font-weight="700">
+    “If the beak fits the helmet, the commute is officially aerodynamic.”
+  </text>
+
+  <!-- tiny umbrella gag -->
+  <g transform="translate(585 145) rotate(-12)" filter="url(#shadow)">
+    <path d="M0 0 Q38 -28 76 0 Q38 18 0 0Z" fill="#f36c5b" class="ink"/>
+    <path d="M38 1 V74 Q38 90 52 87" fill="none" class="thin"/>
+    <path d="M38 1 Q26 -10 18 -18" fill="none" class="thin"/>
+  </g>
+
+  <!-- bicycle -->
+  <g id="bike" filter="url(#shadow)">
+    <g fill="none" class="ink">
+      <circle cx="235" cy="430" r="77"/>
+      <circle cx="545" cy="430" r="77"/>
+      <path d="M235 430 L345 300 L425 430 L235 430 L390 430 L545 430 L425 430 L390 330 L345 300"/>
+      <path d="M345 300 L328 273"/>
+      <path d="M314 273 H347"/>
+      <path d="M545 430 L562 290"/>
+      <path d="M543 290 H580"/>
+    </g>
+    <g id="spokes" stroke="#173642" stroke-width="3" opacity=".75">
+      <path d="M235 353V507 M158 430H312 M181 376L289 484 M181 484L289 376"/>
+      <path d="M545 353V507 M468 430H622 M491 376L599 484 M491 484L599 376"/>
+    </g>
+    <g fill="#f7b84b" class="thin">
+      <circle cx="390" cy="430" r="14"/>
+      <path d="M390 430 L354 405 M390 430 L424 456"/>
+    </g>
+  </g>
+
+  <!-- pelican body and motion bob -->
+  <g id="pelican" transform="translate(0 0)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="394" cy="245" rx="83" ry="96" fill="#f5f3e8" class="ink" filter="url(#shadow)"/>
+    <path d="M346 226 Q312 273 343 316 Q385 346 432 317 Q459 284 440 237" fill="#d8e6e0" class="thin"/>
+    <circle cx="390" cy="168" r="60" fill="#f5f3e8" class="ink"/>
+    <path d="M356 174 Q312 160 277 188 Q315 217 373 205Z" fill="#f6a44b" class="ink"/>
+    <path d="M278 188 Q322 190 371 204 Q322 207 278 188Z" fill="#ef8840" class="thin"/>
+    <circle cx="414" cy="158" r="9" fill="#173642"/>
+    <circle cx="417" cy="155" r="3" fill="#fff"/>
+    <path d="M369 150 Q387 137 402 149" fill="none" class="thin"/>
+    <path d="M388 225 Q430 216 459 244" fill="none" class="ink"/>
+    <path d="M457 244 Q488 264 510 249" fill="none" class="ink"/>
+    <path d="M510 249 Q521 242 529 252" fill="none" class="thin"/>
+    <path d="M365 302 Q390 321 419 302" fill="none" class="thin"/>
+    <!-- legs on pedals -->
+    <g class="ink" fill="none">
+      <path d="M370 311 L390 389 L424 430"/>
+      <path d="M430 310 L411 382 L365 430"/>
+    </g>
+    <g fill="#f6a44b" class="thin">
+      <path d="M410 432 q18 -14 36 0 l-6 11 h-35Z"/>
+      <path d="M350 432 q18 -14 36 0 l-6 11 h-35Z"/>
+    </g>
+    <path d="M356 265 Q327 289 311 277" fill="none" stroke="#f6a44b" stroke-width="16" stroke-linecap="round"/>
+    <path d="M437 267 Q465 286 477 273" fill="none" stroke="#f6a44b" stroke-width="16" stroke-linecap="round"/>
+  </g>
+
+  <!-- spinning wheel accents -->
+  <g fill="none" stroke="#fff" stroke-width="5" opacity=".8">
+    <path d="M235 345 A85 85 0 0 1 312 430"/>
+    <path d="M545 345 A85 85 0 0 1 622 430"/>
+  </g>
+
+  <g class="label">
+    <rect x="42" y="500" width="716" height="70" rx="18" fill="#fff8df" stroke="#173642" stroke-width="4"/>
+    <text x="400" y="527" text-anchor="middle" font-size="17" font-weight="700">
+      “Traffic is for birds with cars,” squawks the pelican,
+    </text>
+    <text x="400" y="550" text-anchor="middle" font-size="17" font-weight="700">
+      while his bicycle politely argues with the tide.
+    </text>
+    <text x="400" y="564" text-anchor="middle" font-size="11" font-weight="700">
+      2026-10-28 23:31:26 SGT (UTC+08:00)
+    </text>
+  </g>
+
+  <style>
+    #spokes{transform-origin:390px 430px;animation:spin 2.2s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</svg>
