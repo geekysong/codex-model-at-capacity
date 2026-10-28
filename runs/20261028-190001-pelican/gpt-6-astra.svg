@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9be7ff"/>
+      <stop offset="1" stop-color="#f7fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d6875"/>
+      <stop offset="1" stop-color="#303844"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202a" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#202936;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;fill:#202936}
+      .small{font-size:18px}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd66d" opacity=".9"/>
+  <path d="M0 390 Q130 320 260 380 T520 365 T800 350 V470 H0Z" fill="#8bcf86"/>
+  <path d="M0 435 Q190 395 390 430 T800 410 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 520 H800" stroke="#f7d66c" stroke-width="9" stroke-dasharray="45 30" opacity=".8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="34" font-weight="900" fill="#17324d">THE BEAK EXPRESS</text>
+  <text x="400" y="94" text-anchor="middle" class="label" font-size="19" font-style="italic">“Why walk when you can pedal with style?”</text>
+
+  <g filter="url(#shadow)">
+    <g id="bike">
+      <circle cx="250" cy="438" r="82" fill="none" class="ink"/>
+      <circle cx="565" cy="438" r="82" fill="none" class="ink"/>
+      <g stroke="#a9c0cf" stroke-width="3">
+        <path d="M250 356V520M168 438H332M192 380L308 496M192 496L308 380"/>
+        <path d="M565 356V520M483 438H647M507 380L623 496M507 496L623 380"/>
+      </g>
+      <path d="M250 438 L350 355 L470 438 L250 438 L405 438 L350 355" fill="none" class="ink"/>
+      <path d="M470 438 L505 350 L535 350" fill="none" class="ink"/>
+      <path d="M342 350 L320 330" fill="none" class="ink"/>
+      <path d="M306 329 H350" fill="none" class="ink"/>
+      <circle cx="405" cy="438" r="16" fill="#f4b942" class="ink"/>
+      <path d="M405 438 L430 458 M405 438 L382 414" fill="none" class="ink"/>
+      <path d="M425 458 h25 M377 414 h-24" fill="none" class="ink"/>
+      <path d="M330 315 Q350 295 372 315" fill="none" class="ink"/>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+      <ellipse cx="393" cy="252" rx="76" ry="91" fill="#f8f4e7" class="ink"/>
+      <path d="M350 208 Q332 150 372 124 Q422 91 463 126 Q488 149 468 204 Q446 239 350 208Z" fill="#f8f4e7" class="ink"/>
+      <path d="M373 126 Q404 102 443 119 Q456 128 463 144 Q426 137 390 154Z" fill="#dbe5e8"/>
+      <path d="M454 158 Q518 146 601 175 Q619 181 602 197 Q514 216 449 191Z" fill="#f0a43a" class="ink"/>
+      <path d="M462 181 Q524 177 593 187" fill="none" stroke="#9b5a1f" stroke-width="5"/>
+      <circle cx="431" cy="154" r="10" fill="#202936"/>
+      <circle cx="434" cy="151" r="3" fill="#fff"/>
+      <path d="M356 207 Q333 237 348 270" fill="none" class="ink"/>
+      <path d="M428 218 Q454 250 443 287" fill="none" class="ink"/>
+      <path d="M374 273 Q350 310 350 347" fill="none" class="ink"/>
+      <path d="M425 281 Q442 320 431 350" fill="none" class="ink"/>
+      <path d="M342 346 q-22 6 -35 0 M431 350 q22 6 35 0" fill="none" class="ink"/>
+      <path d="M355 215 Q320 185 301 207 Q320 234 350 244" fill="#d6e1e3" class="ink"/>
+      <path d="M370 350 L350 355 M431 350 L450 355" fill="none" class="ink"/>
+    </g>
+
+    <path d="M520 122 q32 -35 67 0" fill="none" stroke="#fff" stroke-width="7" opacity=".8"/>
+    <path d="M590 112 q24 -25 49 0" fill="none" stroke="#fff" stroke-width="6" opacity=".8"/>
+    <text x="560" y="285" class="label" font-size="23" font-weight="bold" transform="rotate(8 560 285)">HONK!</text>
+    <path d="M548 295 l-18 17 M572 300 l-3 23" stroke="#202936" stroke-width="5"/>
+  </g>
+
+  <text x="400" y="568" text-anchor="middle" class="label small" font-weight="bold">Pelican on a bicycle: maximum beak speed, minimum steering confidence.</text>
+  <text x="400" y="590" text-anchor="middle" class="label" font-size="15">2026-10-28 19:00:01 SGT (UTC+08:00)</text>
+
+  <animateTransform xlink:href="#bike" attributeName="transform" type="rotate" from="0 405 438" to="360 405 438" dur="2.8s" repeatCount="indefinite"/>
+</svg>
