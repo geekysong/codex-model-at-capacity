@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#18252d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#18252d}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffd45c" stroke="#18252d" stroke-width="5"/>
+  <path d="M0 405 Q130 360 260 405 T520 405 T800 400 V505 H0Z" fill="#8bd17c"/>
+  <path d="M0 475 Q180 440 360 475 T800 470 V540 H0Z" fill="#5daf64"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900">THE GREAT PELICAN EXPRESS</text>
+  <text x="400" y="98" text-anchor="middle" class="label" font-size="21" font-weight="700">One bird. Two wheels. Zero sense of direction.</text>
+
+  <g id="bike">
+    <g fill="none" class="ink">
+      <circle cx="270" cy="405" r="73" fill="#d9f3ff"/>
+      <circle cx="570" cy="405" r="73" fill="#d9f3ff"/>
+      <path d="M270 405 L365 300 L470 405 L270 405 L430 405 L365 300"/>
+      <path d="M470 405 L520 325 L570 405"/>
+      <path d="M515 325 L550 300"/>
+      <path d="M350 300 L330 275"/>
+      <path d="M315 275 H350"/>
+      <path d="M450 405 L470 365"/>
+    </g>
+    <g fill="#ff7b54" class="ink">
+      <circle cx="365" cy="300" r="14"/>
+      <circle cx="430" cy="405" r="13"/>
+    </g>
+    <g id="pedals" class="ink">
+      <path d="M430 405 l-32 -28"/>
+      <path d="M430 405 l30 28"/>
+      <path d="M395 377 h-22"/>
+      <path d="M460 433 h22"/>
+    </g>
+    <g transform="translate(0,-4)">
+      <ellipse cx="400" cy="240" rx="67" ry="84" fill="#fff9e8" class="ink"/>
+      <path d="M350 220 Q300 245 286 300 Q335 320 372 274" fill="#f2ad45" class="ink"/>
+      <path d="M286 300 Q332 305 370 274" fill="none" class="ink"/>
+      <circle cx="385" cy="175" r="50" fill="#fff9e8" class="ink"/>
+      <path d="M420 175 Q485 182 535 210 Q485 235 418 215Z" fill="#f2ad45" class="ink"/>
+      <circle cx="401" cy="163" r="8" fill="#18252d"/>
+      <path d="M373 135 Q390 115 410 132" fill="none" class="ink"/>
+      <path d="M365 258 Q400 280 430 258" fill="none" class="ink"/>
+      <path d="M370 315 L350 360"/>
+      <path d="M430 315 L450 360"/>
+      <path d="M350 360 L330 378"/>
+      <path d="M450 360 L470 378"/>
+      <path d="M350 235 Q315 205 300 175" fill="none" class="ink"/>
+      <path d="M450 240 Q490 260 510 290" fill="none" class="ink"/>
+      <path d="M308 168 l-22 -18" fill="none" class="ink"/>
+      <path d="M314 154 l-12 -28" fill="none" class="ink"/>
+    </g>
+  </g>
+
+  <g class="label" font-weight="900" font-size="20">
+    <text x="85" y="190">"I was promised</text>
+    <text x="85" y="216">a lake cruise!"</text>
+  </g>
+  <path d="M205 215 Q260 250 300 275" fill="none" stroke="#18252d" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L9,3 L0,6Z" fill="#18252d"/>
+    </marker>
+  </defs>
+
+  <g class="label" font-size="18" font-weight="700">
+    <text x="400" y="555" text-anchor="middle">2026-10-28 12:31:08 SGT (UTC+08:00)</text>
+  </g>
+
+  <animateTransform href="#bike" attributeName="transform" type="translate"
+    values="0 0;0 -5;0 0;0 -5;0 0" dur="1.2s" repeatCount="indefinite"/>
+  <animateTransform href="#pedals" attributeName="transform" type="rotate"
+    values="0 430 405;360 430 405" dur="1s" repeatCount="indefinite"/>
+  <animateTransform href="#bike g:nth-of-type(1)" attributeName="transform" type="rotate"
+    values="0 270 405;360 270 405" dur="2s" repeatCount="indefinite"/>
+</svg>

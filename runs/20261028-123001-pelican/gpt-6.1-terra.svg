@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#20242b;stroke-width:7;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;font-weight:700;fill:#20242b}
+      .wheelSpin{transform-box:fill-box;transform-origin:center;animation:spin 1.4s linear infinite}
+      .ride{animation:bob .7s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="105" r="52" fill="#ffe582" opacity=".9"/>
+  <path d="M0 365 Q120 320 240 360 T480 350 T800 360 L800 600 0 600Z" fill="#8bcf76"/>
+  <path d="M0 440 Q180 405 350 438 T800 425 L800 600 0 600Z" fill="url(#road)"/>
+  <path d="M0 490 H800" stroke="#f5d76e" stroke-width="8" stroke-dasharray="42 34"/>
+
+  <text x="40" y="70" class="label" font-size="42" fill="#17202a">PELICAN EXPRESS</text>
+  <text x="43" y="103" class="label" font-size="20" fill="#17202a">“Because walking is for birds with less ambition.”</text>
+
+  <g class="ride" filter="url(#shadow)">
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <path d="M220 448 L315 448 L385 330 L450 448 L315 448 L275 365 Z" stroke="#e85d4a" stroke-width="11"/>
+      <path d="M385 330 L430 330"/>
+      <path d="M275 365 L260 330"/>
+      <path d="M260 330 L292 330"/>
+      <path d="M430 330 L450 305"/>
+      <path d="M450 305 L477 305"/>
+      <path d="M385 330 L400 285"/>
+    </g>
+
+    <!-- spinning wheels -->
+    <g class="wheelSpin">
+      <circle cx="220" cy="448" r="72" fill="#20242b" class="ink"/>
+      <circle cx="220" cy="448" r="58" fill="#d9eef2" stroke="#20242b" stroke-width="5"/>
+      <circle cx="220" cy="448" r="7" fill="#20242b"/>
+      <g stroke="#20242b" stroke-width="3">
+        <path d="M220 390V506M162 448H278M179 407L261 489M261 407L179 489"/>
+      </g>
+    </g>
+    <g class="wheelSpin">
+      <circle cx="450" cy="448" r="72" fill="#20242b" class="ink"/>
+      <circle cx="450" cy="448" r="58" fill="#d9eef2" stroke="#20242b" stroke-width="5"/>
+      <circle cx="450" cy="448" r="7" fill="#20242b"/>
+      <g stroke="#20242b" stroke-width="3">
+        <path d="M450 390V506M392 448H508M409 407L491 489M491 407L409 489"/>
+      </g>
+    </g>
+
+    <!-- crank and pedaling legs -->
+    <circle cx="315" cy="448" r="15" fill="#ffd45e" class="ink"/>
+    <path d="M315 448 L285 420 L260 420" class="ink" fill="none"/>
+    <path d="M315 448 L342 475 L370 475" class="ink" fill="none"/>
+
+    <!-- pelican body -->
+    <ellipse cx="360" cy="250" rx="88" ry="105" fill="#f7f4e8" class="ink"/>
+    <path d="M305 285 Q355 320 414 278 Q400 340 344 344 Q316 330 305 285Z" fill="#e9e2cf" class="ink"/>
+    <path d="M320 240 Q350 180 404 215 Q425 245 399 283 Q360 305 320 280Z" fill="#fffdf5" class="ink"/>
+    <!-- wing -->
+    <path d="M382 235 Q455 245 425 305 Q397 330 365 289 Q389 270 382 235Z" fill="#d8e1e5" class="ink"/>
+    <path d="M392 263 Q420 276 420 295" fill="none" class="ink" stroke-width="4"/>
+    <!-- neck/head -->
+    <path d="M340 190 Q313 130 350 95 Q400 70 442 108 Q465 140 438 184 Q410 212 340 190Z" fill="#f7f4e8" class="ink"/>
+    <!-- beak -->
+    <path d="M420 125 L585 155 Q607 162 584 177 L425 186 Q398 169 420 125Z" fill="#f29b45" class="ink"/>
+    <path d="M430 162 Q505 160 584 177" fill="none" class="ink" stroke-width="4"/>
+    <!-- eye and hat -->
+    <circle cx="405" cy="130" r="9" fill="#20242b"/>
+    <path d="M350 102 Q387 55 447 89 L459 112 Q394 93 348 119Z" fill="#ef5a58" class="ink"/>
+    <path d="M342 104 Q389 79 454 104" fill="none" class="ink"/>
+    <!-- feet -->
+    <path d="M335 334 L315 380 L285 395" class="ink" fill="none"/>
+    <path d="M393 334 L408 380 L438 394" class="ink" fill="none"/>
+    <path d="M275 397 Q258 406 247 398" class="ink" fill="none"/>
+    <path d="M440 397 Q458 405 470 397" class="ink" fill="none"/>
+    <!-- tiny helmet flag -->
+    <path d="M388 78 V42 L430 56Z" fill="#5bc0be" class="ink"/>
+  </g>
+
+  <g transform="translate(565 245)">
+    <rect x="0" y="0" width="175" height="82" rx="18" fill="#fff7c7" class="ink"/>
+    <path d="M18 82 L35 105 L52 82" fill="#fff7c7" class="ink"/>
+    <text x="18" y="34" class="label" font-size="20">HONK IF YOU</text>
+    <text x="18" y="60" class="label" font-size="20">LIKE FISH!</text>
+  </g>
+
+  <text x="400" y="555" text-anchor="middle" class="label" font-size="17">
+    2026-10-28 12:32:34 SGT (UTC+08:00)
+  </text>
+</svg>
