@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9ecff"/>
+      <stop offset="1" stop-color="#fff4c2"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596273"/>
+      <stop offset="1" stop-color="#252b38"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .ink{stroke:#202536;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,sans-serif;fill:#202536}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="115" r="54" fill="#ffd96b" opacity=".85"/>
+  <path d="M0 340 Q125 280 250 340 T500 330 T800 340 V430 H0Z" fill="#8ccf8c"/>
+  <path d="M0 410 Q180 365 360 410 T800 405 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 500 H800" stroke="#f9dd76" stroke-width="8" stroke-dasharray="48 34" opacity=".9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="52" y="32" width="696" height="82" rx="22" fill="#fff9e8" stroke="#202536" stroke-width="6"/>
+    <text x="400" y="78" text-anchor="middle" class="label" font-size="34" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+    <text x="400" y="101" text-anchor="middle" class="label" font-size="16" font-weight="700" fill="#c34d3d">Because traffic is for birds who forgot their bicycles.</text>
+  </g>
+
+  <g transform="translate(0 8)">
+    <g id="bike">
+      <g>
+        <circle cx="255" cy="455" r="77" fill="none" stroke="#202536" stroke-width="9"/>
+        <circle cx="585" cy="455" r="77" fill="none" stroke="#202536" stroke-width="9"/>
+        <g stroke="#8792a5" stroke-width="3" opacity=".8">
+          <path d="M255 378V532M178 455H332M201 401L309 509M309 401L201 509"/>
+          <path d="M585 378V532M508 455H662M531 401L639 509M639 401L531 509"/>
+        </g>
+      </g>
+      <path d="M255 455 L355 360 L455 455 L255 455 L410 455 L355 360 L395 325" fill="none" stroke="#e44f3d" stroke-width="10"/>
+      <path d="M395 325 L440 325" stroke="#202536" stroke-width="8"/>
+      <path d="M455 455 L500 370" stroke="#202536" stroke-width="8"/>
+      <path d="M490 370 L525 370" stroke="#202536" stroke-width="8"/>
+      <circle cx="355" cy="360" r="13" fill="#ffd34e" stroke="#202536" stroke-width="5"/>
+      <circle cx="455" cy="455" r="13" fill="#ffd34e" stroke="#202536" stroke-width="5"/>
+      <circle cx="255" cy="455" r="13" fill="#ffd34e" stroke="#202536" stroke-width="5"/>
+      <g>
+        <circle cx="355" cy="360" r="31" fill="none" stroke="#202536" stroke-width="6"/>
+        <path d="M355 360 l-22 -18 M355 360 l24 18" stroke="#202536" stroke-width="6"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0 355 360" to="360 355 360" dur="1.4s" repeatCount="indefinite"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="pelican" class="ink">
+      <ellipse cx="404" cy="260" rx="74" ry="92" fill="#f7f3e9"/>
+      <path d="M352 250 Q319 293 350 335 Q391 350 423 318 L405 274Z" fill="#dfe7e7"/>
+      <path d="M365 183 Q382 135 435 146 Q481 157 483 210 Q480 251 437 265 Q390 269 365 235Z" fill="#faf7ea"/>
+      <path d="M438 183 Q504 172 580 211 Q598 221 580 235 Q508 247 440 223Z" fill="#f0a94b"/>
+      <path d="M454 202 Q516 204 578 224" fill="none" stroke="#202536" stroke-width="5"/>
+      <circle cx="430" cy="183" r="8" fill="#202536"/>
+      <path d="M429 150 Q424 125 445 112" fill="none" stroke="#e44f3d" stroke-width="8"/>
+      <path d="M391 325 Q378 359 368 393" fill="none" stroke="#f0a94b" stroke-width="14"/>
+      <path d="M425 326 Q438 356 451 390" fill="none" stroke="#f0a94b" stroke-width="14"/>
+      <path d="M361 394 l-24 8 M450 391 l25 7" fill="none" stroke="#202536" stroke-width="7"/>
+      <path d="M350 229 Q310 216 286 238" fill="none" stroke="#202536" stroke-width="8"/>
+      <path d="M286 238 Q300 250 317 247" fill="none" stroke="#202536" stroke-width="6"/>
+      <path d="M384 257 Q408 279 433 258" fill="none" stroke="#202536" stroke-width="5"/>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.4s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <g class="ink">
+      <path d="M294 177 Q278 145 300 122 Q323 107 341 127 Q348 153 329 176Z" fill="#e44f3d"/>
+      <path d="M300 132 Q321 126 335 143" fill="none" stroke="#fff4c2" stroke-width="6"/>
+      <path d="M304 173 Q285 190 272 211" fill="none" stroke="#202536" stroke-width="7"/>
+      <text x="218" y="120" class="label" font-size="18" font-weight="800" transform="rotate(-12 218 120)">HONK!</text>
+    </g>
+  </g>
+
+  <g class="label">
+    <text x="400" y="565" text-anchor="middle" font-size="18" font-weight="700">A beak-first solution to rush hour: pedal hard, look dignified.</text>
+    <text x="400" y="589" text-anchor="middle" font-size="14" font-weight="700">2026-10-29 13:30:08 SGT (UTC+08:00)</text>
+  </g>
+</svg>
