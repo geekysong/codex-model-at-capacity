@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Peak Pelican Performance</title>
+  <desc id="desc">A determined pelican rides a bicycle with spinning wheels, bobbing as it pedals past a seaside path.</desc>
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#fff" opacity=".4"/>
+    </pattern>
+    <style>
+      .ink { stroke:#243a43; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#243a43; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 1.5s linear infinite; }
+      .rider { animation:bob 1s ease-in-out infinite; }
+      .pedal { transform-origin:398px 396px; animation:spin 1.5s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-5px); } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider,.pedal { animation:none; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f9f0d9"/>
+  <rect x="18" y="18" width="764" height="564" rx="24" fill="#d8f3ed" class="ink"/>
+  <path d="M21 350 Q115 314 210 341 T406 337 T606 340 T779 326 V460 H21Z" fill="#89d6d1"/>
+  <path d="M21 389 Q120 360 232 383 T447 380 T656 382 T779 368 V463 H21Z" fill="#bce5cf"/>
+  <path d="M21 440 Q215 422 400 439 T779 431 V510 H21Z" fill="#f2c989"/>
+  <path d="M21 462 Q240 450 420 465 T779 458" fill="none" stroke="#e1aa6c" stroke-width="4" stroke-dasharray="20 16"/>
+  <circle cx="688" cy="142" r="39" fill="#ffd36e"/>
+  <path d="M85 178 q18 -17 36 0 q18 -17 36 0 M580 205 q13 -12 26 0 q13 -12 26 0" fill="none" stroke="#668b88" stroke-width="4" stroke-linecap="round"/>
+  <path d="M67 326 q38 -30 77 0 M654 319 q38 -30 76 0" fill="none" stroke="#76b8b1" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="400" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="37" font-weight="900" letter-spacing="1" fill="#243a43">PEAK PELICAN PERFORMANCE</text>
+  <text x="400" y="107" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#47706e">A NEW STANDARD IN SEASIDE COMMUTING</text>
+
+  <ellipse cx="403" cy="471" rx="261" ry="14" fill="#ce9f6c" opacity=".35"/>
+
+  <g class="wheel">
+    <circle cx="238" cy="392" r="75" fill="#fdf7e8" stroke="#243a43" stroke-width="10"/>
+    <circle cx="238" cy="392" r="63" fill="none" stroke="#ed7860" stroke-width="4"/>
+    <path d="M238 329v126 M175 392h126 M193 347l90 90 M283 347l-90 90" fill="none" stroke="#7a9692" stroke-width="3"/>
+    <circle cx="238" cy="392" r="8" fill="#243a43"/>
+  </g>
+  <g class="wheel">
+    <circle cx="563" cy="392" r="75" fill="#fdf7e8" stroke="#243a43" stroke-width="10"/>
+    <circle cx="563" cy="392" r="63" fill="none" stroke="#ed7860" stroke-width="4"/>
+    <path d="M563 329v126 M500 392h126 M518 347l90 90 M608 347l-90 90" fill="none" stroke="#7a9692" stroke-width="3"/>
+    <circle cx="563" cy="392" r="8" fill="#243a43"/>
+  </g>
+
+  <path d="M238 392 L321 305 L398 396 L465 305 L321 305 M398 396 L238 392 M465 305 L563 392" fill="none" stroke="#243a43" stroke-width="15" stroke-linejoin="round"/>
+  <path d="M238 392 L321 305 L398 396 L465 305 L321 305 M398 396 L238 392 M465 305 L563 392" fill="none" stroke="#ef735d" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M321 305 L308 283 M288 280 H333" fill="none" class="ink"/>
+  <path d="M455 280 L465 305 M449 280 H486 Q501 280 501 268" fill="none" class="ink"/>
+  <circle cx="398" cy="396" r="15" fill="#f8e8b9" class="thin"/>
+  <g class="pedal">
+    <path d="M379 383 L417 409 M370 381 H387 M409 411 H426" fill="none" class="thin"/>
+  </g>
+
+  <g class="rider">
+    <path d="M340 275 Q326 307 348 337 Q363 350 381 339" fill="none" stroke="#e49c50" stroke-width="12" stroke-linecap="round"/>
+    <path d="M381 339 l-19 5" fill="none" class="ink"/>
+    <path d="M345 241 Q328 258 315 274 Q294 277 272 267 Q283 291 314 296 Q344 296 367 275" fill="#f8f5e9" class="ink"/>
+    <path d="M313 288 Q285 286 271 271" fill="none" stroke="#bdcbc5" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="388" cy="246" rx="76" ry="53" fill="#fffdf2" class="ink"/>
+    <path d="M344 232 Q374 227 403 244 Q391 274 353 271 Q341 259 344 232Z" fill="#e4eee5" class="thin"/>
+    <path d="M390 278 Q398 310 420 333 L440 326" fill="none" stroke="#e49c50" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M420 333 l23 -4" fill="none" class="ink"/>
+    <path d="M432 241 Q454 224 455 200 L456 172 Q455 143 476 131 Q499 117 520 132 Q541 147 532 169 Q527 180 515 186 L499 211 Q486 243 453 257" fill="#fffdf2" class="ink"/>
+    <path d="M504 153 Q553 151 621 169 Q584 182 519 178Z" fill="#f2ae51" class="ink"/>
+    <path d="M519 178 Q566 181 611 174 Q601 214 563 220 Q532 220 515 189Z" fill="#f7c875" class="ink"/>
+    <path d="M532 190 Q553 199 577 196" fill="none" stroke="#d98a44" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="505" cy="149" r="12" fill="#fff" class="thin"/>
+    <circle cx="509" cy="149" r="4.5" fill="#243a43"/>
+    <path d="M492 132 Q504 126 515 132" fill="none" class="thin"/>
+    <path d="M463 129 Q478 107 507 115 L519 125 Q492 122 466 139Z" fill="#ed735d" class="thin"/>
+    <path d="M476 116 Q490 107 503 112" fill="none" stroke="#fff3db" stroke-width="3" stroke-linecap="round"/>
+    <path d="M457 229 Q470 246 489 258 L486 278" fill="none" stroke="#fffdf2" stroke-width="18" stroke-linecap="round"/>
+    <path d="M457 229 Q470 246 489 258 L486 278" fill="none" class="thin"/>
+    <path d="M479 279 h15" fill="none" class="ink"/>
+  </g>
+
+  <path d="M128 259 l-26 -5 M134 274 l-35 2 M140 289 l-22 8" fill="none" stroke="#ef735d" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(635 259) rotate(7)">
+    <rect x="0" y="0" width="116" height="54" rx="9" fill="#fff9e9" class="thin"/>
+    <text x="58" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="900" fill="#243a43">BIKE LANE</text>
+    <text x="58" y="41" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#ed735d">BIRD BRAINS</text>
+    <path d="M58 54 v52" fill="none" class="thin"/>
+  </g>
+
+  <rect x="20" y="510" width="760" height="70" rx="0" fill="#fff8e9"/>
+  <path d="M20 510 H780" fill="none" stroke="#243a43" stroke-width="5"/>
+  <text x="400" y="538" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#243a43">He swore the pouch was just for snacks.</text>
+  <text x="400" y="566" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#516d6b">2026-10-30 04:32:37 SGT (UTC+08:00)</text>
+</svg>
