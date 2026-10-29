@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Power</title>
+  <desc>A satirical pelican rides a bicycle while proudly ignoring traffic rules.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#f8f2bd"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#20252b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,sans-serif;fill:#20252b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 430 Q130 390 260 430 T520 425 T800 430 V520 H0Z" fill="#83c96b"/>
+  <path d="M0 515 Q180 485 360 515 T800 510" fill="none" stroke="#3d7d45" stroke-width="8"/>
+  <path d="M0 540 H800" stroke="#20252b" stroke-width="8"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="36" font-weight="900">PELICAN PEDAL POWER</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="19" font-style="italic">“Why fly when you can cause a traffic jam?”</text>
+
+  <g transform="translate(0 0)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    
+    <!-- bicycle frame -->
+    <g class="ink" fill="none">
+      <circle cx="250" cy="405" r="72" fill="#d9f1ff"/>
+      <circle cx="575" cy="405" r="72" fill="#d9f1ff"/>
+      <path d="M250 405 L350 300 L445 405 L250 405 L390 405 L350 300"/>
+      <path d="M445 405 L520 300 L575 405"/>
+      <path d="M520 300 L555 285"/>
+      <path d="M350 300 L330 270"/>
+      <path d="M315 270 H350"/>
+      <path d="M555 285 H595"/>
+      <path d="M390 405 L425 440"/>
+      <path d="M390 405 L360 440"/>
+    </g>
+    <g class="ink" fill="none">
+      <circle cx="250" cy="405" r="16"/>
+      <circle cx="575" cy="405" r="16"/>
+      <path d="M250 405 l-22 -28 M250 405 l30 15 M250 405 l-5 35"/>
+      <path d="M575 405 l-22 -28 M575 405 l30 15 M575 405 l-5 35"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 250 405" to="360 250 405" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+    <g class="ink" fill="none">
+      <circle cx="390" cy="405" r="10"/>
+      <path d="M390 405 L360 440 M390 405 L425 440"/>
+      <circle cx="360" cy="440" r="9"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 390 405" to="360 390 405" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- pelican body and neck -->
+    <ellipse cx="404" cy="245" rx="92" ry="78" fill="#f4f1e8" class="ink"/>
+    <path d="M365 280 Q335 225 365 155 Q390 105 432 135 Q462 170 438 235 L425 300Z" fill="#f4f1e8" class="ink"/>
+    <circle cx="412" cy="132" r="43" fill="#f4f1e8" class="ink"/>
+    <path d="M440 142 Q505 150 575 183 Q510 215 438 178Z" fill="#f3a83b" class="ink"/>
+    <path d="M442 177 Q505 195 555 185 Q510 230 443 201Z" fill="#e88432" class="ink"/>
+    <circle cx="424" cy="124" r="8" fill="#20252b"/>
+    <path d="M393 102 Q415 82 439 103" fill="none" class="ink"/>
+    
+    <!-- wing and feet -->
+    <path d="M375 205 Q320 230 350 285 Q380 302 408 260" fill="#d6d9d5" class="ink"/>
+    <path d="M374 285 Q350 315 330 335 M420 290 Q445 320 468 335" fill="none" class="ink"/>
+    <path d="M330 335 l-22 7 M330 335 l-8 16 M468 335 l22 7 M468 335 l8 16" class="ink" fill="none"/>
+    
+    <!-- comic speech -->
+    <path d="M585 130 Q700 105 742 160 Q755 220 690 235 L652 265 L651 228 Q590 220 585 130Z" fill="#fff" class="ink"/>
+    <text x="668" y="166" text-anchor="middle" class="label" font-size="20" font-weight="700">I brake for</text>
+    <text x="668" y="192" text-anchor="middle" class="label" font-size="20" font-weight="700">NO ONE!</text>
+  </g>
+
+  <text x="400" y="565" text-anchor="middle" class="label" font-size="16" font-weight="700">2026-10-29 08:31:33 SGT (UTC+08:00)</text>
+</svg>
