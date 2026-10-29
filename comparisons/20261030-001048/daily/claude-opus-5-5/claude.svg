@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" font-family="Arial, Helvetica, sans-serif">
+  <rect width="600" height="400" fill="#f4f1ea"/>
+  <text x="230" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">City Grid: Shortest Route A1 → E5</text>
+
+  <!-- City blocks -->
+  <g fill="#d9d4c7" stroke="#bfb8a6" stroke-width="1">
+    <rect x="78" y="68" width="64" height="49" rx="3"/>
+    <rect x="158" y="68" width="64" height="49" rx="3"/>
+    <rect x="238" y="68" width="64" height="49" rx="3"/>
+    <rect x="318" y="68" width="64" height="49" rx="3"/>
+    <rect x="78" y="133" width="64" height="49" rx="3"/>
+    <rect x="158" y="133" width="64" height="49" rx="3"/>
+    <rect x="238" y="133" width="64" height="49" rx="3"/>
+    <rect x="318" y="133" width="64" height="49" rx="3"/>
+    <rect x="78" y="198" width="64" height="49" rx="3"/>
+    <rect x="158" y="198" width="64" height="49" rx="3"/>
+    <rect x="238" y="198" width="64" height="49" rx="3"/>
+    <rect x="318" y="198" width="64" height="49" rx="3"/>
+    <rect x="78" y="263" width="64" height="49" rx="3"/>
+    <rect x="158" y="263" width="64" height="49" rx="3"/>
+    <rect x="238" y="263" width="64" height="49" rx="3"/>
+    <rect x="318" y="263" width="64" height="49" rx="3"/>
+  </g>
+
+  <!-- Streets -->
+  <g stroke="#7a7a7a" stroke-width="4" stroke-linecap="round">
+    <line x1="70" y1="60" x2="390" y2="60"/>
+    <line x1="70" y1="125" x2="390" y2="125"/>
+    <line x1="70" y1="190" x2="390" y2="190"/>
+    <line x1="70" y1="255" x2="390" y2="255"/>
+    <line x1="70" y1="320" x2="390" y2="320"/>
+    <line x1="70" y1="60" x2="70" y2="320"/>
+    <line x1="150" y1="60" x2="150" y2="320"/>
+    <line x1="230" y1="60" x2="230" y2="320"/>
+    <line x1="310" y1="60" x2="310" y2="320"/>
+    <line x1="390" y1="60" x2="390" y2="320"/>
+  </g>
+
+  <!-- Route -->
+  <polyline points="70,60 150,60 230,60 310,60 390,60 390,125 390,190 390,255 390,320" fill="none" stroke="#1e6fe0" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Intersection dots -->
+  <g fill="#444">
+    <circle cx="70" cy="60" r="3"/><circle cx="150" cy="60" r="3"/><circle cx="230" cy="60" r="3"/><circle cx="310" cy="60" r="3"/><circle cx="390" cy="60" r="3"/>
+    <circle cx="70" cy="125" r="3"/><circle cx="150" cy="125" r="3"/><circle cx="230" cy="125" r="3"/><circle cx="310" cy="125" r="3"/><circle cx="390" cy="125" r="3"/>
+    <circle cx="70" cy="190" r="3"/><circle cx="150" cy="190" r="3"/><circle cx="230" cy="190" r="3"/><circle cx="310" cy="190" r="3"/><circle cx="390" cy="190" r="3"/>
+    <circle cx="70" cy="255" r="3"/><circle cx="150" cy="255" r="3"/><circle cx="230" cy="255" r="3"/><circle cx="310" cy="255" r="3"/><circle cx="390" cy="255" r="3"/>
+    <circle cx="70" cy="320" r="3"/><circle cx="150" cy="320" r="3"/><circle cx="230" cy="320" r="3"/><circle cx="310" cy="320" r="3"/><circle cx="390" cy="320" r="3"/>
+  </g>
+
+  <!-- Blocked intersections -->
+  <g stroke="#d62828" stroke-width="4" stroke-linecap="round">
+    <line x1="141" y1="116" x2="159" y2="134"/><line x1="159" y1="116" x2="141" y2="134"/>
+    <line x1="221" y1="181" x2="239" y2="199"/><line x1="239" y1="181" x2="221" y2="199"/>
+    <line x1="301" y1="246" x2="319" y2="264"/><line x1="319" y1="246" x2="301" y2="264"/>
+  </g>
+
+  <!-- Start / End -->
+  <circle cx="70" cy="60" r="9" fill="#2a9d3f" stroke="#fff" stroke-width="2"/>
+  <text x="70" y="64" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">S</text>
+  <circle cx="390" cy="320" r="9" fill="#e07a1e" stroke="#fff" stroke-width="2"/>
+  <text x="390" y="324" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">E</text>
+
+  <!-- Intersection labels -->
+  <g font-size="10" fill="#222" font-weight="bold">
+    <text x="80" y="50">A1</text><text x="158" y="50">B1</text><text x="238" y="50">C1</text><text x="318" y="50">D1</text><text x="400" y="50">E1</text>
+    <text x="78" y="118">A2</text><text x="162" y="118">B2</text><text x="238" y="118">C2</text><text x="318" y="118">D2</text><text x="400" y="118">E2</text>
+    <text x="78" y="183">A3</text><text x="158" y="183">B3</text><text x="242" y="183">C3</text><text x="318" y="183">D3</text><text x="400" y="183">E3</text>
+    <text x="78" y="248">A4</text><text x="158" y="248">B4</text><text x="238" y="248">C4</text><text x="322" y="248">D4</text><text x="400" y="248">E4</text>
+    <text x="78" y="313">A5</text><text x="158" y="313">B5</text><text x="238" y="313">C5</text><text x="318" y="313">D5</text><text x="402" y="314">E5</text>
+  </g>
+
+  <!-- Legend / info panel -->
+  <rect x="432" y="45" width="156" height="275" rx="6" fill="#ffffff" stroke="#bbb"/>
+  <text x="510" y="66" text-anchor="middle" font-size="13" font-weight="bold" fill="#222">Legend</text>
+  <circle cx="450" cy="88" r="7" fill="#2a9d3f"/>
+  <text x="464" y="92" font-size="11" fill="#222">Start (A1)</text>
+  <circle cx="450" cy="110" r="7" fill="#e07a1e"/>
+  <text x="464" y="114" font-size="11" fill="#222">End (E5)</text>
+  <g stroke="#d62828" stroke-width="3" stroke-linecap="round">
+    <line x1="444" y1="126" x2="456" y2="138"/><line x1="456" y1="126" x2="444" y2="138"/>
+  </g>
+  <text x="464" y="136" font-size="11" fill="#222">Blocked (B2, C3, D4)</text>
+  <line x1="442" y1="156" x2="458" y2="156" stroke="#1e6fe0" stroke-width="6" stroke-linecap="round"/>
+  <text x="464" y="160" font-size="11" fill="#222">Shortest route</text>
+
+  <line x1="442" y1="176" x2="578" y2="176" stroke="#ddd"/>
+  <text x="442" y="196" font-size="11" font-weight="bold" fill="#222">Route:</text>
+  <text x="442" y="214" font-size="11" fill="#1e6fe0">A1 → B1 → C1 → D1</text>
+  <text x="442" y="230" font-size="11" fill="#1e6fe0">→ E1 → E2 → E3</text>
+  <text x="442" y="246" font-size="11" fill="#1e6fe0">→ E4 → E5</text>
+  <rect x="442" y="262" width="136" height="44" rx="5" fill="#e8f0fd" stroke="#1e6fe0"/>
+  <text x="510" y="280" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3f80">Total segments:</text>
+  <text x="510" y="298" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e3f80">8 street segments</text>
+
+  <!-- Footer -->
+  <line x1="0" y1="352" x2="600" y2="352" stroke="#ccc"/>
+  <rect x="0" y="352" width="600" height="48" fill="#ebe7dc"/>
+  <text x="300" y="370" text-anchor="middle" font-size="11" fill="#555">Columns A–E (left → right), Rows 1–5 (top → bottom)</text>
+  <text x="300" y="389" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">2026-10-30 00:10:48 SGT (UTC+08:00)</text>
+</svg>

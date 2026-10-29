@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#e8f7ff"/>
+    </linearGradient>
+    <style>
+      .title{font-family:'Comic Sans MS','Trebuchet MS',Arial,sans-serif;font-weight:900;font-size:40px;fill:#1d2b53;stroke:#fff;stroke-width:6px;paint-order:stroke;}
+      .cap{font-family:'Trebuchet MS',Arial,sans-serif;font-size:18px;fill:#1d2b53;font-style:italic;}
+      .foot{font-family:'Courier New',monospace;font-size:15px;fill:#ffffff;}
+      .bub{font-family:'Comic Sans MS','Trebuchet MS',Arial,sans-serif;font-size:15px;fill:#222;font-weight:bold;}
+      .sign{font-family:Arial,sans-serif;font-weight:bold;font-size:13px;fill:#fff;}
+    </style>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="700" cy="120" r="40" fill="#ffd93b" stroke="#f5a623" stroke-width="4"/>
+
+  <!-- Clouds -->
+  <g fill="#fff" opacity="0.9">
+    <g>
+      <ellipse cx="120" cy="120" rx="45" ry="18"/>
+      <ellipse cx="150" cy="108" rx="30" ry="18"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-60,0;0,0" dur="12s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <ellipse cx="560" cy="150" rx="40" ry="15"/>
+      <ellipse cx="585" cy="140" rx="25" ry="15"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-40,0;0,0" dur="9s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="58" text-anchor="middle" class="title">TOUR DE FISH</text>
+
+  <!-- Ground & road -->
+  <rect x="0" y="430" width="800" height="100" fill="#6b6b73"/>
+  <rect x="0" y="425" width="800" height="8" fill="#9bd36a"/>
+  <g>
+    <path d="M-60 485 H860" stroke="#fff" stroke-width="6" stroke-dasharray="40 30"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;-70,0" dur="0.6s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Bike lane sign -->
+  <rect x="78" y="250" width="6" height="180" fill="#555"/>
+  <rect x="30" y="215" width="102" height="55" rx="6" fill="#1e7d3a" stroke="#fff" stroke-width="3"/>
+  <text x="81" y="238" text-anchor="middle" class="sign">BIKE LANE</text>
+  <text x="81" y="257" text-anchor="middle" class="sign">NO BIRDS?</text>
+
+  <!-- Speed lines -->
+  <g stroke="#1d2b53" stroke-width="3" stroke-linecap="round" opacity="0.5">
+    <line x1="170" y1="300" x2="220" y2="300"><animate attributeName="opacity" values="1;0.2;1" dur="0.5s" repeatCount="indefinite"/></line>
+    <line x1="150" y1="340" x2="215" y2="340"><animate attributeName="opacity" values="0.2;1;0.2" dur="0.5s" repeatCount="indefinite"/></line>
+    <line x1="175" y1="380" x2="220" y2="380"><animate attributeName="opacity" values="1;0.2;1" dur="0.5s" repeatCount="indefinite"/></line>
+  </g>
+
+  <!-- Bicycle wheels -->
+  <g>
+    <circle cx="300" cy="400" r="70" fill="none" stroke="#222" stroke-width="10"/>
+    <g stroke="#888" stroke-width="2">
+      <line x1="300" y1="332" x2="300" y2="468"/>
+      <line x1="232" y1="400" x2="368" y2="400"/>
+      <line x1="252" y1="352" x2="348" y2="448"/>
+      <line x1="348" y1="352" x2="252" y2="448"/>
+      <circle cx="300" cy="340" r="5" fill="#e63946" stroke="none"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 400" to="360 300 400" dur="0.8s" repeatCount="indefinite"/>
+    </g>
+    <circle cx="300" cy="400" r="7" fill="#444"/>
+  </g>
+  <g>
+    <circle cx="520" cy="400" r="70" fill="none" stroke="#222" stroke-width="10"/>
+    <g stroke="#888" stroke-width="2">
+      <line x1="520" y1="332" x2="520" y2="468"/>
+      <line x1="452" y1="400" x2="588" y2="400"/>
+      <line x1="472" y1="352" x2="568" y2="448"/>
+      <line x1="568" y1="352" x2="472" y2="448"/>
+      <circle cx="520" cy="340" r="5" fill="#e63946" stroke="none"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 520 400" to="360 520 400" dur="0.8s" repeatCount="indefinite"/>
+    </g>
+    <circle cx="520" cy="400" r="7" fill="#444"/>
+  </g>
+
+  <!-- Frame -->
+  <g stroke="#e63946" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M300 400 L400 400 L380 305 Z"/>
+    <path d="M380 305 L495 305 L400 400"/>
+    <path d="M495 305 L520 400"/>
+    <path d="M495 305 L488 275"/>
+  </g>
+  <path d="M470 272 Q490 262 515 272" stroke="#222" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- Seat -->
+  <path d="M360 298 Q380 288 402 298 Z" fill="#222" stroke="#222" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Basket with fish -->
+  <rect x="510" y="282" width="50" height="30" rx="4" fill="#c98b4a" stroke="#7a4f22" stroke-width="3"/>
+  <path d="M515 290 H555 M515 300 H555" stroke="#7a4f22" stroke-width="2"/>
+
+  <!-- Crank -->
+  <g>
+    <line x1="425" y1="400" x2="375" y2="400" stroke="#333" stroke-width="6"/>
+    <rect x="418" y="395" width="16" height="6" fill="#111"/>
+    <rect x="366" y="399" width="16" height="6" fill="#111"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 400 400" to="360 400 400" dur="0.8s" repeatCount="indefinite"/>
+  </g>
+  <circle cx="400" cy="400" r="12" fill="#444" stroke="#222" stroke-width="3"/>
+
+  <!-- Legs (follow pedals) -->
+  <g stroke="#f59e1b" stroke-width="7" stroke-linecap="round" fill="none">
+    <line x1="395" y1="300" x2="375" y2="400">
+      <animate attributeName="x2" values="375;400;425;400;375" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="400;375;400;425;400" dur="0.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="395" y1="300" x2="425" y2="400">
+      <animate attributeName="x2" values="425;400;375;400;425" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="400;425;400;375;400" dur="0.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Pelican (bobbing) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="0.4s" repeatCount="indefinite"/>
+    <!-- tail -->
+    <path d="M335 255 L300 240 L315 265 L298 280 L340 275 Z" fill="#e8e8e8" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+    <!-- body -->
+    <ellipse cx="395" cy="258" rx="65" ry="45" fill="#fafafa" stroke="#333" stroke-width="4"/>
+    <!-- neck -->
+    <path d="M425 230 Q455 200 450 165 L478 160 Q490 205 450 250 Z" fill="#fafafa" stroke="#333" stroke-width="4" stroke-linejoin="round"/>
+    <!-- head -->
+    <circle cx="465" cy="150" r="27" fill="#fafafa" stroke="#333" stroke-width="4"/>
+    <!-- crest -->
+    <path d="M455 124 Q445 105 460 100 Q462 115 470 124" fill="#ffd166" stroke="#333" stroke-width="3"/>
+    <!-- helmet -->
+    <path d="M440 142 Q445 112 472 115 Q496 120 494 142 Z" fill="#3a86ff" stroke="#1d2b53" stroke-width="3"/>
+    <path d="M455 120 L458 140 M472 117 L473 140" stroke="#fff" stroke-width="3"/>
+    <!-- goggles/eye -->
+    <circle cx="476" cy="152" r="9" fill="#fff" stroke="#333" stroke-width="3"/>
+    <circle cx="479" cy="152" r="4" fill="#111">
+      <animate attributeName="cx" values="479;481;479" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M466 140 L488 145" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <!-- beak upper -->
+    <path d="M488 158 L620 172 Q628 176 618 180 L488 170 Z" fill="#ffb627" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+    <!-- pouch with fish bulge -->
+    <path d="M488 170 L612 180 Q600 235 545 232 Q500 228 488 190 Z" fill="#ff9f43" stroke="#333" stroke-width="3" stroke-linejoin="round">
+      <animate attributeName="d" dur="0.8s" repeatCount="indefinite"
+        values="M488 170 L612 180 Q600 235 545 232 Q500 228 488 190 Z;M488 170 L612 180 Q605 245 545 240 Q498 232 488 190 Z;M488 170 L612 180 Q600 235 545 232 Q500 228 488 190 Z"/>
+    </path>
+    <!-- fish tail poking out of pouch -->
+    <path d="M612 178 L640 165 L636 182 L645 198 Z" fill="#4cc9f0" stroke="#333" stroke-width="2.5" stroke-linejoin="round">
+      <animateTransform attributeName="transform" type="rotate" values="-8 612 180;10 612 180;-8 612 180" dur="0.3s" repeatCount="indefinite"/>
+    </path>
+    <!-- sweat drop -->
+    <path d="M440 150 Q436 160 440 164 Q444 160 440 150 Z" fill="#5bc0ff">
+      <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+    <!-- wing reaching handlebar -->
+    <path d="M370 240 Q430 215 500 268 Q470 290 400 280 Z" fill="#e6e6e6" stroke="#333" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M395 255 Q430 255 460 270 M390 268 Q420 268 450 278" stroke="#999" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Fish speech bubble -->
+  <g>
+    <path d="M600 90 H770 Q780 90 780 100 V140 Q780 150 770 150 H665 L640 175 L648 150 H600 Q590 150 590 140 V100 Q590 90 600 90 Z" fill="#fff" stroke="#333" stroke-width="3"/>
+    <text x="685" y="115" text-anchor="middle" class="bub">Fish: "I never agreed</text>
+    <text x="685" y="136" text-anchor="middle" class="bub">to be the cargo!"</text>
+  </g>
+  <!-- Pelican muffled bubble -->
+  <g>
+    <ellipse cx="320" cy="140" rx="72" ry="30" fill="#fff" stroke="#333" stroke-width="3"/>
+    <path d="M370 160 L430 168 L385 150" fill="#fff" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+    <text x="320" y="146" text-anchor="middle" class="bub">"MMMF! ON MY LEFT!"</text>
+  </g>
+
+  <!-- Caption -->
+  <text x="400" y="555" text-anchor="middle" class="cap">Pelican rides the bike lane, insists it's a "zero-emission fish delivery service."</text>
+
+  <!-- Footer -->
+  <rect x="0" y="570" width="800" height="30" fill="#1d2b53"/>
+  <text x="400" y="590" text-anchor="middle" class="foot">2026-10-30 00:08:10 SGT (UTC+08:00)</text>
+</svg>
