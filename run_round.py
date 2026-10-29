@@ -72,6 +72,7 @@ def run_model(model: str, round_id: str) -> dict:
         "request_timestamp": request_timestamp,
         "time_sgt": started.strftime("%Y-%m-%d %H:%M:%S"),
         "model": model,
+        "account_region": "Singapore",
         "status": "error",
         "duration_s": None,
         "input_tokens": None,
@@ -360,6 +361,7 @@ a{{color:var(--cyan)}} .links{{display:flex;align-items:center;justify-content:f
 {closeout_panel(records)}
 <section class="panel intro"><div class="lang-en"><b>Why this exists</b><p>Important work should not depend on a possibly degraded Codex. These SVGs are low-risk probes: capacity errors, latency, token use and failures make availability changes reproducible. In October 2026 this account began seeing unexplained capacity refusals and suspected silent degradation. The Raspberry Pi records each attempt, rebuilds this page and publishes both branches. Independent visual reviews compare pelican drawings with a fixed Astra reference. These subjective scores describe visible output quality, not general model intelligence.</p></div><div class="lang-zh"><b>为什么做这件事</b><p>重要任务不应该依赖一个可能降智的 Codex。这些 SVG 是低风险探针：容量错误、耗时、token 用量和失败记录让可用性变化可以复现。2026 年 10 月，这个账号开始出现无法解释的容量拒绝和疑似能力下降。树莓派记录每次尝试、重建页面并发布两个分支。独立视觉评审以固定的 Astra 图片为基准，检查鹈鹕绘图。这些主观评分描述可见的画面问题，不代表模型整体能力。</p></div></section>
 <section class="metrics"><div class="metric"><small>Latest round</small><b>{ok_n}/{len(latest_recs)}</b><small>models returned an SVG</small></div><div class="metric"><small>All attempts</small><b>{attempts}</b><small>{len(rounds)} rounds · {all_ok / attempts * 100 if attempts else 0:.1f}% success</small></div><div class="metric"><small>Median latency</small><b>{median if median is not None else "—"}<small> s</small></b><small>across recorded attempts</small></div><div class="metric"><small>Last seen</small><b style="font-size:16px">{latest or "—"}</b><small>{updated}</small></div></section>
+<section class="panel" id="run-browser"></section>
 <details class="panel round-disclosure"><summary><b>Latest round · {latest or "—"}</b><span>{ok_n}/{len(latest_recs)} passed · once per model · no retries</span></summary><div class="grid">{''.join(cards)}</div></details>
 <section class="panel"><div class="section-head"><h2>Cross-provider pairs</h2><p>Codex subscription vs Claude API · four models · benchmark rounds</p></div>{''.join(pair_sections) or '<p class="muted">Claude comparison images are not available yet.</p>'}</section>
 <section class="panel" id="quality-monitor" aria-label="Pelican quality / 鹈鹕绘图质量"><h2><span class="lang-en">Pelican quality over time</span><span class="lang-zh">鹈鹕绘图质量趋势</span></h2><p class="muted"><span class="lang-en">Loading visual reviews…</span><span class="lang-zh">正在加载视觉评审…</span></p></section>
@@ -375,7 +377,7 @@ const textZh = {{'raw stats.json':'原始 stats.json','source ↗':'源代码 �
 const originalText = new WeakMap();
 function setLanguage(lang) {{ document.body.classList.toggle('zh', lang==='zh'); const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT); let node; while(node=walker.nextNode()) {{ if(!originalText.has(node)) originalText.set(node,node.nodeValue); const original=originalText.get(node).trim(); let translated=textZh[original]; if(original.startsWith('Latest round · ')) translated='最新一轮 · '+original.slice(16); else if(/^\\d+\\/\\d+ passed · once per model · no retries$/.test(original)) translated=original.replace(' passed · once per model · no retries',' 通过 · 每个模型一次 · 不重试'); if(translated) node.nodeValue=lang==='zh'?node.nodeValue.replace(original,translated):node.nodeValue.replace(translated,original); }} document.querySelector('#search').placeholder=lang==='zh'?'筛选模型、状态、错误或轮次…':'Filter model, status, error or round…'; }}
 ['search','model','status'].forEach(id=>document.querySelector('#'+id).addEventListener('input',()=>{{page=0;render()}})); document.querySelector('#prev').onclick=()=>{{page--;render()}}; document.querySelector('#next').onclick=()=>{{page++;render()}}; document.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.language))); setLanguage('en'); render();
-</script><link rel="stylesheet" href="quality.css"><script src="quality.js"></script><link rel="stylesheet" href="zoom.css"><script src="zoom.js"></script></body></html>"""
+</script><link rel="stylesheet" href="quality.css"><script src="quality.js"></script><script src="run-browser.js"></script><link rel="stylesheet" href="zoom.css"><script src="zoom.js"></script></body></html>"""
 
 
 def build_history(records: list[dict]) -> str:
@@ -397,7 +399,7 @@ def build_history(records: list[dict]) -> str:
                 f'<small>{r.get("time_sgt", "—")} · {r.get("duration_s") or "—"}s</small></figcaption></figure>'
             )
         sections.append(
-            f'<details class="round"><summary>{html.escape(round_id)} · {ok}/{len(round_records)} passed</summary>'
+            f'<details class="round"><summary>{html.escape(round_id)} · {ok}/{len(round_records)} passed</summary><p><a href="index.html#run={html.escape(re.sub(r"-(pelican|daily)$", "", round_id))}">浏览此轮 / Browse this run →</a></p>'
             f'<div class="grid">{"".join(cards)}</div></details>'
         )
     return f'''<!DOCTYPE html>
