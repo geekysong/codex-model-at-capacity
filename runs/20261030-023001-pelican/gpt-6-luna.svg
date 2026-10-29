@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A smug pelican pedals a bicycle while a fish rides in its bill.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f8fbff;stroke:#17324d;stroke-width:8}
+      .spokes{stroke:#76a9c9;stroke-width:2.5}
+      .frame{fill:none;stroke:#e65b45;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:system-ui,sans-serif;fill:#17324d}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 2.6s linear infinite}
+      .ride{transform-box:fill-box;transform-origin:center;animation:bob .55s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f1"/>
+  <circle cx="686" cy="117" r="53" fill="#ffd36a"/>
+  <path d="M0 388 Q150 350 300 386 T600 378 T800 382 V510 H0Z" fill="#a9dfb3"/>
+  <path d="M0 452 Q170 430 330 455 T650 446 T800 450" fill="none" stroke="#75c99a" stroke-width="5"/>
+  <path d="M65 150h96M102 128h72M575 202h102" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+  <path d="M0 490H800" stroke="#17324d" stroke-width="5"/>
+  <path d="M0 510H800" stroke="#fff" stroke-width="3" stroke-dasharray="24 20"/>
+
+  <text id="title" x="400" y="55" text-anchor="middle" class="label" font-size="34" font-weight="900" letter-spacing="1">THE PELICAN COMMUTE</text>
+  <text x="400" y="83" text-anchor="middle" class="label" font-size="16" font-weight="600">“I’m cutting out the middle-fish.”</text>
+
+  <!-- bicycle -->
+  <g aria-label="Bicycle">
+    <circle class="wheel" cx="248" cy="407" r="66"/>
+    <circle class="wheel" cx="548" cy="407" r="66"/>
+    <g class="spin">
+      <circle cx="248" cy="407" r="4" fill="#17324d"/>
+      <path class="spokes" d="M248 341v132M182 407h132M201 360l94 94M295 360l-94 94"/>
+    </g>
+    <g class="spin">
+      <circle cx="548" cy="407" r="4" fill="#17324d"/>
+      <path class="spokes" d="M548 341v132M482 407h132M501 360l94 94M595 360l-94 94"/>
+    </g>
+    <path class="frame" d="M248 407l89-88 61 88H248l73-49 86 49 80-88h-73"/>
+    <path d="M319 316h45M389 397l-13 20m39-104h48" stroke="#17324d" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="337" cy="319" r="7" fill="#17324d"/>
+    <circle cx="398" cy="407" r="7" fill="#17324d"/>
+    <path d="M460 300h55" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M515 300l10-14" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- expressive pelican and gentle riding bob -->
+  <g class="ride">
+    <path d="M359 302 Q345 258 361 218 Q380 180 426 190 Q469 200 470 244 Q472 277 445 302Z" fill="#fff" class="ink"/>
+    <path d="M374 287 Q395 267 446 280 L454 302H362Z" fill="#87c7db" stroke="#17324d" stroke-width="5"/>
+    <path d="M385 223 Q391 178 432 177 Q467 179 469 215 Q468 243 437 255 Q408 264 390 246Z" fill="#fff" class="ink"/>
+    <path d="M452 204 Q499 188 554 213 Q571 222 550 231 Q507 245 457 233Z" fill="#f3a83b" class="ink"/>
+    <path d="M454 225 Q494 237 545 226 Q541 252 504 260 Q470 264 451 244Z" fill="#f38d79" stroke="#17324d" stroke-width="5"/>
+    <path d="M492 233 Q512 220 529 231 Q514 244 493 239Z" fill="#f7ce55" stroke="#17324d" stroke-width="3"/>
+    <circle cx="441" cy="203" r="5.5" fill="#17324d"/>
+    <path d="M432 191q12-11 23 0" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+    <path d="M378 252 Q356 269 359 293" fill="none" stroke="#17324d" stroke-width="5"/>
+    <path d="M385 270 Q420 290 453 270" fill="none" stroke="#17324d" stroke-width="5"/>
+    <!-- wings -->
+    <path d="M385 231 Q408 214 439 232 Q422 252 392 249Z" fill="#e9f7fa" stroke="#17324d" stroke-width="4"/>
+    <path d="M399 233l22 13m-8-17 19 13" stroke="#87c7db" stroke-width="3" stroke-linecap="round"/>
+    <!-- neck scarf -->
+    <path d="M389 258 Q415 271 448 253l9 12q-30 27-66 7Z" fill="#e65b45" stroke="#17324d" stroke-width="4"/>
+    <path d="M412 274l-5 24 20-14" fill="#e65b45" stroke="#17324d" stroke-width="4"/>
+    <!-- legs pedaling -->
+    <path d="M389 292l-16 33 26 14" fill="none" stroke="#f3a83b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M428 291l18 30-25 16" fill="none" stroke="#f3a83b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M393 339l-17 5m43-7 18 5" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- comic speed marks and fish thought -->
+  <path d="M285 235h40m-25 17h26m-13 17h20" stroke="#e65b45" stroke-width="5" stroke-linecap="round"/>
+  <path d="M568 181q12-18 29-8m-20-10q14-14 27-4" fill="none" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+  <text x="574" y="162" class="label" font-size="14" font-weight="700">LUNCH?</text>
+
+  <rect x="22" y="532" width="756" height="49" rx="12" fill="#fff" stroke="#17324d" stroke-width="3"/>
+  <text x="400" y="552" text-anchor="middle" class="label" font-size="15" font-weight="700">Pedal-powered. Fish-funded. Traffic laws? Up for debate.</text>
+  <text x="400" y="572" text-anchor="middle" class="label" font-size="13" font-weight="600">2026-10-30 02:32:44 SGT (UTC+08:00)</text>
+</svg>
