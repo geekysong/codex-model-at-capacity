@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Plan</title>
+  <desc id="desc">A smug pelican pedals a bicycle with a huge pouch full of fish past an expensive aviation fuel sign. Wheels spin, pedals turn, and the rider gently bobs in a looping animation.</desc>
+  <defs>
+    <pattern id="paper" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="3" r=".7" fill="#dacfae" opacity=".35"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #203b40; }
+      .ink { stroke: #203b40; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .spoke { stroke: #647c7b; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff5db"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M32 98H768" stroke="#203b40" stroke-width="4"/>
+  <text x="400" y="48" text-anchor="middle" font-size="35" font-weight="900" letter-spacing="2">THE PELICAN PEDAL PLAN</text>
+  <text x="400" y="79" text-anchor="middle" font-size="17" font-weight="700" letter-spacing="3">BIG BEAK. SMALL CARBON FOOTPRINT.</text>
+
+  <!-- One seaside scene -->
+  <rect x="32" y="112" width="736" height="365" rx="20" fill="#d8eeea"/>
+  <path d="M33 347 Q145 332 250 349 T478 348 T767 343V477H33Z" fill="#9bcac5"/>
+  <path d="M42 374Q112 364 178 375M508 368Q571 357 629 369M670 384H749" fill="none" stroke="#eaf8eb" stroke-width="5"/>
+  <circle cx="92" cy="166" r="29" fill="#f4c756"/>
+  <path d="M169 171q16-15 31 0q15-15 30 0M260 144q12-12 24 0q12-12 24 0" fill="none" stroke="#75999a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M32 427Q350 409 768 425V477H32Z" fill="#e0c997"/>
+  <path d="M45 457H755" stroke="#b39a70" stroke-width="3"/>
+  <ellipse cx="363" cy="454" rx="222" ry="12" fill="#203b40" opacity=".13"/>
+
+  <!-- Fuel-price gag -->
+  <path d="M681 250V423" stroke="#536b69" stroke-width="9"/>
+  <rect x="609" y="150" width="139" height="123" rx="8" fill="#fff5db" class="ink"/>
+  <rect x="610" y="151" width="137" height="34" rx="5" fill="#dc6551"/>
+  <text x="679" y="174" text-anchor="middle" font-size="17" font-weight="900" fill="#fff5db" style="fill:#fff5db">FLIGHT FUEL</text>
+  <text x="679" y="217" text-anchor="middle" font-size="28" font-weight="900">$9.99</text>
+  <text x="679" y="241" text-anchor="middle" font-size="13" font-weight="700">PER FLAP*</text>
+  <text x="679" y="261" text-anchor="middle" font-size="10">*wings sold separately</text>
+
+  <!-- Spinning bicycle wheels -->
+  <g transform="translate(220 395)">
+    <circle r="65" fill="#fff9e8" class="ink" stroke-width="9"/>
+    <circle r="55" fill="#d8eeea" stroke="#83948a" stroke-width="2"/>
+    <g class="spoke">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-55 0H55M0-55V55M-39-39L39 39M-39 39L39-39"/>
+      <path d="M18-52L-18 52M-52-18L52 18M-52 18L52-18M-18-52L18 52"/>
+      <rect x="-5" y="-51" width="10" height="17" rx="3" fill="#f5bf45" stroke="none"/>
+    </g>
+    <circle r="8" fill="#203b40"/>
+  </g>
+  <g transform="translate(510 395)">
+    <circle r="65" fill="#fff9e8" class="ink" stroke-width="9"/>
+    <circle r="55" fill="#d8eeea" stroke="#83948a" stroke-width="2"/>
+    <g class="spoke">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-55 0H55M0-55V55M-39-39L39 39M-39 39L39-39"/>
+      <path d="M18-52L-18 52M-52-18L52 18M-52 18L52-18M-18-52L18 52"/>
+      <rect x="-5" y="34" width="10" height="17" rx="3" fill="#f5bf45" stroke="none"/>
+    </g>
+    <circle r="8" fill="#203b40"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" class="ink">
+    <path d="M220 395L292 298L354 395ZM292 298H464L354 395M464 298L510 395" stroke="#203b40" stroke-width="12"/>
+    <path d="M220 395L292 298L354 395ZM292 298H464L354 395M464 298L510 395" stroke="#df6650" stroke-width="6"/>
+    <path d="M292 298L281 280M464 298L454 264L476 249H492" stroke-width="8"/>
+    <path d="M263 280H305" stroke-width="12"/>
+    <path d="M214 321H262M220 321V340" stroke-width="5"/>
+  </g>
+  <circle cx="354" cy="395" r="22" fill="#e9e1c9" class="ink"/>
+  <g transform="translate(354 395)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-22 0H22" stroke="#203b40" stroke-width="6"/>
+      <path d="M-27-6V6M27-6V6" stroke="#203b40" stroke-width="8"/>
+    </g>
+  </g>
+
+  <!-- Pelican rider and a deliberately oversized fish-filled pouch -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0;0 -4;0 0" dur="1.6s" repeatCount="indefinite"/>
+    <path d="M303 282L327 326L362 367" fill="none" stroke="#203b40" stroke-width="13" stroke-linecap="round"/>
+    <path d="M303 282L327 326L362 367" fill="none" stroke="#edb74c" stroke-width="7" stroke-linecap="round"/>
+    <path d="M350 363L378 370L348 378Z" fill="#efb647" class="ink"/>
+
+    <path d="M274 239L228 224L246 254L215 248Q238 282 274 282" fill="#fffdf0" class="ink"/>
+    <path d="M273 279Q242 254 267 222Q289 196 336 220L350 251Q346 289 307 296Z" fill="#fffdf0" class="ink"/>
+    <path d="M317 248Q328 227 332 199L335 163Q342 137 369 145Q397 153 388 181L373 218Q368 252 346 268" fill="#fffdf0" class="ink"/>
+    <path d="M277 235Q294 219 319 237L359 258L443 260" fill="none" class="ink" stroke-width="12"/>
+    <path d="M277 235Q294 219 319 237L359 258L443 260" fill="none" stroke="#e7e9d9" stroke-width="7" stroke-linecap="round"/>
+    <path d="M439 256L457 252M439 261L456 261" fill="none" class="ink" stroke-width="3"/>
+
+    <path d="M378 180L566 190Q540 250 464 246Q398 245 378 197Z" fill="#efb259" class="ink"/>
+    <path d="M397 200Q455 222 539 199Q511 239 462 235Q418 233 397 200Z" fill="#f6cf83"/>
+
+    <!-- Fish silhouettes inside the translucent pouch -->
+    <g fill="#64a4a1" stroke="#203b40" stroke-width="2">
+      <path d="M423 214Q442 196 462 214Q443 232 423 214L413 204V224Z"/>
+      <path d="M476 216Q495 199 514 216Q494 232 476 216L466 205V226Z"/>
+    </g>
+    <circle cx="453" cy="211" r="2.5" fill="#203b40"/>
+    <circle cx="505" cy="213" r="2.5" fill="#203b40"/>
+    <path d="M380 176L573 187L562 197L380 191Z" fill="#f4c449" class="ink"/>
+
+    <circle cx="369" cy="164" r="10" fill="white" stroke="#203b40" stroke-width="3"/>
+    <circle cx="373" cy="164" r="4" fill="#203b40"/>
+    <path d="M357 150L378 153" fill="none" class="ink" stroke-width="4"/>
+    <path d="M343 142Q360 119 384 140L395 145H333Z" fill="#dc6551" class="ink"/>
+    <path d="M352 132L358 139M368 130L374 139" stroke="#fff5db" stroke-width="3"/>
+    <path d="M342 180Q352 190 362 181" fill="none" stroke="#203b40" stroke-width="3"/>
+  </g>
+
+  <!-- Readable, stationary speech balloon -->
+  <path d="M76 210Q76 198 90 198H208Q221 198 221 212V267Q221 280 208 280H172L185 299L145 280H90Q76 280 76 267Z" fill="#fffdf0" stroke="#203b40" stroke-width="3"/>
+  <text x="148" y="222" text-anchor="middle" font-size="16" font-weight="800">
+    <tspan x="148">“My lunch is</tspan>
+    <tspan x="148" dy="21">the only thing</tspan>
+    <tspan x="148" dy="21">still flying.”</tspan>
+  </text>
+
+  <text x="400" y="509" text-anchor="middle" font-size="20" font-weight="700">With fuel prices soaring, this pelican took to pedaling.</text>
+  <path d="M32 531H768" stroke="#203b40" stroke-width="2"/>
+  <rect x="32" y="543" width="736" height="39" rx="8" fill="#203b40"/>
+  <text x="400" y="568" text-anchor="middle" font-size="18" font-weight="700" style="fill:#fff5db">2026-10-30 06:00:01 SGT (UTC+08:00)</text>
+</svg>
