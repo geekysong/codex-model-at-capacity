@@ -1,0 +1,4 @@
+*/10 * * * * /home/songyy/projects/second-brain/.venv/bin/python /home/songyy/projects/second-brain/scripts/scheduled_task_runner.py >> /home/songyy/projects/second-brain/scripts/logs/scheduled_task_runner.log 2>&1
+*/30 * * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_round.py >> /home/songyy/codex-model-at-capacity/round.log 2>&1
+5 0 * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/run_claude_round.py >> /home/songyy/codex-model-at-capacity/claude_round.log 2>&1
+0 0 * * * /usr/bin/python3 /home/songyy/codex-model-at-capacity/generate_daily_prompt.py >> /home/songyy/codex-model-at-capacity/claude_round.log 2>&1

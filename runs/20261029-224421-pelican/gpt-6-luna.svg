@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A pompous pelican rides a bicycle, pedaling furiously while a fish complains from its beak.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f4"/>
+  <rect y="420" width="800" height="110" fill="#b7dfbd"/>
+  <path d="M0 450 Q130 425 260 450 T520 450 T800 440" fill="none" stroke="#91c99d" stroke-width="5"/>
+  <circle cx="90" cy="110" r="42" fill="#ffd66e"/>
+  <path d="M0 390 Q130 350 255 390 T510 382 T800 390" fill="none" stroke="#fff" stroke-width="8" opacity=".8"/>
+
+  <text x="400" y="54" text-anchor="middle" font-size="34" font-weight="900" fill="#173b50">THE PELICAN EXPRESS</text>
+  <text x="400" y="82" text-anchor="middle" font-size="17" font-weight="700" fill="#39707c">“I’m on a strict fish-to-wheel schedule!”</text>
+
+  <!-- bicycle -->
+  <g fill="none" stroke="#214d63" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="245" cy="390" r="68" stroke="#214d63" stroke-width="7"/>
+      <path d="M245 322v136 M177 390h136 M197 342l96 96 M293 342l-96 96" stroke="#69a7b2" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="550" cy="390" r="68" stroke="#214d63" stroke-width="7"/>
+      <path d="M550 322v136 M482 390h136 M502 342l96 96 M598 342l-96 96" stroke="#69a7b2" stroke-width="3"/>
+    </g>
+    <path d="M245 390l95-103 75 103H245l67-72 100 72 30-120"/>
+    <path d="M400 267h47 M422 245l-12 22"/>
+    <path d="M340 287l-10-28h-40"/>
+  </g>
+  <circle cx="340" cy="390" r="12" fill="#f2a541" stroke="#214d63" stroke-width="5"/>
+  <path d="M340 390l-29-34 M340 390l35 28" stroke="#214d63" stroke-width="7" stroke-linecap="round"/>
+  <path d="M301 255h-35" stroke="#214d63" stroke-width="8" stroke-linecap="round"/>
+  <path d="M432 239h35" stroke="#214d63" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- pelican rider -->
+  <g class="rider">
+    <path d="M361 252 Q369 203 416 192 Q450 185 465 218 Q479 247 451 275 Q427 299 385 283Z" fill="#fff8e9" stroke="#214d63" stroke-width="5"/>
+    <path d="M391 275 Q379 303 369 330" fill="none" stroke="#e66c4b" stroke-width="12" stroke-linecap="round"/>
+    <path d="M420 278 Q430 302 438 326" fill="none" stroke="#e66c4b" stroke-width="12" stroke-linecap="round"/>
+    <path d="M366 330l-23 10 M438 326l17 13" stroke="#214d63" stroke-width="6" stroke-linecap="round"/>
+    <path d="M384 226 Q374 193 397 163 Q418 137 449 154 Q469 165 459 191 Q452 211 431 225Z" fill="#fff8e9" stroke="#214d63" stroke-width="5"/>
+    <path d="M446 181 Q492 171 527 187 Q536 191 527 199 Q491 207 454 198Z" fill="#f4a43b" stroke="#214d63" stroke-width="4"/>
+    <path d="M455 198 Q489 199 519 194 Q504 222 476 219 Q460 215 455 198Z" fill="#ed795a" stroke="#214d63" stroke-width="4"/>
+    <circle cx="440" cy="172" r="5" fill="#173b50"/>
+    <path d="M435 159q-8-12-18-12m27 9q0-13-8-20m17 20q7-12 16-14" fill="none" stroke="#214d63" stroke-width="3" stroke-linecap="round"/>
+    <path d="M476 199q15 8 28 0" fill="none" stroke="#b64e3b" stroke-width="3"/>
+    <!-- fish passenger -->
+    <path d="M492 187q12-12 25 0q-13 12-25 0m0 0l-9-8v16z" fill="#75c6d0" stroke="#214d63" stroke-width="2"/>
+    <circle cx="511" cy="185" r="1.8" fill="#173b50"/>
+    <path d="M499 203q13 8 23 0" fill="none" stroke="#214d63" stroke-width="2"/>
+  </g>
+
+  <path d="M145 297q-13-12 0-24m-12 31q-20-16-3-34" fill="none" stroke="#f0a63b" stroke-width="4" stroke-linecap="round"/>
+  <text x="97" y="280" font-size="15" font-weight="800" fill="#39707c">HONK!</text>
+  <path d="M598 315q14-14 28 0m-25 12q18-13 34 2" fill="none" stroke="#f0a63b" stroke-width="4" stroke-linecap="round"/>
+  <text x="612" y="301" font-size="14" font-weight="800" fill="#39707c">WHEE!</text>
+  <rect x="570" y="338" width="119" height="29" rx="14" fill="#fff8e9" stroke="#214d63" stroke-width="3"/>
+  <text x="629" y="358" text-anchor="middle" font-size="13" font-weight="900" fill="#214d63">FISH TAX: 1</text>
+
+  <path d="M70 488h660" stroke="#6e9f78" stroke-width="3" stroke-dasharray="12 10"/>
+  <text x="400" y="513" text-anchor="middle" font-size="16" font-style="italic" fill="#315e52">Local traffic report: one bird, two wheels, zero dignity.</text>
+  <rect y="540" width="800" height="60" fill="#173b50"/>
+  <text x="400" y="577" text-anchor="middle" font-size="20" font-weight="700" fill="#fff8e9">2026-10-29 22:47:30 SGT (UTC+08:00)</text>
+</svg>
