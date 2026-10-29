@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT WHEEL DEAL</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a sign promising excellent beakfast. The wheels turn and the pelican bobs in a loop.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#183047;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#fff8e8;stroke:#183047;stroke-width:7}
+      .spokes{stroke:#7aa0a3;stroke-width:2}
+      .frame{fill:none;stroke:#e5533d;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .type{font-family:Arial,Helvetica,sans-serif;font-weight:900}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 2.2s linear infinite}
+      .ride{transform-box:fill-box;transform-origin:center;animation:bob .55s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px) rotate(-1deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bfe9e3"/>
+  <path d="M0 375 Q150 330 300 365 T600 355 T800 370 V520 H0Z" fill="#85cba9"/>
+  <path d="M0 445 H800" stroke="#f8efcf" stroke-width="8" stroke-dasharray="38 27"/>
+  <circle cx="92" cy="91" r="40" fill="#ffd76a"/>
+  <g fill="#fff8e8" opacity=".9">
+    <path d="M175 105q8-21 30-10 13-24 34-5 21-2 23 19h-87z"/>
+    <path d="M575 90q7-18 26-9 12-21 30-4 19-2 21 17h-77z"/>
+  </g>
+
+  <text x="400" y="52" text-anchor="middle" class="type" font-size="34" fill="#183047">THE GREAT WHEEL DEAL</text>
+  <text x="400" y="82" text-anchor="middle" class="type" font-size="16" letter-spacing="2" fill="#e5533d">TWO WHEELS. ONE VERY LONG BEAK.</text>
+
+  <!-- The bicycle -->
+  <g aria-label="bicycle">
+    <circle class="wheel" cx="250" cy="390" r="69"/>
+    <circle class="wheel" cx="535" cy="390" r="69"/>
+    <g class="spin">
+      <path class="spokes" d="M250 321V459M181 390H319M201 341L299 439M201 439L299 341"/>
+    </g>
+    <g class="spin">
+      <path class="spokes" d="M535 321V459M466 390H604M486 341L584 439M486 439L584 341"/>
+    </g>
+    <path class="frame" d="M250 390L335 315L390 390L250 390M335 315L450 315L390 390M450 315L535 390M335 315L320 294"/>
+    <path d="M305 292h45" class="ink" fill="none"/>
+    <path d="M450 315l-6-31h30" class="ink" fill="none"/>
+    <circle cx="390" cy="390" r="11" fill="#ffd76a" class="ink"/>
+    <path d="M390 390l-27 25m27-25 25 25" class="ink" fill="none"/>
+    <circle cx="363" cy="415" r="5" fill="#183047"/>
+    <circle cx="415" cy="415" r="5" fill="#183047"/>
+  </g>
+
+  <!-- Pelican riding proudly -->
+  <g class="ride">
+    <path d="M306 304Q283 271 292 227Q300 188 339 182Q372 178 387 207Q398 229 385 250L366 278L352 309Z" fill="#fff8e8" class="ink"/>
+    <path d="M330 189Q322 163 340 144Q360 125 384 145Q404 162 391 186Q383 201 363 205Z" fill="#fff8e8" class="ink"/>
+    <path d="M389 163Q432 151 470 171Q438 184 393 177Z" fill="#f4a93d" class="ink"/>
+    <path d="M391 178Q427 180 460 174Q448 194 407 196Q392 195 385 188Z" fill="#e97842" class="ink"/>
+    <circle cx="374" cy="158" r="5" fill="#183047"/>
+    <path d="M364 145q9-10 19-2" stroke="#183047" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M316 238Q338 224 365 238Q348 266 317 260Z" fill="#e5b9a1" stroke="#183047" stroke-width="4"/>
+    <path d="M321 296L337 315M353 296L369 315" stroke="#f4a93d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M337 315l-13 5m45-5 13 5" stroke="#183047" stroke-width="4" stroke-linecap="round"/>
+    <path d="M331 277L312 303M364 277L385 302" stroke="#183047" stroke-width="7" stroke-linecap="round"/>
+    <path d="M304 301l12 5m62-7 12 5" stroke="#f4a93d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M329 202q21 15 43 1" stroke="#183047" stroke-width="3" fill="none"/>
+    <path d="M300 212q-15-12-25 0m26 12q-18-7-25 8" stroke="#e5533d" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M330 138q-6-15 3-19m12 19q1-17 13-21m-2 23q9-13 20-11" stroke="#183047" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Tiny roadside sign -->
+  <g transform="rotate(-4 645 285)">
+    <path d="M646 336V260" stroke="#183047" stroke-width="7"/>
+    <rect x="582" y="218" width="132" height="57" rx="8" fill="#fff8e8" class="ink"/>
+    <text x="648" y="242" text-anchor="middle" class="type" font-size="13" fill="#183047">BEAKFAST</text>
+    <text x="648" y="260" text-anchor="middle" class="type" font-size="12" fill="#e5533d">IS SERVED!</text>
+  </g>
+
+  <path d="M95 315q15-18 30 0m-18 16q16-17 31 1m489 67q12-14 25 0" fill="none" stroke="#183047" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="500" text-anchor="middle" class="type" font-size="20" fill="#183047">“I’m not late. I’m just travelling at the speed of fish.”</text>
+  <text x="400" y="527" text-anchor="middle" class="type" font-size="13" letter-spacing="1.5" fill="#e5533d">PELICAN TRANSIT: ALL ABOARD, NO REFUNDS</text>
+  <rect x="0" y="552" width="800" height="48" fill="#183047"/>
+  <text x="400" y="582" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#fff8e8">2026-10-30 03:32:27 SGT (UTC+08:00)</text>
+</svg>
