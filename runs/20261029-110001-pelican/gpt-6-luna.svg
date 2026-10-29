@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while carrying an oversized briefcase.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8f8"/>
+      <stop offset="1" stop-color="#eaf8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#626b78"/>
+      <stop offset="1" stop-color="#303640"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17202b" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#17202b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17202b}
+      .bold{font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="100" r="48" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 380 Q150 330 300 375 T600 365 T800 350 V470 H0Z" fill="#9bc27f"/>
+  <path d="M0 430 Q200 395 400 430 T800 415 V500 H0Z" fill="#76a867"/>
+  <path d="M0 475 L800 455 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 535 L800 515" stroke="#f8d66d" stroke-width="8" stroke-dasharray="42 28"/>
+
+  <g filter="url(#shadow)">
+    <rect x="38" y="28" width="724" height="82" rx="22" fill="#fffdf1" class="ink"/>
+    <text x="400" y="70" text-anchor="middle" class="label bold" font-size="35">THE PELICAN EXPRESS</text>
+    <text x="400" y="96" text-anchor="middle" class="label" font-size="17">“When the beak is bigger than the traffic plan.”</text>
+  </g>
+
+  <!-- humorous roadside sign -->
+  <g transform="translate(94 235)">
+    <path d="M20 210 V20" class="ink" fill="none"/>
+    <path d="M20 35 L126 35 L112 116 L6 116Z" fill="#ffdf69" class="ink"/>
+    <text x="66" y="67" text-anchor="middle" class="label bold" font-size="15">CAUTION</text>
+    <text x="66" y="87" text-anchor="middle" class="label bold" font-size="14">SLOW</text>
+    <text x="66" y="104" text-anchor="middle" class="label bold" font-size="13">BIRD</text>
+    <path d="M49 137 q18 -18 36 0" fill="none" class="ink"/>
+  </g>
+
+  <!-- bicycle -->
+  <g id="bike">
+    <g fill="none" class="ink">
+      <circle cx="300" cy="470" r="70" stroke="#17202b" stroke-width="8"/>
+      <circle cx="585" cy="470" r="70" stroke="#17202b" stroke-width="8"/>
+      <path d="M300 470 L390 355 L470 470 L300 470 M390 355 L585 470 M390 355 L430 350 M470 470 L500 400 L585 470"/>
+      <path d="M420 350 L400 330 M420 350 L449 340" />
+    </g>
+    <g stroke="#8bd3e6" stroke-width="3" opacity=".8">
+      <path d="M300 400 V540 M230 470 H370 M250 420 L350 520 M250 520 L350 420"/>
+      <path d="M585 400 V540 M515 470 H655 M535 420 L635 520 M535 520 L635 420"/>
+    </g>
+    <g id="crank" transform="translate(390 470)">
+      <circle r="12" fill="#f8d66d" class="ink"/>
+      <path d="M0 0 L30 18 M0 0 L-24 -22" class="ink"/>
+      <ellipse cx="39" cy="23" rx="13" ry="6" fill="#e85d4a" class="ink"/>
+      <ellipse cx="-33" cy="-29" rx="13" ry="6" fill="#e85d4a" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+    <g class="ink" fill="#e85d4a">
+      <path d="M350 405 Q390 390 430 410" stroke-width="12"/>
+      <path d="M350 405 L315 438" stroke-width="10"/>
+    </g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="1.4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- spinning wheel highlights -->
+  <g fill="none" stroke="#ffffff" stroke-width="4" opacity=".8">
+    <path d="M286 412 A70 70 0 0 1 340 425"/>
+    <path d="M571 412 A70 70 0 0 1 625 425"/>
+  </g>
+
+  <!-- pelican rider -->
+  <g id="pelican" filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="1.4s" repeatCount="indefinite"/>
+    <!-- body -->
+    <ellipse cx="410" cy="270" rx="76" ry="94" fill="#f4f0e5" class="ink"/>
+    <path d="M370 290 Q410 330 455 286 Q448 350 405 356 Q370 344 370 290Z" fill="#d9e1e8" class="ink"/>
+    <!-- wing -->
+    <path d="M365 240 Q320 270 352 320 Q382 325 408 286 Q385 270 365 240Z" fill="#c4d1d9" class="ink"/>
+    <!-- neck and head -->
+    <path d="M390 220 Q365 155 405 122 Q450 91 493 128 Q526 157 497 213 Q476 247 430 242Z" fill="#f4f0e5" class="ink"/>
+    <!-- eye and brow -->
+    <circle cx="464" cy="151" r="9" fill="#17202b"/>
+    <path d="M448 132 Q468 120 484 133" fill="none" class="ink"/>
+    <!-- giant beak -->
+    <path d="M485 164 Q600 153 645 188 Q596 222 490 202 Q465 193 485 164Z" fill="#f3a83b" class="ink"/>
+    <path d="M493 194 Q554 201 617 188" fill="none" stroke="#b86622" stroke-width="4"/>
+    <circle cx="624" cy="186" r="5" fill="#17202b"/>
+    <!-- hat -->
+    <path d="M400 123 Q415 82 458 88 Q489 93 500 124Z" fill="#e85d4a" class="ink"/>
+    <path d="M394 121 Q447 105 505 124" fill="none" class="ink"/>
+    <!-- legs -->
+    <path d="M391 340 L370 405 M434 340 L455 405" fill="none" class="ink" stroke-width="11"/>
+    <path d="M370 405 L348 418 M455 405 L478 416" fill="none" class="ink" stroke-width="9"/>
+    <!-- handlebars grip -->
+    <path d="M430 350 Q455 332 476 343" fill="none" class="ink" stroke-width="8"/>
+    <!-- briefcase -->
+    <rect x="300" y="248" width="88" height="62" rx="10" fill="#8b5a3c" class="ink"/>
+    <path d="M326 248 V232 Q326 220 340 220 H350 Q364 220 364 232 V248" fill="none" class="ink"/>
+    <path d="M300 274 H388" stroke="#e8b05b" stroke-width="5"/>
+    <text x="344" y="298" text-anchor="middle" font-family="Arial" font-size="12" font-weight="800" fill="#fff4d6">QUACK INC.</text>
+  </g>
+
+  <!-- motion marks -->
+  <g stroke="#17202b" stroke-width="5" stroke-linecap="round" opacity=".65">
+    <path d="M210 300 l-28 -10"/>
+    <path d="M205 322 l-34 4"/>
+    <path d="M646 300 l28 -12"/>
+  </g>
+  <text x="654" y="285" class="label bold" font-size="18" transform="rotate(-8 654 285)">FLAP!</text>
+
+  <!-- footer -->
+  <rect x="26" y="560" width="748" height="28" rx="10" fill="#fffdf1" opacity=".96"/>
+  <text x="400" y="580" text-anchor="middle" class="label" font-size="15">2026-10-29 11:02:01 SGT (UTC+08:00)</text>
+</svg>

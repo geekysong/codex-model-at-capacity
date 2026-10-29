@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe8ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#242424"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#18232b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#18232b}
+      .title{font-weight:900;font-size:42px;letter-spacing:2px}
+      .caption{font-weight:700;font-size:21px}
+      .small{font-weight:700;font-size:16px}
+      .wheel{fill:none;stroke:#dff7ff;stroke-width:7}
+      .spoke{stroke:#9bd3df;stroke-width:3}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#ffe873" opacity=".9"/>
+  <path d="M0 360 Q130 315 260 355 T520 345 T800 350 V440 H0Z" fill="#9bd26d"/>
+  <path d="M0 415 Q180 390 370 420 T800 405 V600 H0Z" fill="url(#road)"/>
+  <path d="M0 470 H800" stroke="#f5d76e" stroke-width="8" stroke-dasharray="48 30" opacity=".8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label title">THE GREAT PELICAN GETAWAY</text>
+  <text x="400" y="88" text-anchor="middle" class="label caption">One bird. Two wheels. Absolutely no idea where the brakes are.</text>
+
+  <!-- bicycle -->
+  <g id="bike">
+    <g>
+      <circle cx="250" cy="455" r="82" class="wheel"/>
+      <circle cx="560" cy="455" r="82" class="wheel"/>
+      <g class="spoke">
+        <path d="M250 373V537 M168 455H332 M192 397L308 513 M192 513L308 397"/>
+        <path d="M560 373V537 M478 455H642 M502 397L618 513 M502 513L618 397"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 405 455" to="360 405 455" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <path d="M250 455 L350 390 L470 455 L560 455 L430 455 L350 390 L320 455 Z" fill="none" class="ink"/>
+    <path d="M350 390 L390 330" fill="none" class="ink"/>
+    <path d="M370 330 H420" fill="none" class="ink"/>
+    <path d="M470 455 L505 365" fill="none" class="ink"/>
+    <path d="M490 365 H535" fill="none" class="ink"/>
+    <circle cx="430" cy="455" r="16" fill="#f6b52f" class="ink"/>
+    <path d="M430 455 L395 425 M430 455 L465 485" fill="none" class="ink"/>
+    <path d="M395 425 l-18 -5 M465 485 l18 5" fill="none" class="ink"/>
+  </g>
+
+  <!-- pelican -->
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="407" cy="275" rx="112" ry="92" fill="#f4f5ef" class="ink"/>
+    <path d="M330 285 Q300 355 360 370 Q410 375 445 325" fill="#d6e7ea" class="ink"/>
+    <path d="M380 350 Q407 372 442 352 L430 410 L395 410Z" fill="#f4f5ef" class="ink"/>
+    <path d="M390 410 L373 455 M430 410 L450 455" fill="none" class="ink"/>
+    <path d="M365 455 h-28 M450 455 h28" fill="none" class="ink"/>
+    <path d="M450 215 Q520 180 587 225 Q535 270 452 255Z" fill="#f2a33b" class="ink"/>
+    <path d="M455 250 Q510 245 565 260 Q514 300 450 275Z" fill="#ed8b2d" class="ink"/>
+    <circle cx="432" cy="210" r="33" fill="#f4f5ef" class="ink"/>
+    <circle cx="442" cy="202" r="8" fill="#18232b"/>
+    <path d="M414 190 Q430 168 450 182" fill="none" class="ink"/>
+    <path d="M340 250 Q285 225 275 175 Q325 180 370 220" fill="#dfecef" class="ink"/>
+    <path d="M323 243 Q290 215 286 190" fill="none" stroke="#9dbdc5" stroke-width="5"/>
+    <path d="M502 216 Q530 188 560 195" fill="none" class="ink"/>
+    <text x="540" y="180" class="label small" transform="rotate(8 540 180)">HONK!</text>
+  </g>
+
+  <path d="M640 300 q35 -35 70 0" fill="none" stroke="#3b8c55" stroke-width="7"/>
+  <path d="M650 300 q-18 -28 -35 -5 M685 300 q18 -28 35 -5" fill="none" stroke="#3b8c55" stroke-width="7"/>
+
+  <rect x="24" y="548" width="752" height="38" rx="10" fill="#fff8dc" stroke="#18232b" stroke-width="3"/>
+  <text x="400" y="573" text-anchor="middle" class="label small">2026-10-29 11:00:56 SGT (UTC+08:00)</text>
+</svg>
