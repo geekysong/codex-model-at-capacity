@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE BEAK BIKER</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling furiously while a tiny fish cheers from its beak.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#183044;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f7f0df;stroke:#183044;stroke-width:7}
+      .spoke{stroke:#6e8490;stroke-width:2}
+      .frame{fill:none;stroke:#e65d3e;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .small{font-family:Arial,sans-serif}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#c8eff0"/>
+  <path d="M0 365 Q130 335 250 362 T500 355 T800 360 V530 H0Z" fill="#8bd1b0"/>
+  <path d="M0 440 Q155 414 310 438 T620 432 T800 438" fill="none" stroke="#5bb392" stroke-width="4"/>
+  <circle cx="655" cy="145" r="48" fill="#ffd66b"/>
+  <path d="M70 340 Q120 300 175 340 M115 340 Q160 287 218 340" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <text x="400" y="60" text-anchor="middle" class="small" font-size="36" font-weight="900" letter-spacing="2" fill="#183044">THE BEAK BIKER</text>
+  <text x="400" y="91" text-anchor="middle" class="small" font-size="16" font-weight="700" fill="#31566a">“Training for the Tour de Pond.”</text>
+
+  <!-- Bicycle -->
+  <g>
+    <g>
+      <circle class="wheel" cx="245" cy="404" r="72"/>
+      <g class="spokes" transform="translate(245 404)">
+        <path class="spoke" d="M-64 0H64 M0-64V64 M-45-45L45 45 M45-45L-45 45"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 245 404" to="360 245 404" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle class="wheel" cx="555" cy="404" r="72"/>
+      <g class="spokes" transform="translate(555 404)">
+        <path class="spoke" d="M-64 0H64 M0-64V64 M-45-45L45 45 M45-45L-45 45"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 555 404" to="360 555 404" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <path class="frame" d="M245 404 L343 316 L410 404 L245 404 L377 404 L343 316 L465 316 L555 404 M343 316 L328 286 M310 286H349 M465 316L480 287 M462 287H499"/>
+    <circle cx="377" cy="404" r="16" fill="#ffd66b" stroke="#183044" stroke-width="4"/>
+    <path d="M377 404L405 426 M377 404L349 382" stroke="#183044" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="245" cy="404" r="7" fill="#183044"/>
+    <circle cx="555" cy="404" r="7" fill="#183044"/>
+  </g>
+
+  <!-- Pelican and rider bob -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="0.55s" repeatCount="indefinite"/>
+    <!-- tail -->
+    <path d="M350 256 Q314 239 303 263 Q329 274 355 273" fill="#f6f3e8" class="ink"/>
+    <!-- body -->
+    <ellipse cx="407" cy="255" rx="78" ry="61" fill="#fffdf3" class="ink"/>
+    <path d="M373 272 Q407 295 448 270 Q435 309 397 307 Q378 298 373 272" fill="#e5a24e" class="ink"/>
+    <!-- wing -->
+    <path d="M375 247 Q413 220 453 250 Q428 280 390 272Z" fill="#e9edf0" class="ink"/>
+    <path d="M397 255 Q422 245 440 253" fill="none" stroke="#9babb2" stroke-width="4" stroke-linecap="round"/>
+    <!-- neck and head -->
+    <path d="M449 250 Q455 210 443 179 Q434 156 450 143" fill="none" stroke="#fffdf3" stroke-width="27" stroke-linecap="round"/>
+    <path d="M449 250 Q455 210 443 179 Q434 156 450 143" fill="none" stroke="#183044" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="453" cy="139" rx="34" ry="29" fill="#fffdf3" class="ink"/>
+    <!-- jaunty cap -->
+    <path d="M423 123 Q444 96 475 116 L481 128 Q449 120 423 133Z" fill="#e65d3e" class="ink"/>
+    <path d="M451 113L455 99" stroke="#183044" stroke-width="4" stroke-linecap="round"/>
+    <!-- beak and pouch -->
+    <path d="M476 143 Q514 135 555 150 Q521 163 477 158Z" fill="#f2b84b" class="ink"/>
+    <path d="M482 157 Q515 162 544 151 Q537 183 505 188 Q487 181 482 157Z" fill="#f08a5d" class="ink"/>
+    <path d="M490 160 Q512 166 531 158" fill="none" stroke="#c95b49" stroke-width="3"/>
+    <!-- fish in beak -->
+    <path d="M521 145 Q532 136 543 145 Q532 154 521 145 M543 145L551 139V151Z" fill="#54b9b6" stroke="#183044" stroke-width="2"/>
+    <circle cx="528" cy="144" r="1.8" fill="#183044"/>
+    <!-- eye and expression -->
+    <circle cx="462" cy="136" r="4.5" fill="#183044"/>
+    <path d="M455 127 Q465 122 473 128" fill="none" stroke="#183044" stroke-width="3" stroke-linecap="round"/>
+    <!-- legs pedaling -->
+    <path d="M389 299 Q382 326 369 376 M424 296 Q438 327 393 397" fill="none" stroke="#eeb357" stroke-width="9" stroke-linecap="round"/>
+    <path d="M369 376L354 382 M393 397L407 404" fill="none" stroke="#183044" stroke-width="5" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" values="-2 400 320;2 400 320;-2 400 320" dur="0.55s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- motion marks and fish commentary -->
+  <path d="M141 272L111 264 M150 291L116 291 M163 309L134 319" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M577 196 Q595 178 613 196 Q595 214 577 196 M613 196L626 185V207Z" fill="#54b9b6" stroke="#183044" stroke-width="3"/>
+  <circle cx="586" cy="194" r="2.5" fill="#183044"/>
+  <text x="630" y="191" class="small" font-size="14" font-weight="700" fill="#183044">I regret</text>
+  <text x="630" y="208" class="small" font-size="14" font-weight="700" fill="#183044">everything.</text>
+
+  <path d="M0 507H800" stroke="#183044" stroke-width="4"/>
+  <text x="400" y="541" text-anchor="middle" class="small" font-size="17" font-weight="700" fill="#183044">A bird of leisure. A cyclist of questionable judgment.</text>
+  <text x="400" y="578" text-anchor="middle" class="small" font-size="15" font-weight="700" fill="#183044">2026-10-30 07:32:34 SGT (UTC+08:00)</text>
+</svg>
