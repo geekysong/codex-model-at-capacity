@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commuter</title>
+  <desc id="desc">A determined pelican pedals a bicycle, carrying an absurdly oversized fish in its beak.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#183047;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2.8s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .55s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f2"/>
+  <circle cx="664" cy="106" r="43" fill="#ffd166"/>
+  <path d="M0 360 Q130 300 270 355 T545 340 T800 350 V500 H0Z" fill="#b9e4cf"/>
+  <path d="M0 405 Q180 383 340 405 T800 397" fill="none" stroke="#83c9b0" stroke-width="5"/>
+  <path d="M0 458 H800" stroke="#183047" stroke-width="5"/>
+  <path d="M0 478 H800" stroke="#fff" stroke-width="4" stroke-dasharray="32 28"/>
+
+  <text x="40" y="58" fill="#183047" font-family="system-ui,sans-serif" font-size="34" font-weight="900" letter-spacing="1">THE PELICAN COMMUTER</text>
+  <text x="42" y="88" fill="#31566b" font-family="system-ui,sans-serif" font-size="17" font-weight="600">“Lane discipline? I thought you said lake discipline.”</text>
+
+  <!-- bicycle frame -->
+  <g fill="none" class="ink">
+    <circle cx="230" cy="410" r="58" fill="#f7ffff"/>
+    <circle cx="535" cy="410" r="58" fill="#f7ffff"/>
+    <path d="M230 410 L333 410 L286 320 Z" stroke="#ef476f" stroke-width="9"/>
+    <path d="M333 410 L420 410 L535 410" stroke="#ef476f" stroke-width="9"/>
+    <path d="M286 320 L420 410" stroke="#ef476f" stroke-width="9"/>
+    <path d="M286 320 L270 305 M251 305 H291" stroke-width="7"/>
+    <path d="M535 410 L552 316 L585 302 M552 316 L575 318" stroke-width="7"/>
+    <circle cx="333" cy="410" r="10" fill="#ffd166" stroke-width="4"/>
+  </g>
+
+  <!-- rotating spokes -->
+  <g class="wheel" fill="none" stroke="#4f7180" stroke-width="2">
+    <path d="M230 354V466 M174 410H286 M190 370L270 450 M190 450L270 370"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#4f7180" stroke-width="2">
+    <path d="M535 354V466 M479 410H591 M495 370L575 450 M495 450L575 370"/>
+  </g>
+
+  <!-- rider bobbing gently -->
+  <g class="rider">
+    <!-- body and wing -->
+    <path d="M343 291 Q363 252 405 266 Q438 278 426 329 L399 362 L350 331Z" fill="#fffdf5" class="ink"/>
+    <path d="M371 289 Q402 278 416 307 Q398 326 366 321 Q351 310 371 289Z" fill="#d7e6e7" class="ink"/>
+    <path d="M352 326 L339 359 L322 369" fill="none" class="ink"/>
+    <path d="M416 322 L438 350 L458 350" fill="none" class="ink"/>
+    <!-- legs and pedals -->
+    <path d="M358 333 L335 387 L365 410 M407 337 L426 383 L399 410" fill="none" class="ink"/>
+    <path d="M320 410 H345 M387 410 H411" fill="none" class="ink"/>
+    <!-- neck and head -->
+    <path d="M375 278 Q372 235 398 214 Q423 195 447 218" fill="none" stroke="#fffdf5" stroke-width="24" stroke-linecap="round"/>
+    <path d="M375 278 Q372 235 398 214 Q423 195 447 218" fill="none" class="ink"/>
+    <ellipse cx="449" cy="217" rx="35" ry="30" fill="#fffdf5" class="ink"/>
+    <circle cx="460" cy="209" r="4.5" fill="#183047"/>
+    <path d="M478 223 Q531 222 571 238 Q530 255 478 237Z" fill="#f4a261" class="ink"/>
+    <path d="M479 237 Q524 260 557 250 Q536 274 499 256Z" fill="#e76f51" class="ink"/>
+    <!-- fish in beak -->
+    <path d="M516 225 Q541 207 566 224 Q543 240 516 225Z" fill="#43aa8b" stroke="#183047" stroke-width="3"/>
+    <path d="M566 224 L581 213 L580 235Z" fill="#ffd166" stroke="#183047" stroke-width="3"/>
+    <circle cx="537" cy="222" r="2.5" fill="#183047"/>
+    <!-- helmet -->
+    <path d="M418 197 Q426 169 455 177 Q476 184 480 203 L435 202Z" fill="#118ab2" class="ink"/>
+    <path d="M432 202 L477 205" fill="none" stroke="#183047" stroke-width="5"/>
+    <!-- sweat -->
+    <path d="M396 238 Q385 252 396 258 Q407 252 396 238Z" fill="#56cfe1"/>
+  </g>
+
+  <path d="M613 314 Q632 291 653 314 L653 344 Q633 357 613 344Z" fill="#fff" class="ink"/>
+  <text x="621" y="336" fill="#183047" font-family="system-ui,sans-serif" font-size="19" font-weight="900">HONK!</text>
+
+  <rect x="20" y="530" width="760" height="50" rx="14" fill="#183047"/>
+  <text x="400" y="550" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="16" font-weight="700">He’s cycling to work. The fish is his emotional support passenger.</text>
+  <text x="400" y="570" text-anchor="middle" fill="#ffd166" font-family="system-ui,sans-serif" font-size="15" font-weight="700">2026-10-30 05:02:11 SGT (UTC+08:00)</text>
+</svg>
