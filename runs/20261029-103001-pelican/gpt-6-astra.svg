@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Pelican Pedal Panic</title>
+  <desc>A satirical cartoon pelican rides a bicycle while taking itself far too seriously.</desc>
+  <style>
+    .ink{stroke:#18212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{fill:#d9f0f2;stroke:#18212b;stroke-width:7}
+    .spoke{stroke:#5a8990;stroke-width:3}
+    .label{font-family:Arial,sans-serif;fill:#18212b}
+    .tiny{font-family:Arial,sans-serif;font-size:15px;fill:#18212b}
+    .feather{fill:#fff7e8}
+    .orange{fill:#f28c28}
+    .blue{fill:#58b8c4}
+  </style>
+
+  <rect width="800" height="600" fill="#bde9ef"/>
+  <rect y="430" width="800" height="170" fill="#83c875"/>
+  <path d="M0 445 Q180 410 360 445 T800 440" fill="none" stroke="#4e9b58" stroke-width="8"/>
+
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="38" font-weight="900">PELICAN PEDAL PANIC!</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="18" font-weight="700">“Why walk when you can wobble with confidence?”</text>
+
+  <g opacity=".8">
+    <path d="M95 155 q25-20 50 0 q-25 14-50 0" fill="#fff" class="ink"/>
+    <path d="M650 145 q25-20 50 0 q-25 14-50 0" fill="#fff" class="ink"/>
+  </g>
+
+  <g id="bike">
+    <g id="rearWheel">
+      <circle cx="250" cy="425" r="78" class="wheel"/>
+      <g class="spoke">
+        <path d="M250 347v156M172 425h156M195 370l110 110M305 370L195 480"/>
+      </g>
+      <circle cx="250" cy="425" r="10" fill="#18212b"/>
+    </g>
+    <g id="frontWheel">
+      <circle cx="590" cy="425" r="78" class="wheel"/>
+      <g class="spoke">
+        <path d="M590 347v156M512 425h156M535 370l110 110M645 370L535 480"/>
+      </g>
+      <circle cx="590" cy="425" r="10" fill="#18212b"/>
+    </g>
+    <path d="M250 425 L350 315 L470 425 L250 425 M350 315 L590 425 M470 425 L520 300 L590 425" fill="none" class="ink"/>
+    <path d="M505 300 h55" class="ink"/>
+    <path d="M335 315 q-15-25 5-40" fill="none" class="ink"/>
+    <circle cx="350" cy="425" r="27" fill="#f6c44f" class="ink"/>
+    <path d="M350 425 l-32 18 M350 425 l28-20" class="ink"/>
+    <path d="M318 443 l-18 7 M378 405 l17-9" class="ink"/>
+    <path d="M260 350 q-55-18-78 15" fill="none" class="ink"/>
+    <path d="M182 365 h-30" class="ink"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="402" cy="260" rx="74" ry="92" class="feather ink"/>
+    <path d="M360 224 q-34-62 12-99 q45-35 76 14 q19 31-1 74" class="feather ink"/>
+    <path d="M395 174 q-27-41 4-65 q31-22 55 11 q12 18 1 40" fill="#f2a33a" class="ink"/>
+    <circle cx="430" cy="135" r="10" fill="#18212b"/>
+    <path d="M443 151 q62 8 105 43 q-53 30-108 10 q-24-10-21-28 q3-23 24-25z" class="orange ink"/>
+    <path d="M445 174 q45 14 93 20" fill="none" stroke="#a85417" stroke-width="4"/>
+    <path d="M359 255 q-43 15-50 53 q31 12 65-16" fill="#fff" class="ink"/>
+    <path d="M458 255 q45 15 53 53 q-32 12-66-16" fill="#fff" class="ink"/>
+    <path d="M374 338 q-12 47-1 77" fill="none" class="ink"/>
+    <path d="M437 338 q12 47 1 77" fill="none" class="ink"/>
+    <path d="M373 410 l-24 14 M439 410 l25 14" class="ink"/>
+    <path d="M363 283 q38 17 77 0" fill="none" stroke="#18212b" stroke-width="5"/>
+    <path d="M385 286 q10 12 20 0" fill="none" stroke="#18212b" stroke-width="4"/>
+    <text x="402" y="235" text-anchor="middle" class="label" font-size="18" font-weight="900">HONK!</text>
+  </g>
+
+  <path d="M90 330 q20-28 40 0 q20-28 40 0" fill="none" class="ink"/>
+  <text x="92" y="318" class="label" font-size="18" font-weight="700">NO</text>
+  <text x="80" y="342" class="label" font-size="18" font-weight="700">BIRD</text>
+  <text x="80" y="366" class="label" font-size="18" font-weight="700">BRAINS?</text>
+
+  <text x="400" y="545" text-anchor="middle" class="label" font-size="17" font-weight="700">A determined pelican pedals boldly toward absolutely nowhere.</text>
+  <text x="400" y="578" text-anchor="middle" class="tiny">2026-10-29 10:30:01 SGT (UTC+08:00)</text>
+
+  <g>
+    <animateTransform href="#rearWheel" attributeName="transform" type="rotate" from="0 250 425" to="360 250 425" dur="1.1s" repeatCount="indefinite"/>
+    <animateTransform href="#frontWheel" attributeName="transform" type="rotate" from="0 590 425" to="360 590 425" dur="1.1s" repeatCount="indefinite"/>
+  </g>
+</svg>

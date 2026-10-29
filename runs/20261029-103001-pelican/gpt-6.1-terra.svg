@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Power Ride</title>
+  <desc id="desc">A satirical pelican rides a bicycle while proudly ignoring traffic rules.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .text{font-family:Arial,sans-serif;fill:#17324d}
+      .wheel{fill:#d9f3ff;stroke:#17324d;stroke-width:7}
+      .spoke{stroke:#5b8aa8;stroke-width:3}
+      .flap{transform-box:fill-box;transform-origin:center;animation:flap 1s ease-in-out infinite alternate}
+      .bodybob{animation:bob .8s ease-in-out infinite alternate}
+      @keyframes flap{from{transform:rotate(-8deg)}to{transform:rotate(10deg)}}
+      @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d6"/>
+  <rect x="28" y="24" width="744" height="92" rx="22" fill="#ffcf4a" class="ink"/>
+  <text x="400" y="66" text-anchor="middle" class="text" font-size="34" font-weight="800">PELICAN POWER RIDE</text>
+  <text x="400" y="96" text-anchor="middle" class="text" font-size="18" font-weight="700">“Why obey traffic rules when you have a beak this big?”</text>
+
+  <path d="M65 470 Q400 430 735 470" fill="none" stroke="#79b86b" stroke-width="18"/>
+  <path d="M70 490 Q400 450 730 490" fill="none" stroke="#4f8e59" stroke-width="5"/>
+
+  <g aria-label="bicycle">
+    <g transform="translate(0 0)">
+      <circle cx="235" cy="425" r="92" class="wheel">
+        <animateTransform attributeName="transform" type="rotate" from="0 235 425" to="360 235 425" dur="2s" repeatCount="indefinite"/>
+        <g>
+          <line x1="235" y1="333" x2="235" y2="517" class="spoke"/>
+          <line x1="143" y1="425" x2="327" y2="425" class="spoke"/>
+          <line x1="170" y1="360" x2="300" y2="490" class="spoke"/>
+          <line x1="300" y1="360" x2="170" y2="490" class="spoke"/>
+        </g>
+      </circle>
+      <circle cx="575" cy="425" r="92" class="wheel">
+        <animateTransform attributeName="transform" type="rotate" from="0 575 425" to="360 575 425" dur="2s" repeatCount="indefinite"/>
+        <g>
+          <line x1="575" y1="333" x2="575" y2="517" class="spoke"/>
+          <line x1="483" y1="425" x2="667" y2="425" class="spoke"/>
+          <line x1="510" y1="360" x2="640" y2="490" class="spoke"/>
+          <line x1="640" y1="360" x2="510" y2="490" class="spoke"/>
+        </g>
+      </circle>
+      <path d="M235 425 L345 330 L575 425 L470 425 L345 330 L410 425" fill="none" class="ink"/>
+      <path d="M345 330 L320 285" class="ink"/>
+      <path d="M305 285 L345 285" class="ink"/>
+      <path d="M575 425 L600 300" class="ink"/>
+      <path d="M580 300 L625 300" class="ink"/>
+      <circle cx="410" cy="425" r="18" fill="#ff7a59" class="ink"/>
+      <g>
+        <line x1="410" y1="425" x2="450" y2="455" class="ink"/>
+        <line x1="410" y1="425" x2="375" y2="390" class="ink"/>
+        <ellipse cx="461" cy="462" rx="22" ry="8" fill="#ff7a59" class="ink"/>
+        <ellipse cx="366" cy="383" rx="22" ry="8" fill="#ff7a59" class="ink"/>
+      </g>
+    </g>
+  </g>
+
+  <g class="bodybob" aria-label="pelican">
+    <ellipse cx="410" cy="270" rx="105" ry="88" fill="#f7f7ef" class="ink"/>
+    <ellipse cx="350" cy="205" rx="58" ry="70" fill="#f7f7ef" class="ink"/>
+    <path d="M310 215 Q245 225 180 205 Q245 270 330 245 Z" fill="#f28b35" class="ink"/>
+    <path d="M180 205 Q235 220 305 210" fill="none" stroke="#c65b24" stroke-width="5"/>
+    <circle cx="334" cy="188" r="9" fill="#17324d"/>
+    <path d="M381 250 Q425 220 455 245" fill="none" stroke="#17324d" stroke-width="5"/>
+    <path d="M385 278 Q420 300 447 276" fill="none" stroke="#17324d" stroke-width="5"/>
+    <path d="M470 245 Q535 210 560 255 Q520 300 465 285" fill="#f7f7ef" class="ink flap"/>
+    <path d="M355 330 L335 385" class="ink"/>
+    <path d="M445 330 L475 380" class="ink"/>
+    <path d="M319 386 Q345 400 365 385" fill="none" class="ink"/>
+    <path d="M460 380 Q490 397 510 380" fill="none" class="ink"/>
+    <path d="M365 174 Q390 130 430 155" fill="none" stroke="#f28b35" stroke-width="15"/>
+    <text x="490" y="175" class="text" font-size="17" font-weight="700">NO BRAKES!</text>
+    <path d="M487 181 L455 215" fill="none" class="ink"/>
+  </g>
+
+  <g aria-label="comic speech">
+    <path d="M585 150 Q700 130 735 190 Q745 250 670 260 Q615 255 585 220 Q560 185 585 150Z" fill="#ffffff" class="ink"/>
+    <path d="M615 250 L590 285 L650 258" fill="#ffffff" class="ink"/>
+    <text x="660" y="185" text-anchor="middle" class="text" font-size="20" font-weight="800">HONK!</text>
+    <text x="660" y="212" text-anchor="middle" class="text" font-size="16">That’s my</text>
+    <text x="660" y="233" text-anchor="middle" class="text" font-size="16">beak!</text>
+  </g>
+
+  <rect x="34" y="548" width="732" height="34" rx="10" fill="#d9f3ff" class="ink"/>
+  <text x="400" y="571" text-anchor="middle" class="text" font-size="16" font-weight="700">2026-10-29 10:31:48 SGT (UTC+08:00)</text>
+</svg>
