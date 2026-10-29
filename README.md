@@ -2,7 +2,9 @@
 
 **English** | [中文](README.zh-CN.md)
 
-> **Project ended 2026-10-29.** The Codex subscription was cancelled because Codex kept getting dumber (persistent degradation). Final dataset: 267 cron time points / 480 round ids / 1962 entries, 2026-10-24 08:39 → 2026-10-29 11:06 SGT. The 20 round ids after 11:30 SGT (80 entries; the account was downgraded and three models returned `model is not supported`) were purged as non-comparable; see `closeout.json` and the site banner.
+> **Census resumed 2026-10-29**, every 30 minutes through November 12, 2026 (SGT inclusive). Previous closeout and excluded records remain documented in `closeout.json`; new attempts retain errors as evidence.
+
+Account region: earlier runs used a Philippines-region account. Resumed runs from October 29, 2026 use a Singapore-region account. Account and region changed together; consider this when comparing the two periods.
 
 ## Why this exists
 
