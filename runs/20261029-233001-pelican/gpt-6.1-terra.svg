@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commuter</title>
+  <desc id="desc">A pelican rides a bicycle with spinning wheels and a bobbing body.</desc>
+  <defs>
+    <style>
+      .outline { stroke:#263442; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#263442; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+      .spin { animation: spin 2s linear infinite; transform-box:fill-box; transform-origin:center; }
+      .bob { animation: bob 1s ease-in-out infinite; }
+      .pedal { animation: spin 2s linear infinite; transform-origin:397px 390px; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-5px); } }
+      text { font-family:Arial, Helvetica, sans-serif; fill:#263442; }
+    </style>
+    <pattern id="road" width="38" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 6h16" stroke="#d6bc91" stroke-width="3" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e8"/>
+  <rect x="22" y="20" width="756" height="560" rx="24" fill="#e8f7f5" stroke="#263442" stroke-width="4"/>
+  <text x="400" y="70" text-anchor="middle" font-size="35" font-weight="900" letter-spacing="2">THE PELICAN COMMUTER</text>
+  <text x="400" y="98" text-anchor="middle" font-size="17" font-weight="bold" fill="#4b6570">A VERY IMPORTANT BIRD ON A VERY SMALL BUDGET</text>
+
+  <circle cx="668" cy="152" r="35" fill="#ffd66d"/>
+  <g fill="#fff" opacity=".9">
+    <path d="M75 165c3-19 28-25 39-9 12-13 36-6 36 10 14 0 21 9 21 17H65c0-10 4-16 10-18z"/>
+    <path d="M537 139c2-14 21-19 30-7 10-10 27-5 28 8 11 0 16 6 16 13h-81c0-7 2-12 7-14z"/>
+  </g>
+  <path d="M24 443h752v58H24z" fill="#e8d4ad"/>
+  <path d="M24 455h752v40H24z" fill="url(#road)"/>
+  <path d="M24 443h752" stroke="#9eab89" stroke-width="5"/>
+  <g stroke="#94c7bd" stroke-width="4" stroke-linecap="round">
+    <path d="M78 330h86M101 346h48M92 365h65"/>
+    <path d="M141 307h48"/>
+  </g>
+
+  <!-- Bicycle wheels -->
+  <g class="spin">
+    <circle cx="259" cy="399" r="84" fill="#fffdf4" class="outline"/>
+    <circle cx="259" cy="399" r="73" fill="none" stroke="#df765c" stroke-width="4"/>
+    <g stroke="#83949a" stroke-width="3">
+      <path d="M259 326v146M186 399h146M207 347l104 104M311 347L207 451"/>
+    </g>
+    <circle cx="259" cy="399" r="8" fill="#263442"/>
+  </g>
+  <g class="spin">
+    <circle cx="528" cy="399" r="84" fill="#fffdf4" class="outline"/>
+    <circle cx="528" cy="399" r="73" fill="none" stroke="#df765c" stroke-width="4"/>
+    <g stroke="#83949a" stroke-width="3">
+      <path d="M528 326v146M455 399h146M476 347l104 104M580 347L476 451"/>
+    </g>
+    <circle cx="528" cy="399" r="8" fill="#263442"/>
+  </g>
+
+  <!-- Frame and handlebars -->
+  <g fill="none" stroke="#e45f4f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M259 399l91-100 47 91H259l143-91 126 100"/>
+  </g>
+  <path d="M397 390l-54-112M518 366l-29-100h-26" fill="none" class="outline"/>
+  <path d="M326 277h44" class="outline"/>
+  <path d="M455 266h22" class="outline"/>
+  <circle cx="397" cy="390" r="19" fill="#fff8e8" class="thin"/>
+  <g class="pedal">
+    <path d="M397 390l22 19" class="thin"/>
+    <path d="M410 410h23" class="outline"/>
+    <path d="M397 390l-22-19" class="thin"/>
+    <path d="M362 370h23" class="outline"/>
+  </g>
+
+  <!-- Bobbing rider -->
+  <g class="bob">
+    <path d="M350 273c-20 21-27 43-15 54 13 12 33-3 46-27l17-27" fill="#f5a536" class="outline"/>
+    <path d="M365 326l18 29 22 7" fill="none" stroke="#eea02d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M401 362l20 1" class="outline"/>
+    <path d="M335 296c-21 2-37-6-49-24 20 4 33 1 45-9" fill="#f6f1dd" class="outline"/>
+    <path d="M315 234c-2 44 31 72 79 68 48-3 69-27 61-62-7-30-35-45-73-40-32 4-65 13-67 34z" fill="#fffdf3" class="outline"/>
+    <path d="M326 239c13 20 40 35 70 29 15-3 25-10 32-20-21 5-36-3-47-15-13 8-33 10-55 6z" fill="#d7e3dc" class="thin"/>
+    <path d="M428 244c17 10 26 23 38 27" fill="none" class="outline"/>
+    <path d="M466 271l12-5" class="outline"/>
+    <path d="M399 207c5-26 5-50 13-69 9-21 29-30 50-24 23 7 29 29 22 51l-14 48" fill="#fffdf3" class="outline"/>
+    <path d="M469 164c29 2 65 4 112 16-27 11-63 16-99 13-9-1-17-3-24-7z" fill="#f3a331" class="outline"/>
+    <path d="M471 188c17 19 31 45 57 48 21 2 36-15 53-56-36 11-73 15-110 8z" fill="#f7c45d" class="outline"/>
+    <path d="M484 192c23 4 48 3 72-2" fill="none" stroke="#d28a27" stroke-width="3"/>
+    <ellipse cx="460" cy="144" rx="12" ry="14" fill="#fff" class="thin"/>
+    <circle cx="464" cy="146" r="5" fill="#263442"/>
+    <path d="M449 122q11-8 22-2" fill="none" class="thin"/>
+    <path d="M411 124l4-21 58 8 5 19z" fill="#375d78" class="outline"/>
+    <path d="M404 125q38 6 81 11" fill="none" stroke="#263442" stroke-width="8" stroke-linecap="round"/>
+    <path d="M427 107l5-13 24 4 2 14" fill="#f4c957" class="thin"/>
+  </g>
+
+  <g transform="translate(619 260)">
+    <path d="M0 0h102v72H0z" fill="#fffaf0" class="thin"/>
+    <path d="M51 72v103" class="thin"/>
+    <text x="51" y="28" text-anchor="middle" font-size="13" font-weight="bold">BIKE LANE</text>
+    <text x="51" y="49" text-anchor="middle" font-size="12">FISH FREE</text>
+    <text x="51" y="64" text-anchor="middle" font-size="12">SINCE 8 AM</text>
+  </g>
+
+  <text x="400" y="530" text-anchor="middle" font-size="21" font-weight="bold">“My other vehicle is a mouthful.”</text>
+  <path d="M75 545h650" stroke="#a7c7c1" stroke-width="2"/>
+  <text x="400" y="568" text-anchor="middle" font-size="15" font-weight="bold">2026-10-29 23:33:25 SGT (UTC+08:00)</text>
+</svg>
