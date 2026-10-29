@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Peli-can Do It!</title>
+  <desc id="description">A determined pelican rides a bicycle, wobbling toward an absurdly small fish-shaped finish line.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#243247;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#fff;stroke:#243247;stroke-width:8}
+      .spoke{stroke:#8193a2;stroke-width:2}
+      .body{fill:#f7f0dc}
+      .orange{fill:#f28c32}
+      .blue{fill:#68c6d0}
+      .label{font-family:Verdana,Arial,sans-serif;fill:#243247}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-5px) rotate(1deg)}}
+      .rolling{transform-box:fill-box;transform-origin:center;animation:spin 1.6s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .8s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#c8eff0"/>
+  <circle cx="670" cy="105" r="48" fill="#ffd66b"/>
+  <path d="M0 330 Q100 290 205 326 T410 320 T620 318 T800 325 V520 H0Z" fill="#9ed9a5"/>
+  <path d="M0 386 Q150 362 300 388 T600 382 T800 390" fill="none" stroke="#fff" stroke-width="5" opacity=".75"/>
+  <text x="400" y="58" text-anchor="middle" class="label" font-size="34" font-weight="900">PELI-CAN DO IT!</text>
+  <text x="400" y="88" text-anchor="middle" class="label" font-size="16">“I’m late for lunch. The fish has a meeting.”</text>
+
+  <!-- Tiny fish finish line -->
+  <path d="M682 244 V350 M735 244 V350 M682 252 H735" fill="none" class="ink"/>
+  <path d="M700 233 Q711 215 722 233 Q711 251 700 233Z" fill="#ffb84d" class="ink"/>
+  <circle cx="716" cy="231" r="2.5" fill="#243247"/>
+  <text x="707" y="374" text-anchor="middle" class="label" font-size="12" font-weight="bold">LUNCH?</text>
+
+  <!-- Bicycle -->
+  <g aria-label="bicycle">
+    <circle class="wheel" cx="235" cy="428" r="72"/>
+    <circle class="wheel" cx="525" cy="428" r="72"/>
+    <g class="rolling">
+      <path class="spoke" d="M235 356V500 M163 428H307 M184 377L286 479 M286 377L184 479"/>
+    </g>
+    <g class="rolling">
+      <path class="spoke" d="M525 356V500 M453 428H597 M474 377L576 479 M576 377L474 479"/>
+    </g>
+    <path d="M235 428 L330 428 L390 350 L455 428 L330 428 L300 365 M390 350 L525 428" fill="none" stroke="#e95148" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="330" cy="428" r="12" fill="#ffd66b" class="ink"/>
+    <path d="M285 357 H325 M285 357 L272 369 M445 348 H480 M445 348 L437 360" fill="none" class="ink"/>
+    <path d="M379 343 L390 329 L404 329" fill="none" class="ink"/>
+    <path d="M315 428 L295 445 M343 428 L363 445" fill="none" class="ink"/>
+  </g>
+
+  <!-- Expressive pelican rider -->
+  <g class="rider">
+    <path d="M337 327 Q336 286 366 264 Q398 241 431 264 Q451 279 448 310 L433 354 L376 362Z" class="body ink"/>
+    <path d="M355 293 Q366 253 407 256 Q438 259 444 288 Q429 276 410 282 Q388 292 355 293Z" fill="#4f6378" class="ink"/>
+    <path d="M420 287 Q448 281 477 293 Q491 299 478 307 L432 312Z" class="orange ink"/>
+    <path d="M432 312 Q454 308 474 307 Q470 330 448 335 Q437 330 432 312Z" fill="#f5a047" class="ink"/>
+    <circle cx="425" cy="282" r="5.5" fill="#243247"/>
+    <circle cx="427" cy="280" r="1.8" fill="#fff"/>
+    <path d="M402 311 Q415 315 426 310" fill="none" class="ink"/>
+    <path d="M375 351 Q350 363 332 381 L316 407" fill="none" stroke="#f7f0dc" stroke-width="16" stroke-linecap="round"/>
+    <path d="M430 348 Q450 360 468 382 L476 407" fill="none" stroke="#f7f0dc" stroke-width="16" stroke-linecap="round"/>
+    <path d="M316 407 L303 415 M476 407 L488 415" fill="none" stroke="#f28c32" stroke-width="9" stroke-linecap="round"/>
+    <path d="M373 356 Q390 370 400 391 L389 421 M429 354 Q415 373 410 394 L426 420" fill="none" stroke="#f28c32" stroke-width="10" stroke-linecap="round"/>
+    <path d="M382 421 Q397 416 407 423 M419 420 Q433 415 444 422" fill="none" class="ink"/>
+    <!-- panic sweat and speech -->
+    <path d="M463 263 Q455 249 465 241 Q476 251 463 263Z" fill="#68c6d0" class="ink"/>
+    <path d="M487 267 Q501 259 510 267 M490 278 Q505 276 513 284" fill="none" stroke="#243247" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <path d="M107 238 Q107 199 149 199 H302 Q342 199 342 238 V259 Q342 290 302 290 H190 L161 312 L166 290 H149 Q107 290 107 259Z" fill="#fff" class="ink"/>
+  <text x="224" y="235" text-anchor="middle" class="label" font-size="16" font-weight="bold">I SAID “CYCLE”</text>
+  <text x="224" y="258" text-anchor="middle" class="label" font-size="16" font-weight="bold">NOT “FISH-CYCLE”!</text>
+
+  <path d="M54 506 Q180 492 300 507 T550 504 T746 507" fill="none" stroke="#568b62" stroke-width="4"/>
+  <text x="400" y="548" text-anchor="middle" class="label" font-size="13" font-weight="bold">PELICAN POWER: 1 PEDAL, 3 HONKS, ZERO HELMET REGRETS</text>
+  <text x="400" y="581" text-anchor="middle" class="label" font-size="14" font-weight="bold">2026-10-30 06:32:23 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A pelican rides a bicycle with fish in its enormous bill while the wheels turn and its legs pedal.</desc>
+  <defs>
+    <style>
+      .ink { stroke: #25304a; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2s linear infinite; }
+      .rider { animation: bob 1s ease-in-out infinite; }
+      .leg { transform-box: fill-box; transform-origin: 15% 12%; animation: pedal 1s ease-in-out infinite alternate; }
+      .leg.back { animation-direction: alternate-reverse; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+      @keyframes pedal { from { transform: rotate(-13deg); } to { transform: rotate(15deg); } }
+      @media (prefers-reduced-motion: reduce) { .wheel, .rider, .leg { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8efd9"/>
+  <rect x="0" y="0" width="800" height="525" fill="#c7edf0"/>
+  <circle cx="674" cy="131" r="42" fill="#ffd36b"/>
+  <path d="M0 340 Q100 320 200 341 T400 341 T600 341 T800 341 V525 H0Z" fill="#a5d8cd"/>
+  <path d="M0 385 Q110 375 220 387 T440 387 T660 387 T800 387 V525 H0Z" fill="#e7d2a9"/>
+  <path d="M0 484 H800" stroke="#c6ab80" stroke-width="5"/>
+  <path d="M20 501 H160 M220 501 H360 M420 501 H560 M620 501 H760" stroke="#fff7e6" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="400" y="57" text-anchor="middle" fill="#25304a" font-family="Arial, sans-serif" font-size="37" font-weight="900" letter-spacing="2">THE PELICAN EXPRESS</text>
+  <text x="400" y="83" text-anchor="middle" fill="#42566a" font-family="Arial, sans-serif" font-size="16" font-weight="bold">FRESH FISH. QUESTIONABLE TRANSPORT.</text>
+
+  <g class="wheel">
+    <circle cx="215" cy="406" r="77" fill="#fff9e9" stroke="#25304a" stroke-width="10"/>
+    <circle cx="215" cy="406" r="62" fill="none" stroke="#9bb0ad" stroke-width="3"/>
+    <path d="M215 329 V483 M138 406 H292 M161 352 L269 460 M161 460 L269 352" stroke="#9bb0ad" stroke-width="3"/>
+    <circle cx="215" cy="406" r="8" fill="#25304a"/>
+  </g>
+  <g class="wheel">
+    <circle cx="550" cy="406" r="77" fill="#fff9e9" stroke="#25304a" stroke-width="10"/>
+    <circle cx="550" cy="406" r="62" fill="none" stroke="#9bb0ad" stroke-width="3"/>
+    <path d="M550 329 V483 M473 406 H627 M496 352 L604 460 M496 460 L604 352" stroke="#9bb0ad" stroke-width="3"/>
+    <circle cx="550" cy="406" r="8" fill="#25304a"/>
+  </g>
+
+  <path d="M215 406 L305 306 L390 406 Z M305 306 L481 306 L390 406 M481 306 L550 406 M469 287 L490 319" fill="none" stroke="#e76046" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M290 292 H329" class="ink" fill="none" stroke-width="9"/>
+  <path d="M481 306 L502 269 H532 Q547 269 547 282" class="ink" fill="none"/>
+  <path d="M535 282 H554" class="ink" fill="none" stroke-width="8"/>
+  <circle cx="390" cy="406" r="15" fill="#f8efd9" stroke="#25304a" stroke-width="5"/>
+  <path d="M390 406 L420 425 M411 426 H433" class="ink" fill="none"/>
+  <path d="M214 311 Q244 295 270 310" fill="none" stroke="#25304a" stroke-width="5"/>
+
+  <g class="rider">
+    <path class="leg back" d="M350 307 Q343 343 376 379 L400 405" fill="none" stroke="#e99b46" stroke-width="12" stroke-linecap="round"/>
+    <path d="M324 272 Q292 271 270 250 Q278 290 310 302" fill="#c9d7d2" stroke="#25304a" stroke-width="4" stroke-linejoin="round"/>
+    <ellipse cx="365" cy="264" rx="76" ry="52" fill="#fffaf0" stroke="#25304a" stroke-width="5"/>
+    <path d="M320 255 Q349 228 393 255 Q379 292 340 286 Q360 276 365 263 Q344 276 320 255Z" fill="#dce6df" stroke="#25304a" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M407 263 Q433 252 433 219 L433 180 Q433 143 462 137 Q494 133 499 164 Q502 189 478 206 Q470 232 476 250 Q478 269 460 279" fill="#fffaf0" stroke="#25304a" stroke-width="5"/>
+    <path d="M478 174 Q533 166 606 180 Q559 194 484 192Z" fill="#efa543" stroke="#25304a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M485 192 Q539 195 600 181 Q573 250 524 242 Q492 236 485 192Z" fill="#f7c35d" stroke="#25304a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M522 212 Q535 202 548 212 Q535 222 522 212Z" fill="#7eb8bb" stroke="#25304a" stroke-width="2"/>
+    <path d="M548 212 L556 205 L556 219Z" fill="#7eb8bb" stroke="#25304a" stroke-width="2"/>
+    <circle cx="529" cy="210" r="1.8" fill="#25304a"/>
+    <circle cx="476" cy="160" r="10" fill="#fff" stroke="#25304a" stroke-width="3"/>
+    <circle cx="479" cy="160" r="4" fill="#25304a"/>
+    <path d="M464 144 Q474 137 485 142" fill="none" stroke="#25304a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M445 127 Q458 110 480 121 L488 137 L438 137Z" fill="#e76046" stroke="#25304a" stroke-width="4"/>
+    <path d="M431 137 H497" stroke="#25304a" stroke-width="5" stroke-linecap="round"/>
+    <path class="leg" d="M368 307 Q382 349 408 376 L420 420" fill="none" stroke="#e99b46" stroke-width="12" stroke-linecap="round"/>
+    <path d="M415 420 Q430 421 442 414" fill="none" stroke="#e99b46" stroke-width="10" stroke-linecap="round"/>
+    <path d="M408 250 Q450 258 486 280 L526 280" fill="none" stroke="#25304a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M514 276 Q524 267 534 278" fill="none" stroke="#fffaf0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <path d="M122 345 H91 M132 365 H76 M126 385 H99" stroke="#fffaf0" stroke-width="5" stroke-linecap="round"/>
+  <rect x="0" y="525" width="800" height="75" fill="#25304a"/>
+  <text x="400" y="553" text-anchor="middle" fill="#fff8e8" font-family="Arial, sans-serif" font-size="19" font-weight="bold">He delivers lunch, but the tip is always a little fishy.</text>
+  <text x="400" y="580" text-anchor="middle" fill="#c7edf0" font-family="Arial, sans-serif" font-size="15">2026-10-30 06:32:44 SGT (UTC+08:00)</text>
+</svg>
