@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pelican on a Bicycle</title>
+  <desc>A satirical cartoon of a pelican pedaling furiously while carrying a fish-shaped briefcase.</desc>
+  <style>
+    .ink{stroke:#20252b;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+    .wheel{fill:#d9f0f2;stroke:#20252b;stroke-width:8}
+    .spoke{stroke:#6a8b90;stroke-width:3}
+    .caption{font-family:Verdana,sans-serif;font-size:20px;font-weight:bold;fill:#20252b}
+    .small{font-family:Verdana,sans-serif;font-size:15px;fill:#20252b}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    @keyframes flap{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-8deg)}}
+    .rotor{transform-box:fill-box;transform-origin:center;animation:spin 1.4s linear infinite}
+    .rider{animation:bob .7s ease-in-out infinite}
+    .wing{transform-box:fill-box;transform-origin:bottom center;animation:flap .8s ease-in-out infinite}
+  </style>
+
+  <rect width="800" height="600" fill="#fff8df"/>
+  <rect y="430" width="800" height="170" fill="#b8e3c0"/>
+  <path d="M0 455 Q120 420 240 455 T480 455 T800 455" fill="none" stroke="#79b68b" stroke-width="7"/>
+  <circle cx="90" cy="92" r="42" fill="#ffd46b" class="ink"/>
+  <path d="M0 150 Q110 115 220 150 T440 150 T660 150 T800 150" fill="none" stroke="#f1bb54" stroke-width="5"/>
+
+  <text x="400" y="55" text-anchor="middle" font-family="Verdana,sans-serif" font-size="38" font-weight="900" fill="#173b4d">THE GREAT PELICAN GETAWAY</text>
+  <text x="400" y="88" text-anchor="middle" class="caption">“Why fly when you can make traffic flap?”</text>
+
+  <!-- bicycle -->
+  <g aria-label="bicycle">
+    <g class="rotor">
+      <circle cx="220" cy="430" r="72" class="wheel"/>
+      <path d="M220 358V502M148 430H292M169 379L271 481M271 379L169 481" class="spoke"/>
+    </g>
+    <g class="rotor">
+      <circle cx="575" cy="430" r="72" class="wheel"/>
+      <path d="M575 358V502M503 430H647M524 379L626 481M626 379L524 481" class="spoke"/>
+    </g>
+    <path d="M220 430 L335 330 L455 430 L220 430 M335 330 L390 430 M455 430 L505 327 L575 430 M505 327 L548 327" fill="none" class="ink"/>
+    <path d="M322 320 L350 300" class="ink"/>
+    <path d="M534 318 L557 300" class="ink"/>
+    <circle cx="390" cy="430" r="17" fill="#f28b39" class="ink"/>
+    <path d="M390 430 L370 404 M390 430 L414 453" class="ink"/>
+    <path d="M370 404 l-22 -4 M414 453 l22 5" class="ink"/>
+    <path d="M350 300 h-32" class="ink"/>
+    <path d="M548 327 h30" class="ink"/>
+  </g>
+
+  <!-- pelican -->
+  <g class="rider">
+    <ellipse cx="405" cy="250" rx="92" ry="112" fill="#f5f1df" class="ink"/>
+    <path d="M345 210 Q300 180 285 218 Q318 244 360 250" fill="#dce8e7" class="ink wing"/>
+    <path d="M452 217 Q508 184 533 220 Q493 247 455 252" fill="#dce8e7" class="ink wing"/>
+    <circle cx="420" cy="145" r="67" fill="#f5f1df" class="ink"/>
+    <path d="M370 146 Q287 132 250 166 Q300 193 390 177 Q432 171 470 153" fill="#f39a45" class="ink"/>
+    <path d="M250 166 Q311 182 389 177" fill="none" stroke="#b7622a" stroke-width="4"/>
+    <circle cx="437" cy="132" r="10" fill="#20252b"/>
+    <circle cx="440" cy="128" r="3" fill="#fff"/>
+    <path d="M386 104 Q411 83 438 101" fill="none" class="ink"/>
+    <path d="M376 260 Q347 315 359 361" fill="none" class="ink"/>
+    <path d="M438 260 Q464 316 451 361" fill="none" class="ink"/>
+    <path d="M359 360 l-27 15 M451 360 l28 15" class="ink"/>
+    <path d="M361 359 L390 430 M451 359 L390 430" fill="none" class="ink"/>
+    <path d="M390 430 L370 404 M390 430 L414 453" fill="none" class="ink"/>
+    <path d="M305 224 Q281 204 266 218" fill="none" class="ink"/>
+    <text x="470" y="195" font-family="Verdana,sans-serif" font-size="18" font-weight="bold" fill="#b94e35">HONK!</text>
+    <path d="M500 160 q18 -20 35 0 M523 143 q18 -20 35 0" fill="none" stroke="#b94e35" stroke-width="5"/>
+  </g>
+
+  <!-- fish briefcase gag -->
+  <g transform="translate(515 205) rotate(8)">
+    <path d="M0 25 Q45 -5 105 25 L88 72 Q42 89 0 60 Z" fill="#77b8c2" class="ink"/>
+    <path d="M13 30 Q45 45 88 31" fill="none" stroke="#266b78" stroke-width="4"/>
+    <circle cx="72" cy="28" r="5" fill="#20252b"/>
+    <path d="M104 25 l25 -16 l-8 25 Z" fill="#77b8c2" class="ink"/>
+    <path d="M43 14 v-18 h28 v18" fill="none" class="ink"/>
+    <text x="24" y="57" font-family="Verdana,sans-serif" font-size="13" font-weight="bold" fill="#173b4d">TAXES</text>
+  </g>
+
+  <path d="M90 515 Q170 490 250 515 T410 515 T570 515 T800 515" fill="none" stroke="#4e9466" stroke-width="5"/>
+  <text x="400" y="550" text-anchor="middle" class="small">Pelican on a bicycle: delivering fish, paperwork, and questionable road etiquette.</text>
+  <text x="400" y="580" text-anchor="middle" class="small">2026-10-29 14:30:15 SGT (UTC+08:00)</text>
+</svg>
