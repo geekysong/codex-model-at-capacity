@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Tour de Beak</title>
+  <desc id="desc">A smug pelican pedals a bicycle, its enormous beak full of snacks, while a worm cheers from the roadside.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#243238;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f7f0db;stroke:#243238;stroke-width:7}
+      .spoke{stroke:#73919a;stroke-width:2}
+      .spin{transform-origin:300px 420px;animation:spin 2.4s linear infinite}
+      .spin2{transform-origin:545px 420px;animation:spin 2.4s linear infinite}
+      .rider{animation:bob .6s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+      text{font-family:system-ui,sans-serif}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bce9e3"/>
+  <path d="M0 365Q110 310 230 360T470 350T800 345V600H0Z" fill="#8acb82"/>
+  <circle cx="680" cy="120" r="52" fill="#ffd166"/>
+  <path d="M0 446H800" stroke="#668c59" stroke-width="4"/>
+  <path d="M30 446l18-30 18 30m4 0 18-26 17 26m615 0 17-33 20 33m5 0 17-25 16 25" fill="none" stroke="#568653" stroke-width="5"/>
+
+  <text x="400" y="58" text-anchor="middle" font-size="34" font-weight="900" fill="#243238">THE TOUR DE BEAK</text>
+  <text x="400" y="88" text-anchor="middle" font-size="17" font-weight="700" fill="#38565a">He trained for months. Mostly on leftovers.</text>
+
+  <g aria-label="Bicycle wheels">
+    <circle class="wheel" cx="300" cy="420" r="68"/>
+    <circle class="wheel" cx="545" cy="420" r="68"/>
+    <g class="spin">
+      <path class="spoke" d="M300 352V488M232 420H368M252 372L348 468M348 372L252 468"/>
+    </g>
+    <g class="spin2">
+      <path class="spoke" d="M545 352V488M477 420H613M497 372L593 468M593 372L497 468"/>
+    </g>
+    <path d="M300 420L385 420 445 330 545 420 385 420 360 350 445 330" fill="none" stroke="#e85d4a" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M360 350h-42m28-8 14 8m125-20 20-8m-5 0 13 4" fill="none" stroke="#243238" stroke-width="7" stroke-linecap="round"/>
+    <path d="M385 420l-18 28m18-28 21 26" fill="none" stroke="#243238" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="385" cy="420" r="9" fill="#ffd166" stroke="#243238" stroke-width="4"/>
+  </g>
+
+  <g class="rider" aria-label="Pelican riding the bicycle">
+    <path d="M356 328q-25-36-5-67 23-31 68-17 32 11 35 51l-6 42-70 13z" fill="#fffaf0" class="ink"/>
+    <path d="M365 280q24-30 63-10l20 28-56 10z" fill="#e8f0e9" stroke="#243238" stroke-width="4"/>
+    <path d="M401 270q-5-37 25-52 26-12 48 8 18 18 9 47l-24 22-54-4z" fill="#fffaf0" class="ink"/>
+    <path d="M449 208q-4-18 11-25 11 17 3 29" fill="#f5a7a0" stroke="#243238" stroke-width="4"/>
+    <circle cx="462" cy="232" r="5" fill="#243238"/>
+    <path d="M476 238q47-18 94 9-25 24-90 17z" fill="#f3a51d" class="ink"/>
+    <path d="M480 264q40 25 83 0-18 45-63 31-18-6-20-31z" fill="#ee7664" stroke="#243238" stroke-width="4"/>
+    <path d="M505 250l12 2m13 0 11 3m-47 5 60 0" stroke="#fff3d5" stroke-width="4" stroke-linecap="round"/>
+    <path d="M390 319q32 2 49 31l-22 20-45-20z" fill="#f3a51d" class="ink"/>
+    <path d="M405 346l-29 50m44-45 25 29" fill="none" stroke="#243238" stroke-width="7" stroke-linecap="round"/>
+    <path d="M376 396l-15 8m84-24 14-5" stroke="#e85d4a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M390 320q-22 25-31 33" fill="none" stroke="#243238" stroke-width="6" stroke-linecap="round"/>
+    <path d="M359 353l-3-16m3 16 16-3" stroke="#f3a51d" stroke-width="6" stroke-linecap="round"/>
+    <path d="M424 304q-17 10-26 22" fill="none" stroke="#243238" stroke-width="4"/>
+  </g>
+
+  <path d="M596 343q13-13 27 0t27 0" fill="none" stroke="#243238" stroke-width="4" stroke-linecap="round"/>
+  <text x="630" y="326" font-size="22" font-weight="900" fill="#243238">WHEE!</text>
+  <path d="M176 351q18-25 34 0t34 0" fill="none" stroke="#243238" stroke-width="4" stroke-linecap="round"/>
+  <text x="195" y="326" text-anchor="middle" font-size="18" font-weight="800" fill="#243238">pace yourself!</text>
+
+  <rect x="0" y="520" width="800" height="80" fill="#243238"/>
+  <text x="400" y="550" text-anchor="middle" font-size="17" font-weight="700" fill="#fffaf0">“I’m not carrying snacks. I’m carbo-loading.”</text>
+  <text x="400" y="582" text-anchor="middle" font-size="14" font-weight="600" fill="#ffd166">2026-10-30 05:32:15 SGT (UTC+08:00)</text>
+</svg>

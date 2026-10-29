@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-label="Top-down map of a five by five city grid, with a shortest route from A1 to E5 avoiding blocked intersections B2, C3, and D4">
+  <rect width="600" height="400" fill="#f8fafc"/>
+  <text x="300" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#172033">CITY BLOCK ROUTE</text>
+
+  <!-- Streets -->
+  <g stroke="#64748b" stroke-width="3" stroke-linecap="round">
+    <path d="M110 70H430 M110 120H430 M110 170H430 M110 220H430 M110 270H430"/>
+    <path d="M110 70V270 M190 70V270 M270 70V270 M350 70V270 M430 70V270"/>
+  </g>
+
+  <!-- Shortest valid route: 8 street segments -->
+  <path d="M110 70 H190 V120 H270 V170 H350 V220 H430 V270"
+        fill="none" stroke="#1677ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Intersections -->
+  <g fill="#fff" stroke="#334155" stroke-width="2">
+    <circle cx="110" cy="70" r="8"/><circle cx="190" cy="70" r="8"/><circle cx="270" cy="70" r="8"/><circle cx="350" cy="70" r="8"/><circle cx="430" cy="70" r="8"/>
+    <circle cx="110" cy="120" r="8"/><circle cx="190" cy="120" r="8"/><circle cx="270" cy="120" r="8"/><circle cx="350" cy="120" r="8"/><circle cx="430" cy="120" r="8"/>
+    <circle cx="110" cy="170" r="8"/><circle cx="190" cy="170" r="8"/><circle cx="270" cy="170" r="8"/><circle cx="350" cy="170" r="8"/><circle cx="430" cy="170" r="8"/>
+    <circle cx="110" cy="220" r="8"/><circle cx="190" cy="220" r="8"/><circle cx="270" cy="220" r="8"/><circle cx="350" cy="220" r="8"/><circle cx="430" cy="220" r="8"/>
+    <circle cx="110" cy="270" r="8"/><circle cx="190" cy="270" r="8"/><circle cx="270" cy="270" r="8"/><circle cx="350" cy="270" r="8"/><circle cx="430" cy="270" r="8"/>
+  </g>
+
+  <!-- Start and end -->
+  <circle cx="110" cy="70" r="12" fill="#16a34a" stroke="#fff" stroke-width="3"/>
+  <circle cx="430" cy="270" r="12" fill="#7c3aed" stroke="#fff" stroke-width="3"/>
+  <text x="110" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#166534">START A1</text>
+  <text x="430" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#6d28d9">END E5</text>
+
+  <!-- Blocked intersections -->
+  <g stroke="#dc2626" stroke-width="5" stroke-linecap="round">
+    <path d="M182 112L198 128 M198 112L182 128"/>
+    <path d="M262 162L278 178 M278 162L262 178"/>
+    <path d="M342 212L358 228 M358 212L342 228"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#b91c1c">
+    <text x="190" y="105" text-anchor="middle">B2</text>
+    <text x="270" y="155" text-anchor="middle">C3</text>
+    <text x="350" y="205" text-anchor="middle">D4</text>
+  </g>
+
+  <!-- Intersection labels -->
+  <g font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">
+    <text x="110" y="94">A1</text><text x="190" y="94">B1</text><text x="270" y="94">C1</text><text x="350" y="94">D1</text><text x="430" y="94">E1</text>
+    <text x="110" y="144">A2</text><text x="190" y="144">B2</text><text x="270" y="144">C2</text><text x="350" y="144">D2</text><text x="430" y="144">E2</text>
+    <text x="110" y="194">A3</text><text x="190" y="194">B3</text><text x="270" y="194">C3</text><text x="350" y="194">D3</text><text x="430" y="194">E3</text>
+    <text x="110" y="244">A4</text><text x="190" y="244">B4</text><text x="270" y="244">C4</text><text x="350" y="244">D4</text><text x="430" y="244">E4</text>
+    <text x="110" y="294">A5</text><text x="190" y="294">B5</text><text x="270" y="294">C5</text><text x="350" y="294">D5</text><text x="430" y="294">E5</text>
+  </g>
+
+  <text x="300" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#145ac0">Route length: 8 street segments</text>
+  <text x="300" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">2026-10-30 05:33:51 SGT (UTC+08:00)</text>
+</svg>

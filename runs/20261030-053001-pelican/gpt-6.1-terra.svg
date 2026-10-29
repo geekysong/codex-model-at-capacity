@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">The Daily Pelican</title>
+  <desc id="description">A pelican rides a bicycle with spinning wheels and bobbing pedals beside the sea.</desc>
+  <defs>
+    <style>
+      .ink { stroke:#25304a; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2s linear infinite; }
+      .rider { animation:bob .8s ease-in-out infinite alternate; }
+      .pedals { transform-box:fill-box; transform-origin:center; animation:spin 2s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { to { transform:translateY(-5px); } }
+    </style>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#f5c86b" opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff9e9"/>
+  <rect x="15" y="15" width="770" height="570" rx="18" fill="#f7e9c9" stroke="#25304a" stroke-width="4"/>
+  <text x="400" y="73" text-anchor="middle" fill="#25304a" font-family="Georgia,serif" font-size="42" font-weight="bold" letter-spacing="2">THE DAILY PELICAN</text>
+  <path d="M72 88H728" stroke="#25304a" stroke-width="3"/>
+  <text x="400" y="113" text-anchor="middle" fill="#b4523d" font-family="Arial,sans-serif" font-size="16" font-weight="bold" letter-spacing="3">BREAKING NEWS FROM THE BOARDWALK</text>
+
+  <rect x="43" y="130" width="714" height="338" rx="12" fill="#bce4e0" stroke="#25304a" stroke-width="4"/>
+  <path d="M45 333 Q130 313 220 332 T400 331 T580 330 T755 332 V466 H45Z" fill="#73bec3"/>
+  <path d="M45 360 Q150 344 255 360 T465 359 T755 359" fill="none" stroke="#f8f3d9" stroke-width="4" opacity=".8"/>
+  <circle cx="674" cy="190" r="36" fill="#ffd472"/>
+  <path d="M91 188 q15 -14 30 0 q15 -14 30 0 M180 161 q11 -10 22 0 q11 -10 22 0" fill="none" stroke="#527b83" stroke-width="3" stroke-linecap="round"/>
+  <path d="M45 410 Q180 400 310 410 T570 409 T755 410 V466 H45Z" fill="#e8bb78"/>
+  <path d="M45 425 H755" stroke="#bf8856" stroke-width="3" stroke-dasharray="18 15"/>
+  <rect x="43" y="130" width="714" height="338" rx="12" fill="url(#dots)" opacity=".35"/>
+
+  <g class="wheel">
+    <circle cx="220" cy="389" r="67" fill="#fff9e9" stroke="#25304a" stroke-width="9"/>
+    <circle cx="220" cy="389" r="55" fill="none" stroke="#d7a664" stroke-width="4"/>
+    <path d="M220 334V444 M165 389H275 M181 350L259 428 M259 350L181 428" stroke="#72818b" stroke-width="3"/>
+    <circle cx="220" cy="389" r="7" fill="#25304a"/>
+  </g>
+  <g class="wheel">
+    <circle cx="548" cy="389" r="67" fill="#fff9e9" stroke="#25304a" stroke-width="9"/>
+    <circle cx="548" cy="389" r="55" fill="none" stroke="#d7a664" stroke-width="4"/>
+    <path d="M548 334V444 M493 389H603 M509 350L587 428 M587 350L509 428" stroke="#72818b" stroke-width="3"/>
+    <circle cx="548" cy="389" r="7" fill="#25304a"/>
+  </g>
+
+  <g fill="none" class="ink">
+    <path d="M220 389 L313 301 L379 389 Z M313 301 L471 305 L379 389 M471 305 L548 389" stroke="#d95d45" stroke-width="9"/>
+    <path d="M313 301 L300 270 M283 270 H321" stroke-width="7"/>
+    <path d="M471 305 L455 267 Q452 255 467 255 H487" stroke-width="7"/>
+    <path d="M548 389 L483 278" stroke-width="6"/>
+  </g>
+  <path d="M280 269 Q297 260 323 267 Q329 273 319 276 H284 Q275 275 280 269Z" fill="#25304a"/>
+  <g class="pedals">
+    <circle cx="379" cy="389" r="16" fill="#f7e9c9" stroke="#25304a" stroke-width="4"/>
+    <path d="M379 389 L397 405 M379 389 L361 373 M391 405 H405 M353 373 H368" fill="none" stroke="#25304a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g class="rider">
+    <path d="M329 285 Q310 315 316 334 Q321 345 344 347" fill="none" stroke="#e99b43" stroke-width="9" stroke-linecap="round"/>
+    <path d="M345 282 Q364 308 382 319 L399 350" fill="none" stroke="#e99b43" stroke-width="9" stroke-linecap="round"/>
+    <path d="M335 347 l-19 7 M399 350 l15 4" stroke="#25304a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M286 222 Q271 260 293 285 Q313 307 363 293 Q390 285 403 258 L386 222Z" fill="#fffdf2" class="ink"/>
+    <path d="M298 244 Q319 225 358 239 Q347 268 317 271 Q302 270 298 244Z" fill="#e7e3d4" stroke="#25304a" stroke-width="4"/>
+    <path d="M386 242 Q407 239 423 262 L454 264" fill="none" stroke="#fffdf2" stroke-width="16" stroke-linecap="round"/>
+    <path d="M386 242 Q407 239 423 262 L454 264" fill="none" stroke="#25304a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M368 235 Q382 207 375 180 Q370 157 385 145 Q402 132 420 144 Q438 155 433 179 L419 222 Q413 237 400 248Z" fill="#fffdf2" class="ink"/>
+    <path d="M423 166 Q473 163 540 181 Q490 187 430 189Z" fill="#f3a343" class="ink"/>
+    <path d="M431 189 Q485 189 540 181 Q520 218 479 222 Q447 224 424 204Z" fill="#f6c86d" class="ink"/>
+    <circle cx="412" cy="160" r="10" fill="#fff" stroke="#25304a" stroke-width="3"/>
+    <circle cx="415" cy="160" r="4" fill="#25304a"/>
+    <path d="M399 143 Q408 137 417 141" fill="none" stroke="#25304a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M375 145 Q390 125 419 137 L426 145 Q401 140 378 153Z" fill="#d95d45" stroke="#25304a" stroke-width="4"/>
+    <path d="M373 147 L352 151" stroke="#25304a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M295 252 Q278 248 267 238 L278 260Z" fill="#fffdf2" stroke="#25304a" stroke-width="4"/>
+  </g>
+
+  <g transform="translate(581 228)">
+    <path d="M0 27 Q0 0 27 0 H110 Q136 0 136 27 Q136 54 110 54 H46 L25 69 L29 54 H27 Q0 54 0 27Z" fill="#fffdf2" stroke="#25304a" stroke-width="3"/>
+    <text x="68" y="23" text-anchor="middle" fill="#25304a" font-family="Arial,sans-serif" font-size="15" font-weight="bold">I BRAKE</text>
+    <text x="68" y="43" text-anchor="middle" fill="#25304a" font-family="Arial,sans-serif" font-size="15" font-weight="bold">FOR SARDINES!</text>
+  </g>
+
+  <text x="400" y="508" text-anchor="middle" fill="#25304a" font-family="Georgia,serif" font-size="23" font-weight="bold">Local pelican pedals to work, carries lunch in face.</text>
+  <path d="M72 526H728" stroke="#25304a" stroke-width="2"/>
+  <text x="400" y="554" text-anchor="middle" fill="#25304a" font-family="Arial,sans-serif" font-size="16">2026-10-30 05:32:35 SGT (UTC+08:00)</text>
+</svg>
