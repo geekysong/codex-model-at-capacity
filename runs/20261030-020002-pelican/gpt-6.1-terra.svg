@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN PEDAL POWER</title>
+  <desc id="desc">A pelican rides a bicycle with spinning wheels and a gentle bobbing motion.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#25313b;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#25313b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+      .rider{animation:bob .8s ease-in-out infinite alternate}
+      .crank{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px) rotate(-1deg)}}
+      @media (prefers-reduced-motion:reduce){.wheel,.rider,.crank{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e9"/>
+  <rect x="18" y="18" width="764" height="564" rx="24" fill="#e3f5f2" stroke="#25313b" stroke-width="4"/>
+  <text x="400" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="37" font-weight="900" letter-spacing="2" fill="#25313b">PELICAN PEDAL POWER</text>
+  <text x="400" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#42636a">THE COMMUTE JUST GOT A BIGGER BILL</text>
+
+  <circle cx="682" cy="151" r="35" fill="#ffd166"/>
+  <path d="M49 420 Q160 400 270 420 T490 420 T751 420 V467 H49Z" fill="#b5d9be"/>
+  <path d="M49 442 H751" stroke="#799b89" stroke-width="3" stroke-dasharray="14 12"/>
+  <path d="M92 214h65m-45 13h38M633 250h80m-55 14h46" stroke="#b9dedc" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Bicycle wheels -->
+  <g class="wheel">
+    <circle cx="233" cy="392" r="85" fill="#fffdf4" class="ink"/>
+    <circle cx="233" cy="392" r="73" fill="none" stroke="#91b8b6" stroke-width="3"/>
+    <path d="M233 308v168M149 392h168M174 333l118 118M292 333 174 451" stroke="#91b8b6" stroke-width="3"/>
+    <circle cx="233" cy="392" r="8" fill="#25313b"/>
+  </g>
+  <g class="wheel">
+    <circle cx="557" cy="392" r="85" fill="#fffdf4" class="ink"/>
+    <circle cx="557" cy="392" r="73" fill="none" stroke="#91b8b6" stroke-width="3"/>
+    <path d="M557 308v168M473 392h168M498 333l118 118M616 333 498 451" stroke="#91b8b6" stroke-width="3"/>
+    <circle cx="557" cy="392" r="8" fill="#25313b"/>
+  </g>
+
+  <!-- Bicycle frame and handlebars -->
+  <path d="M233 392 315 292 395 392 233 392M315 292h155l-75 100M470 292l87 100" fill="none" stroke="#e95b4f" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M470 292l-12-30h37q14 0 14-13" fill="none" class="ink"/>
+  <path d="M303 282h47" class="ink" stroke-width="9"/>
+  <path d="M300 276h43q9 0 9 7h-55q-5-7 3-7" fill="#25313b"/>
+  <path d="M557 392l-87-100" fill="none" class="thin"/>
+  <g class="crank">
+    <circle cx="395" cy="392" r="20" fill="#fff8e9" stroke="#25313b" stroke-width="4"/>
+    <path d="M385 377l20 30M379 374h13M400 410h13" fill="none" class="thin"/>
+  </g>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <path d="M340 270q12 31 47 52l25 43" fill="none" stroke="#e9a744" stroke-width="10" stroke-linecap="round"/>
+    <path d="M412 365l18 2" fill="none" class="ink"/>
+    <path d="M311 258q-29 7-46-8 8 24 36 29" fill="#f4eee0" class="ink"/>
+    <ellipse cx="345" cy="242" rx="63" ry="46" fill="#fffdf4" class="ink"/>
+    <path d="M306 236q35-20 74 7-13 30-55 24-20-4-19-31Z" fill="#dce9e3" class="thin"/>
+    <path d="M360 215q30-14 37-44 5-28 29-36 24-8 42 11 12 13 7 33-5 24-24 30-13 5-27-2-5 34-27 49" fill="#fffdf4" class="ink"/>
+    <path d="M449 174q42 3 115 24-42 8-102 3-17-2-24-10Z" fill="#f5ac45" class="ink"/>
+    <path d="M449 192q31 10 109 9-41 34-83 29-23-4-26-38Z" fill="#ffd27b" class="thin"/>
+    <circle cx="454" cy="160" r="10" fill="#fff" class="thin"/>
+    <circle cx="457" cy="161" r="4" fill="#25313b"/>
+    <path d="M444 144q11-9 22-5" fill="none" class="thin"/>
+    <path d="M405 142q8-18 31-19 20-1 30 12l-5 8q-24-8-51 6Z" fill="#e95b4f" class="ink"/>
+    <path d="M401 148q36-9 70-2" fill="none" class="ink"/>
+    <path d="M376 264q22 10 43 1l40-12" fill="none" stroke="#e9a744" stroke-width="9" stroke-linecap="round"/>
+    <path d="M456 253l15-5" fill="none" class="ink"/>
+    <path d="M329 279q8 27 31 45l23 42" fill="none" stroke="#e9a744" stroke-width="10" stroke-linecap="round"/>
+    <path d="M383 366l17 2" fill="none" class="ink"/>
+  </g>
+
+  <path d="M92 369l-30-3m35 20-41 2m43 15-26 6" fill="none" stroke="#e95b4f" stroke-width="5" stroke-linecap="round"/>
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#25313b">He insists the bike lane is for birds, too.</text>
+  <path d="M75 530h650" stroke="#9abbb6" stroke-width="2"/>
+  <text x="400" y="557" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#42636a">2026-10-30 02:02:26 SGT (UTC+08:00)</text>
+</svg>
