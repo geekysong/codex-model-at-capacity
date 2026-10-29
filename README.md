@@ -2,6 +2,8 @@
 
 **English** | [中文](README.zh-CN.md)
 
+> **Project ended 2026-10-29.** The Codex subscription was cancelled because Codex kept getting dumber (persistent degradation). Final dataset: 267 cron time points / 480 round ids / 1962 entries, 2026-10-24 08:39 → 2026-10-29 11:06 SGT. The 20 round ids after 11:30 SGT (80 entries; the account was downgraded and three models returned `model is not supported`) were purged as non-comparable; see `closeout.json` and the site banner.
+
 ## Why this exists
 
 In October 2026, this Codex account kept running into two problems:

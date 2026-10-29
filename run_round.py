@@ -151,6 +151,94 @@ def run_model(model: str, round_id: str) -> dict:
         return rec
 
 
+def closeout_panel(records: list[dict]) -> str:
+    """Project-ended banner and totals, driven by closeout.json plus live stats."""
+    path = REPO / "closeout.json"
+    if not path.exists():
+        return ""
+    c = json.loads(path.read_text(encoding="utf-8"))
+    pg = c["purged"]
+    strip = lambda rid: re.sub(r"-(pelican|daily)$", "", rid)
+    n = len(records)
+    ok = sum(r["status"] == "ok" for r in records)
+    err = sum(r["status"] == "error" for r in records)
+    sem = sum(r["status"] == "semantic_error" for r in records)
+    n_ids = len({r["round"] for r in records})
+    n_pts = len({strip(r["round"]) for r in records})
+    first = min(r["time_sgt"] for r in records)
+    last = max(r["time_sgt"] for r in records)
+    per_model: dict[str, list[int]] = {}
+    for r in records:
+        m = per_model.setdefault(r["model"], [0, 0])
+        m[0] += 1
+        m[1] += r["status"] == "ok"
+    models = " · ".join(f"{html.escape(k)} {v[1]}/{v[0]}" for k, v in sorted(per_model.items(), key=lambda kv: -kv[1][0]))
+    valid = sorted((r for r in records if r["round"].startswith(c["last_valid_round"])), key=lambda r: (r["round"], r["model"]))
+    valid_ok = sum(r["status"] == "ok" for r in valid)
+    rows = "".join(
+        f'<tr><td>{html.escape(r["round"].rsplit("-", 1)[1])}</td><td>{html.escape(r["model"])}</td>'
+        f'<td class="{"pass" if r["status"] == "ok" else "fail"}">{html.escape(r["status"])}</td>'
+        f'<td>{r["duration_s"]}s</td><td>{r["total_tokens"]}</td></tr>' for r in valid)
+    lr = c["last_recorded_round"]
+    lr_rows = "".join(
+        f'<tr><td>{html.escape(x["benchmark"])}</td><td>{html.escape(x["model"])}</td>'
+        f'<td class="{"pass" if x["status"] == "ok" else "fail"}">{html.escape(x["status"])}</td>'
+        f'<td>{x["duration_s"]}s</td><td>{html.escape(x["detail"] or "—")}</td></tr>' for x in lr["results"])
+    lr_ok = sum(x["status"] == "ok" for x in lr["results"])
+    lr_ns = sum("not supported" in x["detail"] for x in lr["results"])
+    style = (
+        "<style>.closeout{border-color:#f7c66a;background:rgba(247,198,106,.07)}.closeout h2{color:#f7c66a}"
+        ".closeout h3{font-size:15px;margin:20px 0 6px}.closeout table{min-width:0;margin:6px 0}"
+        ".closeout .excluded{border:1px dashed var(--red);border-radius:12px;padding:12px 14px;margin-top:10px}"
+        ".closeout .tag{font:700 10px ui-monospace,monospace;letter-spacing:.1em;color:var(--red)}</style>")
+    def tbl(head: str, body: str) -> str:
+        return f'<div class="table-wrap"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
+    h_valid = "<th>Benchmark</th><th>Model</th><th>Status</th><th>Duration</th><th>Total tokens</th>"
+    h_last = "<th>Benchmark</th><th>Model</th><th>Status</th><th>Duration</th><th>Error</th>"
+    totals_en = (
+        f'<p><b>Final totals (valid dataset):</b> {n_pts} cron time points · {n_ids} round ids · {n} entries '
+        f'(ok {ok}, error {err}, semantic_error {sem}). Span {first} → {last} SGT. '
+        f'A time point is one 30-minute cron firing; a round id is one benchmark within it (early rounds have a single id for both).</p>')
+    totals_zh = (
+        f'<p><b>最终总计（有效数据集）：</b>{n_pts} 个定时时点 · {n_ids} 个 round id · {n} 条记录'
+        f'（成功 {ok}，错误 {err}，语义错误 {sem}）。时间范围 {first} → {last}（SGT）。'
+        f'“时点”指一次 30 分钟定时触发；“round id”是其中一个基准测试（早期轮次两个基准共用一个 id）。</p>')
+    return f"""{style}<section class="panel closeout" id="closeout">
+<div class="lang-en"><h2>Project ended · {c["ended"]}</h2>
+<p>This census has stopped. The Codex subscription was cancelled because Codex kept getting dumber (persistent degradation), so there is nothing left to measure. All scheduled jobs were removed on {c["ended"]}.</p>
+{totals_en}
+<p class="muted">Per-model ok/total: {models}</p>
+<h3>Last valid round · {html.escape(c["last_valid_round"])} · {valid_ok}/{len(valid)} ok</h3>
+{tbl(h_valid, rows)}
+<div class="excluded"><span class="tag">EXCLUDED · NOT COUNTED IN TOTALS</span>
+<h3>Last recorded round · {html.escape(lr["round"])} ({lr["time_sgt"]} SGT) · {lr_ok}/{len(lr["results"])} ok</h3>
+<p>Evidence of the downgrade: {lr_ns} of 8 attempts were rejected within about 2–3 seconds with <code>model is not supported when using Codex with a ChatGPT account</code>; only Luna still ran (one capacity error, one success).</p>
+{tbl(h_last, lr_rows)}
+<p class="muted">From 11:30 SGT the account no longer supported astra / 6.1-sol / 6.1-terra. The {pg["round_ids"]} round ids ({pg["time_points"]} time points, {c["cutoff_sgt"]}–{pg["last_sgt"][11:16]} SGT, {pg["records"]} entries: {pg["not_supported"]} not-supported, Luna {pg["luna_ok"]} ok + {pg["luna_capacity"]} capacity) were removed from the dataset because the data is not comparable after the account downgrade.</p></div></div>
+<div class="lang-zh"><h2>项目已结束 · {c["ended"]}</h2>
+<p>本普查已停止。Codex 订阅因持续性降智已退订，已无可测对象；所有定时任务已于 {c["ended"]} 移除。</p>
+{totals_zh}
+<p class="muted">各模型 成功/总数：{models}</p>
+<h3>最后有效轮 · {html.escape(c["last_valid_round"])} · {valid_ok}/{len(valid)} 成功</h3>
+{tbl("<th>基准</th><th>模型</th><th>状态</th><th>耗时</th><th>总 token</th>", rows)}
+<div class="excluded"><span class="tag">已剔除 · 不计入总计</span>
+<h3>最后记录轮 · {html.escape(lr["round"])}（{lr["time_sgt"]} SGT）· {lr_ok}/{len(lr["results"])} 成功</h3>
+<p>降级证据：8 次尝试中 {lr_ns} 次在约 2–3 秒内被拒绝，报错 <code>model is not supported when using Codex with a ChatGPT account</code>；只有 Luna 还能运行（一次容量错误，一次成功）。</p>
+{tbl("<th>基准</th><th>模型</th><th>状态</th><th>耗时</th><th>错误</th>", lr_rows)}
+<p class="muted">自 11:30 SGT 起，该账号不再支持 astra / 6.1-sol / 6.1-terra。账号降级后数据不可比，因此从数据集中清除了 {pg["round_ids"]} 个 round id（{pg["time_points"]} 个时点，{c["cutoff_sgt"]}–{pg["last_sgt"][11:16]} SGT，共 {pg["records"]} 条：其中 {pg["not_supported"]} 条 not-supported，Luna {pg["luna_ok"]} 条成功 + {pg["luna_capacity"]} 条容量错误）。</p></div></div>
+</section>"""
+
+
+def closeout_history_note() -> str:
+    path = REPO / "closeout.json"
+    if not path.exists():
+        return ""
+    c = json.loads(path.read_text(encoding="utf-8"))
+    return (f'<p class="muted">Project ended {c["ended"]}; last valid round {html.escape(c["last_valid_round"])}. '
+            f'项目已于 {c["ended"]} 结束，最后有效轮 {html.escape(c["last_valid_round"])}。 '
+            f'<a href="index.html#closeout">Details / 详情</a></p>')
+
+
 def build_index(records: list[dict]) -> str:
     def public_error(value: object) -> str:
         """Keep operational error context while removing common secrets/PII."""
@@ -265,6 +353,7 @@ a{{color:var(--cyan)}} .links{{display:flex;align-items:center;justify-content:f
 @media(max-width:760px){{main{{padding:24px 14px 48px}}header{{display:block}}.links{{margin-top:18px}}.metrics{{grid-template-columns:repeat(2,1fr)}}.panel{{padding:14px}}.pairs{{grid-template-columns:1fr}}}}
 </style></head><body><main>
 <header><div><div class="eyebrow">PUBLIC ACCOUNT MONITOR · 30 MINUTE CENSUS</div><h1>When the door says <span>at capacity</span>.</h1><p class="lede">One Codex account, four models in sequence, two challenges, one attempt each. The SVGs are the probe; timestamps, latency, token drift and failures are the evidence.</p></div><div class="links"><a href="stats.json">raw stats.json</a><a href="history.html">history / 历史轮次</a><a href="https://github.com/geekysong/codex-model-at-capacity">source ↗</a><div class="language-switch" role="group" aria-label="Language"><button type="button" data-language="en">English</button><button type="button" data-language="zh">中文</button></div></div></header>
+{closeout_panel(records)}
 <section class="panel intro"><div class="lang-en"><b>Why this exists</b><p>Important work should not depend on a possibly degraded Codex. These SVGs are low-risk probes: capacity errors, latency, token use and failures make availability changes reproducible. In October 2026 this account began seeing unexplained capacity refusals and suspected silent degradation. The Raspberry Pi records each attempt, rebuilds this page and publishes both branches. Independent visual reviews compare pelican drawings with a fixed Astra reference. These subjective scores describe visible output quality, not general model intelligence.</p></div><div class="lang-zh"><b>为什么做这件事</b><p>重要任务不应该依赖一个可能降智的 Codex。这些 SVG 是低风险探针：容量错误、耗时、token 用量和失败记录让可用性变化可以复现。2026 年 10 月，这个账号开始出现无法解释的容量拒绝和疑似能力下降。树莓派记录每次尝试、重建页面并发布两个分支。独立视觉评审以固定的 Astra 图片为基准，检查鹈鹕绘图。这些主观评分描述可见的画面问题，不代表模型整体能力。</p></div></section>
 <section class="metrics"><div class="metric"><small>Latest round</small><b>{ok_n}/{len(latest_recs)}</b><small>models returned an SVG</small></div><div class="metric"><small>All attempts</small><b>{attempts}</b><small>{len(rounds)} rounds · {all_ok / attempts * 100 if attempts else 0:.1f}% success</small></div><div class="metric"><small>Median latency</small><b>{median if median is not None else "—"}<small> s</small></b><small>across recorded attempts</small></div><div class="metric"><small>Last seen</small><b style="font-size:16px">{latest or "—"}</b><small>{updated}</small></div></section>
 <details class="panel round-disclosure"><summary><b>Latest round · {latest or "—"}</b><span>{ok_n}/{len(latest_recs)} passed · once per model · no retries</span></summary><div class="grid">{''.join(cards)}</div></details>
@@ -318,7 +407,7 @@ gtag('config', '{GA_MEASUREMENT_ID}');
 </script>
 <title>History · At capacity census</title><style>
 *{{box-sizing:border-box}}:root{{--bg:#0b0f14;--panel:#121923;--line:#263241;--muted:#8b99a8;--ink:#edf3f8;--cyan:#6ee7f9;--green:#73e2a3;--red:#ff7b86}}body{{margin:0;background:radial-gradient(circle at 80% -20%,#163346 0,#0b0f14 38rem);color:var(--ink);font:14px/1.5 Inter,system-ui,sans-serif}}main{{max-width:1440px;margin:auto;padding:34px 24px 64px}}a{{color:var(--cyan)}}h1{{margin:0 0 8px;letter-spacing:-.04em}}.muted{{color:var(--muted)}}.links{{margin:16px 0 24px}}.links a{{margin-right:12px}}.round{{background:rgba(18,25,35,.9);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0}}summary{{cursor:pointer;color:var(--cyan);font:700 14px ui-monospace,monospace}}.grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:14px}}.card{{background:#0e151e;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0}}.art{{aspect-ratio:4/3;background:#fff;display:grid;place-items:center}}.art img{{width:100%;height:100%;object-fit:contain;display:block}}figcaption{{padding:10px 12px}}figcaption div{{display:flex;justify-content:space-between}}small{{color:var(--muted)}}.pass{{color:var(--green)}}.fail{{color:var(--red)}}.noart{{padding:18px;text-align:center;color:var(--red)}}.noart small{{display:block;margin-top:8px}}@media(max-width:760px){{main{{padding:24px 14px 48px}}.grid{{grid-template-columns:repeat(2,minmax(0,1fr))}}}}
-</style></head><body><main><h1>History rounds</h1><p class="muted">Expand a round to inspect the SVGs, model status and latency recorded at that time.</p><div class="links"><a href="index.html">← dashboard</a><a href="stats.json">raw stats.json</a></div>{"".join(sections)}</main><link rel="stylesheet" href="zoom.css"><script src="zoom.js"></script></body></html>'''
+</style></head><body><main><h1>History rounds</h1><p class="muted">Expand a round to inspect the SVGs, model status and latency recorded at that time.</p>{closeout_history_note()}<div class="links"><a href="index.html">← dashboard</a><a href="stats.json">raw stats.json</a></div>{"".join(sections)}</main><link rel="stylesheet" href="zoom.css"><script src="zoom.js"></script></body></html>'''
 
 
 def git(*args: str) -> subprocess.CompletedProcess:
