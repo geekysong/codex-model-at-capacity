@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN PEDAL POWER</title>
+  <desc id="desc">A pelican rides a bicycle with a fish in its oversized beak, while the bicycle wheels spin and the rider bobs.</desc>
+  <style>
+    .headline{font:900 42px sans-serif;letter-spacing:2px;fill:#26364a}
+    .caption{font:700 21px sans-serif;fill:#26364a}
+    .footer{font:16px sans-serif;fill:#435369}
+    .ink{stroke:#26364a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.2s linear infinite}
+    .rider{animation:bob .6s ease-in-out infinite alternate}
+    .leg{transform-origin:410px 361px;animation:pedal 1.2s linear infinite}
+    .cloud{fill:#fff;opacity:.8}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes bob{to{transform:translateY(-5px)}}
+    @keyframes pedal{to{transform:rotate(360deg)}}
+    @media (prefers-reduced-motion:reduce){.wheel,.rider,.leg{animation:none}}
+  </style>
+  <rect width="800" height="600" fill="#f5f0df"/>
+  <rect x="18" y="18" width="764" height="564" rx="24" fill="#d9f1f1" stroke="#26364a" stroke-width="4"/>
+  <text x="400" y="72" text-anchor="middle" class="headline">PELICAN PEDAL POWER</text>
+  <path class="cloud" d="M72 150c-2-17 20-25 31-13 8-26 47-25 54 2 18-8 34 4 32 19H72z"/>
+  <path class="cloud" d="M600 128c2-18 24-24 34-11 10-23 44-22 51 2 16-7 32 4 31 18H600z"/>
+  <circle cx="690" cy="205" r="40" fill="#ffd35a" stroke="#26364a" stroke-width="4"/>
+  <path d="M20 444Q155 425 285 442T545 440T780 435V503H20Z" fill="#a6d5a2"/>
+  <path d="M20 478Q200 466 395 479T780 477V511H20Z" fill="#d8b98a"/>
+  <path d="M35 486H765" stroke="#8d765b" stroke-width="3" stroke-dasharray="14 12"/>
+  <!-- Bicycle wheels -->
+  <g class="wheel">
+    <circle cx="250" cy="408" r="75" fill="#f9faf0" stroke="#26364a" stroke-width="10"/>
+    <circle cx="250" cy="408" r="62" fill="none" stroke="#85a7ad" stroke-width="3"/>
+    <g stroke="#85a7ad" stroke-width="3">
+      <path d="M250 346v124M188 408h124M206 364l88 88M294 364l-88 88"/>
+    </g>
+    <circle cx="250" cy="408" r="8" fill="#26364a"/>
+  </g>
+  <g class="wheel">
+    <circle cx="550" cy="408" r="75" fill="#f9faf0" stroke="#26364a" stroke-width="10"/>
+    <circle cx="550" cy="408" r="62" fill="none" stroke="#85a7ad" stroke-width="3"/>
+    <g stroke="#85a7ad" stroke-width="3">
+      <path d="M550 346v124M488 408h124M506 364l88 88M594 364l-88 88"/>
+    </g>
+    <circle cx="550" cy="408" r="8" fill="#26364a"/>
+  </g>
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#e65b49" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M250 408l86-115 73 115H250l117-100h112l71 100"/>
+    <path d="M409 408l70-100"/>
+  </g>
+  <g class="ink" fill="none">
+    <path d="M336 293l-8-20M308 272h40"/>
+    <path d="M479 308l-12-38h40q12 0 12 12"/>
+  </g>
+  <path d="M302 270q15-12 44-5l4 9h-48z" fill="#26364a"/>
+  <circle cx="409" cy="408" r="24" fill="#f5f0df" stroke="#26364a" stroke-width="4"/>
+  <g class="leg">
+    <path d="M409 408l19 16" fill="none" stroke="#26364a" stroke-width="5"/>
+    <path d="M420 426h24" fill="none" stroke="#26364a" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- Rider -->
+  <g class="rider">
+    <path d="M334 305q-10 44 16 65l30 33" fill="none" stroke="#e89c39" stroke-width="10" stroke-linecap="round"/>
+    <path d="M376 400l-5 14 22 2" fill="none" stroke="#e89c39" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M310 262q-17 12-28 4 4 23 27 28" fill="#f8f7e9" stroke="#26364a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M306 220q-20 30-9 65 13 38 66 38 55 0 68-40 6-25-14-48z" fill="#fffdf2" stroke="#26364a" stroke-width="5"/>
+    <path d="M316 259q30-23 67-5-9 36-43 39-17 1-24-34z" fill="#e2e9df" stroke="#26364a" stroke-width="4"/>
+    <path d="M401 268q30 5 58 10" fill="none" stroke="#26364a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M456 278q8-7 15 0" fill="none" stroke="#e89c39" stroke-width="8" stroke-linecap="round"/>
+    <path d="M375 237q-8-25 4-45 10-16 29-15 24 0 29 24 3 16-9 31l-8 29" fill="#fffdf2" stroke="#26364a" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="417" cy="197" r="8" fill="#fff" stroke="#26364a" stroke-width="3"/>
+    <circle cx="420" cy="197" r="3" fill="#26364a"/>
+    <path d="M408 182q9-7 19-3" fill="none" stroke="#26364a" stroke-width="4" stroke-linecap="round"/>
+    <!-- Beak and fish -->
+    <path d="M432 208q58-12 118 9-43 9-116 11z" fill="#f5ad3f" stroke="#26364a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M435 228q18 42 65 36 32-4 50-47-44 13-115 11z" fill="#f6c468" stroke="#26364a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M491 237q12-9 25 0l9-7v14l-9-7q-13 9-25 0z" fill="#79b8be" stroke="#26364a" stroke-width="2"/>
+    <circle cx="497" cy="236" r="1.8" fill="#26364a"/>
+    <path d="M389 177q12-19 33-14l12 13" fill="#ed6c55" stroke="#26364a" stroke-width="4"/>
+    <path d="M384 179h55" stroke="#26364a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <path d="M101 354q24-14 45 0M85 379q24-14 45 0" fill="none" stroke="#8ab9bb" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="535" text-anchor="middle" class="caption">“My other ride is a flying fish.”</text>
+  <path d="M44 551H756" stroke="#a8c3bd" stroke-width="2"/>
+  <text x="400" y="573" text-anchor="middle" class="footer">2026-10-29 23:03:49 SGT (UTC+08:00)</text>
+</svg>
