@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Peak Beak Commute</title>
+  <desc id="description">A pompous pelican in a tie pedals a bicycle with a fish dangling from its enormous bill. The wheels spin, pedals turn, and rider bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="paper" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M2 3h1M8 9h1" stroke="#d6ccac" stroke-width="1" opacity=".3"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="79" fill="#fff9df" stroke="#263b43" stroke-width="11"/>
+      <circle r="66" fill="none" stroke="#a9b9ad" stroke-width="2"/>
+      <g stroke="#718d91" stroke-width="3">
+        <path d="M-71 0H71M0-71V71M-50-50L50 50M-50 50L50-50"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      </g>
+      <circle r="8" fill="#ef7050" stroke="#263b43" stroke-width="3"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#f7efd8"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M0 126H800" stroke="#263b43" stroke-width="3"/>
+  <text x="400" y="57" text-anchor="middle" fill="#263b43" font-family="Arial, sans-serif" font-size="39" font-weight="900" letter-spacing="2">PEAK BEAK COMMUTE</text>
+  <text x="400" y="94" text-anchor="middle" fill="#a64835" font-family="Arial, sans-serif" font-size="18" font-weight="bold">One pelican. Two wheels. An oversized lunch compartment.</text>
+
+  <!-- A single seaside cycle lane -->
+  <path d="M0 350Q135 332 260 351T530 349T800 345V451H0Z" fill="#c4dfcf"/>
+  <path d="M0 375Q130 359 273 376T560 374T800 372" fill="none" stroke="#8abbb4" stroke-width="4"/>
+  <path d="M28 337v-66h68v66m-55-2v-42h18v42m14 0v-42h12v42" fill="#d6cfb4" stroke="#b7b498" stroke-width="3"/>
+  <path d="M38 271l24-21 24 21" fill="#e4ac89" stroke="#b7b498" stroke-width="3"/>
+  <circle cx="711" cy="179" r="25" fill="#f4c65b"/>
+  <path d="M660 251q12-14 24 0q12-14 24 0M92 190q10-12 20 0q10-12 20 0" fill="none" stroke="#769b98" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M0 452H800V511H0Z" fill="#ded4b5"/>
+  <path d="M0 453H800" stroke="#263b43" stroke-width="4"/>
+  <path d="M24 483h90m58 0h90m58 0h90m58 0h90m58 0h90m58 0h68" stroke="#fff9e9" stroke-width="5"/>
+  <ellipse cx="398" cy="454" rx="239" ry="12" fill="#263b43" opacity=".12"/>
+
+  <!-- Bicycle -->
+  <use href="#wheel" x="245" y="373"/>
+  <use href="#wheel" x="558" y="373"/>
+  <g fill="none" stroke="#263b43" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M245 373l80-128 69 128H245l108-93h156l-115 93"/>
+    <path d="M558 373l-49-93-19-57"/>
+    <path d="M325 245l-10-25"/>
+  </g>
+  <g fill="none" stroke="#e76746" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M245 373l80-128 69 128H245l108-93h156l-115 93"/>
+    <path d="M558 373l-49-93-19-57"/>
+  </g>
+  <path d="M292 219h57" stroke="#263b43" stroke-width="13" stroke-linecap="round"/>
+  <path d="M490 223l19-13h25q18 0 12 18" fill="none" stroke="#263b43" stroke-width="9" stroke-linecap="round"/>
+  <path d="M499 226q61 7 48 70" fill="none" stroke="#263b43" stroke-width="2"/>
+  <circle cx="394" cy="373" r="22" fill="#f4c65b" stroke="#263b43" stroke-width="4"/>
+
+  <!-- Pedaling legs, behind the body -->
+  <g stroke="#263b43" stroke-width="5" stroke-linejoin="round">
+    <path d="M338 280l41 37 31 37" fill="none" stroke="#e5a844" stroke-width="15">
+      <animate attributeName="d" values="M338 280l41 37 31 37;M338 280l11 58 28 51;M338 280l41 37 31 37" dur=".8s" repeatCount="indefinite"/>
+    </path>
+    <g transform="translate(394 373)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur=".8s" repeatCount="indefinite"/>
+        <path d="M-25 0H25" stroke-width="7"/>
+        <path d="M-35-5h20M15 5h20" stroke-width="7" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- The pelican: all attitude, no aerodynamics -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M312 260q-47-8-70 7l29-37-26-4 52-19" fill="#faf9e9" stroke="#263b43" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M288 210q23-41 68-26 36 9 42 51 5 44-40 57-56 12-77-21-17-27 7-61Z" fill="#fffdf0" stroke="#263b43" stroke-width="4"/>
+    <path d="M329 211q-39 8-31 40 9 25 44 19" fill="#d8e2d8" stroke="#263b43" stroke-width="4" stroke-linecap="round"/>
+    <path d="M362 216q30-18 28-51-4-34 24-36 25-2 32 25 7 37-23 69l-17 32" fill="#fffdf0" stroke="#263b43" stroke-width="4"/>
+    <path d="M393 144q20-18 42 3l-1-16q-25-24-48 0Z" fill="#e76746" stroke="#263b43" stroke-width="4"/>
+    <path d="M397 127l4-8m10 8 2-10m9 12 4-8" stroke="#263b43" stroke-width="3"/>
+    <path d="M435 167q88-11 169 13l-12 12-158 1" fill="#f3b640" stroke="#263b43" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M436 185l157 4q-43 83-119 42-25-12-38-46Z" fill="#eeb78b" stroke="#263b43" stroke-width="4"/>
+    <path d="M456 200q49 37 109 4" fill="none" stroke="#c38361" stroke-width="3"/>
+    <circle cx="425" cy="158" r="8" fill="white" stroke="#263b43" stroke-width="3"/>
+    <circle cx="428" cy="159" r="3" fill="#263b43"/>
+    <path d="M415 143l18 5" stroke="#263b43" stroke-width="4" stroke-linecap="round"/>
+    <path d="M394 225l15 5-8 11 7 29-21-8 7-22-7-9Z" fill="#e76746" stroke="#263b43" stroke-width="2"/>
+    <path d="M365 239q41 15 79-3l59-17" fill="none" stroke="#263b43" stroke-width="15" stroke-linecap="round"/>
+    <path d="M365 236q41 15 79-3l59-17" fill="none" stroke="#e5e8d9" stroke-width="9" stroke-linecap="round"/>
+    <path d="M500 216l14-3m-12 6 14-1" stroke="#263b43" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- The passenger/lunch -->
+    <g transform="translate(581 205)">
+      <animateTransform attributeName="transform" type="translate" values="581 205;584 209;581 205" dur=".8s" repeatCount="indefinite"/>
+      <path d="M0-17q-18 14-8 38l-13 12 18-2 12 9-1-19Q22-1 0-17Z" fill="#79bfc2" stroke="#263b43" stroke-width="3"/>
+      <circle cx="4" cy="-3" r="4" fill="white"/>
+      <circle cx="5" cy="-3" r="2" fill="#263b43"/>
+      <path d="M1 10l7 1" stroke="#263b43" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Speech bubble kept clear of title and rider -->
+  <path d="M615 267h143q13 0 13 13v57q0 13-13 13H615q-13 0-13-13v-57q0-13 13-13Z" fill="#fffdf0" stroke="#263b43" stroke-width="3"/>
+  <path d="M620 267l-17-27 37 27" fill="#fffdf0" stroke="#263b43" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M622 268h16" stroke="#fffdf0" stroke-width="4"/>
+  <text x="686" y="293" text-anchor="middle" fill="#263b43" font-family="Arial, sans-serif" font-size="17" font-weight="bold">
+    <tspan x="686">“I was told</tspan>
+    <tspan x="686" dy="22">this was a</tspan>
+    <tspan x="686" dy="22">carpool.”</tspan>
+  </text>
+
+  <path d="M155 318h-38m31 21H95m51 20h-25" stroke="#769b98" stroke-width="4" stroke-linecap="round"/>
+  <rect y="511" width="800" height="89" fill="#263b43"/>
+  <text x="400" y="542" text-anchor="middle" fill="#fff4d5" font-family="Arial, sans-serif" font-size="18" font-weight="bold">He cut his carbon footprint. His lunch is filing a complaint.</text>
+  <text x="400" y="579" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18">2026-10-30 01:31:48 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a bicycle</title>
+  <desc id="desc">A proud pelican pedals a bicycle along the seaside, carrying a fish in its enormous beak.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8f5f3"/>
+      <stop offset="1" stop-color="#fff4d8"/>
+    </linearGradient>
+    <linearGradient id="sea" x2="0" y2="1">
+      <stop offset="0" stop-color="#62c7c1"/>
+      <stop offset="1" stop-color="#268f99"/>
+    </linearGradient>
+    <style>
+      .outline { stroke:#28383b; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .spoke { stroke:#f9f5e6; stroke-width:4; stroke-linecap:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 1.5s linear infinite; }
+      .rider { animation:bob 1.5s ease-in-out infinite; }
+      .pedals { transform-origin:410px 407px; animation:spin 1.5s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-5px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e8"/>
+  <rect x="18" y="18" width="764" height="564" rx="24" fill="url(#sky)" stroke="#28383b" stroke-width="4"/>
+  <text x="400" y="69" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="1" fill="#28383b">THE PELICAN EXPRESS</text>
+  <text x="400" y="97" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#477274">DELIVERING FISH. DODGING RESPONSIBILITY.</text>
+
+  <circle cx="676" cy="151" r="35" fill="#ffd36a"/>
+  <path d="M67 165 q20-22 40 0 q20-22 40 0 M574 123 q12-13 24 0 q12-13 24 0" fill="none" stroke="#6c9d9b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20 289 Q130 276 240 288 T460 286 T780 285 V402 H20Z" fill="url(#sea)"/>
+  <path d="M32 315 q28-10 56 0 m34 24 q28-10 56 0 m388-25 q28-10 56 0 m50 22 q28-10 56 0" fill="none" stroke="#b8ece1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M20 395 Q180 382 340 395 T780 393 V491 H20Z" fill="#e7bc7d"/>
+  <path d="M20 442 Q190 432 350 443 T780 440" fill="none" stroke="#c48e58" stroke-width="3" stroke-dasharray="17 15"/>
+  <path d="M75 373 l8-17 l8 17 M706 374 l8-17 l8 17" fill="none" stroke="#769d75" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Bicycle wheels -->
+  <g class="wheel">
+    <circle cx="249" cy="409" r="71" fill="#fff8e8" stroke="#28383b" stroke-width="10"/>
+    <circle cx="249" cy="409" r="61" fill="#82cfca" stroke="#f9f5e6" stroke-width="3"/>
+    <g class="spoke">
+      <path d="M249 350 v118 M190 409 h118 M207 367 l84 84 M291 367 l-84 84"/>
+    </g>
+    <circle cx="249" cy="409" r="9" fill="#28383b"/>
+  </g>
+  <g class="wheel">
+    <circle cx="553" cy="409" r="71" fill="#fff8e8" stroke="#28383b" stroke-width="10"/>
+    <circle cx="553" cy="409" r="61" fill="#82cfca" stroke="#f9f5e6" stroke-width="3"/>
+    <g class="spoke">
+      <path d="M553 350 v118 M494 409 h118 M511 367 l84 84 M595 367 l-84 84"/>
+    </g>
+    <circle cx="553" cy="409" r="9" fill="#28383b"/>
+  </g>
+
+  <!-- Frame and handlebars -->
+  <g fill="none" class="outline">
+    <path d="M249 409 L330 321 L410 407 L249 409 L377 336 L505 336 L410 407" stroke="#d85c47" stroke-width="10"/>
+    <path d="M505 336 L553 409 M493 303 L505 336" stroke-width="8"/>
+    <path d="M493 303 q9-14 28-10" stroke-width="7"/>
+    <path d="M319 320 h37" stroke-width="9"/>
+  </g>
+  <circle cx="410" cy="407" r="16" fill="#f4c662" stroke="#28383b" stroke-width="5"/>
+  <g class="pedals" fill="none" stroke="#28383b" stroke-width="6" stroke-linecap="round">
+    <path d="M410 407 l20 20 M410 407 l-20-20 M422 430 h20 M378 384 h20"/>
+  </g>
+
+  <!-- Bobbing pelican -->
+  <g class="rider">
+    <path d="M313 299 Q286 293 275 270 Q302 280 319 270" fill="#fffdf4" class="outline"/>
+    <path d="M312 246 Q300 275 309 300 Q321 319 365 317 Q412 316 424 285 Q434 256 407 235 Q375 211 340 222 Q324 227 312 246Z" fill="#fffdf4" class="outline"/>
+    <path d="M317 263 Q347 238 391 258 Q377 295 338 296 Q324 291 317 280Z" fill="#d7e5dc" class="outline"/>
+    <path d="M350 317 l-10 28 l28 11 M382 313 l13 27 l25 4" fill="none" stroke="#e99a42" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M360 355 l20 3 M414 344 l20 3" fill="none" stroke="#28383b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M390 238 Q403 210 394 184 Q387 165 394 150 Q404 132 425 134 Q447 136 453 154 Q458 173 445 187 Q431 202 435 221 Q437 236 425 249Z" fill="#fffdf4" class="outline"/>
+    <path d="M440 160 Q486 157 536 174 Q508 184 448 181 Q451 212 478 219 Q513 226 536 174 Q519 232 479 239 Q444 242 429 201 Q423 184 440 160Z" fill="#f5a449" class="outline"/>
+    <path d="M449 181 Q490 181 536 174" fill="none" stroke="#b96932" stroke-width="3"/>
+    <!-- Fish peeking out -->
+    <path d="M491 190 q11-9 22 0 q-11 9-22 0 l-7 6 v-12Z" fill="#67b9b2" stroke="#28383b" stroke-width="2"/>
+    <circle cx="507" cy="189" r="1.7" fill="#28383b"/>
+    <circle cx="425" cy="155" r="6" fill="#28383b"/>
+    <circle cx="427" cy="153" r="2" fill="#fff"/>
+    <path d="M408 140 q11-8 22-3" fill="none" stroke="#28383b" stroke-width="4" stroke-linecap="round"/>
+    <!-- Helmet -->
+    <path d="M391 149 Q390 122 417 116 Q444 112 453 140 L455 147 Q423 141 391 149Z" fill="#e96b52" class="outline"/>
+    <path d="M405 121 l5 20 M423 116 l3 25 M440 122 l1 20" fill="none" stroke="#a63e37" stroke-width="3"/>
+    <path d="M394 149 q-3 18 8 29" fill="none" stroke="#28383b" stroke-width="3"/>
+  </g>
+
+  <path d="M182 405 l-28 0 m37-17 l-22-8 m22 43 l-22 8" stroke="#b78657" stroke-width="4" stroke-linecap="round"/>
+  <rect x="63" y="495" width="674" height="39" rx="12" fill="#fff8e8" stroke="#e3c99e" stroke-width="2"/>
+  <text x="400" y="521" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#28383b">His carbon footprint is tiny. His lunch bill is not.</text>
+  <path d="M48 547 H752" stroke="#c8a97b" stroke-width="2"/>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#405457">2026-10-30 01:32:56 SGT (UTC+08:00)</text>
+</svg>
