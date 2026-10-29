@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#e8fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#17405a" flood-opacity=".3"/>
+    </filter>
+    <style>
+      .ink{stroke:#17384b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17384b}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="48" fill="#fff8b0" opacity=".9"/>
+  <path d="M0 410 Q140 360 280 410 T560 410 T800 390 V505 H0Z" fill="#86c96b"/>
+  <path d="M0 475 Q180 435 360 475 T800 460 V540 H0Z" fill="#4f9f59"/>
+  <path d="M0 535 Q170 510 350 535 T800 525 V600 H0Z" fill="#d7b56d"/>
+
+  <text x="400" y="62" text-anchor="middle" class="label" font-size="38" font-weight="900" fill="#123449">THE GREAT PELICYCLE</text>
+  <text x="400" y="96" text-anchor="middle" class="label" font-size="19" font-style="italic">“When your beak is bigger than your handlebars, improvise.”</text>
+
+  <g filter="url(#shadow)">
+    <g id="bike" class="ink" fill="none">
+      <circle cx="250" cy="440" r="72" stroke="#243b4a" stroke-width="9">
+        <animateTransform attributeName="transform" type="rotate" from="0 250 440" to="360 250 440" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="570" cy="440" r="72" stroke="#243b4a" stroke-width="9">
+        <animateTransform attributeName="transform" type="rotate" from="0 570 440" to="360 570 440" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M250 440 L350 330 L470 440 L250 440 M350 330 L570 440 M470 440 L515 315 M475 315 L555 315 M330 325 L305 300 M285 300 L330 300" stroke="#d94f45" stroke-width="11"/>
+      <path d="M350 330 L390 430" stroke="#d94f45" stroke-width="11"/>
+      <circle cx="390" cy="430" r="13" fill="#f6c64b"/>
+      <path d="M390 430 L350 390 M390 430 L430 465" stroke="#17384b" stroke-width="8"/>
+      <path d="M217 367 Q250 350 283 367" stroke="#17384b" stroke-width="10"/>
+      <path d="M235 365 L285 365" stroke="#17384b" stroke-width="7"/>
+    </g>
+
+    <g id="pelican">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="1s" repeatCount="indefinite"/>
+      <ellipse cx="405" cy="265" rx="75" ry="95" fill="#f4f0dc" class="ink"/>
+      <path d="M370 285 Q405 325 442 286 L430 360 Q405 380 380 360Z" fill="#d5d8c9" class="ink"/>
+      <path d="M375 205 Q390 153 440 170 Q470 182 457 220 Q444 248 405 238Z" fill="#f4f0dc" class="ink"/>
+      <circle cx="424" cy="193" r="9" fill="#17384b"/>
+      <path d="M445 211 Q540 208 602 238 Q540 266 449 241 Q420 232 445 211Z" fill="#f3a63b" class="ink"/>
+      <path d="M449 236 Q520 260 585 243" fill="none" stroke="#d47725" stroke-width="5"/>
+      <path d="M383 218 Q348 240 351 285 Q390 280 413 247" fill="#cbd0c2" class="ink"/>
+      <path d="M391 345 L350 388 M427 345 L458 389" class="ink" fill="none"/>
+      <path d="M350 388 L335 397 M350 388 L363 397 M458 389 L445 399 M458 389 L472 396" class="ink" fill="none"/>
+      <path d="M385 169 Q370 142 392 127" fill="none" class="ink"/>
+      <path d="M392 127 Q420 145 438 126" fill="none" class="ink"/>
+      <text x="407" y="300" text-anchor="middle" class="label" font-size="17" font-weight="bold">HONK!</text>
+    </g>
+  </g>
+
+  <path d="M95 175 q25 -22 50 0 q25 -22 50 0" fill="none" stroke="#fff" stroke-width="7" opacity=".8"/>
+  <path d="M90 215 q18 -16 36 0 q18 -16 36 0" fill="none" stroke="#fff" stroke-width="6" opacity=".7"/>
+
+  <rect x="35" y="548" width="730" height="38" rx="10" fill="#fff8e8" stroke="#17384b" stroke-width="3"/>
+  <text x="400" y="573" text-anchor="middle" class="label" font-size="18" font-weight="700">2026-10-29 10:03:17 SGT (UTC+08:00)</text>
+</svg>
