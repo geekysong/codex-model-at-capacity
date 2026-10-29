@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .ink{stroke:#17212b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .text{font-family:Arial,sans-serif;fill:#17212b}
+    </style>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9e7ff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 435 Q130 385 260 430 T520 420 T800 430 V520 H0Z" fill="#8bd37b"/>
+  <path d="M0 500 Q180 470 360 500 T800 495 V560 H0Z" fill="#5eaf61"/>
+
+  <text x="400" y="62" text-anchor="middle" class="text" font-size="38" font-weight="900">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="96" text-anchor="middle" class="text" font-size="20" font-style="italic">One bird. One bicycle. Zero sense of direction.</text>
+
+  <g id="bike">
+    <g fill="none" class="ink">
+      <circle cx="290" cy="410" r="76" fill="#d9f4ff"/>
+      <circle cx="570" cy="410" r="76" fill="#d9f4ff"/>
+      <path d="M290 410 L390 300 L470 410 L290 410 M390 300 L570 410 M470 410 L535 300"/>
+      <path d="M520 300 H575 M535 300 L550 275"/>
+      <path d="M390 300 L370 270 M350 270 H390"/>
+      <path d="M420 410 A30 30 0 1 0 480 410 A30 30 0 1 0 420 410"/>
+      <path d="M450 410 L420 370 M450 410 L485 440"/>
+    </g>
+    <g stroke="#f05b4f" stroke-width="5">
+      <path d="M290 345V475 M225 410H355 M236 356L344 464 M344 356L236 464"/>
+      <path d="M570 345V475 M505 410H635 M516 356L624 464 M624 356L516 464"/>
+    </g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1s" repeatCount="indefinite"/>
+  </g>
+
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="1s" repeatCount="indefinite"/>
+    <ellipse cx="410" cy="255" rx="74" ry="88" fill="#f5f2e8" class="ink"/>
+    <path d="M355 235 Q305 245 270 220 Q310 280 382 272Z" fill="#f3a64b" class="ink"/>
+    <circle cx="420" cy="185" r="48" fill="#f5f2e8" class="ink"/>
+    <circle cx="435" cy="178" r="8" fill="#17212b"/>
+    <path d="M452 202 Q490 220 520 205 Q492 250 445 232Z" fill="#f3a64b" class="ink"/>
+    <path d="M395 228 Q425 245 452 228" fill="none" class="ink"/>
+    <path d="M375 320 Q390 345 410 350 M445 320 Q430 345 415 350" fill="none" class="ink"/>
+    <path d="M366 170 Q390 138 420 145" fill="none" stroke="#e0b84f" stroke-width="12"/>
+    <path d="M375 270 Q410 290 450 270" fill="none" stroke="#d3d0c5" stroke-width="10"/>
+    <path d="M350 250 Q320 300 360 330" fill="none" class="ink"/>
+    <path d="M470 250 Q505 280 470 325" fill="none" class="ink"/>
+    <path d="M382 350 L370 390 M425 350 L440 390" fill="none" class="ink"/>
+    <path d="M362 390 H390 M430 390 H458" fill="none" stroke="#f3a64b" stroke-width="10"/>
+  </g>
+
+  <g class="text">
+    <text x="92" y="170" font-size="24" font-weight="bold">“Move over,</text>
+    <text x="92" y="198" font-size="24" font-weight="bold">I’m late for fish!”</text>
+    <path d="M230 205 Q300 220 335 250" fill="none" stroke="#17212b" stroke-width="3"/>
+    <path d="M330 245 l8 10 l-13 -2" fill="#17212b"/>
+  </g>
+
+  <rect x="40" y="540" width="720" height="40" rx="10" fill="#fff8dc" stroke="#17212b" stroke-width="3"/>
+  <text x="400" y="566" text-anchor="middle" class="text" font-size="16" font-weight="bold">2026-10-29 08:01:53 SGT (UTC+08:00)</text>
+</svg>

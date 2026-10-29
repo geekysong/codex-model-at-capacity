@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican on a Bicycle</title>
+  <desc id="desc">A satirical cartoon pelican pedals an absurdly tiny bicycle.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed8ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555b66"/>
+      <stop offset="1" stop-color="#292d36"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#20232b" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .ink{stroke:#1e2430;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#1e2430}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+      .ride{animation:bob 1.2s ease-in-out infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="105" r="54" fill="#fff4a8" opacity=".9"/>
+  <path d="M0 360 Q130 285 260 350 T520 335 T800 340 V430 H0Z" fill="#91c77c"/>
+  <path d="M0 405 Q170 350 330 405 T650 390 T800 400 V470 H0Z" fill="#68aa68"/>
+  <rect y="430" width="800" height="170" fill="url(#road)"/>
+  <path d="M0 515 H800" stroke="#f5d76e" stroke-width="8" stroke-dasharray="42 28" opacity=".9"/>
+  <path d="M0 458 Q180 445 360 458 T800 455" fill="none" stroke="#818894" stroke-width="5" opacity=".6"/>
+
+  <text x="40" y="65" class="label" font-size="38" font-weight="900" fill="#fff" stroke="#1e2430" stroke-width="3" paint-order="stroke">PELICAN COMMUTER</text>
+  <text x="43" y="98" class="label" font-size="20" font-weight="700">“Why fly when you can wobble?”</text>
+
+  <g class="ride" filter="url(#shadow)">
+    <!-- bicycle frame -->
+    <g fill="none" class="ink">
+      <path d="M240 445 L330 330 L405 445 Z"/>
+      <path d="M330 330 L385 445"/>
+      <path d="M330 330 L300 300"/>
+      <path d="M385 445 L470 330"/>
+      <path d="M470 330 L500 300"/>
+      <path d="M470 330 L455 390"/>
+    </g>
+    <g class="wheel">
+      <circle cx="240" cy="445" r="66" fill="#d9e7ee" class="ink"/>
+      <circle cx="240" cy="445" r="9" fill="#1e2430"/>
+      <path d="M240 379V511 M174 445H306 M193 398L287 492 M287 398L193 492" stroke="#64717d" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="470" cy="445" r="66" fill="#d9e7ee" class="ink"/>
+      <circle cx="470" cy="445" r="9" fill="#1e2430"/>
+      <path d="M470 379V511 M404 445H536 M423 398L517 492 M517 398L423 492" stroke="#64717d" stroke-width="3"/>
+    </g>
+    <g fill="none" class="ink">
+      <circle cx="385" cy="445" r="17"/>
+      <path d="M385 445 L360 420 M385 445 L410 470"/>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="360" cy="265" rx="82" ry="108" fill="#f7f7ef" class="ink"/>
+    <path d="M315 220 Q350 170 405 208 Q430 245 407 295 Q370 275 315 220Z" fill="#d5dde5" class="ink"/>
+    <ellipse cx="357" cy="157" rx="57" ry="70" fill="#f7f7ef" class="ink"/>
+    <path d="M318 159 Q355 123 400 151 Q390 181 355 192 Q332 184 318 159Z" fill="#ffc857" class="ink"/>
+    <path d="M395 152 Q475 160 530 197 Q484 220 402 184Z" fill="#f2a93b" class="ink"/>
+    <path d="M430 190 Q479 190 522 200" fill="none" stroke="#b86f23" stroke-width="4"/>
+    <circle cx="375" cy="144" r="8" fill="#1e2430"/>
+    <path d="M349 119 Q372 101 395 119" fill="none" stroke="#1e2430" stroke-width="6"/>
+    <path d="M323 236 Q272 270 300 321 Q325 337 347 303" fill="#f7f7ef" class="ink"/>
+    <path d="M398 236 Q448 267 423 318 Q403 335 381 300" fill="#f7f7ef" class="ink"/>
+    <!-- legs and pedals -->
+    <path d="M343 350 L360 420 M390 350 L410 420" fill="none" class="ink"/>
+    <path d="M350 350 Q365 365 380 350" fill="none" class="ink"/>
+    <path d="M350 420 l-25 8 M410 420 l25 8" fill="none" class="ink"/>
+    <path d="M365 420 l-20 13 M400 420 l20 13" fill="none" class="ink"/>
+    <!-- wing gesture -->
+    <path d="M407 250 Q470 252 497 284 Q470 300 423 286" fill="#eef2f5" class="ink"/>
+  </g>
+
+  <g class="label">
+    <path d="M555 245 Q665 205 742 247" fill="none" stroke="#1e2430" stroke-width="4"/>
+    <rect x="548" y="188" width="190" height="64" rx="18" fill="#fff" class="ink"/>
+    <text x="565" y="215" font-size="18" font-weight="800">“I was told this</text>
+    <text x="565" y="237" font-size="18" font-weight="800">would be faster!”</text>
+  </g>
+
+  <text x="400" y="555" text-anchor="middle" class="label" font-size="18" font-weight="700">2026-10-29 08:00:02 SGT (UTC+08:00)</text>
+</svg>
