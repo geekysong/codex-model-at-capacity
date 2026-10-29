@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Panic</title>
+  <desc id="desc">A satirical cartoon pelican rides a bicycle while proudly carrying an absurdly oversized fish.</desc>
+  <style>
+    .ink{stroke:#17202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .label{font-family:Arial,sans-serif;fill:#17202a}
+  </style>
+
+  <rect width="800" height="600" fill="#bdeeff"/>
+  <circle cx="690" cy="100" r="52" fill="#ffd85c" class="ink"/>
+  <path d="M0 425 Q170 390 330 425 T800 420 V520 H0Z" fill="#8bd17c"/>
+  <path d="M0 520 Q200 500 400 520 T800 515" fill="none" stroke="#4e9c58" stroke-width="8"/>
+
+  <g aria-label="clouds" fill="#fff" stroke="#9bd5e8" stroke-width="4">
+    <path d="M85 125 Q85 92 120 92 Q137 60 175 87 Q210 75 225 110 Q250 112 250 135 H85Z"/>
+    <path d="M540 170 Q540 140 570 140 Q588 108 620 135 Q650 122 670 153 Q700 155 700 180 H540Z"/>
+  </g>
+
+  <g class="label">
+    <text x="400" y="62" text-anchor="middle" font-size="34" font-weight="900" fill="#e74c3c">PELICAN PEDAL PANIC!</text>
+    <text x="400" y="94" text-anchor="middle" font-size="18" font-weight="700">“Why fly when you can wobble?”</text>
+  </g>
+
+  <!-- bicycle -->
+  <g id="bike">
+    <g id="wheelBack" transform="translate(250 430)">
+      <circle r="75" fill="#f7f7f7" class="ink"/>
+      <g stroke="#607d8b" stroke-width="3">
+        <path d="M0-72V72M-72 0H72M-51-51L51 51M51-51L-51 51"/>
+      </g>
+      <circle r="10" fill="#e74c3c" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+    <g id="wheelFront" transform="translate(555 430)">
+      <circle r="75" fill="#f7f7f7" class="ink"/>
+      <g stroke="#607d8b" stroke-width="3">
+        <path d="M0-72V72M-72 0H72M-51-51L51 51M51-51L-51 51"/>
+      </g>
+      <circle r="10" fill="#e74c3c" class="ink"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+    <path d="M250 430 L345 300 L455 430 L250 430 L555 430 L455 300 L410 250" fill="none" stroke="#e74c3c" stroke-width="10"/>
+    <path d="M345 300 L410 250 L470 250" fill="none" stroke="#e74c3c" stroke-width="10"/>
+    <path d="M470 240 V270 M455 250 H490" fill="none" stroke="#17202a" stroke-width="7"/>
+    <circle cx="455" cy="430" r="28" fill="#f0c419" class="ink"/>
+    <path d="M455 430 L430 390 M455 430 L480 470" fill="none" stroke="#17202a" stroke-width="7"/>
+    <circle cx="430" cy="390" r="7" fill="#17202a"/>
+    <circle cx="480" cy="470" r="7" fill="#17202a"/>
+    <path d="M315 300 H370" stroke="#17202a" stroke-width="8"/>
+  </g>
+
+  <!-- bobbing pelican -->
+  <g id="pelican">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0;0 6;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="405" cy="245" rx="82" ry="98" fill="#f4f7f8" class="ink"/>
+    <path d="M350 205 Q300 180 290 220 Q325 245 370 235" fill="#f4a62a" class="ink"/>
+    <path d="M290 220 Q330 235 370 235" fill="none" stroke="#9c5c16" stroke-width="4"/>
+    <circle cx="385" cy="185" r="10" fill="#17202a"/>
+    <path d="M386 168 Q402 145 420 165" fill="none" stroke="#f4a62a" stroke-width="9"/>
+    <path d="M365 275 Q405 300 448 272" fill="none" stroke="#d3dce0" stroke-width="8"/>
+    <path d="M355 300 Q335 335 350 365 M440 300 Q462 332 448 365" fill="none" stroke="#f4a62a" stroke-width="12"/>
+    <path d="M350 365 L325 390 M448 365 L475 390" fill="none" stroke="#e67e22" stroke-width="9"/>
+    <path d="M350 365 L325 390 M448 365 L475 390" fill="none" stroke="#17202a" stroke-width="5">
+      <animate attributeName="d" dur="1.2s" repeatCount="indefinite"
+        values="M350 365 L325 390 M448 365 L475 390;M350 365 L375 390 M448 365 L420 390;M350 365 L325 390 M448 365 L475 390"/>
+    </path>
+    <path d="M340 235 Q300 275 340 300" fill="#dfe7ea" class="ink"/>
+    <path d="M470 235 Q505 270 475 300" fill="#dfe7ea" class="ink"/>
+    <path d="M365 330 Q410 350 455 330" fill="none" stroke="#17202a" stroke-width="5"/>
+    <path d="M385 342 Q410 360 435 342" fill="none" stroke="#e74c3c" stroke-width="6"/>
+    <text x="410" y="392" text-anchor="middle" font-size="16" font-weight="700" class="label">LICENSED TO WOBBLE</text>
+  </g>
+
+  <!-- absurd fish cargo -->
+  <g transform="translate(470 150) rotate(-12)">
+    <path d="M0 45 Q45 0 110 35 Q145 53 110 72 Q45 105 0 55Z" fill="#ff8c42" class="ink"/>
+    <path d="M110 35 L145 5 L140 55 Z" fill="#ff8c42" class="ink"/>
+    <circle cx="30" cy="40" r="6" fill="#17202a"/>
+    <path d="M55 48 Q75 58 92 45" fill="none" stroke="#17202a" stroke-width="4"/>
+    <text x="62" y="25" text-anchor="middle" font-size="13" font-weight="900" class="label">FISH TAX</text>
+  </g>
+
+  <g class="label">
+    <text x="400" y="555" text-anchor="middle" font-size="20" font-weight="800">A beak, two wheels, and absolutely no traffic plan.</text>
+    <text x="400" y="584" text-anchor="middle" font-size="15">2026-10-29 09:02:18 SGT (UTC+08:00)</text>
+  </g>
+</svg>
