@@ -18,7 +18,7 @@
     $('compare').innerHTML = ids.map(id=>`<option value="${esc(id)}">${esc(id)} · ${region(groups.get(id))}</option>`).join('');
     $('compare').value = comparison;
     const key = r => `${r.variant||'legacy'} / ${r.model}`;
-    const card = r => !r ? '<div class="card noart">该轮无此模型或挑战 / No matching attempt</div>' : `<figure class="card"><div class="art">${r.svg ? `<a href="${esc(r.svg)}" target="_blank" rel="noopener" style="display:block;width:100%;height:100%"><img src="${esc(r.svg)}" alt="${esc(key(r))}" loading="lazy"></a>` : '<div class="noart">无图片 / No SVG</div>'}</div><figcaption><div><b>${esc(r.model)}</b><span class="${r.status==='ok'?'pass':'fail'}">${esc(r.status)}</span></div><small>${esc(r.duration_s??'—')}s · ${esc(r.total_tokens??'—')} tokens<br>${esc(r.time_sgt)} SGT</small>${r.error ? `<p class="fail" style="overflow-wrap:anywhere">${esc(r.error)}</p>`:''}</figcaption></figure>`;
+    const card = r => !r ? '<div class="card noart">该轮无此模型或挑战 / No matching attempt</div>' : `<figure class="card"><div class="art">${r.svg ? `<a href="${esc(r.svg)}" target="_blank" rel="noopener" style="display:block;width:100%;height:100%"><img src="${esc(r.svg)}" alt="${esc(key(r))}" loading="lazy"></a>` : '<div class="noart">无图片 / No SVG</div>'}</div><figcaption><div><b>${esc(r.model)}</b><span class="${r.status==='ok'?'pass':'fail'}">${esc(r.status)}</span></div><small>${esc(r.duration_s??'—')}s · ${esc(r.total_tokens??'—')} tokens<br>${esc(r.time_sgt)} SGT</small>${r.error ? `<p class="fail errtxt" style="overflow-wrap:anywhere">${esc(r.error)}</p>`:''}</figcaption></figure>`;
     $('gallery').className = '';
     $('compare').onchange = () => { comparison=$('compare').value; draw(); };
     function draw() {
