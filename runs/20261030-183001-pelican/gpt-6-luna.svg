@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Promotion</title>
+  <desc id="desc">A smug pelican pedals a bicycle, proudly carrying a tiny briefcase. The wheels spin and the pelican bobs.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { fill: none; stroke: #26364a; stroke-width: 8; }
+      .spokes { stroke: #557083; stroke-width: 2; }
+      .frame { fill: none; stroke: #e05b45; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+      .small { font-size: 15px; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+      .rotor { transform-box: fill-box; transform-origin: center; animation: spin 2.6s linear infinite; }
+      .rider { animation: bob .65s ease-in-out infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        .rotor, .rider { animation-duration: 8s; }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f7e9c9"/>
+  <path d="M0 0h800v150H0z" fill="#f4c765"/>
+  <circle cx="700" cy="84" r="38" fill="#f08d57"/>
+  <path d="M0 354q120-32 240 0t240 0 320 0v95H0z" fill="#c5d8b6"/>
+  <path d="M0 407q150-28 300 0t300 0 200 0v75H0z" fill="#a7c59e"/>
+  <path d="M0 451h800" stroke="#657d68" stroke-width="4"/>
+  <path d="M70 470h660" stroke="#f7e9c9" stroke-width="5" stroke-dasharray="30 26"/>
+
+  <text id="title" x="400" y="52" text-anchor="middle" font-size="31" font-weight="900" letter-spacing="1.5" fill="#26364a">THE PELICAN’S PROMOTION</text>
+  <text x="400" y="79" text-anchor="middle" font-size="16" font-weight="700" fill="#7a4b3b">“I’m in charge of the beak-on-time commute.”</text>
+
+  <!-- Bicycle -->
+  <g aria-label="Bicycle">
+    <circle class="wheel" cx="236" cy="385" r="76"/>
+    <circle class="wheel" cx="550" cy="385" r="76"/>
+    <g class="rotor">
+      <path class="spokes" d="M236 309v152M160 385h152M182 331l108 108M182 439l108-108"/>
+    </g>
+    <g class="rotor">
+      <path class="spokes" d="M550 309v152M474 385h152M496 331l108 108M496 439l108-108"/>
+    </g>
+    <path class="frame" d="M236 385l102-112 79 112H236l70-83h111l-79-29"/>
+    <circle cx="338" cy="273" r="10" fill="#26364a"/>
+    <path d="M331 267l-20-17M414 385l16 3M419 379l16-23M419 391l-16 22" fill="none" stroke="#26364a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M312 263h-38M427 356h36" stroke="#26364a" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="338" cy="273" r="6" fill="#f4c765"/>
+    <path d="M338 273l22 34-22 31-22-31z" fill="none" stroke="#26364a" stroke-width="4"/>
+    <circle cx="338" cy="338" r="7" fill="#26364a"/>
+    <path d="M338 338l-22-31m22 31 22-31" stroke="#26364a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M526 304h48l-9 18h-48z" fill="#f4c765" stroke="#26364a" stroke-width="4"/>
+    <path d="M573 377l17-17" stroke="#26364a" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Bouncing pelican rider -->
+  <g class="rider">
+    <path d="M324 236q-11-35 10-59 22-23 52-8 24 13 19 43l-9 33-57 14z" fill="#fffdf2" stroke="#26364a" stroke-width="5"/>
+    <path d="M344 221q-5-28 16-39 21-11 37 5 12 13 7 34l-8 24-45 5z" fill="#f5f0dd" stroke="#26364a" stroke-width="4"/>
+    <path d="M389 206q16-9 31-3l38 16q8 4 1 10l-43 10-34-7z" fill="#ef9a45" stroke="#26364a" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M417 238q17 3 30-6" fill="none" stroke="#b94a39" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="382" cy="196" r="5" fill="#26364a"/>
+    <circle cx="383" cy="194" r="1.7" fill="#fff"/>
+    <path d="M352 177q13-20 35-13" fill="none" stroke="#26364a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M342 236l-11 28-20 7" fill="none" stroke="#26364a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M311 271l-3-6-7 2 2 8z" fill="#ef9a45" stroke="#26364a" stroke-width="2"/>
+    <path d="M387 240l-13 29 18 25" fill="none" stroke="#26364a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M392 294l-16-1-3 8 22 3" fill="#ef9a45" stroke="#26364a" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M371 291l-22 27 9 20" fill="none" stroke="#26364a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M359 338h-19l-4 8h28z" fill="#ef9a45" stroke="#26364a" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M365 253q19 8 35-1" fill="none" stroke="#fffdf2" stroke-width="4"/>
+    <!-- absurd executive briefcase -->
+    <path d="M449 223h49v39h-49z" fill="#8d5947" stroke="#26364a" stroke-width="4" rx="4"/>
+    <path d="M462 223v-8q0-7 7-7h10q7 0 7 7v8" fill="none" stroke="#26364a" stroke-width="4"/>
+    <path d="M449 237h49M470 237v8h7v-8" fill="none" stroke="#f4c765" stroke-width="3"/>
+    <text x="473" y="257" text-anchor="middle" font-size="9" font-weight="900" fill="#fff4d2">CEO</text>
+    <path d="M328 174l-10-9m-3 22-14-2m97-20 10-10" stroke="#e05b45" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="rotate(-7 650 298)">
+    <rect x="603" y="270" width="130" height="55" rx="12" fill="#fffdf2" stroke="#26364a" stroke-width="3"/>
+    <path d="M603 295l-15 6 15 7" fill="#fffdf2" stroke="#26364a" stroke-width="3" stroke-linejoin="round"/>
+    <text x="668" y="293" text-anchor="middle" font-size="13" font-weight="900" fill="#26364a">PROMOTED!</text>
+    <text x="668" y="312" text-anchor="middle" font-size="11" font-weight="700" fill="#e05b45">to head of honking</text>
+  </g>
+
+  <text x="400" y="510" text-anchor="middle" font-size="17" font-weight="800" fill="#26364a">Big beak. Bigger title. Questionable traffic judgment.</text>
+  <path d="M86 530h628" stroke="#b9a783" stroke-width="1.5"/>
+  <text x="400" y="563" text-anchor="middle" class="small" font-weight="700" fill="#435267">2026-10-30 18:32:35 SGT (UTC+08:00)</text>
+</svg>
