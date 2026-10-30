@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Beak Hour Traffic</title>
+  <desc id="description">A smug pelican pedals a bicycle with an enormous fish-filled bill, passing a fuel station sign. Wheels spin, feet pedal, and the pelican bobs in a seamless loop.</desc>
+  <defs>
+    <pattern id="paper" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r=".7" fill="#d5cba9" opacity=".25"/>
+      <circle cx="13" cy="14" r=".6" fill="#d5cba9" opacity=".2"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="83" fill="#fffaf0" stroke="#26343c" stroke-width="12"/>
+      <circle r="72" fill="none" stroke="#b5c4c4" stroke-width="3"/>
+      <g stroke="#748e96" stroke-width="2.5">
+        <path d="M-72 0H72M0-72V72M-51-51L51 51M-51 51L51-51"/>
+        <path d="M-67-28L67 28M-28-67L28 67M-67 28L67-28M-28 67L28-67"/>
+      </g>
+      <circle r="10" fill="#efb737" stroke="#26343c" stroke-width="4"/>
+      <path d="M-9-73H9" stroke="#f79542" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; fill: #26343c; }
+      .outline { stroke: #26343c; stroke-width: 5; stroke-linejoin: round; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8efd7"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M30 104H770" stroke="#26343c" stroke-width="3"/>
+  <text x="400" y="60" text-anchor="middle" font-size="43" font-weight="900" letter-spacing="2">BEAK HOUR TRAFFIC</text>
+  <text x="400" y="88" text-anchor="middle" font-size="16" letter-spacing="2">ONE BIRD. TWO WHEELS. ZERO DIGNITY.</text>
+
+  <!-- The single seaside commuting scene -->
+  <rect x="25" y="119" width="750" height="380" rx="25" fill="#c9e6df"/>
+  <circle cx="680" cy="172" r="31" fill="#ffcf65"/>
+  <path d="M25 358Q153 321 266 354T508 351T775 347V499H25Z" fill="#a4c9ad"/>
+  <path d="M25 398Q220 378 408 398T775 394V499H25Z" fill="#e2d0ab"/>
+  <path d="M43 470H757" stroke="#857d6a" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="406" cy="479" rx="246" ry="12" fill="#26343c" opacity=".13"/>
+
+  <!-- An overpriced roadside fuel sign -->
+  <path d="M111 263V423" stroke="#68796c" stroke-width="9"/>
+  <rect x="45" y="189" width="132" height="97" rx="9" fill="#fff8e8" stroke="#26343c" stroke-width="4"/>
+  <text x="111" y="218" text-anchor="middle" font-size="20" font-weight="bold">FUEL</text>
+  <text x="111" y="247" text-anchor="middle" font-size="25" font-weight="bold">$ OOF</text>
+  <text x="111" y="270" text-anchor="middle" font-size="12">PRICE PER GULP</text>
+
+  <!-- Spinning wheels -->
+  <g transform="translate(278 414)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(540 414)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#26343c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M278 414L339 312L394 414ZM339 312H493L394 414M493 312L540 414M394 414L329 288"/>
+    <path d="M493 312L480 273L512 258"/>
+  </g>
+  <g fill="none" stroke="#e55d4e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M278 414L339 312L394 414ZM339 312H493L394 414M493 312L540 414"/>
+  </g>
+  <path d="M307 290H355" stroke="#26343c" stroke-width="13" stroke-linecap="round"/>
+  <path d="M502 258L521 253" stroke="#26343c" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="394" cy="414" r="19" fill="#eac263" stroke="#26343c" stroke-width="4"/>
+  <path d="M278 414H394" stroke="#697d7c" stroke-width="4"/>
+
+  <!-- Pelican and its gently bouncing upper body -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".75s" repeatCount="indefinite"/>
+    <!-- Tail and body -->
+    <path d="M323 270L267 239L287 280L263 280L321 309Z" fill="#eef2e8" class="outline"/>
+    <path d="M313 226Q337 198 382 212Q418 224 420 258Q416 300 359 304Q310 304 299 278Q290 250 313 226Z" fill="#fffdf0" class="outline"/>
+    <path d="M316 243Q345 228 383 252Q363 280 328 276" fill="#d7ded3" class="outline"/>
+    <path d="M324 251L355 263M319 261L343 271" fill="none" stroke="#879b98" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Long neck -->
+    <path d="M382 250Q410 231 400 201Q386 164 415 147Q440 132 456 151Q467 169 449 187Q431 201 446 232Q453 260 417 280" fill="#fffdf0" class="outline"/>
+    <path d="M412 146L402 130L422 139L425 124L438 142" fill="#fffdf0" class="outline"/>
+
+    <!-- Vast bill and expandable fish cargo -->
+    <path d="M446 180L671 192Q662 224 605 243Q524 265 453 209Z" fill="#f0ad56" class="outline"/>
+    <path d="M454 200Q537 225 659 199Q617 243 551 241Q487 236 454 200Z" fill="#f6cb87" stroke="#bd7945" stroke-width="2"/>
+    <g fill="#8cbbb7" stroke="#26343c" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M499 219Q519 200 546 219Q520 235 499 219L487 207V229Z"/>
+      <path d="M568 223Q587 204 614 218Q592 237 568 223L557 212V234Z"/>
+    </g>
+    <circle cx="534" cy="217" r="2.8" fill="#26343c"/>
+    <circle cx="602" cy="217" r="2.8" fill="#26343c"/>
+    <path d="M446 177Q549 165 683 188L671 198L448 194Z" fill="#ffd26b" class="outline"/>
+    <path d="M660 187L681 188" stroke="#fff4be" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Smug expression -->
+    <circle cx="439" cy="163" r="12" fill="white" stroke="#26343c" stroke-width="3"/>
+    <circle cx="443" cy="163" r="4" fill="#26343c"/>
+    <path d="M426 151L451 148" stroke="#26343c" stroke-width="4" stroke-linecap="round"/>
+    <path d="M450 199Q461 207 470 200" fill="none" stroke="#26343c" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Wing reaches the handlebar -->
+    <path d="M389 249Q425 287 475 271L508 258" fill="none" stroke="#26343c" stroke-width="17" stroke-linecap="round"/>
+    <path d="M389 249Q425 287 475 271L508 258" fill="none" stroke="#fffdf0" stroke-width="11" stroke-linecap="round"/>
+    <path d="M504 253L513 263M498 257L505 267" stroke="#26343c" stroke-width="3"/>
+
+    <!-- Commuter tie -->
+    <path d="M413 220L429 225L418 237L431 270L412 280L404 243L412 232Z" fill="#e55d4e" stroke="#26343c" stroke-width="3"/>
+    <path d="M413 254L424 250" stroke="#ffdd9f" stroke-width="3"/>
+  </g>
+
+  <!-- Alternating legs and webbed feet -->
+  <path d="M354 293L377 339L369 389" fill="none" stroke="#26343c" stroke-width="11" stroke-linecap="round">
+    <animate attributeName="d" values="M354 293L377 339L369 389;M354 293L410 330L419 439;M354 293L377 339L369 389" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M361 293L421 339L419 439" fill="none" stroke="#e6a336" stroke-width="8" stroke-linecap="round">
+    <animate attributeName="d" values="M361 293L421 339L419 439;M361 293L379 341L369 389;M361 293L421 339L419 439" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  <g transform="translate(394 414)">
+    <g stroke="#26343c" stroke-width="4" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" values="0;180;360" dur="1.5s" repeatCount="indefinite"/>
+      <path d="M-25-25L25 25"/>
+      <g transform="translate(25 25)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1.5s" repeatCount="indefinite"/>
+          <path d="M-10-6L5-13L24 1L3 7L-12 3Z" fill="#f4b43f"/>
+          <path d="M-14 10H22"/>
+        </g>
+      </g>
+      <g transform="translate(-25 -25)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1.5s" repeatCount="indefinite"/>
+          <path d="M-10-6L5-13L24 1L3 7L-12 3Z" fill="#f4b43f"/>
+          <path d="M-14 10H22"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Motion marks -->
+  <g fill="none" stroke="#527b78" stroke-width="4" stroke-linecap="round">
+    <path d="M203 321H245M217 335H240M182 348H224"/>
+  </g>
+
+  <rect x="180" y="505" width="440" height="35" rx="17" fill="#26343c"/>
+  <text x="400" y="529" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff8e8" style="fill:#fff8e8">“I commute on renewable sardines.”</text>
+
+  <!-- Dedicated footer, clear of scene and caption -->
+  <path d="M30 552H770" stroke="#b7aa8b" stroke-width="1.5"/>
+  <text x="400" y="578" text-anchor="middle" font-size="17" font-weight="bold">2026-10-31 03:31:10 SGT (UTC+08:00)</text>
+</svg>

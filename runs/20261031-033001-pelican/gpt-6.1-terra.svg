@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN POWER</title>
+  <desc id="desc">A determined pelican rides a bicycle while its wheels spin and its body bobs. Its enormous beak carries a fish.</desc>
+  <defs>
+    <pattern id="spokes" width="110" height="110" patternUnits="userSpaceOnUse">
+      <circle cx="55" cy="55" r="49" fill="none" stroke="#29343b" stroke-width="7"/>
+      <circle cx="55" cy="55" r="42" fill="none" stroke="#f8f4e8" stroke-width="2"/>
+      <g stroke="#68767b" stroke-width="2">
+        <path d="M55 8v94M8 55h94M22 22l66 66M88 22L22 88"/>
+      </g>
+      <circle cx="55" cy="55" r="6" fill="#f7bd43" stroke="#29343b" stroke-width="3"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#f5ead2"/>
+  <rect x="20" y="18" width="760" height="564" rx="25" fill="#fff8e8" stroke="#29343b" stroke-width="4"/>
+  <path d="M22 100H778" stroke="#29343b" stroke-width="3"/>
+  <text x="400" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="900" letter-spacing="3" fill="#253d47">PELICAN POWER</text>
+
+  <path d="M23 371 Q130 330 230 354 T430 350 T630 344 T777 356 V478 H23Z" fill="#b9dfd7"/>
+  <path d="M23 412 Q125 394 220 410 T420 407 T620 402 T777 410 V478 H23Z" fill="#90cbbf"/>
+  <path d="M95 225q17-14 34 0M129 225q17-14 34 0M610 203q13-11 26 0M636 203q13-11 26 0" fill="none" stroke="#7eaaa5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="665" cy="163" r="32" fill="#f4c867"/>
+  <path d="M24 476H776" stroke="#29343b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M45 491h710" stroke="#c7b699" stroke-width="3" stroke-dasharray="18 13"/>
+
+  <!-- Wheels rotate around their hubs. -->
+  <g transform="translate(235 418)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.1s" repeatCount="indefinite"/>
+      <circle r="55" fill="url(#spokes)" transform="translate(-55 -55)"/>
+      <circle cx="0" cy="-48" r="4" fill="#e75c47"/>
+    </g>
+  </g>
+  <g transform="translate(565 418)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.1s" repeatCount="indefinite"/>
+      <circle r="55" fill="url(#spokes)" transform="translate(-55 -55)"/>
+      <circle cx="0" cy="-48" r="4" fill="#e75c47"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame. -->
+  <g fill="none" stroke="#d94f3f" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M235 418L325 319 389 418 235 418 347 347 500 347 389 418"/>
+    <path d="M500 347l65 71M490 320l10 27"/>
+  </g>
+  <path d="M325 319l-12-19M293 298h44" fill="none" stroke="#29343b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M490 320l-10-20h32q14 0 14-12" fill="none" stroke="#29343b" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="389" cy="418" r="14" fill="#f8d370" stroke="#29343b" stroke-width="4"/>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 389 418" to="360 389 418" dur="2.1s" repeatCount="indefinite"/>
+    <path d="M389 418l24 18" stroke="#29343b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M405 437h20" stroke="#29343b" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rider bobs gently above the saddle. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="1.05s" repeatCount="indefinite"/>
+    <path d="M352 315q13 30 28 61l18 33" fill="none" stroke="#d89a4a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M398 409l20 6" fill="none" stroke="#d89a4a" stroke-width="9" stroke-linecap="round"/>
+    <path d="M325 309q-29-15-32-52-4-42 28-60 25-14 57 1 28 13 34 46 5 31-18 54-28 27-69 11Z" fill="#f5f0df" stroke="#29343b" stroke-width="4"/>
+    <path d="M307 257q29 3 53-21-2 31-21 48-16 13-32-3" fill="#d9dfd5" stroke="#29343b" stroke-width="3"/>
+    <path d="M305 273q-20 8-30-3 4 20 25 22" fill="#f5f0df" stroke="#29343b" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M380 218q20-29 21-59 0-28 25-37 23-8 39 10 12 14 8 35l-10 38q-7 31-26 54" fill="#f5f0df" stroke="#29343b" stroke-width="4"/>
+    <path d="M455 164q68-8 131 17-41 17-111 13l-23-6Z" fill="#f4b54a" stroke="#29343b" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M456 188q31 43 76 20 23-11 54-27-62 10-130 7Z" fill="#ed9950" stroke="#29343b" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M493 190q15-12 30 0-15 12-30 0Z" fill="#6c9ca5" stroke="#29343b" stroke-width="2"/>
+    <path d="M523 190l9-7v14Z" fill="#6c9ca5" stroke="#29343b" stroke-width="2"/>
+    <circle cx="501" cy="189" r="1.8" fill="#29343b"/>
+    <ellipse cx="448" cy="149" rx="12" ry="14" fill="#fff" stroke="#29343b" stroke-width="3"/>
+    <circle cx="452" cy="151" r="4" fill="#29343b"/>
+    <path d="M436 130q10-8 22-3" fill="none" stroke="#29343b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M415 130q10-19 36-17l-4 10-32 7Z" fill="#e65b47" stroke="#29343b" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M419 248q20 25 51 42l15 5" fill="none" stroke="#e7ad65" stroke-width="8" stroke-linecap="round"/>
+    <path d="M480 294l13-1" stroke="#29343b" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M598 287q27-22 60-3" fill="none" stroke="#29343b" stroke-width="3" stroke-linecap="round"/>
+  <text x="631" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#29343b">HONK!</text>
+
+  <path d="M22 513H778" stroke="#29343b" stroke-width="3"/>
+  <text x="400" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#29343b">Two wheels, one fish, zero traffic violations.</text>
+  <text x="400" y="569" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#53666b">2026-10-31 03:32:32 SGT (UTC+08:00)</text>
+</svg>
