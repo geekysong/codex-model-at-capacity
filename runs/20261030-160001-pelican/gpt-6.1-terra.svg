@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Daily Commute</title>
+  <desc id="desc">A smug pelican rides a bicycle with spinning wheels and gently bobs along a seaside road.</desc>
+  <defs>
+    <style>
+      .ink { stroke: #263342; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2s linear infinite; }
+      .rider { animation: bob 1s ease-in-out infinite; }
+      .cloud { animation: drift 8s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+      @keyframes drift { to { transform: translateX(18px); } }
+    </style>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#fff" opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#f9eed5"/>
+  <rect x="18" y="18" width="764" height="564" rx="22" fill="#fff9e9" stroke="#263342" stroke-width="4"/>
+  <text x="400" y="72" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#263342">THE DAILY COMMUTE</text>
+  <path d="M90 86 H710" stroke="#e8a93b" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="40" y="100" width="720" height="380" rx="16" fill="#bde9eb"/>
+  <rect x="40" y="100" width="720" height="380" rx="16" fill="url(#dots)"/>
+  <circle cx="655" cy="158" r="35" fill="#ffd46a"/>
+  <g class="cloud" fill="#fffaf0" opacity=".95">
+    <path d="M95 155c3-17 28-21 39-7 10-17 38-12 41 7 19 1 21 20 4 23H92c-17-2-15-20 3-23z"/>
+    <path d="M465 135c3-13 21-16 29-5 8-13 29-9 31 5 15 1 16 15 3 18h-66c-13-2-11-16 3-18z"/>
+  </g>
+  <path d="M40 329 Q180 304 325 328 T610 326 T760 323 V402 H40Z" fill="#8bcfd0"/>
+  <path d="M40 350 Q160 339 270 351 T510 349 T760 350" fill="none" stroke="#f2fbef" stroke-width="4" opacity=".7"/>
+  <path d="M40 400 Q205 385 375 400 T760 395 V480 H40Z" fill="#e5bd7d"/>
+  <path d="M40 430 H760" stroke="#c6965c" stroke-width="3" stroke-dasharray="12 14"/>
+  <ellipse cx="398" cy="455" rx="255" ry="13" fill="#8a684d" opacity=".18"/>
+
+  <g class="wheel">
+    <circle cx="225" cy="390" r="75" fill="#fff9e9" stroke="#263342" stroke-width="8"/>
+    <circle cx="225" cy="390" r="59" fill="none" stroke="#e8a93b" stroke-width="4"/>
+    <path d="M225 315V465 M150 390H300 M172 337L278 443 M278 337L172 443" fill="none" stroke="#8b9ba1" stroke-width="3"/>
+    <circle cx="225" cy="390" r="7" fill="#263342"/>
+  </g>
+  <g class="wheel">
+    <circle cx="570" cy="390" r="75" fill="#fff9e9" stroke="#263342" stroke-width="8"/>
+    <circle cx="570" cy="390" r="59" fill="none" stroke="#e8a93b" stroke-width="4"/>
+    <path d="M570 315V465 M495 390H645 M517 337L623 443 M623 337L517 443" fill="none" stroke="#8b9ba1" stroke-width="3"/>
+    <circle cx="570" cy="390" r="7" fill="#263342"/>
+  </g>
+
+  <g fill="none" class="ink">
+    <path d="M225 390 L320 286 L385 390 Z" stroke="#e85e48" stroke-width="9"/>
+    <path d="M320 286 L485 290 L385 390 M485 290 L570 390" stroke="#e85e48" stroke-width="9"/>
+    <path d="M305 273 H340 M320 286 L314 273"/>
+    <path d="M485 290 L467 260 H499 Q515 260 515 250"/>
+    <circle cx="385" cy="390" r="19" stroke-width="4"/>
+    <path d="M385 390 L405 408 M398 409 H416" stroke-width="5"/>
+  </g>
+  <path d="M291 271 Q318 263 344 271 Q344 278 331 279 H301 Q290 278 291 271Z" fill="#263342"/>
+
+  <g class="rider">
+    <path d="M340 306 Q325 337 360 361 L391 391" fill="none" stroke="#e09b37" stroke-width="12" stroke-linecap="round"/>
+    <path d="M391 391 l27 6 l-22 8" fill="none" stroke="#e09b37" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M363 307 Q380 337 408 347 L449 324" fill="none" stroke="#f0af45" stroke-width="12" stroke-linecap="round"/>
+    <path d="M449 324 l18 -3 l-12 13" fill="none" stroke="#f0af45" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M276 250 Q265 209 302 194 Q342 179 377 208 Q399 226 390 264 Q381 305 343 316 Q301 320 278 293 Q265 278 276 250Z" fill="#fffdf4" class="ink"/>
+    <path d="M285 249 Q318 224 365 242 Q355 280 318 289 Q297 291 285 278" fill="#d8e2df" stroke="#263342" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M290 258 Q315 265 343 252 M292 270 Q315 277 333 268" fill="none" stroke="#9aadaa" stroke-width="3" stroke-linecap="round"/>
+    <path d="M363 229 Q394 205 395 172 Q396 148 414 137 Q439 122 459 140 Q470 151 468 173 Q466 192 453 204 Q439 219 430 250 Q422 277 390 282" fill="#fffdf4" class="ink"/>
+    <path d="M451 162 Q501 168 554 182 Q563 185 556 192 Q507 206 452 190Z" fill="#f2b64a" class="ink"/>
+    <path d="M452 190 Q487 202 541 196 Q530 223 491 225 Q467 224 452 190Z" fill="#f5cf73" stroke="#263342" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="445" cy="155" r="10" fill="#fff" stroke="#263342" stroke-width="3"/>
+    <circle cx="448" cy="155" r="4" fill="#263342"/>
+    <path d="M435 139 Q445 133 454 138" fill="none" stroke="#263342" stroke-width="4" stroke-linecap="round"/>
+    <path d="M401 135 Q420 112 451 126 L465 137 Q438 132 407 145Z" fill="#e85e48" class="ink"/>
+    <path d="M419 120 l4 -9 l15 4 l-2 9" fill="#e85e48" stroke="#263342" stroke-width="4"/>
+    <path d="M365 258 Q399 250 422 272 L469 256" fill="none" stroke="#263342" stroke-width="8" stroke-linecap="round"/>
+    <path d="M365 258 Q399 250 422 272 L469 256" fill="none" stroke="#fffdf4" stroke-width="5" stroke-linecap="round"/>
+    <path d="M465 254 q9 -7 15 1" fill="none" stroke="#263342" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M102 286 q-15 8 -21 21 M111 302 q-11 6 -15 15" fill="none" stroke="#fff9e9" stroke-width="5" stroke-linecap="round"/>
+  <text x="400" y="517" text-anchor="middle" font-family="Georgia, serif" font-size="21" font-style="italic" fill="#263342">“Traffic’s awful, but the parking is pelican-friendly.”</text>
+  <path d="M75 536 H725" stroke="#d8c8a8" stroke-width="2"/>
+  <text x="400" y="563" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#52606a">2026-10-30 16:03:05 SGT (UTC+08:00)</text>
+</svg>
