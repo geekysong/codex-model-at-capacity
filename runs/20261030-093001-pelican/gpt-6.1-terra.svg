@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN PEDAL POWER</title>
+  <desc id="desc">A smug pelican rides a bicycle along a seaside promenade, carrying a fish in its beak. The wheels spin and the rider bobs as it pedals.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#bcecf1"/>
+      <stop offset="1" stop-color="#f7e9c8"/>
+    </linearGradient>
+    <linearGradient id="sea" x2="0" y2="1">
+      <stop stop-color="#5dc5c5"/>
+      <stop offset="1" stop-color="#2e969e"/>
+    </linearGradient>
+    <pattern id="stripes" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect width="10" height="20" fill="#f4d39b"/>
+      <rect x="10" width="10" height="20" fill="#e9ba78"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="79" fill="#fdf8e7" stroke="#273b45" stroke-width="12"/>
+      <circle r="67" fill="none" stroke="#dc755c" stroke-width="4"/>
+      <g stroke="#67858a" stroke-width="3">
+        <path d="M-66 0H66M0-66V66M-47-47L47 47M47-47L-47 47"/>
+      </g>
+      <circle r="9" fill="#f5c65b" stroke="#273b45" stroke-width="4"/>
+      <circle cx="0" cy="-79" r="5" fill="#f7cb55"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e8"/>
+  <rect x="18" y="18" width="764" height="526" rx="18" fill="url(#sky)" stroke="#273b45" stroke-width="4"/>
+
+  <text x="400" y="69" text-anchor="middle" fill="#243d47" font-family="Arial, sans-serif" font-size="37" font-weight="900" letter-spacing="2">PELICAN PEDAL POWER</text>
+  <text x="400" y="96" text-anchor="middle" fill="#a34e37" font-family="Arial, sans-serif" font-size="16" font-weight="bold" letter-spacing="1">THE COMMUTE IS FOR THE BIRDS</text>
+
+  <circle cx="680" cy="154" r="35" fill="#ffd66f"/>
+  <path d="M66 162q20-18 40 0q20-18 40 0M555 136q12-11 24 0q12-11 24 0" fill="none" stroke="#78afb3" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20 300q95-18 180 0t180 0t180 0t220 0v117H20z" fill="url(#sea)"/>
+  <path d="M45 335q35-8 70 0m390 9q35-8 70 0m89-27q30-7 60 0" fill="none" stroke="#b9edef" stroke-width="4" stroke-linecap="round"/>
+  <path d="M20 407h760v119H20z" fill="url(#stripes)"/>
+  <path d="M20 407h760" stroke="#bf8f58" stroke-width="5"/>
+  <ellipse cx="405" cy="504" rx="262" ry="16" fill="#ac8765" opacity=".3"/>
+
+  <!-- Wheels spin around their fixed hubs. -->
+  <g transform="translate(226 423)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(577 423)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame and handlebars. -->
+  <g fill="none" stroke="#d84f3d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M226 423L319 299L392 423H226L493 315L392 423"/>
+    <path d="M319 299h174l84 124M493 315l-15-54"/>
+  </g>
+  <g fill="none" stroke="#273b45" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M478 261h42q17 0 17 15"/>
+    <path d="M304 292h43"/>
+    <path d="M319 299l-5-16"/>
+  </g>
+  <path d="M297 283q20-10 48-2q5 2 2 7h-51q-5-2 1-5z" fill="#273b45"/>
+  <circle cx="392" cy="423" r="14" fill="#f4ca5f" stroke="#273b45" stroke-width="5"/>
+  <g transform="translate(392 423)">
+    <g>
+      <path d="M-27-17L27 17" stroke="#273b45" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-35-19h16M19 19h16" stroke="#273b45" stroke-width="7" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Rider bobs gently with the motion. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 4;0 0" dur="1.2s" repeatCount="indefinite"/>
+    <!-- Tail and body -->
+    <path d="M308 283q-48-9-60-40q24 9 43-3q14 11 28 20z" fill="#f6f1de" stroke="#273b45" stroke-width="4" stroke-linejoin="round"/>
+    <ellipse cx="355" cy="261" rx="78" ry="53" fill="#fff9e9" stroke="#273b45" stroke-width="4" transform="rotate(-8 355 261)"/>
+    <path d="M302 258q31-41 80-27q25 9 26 28q-27 31-71 22q-20-4-35-23z" fill="#d9e6df" stroke="#273b45" stroke-width="3"/>
+    <path d="M320 259q19 12 43 9m-35 0q15 10 31 9" fill="none" stroke="#8ba9a5" stroke-width="3" stroke-linecap="round"/>
+    <!-- Neck and head -->
+    <path d="M397 257q31-5 30-35q-1-18-4-39q-4-32 17-46q22-14 45 1q18 12 13 34q-4 15-18 23q10 39-1 58q-16 28-52 27z" fill="#fff9e9" stroke="#273b45" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Beak and pouch -->
+    <path d="M477 170q51-3 104 14q14 5 23 12q-49 3-123-4z" fill="#f5a541" stroke="#273b45" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M482 192q37 7 104 5q-21 43-67 40q-24-2-37-45z" fill="#efba64" stroke="#273b45" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M498 201q31 9 60 6" fill="none" stroke="#d68a45" stroke-width="3" stroke-linecap="round"/>
+    <!-- Fish passenger peeking out -->
+    <path d="M548 185q14-12 29 0q-15 12-29 0zm29 0l11-8v16z" fill="#77b6bd" stroke="#273b45" stroke-width="2"/>
+    <circle cx="556" cy="183" r="2" fill="#273b45"/>
+    <!-- Eye and expression -->
+    <circle cx="469" cy="159" r="9" fill="#fff" stroke="#273b45" stroke-width="3"/>
+    <circle cx="472" cy="160" r="3.5" fill="#273b45"/>
+    <path d="M456 145q9-7 20-3" fill="none" stroke="#273b45" stroke-width="4" stroke-linecap="round"/>
+    <!-- Tiny helmet -->
+    <path d="M431 145q1-27 26-29q25-2 32 24z" fill="#e65e4b" stroke="#273b45" stroke-width="4"/>
+    <path d="M449 118l3 24" stroke="#ffd16a" stroke-width="5"/>
+    <path d="M434 145q-1 17 13 26" fill="none" stroke="#273b45" stroke-width="2"/>
+    <!-- Legs and feet -->
+    <path d="M344 302q8 31 36 50l14 45" fill="none" stroke="#e89c3e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M392 397l-15 8m15-8l15 3m-15-3l6 11" fill="none" stroke="#e89c3e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M378 302q25 22 43 47l-9 37" fill="none" stroke="#d78734" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M412 386l-14 5m14-5l11 7" fill="none" stroke="#d78734" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <path d="M92 207q-17 0-17 17v31q0 17 17 17h87q17 0 17-17v-31q0-17-17-17z" fill="#fffdf3" stroke="#273b45" stroke-width="3"/>
+  <path d="M181 270l17 17l-3-25" fill="#fffdf3" stroke="#273b45" stroke-width="3" stroke-linejoin="round"/>
+  <text x="135" y="232" text-anchor="middle" fill="#273b45" font-family="Arial, sans-serif" font-size="15" font-weight="bold">FISH-SHARE</text>
+  <text x="135" y="252" text-anchor="middle" fill="#273b45" font-family="Arial, sans-serif" font-size="15" font-weight="bold">PROGRAM!</text>
+
+  <text x="400" y="536" text-anchor="middle" fill="#273b45" font-family="Arial, sans-serif" font-size="17" font-weight="bold">One pelican, two wheels, and a very nervous passenger.</text>
+  <path d="M35 559H765" stroke="#d6c5a7" stroke-width="2"/>
+  <text x="400" y="585" text-anchor="middle" fill="#526168" font-family="Arial, sans-serif" font-size="15">2026-10-30 09:32:59 SGT (UTC+08:00)</text>
+</svg>

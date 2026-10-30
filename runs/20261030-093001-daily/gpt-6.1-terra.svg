@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#f7f9fc"/>
+  <text x="300" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#18243a">City Street Map</text>
+
+  <!-- Streets -->
+  <g stroke="#b9c3d0" stroke-width="3">
+    <path d="M130 65H470 M130 125H470 M130 185H470 M130 245H470 M130 305H470"/>
+    <path d="M130 65V305 M215 65V305 M300 65V305 M385 65V305 M470 65V305"/>
+  </g>
+
+  <!-- Shortest route: A1 to E1, then E1 to E5 -->
+  <path d="M130 65H470V305" fill="none" stroke="#1769d2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Intersections -->
+  <g fill="#fff" stroke="#526274" stroke-width="2">
+    <circle cx="130" cy="65" r="5"/><circle cx="215" cy="65" r="5"/><circle cx="300" cy="65" r="5"/><circle cx="385" cy="65" r="5"/><circle cx="470" cy="65" r="5"/>
+    <circle cx="130" cy="125" r="5"/><circle cx="215" cy="125" r="5"/><circle cx="300" cy="125" r="5"/><circle cx="385" cy="125" r="5"/><circle cx="470" cy="125" r="5"/>
+    <circle cx="130" cy="185" r="5"/><circle cx="215" cy="185" r="5"/><circle cx="300" cy="185" r="5"/><circle cx="385" cy="185" r="5"/><circle cx="470" cy="185" r="5"/>
+    <circle cx="130" cy="245" r="5"/><circle cx="215" cy="245" r="5"/><circle cx="300" cy="245" r="5"/><circle cx="385" cy="245" r="5"/><circle cx="470" cy="245" r="5"/>
+    <circle cx="130" cy="305" r="5"/><circle cx="215" cy="305" r="5"/><circle cx="300" cy="305" r="5"/><circle cx="385" cy="305" r="5"/><circle cx="470" cy="305" r="5"/>
+  </g>
+
+  <!-- Intersection labels -->
+  <g font-family="Arial, sans-serif" font-size="13" fill="#27364a">
+    <text x="141" y="59">A1</text><text x="226" y="59">B1</text><text x="311" y="59">C1</text><text x="396" y="59">D1</text><text x="481" y="59">E1</text>
+    <text x="141" y="119">A2</text><text x="226" y="119">B2</text><text x="311" y="119">C2</text><text x="396" y="119">D2</text><text x="481" y="119">E2</text>
+    <text x="141" y="179">A3</text><text x="226" y="179">B3</text><text x="311" y="179">C3</text><text x="396" y="179">D3</text><text x="481" y="179">E3</text>
+    <text x="141" y="239">A4</text><text x="226" y="239">B4</text><text x="311" y="239">C4</text><text x="396" y="239">D4</text><text x="481" y="239">E4</text>
+    <text x="141" y="299">A5</text><text x="226" y="299">B5</text><text x="311" y="299">C5</text><text x="396" y="299">D5</text><text x="481" y="299">E5</text>
+  </g>
+
+  <!-- Blocked intersections -->
+  <g stroke="#d32f2f" stroke-width="4" stroke-linecap="round">
+    <path d="M207 117L223 133 M223 117L207 133"/>
+    <path d="M292 177L308 193 M308 177L292 193"/>
+    <path d="M377 237L393 253 M393 237L377 253"/>
+  </g>
+
+  <!-- Start and end -->
+  <circle cx="130" cy="65" r="7" fill="#17834b" stroke="#fff" stroke-width="2"/>
+  <circle cx="470" cy="305" r="7" fill="#1769d2" stroke="#fff" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="bold">
+    <text x="115" y="69" text-anchor="end" fill="#17834b">START</text>
+    <text x="485" y="320" fill="#1769d2">END</text>
+  </g>
+
+  <text x="300" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#1769d2">Route: 8 street segments</text>
+  <line x1="40" y1="359" x2="560" y2="359" stroke="#d8e0e9"/>
+  <text x="300" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#435267">2026-10-30 09:34:58 SGT (UTC+08:00)</text>
+</svg>
