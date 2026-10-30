@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Fish: A Pelican on a Bicycle</title>
+  <desc id="desc">A determined pelican pedals a bicycle with a fish-filled beak pouch. Its wheels spin, its feet pedal, and its body bobs. A roadside sign advertises free fish uphill.</desc>
+  <defs>
+    <pattern id="spokes" width="140" height="140" patternUnits="userSpaceOnUse">
+      <path d="M70 5V135M5 70H135M24 24L116 116M24 116L116 24" stroke="#73818c" stroke-width="3"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .outline { stroke:#20323e; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { animation:spin 1.4s linear infinite; }
+      .rear { transform-origin:255px 421px; }
+      .front { transform-origin:565px 421px; }
+      .bird { animation:bob .7s ease-in-out infinite; }
+      .pedals { transform-origin:383px 421px; animation:spin 1.4s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-5px) rotate(.5deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff5dc"/>
+  <path d="M0 126H800V500H0Z" fill="#d9f0f2"/>
+  <circle cx="693" cy="166" r="36" fill="#ffcf58"/>
+  <path d="M0 368Q125 294 253 365Q398 290 541 355Q675 303 800 354V500H0Z" fill="#add1ae"/>
+  <path d="M0 416Q360 391 800 411V526H0Z" fill="#e9d1a8"/>
+  <path d="M34 493H760" stroke="#a68b66" stroke-width="4" stroke-dasharray="28 20"/>
+
+  <text x="400" y="54" text-anchor="middle" font-size="42" font-weight="900" fill="#20323e">TOUR DE FISH</text>
+  <text x="400" y="89" text-anchor="middle" font-size="19" font-weight="bold" fill="#50626b">One bird. Two wheels. Absolutely no brakes for lunch.</text>
+
+  <g class="outline">
+    <path d="M689 290V405" fill="none" stroke="#856849"/>
+    <path d="M625 250H734L760 277L734 304H625Z" fill="#fff8e6"/>
+  </g>
+  <text x="685" y="273" text-anchor="middle" font-size="17" font-weight="bold" fill="#20323e">FREE FISH</text>
+  <text x="685" y="293" text-anchor="middle" font-size="13" fill="#20323e">just 8 hills away</text>
+
+  <g fill="none" class="outline">
+    <circle cx="255" cy="421" r="71" fill="#fff9e8"/>
+    <circle cx="565" cy="421" r="71" fill="#fff9e8"/>
+  </g>
+  <g class="wheel rear" stroke="#83949b" stroke-width="3">
+    <path d="M255 355V487M189 421H321M208 374L302 468M208 468L302 374"/>
+    <circle cx="255" cy="360" r="5" fill="#ed7550" stroke="none"/>
+  </g>
+  <g class="wheel front" stroke="#83949b" stroke-width="3">
+    <path d="M565 355V487M499 421H631M518 374L612 468M518 468L612 374"/>
+    <circle cx="565" cy="360" r="5" fill="#ed7550" stroke="none"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M255 421L326 325L383 421Z M326 325H506L383 421 M506 325L565 421 M506 325L495 288L523 276" stroke="#20323e" stroke-width="12"/>
+    <path d="M255 421L326 325L383 421Z M326 325H506L383 421 M506 325L565 421" stroke="#e85d4a" stroke-width="7"/>
+    <path d="M326 325L317 301" stroke="#20323e" stroke-width="8"/>
+    <path d="M294 299H341M513 275H537" stroke="#20323e" stroke-width="11"/>
+    <path d="M255 421L383 412Q397 421 383 431L255 427Z" stroke="#73818c" stroke-width="3"/>
+  </g>
+  <circle cx="383" cy="421" r="17" fill="#536874" stroke="#20323e" stroke-width="4"/>
+  <circle cx="255" cy="421" r="7" fill="#20323e"/>
+  <circle cx="565" cy="421" r="7" fill="#20323e"/>
+
+  <g class="bird">
+    <path d="M323 313Q330 353 365 385L383 421" fill="none" stroke="#dc982e" stroke-width="12" stroke-linecap="round"/>
+    <path d="M277 275L238 257L259 296" fill="#fffdf2" class="outline"/>
+    <path d="M286 230Q330 207 380 254Q397 277 370 306Q334 334 289 308Q258 291 272 254Z" fill="#fffdf2" class="outline"/>
+    <path d="M342 271Q389 264 403 219L413 162Q415 133 442 134Q474 135 470 170L460 232Q451 283 394 299" fill="#fffdf2" class="outline"/>
+    <path d="M459 163L606 189Q557 248 471 215Z" fill="#ffc65a" class="outline"/>
+    <path d="M465 164L608 186L466 185" fill="#f49c36" class="outline"/>
+
+    <g transform="translate(520 209) rotate(-9)">
+      <path d="M-20 0Q-2 -17 17 0Q-2 17 -20 0L-31 -11V11Z" fill="#63b8be" stroke="#20323e" stroke-width="3"/>
+      <circle cx="9" cy="-2" r="2.5" fill="#20323e"/>
+    </g>
+    <circle cx="450" cy="155" r="6" fill="#20323e"/>
+    <path d="M437 141L453 138" fill="none" stroke="#20323e" stroke-width="4" stroke-linecap="round"/>
+    <path d="M411 135Q431 110 458 126L470 137Z" fill="#e85d4a" class="outline"/>
+    <path d="M427 122L430 134M443 122L447 135" stroke="#fff5dc" stroke-width="4"/>
+    <path d="M294 255Q330 231 352 273L392 279L423 270" fill="#e4e8df" class="outline"/>
+    <path d="M423 270L436 278L446 268" fill="none" class="outline"/>
+    <path d="M319 303Q346 324 369 360L396 394" fill="none" stroke="#eda73c" stroke-width="12" stroke-linecap="round"/>
+    <path d="M475 144Q490 135 484 126Q474 130 475 144" fill="#5bb9cc" stroke="#20323e" stroke-width="2"/>
+  </g>
+
+  <g class="pedals" stroke="#20323e" stroke-width="5" stroke-linecap="round">
+    <path d="M359 421H407"/>
+    <path d="M352 413V429M414 413V429" stroke-width="9"/>
+    <path d="M350 411Q359 400 371 412Z" fill="#f5af3e" stroke-width="3"/>
+    <path d="M395 431Q407 442 418 430Z" fill="#f5af3e" stroke-width="3"/>
+  </g>
+
+  <path d="M151 356H196M142 376H181M164 396H187" stroke="#71999b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M94 159Q88 141 111 138H291Q313 139 310 162V194Q310 213 288 213H205L185 234L189 213H111Q92 213 94 194Z" fill="#fffdf3" stroke="#20323e" stroke-width="3"/>
+  <text x="202" y="169" text-anchor="middle" font-size="18" font-weight="bold" fill="#20323e">“My personal trainer</text>
+  <text x="202" y="193" text-anchor="middle" font-size="18" font-weight="bold" fill="#20323e">said to eat on the go.”</text>
+
+  <rect x="0" y="526" width="800" height="74" fill="#20323e"/>
+  <text x="400" y="553" text-anchor="middle" font-size="19" font-weight="bold" fill="#fff5dc">This pelican’s cycling diet is mostly catch-and-roll.</text>
+  <text x="400" y="581" text-anchor="middle" font-size="16" fill="#ffffff">2026-10-31 03:01:01 SGT (UTC+08:00)</text>
+</svg>

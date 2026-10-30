@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN PEDAL POWER</title>
+  <desc id="desc">A pelican pedals a bicycle along a seaside road, carrying a fish in its enormous beak.</desc>
+  <defs>
+    <style>
+      .ink { stroke:#24313a; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2s linear infinite; }
+      .rider { animation:bob 1s ease-in-out infinite alternate; }
+      .pedals { transform-box:fill-box; transform-origin:center; animation:spin 2s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-5px); } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider,.pedals { animation:none; } }
+    </style>
+    <pattern id="road" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M0 30h17 M30 10h10" stroke="#bcc6bf" stroke-width="2" opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#f9f2da"/>
+  <rect x="18" y="18" width="764" height="564" rx="22" fill="#d8f0ef" stroke="#24313a" stroke-width="5"/>
+  <text x="400" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="900" letter-spacing="2" fill="#24313a">PELICAN PEDAL POWER</text>
+  <path d="M55 91h690" stroke="#24313a" stroke-width="3" stroke-linecap="round"/>
+
+  <circle cx="683" cy="143" r="35" fill="#ffd568"/>
+  <path d="M76 171q25-24 50 0q18-18 36 0 M568 125q18-17 36 0q14-13 28 0" fill="none" stroke="#fffaf0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M41 349q115-28 226 0t226 0t265 0v89H41z" fill="#8bcfc7"/>
+  <path d="M52 369q42-9 84 0 M584 367q54-10 108 0" fill="none" stroke="#e9fbf5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M41 420h718v84H41z" fill="#d3dad0"/>
+  <path d="M41 420h718v84H41z" fill="url(#road)"/>
+  <path d="M41 420h718" stroke="#798f89" stroke-width="4"/>
+  <path d="M82 450h73 M643 467h70" stroke="#faf8e9" stroke-width="5" stroke-linecap="round"/>
+
+  <g class="wheel">
+    <circle cx="247" cy="411" r="70" fill="#f8f4e6" class="ink"/>
+    <circle cx="247" cy="411" r="57" fill="none" stroke="#df7352" stroke-width="5"/>
+    <path d="M247 354v114 M190 411h114 M207 371l80 80 M287 371l-80 80" fill="none" stroke="#9aa9a4" stroke-width="3"/>
+    <circle cx="247" cy="411" r="8" fill="#24313a"/>
+  </g>
+  <g class="wheel">
+    <circle cx="548" cy="411" r="70" fill="#f8f4e6" class="ink"/>
+    <circle cx="548" cy="411" r="57" fill="none" stroke="#df7352" stroke-width="5"/>
+    <path d="M548 354v114 M491 411h114 M508 371l80 80 M588 371l-80 80" fill="none" stroke="#9aa9a4" stroke-width="3"/>
+    <circle cx="548" cy="411" r="8" fill="#24313a"/>
+  </g>
+
+  <path d="M247 411l91-107 72 107H247l112-71h160l29 71 M410 411l109-71" fill="none" stroke="#d65b45" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M338 304l-10-21 M306 282h48" fill="none" class="ink"/>
+  <path d="M519 340l-15-53h35q15 0 15-13" fill="none" class="ink"/>
+  <path d="M490 286h20" fill="none" stroke="#d65b45" stroke-width="8" stroke-linecap="round"/>
+  <g class="pedals">
+    <circle cx="410" cy="411" r="18" fill="#f9f2da" stroke="#24313a" stroke-width="4"/>
+    <path d="M396 397l28 28 M384 397h18 M418 425h18" fill="none" stroke="#24313a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g class="rider">
+    <path d="M340 299q15 36 49 59l13 29" fill="none" stroke="#df9a39" stroke-width="10" stroke-linecap="round"/>
+    <path d="M402 387l-18 4" fill="none" stroke="#24313a" stroke-width="7" stroke-linecap="round"/>
+    <path d="M365 304q-4 32 24 48l40 25" fill="none" stroke="#efb44e" stroke-width="10" stroke-linecap="round"/>
+    <path d="M429 377l19 1" fill="none" stroke="#24313a" stroke-width="7" stroke-linecap="round"/>
+    <path d="M265 246q-31-6-43-29q27 6 43 3q-17-19-13-35q30 16 51 34z" fill="#f5f2e4" class="ink"/>
+    <path d="M267 228q9-42 57-46q51-4 78 31q15 20 1 50q-18 40-76 43q-52 2-68-31q-11-22 8-47z" fill="#fffdf1" class="ink"/>
+    <path d="M278 236q37-17 73 3q25 14 39 4q-8 36-46 45q-43 11-66-17q25 8 46-2" fill="#e3e9df" stroke="#24313a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M387 228q20-22 15-54q-4-31 12-47q14-15 37-9q24 6 27 29q3 20-14 32q-12 10-17 27q-7 27-29 43" fill="#fffdf1" class="ink"/>
+    <path d="M438 154q37 2 113 24q-30 32-80 31q-35-2-51-25z" fill="#efb14e" class="ink"/>
+    <path d="M438 154q45-2 123 18q-40 13-112 10" fill="#f9cf6b" class="ink"/>
+    <path d="M481 190q20-13 37 0q-17 13-37 0z" fill="#70b8bd" stroke="#24313a" stroke-width="3"/>
+    <path d="M480 190l-8-6v12z" fill="#70b8bd" stroke="#24313a" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="508" cy="188" r="2.5" fill="#24313a"/>
+    <circle cx="443" cy="140" r="12" fill="#fff" stroke="#24313a" stroke-width="3"/>
+    <circle cx="447" cy="142" r="4" fill="#24313a"/>
+    <path d="M431 122q11-8 22-4" fill="none" stroke="#24313a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M356 245q35 14 62 37q28 16 73 4" fill="none" stroke="#fffdf1" stroke-width="17" stroke-linecap="round"/>
+    <path d="M356 245q35 14 62 37q28 16 73 4" fill="none" stroke="#24313a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M486 282l13 4-11 5" fill="none" stroke="#24313a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M388 116q26-29 65-17l5 13q-36-7-65 14z" fill="#d65b45" class="ink"/>
+    <path d="M391 116q-16 0-26 8q18 4 32 0" fill="#d65b45" class="ink"/>
+  </g>
+
+  <path d="M88 292q-18-15 0-30 M112 308q-28-21 0-43 M136 323q-38-28 0-58" fill="none" stroke="#eaa17b" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#24313a">He insists the fish is just his cycling coach.</text>
+  <path d="M55 545h690" stroke="#8ba5a0" stroke-width="2"/>
+  <text x="400" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#40545a">2026-10-31 03:02:13 SGT (UTC+08:00)</text>
+</svg>
