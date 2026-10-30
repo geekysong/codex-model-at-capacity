@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Beak-Easy Rider</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a sign warning of a fish shortage.</desc>
+  <style>
+    text { font-family: "Trebuchet MS", Arial, sans-serif; }
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 3s linear infinite; }
+    .rider { animation: bob .55s ease-in-out infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-4px); } }
+  </style>
+
+  <rect width="800" height="600" fill="#dff4f2"/>
+  <path d="M0 395 Q150 365 300 395 T600 390 T800 390 V540 H0Z" fill="#b6ded0"/>
+  <circle cx="680" cy="115" r="44" fill="#ffd56b"/>
+  <g fill="#fff" opacity=".8">
+    <path d="M84 120q0-18 19-18 7-22 31-10 21-12 32 8 21 1 18 20z"/>
+    <path d="M450 90q0-14 16-14 6-18 24-8 17-9 25 7 17 1 14 15z"/>
+  </g>
+
+  <text id="title" x="400" y="53" text-anchor="middle" font-size="31" font-weight="900" letter-spacing="1.4" fill="#173b49">THE BEAK-EASY RIDER</text>
+  <text x="400" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#416873">He’s cycling for fish. The fish have filed a complaint.</text>
+
+  <!-- The road and fishy protest sign -->
+  <path d="M0 438 Q170 418 340 438 T680 432 T800 438 V520 H0Z" fill="#647987"/>
+  <path d="M0 452 Q170 432 340 452 T680 446 T800 452" fill="none" stroke="#f4e7bd" stroke-width="5" stroke-dasharray="22 18"/>
+  <g transform="translate(76 205)">
+    <path d="M40 155V245" stroke="#765b43" stroke-width="12"/>
+    <rect x="0" y="25" width="150" height="135" rx="10" fill="#fff5d9" stroke="#765b43" stroke-width="5"/>
+    <text x="75" y="61" text-anchor="middle" font-size="15" font-weight="900" fill="#a74432">FISH SHORTAGE</text>
+    <text x="75" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#355663">PLEASE DO NOT</text>
+    <text x="75" y="111" text-anchor="middle" font-size="13" font-weight="700" fill="#355663">EAT THE WITNESS</text>
+    <path d="M27 137q19-20 38 0-19 20-38 0zm38 0 15-11v22z" fill="#65aabd"/>
+    <circle cx="39" cy="135" r="2.5" fill="#173b49"/>
+  </g>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke="#173b49" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="319" cy="416" r="68" stroke="#243e4c"/>
+      <circle cx="319" cy="416" r="5" fill="#243e4c"/>
+      <path d="M319 348V484M251 416H387M271 368L367 464M367 368L271 464" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="555" cy="416" r="68" stroke="#243e4c"/>
+      <circle cx="555" cy="416" r="5" fill="#243e4c"/>
+      <path d="M555 348V484M487 416H623M507 368L603 464M603 368L507 464" stroke-width="3"/>
+    </g>
+    <path d="M319 416L394 326L448 416L319 416M394 326L555 416M394 326L424 416"/>
+    <path d="M369 318h50M424 416l18 5M544 326h45M555 416l-15 8"/>
+    <circle cx="424" cy="416" r="17" stroke-width="5"/>
+    <path d="M424 416l-22-28M424 416l24 21" stroke-width="5"/>
+    <path d="M385 322l-9-8M580 326l8-9"/>
+  </g>
+  <path d="M274 416h90M510 416h90" stroke="#f7c94f" stroke-width="3" stroke-dasharray="8 12" opacity=".8"/>
+
+  <!-- Pelican and jaunty helmet -->
+  <g class="rider">
+    <!-- tail and body -->
+    <path d="M344 293q-42-23-55 7 26 5 47 24z" fill="#263d4c"/>
+    <ellipse cx="400" cy="283" rx="66" ry="52" fill="#fffdf1" stroke="#173b49" stroke-width="5"/>
+    <path d="M381 300q30 10 55-8l18 17q-27 33-71 27z" fill="#d95e49"/>
+    <path d="M392 323q12 28 27 55M429 322q-2 29 8 54" fill="none" stroke="#e1a533" stroke-width="9" stroke-linecap="round"/>
+    <path d="M410 378l-18 8m45-9 18 7" stroke="#173b49" stroke-width="6" stroke-linecap="round"/>
+    <!-- neck, head -->
+    <path d="M425 281q-3-49 22-88" fill="none" stroke="#fffdf1" stroke-width="26" stroke-linecap="round"/>
+    <path d="M425 281q-3-49 22-88" fill="none" stroke="#173b49" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="451" cy="183" rx="35" ry="31" fill="#fffdf1" stroke="#173b49" stroke-width="5"/>
+    <!-- beak and pouch -->
+    <path d="M478 184q62-11 102 9-31 18-85 20z" fill="#f2b944" stroke="#173b49" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M480 194q45 12 83 2-13 34-48 37-23-3-35-22z" fill="#e87d59" stroke="#173b49" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M487 203q29 11 55 5" fill="none" stroke="#b84c40" stroke-width="3"/>
+    <!-- eye and smug brow -->
+    <circle cx="457" cy="177" r="5.5" fill="#173b49"/>
+    <path d="M445 164q13-9 25-1" fill="none" stroke="#173b49" stroke-width="4" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M421 166q4-39 37-41 31 1 39 31l-76 10z" fill="#53b8ae" stroke="#173b49" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M415 168q38-8 84-2" fill="none" stroke="#173b49" stroke-width="5" stroke-linecap="round"/>
+    <path d="M445 130q-4 13-3 29m25-28q9 10 11 24" fill="none" stroke="#fffdf1" stroke-width="3"/>
+    <!-- wing on handlebar -->
+    <path d="M373 270q-23 10-37 38 27 2 53-11 10-6 5-17-5-14-21-10z" fill="#fffdf1" stroke="#173b49" stroke-width="4"/>
+    <path d="M352 298l27-14m-16 23 25-15" stroke="#c9d8cf" stroke-width="3" stroke-linecap="round"/>
+    <path d="M371 292l22 26" stroke="#173b49" stroke-width="6" stroke-linecap="round"/>
+    <!-- satchel -->
+    <path d="M343 278l-25 33 34 21 23-37z" fill="#d9984d" stroke="#173b49" stroke-width="4"/>
+    <path d="M348 291l16 10" stroke="#fff0c8" stroke-width="3"/>
+  </g>
+
+  <!-- Motion marks and comic flourish -->
+  <path d="M638 319h42m-34 14h28M243 316h-26m18 13h-21" stroke="#e55f4b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M585 130q18-22 37-6-17 1-21 14 17-7 25 7-21-4-32 11" fill="none" stroke="#e55f4b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="610" y="195" font-size="16" font-weight="900" fill="#a74432" transform="rotate(9 610 195)">“I’M ON A ROLL!”</text>
+
+  <!-- Footer has reserved space for the required readable timestamp -->
+  <rect x="0" y="536" width="800" height="64" fill="#173b49"/>
+  <text x="400" y="574" text-anchor="middle" font-size="18" font-weight="700" fill="#fffdf1">2026-10-31 05:01:59 SGT (UTC+08:00)</text>
+</svg>
