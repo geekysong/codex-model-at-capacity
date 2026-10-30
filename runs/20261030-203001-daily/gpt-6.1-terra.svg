@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Shortest route through a city grid</title>
+  <desc id="desc">A route from A1 to E5 follows eight street segments, avoiding blocked intersections B2, C3, and D4.</desc>
+  <rect width="600" height="400" fill="#f8fafc"/>
+  <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#172033">City grid route</text>
+
+  <!-- City blocks -->
+  <g fill="#e5eaf0" stroke="#cbd5e1" stroke-width="1">
+    <rect x="111" y="77" width="54" height="38" rx="2"/>
+    <rect x="185" y="77" width="54" height="38" rx="2"/>
+    <rect x="259" y="77" width="54" height="38" rx="2"/>
+    <rect x="333" y="77" width="54" height="38" rx="2"/>
+    <rect x="407" y="77" width="54" height="38" rx="2"/>
+    <rect x="111" y="135" width="54" height="38" rx="2"/>
+    <rect x="185" y="135" width="54" height="38" rx="2"/>
+    <rect x="259" y="135" width="54" height="38" rx="2"/>
+    <rect x="333" y="135" width="54" height="38" rx="2"/>
+    <rect x="407" y="135" width="54" height="38" rx="2"/>
+    <rect x="111" y="193" width="54" height="38" rx="2"/>
+    <rect x="185" y="193" width="54" height="38" rx="2"/>
+    <rect x="259" y="193" width="54" height="38" rx="2"/>
+    <rect x="333" y="193" width="54" height="38" rx="2"/>
+    <rect x="407" y="193" width="54" height="38" rx="2"/>
+    <rect x="111" y="251" width="54" height="38" rx="2"/>
+    <rect x="185" y="251" width="54" height="38" rx="2"/>
+    <rect x="259" y="251" width="54" height="38" rx="2"/>
+    <rect x="333" y="251" width="54" height="38" rx="2"/>
+    <rect x="407" y="251" width="54" height="38" rx="2"/>
+    <rect x="111" y="309" width="54" height="38" rx="2"/>
+    <rect x="185" y="309" width="54" height="38" rx="2"/>
+    <rect x="259" y="309" width="54" height="38" rx="2"/>
+    <rect x="333" y="309" width="54" height="38" rx="2"/>
+    <rect x="407" y="309" width="54" height="38" rx="2"/>
+  </g>
+
+  <!-- Streets -->
+  <g stroke="#94a3b8" stroke-width="3" fill="none">
+    <path d="M101 67H471 M101 125H471 M101 183H471 M101 241H471 M101 299H471 M101 357H471"/>
+    <path d="M101 67V357 M175 67V357 M249 67V357 M323 67V357 M397 67V357 M471 67V357"/>
+  </g>
+
+  <!-- Eight-segment route -->
+  <path d="M101 67H397V299" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Intersection labels -->
+  <g font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#263445">
+    <text x="108" y="60">A1</text><text x="182" y="60">B1</text><text x="256" y="60">C1</text><text x="330" y="60">D1</text><text x="404" y="60">E1</text>
+    <text x="108" y="118">A2</text><text x="182" y="118">B2</text><text x="256" y="118">C2</text><text x="330" y="118">D2</text><text x="404" y="118">E2</text>
+    <text x="108" y="176">A3</text><text x="182" y="176">B3</text><text x="256" y="176">C3</text><text x="330" y="176">D3</text><text x="404" y="176">E3</text>
+    <text x="108" y="234">A4</text><text x="182" y="234">B4</text><text x="256" y="234">C4</text><text x="330" y="234">D4</text><text x="404" y="234">E4</text>
+    <text x="108" y="292">A5</text><text x="182" y="292">B5</text><text x="256" y="292">C5</text><text x="330" y="292">D5</text><text x="404" y="292">E5</text>
+  </g>
+
+  <!-- Blocked intersections -->
+  <g stroke="#dc2626" stroke-width="3.5" stroke-linecap="round">
+    <path d="M169 119l12 12 M181 119l-12 12"/>
+    <path d="M243 177l12 12 M255 177l-12 12"/>
+    <path d="M317 235l12 12 M329 235l-12 12"/>
+  </g>
+
+  <circle cx="101" cy="67" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+  <circle cx="397" cy="299" r="6" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
+
+  <g font-family="Arial, sans-serif" font-size="12" fill="#263445">
+    <circle cx="505" cy="85" r="5" fill="#16a34a"/>
+    <text x="517" y="89">Start</text>
+    <circle cx="505" cy="108" r="5" fill="#7c3aed"/>
+    <text x="517" y="112">End</text>
+    <path d="M501 127l8 8 M509 127l-8 8" stroke="#dc2626" stroke-width="2.5"/>
+    <text x="517" y="135">Blocked</text>
+    <path d="M499 154h12" stroke="#2563eb" stroke-width="4"/>
+    <text x="517" y="158">Route</text>
+    <text x="499" y="190" font-weight="bold">8 street</text>
+    <text x="499" y="206" font-weight="bold">segments</text>
+  </g>
+
+  <line x1="20" y1="369" x2="580" y2="369" stroke="#cbd5e1"/>
+  <text x="300" y="389" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#475569">2026-10-30 20:34:54 SGT (UTC+08:00)</text>
+</svg>

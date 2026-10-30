@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Shortest city route from A1 to E5</title>
+  <desc id="desc">Five columns and five rows of intersections. The blue route follows A1, B1, C1, D1, E1, E2, E3, E4, E5, totaling eight street segments and avoiding blocked intersections B2, C3, and D4.</desc>
+
+  <rect width="600" height="400" fill="#f8fafc"/>
+
+  <!-- City blocks between streets -->
+  <defs>
+    <pattern id="blocks" x="90" y="60" width="100" height="60" patternUnits="userSpaceOnUse">
+      <rect x="9" y="9" width="82" height="42" rx="5" fill="#e2e8f0"/>
+    </pattern>
+  </defs>
+  <rect x="90" y="60" width="400" height="240" fill="url(#blocks)"/>
+
+  <!-- Street network -->
+  <g fill="none" stroke="#94a3b8" stroke-width="3">
+    <path d="M90 60H490 M90 120H490 M90 180H490 M90 240H490 M90 300H490"/>
+    <path d="M90 60V300 M190 60V300 M290 60V300 M390 60V300 M490 60V300"/>
+  </g>
+
+  <!-- Shortest route: four segments east, four south -->
+  <path d="M90 60H490V300" fill="none" stroke="#2563eb" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Intersections -->
+  <g fill="#fff" stroke="#64748b" stroke-width="2">
+    <circle cx="190" cy="60" r="4"/>
+    <circle cx="290" cy="60" r="4"/>
+    <circle cx="390" cy="60" r="4"/>
+    <circle cx="490" cy="60" r="4"/>
+    <circle cx="90" cy="120" r="4"/>
+    <circle cx="290" cy="120" r="4"/>
+    <circle cx="390" cy="120" r="4"/>
+    <circle cx="490" cy="120" r="4"/>
+    <circle cx="90" cy="180" r="4"/>
+    <circle cx="190" cy="180" r="4"/>
+    <circle cx="390" cy="180" r="4"/>
+    <circle cx="490" cy="180" r="4"/>
+    <circle cx="90" cy="240" r="4"/>
+    <circle cx="190" cy="240" r="4"/>
+    <circle cx="290" cy="240" r="4"/>
+    <circle cx="490" cy="240" r="4"/>
+    <circle cx="90" cy="300" r="4"/>
+    <circle cx="190" cy="300" r="4"/>
+    <circle cx="290" cy="300" r="4"/>
+    <circle cx="390" cy="300" r="4"/>
+  </g>
+
+  <!-- Blocked intersections -->
+  <g stroke="#dc2626" stroke-width="5" stroke-linecap="round">
+    <path d="M183 113L197 127 M197 113L183 127"/>
+    <path d="M283 173L297 187 M297 173L283 187"/>
+    <path d="M383 233L397 247 M397 233L383 247"/>
+  </g>
+
+  <!-- Intersection labels -->
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1e293b">
+    <text x="102" y="47">A1</text>
+    <text x="202" y="47">B1</text>
+    <text x="302" y="47">C1</text>
+    <text x="402" y="47">D1</text>
+    <text x="502" y="47">E1</text>
+
+    <text x="102" y="107">A2</text>
+    <text x="202" y="107">B2</text>
+    <text x="302" y="107">C2</text>
+    <text x="402" y="107">D2</text>
+    <text x="502" y="107">E2</text>
+
+    <text x="102" y="167">A3</text>
+    <text x="202" y="167">B3</text>
+    <text x="302" y="167">C3</text>
+    <text x="402" y="167">D3</text>
+    <text x="502" y="167">E3</text>
+
+    <text x="102" y="227">A4</text>
+    <text x="202" y="227">B4</text>
+    <text x="302" y="227">C4</text>
+    <text x="402" y="227">D4</text>
+    <text x="502" y="227">E4</text>
+
+    <text x="102" y="287">A5</text>
+    <text x="202" y="287">B5</text>
+    <text x="302" y="287">C5</text>
+    <text x="402" y="287">D5</text>
+    <text x="502" y="287">E5</text>
+  </g>
+
+  <!-- Start and end -->
+  <circle cx="90" cy="60" r="8" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+  <rect x="482" y="292" width="16" height="16" rx="3" fill="#1d4ed8" stroke="#fff" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="700">
+    <text x="72" y="65" text-anchor="end" fill="#15803d">START</text>
+    <text x="490" y="328" text-anchor="middle" fill="#1d4ed8">END</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="15">
+    <text x="40" y="345" fill="#1d4ed8" font-weight="700">Shortest route: 8 street segments</text>
+    <path d="M371 335L381 345 M381 335L371 345" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+    <text x="391" y="345" fill="#475569">Blocked</text>
+  </g>
+
+  <!-- Dedicated timestamp footer -->
+  <path d="M30 360H570" stroke="#cbd5e1"/>
+  <text x="300" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#334155">2026-10-30 20:33:44 SGT (UTC+08:00)</text>
+</svg>

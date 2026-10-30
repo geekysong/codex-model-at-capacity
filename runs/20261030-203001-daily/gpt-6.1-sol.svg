@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Shortest city street route from A1 to E5</title>
+  <desc id="desc">A five by five intersection grid. The blue route follows A1, B1, C1, D1, E1, E2, E3, E4, E5, totaling eight street segments. B2, C3, and D4 are blocked.</desc>
+  <rect width="600" height="400" fill="#f8fafc"/>
+
+  <!-- City blocks -->
+  <g fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1">
+    <path d="M110 65h80v40h-80z M210 65h80v40h-80z M310 65h80v40h-80z M410 65h80v40h-80z
+             M110 125h80v40h-80z M210 125h80v40h-80z M310 125h80v40h-80z M410 125h80v40h-80z
+             M110 185h80v40h-80z M210 185h80v40h-80z M310 185h80v40h-80z M410 185h80v40h-80z
+             M110 245h80v40h-80z M210 245h80v40h-80z M310 245h80v40h-80z M410 245h80v40h-80z"/>
+  </g>
+
+  <!-- Streets -->
+  <g fill="none" stroke="#94a3b8" stroke-width="5" stroke-linecap="round">
+    <path d="M100 55H500 M100 115H500 M100 175H500 M100 235H500 M100 295H500"/>
+    <path d="M100 55V295 M200 55V295 M300 55V295 M400 55V295 M500 55V295"/>
+  </g>
+
+  <!-- Shortest route: four segments east, then four south -->
+  <path d="M100 55H500V295" fill="none" stroke="#2563eb" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Intersections -->
+  <g fill="#fff" stroke="#475569" stroke-width="2">
+    <circle cx="200" cy="55" r="4"/><circle cx="300" cy="55" r="4"/><circle cx="400" cy="55" r="4"/><circle cx="500" cy="55" r="4"/>
+    <circle cx="100" cy="115" r="4"/><circle cx="300" cy="115" r="4"/><circle cx="400" cy="115" r="4"/><circle cx="500" cy="115" r="4"/>
+    <circle cx="100" cy="175" r="4"/><circle cx="200" cy="175" r="4"/><circle cx="400" cy="175" r="4"/><circle cx="500" cy="175" r="4"/>
+    <circle cx="100" cy="235" r="4"/><circle cx="200" cy="235" r="4"/><circle cx="300" cy="235" r="4"/><circle cx="500" cy="235" r="4"/>
+    <circle cx="100" cy="295" r="4"/><circle cx="200" cy="295" r="4"/><circle cx="300" cy="295" r="4"/><circle cx="400" cy="295" r="4"/>
+  </g>
+
+  <!-- Blocked intersections -->
+  <g stroke="#dc2626" stroke-width="5" stroke-linecap="round">
+    <path d="M192 107l16 16m0-16l-16 16"/>
+    <path d="M292 167l16 16m0-16l-16 16"/>
+    <path d="M392 227l16 16m0-16l-16 16"/>
+  </g>
+
+  <!-- Start and end -->
+  <circle cx="100" cy="55" r="8" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+  <circle cx="500" cy="295" r="8" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
+
+  <!-- Intersection labels -->
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">
+    <text x="100" y="33">A1 · START</text>
+    <text x="200" y="33">B1</text><text x="300" y="33">C1</text><text x="400" y="33">D1</text><text x="500" y="33">E1</text>
+    <text x="100" y="96">A2</text><text x="200" y="96">B2</text><text x="300" y="96">C2</text><text x="400" y="96">D2</text><text x="500" y="96">E2</text>
+    <text x="100" y="156">A3</text><text x="200" y="156">B3</text><text x="300" y="156">C3</text><text x="400" y="156">D3</text><text x="500" y="156">E3</text>
+    <text x="100" y="216">A4</text><text x="200" y="216">B4</text><text x="300" y="216">C4</text><text x="400" y="216">D4</text><text x="500" y="216">E4</text>
+    <text x="100" y="322">A5</text><text x="200" y="322">B5</text><text x="300" y="322">C5</text><text x="400" y="322">D5</text><text x="500" y="322">E5 · END</text>
+  </g>
+
+  <!-- Footer -->
+  <path d="M30 339H570" stroke="#cbd5e1"/>
+  <text x="300" y="361" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1d4ed8">Shortest route: 8 street segments</text>
+  <text x="300" y="386" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">2026-10-30 20:34:18 SGT (UTC+08:00)</text>
+</svg>
