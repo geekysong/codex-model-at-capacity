@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title description">
+  <title id="title">Pelican Express</title>
+  <desc id="description">A determined pelican pedals a bicycle along a seaside road, carrying a fish in its enormous bill pouch. The wheels spin, the pedals turn, and the pelican bobs in a looping animation.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#bcecf2"/>
+      <stop offset="1" stop-color="#f5f4d9"/>
+    </linearGradient>
+    <linearGradient id="pouch" x2="0" y2="1">
+      <stop stop-color="#ffc35c"/>
+      <stop offset="1" stop-color="#f39148"/>
+    </linearGradient>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .ink { stroke: #203743; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { stroke: #203743; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <g id="wheel">
+      <circle r="66" fill="#fffbed" stroke="#203743" stroke-width="10"/>
+      <circle r="56" fill="#bfe2dd" stroke="#819c9d" stroke-width="2"/>
+      <g stroke="#567a82" stroke-width="3">
+        <path d="M-55 0H55M0-55V55M-39-39 39 39M-39 39 39-39"/>
+      </g>
+      <circle r="9" fill="#f4a63c" stroke="#203743" stroke-width="4"/>
+      <circle cy="-57" r="5" fill="#f15e45"/>
+    </g>
+  </defs>
+
+  <path fill="#fff9e9" d="M0 0H800V600H0Z"/>
+  <path fill="url(#sky)" d="M0 0H800V465H0Z"/>
+
+  <circle cx="697" cy="140" r="39" fill="#ffd67a"/>
+  <g fill="#fff" opacity=".8">
+    <path d="M42 175c-9-20 17-38 33-21 0-27 44-31 49-3 25-12 44 14 28 29H42Z"/>
+    <path d="M536 165c-9-18 14-35 29-20 4-24 38-25 44-3 23-8 35 13 24 23Z"/>
+  </g>
+
+  <text x="400" y="56" text-anchor="middle" font-size="43" font-weight="900" fill="#203743" letter-spacing="3">PELICAN EXPRESS</text>
+  <text x="400" y="88" text-anchor="middle" font-size="18" font-weight="bold" fill="#426875">The gig economy has officially gone overboard.</text>
+
+  <path d="M0 316Q110 301 211 319T423 317T628 317T800 310V421H0Z" fill="#72c7c5"/>
+  <g fill="none" stroke="#dbf6e7" stroke-width="4" stroke-linecap="round">
+    <path d="M27 344h54m35 22h65m413-25h49m36 29h60M31 390h85m493 11h67"/>
+  </g>
+  <path d="M0 414Q140 397 268 418T540 417T800 407V465H0Z" fill="#eacb92"/>
+  <path d="M0 452H800V508H0Z" fill="#657b80"/>
+  <path d="M0 489H800" stroke="#e9d8a6" stroke-width="4" stroke-dasharray="31 24"/>
+  <ellipse cx="406" cy="467" rx="235" ry="13" fill="#203743" opacity=".16"/>
+
+  <g transform="translate(175 285)">
+    <path d="M0 166V0" class="ink" fill="none"/>
+    <path d="M-65 3H52L68 26 52 49H-65Z" fill="#fff9e9" class="thin"/>
+    <text x="-4" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#203743">BIKE LANE</text>
+    <text x="-5" y="41" text-anchor="middle" font-size="12" fill="#b54a35">NO FREE FISH</text>
+  </g>
+
+  <g transform="translate(283 397)">
+    <use href="#wheel"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.5s" repeatCount="indefinite" additive="sum"/>
+  </g>
+  <g transform="translate(566 397)">
+    <use href="#wheel"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.5s" repeatCount="indefinite" additive="sum"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M283 397 347 304 402 397H283L500 309 566 397M402 397 347 304M500 309 402 397" stroke="#203743" stroke-width="13"/>
+    <path d="M283 397 347 304 402 397H283L500 309 566 397M500 309 402 397" stroke="#ef6551" stroke-width="7"/>
+    <path d="M347 304 339 281M500 309 487 275 518 264" stroke="#203743" stroke-width="8"/>
+    <path d="M320 282h47" stroke="#203743" stroke-width="12"/>
+    <path d="M518 264h16" stroke="#e95443" stroke-width="10"/>
+  </g>
+  <circle cx="402" cy="397" r="19" fill="#ffdc86" class="thin"/>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".75s" repeatCount="indefinite"/>
+
+    <path d="M318 269 274 241 289 279 264 280 311 303" fill="#fffdf0" class="ink"/>
+    <path d="M321 214C289 233 291 278 322 295 345 310 397 302 417 274L445 226 421 191Z" fill="#fffdf0" class="ink"/>
+    <path d="M329 233q-20 42 31 48 26 0 41-25-29 10-47-12" fill="#d4e0dd" class="thin"/>
+    <path d="M393 250C395 212 375 194 391 170 405 151 435 157 444 178 455 207 433 227 430 256" fill="#fffdf0" class="ink"/>
+
+    <path d="M432 188Q506 185 614 209 600 259 537 267 468 271 440 219Z" fill="url(#pouch)" class="ink"/>
+    <path d="M437 189 625 204Q637 208 622 215L439 211" fill="#ffce65" class="ink"/>
+    <path d="M468 226q34 27 73 23" fill="none" stroke="#d56d39" stroke-width="3"/>
+
+    <g transform="translate(538 234) rotate(-9)">
+      <path d="M-22 0q20-19 43 0-23 20-43 0l-14-13v26Z" fill="#7dc9c0" class="thin"/>
+      <circle cx="12" cy="-2" r="3" fill="#203743"/>
+      <path d="m1 5 6 2" fill="none" stroke="#203743" stroke-width="2"/>
+    </g>
+
+    <circle cx="427" cy="182" r="13" fill="#fff" class="thin"/>
+    <circle cx="432" cy="183" r="5" fill="#203743"/>
+    <path d="m412 161 23 5" fill="none" class="ink"/>
+    <path d="M385 164q-3-31 27-37 33-6 43 24Z" fill="#e85b4c" class="ink"/>
+    <path d="m397 138 5 14m10-18 4 14m9-11 4 12" stroke="#ffd082" stroke-width="4" stroke-linecap="round"/>
+    <path d="m445 154 16 2" class="ink"/>
+    <path d="M392 197 375 215 397 223 411 204" fill="#e85647" class="thin"/>
+    <path d="m378 213-35 2 16-14-13-10 45 10" fill="#e85647" class="thin"/>
+
+    <path d="M405 248q43 1 81 27l34-9" fill="none" class="ink"/>
+    <path d="m518 262 10 8 9-7" fill="none" class="thin"/>
+    <path d="M344 299 371 333 391 371" fill="none" stroke="#203743" stroke-width="13" stroke-linecap="round"/>
+    <path d="M344 299 371 333 391 371" fill="none" stroke="#f5ac4c" stroke-width="7" stroke-linecap="round"/>
+    <path d="m383 370 23 8-12 10-25-6Z" fill="#f5ac4c" class="thin"/>
+  </g>
+
+  <g transform="translate(402 397)">
+    <g>
+      <path d="M-24 0H24" stroke="#203743" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-35 0h19m32 0h19" stroke="#203743" stroke-width="9" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+    <circle r="5" fill="#203743"/>
+  </g>
+
+  <g fill="none" stroke="#fff9e9" stroke-width="4" stroke-linecap="round">
+    <path d="M213 415h-29m35 15h-18M644 414h26"/>
+  </g>
+  <path d="m459 129 9-9m-4 24 13-2" stroke="#203743" stroke-width="3" stroke-linecap="round"/>
+  <text x="616" y="296" text-anchor="middle" font-size="15" font-weight="bold" fill="#203743" transform="rotate(5 616 296)">“Paid in exposure.”</text>
+
+  <path d="M0 508H800V600H0Z" fill="#fff9e9"/>
+  <text x="400" y="542" text-anchor="middle" font-size="23" font-weight="bold" fill="#203743">All the cargo. None of the legroom.</text>
+  <path d="M110 557H690" stroke="#c9c7b4" stroke-width="1"/>
+  <text x="400" y="582" text-anchor="middle" font-size="16" fill="#42606b">2026-10-30 16:31:47 SGT (UTC+08:00)</text>
+</svg>
