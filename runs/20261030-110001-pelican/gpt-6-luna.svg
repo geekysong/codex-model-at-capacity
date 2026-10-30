@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE PELICAN PELOTON</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling furiously while a tiny fish watches from its beak pouch.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#17324d;stroke-width:7}
+      .spoke{stroke:#7891a3;stroke-width:2}
+      .frame{fill:none;stroke:#e5533d;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes ride{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .wheelset{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:ride .55s ease-in-out infinite}
+      @media (prefers-reduced-motion:reduce){.wheelset,.rider{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8efd9"/>
+  <circle cx="685" cy="115" r="49" fill="#ffd36a"/>
+  <path d="M0 392 Q145 365 285 393 T560 389 T800 390 V510 H0Z" fill="#d8e7c5"/>
+  <path d="M0 446H800" stroke="#91aa88" stroke-width="3" stroke-dasharray="12 12"/>
+
+  <text x="400" y="55" text-anchor="middle" class="label" font-size="31" font-weight="900" letter-spacing="2" fill="#17324d">THE PELICAN PELOTON</text>
+  <text x="400" y="83" text-anchor="middle" class="label" font-size="15" font-weight="700" fill="#e5533d">“Training for the Tour de Fish.”</text>
+
+  <!-- Bicycle wheels -->
+  <g class="wheelset">
+    <g>
+      <circle class="wheel" cx="225" cy="397" r="73"/>
+      <circle cx="225" cy="397" r="7" fill="#17324d"/>
+      <path class="spoke" d="M225 324V470M152 397H298M173 345L277 449M277 345L173 449"/>
+    </g>
+  </g>
+  <g class="wheelset">
+    <g>
+      <circle class="wheel" cx="565" cy="397" r="73"/>
+      <circle cx="565" cy="397" r="7" fill="#17324d"/>
+      <path class="spoke" d="M565 324V470M492 397H638M513 345L617 449M617 345L513 449"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame and handlebars -->
+  <path class="frame" d="M225 397L350 397L308 310L225 397M350 397L435 305L565 397M350 397L435 305"/>
+  <path d="M301 302L315 302L325 318M430 302L449 302L458 311M435 305L470 290" fill="none" stroke="#17324d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M333 301H389" stroke="#17324d" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="350" cy="397" r="14" fill="#ffd36a" stroke="#17324d" stroke-width="4"/>
+  <path d="M350 397L375 415M350 397L330 379" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M369 415L383 415M324 379L337 379" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Animated, smug cyclist -->
+  <g class="rider">
+    <!-- body -->
+    <path d="M378 219Q412 205 435 229L455 288L409 310L373 268Z" fill="#3b91a6" class="ink"/>
+    <path d="M383 242L422 271" fill="none" stroke="#f8efd9" stroke-width="8" stroke-linecap="round"/>
+    <!-- tail feathers -->
+    <path d="M377 254Q346 247 337 265Q362 276 382 271" fill="#fffdf5" class="ink"/>
+    <!-- neck and head -->
+    <path d="M402 227Q403 184 425 163" fill="none" stroke="#fffdf5" stroke-width="25" stroke-linecap="round"/>
+    <path d="M402 227Q403 184 425 163" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="445" cy="145" rx="48" ry="39" fill="#fffdf5" class="ink"/>
+    <path d="M471 145Q523 133 554 147Q525 166 475 161Z" fill="#f4a62a" class="ink"/>
+    <!-- pouch -->
+    <path d="M482 153Q510 165 531 151Q533 190 507 194Q486 188 482 153Z" fill="#f2a12b" stroke="#17324d" stroke-width="4"/>
+    <!-- tiny fish in pouch -->
+    <path d="M502 174Q510 165 519 174Q510 183 502 174ZM519 174L526 168V180Z" fill="#ef6657" stroke="#17324d" stroke-width="2"/>
+    <circle cx="507" cy="172" r="1.7" fill="#17324d"/>
+    <!-- expression -->
+    <ellipse cx="456" cy="136" rx="5" ry="7" fill="#17324d"/>
+    <path d="M445 126Q456 118 465 125" fill="none" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M480 130Q490 126 497 132" fill="none" stroke="#e5533d" stroke-width="3" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M404 139Q409 101 445 101Q478 102 489 136L404 139Z" fill="#e5533d" class="ink"/>
+    <path d="M417 121Q438 107 460 114" fill="none" stroke="#ffd36a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M401 140H491" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+    <!-- wings on bars -->
+    <path d="M410 236Q390 258 378 287Q394 300 414 285L434 257" fill="#fffdf5" class="ink"/>
+    <path d="M413 282L448 296Q458 300 466 291L470 286" fill="none" stroke="#17324d" stroke-width="9" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M411 292Q393 328 370 370L350 397" fill="none" stroke="#f4a62a" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M438 292Q449 332 411 366L375 415" fill="none" stroke="#f4a62a" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M337 398Q347 389 359 397L366 405Q351 411 337 405Z" fill="#fffdf5" class="ink"/>
+    <path d="M365 417Q374 407 385 414L392 421Q378 430 364 424Z" fill="#fffdf5" class="ink"/>
+  </g>
+
+  <!-- Comic motion and gag -->
+  <path d="M580 270L600 252M588 290L617 284M570 252L578 230" stroke="#e5533d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M544 207Q558 190 573 204Q584 218 566 226" fill="none" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+  <text x="579" y="207" class="label" font-size="13" font-weight="800" fill="#17324d">SPLASH?</text>
+
+  <rect x="155" y="486" width="490" height="47" rx="23" fill="#fffdf5" stroke="#17324d" stroke-width="3"/>
+  <text x="400" y="516" text-anchor="middle" class="label" font-size="17" font-weight="700" fill="#17324d">He’s all legs, no brakes, and one very nervous passenger.</text>
+
+  <text x="400" y="577" text-anchor="middle" class="label" font-size="14" font-weight="700" fill="#17324d">2026-10-30 11:02:51 SGT (UTC+08:00)</text>
+</svg>
