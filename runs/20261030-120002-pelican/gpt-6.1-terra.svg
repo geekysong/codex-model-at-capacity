@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A pelican pedals a bicycle along a seaside road, carrying a fish in its enormous beak.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#a8e3ef"/>
+      <stop offset="1" stop-color="#e9f9ed"/>
+    </linearGradient>
+    <linearGradient id="water" x2="0" y2="1">
+      <stop stop-color="#64c5d0"/>
+      <stop offset="1" stop-color="#a7e2d8"/>
+    </linearGradient>
+    <style>
+      .outline { stroke:#283b43; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { animation: spin 2s linear infinite; transform-box: fill-box; transform-origin:center; }
+      .rider { animation: bob .7s ease-in-out infinite alternate; }
+      .pedals { animation: spin 1.2s linear infinite; transform-origin:390px 403px; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { to { transform:translateY(-4px) rotate(-1deg); } }
+      @media (prefers-reduced-motion: reduce) { .wheel,.rider,.pedals { animation-duration:8s; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e8"/>
+  <rect x="18" y="18" width="764" height="564" rx="22" fill="url(#sky)" stroke="#283b43" stroke-width="4"/>
+  <text x="400" y="69" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="38" fill="#283b43">THE PELICAN COMMUTE</text>
+  <text x="400" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" letter-spacing="2" fill="#46717a">COASTAL NEWS • RUSH HOUR EDITION</text>
+
+  <circle cx="695" cy="150" r="37" fill="#ffd36c"/>
+  <path d="M45 292 Q155 270 260 294 T490 290 T755 282 V382 H45Z" fill="url(#water)"/>
+  <path d="M60 316 q45 -12 90 0 m85 20 q45 -12 90 0 m110 -24 q45 -12 90 0 m95 22 q45 -12 90 0" fill="none" stroke="#e4fbf5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M48 384 Q180 370 320 385 T752 380 V510 H48Z" fill="#e9c98c"/>
+  <path d="M28 461 Q399 444 772 461 V511 H28Z" fill="#6c7470"/>
+  <path d="M43 484 H757" fill="none" stroke="#f8e8bf" stroke-width="4" stroke-dasharray="30 23"/>
+  <path d="M94 394 l-10 -24 m10 24 l14 -20 m-14 20 v-29 M690 396 l-12 -23 m12 23 l13 -18 m-13 18 v-31" fill="none" stroke="#849b69" stroke-width="4" stroke-linecap="round"/>
+
+  <g class="wheel">
+    <circle cx="249" cy="435" r="78" fill="#f9f0d9" stroke="#283b43" stroke-width="10"/>
+    <circle cx="249" cy="435" r="66" fill="none" stroke="#d37d48" stroke-width="4"/>
+    <path d="M249 369 V501 M183 435 H315 M202 388 L296 482 M296 388 L202 482" stroke="#8c9b94" stroke-width="3"/>
+    <circle cx="249" cy="435" r="7" fill="#283b43"/>
+  </g>
+  <g class="wheel">
+    <circle cx="535" cy="435" r="78" fill="#f9f0d9" stroke="#283b43" stroke-width="10"/>
+    <circle cx="535" cy="435" r="66" fill="none" stroke="#d37d48" stroke-width="4"/>
+    <path d="M535 369 V501 M469 435 H601 M488 388 L582 482 M582 388 L488 482" stroke="#8c9b94" stroke-width="3"/>
+    <circle cx="535" cy="435" r="7" fill="#283b43"/>
+  </g>
+
+  <path d="M249 435 L338 327 L390 403 L249 435 M338 327 L475 327 L390 403 M475 327 L535 435 M460 306 L475 327" fill="none" stroke="#e75f50" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M460 306 L449 288 L479 287" fill="none" class="outline"/>
+  <path d="M316 321 H357" class="outline"/>
+  <path d="M524 348 Q548 328 566 347" fill="none" stroke="#283b43" stroke-width="4"/>
+  <path d="M533 348 L527 326 H570 L563 348Z" fill="#e6ae68" stroke="#283b43" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M533 333 H563 M540 326 L542 348 M553 326 L554 348" fill="none" stroke="#b87746" stroke-width="2"/>
+
+  <g class="rider">
+    <path d="M350 300 Q322 321 307 309 Q321 286 331 267" fill="#e8e3ce" class="outline"/>
+    <ellipse cx="375" cy="284" rx="58" ry="43" fill="#fffdf2" class="outline" transform="rotate(-10 375 284)"/>
+    <path d="M352 273 Q382 253 409 273 Q403 300 368 303 Q379 291 352 273Z" fill="#e4e4d5" class="outline"/>
+    <path d="M405 270 Q433 246 420 215 Q410 190 423 169 Q438 145 463 156 Q482 165 476 186 Q472 200 461 205 Q452 219 463 245 Q470 265 454 280" fill="#fffdf2" class="outline"/>
+    <path d="M457 179 Q505 174 608 195 Q568 207 478 209 Q461 208 457 179Z" fill="#f3a44e" class="outline"/>
+    <path d="M477 208 Q493 251 531 247 Q566 241 608 195 Q559 211 477 208Z" fill="#f7bd68" class="outline"/>
+    <path d="M532 216 q11 -8 22 0 q-11 8 -22 0 m22 0 l8 -6 v12Z" fill="#76aab4" stroke="#283b43" stroke-width="2"/>
+    <circle cx="450" cy="174" r="11" fill="#fff" stroke="#283b43" stroke-width="3"/>
+    <circle cx="453" cy="175" r="4" fill="#283b43"/>
+    <path d="M435 158 q11 -10 22 -4" fill="none" stroke="#283b43" stroke-width="4" stroke-linecap="round"/>
+    <path d="M426 154 Q439 132 464 145 L469 155 Q448 148 426 154Z" fill="#e75f50" class="outline"/>
+    <path d="M464 148 l18 4" stroke="#283b43" stroke-width="5" stroke-linecap="round"/>
+    <path d="M353 322 L369 354 L390 396 M402 321 L418 354 L404 385" fill="none" stroke="#e79a50" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M390 396 l-17 5 m17 -5 l-7 11 M404 385 l18 4 m-18 -4 l10 -9" fill="none" stroke="#e79a50" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g class="pedals">
+    <circle cx="390" cy="403" r="17" fill="#f7ddaa" stroke="#283b43" stroke-width="4"/>
+    <path d="M390 403 l19 18 M390 403 l-19 -18 M400 423 h18 M362 383 h18" fill="none" stroke="#283b43" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M205 337 h-38 m30 17 h-50 m45 17 h-31" fill="none" stroke="#e75f50" stroke-width="4" stroke-linecap="round"/>
+  <path d="M95 173 q8 -9 16 0 q8 -9 16 0 M157 137 q7 -8 14 0 q7 -8 14 0" fill="none" stroke="#62838a" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="29" y="515" width="742" height="55" rx="10" fill="#fff8e8"/>
+  <text x="400" y="538" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#283b43">“My lunch insists this is a hostile takeover.”</text>
+  <text x="400" y="558" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#52656a">2026-10-30 12:03:09 SGT (UTC+08:00)</text>
+</svg>
