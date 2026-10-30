@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE TOUR DE GULL</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling furiously while a tiny fish cheers from its beak pouch.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#183447;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f7fbf8;stroke:#183447;stroke-width:7}
+      .spoke{stroke:#74a9ad;stroke-width:2}
+      .frame{fill:none;stroke:#ed754c;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .small{font-family:Arial,sans-serif}
+      @keyframes roll{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(18deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .spin{transform-box:fill-box;transform-origin:center;animation:roll 2.2s linear infinite}
+      .crank{transform-box:fill-box;transform-origin:center;animation:pedal .65s ease-in-out infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .65s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#d9f2ed"/>
+  <circle cx="682" cy="106" r="48" fill="#ffd36e"/>
+  <path d="M0 385 Q100 355 200 382 T400 380 T600 376 T800 380 V600 H0Z" fill="#9ed6a8"/>
+  <path d="M0 438 Q150 420 290 442 T570 438 T800 441" fill="none" stroke="#6eae83" stroke-width="4"/>
+  <path d="M0 500 Q170 480 340 501 T800 496" fill="none" stroke="#6eae83" stroke-width="3"/>
+
+  <text x="400" y="58" text-anchor="middle" class="small" font-size="34" font-weight="900" letter-spacing="2" fill="#183447">THE TOUR DE GULL</text>
+  <text x="400" y="88" text-anchor="middle" class="small" font-size="16" font-weight="700" fill="#35586a">“I’m featherweight. The hills are not.”</text>
+
+  <!-- bicycle wheels -->
+  <g class="spin">
+    <circle class="wheel" cx="245" cy="420" r="76"/>
+    <circle cx="245" cy="420" r="8" fill="#ed754c"/>
+    <path class="spoke" d="M245 344V496 M169 420H321 M191 366L299 474 M299 366L191 474"/>
+  </g>
+  <g class="spin">
+    <circle class="wheel" cx="555" cy="420" r="76"/>
+    <circle cx="555" cy="420" r="8" fill="#ed754c"/>
+    <path class="spoke" d="M555 344V496 M479 420H631 M501 366L609 474 M609 366L501 474"/>
+  </g>
+
+  <!-- bicycle frame -->
+  <path class="frame" d="M245 420L330 330L405 420L245 420 M330 330L445 330L405 420 M445 330L555 420"/>
+  <path class="frame" d="M445 330L470 300 M426 300H490 M313 330L292 315 M286 315H323"/>
+  <circle cx="405" cy="420" r="18" fill="#ffd36e" class="ink"/>
+  <g class="crank">
+    <path d="M405 420L430 441M405 420L380 399" stroke="#183447" stroke-width="5" stroke-linecap="round"/>
+    <path d="M426 443H442M368 397H384" stroke="#183447" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <path d="M300 406L333 406" stroke="#183447" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- riding pelican -->
+  <g class="rider">
+    <path d="M340 318 Q322 278 348 241 Q376 205 423 228 Q455 243 449 280 Q444 309 414 322Z" fill="#fffdf2" class="ink"/>
+    <path d="M352 264 Q365 235 398 239 Q430 242 435 270 Q427 291 397 295 Q370 292 352 264Z" fill="#f4f0df"/>
+    <path d="M422 239 Q445 210 476 215 Q496 219 501 239 Q497 263 476 272 L443 269Z" fill="#fffdf2" class="ink"/>
+    <circle cx="478" cy="235" r="5" fill="#183447"/>
+    <path d="M497 241 Q544 230 580 248 Q553 267 500 257Z" fill="#f4a64d" class="ink"/>
+    <path d="M500 257 Q543 261 571 253 Q559 287 520 286 Q503 281 500 257Z" fill="#f07d59" class="ink"/>
+    <path d="M518 270 Q531 267 539 273 Q535 282 521 279Z" fill="#62b7c0" stroke="#183447" stroke-width="3"/>
+    <circle cx="527" cy="272" r="2.5" fill="#183447"/>
+    <path d="M369 301L338 332L327 369 M411 305L429 330L420 367" fill="none" stroke="#183447" stroke-width="7" stroke-linecap="round"/>
+    <path d="M327 369L315 382 M420 367L434 379" fill="none" stroke="#ed754c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M353 278 Q365 267 377 278" fill="none" stroke="#183447" stroke-width="4"/>
+    <path d="M364 223 Q356 211 369 207 Q379 205 382 215" fill="none" stroke="#ed754c" stroke-width="5"/>
+    <path d="M369 215L394 219" stroke="#ed754c" stroke-width="5" stroke-linecap="round"/>
+    <path d="M370 212L365 201 M379 214L378 201 M388 216L392 204" stroke="#ed754c" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- speed lines and road flourish -->
+  <path d="M135 305H202 M118 326H183 M151 347H199" stroke="#fffdf2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M222 512 Q400 530 579 511" fill="none" stroke="#4f9470" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="548" text-anchor="middle" class="small" font-size="15" font-weight="700" fill="#183447">Powered by fish, ambition, and questionable road manners.</text>
+  <rect x="0" y="566" width="800" height="34" fill="#183447"/>
+  <text x="400" y="589" text-anchor="middle" class="small" font-size="16" font-weight="700" fill="#ffffff">2026-10-30 21:02:35 SGT (UTC+08:00)</text>
+</svg>
