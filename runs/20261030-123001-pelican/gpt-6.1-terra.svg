@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Daily Commute</title>
+  <desc id="desc">A smug pelican rides a bicycle with spinning wheels and bobbing feet.</desc>
+  <defs>
+    <style>
+      .outline { stroke:#263342; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2s linear infinite; }
+      .rider { animation:bob .7s ease-in-out infinite alternate; }
+      .pedals { transform-origin:400px 389px; animation:spin 2s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-5px); } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider,.pedals { animation:none; } }
+    </style>
+    <pattern id="spokes" width="10" height="10" patternUnits="userSpaceOnUse"/>
+  </defs>
+  <rect width="800" height="600" fill="#fff9e9"/>
+  <rect x="20" y="20" width="760" height="560" rx="24" fill="#dff4f4" stroke="#263342" stroke-width="5"/>
+  <text x="400" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="900" fill="#263342">THE DAILY COMMUTE</text>
+  <path d="M45 443 Q180 420 310 443 T580 441 T755 437 L755 481 L45 481Z" fill="#b8d9b1"/>
+  <path d="M45 455 H755" stroke="#263342" stroke-width="4" stroke-linecap="round"/>
+  <path d="M102 150 q18 -20 36 0 q18 -20 36 0 M625 140 q14 -16 28 0 q14 -16 28 0" fill="none" stroke="#8db9bd" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="690" cy="202" r="35" fill="#ffd56b"/>
+  <g class="wheel">
+    <circle cx="227" cy="387" r="75" fill="#fff9e9" stroke="#263342" stroke-width="9"/>
+    <circle cx="227" cy="387" r="61" fill="none" stroke="#a7c5c7" stroke-width="3"/>
+    <path d="M227 313 V461 M153 387 H301 M175 335 L279 439 M279 335 L175 439" stroke="#9bb8ba" stroke-width="3"/>
+    <circle cx="227" cy="387" r="8" fill="#263342"/>
+  </g>
+  <g class="wheel">
+    <circle cx="574" cy="387" r="75" fill="#fff9e9" stroke="#263342" stroke-width="9"/>
+    <circle cx="574" cy="387" r="61" fill="none" stroke="#a7c5c7" stroke-width="3"/>
+    <path d="M574 313 V461 M500 387 H648 M522 335 L626 439 M626 335 L522 439" stroke="#9bb8ba" stroke-width="3"/>
+    <circle cx="574" cy="387" r="8" fill="#263342"/>
+  </g>
+  <path d="M227 387 L319 289 L400 389 L227 387 M319 289 L499 289 L400 389 M499 289 L574 387 M480 257 L499 289" fill="none" stroke="#e66553" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M307 281 H349 M480 257 Q490 246 516 251" fill="none" class="outline"/>
+  <g class="pedals">
+    <circle cx="400" cy="389" r="19" fill="#fff9e9" stroke="#263342" stroke-width="4"/>
+    <path d="M400 389 L421 410 M400 389 L379 368 M412 410 H431 M369 368 H388" fill="none" stroke="#263342" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g class="rider">
+    <path d="M352 285 Q330 315 353 347 L381 369" fill="none" stroke="#e5a34e" stroke-width="9" stroke-linecap="round"/>
+    <path d="M381 369 l-17 7 l27 2" fill="#f4b45d" stroke="#263342" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M379 281 Q393 319 419 335 L436 359" fill="none" stroke="#e5a34e" stroke-width="9" stroke-linecap="round"/>
+    <path d="M436 359 l-14 10 l29 -1" fill="#f4b45d" stroke="#263342" stroke-width="3" stroke-linejoin="round"/>
+    <ellipse cx="361" cy="255" rx="75" ry="48" fill="#fffdf5" class="outline"/>
+    <path d="M313 245 Q351 213 397 250 Q370 290 326 270 Q345 268 354 257 Q333 264 313 245Z" fill="#d8e4e2" stroke="#263342" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M399 253 Q425 242 435 219 Q446 194 431 175" fill="none" stroke="#263342" stroke-width="25" stroke-linecap="round"/>
+    <path d="M399 253 Q425 242 435 219 Q446 194 431 175" fill="none" stroke="#fffdf5" stroke-width="17" stroke-linecap="round"/>
+    <circle cx="426" cy="165" r="35" fill="#fffdf5" class="outline"/>
+    <path d="M449 164 Q493 170 532 191 L457 195 Q448 188 449 164Z" fill="#f5b44f" class="outline"/>
+    <path d="M456 195 Q465 233 501 214 L532 191Z" fill="#f6cf77" stroke="#263342" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="432" cy="156" r="5" fill="#263342"/>
+    <path d="M425 145 Q434 139 442 144" fill="none" stroke="#263342" stroke-width="3" stroke-linecap="round"/>
+    <path d="M401 140 Q419 121 443 136 L441 142 L399 146Z" fill="#e66553" stroke="#263342" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M402 141 L384 149 L410 150" fill="#e66553" stroke="#263342" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+  <path d="M535 254 Q554 239 573 254 L566 289 H542Z" fill="#f5d791" stroke="#263342" stroke-width="4"/>
+  <path d="M541 257 Q554 267 568 257 M552 247 Q554 230 558 247" fill="none" stroke="#263342" stroke-width="3"/>
+  <text x="400" y="511" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263342">He insists this is the most efficient way to carry lunch.</text>
+  <path d="M65 532 H735" stroke="#a8c9c8" stroke-width="2"/>
+  <text x="400" y="559" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#40545c">2026-10-30 12:32:45 SGT (UTC+08:00)</text>
+</svg>
