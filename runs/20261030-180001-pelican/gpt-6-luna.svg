@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Peloton</title>
+  <desc id="desc">A proud pelican pedals a bicycle while a tiny fish enjoys the ride in its bill.</desc>
+  <style>
+    text { font-family: "Trebuchet MS", Arial, sans-serif; }
+    .wheel { transform-box: view-box; transform-origin: center; animation: roll 2s linear infinite; }
+    .bird { animation: bob .65s ease-in-out infinite alternate; }
+    .crank { transform-box: view-box; transform-origin: 400px 405px; animation: roll 1s linear infinite; }
+    @keyframes roll { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-5px); } }
+  </style>
+
+  <rect width="800" height="600" fill="#c9f1f2"/>
+  <path d="M0 390 Q130 345 260 385 T520 380 T800 370 V600 H0Z" fill="#9be2ca"/>
+  <circle cx="673" cy="118" r="48" fill="#ffd666"/>
+  <path d="M0 435 Q130 420 260 435 T520 430 T800 420" fill="none" stroke="#63c6b2" stroke-width="5"/>
+  <path d="M80 360 Q104 290 128 360 M102 360 Q125 306 150 360" fill="none" stroke="#47a88c" stroke-width="7" stroke-linecap="round"/>
+
+  <text id="title" x="400" y="54" text-anchor="middle" font-size="34" font-weight="900" fill="#173b50">THE PELICAN PELOTON</text>
+  <text x="400" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#315b67">“Training for the Tour de Fish.”</text>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke="#26485b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="245" cy="425" r="67"/>
+      <path d="M245 358V492 M178 425H312 M198 378L292 472 M292 378L198 472"/>
+    </g>
+    <g class="wheel">
+      <circle cx="555" cy="425" r="67"/>
+      <path d="M555 358V492 M488 425H622 M508 378L602 472 M602 378L508 472"/>
+    </g>
+    <path d="M245 425L345 425L400 335L455 425L345 425L312 355L245 425"/>
+    <path d="M312 355L290 355 M455 425L485 355L510 355"/>
+    <path d="M391 335L409 335"/>
+    <path d="M345 425L365 405 M345 425L325 445"/>
+  </g>
+  <g class="crank" fill="none" stroke="#e69c3a" stroke-width="6" stroke-linecap="round">
+    <circle cx="400" cy="405" r="11" fill="#ffd166"/>
+    <path d="M400 405L424 418 M400 405L380 391"/>
+  </g>
+  <path d="M416 420l23 5 M373 389l-22-5" stroke="#26485b" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Expressive rider -->
+  <g class="bird">
+    <path d="M372 292 Q366 251 390 225 Q418 194 455 216 Q484 235 474 275 L463 323 Q430 349 393 326Z" fill="#fff8e8" stroke="#b7a98d" stroke-width="4"/>
+    <path d="M386 305 Q365 326 366 355 L388 367 L419 328" fill="#fff8e8" stroke="#b7a98d" stroke-width="4"/>
+    <path d="M455 302 Q478 319 481 346 L458 356 L438 324" fill="#fff8e8" stroke="#b7a98d" stroke-width="4"/>
+    <path d="M414 225 Q400 204 414 179 Q429 156 458 168 Q483 179 476 208 Q469 232 448 240Z" fill="#fff8e8" stroke="#b7a98d" stroke-width="4"/>
+    <path d="M465 198 Q520 191 577 211 Q588 215 578 225 Q535 249 473 228Z" fill="#f4a64d" stroke="#bd7130" stroke-width="4"/>
+    <path d="M490 216 Q518 207 543 214 Q529 231 503 228Z" fill="#f77d6b"/>
+    <path d="M538 216 Q551 210 563 216 Q555 224 544 222Z" fill="#78c7d5"/>
+    <path d="M456 186 Q460 178 467 184" fill="none" stroke="#26485b" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="458" cy="190" r="4" fill="#26485b"/>
+    <path d="M430 174 Q444 160 464 171" fill="none" stroke="#26485b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M409 169 Q424 154 437 166 L431 177Z" fill="#e84e58" stroke="#b53742" stroke-width="3"/>
+    <path d="M394 326 Q411 338 427 326" fill="none" stroke="#e9cda0" stroke-width="5"/>
+    <path d="M391 358L367 375 M467 350L486 365" stroke="#f2a43a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M352 376l-16 3 M490 366l17 2" stroke="#26485b" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Helmet -->
+  <path d="M415 171 Q418 137 449 132 Q479 135 486 172 Q456 163 425 178Z" fill="#47a9a4" stroke="#24716f" stroke-width="4"/>
+  <path d="M421 173L483 174" stroke="#24716f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M443 131Q449 118 461 129" fill="none" stroke="#fff8e8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Speech bubble -->
+  <path d="M560 126 Q622 102 676 129 Q700 141 685 166 Q671 188 609 178 L590 194 L594 173 Q559 165 560 126Z" fill="#fffdf4" stroke="#315b67" stroke-width="3"/>
+  <text x="626" y="145" text-anchor="middle" font-size="14" font-weight="800" fill="#315b67">I regret</text>
+  <text x="626" y="163" text-anchor="middle" font-size="14" font-weight="800" fill="#315b67">nothing!</text>
+
+  <path d="M157 492H644" stroke="#5f9d81" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="530" text-anchor="middle" font-size="17" font-weight="800" fill="#254b5a">One bird. Two wheels. Absolutely no lane discipline.</text>
+  <text x="400" y="578" text-anchor="middle" font-size="15" font-weight="700" fill="#173b50">2026-10-30 18:03:08 SGT (UTC+08:00)</text>
+</svg>
