@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Pelican Express: delivery with excessive baggage</title>
+  <desc id="description">A determined pelican pedals a bicycle with a fish-filled bill pouch. The wheels spin, its feet pedal, and its body bobs in a looping cartoon animation.</desc>
+  <defs>
+    <pattern id="paper" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="1" fill="#163740" opacity=".035"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="76" fill="#fff9e8" stroke="#173640" stroke-width="12"/>
+      <circle r="64" fill="none" stroke="#9dbcb7" stroke-width="3"/>
+      <g stroke="#678f91" stroke-width="3">
+        <path d="M-64 0H64M0-64V64M-45-45L45 45M-45 45L45-45"/>
+      </g>
+      <circle r="10" fill="#f6b23a" stroke="#173640" stroke-width="4"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d9"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M0 329Q150 277 302 327T605 314T800 320V488H0Z" fill="#d8e7d5"/>
+  <circle cx="688" cy="164" r="46" fill="#ffc65b"/>
+  <g fill="#fffdf2" opacity=".9">
+    <path d="M49 173q5-22 28-18q16-34 43-9q28-9 34 27Z"/>
+    <path d="M578 226q9-21 28-15q14-27 36-6q21-4 26 21Z"/>
+  </g>
+
+  <text x="400" y="61" text-anchor="middle" font-family="Arial, sans-serif" font-size="43" font-weight="900" letter-spacing="3" fill="#173640">PELICAN EXPRESS</text>
+  <text x="400" y="91" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" letter-spacing="2" fill="#427778">SAME-DAY FISH. NEXT-DAY KNEES.</text>
+
+  <!-- One coastal delivery scene -->
+  <g stroke="#173640" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 484H749" stroke-width="5"/>
+    <path d="M73 467h39m35 0h22m491 0h51" stroke="#a4bbb0" stroke-width="3"/>
+    <ellipse cx="403" cy="479" rx="256" ry="13" fill="#173640" stroke="none" opacity=".11"/>
+
+    <!-- Spinning wheels -->
+    <g transform="translate(240 399)">
+      <g>
+        <use href="#wheel"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <g transform="translate(574 399)">
+      <g>
+        <use href="#wheel"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- Rear rack and bicycle -->
+    <path d="M182 310h109m-99 0 48 89m47-87-47 87" fill="none" stroke-width="6"/>
+    <path d="M240 399 318 294 383 399Zm78-105h204L383 399m139-105 52 105" fill="none" stroke="#173640" stroke-width="15"/>
+    <path d="M240 399 318 294 383 399Zm78-105h204L383 399m139-105 52 105" fill="none" stroke="#e56548" stroke-width="8"/>
+    <path d="m318 294-10-30m214 30-13-52 40-10" fill="none" stroke-width="8"/>
+    <path d="M284 263h53" stroke-width="13"/>
+    <path d="m544 231 14-3" stroke="#427778" stroke-width="12"/>
+    <circle cx="383" cy="399" r="23" fill="#f4be4b" stroke-width="5"/>
+    <path d="M240 390h143a9 9 0 0 1 0 18H240a9 9 0 0 1 0-18Z" fill="none" stroke-width="3"/>
+
+    <!-- Unreasonably small delivery crate -->
+    <rect x="192" y="266" width="91" height="41" rx="5" fill="#e6b578" stroke-width="4"/>
+    <path d="M204 279h66m-66 14h66" stroke="#b0804b" stroke-width="3"/>
+    <path d="m210 267 8-12 10 12m25 0 7-10 9 10" fill="#8ac4bb" stroke-width="3"/>
+
+    <!-- Pedaling legs and cranks -->
+    <g>
+      <path d="M353 279 352 334 405 399" fill="none" stroke="#e4a72e" stroke-width="13"/>
+      <path d="m398 395 22 5-22 9" fill="#f8b437" stroke-width="3"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0;0 8;0 0" dur=".8s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(383 399)">
+      <g>
+        <path d="M-27 0H27" stroke-width="6"/>
+        <path d="M-36 0h18m36 0h18" stroke-width="7"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur=".8s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <g>
+      <path d="m329 284-17 53 43 55" fill="none" stroke="#ffc449" stroke-width="14"/>
+      <path d="m347 386 26 10-32 7 5-9-9-4Z" fill="#ffc449" stroke-width="3"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 8;0 0;0 -8;0 0" dur=".8s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Bobbing pelican -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".8s" repeatCount="indefinite"/>
+      <path d="m289 237-56-23 21 37-25-4 47 30" fill="#fffef5" stroke-width="4"/>
+      <path d="M282 220q42-39 91-10l26 31q-1 55-57 57-67 1-73-37Z" fill="#fffef5" stroke-width="5"/>
+      <path d="M337 244q-8-39 19-70 12-14 23-32 11-21 34-12 25 10 17 34-6 16-25 28-22 17-15 55" fill="#fffef5" stroke-width="5"/>
+      <path d="M292 231q23-18 53 1l-13 36-17-12-9 9-9-15-12 3Z" fill="#d3e2df" stroke-width="3"/>
+      <path d="M360 222q33 18 61 14l83 4" fill="none" stroke-width="17"/>
+      <path d="M360 222q33 18 61 14l83 4" fill="none" stroke="#fffef5" stroke-width="11"/>
+      <path d="m496 234 13 8m-11-3 10 8" stroke-width="3"/>
+
+      <!-- Huge pouch, carrying its own seafood -->
+      <path d="M426 165 635 180q-30 96-126 80-72-12-83-95Z" fill="#f6b751" stroke-width="5"/>
+      <path d="M446 188q28 68 95 58 52-7 74-53" fill="#ffd781" stroke="none"/>
+      <g fill="#6aa8a8" stroke-width="3">
+        <path d="M477 220q28-28 58-4l19-16-1 31-19-7q-27 20-57-4Z"/>
+        <path d="M548 237q17-25 40-16l12-17 7 24-18-1q-12 21-41 10Z" fill="#91bcb2"/>
+      </g>
+      <circle cx="487" cy="217" r="3" fill="#173640" stroke="none"/>
+      <circle cx="558" cy="232" r="3" fill="#173640" stroke="none"/>
+      <path d="M423 156 639 178l-7 11-208-11Z" fill="#ffc449" stroke-width="4"/>
+      <ellipse cx="416" cy="150" rx="10" ry="13" fill="white" stroke-width="3"/>
+      <circle cx="420" cy="152" r="4" fill="#173640" stroke="none"/>
+      <path d="m402 134 22 5" stroke-width="4"/>
+
+      <!-- Safety helmet -->
+      <path d="M374 137q-3-36 31-39 31-1 38 34Z" fill="#e56548" stroke-width="4"/>
+      <path d="m385 118 9-8m11 13 6-12m12 13 2-9" stroke-width="4"/>
+      <path d="m377 138 21 38 21-3" fill="none" stroke-width="3"/>
+      <path d="M369 138h79" stroke-width="5"/>
+    </g>
+
+    <!-- Effort marks -->
+    <path d="m354 159-13-7m17-6-6-13" stroke="#427778" stroke-width="3"/>
+    <path d="M450 137q12-15 13-3-1 10-13 3Z" fill="#79bec5" stroke-width="2"/>
+    <path d="M162 357h-30m30 18h-48m55 18h-26" stroke="#427778" stroke-width="3"/>
+  </g>
+
+  <!-- Stationary, readable joke -->
+  <path d="M58 190q0-13 13-13h176q13 0 13 13v43q0 13-13 13h-33l9 22-37-22H71q-13 0-13-13Z" fill="#fffef5" stroke="#173640" stroke-width="3"/>
+  <text x="159" y="204" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#173640">
+    <tspan x="159">“The app said</tspan>
+    <tspan x="159" dy="23">LIGHT delivery.”</tspan>
+  </text>
+
+  <rect x="0" y="504" width="800" height="96" fill="#173640"/>
+  <text x="400" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#fff4d9">His bill carries the fish. His legs pay the price.</text>
+  <path d="M170 552h460" stroke="#64878a"/>
+  <text x="400" y="578" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#fff4d9">2026-10-30 21:30:02 SGT (UTC+08:00)</text>
+</svg>
