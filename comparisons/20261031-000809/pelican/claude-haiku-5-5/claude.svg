@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect x="0" y="0" width="800" height="600" fill="#bfe9ff"/>
+  <circle cx="90" cy="150" r="40" fill="#fff7b0"/>
+  <ellipse cx="200" cy="120" rx="60" ry="22" fill="#ffffff"/>
+  <ellipse cx="640" cy="170" rx="70" ry="24" fill="#ffffff"/>
+  <text x="400" y="50" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="bold" fill="#1a1a2e" text-anchor="middle">Pelican on a Bicycle</text>
+  <text x="400" y="88" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#1a1a2e" text-anchor="middle">He insisted it was a "very long-beaked commute," pouch full of determination.</text>
+  <rect x="60" y="490" width="680" height="12" fill="#6fbf5a"/>
+
+  <!-- Bicycle frame -->
+  <g stroke="#333" stroke-width="7" fill="none" stroke-linecap="round">
+    <line x1="250" y1="430" x2="400" y2="430"/>
+    <line x1="400" y1="430" x2="370" y2="345"/>
+    <line x1="370" y1="345" x2="250" y2="430"/>
+    <line x1="400" y1="430" x2="520" y2="350"/>
+    <line x1="520" y1="350" x2="550" y2="430"/>
+    <path d="M520 350 L535 328 L508 322"/>
+  </g>
+
+  <!-- Wheels -->
+  <g>
+    <circle cx="250" cy="430" r="60" fill="none" stroke="#222" stroke-width="8"/>
+    <circle cx="250" cy="430" r="6" fill="#222"/>
+    <g>
+      <line x1="250" y1="370" x2="250" y2="490" stroke="#555" stroke-width="3"/>
+      <line x1="190" y1="430" x2="310" y2="430" stroke="#555" stroke-width="3"/>
+      <line x1="208" y1="388" x2="292" y2="472" stroke="#555" stroke-width="3"/>
+      <line x1="292" y1="388" x2="208" y2="472" stroke="#555" stroke-width="3"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 250 430" to="360 250 430" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g>
+    <circle cx="550" cy="430" r="60" fill="none" stroke="#222" stroke-width="8"/>
+    <circle cx="550" cy="430" r="6" fill="#222"/>
+    <g>
+      <line x1="550" y1="370" x2="550" y2="490" stroke="#555" stroke-width="3"/>
+      <line x1="490" y1="430" x2="610" y2="430" stroke="#555" stroke-width="3"/>
+      <line x1="508" y1="388" x2="592" y2="472" stroke="#555" stroke-width="3"/>
+      <line x1="592" y1="388" x2="508" y2="472" stroke="#555" stroke-width="3"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 550 430" to="360 550 430" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Pedal crank -->
+  <g>
+    <line x1="400" y1="430" x2="425" y2="430" stroke="#444" stroke-width="6" stroke-linecap="round"/>
+    <line x1="400" y1="430" x2="375" y2="430" stroke="#444" stroke-width="6" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 400 430" to="360 400 430" dur="1.2s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Pelican (bobbing) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="0.6s" repeatCount="indefinite"/>
+    <!-- Legs -->
+    <line x1="400" y1="335" x2="418" y2="420" stroke="#e8820c" stroke-width="7" stroke-linecap="round"/>
+    <line x1="385" y1="335" x2="375" y2="420" stroke="#e8820c" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="425" cy="428" rx="14" ry="6" fill="#e8820c"/>
+    <ellipse cx="372" cy="428" rx="14" ry="6" fill="#e8820c"/>
+    <!-- Body -->
+    <ellipse cx="390" cy="290" rx="90" ry="50" fill="#ffffff" stroke="#222" stroke-width="4"/>
+    <!-- Wing -->
+    <path d="M330 280 Q380 220 440 275 Q395 300 330 280 Z" fill="#e4e4e4" stroke="#222" stroke-width="3"/>
+    <!-- Tail -->
+    <path d="M300 280 L262 262 L270 300 Z" fill="#dddddd" stroke="#222" stroke-width="3"/>
+    <!-- Neck -->
+    <path d="M440 260 Q465 235 462 210 L490 212 Q492 250 470 285 Z" fill="#ffffff" stroke="#222" stroke-width="4"/>
+    <!-- Head -->
+    <circle cx="472" cy="200" r="28" fill="#ffffff" stroke="#222" stroke-width="4"/>
+    <!-- Beak and pouch -->
+    <path d="M492 196 L570 214 Q566 232 540 232 L500 228 Q488 222 492 196 Z" fill="#ffb347" stroke="#222" stroke-width="3"/>
+    <path d="M500 214 Q520 252 540 232" fill="#f29a2e" stroke="#222" stroke-width="3"/>
+    <!-- Eye -->
+    <circle cx="478" cy="192" r="5" fill="#111"/>
+    <circle cx="480" cy="190" r="1.6" fill="#fff"/>
+    <!-- Cheerful brow -->
+    <path d="M466 180 Q478 172 490 180" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Speed lines -->
+  <g stroke="#1a1a2e" stroke-width="4" stroke-linecap="round">
+    <line x1="120" y1="380" x2="165" y2="380"/>
+    <line x1="100" y1="410" x2="150" y2="410"/>
+    <line x1="130" y1="440" x2="170" y2="440"/>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="540" width="800" height="60" fill="#1a1a2e"/>
+  <text x="400" y="578" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">2026-10-31 00:08:09 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1f4a"/>
+      <stop offset="1" stop-color="#4b3a78"/>
+    </linearGradient>
+    <radialGradient id="moonG" cx="0.4" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#fffbe0"/>
+      <stop offset="1" stop-color="#f3d77a"/>
+    </radialGradient>
+    <g id="spokes">
+      <line x1="-56" y1="0" x2="56" y2="0"/>
+      <line x1="0" y1="-56" x2="0" y2="56"/>
+      <line x1="-40" y1="-40" x2="40" y2="40"/>
+      <line x1="-40" y1="40" x2="40" y2="-40"/>
+    </g>
+  </defs>
+
+  <!-- Sky -->
+  <rect x="0" y="0" width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="200" r="48" fill="url(#moonG)"/>
+  <circle cx="665" cy="190" r="8" fill="#e8c766" opacity="0.6"/>
+  <circle cx="695" cy="215" r="5" fill="#e8c766" opacity="0.6"/>
+  <g fill="#fff">
+    <circle cx="90" cy="110" r="2"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="160" r="1.5"/>
+    <circle cx="320" cy="100" r="2"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="560" cy="170" r="1.5"/>
+    <circle cx="750" cy="120" r="2"/>
+    <circle cx="40" cy="220" r="1.5"/>
+  </g>
+
+  <!-- Bat -->
+  <g transform="translate(150,215)">
+    <animateTransform attributeName="transform" type="translate" values="150,215;175,200;150,215" dur="3s" repeatCount="indefinite"/>
+    <path d="M0 0 Q-10 -12 -22 -4 Q-14 -2 -12 4 Q-6 0 0 4 Q6 0 12 4 Q14 -2 22 -4 Q10 -12 0 0Z" fill="#111">
+      <animateTransform attributeName="transform" type="scale" values="1 1;1 0.4;1 1" dur="0.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="52" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="40" fill="#ffb627" stroke="#2a1300" stroke-width="2" letter-spacing="1">TOUR DE FRANCE? TOUR DE POUCH.</text>
+
+  <!-- Road -->
+  <rect x="0" y="460" width="800" height="45" fill="#2b2b33"/>
+  <rect x="0" y="456" width="800" height="5" fill="#55556a"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-100 0" dur="0.6s" repeatCount="indefinite"/>
+    <g fill="#f4e04d">
+      <rect x="0" y="480" width="50" height="5"/>
+      <rect x="100" y="480" width="50" height="5"/>
+      <rect x="200" y="480" width="50" height="5"/>
+      <rect x="300" y="480" width="50" height="5"/>
+      <rect x="400" y="480" width="50" height="5"/>
+      <rect x="500" y="480" width="50" height="5"/>
+      <rect x="600" y="480" width="50" height="5"/>
+      <rect x="700" y="480" width="50" height="5"/>
+      <rect x="800" y="480" width="50" height="5"/>
+    </g>
+  </g>
+
+  <!-- Speed lines -->
+  <g stroke="#c9c3ff" stroke-width="4" stroke-linecap="round" opacity="0.7">
+    <line x1="150" y1="300" x2="210" y2="300"><animate attributeName="opacity" values="1;0.2;1" dur="0.5s" repeatCount="indefinite"/></line>
+    <line x1="120" y1="340" x2="200" y2="340"><animate attributeName="opacity" values="0.2;1;0.2" dur="0.5s" repeatCount="indefinite"/></line>
+    <line x1="160" y1="380" x2="220" y2="380"><animate attributeName="opacity" values="1;0.3;1" dur="0.7s" repeatCount="indefinite"/></line>
+  </g>
+
+  <!-- Shadow -->
+  <ellipse cx="400" cy="462" rx="170" ry="8" fill="#000" opacity="0.35"/>
+
+  <!-- Bicycle -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- wheels -->
+    <g transform="translate(300,400)">
+      <circle r="60" fill="none" stroke="#111" stroke-width="9"/>
+      <circle r="60" fill="none" stroke="#666" stroke-width="2"/>
+      <g stroke="#ccc" stroke-width="2">
+        <use href="#spokes"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.8s" repeatCount="indefinite"/>
+      </g>
+      <circle r="6" fill="#999"/>
+    </g>
+    <g transform="translate(500,400)">
+      <circle r="60" fill="none" stroke="#111" stroke-width="9"/>
+      <circle r="60" fill="none" stroke="#666" stroke-width="2"/>
+      <g stroke="#ccc" stroke-width="2">
+        <use href="#spokes"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.8s" repeatCount="indefinite"/>
+      </g>
+      <circle r="6" fill="#999"/>
+    </g>
+    <!-- frame -->
+    <g stroke="#e63946" stroke-width="7" fill="none">
+      <line x1="400" y1="410" x2="380" y2="335"/>
+      <line x1="380" y1="335" x2="478" y2="325"/>
+      <line x1="400" y1="410" x2="475" y2="340"/>
+      <line x1="300" y1="400" x2="400" y2="410"/>
+      <line x1="300" y1="400" x2="380" y2="335"/>
+      <line x1="500" y1="400" x2="478" y2="315"/>
+    </g>
+    <!-- handlebar -->
+    <path d="M478 315 L482 298 L505 296" stroke="#333" stroke-width="6" fill="none"/>
+    <!-- seat -->
+    <path d="M360 330 L398 330" stroke="#222" stroke-width="8"/>
+    <!-- chainring -->
+    <circle cx="400" cy="410" r="13" fill="none" stroke="#888" stroke-width="4"/>
+  </g>
+
+  <!-- Back leg (behind) -->
+  <line x1="378" y1="320" x2="380" y2="410" stroke="#d9822b" stroke-width="7" stroke-linecap="round">
+    <animate attributeName="x2" values="380;386;400;414;420;414;400;386;380" dur="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="410;396;390;396;410;424;430;424;410" dur="0.8s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Pelican (bobbing) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="0.4s" repeatCount="indefinite"/>
+    <!-- tail -->
+    <path d="M318 290 L290 280 L298 300 Z" fill="#ddd" stroke="#333" stroke-width="2"/>
+    <!-- body -->
+    <ellipse cx="365" cy="292" rx="58" ry="38" fill="#f5f5f5" stroke="#333" stroke-width="3" transform="rotate(-15 365 292)"/>
+    <!-- neck -->
+    <path d="M395 270 Q410 230 420 205 L440 210 Q425 245 415 280 Z" fill="#f5f5f5" stroke="#333" stroke-width="3"/>
+    <!-- pouch with pumpkin -->
+    <path d="M440 212 Q470 270 520 222 Z" fill="#f7c98b" stroke="#333" stroke-width="3"/>
+    <circle cx="472" cy="232" r="16" fill="#ff7b00" stroke="#7a3500" stroke-width="2"/>
+    <path d="M472 216 v-5" stroke="#3a6b1f" stroke-width="3"/>
+    <path d="M464 228 l3 -4 l3 4z M476 228 l3 -4 l3 4z" fill="#3a1a00"/>
+    <path d="M463 236 q9 6 18 0" stroke="#3a1a00" stroke-width="2" fill="none"/>
+    <!-- head -->
+    <ellipse cx="430" cy="198" rx="22" ry="18" fill="#f5f5f5" stroke="#333" stroke-width="3"/>
+    <!-- helmet -->
+    <path d="M408 194 Q428 168 452 190 Z" fill="#2a9d8f" stroke="#333" stroke-width="2"/>
+    <line x1="420" y1="186" x2="430" y2="178" stroke="#fff" stroke-width="2"/>
+    <!-- beak -->
+    <path d="M444 200 L530 214 L522 222 L442 212 Z" fill="#ffb627" stroke="#333" stroke-width="3"/>
+    <!-- eye -->
+    <circle cx="432" cy="198" r="7" fill="#fff" stroke="#333" stroke-width="2"/>
+    <circle cx="434" cy="199" r="3" fill="#111">
+      <animate attributeName="cx" values="434;436;434" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M424 188 L440 191" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <!-- sweat drop -->
+    <path d="M412 205 q-4 7 0 10 q4 -3 0 -10z" fill="#8fd3ff">
+      <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+    <!-- wing to handlebar -->
+    <path d="M350 275 Q420 260 490 298 Q430 300 360 310 Z" fill="#e3e3e3" stroke="#333" stroke-width="3"/>
+    <path d="M370 290 L420 288 M372 300 L430 296" stroke="#999" stroke-width="2"/>
+  </g>
+
+  <!-- Front leg -->
+  <line x1="384" y1="322" x2="420" y2="410" stroke="#f39c3a" stroke-width="8" stroke-linecap="round">
+    <animate attributeName="x2" values="420;414;400;386;380;386;400;414;420" dur="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="410;424;430;424;410;396;390;396;410" dur="0.8s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Speech bubble -->
+  <path d="M560 85 h210 a12 12 0 0 1 12 12 v52 a12 12 0 0 1 -12 12 h-160 l-55 30 l20 -30 h-15 a12 12 0 0 1 -12 -12 v-52 a12 12 0 0 1 12 -12z" fill="#fff" stroke="#222" stroke-width="3"/>
+  <text x="665" y="115" text-anchor="middle" font-family="'Comic Sans MS', 'Trebuchet MS', sans-serif" font-size="15" fill="#222">Baskets? Please.</text>
+  <text x="665" y="138" text-anchor="middle" font-family="'Comic Sans MS', 'Trebuchet MS', sans-serif" font-size="15" fill="#222">I came pre-installed.</text>
+
+  <!-- Caption -->
+  <rect x="40" y="512" width="720" height="44" rx="8" fill="#fff8e7" stroke="#2a1300" stroke-width="2"/>
+  <text x="400" y="532" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#2a1300">Midnight Halloween commute: local pelican refuses cargo racks,</text>
+  <text x="400" y="550" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#2a1300">pedals furiously while his beak does all the heavy lifting.</text>
+
+  <!-- Footer timestamp -->
+  <rect x="0" y="565" width="800" height="35" fill="#120f2a"/>
+  <text x="400" y="588" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" fill="#e8e4ff">2026-10-31 00:07:14 SGT (UTC+08:00)</text>
+</svg>
