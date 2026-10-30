@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A determined pelican pedals a bicycle past a sign that says “Lane? What lane?”</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 3s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .6s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#b9e9f2"/>
+  <rect y="390" width="800" height="210" fill="#f7d890"/>
+  <path d="M0 390 Q110 365 220 390 T440 390 T660 390 T880 390" fill="none" stroke="#fff3cc" stroke-width="9"/>
+  <circle cx="682" cy="104" r="43" fill="#ffd45e"/>
+  <g fill="#fff" opacity=".9">
+    <ellipse cx="112" cy="120" rx="48" ry="15"/><ellipse cx="144" cy="112" rx="30" ry="20"/>
+    <ellipse cx="560" cy="178" rx="42" ry="13"/><ellipse cx="590" cy="170" rx="26" ry="18"/>
+  </g>
+
+  <text id="title" x="400" y="51" text-anchor="middle" font-family="Verdana, sans-serif" font-size="30" font-weight="900" fill="#17324d">THE PELICAN CYCLE</text>
+  <text x="400" y="78" text-anchor="middle" font-family="Verdana, sans-serif" font-size="15" font-weight="700" fill="#31536d">“Lane? What lane?” — asks the bird with the built-in basket.</text>
+
+  <!-- road and dashed path -->
+  <path d="M0 476 H800" stroke="#17324d" stroke-width="5" opacity=".24"/>
+  <path d="M0 492 H800" stroke="#fff9e8" stroke-width="5" stroke-dasharray="34 26"/>
+
+  <!-- funny roadside sign -->
+  <g class="ink">
+    <path d="M105 294 V430" stroke-width="8"/>
+    <path d="M42 286 Q42 276 52 276 H177 Q187 276 187 286 V341 Q187 351 177 351 H52 Q42 351 42 341Z" fill="#fff7dc" stroke-width="5"/>
+    <text x="114" y="309" text-anchor="middle" font-family="Verdana, sans-serif" font-size="16" font-weight="900" fill="#17324d" stroke="none">BIKE LANE</text>
+    <text x="114" y="332" text-anchor="middle" font-family="Verdana, sans-serif" font-size="13" font-weight="700" fill="#d75a45" stroke="none">OR ELSE!</text>
+  </g>
+
+  <!-- bicycle wheels -->
+  <g class="wheel ink" fill="none" stroke-width="5">
+    <circle cx="282" cy="444" r="66" stroke="#17324d"/>
+    <circle cx="552" cy="444" r="66" stroke="#17324d"/>
+    <path d="M282 378V510 M216 444H348 M235 397L329 491 M329 397L235 491"/>
+    <path d="M552 378V510 M486 444H618 M505 397L599 491 M599 397L505 491"/>
+  </g>
+  <!-- bicycle frame -->
+  <g class="ink" fill="none" stroke="#e65745" stroke-width="9">
+    <path d="M282 444 L371 365 L429 444 L331 444 Z"/>
+    <path d="M371 365 L552 444 L429 444"/>
+    <path d="M371 365 L355 345 M339 345H371"/>
+    <path d="M429 444 L445 424 M433 424H461"/>
+  </g>
+  <circle cx="331" cy="444" r="12" fill="#ffd45e" stroke="#17324d" stroke-width="4"/>
+  <path d="M331 444 L354 466 M331 444 L310 423" class="ink" stroke-width="5"/>
+
+  <!-- rider -->
+  <g class="rider">
+    <!-- legs, flailing just enough -->
+    <path d="M421 317 Q448 348 430 397 L354 444" fill="none" stroke="#f4a261" stroke-width="17" stroke-linecap="round"/>
+    <path d="M425 324 Q391 353 400 405 L331 444" fill="none" stroke="#f4a261" stroke-width="16" stroke-linecap="round"/>
+    <path d="M354 444 l-18 8 M331 444 l-17 8" class="ink" fill="none" stroke-width="7"/>
+    <!-- body -->
+    <ellipse cx="414" cy="288" rx="62" ry="82" fill="#fffdf2" stroke="#17324d" stroke-width="5"/>
+    <path d="M374 296 Q413 329 452 293 Q447 354 408 355 Q379 344 374 296" fill="#d9edf0" stroke="#17324d" stroke-width="4"/>
+    <!-- neck and head -->
+    <path d="M411 244 Q408 207 440 193" fill="none" stroke="#fffdf2" stroke-width="27" stroke-linecap="round"/>
+    <path d="M411 244 Q408 207 440 193" fill="none" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="454" cy="183" rx="38" ry="31" fill="#fffdf2" stroke="#17324d" stroke-width="5"/>
+    <circle cx="469" cy="177" r="5.5" fill="#17324d"/>
+    <path d="M483 190 Q532 184 570 208 Q534 222 484 207Z" fill="#f2a23a" stroke="#17324d" stroke-width="5"/>
+    <path d="M490 202 Q529 216 560 210 Q547 243 514 231 Q496 224 490 202Z" fill="#f7c95d" stroke="#17324d" stroke-width="4"/>
+    <!-- jaunty helmet -->
+    <path d="M425 163 Q442 131 476 153 L486 168Z" fill="#e65745" stroke="#17324d" stroke-width="5"/>
+    <path d="M421 167 Q452 157 484 170" fill="none" stroke="#17324d" stroke-width="5"/>
+    <!-- wing gripping handlebar -->
+    <path d="M404 275 Q376 266 363 292 Q386 304 416 296" fill="#fffdf2" stroke="#17324d" stroke-width="5"/>
+    <path d="M363 292 L355 345" fill="none" stroke="#17324d" stroke-width="5"/>
+    <!-- sweat and exclamation -->
+    <path d="M501 142 Q493 155 501 159 Q509 155 501 142Z" fill="#4aa8c5"/>
+    <text x="512" y="151" font-family="Verdana, sans-serif" font-size="28" font-weight="900" fill="#e65745">!</text>
+  </g>
+
+  <!-- motion marks -->
+  <path d="M625 356h37 M641 374h28 M181 382h32" stroke="#e65745" stroke-width="5" stroke-linecap="round"/>
+  <path d="M283 524 Q415 540 552 524" fill="none" stroke="#17324d" stroke-width="3" stroke-dasharray="6 8" opacity=".35"/>
+
+  <!-- dedicated footer -->
+  <rect y="548" width="800" height="52" fill="#17324d"/>
+  <text x="400" y="581" text-anchor="middle" font-family="Verdana, sans-serif" font-size="17" font-weight="700" fill="#fff9e8">2026-10-30 08:02:14 SGT (UTC+08:00)</text>
+</svg>
