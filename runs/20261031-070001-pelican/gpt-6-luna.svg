@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">THE GREAT BEAK ESCAPE</title>
+  <desc id="description">A smug pelican pedals a bicycle with a tiny helmet and an enormous beak, leaving a fish-shaped dust cloud.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#203047;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f6fbff;stroke:#203047;stroke-width:8}
+      .spoke{stroke:#7890a3;stroke-width:2.5}
+      .frame{fill:none;stroke:#e45144;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+      .small{font-family:Arial,sans-serif;font-weight:700}
+      .title{font-family:Arial,sans-serif;font-weight:900;letter-spacing:1px}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:rotate(0deg)}50%{transform:rotate(28deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .spokes{transform-origin:205px 423px;animation:spin 2.4s linear infinite}
+      .spokes2{transform-origin:588px 423px;animation:spin 2.4s linear infinite}
+      .crank{transform-origin:398px 423px;animation:pedal .7s ease-in-out infinite}
+      .rider{transform-origin:414px 290px;animation:bob .7s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff3d4"/>
+  <path d="M0 402 Q180 377 340 400 T800 393 V600 H0Z" fill="#d9f0e8"/>
+  <path d="M0 441 Q170 425 339 442 T800 433" fill="none" stroke="#a7d5c9" stroke-width="4"/>
+  <circle cx="690" cy="108" r="43" fill="#ffca55"/>
+  <path d="M68 163q22-22 44 0m-25 15q17-18 34 0M622 190q19-19 38 0" fill="none" stroke="#d9a94e" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="400" y="53" text-anchor="middle" class="title" font-size="31" fill="#203047">THE GREAT BEAK ESCAPE</text>
+  <text x="400" y="82" text-anchor="middle" class="small" font-size="15" fill="#526579">He’s cycling to lunch. Lunch is trying to cycle away.</text>
+
+  <!-- Bicycle wheels -->
+  <circle class="wheel" cx="205" cy="423" r="68"/>
+  <circle class="wheel" cx="588" cy="423" r="68"/>
+  <g class="spokes">
+    <path class="spoke" d="M205 360v126M142 423h126M160 378l90 90M250 378l-90 90"/>
+  </g>
+  <g class="spokes2">
+    <path class="spoke" d="M588 360v126M525 423h126M543 378l90 90M633 378l-90 90"/>
+  </g>
+  <circle cx="205" cy="423" r="8" fill="#203047"/>
+  <circle cx="588" cy="423" r="8" fill="#203047"/>
+
+  <!-- Bicycle frame and handlebars -->
+  <path class="frame" d="M205 423 326 423 278 327 205 423M326 423 397 327 448 423 326 423M397 327 481 327"/>
+  <path d="M268 319h20l-7 15h-20zm185 0h34m-2 0 12-19m-12 19 19 7" fill="none" stroke="#203047" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M303 424h46" stroke="#203047" stroke-width="8" stroke-linecap="round"/>
+  <g class="crank">
+    <path d="M326 423l-20 24m20-24 22 19" fill="none" stroke="#203047" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="306" cy="447" r="5" fill="#203047"/>
+    <circle cx="348" cy="442" r="5" fill="#203047"/>
+  </g>
+  <path d="M378 309h38" stroke="#203047" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <!-- legs and feet -->
+    <path d="M383 332q-13 28-53 56l-17 29m43-26q34 19 4 47" fill="none" stroke="#ef9b32" stroke-width="13" stroke-linecap="round"/>
+    <path d="M311 414l-20 4m69 17-19 12" stroke="#203047" stroke-width="7" stroke-linecap="round"/>
+    <!-- body -->
+    <ellipse cx="421" cy="273" rx="55" ry="65" fill="#fff" class="ink"/>
+    <path d="M384 291q38 8 75 0l-12 32q-31 23-59-2z" fill="#f2a23b" stroke="#203047" stroke-width="4"/>
+    <!-- wing -->
+    <path d="M405 264q34-31 54 2-15 25-46 22" fill="#e8edf0" stroke="#203047" stroke-width="4"/>
+    <path d="M416 271l28-4m-22 13 24-3" stroke="#b6c3cd" stroke-width="3" stroke-linecap="round"/>
+    <!-- neck/head -->
+    <path d="M423 230q-9-43 17-66" fill="none" stroke="#fff" stroke-width="25" stroke-linecap="round"/>
+    <ellipse cx="447" cy="157" rx="38" ry="31" fill="#fff" class="ink"/>
+    <!-- beak and pouch -->
+    <path d="M474 159 557 176q9 3 0 10l-78 17q-12 3-13-8z" fill="#ffbd42" stroke="#203047" stroke-width="5"/>
+    <path d="M477 166q4 27 29 32 24 4 35-7" fill="#f07855" stroke="#203047" stroke-width="4"/>
+    <path d="M488 169l50 10" stroke="#e58d23" stroke-width="3"/>
+    <!-- eye and smug brow -->
+    <circle cx="455" cy="149" r="5.5" fill="#203047"/>
+    <path d="M447 139q12-9 23-2" fill="none" stroke="#203047" stroke-width="4" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M415 144q4-34 34-33 27 2 31 31z" fill="#e45144" stroke="#203047" stroke-width="5"/>
+    <path d="M410 144h74" stroke="#203047" stroke-width="6" stroke-linecap="round"/>
+    <path d="M439 114l4 24m15-22 3 22" stroke="#ffb4a7" stroke-width="3"/>
+    <!-- wing on handlebar -->
+    <path d="M456 269q22 21 26 47l-18 7q-17-26-34-37" fill="#fff" stroke="#203047" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish-shaped dust trail -->
+  <path d="M117 355q-25-17-43 0 18 17 43 0zm-1 0 17-12v24z" fill="#8bc7c1" stroke="#203047" stroke-width="3"/>
+  <circle cx="85" cy="353" r="2.5" fill="#203047"/>
+  <path d="M99 378q-12-10-22 0m32 5q-10-8-18 0" fill="none" stroke="#8bc7c1" stroke-width="5" stroke-linecap="round"/>
+  <path d="M623 294q19-21 42 0-23 20-42 0zm42 0 14-11v22z" fill="#77bfb8" stroke="#203047" stroke-width="3"/>
+  <circle cx="634" cy="292" r="2.5" fill="#203047"/>
+
+  <!-- Caption sign -->
+  <path d="M83 484h634q13 0 13 13v42q0 13-13 13H83q-13 0-13-13v-42q0-13 13-13z" fill="#203047"/>
+  <text x="400" y="511" text-anchor="middle" class="small" font-size="18" fill="#fff3d4">“I’m not late. I’m just taking the scenic route to the fish market.”</text>
+  <text x="400" y="534" text-anchor="middle" class="small" font-size="12" fill="#a9d9d0">ONE BEAK • TWO WHEELS • ABSOLUTELY NO BRAKES ON THE PUNS</text>
+
+  <text x="400" y="578" text-anchor="middle" class="small" font-size="13" fill="#203047">2026-10-31 07:01:44 SGT (UTC+08:00)</text>
+</svg>
