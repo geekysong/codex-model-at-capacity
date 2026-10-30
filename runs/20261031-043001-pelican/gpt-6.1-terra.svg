@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN IN THE BIKE LANE</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a snail, carrying far too many fish in its enormous beak.</desc>
+  <style>
+    .wheel { animation: spin 2s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .rider { animation: bob 1s ease-in-out infinite; }
+    .pedals { animation: spin 2s linear infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @media (prefers-reduced-motion: reduce) { .wheel, .rider, .pedals { animation: none; } }
+  </style>
+
+  <rect width="800" height="600" fill="#fff6df"/>
+  <rect x="18" y="18" width="764" height="564" rx="22" fill="#d9f3f2" stroke="#26383c" stroke-width="5"/>
+  <text x="400" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="37" font-weight="900" letter-spacing="2" fill="#26383c">PELICAN IN THE BIKE LANE</text>
+  <path d="M50 92 H750" stroke="#26383c" stroke-width="3" stroke-linecap="round"/>
+
+  <circle cx="675" cy="151" r="35" fill="#ffd76a" stroke="#26383c" stroke-width="3"/>
+  <path d="M69 181 Q101 151 137 174 Q154 147 185 170 Q210 168 218 185 H69Z" fill="#fffdf5" stroke="#9fcac8" stroke-width="3"/>
+  <path d="M515 135 Q535 115 557 132 Q571 116 591 132 Q610 131 618 143 H515Z" fill="#fffdf5" stroke="#9fcac8" stroke-width="3"/>
+  <path d="M43 414 Q198 395 336 410 T757 408 V470 H43Z" fill="#a9d9a0"/>
+  <path d="M40 456 H760" stroke="#26383c" stroke-width="5"/>
+  <path d="M55 470 H745" stroke="#e3ba70" stroke-width="18" stroke-linecap="round"/>
+  <path d="M70 470 H730" stroke="#fff6df" stroke-width="3" stroke-dasharray="18 16"/>
+
+  <!-- Bicycle wheels -->
+  <g class="wheel">
+    <circle cx="230" cy="396" r="75" fill="#fffdf5" stroke="#26383c" stroke-width="9"/>
+    <circle cx="230" cy="396" r="59" fill="none" stroke="#8bb9bb" stroke-width="3"/>
+    <path d="M230 324 V468 M158 396 H302 M179 345 L281 447 M179 447 L281 345" stroke="#8bb9bb" stroke-width="3"/>
+    <circle cx="230" cy="396" r="7" fill="#26383c"/>
+  </g>
+  <g class="wheel">
+    <circle cx="548" cy="396" r="75" fill="#fffdf5" stroke="#26383c" stroke-width="9"/>
+    <circle cx="548" cy="396" r="59" fill="none" stroke="#8bb9bb" stroke-width="3"/>
+    <path d="M548 324 V468 M476 396 H620 M497 345 L599 447 M497 447 L599 345" stroke="#8bb9bb" stroke-width="3"/>
+    <circle cx="548" cy="396" r="7" fill="#26383c"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <path d="M230 396 L306 300 L388 396 Z M306 300 H466 L388 396 M466 300 L548 396 M449 271 L466 300" fill="none" stroke="#e85d4e" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M306 300 L295 278 M271 277 H321" fill="none" stroke="#26383c" stroke-width="9" stroke-linecap="round"/>
+  <path d="M449 271 L438 254 H469 Q483 254 483 266" fill="none" stroke="#26383c" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="388" cy="396" r="23" fill="#f7c967" stroke="#26383c" stroke-width="4"/>
+  <g class="pedals">
+    <path d="M388 396 L406 410 M388 396 L370 382" stroke="#26383c" stroke-width="5" stroke-linecap="round"/>
+    <path d="M398 412 H416 M360 380 H378" stroke="#26383c" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pelican and its slightly overfilled shopping pouch -->
+  <g class="rider">
+    <path d="M314 284 Q279 260 286 220 Q294 185 347 177 Q388 171 409 198 Q426 220 411 257 Q398 286 361 294 Q335 299 314 284Z" fill="#fffdf5" stroke="#26383c" stroke-width="5"/>
+    <path d="M311 227 Q331 203 375 213 Q395 217 402 234 Q383 257 346 259 Q319 257 311 227Z" fill="#e4ebe6" stroke="#26383c" stroke-width="4"/>
+    <path d="M293 233 L263 217 L274 240 L258 251 L293 253" fill="#fffdf5" stroke="#26383c" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M391 214 Q407 196 415 169 Q424 138 450 136 Q477 133 486 154 Q495 176 479 194 Q466 207 445 205 Q435 232 416 244" fill="#fffdf5" stroke="#26383c" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M467 178 Q510 177 592 185 Q610 187 616 192 Q596 201 557 204 L474 199Z" fill="#ef9b45" stroke="#26383c" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M476 199 Q499 251 548 250 Q586 249 604 201 Q563 211 476 199Z" fill="#f6bd6b" stroke="#26383c" stroke-width="4"/>
+    <path d="M495 216 Q508 208 521 217 Q509 225 495 216Z M537 224 Q550 216 563 225 Q550 233 537 224Z" fill="#7fb8bb" stroke="#26383c" stroke-width="2"/>
+    <path d="M495 216 L489 211 V221Z M537 224 L531 219 V229Z" fill="#7fb8bb" stroke="#26383c" stroke-width="2"/>
+    <circle cx="514" cy="216" r="1.5" fill="#26383c"/>
+    <circle cx="556" cy="224" r="1.5" fill="#26383c"/>
+    <circle cx="460" cy="158" r="12" fill="#fff" stroke="#26383c" stroke-width="3"/>
+    <circle cx="464" cy="159" r="4" fill="#26383c"/>
+    <path d="M448 142 Q461 135 472 142" fill="none" stroke="#26383c" stroke-width="4" stroke-linecap="round"/>
+    <path d="M430 129 Q445 109 470 121 L479 133 Q454 127 430 136Z" fill="#e85d4e" stroke="#26383c" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M448 122 L443 110" stroke="#26383c" stroke-width="3" stroke-linecap="round"/>
+    <path d="M342 281 Q336 311 367 337 L386 361" fill="none" stroke="#eaa14d" stroke-width="9" stroke-linecap="round"/>
+    <path d="M386 361 L399 367 L391 372" fill="none" stroke="#eaa14d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M370 280 Q386 294 399 305 L433 266" fill="none" stroke="#fffdf5" stroke-width="15" stroke-linecap="round"/>
+    <path d="M370 280 Q386 294 399 305 L433 266" fill="none" stroke="#26383c" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- A roadside observer -->
+  <path d="M659 443 Q665 424 682 430 Q695 436 691 449 H654Z" fill="#d48c69" stroke="#26383c" stroke-width="3"/>
+  <circle cx="679" cy="438" r="10" fill="#f0c26f" stroke="#26383c" stroke-width="3"/>
+  <path d="M679 432 Q686 437 680 442 Q674 445 674 439 Q674 435 679 436" fill="none" stroke="#26383c" stroke-width="2"/>
+  <path d="M659 433 L655 422 M665 432 L667 421" stroke="#26383c" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="655" cy="421" r="2" fill="#26383c"/>
+  <circle cx="667" cy="420" r="2" fill="#26383c"/>
+
+  <text x="400" y="517" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#26383c">“My other vehicle is a fishing boat.”</text>
+  <path d="M65 536 H735" stroke="#91bdbb" stroke-width="2"/>
+  <text x="400" y="562" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#40585a">2026-10-31 04:32:28 SGT (UTC+08:00)</text>
+</svg>
