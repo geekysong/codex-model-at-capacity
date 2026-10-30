@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">A Pelican Takes the Lane</title>
+  <desc id="desc">A proudly overconfident pelican pedals a bicycle, with a fish in its beak and a tiny traffic jam behind it.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#18324a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f8f1df;stroke:#18324a;stroke-width:7}
+      .spoke{stroke:#7090a0;stroke-width:2}
+      .frame{fill:none;stroke:#e9573f;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .type{font-family:Arial,Helvetica,sans-serif;font-weight:900}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:rotate(0deg)}50%{transform:rotate(18deg)}}
+      @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .rotor{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .leg{transform-box:fill-box;transform-origin:top center;animation:pedal .7s ease-in-out infinite alternate}
+      .bird{animation:bounce .7s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bde8ed"/>
+  <circle cx="685" cy="115" r="48" fill="#ffd166"/>
+  <path d="M0 365 Q125 305 250 357 T500 345 T800 352 V510 H0Z" fill="#75c995"/>
+  <path d="M0 405 Q150 385 300 405 T600 400 T800 408" fill="none" stroke="#56af81" stroke-width="4"/>
+  <path d="M0 472 H800" stroke="#18324a" stroke-width="5"/>
+  <path d="M0 482 H800" stroke="#f8f1df" stroke-width="3" stroke-dasharray="28 24"/>
+
+  <text x="36" y="55" class="type" font-size="32" fill="#18324a">THE GREAT BEAK ESCAPE</text>
+  <text x="39" y="83" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#31566a">One bird. Two wheels. Absolutely no road sense.</text>
+
+  <!-- A tiny, unimpressed traffic jam -->
+  <g transform="translate(70 370)">
+    <rect x="0" y="18" width="82" height="33" rx="8" fill="#f4a261" class="ink"/>
+    <path d="M14 18 25 3h34l12 15" fill="#ffe2b8" class="ink"/>
+    <circle cx="19" cy="53" r="8" fill="#18324a"/><circle cx="64" cy="53" r="8" fill="#18324a"/>
+    <text x="16" y="14" font-size="20">…</text>
+  </g>
+  <g transform="translate(164 385)">
+    <rect x="0" y="16" width="68" height="30" rx="8" fill="#8d99ae" class="ink"/>
+    <circle cx="16" cy="48" r="7" fill="#18324a"/><circle cx="53" cy="48" r="7" fill="#18324a"/>
+  </g>
+  <text x="74" y="351" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#18324a">HONK? I’M A BIRD.</text>
+
+  <!-- Bicycle wheels and spokes -->
+  <g class="rotor">
+    <circle class="wheel" cx="315" cy="411" r="62"/>
+    <g class="spoke">
+      <path d="M315 349V473M253 411H377M271 367L359 455M359 367L271 455"/>
+    </g>
+  </g>
+  <g class="rotor">
+    <circle class="wheel" cx="555" cy="411" r="62"/>
+    <g class="spoke">
+      <path d="M555 349V473M493 411H617M511 367L599 455M599 367L511 455"/>
+    </g>
+  </g>
+  <path class="frame" d="M315 411 382 337 440 411 315 411M382 337 555 411M440 411 478 329 526 329"/>
+  <path d="M469 321 491 321M517 322 543 322" stroke="#18324a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M374 330 394 330M384 327V337" stroke="#18324a" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="440" cy="411" r="12" fill="#ffd166" class="ink"/>
+  <g class="leg">
+    <path d="M440 411 462 432 440 411" fill="none" stroke="#18324a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M453 435h18M430 405h18" stroke="#18324a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <path d="M369 338 Q353 331 343 340" fill="none" stroke="#18324a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M526 329 Q540 318 548 326" fill="none" stroke="#18324a" stroke-width="5"/>
+
+  <!-- Pelican, bobbing with the ride -->
+  <g class="bird">
+    <path d="M414 302 Q390 273 403 237 Q421 199 465 210 Q495 217 496 250 Q495 277 470 292Z" fill="#fffaf0" class="ink"/>
+    <path d="M416 266 Q433 240 466 246 Q487 250 489 272 Q469 299 438 298Z" fill="#f6f0df" stroke="#18324a" stroke-width="4"/>
+    <path d="M427 218 Q441 190 469 198 Q490 204 490 228 Q481 251 455 250 Q433 248 427 218Z" fill="#fffaf0" class="ink"/>
+    <path d="M481 218 Q515 208 550 224 Q529 240 488 236Z" fill="#f2a541" class="ink"/>
+    <path d="M487 228 Q518 230 545 224 Q534 250 505 251 Q491 249 487 236Z" fill="#e97843" stroke="#18324a" stroke-width="4"/>
+    <circle cx="472" cy="215" r="4.5" fill="#18324a"/>
+    <path d="M451 294 440 335M472 290 478 329" fill="none" stroke="#e97843" stroke-width="7" stroke-linecap="round"/>
+    <path d="M431 336h20M470 331h21" stroke="#18324a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M405 243 Q383 246 378 267 Q393 271 416 260" fill="#dcebf0" stroke="#18324a" stroke-width="4"/>
+    <path d="M550 224 Q565 214 570 226 Q566 237 550 232Z" fill="#69a9c4" class="ink"/>
+    <path d="M560 220 Q566 210 573 217" fill="none" stroke="#18324a" stroke-width="2"/>
+  </g>
+
+  <!-- Motion marks -->
+  <path d="M588 293h27M600 307h20M280 306h23" stroke="#e9573f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M572 341 Q590 331 605 342" fill="none" stroke="#18324a" stroke-width="3" stroke-dasharray="4 6"/>
+  <text x="554" y="283" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#18324a">WHEEEE!</text>
+
+  <!-- Footer with reserved clear space -->
+  <rect x="0" y="510" width="800" height="90" fill="#18324a"/>
+  <text x="36" y="542" class="type" font-size="20" fill="#ffd166">“I’m not late. I’m migrating.”</text>
+  <text x="36" y="578" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#ffffff">2026-10-31 01:32:22 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Beak</title>
+  <desc id="description">An expressive pelican pedals a bicycle with a giant fish-filled bill, while a tiny basket carries a single feather. The wheels spin and the pelican bobs in a looping animation.</desc>
+  <defs>
+    <pattern id="paper" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="7" r="1" fill="#d8d1b6" opacity=".25"/>
+      <circle cx="19" cy="20" r=".7" fill="#d8d1b6" opacity=".3"/>
+    </pattern>
+    <g id="spokes" stroke="#486271" stroke-width="3">
+      <path d="M-73 0H73M0-73V73M-52-52L52 52M-52 52L52-52"/>
+      <circle r="13" fill="#f4b33f" stroke="#203447" stroke-width="4"/>
+    </g>
+    <g id="fish">
+      <path d="M0 0Q15-15 34 0Q15 15 0 0L-12-10V10Z" fill="#72aeb2" stroke="#243848" stroke-width="2"/>
+      <circle cx="27" cy="-2" r="2" fill="#243848"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#faf2d9"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M24 112H776" stroke="#213849" stroke-width="3"/>
+  <text x="400" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="43" font-weight="900" letter-spacing="3" fill="#203447">TOUR DE BEAK</text>
+  <text x="400" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#a34731">ALL THE GEAR. ABSOLUTELY NO IDEA.</text>
+
+  <path d="M0 402Q160 358 301 392T600 379T800 386V485H0Z" fill="#cbd9b8"/>
+  <path d="M0 451Q260 431 800 448V500H0Z" fill="#dfd0a7"/>
+  <path d="M40 478H760" stroke="#aa956c" stroke-width="3"/>
+  <path d="M67 459H135M654 460H731" stroke="#fff4d5" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Roadside satire -->
+  <g transform="translate(79 295)" stroke="#243848" stroke-linejoin="round">
+    <path d="M37 36V145" stroke-width="7"/>
+    <path d="M0 0H88L104 27L88 54H0Z" fill="#f4b33f" stroke-width="3"/>
+    <text x="45" y="23" text-anchor="middle" stroke="none" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#243848">FISH LANE</text>
+    <path d="M22 38H77M68 31L77 38L68 45" fill="none" stroke-width="3"/>
+  </g>
+
+  <ellipse cx="430" cy="465" rx="245" ry="12" fill="#665c47" opacity=".17"/>
+
+  <!-- Both wheel rims remain fixed; the spokes rotate continuously. -->
+  <g fill="#f9efd5" stroke="#203447" stroke-width="10">
+    <circle cx="274" cy="388" r="78"/>
+    <circle cx="574" cy="388" r="78"/>
+  </g>
+  <g fill="none" stroke="#fff9e9" stroke-width="3">
+    <circle cx="274" cy="388" r="69"/>
+    <circle cx="574" cy="388" r="69"/>
+  </g>
+  <g transform="translate(274 388)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(574 388)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M274 388L334 282L403 388H274L513 288L403 388M334 282H513M574 388L505 260" fill="none" stroke="#203447" stroke-width="13"/>
+    <path d="M274 388L334 282L403 388H274L513 288L403 388M334 282H513" fill="none" stroke="#db5a43" stroke-width="7"/>
+    <path d="M574 388L505 260" fill="none" stroke="#db5a43" stroke-width="7"/>
+    <path d="M334 282L324 258M505 260L497 243H530Q545 243 540 257" fill="none" stroke="#203447" stroke-width="8"/>
+    <path d="M302 256Q326 246 350 255" fill="none" stroke="#203447" stroke-width="12"/>
+    <path d="M399 377L280 380Q267 389 280 398L403 400" fill="none" stroke="#53616a" stroke-width="3"/>
+    <circle cx="403" cy="388" r="19" fill="#f4b33f" stroke="#203447" stroke-width="4"/>
+  </g>
+
+  <!-- Basket with hilariously little cargo -->
+  <path d="M543 275H603L595 313H551Z" fill="#c69455" stroke="#203447" stroke-width="3"/>
+  <path d="M550 285H599M552 296H597M558 276L563 310M574 276V311M590 276L585 311" stroke="#795c39" stroke-width="2"/>
+  <path d="M567 275Q556 250 573 239Q587 258 567 275Z" fill="#fffdf0" stroke="#203447" stroke-width="2"/>
+  <path d="M567 275L573 245" stroke="#203447" stroke-width="2"/>
+
+  <!-- Pelican and legs bob together. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".7s" repeatCount="indefinite"/>
+    <path d="M342 278Q366 303 390 343L411 363" fill="none" stroke="#203447" stroke-width="15" stroke-linecap="round"/>
+    <path d="M342 278Q366 303 390 343L411 363" fill="none" stroke="#eaa443" stroke-width="9" stroke-linecap="round"/>
+    <path d="M310 268Q291 313 346 347L371 383" fill="none" stroke="#203447" stroke-width="16" stroke-linecap="round"/>
+    <path d="M310 268Q291 313 346 347L371 383" fill="none" stroke="#f3ad4b" stroke-width="10" stroke-linecap="round"/>
+    <path d="M366 381L391 386L368 396L350 390Z" fill="#f3ad4b" stroke="#203447" stroke-width="3">
+      <animateTransform attributeName="transform" type="rotate" values="-8 370 385;9 370 385;-8 370 385" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+
+    <path d="M280 245L243 217L250 261L228 252Q255 297 305 290" fill="#e7e8dc" stroke="#203447" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M291 189Q337 167 375 203Q399 244 363 278Q326 305 278 269Q258 231 291 189Z" fill="#fffdf0" stroke="#203447" stroke-width="4"/>
+    <path d="M291 220Q327 204 352 243Q334 273 294 255" fill="#d7e0dc" stroke="#203447" stroke-width="3"/>
+    <path d="M298 236L331 251M298 246L319 260" stroke="#8b9b99" stroke-width="3" stroke-linecap="round"/>
+
+    <path d="M351 223Q367 200 363 179Q352 143 382 131Q415 122 425 153Q432 179 405 198L392 247" fill="#fffdf0" stroke="#203447" stroke-width="4"/>
+    <!-- Oversized throat pouch -->
+    <path d="M411 175L618 182Q598 251 516 252Q441 251 411 175Z" fill="#efb45b" stroke="#203447" stroke-width="4"/>
+    <path d="M435 196Q476 235 535 236" fill="none" stroke="#ce8941" stroke-width="3"/>
+    <use href="#fish" transform="translate(469 216) rotate(10)"/>
+    <use href="#fish" transform="translate(532 217) rotate(-13)"/>
+    <path d="M412 163Q493 151 628 175L645 185L411 183Z" fill="#f3c358" stroke="#203447" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M427 175L619 178" stroke="#c08535" stroke-width="2"/>
+
+    <circle cx="402" cy="155" r="12" fill="white" stroke="#203447" stroke-width="3"/>
+    <circle cx="407" cy="155" r="4" fill="#203447"/>
+    <path d="M388 139L409 143" stroke="#203447" stroke-width="5" stroke-linecap="round"/>
+    <path d="M365 136Q386 102 420 130L426 139L365 142Z" fill="#db5a43" stroke="#203447" stroke-width="3"/>
+    <path d="M379 126L384 137M395 121L400 136M409 127L414 137" stroke="#fff1d6" stroke-width="4"/>
+
+    <!-- Wing stretched to the handlebars -->
+    <path d="M347 215Q383 244 421 255L493 245" fill="none" stroke="#203447" stroke-width="17" stroke-linecap="round"/>
+    <path d="M347 215Q383 244 421 255L493 245" fill="none" stroke="#fffdf0" stroke-width="10" stroke-linecap="round"/>
+    <path d="M484 242L498 247M483 248L497 252" stroke="#203447" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Animated crank and pedal -->
+  <g transform="translate(403 388)">
+    <g>
+      <path d="M0 0L29 0" stroke="#203447" stroke-width="6" stroke-linecap="round"/>
+      <path d="M23-6H39V6H23Z" fill="#203447"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#a34731" stroke-width="3" stroke-linecap="round">
+    <path d="M218 203L200 198M224 190L211 177M216 218H194"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#203447">
+    <path d="M643 272Q625 260 640 247Q662 232 745 246Q770 256 750 278Q719 292 666 280L645 294Z" fill="#fffdf0" stroke="#203447" stroke-width="2"/>
+    <text x="695" y="268" text-anchor="middle" font-size="16" font-weight="bold">“I carb-load.”</text>
+  </g>
+
+  <rect x="25" y="501" width="750" height="49" rx="8" fill="#203447"/>
+  <text x="400" y="532" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#fff5db">He bought a racing bike. His bill still has a cargo limit.</text>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#203447">2026-10-31 01:31:15 SGT (UTC+08:00)</text>
+</svg>
