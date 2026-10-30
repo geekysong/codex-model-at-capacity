@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pedal Pelican</title>
+  <desc id="desc">A pelican pedals a bicycle along a seaside road, with spinning wheels and a gentle bouncing motion.</desc>
+  <defs>
+    <style>
+      .ink { stroke:#27333b; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .spoke { stroke:#fff4cd; stroke-width:4; stroke-linecap:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 1.8s linear infinite; }
+      .rider { animation:bob .6s ease-in-out infinite alternate; }
+      .pedal { transform-origin:390px 408px; animation:spin 1.8s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { to { transform:translateY(-5px); } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider,.pedal { animation:none; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f7e7bc"/>
+  <rect x="18" y="18" width="764" height="564" rx="24" fill="#fff9e9" stroke="#27333b" stroke-width="4"/>
+  <text x="400" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#27333b" letter-spacing="2">PEDAL PELICAN</text>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#61747a">THE COAST'S MOST QUESTIONABLE COMMUTER</text>
+
+  <rect x="40" y="118" width="720" height="365" rx="18" fill="#bde6e5"/>
+  <circle cx="675" cy="170" r="30" fill="#ffd66b"/>
+  <path d="M40 286 Q130 260 220 286 T400 286 T580 286 T760 286 V355 H40Z" fill="#77c6c8"/>
+  <path d="M40 312 Q130 295 220 312 T400 312 T580 312 T760 312" fill="none" stroke="#e2f7ed" stroke-width="4"/>
+  <path d="M40 355 Q180 340 320 354 T600 352 T760 355 V483 H40Z" fill="#e7ca8c"/>
+  <path d="M40 446 H760 V483 H40Z" fill="#728584"/>
+  <path d="M45 451 H755" stroke="#fff1c9" stroke-width="4" stroke-dasharray="28 18"/>
+  <path d="M95 171 q12 -13 24 0 q12 -13 24 0 M174 206 q9 -10 18 0 q9 -10 18 0" fill="none" stroke="#527579" stroke-width="3" stroke-linecap="round"/>
+
+  <g class="wheel">
+    <circle cx="255" cy="421" r="67" fill="#27333b"/>
+    <circle cx="255" cy="421" r="54" fill="#65b9bb" stroke="#fff4cd" stroke-width="5"/>
+    <path class="spoke" d="M255 369 V473 M203 421 H307 M218 384 L292 458 M292 384 L218 458"/>
+    <circle cx="255" cy="421" r="9" fill="#ffd66b" class="ink"/>
+  </g>
+  <g class="wheel">
+    <circle cx="548" cy="421" r="67" fill="#27333b"/>
+    <circle cx="548" cy="421" r="54" fill="#65b9bb" stroke="#fff4cd" stroke-width="5"/>
+    <path class="spoke" d="M548 369 V473 M496 421 H600 M511 384 L585 458 M585 384 L511 458"/>
+    <circle cx="548" cy="421" r="9" fill="#ffd66b" class="ink"/>
+  </g>
+
+  <path d="M255 421 L335 335 L390 408 L255 421 M335 335 L473 335 L390 408 M473 335 L548 421 M473 335 L463 304 L487 304" fill="none" stroke="#e45b43" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M335 335 L326 310 M307 309 H345" fill="none" class="ink" stroke-width="8"/>
+  <path d="M463 304 Q459 287 476 283 H496" fill="none" class="ink" stroke-width="8"/>
+  <circle cx="390" cy="408" r="13" fill="#ffd66b" class="ink"/>
+  <g class="pedal">
+    <path d="M390 408 l20 17 M390 408 l-20 -17" fill="none" class="ink"/>
+    <path d="M401 428 h20 M359 388 h20" fill="none" class="ink" stroke-width="7"/>
+  </g>
+
+  <g class="rider">
+    <path d="M355 331 Q328 345 320 376 L369 393" fill="none" stroke="#e89639" stroke-width="11" stroke-linecap="round"/>
+    <path d="M368 393 l-17 1" fill="none" class="ink" stroke-width="7"/>
+    <path d="M389 321 Q411 343 409 371 L414 411" fill="none" stroke="#e89639" stroke-width="11" stroke-linecap="round"/>
+    <path d="M414 411 l17 1" fill="none" class="ink" stroke-width="7"/>
+    <ellipse cx="355" cy="284" rx="74" ry="52" fill="#fffdf0" class="ink"/>
+    <path d="M313 281 Q333 255 388 275 Q382 311 339 312 Q319 309 313 281Z" fill="#e7e4d7" class="ink"/>
+    <path d="M296 278 l-29 -16 l13 29 l-26 5 l40 16" fill="#fffdf0" class="ink"/>
+    <path d="M398 277 Q420 267 417 235 Q414 216 424 202" fill="none" stroke="#27333b" stroke-width="29" stroke-linecap="round"/>
+    <path d="M398 277 Q420 267 417 235 Q414 216 424 202" fill="none" stroke="#fffdf0" stroke-width="19" stroke-linecap="round"/>
+    <ellipse cx="432" cy="195" rx="31" ry="29" fill="#fffdf0" class="ink"/>
+    <path d="M454 195 Q486 194 531 209 Q493 216 454 210Z" fill="#f5a43e" class="ink"/>
+    <path d="M456 210 Q488 218 516 212 Q492 251 465 238 Q453 232 456 210Z" fill="#f6bd64" class="ink"/>
+    <circle cx="440" cy="188" r="5" fill="#27333b"/>
+    <path d="M428 177 q11 -7 21 0" fill="none" class="ink" stroke-width="3"/>
+    <path d="M405 179 Q410 154 433 157 Q456 158 462 177Z" fill="#e45b43" class="ink"/>
+    <path d="M402 179 H465" fill="none" class="ink" stroke-width="7"/>
+    <path d="M391 286 Q425 301 469 289" fill="none" stroke="#27333b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M391 286 Q425 301 469 289" fill="none" stroke="#fffdf0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M604 369 q20 -14 34 0 q-15 5 -34 0Z" fill="#fff9e9" stroke="#27333b" stroke-width="3"/>
+  <path d="M641 369 l12 -6 l-4 10Z" fill="#f5a43e" stroke="#27333b" stroke-width="3"/>
+  <circle cx="625" cy="365" r="2" fill="#27333b"/>
+  <text x="400" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#27333b">“I said I wanted a cycle lane, not a fish lane.”</text>
+  <path d="M70 541 H730" stroke="#d6c9a8" stroke-width="2"/>
+  <text x="400" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#52636a">2026-10-30 17:02:39 SGT (UTC+08:00)</text>
+</svg>
