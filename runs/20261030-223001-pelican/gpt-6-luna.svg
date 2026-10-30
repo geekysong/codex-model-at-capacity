@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A determined pelican rides a bicycle while a fish complains from its beak pouch.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#17324d;stroke-width:7}
+      .spoke{stroke:#63829a;stroke-width:2}
+      .bird{fill:#fff4d6}
+      .blue{fill:#42b9c7}
+      .orange{fill:#f59a35}
+      .type{font-family:Arial,Helvetica,sans-serif;fill:#17324d}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f1"/>
+  <circle cx="664" cy="145" r="58" fill="#ffd46b"/>
+  <path d="M0 372 Q120 330 235 367 T470 360 T800 367 V510 H0Z" fill="#a9dfb0"/>
+  <path d="M0 425 Q140 397 285 423 T570 418 T800 423 V520 H0Z" fill="#79c88d"/>
+
+  <text id="title" class="type" x="400" y="55" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1">THE PELICAN CYCLE</text>
+  <text class="type" x="400" y="83" text-anchor="middle" font-size="16" font-weight="600">“I’m getting nowhere fast—and the fish is judging my form.”</text>
+
+  <!-- Bicycle frame -->
+  <g class="ink" fill="none">
+    <circle class="wheel" cx="250" cy="414" r="65"/>
+    <circle class="wheel" cx="515" cy="414" r="65"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 250 414" to="360 250 414" dur="2s" repeatCount="indefinite"/>
+      <path class="spoke" d="M250 349V479 M185 414H315 M204 368L296 460 M296 368L204 460"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 515 414" to="360 515 414" dur="2s" repeatCount="indefinite"/>
+      <path class="spoke" d="M515 349V479 M450 414H580 M469 368L561 460 M561 368L469 460"/>
+    </g>
+    <path stroke="#e65d4f" stroke-width="9" d="M250 414L354 414L310 330L250 414 M354 414L421 331L515 414 M310 330L421 331"/>
+    <circle cx="354" cy="414" r="12" fill="#f59a35"/>
+    <path stroke="#17324d" stroke-width="8" d="M354 414L384 438 M354 414L325 390"/>
+    <path stroke="#17324d" stroke-width="9" d="M300 324L324 324 M410 326L431 326 M421 331L431 298L453 298"/>
+    <path stroke="#17324d" stroke-width="7" d="M286 322Q310 307 333 322 M444 294L463 294"/>
+  </g>
+
+  <!-- Pelican and gentle riding bob -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="0.55s" repeatCount="indefinite"/>
+    <!-- tail -->
+    <path d="M321 260L270 245L302 284Z" fill="#fff4d6" class="ink"/>
+    <!-- body -->
+    <ellipse cx="365" cy="256" rx="72" ry="58" class="bird ink"/>
+    <path d="M348 261Q377 224 424 253Q405 294 357 296Q336 287 348 261Z" fill="#f4dfb9" stroke="#17324d" stroke-width="3"/>
+    <!-- wing -->
+    <path d="M335 253Q376 221 409 252Q386 282 350 278Z" fill="#fffaf0" class="ink"/>
+    <path d="M355 258Q377 242 397 253" fill="none" stroke="#d5b980" stroke-width="3"/>
+    <!-- neck and head -->
+    <path d="M405 255Q437 231 432 193L457 191Q469 235 434 270Z" fill="#fff4d6" class="ink"/>
+    <circle cx="457" cy="176" r="37" class="bird ink"/>
+    <circle cx="469" cy="169" r="5" fill="#17324d"/>
+    <circle cx="471" cy="167" r="1.8" fill="#fff"/>
+    <!-- beak and fish-filled pouch -->
+    <path d="M487 177L575 190Q584 194 575 202L490 207Z" fill="#f6b63f" class="ink"/>
+    <path d="M492 207Q526 256 571 214Q580 206 575 202Z" fill="#f28b46" class="ink"/>
+    <path d="M516 223Q535 211 550 223L541 235L520 233Z" fill="#64c3d1" stroke="#17324d" stroke-width="3"/>
+    <path d="M550 223L563 215L561 230Z" fill="#f2d35f" stroke="#17324d" stroke-width="2"/>
+    <circle cx="523" cy="222" r="2.5" fill="#17324d"/>
+    <path d="M526 228Q534 233 541 228" fill="none" stroke="#17324d" stroke-width="2"/>
+    <!-- legs on pedals -->
+    <path d="M359 299L350 351L384 385" fill="none" class="ink"/>
+    <path d="M394 294L411 345L378 414" fill="none" class="ink"/>
+    <path d="M378 385L397 388M378 414L397 418" fill="none" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+    <!-- handlebars wing-hand -->
+    <path d="M421 261L448 299" fill="none" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion marks -->
+  <path d="M160 341l-22-8 M158 353l-27 1 M594 352l25-8" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <text class="type" x="640" y="283" text-anchor="middle" font-size="15" font-weight="700" transform="rotate(7 640 283)">HONK!</text>
+  <path d="M612 291Q601 301 592 302" fill="none" stroke="#17324d" stroke-width="2"/>
+
+  <!-- Footer -->
+  <path d="M0 520H800V600H0Z" fill="#17324d"/>
+  <text x="400" y="550" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">PEDAL POWER. QUESTIONABLE PASSENGER.</text>
+  <text x="400" y="581" text-anchor="middle" fill="#dff5f1" font-family="Arial,Helvetica,sans-serif" font-size="14">2026-10-30 22:32:45 SGT (UTC+08:00)</text>
+</svg>

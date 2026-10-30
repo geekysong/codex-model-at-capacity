@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">City block map with shortest route</title>
+  <desc id="desc">A 5 by 5 intersection grid labeled A1 through E5. A shortest route from A1 to E5 avoids blocked intersections B2, C3, and D4, using eight street segments.</desc>
+  <rect width="600" height="400" fill="#f7f8fa"/>
+  <text x="300" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#233044">CITY BLOCK ROUTE</text>
+
+  <!-- Streets -->
+  <g stroke="#8793a1" stroke-width="3" stroke-linecap="round">
+    <path d="M100 70H500 M100 130H500 M100 190H500 M100 250H500 M100 310H500"/>
+    <path d="M100 70V310 M200 70V310 M300 70V310 M400 70V310 M500 70V310"/>
+  </g>
+
+  <!-- Route: A1 → B1 → C1 → D1 → E1 → E2 → E3 → E4 → E5 -->
+  <path d="M100 70H500V310" fill="none" stroke="#1677e8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Intersections -->
+  <g fill="#fff" stroke="#465363" stroke-width="2">
+    <circle cx="100" cy="70" r="6"/><circle cx="200" cy="70" r="6"/><circle cx="300" cy="70" r="6"/><circle cx="400" cy="70" r="6"/><circle cx="500" cy="70" r="6"/>
+    <circle cx="100" cy="130" r="6"/><circle cx="200" cy="130" r="6"/><circle cx="300" cy="130" r="6"/><circle cx="400" cy="130" r="6"/><circle cx="500" cy="130" r="6"/>
+    <circle cx="100" cy="190" r="6"/><circle cx="200" cy="190" r="6"/><circle cx="300" cy="190" r="6"/><circle cx="400" cy="190" r="6"/><circle cx="500" cy="190" r="6"/>
+    <circle cx="100" cy="250" r="6"/><circle cx="200" cy="250" r="6"/><circle cx="300" cy="250" r="6"/><circle cx="400" cy="250" r="6"/><circle cx="500" cy="250" r="6"/>
+    <circle cx="100" cy="310" r="6"/><circle cx="200" cy="310" r="6"/><circle cx="300" cy="310" r="6"/><circle cx="400" cy="310" r="6"/><circle cx="500" cy="310" r="6"/>
+  </g>
+
+  <!-- Intersection labels -->
+  <g font-family="Arial, sans-serif" font-size="11" fill="#303b49" text-anchor="middle">
+    <text x="100" y="55">A1</text><text x="200" y="55">B1</text><text x="300" y="55">C1</text><text x="400" y="55">D1</text><text x="500" y="55">E1</text>
+    <text x="100" y="119">A2</text><text x="200" y="119">B2</text><text x="300" y="119">C2</text><text x="400" y="119">D2</text><text x="500" y="119">E2</text>
+    <text x="100" y="179">A3</text><text x="200" y="179">B3</text><text x="300" y="179">C3</text><text x="400" y="179">D3</text><text x="500" y="179">E3</text>
+    <text x="100" y="239">A4</text><text x="200" y="239">B4</text><text x="300" y="239">C4</text><text x="400" y="239">D4</text><text x="500" y="239">E4</text>
+    <text x="100" y="299">A5</text><text x="200" y="299">B5</text><text x="300" y="299">C5</text><text x="400" y="299">D5</text><text x="500" y="299">E5</text>
+  </g>
+
+  <!-- Blocked intersections -->
+  <g stroke="#d62828" stroke-width="4" stroke-linecap="round">
+    <path d="M192 122l16 16m0-16l-16 16"/>
+    <path d="M292 182l16 16m0-16l-16 16"/>
+    <path d="M392 242l16 16m0-16l-16 16"/>
+  </g>
+
+  <!-- Start and end markers -->
+  <circle cx="100" cy="70" r="12" fill="none" stroke="#18864b" stroke-width="3"/>
+  <circle cx="500" cy="310" r="12" fill="none" stroke="#7b2cbf" stroke-width="3"/>
+  <g font-family="Arial, sans-serif" font-size="12" font-weight="700">
+    <text x="76" y="89" fill="#18864b">START</text>
+    <text x="500" y="337" text-anchor="middle" fill="#7b2cbf">END</text>
+  </g>
+
+  <!-- Legend and footer -->
+  <g font-family="Arial, sans-serif" font-size="12" fill="#233044">
+    <line x1="78" y1="350" x2="104" y2="350" stroke="#1677e8" stroke-width="5" stroke-linecap="round"/>
+    <text x="112" y="354">Route: 8 street segments</text>
+    <path d="M331 344l12 12m0-12l-12 12" stroke="#d62828" stroke-width="3" stroke-linecap="round"/>
+    <text x="351" y="354">Blocked intersection</text>
+    <text x="300" y="384" text-anchor="middle" font-size="12" fill="#394657">2026-10-30 22:34:31 SGT (UTC+08:00)</text>
+  </g>
+</svg>
