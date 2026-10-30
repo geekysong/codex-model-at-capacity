@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { fill: #fffdf4; stroke: #263238; stroke-width: 10; }
+      .spoke { stroke: #78909c; stroke-width: 2; }
+      .frame { fill: none; stroke: #e64a35; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+      .small { font-size: 16px; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f2"/>
+  <circle cx="674" cy="118" r="48" fill="#ffd166"/>
+  <path d="M0 335 Q110 280 220 335 T440 335 T660 335 T880 335 V600 H0Z" fill="#b8e2cf"/>
+  <path d="M0 390 Q120 350 240 390 T480 390 T720 390 T960 390 V600 H0Z" fill="#91c9a9"/>
+
+  <text x="400" y="57" text-anchor="middle" font-size="34" font-weight="900" fill="#18343b">THE GREAT BEAK GETAWAY</text>
+  <text x="400" y="87" text-anchor="middle" font-size="17" font-weight="700" fill="#35565b">A pelican pedals toward a very questionable fish market.</text>
+
+  <g fill="none" stroke="#35565b" stroke-width="3" opacity=".55">
+    <path d="M92 144q13-12 26 0q13-12 26 0"/>
+    <path d="M580 199q11-10 22 0q11-10 22 0"/>
+    <path d="M112 238q9-8 18 0q9-8 18 0"/>
+  </g>
+
+  <g id="bicycle">
+    <g class="wheel">
+      <circle cx="245" cy="421" r="66"/>
+      <circle cx="555" cy="421" r="66"/>
+    </g>
+    <g class="spokes">
+      <g transform="translate(245 421)">
+        <path d="M-58 0H58M0-58V58M-41-41L41 41M41-41L-41 41"/>
+      </g>
+      <g transform="translate(555 421)">
+        <path d="M-58 0H58M0-58V58M-41-41L41 41M41-41L-41 41"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 421" to="360 400 421" dur="2.5s" repeatCount="indefinite"/>
+    </g>
+    <path class="frame" d="M245 421L347 421L310 345L245 421M347 421L410 334L470 421L347 421M410 334L555 421M390 334L429 334M294 338L326 338M470 421L495 421"/>
+    <path d="M302 337h37M401 327h28M486 343l18-10" stroke="#263238" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="347" cy="421" r="12" fill="#ffd166" stroke="#263238" stroke-width="4"/>
+    <path d="M347 421l34 17M347 421l-30 16" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="381" cy="438" r="5" fill="#263238"/>
+    <circle cx="317" cy="437" r="5" fill="#263238"/>
+    <path d="M238 421h14M548 421h14" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="0.7s" repeatCount="indefinite"/>
+    <!-- Tail and body -->
+    <path d="M354 302q-41-28-63-10q25 2 36 28" fill="#f4f1df" stroke="#263238" stroke-width="4" stroke-linejoin="round"/>
+    <ellipse cx="390" cy="286" rx="68" ry="48" fill="#fffdf4" stroke="#263238" stroke-width="4"/>
+    <path d="M372 284q32-23 61 2q-19 34-55 24" fill="#e6e1ce" stroke="#263238" stroke-width="3"/>
+    <!-- neck and head -->
+    <path d="M420 282q13-43 1-91" fill="none" stroke="#fffdf4" stroke-width="23" stroke-linecap="round"/>
+    <path d="M420 282q13-43 1-91" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="421" cy="180" rx="39" ry="34" fill="#fffdf4" stroke="#263238" stroke-width="4"/>
+    <circle cx="435" cy="171" r="5" fill="#263238"/>
+    <circle cx="437" cy="169" r="1.5" fill="#fff"/>
+    <path d="M454 181q57-13 88 4q-26 27-81 19" fill="#f4a340" stroke="#263238" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M461 197q35 7 68-2q-14 25-44 24q-19-2-24-22" fill="#e87849" stroke="#263238" stroke-width="3"/>
+    <path d="M474 201q22 4 41 0" fill="none" stroke="#ffd166" stroke-width="4" stroke-linecap="round"/>
+    <path d="M394 161q14-27 37-15q-13 3-14 15" fill="#fffdf4" stroke="#263238" stroke-width="3"/>
+    <!-- wing -->
+    <path d="M367 274q37-26 68 3q-15 29-48 30q-21-7-20-33" fill="#f6f0dc" stroke="#263238" stroke-width="3"/>
+    <path d="M384 289l31 8M388 281l29 7" stroke="#c4bda8" stroke-width="2" stroke-linecap="round"/>
+    <!-- jaunty cap -->
+    <path d="M389 151q22-25 48-5l8 14q-29-13-59 0z" fill="#e64a35" stroke="#263238" stroke-width="3"/>
+    <path d="M435 158q21-2 30 8q-19 4-34-2" fill="#e64a35" stroke="#263238" stroke-width="3"/>
+    <circle cx="424" cy="145" r="4" fill="#ffd166"/>
+    <!-- legs on pedals -->
+    <path d="M388 319q-13 23-39 31l-11 27" fill="none" stroke="#f4a340" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M420 320q14 18 1 38l-27 18" fill="none" stroke="#f4a340" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M333 374l16 3M388 376l15 5" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <path d="M402 371q13 8 22 3" fill="none" stroke="#263238" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <path d="M534 260q48-31 89 1l-12 50h-67z" fill="#fff7d6" stroke="#263238" stroke-width="3"/>
+  <path d="M542 270h70" stroke="#e64a35" stroke-width="5"/>
+  <text x="578" y="292" text-anchor="middle" font-size="15" font-weight="900" fill="#263238">FISH</text>
+  <text x="578" y="309" text-anchor="middle" font-size="12" font-weight="700" fill="#263238">MARKET</text>
+  <path d="M609 248l17-18m-1 33l22-4" stroke="#263238" stroke-width="3" stroke-linecap="round"/>
+  <text x="639" y="228" font-size="16" font-weight="900" fill="#e64a35">SOLD OUT!</text>
+
+  <path d="M326 143q-21-17-41-2" fill="none" stroke="#263238" stroke-width="3" stroke-linecap="round"/>
+  <text x="205" y="132" font-size="20" font-weight="900" fill="#e64a35">HONK!</text>
+
+  <path d="M0 500H800" stroke="#263238" stroke-width="4"/>
+  <text x="400" y="536" text-anchor="middle" font-size="18" font-weight="800" fill="#18343b">“He’s all beak and no brakes.”</text>
+  <text x="400" y="574" text-anchor="middle" font-size="14" font-weight="700" fill="#35565b">2026-10-31 06:31:51 SGT (UTC+08:00)</text>
+</svg>
