@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Beak</title>
+  <desc id="desc">A smug pelican pedals a bicycle while a fish rides in its oversized bill.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .ink { stroke: #203047; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+  <rect width="800" height="600" fill="#fff4d6"/>
+  <circle cx="670" cy="145" r="75" fill="#f6c85f"/>
+  <path d="M0 355 Q130 320 255 355 T510 350 T800 345 V500 H0Z" fill="#c5e8d1"/>
+  <path d="M0 430 Q175 405 350 430 T800 420" fill="none" stroke="#85b9a7" stroke-width="5" stroke-dasharray="18 16"/>
+  <text x="40" y="60" font-size="16" font-weight="bold" letter-spacing="3" fill="#e16a4b">THE DAILY GULLIBLE · SPORTS</text>
+  <text x="40" y="115" font-size="44" font-weight="900" fill="#203047">TOUR DE BEAK</text>
+  <text x="42" y="148" font-size="19" font-weight="600" fill="#526477">“A bird in motion avoids the bill.”</text>
+
+  <!-- bicycle frame -->
+  <g fill="none" class="ink" stroke-width="8">
+    <circle cx="220" cy="405" r="66" stroke="#203047"/>
+    <circle cx="550" cy="405" r="66" stroke="#203047"/>
+    <g class="wheel">
+      <circle cx="220" cy="405" r="57" stroke="#738398" stroke-width="3"/>
+      <path d="M220 348V462 M163 405H277 M180 365L260 445 M260 365L180 445" stroke="#9aa8b4" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="550" cy="405" r="57" stroke="#738398" stroke-width="3"/>
+      <path d="M550 348V462 M493 405H607 M510 365L590 445 M590 365L510 445" stroke="#9aa8b4" stroke-width="3"/>
+    </g>
+    <path d="M220 405L340 405L300 315L220 405 M340 405L425 315L550 405 M300 315L425 315" stroke="#e16a4b" stroke-width="10"/>
+    <path d="M300 315L280 300 M267 300H296 M425 315L445 285 M445 285H470" stroke="#203047" stroke-width="7"/>
+    <circle cx="340" cy="405" r="11" fill="#f6c85f" stroke="#203047"/>
+    <path d="M340 405L362 423 M340 405L321 387" stroke="#203047" stroke-width="6"/>
+  </g>
+  <!-- wheel spin -->
+  <style>
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.5s linear infinite; }
+    .rider { transform-box: fill-box; transform-origin: center; animation: bob .7s ease-in-out infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-5px) rotate(-1deg); } }
+  </style>
+  <!-- pelican rider -->
+  <g class="rider" class="ink" stroke="#203047" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- legs and jaunty shoes -->
+    <path d="M365 275L340 350L362 405 M394 278L421 345L350 405" fill="none" stroke-width="10"/>
+    <path d="M349 402Q365 393 376 405L370 414H344Z" fill="#203047"/>
+    <path d="M335 402Q348 392 359 402L354 411H329Z" fill="#203047"/>
+    <!-- body -->
+    <path d="M337 195Q387 176 420 214L410 294Q381 319 344 286Z" fill="#fffdf6"/>
+    <path d="M346 273Q374 286 411 270L405 298Q374 315 342 294Z" fill="#ef916d"/>
+    <!-- wing -->
+    <path d="M355 221Q389 214 401 247Q383 268 353 253Z" fill="#f1f0e8"/>
+    <path d="M364 236L390 248" fill="none" stroke="#c4c8c5" stroke-width="3"/>
+    <!-- neck and head -->
+    <path d="M385 207Q390 168 407 157L433 171Q416 193 416 219" fill="#fffdf6"/>
+    <ellipse cx="422" cy="158" rx="36" ry="31" fill="#fffdf6"/>
+    <!-- eye and smug brow -->
+    <circle cx="436" cy="151" r="5" fill="#203047" stroke="none"/>
+    <path d="M428 140Q439 135 447 140" fill="none" stroke-width="3"/>
+    <!-- enormous bill -->
+    <path d="M445 163Q486 168 515 192Q482 211 445 184Z" fill="#f6a23b"/>
+    <path d="M451 181Q481 198 511 192Q490 222 461 216Q446 204 445 184Z" fill="#e16a4b"/>
+    <path d="M456 188Q483 201 503 195" fill="none" stroke="#a94a43" stroke-width="3"/>
+    <!-- fish in bill -->
+    <path d="M470 181Q483 169 497 180Q484 191 470 181Z" fill="#4bb7b2" stroke-width="3"/>
+    <path d="M497 180L507 173L506 187Z" fill="#4bb7b2" stroke-width="3"/>
+    <circle cx="478" cy="179" r="1.8" fill="#203047" stroke="none"/>
+    <!-- wing hand on handlebar -->
+    <path d="M390 233L429 278L445 284" fill="none" stroke-width="8"/>
+    <circle cx="445" cy="284" r="6" fill="#f6a23b"/>
+  </g>
+  <!-- motion marks and gag -->
+  <path d="M126 324H169 M111 343H155 M589 326H626" stroke="#e16a4b" stroke-width="5" stroke-linecap="round"/>
+  <rect x="523" y="225" width="206" height="70" rx="15" fill="#fffdf6" stroke="#203047" stroke-width="3"/>
+  <path d="M523 268L503 280L526 281" fill="#fffdf6" stroke="#203047" stroke-width="3" stroke-linejoin="round"/>
+  <text x="543" y="253" font-size="16" font-weight="800" fill="#203047">“I’m on a seafood</text>
+  <text x="543" y="276" font-size="16" font-weight="800" fill="#203047">diet. I see it, I eat it.”</text>
+
+  <!-- caption and roomy timestamp footer -->
+  <path d="M40 495H760" stroke="#203047" stroke-width="2" opacity=".22"/>
+  <text x="400" y="526" text-anchor="middle" font-size="19" font-weight="800" fill="#203047">Pedal-powered. Beak-focused. Absolutely no helmet.</text>
+  <text x="400" y="574" text-anchor="middle" font-size="16" font-weight="700" fill="#526477">2026-10-30 17:32:55 SGT (UTC+08:00)</text>
+</svg>

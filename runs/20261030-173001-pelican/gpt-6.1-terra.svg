@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A pelican rides a bicycle with a fish peeking out of its bill. The wheels turn and the rider bobs.</desc>
+  <defs>
+    <style>
+      .ink { stroke:#253447; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#253447; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 3s linear infinite; }
+      .rider { animation:bob 1.2s ease-in-out infinite; }
+      .pedal { transform-origin:395px 402px; animation:spin 2s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-5px); } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider,.pedal { animation:none; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8f1dc"/>
+  <rect x="20" y="20" width="760" height="560" rx="25" fill="#fffaf0" stroke="#253447" stroke-width="4"/>
+  <path d="M22 338 Q155 310 270 337 T500 330 T778 335 V491 H22Z" fill="#d8ebd2"/>
+  <path d="M23 464 H777" stroke="#253447" stroke-width="5"/>
+  <path d="M40 480 H760" stroke="#b8c9ae" stroke-width="3" stroke-dasharray="22 16"/>
+
+  <text x="400" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="39" font-weight="900" fill="#253447" letter-spacing="1">THE PELICAN EXPRESS</text>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d05a42" letter-spacing="2">NOW WITH EXTRA CARGO CAPACITY</text>
+
+  <g fill="#d9eaf0">
+    <path d="M72 176 q18-25 38-7 q20-22 39 3 q19-1 23 14 H58 q0-10 14-10Z"/>
+    <path d="M621 152 q14-20 31-6 q17-19 33 3 q18-2 20 12 h-96 q0-9 12-9Z"/>
+  </g>
+  <g stroke="#b4c8bd" stroke-width="4" stroke-linecap="round">
+    <path d="M76 280 h86 M99 294 h49 M631 266 h92 M650 281 h60"/>
+  </g>
+
+  <g class="wheel" fill="none" stroke="#253447">
+    <circle cx="252" cy="395" r="68" stroke-width="9"/>
+    <circle cx="252" cy="395" r="56" stroke="#e8a544" stroke-width="3"/>
+    <path d="M252 327v136 M184 395h136 M204 347l96 96 M300 347l-96 96" stroke-width="2"/>
+    <circle cx="252" cy="395" r="8" fill="#f5bf57" stroke-width="4"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#253447">
+    <circle cx="548" cy="395" r="68" stroke-width="9"/>
+    <circle cx="548" cy="395" r="56" stroke="#e8a544" stroke-width="3"/>
+    <path d="M548 327v136 M480 395h136 M500 347l96 96 M596 347l-96 96" stroke-width="2"/>
+    <circle cx="548" cy="395" r="8" fill="#f5bf57" stroke-width="4"/>
+  </g>
+
+  <g fill="none" stroke="#d55b45" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M252 395 L333 302 L395 402 Z"/>
+    <path d="M333 302 L492 302 L395 402"/>
+    <path d="M548 395 L492 270"/>
+  </g>
+  <path d="M316 294 h42" class="ink" fill="none" stroke-width="9"/>
+  <path d="M492 270 l-8-18 h-24" class="ink" fill="none" stroke-width="7"/>
+  <path d="M460 252 q-7 0-7-7" class="ink" fill="none"/>
+  <g class="pedal">
+    <circle cx="395" cy="402" r="18" fill="#fff4d5" stroke="#253447" stroke-width="4"/>
+    <path d="M375 385 L415 419" class="thin" fill="none"/>
+    <path d="M365 383 h19 M407 421 h19" class="ink" fill="none"/>
+  </g>
+
+  <g class="rider">
+    <path d="M350 305 Q365 333 388 360 L405 389" fill="none" stroke="#e9a33c" stroke-width="12" stroke-linecap="round"/>
+    <path d="M405 389 l18 3" class="ink" fill="none" stroke-width="6"/>
+    <path d="M326 301 Q286 280 292 239 Q299 192 360 187 Q413 182 433 222 Q449 258 421 290 Q399 315 326 301Z" fill="#f7f4e9" class="ink"/>
+    <path d="M309 246 Q342 218 392 240 Q405 247 414 257 Q393 285 347 282 Q320 280 309 246Z" fill="#d7dfdc" class="thin"/>
+    <path d="M395 216 Q430 204 443 179 Q453 157 445 145 Q435 131 414 139 Q397 146 396 166 L394 192" fill="#f7f4e9" class="ink"/>
+    <path d="M441 169 Q484 159 546 179 L569 190 Q509 198 443 193Z" fill="#f3ad40" class="ink"/>
+    <path d="M443 191 Q477 192 546 181 Q553 223 526 243 Q494 257 455 231 Q443 222 443 191Z" fill="#f4c05d" class="ink"/>
+    <path d="M463 207 Q488 230 522 224" fill="none" stroke="#dc9439" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="424" cy="157" r="12" fill="#fff" class="thin"/>
+    <circle cx="428" cy="158" r="4" fill="#253447"/>
+    <path d="M413 140 Q424 132 435 138" fill="none" stroke="#253447" stroke-width="4" stroke-linecap="round"/>
+    <path d="M398 248 Q430 267 458 252 L475 253" fill="none" stroke="#f7f4e9" stroke-width="16" stroke-linecap="round"/>
+    <path d="M398 248 Q430 267 458 252 L475 253" fill="none" stroke="#253447" stroke-width="4" stroke-linecap="round"/>
+    <path d="M306 273 Q288 279 279 264 Q287 285 303 287" fill="#f7f4e9" class="thin"/>
+    <g transform="translate(492 195) rotate(-8)">
+      <path d="M-21 0 Q-8-13 11 0 Q-8 13-21 0Z" fill="#80b8c4" class="thin"/>
+      <path d="M-20 0 l-12-9 v18Z" fill="#80b8c4" class="thin"/>
+      <circle cx="5" cy="-2" r="2" fill="#253447"/>
+    </g>
+    <path d="M330 304 Q340 337 367 355 L381 387" fill="none" stroke="#e9a33c" stroke-width="10" stroke-linecap="round"/>
+    <path d="M381 387 l-15 4" class="ink" fill="none" stroke-width="6"/>
+  </g>
+
+  <g transform="translate(567 244)">
+    <rect x="0" y="0" width="143" height="48" rx="9" fill="#fff" stroke="#253447" stroke-width="3"/>
+    <path d="M0 30 l-13 13 17-5" fill="#fff" stroke="#253447" stroke-width="3" stroke-linejoin="round"/>
+    <text x="71" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#253447">NO FISH FARE!</text>
+  </g>
+
+  <text x="400" y="524" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#253447">He pedals to work with lunch in the front pouch.</text>
+  <path d="M55 544 H745" stroke="#d8cbb4" stroke-width="2"/>
+  <text x="400" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#4d5c66">2026-10-30 17:33:18 SGT (UTC+08:00)</text>
+</svg>
