@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">City grid shortest route</title>
+  <desc id="desc">A route from A1 to E5 follows the top row and rightmost column, avoiding blocked intersections B2, C3, and D4. The route has eight street segments.</desc>
+  <rect width="600" height="400" fill="#f8fafc"/>
+  <text x="300" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#172033">City grid route</text>
+
+  <!-- Streets -->
+  <g stroke="#cbd5e1" stroke-width="5" stroke-linecap="round">
+    <path d="M150 70H430 M150 130H430 M150 190H430 M150 250H430 M150 310H430"/>
+    <path d="M150 70V310 M220 70V310 M290 70V310 M360 70V310 M430 70V310"/>
+  </g>
+
+  <!-- Shortest route: eight segments -->
+  <path d="M150 70H430V310" fill="none" stroke="#2563eb" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Intersection markers -->
+  <g fill="#475569">
+    <circle cx="150" cy="70" r="4"/><circle cx="220" cy="70" r="4"/><circle cx="290" cy="70" r="4"/><circle cx="360" cy="70" r="4"/><circle cx="430" cy="70" r="4"/>
+    <circle cx="150" cy="130" r="4"/><circle cx="220" cy="130" r="4"/><circle cx="290" cy="130" r="4"/><circle cx="360" cy="130" r="4"/><circle cx="430" cy="130" r="4"/>
+    <circle cx="150" cy="190" r="4"/><circle cx="220" cy="190" r="4"/><circle cx="290" cy="190" r="4"/><circle cx="360" cy="190" r="4"/><circle cx="430" cy="190" r="4"/>
+    <circle cx="150" cy="250" r="4"/><circle cx="220" cy="250" r="4"/><circle cx="290" cy="250" r="4"/><circle cx="360" cy="250" r="4"/><circle cx="430" cy="250" r="4"/>
+    <circle cx="150" cy="310" r="4"/><circle cx="220" cy="310" r="4"/><circle cx="290" cy="310" r="4"/><circle cx="360" cy="310" r="4"/><circle cx="430" cy="310" r="4"/>
+  </g>
+
+  <!-- Blocked intersections -->
+  <g stroke="#dc2626" stroke-width="4" stroke-linecap="round">
+    <path d="M213 123l14 14 M227 123l-14 14"/>
+    <path d="M283 183l14 14 M297 183l-14 14"/>
+    <path d="M353 243l14 14 M367 243l-14 14"/>
+  </g>
+
+  <!-- Labels -->
+  <g font-family="Arial, sans-serif" font-size="12" fill="#172033" text-anchor="middle">
+    <text x="150" y="56">A1</text><text x="220" y="56">B1</text><text x="290" y="56">C1</text><text x="360" y="56">D1</text><text x="430" y="56">E1</text>
+    <text x="150" y="116">A2</text><text x="220" y="116">B2</text><text x="290" y="116">C2</text><text x="360" y="116">D2</text><text x="430" y="116">E2</text>
+    <text x="150" y="176">A3</text><text x="220" y="176">B3</text><text x="290" y="176">C3</text><text x="360" y="176">D3</text><text x="430" y="176">E3</text>
+    <text x="150" y="236">A4</text><text x="220" y="236">B4</text><text x="290" y="236">C4</text><text x="360" y="236">D4</text><text x="430" y="236">E4</text>
+    <text x="150" y="296">A5</text><text x="220" y="296">B5</text><text x="290" y="296">C5</text><text x="360" y="296">D5</text><text x="430" y="296">E5</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="bold">
+    <text x="135" y="75" text-anchor="end" fill="#1d4ed8">START</text>
+    <text x="445" y="315" fill="#1d4ed8">END</text>
+  </g>
+
+  <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#1d4ed8">Route length: 8 street segments</text>
+  <line x1="40" y1="360" x2="560" y2="360" stroke="#cbd5e1"/>
+  <text x="300" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#475569">2026-10-30 23:04:36 SGT (UTC+08:00)</text>
+</svg>

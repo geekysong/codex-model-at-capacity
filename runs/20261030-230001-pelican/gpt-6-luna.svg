@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A determined pelican pedals a bicycle while its enormous beak acts as an aerodynamic sail.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17334a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f8fbf3;stroke:#17334a;stroke-width:7}
+      .spokes{stroke:#6e8790;stroke-width:2}
+      .bike{fill:none;stroke:#e65f43;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#17334a}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes ride{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .rotor{transform-box:fill-box;transform-origin:center;animation:spin 2.8s linear infinite}
+      .rider{animation:ride .65s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bdebf0"/>
+  <circle cx="685" cy="110" r="48" fill="#ffd66b"/>
+  <path d="M0 338 Q105 300 205 335 T410 330 T610 331 T800 320 V515 H0Z" fill="#74c7a0"/>
+  <path d="M0 380 Q120 350 240 378 T480 375 T800 370" fill="none" stroke="#fff3c4" stroke-width="5" opacity=".75"/>
+  <path d="M92 274h63m-45-18h52m467 47h52m-30-17h40" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+
+  <text id="title" x="400" y="58" text-anchor="middle" class="label" font-size="31" font-weight="900" letter-spacing="1">THE PELICAN CYCLE</text>
+  <text x="400" y="87" text-anchor="middle" class="label" font-size="16" font-weight="700">“Built for the beak. Not the hills.”</text>
+
+  <!-- Bicycle -->
+  <g class="bike">
+    <path d="M225 414 L314 414 L365 330 L275 330 Z"/>
+    <path d="M365 330 L438 414 L314 414"/>
+    <path d="M355 326 L381 326 M275 330 L259 316 M248 316h27"/>
+    <path d="M438 414 L452 380 L467 380"/>
+    <path d="M314 414 L296 386 M286 386h30"/>
+  </g>
+  <g class="rotor">
+    <circle class="wheel" cx="225" cy="414" r="72"/>
+    <circle cx="225" cy="414" r="7" fill="#e65f43"/>
+    <g class="spokes">
+      <path d="M225 342v144 M153 414h144 M174 363l102 102 M276 363L174 465"/>
+      <path d="M197 347l56 134 M157 386l136 56 M253 347l-56 134 M293 386l-136 56"/>
+    </g>
+  </g>
+  <g class="rotor">
+    <circle class="wheel" cx="438" cy="414" r="72"/>
+    <circle cx="438" cy="414" r="7" fill="#e65f43"/>
+    <g class="spokes">
+      <path d="M438 342v144 M366 414h144 M387 363l102 102 M489 363L387 465"/>
+      <path d="M410 347l56 134 M370 386l136 56 M466 347l-56 134 M506 386l-136 56"/>
+    </g>
+  </g>
+
+  <!-- Crank and pedal -->
+  <circle cx="314" cy="414" r="19" fill="#ffd66b" stroke="#17334a" stroke-width="5"/>
+  <path d="M314 414l23-25m-8-5h22m-49 44h-22" stroke="#17334a" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Expressive pelican rider -->
+  <g class="rider">
+    <!-- tail -->
+    <path d="M293 214q-27-10-37 3 18 2 23 15" fill="#f7f4e9" class="ink"/>
+    <!-- body -->
+    <ellipse cx="330" cy="227" rx="57" ry="71" fill="#fffdf3" class="ink"/>
+    <path d="M322 257q18 11 39 3l-9 31q-22 8-38-6z" fill="#f2a85b" class="ink"/>
+    <!-- neck and head -->
+    <path d="M354 219q16-35 17-63" fill="none" stroke="#17334a" stroke-width="22" stroke-linecap="round"/>
+    <path d="M354 219q16-35 17-63" fill="none" stroke="#fffdf3" stroke-width="13" stroke-linecap="round"/>
+    <ellipse cx="373" cy="145" rx="41" ry="34" fill="#fffdf3" class="ink"/>
+    <!-- beak -->
+    <path d="M402 145 Q469 115 526 142 Q476 164 405 159 Z" fill="#f5b441" class="ink"/>
+    <path d="M410 157 Q465 170 504 157 Q477 207 438 198 Q415 191 410 157Z" fill="#ef7655" class="ink"/>
+    <path d="M431 167q24 18 48 4" fill="none" stroke="#b6423d" stroke-width="4" stroke-linecap="round"/>
+    <!-- eye and brow -->
+    <circle cx="384" cy="137" r="7" fill="#17334a"/>
+    <path d="M374 124q13-10 26-1" fill="none" stroke="#17334a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M392 179q8 6 16 1" fill="none" stroke="#17334a" stroke-width="3"/>
+    <!-- helmet -->
+    <path d="M339 133q9-36 42-34 22 2 29 20l-60 8z" fill="#e65f43" class="ink"/>
+    <path d="M340 132l-13 7 51-1" fill="none" stroke="#17334a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M355 111l5 12m12-19 2 14m13-9-4 12" stroke="#ffd66b" stroke-width="4" stroke-linecap="round"/>
+    <!-- wing handlebars pose -->
+    <path d="M304 223q-30 9-35 43 22 13 44 0l22-27" fill="#f5f0dd" class="ink"/>
+    <path d="M286 252l-23 42" fill="none" stroke="#17334a" stroke-width="8" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M326 282q-4 22-15 36l5 20" fill="none" stroke="#f5b441" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M349 280q12 16 15 34l-18 13" fill="none" stroke="#f5b441" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M312 339l-17 2m51-14 17-5" stroke="#e65f43" stroke-width="7" stroke-linecap="round"/>
+    <!-- sweat and expression -->
+    <path d="M422 116q-8 10-1 15 8 1 7-8" fill="#63c9e6" stroke="#17334a" stroke-width="3"/>
+    <text x="457" y="108" class="label" font-size="16" font-weight="bold">WIND?</text>
+  </g>
+
+  <!-- Caption plaque -->
+  <path d="M533 255q0-12 12-12h207q12 0 12 12v72q0 12-12 12H545q-12 0-12-12z" fill="#fff7df" stroke="#17334a" stroke-width="4"/>
+  <path d="M533 281h-25l-20 20 45 1" fill="#fff7df" stroke="#17334a" stroke-width="4" stroke-linejoin="round"/>
+  <text x="647" y="283" text-anchor="middle" class="label" font-size="15" font-weight="800">“I call this</text>
+  <text x="647" y="305" text-anchor="middle" class="label" font-size="15" font-weight="800">beak-to-the-metal!”</text>
+
+  <!-- Ground and motion -->
+  <path d="M79 493h641" stroke="#17334a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M115 465h60m390 18h58m38-18h34" stroke="#fff3c4" stroke-width="7" stroke-linecap="round"/>
+  <path d="M202 492l8 8m70-8 8 8m106-8 8 8m130-8 8 8" stroke="#438d76" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="0" y="532" width="800" height="68" fill="#17334a"/>
+  <text x="400" y="574" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#fff7df">2026-10-30 23:02:33 SGT (UTC+08:00)</text>
+</svg>
