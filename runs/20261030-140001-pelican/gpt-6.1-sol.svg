@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">The Pelican Transportation Committee</title>
+  <desc id="description">A pompous pelican pedals a tiny bicycle with a fish-filled beak pouch, insisting it is traveling light. Wheels spin, pedals turn, and the pelican bobs in a seamless loop.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #183342; }
+      .outline { stroke: #183342; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .spoke { stroke: #81959a; stroke-width: 3; }
+    </style>
+    <pattern id="paper" width="18" height="18" patternUnits="userSpaceOnUse">
+      <rect width="18" height="18" fill="#fff6df"/>
+      <circle cx="3" cy="7" r=".7" fill="#e9dbbc"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M25 99H775" stroke="#183342" stroke-width="3"/>
+  <text x="400" y="44" text-anchor="middle" font-size="30" font-weight="900" letter-spacing="1">THE PELICAN COMMUTE</text>
+  <text x="400" y="77" text-anchor="middle" font-size="17" font-weight="bold">ONE BIRD. TWO WHEELS. SIX UNDECLARED FISH.</text>
+
+  <!-- A single seaside cycle lane -->
+  <path d="M0 350 Q130 323 257 351 T520 348 T800 339V448H0Z" fill="#c8e8e1"/>
+  <path d="M0 378Q147 360 280 380T552 375T800 369" fill="none" stroke="#92c8c7" stroke-width="3"/>
+  <path d="M30 399h64m501-10h77m35 17h52" stroke="#f6ffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M0 444Q400 426 800 444V510H0Z" fill="#d9cbb0"/>
+  <path d="M0 482H800" stroke="#fff6df" stroke-width="5" stroke-dasharray="40 25"/>
+  <ellipse cx="392" cy="464" rx="228" ry="14" fill="#183342" opacity=".13"/>
+
+  <!-- Roadside satire -->
+  <path d="M690 301V443" stroke="#183342" stroke-width="7"/>
+  <rect x="625" y="247" width="130" height="75" rx="9" fill="#fffdf2" class="outline"/>
+  <text x="690" y="275" text-anchor="middle" font-size="16" font-weight="900">CYCLE LANE</text>
+  <text x="690" y="300" text-anchor="middle" font-size="14">NO TRAWLERS</text>
+
+  <!-- Wheels: tire remains steady, spoke assemblies rotate -->
+  <g fill="#fff9ea" stroke="#183342" stroke-width="8">
+    <circle cx="239" cy="399" r="65"/>
+    <circle cx="536" cy="399" r="65"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 239 399" to="360 239 399" dur="1.6s" repeatCount="indefinite"/>
+    <g class="spoke">
+      <path d="M174 399H304M239 334V464M193 353L285 445M193 445L285 353"/>
+    </g>
+    <circle cx="239" cy="399" r="8" fill="#e56f44" class="outline"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 536 399" to="360 536 399" dur="1.6s" repeatCount="indefinite"/>
+    <g class="spoke">
+      <path d="M471 399H601M536 334V464M490 353L582 445M490 445L582 353"/>
+    </g>
+    <circle cx="536" cy="399" r="8" fill="#e56f44" class="outline"/>
+  </g>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M239 399L306 305L369 399H239L469 305L369 399L306 305H469L536 399" stroke="#183342" stroke-width="12"/>
+    <path d="M239 399L306 305L369 399H239L469 305L369 399L306 305H469L536 399" stroke="#e65e47" stroke-width="6"/>
+    <path d="M306 305L299 281M469 305L457 267L489 254" stroke="#183342" stroke-width="8"/>
+    <path d="M281 280H324M484 253L506 253" stroke="#183342" stroke-width="11"/>
+    <path d="M456 267Q499 293 490 333" stroke="#183342" stroke-width="2"/>
+  </g>
+  <circle cx="369" cy="399" r="18" fill="#f6cc62" class="outline"/>
+
+  <!-- Far leg -->
+  <path d="M334 285Q313 324 340 359" fill="none" stroke="#183342" stroke-width="13" stroke-linecap="round"/>
+  <path d="M334 285Q313 324 340 359" fill="none" stroke="#e9a638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Pelican and neck bob gently, leaving all lettering stationary -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M282 242L231 222L249 263L220 265L273 289" fill="#e0e8e3" class="outline"/>
+    <path d="M271 231Q275 186 330 189Q368 181 387 213Q402 248 371 277Q324 307 280 275Q263 259 271 231Z" fill="#fffef1" class="outline"/>
+    <path d="M310 219Q341 211 357 237Q341 265 301 261Q317 247 310 219Z" fill="#c5d7d5" class="outline"/>
+    <path d="M358 216Q379 186 370 160Q361 131 384 119Q409 107 429 125Q448 142 429 161Q417 174 426 194Q438 223 407 247L377 254" fill="#fffef1" class="outline"/>
+
+    <!-- Helmet, eye and magnificently overloaded pouch -->
+    <path d="M368 132Q370 102 400 105Q431 105 438 133Z" fill="#ed684a" class="outline"/>
+    <path d="M387 108L385 124M407 108L410 125" stroke="#183342" stroke-width="4"/>
+    <path d="M375 135Q378 162 399 168" fill="none" stroke="#183342" stroke-width="3"/>
+    <circle cx="413" cy="144" r="5" fill="#183342"/>
+    <path d="M403 134L420 138" fill="none" stroke="#183342" stroke-width="3"/>
+    <path d="M430 155L600 166Q576 239 495 238Q444 229 430 155Z" fill="#f2bd65" class="outline"/>
+    <path d="M432 154L613 159L600 175L434 169Z" fill="#f5cd58" class="outline"/>
+    <path d="M451 184Q462 217 490 221" fill="none" stroke="#d98b40" stroke-width="3"/>
+
+    <!-- Six very unimpressed passengers -->
+    <g fill="#8fc8c7" stroke="#183342" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M459 185q14-13 29 0q-15 15-29 0l-9 8v-16Z"/>
+      <path d="M501 185q14-13 29 0q-15 15-29 0l-9 8v-16Z"/>
+      <path d="M542 184q12-11 25 0q-13 13-25 0l-8 7v-14Z"/>
+      <path d="M476 207q12-11 25 0q-13 13-25 0l-8 7v-14Z"/>
+      <path d="M516 207q12-11 25 0q-13 13-25 0l-8 7v-14Z"/>
+      <path d="M501 225q10-9 21 0q-11 10-21 0l-7 5v-10Z"/>
+    </g>
+    <g fill="#183342">
+      <circle cx="480" cy="183" r="2"/><circle cx="522" cy="183" r="2"/>
+      <circle cx="560" cy="182" r="2"/><circle cx="494" cy="205" r="2"/>
+      <circle cx="534" cy="205" r="2"/><circle cx="516" cy="223" r="2"/>
+    </g>
+    <path d="M365 235Q415 256 483 253" fill="none" stroke="#183342" stroke-width="11" stroke-linecap="round"/>
+    <path d="M365 235Q415 256 483 253" fill="none" stroke="#fffef1" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pedaling foot and rotating crank -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 369 399" to="360 369 399" dur="1.6s" repeatCount="indefinite"/>
+    <path d="M369 399L398 399M369 399L340 399" stroke="#183342" stroke-width="5"/>
+    <g transform="translate(398 399)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1.6s" repeatCount="indefinite"/>
+        <path d="M-10 4H19" stroke="#183342" stroke-width="7" stroke-linecap="round"/>
+        <path d="M-4-8L18-4L11 2H-10Z" fill="#efad39" class="outline"/>
+      </g>
+    </g>
+  </g>
+  <path d="M346 281Q390 310 398 391" fill="none" stroke="#183342" stroke-width="12" stroke-linecap="round">
+    <animate attributeName="d" values="M346 281Q390 310 398 391;M346 276Q413 327 369 420;M346 281Q365 326 340 391;M346 276Q348 308 369 362;M346 281Q390 310 398 391" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Speech bubble -->
+  <path d="M63 135H267Q281 135 281 149V190Q281 204 267 204H207L230 228L181 204H63Q49 204 49 190V149Q49 135 63 135Z" fill="#fffef8" class="outline"/>
+  <text x="165" y="163" text-anchor="middle" font-size="19" font-weight="bold">“I’m traveling light.”</text>
+  <text x="165" y="187" text-anchor="middle" font-size="14">— Head of sustainable transport</text>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <rect x="0" y="510" width="800" height="90" fill="#183342"/>
+  <text x="400" y="542" text-anchor="middle" font-size="19" font-weight="bold" style="fill:#fff6df">He cut his emissions. The fish demand a refund.</text>
+  <path d="M110 556H690" stroke="#69818a" stroke-width="1"/>
+  <text x="400" y="581" text-anchor="middle" font-size="16" style="fill:#fff6df">2026-10-30 14:01:35 SGT (UTC+08:00)</text>
+</svg>

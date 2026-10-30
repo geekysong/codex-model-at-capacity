@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">City street map with shortest route from A1 to E5</title>
+  <desc id="desc">Five columns and five rows of intersections. The eight-segment route follows A1, B1, C1, D1, E1, E2, E3, E4, E5, avoiding blocked intersections B2, C3, and D4.</desc>
+
+  <rect width="600" height="400" fill="#f8fafc"/>
+
+  <!-- City blocks and streets -->
+  <rect x="100" y="60" width="400" height="240" fill="#e2e8f0"/>
+  <g stroke="#ffffff" stroke-width="16">
+    <path d="M100 60H500 M100 120H500 M100 180H500 M100 240H500 M100 300H500"/>
+    <path d="M100 60V300 M200 60V300 M300 60V300 M400 60V300 M500 60V300"/>
+  </g>
+  <g fill="none" stroke="#94a3b8" stroke-width="3">
+    <path d="M100 60H500 M100 120H500 M100 180H500 M100 240H500 M100 300H500"/>
+    <path d="M100 60V300 M200 60V300 M300 60V300 M400 60V300 M500 60V300"/>
+  </g>
+
+  <!-- Shortest route: four segments east, four segments south -->
+  <path d="M100 60H500V300" fill="none" stroke="#2563eb" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g fill="#475569">
+    <circle cx="200" cy="120" r="4"/>
+    <circle cx="300" cy="120" r="4"/>
+    <circle cx="400" cy="120" r="4"/>
+    <circle cx="100" cy="120" r="4"/>
+    <circle cx="100" cy="180" r="4"/>
+    <circle cx="200" cy="180" r="4"/>
+    <circle cx="300" cy="180" r="4"/>
+    <circle cx="400" cy="180" r="4"/>
+    <circle cx="100" cy="240" r="4"/>
+    <circle cx="200" cy="240" r="4"/>
+    <circle cx="300" cy="240" r="4"/>
+    <circle cx="400" cy="240" r="4"/>
+    <circle cx="100" cy="300" r="4"/>
+    <circle cx="200" cy="300" r="4"/>
+    <circle cx="300" cy="300" r="4"/>
+    <circle cx="400" cy="300" r="4"/>
+  </g>
+  <g fill="#2563eb" stroke="#ffffff" stroke-width="2">
+    <circle cx="200" cy="60" r="5"/>
+    <circle cx="300" cy="60" r="5"/>
+    <circle cx="400" cy="60" r="5"/>
+    <circle cx="500" cy="60" r="5"/>
+    <circle cx="500" cy="120" r="5"/>
+    <circle cx="500" cy="180" r="5"/>
+    <circle cx="500" cy="240" r="5"/>
+  </g>
+
+  <!-- Blocked intersections -->
+  <g stroke="#dc2626" stroke-width="5" stroke-linecap="round">
+    <path d="M192 112L208 128 M208 112L192 128"/>
+    <path d="M292 172L308 188 M308 172L292 188"/>
+    <path d="M392 232L408 248 M408 232L392 248"/>
+  </g>
+
+  <!-- Intersection labels -->
+  <g font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">
+    <text x="100" y="42">A1</text>
+    <text x="200" y="42">B1</text>
+    <text x="300" y="42">C1</text>
+    <text x="400" y="42">D1</text>
+    <text x="500" y="42">E1</text>
+
+    <text x="100" y="102">A2</text>
+    <text x="200" y="102">B2</text>
+    <text x="300" y="102">C2</text>
+    <text x="400" y="102">D2</text>
+    <text x="528" y="125">E2</text>
+
+    <text x="100" y="162">A3</text>
+    <text x="200" y="162">B3</text>
+    <text x="300" y="162">C3</text>
+    <text x="400" y="162">D3</text>
+    <text x="528" y="185">E3</text>
+
+    <text x="100" y="222">A4</text>
+    <text x="200" y="222">B4</text>
+    <text x="300" y="222">C4</text>
+    <text x="400" y="222">D4</text>
+    <text x="528" y="245">E4</text>
+
+    <text x="100" y="282">A5</text>
+    <text x="200" y="282">B5</text>
+    <text x="300" y="282">C5</text>
+    <text x="400" y="282">D5</text>
+    <text x="528" y="305">E5</text>
+  </g>
+
+  <circle cx="100" cy="60" r="8" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="500" cy="300" r="8" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="700">
+    <text x="80" y="65" text-anchor="end" fill="#15803d">START</text>
+    <text x="500" y="324" text-anchor="middle" fill="#6d28d9">END</text>
+  </g>
+
+  <!-- Dedicated footer -->
+  <rect x="0" y="336" width="600" height="64" fill="#eef2ff"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="300" y="357" font-size="16" font-weight="700" fill="#1d4ed8">Shortest route: 8 street segments</text>
+    <text x="300" y="384" font-size="15" fill="#334155">2026-10-30 14:03:12 SGT (UTC+08:00)</text>
+  </g>
+</svg>
