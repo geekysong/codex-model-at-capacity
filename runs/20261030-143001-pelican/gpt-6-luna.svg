@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A determined pelican rides a bicycle, carrying a fish in its beak. The wheels spin and the pelican bobs along.</desc>
+  <style>
+    text { font-family: system-ui, sans-serif; }
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+    .rider { transform-box: fill-box; transform-origin: center; animation: bob .6s ease-in-out infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-4px); } }
+  </style>
+
+  <rect width="800" height="600" fill="#f7e9c8"/>
+  <path d="M0 410 Q180 378 360 408 T800 398 V600 H0Z" fill="#c9dfb4"/>
+  <path d="M0 442 Q200 430 400 443 T800 430" fill="none" stroke="#8eb17d" stroke-width="4"/>
+  <circle cx="696" cy="120" r="42" fill="#f5bd4f"/>
+  <path d="M55 125h115M78 145h82M620 220h115" stroke="#fff8e8" stroke-width="8" stroke-linecap="round"/>
+
+  <text id="title" x="400" y="58" text-anchor="middle" font-size="34" font-weight="900" fill="#18334a">THE PELICAN CYCLE</text>
+  <text x="400" y="88" text-anchor="middle" font-size="17" font-weight="600" fill="#4c5960">“I’m cutting out the middlefish.”</text>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#24485b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 390 L350 390 L420 300 L310 300 Z"/>
+    <path d="M350 390 L450 390 L420 300"/>
+    <path d="M420 300 L470 300"/>
+    <path d="M310 300 L290 275"/>
+    <path d="M450 390 L470 390"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#24485b" stroke-width="7">
+    <circle cx="250" cy="390" r="72"/>
+    <path d="M250 318V462M178 390H322M199 339L301 441M301 339L199 441"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#24485b" stroke-width="7">
+    <circle cx="470" cy="390" r="72"/>
+    <path d="M470 318V462M398 390H542M419 339L521 441M521 339L419 441"/>
+  </g>
+  <circle cx="350" cy="390" r="13" fill="#f5bd4f" stroke="#24485b" stroke-width="5"/>
+  <path d="M350 390l-28-22m28 22 27 20" stroke="#24485b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M290 275h-28m-6 0h-14" stroke="#24485b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M462 299l20-22m-5-4 16 9" stroke="#24485b" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <path d="M303 285 Q285 254 307 220 Q327 191 363 205 Q391 216 386 250 Q382 276 355 289Z" fill="#f5f0df" stroke="#24485b" stroke-width="5"/>
+    <path d="M319 218 Q295 204 285 178 Q278 159 291 151 Q308 143 319 163 L341 202Z" fill="#f5f0df" stroke="#24485b" stroke-width="5"/>
+    <path d="M291 154 Q267 143 245 151 Q268 164 290 170 Q315 178 330 169 Q318 157 291 154Z" fill="#f1a93f" stroke="#a65f26" stroke-width="4"/>
+    <path d="M263 153 Q249 138 238 145 Q248 159 265 161Z" fill="#e76f51" stroke="#a65f26" stroke-width="3"/>
+    <circle cx="299" cy="157" r="4.5" fill="#18334a"/>
+    <path d="M338 209 Q361 194 378 211 L396 232 Q402 243 390 249 L374 246 Q359 232 341 235Z" fill="#f5f0df" stroke="#24485b" stroke-width="5"/>
+    <path d="M382 211 L400 199 L405 205 L394 220" fill="#f5f0df" stroke="#24485b" stroke-width="4"/>
+    <path d="M347 282 L337 320 L365 319 L374 278" fill="#f5f0df" stroke="#24485b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M342 316 L322 345 L350 356 L369 324" fill="#f5f0df" stroke="#24485b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M322 345 L313 365 L340 368 L350 356" fill="#f1a93f" stroke="#a65f26" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M366 317 L378 347 L405 343 L391 312" fill="#f5f0df" stroke="#24485b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M378 347 L366 370 L393 378 L405 343" fill="#f5f0df" stroke="#24485b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M366 370 L360 387 L387 390 L393 378" fill="#f1a93f" stroke="#a65f26" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M324 225 Q344 209 366 224" fill="none" stroke="#d5cbb2" stroke-width="4"/>
+    <path d="M402 202q14-11 23 0m-11-17q15-9 24 3" fill="none" stroke="#718c9a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish and comic motion -->
+  <path d="M228 143 Q214 132 203 139 L207 150 L201 161 Q216 164 228 153Z" fill="#71b7c3" stroke="#24485b" stroke-width="3"/>
+  <circle cx="219" cy="145" r="2.5" fill="#18334a"/>
+  <path d="M203 149l-8-5m8 10-8 5" stroke="#24485b" stroke-width="2"/>
+  <path d="M179 198q-12 9 0 18m-17-25q-14 12 0 24" fill="none" stroke="#e98755" stroke-width="4" stroke-linecap="round"/>
+  <path d="M491 273q18-12 32 2m-20-17q19-10 31 4" fill="none" stroke="#e98755" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="132" y="474" width="536" height="48" rx="24" fill="#fff8e8" stroke="#d5c59e" stroke-width="2"/>
+  <text x="400" y="504" text-anchor="middle" font-size="18" font-weight="700" fill="#3b4e55">Two wheels, one fish, absolutely no license.</text>
+
+  <text x="400" y="572" text-anchor="middle" font-size="14" font-weight="600" fill="#40515a">2026-10-30 14:33:03 SGT (UTC+08:00)</text>
+</svg>

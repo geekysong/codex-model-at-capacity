@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Fish: a pelican rides a bicycle</title>
+  <desc id="desc">A smug pelican cycles along the waterfront, carrying fish in its enormous bill beneath a zero-emissions claim. Bicycle wheels spin and the rider bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="water" width="80" height="26" patternUnits="userSpaceOnUse">
+      <path d="M8 13h28m16 7h18" fill="none" stroke="#81c6cd" stroke-width="3" stroke-linecap="round"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .ink { stroke:#20363d; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff6df"/>
+  <rect x="16" y="16" width="768" height="568" rx="22" fill="none" stroke="#20363d" stroke-width="3"/>
+  <text x="400" y="66" text-anchor="middle" font-size="43" font-weight="900" fill="#20363d" letter-spacing="2">TOUR DE FISH</text>
+  <text x="400" y="96" text-anchor="middle" font-size="17" font-weight="700" fill="#46767a">ONE BIRD. TWO WHEELS. ABSOLUTELY NO BRAKES.</text>
+
+  <!-- Waterfront stage -->
+  <rect x="33" y="116" width="734" height="349" rx="14" fill="#d9eef0"/>
+  <circle cx="689" cy="171" r="34" fill="#ffd16b"/>
+  <path d="M53 210q28-31 57 0q28-43 62 0h28M586 226q25-29 51 0q24-37 50 0h38" fill="#fffdf2"/>
+  <path d="M35 295q120-16 242 0t245 0t245 0v116H35z" fill="#9dd7da"/>
+  <path d="M35 310h730v101H35z" fill="url(#water)"/>
+  <path d="M34 396H766V465H34z" fill="#dcc9a5"/>
+  <path d="M34 412H766" stroke="#20363d" stroke-width="4"/>
+  <path d="M66 453h58m50 0h58m50 0h58m50 0h58m50 0h58m50 0h58" stroke="#fff6df" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="403" cy="443" rx="234" ry="12" fill="#a38f70" opacity=".3"/>
+
+  <!-- A suspiciously specific campaign slogan -->
+  <path d="M63 139h211q11 0 11 11v62q0 11-11 11h-68l-24 24 4-24H63q-11 0-11-11v-62q0-11 11-11z" fill="#fffdf3" class="ink"/>
+  <text x="168" y="171" text-anchor="middle" font-size="20" font-weight="900" fill="#20363d">ZERO EMISSIONS*</text>
+  <text x="168" y="199" text-anchor="middle" font-size="15" fill="#20363d">*unless startled.</text>
+
+  <!-- Wheels: spokes rotate around fixed hubs -->
+  <g fill="#fff8e8" class="ink">
+    <circle cx="252" cy="372" r="67" stroke-width="10"/>
+    <circle cx="557" cy="372" r="67" stroke-width="10"/>
+  </g>
+  <g stroke="#68989c" stroke-width="3">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 252 372" to="360 252 372" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M252 311v122m-61-61h122m-104-43 86 86m-86 0 86-86"/>
+      <path d="M252 311v9" stroke="#ed795b" stroke-width="7"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 557 372" to="360 557 372" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M557 311v122m-61-61h122m-104-43 86 86m-86 0 86-86"/>
+      <path d="M557 311v9" stroke="#ed795b" stroke-width="7"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M252 372 327 285 390 372H252L320 278M327 285h174L390 372 327 285M501 285l56 87" stroke="#20363d" stroke-width="13"/>
+    <path d="M252 372 327 285 390 372H252M327 285h174L390 372M501 285l56 87" stroke="#e96650" stroke-width="7"/>
+    <path d="M327 285 318 265m183 20-13-37 32-13" stroke="#20363d" stroke-width="8"/>
+    <path d="M520 235h17" stroke="#20363d" stroke-width="12"/>
+    <path d="M295 265h48" stroke="#20363d" stroke-width="13"/>
+  </g>
+  <circle cx="252" cy="372" r="7" fill="#20363d"/>
+  <circle cx="557" cy="372" r="7" fill="#20363d"/>
+  <circle cx="390" cy="372" r="21" fill="#fff6df" class="ink"/>
+  <g class="ink">
+    <animateTransform attributeName="transform" type="rotate" from="0 390 372" to="360 390 372" dur="1.6s" repeatCount="indefinite"/>
+    <path d="M368 359 412 385" fill="none"/>
+    <path d="M359 359h18m26 26h18" stroke-width="7"/>
+  </g>
+
+  <!-- Pelican and pedaling feet -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M340 266 365 307 404 344" fill="none" stroke="#20363d" stroke-width="13" stroke-linecap="round"/>
+    <path d="M340 266 365 307 404 344" fill="none" stroke="#efa447" stroke-width="8" stroke-linecap="round"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-8 365 307;9 365 307;-8 365 307" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M365 307 368 352l-25 8 35 7 10-12" fill="#f4ad45" class="ink"/>
+    </g>
+    <path d="M278 226 249 214l12 35 29 13" fill="#fffdf3" class="ink"/>
+    <path d="M282 209q36-36 79-7l42 45q-25 42-81 32-52-9-49-40z" fill="#fffdf3" class="ink"/>
+    <path d="M290 221q40-17 71 20-23 24-57 7" fill="#d7e1da" class="ink"/>
+    <path d="M349 212q5-28 29-53 17-19 40-9 23 10 17 35l-19 59q-6 22-24 21" fill="#fffdf3" class="ink"/>
+    <!-- Wing reaching the handlebars -->
+    <path d="M357 231q49 7 81 1l70 3q10 4 3 12l-71 1q-45 13-65 4" fill="#fffdf3" class="ink"/>
+    <!-- Large fish-carrying pouch -->
+    <path d="M427 179 641 195q-36 72-113 59-75-13-101-57z" fill="#f5b55b" class="ink"/>
+    <path d="M443 194q42 38 98 41" fill="none" stroke="#e38b47" stroke-width="3"/>
+    <g transform="rotate(10 531 218)">
+      <path d="M492 220q23-29 51-7l24-12-4 29-22-9q-29 18-49-1z" fill="#77b4b9" class="ink" stroke-width="3"/>
+      <circle cx="505" cy="216" r="3" fill="#20363d"/>
+      <path d="m524 211-4 11m11-10-4 12" fill="none" stroke="#46767a" stroke-width="2"/>
+    </g>
+    <path d="m428 177 217 15-7 12-210-12" fill="#ffd577" class="ink"/>
+    <!-- Self-satisfied face -->
+    <circle cx="413" cy="170" r="11" fill="white" stroke="#20363d" stroke-width="3"/>
+    <circle cx="418" cy="171" r="4" fill="#20363d"/>
+    <path d="m400 154 22 3" fill="none" class="ink"/>
+    <!-- Cycling helmet -->
+    <path d="M377 150q2-36 32-34 31 2 34 37z" fill="#e96650" class="ink"/>
+    <path d="m392 126-2 15m15-18-1 19m14-16 2 17" fill="none" stroke="#20363d" stroke-width="4"/>
+    <path d="m383 153 14 39 27-35" fill="none" stroke="#20363d" stroke-width="3"/>
+  </g>
+
+  <!-- Speed and effort -->
+  <g fill="none" stroke="#46767a" stroke-width="3" stroke-linecap="round">
+    <path d="M166 270h61m-82 15h70m-43 15h39"/>
+    <path d="m459 135 7-13m8 25 15-8"/>
+  </g>
+  <text x="660" y="348" text-anchor="middle" font-size="14" font-weight="700" fill="#46767a" transform="rotate(-8 660 348)">BILL-POWERED.</text>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <text x="400" y="503" text-anchor="middle" font-size="22" font-weight="700" fill="#20363d">He traded his carbon footprint for pedal feet.</text>
+  <path d="M69 526H731" stroke="#c4b89d" stroke-width="2"/>
+  <text x="400" y="558" text-anchor="middle" font-size="18" fill="#20363d">2026-10-30 14:30:01 SGT (UTC+08:00)</text>
+</svg>

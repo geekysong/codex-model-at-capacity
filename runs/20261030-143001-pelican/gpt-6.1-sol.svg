@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Beak</title>
+  <desc id="description">A smug pelican pedals a bicycle with a fish-filled bill pouch, insisting that the fish are merely his support team. Wheels spin and his body bobs in a looping animation.</desc>
+  <defs>
+    <pattern id="paper" width="18" height="18" patternUnits="userSpaceOnUse">
+      <rect width="18" height="18" fill="#fff5db"/>
+      <circle cx="3" cy="5" r=".7" fill="#dfcda6" opacity=".35"/>
+    </pattern>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .ink { stroke:#24333a; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .spoke { stroke:#657c81; stroke-width:3; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <rect x="17" y="17" width="766" height="566" rx="20" fill="none" stroke="#24333a" stroke-width="3"/>
+
+  <text x="400" y="66" text-anchor="middle" font-size="43" font-weight="900" fill="#24333a" letter-spacing="3">TOUR DE BEAK</text>
+  <text x="400" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#a24d32">THE ONLY RIDER WITH A BUILT-IN TEAM BUS</text>
+
+  <!-- One coastal road scene. -->
+  <path d="M37 354 Q163 324 294 350 T563 347 T763 338 L763 464 H37Z" fill="#a7d9d3"/>
+  <path d="M43 380 Q163 357 281 380 T521 377 T757 371" fill="none" stroke="#e9fff2" stroke-width="5"/>
+  <path d="M36 434 Q303 411 764 432 L764 491 H36Z" fill="#e2bf84"/>
+  <path d="M43 462 H755" stroke="#7b7665" stroke-width="3"/>
+  <ellipse cx="392" cy="455" rx="230" ry="15" fill="#645b47" opacity=".16"/>
+
+  <!-- The pelican's extremely persuasive race strategy. -->
+  <path d="M477 120 H721 Q738 120 738 137 V191 Q738 208 721 208 H607 L582 230 L586 208 H477 Q461 208 461 191 V137 Q461 120 477 120Z" fill="#fffdf5" stroke="#24333a" stroke-width="3"/>
+  <text x="599" y="151" text-anchor="middle" font-size="19" font-weight="bold" fill="#24333a">
+    <tspan x="599">“They're not snacks.</tspan>
+    <tspan x="599" dy="27">They're my support team.”</tspan>
+  </text>
+
+  <!-- Bicycle wheels: the rims stay circular while their spokes rotate. -->
+  <g>
+    <circle cx="247" cy="394" r="68" fill="#fff8e8" class="ink"/>
+    <circle cx="247" cy="394" r="58" fill="none" stroke="#b7c7be" stroke-width="3"/>
+    <g class="spoke">
+      <animateTransform attributeName="transform" type="rotate" from="0 247 394" to="360 247 394" dur="1.5s" repeatCount="indefinite"/>
+      <path d="M247 330 V458 M183 394 H311 M202 349 L292 439 M202 439 L292 349"/>
+      <path d="M223 335 L271 453 M188 370 L306 418 M188 418 L306 370 M223 453 L271 335"/>
+      <path d="M240 337 H254" stroke="#e98b34" stroke-width="7"/>
+    </g>
+    <circle cx="247" cy="394" r="8" fill="#24333a"/>
+
+    <circle cx="548" cy="394" r="68" fill="#fff8e8" class="ink"/>
+    <circle cx="548" cy="394" r="58" fill="none" stroke="#b7c7be" stroke-width="3"/>
+    <g class="spoke">
+      <animateTransform attributeName="transform" type="rotate" from="0 548 394" to="360 548 394" dur="1.5s" repeatCount="indefinite"/>
+      <path d="M548 330 V458 M484 394 H612 M503 349 L593 439 M503 439 L593 349"/>
+      <path d="M524 335 L572 453 M489 370 L607 418 M489 418 L607 370 M524 453 L572 335"/>
+      <path d="M541 337 H555" stroke="#e98b34" stroke-width="7"/>
+    </g>
+    <circle cx="548" cy="394" r="8" fill="#24333a"/>
+  </g>
+
+  <!-- Frame and handlebars. -->
+  <g fill="none" stroke="#d74e3e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M247 394 L312 305 L372 394 Z M312 305 H489 L372 394 M489 305 L548 394"/>
+    <path d="M372 394 L310 291"/>
+  </g>
+  <path d="M489 305 L479 275 L511 262 Q526 257 527 274" fill="none" class="ink"/>
+  <path d="M284 291 H333" fill="none" stroke="#24333a" stroke-width="13" stroke-linecap="round"/>
+  <path d="M251 394 H373" stroke="#24333a" stroke-width="3"/>
+  <circle cx="372" cy="394" r="17" fill="#f2cd66" class="ink"/>
+
+  <!-- Pedal crank loops continuously. -->
+  <g stroke="#24333a" stroke-width="6" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 372 394" to="360 372 394" dur="1.5s" repeatCount="indefinite"/>
+    <path d="M349 394 H395"/>
+    <path d="M343 388 V400 M401 388 V400" stroke-width="9"/>
+  </g>
+
+  <!-- The rider bobs gently while the typography remains still. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".75s" repeatCount="indefinite"/>
+    <!-- Far leg. -->
+    <path d="M329 287 L361 326 L350 368" fill="none" stroke="#bd7a29" stroke-width="12" stroke-linecap="round"/>
+    <path d="M350 365 L370 377 L338 379Z" fill="#f2ae3b" class="ink"/>
+
+    <!-- Tail, torso, and folded wing. -->
+    <path d="M289 271 L242 252 L263 287 L240 286 L288 309" fill="#fffdf0" class="ink"/>
+    <path d="M290 224 Q264 252 280 287 Q301 319 355 302 Q393 289 407 251 L409 205 Q413 177 435 171 L455 198 Q434 212 438 246 Q427 291 395 305 Q341 323 295 289Z" fill="#fffdf0" class="ink"/>
+    <path d="M300 246 Q347 218 385 259 Q362 291 311 283 Q326 271 338 265 Q316 271 300 246Z" fill="#d7e2db" class="ink"/>
+    <path d="M315 249 Q341 245 363 260" fill="none" stroke="#8da4a1" stroke-width="3"/>
+
+    <!-- Striped racing jersey and race number. -->
+    <path d="M284 232 Q330 219 387 248 L378 267 Q328 243 279 254Z" fill="#45a39d" stroke="#24333a" stroke-width="3"/>
+    <rect x="296" y="237" width="41" height="31" rx="5" fill="#fff5db" stroke="#24333a" stroke-width="2" transform="rotate(9 316 252)"/>
+    <text x="316" y="259" text-anchor="middle" font-size="22" font-weight="bold" fill="#24333a" transform="rotate(9 316 252)">01</text>
+
+    <!-- Wing reaches for the handlebars. -->
+    <path d="M378 255 Q426 285 480 273" fill="none" stroke="#24333a" stroke-width="17" stroke-linecap="round"/>
+    <path d="M378 253 Q426 281 480 271" fill="none" stroke="#fffdf0" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Head and improbably aerodynamic bill. -->
+    <path d="M409 203 Q399 164 423 147 Q452 134 471 160 L477 183 L454 209Z" fill="#fffdf0" class="ink"/>
+    <path d="M454 183 L635 203 Q621 264 540 257 Q487 248 454 201Z" fill="#f4bb60" class="ink"/>
+    <path d="M466 202 Q539 221 620 209" fill="none" stroke="#b77a36" stroke-width="3"/>
+
+    <!-- Fish visibly ride in the pouch. -->
+    <g stroke="#24333a" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M491 225 Q510 207 533 226 L546 216 V239 L532 231 Q509 244 491 225Z" fill="#7ebfc2"/>
+      <circle cx="501" cy="224" r="2.6" fill="#24333a" stroke="none"/>
+      <path d="M548 237 Q565 218 587 236 L600 225 V247 L586 240 Q565 254 548 237Z" fill="#a6b86c"/>
+      <circle cx="558" cy="236" r="2.6" fill="#24333a" stroke="none"/>
+    </g>
+    <path d="M451 180 L642 196 L635 207 L455 194Z" fill="#f5cb59" class="ink"/>
+    <circle cx="446" cy="168" r="5" fill="#24333a"/>
+    <path d="M434 157 L451 153" stroke="#24333a" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Helmet. -->
+    <path d="M407 157 Q405 124 437 122 Q467 123 474 150Z" fill="#e75c43" class="ink"/>
+    <path d="M425 130 L421 149 M441 128 L440 147 M456 132 L459 148" stroke="#fff3cf" stroke-width="5" stroke-linecap="round"/>
+    <path d="M414 157 L430 187 L448 187" fill="none" stroke="#24333a" stroke-width="3"/>
+
+    <!-- Near leg has a small synchronized pedaling motion. -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-4 351 295;5 351 295;-4 351 295" dur="1.5s" repeatCount="indefinite"/>
+      <path d="M351 295 L392 332 L385 376" fill="none" stroke="#efa93b" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M384 371 L413 385 L377 388 L367 381Z" fill="#f5b83f" class="ink"/>
+    </g>
+  </g>
+
+  <!-- Motion marks. -->
+  <g fill="none" stroke="#a24d32" stroke-width="4" stroke-linecap="round">
+    <path d="M161 299 H208 M142 316 H197 M162 333 H188"/>
+    <path d="M651 292 Q665 284 670 271 M665 308 Q682 300 688 287"/>
+  </g>
+
+  <!-- Dedicated caption and timestamp footer. -->
+  <rect x="34" y="490" width="732" height="77" rx="12" fill="#24333a"/>
+  <text x="400" y="520" text-anchor="middle" font-size="21" font-weight="bold" fill="#fff5db">He carb-loads. His passengers fear-load.</text>
+  <text x="400" y="549" text-anchor="middle" font-size="16" fill="#c9e8df">2026-10-30 14:31:41 SGT (UTC+08:00)</text>
+</svg>
