@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN EXPRESS</title>
+  <desc id="desc">A pelican rides a bicycle with a fish peeking out of its beak. The bicycle wheels spin and the pelican bobs as it pedals.</desc>
+  <defs>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#d4e7dc"/>
+    </pattern>
+    <style>
+      .ink { stroke:#24343b; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#24343b; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 1.5s linear infinite; }
+      .rider { animation:bob .75s ease-in-out infinite alternate; }
+      .pedal { transform-origin:390px 398px; animation:spin 1.5s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-5px); } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider,.pedal { animation-duration:6s; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8f1d9"/>
+  <rect x="20" y="20" width="760" height="560" rx="24" fill="#eff7ed" stroke="#24343b" stroke-width="4"/>
+  <rect x="34" y="35" width="732" height="462" rx="14" fill="url(#dots)"/>
+  <path d="M35 413 Q125 385 215 408 T395 407 T575 405 T765 410 V500 H35Z" fill="#c5dfb3"/>
+  <path d="M36 475 H764" stroke="#24343b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M90 492 H690" stroke="#96b88e" stroke-width="4" stroke-linecap="round" stroke-dasharray="24 18"/>
+
+  <text x="400" y="87" text-anchor="middle" fill="#24343b" font-family="Arial, sans-serif" font-size="42" font-weight="900" letter-spacing="2">PELICAN EXPRESS</text>
+  <text x="400" y="115" text-anchor="middle" fill="#d25a3b" font-family="Arial, sans-serif" font-size="17" font-weight="bold" letter-spacing="3">THE COMMUTE IS A CATCH</text>
+
+  <g fill="none" stroke="#8bb7ab" stroke-width="5" stroke-linecap="round">
+    <path d="M76 230 H139 M91 247 H127 M55 266 H119"/>
+    <path d="M656 180 q18-15 36 0 M687 180 q18-15 36 0"/>
+  </g>
+  <circle cx="677" cy="141" r="27" fill="#ffd46a" stroke="#24343b" stroke-width="4"/>
+
+  <g class="wheel">
+    <circle cx="222" cy="402" r="72" fill="#fffaf0" stroke="#24343b" stroke-width="9"/>
+    <circle cx="222" cy="402" r="59" fill="none" stroke="#ebaa47" stroke-width="4"/>
+    <g stroke="#819a95" stroke-width="3">
+      <path d="M222 330 V474 M150 402 H294 M171 351 L273 453 M273 351 L171 453"/>
+    </g>
+    <circle cx="222" cy="402" r="8" fill="#24343b"/>
+  </g>
+  <g class="wheel">
+    <circle cx="566" cy="402" r="72" fill="#fffaf0" stroke="#24343b" stroke-width="9"/>
+    <circle cx="566" cy="402" r="59" fill="none" stroke="#ebaa47" stroke-width="4"/>
+    <g stroke="#819a95" stroke-width="3">
+      <path d="M566 330 V474 M494 402 H638 M515 351 L617 453 M617 351 L515 453"/>
+    </g>
+    <circle cx="566" cy="402" r="8" fill="#24343b"/>
+  </g>
+
+  <g fill="none" stroke="#d65e48" stroke-width="11" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M222 402 L309 310 L390 398 L222 402 L340 373 L309 310"/>
+    <path d="M390 398 L489 311 L566 402"/>
+  </g>
+  <path d="M390 398 L340 373" fill="none" stroke="#24343b" stroke-width="6"/>
+  <path d="M489 311 L475 278 L504 278 Q515 278 515 289" fill="none" class="ink"/>
+  <path d="M288 305 H327" class="ink" fill="none"/>
+  <g class="pedal" fill="none" stroke="#24343b" stroke-width="5" stroke-linecap="round">
+    <circle cx="390" cy="398" r="14"/>
+    <path d="M390 398 L407 416 M402 418 H417 M390 398 L373 380 M363 378 H378"/>
+  </g>
+
+  <g class="rider">
+    <path d="M300 276 Q265 252 275 215 Q282 188 322 187 L371 193 Q406 203 405 239 Q402 279 363 292 Q331 299 300 276Z" fill="#fffdf2" class="ink"/>
+    <path d="M304 224 Q337 206 373 224 Q357 259 320 262 Q307 256 304 224Z" fill="#d9e3dc" class="thin"/>
+    <path d="M282 232 Q255 226 242 213 L260 238 L244 246 Q266 251 283 245" fill="#fffdf2" class="ink"/>
+    <path d="M373 208 Q393 182 391 157 Q390 130 410 123 Q433 116 448 134 Q461 151 454 176 L441 206 Q431 227 408 231" fill="#fffdf2" class="ink"/>
+    <path d="M413 148 Q410 136 420 132 Q434 127 441 140" fill="none" class="thin"/>
+    <circle cx="431" cy="151" r="9" fill="#fff" stroke="#24343b" stroke-width="3"/>
+    <circle cx="434" cy="152" r="4" fill="#24343b"/>
+    <path d="M408 127 Q421 108 443 119 L453 127 Z" fill="#d65e48" class="thin"/>
+    <path d="M420 115 L423 104 L444 111 L445 121" fill="#d65e48" class="thin"/>
+    <path d="M447 163 Q506 164 570 183 Q513 193 450 183Z" fill="#f2ad45" class="ink"/>
+    <path d="M450 183 Q480 239 527 220 Q553 210 570 183 Q509 196 450 183Z" fill="#f7cf75" class="ink"/>
+    <path d="M461 184 Q511 193 561 184" fill="none" stroke="#a96c34" stroke-width="3"/>
+    <path d="M528 205 q12-14 24-5 q-11 11-24 5Z" fill="#6ea9ac" stroke="#24343b" stroke-width="2"/>
+    <circle cx="546" cy="201" r="1.8" fill="#24343b"/>
+    <path d="M529 205 l-7-5 v10Z" fill="#6ea9ac" stroke="#24343b" stroke-width="2"/>
+    <path d="M321 285 L337 326 L377 363" fill="none" stroke="#d9963e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M377 363 l-4 13 l20 4" fill="none" class="thin"/>
+    <path d="M356 287 L373 314 L397 324" fill="none" stroke="#d9963e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M397 324 l13 5 l-4 9" fill="none" class="thin"/>
+    <path d="M378 243 Q397 264 420 270 L466 279" fill="none" stroke="#fffdf2" stroke-width="15" stroke-linecap="round"/>
+    <path d="M378 243 Q397 264 420 270 L466 279" fill="none" stroke="#24343b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M465 279 q8-8 15-2" fill="none" class="thin"/>
+  </g>
+
+  <rect x="40" y="510" width="720" height="58" rx="10" fill="#24343b"/>
+  <text x="400" y="534" text-anchor="middle" fill="#fff9e9" font-family="Arial, sans-serif" font-size="17" font-weight="bold">He packed a lunch. The lunch has opinions.</text>
+  <text x="400" y="555" text-anchor="middle" fill="#d8e8df" font-family="Arial, sans-serif" font-size="14">2026-10-31 12:02:22 SGT (UTC+08:00)</text>
+</svg>
