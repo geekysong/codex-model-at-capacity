@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE WING AND THE WHEEL</title>
+  <desc id="desc">A proud pelican rides a bicycle, pedaling furiously while its beak catches the breeze.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#17324d;stroke-width:7}
+      .spoke{stroke:#7490a2;stroke-width:2}
+      .frame{fill:none;stroke:#e45b3f;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes pedal{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .rolling{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .crank{transform-box:fill-box;transform-origin:center;animation:pedal 1.2s linear infinite}
+      .rider{animation:bob .6s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f6e8c9"/>
+  <path d="M0 410 Q180 390 350 410 T800 405 V600 H0Z" fill="#d6e6d2"/>
+  <path d="M0 449H800" stroke="#8fa990" stroke-width="3" stroke-dasharray="14 12"/>
+  
+  <text id="title" class="label" x="400" y="55" text-anchor="middle" font-size="31" font-weight="900" letter-spacing="2" fill="#17324d">THE WING AND THE WHEEL</text>
+  <text class="label" x="400" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#e45b3f">A bird of leisure. A bicycle of questionable judgment.</text>
+  <path d="M278 96H522" stroke="#e45b3f" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- comic breeze -->
+  <path d="M88 214h112q20 0 20-14t-20-14q-11 0-14 8M111 248h73q17 0 17-13t-17-13" fill="none" stroke="#77aab2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M626 197h82q18 0 18-13t-18-13q-10 0-13 7M650 229h57" fill="none" stroke="#77aab2" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- bicycle wheels -->
+  <g class="rolling" transform="translate(220 400)">
+    <circle class="wheel" r="61"/>
+    <circle r="5" fill="#17324d"/>
+    <path class="spoke" d="M0-55V55M-55 0H55M-39-39L39 39M39-39L-39 39"/>
+  </g>
+  <g class="rolling" transform="translate(580 400)">
+    <circle class="wheel" r="61"/>
+    <circle r="5" fill="#17324d"/>
+    <path class="spoke" d="M0-55V55M-55 0H55M-39-39L39 39M39-39L-39 39"/>
+  </g>
+
+  <!-- bicycle frame -->
+  <path class="frame" d="M220 400L340 400L405 300L365 400L485 400L405 300L450 268"/>
+  <path d="M340 400l-19 17M328 417h34M485 400l19 17M495 417h34" fill="none" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+  <path d="M438 269h35M451 268l-9-17" fill="none" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="365" cy="400" r="12" fill="#f6e8c9" stroke="#17324d" stroke-width="5"/>
+  <g class="crank">
+    <path d="M365 400l28 18M365 400l-19-27" stroke="#17324d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M383 418h19M336 373h20" stroke="#e45b3f" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <path d="M327 389h27" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- pelican rider -->
+  <g class="rider">
+    <!-- tail -->
+    <path d="M339 244l-33-12 22 29-29 6 45 12" fill="#c5dce0" class="ink"/>
+    <!-- body -->
+    <ellipse cx="390" cy="243" rx="69" ry="49" fill="#fffdf3" class="ink"/>
+    <path d="M354 263q33 28 71 3" fill="none" stroke="#c5dce0" stroke-width="8" stroke-linecap="round"/>
+    <!-- wing -->
+    <path d="M361 231q24-30 62-13 20 9 17 28-28 16-62 4-17-6-17-19z" fill="#d8e8e6" class="ink"/>
+    <path d="M371 235q20-9 43 1M378 246q18-5 34 2" fill="none" stroke="#91b5b8" stroke-width="3" stroke-linecap="round"/>
+    <!-- neck -->
+    <path d="M421 239q18-40 8-75l-20-43q-8-17 5-24 13-7 21 12l28 52q12 23-4 62l-14 28" fill="#fffdf3" class="ink"/>
+    <!-- head -->
+    <circle cx="418" cy="95" r="32" fill="#fffdf3" class="ink"/>
+    <path d="M441 94q43-19 96-2-30 19-73 22-19 1-26-8z" fill="#f2a33a" class="ink"/>
+    <path d="M465 108q33 5 63-9-10 35-40 38-22 1-32-17z" fill="#ec7954" class="ink"/>
+    <circle cx="428" cy="89" r="4.7" fill="#17324d"/>
+    <path d="M406 78q11-13 24-5" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+    <!-- jaunty helmet -->
+    <path d="M391 75q9-31 38-29 27 2 34 26z" fill="#e45b3f" class="ink"/>
+    <path d="M385 75h84" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+    <path d="M414 49l-4 24M435 50l8 23" stroke="#ffd27b" stroke-width="4" stroke-linecap="round"/>
+    <!-- legs reaching pedals -->
+    <path d="M372 279q-9 28 5 48l-14 17M410 281q16 18 3 39l-8 16" fill="none" stroke="#f2a33a" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M350 346h29M391 338h28" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+    <!-- handlebars grip -->
+    <path d="M446 265q15 7 21 3" fill="none" stroke="#f2a33a" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- tiny comic annotation -->
+  <path d="M537 126q35-25 78-3l-4 46-31-7-17 13 3-19q-23-8-29-30z" fill="#fffdf3" stroke="#17324d" stroke-width="3"/>
+  <text class="label" x="576" y="140" text-anchor="middle" font-size="12" font-weight="800" fill="#17324d">I BRAKE FOR</text>
+  <text class="label" x="576" y="155" text-anchor="middle" font-size="12" font-weight="800" fill="#17324d">FISH &amp; FAME</text>
+
+  <text class="label" x="400" y="500" text-anchor="middle" font-size="19" font-weight="800" fill="#17324d">“I’m not bird-brained. I’m just taking the scenic route.”</text>
+  <path d="M160 520H640" stroke="#9ab1a1" stroke-width="2"/>
+  <text class="label" x="400" y="558" text-anchor="middle" font-size="14" font-weight="700" fill="#17324d">2026-11-01 01:32:03 SGT (UTC+08:00)</text>
+</svg>

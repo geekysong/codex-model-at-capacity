@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A cheerful pelican pedals a bicycle while carrying a fish in its enormous beak.</desc>
+  <defs>
+    <pattern id="spokes" width="20" height="20" patternUnits="userSpaceOnUse"/>
+    <g id="wheel">
+      <circle r="83" fill="#fff9e9" stroke="#263647" stroke-width="10"/>
+      <circle r="70" fill="none" stroke="#e9a936" stroke-width="3"/>
+      <g stroke="#8297a0" stroke-width="3">
+        <path d="M-70 0H70M0-70V70M-50-50L50 50M-50 50L50-50"/>
+      </g>
+      <circle r="8" fill="#263647"/>
+    </g>
+    <style>
+      .ink { stroke:#263647; stroke-width:5; stroke-linecap:round; stroke-linejoin:round }
+      .wheel { animation:spin 2s linear infinite; transform-box:fill-box; transform-origin:center }
+      .rider { animation:bob .7s ease-in-out infinite alternate; transform-box:fill-box; transform-origin:center }
+      .pedal { animation:spin 1.4s linear infinite; transform-box:fill-box; transform-origin:center }
+      @keyframes spin { to { transform:rotate(360deg) } }
+      @keyframes bob { to { transform:translateY(-5px) rotate(-1deg) } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider,.pedal { animation-duration:8s } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f9f1db"/>
+  <rect x="18" y="18" width="764" height="564" rx="24" fill="#fffaf0" stroke="#263647" stroke-width="4"/>
+  <path d="M20 140H780V510H20Z" fill="#d6edf0"/>
+  <circle cx="685" cy="188" r="36" fill="#f5c65d"/>
+  <path d="M20 414Q147 397 260 415T505 414T780 410V510H20Z" fill="#e6d3a4"/>
+  <path d="M20 464H780" stroke="#ae9a78" stroke-width="4"/>
+  <path d="M48 486h53m29 0h32m486 0h42m25 0h28" stroke="#fff8e9" stroke-width="5" stroke-linecap="round"/>
+  <path d="M63 300q18-18 36 0m5-20q14-13 28 0m506 28q16-15 32 0" fill="none" stroke="#a2c7ca" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="400" y="72" text-anchor="middle" fill="#263647" font-family="Arial, sans-serif" font-weight="900" font-size="42" letter-spacing="2">THE PELICAN EXPRESS</text>
+  <text x="400" y="108" text-anchor="middle" fill="#bd653e" font-family="Arial, sans-serif" font-weight="bold" font-size="20">Fresh catch. Questionable transportation.</text>
+
+  <g transform="translate(217 379)">
+    <g class="wheel"><use href="#wheel"/></g>
+  </g>
+  <g transform="translate(583 379)">
+    <g class="wheel"><use href="#wheel"/></g>
+  </g>
+
+  <g fill="none" class="ink" stroke-width="10">
+    <path d="M217 379L310 267L388 379H217L337 379L476 280L388 379" stroke="#e86f4f"/>
+    <path d="M476 280L583 379M459 253L476 280" stroke="#e86f4f"/>
+    <path d="M299 254h50M451 251h43q14 0 14-14" stroke="#263647"/>
+    <path d="M310 267l-9-22" stroke="#263647"/>
+  </g>
+  <g transform="translate(388 379)">
+    <g class="pedal">
+      <circle r="23" fill="#f7d479" stroke="#263647" stroke-width="5"/>
+      <path d="M-32-17L32 17M-43-17h22M21 17h22" fill="none" stroke="#263647" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g class="rider">
+    <path d="M323 277q-16 32-5 65l36 28" fill="none" stroke="#e7a43f" stroke-width="11" stroke-linecap="round"/>
+    <path d="M354 370l-12 9h27" fill="none" stroke="#263647" stroke-width="6" stroke-linecap="round"/>
+    <path d="M376 278q18 28 17 61l18 23" fill="none" stroke="#e7a43f" stroke-width="11" stroke-linecap="round"/>
+    <path d="M411 362l-9 9h26" fill="none" stroke="#263647" stroke-width="6" stroke-linecap="round"/>
+    <path d="M285 251q-26-13-36-39 25 4 47 22" fill="#f7f4e8" class="ink"/>
+    <path d="M277 232q5-72 81-77 76-5 94 57 10 44-30 64-40 20-100 3-42-12-45-47Z" fill="#fffdf4" class="ink"/>
+    <path d="M303 214q34-26 95-8-15 49-69 46-25-2-26-38Z" fill="#d9e4e0" class="ink"/>
+    <path d="M392 244q31 1 68 5" fill="none" stroke="#263647" stroke-width="6" stroke-linecap="round"/>
+    <path d="M402 174q-11-26-3-54 9-30 40-31 33-1 40 28 4 18-7 32l-5 42" fill="#fffdf4" class="ink"/>
+    <path d="M448 144q29 7 54 16l104 18q12 3 1 11-72 37-136 8-25-12-23-53Z" fill="#edb34d" class="ink"/>
+    <path d="M473 163q54 12 133 15" fill="none" stroke="#c57c36" stroke-width="4"/>
+    <path d="M488 185q18 35 51 35 30-1 52-24" fill="#f5cb72" stroke="#263647" stroke-width="4"/>
+    <ellipse cx="459" cy="123" rx="10" ry="13" fill="#fff" stroke="#263647" stroke-width="3"/>
+    <circle cx="463" cy="125" r="4" fill="#263647"/>
+    <path d="M445 104q11-9 23-3" fill="none" stroke="#263647" stroke-width="4" stroke-linecap="round"/>
+    <path d="M406 106q-9-17-1-25 7 10 12 13 3-15 13-18-2 14 3 18" fill="#fffdf4" class="ink"/>
+    <path d="M545 188q14-10 27 0-13 10-27 0Zm27 0 10-7v14Z" fill="#73a5a6" stroke="#263647" stroke-width="2"/>
+    <circle cx="551" cy="187" r="1.5" fill="#263647"/>
+  </g>
+
+  <path d="M650 345l8-19 8 19m-8-19v-11" fill="none" stroke="#a48c62" stroke-width="3" stroke-linecap="round"/>
+  <path d="M108 424l6-17 7 17m-7-17v-9" fill="none" stroke="#a48c62" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M20 510H780" stroke="#263647" stroke-width="3"/>
+  <text x="400" y="541" text-anchor="middle" fill="#263647" font-family="Arial, sans-serif" font-size="18" font-weight="bold">He insists this is the most efficient way to deliver lunch.</text>
+  <text x="400" y="569" text-anchor="middle" fill="#596773" font-family="Arial, sans-serif" font-size="15">2026-11-01 01:32:21 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Fish: a pelican riding a bicycle</title>
+  <desc id="desc">A determined pelican pedals a tiny bicycle, carrying a fish in its enormous bill pouch. The wheels spin and the rider bobs in a continuous loop.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#233747;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .type{font-family:Arial,Helvetica,sans-serif;fill:#233747;text-anchor:middle}
+      .spin{animation:spin 1.2s linear infinite}
+      .bob{animation:bob .6s ease-in-out infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    </style>
+    <g id="spokes" stroke="#728b98" stroke-width="3">
+      <path d="M-69 0H69M0-69V69M-49-49L49 49M-49 49L49-49"/>
+      <circle r="9" fill="#f9c64e" stroke="#233747"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e8"/>
+  <path d="M0 320Q150 270 300 322T600 304T800 320V490H0Z" fill="#d7e9dc"/>
+  <g fill="#fff" opacity=".85">
+    <path d="M70 158Q58 131 88 127Q103 99 124 126Q156 120 158 150Z"/>
+    <path d="M598 151Q585 124 615 121Q629 96 648 123Q678 119 683 151Z"/>
+  </g>
+
+  <text class="type" x="400" y="57" font-size="42" font-weight="900" letter-spacing="2">TOUR DE FISH</text>
+  <text class="type" x="400" y="87" font-size="18">One bird. Two wheels. Absolutely no aerodynamics.</text>
+
+  <path d="M0 454H800V508H0Z" fill="#e0d5bd"/>
+  <path d="M35 486H161M639 486H765" stroke="#fff8e8" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="403" cy="462" rx="235" ry="13" fill="#233747" opacity=".12"/>
+
+  <!-- Bicycle wheels rotate around their own hubs. -->
+  <g transform="translate(242 382)">
+    <circle r="79" fill="#fff8e8" class="ink" stroke-width="10"/>
+    <circle r="69" fill="none" stroke="#b5c5c7" stroke-width="3"/>
+    <g class="spin"><use href="#spokes"/></g>
+  </g>
+  <g transform="translate(566 382)">
+    <circle r="79" fill="#fff8e8" class="ink" stroke-width="10"/>
+    <circle r="69" fill="none" stroke="#b5c5c7" stroke-width="3"/>
+    <g class="spin"><use href="#spokes"/></g>
+  </g>
+
+  <g fill="none" class="ink">
+    <path d="M242 382L320 278L389 382Z M320 278H499L389 382M499 278L566 382" stroke="#e76450" stroke-width="10"/>
+    <path d="M320 278L309 252M288 251H335" stroke-width="10"/>
+    <path d="M499 278L484 240L514 220H536" stroke-width="8"/>
+    <path d="M242 382L389 382" stroke="#233747" stroke-width="3"/>
+  </g>
+  <circle cx="389" cy="382" r="24" fill="#f9c64e" class="ink"/>
+
+  <!-- The rider and feet have a gentle looping bounce. -->
+  <g class="bob">
+    <path d="M327 293L366 326L373 369" fill="none" stroke="#d89632" stroke-width="13" stroke-linecap="round"/>
+    <path d="M360 370L389 374L378 382L352 378Z" fill="#efad3d" class="ink"/>
+
+    <path d="M272 235L242 221L259 252L234 246L265 275" fill="#fff" class="ink"/>
+    <path d="M272 218Q318 187 361 214Q399 238 363 284Q338 314 287 291Q249 273 272 218Z" fill="#fff" class="ink"/>
+    <path d="M287 234Q316 218 346 242L325 278Q297 285 277 261" fill="#d8e4e9" class="ink"/>
+    <path d="M300 245L318 256L301 270" fill="none" stroke="#93aab5" stroke-width="3"/>
+
+    <path d="M346 232Q376 210 371 172Q365 125 402 119Q437 115 444 150L426 208Q417 249 365 270" fill="#fff" class="ink"/>
+
+    <!-- Helmet, eyebrow, and very determined eye. -->
+    <path d="M373 140Q373 104 410 102Q444 105 449 139Z" fill="#e76450" class="ink"/>
+    <path d="M389 113L387 131M407 110V130M424 114L429 132" stroke="#fff8e8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M378 142L395 179L431 146" fill="none" stroke="#233747" stroke-width="3"/>
+    <circle cx="423" cy="151" r="10" fill="#fff" stroke="#233747" stroke-width="3"/>
+    <circle cx="427" cy="152" r="4" fill="#233747"/>
+    <path d="M411 135L434 140" fill="none" class="ink"/>
+
+    <!-- An extravagantly oversized bill and transparent-looking pouch. -->
+    <path d="M439 160L624 174Q607 238 519 240Q456 235 435 177Z" fill="#f5bd75" class="ink"/>
+    <path d="M439 158Q516 146 641 173L438 179Z" fill="#f5b83d" class="ink"/>
+    <path d="M460 193Q494 219 529 219" fill="none" stroke="#ffe0ab" stroke-width="5" stroke-linecap="round"/>
+    <g transform="translate(545 207) rotate(-8)">
+      <path d="M-31 0Q-8-22 20-1L34-12V12L20 3Q-8 22-31 0Z" fill="#78b9c2" stroke="#233747" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="-17" cy="-3" r="3" fill="#233747"/>
+      <path d="M-7-10L-1-19L8-11" fill="#78b9c2" stroke="#233747" stroke-width="2"/>
+    </g>
+
+    <!-- Wing reaches the handlebars. -->
+    <path d="M350 244Q394 226 428 244L491 230L500 240Q448 266 420 264L375 275" fill="#fff" class="ink"/>
+    <path d="M465 240L475 249M478 236L487 244" stroke="#93aab5" stroke-width="3"/>
+    <path d="M336 286L404 319L405 385" fill="none" stroke="#efad3d" stroke-width="14" stroke-linecap="round"/>
+    <path d="M400 380L428 391L418 400L391 391Z" fill="#efad3d" class="ink"/>
+
+    <!-- Scarf streaming behind the rider. -->
+    <path d="M376 201L352 213L310 188L321 210L287 201L346 232L383 217Z" fill="#e76450" stroke="#233747" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(389 382)">
+    <g class="spin">
+      <path d="M-26 0H26" stroke="#233747" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-34-5H-18M18 5H34" stroke="#233747" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <circle r="6" fill="#233747"/>
+  </g>
+
+  <g transform="translate(81 326)">
+    <path d="M34 3V116" class="ink" fill="none"/>
+    <rect x="-28" y="-31" width="125" height="63" rx="8" fill="#fff8e8" class="ink"/>
+    <text class="type" x="34" y="-6" font-size="16" font-weight="bold">BIKE LANE</text>
+    <text class="type" x="34" y="17" font-size="13">BILL LIMIT: NONE</text>
+  </g>
+
+  <g fill="none" stroke="#233747" stroke-width="3" stroke-linecap="round">
+    <path d="M190 295H220M174 309H211M194 323H216"/>
+    <path d="M662 204L674 197M666 222H681"/>
+  </g>
+
+  <rect y="511" width="800" height="89" fill="#233747"/>
+  <text x="400" y="541" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" fill="#fff8e8">“I was told cycling would reduce my bill.”</text>
+  <text x="400" y="578" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#fff8e8">2026-11-01 01:31:06 SGT (UTC+08:00)</text>
+</svg>
