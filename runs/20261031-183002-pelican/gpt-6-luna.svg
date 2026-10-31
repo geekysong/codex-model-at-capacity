@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>The Pelican’s Two-Wheel Commute</title>
+  <desc>A satirical cartoon of a pelican pedaling a bicycle while carrying an absurdly long commute in its beak.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; }
+    .wheel {
+      transform-box: view-box;
+      transform-origin: center;
+      animation: spin 3s linear infinite;
+    }
+    .rider {
+      transform-box: fill-box;
+      transform-origin: center bottom;
+      animation: bob 0.65s ease-in-out infinite alternate;
+    }
+    .pedal {
+      transform-box: view-box;
+      transform-origin: 400px 390px;
+      animation: spin 1.2s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+  </style>
+
+  <rect width="800" height="600" fill="#dff5fb"/>
+  <circle cx="690" cy="112" r="48" fill="#ffd166"/>
+  <path d="M0 320 Q130 276 265 320 T530 314 T800 317 V500 H0Z" fill="#b8e3bd"/>
+  <path d="M0 385 Q160 360 315 384 T620 380 T800 388" fill="none" stroke="#91c9a0" stroke-width="4"/>
+  <path d="M0 445 H800" stroke="#555d66" stroke-width="8"/>
+  <path d="M0 454 H800" stroke="#fff" stroke-width="3" stroke-dasharray="24 22"/>
+
+  <text x="40" y="58" font-size="30" font-weight="900" fill="#16324f">THE PELICAN’S TWO-WHEEL COMMUTE</text>
+  <text x="42" y="88" font-size="16" font-weight="700" fill="#35566f">“Beak traffic is still traffic.”</text>
+
+  <g fill="#fff" opacity=".9">
+    <ellipse cx="126" cy="150" rx="52" ry="17"/>
+    <circle cx="159" cy="141" r="21"/>
+    <ellipse cx="251" cy="123" rx="40" ry="13"/>
+    <circle cx="278" cy="116" r="17"/>
+  </g>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke="#18324a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="250" cy="390" r="69"/>
+      <path d="M250 321V459 M181 390H319 M201 341L299 439 M299 341L201 439"/>
+    </g>
+    <g class="wheel">
+      <circle cx="550" cy="390" r="69"/>
+      <path d="M550 321V459 M481 390H619 M501 341L599 439 M599 341L501 439"/>
+    </g>
+    <path d="M250 390L365 390L320 310L250 390 M365 390L435 310L550 390 M320 310H435"/>
+    <path d="M310 299L330 299 M425 300L445 300"/>
+    <path d="M435 310L458 286L478 286"/>
+    <path d="M365 390L386 374 M365 390L344 406"/>
+  </g>
+  <circle cx="365" cy="390" r="12" fill="#f4a261" stroke="#18324a" stroke-width="4"/>
+  <g class="pedal" stroke="#18324a" stroke-width="5" stroke-linecap="round">
+    <path d="M365 390L393 390 M365 390L337 390"/>
+    <path d="M390 390H402 M328 390H340"/>
+  </g>
+  <path d="M305 295 Q319 280 345 290" fill="none" stroke="#18324a" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Pedaling pelican -->
+  <g class="rider">
+    <!-- tail and wing -->
+    <path d="M390 225 Q365 214 348 230 Q367 247 393 244Z" fill="#364c68"/>
+    <ellipse cx="389" cy="205" rx="43" ry="61" fill="#fffdf4" stroke="#18324a" stroke-width="4"/>
+    <path d="M370 192 Q394 174 421 197 Q405 223 377 221Z" fill="#d8e2e8" stroke="#18324a" stroke-width="3"/>
+    <!-- neck -->
+    <path d="M405 191 Q419 144 448 133 Q462 130 470 143 Q452 159 450 198" fill="#fffdf4" stroke="#18324a" stroke-width="4"/>
+    <!-- head -->
+    <ellipse cx="465" cy="126" rx="34" ry="27" fill="#fffdf4" stroke="#18324a" stroke-width="4"/>
+    <path d="M493 124 Q551 115 589 135 Q552 151 495 141Z" fill="#f4a261" stroke="#18324a" stroke-width="4"/>
+    <path d="M497 139 Q541 146 576 139 Q561 173 530 171 Q508 166 497 139Z" fill="#ef8354" stroke="#18324a" stroke-width="4"/>
+    <circle cx="476" cy="120" r="5" fill="#18324a"/>
+    <circle cx="478" cy="118" r="1.8" fill="#fff"/>
+    <!-- helmet -->
+    <path d="M433 112 Q437 83 466 82 Q492 84 500 111Z" fill="#ef476f" stroke="#18324a" stroke-width="4"/>
+    <path d="M431 112H502" stroke="#18324a" stroke-width="5" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M378 248 Q389 282 383 321 L355 369" fill="none" stroke="#f4a261" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M401 247 Q424 279 403 311 L380 369" fill="none" stroke="#f4a261" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M352 371 Q338 377 332 390 M378 371 Q389 380 396 390" fill="none" stroke="#18324a" stroke-width="8" stroke-linecap="round"/>
+    <!-- handlebar wing-arm -->
+    <path d="M426 204 Q447 234 461 281" fill="none" stroke="#fffdf4" stroke-width="13" stroke-linecap="round"/>
+    <path d="M426 204 Q447 234 461 281" fill="none" stroke="#18324a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M455 280 Q464 273 477 281" fill="none" stroke="#f4a261" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Satirical commute sign -->
+  <g transform="rotate(-5 635 250)">
+    <rect x="594" y="211" width="142" height="63" rx="8" fill="#fffdf4" stroke="#18324a" stroke-width="3"/>
+    <text x="665" y="236" text-anchor="middle" font-size="13" font-weight="900" fill="#18324a">MEETING IN 2 MIN</text>
+    <text x="665" y="257" text-anchor="middle" font-size="12" font-weight="700" fill="#ef476f">DISTANCE: 2 BEAKS</text>
+  </g>
+  <path d="M589 177 Q614 155 634 170" fill="none" stroke="#18324a" stroke-width="2" stroke-dasharray="4 5"/>
+  <text x="630" y="167" font-size="20" fill="#18324a">!</text>
+
+  <text x="400" y="488" text-anchor="middle" font-size="17" font-weight="800" fill="#16324f">He’s cutting emissions. The meeting is still running late.</text>
+  <path d="M0 510H800" stroke="#18324a" stroke-width="2" opacity=".25"/>
+  <rect x="0" y="512" width="800" height="88" fill="#f7fbfc"/>
+  <text x="400" y="562" text-anchor="middle" font-size="16" font-weight="700" fill="#16324f">2026-10-31 18:32:27 SGT (UTC+08:00)</text>
+</svg>
