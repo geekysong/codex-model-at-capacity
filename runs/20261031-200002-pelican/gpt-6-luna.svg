@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Great Getaway</title>
+  <desc id="desc">A determined pelican pedals a bicycle, carrying a tiny fish in its beak and a very large briefcase in its basket.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#17324d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#fffdf5;stroke:#17324d;stroke-width:8}
+      .spoke{stroke:#74a9aa;stroke-width:3}
+      .frame{fill:none;stroke:#e65f45;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .txt{font-family:Arial,Helvetica,sans-serif;fill:#17324d}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes ride{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .spinning{transform-box:fill-box;transform-origin:center;animation:spin 1.8s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:ride .45s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#d9f1ed"/>
+  <circle cx="690" cy="130" r="58" fill="#ffcf70"/>
+  <path d="M0 365 Q140 322 270 360 T540 350 T800 355 V600 H0Z" fill="#a8d7a5"/>
+  <path d="M0 414 Q180 390 360 416 T800 405" fill="none" stroke="#fffdf5" stroke-width="5" opacity=".8"/>
+
+  <text id="title" class="txt" x="400" y="58" text-anchor="middle" font-size="34" font-weight="900">THE PELICAN’S GREAT GETAWAY</text>
+  <text class="txt" x="400" y="91" text-anchor="middle" font-size="18" font-weight="700">“I’m cutting my commute down to one fish.”</text>
+
+  <!-- Bicycle wheels -->
+  <g class="wheel" cx="230" cy="430">
+    <circle class="wheel" cx="230" cy="430" r="69"/>
+    <g class="spinning">
+      <path class="spoke" d="M230 361V499M161 430H299M181 381L279 479M279 381L181 479"/>
+    </g>
+    <circle cx="230" cy="430" r="7" fill="#e65f45"/>
+  </g>
+  <g>
+    <circle class="wheel" cx="570" cy="430" r="69"/>
+    <g class="spinning">
+      <path class="spoke" d="M570 361V499M501 430H639M521 381L619 479M619 381L521 479"/>
+    </g>
+    <circle cx="570" cy="430" r="7" fill="#e65f45"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <path class="frame" d="M230 430L330 430L390 335L455 430L330 430L355 390L455 430L570 430L510 330"/>
+  <path class="ink" fill="none" d="M490 321L530 321M346 390L323 390"/>
+  <path d="M507 321L526 294" class="ink" fill="none"/>
+
+  <!-- Basket and absurd briefcase -->
+  <path d="M493 299H575L564 337H501Z" fill="#f2a65a" class="ink"/>
+  <rect x="512" y="269" width="50" height="32" rx="5" fill="#7187a5" class="ink"/>
+  <path d="M526 269V260Q537 250 548 260V269" fill="none" class="ink"/>
+  <path d="M534 283H541" stroke="#ffcf70" stroke-width="5" stroke-linecap="round"/>
+  <text class="txt" x="536" y="326" text-anchor="middle" font-size="11" font-weight="800">URGENT</text>
+
+  <!-- Rider bob -->
+  <g class="rider">
+    <!-- Body -->
+    <path d="M355 275Q376 258 403 272L427 329L383 350L347 315Z" fill="#e65f45" class="ink"/>
+    <path d="M366 287L400 300" stroke="#ffcf70" stroke-width="7" stroke-linecap="round"/>
+    <!-- Neck and head -->
+    <path d="M382 278L390 250" fill="none" class="ink"/>
+    <ellipse cx="393" cy="222" rx="55" ry="49" fill="#fffdf5" class="ink"/>
+    <path d="M425 224Q479 220 505 239Q483 258 433 251Z" fill="#f2a65a" class="ink"/>
+    <path d="M447 239Q466 234 480 241" fill="none" stroke="#d77a3d" stroke-width="3"/>
+    <!-- Eye, expression, helmet -->
+    <circle cx="410" cy="212" r="5.5" fill="#17324d"/>
+    <path d="M402 200Q412 192 422 200" fill="none" class="ink"/>
+    <path d="M350 214Q361 171 402 170Q439 173 450 204L350 214Z" fill="#ffcf70" class="ink"/>
+    <path d="M360 207L441 201" stroke="#e65f45" stroke-width="6" stroke-linecap="round"/>
+    <path d="M361 208L345 216" class="ink" fill="none"/>
+    <!-- Tiny fish in beak -->
+    <path d="M472 231Q485 220 498 231Q485 242 472 231Z" fill="#76c4c8" stroke="#17324d" stroke-width="3"/>
+    <path d="M472 231L464 224V238Z" fill="#76c4c8" stroke="#17324d" stroke-width="3"/>
+    <circle cx="490" cy="229" r="1.8" fill="#17324d"/>
+    <!-- Wings -->
+    <path d="M365 285Q337 292 352 319Q372 319 390 301Z" fill="#f6f0df" class="ink"/>
+    <path d="M356 301L374 307M360 310L378 313" fill="none" stroke="#c3bda9" stroke-width="3"/>
+    <!-- Legs pedaling -->
+    <path d="M385 340L355 387L330 430M405 340L431 378L414 415" fill="none" class="ink"/>
+    <path d="M320 432L340 432M405 419L424 419" class="ink" fill="none"/>
+    <!-- Handlebar reach -->
+    <path d="M407 305L453 321L493 321" fill="none" class="ink"/>
+  </g>
+
+  <!-- Roadside sign -->
+  <path d="M86 331V414" stroke="#765d48" stroke-width="8"/>
+  <rect x="35" y="300" width="105" height="49" rx="6" fill="#fffdf5" class="ink"/>
+  <text class="txt" x="87" y="321" text-anchor="middle" font-size="13" font-weight="900">BIKE LANE</text>
+  <text class="txt" x="87" y="339" text-anchor="middle" font-size="12" font-weight="700">FISH TOLL</text>
+
+  <!-- Footer kept clear of the scene -->
+  <path d="M0 526H800V600H0Z" fill="#17324d"/>
+  <text x="400" y="563" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#fffdf5">2026-10-31 20:02:15 SGT (UTC+08:00)</text>
+</svg>
