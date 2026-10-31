@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect x="0" y="0" width="600" height="400" fill="#ffffff"/>
+  <text x="300" y="30" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#222">5x5 Hamiltonian Path: 24 moves (visits all 25 cells once)</text>
+
+  <!-- Grid -->
+  <g stroke="#555" stroke-width="1.5" fill="#f7f7f7">
+    <rect x="160" y="50" width="56" height="56"/><rect x="216" y="50" width="56" height="56"/><rect x="272" y="50" width="56" height="56"/><rect x="328" y="50" width="56" height="56"/><rect x="384" y="50" width="56" height="56"/>
+    <rect x="160" y="106" width="56" height="56"/><rect x="216" y="106" width="56" height="56"/><rect x="272" y="106" width="56" height="56"/><rect x="328" y="106" width="56" height="56"/><rect x="384" y="106" width="56" height="56"/>
+    <rect x="160" y="162" width="56" height="56"/><rect x="216" y="162" width="56" height="56"/><rect x="272" y="162" width="56" height="56"/><rect x="328" y="162" width="56" height="56"/><rect x="384" y="162" width="56" height="56"/>
+    <rect x="160" y="218" width="56" height="56"/><rect x="216" y="218" width="56" height="56"/><rect x="272" y="218" width="56" height="56"/><rect x="328" y="218" width="56" height="56"/><rect x="384" y="218" width="56" height="56"/>
+    <rect x="160" y="274" width="56" height="56"/><rect x="216" y="274" width="56" height="56"/><rect x="272" y="274" width="56" height="56"/><rect x="328" y="274" width="56" height="56"/><rect x="384" y="274" width="56" height="56"/>
+  </g>
+
+  <!-- Path through cell centers -->
+  <polyline fill="none" stroke="#1f5fbf" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+    points="188,78 244,78 300,78 356,78 412,78 412,134 356,134 300,134 244,134 188,134 188,190 244,190 300,190 356,190 412,190 412,246 356,246 300,246 244,246 188,246 188,302 244,302 300,302 356,302 412,302"/>
+
+  <!-- Start and end markers -->
+  <circle cx="188" cy="78" r="8" fill="#2ca02c" stroke="#145214" stroke-width="1.5"/>
+  <circle cx="412" cy="302" r="8" fill="#d62728" stroke="#7a1416" stroke-width="1.5"/>
+
+  <!-- Visit order numbers (top-left corner of each cell) -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold" fill="#222">
+    <text x="165" y="63">1</text><text x="221" y="63">2</text><text x="277" y="63">3</text><text x="333" y="63">4</text><text x="389" y="63">5</text>
+    <text x="165" y="119">10</text><text x="221" y="119">9</text><text x="277" y="119">8</text><text x="333" y="119">7</text><text x="389" y="119">6</text>
+    <text x="165" y="175">11</text><text x="221" y="175">12</text><text x="277" y="175">13</text><text x="333" y="175">14</text><text x="389" y="175">15</text>
+    <text x="165" y="231">20</text><text x="221" y="231">19</text><text x="277" y="231">18</text><text x="333" y="231">17</text><text x="389" y="231">16</text>
+    <text x="165" y="287">21</text><text x="221" y="287">22</text><text x="277" y="287">23</text><text x="333" y="287">24</text><text x="389" y="287">25</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#222">
+    <circle cx="40" cy="180" r="6" fill="#2ca02c" stroke="#145214" stroke-width="1"/>
+    <text x="52" y="184">Start (cell 1)</text>
+    <circle cx="40" cy="205" r="6" fill="#d62728" stroke="#7a1416" stroke-width="1"/>
+    <text x="52" y="209">End (cell 25)</text>
+    <line x1="34" y1="230" x2="46" y2="230" stroke="#1f5fbf" stroke-width="3"/>
+    <text x="52" y="234">Path (24 moves)</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="20" y1="350" x2="580" y2="350" stroke="#ccc" stroke-width="1"/>
+  <text x="300" y="375" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" fill="#444">2026-11-01 00:08:57 SGT (UTC+08:00)</text>
+</svg>
