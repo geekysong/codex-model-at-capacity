@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Fish: a pelican pedals for lunch</title>
+  <desc id="description">A determined pelican with an enormous fish-filled bill rides a tiny bicycle. Its wheels spin, feet pedal, and body bobs. A roadside sign says No free lunch.</desc>
+  <defs>
+    <pattern id="paper" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="4" r="1" fill="#172d38" opacity=".035"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #18333e; }
+      .ink { stroke: #18333e; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .spoke { stroke: #6c9298; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff5db"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M0 345 Q180 310 360 349 T800 332 V484 H0Z" fill="#c5e5da"/>
+  <circle cx="698" cy="146" r="40" fill="#ffcf66"/>
+  <path d="M50 181 Q79 150 111 178 Q140 141 176 181" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+
+  <text x="400" y="64" text-anchor="middle" font-size="46" font-weight="900" letter-spacing="2">TOUR DE FISH</text>
+  <text x="400" y="96" text-anchor="middle" font-size="18" font-weight="bold">THE ONLY RIDER WITH A BUILT-IN LUNCH TRUCK.</text>
+
+  <!-- Stationary speech bubble and roadside sign. -->
+  <path d="M62 124 H303 Q319 124 319 140 V186 Q319 202 303 202 H244 L267 232 L213 202 H62 Q46 202 46 186 V140 Q46 124 62 124Z"
+        fill="white" stroke="#18333e" stroke-width="3"/>
+  <text x="182" y="155" text-anchor="middle" font-size="21" font-weight="bold">“It’s not baggage.</text>
+  <text x="182" y="183" text-anchor="middle" font-size="21" font-weight="bold">It’s meal prep.”</text>
+
+  <path d="M692 313 V452" stroke="#18333e" stroke-width="8"/>
+  <rect x="631" y="256" width="124" height="70" rx="8" fill="#fff5db" stroke="#18333e" stroke-width="4"/>
+  <text x="693" y="284" text-anchor="middle" font-size="18" font-weight="bold">NO FREE</text>
+  <text x="693" y="309" text-anchor="middle" font-size="22" font-weight="900">LUNCH</text>
+
+  <path d="M0 475 H800" stroke="#18333e" stroke-width="5"/>
+  <ellipse cx="405" cy="471" rx="232" ry="9" fill="#18333e" opacity=".12"/>
+
+  <!-- Wheels: each spoke assembly rotates about its own hub. -->
+  <g transform="translate(260 400)">
+    <circle r="70" fill="#fff9e9" class="ink" stroke-width="9"/>
+    <circle r="59" fill="none" stroke="#e2b75e" stroke-width="3"/>
+    <g class="spoke">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-59 0 H59 M0-59 V59 M-42-42 L42 42 M-42 42 L42-42"/>
+      <path d="M0-58 L8-46 L-8-46Z" fill="#e86c49" stroke="none"/>
+    </g>
+    <circle r="8" fill="#18333e"/>
+  </g>
+  <g transform="translate(550 400)">
+    <circle r="70" fill="#fff9e9" class="ink" stroke-width="9"/>
+    <circle r="59" fill="none" stroke="#e2b75e" stroke-width="3"/>
+    <g class="spoke">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-59 0 H59 M0-59 V59 M-42-42 L42 42 M-42 42 L42-42"/>
+      <path d="M0-58 L8-46 L-8-46Z" fill="#e86c49" stroke="none"/>
+    </g>
+    <circle r="8" fill="#18333e"/>
+  </g>
+
+  <!-- Comically undersized bicycle. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M260 400 L325 306 L391 400 Z M325 306 L492 306 L391 400 M492 306 L550 400"
+          stroke="#18333e" stroke-width="13"/>
+    <path d="M260 400 L325 306 L391 400 Z M325 306 L492 306 L391 400 M492 306 L550 400"
+          stroke="#e8584d" stroke-width="7"/>
+    <path d="M325 306 L318 283 M492 306 L479 267 Q478 255 495 253 L523 253" stroke="#18333e" stroke-width="8"/>
+    <path d="M299 282 H343 M513 253 H532" stroke="#18333e" stroke-width="12"/>
+    <path d="M264 391 L388 383 Q412 389 409 403 Q406 418 389 416 L264 409Z" stroke="#687f80" stroke-width="3"/>
+  </g>
+
+  <!-- Rider bobs gently, independently of the readable labels. -->
+  <g class="ink">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M300 256 L250 240 L271 278 L244 276 L292 305Z" fill="#fffdf3"/>
+    <path d="M336 287 Q356 320 376 344 L391 383" fill="none" stroke="#e99b36" stroke-width="12"/>
+    <path d="M288 225 Q309 198 356 208 Q382 212 392 242 Q399 277 361 296 Q316 319 288 284 Q271 260 288 225Z" fill="#fffdf3"/>
+    <path d="M308 239 Q340 219 366 247 Q365 276 324 280 Q341 264 308 239Z" fill="#cadbd7"/>
+    <path d="M353 220 Q384 203 375 169 Q365 135 391 121 Q421 109 436 135 Q452 167 420 201 Q410 222 408 247 Q399 273 376 267"
+          fill="#fffdf3"/>
+    <path d="M376 145 Q367 117 386 110 L402 113 L413 104 L420 119" fill="#fffdf3"/>
+    <!-- Huge elastic bill full of freeloading fish. -->
+    <path d="M427 160 L607 180 Q593 267 514 266 Q453 266 432 194Z" fill="#f4b54e"/>
+    <path d="M443 184 Q498 207 590 188" fill="none" stroke="#ce8135" stroke-width="3"/>
+    <g stroke-width="3">
+      <path d="M467 225 Q488 203 516 222 L531 210 L530 238 L516 229 Q486 244 467 225Z" fill="#71bdba"/>
+      <circle cx="478" cy="222" r="3" fill="#18333e" stroke="none"/>
+      <path d="M523 244 Q544 222 568 239 L583 228 L580 253 L566 246 Q541 259 523 244Z" fill="#90cad5"/>
+      <circle cx="534" cy="241" r="3" fill="#18333e" stroke="none"/>
+    </g>
+    <path d="M425 158 Q497 153 616 181 L430 184Z" fill="#ffd779"/>
+    <ellipse cx="415" cy="147" rx="12" ry="15" fill="white" stroke-width="3"/>
+    <circle cx="420" cy="150" r="5" fill="#18333e" stroke="none"/>
+    <path d="M402 128 L426 133" fill="none" stroke-width="4"/>
+    <path d="M383 244 Q425 270 481 257 L505 254" fill="none" stroke="#fffdf3" stroke-width="18"/>
+    <path d="M383 236 Q433 260 480 248 M386 253 Q435 278 486 265" fill="none" stroke-width="3"/>
+    <path d="M483 251 L500 247 M485 258 L504 256" fill="none" stroke="#e99b36" stroke-width="6"/>
+    <path d="M441 125 Q451 111 450 104 Q462 116 455 127Z" fill="#70bed0" stroke-width="2"/>
+  </g>
+
+  <!-- Moving crank and webbed feet create a small pedaling cycle. -->
+  <circle cx="391" cy="400" r="17" fill="#f7d66e" class="ink" stroke-width="3"/>
+  <g transform="translate(391 400)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-22 0 H22" stroke="#18333e" stroke-width="6"/>
+      <g transform="translate(22 0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1.6s" repeatCount="indefinite"/>
+          <path d="M-10-8 L0-17 L9-6 L22 2 L-10 3Z" fill="#f4a334" stroke="#18333e" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M-13 6 H24" stroke="#18333e" stroke-width="5"/>
+        </g>
+      </g>
+      <g transform="translate(-22 0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1.6s" repeatCount="indefinite"/>
+          <path d="M-10-8 L0-17 L9-6 L22 2 L-10 3Z" fill="#e9932d" stroke="#18333e" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M-13 6 H24" stroke="#18333e" stroke-width="5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <path d="M156 358 H196 M140 375 H181 M163 393 H184" fill="none" stroke="#6c9298" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Dedicated footer keeps both caption and exact date clear of the scene. -->
+  <rect x="0" y="493" width="800" height="107" fill="#18333e"/>
+  <text x="400" y="530" text-anchor="middle" font-size="23" font-weight="bold" style="fill:#fff5db">He cycles to work. His lunch gets a free ride.</text>
+  <path d="M175 548 H625" stroke="#77918f"/>
+  <text x="400" y="577" text-anchor="middle" font-size="18" style="fill:#fff5db">2026-11-01 02:00:01 SGT (UTC+08:00)</text>
+</svg>

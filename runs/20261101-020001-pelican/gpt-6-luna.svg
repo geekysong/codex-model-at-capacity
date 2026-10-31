@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Two-Wheeled Takeover</title>
+  <desc id="desc">A smug pelican pedals a bicycle while a fish rides in its beak and a sign warns of a beak-powered traffic jam.</desc>
+  <style>
+    text { font-family: "Trebuchet MS", Arial, sans-serif; }
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+    .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .6s ease-in-out infinite alternate; }
+    .pedal { transform-box: fill-box; transform-origin: center; animation: spin .8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-5px) rotate(-1deg); } }
+  </style>
+
+  <rect width="800" height="600" fill="#dff5ff"/>
+  <circle cx="690" cy="106" r="45" fill="#ffd45e"/>
+  <path d="M0 342 Q100 300 200 340 T400 333 T600 340 T800 320 V600 H0Z" fill="#a9d98b"/>
+  <path d="M0 462 H800" stroke="#4d5963" stroke-width="94"/>
+  <path d="M0 462 H800" stroke="#fff3c4" stroke-width="5" stroke-dasharray="30 26"/>
+  <path d="M0 513 H800" stroke="#66737c" stroke-width="4"/>
+  <text x="38" y="57" fill="#18334a" font-size="30" font-weight="900">THE PELICAN’S TWO-WHEELED TAKEOVER</text>
+  <text x="40" y="88" fill="#31566a" font-size="17" font-weight="700">“I’m in the fast lane. The fish is my passenger.”</text>
+
+  <!-- roadside sign -->
+  <path d="M103 258 V360 M75 272 H170 V327 H75Z" fill="#fff8d9" stroke="#594f42" stroke-width="5"/>
+  <text x="84" y="294" fill="#8b392d" font-size="14" font-weight="900">BEAK-POWERED</text>
+  <text x="92" y="314" fill="#8b392d" font-size="14" font-weight="900">TRAFFIC JAM</text>
+  <path d="M85 335 L160 335" stroke="#594f42" stroke-width="3"/>
+
+  <!-- bicycle -->
+  <g class="wheel" fill="none" stroke="#172c3c" stroke-width="7">
+    <circle cx="300" cy="414" r="62"/>
+    <circle cx="545" cy="414" r="62"/>
+    <path d="M300 414 L363 414 L404 338 L462 414 L300 414 L363 414 L424 414 L462 414 L545 414"/>
+    <path d="M404 338 L392 322 M380 322 H411 M545 414 L561 332 M541 332 H580"/>
+  </g>
+  <g fill="#172c3c">
+    <circle cx="300" cy="414" r="8"/><circle cx="545" cy="414" r="8"/>
+  </g>
+  <g class="pedal" stroke="#172c3c" stroke-width="5" stroke-linecap="round">
+    <circle cx="424" cy="414" r="12" fill="#ffb342"/>
+    <path d="M424 414 L442 397 M424 414 L405 430"/>
+    <path d="M435 397 H450 M397 430 H412"/>
+  </g>
+
+  <!-- pelican and its enthusiastic ride -->
+  <g class="rider">
+    <path d="M382 304 Q357 296 342 310 Q330 323 343 336 L365 343 L383 329Z" fill="#f5a23a" stroke="#794820" stroke-width="3"/>
+    <path d="M342 318 Q319 327 300 325 Q284 323 279 333 Q296 346 323 343 L353 336Z" fill="#f28f31" stroke="#794820" stroke-width="3"/>
+    <path d="M343 327 Q320 339 298 337 Q290 337 287 342 Q302 354 328 350 L350 340Z" fill="#e86d55" stroke="#794820" stroke-width="2"/>
+    <path d="M300 325 Q291 319 286 324" fill="none" stroke="#794820" stroke-width="3"/>
+    <circle cx="351" cy="309" r="5" fill="#fff"/>
+    <circle cx="353" cy="309" r="2.5" fill="#172c3c"/>
+    <path d="M381 313 Q403 294 427 309 Q445 320 437 346 L420 374 L386 363 Q374 340 381 313Z" fill="#fffaf0" stroke="#794820" stroke-width="3"/>
+    <path d="M390 322 Q403 312 426 324 M389 334 Q405 326 432 339 M391 347 Q408 340 427 352" fill="none" stroke="#d6c5a7" stroke-width="3"/>
+    <path d="M391 361 Q409 373 424 375" fill="none" stroke="#e78634" stroke-width="9" stroke-linecap="round"/>
+    <!-- jaunty helmet -->
+    <path d="M372 305 Q379 278 403 282 Q421 284 426 302Z" fill="#e34e4e" stroke="#793137" stroke-width="3"/>
+    <path d="M367 304 H429" stroke="#793137" stroke-width="5" stroke-linecap="round"/>
+    <!-- wings -->
+    <path d="M396 331 Q418 328 429 345 Q417 357 394 350Z" fill="#f5a23a" stroke="#794820" stroke-width="3"/>
+    <path d="M401 338 L421 347 M399 344 L416 351" stroke="#d47e2c" stroke-width="2"/>
+    <!-- legs on pedals -->
+    <path d="M407 357 Q415 378 425 402 M425 402 L441 397 M414 362 Q399 384 405 425 M405 425 L397 430" fill="none" stroke="#e78634" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- fish passenger -->
+    <path d="M289 332 Q277 320 264 331 Q277 342 289 332Z" fill="#64bed1" stroke="#286a7c" stroke-width="2"/>
+    <circle cx="280" cy="331" r="1.8" fill="#173947"/>
+    <path d="M266 331 L260 326 L260 336Z" fill="#f7d15a" stroke="#286a7c" stroke-width="1.5"/>
+  </g>
+
+  <path d="M482 244 Q509 225 537 241" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M495 260 Q516 249 535 261" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <text x="504" y="224" fill="#31566a" font-size="15" font-weight="700">HONK if you love fish!</text>
+
+  <!-- footer kept clear of the scene -->
+  <rect x="0" y="548" width="800" height="52" fill="#18334a"/>
+  <text x="400" y="580" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">2026-11-01 02:02:10 SGT (UTC+08:00)</text>
+</svg>
