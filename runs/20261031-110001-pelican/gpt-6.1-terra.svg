@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Daily Pelican</title>
+  <desc id="desc">A smug pelican rides a bicycle with spinning wheels and bobbing pedals, while a fish peeks out of its beak.</desc>
+  <defs>
+    <style>
+      .ink { stroke:#263344; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { animation: spin 1.5s linear infinite; transform-box:fill-box; transform-origin:center; }
+      .pedals { animation: spin 1.5s linear infinite; transform-box:fill-box; transform-origin:center; }
+      .rider { animation: bob 1.5s ease-in-out infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-5px); } }
+    </style>
+    <pattern id="road" width="100" height="20" patternUnits="userSpaceOnUse">
+      <path d="M10 10h38" stroke="#f4e6b9" stroke-width="4" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#f9f1db"/>
+  <rect x="20" y="20" width="760" height="560" rx="22" fill="#e4f3ee" stroke="#263344" stroke-width="4"/>
+  <text x="400" y="78" text-anchor="middle" font-family="Georgia,serif" font-size="39" font-weight="bold" fill="#263344">THE DAILY PELICAN</text>
+  <path d="M83 92h634" stroke="#263344" stroke-width="3"/>
+  <text x="400" y="116" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" letter-spacing="3" fill="#42666a">BREAKING THE CYCLE</text>
+
+  <circle cx="660" cy="172" r="38" fill="#f7c75b"/>
+  <g fill="#fffdf3" opacity=".9">
+    <path d="M104 174c3-19 31-23 42-8 13-10 35-4 36 12H104z"/>
+    <path d="M532 145c3-15 23-19 33-7 11-8 28-3 30 10h-63z"/>
+  </g>
+  <path d="M40 418c99-22 177-14 260-4 109 14 214-20 316-9 59 6 99 7 144-2v65H40z" fill="#a5cda9"/>
+  <path d="M40 453h720v76H40z" fill="#657875"/>
+  <rect x="40" y="492" width="720" height="20" fill="url(#road)"/>
+
+  <g class="ink" fill="none">
+    <g class="wheel">
+      <circle cx="242" cy="422" r="76" fill="#f8f2df"/>
+      <circle cx="242" cy="422" r="65" stroke="#e6a35f" stroke-width="4"/>
+      <path d="M242 346v152M166 422h152M188 368l108 108M296 368L188 476" stroke="#9baaaa" stroke-width="3"/>
+      <circle cx="242" cy="422" r="7" fill="#263344"/>
+    </g>
+    <g class="wheel">
+      <circle cx="557" cy="422" r="76" fill="#f8f2df"/>
+      <circle cx="557" cy="422" r="65" stroke="#e6a35f" stroke-width="4"/>
+      <path d="M557 346v152M481 422h152M503 368l108 108M611 368L503 476" stroke="#9baaaa" stroke-width="3"/>
+      <circle cx="557" cy="422" r="7" fill="#263344"/>
+    </g>
+    <path d="M242 422l94-109 66 109H242l126-92 34 92 100-118 55 118" stroke="#e15d45" stroke-width="9"/>
+    <path d="M322 312h35M493 298h33l11-16h-26" stroke="#263344" stroke-width="8"/>
+    <path d="M402 422l-14-17" stroke="#263344" stroke-width="5"/>
+    <g class="pedals">
+      <circle cx="402" cy="422" r="8" fill="#f4bd55"/>
+      <path d="M402 422l-20-23M402 422l20 23M374 399h16M414 445h16" stroke="#263344" stroke-width="6"/>
+    </g>
+  </g>
+
+  <g class="rider">
+    <path d="M346 320c-13 22-5 48 22 62l29 27" fill="none" stroke="#e99d43" stroke-width="13" stroke-linecap="round"/>
+    <path d="M397 409l17 4" fill="none" stroke="#263344" stroke-width="8" stroke-linecap="round"/>
+    <path d="M329 274c-26 7-43 30-36 52 9 31 62 38 104 20 24-10 37-29 34-48-4-27-37-39-66-35z" fill="#fffdf4" class="ink"/>
+    <path d="M311 297c14-21 51-19 69-4-3 22-26 35-51 32-13-2-19-11-18-28z" fill="#d8e2dd" class="ink"/>
+    <path d="M330 327c5 19 18 32 38 42l17 22" fill="none" stroke="#f3aa47" stroke-width="12" stroke-linecap="round"/>
+    <path d="M382 392l20 2" fill="none" stroke="#263344" stroke-width="8" stroke-linecap="round"/>
+    <path d="M385 278c15-15 14-38 10-58-6-29-2-57 18-69 20-12 48-3 54 19 5 18-3 35-18 45-9 6-11 17-8 29 3 15 10 29 4 40-8 17-40 17-60-6z" fill="#fffdf4" class="ink"/>
+    <path d="M427 173c5-5 12-5 17 0" fill="none" stroke="#263344" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="438" cy="183" r="5" fill="#263344"/>
+    <path d="M452 195c27-7 62-4 113 12-25 10-55 16-91 17-12 0-20-8-22-29z" fill="#f4a944" class="ink"/>
+    <path d="M469 224c13 29 36 42 65 37 16-3 27-17 31-54-21 16-61 21-96 17z" fill="#f5c36a" class="ink"/>
+    <path d="M489 220c13-10 26-9 36 0l11-7-1 16-11-5c-11 9-24 8-35-4z" fill="#76b6c2" stroke="#263344" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="515" cy="218" r="2.5" fill="#263344"/>
+    <path d="M393 159c5-15 19-24 35-22 10 1 20 6 25 14-19-2-39 1-60 8z" fill="#e15d45" class="ink"/>
+    <path d="M388 160c23-9 49-12 72-7" fill="none" stroke="#263344" stroke-width="6" stroke-linecap="round"/>
+    <path d="M410 291c26 12 48 19 76 15" fill="none" stroke="#d8e2dd" stroke-width="12" stroke-linecap="round"/>
+    <path d="M480 305l15-5" fill="none" stroke="#263344" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Arial,sans-serif" fill="#263344" text-anchor="middle">
+    <text x="400" y="550" font-size="20" font-weight="bold">“My commute is going swimmingly.”</text>
+    <text x="400" y="573" font-size="14">2026-10-31 11:02:13 SGT (UTC+08:00)</text>
+  </g>
+</svg>

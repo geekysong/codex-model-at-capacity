@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Fish: A pelican riding a bicycle</title>
+  <desc id="description">A smug pelican pedals a tiny bicycle, carrying a fish in its enormous bill pouch. Both wheels spin and the rider bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="road" width="160" height="12" patternUnits="userSpaceOnUse">
+      <path d="M10 6H85" stroke="#fff5cf" stroke-width="5" stroke-linecap="round"/>
+    </pattern>
+    <g id="spokes" stroke="#54767a" stroke-width="3">
+      <path d="M-62 0H62M0-62V62M-44-44L44 44M-44 44L44-44"/>
+      <circle r="48" fill="none" stroke="#9ab6b5" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff6dc"/>
+  <path d="M0 150Q180 105 365 150T800 135V486H0Z" fill="#cde9e4"/>
+  <circle cx="684" cy="174" r="44" fill="#ffd46a"/>
+  <g fill="#fffdf0" opacity=".85">
+    <path d="M70 193Q55 166 84 162Q94 130 120 154Q151 149 155 177Q180 177 178 193Z"/>
+    <path d="M588 118Q574 98 596 90Q611 65 629 92Q660 82 666 118Z"/>
+  </g>
+
+  <text x="400" y="61" text-anchor="middle" font-family="sans-serif" font-size="46" font-weight="900" fill="#183d45" letter-spacing="3">TOUR DE FISH</text>
+  <text x="400" y="98" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#345861">One pelican. Two wheels. Absolutely no brakes for snacks.</text>
+
+  <path d="M0 456Q130 424 218 455T421 450T623 449T800 437V492H0Z" fill="#8bb8a1"/>
+  <path d="M0 482H800V538H0Z" fill="#567574"/>
+  <rect y="510" width="800" height="12" fill="url(#road)"/>
+  <ellipse cx="397" cy="488" rx="225" ry="13" fill="#294e50" opacity=".22"/>
+
+  <!-- A roadside punchline -->
+  <g stroke="#274951" stroke-width="3">
+    <path d="M691 320V477" stroke-width="8"/>
+    <path d="M626 269H738L765 301L738 333H626Z" fill="#fff8df"/>
+  </g>
+  <text x="690" y="294" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="bold" fill="#274951">FISH SHOP</text>
+  <text x="690" y="317" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#274951">0.2 nautical miles</text>
+
+  <!-- Wheels: rotating spokes inside stationary tires -->
+  <g fill="#e6f2e8" stroke="#203f48" stroke-width="10">
+    <circle cx="260" cy="421" r="66"/>
+    <circle cx="535" cy="421" r="66"/>
+  </g>
+  <g transform="translate(260 421)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(535 421)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Ridiculously small racing bicycle -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M260 421L340 337L395 421H260M340 337H501L395 421M501 337L535 421" fill="none" stroke="#263f48" stroke-width="13"/>
+    <path d="M260 421L340 337L395 421H260M340 337H501L395 421M501 337L535 421" fill="none" stroke="#ec6750" stroke-width="7"/>
+    <path d="M340 337L330 311M501 337L489 300L519 287" fill="none" stroke="#26454b" stroke-width="8"/>
+    <path d="M309 310Q330 302 354 310" fill="none" stroke="#263f48" stroke-width="13"/>
+    <path d="M517 286Q542 279 545 299" fill="none" stroke="#263f48" stroke-width="8"/>
+    <circle cx="525" cy="284" r="9" fill="#ffd36b" stroke="#263f48" stroke-width="3"/>
+    <circle cx="260" cy="421" r="7" fill="#ffd36b"/>
+    <circle cx="535" cy="421" r="7" fill="#ffd36b"/>
+    <circle cx="395" cy="421" r="18" fill="#fff4d8" stroke="#263f48" stroke-width="4"/>
+  </g>
+
+  <!-- Pedaling legs and expressive rider bob together -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0;0 -4;0 0" dur="1.6s" repeatCount="indefinite"/>
+
+    <path d="M345 299L324 359L373 405" fill="none" stroke="#bd793d" stroke-width="12" stroke-linecap="round">
+      <animate attributeName="d" values="M345 299L324 359L373 405;M345 299L351 357L414 433;M345 299L324 359L373 405" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M274 278L224 246L244 290L222 289L281 317" fill="#fffdf0" stroke="#243f48" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M281 239Q322 207 370 237Q393 253 396 283Q394 318 349 325Q296 328 270 302Q251 278 281 239Z" fill="#fffdf0" stroke="#243f48" stroke-width="4"/>
+    <path d="M369 267Q414 247 404 213Q389 188 412 164Q433 148 451 170Q465 193 449 215Q438 234 439 263Q436 298 388 304" fill="#fffdf0" stroke="#243f48" stroke-width="4"/>
+    <path d="M290 263Q335 240 369 280Q349 310 302 294L324 284L300 280" fill="#d5e0d9" stroke="#243f48" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M377 264Q431 276 489 299" fill="none" stroke="#243f48" stroke-width="16" stroke-linecap="round"/>
+    <path d="M377 262Q431 274 489 297" fill="none" stroke="#fffdf0" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Helmet, skeptical eyebrow, and enormous cargo pouch -->
+    <path d="M397 173Q395 138 426 137Q455 139 461 173Z" fill="#e95748" stroke="#243f48" stroke-width="4"/>
+    <path d="M412 145L408 161M427 143L426 160M441 147L446 162" stroke="#fff2cc" stroke-width="5" stroke-linecap="round"/>
+    <path d="M403 175L424 204L452 176" fill="none" stroke="#243f48" stroke-width="3"/>
+    <circle cx="438" cy="182" r="10" fill="white"/>
+    <circle cx="442" cy="183" r="4" fill="#203f48"/>
+    <path d="M426 168L448 172" stroke="#203f48" stroke-width="4" stroke-linecap="round"/>
+    <path d="M451 199L590 214Q551 272 482 259Q457 251 451 199Z" fill="#f4b65d" stroke="#243f48" stroke-width="4"/>
+    <path d="M450 190Q518 190 595 213L450 211Z" fill="#ffdc78" stroke="#243f48" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M475 222Q517 245 557 224" fill="none" stroke="#da9148" stroke-width="3"/>
+
+    <!-- The passenger has reservations -->
+    <path d="M492 236Q513 213 541 235L557 224V249L541 240Q516 258 492 236Z" fill="#64bbb8" stroke="#274951" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="505" cy="234" r="5" fill="white"/>
+    <circle cx="504" cy="234" r="2.5" fill="#274951"/>
+    <path d="M511 245L521 244" stroke="#274951" stroke-width="2"/>
+
+    <path d="M364 314L385 361L417 437" fill="none" stroke="#f6b54d" stroke-width="13" stroke-linecap="round">
+      <animate attributeName="d" values="M364 314L385 361L417 437;M364 314L353 369L374 405;M364 314L385 361L417 437" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M407 432L437 439L410 445Z" fill="#f6b54d" stroke="#274951" stroke-width="3" stroke-linejoin="round">
+      <animate attributeName="d" values="M407 432L437 439L410 445Z;M364 400L394 407L367 413Z;M407 432L437 439L410 445Z" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g transform="translate(395 421)" stroke="#274951" stroke-width="5">
+    <g>
+      <path d="M-23 0H23"/>
+      <circle cx="23" r="5" fill="#ffd36b"/>
+      <circle cx="-23" r="5" fill="#ffd36b"/>
+      <animateTransform attributeName="transform" type="rotate" from="35" to="395" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#45777c" stroke-width="4" stroke-linecap="round">
+    <path d="M170 345H217M151 363H204M173 381H216"/>
+  </g>
+  <path d="M85 219Q85 201 104 201H248Q265 201 265 219V250Q265 266 248 266H231L249 286L211 266H104Q85 266 85 250Z" fill="#fffdf0" stroke="#274951" stroke-width="3"/>
+  <text x="175" y="227" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#274951">“My bill includes</text>
+  <text x="175" y="250" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#274951">delivery.”</text>
+
+  <!-- Dedicated footer, clear of scene and caption -->
+  <rect y="542" width="800" height="58" fill="#fff6dc"/>
+  <path d="M30 543H770" stroke="#274951" stroke-width="2"/>
+  <text x="400" y="578" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="600" fill="#183d45">2026-10-31 11:00:01 SGT (UTC+08:00)</text>
+</svg>
