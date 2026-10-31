@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE BILLION-DOLLAR BEAK</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a sign reading “bike lane? never heard of her.”</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { fill: none; stroke: #263746; stroke-width: 8; }
+      .spokes { stroke: #73818b; stroke-width: 2; }
+      .frame { fill: none; stroke: #e85d3f; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .detail { stroke: #263746; stroke-width: 6; stroke-linecap: round; }
+      .small { font-size: 15px; font-weight: 700; }
+      .wheelspin { transform-box: fill-box; transform-origin: center; animation: spin 2.5s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      .pedal { transform-box: fill-box; transform-origin: center; animation: spin .8s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-5px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f6edda"/>
+  <rect y="0" width="800" height="112" fill="#f4c95d"/>
+  <text id="title" x="400" y="51" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1.5" fill="#263746">THE BILLION-DOLLAR BEAK</text>
+  <text x="400" y="82" text-anchor="middle" font-size="18" font-weight="700" fill="#263746">“Bike lane? Never heard of her.”</text>
+  <path d="M0 112H800" stroke="#263746" stroke-width="4"/>
+
+  <!-- comic backdrop -->
+  <circle cx="680" cy="178" r="49" fill="#f4c95d" stroke="#263746" stroke-width="3"/>
+  <path d="M670 174q10-13 20 0M673 190q8 8 16 0" fill="none" stroke="#263746" stroke-width="3" stroke-linecap="round"/>
+  <path d="M55 210h167l-12-18 22-5-9 24" fill="#fff" stroke="#263746" stroke-width="3"/>
+  <text x="132" y="202" text-anchor="middle" font-size="15" font-weight="900" fill="#263746">I'M THE TRAFFIC.</text>
+  <path d="M85 438H715" stroke="#263746" stroke-width="5" stroke-linecap="round"/>
+  <path d="M105 456h78m36 0h78m36 0h78m36 0h78m36 0h78" stroke="#c2b79f" stroke-width="4" stroke-dasharray="24 14"/>
+
+  <!-- street sign -->
+  <path d="M684 262v176" stroke="#263746" stroke-width="7"/>
+  <rect x="620" y="270" width="131" height="67" rx="8" fill="#4d9b73" stroke="#263746" stroke-width="4"/>
+  <text x="685" y="296" text-anchor="middle" class="small" fill="#fff">BIKE LANE</text>
+  <text x="685" y="320" text-anchor="middle" font-size="19" font-weight="900" fill="#fff">←</text>
+  <path d="M625 276l120 55M745 276L625 331" stroke="#f4c95d" stroke-width="5"/>
+
+  <!-- bicycle wheels -->
+  <g class="wheelspin">
+    <circle class="wheel" cx="220" cy="400" r="74"/>
+    <path class="spokes" d="M220 326v148M146 400h148M168 348l104 104M272 348L168 452"/>
+  </g>
+  <g class="wheelspin">
+    <circle class="wheel" cx="520" cy="400" r="74"/>
+    <path class="spokes" d="M520 326v148M446 400h148M468 348l104 104M572 348L468 452"/>
+  </g>
+
+  <!-- bicycle frame -->
+  <path class="frame" d="M220 400l80-112 75 112H220l105-55 50 55M375 400l85-112 60 112M450 278h42M286 279h39"/>
+  <path class="detail" d="M286 279h38M455 281l-13-20M442 261h29"/>
+  <circle cx="375" cy="400" r="13" fill="#f4c95d" stroke="#263746" stroke-width="5"/>
+  <g class="pedal">
+    <path d="M375 400l27 24M375 400l-27-24" stroke="#263746" stroke-width="5" stroke-linecap="round"/>
+    <path d="M398 424h20M338 376h20" stroke="#263746" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- rider bob -->
+  <g class="rider">
+    <!-- legs -->
+    <path d="M347 300l-24 48 49 52" fill="none" stroke="#f1a23a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M399 304l-8 52-17 44" fill="none" stroke="#f1a23a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M365 403l-19-5M375 403l15-3" stroke="#263746" stroke-width="7" stroke-linecap="round"/>
+    <!-- body -->
+    <ellipse cx="375" cy="267" rx="48" ry="58" fill="#fffaf0" stroke="#263746" stroke-width="4"/>
+    <path d="M342 275q-25 9-41 30l-18-9q16-28 45-40" fill="#fffaf0" stroke="#263746" stroke-width="4" stroke-linejoin="round"/>
+    <!-- neck and head -->
+    <path d="M369 241q-14-28-2-54" fill="none" stroke="#fffaf0" stroke-width="22" stroke-linecap="round"/>
+    <path d="M369 241q-14-28-2-54" fill="none" stroke="#263746" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="372" cy="173" rx="43" ry="34" fill="#fffaf0" stroke="#263746" stroke-width="4"/>
+    <!-- absurd beak -->
+    <path d="M405 172q75-24 113 1-36 29-113 12z" fill="#f4a340" stroke="#263746" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M413 185q41 28 80 5-30 42-69 17z" fill="#ed6b57" stroke="#263746" stroke-width="3"/>
+    <circle cx="385" cy="166" r="4.5" fill="#263746"/>
+    <path d="M378 155q10-8 19 0" fill="none" stroke="#263746" stroke-width="3" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M337 161q5-39 42-41 33 0 43 33l-85 12z" fill="#e85d3f" stroke="#263746" stroke-width="4"/>
+    <path d="M337 162h94" stroke="#263746" stroke-width="5" stroke-linecap="round"/>
+    <path d="M374 124l5 32M398 130l9 27" stroke="#f6edda" stroke-width="3"/>
+    <path d="M357 216q14 8 28 0" fill="none" stroke="#263746" stroke-width="3"/>
+  </g>
+
+  <rect x="0" y="492" width="800" height="108" fill="#263746"/>
+  <text x="400" y="523" text-anchor="middle" font-size="17" font-weight="700" fill="#fffaf0">He’s not late. He’s making a statement about infrastructure.</text>
+  <text x="400" y="568" text-anchor="middle" font-size="17" font-weight="700" fill="#f4c95d">2026-10-31 13:01:57 SGT (UTC+08:00)</text>
+</svg>
