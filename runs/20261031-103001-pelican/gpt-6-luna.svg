@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT BEAK ESCAPE</title>
+  <desc id="desc">A smug pelican pedals a tiny bicycle, carrying a fish in its beak. The wheels turn as a traffic cone cheers.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff4f5"/>
+  <circle cx="687" cy="102" r="42" fill="#ffd76a"/>
+  <path d="M0 325 Q110 291 220 322 T440 319 T660 315 T800 326 V490 H0Z" fill="#b4dfb0"/>
+  <path d="M0 392 Q180 374 345 395 T800 388 V503 H0Z" fill="#8bc79a"/>
+  <path d="M0 454 Q190 440 400 457 T800 449" fill="none" stroke="#fff8d8" stroke-width="7" stroke-dasharray="24 18"/>
+  <text x="48" y="64" fill="#174759" font-size="31" font-weight="900" letter-spacing="1">THE GREAT BEAK ESCAPE</text>
+  <text x="50" y="93" fill="#376d70" font-size="16" font-weight="700">“I’m not late. I’m arriving at fish speed.”</text>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#e85d45" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M257 403 L347 403 L394 330 L257 403 L310 330 L347 403"/>
+    <path d="M394 330 L454 403 M390 326 L423 326 M300 330 L321 330"/>
+    <path d="M310 330 L289 315"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#174759" stroke-width="6">
+    <circle cx="257" cy="403" r="53"/>
+    <path d="M257 350V456 M204 403H310 M220 366L294 440 M294 366L220 440"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#174759" stroke-width="6">
+    <circle cx="454" cy="403" r="53"/>
+    <path d="M454 350V456 M401 403H507 M417 366L491 440 M491 366L417 440"/>
+  </g>
+  <circle cx="347" cy="403" r="10" fill="#ffd76a" stroke="#174759" stroke-width="4"/>
+  <path d="M347 403 L361 426 L336 430 M347 403 L324 386" fill="none" stroke="#174759" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Pelican and pedal motion -->
+  <g class="rider">
+    <path d="M300 299 Q311 257 357 258 Q398 260 411 302 Q416 326 397 339 L354 340 Q326 332 300 315Z" fill="#fffdf0" stroke="#174759" stroke-width="4"/>
+    <path d="M322 274 Q349 242 384 271 Q396 282 392 300 Q372 311 344 299Z" fill="#283f53"/>
+    <path d="M372 271 Q381 230 418 228 Q451 229 458 258 Q463 287 435 300 Q406 306 392 287Z" fill="#fffdf0" stroke="#174759" stroke-width="4"/>
+    <path d="M428 270 Q475 261 519 274 Q493 288 445 291Z" fill="#f2a93b" stroke="#a95d2b" stroke-width="4"/>
+    <path d="M448 284 Q479 289 500 276 Q493 306 459 309 Q444 306 438 293Z" fill="#f07b59" stroke="#a95d2b" stroke-width="3"/>
+    <circle cx="438" cy="253" r="5" fill="#174759"/>
+    <path d="M435 248 Q444 241 451 248" fill="none" stroke="#174759" stroke-width="3" stroke-linecap="round"/>
+    <!-- fish in beak -->
+    <path d="M490 270 Q505 258 520 270 Q505 283 490 270 M519 270 L529 262 L529 278Z" fill="#79c8cf" stroke="#174759" stroke-width="2"/>
+    <circle cx="499" cy="269" r="1.8" fill="#174759"/>
+    <!-- wing -->
+    <path d="M328 282 Q354 264 382 282 Q361 302 335 300Z" fill="#f4eee0" stroke="#b5c4bd" stroke-width="3"/>
+    <!-- legs -->
+    <path d="M349 330 L346 381 L368 401 M385 330 L372 378 L347 403" fill="none" stroke="#e99b3f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M333 404 L352 404 M346 409 L363 409" stroke="#174759" stroke-width="5" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M414 241 Q421 215 448 222 Q463 226 466 243Z" fill="#e85d45" stroke="#174759" stroke-width="3"/>
+    <path d="M411 242 L468 245" stroke="#174759" stroke-width="4" stroke-linecap="round"/>
+    <path d="M432 226 L438 241 M448 226 L452 242" stroke="#ffd76a" stroke-width="3"/>
+  </g>
+
+  <!-- Comic speech bubble -->
+  <path d="M516 150 Q516 126 542 126 H712 Q738 126 738 150 V191 Q738 215 712 215 H583 L559 234 L563 215 H542 Q516 215 516 191Z" fill="#fffdf0" stroke="#174759" stroke-width="3"/>
+  <text x="536" y="157" fill="#174759" font-size="15" font-weight="800">“THE BIKE IS A LOT OF</text>
+  <text x="536" y="178" fill="#174759" font-size="15" font-weight="800">WHEELS FOR ONE FISH.”</text>
+
+  <!-- cheering traffic cone -->
+  <path d="M97 409 L124 331 L151 409Z" fill="#f2a93b" stroke="#174759" stroke-width="4"/>
+  <path d="M108 377 H140 M103 394 H146" stroke="#fffdf0" stroke-width="8"/>
+  <path d="M91 412 H157" stroke="#174759" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="116" cy="356" r="2.5" fill="#174759"/>
+  <circle cx="132" cy="356" r="2.5" fill="#174759"/>
+  <path d="M116 364 Q124 371 133 363" fill="none" stroke="#174759" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M97 369 L84 361 M150 367 L163 359" stroke="#174759" stroke-width="3" stroke-linecap="round"/>
+  <text x="50" y="300" fill="#174759" font-size="13" font-weight="800" transform="rotate(-8 50 300)">TOUR DE CONE!</text>
+
+  <!-- Footer -->
+  <path d="M0 510 H800 V600 H0Z" fill="#174759"/>
+  <text x="400" y="541" text-anchor="middle" fill="#fffdf0" font-size="16" font-weight="700">A bird with a fish to catch and absolutely no sense of traffic laws.</text>
+  <text x="400" y="577" text-anchor="middle" fill="#ffd76a" font-size="16" font-weight="800">2026-10-31 10:32:00 SGT (UTC+08:00)</text>
+</svg>
