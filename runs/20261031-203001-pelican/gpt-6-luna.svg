@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A suited pelican rides a bicycle, carrying a tiny briefcase and looking far too important.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#183047;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 3s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .65s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f7d66b"/>
+  <circle cx="680" cy="118" r="58" fill="#fff1b6"/>
+  <path d="M0 390 Q120 335 246 388 T500 377 T800 385 V600 H0Z" fill="#d5efda"/>
+  <path d="M0 454 Q150 427 305 452 T610 444 T800 450" fill="none" stroke="#a0d1b0" stroke-width="5"/>
+  <path d="M0 490 Q175 464 340 488 T800 479" fill="none" stroke="#a0d1b0" stroke-width="4"/>
+
+  <text x="400" y="54" text-anchor="middle" font-family="system-ui, sans-serif" font-size="31" font-weight="900" letter-spacing="1.5" fill="#183047">THE PELICAN COMMUTE</text>
+  <text x="400" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#456071">“I’m cutting through traffic. And several fish.”</text>
+
+  <!-- Breezy speed marks -->
+  <path d="M112 250h104 M89 275h79 M610 246h85 M640 270h62" class="ink" fill="none" stroke-width="5"/>
+  <path d="M138 300h56 M588 301h76" class="ink" fill="none" stroke-width="4"/>
+
+  <!-- Bicycle frame -->
+  <g fill="none" class="ink" stroke-width="7">
+    <path d="M220 408 L320 408 L380 300 L465 408 L560 408 L465 408 L425 315 L320 408"/>
+    <path d="M420 315 L392 315 M388 300 L374 300 M560 408 L580 350 L600 350"/>
+    <path d="M309 397 L330 419 M455 397 L475 419"/>
+    <path d="M380 300 L358 282"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#183047" stroke-width="6">
+    <circle cx="220" cy="408" r="59"/>
+    <path d="M220 349V467 M161 408H279 M178 366L262 450 M262 366L178 450"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#183047" stroke-width="6">
+    <circle cx="560" cy="408" r="59"/>
+    <path d="M560 349V467 M501 408H619 M518 366L602 450 M602 366L518 450"/>
+  </g>
+  <circle cx="320" cy="408" r="10" fill="#f08b43" stroke="#183047" stroke-width="4"/>
+  <path d="M320 408l29 17m-29-17-25 19" class="ink" fill="none" stroke-width="5"/>
+  <path d="M330 425l14 2m-44 2-12 4" class="ink" fill="none" stroke-width="5"/>
+
+  <!-- Pelican and its very serious commute -->
+  <g class="rider">
+    <!-- tail and body -->
+    <path d="M330 285 Q295 265 279 284 Q299 306 335 303" fill="#287f91" class="ink" stroke-width="4"/>
+    <ellipse cx="371" cy="265" rx="69" ry="65" fill="#fffaf0" class="ink" stroke-width="5"/>
+    <path d="M345 291 Q374 262 415 278 Q399 311 360 317Z" fill="#f0a24c" class="ink" stroke-width="4"/>
+    <!-- jacket -->
+    <path d="M345 271 Q374 290 408 268 L430 298 Q404 324 350 306Z" fill="#31556e" class="ink" stroke-width="4"/>
+    <path d="M372 290l14 14 8-19" fill="#fffaf0" stroke="#183047" stroke-width="3"/>
+    <path d="M384 303l-3 15" class="ink" fill="none" stroke-width="4"/>
+    <!-- neck and head -->
+    <path d="M407 241 Q421 202 402 181 L443 172 Q454 203 431 245Z" fill="#fffaf0" class="ink" stroke-width="5"/>
+    <ellipse cx="420" cy="157" rx="48" ry="42" fill="#fffaf0" class="ink" stroke-width="5"/>
+    <path d="M451 164 Q501 167 524 183 Q495 201 451 187Z" fill="#f5a32c" class="ink" stroke-width="4"/>
+    <path d="M456 186 Q490 195 523 183 Q502 211 462 201Z" fill="#ec7448" class="ink" stroke-width="3"/>
+    <circle cx="434" cy="150" r="5.5" fill="#183047"/>
+    <path d="M430 138q9-8 17 0" fill="none" stroke="#183047" stroke-width="3"/>
+    <!-- tiny helmet -->
+    <path d="M381 143 Q389 103 426 108 Q450 112 457 143Z" fill="#ef684f" class="ink" stroke-width="4"/>
+    <path d="M377 144h84" class="ink" fill="none" stroke-width="5"/>
+    <!-- handlebars / wing steering -->
+    <path d="M400 251 Q421 267 445 284 L459 274" class="ink" fill="none" stroke-width="6"/>
+    <path d="M456 274l14 2m-13-3 2-12" class="ink" fill="none" stroke-width="4"/>
+    <!-- feet pedaling -->
+    <path d="M364 308 Q350 337 338 365 L321 405" class="ink" fill="none" stroke-width="7"/>
+    <path d="M396 310 Q412 337 397 364 L342 422" class="ink" fill="none" stroke-width="7"/>
+    <path d="M307 405q17-8 27 1l-1 9-25 3q-8-6-1-13Z" fill="#f5a32c" class="ink" stroke-width="3"/>
+    <path d="M332 418q15-12 27-4l2 8-24 13q-10-3-5-17Z" fill="#f5a32c" class="ink" stroke-width="3"/>
+    <!-- briefcase -->
+    <path d="M283 298h37l8 31h-47Z" fill="#b36b39" class="ink" stroke-width="4"/>
+    <path d="M294 298v-8q0-7 8-7h7q8 0 8 7v8" fill="none" class="ink" stroke-width="4"/>
+    <path d="M299 313h9" class="ink" fill="none" stroke-width="3"/>
+  </g>
+
+  <!-- A fish who has seen this commute before -->
+  <g transform="translate(589 320)">
+    <path d="M0 16 Q25 -6 50 16 Q25 38 0 16Z" fill="#56a9bd" class="ink" stroke-width="3"/>
+    <path d="M48 16l18-13v26Z" fill="#56a9bd" class="ink" stroke-width="3"/>
+    <circle cx="12" cy="13" r="2.5" fill="#183047"/>
+    <path d="M17 22q8 4 14 0" fill="none" stroke="#183047" stroke-width="2"/>
+  </g>
+  <text x="620" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#183047">“LATE AGAIN?”</text>
+
+  <path d="M105 478h590" stroke="#183047" stroke-width="5" stroke-linecap="round"/>
+  <text x="400" y="531" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#31556e">No car. No problem. Plenty of room in the bill.</text>
+  <text x="400" y="574" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#183047">2026-10-31 20:32:09 SGT (UTC+08:00)</text>
+</svg>
