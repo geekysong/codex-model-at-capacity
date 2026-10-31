@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Beak Express</title>
+  <desc id="desc">A smug pelican pedals a bicycle, its enormous beak full of fish, while a fish complains from the basket.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { fill: none; stroke: #263746; stroke-width: 9; }
+      .spoke { stroke: #71828d; stroke-width: 2; }
+      .frame { fill: none; stroke: #e75b3b; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .ink { stroke: #263746; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pedal { to { transform: rotate(360deg); } }
+      @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+      .spinning { transform-box: fill-box; transform-origin: center; animation: spin 2.2s linear infinite; }
+      .crank { transform-box: fill-box; transform-origin: center; animation: pedal 1.1s linear infinite; }
+      .rider { animation: bob .55s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d8"/>
+  <path d="M0 458 Q170 440 330 458 T800 450 V540 H0Z" fill="#cfe8db"/>
+  <path d="M48 458h704" stroke="#68847e" stroke-width="4" stroke-dasharray="16 14"/>
+  <circle cx="105" cy="120" r="43" fill="#ffd76a"/>
+  <path d="M90 119q15-20 30 0" fill="none" stroke="#e8a840" stroke-width="4"/>
+  
+  <text id="title" x="400" y="54" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1.5" fill="#263746">THE BEAK EXPRESS</text>
+  <text x="400" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#52636c">A fishy commute with absolutely no traffic sense</text>
+
+  <!-- Bicycle -->
+  <g aria-label="Bicycle">
+    <circle class="wheel" cx="250" cy="405" r="67"/>
+    <circle class="wheel" cx="548" cy="405" r="67"/>
+    <g class="spinning">
+      <path class="spoke" d="M250 338V472M183 405h134M203 358l94 94M203 452l94-94"/>
+    </g>
+    <g class="spinning">
+      <path class="spoke" d="M548 338V472M481 405h134M501 358l94 94M501 452l94-94"/>
+    </g>
+    <path class="frame" d="M250 405 347 405 306 320 250 405M347 405 414 320 548 405M347 405 414 320 306 320"/>
+    <path d="M290 312h39M296 306l-6 12M414 320l15-25M425 295h28" fill="none" stroke="#263746" stroke-width="7" stroke-linecap="round"/>
+    <path d="M414 320l-18-16" stroke="#263746" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="347" cy="405" r="8" fill="#263746"/>
+    <g class="crank">
+      <path d="M347 405l27 23M347 405l-25-22" stroke="#263746" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="374" cy="428" r="5" fill="#263746"/>
+      <circle cx="322" cy="383" r="5" fill="#263746"/>
+    </g>
+    <path d="M223 322h55l-7 15h-43z" fill="#263746"/>
+    <path d="M523 322h54" stroke="#263746" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wobbling pelican rider -->
+  <g class="rider" aria-label="Pelican riding the bicycle">
+    <!-- tail and body -->
+    <path d="M339 272q-35-22-52 4 23 0 28 20" fill="#fff" stroke="#263746" stroke-width="5" stroke-linejoin="round"/>
+    <ellipse cx="390" cy="279" rx="62" ry="48" fill="#fff" class="ink"/>
+    <path d="M363 284q28-31 56 1-28 20-56-1" fill="#d9edf0" stroke="#263746" stroke-width="3"/>
+    <path d="M374 315l-14 28M408 315l12 28" stroke="#e75b3b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M354 343l-16 5m80-5 16 5" stroke="#263746" stroke-width="5" stroke-linecap="round"/>
+    <!-- long neck and head -->
+    <path d="M414 275q22-64 4-96" fill="none" stroke="#263746" stroke-width="22" stroke-linecap="round"/>
+    <path d="M414 275q22-64 4-96" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+    <ellipse cx="415" cy="164" rx="42" ry="34" fill="#fff" class="ink"/>
+    <circle cx="429" cy="158" r="5.5" fill="#263746"/>
+    <path d="M446 170q87 2 118 25-30 24-105 17l-21-15z" fill="#f4a637" stroke="#263746" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M463 190q51 10 97 5-33 23-87 15z" fill="#e97950" stroke="#263746" stroke-width="3"/>
+    <path d="M466 178q22-13 46-5" fill="none" stroke="#263746" stroke-width="3"/>
+    <path d="M480 181q10-7 18 1-7 8-18-1M510 188q10-7 18 1-7 8-18-1" fill="#fff" stroke="#263746" stroke-width="2"/>
+    <path d="M484 181l4 1m26 6 4 1" stroke="#263746" stroke-width="2"/>
+    <!-- jaunty cap -->
+    <path d="M383 140q28-30 58-3l-5 14q-25-17-49 2z" fill="#e75b3b" stroke="#263746" stroke-width="4"/>
+    <path d="M418 134l7-11 7 16" fill="#ffd76a" stroke="#263746" stroke-width="3"/>
+    <!-- handlebars held by wings -->
+    <path d="M432 248q-15 37-23 59M430 255q-14 6-20 16" fill="none" stroke="#263746" stroke-width="8" stroke-linecap="round"/>
+    <path d="M431 255q-13 7-20 17" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- basket and fish -->
+  <path d="M492 286h79l-10 43h-59z" fill="#d69a55" stroke="#263746" stroke-width="4"/>
+  <path d="M501 297h65M498 310h68M506 286l8 43m19-43 1 43m18-43-5 43" stroke="#9e633a" stroke-width="3"/>
+  <path d="M514 282q-4-22 16-22 20 0 14 22" fill="#86c9ce" stroke="#263746" stroke-width="3"/>
+  <ellipse cx="528" cy="276" rx="15" ry="8" fill="#76bfc6" stroke="#263746" stroke-width="2"/>
+  <path d="M543 276l12-8v16z" fill="#e75b3b" stroke="#263746" stroke-width="2"/>
+  <circle cx="520" cy="274" r="2.5" fill="#263746"/>
+  <text x="528" y="252" text-anchor="middle" font-size="13" font-weight="800" fill="#263746">I SAID TAXI!</text>
+
+  <!-- motion marks and gag -->
+  <path d="M163 360h35M150 380h24M587 344h28M600 365h20" stroke="#e75b3b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M282 205q-20-28-42-4" fill="none" stroke="#263746" stroke-width="3" stroke-dasharray="5 5"/>
+  <text x="193" y="191" font-size="14" font-weight="800" fill="#263746" transform="rotate(-8 193 191)">BIKE LANE?</text>
+  <path d="M198 196l22 14" stroke="#e75b3b" stroke-width="3"/>
+
+  <rect x="0" y="548" width="800" height="52" fill="#263746"/>
+  <text x="400" y="570" text-anchor="middle" font-size="15" font-weight="700" fill="#fff4d8">He’s not late. He’s just taking the scenic route to lunch.</text>
+  <text x="400" y="591" text-anchor="middle" font-size="12" font-weight="600" fill="#ffd76a">2026-10-31 22:32:32 SGT (UTC+08:00)</text>
+</svg>
