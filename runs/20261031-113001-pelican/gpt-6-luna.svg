@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A very serious pelican rides a bicycle while a fish rides in its beak pouch.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; }
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.8s linear infinite; }
+    .rider { transform-box: view-box; transform-origin: 400px 345px; animation: bob .65s ease-in-out infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-4px); } }
+  </style>
+
+  <rect width="800" height="600" fill="#f8e8bd"/>
+  <path d="M0 430 Q160 405 310 430 T620 424 T800 430 V600 H0Z" fill="#b9d9c3"/>
+  <path d="M0 467 H800" stroke="#547c69" stroke-width="5" stroke-dasharray="28 20"/>
+  <text x="400" y="64" text-anchor="middle" font-size="38" font-weight="900" fill="#173d3b">THE PELICAN CYCLE</text>
+  <text x="400" y="94" text-anchor="middle" font-size="17" font-weight="700" fill="#a3482e">“Two wheels. One very confused fish.”</text>
+
+  <g class="rider">
+    <!-- Bicycle frame -->
+    <g fill="none" stroke="#d34d35" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M220 386 L314 386 L358 315 L270 315 Z"/>
+      <path d="M314 386 L385 386 L358 315"/>
+      <path d="M358 315 L342 295 M326 295 H359"/>
+      <path d="M220 386 L206 372 M192 372 H215"/>
+      <path d="M385 386 L399 367 M389 363 H407"/>
+    </g>
+    <g class="wheel" fill="none" stroke="#173d3b" stroke-width="6">
+      <circle cx="220" cy="386" r="48"/>
+      <path d="M220 338V434 M172 386H268 M186 352L254 420 M254 352L186 420"/>
+    </g>
+    <g class="wheel" fill="none" stroke="#173d3b" stroke-width="6">
+      <circle cx="385" cy="386" r="48"/>
+      <path d="M385 338V434 M337 386H433 M351 352L419 420 M419 352L351 420"/>
+    </g>
+    <circle cx="314" cy="386" r="8" fill="#f5bc45" stroke="#173d3b" stroke-width="3"/>
+    <path d="M314 386l25 16m-25-16l-22-17" stroke="#173d3b" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="339" cy="402" r="5" fill="#173d3b"/>
+    <circle cx="292" cy="369" r="5" fill="#173d3b"/>
+
+    <!-- Pelican body and neck -->
+    <ellipse cx="323" cy="251" rx="77" ry="56" fill="#fffdf4" stroke="#173d3b" stroke-width="5"/>
+    <path d="M351 269 Q350 320 328 340 Q318 350 312 359" fill="none" stroke="#fffdf4" stroke-width="22" stroke-linecap="round"/>
+    <path d="M351 269 Q350 320 328 340 Q318 350 312 359" fill="none" stroke="#173d3b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M291 219 Q250 192 232 226 Q244 255 293 250" fill="#dce9e5" stroke="#173d3b" stroke-width="4"/>
+    <!-- Head -->
+    <path d="M330 192 Q352 150 395 170 Q422 184 408 219 Q393 245 357 232Z" fill="#fffdf4" stroke="#173d3b" stroke-width="5"/>
+    <circle cx="389" cy="188" r="6" fill="#173d3b"/>
+    <path d="M410 198 Q457 189 493 207 Q464 225 414 216Z" fill="#f0a43a" stroke="#173d3b" stroke-width="4"/>
+    <!-- Pouch with fish -->
+    <path d="M414 214 Q451 226 483 211 Q476 251 437 248 Q421 242 414 226Z" fill="#e8794c" stroke="#173d3b" stroke-width="4"/>
+    <path d="M446 228 Q456 214 469 228 Q456 242 446 228Z" fill="#f7d35c" stroke="#173d3b" stroke-width="2"/>
+    <path d="M446 228l-8-7v14z" fill="#f7d35c" stroke="#173d3b" stroke-width="2"/>
+    <circle cx="462" cy="226" r="1.8" fill="#173d3b"/>
+    <!-- Wings, legs, helmet -->
+    <path d="M310 228 Q343 211 369 241 Q347 266 315 256Z" fill="#e7eee8" stroke="#173d3b" stroke-width="3"/>
+    <path d="M312 355 L294 326 M312 355 L334 328" fill="none" stroke="#e8a33b" stroke-width="7" stroke-linecap="round"/>
+    <path d="M288 326l-10-2m52 5l10-1" stroke="#173d3b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M337 170 Q362 137 401 160 L409 174Z" fill="#e34f3b" stroke="#173d3b" stroke-width="4"/>
+    <path d="M340 170h68" stroke="#173d3b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M410 191 Q420 185 424 193" fill="none" stroke="#173d3b" stroke-width="2"/>
+  </g>
+
+  <!-- Comic speech bubble -->
+  <path d="M520 143 Q520 118 545 118 H699 Q724 118 724 143 V185 Q724 210 699 210 H568 L543 230 L549 207 Q520 202 520 185Z" fill="#fffdf4" stroke="#173d3b" stroke-width="4"/>
+  <text x="622" y="151" text-anchor="middle" font-size="17" font-weight="800" fill="#173d3b">“I said cycle…”</text>
+  <text x="622" y="176" text-anchor="middle" font-size="15" fill="#173d3b">“…not fish delivery!”</text>
+  <path d="M500 240 Q505 233 510 240 M514 253 Q519 246 524 253" fill="none" stroke="#a3482e" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="400" y="510" text-anchor="middle" font-size="18" font-weight="700" fill="#173d3b">Local bird insists the basket is “just a little beak pouch.”</text>
+  <path d="M70 532H730" stroke="#547c69" stroke-width="2"/>
+  <text x="400" y="565" text-anchor="middle" font-size="16" font-weight="700" fill="#173d3b">2026-10-31 11:32:11 SGT (UTC+08:00)</text>
+</svg>
