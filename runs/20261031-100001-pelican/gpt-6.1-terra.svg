@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Peak Pelican Performance</title>
+  <desc id="desc">A smug pelican rides a bicycle with spinning wheels and bobbing pedals past a sign advertising a cycling race.</desc>
+  <defs>
+    <pattern id="spokes" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M100 0V200M0 100H200M29 29L171 171M171 29L29 171" fill="none" stroke="#eef5ed" stroke-width="3"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="82" fill="#314a50" stroke="#18343b" stroke-width="8"/>
+      <circle r="69" fill="#f6d88c" stroke="#e7a94d" stroke-width="3"/>
+      <g stroke="#f8f7e9" stroke-width="4">
+        <path d="M0-68V68M-68 0H68M-48-48L48 48M48-48L-48 48"/>
+      </g>
+      <circle r="10" fill="#e65d43" stroke="#18343b" stroke-width="4"/>
+    </g>
+    <style>
+      .wheel { animation: spin 1.8s linear infinite; }
+      .crank { animation: spin 1.8s linear infinite; }
+      .rider { animation: bob .9s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-5px); } }
+      @media (prefers-reduced-motion: reduce) {
+        .wheel, .crank, .rider { animation-duration: 6s; }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f9efcf"/>
+  <rect x="18" y="18" width="764" height="564" rx="20" fill="#c9e8df" stroke="#233f45" stroke-width="4"/>
+  <path d="M20 400 Q120 370 220 393 T420 390 T620 388 T780 394 V523 H20Z" fill="#a2c98e"/>
+  <path d="M20 462 Q200 448 400 458 T780 455 V523 H20Z" fill="#e4bd79"/>
+  <path d="M30 493 H770" fill="none" stroke="#c59355" stroke-width="3" stroke-dasharray="18 14"/>
+
+  <text x="400" y="68" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="34" fill="#203e45">PEAK PELICAN PERFORMANCE</text>
+  <text x="400" y="96" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#355b5c">The Tour de Fish is off to a questionable start.</text>
+
+  <g fill="#fffdf0" opacity=".8">
+    <path d="M80 150q12-22 30-8 18-25 38-4 24-3 27 12z"/>
+    <path d="M590 132q12-20 29-7 15-22 34-4 22-3 26 11z"/>
+  </g>
+  <g transform="translate(668 280)">
+    <path d="M0 0V145" stroke="#7b573c" stroke-width="10"/>
+    <rect x="-67" y="-38" width="134" height="75" rx="8" fill="#fff7dd" stroke="#233f45" stroke-width="4" transform="rotate(4)"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#233f45">RACE DAY</text>
+    <text x="0" y="13" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#d65b43">NO FISHING!</text>
+  </g>
+
+  <g transform="translate(242 420)">
+    <g class="wheel"><use href="#wheel"/></g>
+  </g>
+  <g transform="translate(547 420)">
+    <g class="wheel"><use href="#wheel"/></g>
+  </g>
+
+  <g fill="none" stroke="#d6503c" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M242 420L332 292 395 420Z"/>
+    <path d="M332 292L479 296 395 420"/>
+    <path d="M479 296L547 420"/>
+  </g>
+  <g fill="none" stroke="#233f45" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M319 286h43" stroke-width="10"/>
+    <path d="M479 296l-12-33 31-5 15 8" stroke-width="8"/>
+  </g>
+  <g transform="translate(395 420)">
+    <circle r="19" fill="#f8e8bc" stroke="#233f45" stroke-width="4"/>
+    <g class="crank">
+      <path d="M-25-21L25 21" fill="none" stroke="#233f45" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-37-21h23M14 21h23" fill="none" stroke="#233f45" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g class="rider">
+    <path d="M349 277 Q314 296 319 326 Q330 359 370 360 Q398 360 420 329 Q432 306 411 280Z" fill="#fff9e8" stroke="#233f45" stroke-width="4"/>
+    <path d="M343 314 Q372 301 400 316 Q393 342 363 342 Q346 341 343 314Z" fill="#e5e2cb" stroke="#233f45" stroke-width="3"/>
+    <path d="M355 352 Q364 372 382 386" fill="none" stroke="#d88a3e" stroke-width="8" stroke-linecap="round"/>
+    <path d="M382 386l25 7-4 9-24-5" fill="#e99c46" stroke="#233f45" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M393 343 Q405 361 416 374" fill="none" stroke="#d88a3e" stroke-width="8" stroke-linecap="round"/>
+    <path d="M416 374l22 3-2 9-22-3" fill="#e99c46" stroke="#233f45" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M412 309 Q434 301 462 269" fill="none" stroke="#e5e2cb" stroke-width="12" stroke-linecap="round"/>
+    <path d="M459 270q9-10 17-5" fill="none" stroke="#233f45" stroke-width="4" stroke-linecap="round"/>
+
+    <path d="M347 290 Q354 260 345 229 Q338 199 352 181 Q365 164 389 172 Q405 177 409 196 Q414 213 403 227 Q392 240 402 283Z" fill="#fff9e8" stroke="#233f45" stroke-width="4"/>
+    <path d="M397 201 Q435 207 492 230 Q454 241 405 224Z" fill="#eaa04b" stroke="#233f45" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M405 224 Q430 254 458 251 Q478 249 492 230 Q449 238 405 224Z" fill="#f4bf68" stroke="#233f45" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="386" cy="195" r="13" fill="#fff" stroke="#233f45" stroke-width="3"/>
+    <circle cx="390" cy="196" r="5" fill="#233f45"/>
+    <path d="M375 177q11-9 23-2" fill="none" stroke="#233f45" stroke-width="4" stroke-linecap="round"/>
+    <path d="M348 177 Q355 153 379 150 Q399 150 410 170 L405 179 Q376 169 348 177Z" fill="#e65d43" stroke="#233f45" stroke-width="4"/>
+    <path d="M366 154l3 17M381 152l2 19M395 157l1 16" stroke="#fbd68c" stroke-width="4"/>
+    <path d="M351 179q29-8 59 1" fill="none" stroke="#233f45" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(144 306) rotate(-12)">
+    <path d="M0 0q22-18 44 0-22 18-44 0Z" fill="#6f9fa0" stroke="#233f45" stroke-width="3"/>
+    <path d="M0 0l-12-10v20Z" fill="#6f9fa0" stroke="#233f45" stroke-width="3"/>
+    <circle cx="33" cy="-3" r="2.5" fill="#233f45"/>
+    <path d="M49-13q9-12 3-23" fill="none" stroke="#7aa3a0" stroke-width="2" stroke-dasharray="3 4"/>
+  </g>
+
+  <rect x="20" y="524" width="760" height="56" rx="0" fill="#fff8e4"/>
+  <path d="M20 524H780" stroke="#233f45" stroke-width="3"/>
+  <text x="400" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#233f45">“I’m only in it for the free lunch.”</text>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#355b5c">2026-10-31 10:02:30 SGT (UTC+08:00)</text>
+</svg>
