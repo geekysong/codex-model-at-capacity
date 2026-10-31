@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Pedal Power</title>
+  <desc id="desc">A determined pelican rides a bicycle with spinning wheels and bobbing feathers. Its enormous bill carries a fish who demands a faster ride. Caption: All beak. No brakes.</desc>
+  <defs>
+    <pattern id="spokes" width="1" height="1"/>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .outline { stroke: #172b36; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .frame { fill: none; stroke: #eb6048; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+      .motion { fill: none; stroke: #739c9b; stroke-width: 4; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e7"/>
+  <rect x="18" y="18" width="764" height="564" rx="24" fill="none" stroke="#172b36" stroke-width="3"/>
+  <text x="400" y="69" text-anchor="middle" font-size="39" font-weight="900" fill="#172b36" letter-spacing="1">PELICAN PEDAL POWER</text>
+  <text x="400" y="99" text-anchor="middle" font-size="17" fill="#527879">THE COMMUTE HAS DEVELOPED A LARGE BILL.</text>
+
+  <circle cx="143" cy="175" r="38" fill="#ffd878"/>
+  <path d="M65 463 Q250 446 408 461 T735 461" fill="none" stroke="#aac5af" stroke-width="3"/>
+  <ellipse cx="407" cy="476" rx="245" ry="13" fill="#d7dfc9"/>
+  <path class="motion" d="M110 312h73 M131 331h40 M90 351h82"/>
+  <path class="motion" d="M639 393h46 M660 411h52"/>
+
+  <!-- Bicycle wheels: stationary tires, rotating spokes. -->
+  <g fill="#fffdf5" stroke="#172b36" stroke-width="8">
+    <circle cx="260" cy="415" r="66"/>
+    <circle cx="565" cy="415" r="66"/>
+  </g>
+  <g stroke="#547880" stroke-width="3" fill="none">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 260 415" to="360 260 415" dur="1.4s" repeatCount="indefinite"/>
+      <path d="M194 415h132 M260 349v132 M213 368l94 94 M213 462l94-94"/>
+      <circle cx="260" cy="415" r="54" stroke="#c3d2c7" stroke-width="2"/>
+      <path d="M260 354v12" stroke="#ed6048" stroke-width="6"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 565 415" to="360 565 415" dur="1.4s" repeatCount="indefinite"/>
+      <path d="M499 415h132 M565 349v132 M518 368l94 94 M518 462l94-94"/>
+      <circle cx="565" cy="415" r="54" stroke="#c3d2c7" stroke-width="2"/>
+      <path d="M565 354v12" stroke="#ed6048" stroke-width="6"/>
+    </g>
+  </g>
+
+  <!-- Frame, saddle and handlebars. -->
+  <path class="frame" d="M260 415l103-99 43 99H260l64-70h194l-112 70 M518 345l47 70 M518 345l-15-52"/>
+  <path d="M344 316h42" class="outline" fill="none" stroke-width="11"/>
+  <path d="M503 293h34q19 0 13 20" fill="none" stroke="#172b36" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="260" cy="415" r="7" fill="#172b36"/>
+  <circle cx="565" cy="415" r="7" fill="#172b36"/>
+  <path d="M274 401h121q14 0 14 14t-14 14H274q-14 0-14-14t14-14Z" fill="none" stroke="#627e7c" stroke-width="3"/>
+
+  <!-- Rear leg and animated crank. -->
+  <path d="M382 296l-29 55 53 64" fill="none" stroke="#d99b38" stroke-width="11" stroke-linecap="round"/>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 406 415" to="360 406 415" dur="1.4s" repeatCount="indefinite"/>
+    <path d="M383 403l46 24" stroke="#172b36" stroke-width="6" stroke-linecap="round"/>
+    <path d="M372 403h21 M419 427h21" stroke="#172b36" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <circle cx="406" cy="415" r="10" fill="#ffd26b" stroke="#172b36" stroke-width="4"/>
+
+  <!-- Pelican: a tiny bob makes the determined rider feel alive. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".7s" repeatCount="indefinite"/>
+    <path d="M331 281l-41-26 15 40-28 2 48 25" fill="#f4f3df" class="outline"/>
+    <path d="M315 278q27-44 81-29l40 29q7 37-38 46-62 15-83-46Z" fill="#fffdf4" class="outline"/>
+    <path d="M393 277q-5-49 28-80 24-24 50-5 17 14 6 34-10 17-27 15-22 21-16 50" fill="#fffdf4" class="outline"/>
+    <path d="M329 281q28-18 65 10l-34 11 21 2q-28 20-52-23Z" fill="#d9e4df" class="outline"/>
+    <path d="M421 273q27 30 83 23" fill="none" stroke="#172b36" stroke-width="17" stroke-linecap="round"/>
+    <path d="M421 271q27 30 83 23" fill="none" stroke="#f9f7e9" stroke-width="11" stroke-linecap="round"/>
+    <path d="M498 291l8-5 M500 297l9-1" fill="none" stroke="#172b36" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Oversized bill and stretched throat pouch. -->
+    <path d="M469 220l181 22q-32 14-73 33-65 23-101-29Z" fill="#ffc857" class="outline"/>
+    <path d="M478 239q60 54 151 7" fill="#f2aa50" stroke="#172b36" stroke-width="4"/>
+    <path d="M470 220l180 22-173 3" fill="#ffd974" class="outline"/>
+    <circle cx="461" cy="210" r="11" fill="white" stroke="#172b36" stroke-width="3"/>
+    <circle cx="465" cy="211" r="4" fill="#172b36"/>
+    <path d="M447 192l22 4" stroke="#172b36" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Comically undersized cycling helmet. -->
+    <path d="M413 194q-3-36 32-35 29 2 31 29Z" fill="#eb6048" class="outline"/>
+    <path d="M430 169l-3 14 M446 168l1 13 M460 172l4 10" stroke="#172b36" stroke-width="4" stroke-linecap="round"/>
+    <path d="M422 194l19 42 25-9" fill="none" stroke="#537a7b" stroke-width="3"/>
+
+    <!-- Fish passenger peeking out of the pouch. -->
+    <path d="M546 246q-9-30 9-37 18-5 25 25l13-6-4 19Z" fill="#6cb6b0" stroke="#172b36" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="560" cy="219" r="4" fill="white"/>
+    <circle cx="561" cy="219" r="2" fill="#172b36"/>
+    <path d="M553 230l10 2" stroke="#172b36" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Foreground leg pedals with a small rhythmic knee motion. -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="-3 390 315;3 390 315;-3 390 315" dur=".7s" repeatCount="indefinite"/>
+    <path d="M390 315l44 38-27 41" fill="none" stroke="#172b36" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M390 315l44 38-27 41" fill="none" stroke="#ffc857" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M407 388l-12 12 33 1-10-10" fill="#ffc857" stroke="#172b36" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Stationary speech and labels remain readable throughout the loop. -->
+  <path d="M555 128h157q13 0 13 13v38q0 13-13 13H594l-17 16 3-16h-25q-13 0-13-13v-38q0-13 13-13Z" fill="white" stroke="#172b36" stroke-width="3"/>
+  <text x="633" y="154" text-anchor="middle" font-size="17" font-weight="800" fill="#172b36">FASTER!</text>
+  <text x="633" y="177" text-anchor="middle" font-size="16" fill="#172b36">I’m late for school!</text>
+
+  <text x="400" y="524" text-anchor="middle" font-size="28" font-weight="900" fill="#172b36">All beak. No brakes.</text>
+  <path d="M66 544h668" stroke="#c3cbb8" stroke-width="2"/>
+  <text x="400" y="568" text-anchor="middle" font-size="16" fill="#344f58">2026-10-31 14:31:09 SGT (UTC+08:00)</text>
+</svg>
