@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Two-Wheeled Tax Audit</title>
+  <desc id="desc">A smug pelican pedals a tiny bicycle while a fish protests from its beak. The wheels spin and the bird bobs.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#c8eff0"/>
+  <rect y="365" width="800" height="235" fill="#f6d99b"/>
+  <circle cx="692" cy="98" r="47" fill="#ffd45e"/>
+  <path d="M0 328 Q130 300 260 328 T520 328 T800 320" fill="none" stroke="#78c6b7" stroke-width="8"/>
+  <path d="M0 367 H800" stroke="#66584a" stroke-width="5"/>
+  <path d="M25 390 H775" stroke="#fff4d1" stroke-width="4" stroke-dasharray="36 28"/>
+
+  <text id="title" x="400" y="52" text-anchor="middle" font-size="31" font-weight="900" fill="#173c4a">THE PELICAN’S TWO-WHEELED TAX AUDIT</text>
+  <text x="400" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#315764">“I’m cycling off my fish expenses!”</text>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke="#173c4a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="245" cy="342" r="61" stroke="#253f4b" stroke-width="5"/>
+      <path d="M245 281V403 M184 342H306 M202 299L288 385 M288 299L202 385" stroke="#72909a" stroke-width="2.5"/>
+      <circle cx="245" cy="342" r="7" fill="#f3a23c" stroke="#173c4a" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="545" cy="342" r="61" stroke="#253f4b" stroke-width="5"/>
+      <path d="M545 281V403 M484 342H606 M502 299L588 385 M588 299L502 385" stroke="#72909a" stroke-width="2.5"/>
+      <circle cx="545" cy="342" r="7" fill="#f3a23c" stroke="#173c4a" stroke-width="3"/>
+    </g>
+    <path d="M245 342L335 342L405 264L455 342L335 342L315 270L378 270"/>
+    <path d="M405 264L428 240 M410 238H452"/>
+    <path d="M315 270L298 252 M284 251H313"/>
+    <circle cx="335" cy="342" r="17" stroke="#f07b39" stroke-width="5"/>
+    <path d="M335 342L365 359 M335 342L307 324" stroke="#f07b39" stroke-width="5"/>
+  </g>
+  <path d="M378 270 Q392 256 405 264" fill="none" stroke="#f7b744" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Pelican and pedaling motion -->
+  <g class="rider">
+    <!-- legs -->
+    <path d="M391 245 Q374 285 359 321L335 342 M424 245 Q439 286 431 318L455 342" fill="none" stroke="#e89343" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M322 345 Q332 337 345 340 M445 346 Q457 338 469 343" fill="none" stroke="#253f4b" stroke-width="8" stroke-linecap="round"/>
+    <!-- body -->
+    <ellipse cx="404" cy="206" rx="57" ry="68" fill="#fffdf1" stroke="#173c4a" stroke-width="5"/>
+    <path d="M371 216 Q403 233 438 213 Q426 257 394 257 Q375 244 371 216Z" fill="#75b9cf" stroke="#173c4a" stroke-width="4"/>
+    <path d="M426 212 Q456 229 458 250 Q432 252 414 235" fill="#ef7047" stroke="#173c4a" stroke-width="4"/>
+    <!-- neck and head -->
+    <path d="M426 179 Q444 155 461 141" fill="none" stroke="#fffdf1" stroke-width="23" stroke-linecap="round"/>
+    <circle cx="468" cy="129" r="34" fill="#fffdf1" stroke="#173c4a" stroke-width="5"/>
+    <path d="M493 132 Q550 123 572 143 Q544 157 493 151Z" fill="#f5a332" stroke="#173c4a" stroke-width="4"/>
+    <path d="M510 149 Q547 160 572 143 Q556 177 527 171 Q513 164 510 149Z" fill="#f46d55" stroke="#173c4a" stroke-width="4"/>
+    <circle cx="478" cy="121" r="5.5" fill="#173c4a"/>
+    <path d="M464 107 Q477 96 488 107" fill="none" stroke="#173c4a" stroke-width="3"/>
+    <path d="M471 87 Q467 73 478 68 Q491 79 485 96" fill="#f4b33f" stroke="#173c4a" stroke-width="3"/>
+    <!-- wings -->
+    <path d="M371 190 Q337 173 344 208 Q355 233 384 228" fill="#e8f2e7" stroke="#173c4a" stroke-width="4"/>
+    <path d="M354 196L376 214 M357 207L374 220" stroke="#8ab6bd" stroke-width="3"/>
+    <!-- arm on handlebar -->
+    <path d="M374 193 Q347 211 321 243" fill="none" stroke="#fffdf1" stroke-width="12" stroke-linecap="round"/>
+    <path d="M321 243L313 254" fill="none" stroke="#f5a332" stroke-width="7" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M437 114 Q445 83 476 87 Q496 91 502 111Z" fill="#ef7047" stroke="#173c4a" stroke-width="4"/>
+    <path d="M438 113L501 112" stroke="#173c4a" stroke-width="4"/>
+  </g>
+
+  <!-- Complaint bubble -->
+  <path d="M585 191 Q585 157 625 157 H734 Q769 157 769 190 V222 Q769 250 735 250 H684 L660 270 L664 250 H625 Q585 250 585 222Z" fill="#fffdf1" stroke="#173c4a" stroke-width="3"/>
+  <text x="677" y="188" text-anchor="middle" font-size="15" font-weight="800" fill="#173c4a">“I was promised</text>
+  <text x="677" y="209" text-anchor="middle" font-size="15" font-weight="800" fill="#173c4a">a net-free ride!”</text>
+  <path d="M613 216 Q625 204 637 216 Q625 229 613 216Z" fill="#63a9c4" stroke="#173c4a" stroke-width="2"/>
+  <circle cx="625" cy="216" r="2.5" fill="#173c4a"/>
+
+  <path d="M180 267 Q161 253 171 238 M200 258 Q193 239 204 228" fill="none" stroke="#fffdf1" stroke-width="5" stroke-linecap="round"/>
+  <text x="97" y="236" font-size="21" font-weight="900" fill="#ef7047">WHEEE?</text>
+
+  <!-- Footer with dedicated clear space -->
+  <rect y="515" width="800" height="85" fill="#173c4a"/>
+  <text x="400" y="548" text-anchor="middle" font-size="17" font-weight="800" fill="#fffdf1">One beak. Two wheels. Zero receipts.</text>
+  <text x="400" y="581" text-anchor="middle" font-size="15" font-weight="700" fill="#ffd45e">2026-10-31 12:31:57 SGT (UTC+08:00)</text>
+</svg>
