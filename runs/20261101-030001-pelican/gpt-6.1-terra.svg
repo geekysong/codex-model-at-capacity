@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Daily Commute</title>
+  <desc id="desc">A cheerful pelican pedals a bicycle while its oversized beak carries a briefcase. The wheels turn and the rider bobs in a loop.</desc>
+  <defs>
+    <pattern id="spokes" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="60" cy="60" r="54" fill="none" stroke="#243743" stroke-width="8"/>
+      <circle cx="60" cy="60" r="46" fill="none" stroke="#f8f1d8" stroke-width="3"/>
+      <g stroke="#60737a" stroke-width="2">
+        <path d="M60 7v106M7 60h106M22.5 22.5l75 75M97.5 22.5l-75 75"/>
+        <path d="M39.7 11l40.6 98M11 39.7l98 40.6M80.3 11L39.7 109M109 39.7L11 80.3"/>
+      </g>
+      <circle cx="60" cy="60" r="7" fill="#e6a638" stroke="#243743" stroke-width="3"/>
+    </pattern>
+    <style>
+      .ink{stroke:#243743;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+      .rider{animation:bob 1s ease-in-out infinite}
+      .pedal{transform-origin:385px 402px;animation:spin 2s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      @media (prefers-reduced-motion:reduce){.wheel,.rider,.pedal{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff5dc"/>
+  <rect x="18" y="18" width="764" height="564" rx="20" fill="#f8dfac" stroke="#243743" stroke-width="4"/>
+  <path d="M20 118h760v359H20z" fill="#bde5df"/>
+  <circle cx="690" cy="167" r="34" fill="#f6bd50"/>
+  <g fill="#fff9e8" opacity=".9">
+    <path d="M76 165q8-21 29-13 15-21 35-3 22-2 28 16z"/>
+    <path d="M506 147q8-17 25-11 14-19 32-3 18-1 24 14z"/>
+  </g>
+  <text x="400" y="75" text-anchor="middle" fill="#243743" font-family="Georgia,serif" font-size="43" font-weight="bold" letter-spacing="2">THE DAILY COMMUTE</text>
+  <path d="M66 94h668" stroke="#243743" stroke-width="3"/>
+
+  <path d="M20 438q125-17 250 0t250 0 260 0v39H20z" fill="#86b69c"/>
+  <path d="M20 464h760" stroke="#243743" stroke-width="4"/>
+  <g fill="#f8f1d8" opacity=".8">
+    <path d="M80 453h75v5H80zM630 453h75v5h-75z"/>
+  </g>
+
+  <g class="wheel">
+    <circle cx="235" cy="407" r="60" fill="url(#spokes)"/>
+  </g>
+  <g class="wheel">
+    <circle cx="555" cy="407" r="60" fill="url(#spokes)"/>
+  </g>
+
+  <g fill="none" class="ink">
+    <path d="M235 407l105-120 45 115H235l105-115 130 8-85 107"/>
+    <path d="M470 295l85 112M455 272h27l12 23"/>
+    <path d="M318 284h45"/>
+  </g>
+  <path d="M315 277q18-9 48 0l-4 9h-44z" fill="#d15f42" class="ink"/>
+  <path d="M469 271q9-18 29-12l12 8" fill="none" class="ink"/>
+  <circle cx="385" cy="402" r="12" fill="#e6a638" class="ink"/>
+  <g class="pedal" fill="none" class="ink">
+    <path d="M385 402l18 22M385 402l-18-22"/>
+    <path d="M394 426h20M356 378h20" stroke-width="7"/>
+  </g>
+
+  <g class="rider">
+    <path d="M318 293q-24 21-11 44l47 48" fill="none" stroke="#e6a638" stroke-width="12" stroke-linecap="round"/>
+    <path d="M354 385l20 2" fill="none" stroke="#d17138" stroke-width="9" stroke-linecap="round"/>
+    <path d="M352 301q-2 35 24 49l28 17" fill="none" stroke="#e6a638" stroke-width="12" stroke-linecap="round"/>
+    <path d="M404 367l19-2" fill="none" stroke="#d17138" stroke-width="9" stroke-linecap="round"/>
+
+    <path d="M289 223q-19 3-32-10 4 25 26 35-22 0-34-8 11 31 42 35z" fill="#eae8d9" class="ink"/>
+    <path d="M292 210q28-24 75-8 35 12 31 52-4 38-47 49-52 13-76-22-16-23 17-71z" fill="#fffaf0" class="ink"/>
+    <path d="M305 242q30-28 57-12-4 30-31 41-17 7-30-4" fill="#e5e5d7" class="ink"/>
+    <path d="M382 244q38 7 69 20l18 7" fill="none" class="ink"/>
+    <path d="M462 266l11 6" fill="none" stroke="#e6a638" stroke-width="10" stroke-linecap="round"/>
+
+    <path d="M355 218q14-22 7-48-7-27 11-46 15-17 43-11 26 5 31 29 4 19-11 31-12 9-25 5 9 35-12 57" fill="#fffaf0" class="ink"/>
+    <path d="M404 151q42-5 98 9 31 7 47 17-64 15-132 2-21-4-13-28z" fill="#efad42" class="ink"/>
+    <path d="M409 178q26 12 88 7-20 39-57 30-27-6-31-37z" fill="#f2c965" class="ink"/>
+    <path d="M426 161q60 3 118 16" fill="none" stroke="#bd7338" stroke-width="3"/>
+    <circle cx="421" cy="142" r="8" fill="#fff"/>
+    <circle cx="423" cy="143" r="4" fill="#243743"/>
+    <path d="M410 130q11-8 22 0" fill="none" stroke="#243743" stroke-width="4" stroke-linecap="round"/>
+    <path d="M373 126q21-22 50-12l4 8-58 10z" fill="#d15f42" class="ink"/>
+    <path d="M376 113q11-14 29-10l7 12z" fill="#d15f42" class="ink"/>
+
+    <path d="M491 182v35" fill="none" stroke="#243743" stroke-width="4"/>
+    <rect x="466" y="215" width="54" height="36" rx="4" fill="#b86d43" class="ink"/>
+    <path d="M480 215v-7h25v7M466 229h54" fill="none" stroke="#243743" stroke-width="4"/>
+    <rect x="490" y="226" width="7" height="7" rx="1" fill="#f6d579"/>
+  </g>
+
+  <g fill="#243743" font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="400" y="510" font-size="23" font-weight="bold">He brings his own lunch break.</text>
+    <text x="400" y="558" font-size="17">2026-11-01 03:02:13 SGT (UTC+08:00)</text>
+  </g>
+  <path d="M66 527h668" stroke="#b98f62" stroke-width="2"/>
+</svg>

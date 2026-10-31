@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Two-Wheeled Takeover</title>
+  <desc id="desc">A smug pelican pedals a bicycle while a fish protests from its beak.</desc>
+  <defs>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif}
+      .wheel{fill:#fff;stroke:#26344a;stroke-width:8}
+      .spoke{stroke:#8290a2;stroke-width:2}
+      .frame{fill:none;stroke:#e45845;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+      .detail{fill:none;stroke:#26344a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 2.8s linear infinite}
+      .ride{transform-box:fill-box;transform-origin:center;animation:bob .7s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px) rotate(-1deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff3f4"/>
+  <path d="M0 381 Q150 360 300 381 T600 378 T800 380 V510 H0Z" fill="#b8dfc6"/>
+  <path d="M0 478 Q200 467 400 480 T800 475" fill="none" stroke="#8ec7a3" stroke-width="5"/>
+  <text x="400" y="58" text-anchor="middle" font-size="31" font-weight="900" fill="#26344a">THE PELICAN’S TWO-WHEELED TAKEOVER</text>
+  <text x="400" y="89" text-anchor="middle" font-size="16" font-weight="700" fill="#426073">“I’m cutting out the middle-fish.”</text>
+
+  <!-- Road and bicycle -->
+  <path d="M0 452H800" stroke="#596879" stroke-width="5"/>
+  <g class="spin" aria-label="spinning bicycle wheels">
+    <circle class="wheel" cx="245" cy="390" r="74"/>
+    <circle class="wheel" cx="555" cy="390" r="74"/>
+    <g class="spoke">
+      <path d="M245 316V464M171 390H319M193 338L297 442M193 442L297 338"/>
+      <path d="M555 316V464M481 390H629M503 338L607 442M503 442L607 338"/>
+    </g>
+    <circle cx="245" cy="390" r="7" fill="#26344a"/>
+    <circle cx="555" cy="390" r="7" fill="#26344a"/>
+  </g>
+  <path class="frame" d="M245 390L342 315L405 390L245 390L315 390L342 315L474 315L405 390L555 390"/>
+  <path class="detail" d="M342 315L322 286M306 286H339M474 315L488 288M469 286H507"/>
+  <circle cx="405" cy="390" r="18" fill="#f4c84d" stroke="#26344a" stroke-width="5"/>
+  <path class="detail" d="M405 390L430 414M405 390L380 366"/>
+  <circle cx="430" cy="414" r="5" fill="#26344a"/>
+  <circle cx="380" cy="366" r="5" fill="#26344a"/>
+
+  <!-- Expressive pelican rider -->
+  <g class="ride">
+    <path d="M344 280Q321 237 349 194Q374 158 416 175Q454 190 451 232L444 286Z" fill="#fffdf4" stroke="#26344a" stroke-width="5"/>
+    <path d="M361 250Q385 231 431 253L447 282Q406 303 365 278Z" fill="#e8ad46" stroke="#26344a" stroke-width="4"/>
+    <path d="M420 192Q451 166 477 184Q490 197 474 213L444 232Z" fill="#fffdf4" stroke="#26344a" stroke-width="5"/>
+    <circle cx="463" cy="190" r="5" fill="#26344a"/>
+    <path d="M474 204L535 222Q545 225 537 234L479 230Q465 225 474 204Z" fill="#f1a52e" stroke="#26344a" stroke-width="4"/>
+    <path d="M486 228Q511 235 532 231Q525 249 505 250Q490 246 486 228Z" fill="#ef6b5b" stroke="#26344a" stroke-width="3"/>
+    <path d="M516 224Q532 215 541 223L531 231Z" fill="#65b7d0" stroke="#26344a" stroke-width="2"/>
+    <path d="M384 288L369 316L398 325M424 289L450 310L477 315" fill="none" stroke="#f1a52e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M369 316L354 312M477 315L489 307" class="detail"/>
+    <path d="M377 169Q395 151 416 169" fill="none" stroke="#e45845" stroke-width="7" stroke-linecap="round"/>
+    <path d="M349 188Q329 178 323 164M346 201Q320 198 312 187" fill="none" stroke="#26344a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M398 193Q414 186 427 196" fill="none" stroke="#26344a" stroke-width="3" stroke-linecap="round"/>
+    <text x="385" y="222" font-size="12" font-weight="900" fill="#26344a">CEO</text>
+  </g>
+
+  <path d="M553 272Q590 244 624 267" fill="none" stroke="#426073" stroke-width="3" stroke-dasharray="6 7"/>
+  <text x="626" y="261" font-size="15" font-weight="800" fill="#426073">PROMOTION?</text>
+  <text x="400" y="524" text-anchor="middle" font-size="18" font-weight="700" fill="#26344a">He’s pedaling hard. The fish is still doing all the talking.</text>
+  <text x="400" y="572" text-anchor="middle" font-size="16" font-weight="700" fill="#26344a">2026-11-01 03:01:58 SGT (UTC+08:00)</text>
+</svg>

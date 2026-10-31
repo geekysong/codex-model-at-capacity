@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Pelican Express</title>
+  <desc id="description">A determined pelican pedals a bicycle with a huge fish-filled bill, while a roadside sign demands that riders travel light. Wheels spin and the pelican bobs in a looping animation.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#bce9ee"/>
+      <stop offset="1" stop-color="#f6f1d8"/>
+    </linearGradient>
+    <linearGradient id="bill" x2="0" y2="1">
+      <stop stop-color="#ffce53"/>
+      <stop offset="1" stop-color="#f29b37"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#203541;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#203541}
+      .spoke{stroke:#82979c;stroke-width:2.5}
+      .bob{animation:bob .7s ease-in-out infinite}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" rx="18" fill="#fff8e8"/>
+  <path d="M18 112H782V455H18Z" fill="url(#sky)"/>
+  <circle cx="684" cy="164" r="36" fill="#ffe095"/>
+  <g fill="#fff" opacity=".8">
+    <path d="M64 170c-7-22 22-36 37-20 9-32 52-26 55 2 27-5 38 18 26 24H64Z"/>
+    <path d="M468 154c-3-15 17-25 28-13 10-21 39-13 39 7 20-2 27 11 18 16h-85Z"/>
+  </g>
+
+  <text x="400" y="59" text-anchor="middle" class="label" font-size="43" font-weight="900" letter-spacing="3">PELICAN EXPRESS</text>
+  <text x="400" y="89" text-anchor="middle" class="label" font-size="17" font-weight="bold" letter-spacing="2">THE AIRLINE HAS TAKEN A WRONG TURN.</text>
+
+  <path d="M18 362Q146 327 282 357T568 351T782 357V429H18Z" fill="#9cbeb0"/>
+  <path d="M18 386Q230 367 408 388T782 382V463H18Z" fill="#719b87"/>
+  <path d="M18 428H782V502H18Z" fill="#d3c9b5"/>
+  <path d="M18 470H782" stroke="#fff8e8" stroke-width="5" stroke-dasharray="39 24"/>
+  <ellipse cx="385" cy="454" rx="239" ry="12" fill="#203541" opacity=".13"/>
+
+  <g class="ink">
+    <path d="M684 289V429" fill="none" stroke="#686d63" stroke-width="8"/>
+    <rect x="619" y="221" width="130" height="77" rx="9" fill="#fff8e8"/>
+  </g>
+  <text x="684" y="244" text-anchor="middle" class="label" font-size="13" font-weight="bold">BIKE LANE</text>
+  <text x="684" y="269" text-anchor="middle" class="label" font-size="20" font-weight="900">TRAVEL</text>
+  <text x="684" y="289" text-anchor="middle" class="label" font-size="20" font-weight="900">LIGHT.</text>
+
+  <!-- Each wheel rotates in its own local coordinate system. -->
+  <g transform="translate(235 391)">
+    <circle r="65" fill="#f7f2df" class="ink" stroke-width="9"/>
+    <circle r="55" fill="#dfebdf" stroke="#a6b6ae" stroke-width="2"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+      <g class="spoke">
+        <path d="M-54 0H54M0-54V54M-38-38L38 38M-38 38L38-38"/>
+      </g>
+    </g>
+    <circle r="7" fill="#203541"/>
+  </g>
+  <g transform="translate(531 391)">
+    <circle r="65" fill="#f7f2df" class="ink" stroke-width="9"/>
+    <circle r="55" fill="#dfebdf" stroke="#a6b6ae" stroke-width="2"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+      <g class="spoke">
+        <path d="M-54 0H54M0-54V54M-38-38L38 38M-38 38L38-38"/>
+      </g>
+    </g>
+    <circle r="7" fill="#203541"/>
+  </g>
+
+  <g class="ink" fill="none">
+    <path d="M235 391L313 294L373 391ZM313 294H481L373 391M481 294L531 391" stroke="#d95349" stroke-width="9"/>
+    <path d="M313 294L305 270M481 294L471 264L491 253" stroke-width="7"/>
+    <path d="M284 269H327" stroke-width="12"/>
+    <path d="M490 253L508 257" stroke-width="9"/>
+    <path d="M235 320H280" stroke-width="6"/>
+    <path d="M224 324L235 357" stroke-width="3"/>
+  </g>
+
+  <g class="bob">
+    <!-- Tail, body, and indignant folded wing. -->
+    <path d="M286 282L251 251L293 259L270 234L318 248" fill="#fffdf3" class="ink"/>
+    <path d="M296 235C321 208 364 202 395 227C419 249 414 280 380 293C343 310 300 298 289 274C282 257 285 245 296 235Z" fill="#fffdf3" class="ink"/>
+    <path d="M300 248Q340 235 371 260Q351 288 314 274L329 260" fill="#e4e5da" class="ink"/>
+    <path d="M378 258C362 226 368 200 381 179C395 157 402 149 400 132C428 128 443 148 433 170C421 199 421 216 435 236L418 267Z" fill="#fffdf3" class="ink"/>
+
+    <!-- Oversized bill: the airline's absurd carry-on. -->
+    <path d="M427 165L599 181Q581 239 522 249Q455 261 423 193Z" fill="url(#bill)" class="ink"/>
+    <path d="M430 166L609 180L592 191L429 186Z" fill="#ffdf67" class="ink"/>
+    <path d="M448 210Q494 236 552 215" fill="none" stroke="#c77d31" stroke-width="3"/>
+
+    <!-- A fish can be seen through the bulging pouch. -->
+    <g transform="translate(501 216) rotate(-9)">
+      <path d="M-24 0Q-3-18 22 0Q-3 18-24 0L-37 10V-10Z" fill="#89b8ab" stroke="#5c817b" stroke-width="2"/>
+      <circle cx="11" cy="-2" r="2.5" fill="#203541"/>
+    </g>
+
+    <!-- Helmet, eye, and expressive brow. -->
+    <path d="M391 138Q391 109 415 109Q443 110 447 139Z" fill="#dc594d" class="ink"/>
+    <path d="M406 113L402 133M421 112L423 133" fill="none" stroke="#8e3933" stroke-width="4"/>
+    <path d="M394 139H450" class="ink" fill="none"/>
+    <circle cx="421" cy="153" r="10" fill="#fff" stroke="#203541" stroke-width="3"/>
+    <circle cx="425" cy="154" r="4" fill="#203541"/>
+    <path d="M411 140L432 145" fill="none" class="ink"/>
+    <path d="M445 147Q450 154 447 158Q441 156 445 147Z" fill="#60afcb"/>
+
+    <!-- One wing reaches the handlebars. -->
+    <path d="M390 238Q425 254 464 248L492 253" fill="none" stroke="#203541" stroke-width="17" stroke-linecap="round"/>
+    <path d="M390 235Q425 251 464 245L490 250" fill="none" stroke="#fffdf3" stroke-width="11" stroke-linecap="round"/>
+
+    <path d="M342 291L363 326L374 366" fill="none" stroke="#203541" stroke-width="10" stroke-linecap="round"/>
+    <path d="M342 291L363 326L374 366" fill="none" stroke="#e5a344" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(373 391)">
+    <circle r="20" fill="#f1c566" class="ink"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+      <path d="M-24 0H24" class="ink" fill="none" stroke-width="6"/>
+      <path d="M-34 0H-17M17 0H34" stroke="#203541" stroke-width="8" stroke-linecap="round"/>
+      <path d="M17-6L35-6L43-1L17 1Z" fill="#e5a344" stroke="#203541" stroke-width="2"/>
+    </g>
+    <circle r="5" fill="#203541"/>
+  </g>
+
+  <g fill="none" stroke="#fff8e8" stroke-width="4" stroke-linecap="round">
+    <path d="M126 367H162M111 384H150M130 402H157"/>
+  </g>
+
+  <path d="M75 191Q68 184 71 172M88 190Q85 177 91 170" fill="none" stroke="#203541" stroke-width="3" stroke-linecap="round" opacity=".4"/>
+
+  <rect x="18" y="503" width="764" height="79" rx="8" fill="#203541"/>
+  <text x="400" y="533" text-anchor="middle" fill="#fff8e8" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold">“I refuse to pay the extra baggage fee.”</text>
+  <text x="400" y="562" text-anchor="middle" fill="#cbe6dd" font-family="Arial,Helvetica,sans-serif" font-size="16">2026-11-01 03:00:57 SGT (UTC+08:00)</text>
+</svg>
