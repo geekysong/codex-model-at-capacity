@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">WHEEL DEAL</title>
+  <desc id="desc">A self-satisfied pelican pedals a bicycle, its enormous beak full of fish. The wheels turn and the pelican bobs as it rides.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: view-box; transform-origin: center; animation: spin 3s linear infinite; }
+      .rider { transform-box: view-box; transform-origin: 420px 350px; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-5px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#c9f0f2"/>
+  <circle cx="682" cy="115" r="48" fill="#ffd766"/>
+  <path d="M0 324 Q130 296 254 326 T508 319 T800 324 V600 H0Z" fill="#a7d88c"/>
+  <path d="M0 388 Q154 367 297 390 T572 386 T800 390" fill="none" stroke="#82c66f" stroke-width="5"/>
+  <path d="M0 448 Q165 427 340 450 T800 448" fill="none" stroke="#82c66f" stroke-width="4"/>
+
+  <text x="400" y="56" text-anchor="middle" font-size="37" font-weight="900" letter-spacing="2" fill="#17324d">WHEEL DEAL</text>
+  <text x="400" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="#31536a">A pelican pedals past the fish market—lunch is riding shotgun.</text>
+
+  <g fill="#fff" opacity=".72">
+    <path d="M101 166h46a18 18 0 0 0 0-36 27 27 0 0 0-51-3 20 20 0 0 0 5 39Z"/>
+    <path d="M525 206h43a16 16 0 0 0 0-32 25 25 0 0 0-47-3 18 18 0 0 0 4 35Z"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#e44f42" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M229 420 L332 420 L388 326 L283 326 Z"/>
+    <path d="M283 326 L229 420"/>
+    <path d="M332 420 L350 310"/>
+    <path d="M350 310 L386 310"/>
+    <path d="M388 326 L420 420"/>
+    <path d="M388 326 L474 420"/>
+    <path d="M420 420 L332 420"/>
+    <path d="M474 420 L515 324"/>
+    <path d="M496 324 L535 324"/>
+    <path d="M219 420 L239 420"/>
+    <path d="M410 420 L430 420"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#17324d" stroke-width="7">
+    <circle cx="229" cy="420" r="72"/>
+    <path d="M229 348V492 M157 420H301 M178 369L280 471 M280 369L178 471"/>
+    <circle cx="474" cy="420" r="72"/>
+    <path d="M474 348V492 M402 420H546 M423 369L525 471 M525 369L423 471"/>
+  </g>
+  <circle cx="332" cy="420" r="12" fill="#ffd766" stroke="#17324d" stroke-width="4"/>
+  <path d="M332 420 L305 442 M332 420 L354 396" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+  <path d="M292 442h26 M342 396h25" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Pelican, animated as one riding figure -->
+  <g class="rider">
+    <!-- tail -->
+    <path d="M369 280 Q326 253 310 278 Q338 297 368 300Z" fill="#263d59"/>
+    <!-- body -->
+    <ellipse cx="405" cy="280" rx="66" ry="47" fill="#fffdf5" stroke="#17324d" stroke-width="4"/>
+    <path d="M367 290 Q405 320 454 287 Q437 329 395 326 Q373 316 367 290Z" fill="#d9e7ed"/>
+    <path d="M450 270 Q475 251 490 267 Q479 291 453 297Z" fill="#263d59"/>
+    <!-- neck and head -->
+    <path d="M391 264 Q383 220 410 185 Q431 165 460 179 Q482 192 467 216 Q448 237 438 275Z" fill="#fffdf5" stroke="#17324d" stroke-width="4"/>
+    <path d="M410 192 Q425 172 452 183 Q468 191 458 205 Q438 219 421 221Z" fill="#fffdf5"/>
+    <path d="M414 199 Q423 180 448 187" fill="none" stroke="#d9e7ed" stroke-width="5"/>
+    <!-- enormous beak -->
+    <path d="M458 190 Q510 183 560 205 Q574 212 559 222 Q515 238 465 216Z" fill="#f2a52b" stroke="#17324d" stroke-width="4"/>
+    <path d="M463 211 Q507 221 558 215 Q545 252 508 249 Q477 245 463 211Z" fill="#ef7656" stroke="#17324d" stroke-width="4"/>
+    <path d="M479 220 Q503 232 530 227" fill="none" stroke="#c94d46" stroke-width="3"/>
+    <!-- fish in the pouch -->
+    <path d="M509 236 Q527 222 545 237 Q528 251 509 236Z" fill="#8bd2db" stroke="#17324d" stroke-width="2"/>
+    <path d="M509 236l-10-8v16Z" fill="#8bd2db" stroke="#17324d" stroke-width="2"/>
+    <circle cx="536" cy="236" r="2.5" fill="#17324d"/>
+    <!-- eye and brows -->
+    <circle cx="449" cy="188" r="5" fill="#17324d"/>
+    <path d="M438 177 Q449 168 461 176" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+    <!-- wing -->
+    <path d="M382 268 Q418 233 449 265 Q437 296 402 301 Q382 293 382 268Z" fill="#e8f0f0" stroke="#17324d" stroke-width="3"/>
+    <path d="M397 274 Q420 264 438 271 M399 284 Q420 277 433 281" fill="none" stroke="#b9cdd5" stroke-width="3"/>
+    <!-- legs to pedals -->
+    <path d="M395 311 Q377 345 354 396" fill="none" stroke="#f2a52b" stroke-width="9" stroke-linecap="round"/>
+    <path d="M420 313 Q421 351 332 420" fill="none" stroke="#f2a52b" stroke-width="9" stroke-linecap="round"/>
+    <path d="M348 394l12 5 M325 419l14 4" stroke="#e88a20" stroke-width="6" stroke-linecap="round"/>
+    <!-- tiny helmet -->
+    <path d="M409 180 Q416 151 443 153 Q464 157 469 181Z" fill="#48a9a4" stroke="#17324d" stroke-width="4"/>
+    <path d="M405 181h67" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- motion marks and comic aside -->
+  <path d="M117 352h40 M96 370h49 M552 354h37" stroke="#fffdf5" stroke-width="6" stroke-linecap="round"/>
+  <path d="M584 271 Q584 247 607 247 H697 Q719 247 719 269 V294 Q719 315 697 315 H650 L631 334 L634 315 H607 Q584 315 584 293Z" fill="#fffdf5" stroke="#17324d" stroke-width="3"/>
+  <text x="651" y="275" text-anchor="middle" font-size="13" font-weight="800" fill="#17324d">NO HANDS!</text>
+  <text x="651" y="296" text-anchor="middle" font-size="12" font-weight="700" fill="#e44f42">ALL BEAK.</text>
+
+  <path d="M0 514 Q180 501 365 514 T800 512 V600 H0Z" fill="#17324d"/>
+  <text x="400" y="548" text-anchor="middle" font-size="17" font-weight="700" fill="#fffdf5">“I’m on a seafood diet: I see a fish, I pedal faster.”</text>
+  <text x="400" y="579" text-anchor="middle" font-size="14" font-weight="600" fill="#ffd766">2026-10-31 17:02:46 SGT (UTC+08:00)</text>
+</svg>
