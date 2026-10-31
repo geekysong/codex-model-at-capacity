@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Fish — a pelican riding a bicycle</title>
+  <desc id="description">An indignant pelican pedals a tiny bicycle with a fish in its basket. Both wheels spin continuously while the pelican bobs and its foot pedals. A roadside sign announces a flying tax.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#aee6ec"/>
+      <stop offset="1" stop-color="#fff4d4"/>
+    </linearGradient>
+    <linearGradient id="pouch" x2="0" y2="1">
+      <stop stop-color="#ffd467"/>
+      <stop offset="1" stop-color="#f29952"/>
+    </linearGradient>
+    <pattern id="basket" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#ce9b61"/>
+      <path d="M0 0H12M0 0V12" fill="none" stroke="#805c3b" stroke-width="2"/>
+    </pattern>
+    <g id="spokes" stroke="#6c8191" stroke-width="3">
+      <path d="M-74 0H74M0-74V74M-52-52L52 52M-52 52L52-52"/>
+      <circle r="10" fill="#ffbf45" stroke="#233344" stroke-width="4"/>
+      <path d="M48-48L57-57" stroke="#fff1ab" stroke-width="7"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e7"/>
+  <rect x="15" y="15" width="770" height="570" rx="24" fill="none" stroke="#263747" stroke-width="3"/>
+  <path d="M35 105H765V485H35Z" fill="url(#sky)"/>
+  <circle cx="680" cy="164" r="39" fill="#ffd568"/>
+  <g fill="#fff" opacity=".8">
+    <path d="M72 180c-14-23 19-40 32-20 7-34 50-28 49 1 30-12 44 18 26 26H72Z"/>
+    <path d="M458 154c-11-17 12-32 24-18 13-28 44-17 44 4 28-8 36 17 20 20h-88Z"/>
+  </g>
+  <text x="400" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="43" font-weight="900" fill="#223544" letter-spacing="3">TOUR DE FISH</text>
+  <text x="400" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#627783" letter-spacing="2">THE COMMUTE HAS GONE COMPLETELY FOWL</text>
+
+  <path d="M35 365Q140 326 245 361T467 354T765 351V440H35Z" fill="#acd0ac"/>
+  <path d="M35 405Q210 380 400 405T765 399V485H35Z" fill="#e4d2a8"/>
+  <path d="M35 464H765" stroke="#b69d77" stroke-width="3"/>
+  <g stroke="#263747" stroke-linejoin="round">
+    <path d="M107 351V236" stroke-width="8"/>
+    <rect x="48" y="203" width="128" height="77" rx="8" fill="#fff6d9" stroke-width="3"/>
+    <text x="112" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#263747" stroke="none">FLYING TAX</text>
+    <text x="112" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#db5d45" stroke="none">↑ 200%</text>
+  </g>
+
+  <ellipse cx="421" cy="464" rx="238" ry="13" fill="#78654d" opacity=".16"/>
+
+  <!-- Fixed tires, continuously rotating spokes. -->
+  <g fill="#f8f5df" stroke="#263747">
+    <circle cx="265" cy="389" r="79" stroke-width="12"/>
+    <circle cx="577" cy="389" r="79" stroke-width="12"/>
+  </g>
+  <g transform="translate(265 389)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(577 389)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Ridiculously small bicycle. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M265 389L338 303 402 389H265L338 303H532L402 389M532 303L577 389" stroke="#263747" stroke-width="13"/>
+    <path d="M265 389L338 303 402 389H265L338 303H532L402 389M532 303L577 389" stroke="#eb6651" stroke-width="7"/>
+    <path d="M338 303L329 280M577 389L522 265 542 245H563" stroke="#263747" stroke-width="8"/>
+    <path d="M309 280H350" stroke="#263747" stroke-width="13"/>
+    <path d="M542 245H565" stroke="#e96650" stroke-width="10"/>
+    <path d="M265 389L402 389" stroke="#263747" stroke-width="3"/>
+  </g>
+  <circle cx="402" cy="389" r="22" fill="#f0b94f" stroke="#263747" stroke-width="5"/>
+  <g transform="translate(402 389)">
+    <g>
+      <path d="M-23 0H23" stroke="#263747" stroke-width="6"/>
+      <circle cx="23" cy="0" r="5" fill="#fff8e7"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Passenger fish and shopping basket. -->
+  <g stroke="#263747" stroke-width="3" stroke-linejoin="round">
+    <path d="M570 286L630 260 625 285 644 294 617 302Z" fill="#73b7b2"/>
+    <path d="M589 281Q581 259 602 254L610 274" fill="#73b7b2"/>
+    <ellipse cx="588" cy="287" rx="28" ry="18" fill="#88c9bd" transform="rotate(-18 588 287)"/>
+    <circle cx="573" cy="281" r="5" fill="white"/>
+    <circle cx="573" cy="280" r="2" fill="#263747" stroke="none"/>
+    <path d="M563 292L571 294" fill="none"/>
+    <path d="M550 294H641L629 337H562Z" fill="url(#basket)"/>
+    <path d="M548 294H643" stroke-width="6"/>
+  </g>
+  <rect x="570" y="305" width="53" height="23" rx="3" fill="#fff7dc"/>
+  <text x="596" y="321" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#263747">VALET</text>
+
+  <!-- Entire rider gently bobs; the near leg pedals independently. -->
+  <g stroke="#263747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".75s" repeatCount="indefinite"/>
+    <path d="M351 276L374 324 386 369" fill="none" stroke="#d1903d" stroke-width="12"/>
+    <path d="M374 370L403 370" fill="none" stroke-width="7"/>
+    <path d="M279 256L242 227 255 268 229 254Q240 290 295 292" fill="#fffcef"/>
+    <path d="M282 220Q303 195 352 222L386 236Q416 228 419 181L416 159Q413 130 441 128 476 130 470 164L459 203Q450 267 392 283 362 314 305 292 270 280 282 220Z" fill="#fffdf1"/>
+    <path d="M304 235Q331 215 378 245 361 282 317 274Q340 269 349 254 323 262 304 235Z" fill="#d9e3dd"/>
+    <path d="M376 247Q414 273 452 260L531 246" fill="none" stroke="#263747" stroke-width="19"/>
+    <path d="M376 245Q414 270 452 257L528 244" fill="none" stroke="#fffdf1" stroke-width="12"/>
+    <path d="M530 239L537 246 529 252" fill="#fffdf1"/>
+    <path d="M450 165L584 178Q557 236 486 211 457 201 450 165Z" fill="url(#pouch)"/>
+    <path d="M451 160Q510 153 589 175L452 177Z" fill="#ffc44d"/>
+    <path d="M476 185Q501 210 542 199" fill="none" stroke="#dc8840" stroke-width="2"/>
+    <circle cx="448" cy="148" r="10" fill="white"/>
+    <circle cx="451" cy="150" r="3.8" fill="#263747" stroke="none"/>
+    <path d="M435 133L455 140" fill="none" stroke-width="5"/>
+    <path d="M414 132Q423 105 451 113 473 117 478 136Z" fill="#e8634f"/>
+    <path d="M420 133H483M435 116L432 127M449 117L447 129M463 121L460 131" fill="none" stroke-width="4"/>
+    <path d="M425 171L437 184 452 177" fill="none" stroke-width="2"/>
+    <path d="M402 207L422 219 396 232 378 215Z" fill="#2d8794"/>
+    <path d="M399 220Q370 218 351 202L353 221 333 214Q356 240 391 233" fill="#2d8794"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-6 356 282;8 356 282;-6 356 282" dur="1.5s" repeatCount="indefinite"/>
+      <path d="M356 282L393 321 415 371" fill="none" stroke="#263747" stroke-width="15"/>
+      <path d="M356 282L393 321 415 371" fill="none" stroke="#f5b64d" stroke-width="9"/>
+      <path d="M411 367L436 376 439 385H407Z" fill="#ffc553"/>
+      <path d="M406 388H444" stroke-width="6"/>
+    </g>
+  </g>
+
+  <g fill="#263747" font-family="Arial, sans-serif">
+    <path d="M590 208Q588 193 607 192H738Q752 192 752 207V238Q752 252 737 252H612L597 267 602 249Q590 247 590 236Z" fill="#fffdf3" stroke="#263747" stroke-width="2"/>
+    <text x="670" y="216" text-anchor="middle" font-size="16" font-weight="bold">“Put it on</text>
+    <text x="670" y="237" text-anchor="middle" font-size="16" font-weight="bold">my bill!”</text>
+  </g>
+
+  <text x="400" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#263747">He traded his wings for a cheaper commute.</text>
+  <path d="M65 541H735" stroke="#d5c8ac" stroke-width="2"/>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#405366">2026-10-31 15:30:01 SGT (UTC+08:00)</text>
+</svg>

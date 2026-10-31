@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN EXPRESS</title>
+  <desc id="desc">A satirical cartoon of a pelican riding a bicycle, with spinning wheels and a bobbing rider.</desc>
+  <defs>
+    <pattern id="spokes" width="100" height="100" patternUnits="userSpaceOnUse"/>
+    <style>
+      .ink { stroke:#26333b; stroke-width:5; stroke-linecap:round; stroke-linejoin:round }
+      .thin { stroke:#26333b; stroke-width:3; stroke-linecap:round; stroke-linejoin:round }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2s linear infinite }
+      .rider { animation:bob .75s ease-in-out infinite alternate }
+      @keyframes spin { to { transform:rotate(360deg) } }
+      @keyframes bob { from { transform:translateY(0) rotate(-.5deg) } to { transform:translateY(-5px) rotate(.5deg) } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider { animation:none } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff7df"/>
+  <rect x="20" y="18" width="760" height="564" rx="22" fill="#d9f1ef" stroke="#26333b" stroke-width="5"/>
+  <text x="400" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="900" letter-spacing="2" fill="#26333b">PELICAN EXPRESS</text>
+  <text x="400" y="99" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#46656b">THE COMMUTE IS GETTING OUT OF HAND</text>
+
+  <circle cx="675" cy="155" r="37" fill="#ffd96a"/>
+  <path d="M69 340 Q155 300 245 337 T423 335 T610 333 T745 339 V470 H69Z" fill="#a8d4b3"/>
+  <path d="M46 443 Q200 432 380 443 T754 440 V492 H46Z" fill="#e6b67d"/>
+  <path d="M47 443 Q200 432 380 443 T754 440" fill="none" stroke="#26333b" stroke-width="4"/>
+  <path d="M79 463h72 M187 474h38 M633 462h78" fill="none" stroke="#c58e62" stroke-width="5" stroke-linecap="round"/>
+  <path d="M75 258h66 M91 275h43 M99 292h30" fill="none" stroke="#7eafb1" stroke-width="5" stroke-linecap="round"/>
+
+  <g class="wheel">
+    <circle cx="245" cy="400" r="74" fill="#fff7df" class="ink"/>
+    <circle cx="245" cy="400" r="64" fill="none" stroke="#e7a447" stroke-width="5"/>
+    <path d="M245 336v128 M181 400h128 M200 355l90 90 M290 355l-90 90" fill="none" stroke="#6d8587" stroke-width="3"/>
+    <circle cx="245" cy="400" r="8" fill="#26333b"/>
+  </g>
+  <g class="wheel">
+    <circle cx="564" cy="400" r="74" fill="#fff7df" class="ink"/>
+    <circle cx="564" cy="400" r="64" fill="none" stroke="#e7a447" stroke-width="5"/>
+    <path d="M564 336v128 M500 400h128 M519 355l90 90 M609 355l-90 90" fill="none" stroke="#6d8587" stroke-width="3"/>
+    <circle cx="564" cy="400" r="8" fill="#26333b"/>
+  </g>
+
+  <path d="M245 400 L337 295 L399 400 Z M337 295 L503 300 L399 400 M503 300 L564 400 M337 295 L322 266 M303 266h43 M489 277l14 23 M481 277h43 q12 0 12-12" fill="none" stroke="#d95242" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M245 400 L337 295 L399 400 Z M337 295 L503 300 L399 400 M503 300 L564 400" fill="none" stroke="#26333b" stroke-width="2"/>
+  <path d="M303 265h49" stroke="#26333b" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="399" cy="400" r="17" fill="#f9cf75" class="thin"/>
+  <path d="M399 400l28 20 M418 422h24" fill="none" stroke="#26333b" stroke-width="6" stroke-linecap="round"/>
+
+  <g class="rider">
+    <path d="M336 271 Q326 303 359 326 Q394 341 430 317 Q455 302 445 266 Q433 236 390 233 Q353 233 336 271Z" fill="#fffdf3" class="ink"/>
+    <path d="M347 272 Q383 256 414 281 Q413 310 379 315 Q355 309 347 293Z" fill="#e7e2d4" class="thin"/>
+    <path d="M423 276 Q461 278 486 265 L503 277" fill="none" stroke="#fffdf3" stroke-width="17" stroke-linecap="round"/>
+    <path d="M423 276 Q461 278 486 265 L503 277" fill="none" stroke="#26333b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M369 319 Q371 349 397 375 L417 387 M397 375l-11 20" fill="none" stroke="#d88a37" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M410 387l18 1 M382 396h19" fill="none" stroke="#26333b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M405 243 Q415 214 408 185 Q402 155 427 142 Q453 130 471 151 Q482 165 477 187 L461 232 Q455 250 433 259Z" fill="#fffdf3" class="ink"/>
+    <path d="M456 176 Q504 174 581 185 Q586 189 577 194 L469 204Z" fill="#f2a63e" class="ink"/>
+    <path d="M469 201 Q522 209 554 199 Q544 237 502 239 Q472 237 457 218Z" fill="#f8c968" class="ink"/>
+    <circle cx="450" cy="169" r="13" fill="#fff" class="thin"/>
+    <circle cx="454" cy="169" r="4.5" fill="#26333b"/>
+    <path d="M438 151 Q448 143 459 149" fill="none" stroke="#26333b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M408 151 Q430 132 466 145 L463 130 Q439 118 418 130Z" fill="#d95242" class="ink"/>
+    <path d="M409 151 Q430 148 469 154" fill="none" stroke="#26333b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M332 285 l-24 -15 8 24 -20 4 33 13" fill="#fffdf3" class="ink"/>
+  </g>
+
+  <g transform="translate(603 250) rotate(5)">
+    <path d="M0 0h111v58H0z" fill="#fffdf3" class="thin"/>
+    <path d="M13 12h85 M13 20h62" stroke="#d95242" stroke-width="4" stroke-linecap="round"/>
+    <text x="55" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#26333b">BIKE LANE?</text>
+    <path d="M56 58v77" stroke="#26333b" stroke-width="5"/>
+  </g>
+
+  <rect x="37" y="503" width="726" height="63" rx="12" fill="#fffdf3" stroke="#26333b" stroke-width="3"/>
+  <text x="400" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#26333b">He carries the whole lunch—and still asks for a bike lane.</text>
+  <text x="400" y="551" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#46575b">2026-10-31 15:32:41 SGT (UTC+08:00)</text>
+</svg>
