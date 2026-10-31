@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">A Pelican’s Commute</title>
+  <desc id="desc">A bespectacled pelican rides a bicycle, proudly carrying an absurdly large fish. The wheels spin and the pelican bobs along.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.8s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .7s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d6"/>
+  <circle cx="670" cy="145" r="68" fill="#ffd56a"/>
+  <path d="M0 385 Q120 340 245 382 T500 378 T800 370 V510 H0Z" fill="#b8dfad"/>
+  <path d="M0 435 Q155 412 302 433 T590 428 T800 435" fill="none" stroke="#8fc98d" stroke-width="5"/>
+  <text x="400" y="57" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1" fill="#173b4b">A PELICAN’S COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" font-size="16" font-weight="700" fill="#a44e35">“I’m cutting carbs. The fish is for the basket.”</text>
+
+  <!-- Road and dashed lane -->
+  <path d="M0 474 H800" stroke="#273d48" stroke-width="13"/>
+  <path d="M0 474 H800" stroke="#fff4d6" stroke-width="3" stroke-dasharray="30 24"/>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#e4513c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 402 L337 402 L304 330 L250 402"/>
+    <path d="M337 402 L383 330 L304 330"/>
+    <path d="M383 330 L421 330"/>
+    <path d="M337 402 L347 418"/>
+    <path d="M292 321 H321"/>
+    <path d="M408 319 L419 330"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#264653" stroke-width="6">
+    <circle cx="250" cy="402" r="61"/>
+    <path d="M250 341V463 M189 402H311 M207 359L293 445 M293 359L207 445"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#264653" stroke-width="6">
+    <circle cx="383" cy="402" r="61"/>
+    <path d="M383 341V463 M322 402H444 M340 359L426 445 M426 359L340 445"/>
+  </g>
+  <circle cx="337" cy="402" r="10" fill="#f5b642" stroke="#264653" stroke-width="4"/>
+  <path d="M337 402 L322 423 M337 402 L353 382" stroke="#264653" stroke-width="5" stroke-linecap="round"/>
+  <path d="M316 425 L329 425 M348 380 L361 380" stroke="#264653" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Basket -->
+  <path d="M273 265 L332 265 L324 305 L282 305Z" fill="#d89b52" stroke="#80532c" stroke-width="4"/>
+  <path d="M282 278 H329 M279 290 H326" stroke="#f2c477" stroke-width="4"/>
+  <path d="M287 265 Q296 247 306 265 Q317 246 326 265" fill="#6a9a54" stroke="#426d3c" stroke-width="3"/>
+  <path d="M293 262 Q299 244 305 262 Q312 241 319 262" fill="#8abf63"/>
+
+  <!-- Oversized fish in basket -->
+  <g transform="rotate(-8 303 250)">
+    <ellipse cx="303" cy="248" rx="43" ry="23" fill="#76bfca" stroke="#245b68" stroke-width="4"/>
+    <path d="M263 248 L240 231 L242 265Z" fill="#f08b59" stroke="#245b68" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M295 228 Q306 247 295 268 M313 228 Q324 247 313 268" fill="none" stroke="#4a98a3" stroke-width="3"/>
+    <circle cx="329" cy="242" r="4.5" fill="#173b4b"/>
+    <path d="M338 254 Q350 255 353 249" fill="none" stroke="#245b68" stroke-width="3"/>
+  </g>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <!-- tail and body -->
+    <path d="M358 292 Q402 277 410 313 L396 348 Q365 349 345 324Z" fill="#f8f5e9" stroke="#294955" stroke-width="4"/>
+    <path d="M390 314 Q411 320 417 337" fill="none" stroke="#294955" stroke-width="5" stroke-linecap="round"/>
+    <!-- legs -->
+    <path d="M365 329 L348 380 L324 393" fill="none" stroke="#ed8d42" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M386 334 L369 376 L350 388" fill="none" stroke="#ed8d42" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- neck -->
+    <path d="M366 294 Q346 270 357 235 L378 211 Q397 224 388 249 L382 298Z" fill="#fffdf3" stroke="#294955" stroke-width="4"/>
+    <!-- head -->
+    <ellipse cx="375" cy="204" rx="39" ry="33" fill="#fffdf3" stroke="#294955" stroke-width="4"/>
+    <path d="M347 204 Q323 199 304 205 Q321 222 351 219Z" fill="#f0a23c" stroke="#8a4e25" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M313 210 Q333 223 354 216 Q349 238 330 233 Q318 228 313 210Z" fill="#ef8052" stroke="#8a4e25" stroke-width="3"/>
+    <!-- expressive eye and glasses -->
+    <circle cx="385" cy="198" r="5" fill="#173b4b"/>
+    <circle cx="385" cy="198" r="15" fill="none" stroke="#294955" stroke-width="3"/>
+    <path d="M399 196 Q407 190 414 194" fill="none" stroke="#294955" stroke-width="3"/>
+    <path d="M374 181 Q384 176 392 181" fill="none" stroke="#294955" stroke-width="3" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M343 193 Q348 161 376 159 Q401 160 411 188 L398 189 Q387 174 366 177 Q354 180 350 194Z" fill="#e4513c" stroke="#87372e" stroke-width="4"/>
+    <path d="M351 189 L342 194 M402 187 L415 190" stroke="#87372e" stroke-width="4" stroke-linecap="round"/>
+    <!-- wing reaching handlebar -->
+    <path d="M370 291 Q390 279 400 299 L416 320" fill="none" stroke="#294955" stroke-width="12" stroke-linecap="round"/>
+    <path d="M416 320 L421 330" fill="none" stroke="#ed8d42" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion and comedy marks -->
+  <path d="M433 220 Q450 212 459 218 M438 232 Q451 229 457 233" fill="none" stroke="#e4513c" stroke-width="4" stroke-linecap="round"/>
+  <text x="490" y="254" font-size="20" font-weight="900" fill="#a44e35" transform="rotate(-7 490 254)">HONK!</text>
+  <path d="M205 310 l-13 -9 M213 296 l-8 -15 M455 354 l14 -8 M458 369 l17 -2" stroke="#f0a23c" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Footer kept clear of the scene -->
+  <rect x="0" y="520" width="800" height="80" fill="#173b4b"/>
+  <text x="400" y="548" text-anchor="middle" font-size="16" font-weight="700" fill="#fff4d6">LOCAL BIRD INSISTS THIS COUNTS AS “LIGHT EXERCISE.”</text>
+  <text x="400" y="581" text-anchor="middle" font-size="14" font-weight="600" fill="#ffd56a">2026-10-31 21:32:08 SGT (UTC+08:00)</text>
+</svg>
