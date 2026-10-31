@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE BEAK CYCLE</title>
+  <desc id="desc">A smug pelican rides a bicycle while a fish dangles from its beak. The wheels spin and the rider bobs.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.6s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bcecff"/>
+  <path d="M0 340 Q130 300 260 337 T520 330 T800 334 V600 H0Z" fill="#e8f7ff"/>
+  <circle cx="690" cy="105" r="47" fill="#ffd45d"/>
+  <path d="M0 422 Q130 410 250 422 T500 418 T800 422" fill="none" stroke="#79c9dc" stroke-width="4"/>
+  <path d="M0 455 Q180 442 340 455 T800 450" fill="none" stroke="#79c9dc" stroke-width="3"/>
+
+  <text x="400" y="55" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="2" fill="#123d59">THE BEAK CYCLE</text>
+  <text x="400" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#245c70">A pelican’s commute: one fish-powered lane change at a time.</text>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#e34b42" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M245 390 L340 390 L300 300 L245 390"/>
+    <path d="M340 390 L405 300 L300 300"/>
+    <path d="M405 300 L450 390 L340 390"/>
+    <path d="M405 300 L430 280"/>
+    <path d="M410 300 L390 278"/>
+  </g>
+  <path d="M420 279 L447 279" stroke="#253d4a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M282 296 L318 296" stroke="#253d4a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M340 390 L360 414 M340 390 L321 414" stroke="#253d4a" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="340" cy="390" r="10" fill="#f6c64b" stroke="#253d4a" stroke-width="4"/>
+
+  <!-- Wheels with rotating spokes -->
+  <g class="wheel">
+    <circle cx="245" cy="390" r="69" fill="#fff" fill-opacity=".12" stroke="#253d4a" stroke-width="7"/>
+    <circle cx="245" cy="390" r="7" fill="#253d4a"/>
+    <path d="M245 321V459 M176 390H314 M196 341L294 439 M294 341L196 439" stroke="#547584" stroke-width="2"/>
+  </g>
+  <g class="wheel">
+    <circle cx="450" cy="390" r="69" fill="#fff" fill-opacity=".12" stroke="#253d4a" stroke-width="7"/>
+    <circle cx="450" cy="390" r="7" fill="#253d4a"/>
+    <path d="M450 321V459 M381 390H519 M401 341L499 439 M499 341L401 439" stroke="#547584" stroke-width="2"/>
+  </g>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <path d="M302 292 Q300 260 326 247 Q347 235 370 252 Q387 266 380 294 L364 327 Q346 339 319 322Z" fill="#fffdf3" stroke="#253d4a" stroke-width="5"/>
+    <path d="M329 314 Q350 318 369 302 L385 319 Q369 344 337 340Z" fill="#f6c64b" stroke="#253d4a" stroke-width="4"/>
+    <path d="M351 259 Q355 226 380 210 Q404 193 431 205 Q452 215 451 237 Q448 258 423 263 L392 258 L378 281Z" fill="#fffdf3" stroke="#253d4a" stroke-width="5"/>
+    <path d="M438 229 Q469 225 495 239 Q503 244 494 250 Q474 263 442 250Z" fill="#f4a23a" stroke="#253d4a" stroke-width="4"/>
+    <path d="M491 242 Q506 242 509 249 Q506 257 493 253" fill="#e98132" stroke="#253d4a" stroke-width="3"/>
+    <circle cx="424" cy="221" r="5" fill="#253d4a"/>
+    <circle cx="426" cy="219" r="1.5" fill="#fff"/>
+    <path d="M379 283 Q395 286 404 302 L414 312" fill="none" stroke="#253d4a" stroke-width="7" stroke-linecap="round"/>
+    <path d="M359 327 L350 359 L372 378" fill="none" stroke="#253d4a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M372 378 L389 383" fill="none" stroke="#253d4a" stroke-width="7" stroke-linecap="round"/>
+    <path d="M330 328 L315 354 L331 376" fill="none" stroke="#253d4a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M331 376 L347 381" fill="none" stroke="#253d4a" stroke-width="7" stroke-linecap="round"/>
+    <!-- tiny fish dangling from beak -->
+    <path d="M495 252 Q502 263 500 274" fill="none" stroke="#253d4a" stroke-width="2"/>
+    <path d="M486 278 Q496 268 507 278 Q497 288 486 278Z" fill="#73c7d5" stroke="#253d4a" stroke-width="2"/>
+    <path d="M486 278 L480 272 L480 284Z" fill="#73c7d5" stroke="#253d4a" stroke-width="2"/>
+    <circle cx="501" cy="277" r="1.5" fill="#253d4a"/>
+    <path d="M330 255 Q344 246 358 256" fill="none" stroke="#e34b42" stroke-width="5"/>
+    <path d="M341 251 L345 244 M351 252 L355 245" stroke="#e34b42" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- comic motion marks -->
+  <path d="M144 286 l-24 -8 M150 306 l-30 0 M540 290 l24 -10" stroke="#e34b42" stroke-width="4" stroke-linecap="round"/>
+  <text x="567" y="306" font-size="15" font-weight="700" fill="#245c70" transform="rotate(-8 567 306)">HONK!</text>
+  <path d="M216 480 Q348 493 489 480" fill="none" stroke="#8bb8c3" stroke-width="3" stroke-dasharray="7 8"/>
+
+  <rect x="0" y="526" width="800" height="74" fill="#123d59"/>
+  <text x="400" y="556" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Traffic report: the fish is in the fast lane.</text>
+  <text x="400" y="584" text-anchor="middle" font-size="15" font-weight="700" fill="#ffe18a">2026-10-31 09:02:02 SGT (UTC+08:00)</text>
+</svg>

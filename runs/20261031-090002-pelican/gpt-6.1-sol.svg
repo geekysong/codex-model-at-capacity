@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">The Pelican Pedal Lobby</title>
+  <desc id="description">A smug pelican cycles along the waterfront with a fish-filled bill and a bicycle basket demanding more bike lanes. Wheels spin continuously as the bird bobs and pedals.</desc>
+  <defs>
+    <pattern id="water" width="70" height="22" patternUnits="userSpaceOnUse">
+      <path d="M8 12 Q20 5 32 12 T56 12" fill="none" stroke="#75b9be" stroke-width="2"/>
+    </pattern>
+    <g id="spokes" stroke="#44606a" stroke-width="3">
+      <path d="M-62 0H62 M0-62V62 M-44-44L44 44 M-44 44L44-44"/>
+      <circle r="10" fill="#e9e1ca" stroke="#263d48" stroke-width="4"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff5d9"/>
+  <path d="M0 105H800" stroke="#233e48" stroke-width="4"/>
+  <text x="400" y="49" text-anchor="middle" fill="#203b46" font-family="Arial, sans-serif" font-size="35" font-weight="900">THE PELICAN PEDAL LOBBY</text>
+  <text x="400" y="82" text-anchor="middle" fill="#9a4b32" font-family="Arial, sans-serif" font-size="17" font-weight="bold">BIG BILL. TINY CARBON FOOTPRINT.</text>
+
+  <!-- One waterfront scene -->
+  <rect y="289" width="800" height="116" fill="#aedcda"/>
+  <rect y="303" width="800" height="92" fill="url(#water)"/>
+  <circle cx="102" cy="177" r="37" fill="#f5bf51"/>
+  <g fill="none" stroke="#708b87" stroke-width="3" stroke-linecap="round">
+    <path d="M156 188q10-12 20 0q10-12 20 0 M629 155q10-12 20 0q10-12 20 0"/>
+  </g>
+  <path d="M0 402H800V496H0Z" fill="#e2cba6"/>
+  <path d="M0 404H800" stroke="#66766a" stroke-width="4"/>
+  <path d="M23 468H114 M640 468H762" stroke="#fff6de" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="404" cy="480" rx="218" ry="12" fill="#b49d7f" opacity=".4"/>
+
+  <!-- Tiny civic commentary -->
+  <g transform="translate(64 266)">
+    <path d="M41 48V147" stroke="#5b655d" stroke-width="7"/>
+    <rect width="122" height="64" rx="6" fill="#f9ebc5" stroke="#304b52" stroke-width="3"/>
+    <text x="61" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#304b52">NO FREE</text>
+    <text x="61" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#304b52">PARKING</text>
+    <path d="M10 55L112 10" stroke="#c55641" stroke-width="4"/>
+  </g>
+
+  <!-- Wheels: stationary tires, rotating spokes -->
+  <g fill="#fff5d9" stroke="#243d47" stroke-width="9">
+    <circle cx="280" cy="410" r="66"/>
+    <circle cx="535" cy="410" r="66"/>
+  </g>
+  <g transform="translate(280 410)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(535 410)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#ce513e" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M280 410L340 320L394 410Z M340 320H489L394 410 M489 320L535 410"/>
+    <path d="M340 320L332 298 M489 320L474 277"/>
+  </g>
+  <path d="M309 298H356" stroke="#243d47" stroke-width="12" stroke-linecap="round"/>
+  <path d="M474 277L493 261H522" fill="none" stroke="#243d47" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="394" cy="410" r="15" fill="#e7b35b" stroke="#243d47" stroke-width="4"/>
+
+  <!-- Basket and its campaigning cargo -->
+  <path d="M523 279H594L582 334H534Z" fill="#d3ac68" stroke="#304b52" stroke-width="4"/>
+  <path d="M540 282L547 329 M558 282V331 M577 282L570 330 M529 299H590 M532 316H586" stroke="#8b724c" stroke-width="2"/>
+  <path d="M560 278V240" stroke="#5c5945" stroke-width="4"/>
+  <g transform="rotate(7 564 222)">
+    <rect x="504" y="191" width="126" height="56" rx="4" fill="#fffaf0" stroke="#304b52" stroke-width="3"/>
+    <text x="567" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#304b52">MORE BIKE</text>
+    <text x="567" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#c44c39">LANES!</text>
+  </g>
+
+  <!-- Pedaling feet -->
+  <g stroke="#c78229" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M367 298L350 355L375 395">
+      <animate attributeName="d" values="M367 298L350 355L375 395;M367 298L400 345L413 425;M367 298L350 355L375 395" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M386 300L424 359L413 425">
+      <animate attributeName="d" values="M386 300L424 359L413 425;M386 300L371 355L375 395;M386 300L424 359L413 425" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g transform="translate(394 410)">
+    <g stroke="#263e47" stroke-width="5">
+      <path d="M-19-15L19 15"/>
+      <path d="M-29-15H-9 M9 15H29" stroke-width="7"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Pelican: bobbing body, enormous expressive bill -->
+  <g stroke="#263e47" stroke-width="4" stroke-linejoin="round">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M330 249L292 226L307 265L289 273L333 286" fill="#fffdf0"/>
+    <ellipse cx="365" cy="266" rx="63" ry="42" fill="#fffdf0"/>
+    <path d="M327 255Q356 228 397 262Q371 292 338 279" fill="#c6d2cb"/>
+    <path d="M387 274Q423 267 420 225L418 188Q419 155 447 153Q476 155 472 182Q469 204 453 220L452 249Q449 288 400 297" fill="#fffdf0"/>
+    <path d="M460 184Q511 180 595 194L468 220Q454 207 460 184Z" fill="#efba57"/>
+    <path d="M468 220Q501 258 566 207L595 194" fill="#e99b57"/>
+    <path d="M466 193L595 194" fill="none" stroke-width="3"/>
+    <!-- Fish visible in the capacious pouch -->
+    <path d="M497 219Q516 200 540 214L551 204L549 222L540 218Q516 234 497 219Z" fill="#75b5ae" stroke-width="2"/>
+    <circle cx="506" cy="217" r="2.5" fill="#263e47" stroke="none"/>
+    <circle cx="448" cy="177" r="10" fill="white"/>
+    <circle cx="452" cy="178" r="4" fill="#263e47" stroke="none"/>
+    <path d="M437 161L456 157" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <path d="M423 148Q441 126 462 146" fill="#cc523e"/>
+    <path d="M418 148H473" stroke="#263e47" stroke-width="6" stroke-linecap="round"/>
+    <path d="M400 264Q443 279 494 262" fill="none" stroke-width="12" stroke-linecap="round"/>
+    <path d="M491 263L504 258" fill="none" stroke="#fffdf0" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Speech stays still for easy reading -->
+  <path d="M601 126H757Q769 126 769 138V190Q769 202 757 202H650L620 219L626 202H601Q589 202 589 190V138Q589 126 601 126Z" fill="#fffdf3" stroke="#263e47" stroke-width="3"/>
+  <text x="679" y="151" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#263e47">
+    <tspan x="679">“My bill includes</tspan>
+    <tspan x="679" dy="23">a cycle lane.”</tspan>
+  </text>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <rect y="497" width="800" height="103" fill="#243e48"/>
+  <text x="400" y="531" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#fff3d4">He carries the fish. The city carries the debate.</text>
+  <path d="M154 548H646" stroke="#72918f" stroke-width="1"/>
+  <text x="400" y="576" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#fff3d4">2026-10-31 09:01:08 SGT (UTC+08:00)</text>
+</svg>
