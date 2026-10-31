@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Express</title>
+  <desc id="desc">A pelican pedals a bicycle with two fish passengers while its wheels spin. The caption reads: "Rising fuel costs? Just wing it."</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#a5e7ed"/>
+      <stop offset="1" stop-color="#eaf8dc"/>
+    </linearGradient>
+    <pattern id="road" width="80" height="14" patternUnits="userSpaceOnUse">
+      <path d="M0 7h38" stroke="#f7d77b" stroke-width="4" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff9e9"/>
+  <rect x="18" y="18" width="764" height="493" rx="24" fill="url(#sky)" stroke="#23394a" stroke-width="4"/>
+  <text x="400" y="69" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="900" letter-spacing="2" fill="#23394a">THE PELICAN EXPRESS</text>
+  <text x="400" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" letter-spacing="3" fill="#42646a">THE COMMUTE HAS GONE TO THE BIRDS</text>
+
+  <circle cx="672" cy="153" r="35" fill="#ffd46a"/>
+  <path d="M47 345 Q125 310 202 345 T359 344 T518 344 T674 344 T753 340 V422 H47Z" fill="#9acba6"/>
+  <path d="M45 405 Q150 386 245 401 T446 400 T755 398 V484 H45Z" fill="#d5b887"/>
+  <path d="M45 454 H755" stroke="#776452" stroke-width="3"/>
+  <rect x="46" y="462" width="708" height="14" fill="url(#road)"/>
+
+  <g fill="#fff" opacity=".85">
+    <path d="M92 162c-14-1-15-20 0-22 4-20 31-22 39-5 18-7 29 11 20 24-2 2-5 3-9 3z"/>
+    <path d="M535 202c-12-1-13-16 0-18 4-17 26-18 33-4 15-6 24 9 17 19-2 2-4 3-8 3z"/>
+  </g>
+
+  <!-- Wheels rotate as complete assemblies. -->
+  <g transform="translate(230 391)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2s" repeatCount="indefinite"/>
+      <circle r="78" fill="#fff9e9" stroke="#263641" stroke-width="13"/>
+      <circle r="68" fill="none" stroke="#f0c769" stroke-width="4"/>
+      <g stroke="#71828a" stroke-width="3">
+        <path d="M-68 0H68M0-68V68M-48-48L48 48M48-48L-48 48"/>
+      </g>
+      <circle r="8" fill="#263641"/>
+    </g>
+  </g>
+  <g transform="translate(584 391)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2s" repeatCount="indefinite"/>
+      <circle r="78" fill="#fff9e9" stroke="#263641" stroke-width="13"/>
+      <circle r="68" fill="none" stroke="#f0c769" stroke-width="4"/>
+      <g stroke="#71828a" stroke-width="3">
+        <path d="M-68 0H68M0-68V68M-48-48L48 48M48-48L-48 48"/>
+      </g>
+      <circle r="8" fill="#263641"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#d94f42" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 391 318 292 397 391 230 391 354 300 397 391 503 291 584 391"/>
+    <path d="M480 275 503 291"/>
+  </g>
+  <g fill="none" stroke="#263641" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M318 292 309 275M285 274h48"/>
+    <path d="M503 291 490 252h34q12 0 12 12"/>
+  </g>
+  <circle cx="397" cy="391" r="22" fill="#fff9e9" stroke="#263641" stroke-width="5"/>
+  <g transform="translate(397 391)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2s" repeatCount="indefinite"/>
+      <path d="M-27-24 27 24" stroke="#263641" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-38-24h22M16 24h22" stroke="#263641" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Basket and fish passengers -->
+  <path d="M520 270h84l-10 55h-62z" fill="#e4a85f" stroke="#684b35" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M529 283h66M532 296h62M535 309h56M543 273l5 48M562 272l2 50M582 272l-3 50" fill="none" stroke="#a56d3c" stroke-width="3"/>
+  <g stroke="#263641" stroke-width="3" stroke-linejoin="round">
+    <path d="M535 267q12-27 26-3l9 4-9 4q-13 17-26-5z" fill="#75b8c6"/>
+    <path d="M567 270q10-32 23-5l9 5-9 4q-12 18-23-4z" fill="#ee9e78"/>
+  </g>
+  <circle cx="551" cy="262" r="2.5" fill="#263641"/>
+  <circle cx="583" cy="262" r="2.5" fill="#263641"/>
+  <path d="M610 243q14-13 27-2M615 233l-3-8" fill="none" stroke="#263641" stroke-width="3" stroke-linecap="round"/>
+  <text x="644" y="239" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#263641">FASTER!</text>
+
+  <!-- The rider gently bobs while the crank turns. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0;0 3;0 0" dur="2s" repeatCount="indefinite"/>
+    <!-- back leg -->
+    <path d="M330 309q25 24 44 51l22 29" fill="none" stroke="#e29445" stroke-width="10" stroke-linecap="round"/>
+    <path d="M384 390q15-3 25 3l-4 7-25-1z" fill="#e29445" stroke="#263641" stroke-width="3"/>
+    <!-- body and wing -->
+    <path d="M258 266q-15-52 32-80 39-23 83 6 32 22 38 67 3 31-25 49-44 26-97 6-24-10-31-48z" fill="#fff9e9" stroke="#263641" stroke-width="5"/>
+    <path d="M269 251q30 6 65 33 14 11 42 8-21 25-62 13-32-9-45-54z" fill="#d9e6df" stroke="#263641" stroke-width="4"/>
+    <path d="M283 273q18 12 35 16M280 283q15 12 30 16" fill="none" stroke="#a6bdb6" stroke-width="3" stroke-linecap="round"/>
+    <!-- neck and head -->
+    <path d="M348 213q-4-33 5-54 8-19 29-19 25 0 32 19 5 13-1 27l-9 34q-6 21-25 23-23 1-31-30z" fill="#fff9e9" stroke="#263641" stroke-width="5"/>
+    <circle cx="394" cy="164" r="14" fill="#fff" stroke="#263641" stroke-width="3"/>
+    <circle cx="399" cy="166" r="5" fill="#263641"/>
+    <path d="M382 145q13-10 25-3" fill="none" stroke="#263641" stroke-width="4" stroke-linecap="round"/>
+    <!-- oversized beak and pouch -->
+    <path d="M408 173q45 0 92 17 8 3 0 8-44 16-91-8z" fill="#efa13c" stroke="#263641" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M410 190q34 15 87 9-13 51-58 47-25-2-29-56z" fill="#f7be59" stroke="#263641" stroke-width="4"/>
+    <path d="M426 207q19 8 40 8" fill="none" stroke="#d89138" stroke-width="3" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M350 158q2-30 31-36 24-4 36 21l-4 10q-34-9-63 5z" fill="#e35e4e" stroke="#263641" stroke-width="4"/>
+    <path d="M366 128l5 21M384 125l3 22" fill="none" stroke="#a93435" stroke-width="3"/>
+    <path d="M352 154q-12 4-13 9 37-7 80-5" fill="#e35e4e" stroke="#263641" stroke-width="4" stroke-linecap="round"/>
+    <path d="M360 159q-2 26 15 30" fill="none" stroke="#263641" stroke-width="3"/>
+    <!-- front leg -->
+    <path d="M341 308q35 6 52 34l18 29" fill="none" stroke="#e29445" stroke-width="10" stroke-linecap="round"/>
+    <path d="M402 369q16-3 28 4l-3 7-28-2z" fill="#e29445" stroke="#263641" stroke-width="3"/>
+  </g>
+
+  <path d="M112 290h48M94 307h54M110 324h38" fill="none" stroke="#668c85" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+  <text x="400" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#23394a">“Rising fuel costs? Just wing it.”</text>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#4d6266">2026-10-31 23:32:28 SGT (UTC+08:00)</text>
+</svg>

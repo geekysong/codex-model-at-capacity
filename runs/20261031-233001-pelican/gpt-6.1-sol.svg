@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Fish</title>
+  <desc id="description">A proud pelican pedals a bicycle with a fish-filled bill while a fish passenger complains. The wheels spin and the rider bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="spokes" width="1" height="1" patternContentUnits="objectBoundingBox">
+      <path d="M0 0L1 1M1 0L0 1" stroke="#465966" stroke-width=".02"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #182b37; }
+      .outline { stroke: #182b37; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .spoke { stroke: #77909b; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff7df"/>
+  <path d="M0 310Q130 260 265 309T540 300T800 285V465H0Z" fill="#dcebc8"/>
+  <circle cx="691" cy="159" r="42" fill="#ffd76a"/>
+  <path d="M43 177q22-20 44 0m12 17q15-15 30 0" fill="none" stroke="#9ebcae" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="400" y="61" text-anchor="middle" font-size="46" font-weight="900" letter-spacing="3">TOUR DE FISH</text>
+  <text x="400" y="94" text-anchor="middle" font-size="17" font-weight="bold" letter-spacing="2">ZERO EMISSIONS. SUSPICIOUS CARGO.</text>
+
+  <path d="M0 438H800V491H0Z" fill="#e1d3b5"/>
+  <path d="M22 466H778" stroke="#fff7df" stroke-width="5" stroke-dasharray="38 25"/>
+  <ellipse cx="398" cy="438" rx="246" ry="14" fill="#182b37" opacity=".13"/>
+
+  <!-- Bicycle wheels rotate around their own hubs. -->
+  <g transform="translate(239 364)">
+    <circle r="73" fill="#fffaf0" class="outline" stroke-width="10"/>
+    <circle r="62" fill="none" stroke="#b2c3c4" stroke-width="3"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-62 0H62M0-62V62M-44-44L44 44M-44 44L44-44" class="spoke"/>
+      <path d="M-24-57L24 57M-57 24L57-24" class="spoke"/>
+      <rect x="-5" y="-60" width="10" height="17" rx="3" fill="#f5ae36" stroke="#182b37" stroke-width="2"/>
+    </g>
+    <circle r="8" fill="#182b37"/>
+  </g>
+  <g transform="translate(560 364)">
+    <circle r="73" fill="#fffaf0" class="outline" stroke-width="10"/>
+    <circle r="62" fill="none" stroke="#b2c3c4" stroke-width="3"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-62 0H62M0-62V62M-44-44L44 44M-44 44L44-44" class="spoke"/>
+      <path d="M-24-57L24 57M-57 24L57-24" class="spoke"/>
+      <rect x="-5" y="-60" width="10" height="17" rx="3" fill="#f5ae36" stroke="#182b37" stroke-width="2"/>
+    </g>
+    <circle r="8" fill="#182b37"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M239 364L310 270L375 364ZM310 270H505L375 364M505 270L560 364" stroke="#182b37" stroke-width="13"/>
+    <path d="M239 364L310 270L375 364ZM310 270H505L375 364M505 270L560 364" stroke="#e45748" stroke-width="7"/>
+    <path d="M310 270L302 248M505 270L496 239L520 224H542" stroke="#182b37" stroke-width="8"/>
+    <path d="M278 247H326" stroke="#182b37" stroke-width="13"/>
+    <path d="M244 356L375 348Q392 349 393 364Q392 380 375 380L244 373Z" stroke="#182b37" stroke-width="3"/>
+  </g>
+  <circle cx="375" cy="364" r="20" fill="#f4c450" class="outline"/>
+  <g transform="translate(375 364)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-26 0H26" stroke="#182b37" stroke-width="6"/>
+      <path d="M-35 0H-18M18 0H35" stroke="#182b37" stroke-width="9" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Pelican and legs have a small, continuous riding bounce. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M332 258L354 299L375 341" fill="none" stroke="#182b37" stroke-width="13" stroke-linecap="round"/>
+    <path d="M332 258L354 299L375 341" fill="none" stroke="#efa544" stroke-width="7" stroke-linecap="round"/>
+    <path d="M375 337L399 345L370 350Z" fill="#efa544" class="outline"/>
+
+    <path d="M275 219L239 202L251 235L233 236L266 259" fill="#edf4ee" class="outline"/>
+    <path d="M278 172Q320 145 370 171Q394 146 399 127Q407 108 427 119Q450 134 437 165L414 211Q406 263 348 276Q290 286 267 253Q248 223 278 172Z" fill="#fffef5" class="outline"/>
+    <path d="M287 200Q327 180 366 204Q351 241 294 243Q317 227 321 214" fill="#d6e1df" class="outline"/>
+    <path d="M366 205Q415 218 492 237" fill="none" stroke="#182b37" stroke-width="12" stroke-linecap="round"/>
+    <path d="M366 205Q415 218 492 237" fill="none" stroke="#eef3e9" stroke-width="7" stroke-linecap="round"/>
+
+    <path d="M430 147L635 166Q617 221 530 229Q464 232 431 179Z" fill="#f7c36b" class="outline"/>
+    <path d="M433 148L637 166L432 170Z" fill="#f1a343" class="outline"/>
+    <path d="M457 183Q527 208 603 183" fill="none" stroke="#d38a45" stroke-width="3"/>
+
+    <g transform="translate(544 198) rotate(-8)">
+      <path d="M-26 0Q-8-20 20 0Q-8 20-26 0L-39 12V-12Z" fill="#78bfc6" stroke="#182b37" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="10" cy="-2" r="3" fill="#182b37"/>
+      <path d="M-10-9L-7-19L3-11" fill="#78bfc6" stroke="#182b37" stroke-width="2"/>
+    </g>
+
+    <circle cx="423" cy="140" r="10" fill="white" stroke="#182b37" stroke-width="3"/>
+    <circle cx="427" cy="140" r="4" fill="#182b37"/>
+    <path d="M411 125L431 122" stroke="#182b37" stroke-width="4" stroke-linecap="round"/>
+    <path d="M399 122Q412 93 440 111L453 124Z" fill="#e45748" class="outline"/>
+    <path d="M412 107L415 119M427 109L432 121" stroke="#fff7df" stroke-width="4"/>
+    <path d="M389 174L410 185L395 202L375 184Z" fill="#e45748" stroke="#182b37" stroke-width="3"/>
+    <path d="M382 184L354 174L358 194Z" fill="#e45748" stroke="#182b37" stroke-width="3"/>
+  </g>
+
+  <g>
+    <path d="M573 122L561 96H532Q518 96 518 82V127Q518 141 533 141H722Q737 141 737 126V113Q737 99 722 99H590Z" fill="#fffef8" stroke="#182b37" stroke-width="3"/>
+    <text x="628" y="125" text-anchor="middle" font-size="17" font-weight="bold">“I ordered delivery!”</text>
+  </g>
+
+  <path d="M174 292H132M181 311H112M176 330H142" fill="none" stroke="#91a6a0" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="0" y="495" width="800" height="105" fill="#fff7df"/>
+  <path d="M42 498H758" stroke="#182b37" stroke-width="2"/>
+  <text x="400" y="530" text-anchor="middle" font-size="21" font-weight="bold">He rides for fitness. His bill rides for takeout.</text>
+  <text x="400" y="574" text-anchor="middle" font-size="18">2026-10-31 23:31:15 SGT (UTC+08:00)</text>
+</svg>
