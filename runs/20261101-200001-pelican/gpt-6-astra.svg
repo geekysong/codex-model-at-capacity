@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Beak</title>
+  <desc id="description">A determined pelican pedals a bicycle with a huge pouch full of fish. Both wheels spin, its feet pedal, and its body bobs in a looping animation.</desc>
+  <defs>
+    <pattern id="pouchDots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#d59030" opacity=".35"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="76" fill="#fff9e8" stroke="#243744" stroke-width="12"/>
+      <circle r="66" fill="none" stroke="#9fb6b5" stroke-width="3"/>
+      <g stroke="#789795" stroke-width="3">
+        <path d="M-65 0H65M0-65V65M-46-46L46 46M-46 46L46-46"/>
+      </g>
+      <path d="M-22-70A74 74 0 0 1 22-70" fill="none" stroke="#f8bf49" stroke-width="5"/>
+      <circle r="9" fill="#243744"/>
+    </g>
+    <g id="fish">
+      <path d="M-22 0L-35-12V12Z" fill="#4a9f9e" stroke="#243744" stroke-width="2"/>
+      <ellipse rx="24" ry="12" fill="#8acac1" stroke="#243744" stroke-width="2"/>
+      <circle cx="13" cy="-3" r="3" fill="#243744"/>
+      <path d="M1-10L-7-19L-12-9" fill="#4a9f9e" stroke="#243744" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff6de"/>
+  <path d="M0 118Q190 88 360 122T800 112V475H0Z" fill="#deeeee"/>
+  <circle cx="680" cy="168" r="43" fill="#ffce68"/>
+  <g fill="#fff" opacity=".85">
+    <path d="M54 185Q48 164 72 159Q81 128 111 150Q139 143 147 167Q175 169 170 185Z"/>
+    <path d="M563 238Q555 218 578 214Q591 189 613 208Q646 199 652 228H679V238Z"/>
+  </g>
+
+  <g font-family="Verdana, sans-serif" text-anchor="middle" fill="#243744">
+    <text x="400" y="57" font-size="42" font-weight="900" letter-spacing="3">TOUR DE BEAK</text>
+    <text x="400" y="88" font-size="17" font-weight="bold">THE ORIGINAL GIG-ECONOMY POUCH</text>
+  </g>
+
+  <!-- One coastal road, one very overloaded commuter. -->
+  <path d="M0 462Q200 447 400 463T800 459V507H0Z" fill="#aec5b3"/>
+  <path d="M0 488H800" stroke="#243744" stroke-width="3"/>
+  <ellipse cx="403" cy="481" rx="254" ry="10" fill="#243744" opacity=".13"/>
+
+  <g stroke="#243744" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(249 405)">
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 249 405" to="360 249 405" dur="1.6s" repeatCount="indefinite" additive="sum"/>
+    </g>
+    <g transform="translate(562 405)">
+      <g>
+        <use href="#wheel"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- Bicycle frame. -->
+    <g fill="none" stroke="#243744" stroke-width="14">
+      <path d="M249 405L325 307L388 405H249L500 307L388 405M325 307H500M487 275L562 405"/>
+    </g>
+    <g fill="none" stroke="#e96650" stroke-width="8">
+      <path d="M249 405L325 307L388 405H249L500 307L388 405M325 307H500M487 275L562 405"/>
+    </g>
+    <path d="M325 307L313 281M487 275L479 253L518 243" fill="none" stroke-width="7"/>
+    <path d="M288 280H341" stroke-width="13"/>
+    <path d="M510 244L526 240" stroke-width="10"/>
+    <circle cx="388" cy="405" r="18" fill="#fff6de" stroke-width="4"/>
+
+    <!-- Pedaling leg behind the body. -->
+    <path d="M343 277L365 332L411 386" fill="none" stroke="#c28629" stroke-width="10">
+      <animate attributeName="d" values="M343 277L365 332L411 386;M343 277L334 349L365 424;M343 277L365 332L411 386" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <g>
+      <path d="M365 424L411 386" stroke-width="6"/>
+      <path d="M352 424H378M398 386H424" stroke-width="6"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 388 405" to="360 388 405" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Pelican: every contour bobs together, but lettering stays still. -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+      <path d="M284 252L234 224L250 269L221 262L257 291" fill="#fafbf5" stroke-width="4"/>
+      <ellipse cx="330" cy="250" rx="76" ry="49" transform="rotate(-12 330 250)" fill="#fafbf5" stroke-width="4"/>
+      <path d="M337 253C367 239 372 214 366 182C361 152 379 133 401 137C429 143 432 172 415 195L398 220L394 257" fill="#fafbf5" stroke-width="4"/>
+      <path d="M286 241Q331 224 371 264Q335 288 286 254M299 253L336 264M311 242L348 256" fill="#e1e8e1" stroke-width="3"/>
+      <path d="M368 244Q412 264 490 252L506 243" fill="none" stroke-width="16"/>
+      <path d="M368 241Q412 261 490 249L506 240" fill="none" stroke="#fafbf5" stroke-width="10"/>
+
+      <!-- Huge translucent-looking delivery pouch, full of fish. -->
+      <path d="M412 174L612 187Q589 288 504 288Q431 278 412 174Z" fill="#f5bc58" stroke-width="4"/>
+      <path d="M420 186L599 193Q575 274 507 277Q448 268 420 186Z" fill="url(#pouchDots)" stroke="none"/>
+      <use href="#fish" transform="translate(472 221) rotate(17)"/>
+      <use href="#fish" transform="translate(547 218) rotate(-12)"/>
+      <use href="#fish" transform="translate(517 253) rotate(8)"/>
+      <path d="M411 165L620 183Q630 186 615 193L414 183Z" fill="#ffd26c" stroke-width="4"/>
+      <circle cx="404" cy="157" r="10" fill="white" stroke-width="2"/>
+      <circle cx="408" cy="157" r="4" fill="#243744" stroke="none"/>
+      <path d="M390 142L413 144" stroke-width="5"/>
+      <path d="M375 130Q397 112 422 133L422 140H373Z" fill="#e96650" stroke-width="3"/>
+      <path d="M389 124L390 136M403 124L405 137" stroke-width="3"/>
+
+      <path d="M441 137Q456 119 460 135Q463 148 451 148Z" fill="#65b9ce" stroke="none"/>
+    </g>
+
+    <!-- Near leg visibly pedals through a repeating cycle. -->
+    <path d="M329 286L320 349L365 424" fill="none" stroke="#e2a536" stroke-width="11">
+      <animate attributeName="d" values="M329 286L320 349L365 424;M329 286L389 325L411 386;M329 286L320 349L365 424" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g font-family="Verdana, sans-serif" fill="#243744">
+    <path d="M65 217Q65 202 80 202H206Q221 202 221 217V264Q221 278 206 278H181L194 299L158 278H80Q65 278 65 264Z" fill="#fffdf4" stroke="#243744" stroke-width="3"/>
+    <text x="143" y="231" text-anchor="middle" font-size="17" font-weight="bold">“Paid in fish.</text>
+    <text x="143" y="254" text-anchor="middle" font-size="17" font-weight="bold">Still net zero.”</text>
+  </g>
+
+  <rect x="0" y="508" width="800" height="92" fill="#fff6de"/>
+  <g text-anchor="middle" font-family="Verdana, sans-serif" fill="#243744">
+    <text x="400" y="540" font-size="20" font-weight="bold">One pelican. Two wheels. Zero employee benefits.</text>
+    <path d="M120 555H680" stroke="#d5c8ac"/>
+    <text x="400" y="581" font-size="16">2026-11-01 20:00:01 SGT (UTC+08:00)</text>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A pompous pelican pedals a bicycle past a sign that reads “Bike lane? I thought this was a beak lane.”</desc>
+  <defs>
+    <style>
+      .ink{stroke:#263238;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 3s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .65s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+      text{font-family:Arial,Helvetica,sans-serif}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#c9f1f2"/>
+  <circle cx="665" cy="115" r="48" fill="#ffd96b"/>
+  <path d="M0 375 Q120 316 240 366 T480 356 T800 367 V493 H0Z" fill="#8ed4a0"/>
+  <path d="M0 416 Q140 382 280 415 T560 410 T800 415" fill="none" stroke="#65b987" stroke-width="5"/>
+  <rect y="470" width="800" height="89" fill="#59636b"/>
+  <path d="M0 514H800" stroke="#f6e8a5" stroke-width="5" stroke-dasharray="32 25"/>
+  
+  <text id="title" x="400" y="55" text-anchor="middle" font-size="31" font-weight="900" fill="#263238">THE PELICAN CYCLE</text>
+  <text x="400" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="#41545a">One bird. Two wheels. Absolutely no road sense.</text>
+
+  <!-- roadside sign -->
+  <path d="M93 257V431" stroke="#735a3a" stroke-width="10"/>
+  <rect x="30" y="190" width="180" height="105" rx="9" fill="#fff9e8" class="ink"/>
+  <text x="120" y="221" text-anchor="middle" font-size="15" font-weight="900" fill="#263238">BIKE LANE?</text>
+  <text x="120" y="246" text-anchor="middle" font-size="14" font-weight="700" fill="#263238">I thought this</text>
+  <text x="120" y="267" text-anchor="middle" font-size="14" font-weight="700" fill="#263238">was a BEAK lane!</text>
+
+  <!-- bicycle frame -->
+  <g fill="none" class="ink">
+    <circle class="wheel" cx="300" cy="424" r="55" stroke="#263238" stroke-width="7"/>
+    <circle class="wheel" cx="548" cy="424" r="55" stroke="#263238" stroke-width="7"/>
+    <g class="wheel" stroke="#8fa6ad" stroke-width="2">
+      <path d="M300 369V479M245 424H355M261 385L339 463M339 385L261 463"/>
+      <path d="M548 369V479M493 424H603M509 385L587 463M587 385L509 463"/>
+    </g>
+    <path d="M300 424L389 424L350 349L300 424M389 424L442 349L548 424M350 349L442 349" stroke="#e25849" stroke-width="8"/>
+    <path d="M350 349L334 332M325 332H352M442 349L451 326M437 326H466" stroke-width="6"/>
+    <circle cx="389" cy="424" r="12" fill="#f4c44e"/>
+    <path d="M389 424L367 401M389 424L413 447" stroke-width="6"/>
+    <path d="M356 399H378M402 449H424" stroke="#263238" stroke-width="6"/>
+  </g>
+
+  <!-- animated rider -->
+  <g class="rider">
+    <!-- legs -->
+    <path d="M390 321Q410 352 407 382L389 424" fill="none" stroke="#f0a52e" stroke-width="17" stroke-linecap="round"/>
+    <path d="M402 322Q371 350 367 382L389 424" fill="none" stroke="#f0a52e" stroke-width="17" stroke-linecap="round"/>
+    <path d="M379 418L389 424M399 378L410 386M357 379L372 385" stroke="#263238" stroke-width="7" stroke-linecap="round"/>
+    <!-- body -->
+    <path d="M365 255Q346 279 361 323Q381 346 418 323L421 267Q395 240 365 255Z" fill="#fffdf4" class="ink"/>
+    <path d="M368 314Q390 326 417 311" fill="none" stroke="#d6d3c8" stroke-width="4"/>
+    <path d="M366 278Q340 294 350 314" fill="none" stroke="#263238" stroke-width="10" stroke-linecap="round"/>
+    <path d="M350 314L370 321" stroke="#f0a52e" stroke-width="8" stroke-linecap="round"/>
+    <!-- neck and head -->
+    <path d="M399 274Q415 230 432 202" fill="none" stroke="#fffdf4" stroke-width="22" stroke-linecap="round"/>
+    <path d="M432 207Q434 174 463 162Q490 154 505 177Q513 202 489 220Q467 232 444 216Z" fill="#fffdf4" class="ink"/>
+    <circle cx="481" cy="184" r="6" fill="#263238"/>
+    <path d="M501 191Q549 184 590 205Q555 222 508 211Z" fill="#f3ad39" class="ink"/>
+    <path d="M518 210Q554 226 583 209" fill="none" stroke="#b96b24" stroke-width="4"/>
+    <path d="M485 166L499 147L509 173" fill="#ef6f62" class="ink"/>
+    <!-- helmet -->
+    <path d="M432 179Q438 145 468 143Q494 144 502 169L434 182Z" fill="#4ca7c7" class="ink"/>
+    <path d="M430 181L507 173" stroke="#263238" stroke-width="6" stroke-linecap="round"/>
+    <!-- tiny tie -->
+    <path d="M401 257L413 266L405 278L397 266Z" fill="#e25849" class="ink"/>
+  </g>
+
+  <!-- comic motion marks -->
+  <path d="M610 329L636 318M612 344L643 344M604 359L630 369" stroke="#e25849" stroke-width="5" stroke-linecap="round"/>
+  <text x="675" y="325" text-anchor="middle" font-size="17" font-weight="900" fill="#e25849" transform="rotate(8 675 325)">HONK!</text>
+
+  <rect x="0" y="559" width="800" height="41" fill="#263238"/>
+  <text x="400" y="585" text-anchor="middle" font-size="16" font-weight="700" fill="#fff9e8">2026-11-01 20:02:10 SGT (UTC+08:00)</text>
+</svg>
