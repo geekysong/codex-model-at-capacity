@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Two-Wheel Waddle</title>
+  <desc id="desc">A proud pelican pedals a tiny bicycle, insisting it is a perfectly sensible way to get around.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .6s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f2"/>
+  <circle cx="690" cy="105" r="43" fill="#ffd36a"/>
+  <path d="M0 380 Q120 330 245 375 T500 365 T800 372 V600 H0Z" fill="#a7d9b6"/>
+  <path d="M0 410 Q160 385 330 410 T800 400 V600 H0Z" fill="#79bd91"/>
+  <path d="M0 470 H800" stroke="#f8efcf" stroke-width="8" stroke-dasharray="28 20"/>
+
+  <text id="title" x="400" y="55" text-anchor="middle" font-size="31" font-weight="900" fill="#143d48">THE PELICAN’S TWO-WHEEL WADDLE</text>
+  <text x="400" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#35636a">“It’s faster than flying. Mostly.”</text>
+
+  <!-- Bicycle frame and spinning wheels -->
+  <g fill="none" stroke="#183f54" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="245" cy="425" r="57" stroke="#f8fbf2" stroke-width="9"/>
+      <circle cx="245" cy="425" r="6" fill="#183f54" stroke="none"/>
+      <path d="M245 368V482 M188 425H302 M205 385L285 465 M285 385L205 465" stroke-width="2.5"/>
+    </g>
+    <g class="wheel">
+      <circle cx="555" cy="425" r="57" stroke="#f8fbf2" stroke-width="9"/>
+      <circle cx="555" cy="425" r="6" fill="#183f54" stroke="none"/>
+      <path d="M555 368V482 M498 425H612 M515 385L595 465 M595 385L515 465" stroke-width="2.5"/>
+    </g>
+    <path d="M245 425L365 425L320 345L245 425 M320 345L555 425 M365 425L405 350"/>
+    <path d="M300 345H342 M395 350H430 M405 350L415 326"/>
+    <circle cx="365" cy="425" r="12" fill="#f3a641" stroke="#183f54"/>
+    <path d="M355 425L334 445 M375 425L395 443"/>
+    <path d="M350 445H331 M395 443H414"/>
+  </g>
+  <path d="M245 425H555" stroke="#e8a23c" stroke-width="4" stroke-dasharray="8 8"/>
+
+  <!-- Animated pelican rider -->
+  <g class="rider">
+    <!-- tail -->
+    <path d="M394 245 Q430 225 446 250 L415 266Z" fill="#526f7c" stroke="#183f54" stroke-width="4"/>
+    <!-- body -->
+    <ellipse cx="374" cy="275" rx="57" ry="44" fill="#f9fbf3" stroke="#183f54" stroke-width="4"/>
+    <path d="M345 281 Q370 250 409 274 Q390 309 355 308Z" fill="#7f9aa0" stroke="#183f54" stroke-width="3"/>
+    <!-- neck -->
+    <path d="M344 272 Q319 228 340 190 Q352 166 375 177 Q393 187 379 208 Q365 226 383 252" fill="none" stroke="#f9fbf3" stroke-width="25" stroke-linecap="round"/>
+    <path d="M344 272 Q319 228 340 190 Q352 166 375 177 Q393 187 379 208" fill="none" stroke="#183f54" stroke-width="4" stroke-linecap="round"/>
+    <!-- head -->
+    <ellipse cx="362" cy="173" rx="37" ry="29" fill="#f9fbf3" stroke="#183f54" stroke-width="4"/>
+    <circle cx="374" cy="166" r="4.5" fill="#183f54"/>
+    <path d="M393 174 Q443 172 471 190 Q438 207 392 192Z" fill="#f4a642" stroke="#183f54" stroke-width="4"/>
+    <path d="M396 190 Q431 196 458 190 Q438 219 408 212 Q395 207 396 190Z" fill="#ed7659" stroke="#183f54" stroke-width="3"/>
+    <path d="M432 182L439 195" stroke="#bd6a2c" stroke-width="3"/>
+    <!-- jaunty helmet -->
+    <path d="M330 160 Q337 125 370 131 Q393 134 399 159Z" fill="#ef7059" stroke="#183f54" stroke-width="4"/>
+    <path d="M324 161H402" stroke="#183f54" stroke-width="6" stroke-linecap="round"/>
+    <!-- wing and pedaling legs -->
+    <path d="M357 263 Q386 247 405 270 Q382 286 356 280Z" fill="#eef3ea" stroke="#183f54" stroke-width="3"/>
+    <path d="M363 309L387 334L365 353 M390 309L408 332L395 355" fill="none" stroke="#f4a642" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M365 353L349 353 M395 355L411 355" stroke="#183f54" stroke-width="5" stroke-linecap="round"/>
+    <!-- hands on handlebars -->
+    <path d="M333 285L320 345 M410 280L405 350" fill="none" stroke="#f4a642" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- gag callouts -->
+  <path d="M526 150 Q565 123 610 148 L615 183 Q575 200 539 178 L518 190Z" fill="#fffdf2" stroke="#183f54" stroke-width="3"/>
+  <text x="567" y="153" text-anchor="middle" font-size="13" font-weight="800" fill="#183f54">HONK IF</text>
+  <text x="567" y="170" text-anchor="middle" font-size="13" font-weight="800" fill="#183f54">YOU’RE FISH</text>
+  <path d="M518 184L492 194" stroke="#183f54" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="400" y="520" text-anchor="middle" font-size="15" font-weight="700" fill="#143d48">Local bird claims the handlebars are “basically a perch with ambition.”</text>
+  <rect x="0" y="550" width="800" height="50" fill="#143d48"/>
+  <text x="400" y="581" text-anchor="middle" font-size="18" font-weight="700" fill="#fffdf2">2026-11-01 22:02:43 SGT (UTC+08:00)</text>
+</svg>
