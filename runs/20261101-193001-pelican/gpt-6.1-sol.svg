@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title description">
+  <title id="title">Tour de Beak</title>
+  <desc id="description">A smug pelican pedals a bicycle with a giant fish-filled bill, declaring himself carbon neutral. The wheels spin and the pelican bobs in a looping animation.</desc>
+  <defs>
+    <pattern id="sky" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1" fill="#b9dfdf" opacity=".35"/>
+    </pattern>
+    <style>
+      .ink { stroke:#253442; stroke-width:5; stroke-linecap:round; stroke-linejoin:round }
+      .letter { font-family:Arial,Helvetica,sans-serif; fill:#253442 }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff7df"/>
+  <rect x="18" y="18" width="764" height="564" rx="22" fill="none" stroke="#253442" stroke-width="4"/>
+  <text x="400" y="65" text-anchor="middle" class="letter" font-size="43" font-weight="900" letter-spacing="3">TOUR DE BEAK</text>
+  <text x="400" y="94" text-anchor="middle" class="letter" font-size="17" font-weight="bold">BIG BILL. TINY CARBON FOOTPRINT.</text>
+
+  <rect x="35" y="111" width="730" height="378" rx="16" fill="#d9eeee"/>
+  <rect x="35" y="111" width="730" height="378" rx="16" fill="url(#sky)"/>
+  <circle cx="111" cy="171" r="35" fill="#ffd65a"/>
+  <path d="M65 291 Q119 239 185 290 Q240 245 300 290 L300 390 H35 V315Z" fill="#b1d0b4"/>
+  <path d="M525 310 Q590 255 649 306 Q701 262 765 301 V397 H525Z" fill="#b1d0b4"/>
+
+  <g class="ink">
+    <path d="M99 383 V265" fill="none" stroke="#747c78"/>
+    <path d="M57 254 H159 L174 274 L159 294 H57Z" fill="#fff7df" stroke-width="3"/>
+  </g>
+  <text x="111" y="271" text-anchor="middle" class="letter" font-size="13" font-weight="bold">BIKE LANE</text>
+  <text x="111" y="286" text-anchor="middle" class="letter" font-size="11">NO FREELOADERS</text>
+
+  <path d="M35 393 Q400 380 765 393 V473 Q400 486 35 473Z" fill="#aaa99e"/>
+  <path d="M57 456 H179 M580 456 H716" stroke="#fff7df" stroke-width="5" stroke-dasharray="25 18"/>
+  <ellipse cx="397" cy="470" rx="227" ry="12" fill="#253442" opacity=".13"/>
+
+  <!-- Rotating wheels, with stationary tires and hubs. -->
+  <g class="ink" fill="#eaf5ef">
+    <circle cx="277" cy="420" r="69" stroke-width="10"/>
+    <circle cx="523" cy="420" r="69" stroke-width="10"/>
+  </g>
+  <g transform="translate(277 420)">
+    <g stroke="#687a80" stroke-width="3">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+      <path d="M-63 0 H63 M0-63 V63 M-45-45 L45 45 M-45 45 L45-45"/>
+      <path d="M-53-32 L53 32 M-32-53 L32 53 M-53 32 L53-32 M-32 53 L32-53"/>
+      <rect x="40" y="-5" width="14" height="10" rx="3" fill="#ffd65a" stroke="none"/>
+    </g>
+  </g>
+  <g transform="translate(523 420)">
+    <g stroke="#687a80" stroke-width="3">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+      <path d="M-63 0 H63 M0-63 V63 M-45-45 L45 45 M-45 45 L45-45"/>
+      <path d="M-53-32 L53 32 M-32-53 L32 53 M-53 32 L53-32 M-32 53 L32-53"/>
+      <rect x="40" y="-5" width="14" height="10" rx="3" fill="#ffd65a" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame. -->
+  <g class="ink" fill="none">
+    <path d="M277 420 L343 335 L395 420 Z M343 335 H487 L395 420 M487 335 L523 420" stroke="#dc5847" stroke-width="9"/>
+    <path d="M343 335 L333 313 M487 335 L476 297 L503 283" stroke-width="7"/>
+    <path d="M315 313 H357" stroke-width="12"/>
+    <path d="M500 283 Q524 272 530 290" stroke-width="8"/>
+    <circle cx="395" cy="420" r="16" fill="#fff7df"/>
+  </g>
+
+  <!-- Pelican and pedal motion share a gentle looping bounce. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".75s" repeatCount="indefinite"/>
+    <g class="ink">
+      <!-- Far leg. -->
+      <path d="M363 302 L391 352 L424 395" fill="none" stroke="#e8a23c" stroke-width="12">
+        <animate attributeName="d" values="M363 302 L391 352 L424 395;M363 302 L365 367 L377 439;M363 302 L391 352 L424 395" dur="1.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M280 286 Q238 269 251 250 L303 261" fill="#fffdf3"/>
+      <path d="M293 244 Q316 211 365 224 Q416 232 426 275 Q421 316 360 322 Q295 325 280 286Z" fill="#fffdf3"/>
+      <path d="M304 264 Q342 252 382 279 Q365 302 331 294Z" fill="#d1dcda"/>
+      <path d="M319 272 Q343 270 358 284" fill="none" stroke-width="3"/>
+
+      <!-- Upright neck and head. -->
+      <path d="M377 257 Q368 223 393 188 Q400 174 399 158 Q395 135 416 130 Q447 121 455 150 Q461 170 443 195 Q424 222 429 268" fill="#fffdf3"/>
+      <path d="M402 137 L396 125 M411 132 L411 119 M421 131 L427 121" fill="none" stroke-width="3"/>
+
+      <!-- Enormous bill and flexible fish pouch. -->
+      <path d="M443 163 L661 183 Q629 242 537 244 Q469 237 445 184Z" fill="#f4b658"/>
+      <path d="M449 166 Q537 155 673 179 L661 189 L447 181Z" fill="#ffd15b"/>
+      <path d="M463 186 Q542 202 640 190" fill="none" stroke="#bc7f38" stroke-width="2"/>
+      <path d="M506 214 Q530 195 552 216 L568 204 L566 229 L550 223 Q528 241 506 220Z" fill="#72b4bb" stroke-width="3"/>
+      <circle cx="518" cy="216" r="2.5" fill="#253442" stroke="none"/>
+      <path d="M580 216 Q592 209 607 216 L617 210 L615 224 L605 220 Q591 228 580 220Z" fill="#83c4ba" stroke-width="2"/>
+
+      <!-- Smug face. -->
+      <circle cx="432" cy="152" r="8" fill="white" stroke-width="3"/>
+      <circle cx="435" cy="151" r="3" fill="#253442" stroke="none"/>
+      <path d="M422 139 L438 143" fill="none" stroke-width="4"/>
+
+      <!-- Cycling scarf and wing reaching the handlebars. -->
+      <path d="M395 204 L374 195 L352 204 L371 217 L392 216" fill="#df5948" stroke-width="3"/>
+      <path d="M395 199 L425 212 L420 222 L389 210Z" fill="#df5948" stroke-width="3"/>
+      <path d="M384 258 Q413 279 443 283 L499 282" fill="none" stroke="#253442" stroke-width="17"/>
+      <path d="M384 258 Q413 279 443 283 L499 282" fill="none" stroke="#fffdf3" stroke-width="10"/>
+
+      <!-- Near leg and webbed foot pedal through a small repeating stroke. -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-7 357 306;7 357 306;-7 357 306" dur="1.5s" repeatCount="indefinite"/>
+        <path d="M357 306 L337 360 L390 411" fill="none" stroke="#f4b658" stroke-width="12"/>
+        <path d="M386 404 L412 412 L406 420 L383 419 L376 412Z" fill="#ed9a35" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+
+  <g class="ink" fill="none">
+    <circle cx="277" cy="420" r="5" fill="#253442"/>
+    <circle cx="523" cy="420" r="5" fill="#253442"/>
+    <path d="M395 420 L411 432" stroke-width="4"/>
+    <path d="M401 434 H423" stroke-width="5"/>
+  </g>
+
+  <!-- Speech stays still and readable. -->
+  <path d="M555 116 H721 Q739 116 739 134 V151 Q739 166 721 166 H610 L590 179 L595 166 H555 Q539 166 539 151 V134 Q539 116 555 116Z" fill="#fffdf3" stroke="#253442" stroke-width="3"/>
+  <text x="639" y="137" text-anchor="middle" class="letter" font-size="16" font-weight="bold">“I offset my fish</text>
+  <text x="639" y="156" text-anchor="middle" class="letter" font-size="16" font-weight="bold">with pedal power.”</text>
+
+  <text x="400" y="520" text-anchor="middle" class="letter" font-size="22" font-weight="bold">He rides to work. His lunch rides for free.</text>
+  <path d="M74 539 H726" stroke="#253442" stroke-width="1" opacity=".3"/>
+  <text x="400" y="564" text-anchor="middle" class="letter" font-size="17">2026-11-01 19:31:19 SGT (UTC+08:00)</text>
+</svg>

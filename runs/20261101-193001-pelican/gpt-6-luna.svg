@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A proud pelican pedals a bicycle while a fish complains from the basket.</desc>
+  <style>
+    text { font-family: "Trebuchet MS", Arial, sans-serif; }
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+    .rider { transform-box: fill-box; transform-origin: center; animation: bob .65s ease-in-out infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-3px); } }
+  </style>
+
+  <rect width="800" height="600" fill="#dff5f1"/>
+  <path d="M0 390 Q150 345 300 385 T600 375 T800 370 V530 H0Z" fill="#a7d8a5"/>
+  <path d="M0 455 Q180 430 360 455 T800 440" fill="none" stroke="#75b985" stroke-width="4"/>
+  <circle cx="685" cy="100" r="46" fill="#ffd76a"/>
+  <path d="M0 155 Q95 105 190 155 T380 155 T570 155 T800 150" fill="none" stroke="#fff" stroke-width="10" opacity=".75"/>
+
+  <text id="title" x="400" y="58" text-anchor="middle" font-size="34" font-weight="900" fill="#174c55">THE PELICAN CYCLE</text>
+  <text x="400" y="88" text-anchor="middle" font-size="16" font-weight="700" fill="#34727a">“He’s going places. Mostly where the fish are.”</text>
+
+  <!-- bicycle frame -->
+  <g fill="none" stroke="#e45b45" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M215 390 L330 390 L285 300 L215 390"/>
+    <path d="M330 390 L405 300 L285 300"/>
+    <path d="M405 300 L440 390 L330 390"/>
+    <path d="M405 300 L430 285"/>
+    <path d="M430 285 L455 285"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#184d58" stroke-width="7">
+    <circle cx="215" cy="390" r="70"/>
+    <path d="M145 390h140 M215 320v140 M165 340l100 100 M265 340L165 440"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#184d58" stroke-width="7">
+    <circle cx="440" cy="390" r="70"/>
+    <path d="M370 390h140 M440 320v140 M390 340l100 100 M490 340L390 440"/>
+  </g>
+  <circle cx="330" cy="390" r="12" fill="#ffd76a" stroke="#184d58" stroke-width="5"/>
+  <path d="M330 390l-28-21 M330 390l28 21" stroke="#184d58" stroke-width="6" stroke-linecap="round"/>
+  <path d="M286 300l-12-24 M260 276h34" stroke="#184d58" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- basket and fish -->
+  <path d="M408 290 L478 290 L466 327 L418 327Z" fill="#f4b942" stroke="#8b5a2b" stroke-width="4"/>
+  <path d="M422 281q18-28 38 0" fill="none" stroke="#8b5a2b" stroke-width="4"/>
+  <path d="M438 299q12-13 25 0q-13 13-25 0m25 0l10-8v16z" fill="#67b7bd" stroke="#27727a" stroke-width="2"/>
+  <circle cx="442" cy="298" r="2" fill="#143f46"/>
+  <text x="446" y="321" text-anchor="middle" font-size="10" font-weight="800" fill="#68451f">LUNCH</text>
+
+  <!-- animated pelican -->
+  <g class="rider">
+    <path d="M275 285 Q260 253 271 220 Q281 190 315 186 Q347 182 361 205 Q374 225 357 249 Q343 270 311 271Z" fill="#fffdf5" stroke="#174c55" stroke-width="4"/>
+    <path d="M300 267 Q325 282 355 258 L371 234 Q382 222 393 228 Q400 233 391 243 L365 276 Q343 298 306 293Z" fill="#f08b5d" stroke="#a64d3d" stroke-width="4"/>
+    <path d="M350 231 Q367 221 385 226 Q371 239 354 241Z" fill="#ffcc52" stroke="#a87927" stroke-width="3"/>
+    <circle cx="335" cy="212" r="5" fill="#173f46"/>
+    <circle cx="336" cy="211" r="1.5" fill="#fff"/>
+    <path d="M299 205 Q311 187 329 193" fill="none" stroke="#f08b5d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M288 270 Q269 285 257 302 M338 276 Q327 295 315 307" fill="none" stroke="#174c55" stroke-width="5" stroke-linecap="round"/>
+    <path d="M257 302l-17 5 M315 307l-17 5" stroke="#f2a531" stroke-width="6" stroke-linecap="round"/>
+    <!-- wing -->
+    <path d="M286 232 Q312 215 338 236 Q315 254 288 253Z" fill="#d7ece5" stroke="#174c55" stroke-width="3"/>
+    <!-- cap -->
+    <path d="M299 193 Q317 171 343 187 L348 198 Q322 191 299 202Z" fill="#e45b45" stroke="#174c55" stroke-width="3"/>
+    <path d="M316 180l2-10 8 9" fill="#ffd76a" stroke="#174c55" stroke-width="2"/>
+  </g>
+
+  <path d="M520 224q10-18 20 0q10-18 20 0q0 18-20 29q-20-11-20-29" fill="#ef705c"/>
+  <text x="557" y="220" font-size="14" font-weight="800" fill="#174c55">HONK!</text>
+  <path d="M159 281l-15-10m18 23l-20 2m31-23l-5-18" stroke="#f2a531" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="0" y="530" width="800" height="70" fill="#174c55"/>
+  <text x="400" y="558" text-anchor="middle" font-size="16" font-weight="700" fill="#fffdf5">“No hands on the handlebars. Both wings are busy looking majestic.”</text>
+  <text x="400" y="586" text-anchor="middle" font-size="15" font-weight="700" fill="#ffd76a">2026-11-01 19:32:29 SGT (UTC+08:00)</text>
+</svg>
