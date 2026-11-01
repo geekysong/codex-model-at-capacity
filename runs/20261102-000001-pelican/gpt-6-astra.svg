@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pedal Pelican: Flight costs extra</title>
+  <desc id="desc">A weary pelican pedals a bicycle carrying a fish delivery. Both wheels spin and the pelican bobs continuously. A fish complains that it ordered air delivery.</desc>
+  <defs>
+    <pattern id="paper" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r=".7" fill="#d9cbaa" opacity=".35"/>
+    </pattern>
+    <g id="spokes" stroke="#39555b" stroke-width="3">
+      <path d="M-58 0H58M0-58V58M-41-41L41 41M-41 41L41-41"/>
+      <circle r="10" fill="#f7be45" stroke="#263c43" stroke-width="4"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d9"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M0 110H800" stroke="#263c43" stroke-width="3"/>
+  <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="39" font-weight="900" fill="#263c43">THE PECKING-ORDER ECONOMY</text>
+  <text x="400" y="87" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" letter-spacing="3" fill="#98603d">ONE BIRD. TWO WHEELS. ZERO BENEFITS.</text>
+
+  <!-- One seaside delivery scene -->
+  <path d="M0 338Q100 320 210 338T430 338T650 338T870 338V463H0Z" fill="#b9ddd4"/>
+  <path d="M0 368Q110 350 220 368T440 368T660 368T880 368" fill="none" stroke="#83beb7" stroke-width="3"/>
+  <path d="M55 201q14-14 28 0q14-14 28 0M658 254q11-12 22 0q11-12 22 0" fill="none" stroke="#7caaa5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="686" cy="164" r="30" fill="#f7be45"/>
+  <path d="M0 460H800V499H0Z" fill="#dfcbaa"/>
+  <path d="M0 460H800" stroke="#263c43" stroke-width="4"/>
+  <ellipse cx="393" cy="479" rx="225" ry="9" fill="#b69f7c" opacity=".4"/>
+
+  <!-- Fish's complaint -->
+  <path d="M530 123H744Q758 123 758 137V202Q758 216 744 216H655L626 250L635 216H530Q516 216 516 202V137Q516 123 530 123Z" fill="#fffdfa" stroke="#263c43" stroke-width="3"/>
+  <text x="637" y="159" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#263c43">I ordered</text>
+  <text x="637" y="188" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#bd4936">AIR delivery!</text>
+
+  <!-- Wheels: fixed tires, rotating spokes -->
+  <g fill="#fff4d9" stroke="#263c43" stroke-width="10">
+    <circle cx="260" cy="416" r="65"/>
+    <circle cx="536" cy="416" r="65"/>
+  </g>
+  <g fill="none" stroke="#d99e43" stroke-width="3">
+    <circle cx="260" cy="416" r="57"/>
+    <circle cx="536" cy="416" r="57"/>
+  </g>
+  <g transform="translate(260 416)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(536 416)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M260 416L321 318L386 416H260L481 316L386 416L321 318" stroke="#263c43" stroke-width="13"/>
+    <path d="M260 416L321 318L386 416H260L481 316L386 416L321 318" stroke="#e36549" stroke-width="7"/>
+    <path d="M536 416L476 296L477 281H510" stroke="#263c43" stroke-width="10"/>
+    <path d="M321 318L313 296" stroke="#263c43" stroke-width="9"/>
+    <path d="M291 297H335" stroke="#263c43" stroke-width="13"/>
+    <path d="M508 279H521" stroke="#9a5d3c" stroke-width="12"/>
+    <path d="M233 337H293" stroke="#263c43" stroke-width="6"/>
+    <path d="M240 339L260 409" stroke="#263c43" stroke-width="4"/>
+  </g>
+
+  <!-- Delivery basket and skeptical fish -->
+  <path d="M509 298H606L594 347H519Z" fill="#dda64e" stroke="#263c43" stroke-width="4"/>
+  <path d="M518 312H601M522 329H598M535 300L539 344M559 300V346M583 300L580 344" stroke="#996b36" stroke-width="3"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur=".7s" repeatCount="indefinite"/>
+    <path d="M547 290L525 270L524 296L545 299Q562 265 596 279Q587 309 547 300Z" fill="#77b9ac" stroke="#263c43" stroke-width="3"/>
+    <circle cx="581" cy="283" r="7" fill="#fff"/>
+    <circle cx="583" cy="284" r="2.7" fill="#263c43"/>
+    <path d="M573 274L589 278M584 295L591 293" stroke="#263c43" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <rect x="530" y="309" width="55" height="26" rx="4" fill="#fff4d9"/>
+  <text x="557" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#263c43">COD</text>
+
+  <!-- Bird, with gentle effortful bob -->
+  <g stroke="#263c43" stroke-width="4" stroke-linejoin="round">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".7s" repeatCount="indefinite"/>
+    <!-- Far leg -->
+    <path d="M341 282L361 333L410 391" fill="none" stroke="#d59336" stroke-width="12" stroke-linecap="round"/>
+    <path d="M402 391L427 392L421 401H404Z" fill="#e9a33e"/>
+
+    <path d="M300 268L251 240L267 281L243 277L294 310" fill="#f8f7ed"/>
+    <path d="M285 237Q319 212 356 231Q383 239 391 212L391 180Q389 151 414 146Q443 141 453 165Q461 186 442 209L424 239Q411 270 386 286Q338 320 298 297Q276 281 285 237Z" fill="#fffdf4"/>
+    <path d="M313 250Q349 230 374 254Q360 282 316 286Q338 270 343 258" fill="#dce4db"/>
+    <!-- Working wing reaching the bars -->
+    <path d="M365 245Q396 249 420 275L479 280" fill="none" stroke="#263c43" stroke-width="14" stroke-linecap="round"/>
+    <path d="M365 245Q396 249 420 275L479 280" fill="none" stroke="#e3e8dc" stroke-width="8" stroke-linecap="round"/>
+    <!-- Huge bill and pouch -->
+    <path d="M442 179L557 207Q518 252 465 230Q446 217 442 179Z" fill="#f2b250"/>
+    <path d="M443 177L567 203L443 202Z" fill="#f8ca58"/>
+    <path d="M454 208Q483 228 520 219" fill="none" stroke="#c6803a" stroke-width="2"/>
+    <circle cx="429" cy="171" r="11" fill="white"/>
+    <circle cx="433" cy="174" r="4" fill="#263c43" stroke="none"/>
+    <path d="M416 159L438 164" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <!-- Tiny commuter helmet -->
+    <path d="M389 153Q388 124 414 122Q441 119 451 149Z" fill="#df6247"/>
+    <path d="M388 152L455 148M405 130L402 143M420 129L422 142" fill="none" stroke-width="4" stroke-linecap="round"/>
+    <path d="M395 154L406 184L419 188" fill="none" stroke-width="2"/>
+    <!-- Sweat -->
+    <path d="M372 172Q360 186 370 189Q381 188 372 172Z" fill="#6ab8c3" stroke-width="2"/>
+    <!-- Near leg pedals visibly -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-5 350 287;5 350 287;-5 350 287" dur="1.4s" repeatCount="indefinite"/>
+      <path d="M350 287L331 338L374 397" fill="none" stroke="#263c43" stroke-width="15" stroke-linecap="round"/>
+      <path d="M350 287L331 338L374 397" fill="none" stroke="#f1b247" stroke-width="9" stroke-linecap="round"/>
+      <path d="M368 392L396 403L402 412L369 407Z" fill="#f1b247"/>
+    </g>
+  </g>
+
+  <circle cx="386" cy="416" r="13" fill="#f7be45" stroke="#263c43" stroke-width="4"/>
+  <g transform="translate(386 416)">
+    <g stroke="#263c43" stroke-width="5" stroke-linecap="round">
+      <path d="M0 0L-18-15M-27-15H-9"/>
+      <animateTransform attributeName="transform" type="rotate" values="-12;12;-12" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <path d="M161 398H187M147 415H180M165 433H188" stroke="#9f7a50" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Separate caption and timestamp footer -->
+  <rect x="0" y="500" width="800" height="100" fill="#263c43"/>
+  <text x="400" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#fff4d9">A pelican on a bicycle. Apparently, flight costs extra.</text>
+  <path d="M90 551H710" stroke="#6b8080"/>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#fff4d9">2026-11-02 00:00:01 SGT (UTC+08:00)</text>
+</svg>
