@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A determined pelican pedals a bicycle, carrying an enormous fish in its beak, beneath a bold satirical headline.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.8s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f6e8c8"/>
+  <rect y="0" width="800" height="114" fill="#163b48"/>
+  <text id="title" x="400" y="54" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1.5" fill="#fff3d5">THE PELICAN CYCLE</text>
+  <text x="400" y="87" text-anchor="middle" font-size="16" font-weight="700" fill="#f2b84b">One bird. Two wheels. Absolutely no commute plan.</text>
+
+  <!-- sun and passing clouds -->
+  <circle cx="690" cy="166" r="39" fill="#f2b84b"/>
+  <path d="M81 165h135M98 178h90" stroke="#b5d0c3" stroke-width="5" stroke-linecap="round"/>
+  <path d="M555 200h72M573 212h90" stroke="#b5d0c3" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- distant city -->
+  <path d="M0 310h74v-83h60v83h40v-55h77v55h45v-99h71v99h55v-67h72v67h52v-91h78v91h58v-51h53v51h45v180H0z" fill="#d3d4bf"/>
+  <g fill="#f6e8c8">
+    <path d="M88 246h12v14H88zm25 0h12v14h-12zm79 24h12v14h-12zm26 0h12v14h-12zm92-83h13v14h-13zm26 0h13v14h-13zm85 59h12v14h-12zm27 0h12v14h-12zm101-42h12v14h-12zm27 0h12v14h-12zm77 35h12v14h-12z"/>
+  </g>
+
+  <!-- ground -->
+  <path d="M0 447q145-22 285 0t270 0q130-22 245 0v88H0z" fill="#91a88b"/>
+  <path d="M0 470q172-20 343 0t457 0" fill="none" stroke="#688772" stroke-width="4"/>
+  <path d="M55 504h72m44-12h45m454 16h82" stroke="#f6e8c8" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- bicycle frame -->
+  <g fill="none" stroke="#d65c3c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M214 418 316 418 365 320 214 418"/>
+    <path d="M316 418 402 418 365 320"/>
+    <path d="M365 320 429 320"/>
+    <path d="M402 418 418 300"/>
+  </g>
+  <path d="M340 303h50" stroke="#163b48" stroke-width="8" stroke-linecap="round"/>
+  <path d="M407 297h34" stroke="#163b48" stroke-width="7" stroke-linecap="round"/>
+  <path d="M188 418h43" stroke="#163b48" stroke-width="8" stroke-linecap="round"/>
+  <path d="M399 418h40" stroke="#163b48" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- wheels -->
+  <g class="wheel">
+    <circle cx="214" cy="418" r="68" fill="#f6e8c8" stroke="#163b48" stroke-width="9"/>
+    <circle cx="214" cy="418" r="8" fill="#d65c3c"/>
+    <path d="M214 350v136M146 418h136M166 370l96 96m0-96-96 96" stroke="#6b8580" stroke-width="3"/>
+  </g>
+  <g class="wheel">
+    <circle cx="418" cy="418" r="68" fill="#f6e8c8" stroke="#163b48" stroke-width="9"/>
+    <circle cx="418" cy="418" r="8" fill="#d65c3c"/>
+    <path d="M418 350v136M350 418h136M370 370l96 96m0-96-96 96" stroke="#6b8580" stroke-width="3"/>
+  </g>
+
+  <!-- pedals -->
+  <g>
+    <circle cx="316" cy="418" r="13" fill="#f2b84b" stroke="#163b48" stroke-width="4"/>
+    <path d="M316 418l18-19m-27 25h20m-11-6 12 13" stroke="#163b48" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- pelican rider -->
+  <g class="rider">
+    <!-- tail and body -->
+    <path d="M322 319q-34-12-46 7 19 3 29 18" fill="#fffaf0" stroke="#163b48" stroke-width="5" stroke-linejoin="round"/>
+    <ellipse cx="345" cy="292" rx="43" ry="53" transform="rotate(-18 345 292)" fill="#fffaf0" stroke="#163b48" stroke-width="6"/>
+    <path d="M327 283q18-23 43-9-3 24-26 33z" fill="#dce6d9" stroke="#163b48" stroke-width="4"/>
+    <!-- neck -->
+    <path d="M354 270q15-40 5-59" fill="none" stroke="#fffaf0" stroke-width="25" stroke-linecap="round"/>
+    <path d="M354 270q15-40 5-59" fill="none" stroke="#163b48" stroke-width="5" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="357" cy="199" r="27" fill="#fffaf0" stroke="#163b48" stroke-width="5"/>
+    <circle cx="365" cy="195" r="4.5" fill="#163b48"/>
+    <path d="M378 204q49 2 91 17-38 20-87 7z" fill="#f2b84b" stroke="#163b48" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M382 211q37 10 68 10-33 10-65 1z" fill="#ed9d66"/>
+    <!-- giant fish balanced in beak -->
+    <path d="M411 199q27-25 58-7l18-12-2 21 3 19-19-10q-33 21-58-1z" fill="#71a7a1" stroke="#163b48" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="423" cy="198" r="3" fill="#163b48"/>
+    <path d="M438 190l8 10-9 7" fill="none" stroke="#dce6d9" stroke-width="3"/>
+    <!-- wing -->
+    <path d="M329 286q24-22 48 5-9 25-35 21-16-8-13-26z" fill="#e8eee3" stroke="#163b48" stroke-width="4"/>
+    <path d="M342 296l20 9m-24-1 16 9" stroke="#a9bdb0" stroke-width="3" stroke-linecap="round"/>
+    <!-- legs pedaling -->
+    <path d="M350 330l-25 41 18 31M368 330l-9 46-26 22" fill="none" stroke="#e89a4b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M335 402h20m-31-2h18" stroke="#163b48" stroke-width="5" stroke-linecap="round"/>
+    <!-- tiny helmet -->
+    <path d="M334 183q8-20 29-17 17 2 21 19z" fill="#d65c3c" stroke="#163b48" stroke-width="4"/>
+    <path d="M330 185h57" stroke="#163b48" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- motion marks and joke -->
+  <path d="M481 315l19-8m-13 22 24-2M135 320l-20-8m18 24-24 1" stroke="#d65c3c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M528 376q25-23 47 1-21 22-47-1z" fill="#fff3d5" stroke="#163b48" stroke-width="3"/>
+  <text x="552" y="381" text-anchor="middle" font-size="12" font-weight="800" fill="#163b48">HONK?</text>
+  <text x="400" y="522" text-anchor="middle" font-size="16" font-weight="700" fill="#163b48">“I’m cutting emissions. The fish is my emergency snack.”</text>
+
+  <!-- roomy footer for the required visible timestamp -->
+  <rect x="0" y="548" width="800" height="52" fill="#163b48"/>
+  <text x="400" y="581" text-anchor="middle" font-size="17" font-weight="700" fill="#fff3d5">2026-11-01 23:02:39 SGT (UTC+08:00)</text>
+</svg>
