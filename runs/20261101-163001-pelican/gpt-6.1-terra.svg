@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN DELIVERY</title>
+  <desc id="desc">A pelican rides a bicycle with a fish in its enormous bill. The bicycle wheels spin and the pelican bobs as it pedals.</desc>
+  <defs>
+    <style>
+      .ink { stroke:#26333a; stroke-width:5; stroke-linecap:round; stroke-linejoin:round }
+      .spoke { stroke:#748a8e; stroke-width:3 }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 1.6s linear infinite }
+      .rider { animation:bob .8s ease-in-out infinite alternate }
+      .pedal { transform-box:fill-box; transform-origin:center; animation:spin 1.6s linear infinite }
+      @keyframes spin { to { transform:rotate(360deg) } }
+      @keyframes bob { to { transform:translateY(-5px) rotate(-1deg) } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider,.pedal { animation-duration:4s } }
+    </style>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#c3e5de"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff9e8"/>
+  <rect x="18" y="18" width="764" height="564" rx="24" fill="#e6f5ed" stroke="#26333a" stroke-width="4"/>
+  <rect x="20" y="110" width="760" height="353" fill="url(#dots)"/>
+
+  <text x="400" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="39" font-weight="900" letter-spacing="2" fill="#26333a">PELICAN DELIVERY</text>
+  <text x="400" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" letter-spacing="2" fill="#d75a3d">FRESH FISH. QUESTIONABLE LOGISTICS.</text>
+
+  <circle cx="667" cy="167" r="37" fill="#ffd16b"/>
+  <path d="M75 211q29-24 58 0m-42-15q13-13 27 0M579 214q22-18 44 0" fill="none" stroke="#8cb6ad" stroke-width="4" stroke-linecap="round"/>
+  <path d="M36 409q142-23 290 0t291 0q91-14 147-4v58H36z" fill="#b6ddc4"/>
+  <path d="M35 449h730" stroke="#26333a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M70 464h95m35 0h58m351 0h81" stroke="#8ebba8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Bicycle wheels -->
+  <g class="wheel">
+    <circle cx="241" cy="385" r="66" fill="#fff9e8" class="ink"/>
+    <circle cx="241" cy="385" r="55" fill="none" stroke="#ef876b" stroke-width="4"/>
+    <path class="spoke" d="M241 330v110M186 385h110M202 346l78 78M202 424l78-78"/>
+    <circle cx="241" cy="385" r="7" fill="#26333a"/>
+  </g>
+  <g class="wheel">
+    <circle cx="555" cy="385" r="66" fill="#fff9e8" class="ink"/>
+    <circle cx="555" cy="385" r="55" fill="none" stroke="#ef876b" stroke-width="4"/>
+    <path class="spoke" d="M555 330v110M500 385h110M516 346l78 78M516 424l78-78"/>
+    <circle cx="555" cy="385" r="7" fill="#26333a"/>
+  </g>
+
+  <!-- Frame and handlebars -->
+  <path d="M241 385l105-103 59 103H241l87-82h176l51 82" fill="none" stroke="#dd6047" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M405 385l99-82M346 282l-10-20m-24 0h52M504 303l-12-38 30-11" fill="none" class="ink"/>
+  <path d="M514 253h24" fill="none" class="ink"/>
+  <path d="M302 259q20-9 52-3" fill="none" stroke="#26333a" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="405" cy="385" r="17" fill="#fff9e8" stroke="#26333a" stroke-width="4"/>
+  <g class="pedal">
+    <path d="M405 385l15-18m-30 36l15-18" fill="none" class="ink"/>
+    <path d="M413 365h17m-49 40h17" fill="none" stroke="#26333a" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pelican and its comically overfilled beak -->
+  <g class="rider">
+    <path d="M361 275q-15 32-5 53l34 41" fill="none" stroke="#e6a04b" stroke-width="9" stroke-linecap="round"/>
+    <path d="M390 369l19 1" fill="none" stroke="#e6a04b" stroke-width="9" stroke-linecap="round"/>
+    <path d="M396 271q9 32 25 44l45 5" fill="none" stroke="#e6a04b" stroke-width="9" stroke-linecap="round"/>
+    <path d="M462 320l16 8" fill="none" stroke="#e6a04b" stroke-width="9" stroke-linecap="round"/>
+    <path d="M325 239q-16 4-33-7l15 29 28 7" fill="#f5f0d9" class="ink"/>
+    <path d="M322 227q-4-47 36-66 35-17 58 8 14 15 7 44l-9 45q-7 38-45 39-43 1-53-28-5-16 6-42z" fill="#fffdf1" class="ink"/>
+    <path d="M340 229q12-30 49-22 15 4 18 14-13 34-49 33-14 0-18-25z" fill="#d9e6dd" stroke="#26333a" stroke-width="4"/>
+    <path d="M366 183q-4-37 12-58 16-21 42-10 19 8 20 31l-5 35" fill="#fffdf1" class="ink"/>
+    <path d="M419 154q41-5 100 6l79 16q-62 14-158 10z" fill="#f7b354" class="ink"/>
+    <path d="M433 182q43 8 155-3-15 58-83 67-49 4-72-64z" fill="#f3a56a" class="ink"/>
+    <path d="M493 211q20-14 39 0-19 15-39 0z" fill="#77aeb1" stroke="#26333a" stroke-width="3"/>
+    <path d="M493 211l-10-9v18z" fill="#77aeb1" stroke="#26333a" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="524" cy="209" r="2.5" fill="#26333a"/>
+    <circle cx="418" cy="142" r="13" fill="#fff" stroke="#26333a" stroke-width="3"/>
+    <circle cx="422" cy="144" r="5" fill="#26333a"/>
+    <path d="M406 124q10-9 21-2" fill="none" stroke="#26333a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M374 118q15-13 37-11l-6-12q-23-5-35 13z" fill="#dd6047" class="ink"/>
+    <path d="M400 107l20 6" fill="none" class="ink"/>
+  </g>
+
+  <path d="M110 314l33-5m-42 21l47-3m-31 19l29 1" fill="none" stroke="#d75a3d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M613 290q35-20 73 0" fill="none" stroke="#8cb6ad" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="20" y="477" width="760" height="103" rx="0" fill="#fff9e8"/>
+  <path d="M20 477h760" stroke="#26333a" stroke-width="4"/>
+  <text x="400" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#26333a">“I said I’d bring lunch. I never said whose.”</text>
+  <text x="400" y="557" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#40545a">2026-11-01 16:32:31 SGT (UTC+08:00)</text>
+</svg>

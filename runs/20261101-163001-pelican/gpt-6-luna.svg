@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Peloton</title>
+  <desc id="desc">A smug pelican pedals a bicycle, convinced its enormous beak counts as aerodynamic engineering.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#183344;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f7e8bd;stroke:#183344;stroke-width:8}
+      .spoke{stroke:#73929a;stroke-width:2}
+      .frame{fill:none;stroke:#df5542;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .small{font-family:system-ui,sans-serif}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .rotor{transform-box:fill-box;transform-origin:center;animation:spin 2.6s linear infinite}
+      .rider{animation:bob .65s ease-in-out infinite}
+      @media (prefers-reduced-motion:reduce){.rotor,.rider{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff3ee"/>
+  <circle cx="688" cy="105" r="52" fill="#ffd267"/>
+  <path d="M0 383 Q115 345 229 376 T463 371 T800 364 V500 H0Z" fill="#b4d8aa"/>
+  <path d="M0 430 Q180 408 360 432 T800 417 V500 H0Z" fill="#94c88e"/>
+
+  <text id="title" x="400" y="58" text-anchor="middle" class="small ink" fill="#183344" stroke="none" font-size="34" font-weight="900" letter-spacing="1">THE PELICAN PELOTON</text>
+  <text x="400" y="87" text-anchor="middle" class="small" fill="#40616b" font-size="15" font-weight="600">“It’s not a tailwind. It’s my face.”</text>
+
+  <!-- Bicycle -->
+  <g aria-label="Bicycle">
+    <circle class="wheel" cx="235" cy="393" r="69"/>
+    <circle class="wheel" cx="565" cy="393" r="69"/>
+    <g class="rotor">
+      <g class="spoke">
+        <path d="M235 324V462M166 393H304M186 344L284 442M284 344L186 442"/>
+        <path d="M565 324V462M496 393H634M516 344L614 442M614 344L516 442"/>
+      </g>
+      <circle cx="235" cy="393" r="7" fill="#df5542"/>
+      <circle cx="565" cy="393" r="7" fill="#df5542"/>
+    </g>
+    <path class="frame" d="M235 393L326 326L386 393L235 393M326 326L444 326L386 393M444 326L565 393M444 326L458 302"/>
+    <path d="M309 313H343M443 326L468 305" class="ink" fill="none" stroke-width="7"/>
+    <circle cx="386" cy="393" r="18" fill="#f4bd50" stroke="#183344" stroke-width="5"/>
+    <path d="M386 393L409 417M386 393L367 369" class="ink" fill="none" stroke-width="5"/>
+    <path d="M399 417H420M356 369H377" class="ink" fill="none" stroke-width="5"/>
+    <path d="M224 393H246M554 393H576" class="ink" fill="none" stroke-width="5"/>
+    <path d="M270 465H530" stroke="#183344" stroke-width="3" stroke-dasharray="7 10" opacity=".35"/>
+  </g>
+
+  <!-- Comically aerodynamic pelican rider -->
+  <g class="rider" aria-label="Pelican riding the bicycle">
+    <!-- body and tail -->
+    <path d="M344 270 Q354 235 401 235 Q449 236 462 276 Q470 305 435 322 Q398 338 365 314 Q340 297 344 270Z" fill="#fffaf0" class="ink" stroke-width="4"/>
+    <path d="M441 272L475 253L461 287Z" fill="#536f7c" class="ink" stroke-width="3"/>
+    <path d="M371 303Q394 315 421 303" fill="none" stroke="#b8c9c5" stroke-width="4"/>
+    <!-- neck -->
+    <path d="M377 256Q372 218 393 191Q413 167 443 180Q460 188 453 211Q445 229 420 239L414 267Z" fill="#fffaf0" class="ink" stroke-width="4"/>
+    <!-- head -->
+    <path d="M419 185Q426 147 463 143Q499 141 514 171Q527 197 502 214Q477 231 449 214Q425 205 419 185Z" fill="#fffaf0" class="ink" stroke-width="4"/>
+    <!-- giant beak -->
+    <path d="M496 173Q553 167 628 185Q649 190 641 202Q584 218 511 211Q497 198 496 173Z" fill="#f3a43b" class="ink" stroke-width="4"/>
+    <path d="M514 205Q543 213 579 210Q564 240 539 249Q517 244 514 205Z" fill="#f17d67" class="ink" stroke-width="4"/>
+    <path d="M528 211Q543 231 559 215" fill="none" stroke="#d85f5a" stroke-width="3"/>
+    <circle cx="473" cy="170" r="5.5" fill="#183344"/>
+    <circle cx="475" cy="168" r="1.7" fill="#fff"/>
+    <path d="M450 156Q465 148 481 155" fill="none" stroke="#183344" stroke-width="3"/>
+    <!-- wing -->
+    <path d="M365 265Q392 247 429 260Q440 269 423 284Q393 296 369 284Z" fill="#d6e0d9" class="ink" stroke-width="3"/>
+    <path d="M382 267L413 279M390 260L421 273" stroke="#a0b5b2" stroke-width="2"/>
+    <!-- feet pedaling -->
+    <path d="M383 316Q392 340 402 365L386 390M424 315Q418 342 399 373L384 393" fill="none" class="ink" stroke-width="7"/>
+    <path d="M377 389L397 388M376 394L397 394" fill="none" stroke="#f19a3a" stroke-width="7" stroke-linecap="round"/>
+    <!-- wing-arm on handlebars -->
+    <path d="M429 270Q445 280 458 300" fill="none" class="ink" stroke-width="7"/>
+    <path d="M456 300Q462 305 468 300" fill="none" stroke="#f19a3a" stroke-width="7" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M432 157Q441 129 470 129Q496 130 507 156L484 154Q461 147 443 165Z" fill="#df5542" class="ink" stroke-width="4"/>
+    <path d="M438 158L503 157" fill="none" stroke="#183344" stroke-width="4"/>
+    <path d="M466 131L469 148" fill="none" stroke="#ffcf73" stroke-width="4"/>
+    <!-- sweat -->
+    <path d="M519 151Q511 164 518 166Q526 163 519 151Z" fill="#60b9c2"/>
+    <path d="M532 148Q526 157 532 159Q539 156 532 148Z" fill="#60b9c2"/>
+  </g>
+
+  <!-- comic speed marks -->
+  <path d="M111 294H202M88 319H189M125 344H202" stroke="#508c92" stroke-width="5" stroke-linecap="round"/>
+  <path d="M602 277L627 267M620 293L649 289" stroke="#508c92" stroke-width="4" stroke-linecap="round"/>
+  <g transform="rotate(-8 375 143)">
+    <path d="M326 111Q358 94 401 108Q423 116 421 137Q419 160 388 163Q359 166 337 151L317 159L326 140Q317 124 326 111Z" fill="#fff" stroke="#183344" stroke-width="3"/>
+    <text x="369" y="137" text-anchor="middle" class="small" fill="#183344" font-size="14" font-weight="800">HONK!</text>
+  </g>
+
+  <!-- Footer kept clear of the scene -->
+  <rect y="500" width="800" height="100" fill="#183344"/>
+  <text x="400" y="531" text-anchor="middle" class="small" fill="#fffaf0" font-size="18" font-weight="800">One bird. Two wheels. Absolutely no plan.</text>
+  <text x="400" y="572" text-anchor="middle" class="small" fill="#ffd267" font-size="16" font-weight="700">2026-11-01 16:32:13 SGT (UTC+08:00)</text>
+</svg>
