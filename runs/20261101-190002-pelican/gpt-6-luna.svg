@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Great Pelican Getaway</title>
+  <desc id="desc">A determined pelican pedals a bicycle with comically oversized wheels and a tiny helmet.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#19324a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#19324a;stroke-width:8}
+      .spoke{stroke:#67849a;stroke-width:2}
+      .frame{fill:none;stroke:#e85d3f;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .small{font:700 16px system-ui,sans-serif;fill:#19324a}
+      .title{font:900 35px system-ui,sans-serif;fill:#19324a;letter-spacing:1px}
+      .caption{font:600 18px system-ui,sans-serif;fill:#36546a}
+      .date{font:600 14px system-ui,sans-serif;fill:#36546a}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .rolling{transform-box:fill-box;transform-origin:center;animation:spin 2.6s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:pedal .65s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff7df"/>
+  <circle cx="690" cy="115" r="43" fill="#ffd166"/>
+  <path d="M0 380 Q115 350 230 380 T460 380 T690 380 T920 380 V540 H0Z" fill="#c8e8dc"/>
+  <path d="M0 460 Q140 435 280 460 T560 460 T840 460" fill="none" stroke="#8dc5b2" stroke-width="4"/>
+  <text x="40" y="58" class="title">THE GREAT PELICAN GETAWAY</text>
+  <text x="42" y="87" class="caption">“I’m cycling for the halibut!”</text>
+  <path d="M617 147 Q652 130 681 147" fill="none" stroke="#19324a" stroke-width="3"/>
+  <text x="621" y="170" class="small">HONK!</text>
+
+  <!-- Bicycle wheels -->
+  <g class="rolling">
+    <circle class="wheel" cx="245" cy="420" r="75"/>
+    <g class="spoke">
+      <path d="M245 345V495M170 420H320M192 367L298 473M298 367L192 473"/>
+    </g>
+    <circle cx="245" cy="420" r="7" fill="#e85d3f"/>
+  </g>
+  <g class="rolling">
+    <circle class="wheel" cx="565" cy="420" r="75"/>
+    <g class="spoke">
+      <path d="M565 345V495M490 420H640M512 367L618 473M618 367L512 473"/>
+    </g>
+    <circle cx="565" cy="420" r="7" fill="#e85d3f"/>
+  </g>
+
+  <!-- Bicycle frame and handlebars -->
+  <path class="frame" d="M245 420L352 337L430 420L320 420L352 337L414 337"/>
+  <path class="frame" d="M430 420L565 420M414 337L435 337M414 337L405 320"/>
+  <path class="frame" d="M245 420L235 405M226 405H252M565 420L575 399M563 398H589"/>
+  <circle cx="320" cy="420" r="12" fill="#ffd166" stroke="#19324a" stroke-width="4"/>
+  <path d="M320 420L336 438M320 420L302 402" stroke="#19324a" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Animated rider -->
+  <g class="rider">
+    <!-- body -->
+    <path d="M355 254 Q326 270 328 316 L365 347 Q402 328 411 293 Q395 268 355 254Z" fill="#4bb3a7" class="ink"/>
+    <path d="M345 280 Q371 300 398 291" fill="none" stroke="#d9fff1" stroke-width="6"/>
+    <!-- tail feathers -->
+    <path d="M334 308 Q303 291 294 307 Q314 330 339 330" fill="#f4b942" class="ink"/>
+    <!-- neck and head -->
+    <path d="M375 270 Q387 233 414 207" fill="none" stroke="#f3f0e7" stroke-width="22" stroke-linecap="round"/>
+    <ellipse cx="429" cy="196" rx="43" ry="34" fill="#f3f0e7" class="ink"/>
+    <path d="M456 203 Q515 197 553 215 Q519 242 462 225Z" fill="#f29a38" class="ink"/>
+    <path d="M465 220 Q507 236 550 216 Q532 250 478 245 Q462 238 465 220Z" fill="#f7bf55" stroke="#19324a" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="441" cy="190" r="5" fill="#19324a"/>
+    <path d="M419 166 Q428 140 451 151 L464 169Z" fill="#e85d3f" class="ink"/>
+    <path d="M416 168 Q441 159 461 170" fill="none" stroke="#19324a" stroke-width="5" stroke-linecap="round"/>
+    <!-- wings reaching handlebars -->
+    <path d="M375 276 Q415 291 432 329 Q414 340 397 324 L365 301Z" fill="#e8e5d9" class="ink"/>
+    <path d="M432 329L414 337" fill="none" stroke="#19324a" stroke-width="8" stroke-linecap="round"/>
+    <!-- legs pedaling -->
+    <path d="M354 328L324 386L320 420M382 330L408 376L336 438" fill="none" stroke="#f29a38" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M308 420H328M327 438H345" stroke="#19324a" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion marks and road joke -->
+  <path d="M104 316H161M83 337H145M648 324H694" stroke="#e85d3f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M270 511H540" stroke="#19324a" stroke-width="4" stroke-linecap="round" stroke-dasharray="15 15"/>
+  <text x="40" y="535" class="small">NO FISHING LICENSE REQUIRED. HELMET? DEBATABLE.</text>
+  <path d="M0 555H800" stroke="#19324a" stroke-width="2" opacity=".25"/>
+  <text x="400" y="582" text-anchor="middle" class="date">2026-11-01 19:02:23 SGT (UTC+08:00)</text>
+</svg>

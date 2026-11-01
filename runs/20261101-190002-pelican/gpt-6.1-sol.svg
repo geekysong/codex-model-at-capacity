@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Pelican Pedal Power</title>
+  <desc id="description">A smug pelican cycles along the waterfront with a fish in its enormous beak pouch. The wheels turn, the pedals spin, and the pelican bobs in an endless loop.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#b7e9ed"/>
+      <stop offset="1" stop-color="#eff9e6"/>
+    </linearGradient>
+    <linearGradient id="pouch" x2="0" y2="1">
+      <stop stop-color="#ffc459"/>
+      <stop offset="1" stop-color="#ef9252"/>
+    </linearGradient>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #163b42; }
+      .outline { stroke: #163b42; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .frame { fill: none; stroke: #e34f4b; stroke-width: 10; stroke-linejoin: round; stroke-linecap: round; }
+      .spoke { stroke: #789da4; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e8"/>
+  <rect x="18" y="18" width="764" height="504" rx="24" fill="url(#sky)" stroke="#163b42" stroke-width="3"/>
+  <text x="400" y="63" text-anchor="middle" font-size="37" font-weight="900" letter-spacing="2">PELICAN PEDAL POWER</text>
+  <text x="400" y="91" text-anchor="middle" font-size="16" font-weight="bold">ONE BIRD. TWO WHEELS. AN OUTRAGEOUS LUNCH ALLOWANCE.</text>
+
+  <circle cx="112" cy="160" r="36" fill="#ffda73"/>
+  <path d="M37 270 Q88 251 137 270 T237 270 T337 270 T437 270 T537 270 T637 270 T763 270 V398 H37Z" fill="#7cc9ce"/>
+  <path d="M44 299h73m44 27h83m-188 28h54m463-55h62m31 34h80" fill="none" stroke="#dcf5ed" stroke-width="4" stroke-linecap="round"/>
+  <path d="M20 392 Q370 368 780 392 V498 Q780 522 756 522 H44 Q20 522 20 498Z" fill="#d9d1ae"/>
+  <path d="M28 457H772" stroke="#faf6dc" stroke-width="5" stroke-dasharray="34 24"/>
+  <ellipse cx="394" cy="448" rx="227" ry="13" fill="#163b42" opacity=".13"/>
+
+  <!-- Waterfront bicycle-lane sign -->
+  <path d="M690 291V391" stroke="#163b42" stroke-width="6"/>
+  <rect x="635" y="228" width="110" height="65" rx="8" fill="#fff8e8" class="outline"/>
+  <text x="690" y="253" text-anchor="middle" font-size="15" font-weight="bold">BIKE LANE</text>
+  <text x="690" y="277" text-anchor="middle" font-size="14">NO TRAWLING</text>
+
+  <!-- Wheels: each spoke assembly rotates around its own hub. -->
+  <g transform="translate(247 397)">
+    <circle r="71" fill="#f1f7e9" stroke="#163b42" stroke-width="11"/>
+    <circle r="62" fill="none" stroke="#b4d2d1" stroke-width="3"/>
+    <g class="spoke">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.8s" repeatCount="indefinite"/>
+      <path d="M-62 0H62M0-62V62M-44-44L44 44M-44 44L44-44"/>
+      <path d="M-24-57L24 57M-57-24L57 24M-57 24L57-24M-24 57L24-57"/>
+    </g>
+    <circle r="8" fill="#163b42"/>
+  </g>
+  <g transform="translate(548 397)">
+    <circle r="71" fill="#f1f7e9" stroke="#163b42" stroke-width="11"/>
+    <circle r="62" fill="none" stroke="#b4d2d1" stroke-width="3"/>
+    <g class="spoke">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.8s" repeatCount="indefinite"/>
+      <path d="M-62 0H62M0-62V62M-44-44L44 44M-44 44L44-44"/>
+      <path d="M-24-57L24 57M-57-24L57 24M-57 24L57-24M-24 57L24-57"/>
+    </g>
+    <circle r="8" fill="#163b42"/>
+  </g>
+
+  <!-- Bicycle -->
+  <path d="M247 397L314 291L380 397ZM314 291H497L380 397M497 291L548 397" class="frame"/>
+  <path d="M497 291L484 261L511 246" fill="none" stroke="#163b42" stroke-width="7" stroke-linecap="round"/>
+  <path d="M511 246L532 250" fill="none" stroke="#245e67" stroke-width="10" stroke-linecap="round"/>
+  <path d="M314 291L307 273" stroke="#163b42" stroke-width="7"/>
+  <path d="M285 274H329" stroke="#163b42" stroke-width="12" stroke-linecap="round"/>
+  <path d="M247 389L379 382Q401 395 379 412L247 405Z" fill="none" stroke="#536c6b" stroke-width="3"/>
+  <circle cx="380" cy="397" r="19" fill="#fff0b8" class="outline"/>
+
+  <!-- A tiny briefcase on the rear rack -->
+  <path d="M177 319H285M191 320L222 358" fill="none" stroke="#163b42" stroke-width="5"/>
+  <rect x="190" y="278" width="77" height="39" rx="5" fill="#9b6853" class="outline"/>
+  <path d="M214 278V268H242V278M191 292H267" fill="none" stroke="#163b42" stroke-width="3"/>
+  <text x="229" y="309" text-anchor="middle" font-size="12" fill="#fff8e8" style="fill:#fff8e8">FISHCAL</text>
+
+  <!-- Bobbing pelican -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".9s" repeatCount="indefinite"/>
+    <path d="M316 261L275 236L284 276Z" fill="#e6eee5" class="outline"/>
+    <path d="M303 253Q277 204 322 188Q356 176 383 201Q401 171 397 146Q399 119 422 121Q453 124 448 153L442 210Q450 247 411 272Q365 297 303 253Z" fill="#fffdf0" class="outline"/>
+    <path d="M322 211Q370 202 402 242Q358 266 322 233" fill="#dce8df" class="outline"/>
+    <path d="M339 226L367 243M351 218L382 239" fill="none" stroke="#a6bdb7" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Oversized beak and pouch -->
+    <path d="M444 160L603 169Q583 235 519 237Q464 238 444 179Z" fill="url(#pouch)" class="outline"/>
+    <path d="M440 155Q515 151 608 169L441 176Z" fill="#ffd170" class="outline"/>
+    <path d="M458 184Q477 219 509 221" fill="none" stroke="#df784b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M517 202Q537 184 558 204L574 195L572 220L558 210Q536 225 517 202Z" fill="#8acbcc" class="outline" stroke-width="2"/>
+    <circle cx="530" cy="201" r="2.5" fill="#163b42"/>
+
+    <!-- Extremely pleased expression and tiny commuter helmet -->
+    <circle cx="430" cy="148" r="9" fill="white" stroke="#163b42" stroke-width="2"/>
+    <circle cx="434" cy="148" r="3.5" fill="#163b42"/>
+    <path d="M419 134L437 137" stroke="#163b42" stroke-width="4" stroke-linecap="round"/>
+    <path d="M396 129Q396 105 420 105Q445 105 450 128Z" fill="#e95750" class="outline"/>
+    <path d="M409 112L407 123M423 110L425 123" stroke="#fff0b8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M401 132Q400 165 417 171" fill="none" stroke="#163b42" stroke-width="3"/>
+
+    <!-- Neck tie and wing gripping handlebar -->
+    <path d="M414 187L424 191L419 202L429 221L418 230L410 205L414 196Z" fill="#e95750" stroke="#163b42" stroke-width="2"/>
+    <path d="M380 231Q440 251 510 247" fill="none" stroke="#163b42" stroke-width="18" stroke-linecap="round"/>
+    <path d="M380 228Q440 248 510 244" fill="none" stroke="#f5f3df" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Leg flexes as crank turns -->
+    <path d="M353 269L344 326L404 397" fill="none" stroke="#163b42" stroke-width="12" stroke-linecap="round">
+      <animate attributeName="d" values="M353 269L344 326L404 397;M353 269L366 326L380 421;M353 269L374 315L356 397;M353 269L345 308L380 373;M353 269L344 326L404 397" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M353 269L344 326L404 397" fill="none" stroke="#edab49" stroke-width="7" stroke-linecap="round">
+      <animate attributeName="d" values="M353 269L344 326L404 397;M353 269L366 326L380 421;M353 269L374 315L356 397;M353 269L345 308L380 373;M353 269L344 326L404 397" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Rotating crank and webbed foot -->
+  <g transform="translate(380 397)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.8s" repeatCount="indefinite"/>
+      <path d="M-24 0H24" stroke="#163b42" stroke-width="5" stroke-linecap="round"/>
+      <path d="M17-5L35-11L32-2L40 5L18 6Z" fill="#ffc254" stroke="#163b42" stroke-width="2"/>
+      <path d="M-31-4H-17" stroke="#163b42" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <circle r="5" fill="#163b42"/>
+  </g>
+
+  <!-- Speech bubble -->
+  <path d="M64 124H281Q296 124 296 139V188Q296 202 281 202H215L199 224L195 202H64Q49 202 49 188V139Q49 124 64 124Z" fill="#fffdf3" class="outline"/>
+  <text x="172" y="154" text-anchor="middle" font-size="19" font-weight="bold">“Company car?</text>
+  <text x="172" y="181" text-anchor="middle" font-size="19" font-weight="bold">I get a company carp.”</text>
+
+  <text x="400" y="503" text-anchor="middle" font-size="19" font-weight="bold">He pedals to work. His lunch enjoys the pouch commute.</text>
+
+  <!-- Dedicated footer, clear of scene and caption -->
+  <text x="400" y="552" text-anchor="middle" font-size="15" font-weight="bold" letter-spacing="1">THE DAILY PELICAN • COMMUTER EDITION</text>
+  <text x="400" y="582" text-anchor="middle" font-size="17">2026-11-01 19:01:16 SGT (UTC+08:00)</text>
+</svg>
