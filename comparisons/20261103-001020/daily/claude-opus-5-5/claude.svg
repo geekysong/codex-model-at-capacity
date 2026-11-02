@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <pattern id="hatchAB" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="#ffffff" fill-opacity="0.25"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#4b2a7a" stroke-width="2.5"/>
+    </pattern>
+    <pattern id="hatchBC" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(-45)">
+      <rect width="8" height="8" fill="#ffffff" fill-opacity="0.25"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#0d4d4d" stroke-width="2.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="400" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="300" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">Total union area of A, B, C: 79900 px²</text>
+
+  <!-- Rectangle fills -->
+  <rect x="50" y="50" width="200" height="150" fill="#e63946" fill-opacity="0.35"/>
+  <rect x="150" y="120" width="200" height="150" fill="#1d6fe0" fill-opacity="0.35"/>
+  <rect x="320" y="200" width="200" height="150" fill="#2a9d3f" fill-opacity="0.35"/>
+
+  <!-- Hatched overlaps -->
+  <rect x="150" y="120" width="100" height="80" fill="url(#hatchAB)"/>
+  <rect x="320" y="200" width="30" height="70" fill="url(#hatchBC)"/>
+
+  <!-- Outlines -->
+  <rect x="50" y="50" width="200" height="150" fill="none" stroke="#b0202c" stroke-width="2"/>
+  <rect x="150" y="120" width="200" height="150" fill="none" stroke="#1450a8" stroke-width="2"/>
+  <rect x="320" y="200" width="200" height="150" fill="none" stroke="#1e7a30" stroke-width="2"/>
+
+  <!-- Rectangle labels (non-overlapped regions) -->
+  <text x="100" y="94" text-anchor="middle" font-size="22" font-weight="bold" fill="#8a1520">A</text>
+  <text x="235" y="244" text-anchor="middle" font-size="22" font-weight="bold" fill="#0f3d80">B</text>
+  <text x="435" y="318" text-anchor="middle" font-size="22" font-weight="bold" fill="#145522">C</text>
+
+  <!-- A∩B label -->
+  <rect x="160" y="140" width="80" height="40" rx="4" fill="#ffffff" fill-opacity="0.9"/>
+  <text x="200" y="156" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">A ∩ B</text>
+  <text x="200" y="173" text-anchor="middle" font-size="12" fill="#222">8000 px²</text>
+
+  <!-- B∩C label (rotated to fit the narrow region) -->
+  <rect x="326" y="203" width="18" height="64" rx="3" fill="#ffffff" fill-opacity="0.9"/>
+  <text x="335" y="235" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#222" transform="rotate(-90 335 235)">B∩C 2100 px²</text>
+
+  <!-- Caption for non-overlapping pair -->
+  <text x="372" y="72" font-size="13" font-weight="bold" fill="#333">Caption:</text>
+  <text x="372" y="92" font-size="13" fill="#333">A and C do not overlap</text>
+  <text x="372" y="110" font-size="12" fill="#555">(A ends at x=250,</text>
+  <text x="372" y="126" font-size="12" fill="#555">C starts at x=320)</text>
+
+  <!-- Footer -->
+  <line x1="20" y1="364" x2="580" y2="364" stroke="#cccccc" stroke-width="1"/>
+  <text x="300" y="386" text-anchor="middle" font-size="13" fill="#333">2026-11-03 00:10:20 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#000000" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="600" height="400" fill="#ffffff"/>
+
+  <text x="300" y="28" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">Union area of A, B, C = 79900 px&#178;</text>
+
+  <!-- Rectangles -->
+  <rect x="50" y="50" width="200" height="150" fill="#e74c3c" fill-opacity="0.35" stroke="#c0392b" stroke-width="2"/>
+  <rect x="150" y="120" width="200" height="150" fill="#3498db" fill-opacity="0.35" stroke="#2471a3" stroke-width="2"/>
+  <rect x="320" y="200" width="200" height="150" fill="#2ecc71" fill-opacity="0.35" stroke="#1e8449" stroke-width="2"/>
+
+  <!-- Overlap A and B: x 150-250, y 120-200 -->
+  <rect x="150" y="120" width="100" height="80" fill="url(#hatch)" stroke="none"/>
+  <!-- Overlap B and C: x 320-350, y 200-270 -->
+  <rect x="320" y="200" width="30" height="70" fill="url(#hatch)" stroke="none"/>
+
+  <!-- Rectangle labels -->
+  <text x="100" y="95" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">A</text>
+  <text x="300" y="160" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">B</text>
+  <text x="435" y="300" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">C</text>
+
+  <!-- Overlap labels -->
+  <text x="200" y="152" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" fill="#000000">A&#8745;B</text>
+  <text x="200" y="170" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" fill="#000000">8000 px&#178;</text>
+  <text x="313" y="238" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="end" fill="#000000">B&#8745;C</text>
+  <text x="313" y="254" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="end" fill="#000000">2100 px&#178;</text>
+
+  <!-- Caption -->
+  <text x="300" y="372" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#000000">Note: A and C do not overlap (no shared area). A&#8745;C = 0 px&#178;.</text>
+
+  <!-- Footer timestamp -->
+  <text x="300" y="391" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#000000">2026-11-03 00:10:45 SGT (UTC+08:00)</text>
+</svg>
