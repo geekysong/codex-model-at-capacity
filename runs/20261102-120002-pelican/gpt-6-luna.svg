@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Tour de Fish</title>
+  <desc id="desc">A smug pelican pedals a bicycle while a fish in its beak questions the race rules.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#8ed9e8"/>
+      <stop offset="1" stop-color="#e9f5d1"/>
+    </linearGradient>
+    <linearGradient id="feather" x2="0" y2="1">
+      <stop stop-color="#fffdf3"/>
+      <stop offset="1" stop-color="#d6e4dc"/>
+    </linearGradient>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .ink { stroke: #17363c; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .5s ease-in-out infinite alternate; }
+      .fish { transform-box: fill-box; transform-origin: center; animation: wiggle .7s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+      @keyframes wiggle { to { transform: rotate(8deg) translateY(-2px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="116" r="49" fill="#ffd66b"/>
+  <path d="M0 345 Q130 302 250 345 T500 338 T800 330 V475 H0Z" fill="#a8d887"/>
+  <path d="M0 390 Q180 350 340 392 T800 375 V492 H0Z" fill="#78bd75"/>
+  <g fill="#fff" opacity=".8">
+    <path d="M94 142q5-17 23-12 9-24 31-11 21-1 19 20H94Z"/>
+    <path d="M516 188q4-14 20-10 8-20 25-9 18-1 16 19h-61Z"/>
+  </g>
+
+  <text x="400" y="58" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="2" fill="#17363c">THE TOUR DE FISH</text>
+  <text x="400" y="88" text-anchor="middle" font-size="16" font-weight="700" fill="#31565a">A two-wheeled triumph of questionable seafood ethics</text>
+
+  <!-- Road -->
+  <path d="M0 444 Q190 424 405 445 T800 431 V526 H0Z" fill="#41565a"/>
+  <path d="M0 454 Q190 434 405 455 T800 441" fill="none" stroke="#dce4c7" stroke-width="5" stroke-dasharray="30 22"/>
+
+  <!-- Bicycle frame -->
+  <g fill="none" class="ink">
+    <path d="M263 414 L354 414 L407 342 L263 414"/>
+    <path d="M354 414 L407 342 L465 414 L354 414"/>
+    <path d="M407 342 L447 342"/>
+    <path d="M263 414 L244 414 M465 414 L482 414"/>
+    <path d="M350 414 L338 392 M338 392 L321 392"/>
+    <path d="M458 414 L475 368 L490 365"/>
+    <path d="M403 342 L394 330 L418 330"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#17363c" stroke-width="5">
+    <circle cx="263" cy="414" r="48" fill="#d9e8d9"/>
+    <circle cx="465" cy="414" r="48" fill="#d9e8d9"/>
+    <path d="M263 366V462 M215 414H311 M229 380L297 448 M229 448L297 380"/>
+    <path d="M465 366V462 M417 414H513 M431 380L499 448 M431 448L499 380"/>
+  </g>
+  <circle cx="354" cy="414" r="8" fill="#e87548" stroke="#17363c" stroke-width="4"/>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <!-- tail and body -->
+    <path d="M335 297 Q307 282 291 299 Q309 307 330 315" fill="#fffdf3" class="ink"/>
+    <path d="M326 264 Q354 238 391 258 Q422 276 402 312 Q384 339 342 319 Q315 305 326 264Z" fill="url(#feather)" class="ink"/>
+    <path d="M349 313 Q374 323 398 307 L407 335 L378 346Z" fill="#e87548" class="ink"/>
+    <!-- neck -->
+    <path d="M359 273 Q344 242 352 208 Q357 185 377 184 Q393 185 391 202 Q374 209 378 233 L391 267Z" fill="url(#feather)" class="ink"/>
+    <!-- head -->
+    <ellipse cx="371" cy="176" rx="38" ry="31" fill="url(#feather)" class="ink"/>
+    <path d="M365 177 Q331 165 300 177 Q324 194 363 191Z" fill="#ef9c45" class="ink"/>
+    <path d="M301 178 Q332 181 356 187 Q353 216 326 210 Q307 205 301 178Z" fill="#f2ad57" stroke="#17363c" stroke-width="4"/>
+    <circle cx="381" cy="170" r="5.5" fill="#17363c"/>
+    <path d="M369 155 Q381 146 393 153" fill="none" stroke="#17363c" stroke-width="4" stroke-linecap="round"/>
+    <!-- helmet -->
+    <path d="M340 161 Q342 134 370 132 Q397 133 401 158 L394 160 Q373 148 346 163Z" fill="#ed674c" class="ink"/>
+    <path d="M346 160 Q372 150 396 159" fill="none" stroke="#17363c" stroke-width="4"/>
+    <!-- wing -->
+    <path d="M350 270 Q370 263 391 279 Q374 283 365 299 Q350 296 339 288Z" fill="#e7eee3" stroke="#17363c" stroke-width="4"/>
+    <!-- legs to pedals -->
+    <path d="M365 316 L355 365 L354 406" fill="none" stroke="#ed9b3e" stroke-width="10" stroke-linecap="round"/>
+    <path d="M389 315 L408 363 L382 407" fill="none" stroke="#ed9b3e" stroke-width="10" stroke-linecap="round"/>
+    <path d="M347 406 L363 406 M375 407 L390 407" fill="none" stroke="#17363c" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish in beak -->
+  <g class="fish">
+    <path d="M294 184 Q278 169 261 177 L268 187 L260 197 Q280 201 295 189Z" fill="#77b7bb" stroke="#17363c" stroke-width="3"/>
+    <circle cx="281" cy="183" r="2.5" fill="#17363c"/>
+    <path d="M277 190 Q284 193 289 189" fill="none" stroke="#17363c" stroke-width="2"/>
+    <path d="M292 185 L299 185" stroke="#17363c" stroke-width="3"/>
+  </g>
+
+  <!-- Exhaustive race commentary -->
+  <path d="M521 231 Q577 190 648 218 Q672 228 674 253 Q674 281 646 288 L611 289 L590 307 L593 287 Q549 290 526 272 Q510 259 521 231Z" fill="#fffef8" stroke="#17363c" stroke-width="4"/>
+  <text x="594" y="238" text-anchor="middle" font-size="15" font-weight="800" fill="#17363c">“I demand a</text>
+  <text x="594" y="258" text-anchor="middle" font-size="15" font-weight="800" fill="#17363c">fair race!”</text>
+  <text x="594" y="276" text-anchor="middle" font-size="11" font-weight="700" fill="#507176">— the snack</text>
+
+  <path d="M91 298 Q104 281 126 287 L145 275 L143 293 Q164 300 166 319 Q167 339 146 346 L111 345 Q88 338 88 320Z" fill="#fffef8" stroke="#17363c" stroke-width="4"/>
+  <text x="126" y="310" text-anchor="middle" font-size="12" font-weight="900" fill="#17363c">LEG DAY?</text>
+  <text x="126" y="328" text-anchor="middle" font-size="11" font-weight="700" fill="#507176">never heard</text>
+
+  <!-- Caption plate -->
+  <path d="M204 486 Q400 464 596 486 L582 537 Q400 550 218 537Z" fill="#fff5dc" stroke="#17363c" stroke-width="4"/>
+  <text x="400" y="508" text-anchor="middle" font-size="17" font-weight="900" fill="#17363c">He pedals for glory.</text>
+  <text x="400" y="529" text-anchor="middle" font-size="14" font-weight="700" fill="#31565a">The fish is just along for the ride.</text>
+
+  <!-- Timestamp footer with dedicated clear space -->
+  <rect x="0" y="560" width="800" height="40" fill="#17363c"/>
+  <text x="400" y="586" text-anchor="middle" font-size="16" font-weight="700" letter-spacing=".4" fill="#fff8df">2026-11-02 12:02:37 SGT (UTC+08:00)</text>
+</svg>
