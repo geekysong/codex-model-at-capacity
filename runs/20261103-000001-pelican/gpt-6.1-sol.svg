@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Express</title>
+  <desc id="desc">A determined pelican pedals a bicycle with a fish-filled bill pouch. The wheels spin, its feet pedal, and its body bobs as a fish passenger looks alarmed.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#c7edf3"/>
+      <stop offset="1" stop-color="#fff7db"/>
+    </linearGradient>
+    <linearGradient id="pouch" x2="0" y2="1">
+      <stop stop-color="#ffc866"/>
+      <stop offset="1" stop-color="#ef9054"/>
+    </linearGradient>
+    <pattern id="road" width="130" height="10" patternUnits="userSpaceOnUse">
+      <path d="M10 5H65" stroke="#fff3c3" stroke-width="5" stroke-linecap="round"/>
+      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="-130 0" dur="1.1s" repeatCount="indefinite"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="76" fill="#fff9e9" stroke="#233747" stroke-width="11"/>
+      <circle r="65" fill="none" stroke="#8da4aa" stroke-width="3"/>
+      <g stroke="#879aa0" stroke-width="2.5">
+        <path d="M0-65V65M-65 0H65M-46-46L46 46M46-46L-46 46"/>
+      </g>
+      <path d="M0-65A65 65 0 0 1 46-46" fill="none" stroke="#f8c34a" stroke-width="6"/>
+      <circle r="9" fill="#f8c34a" stroke="#233747" stroke-width="3"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff9e9"/>
+  <rect x="16" y="16" width="768" height="501" rx="25" fill="url(#sky)" stroke="#233747" stroke-width="3"/>
+
+  <g fill="#fff" opacity=".7">
+    <path d="M49 161c-7-22 21-32 34-19 3-29 47-31 53 0 23-10 40 7 33 19Z"/>
+    <path d="M601 137c-4-18 19-27 29-15 8-25 44-22 47 4 25-7 37 6 31 18H601Z"/>
+  </g>
+  <circle cx="710" cy="204" r="33" fill="#ffd467"/>
+  <path d="M18 397Q110 347 194 393T380 388T566 390T782 376V466H18Z" fill="#abd3ba"/>
+  <path d="M18 426Q180 389 358 423T782 414V487H18Z" fill="#82b69c"/>
+
+  <text x="400" y="75" text-anchor="middle" font-family="sans-serif" font-size="45" font-weight="900" letter-spacing="3" fill="#233747">PELICAN EXPRESS</text>
+  <text x="400" y="108" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" letter-spacing="2" fill="#45616b">THE ORIGINAL BILL-POWERED DELIVERY SERVICE</text>
+
+  <rect x="18" y="456" width="764" height="59" fill="#65737a"/>
+  <rect x="18" y="480" width="764" height="10" fill="url(#road)"/>
+  <ellipse cx="409" cy="496" rx="232" ry="10" fill="#233747" opacity=".16"/>
+
+  <!-- Bicycle wheels -->
+  <g transform="translate(266 416)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.1s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(552 416)">
+    <g>
+      <use href="#wheel"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.1s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M266 416L337 317L391 416ZM337 317H508L391 416M508 317L552 416" stroke="#233747" stroke-width="14"/>
+    <path d="M266 416L337 317L391 416ZM337 317H508L391 416M508 317L552 416" stroke="#ed6554" stroke-width="8"/>
+    <path d="M337 317L326 292M508 317L496 275L526 259" stroke="#233747" stroke-width="9"/>
+    <path d="M309 292H347M516 260H539" stroke="#233747" stroke-width="12"/>
+    <path d="M266 416L391 416" stroke="#233747" stroke-width="4"/>
+    <ellipse cx="328" cy="286" rx="30" ry="8" fill="#674b45" stroke="#233747" stroke-width="4"/>
+    <circle cx="391" cy="416" r="18" fill="#f6c54b" stroke="#233747" stroke-width="4"/>
+  </g>
+
+  <!-- Pedaling feet -->
+  <g stroke="#233747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M363 294Q343 343 375 377" fill="none" stroke="#db9641" stroke-width="11">
+      <animate attributeName="d" values="M363 294Q343 343 375 377;M363 294Q330 365 407 446;M363 294Q343 343 375 377" dur="1.1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M402 298Q433 351 407 446" fill="none" stroke="#f6b44c" stroke-width="12">
+      <animate attributeName="d" values="M402 298Q433 351 407 446;M402 298Q440 333 375 377;M402 298Q433 351 407 446" dur="1.1s" repeatCount="indefinite"/>
+    </path>
+    <g>
+      <path d="M375 377L407 446" fill="none" stroke="#233747" stroke-width="6"/>
+      <path d="M357 377H393M389 446H425" stroke="#233747" stroke-width="7"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 391 411.5;180 391 411.5;360 391 411.5" dur="1.1s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Determined rider -->
+  <g stroke="#233747" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".55s" repeatCount="indefinite"/>
+    <path d="M329 254L283 235L298 273L276 278L332 297" fill="#fdfcf1"/>
+    <ellipse cx="371" cy="265" rx="68" ry="47" fill="#fffef2" transform="rotate(-12 371 265)"/>
+    <path d="M391 256Q400 212 430 177Q452 153 470 171Q482 185 463 208Q441 232 435 263" fill="#fffef2"/>
+    <path d="M340 250Q380 227 405 259Q396 284 355 286L367 276L347 272L361 264" fill="#d6e4df"/>
+    <path d="M404 267Q452 293 508 267" fill="none" stroke="#233747" stroke-width="9"/>
+    <path d="M406 265Q453 288 507 265" fill="none" stroke="#fffef2" stroke-width="5"/>
+    <path d="M502 264L512 257L522 266" fill="#f6b44c"/>
+    <path d="M453 197Q484 278 573 230L631 197Z" fill="url(#pouch)"/>
+    <path d="M460 184L650 190L627 202L460 202Z" fill="#f7bd45"/>
+
+    <!-- Unimpressed fish in the bill pouch -->
+    <path d="M516 227Q543 207 569 224L586 213L581 239L566 233Q541 247 516 227Z" fill="#79b7bc" stroke-width="3"/>
+    <circle cx="531" cy="226" r="5" fill="white" stroke-width="2"/>
+    <circle cx="532" cy="227" r="2" fill="#233747" stroke="none"/>
+    <path d="M544 236L554 233M550 218L544 207L563 217" fill="#79b7bc" stroke-width="2"/>
+
+    <circle cx="458" cy="177" r="23" fill="#fffef2"/>
+    <circle cx="465" cy="176" r="7" fill="white" stroke-width="2.5"/>
+    <circle cx="468" cy="176" r="3" fill="#233747" stroke="none"/>
+    <path d="M451 164L470 167" stroke-width="5"/>
+
+    <!-- Tiny racing helmet and fluttering scarf -->
+    <path d="M432 164Q430 132 459 134Q483 137 483 160Z" fill="#ed6554"/>
+    <path d="M450 138L451 154M461 138L464 154" stroke="#fff2ce" stroke-width="4"/>
+    <path d="M431 213L449 224L440 236L424 222Z" fill="#ed6554"/>
+    <path d="M429 221Q395 200 369 220L382 226L365 239Q405 223 429 233" fill="#ed6554"/>
+  </g>
+
+  <!-- Speech balloon -->
+  <g stroke="#233747" stroke-width="3" stroke-linejoin="round">
+    <path d="M570 276H718Q735 276 735 293V333Q735 350 718 350H584Q567 350 567 333V300L552 257L589 276Z" fill="#fffef4"/>
+  </g>
+  <text x="650" y="305" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="800" fill="#233747">
+    <tspan x="650">“I ordered</tspan>
+    <tspan x="650" dy="24">SEA delivery!”</tspan>
+  </text>
+
+  <g fill="none" stroke="#fffef4" stroke-width="5" stroke-linecap="round">
+    <path d="M151 334H205M127 352H186M159 370H205"/>
+  </g>
+
+  <text x="400" y="548" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="800" fill="#233747">All the cargo. None of the aerodynamics.</text>
+  <path d="M65 561H735" stroke="#d0c7b4"/>
+  <text x="400" y="583" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#45616b">2026-11-03 00:01:57 SGT (UTC+08:00)</text>
+</svg>

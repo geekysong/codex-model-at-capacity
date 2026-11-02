@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Commute</title>
+  <desc id="desc">A dapper pelican pedals a bicycle, carrying an absurdly large fish. The wheels spin and the rider bobs as he cycles.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#203044;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#fffdf6;stroke:#203044;stroke-width:7}
+      .spoke{stroke:#8a9baa;stroke-width:2}
+      .frame{fill:none;stroke:#e25b45;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#203044}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 1.6s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .8s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bfe9e8"/>
+  <circle cx="680" cy="112" r="54" fill="#ffd56b"/>
+  <path d="M0 360 Q140 329 275 357 T545 351 T800 345 V600 H0Z" fill="#85c9a2"/>
+  <path d="M0 423 Q184 390 370 420 T800 408 V600 H0Z" fill="#62ad83"/>
+  <path d="M72 352q-18-35 10-54 2 27 22 35-2-28 25-41-8 35 7 60M685 340q-12-29 8-46 1 22 18 29-1-24 22-35-7 30 5 51" fill="#438c70"/>
+  <path d="M0 484 Q200 464 400 480 T800 473" fill="none" stroke="#f9f0d8" stroke-width="5" stroke-dasharray="22 18"/>
+
+  <rect x="28" y="24" width="744" height="72" rx="18" fill="#fff8e9" stroke="#203044" stroke-width="4"/>
+  <text id="title" class="label" x="50" y="70" font-size="34" font-weight="900" letter-spacing="1">THE PELICAN’S COMMUTE</text>
+  <path d="M620 45h20m-10-10v20m32-10h24" stroke="#e25b45" stroke-width="5" stroke-linecap="round"/>
+
+  <g aria-label="A pelican riding a bicycle">
+    <!-- Bicycle wheels and rotating spokes -->
+    <circle class="wheel" cx="220" cy="430" r="69"/>
+    <g class="spin">
+      <path class="spoke" d="M220 361v138M151 430h138M171 381l98 98m0-98-98 98"/>
+    </g>
+    <circle cx="220" cy="430" r="8" fill="#e25b45" stroke="#203044" stroke-width="3"/>
+    <circle class="wheel" cx="570" cy="430" r="69"/>
+    <g class="spin">
+      <path class="spoke" d="M570 361v138M501 430h138M521 381l98 98m0-98-98 98"/>
+    </g>
+    <circle cx="570" cy="430" r="8" fill="#e25b45" stroke="#203044" stroke-width="3"/>
+
+    <!-- Bicycle frame -->
+    <path class="frame" d="M220 430 330 347 405 430 300 430 330 347 452 347 405 430 570 430"/>
+    <path class="ink" fill="none" d="M452 347h38m-10 0 19-22m-44 22-19-22m-186 27-12-22h-25m274 22 21-25h28"/>
+    <path d="M291 316h77" class="ink" fill="none"/>
+    <path d="M337 347l-8-31" class="ink" fill="none"/>
+    <circle cx="405" cy="430" r="15" fill="#ffd56b" stroke="#203044" stroke-width="5"/>
+    <g class="rider">
+      <!-- Tail and body -->
+      <path d="M365 278q-38 1-55 30 29 7 57-5" fill="#f7f0df" class="ink"/>
+      <ellipse cx="400" cy="276" rx="63" ry="49" fill="#fffdf6" class="ink"/>
+      <path d="M385 289q30-25 53-3-9 31-43 30" fill="#d6e5e5" stroke="#203044" stroke-width="4"/>
+      <!-- Head and jaunty cap -->
+      <path d="M422 194q-1-44 39-54 40 1 44 43l-9 38-61 1z" fill="#fffdf6" class="ink"/>
+      <path d="M418 160q35-38 81-6l-4 17q-37-17-75 7z" fill="#e25b45" class="ink"/>
+      <path d="M466 153q17-9 32 2" fill="none" stroke="#ffd56b" stroke-width="5"/>
+      <!-- Beak, with ridiculous fish-shaped handlebar flourish -->
+      <path d="M491 201q79-22 114-7-25 30-93 37l-20-8z" fill="#f1b64d" class="ink"/>
+      <path d="M496 219q48 15 87 0-28 28-70 19z" fill="#ef8b48" stroke="#203044" stroke-width="4"/>
+      <circle cx="475" cy="188" r="5.5" fill="#203044"/>
+      <path d="M510 190q26-12 52-8" fill="none" stroke="#203044" stroke-width="3"/>
+      <!-- Bow tie -->
+      <path d="M410 230l-20-12 2 25 18-7 18 8 1-25z" fill="#e25b45" stroke="#203044" stroke-width="4"/>
+      <circle cx="410" cy="230" r="5" fill="#ffd56b" stroke="#203044" stroke-width="2"/>
+      <!-- Wing with tiny briefcase -->
+      <path d="M374 270q19-34 49-11-4 26-39 31" fill="#f2ead8" stroke="#203044" stroke-width="4"/>
+      <rect x="369" y="278" width="43" height="29" rx="5" fill="#e25b45" stroke="#203044" stroke-width="4"/>
+      <path d="M381 278v-7h18v7m-30 12h43" fill="none" stroke="#203044" stroke-width="3"/>
+      <!-- Pedaling legs -->
+      <path d="M400 314q-18 15-5 37l18 20m10-53q17 13 8 32l-13 17" fill="none" stroke="#f1b64d" stroke-width="10" stroke-linecap="round"/>
+      <path d="M412 371l-20 6m25-10 17 7" fill="none" stroke="#203044" stroke-width="6" stroke-linecap="round"/>
+      <path d="M378 379h25m44-11h23" stroke="#e25b45" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <!-- Fish in the pelican pouch -->
+    <path d="M524 224q26-18 53-3l18-13-2 19 3 17-20-10q-25 18-52-1z" fill="#74b7c4" stroke="#203044" stroke-width="4"/>
+    <circle cx="536" cy="220" r="3" fill="#203044"/>
+    <path d="M547 216l-7 7 10 2" fill="none" stroke="#fff8e9" stroke-width="2"/>
+    <!-- Motion marks -->
+    <path d="M286 195h31m-47 15h22m255 39 18-8m-18 20h25" fill="none" stroke="#fff8e9" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Comic speech bubble -->
+  <path d="M577 116h151q15 0 15 15v54q0 15-15 15h-58l-20 20 3-20h-76q-15 0-15-15v-54q0-15 15-15z" fill="#fff8e9" stroke="#203044" stroke-width="4"/>
+  <text class="label" x="587" y="145" font-size="15" font-weight="700">“I’m on a seafood</text>
+  <text class="label" x="599" y="166" font-size="15" font-weight="700">diet. I see it,</text>
+  <text class="label" x="606" y="187" font-size="15" font-weight="700">I pedal faster.”</text>
+
+  <rect x="20" y="507" width="760" height="76" rx="16" fill="#fff8e9" stroke="#203044" stroke-width="4"/>
+  <text class="label" x="400" y="537" text-anchor="middle" font-size="18" font-weight="700">He’s late for lunch, but the fish is keeping pace.</text>
+  <text class="label" x="400" y="566" text-anchor="middle" font-size="16" font-weight="600">2026-11-03 00:03:01 SGT (UTC+08:00)</text>
+</svg>
