@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle of Life</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling in a loop while a tiny fish complains from its beak.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#263238;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f8f1df;stroke:#263238;stroke-width:7}
+      .spoke{stroke:#73838a;stroke-width:2}
+      .frame{fill:none;stroke:#e35d42;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .small{font-family:Arial,sans-serif}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+      .rotor{transform-box:fill-box;transform-origin:center;animation:spin 2.3s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:pedal .65s ease-in-out infinite}
+      @media (prefers-reduced-motion:reduce){.rotor,.rider{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#d8f1ef"/>
+  <circle cx="690" cy="112" r="48" fill="#ffd166"/>
+  <path d="M0 390 Q115 348 230 390 T460 385 T800 388 V535 H0Z" fill="#9ed6a2"/>
+  <path d="M0 420 Q180 390 330 420 T650 415 T800 420" fill="none" stroke="#75bd83" stroke-width="5"/>
+
+  <text id="title" x="400" y="54" text-anchor="middle" class="small" font-size="31" font-weight="900" letter-spacing="1.5" fill="#263238">THE PELICAN CYCLE OF LIFE</text>
+  <text x="400" y="82" text-anchor="middle" class="small" font-size="16" font-weight="700" fill="#476168">He’s pedaling hard. The fish is filing a complaint.</text>
+
+  <!-- bicycle -->
+  <g aria-label="Bicycle">
+    <circle class="wheel" cx="235" cy="420" r="69"/>
+    <circle class="wheel" cx="565" cy="420" r="69"/>
+    <g class="rotor">
+      <g transform="translate(235 420)">
+        <path class="spoke" d="M0-64V64M-64 0H64M-45-45L45 45M45-45L-45 45"/>
+      </g>
+    </g>
+    <g class="rotor">
+      <g transform="translate(565 420)">
+        <path class="spoke" d="M0-64V64M-64 0H64M-45-45L45 45M45-45L-45 45"/>
+      </g>
+    </g>
+    <path class="frame" d="M235 420 L328 337 L385 420 L235 420 M328 337 L451 337 L385 420 M451 337 L565 420 M440 337 L424 309 M405 309 H449 M318 337 L297 321 H272"/>
+    <circle cx="385" cy="420" r="12" fill="#ffd166" class="ink"/>
+    <path d="M385 420L414 444M385 420L359 394" class="frame"/>
+    <path d="M550 330 Q567 322 581 332" fill="none" class="ink"/>
+  </g>
+
+  <!-- rider bobbing as he pedals -->
+  <g class="rider">
+    <!-- tail feathers -->
+    <path d="M331 245 Q285 221 266 245 Q294 255 327 265 M332 254 Q292 254 276 280 Q311 281 340 269" fill="#fffdf4" class="ink"/>
+    <!-- body -->
+    <ellipse cx="388" cy="239" rx="77" ry="60" fill="#fffdf4" class="ink"/>
+    <path d="M350 267 Q387 251 427 268 Q411 289 376 291Z" fill="#f3c94e" class="ink"/>
+    <!-- long neck -->
+    <path d="M425 241 Q446 197 447 151 Q450 125 473 117" fill="none" stroke="#fffdf4" stroke-width="35" stroke-linecap="round"/>
+    <path d="M425 241 Q446 197 447 151 Q450 125 473 117" fill="none" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <!-- head -->
+    <ellipse cx="478" cy="112" rx="39" ry="34" fill="#fffdf4" class="ink"/>
+    <path d="M505 119 Q555 122 583 145 Q554 166 507 145 Q494 137 505 119Z" fill="#f28b45" class="ink"/>
+    <path d="M514 143 Q554 151 579 145 Q564 164 531 165 Q514 160 514 143Z" fill="#e86e55" class="ink"/>
+    <circle cx="491" cy="105" r="5" fill="#263238"/>
+    <path d="M480 94 Q491 87 501 94" fill="none" stroke="#263238" stroke-width="3"/>
+    <!-- helmet -->
+    <path d="M444 106 Q451 65 487 71 Q512 75 518 105Z" fill="#e35d42" class="ink"/>
+    <path d="M443 107 Q482 111 519 105" fill="none" class="ink"/>
+    <path d="M466 76L461 104M484 73L484 106M501 81L506 105" fill="none" stroke="#f8c2a8" stroke-width="3"/>
+    <!-- wings -->
+    <path d="M351 222 Q382 208 409 230 Q393 260 360 255 Q343 249 351 222Z" fill="#eef3e9" class="ink"/>
+    <path d="M360 231L394 244M359 242L384 251" fill="none" stroke="#9aa9a0" stroke-width="3"/>
+    <!-- legs pedaling -->
+    <path d="M377 278 Q385 318 414 342 L386 391" fill="none" stroke="#f28b45" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M419 276 Q433 311 411 342 L431 390" fill="none" stroke="#f28b45" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M374 392 Q385 399 399 393 M423 393 Q438 400 449 392" fill="none" stroke="#263238" stroke-width="7" stroke-linecap="round"/>
+    <!-- wing reaching handlebars -->
+    <path d="M423 228 Q445 248 452 286 L442 316" fill="none" stroke="#fffdf4" stroke-width="18" stroke-linecap="round"/>
+    <path d="M423 228 Q445 248 452 286 L442 316" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="442" cy="316" r="7" fill="#f28b45" class="ink"/>
+    <!-- fish in beak -->
+    <path d="M536 130 Q546 120 557 130 Q546 140 536 130Z" fill="#70c5bd" stroke="#263238" stroke-width="2"/>
+    <path d="M536 130L530 125V135Z" fill="#f28b45" stroke="#263238" stroke-width="2"/>
+    <circle cx="552" cy="129" r="1.8" fill="#263238"/>
+    <path d="M542 130L547 125" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+
+  <!-- comic motion marks and speech -->
+  <path d="M185 321L160 311M187 339L156 338M609 328L635 315M610 348L643 348" stroke="#e35d42" stroke-width="5" stroke-linecap="round"/>
+  <path d="M553 190 Q564 174 590 180 Q616 185 610 205 Q605 219 580 216 L566 227 L568 212 Q548 207 553 190Z" fill="#fffdf4" stroke="#263238" stroke-width="3"/>
+  <text x="581" y="199" text-anchor="middle" class="small" font-size="12" font-weight="800" fill="#263238">I said</text>
+  <text x="581" y="212" text-anchor="middle" class="small" font-size="12" font-weight="800" fill="#263238">“takeout!”</text>
+  <text x="117" y="289" class="small" font-size="13" font-weight="800" fill="#476168" transform="rotate(-8 117 289)">HONK!</text>
+
+  <path d="M0 512 Q150 500 300 512 T600 510 T800 512 V600 H0Z" fill="#263238"/>
+  <text x="400" y="548" text-anchor="middle" class="small" font-size="15" font-weight="700" fill="#fffdf4">A bird in motion saves nine fish in the basket.</text>
+  <text x="400" y="581" text-anchor="middle" class="small" font-size="14" font-weight="700" fill="#ffd166">2026-11-03 20:02:40 SGT (UTC+08:00)</text>
+</svg>
