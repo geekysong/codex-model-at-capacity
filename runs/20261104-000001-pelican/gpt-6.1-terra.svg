@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN POWER</title>
+  <desc id="desc">A pelican rides a bicycle with fish in its enormous bill. The wheels spin and the pelican bobs as it pedals.</desc>
+  <defs>
+    <pattern id="sky" width="80" height="80" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="12" r="2" fill="#fff" opacity=".35"/>
+      <circle cx="57" cy="49" r="3" fill="#fff" opacity=".25"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="92" fill="#fffaf0" stroke="#203b46" stroke-width="12"/>
+      <circle r="78" fill="none" stroke="#e8b54c" stroke-width="3"/>
+      <g stroke="#66818a" stroke-width="3">
+        <path d="M-78 0H78M0-78V78M-55-55 55 55M55-55-55 55"/>
+        <path d="M-72-30 72 30M-72 30 72-30M-30-72 30 72M30-72-30 72" opacity=".65"/>
+      </g>
+      <circle r="10" fill="#e86f51" stroke="#203b46" stroke-width="4"/>
+    </g>
+    <style>
+      .ink { stroke:#203b46; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { animation: spin 1.8s linear infinite; transform-box:fill-box; transform-origin:center; }
+      .rider { animation: bob .9s ease-in-out infinite alternate; }
+      .crank { animation: spin 1.8s linear infinite; transform-origin:365px 411px; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-6px); } }
+      @media (prefers-reduced-motion: reduce) { .wheel,.rider,.crank { animation-duration:6s; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f9e8bb"/>
+  <rect x="18" y="18" width="764" height="564" rx="24" fill="#fff9e9" stroke="#203b46" stroke-width="4"/>
+  <path d="M20 115H780V477H20Z" fill="#a9dce0"/>
+  <path d="M20 115H780V477H20Z" fill="url(#sky)"/>
+  <circle cx="690" cy="169" r="38" fill="#f8cb68"/>
+  <path d="M65 207q22-21 44 0q16-13 34 0M570 215q18-17 36 0q14-11 28 0" fill="none" stroke="#fff9e9" stroke-width="9" stroke-linecap="round"/>
+  <path d="M20 450q115-24 223-3t219-2q126-25 318 0v32H20Z" fill="#83b9a4"/>
+  <path d="M20 472H780" stroke="#203b46" stroke-width="5"/>
+  <path d="M45 485h95m36 0h48m448 0h72" stroke="#e9bd6d" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="400" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="3" fill="#203b46">PELICAN POWER</text>
+
+  <g transform="translate(225 399)"><g class="wheel"><use href="#wheel"/></g></g>
+  <g transform="translate(582 399)"><g class="wheel"><use href="#wheel"/></g></g>
+
+  <g fill="none" class="ink" stroke-width="9">
+    <path d="M225 399 310 301 365 411 225 399 421 311 365 411 310 301"/>
+    <path d="M421 311 482 411 582 399 515 275"/>
+    <path d="M421 311h67l94 88"/>
+    <path d="M310 301 295 277M276 276h46"/>
+    <path d="M515 275h35q18 0 18-17"/>
+  </g>
+  <path d="M271 270q21-11 54 0l-4 10h-50Z" fill="#e86f51" class="ink" stroke-width="5"/>
+  <path d="M523 267h24" stroke="#e86f51" stroke-width="10" stroke-linecap="round"/>
+  <g class="crank">
+    <circle cx="365" cy="411" r="20" fill="#f7c765" class="ink" stroke-width="5"/>
+    <path d="M365 411 387 431m-44-40 22 20" class="ink" fill="none" stroke-width="6"/>
+    <path d="M378 432h23m-72-42h23" class="ink" fill="none" stroke-width="7"/>
+  </g>
+
+  <g class="rider">
+    <path d="M330 295q-25 25-17 57l27 29" fill="none" stroke="#e58b43" stroke-width="13" stroke-linecap="round"/>
+    <path d="M340 381l17 12" fill="none" stroke="#e58b43" stroke-width="10" stroke-linecap="round"/>
+    <path d="M347 390h24" fill="none" stroke="#203b46" stroke-width="7" stroke-linecap="round"/>
+    <path d="M375 295q8 33-1 55l-25 22" fill="none" stroke="#e58b43" stroke-width="12" stroke-linecap="round"/>
+
+    <path d="M257 258q-25-3-36-26 27 11 44 4" fill="#e8e4d9" class="ink" stroke-width="5"/>
+    <path d="M260 229q-4-42 37-55 54-18 87 18 24 26 13 72-7 37-53 48-55 11-79-21-16-22-5-62Z" fill="#fffdf6" class="ink" stroke-width="6"/>
+    <path d="M278 237q16-21 58-12 36 7 47 32-19 31-57 29-38-3-48-49Z" fill="#e4e7dd" class="ink" stroke-width="5"/>
+    <path d="M294 252q16 14 34 13m-25 9q13 7 28 5" fill="none" stroke="#a1b4b2" stroke-width="4" stroke-linecap="round"/>
+
+    <path d="M345 198q29-18 33-51 3-25 27-32 27-8 43 10 12 13 8 33-3 18-19 26-15 8-18 29l-4 29q-6 36-36 45" fill="#fffdf6" class="ink" stroke-width="6"/>
+    <path d="M426 147q20-6 36 1l107 34q12 4 8 13-4 8-17 7l-121-12q-20-2-26-14Z" fill="#ef9e4c" class="ink" stroke-width="5"/>
+    <path d="M439 190q26 63 81 70 40 4 46-59Z" fill="#f7c464" class="ink" stroke-width="5"/>
+    <path d="M449 192q36 20 90 15" fill="none" stroke="#d58742" stroke-width="3"/>
+    <path d="M481 219q11-10 23 0-12 10-23 0Zm23 0 8-7v14Z" fill="#73aab0" stroke="#203b46" stroke-width="2"/>
+    <circle cx="487" cy="218" r="1.8" fill="#203b46"/>
+    <circle cx="429" cy="141" r="13" fill="#fff" class="ink" stroke-width="4"/>
+    <circle cx="433" cy="143" r="5" fill="#203b46"/>
+    <path d="M416 123q11-10 24-3" fill="none" class="ink" stroke-width="4"/>
+    <path d="M395 114q4-20 16-26-3 14 1 21 8-17 19-19-7 13-5 22" fill="#fffdf6" class="ink" stroke-width="5"/>
+    <path d="M382 252q30 1 54 15l47-1" fill="none" stroke="#e4e7dd" stroke-width="18" stroke-linecap="round"/>
+    <path d="M382 252q30 1 54 15l47-1" fill="none" class="ink" stroke-width="5"/>
+    <path d="M475 265q14-10 22 0" fill="none" stroke="#203b46" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <path d="M95 351q-16 7-24 20m27-3q-20 7-29 20m38-2q-17 5-24 15" fill="none" stroke="#fff9e9" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+  <text x="400" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#203b46">His grocery delivery comes with free fish and questionable balance.</text>
+  <path d="M75 540H725" stroke="#dbc8a4" stroke-width="2"/>
+  <text x="400" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#52676b">2026-11-04 00:02:39 SGT (UTC+08:00)</text>
+</svg>
