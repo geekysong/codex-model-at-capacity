@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Pedal-ican Express</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fcbff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+    <g id="wheel">
+      <circle r="55" fill="none" stroke="#222" stroke-width="7"/>
+      <circle r="48" fill="none" stroke="#aaa" stroke-width="2"/>
+      <g stroke="#777" stroke-width="2">
+        <line x1="-48" y1="0" x2="48" y2="0"/>
+        <line x1="-48" y1="0" x2="48" y2="0" transform="rotate(30)"/>
+        <line x1="-48" y1="0" x2="48" y2="0" transform="rotate(60)"/>
+        <line x1="-48" y1="0" x2="48" y2="0" transform="rotate(90)"/>
+        <line x1="-48" y1="0" x2="48" y2="0" transform="rotate(120)"/>
+        <line x1="-48" y1="0" x2="48" y2="0" transform="rotate(150)"/>
+      </g>
+      <circle r="7" fill="#333"/>
+      <circle cx="0" cy="-44" r="4" fill="#e63946"/>
+    </g>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="600" fill="#fff8ec"/>
+  <rect x="0" y="0" width="800" height="485" fill="url(#sky)"/>
+  <circle cx="705" cy="95" r="38" fill="#ffd93b" stroke="#f4b400" stroke-width="3"/>
+  <g stroke="#ffd93b" stroke-width="4" stroke-linecap="round">
+    <line x1="705" y1="40" x2="705" y2="28"/><line x1="705" y1="150" x2="705" y2="162"/>
+    <line x1="650" y1="95" x2="638" y2="95"/><line x1="760" y1="95" x2="772" y2="95"/>
+    <line x1="666" y1="56" x2="657" y2="47"/><line x1="744" y1="134" x2="753" y2="143"/>
+    <line x1="744" y1="56" x2="753" y2="47"/><line x1="666" y1="134" x2="657" y2="143"/>
+  </g>
+  <g fill="#fff" opacity="0.95">
+    <animateTransform attributeName="transform" type="translate" values="0 0;-40 0;0 0" dur="14s" repeatCount="indefinite"/>
+    <ellipse cx="150" cy="120" rx="48" ry="20"/><ellipse cx="180" cy="108" rx="34" ry="22"/><ellipse cx="120" cy="112" rx="30" ry="18"/>
+    <ellipse cx="560" cy="150" rx="40" ry="16"/><ellipse cx="585" cy="140" rx="28" ry="18"/>
+  </g>
+  <path d="M0 410 Q 120 340 260 395 T 520 385 T 800 405 L 800 485 L 0 485 Z" fill="#a8d86f"/>
+  <path d="M0 440 Q 200 400 400 445 T 800 440 L 800 485 L 0 485 Z" fill="#8cc94f"/>
+
+  <!-- sign -->
+  <rect x="683" y="382" width="7" height="103" fill="#8b5a2b"/>
+  <rect x="636" y="340" width="100" height="44" rx="5" fill="#fff" stroke="#333" stroke-width="3"/>
+  <text x="686" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1d3557">BIKE LANE</text>
+  <text x="686" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d62828">GULLS KEEP OUT</text>
+
+  <!-- road -->
+  <rect x="0" y="485" width="800" height="25" fill="#555"/>
+  <line x1="0" y1="497" x2="800" y2="497" stroke="#fff" stroke-width="3" stroke-dasharray="30 20">
+    <animate attributeName="stroke-dashoffset" values="0;50" dur="0.5s" repeatCount="indefinite"/>
+  </line>
+  <rect x="0" y="510" width="800" height="16" fill="#6cbf4a"/>
+
+  <!-- title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="38" font-weight="bold" fill="#1d3557" letter-spacing="2">THE PEDAL-ICAN EXPRESS</text>
+  <text x="400" y="76" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="15" fill="#457b9d">Same-day seafood delivery. Pouch not refrigerated.</text>
+
+  <!-- motion lines -->
+  <g stroke="#1d3557" stroke-width="3" stroke-linecap="round" opacity="0.6">
+    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="0.4s" repeatCount="indefinite"/>
+    <line x1="150" y1="395" x2="205" y2="395"/>
+    <line x1="130" y1="420" x2="200" y2="420"/>
+    <line x1="160" y1="445" x2="210" y2="445"/>
+  </g>
+
+  <!-- rear wheel -->
+  <g transform="translate(280 430)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1s" repeatCount="indefinite"/>
+      <use href="#wheel"/>
+    </g>
+  </g>
+  <!-- front wheel -->
+  <g transform="translate(520 430)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1s" repeatCount="indefinite"/>
+      <use href="#wheel"/>
+    </g>
+  </g>
+
+  <!-- chain -->
+  <line x1="400" y1="416" x2="280" y2="423" stroke="#333" stroke-width="2" stroke-dasharray="3 2"/>
+  <line x1="400" y1="444" x2="280" y2="437" stroke="#333" stroke-width="2" stroke-dasharray="3 2"/>
+  <circle cx="280" cy="430" r="7" fill="none" stroke="#333" stroke-width="3"/>
+
+  <!-- far leg -->
+  <line x1="372" y1="318" x2="370" y2="430" stroke="#e07a1f" stroke-width="7" stroke-linecap="round">
+    <animate attributeName="x2" values="370;378.8;400;421.2;430;421.2;400;378.8;370" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="430;408.8;400;408.8;430;451.2;460;451.2;430" dur="1s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- frame -->
+  <polyline points="280,430 372,340 490,330 400,430 280,430" fill="none" stroke="#d62828" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="372" y1="340" x2="400" y2="430" stroke="#d62828" stroke-width="6" stroke-linecap="round"/>
+  <line x1="490" y1="330" x2="520" y2="430" stroke="#d62828" stroke-width="6" stroke-linecap="round"/>
+  <line x1="490" y1="330" x2="497" y2="306" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+  <line x1="468" y1="304" x2="528" y2="308" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 350 338 L 394 338 Q 404 346 392 349 L 356 349 Q 341 346 350 338 Z" fill="#222"/>
+
+  <!-- basket with fish -->
+  <rect x="528" y="330" width="48" height="32" rx="3" fill="#c08a4a" stroke="#333" stroke-width="2"/>
+  <g stroke="#7a5220" stroke-width="1.5">
+    <line x1="540" y1="330" x2="540" y2="362"/><line x1="552" y1="330" x2="552" y2="362"/><line x1="564" y1="330" x2="564" y2="362"/>
+    <line x1="528" y1="341" x2="576" y2="341"/><line x1="528" y1="352" x2="576" y2="352"/>
+  </g>
+  <g transform="translate(548 324)">
+    <animateTransform attributeName="transform" type="rotate" values="-8 548 330;8 548 330;-8 548 330" dur="0.4s" repeatCount="indefinite" additive="sum"/>
+    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#7fb3d5" stroke="#333" stroke-width="1.5"/>
+    <polygon points="11,0 20,-7 20,7" fill="#7fb3d5" stroke="#333" stroke-width="1.5"/>
+    <circle cx="-6" cy="-1" r="1.5" fill="#222"/>
+  </g>
+
+  <!-- crank and pedals -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 400 430" to="360 400 430" dur="1s" repeatCount="indefinite"/>
+    <line x1="370" y1="430" x2="430" y2="430" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+    <rect x="422" y="425" width="16" height="10" rx="2" fill="#444"/>
+    <rect x="362" y="425" width="16" height="10" rx="2" fill="#444"/>
+  </g>
+  <circle cx="400" cy="430" r="14" fill="none" stroke="#333" stroke-width="3"/>
+
+  <!-- pelican (bobbing) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="0.5s" repeatCount="indefinite"/>
+    <path d="M 300 285 L 262 268 L 276 295 L 258 320 L 302 306 Z" fill="#fff" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+    <ellipse cx="355" cy="295" rx="60" ry="42" fill="#fff" stroke="#333" stroke-width="3"/>
+    <path d="M 392 272 C 395 240, 420 215, 446 208" fill="none" stroke="#333" stroke-width="24" stroke-linecap="round"/>
+    <path d="M 392 272 C 395 240, 420 215, 446 208" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 335 278 C 390 250, 470 272, 506 300 L 506 308 C 460 300, 380 306, 335 300 Z" fill="#fff" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="448" cy="205" r="22" fill="#fff" stroke="#333" stroke-width="3"/>
+    <path d="M 462 214 Q 515 278 566 214 Z" fill="#f08a4b" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M 460 197 L 568 212 L 462 213 Z" fill="#f5b942" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M 425 204 A 23 23 0 0 1 471 204 Z" fill="#e63946" stroke="#333" stroke-width="3"/>
+    <line x1="432" y1="204" x2="438" y2="222" stroke="#333" stroke-width="2"/>
+    <circle cx="455" cy="200" r="5" fill="#fff" stroke="#333" stroke-width="2"/>
+    <circle cx="456.5" cy="200.5" r="2.3" fill="#111"/>
+    <line x1="446" y1="190" x2="463" y2="194" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-10 -14" dur="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="0.9s" repeatCount="indefinite"/>
+      <path d="M 428 182 q -5 8 0 11 q 5 -3 0 -11 z" fill="#4cc9f0" stroke="#1d3557" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- near leg -->
+  <line x1="380" y1="316" x2="430" y2="430" stroke="#f59e2b" stroke-width="8" stroke-linecap="round">
+    <animate attributeName="x2" values="430;421.2;400;378.8;370;378.8;400;421.2;430" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="430;451.2;460;451.2;430;408.8;400;408.8;430" dur="1s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- caption -->
+  <text x="400" y="549" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-style="italic" fill="#333">“Zero emissions,” he said. The sardines in his pouch filed a complaint.</text>
+
+  <!-- footer -->
+  <line x1="40" y1="566" x2="760" y2="566" stroke="#bbb" stroke-width="1"/>
+  <text x="400" y="587" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#555">2026-11-04 00:05:05 SGT (UTC+08:00)</text>
+</svg>

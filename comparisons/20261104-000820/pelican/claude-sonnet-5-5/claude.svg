@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#e6f7ff"/>
+    </linearGradient>
+    <style>
+      .wheel { transform-box: view-box; animation: spin 1.2s linear infinite; }
+      .wf { transform-origin: 250px 400px; }
+      .wb { transform-origin: 530px 400px; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .bob { animation: bob 0.6s ease-in-out infinite alternate; }
+      @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-6px); } }
+      .crank { transform-origin: 400px 400px; animation: spin 1.2s linear infinite; }
+      .pedalA { transform-origin: 400px 400px; animation: counter 1.2s linear infinite; }
+      @keyframes counter { to { transform: rotate(-360deg); } }
+      .cloud { animation: drift 8s ease-in-out infinite alternate; }
+      @keyframes drift { from { transform: translateX(-20px); } to { transform: translateX(30px); } }
+      .road { animation: roadmove 0.8s linear infinite; }
+      @keyframes roadmove { to { transform: translateX(-60px); } }
+      .leg { transform-origin: 380px 300px; animation: legs 1.2s ease-in-out infinite alternate; }
+      @keyframes legs { from { transform: rotate(-8deg); } to { transform: rotate(8deg); } }
+      .fish { transform-origin: 600px 190px; animation: flap 0.4s ease-in-out infinite alternate; }
+      @keyframes flap { from { transform: rotate(-10deg); } to { transform: rotate(10deg); } }
+      .title { font: bold 38px Arial, Helvetica, sans-serif; fill: #1b2a49; }
+      .cap { font: italic 18px Arial, Helvetica, sans-serif; fill: #1b2a49; }
+      .small { font: 14px Arial, Helvetica, sans-serif; fill: #1b2a49; }
+      .bubble { font: bold 15px Arial, Helvetica, sans-serif; fill: #222; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <!-- title -->
+  <text x="400" y="48" text-anchor="middle" class="title">PELICAN PEDAL PANIC!</text>
+
+  <!-- sun -->
+  <circle cx="710" cy="110" r="32" fill="#ffd54a"/>
+
+  <!-- clouds -->
+  <g class="cloud" fill="#fff">
+    <ellipse cx="130" cy="110" rx="45" ry="17"/>
+    <ellipse cx="160" cy="98" rx="30" ry="16"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="448" width="800" height="102" fill="#6b7280"/>
+  <rect x="0" y="440" width="800" height="10" fill="#7bc65a"/>
+  <g class="road" fill="#fff">
+    <rect x="0" y="500" width="40" height="7"/>
+    <rect x="100" y="500" width="40" height="7"/>
+    <rect x="200" y="500" width="40" height="7"/>
+    <rect x="300" y="500" width="40" height="7"/>
+    <rect x="400" y="500" width="40" height="7"/>
+    <rect x="500" y="500" width="40" height="7"/>
+    <rect x="600" y="500" width="40" height="7"/>
+    <rect x="700" y="500" width="40" height="7"/>
+    <rect x="800" y="500" width="40" height="7"/>
+  </g>
+
+  <!-- bike + pelican -->
+  <g class="bob">
+    <!-- wheels -->
+    <g class="wheel wf">
+      <circle cx="250" cy="400" r="50" fill="none" stroke="#222" stroke-width="7"/>
+      <line x1="250" y1="350" x2="250" y2="450" stroke="#555" stroke-width="2"/>
+      <line x1="200" y1="400" x2="300" y2="400" stroke="#555" stroke-width="2"/>
+      <line x1="215" y1="365" x2="285" y2="435" stroke="#555" stroke-width="2"/>
+      <line x1="285" y1="365" x2="215" y2="435" stroke="#555" stroke-width="2"/>
+    </g>
+    <g class="wheel wb">
+      <circle cx="530" cy="400" r="50" fill="none" stroke="#222" stroke-width="7"/>
+      <line x1="530" y1="350" x2="530" y2="450" stroke="#555" stroke-width="2"/>
+      <line x1="480" y1="400" x2="580" y2="400" stroke="#555" stroke-width="2"/>
+      <line x1="495" y1="365" x2="565" y2="435" stroke="#555" stroke-width="2"/>
+      <line x1="565" y1="365" x2="495" y2="435" stroke="#555" stroke-width="2"/>
+    </g>
+
+    <!-- frame -->
+    <g stroke="#d6322e" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M530 400 L470 290 L330 290 L400 400 Z"/>
+      <path d="M330 290 L400 400"/>
+      <path d="M470 290 L430 260"/>
+      <path d="M250 400 L300 330 L310 290"/>
+    </g>
+    <path d="M250 400 L400 400" stroke="#d6322e" stroke-width="5"/>
+    <!-- handlebar -->
+    <path d="M470 290 L450 250 L485 245" stroke="#222" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <line x1="530" y1="400" x2="465" y2="270" stroke="#d6322e" stroke-width="6"/>
+    <!-- seat -->
+    <rect x="295" y="280" width="50" height="12" rx="6" fill="#222"/>
+
+    <!-- crank -->
+    <circle cx="400" cy="400" r="14" fill="#999" stroke="#333" stroke-width="3"/>
+    <g class="crank">
+      <line x1="400" y1="400" x2="400" y2="430" stroke="#333" stroke-width="6"/>
+      <line x1="400" y1="400" x2="400" y2="370" stroke="#333" stroke-width="6"/>
+      <g class="pedalA">
+        <rect x="388" y="428" width="24" height="7" fill="#222"/>
+      </g>
+    </g>
+
+    <!-- pelican body -->
+    <ellipse cx="335" cy="245" rx="52" ry="42" fill="#fafafa" stroke="#333" stroke-width="3"/>
+    <!-- tail -->
+    <path d="M290 250 L255 275 L295 275 Z" fill="#e8e8e8" stroke="#333" stroke-width="3"/>
+    <!-- wing -->
+    <path d="M330 235 Q380 235 440 250 Q400 280 345 270 Q315 255 330 235Z" fill="#dfe6ee" stroke="#333" stroke-width="3"/>
+    <!-- legs -->
+    <g class="leg" stroke="#f59f0b" stroke-width="6" stroke-linecap="round" fill="none">
+      <path d="M345 282 L385 340 L400 390"/>
+      <path d="M335 282 L360 340 L400 410"/>
+    </g>
+    <!-- neck -->
+    <path d="M365 215 Q400 170 395 140" stroke="#333" stroke-width="30" fill="none" stroke-linecap="round"/>
+    <path d="M365 215 Q400 170 395 140" stroke="#fafafa" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="410" cy="125" r="28" fill="#fafafa" stroke="#333" stroke-width="3"/>
+    <!-- beak -->
+    <path d="M425 125 L560 135 Q540 190 440 150 Z" fill="#ffb627" stroke="#333" stroke-width="3"/>
+    <path d="M430 135 L555 138" stroke="#b36b00" stroke-width="3"/>
+    <!-- pouch with fish -->
+    <path d="M440 150 Q500 185 545 150" fill="#ff9a1f" opacity="0.6"/>
+    <g class="fish">
+      <path d="M520 160 q15 -14 30 0 q-15 14 -30 0 Z" fill="#4aa3df" stroke="#245" stroke-width="2"/>
+      <path d="M550 160 l12 -9 v18 z" fill="#4aa3df" stroke="#245" stroke-width="2"/>
+    </g>
+    <!-- eye -->
+    <circle cx="418" cy="117" r="9" fill="#fff" stroke="#333" stroke-width="2"/>
+    <circle cx="420" cy="118" r="4" fill="#111"/>
+    <!-- helmet -->
+    <path d="M382 118 Q385 82 420 90 Q440 95 438 112 Z" fill="#2ecc71" stroke="#333" stroke-width="3"/>
+    <path d="M395 95 L400 112 M410 91 L412 112" stroke="#1a8a4a" stroke-width="3"/>
+    <!-- feather tuft -->
+    <path d="M395 98 Q385 70 405 80" stroke="#333" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- speech bubble -->
+  <g>
+    <rect x="570" y="190" width="200" height="62" rx="14" fill="#fff" stroke="#333" stroke-width="3"/>
+    <path d="M590 252 L580 280 L615 252 Z" fill="#fff" stroke="#333" stroke-width="3"/>
+    <rect x="585" y="250" width="28" height="5" fill="#fff"/>
+    <text x="670" y="217" text-anchor="middle" class="bubble">"Fish tax is due!</text>
+    <text x="670" y="238" text-anchor="middle" class="bubble">Also, no brakes!"</text>
+  </g>
+
+  <!-- caption -->
+  <text x="400" y="535" text-anchor="middle" class="cap">Breaking news: pelican commutes by bike, still carries lunch in his mouth.</text>
+
+  <!-- footer -->
+  <rect x="0" y="550" width="800" height="50" fill="#e9eef5"/>
+  <text x="400" y="581" text-anchor="middle" class="small">2026-11-04 00:08:20 SGT (UTC+08:00)</text>
+</svg>
