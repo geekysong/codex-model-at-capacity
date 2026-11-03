@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">The Bill Keeps Growing</title>
+  <desc id="description">A determined pelican pedals a bicycle, carrying a huge bill-shaped pouch full of fish while a tiny fish demands faster delivery. Wheels spin and the pelican bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="paper" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="0.7" fill="#d8cba7" opacity=".35"/>
+      <circle cx="13" cy="14" r=".5" fill="#d8cba7" opacity=".3"/>
+    </pattern>
+    <g id="spokes" stroke="#467875" stroke-width="3">
+      <path d="M-65 0H65M0-65V65M-46-46L46 46M-46 46L46-46"/>
+      <circle r="53" fill="none" stroke="#e7ab42" stroke-width="5" stroke-dasharray="10 73"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#faf2d9"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M35 103H765" stroke="#243e42" stroke-width="3"/>
+  <text x="400" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="39" font-weight="900" fill="#243e42">THE BILL KEEPS GROWING</text>
+  <text x="400" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" letter-spacing="3" fill="#687b73">A TALE OF THE GIG ECONOMY</text>
+
+  <!-- One waterfront delivery scene -->
+  <path d="M0 337Q145 314 282 337T565 336T800 330V440H0Z" fill="#b7dad0"/>
+  <g fill="none" stroke="#82b5ad" stroke-width="3" stroke-linecap="round">
+    <path d="M35 361h74m-44 15h98m451-24h85m-45 28h96"/>
+    <path d="M13 401h123m501 5h100"/>
+  </g>
+  <path d="M0 427Q350 416 800 434V474H0Z" fill="#e4c78f"/>
+  <path d="M0 450H800" stroke="#c8a777" stroke-width="2"/>
+  <ellipse cx="398" cy="450" rx="235" ry="12" fill="#8b805e" opacity=".22"/>
+
+  <!-- Roadside satire -->
+  <path d="M703 270V427" stroke="#6e7463" stroke-width="8"/>
+  <rect x="631" y="213" width="143" height="75" rx="8" fill="#fff9e8" stroke="#243e42" stroke-width="3"/>
+  <text x="702" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#243e42">PIER PRESSURE</text>
+  <text x="702" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#243e42">THIS WAY →</text>
+
+  <!-- Spinning wheels -->
+  <g stroke="#243e42">
+    <circle cx="249" cy="377" r="73" fill="#faf2d9" stroke-width="11"/>
+    <circle cx="552" cy="377" r="73" fill="#faf2d9" stroke-width="11"/>
+  </g>
+  <g transform="translate(249 377)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(552 377)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M249 377L321 277L375 377H249L505 277L375 377M321 277H505M552 377L496 255" stroke="#243e42" stroke-width="13"/>
+    <path d="M249 377L321 277L375 377H249L505 277L375 377M321 277H505M552 377L496 255" stroke="#e36443" stroke-width="7"/>
+    <path d="M321 277L311 256M496 255L487 229L514 220L529 227" stroke="#243e42" stroke-width="8"/>
+    <path d="M288 254H333" stroke="#243e42" stroke-width="12"/>
+    <path d="M488 235Q553 253 552 320" stroke="#243e42" stroke-width="2"/>
+  </g>
+  <circle cx="375" cy="377" r="18" fill="#efb747" stroke="#243e42" stroke-width="4"/>
+  <circle cx="249" cy="377" r="7" fill="#243e42"/>
+  <circle cx="552" cy="377" r="7" fill="#243e42"/>
+
+  <!-- Pelican and animated pedaling -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".7s" repeatCount="indefinite"/>
+    <path d="M338 263L337 312L399 361" fill="none" stroke="#b77c28" stroke-width="12" stroke-linejoin="round">
+      <animate attributeName="d" values="M338 263L337 312L399 361;M338 263L315 322L354 388;M338 263L337 312L399 361" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M267 220L235 202L252 243L228 239L267 267" fill="#fffdf0" stroke="#243e42" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M265 210Q297 178 353 200Q377 210 387 235Q381 278 334 283Q271 287 259 253Z" fill="#fffdf0" stroke="#243e42" stroke-width="4"/>
+    <path d="M350 225Q393 208 397 175Q394 135 425 126Q455 121 469 146Q478 166 458 183Q435 195 437 225Q423 260 377 263" fill="#fffdf0" stroke="#243e42" stroke-width="4"/>
+    <path d="M284 216Q316 201 347 224L326 257Q305 251 291 236" fill="#dce5d8" stroke="#243e42" stroke-width="3"/>
+    <path d="M335 222Q382 246 436 233L492 225" fill="none" stroke="#243e42" stroke-width="16" stroke-linecap="round"/>
+    <path d="M335 222Q382 246 436 233L492 225" fill="none" stroke="#f7f4e4" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Enormous loaded bill -->
+    <path d="M458 159L615 176Q603 256 537 259Q477 253 458 177Z" fill="#efb650" stroke="#243e42" stroke-width="4"/>
+    <path d="M473 187Q490 240 535 243" fill="none" stroke="#d48a37" stroke-width="3"/>
+    <g stroke="#243e42" stroke-width="2.5">
+      <path d="M495 198Q519 173 543 198Q520 219 495 198L485 209V188Z" fill="#82b8ad"/>
+      <path d="M547 218Q570 193 589 213Q572 236 547 218L538 228V207Z" fill="#dfe5d3"/>
+      <circle cx="534" cy="196" r="3" fill="#243e42" stroke="none"/>
+      <circle cx="581" cy="212" r="3" fill="#243e42" stroke="none"/>
+    </g>
+    <path d="M457 156Q530 150 623 174L458 178Z" fill="#f6cd60" stroke="#243e42" stroke-width="4" stroke-linejoin="round"/>
+    <ellipse cx="447" cy="147" rx="7" ry="10" fill="#fff" stroke="#243e42" stroke-width="2"/>
+    <circle cx="450" cy="149" r="3" fill="#243e42"/>
+    <path d="M436 133L454 138" stroke="#243e42" stroke-width="4" stroke-linecap="round"/>
+    <path d="M399 138Q420 104 457 124L467 135Z" fill="#e36443" stroke="#243e42" stroke-width="3"/>
+    <path d="M454 132H482" stroke="#243e42" stroke-width="5" stroke-linecap="round"/>
+    <path d="M394 151l-12-6m9 18-16 2" stroke="#639ba4" stroke-width="3" stroke-linecap="round"/>
+
+    <path d="M357 270L389 313L354 390" fill="none" stroke="#e9a634" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="d" values="M357 270L389 313L354 390;M357 270L405 304L399 362;M357 270L389 313L354 390" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M345 390L370 396L349 401Z" fill="#efb650" stroke="#243e42" stroke-width="3">
+      <animate attributeName="d" values="M345 390L370 396L349 401Z;M390 362L415 368L394 373Z;M345 390L370 396L349 401Z" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Readable stationary speech -->
+  <path d="M76 135H267Q280 135 280 149V188Q280 201 267 201H194L213 223L167 201H76Q62 201 62 188V149Q62 135 76 135Z" fill="#fffdf3" stroke="#243e42" stroke-width="3"/>
+  <text x="171" y="161" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#243e42">“Paid in exposure.</text>
+  <text x="171" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#243e42">Mostly headwind.”</text>
+
+  <path d="M559 113H738Q750 113 750 125V162Q750 175 738 175H651L601 194L623 175H559Q547 175 547 162V125Q547 113 559 113Z" fill="#fffdf3" stroke="#243e42" stroke-width="3"/>
+  <text x="649" y="139" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#243e42">FASTER! We ordered</text>
+  <text x="649" y="161" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#243e42">express de-livery!</text>
+
+  <g stroke="#243e42" stroke-width="3" stroke-linecap="round">
+    <path d="M143 300h45m-61 16h48m-23 17h28"/>
+  </g>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <rect x="0" y="480" width="800" height="120" fill="#243e42"/>
+  <text x="400" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#fff3cf">All that pedaling. Still living bill to bill.</text>
+  <path d="M92 535H708" stroke="#7c9991" stroke-width="1"/>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#fff3cf">2026-11-04 04:00:01 SGT (UTC+08:00)</text>
+</svg>

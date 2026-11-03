@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">HONK IF YOU’RE WINGING IT</title>
+  <desc id="desc">A determined pelican pedals a bicycle past a sign that reads “Road to nowhere.” The wheels turn and the bird bobs as it rides.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: roll 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .6s ease-in-out infinite alternate; }
+      @keyframes roll { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px); } }
+    </style>
+  </defs>
+
+  <!-- Sky and sun -->
+  <rect width="800" height="600" fill="#c9eff5"/>
+  <circle cx="690" cy="112" r="48" fill="#ffd65a"/>
+  <path d="M0 310 Q130 280 260 310 T520 305 T800 300 V490 H0Z" fill="#a8d99a"/>
+  <path d="M0 365 Q180 338 360 365 T800 355 V500 H0Z" fill="#78bd78"/>
+  <path d="M0 447 Q180 422 390 448 T800 435 V530 H0Z" fill="#efdc9c"/>
+  <path d="M0 478 Q200 462 400 480 T800 470" fill="none" stroke="#d6bf7f" stroke-width="4" stroke-dasharray="18 16"/>
+
+  <!-- Puffy clouds -->
+  <g fill="#fff" opacity=".92">
+    <path d="M91 126c0-15 12-27 27-27 9 0 17 4 22 11 5-17 21-29 40-29 23 0 41 18 41 41h8c13 0 23 10 23 23s-10 23-23 23H112c-16 0-29-13-29-29 0-5 1-9 3-13z"/>
+    <path d="M390 95c0-12 10-22 22-22 7 0 14 3 18 9 4-14 17-24 32-24 18 0 32 14 32 32h6c10 0 18 8 18 18s-8 18-18 18H407c-12 0-22-10-22-22 0-4 1-7 3-9z"/>
+  </g>
+
+  <!-- Title -->
+  <text id="title" x="400" y="52" text-anchor="middle" font-size="29" font-weight="900" letter-spacing="1.2" fill="#17384b">HONK IF YOU’RE WINGING IT</text>
+  <path d="M186 66H614" stroke="#17384b" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Roadside sign -->
+  <g transform="rotate(-4 659 328)">
+    <path d="M657 343v93" stroke="#694b36" stroke-width="10"/>
+    <rect x="579" y="267" width="158" height="79" rx="8" fill="#fff5d6" stroke="#694b36" stroke-width="5"/>
+    <text x="658" y="293" text-anchor="middle" font-size="13" font-weight="900" fill="#694b36">ROAD TO</text>
+    <text x="658" y="321" text-anchor="middle" font-size="20" font-weight="900" fill="#d45b47">NOWHERE</text>
+    <path d="M615 333h85" stroke="#694b36" stroke-width="2"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#df5546" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M244 420L327 330L410 420L244 420"/>
+    <path d="M327 330L352 420L410 420"/>
+    <path d="M405 420L454 329"/>
+    <path d="M435 329h38"/>
+  </g>
+  <path d="M305 321h43" stroke="#283c4c" stroke-width="9" stroke-linecap="round"/>
+  <path d="M327 330l-10-12" stroke="#283c4c" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Wheels -->
+  <g class="wheel" fill="none" stroke="#273b49" stroke-width="6">
+    <circle cx="244" cy="420" r="59"/>
+    <circle cx="244" cy="420" r="5" fill="#273b49"/>
+    <path d="M244 361v118M185 420h118M202 378l84 84M286 378l-84 84"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#273b49" stroke-width="6">
+    <circle cx="410" cy="420" r="59"/>
+    <circle cx="410" cy="420" r="5" fill="#273b49"/>
+    <path d="M410 361v118M351 420h118M368 378l84 84M452 378l-84 84"/>
+  </g>
+
+  <!-- Pedals and crank -->
+  <g stroke="#283c4c" stroke-width="5" stroke-linecap="round">
+    <path d="M352 420l24 12"/>
+    <path d="M376 432h18"/>
+    <path d="M352 420l-20-13"/>
+    <path d="M316 407h18"/>
+  </g>
+  <circle cx="352" cy="420" r="7" fill="#283c4c"/>
+
+  <!-- Pelican riding -->
+  <g class="rider">
+    <!-- Body -->
+    <ellipse cx="348" cy="286" rx="55" ry="43" fill="#fffdf4" stroke="#29404d" stroke-width="4"/>
+    <path d="M321 282c9-17 30-24 49-15 11 5 18 14 20 25-21 12-47 13-69 4z" fill="#b7dfe8"/>
+    <path d="M324 306q22 12 47 1" fill="none" stroke="#d9d1b8" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Tail feathers -->
+    <path d="M397 286l34-19-8 28 25 8-36 6z" fill="#fffdf4" stroke="#29404d" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Neck and head -->
+    <path d="M356 267q-1-53 38-69" fill="none" stroke="#fffdf4" stroke-width="23" stroke-linecap="round"/>
+    <path d="M356 267q-1-53 38-69" fill="none" stroke="#29404d" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="405" cy="192" r="31" fill="#fffdf4" stroke="#29404d" stroke-width="4"/>
+
+    <!-- Beak -->
+    <path d="M426 195q49-8 83 6-25 20-83 5z" fill="#f2b632" stroke="#8a5b22" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M429 207q28 33 64 0" fill="#ef9b56" stroke="#8a5b22" stroke-width="3"/>
+    <path d="M439 209q20 13 43 1" fill="none" stroke="#d87254" stroke-width="3"/>
+    <!-- Beak tip dangle -->
+    <path d="M493 204q8 10 0 18" fill="none" stroke="#8a5b22" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Eye and expression -->
+    <circle cx="414" cy="185" r="5" fill="#243746"/>
+    <path d="M403 174q10-8 20-1" fill="none" stroke="#243746" stroke-width="3" stroke-linecap="round"/>
+    <path d="M397 156l-4-12m15 10 1-13m14 16 7-10" stroke="#ee855b" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Wings gripping handlebars -->
+    <path d="M323 275q-28 1-44 30 23 8 53-6" fill="#e6f4ef" stroke="#29404d" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M368 278q31-12 62 18l-20 17q-22-14-43-12" fill="#e6f4ef" stroke="#29404d" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M424 296l22 31" stroke="#29404d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M430 301l12 14" stroke="#f2b632" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Legs pedaling -->
+    <path d="M337 318l15 52 24 25" fill="none" stroke="#e69a37" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M368 320l-14 48-31 20" fill="none" stroke="#e69a37" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M372 392l14 6" stroke="#573f32" stroke-width="6" stroke-linecap="round"/>
+    <path d="M323 389l-12 8" stroke="#573f32" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Helmet -->
+    <path d="M378 174q4-31 31-34 30 0 37 29l-68 5z" fill="#ef5e4e" stroke="#29404d" stroke-width="4"/>
+    <path d="M380 172h68" stroke="#29404d" stroke-width="4" stroke-linecap="round"/>
+    <path d="M397 145l8 25m13-26 5 25" stroke="#ffd9c4" stroke-width="3"/>
+  </g>
+
+  <!-- Motion and comic honk marks -->
+  <path d="M128 294h48m-36 15h32m-21 15h25" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <text x="503" y="165" font-size="22" font-weight="900" fill="#e05a49" transform="rotate(9 503 165)">HONK!</text>
+  <path d="M496 170l-9 5m26-18 2-9" stroke="#e05a49" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Caption -->
+  <rect x="176" y="495" width="448" height="44" rx="22" fill="#17384b"/>
+  <text x="400" y="523" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">He’s not lost. He’s just following his bill.</text>
+
+  <!-- Footer timestamp -->
+  <text x="400" y="578" text-anchor="middle" font-size="14" font-weight="600" fill="#17384b">2026-11-04 04:01:56 SGT (UTC+08:00)</text>
+</svg>
