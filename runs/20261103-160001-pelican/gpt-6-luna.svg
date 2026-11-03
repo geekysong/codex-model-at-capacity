@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Beak Cycle</title>
+  <desc id="desc">A determined pelican pedals a bicycle while its enormous beak catches the wind. The wheels spin and the bird bobs gently.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.2s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { from { transform: translateY(0px); } to { transform: translateY(-5px); } }
+    </style>
+  </defs>
+
+  <!-- Sky and ground -->
+  <rect width="800" height="600" fill="#dff4f5"/>
+  <circle cx="680" cy="125" r="48" fill="#ffd76a"/>
+  <path d="M0 390 Q150 360 300 391 T600 386 T800 395 V520 H0Z" fill="#a8d89a"/>
+  <path d="M0 450 Q180 430 350 452 T800 448 V520 H0Z" fill="#83c77e"/>
+  <path d="M0 492 H800" stroke="#54715b" stroke-width="5"/>
+  <path d="M30 505 H770" stroke="#f8f3dc" stroke-width="3" stroke-dasharray="24 22"/>
+
+  <!-- Title -->
+  <text id="title" x="400" y="56" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="1.5" fill="#183b4a">THE BEAK CYCLE</text>
+  <text x="400" y="83" text-anchor="middle" font-size="15" font-weight="700" fill="#426574">A bird with a very long commute.</text>
+
+  <!-- Bicycle frame -->
+  <g stroke="#e95344" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M245 395 L330 300 L390 395 L245 395 L355 395 L330 300"/>
+    <path d="M330 300 L425 300 L390 395"/>
+    <path d="M425 300 L455 395"/>
+  </g>
+  <path d="M310 292 H350" stroke="#273c4a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M414 291 H441" stroke="#273c4a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M445 292 L459 275 M445 292 L463 301" stroke="#273c4a" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Wheels -->
+  <g class="wheel" fill="none" stroke="#253b49">
+    <circle cx="245" cy="395" r="69" stroke-width="9"/>
+    <circle cx="245" cy="395" r="6" fill="#253b49" stroke="none"/>
+    <g stroke-width="3">
+      <path d="M245 326V464 M176 395H314 M196 346L294 444 M294 346L196 444"/>
+    </g>
+  </g>
+  <g class="wheel" fill="none" stroke="#253b49">
+    <circle cx="455" cy="395" r="69" stroke-width="9"/>
+    <circle cx="455" cy="395" r="6" fill="#253b49" stroke="none"/>
+    <g stroke-width="3">
+      <path d="M455 326V464 M386 395H524 M406 346L504 444 M504 346L406 444"/>
+    </g>
+  </g>
+
+  <!-- Pedals and crank -->
+  <circle cx="355" cy="395" r="13" fill="#ffd76a" stroke="#273c4a" stroke-width="4"/>
+  <g stroke="#273c4a" stroke-width="6" stroke-linecap="round">
+    <path d="M355 395 L377 414"/>
+    <path d="M355 395 L333 376"/>
+    <path d="M370 420 H390"/>
+    <path d="M323 370 H343"/>
+  </g>
+
+  <!-- Pelican and rider motion -->
+  <g class="rider">
+    <!-- Body and wing -->
+    <ellipse cx="352" cy="227" rx="71" ry="54" fill="#fffdf6" stroke="#314b56" stroke-width="4"/>
+    <path d="M320 229 Q352 188 389 221 Q374 255 333 260 Q312 253 320 229Z" fill="#d9e5e4" stroke="#314b56" stroke-width="3"/>
+    <path d="M336 227 Q354 217 374 224" fill="none" stroke="#9eafad" stroke-width="3"/>
+    <!-- Neck -->
+    <path d="M390 226 Q415 191 401 154 Q395 139 381 137" fill="none" stroke="#fffdf6" stroke-width="22" stroke-linecap="round"/>
+    <path d="M390 226 Q415 191 401 154 Q395 139 381 137" fill="none" stroke="#314b56" stroke-width="4" stroke-linecap="round"/>
+    <!-- Head -->
+    <ellipse cx="375" cy="135" rx="31" ry="27" fill="#fffdf6" stroke="#314b56" stroke-width="4"/>
+    <circle cx="386" cy="129" r="5" fill="#253b49"/>
+    <path d="M395 144 Q414 153 435 153 Q427 171 405 169 Q397 162 395 144Z" fill="#f4a846" stroke="#b86b2b" stroke-width="3"/>
+    <!-- Comically long bill -->
+    <path d="M399 132 Q468 111 548 124 Q492 146 407 151Z" fill="#f6b84c" stroke="#b86b2b" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M414 144 Q463 141 511 131" fill="none" stroke="#d99037" stroke-width="3"/>
+    <!-- Pouch -->
+    <path d="M405 148 Q430 179 468 162 Q447 184 420 178 Q409 169 405 148Z" fill="#f28e70" stroke="#b95749" stroke-width="3"/>
+    <!-- Helmet -->
+    <path d="M345 124 Q354 94 383 102 Q399 106 403 123 Q379 115 359 128Z" fill="#ea5548" stroke="#9e3934" stroke-width="4"/>
+    <path d="M347 124 Q375 121 400 126" fill="none" stroke="#9e3934" stroke-width="4"/>
+    <!-- Legs reaching pedals -->
+    <path d="M333 266 Q342 296 355 326 L355 383" fill="none" stroke="#f0a642" stroke-width="12" stroke-linecap="round"/>
+    <path d="M375 262 Q379 294 366 321 L355 395" fill="none" stroke="#f0a642" stroke-width="12" stroke-linecap="round"/>
+    <path d="M355 380 L355 395 M365 318 L344 325" fill="none" stroke="#b86b2b" stroke-width="3"/>
+    <!-- Tail feathers -->
+    <path d="M285 224 L266 211 M286 235 L263 234 M291 247 L271 257" stroke="#314b56" stroke-width="5" stroke-linecap="round"/>
+    <!-- Handlebar grip -->
+    <path d="M400 214 Q423 233 438 292" fill="none" stroke="#fffdf6" stroke-width="12" stroke-linecap="round"/>
+    <path d="M400 214 Q423 233 438 292" fill="none" stroke="#314b56" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wind lines and joke bubble -->
+  <path d="M557 190 Q590 181 615 187 M571 207 Q599 201 626 207 M545 222 Q572 218 590 222" fill="none" stroke="#68aeb4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M579 256 Q590 233 620 237 L739 237 Q761 237 761 258 L761 306 Q761 326 740 326 H641 L613 345 L618 326 H600 Q579 326 579 306Z" fill="#fffef7" stroke="#31505b" stroke-width="3"/>
+  <text x="670" y="270" text-anchor="middle" font-size="14" font-weight="800" fill="#31505b">HONK IF YOU</text>
+  <text x="670" y="291" text-anchor="middle" font-size="14" font-weight="800" fill="#31505b">CAN PASS ME!</text>
+  <text x="670" y="311" text-anchor="middle" font-size="12" fill="#58727a">(I dare you.)</text>
+
+  <!-- Caption and required timestamp footer -->
+  <text x="400" y="536" text-anchor="middle" font-size="17" font-weight="800" fill="#183b4a">“I’m not late. My beak just arrived early.”</text>
+  <text x="400" y="579" text-anchor="middle" font-size="14" font-weight="700" fill="#183b4a">2026-11-03 16:02:34 SGT (UTC+08:00)</text>
+</svg>

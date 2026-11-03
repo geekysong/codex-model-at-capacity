@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Beak</title>
+  <desc id="desc">A smug pelican rides a tiny bicycle with a fish in its enormous bill pouch. The wheels spin and the pelican bobs as it pedals.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#bceef5"/>
+      <stop offset="1" stop-color="#fff6cf"/>
+    </linearGradient>
+    <pattern id="road" width="110" height="12" patternUnits="userSpaceOnUse">
+      <path d="M10 6h55" stroke="#fff4bb" stroke-width="5" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e8"/>
+  <rect x="18" y="18" width="764" height="492" rx="24" fill="url(#sky)" stroke="#243544" stroke-width="4"/>
+
+  <text x="400" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="44" font-weight="900" fill="#243544">TOUR DE BEAK</text>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#46545a">ALL POUCH. NO BRAKES.</text>
+
+  <g fill="#fff" opacity=".85">
+    <path d="M52 166c-5-20 20-33 34-19 8-28 47-27 55 1 23-9 43 9 38 23H52z"/>
+    <path d="M561 140c-4-19 18-31 32-19 13-26 47-19 51 4 22-9 39 6 37 20H561z"/>
+  </g>
+  <path d="M20 371Q135 328 244 370T473 365T782 354V444H20Z" fill="#a8cda0"/>
+  <path d="M20 400Q177 376 321 400T782 387V459H20Z" fill="#7fb18b"/>
+  <rect x="20" y="430" width="760" height="78" fill="#51616a"/>
+  <rect x="20" y="468" width="760" height="12" fill="url(#road)"/>
+  <ellipse cx="395" cy="458" rx="208" ry="12" fill="#253747" opacity=".23"/>
+
+  <!-- Bicycle wheels rotate around their own hubs. -->
+  <g fill="#e5f5ed" stroke="#243544">
+    <circle cx="264" cy="398" r="57" stroke-width="10"/>
+    <circle cx="551" cy="398" r="57" stroke-width="10"/>
+  </g>
+  <g stroke="#83989e" stroke-width="3">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 264 398" to="360 264 398" dur="1.4s" repeatCount="indefinite"/>
+      <path d="M264 346v104m-52-52h104m-89-37 74 74m-74 0 74-74"/>
+      <circle cx="264" cy="346" r="5" fill="#ffbd4a" stroke="none"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 551 398" to="360 551 398" dur="1.4s" repeatCount="indefinite"/>
+      <path d="M551 346v104m-52-52h104m-89-37 74 74m-74 0 74-74"/>
+      <circle cx="551" cy="346" r="5" fill="#ffbd4a" stroke="none"/>
+    </g>
+  </g>
+
+  <g stroke="#243544" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M264 398l67-110 76 110H264l178-110-35 110m35-110h-111" fill="none" stroke-width="13"/>
+    <path d="M264 398l67-110 76 110H264l178-110-35 110m35-110h-111" fill="none" stroke="#ed6158" stroke-width="7"/>
+    <path d="M442 288l109 110m-109-110-13-33 30-15 21 5" fill="none" stroke-width="9"/>
+    <path d="M331 288l-9-30" fill="none" stroke-width="8"/>
+    <path d="M297 259h51" fill="none" stroke-width="12"/>
+    <circle cx="407" cy="398" r="14" fill="#ffce60" stroke-width="5"/>
+    <circle cx="264" cy="398" r="7" fill="#243544"/>
+    <circle cx="551" cy="398" r="7" fill="#243544"/>
+  </g>
+
+  <!-- A small alternating leg motion and body bounce loop continuously. -->
+  <g stroke="#243544" stroke-linecap="round" stroke-linejoin="round">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".7s" repeatCount="indefinite"/>
+
+    <path d="M337 288l31 47 39 63" fill="none" stroke="#d78b35" stroke-width="12">
+      <animate attributeName="d" values="M337 288l31 47 39 63;M337 288l53 32 29 60;M337 288l31 47 39 63" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+
+    <path d="M281 251l-43-37 15 58 31 12" fill="#f3f0dd" stroke-width="4"/>
+    <path d="M269 245c-4-42 39-67 83-52 43 14 58 51 32 81-23 29-91 31-115-29z" fill="#fffdf1" stroke-width="4"/>
+    <path d="M287 231c19-20 58-17 72 8-15 20-43 26-61 13" fill="#dce6df" stroke-width="4"/>
+    <path d="M349 203c-5-38 9-78 37-88 21-8 39 7 40 24 2 23-22 38-23 57-1 19 15 27 6 42l-28 8c-17-11-27-24-32-43z" fill="#fffdf1" stroke-width="4"/>
+
+    <!-- Helmet and a very serious racing expression. -->
+    <path d="M368 130c-4-27 46-40 64-10l-1 13z" fill="#ed6158" stroke-width="4"/>
+    <path d="M383 108l7 17m10-21 8 22" fill="none" stroke-width="4"/>
+    <path d="M385 137l17 4m-14 0 11 2" fill="none" stroke-width="4"/>
+    <circle cx="402" cy="145" r="4" fill="#243544" stroke="none"/>
+    <path d="M410 154l153 16-132 23z" fill="#ffbd4a" stroke-width="4"/>
+    <path d="M422 175q76 5 118 0-30 91-99 49-17-17-19-49z" fill="#f5a664" stroke-width="4"/>
+
+    <!-- One deeply unimpressed passenger. -->
+    <g transform="translate(472 205) rotate(-8)">
+      <path d="M-24 0q18-20 40 0-22 21-40 0l-14 11V-11z" fill="#80cdd1" stroke-width="3"/>
+      <circle cx="6" cy="-3" r="3" fill="#243544" stroke="none"/>
+      <path d="M-1-10l12 2" fill="none" stroke-width="2"/>
+    </g>
+
+    <path d="M358 236q43 22 86 17l19-13" fill="none" stroke="#fffdf1" stroke-width="17"/>
+    <path d="M357 244q41 20 87 17l20-13" fill="none" stroke-width="3"/>
+    <path d="M321 284l36 63 53 38" fill="none" stroke="#f4af45" stroke-width="13">
+      <animate attributeName="d" values="M321 284l36 63 53 38;M321 284l20 76 54 52;M321 284l36 63 53 38" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M396 385h31" stroke-width="8">
+      <animate attributeName="d" values="M396 385h31;M381 412h31;M396 385h31" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g stroke="#243544" stroke-width="3" stroke-linejoin="round">
+    <path d="M578 220q-8-8-8-18v-30q0-14 14-14h159q14 0 14 14v46q0 14-14 14H613l-30 18 7-18z" fill="#fffdf4"/>
+  </g>
+  <text x="664" y="187" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#243544">
+    <tspan x="664">“I ordered</tspan>
+    <tspan x="664" dy="23">a SEA taxi.”</tspan>
+  </text>
+
+  <g fill="none" stroke="#fff8e8" stroke-width="4" stroke-linecap="round">
+    <path d="M151 328h49m-61 18h44m-21-37h35"/>
+  </g>
+
+  <rect x="18" y="521" width="764" height="61" rx="12" fill="#243544"/>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#fff8e8">He took up cycling. The fish took up complaining.</text>
+  <text x="400" y="569" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#ffe09a">2026-11-03 16:01:15 SGT (UTC+08:00)</text>
+</svg>
