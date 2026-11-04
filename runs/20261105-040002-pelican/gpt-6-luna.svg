@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">WHEEL DEAL</title>
+  <desc id="desc">A determined pelican pedals a bicycle, carrying a comically oversized fish in its beak.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#243447;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:none;stroke:#243447;stroke-width:8}
+      .spoke{stroke:#8293a0;stroke-width:2}
+      .frame{fill:none;stroke:#e65d3e;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Arial,Helvetica,sans-serif;fill:#243447}
+      @keyframes roll{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .rolling{transform-box:fill-box;transform-origin:center;animation:roll 2.4s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .6s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff5f2"/>
+  <circle cx="690" cy="104" r="48" fill="#ffd66b"/>
+  <path d="M0 390 Q125 350 250 390 T500 390 T800 380 V520 H0Z" fill="#a8dfb4"/>
+  <path d="M0 445 Q145 423 290 445 T580 445 T800 430" fill="none" stroke="#76c895" stroke-width="5"/>
+  <path d="M60 170 Q90 145 120 170 Q150 145 180 170" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M552 140 Q580 118 608 140 Q636 118 664 140" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+
+  <text id="title" x="400" y="60" text-anchor="middle" class="label" font-size="34" font-weight="900" letter-spacing="2">WHEEL DEAL!</text>
+  <text x="400" y="89" text-anchor="middle" class="label" font-size="16" font-weight="700">THE PELICAN WHO TOOK “CATCH A RIDE” LITERALLY</text>
+
+  <!-- bicycle wheels -->
+  <g class="wheel">
+    <circle cx="220" cy="405" r="73"/>
+    <circle cx="570" cy="405" r="73"/>
+  </g>
+  <g class="rolling" aria-hidden="true">
+    <g transform="translate(220 405)">
+      <path class="spoke" d="M0-70V70M-70 0H70M-50-50L50 50M50-50L-50 50"/>
+    </g>
+    <g transform="translate(570 405)">
+      <path class="spoke" d="M0-70V70M-70 0H70M-50-50L50 50M50-50L-50 50"/>
+    </g>
+  </g>
+  <path class="frame" d="M220 405L337 405L300 322L220 405M337 405L420 320L570 405M300 322L420 320M337 405L355 430"/>
+  <path d="M276 312L322 312M404 310L439 310" class="frame"/>
+  <path d="M300 322L288 306" class="frame"/>
+  <circle cx="337" cy="405" r="12" fill="#ffd66b" stroke="#243447" stroke-width="5"/>
+  <path d="M337 405L365 383M337 405L313 427" stroke="#243447" stroke-width="6" stroke-linecap="round"/>
+  <path d="M280 304 Q300 293 319 304" fill="none" stroke="#243447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M417 310L436 294M435 294L447 296" fill="none" stroke="#243447" stroke-width="6" stroke-linecap="round"/>
+  <path d="M195 402L245 402M545 402L595 402" stroke="#243447" stroke-width="4"/>
+  <circle cx="220" cy="405" r="7" fill="#243447"/>
+  <circle cx="570" cy="405" r="7" fill="#243447"/>
+
+  <!-- pelican and pedaling motion -->
+  <g class="rider">
+    <path d="M318 294 Q312 254 337 218 Q355 192 389 204 Q415 215 410 245 Q407 268 381 285 L368 316 L337 319Z" fill="#fffdf4" class="ink"/>
+    <path d="M330 293 Q350 264 386 261 Q406 262 416 281 Q394 300 366 303 L354 320Z" fill="#f1a34a" class="ink"/>
+    <path d="M385 219 Q417 178 455 192 Q478 202 466 224 Q451 248 414 245 Q400 241 385 219Z" fill="#fffdf4" class="ink"/>
+    <circle cx="446" cy="207" r="5.5" fill="#243447"/>
+    <path d="M464 218 Q496 224 520 215 Q509 240 480 246 Q461 244 447 232Z" fill="#f28b36" class="ink"/>
+    <path d="M484 226 Q510 233 527 220 Q526 245 500 254 Q481 252 469 242Z" fill="#ffb74d" stroke="#243447" stroke-width="5" stroke-linejoin="round"/>
+    <!-- fish dangling from beak -->
+    <path d="M524 228 Q542 213 562 226 Q581 238 562 250 Q542 263 524 247Z" fill="#71c9db" class="ink"/>
+    <path d="M559 226L576 215L574 239Z" fill="#f28b36" stroke="#243447" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="540" cy="232" r="3.5" fill="#243447"/>
+    <path d="M540 253 Q536 271 525 280" fill="none" stroke="#243447" stroke-width="3" stroke-dasharray="4 5"/>
+    <path d="M525 280L521 288M525 280L531 286" stroke="#243447" stroke-width="3" stroke-linecap="round"/>
+    <!-- wing, scarf, feet -->
+    <path d="M337 236 Q350 220 374 230 Q388 237 381 252 Q362 264 341 257" fill="#dce8e4" stroke="#243447" stroke-width="4"/>
+    <path d="M337 264 Q357 273 377 268 L368 282 Q349 286 333 278Z" fill="#e65d3e" stroke="#243447" stroke-width="4"/>
+    <path d="M349 279L341 296L358 291Z" fill="#e65d3e" stroke="#243447" stroke-width="3"/>
+    <path d="M348 314L331 352L337 397M367 309L383 349L362 390" fill="none" stroke="#f28b36" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M337 397L320 402M362 390L374 396" fill="none" stroke="#243447" stroke-width="7" stroke-linecap="round"/>
+    <path d="M348 316L368 317" stroke="#243447" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- motion marks and comic aside -->
+  <path d="M151 286L176 278M144 302L169 298M620 276L642 269" stroke="#e65d3e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M590 177 Q625 152 656 177 L656 208 Q640 220 623 209 L607 221 L610 205 Q590 199 590 177Z" fill="#fff" stroke="#243447" stroke-width="3"/>
+  <text x="623" y="188" text-anchor="middle" class="label" font-size="12" font-weight="700">NO BASKET?</text>
+  <text x="623" y="202" text-anchor="middle" class="label" font-size="12" font-weight="700">I'M THE BASKET!</text>
+
+  <path d="M0 510H800" stroke="#243447" stroke-width="4"/>
+  <text x="400" y="544" text-anchor="middle" class="label" font-size="19" font-weight="800">“I’m not late. I’m just traveling at fish speed.”</text>
+  <text x="400" y="580" text-anchor="middle" class="label" font-size="14" font-weight="700">2026-11-05 04:02:10 SGT (UTC+08:00)</text>
+</svg>

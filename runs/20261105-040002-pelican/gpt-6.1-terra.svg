@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Daily Commute</title>
+  <desc id="desc">A pelican rides a bicycle with spinning wheels and bobbing motion.</desc>
+  <defs>
+    <pattern id="sky" width="800" height="460" patternUnits="userSpaceOnUse">
+      <rect width="800" height="460" fill="#c9edf2"/>
+      <circle cx="665" cy="105" r="48" fill="#ffd66b"/>
+      <path d="M0 365 Q150 315 300 365 T600 355 T900 360 V460 H0Z" fill="#a8d8ce"/>
+    </pattern>
+    <g id="wheel">
+      <circle r="93" fill="#fff8e8" stroke="#253c48" stroke-width="13"/>
+      <circle r="75" fill="none" stroke="#8ca9a4" stroke-width="3"/>
+      <g stroke="#8ca9a4" stroke-width="3">
+        <path d="M-75 0H75M0-75V75M-53-53L53 53M53-53L-53 53"/>
+      </g>
+      <circle r="9" fill="#ef8b55" stroke="#253c48" stroke-width="4"/>
+      <circle cx="0" cy="-86" r="5" fill="#ef8b55"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff8e8"/>
+  <rect x="0" y="0" width="800" height="465" fill="url(#sky)"/>
+  <path d="M52 130q17-22 34 0q17-22 34 0M565 195q12-15 24 0q12-15 24 0" fill="none" stroke="#60848c" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="900" letter-spacing="2" fill="#253c48">THE DAILY COMMUTE</text>
+  <path d="M0 449H800V465H0Z" fill="#e8b77c"/>
+  <path d="M0 453H800" stroke="#253c48" stroke-width="4"/>
+
+  <g>
+    <use href="#wheel" x="200" y="356">
+      <animateTransform attributeName="transform" type="rotate" from="0 200 356" to="360 200 356" dur="2s" repeatCount="indefinite"/>
+    </use>
+    <use href="#wheel" x="565" y="356">
+      <animateTransform attributeName="transform" type="rotate" from="0 565 356" to="360 565 356" dur="2s" repeatCount="indefinite"/>
+    </use>
+    <g fill="none" stroke="#e66d4e" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M200 356L297 235L367 356Z"/>
+      <path d="M297 235L480 235L367 356"/>
+      <path d="M480 235L565 356M468 215L480 235"/>
+    </g>
+    <g fill="none" stroke="#253c48" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M288 235L280 215M255 215H307"/>
+      <path d="M480 235L463 183H500Q514 183 514 197"/>
+    </g>
+    <circle cx="367" cy="356" r="17" fill="#fff8e8" stroke="#253c48" stroke-width="5"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 367 356" to="360 367 356" dur="2s" repeatCount="indefinite"/>
+      <path d="M340 356H394" stroke="#253c48" stroke-width="6"/>
+      <path d="M330 351H348M386 361H404" stroke="#253c48" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="1s" repeatCount="indefinite"/>
+    <path d="M314 244Q319 281 354 301L373 337" fill="none" stroke="#e59a52" stroke-width="13" stroke-linecap="round"/>
+    <path d="M373 337l18 5" fill="none" stroke="#253c48" stroke-width="7" stroke-linecap="round"/>
+    <path d="M291 226Q246 209 234 170Q258 185 277 181Q260 166 260 150Q286 169 315 169Z" fill="#f4f0df" stroke="#253c48" stroke-width="5" stroke-linejoin="round"/>
+    <ellipse cx="330" cy="203" rx="75" ry="48" fill="#fffdf1" stroke="#253c48" stroke-width="5"/>
+    <path d="M288 199Q324 189 369 210Q353 241 318 232Q295 226 288 199Z" fill="#dce4db" stroke="#253c48" stroke-width="4"/>
+    <path d="M371 191Q400 169 391 135Q385 111 402 99Q421 84 441 98Q457 108 454 129L443 165Q435 192 402 212Z" fill="#fffdf1" stroke="#253c48" stroke-width="5"/>
+    <path d="M443 128Q489 131 563 153Q499 164 447 154Z" fill="#f3a54c" stroke="#253c48" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M447 154Q464 200 512 184Q536 176 563 153Q501 165 447 154Z" fill="#f4c065" stroke="#253c48" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="430" cy="115" r="11" fill="#fff" stroke="#253c48" stroke-width="3"/>
+    <circle cx="434" cy="115" r="4" fill="#253c48"/>
+    <path d="M417 99q10-8 22-3" fill="none" stroke="#253c48" stroke-width="4" stroke-linecap="round"/>
+    <path d="M316 233Q321 267 347 282L335 316" fill="none" stroke="#e59a52" stroke-width="12" stroke-linecap="round"/>
+    <path d="M335 316l-14 8" fill="none" stroke="#253c48" stroke-width="7" stroke-linecap="round"/>
+    <path d="M382 190Q411 201 442 190L472 185" fill="none" stroke="#253c48" stroke-width="6" stroke-linecap="round"/>
+    <path d="M383 190Q409 207 435 194" fill="none" stroke="#fffdf1" stroke-width="12" stroke-linecap="round"/>
+    <path d="M392 155Q406 162 420 157" fill="none" stroke="#e66d4e" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <rect y="465" width="800" height="135" fill="#fff8e8"/>
+  <text x="400" y="507" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#253c48">“My other ride is a pelican.”</text>
+  <text x="400" y="537" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#52686d">One bird. Two wheels. Absolutely no traffic laws.</text>
+  <path d="M115 553H685" stroke="#d4c6aa" stroke-width="2"/>
+  <text x="400" y="578" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#52686d">2026-11-05 04:02:53 SGT (UTC+08:00)</text>
+</svg>
