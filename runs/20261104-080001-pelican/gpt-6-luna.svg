@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE GREAT WHEEL DEAL</title>
+  <desc id="desc">A smug pelican pedals a bicycle past a sign that says effort is for the birds.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#19313b;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f7f1df;stroke:#19313b;stroke-width:7}
+      .spokes{stroke:#6f8790;stroke-width:2}
+      .frame{fill:none;stroke:#e34f36;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+      .title{font:900 34px system-ui,sans-serif;letter-spacing:1px;fill:#19313b}
+      .label{font:700 16px system-ui,sans-serif;fill:#19313b}
+      .small{font:600 13px system-ui,sans-serif;fill:#19313b}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:rotate(0deg)}50%{transform:rotate(180deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .wheelspin{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .crank{transform-box:fill-box;transform-origin:center;animation:pedal 1.2s linear infinite}
+      .rider{animation:bob .6s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#d9f2ee"/>
+  <path d="M0 0h800v90H0z" fill="#ffd269"/>
+  <text x="400" y="57" text-anchor="middle" class="title">THE GREAT WHEEL DEAL</text>
+  <text x="400" y="81" text-anchor="middle" class="small">One bird. Two wheels. Absolutely no beak-room for traffic.</text>
+
+  <!-- Breezy background -->
+  <circle cx="109" cy="151" r="34" fill="#fff4c9"/>
+  <path d="M62 232h104M606 150h108M573 183h70" stroke="#78b9b2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M0 424q100-35 200 0t200 0 200 0 200 0v108H0z" fill="#a8d8a1"/>
+  <path d="M0 458q120-24 240 0t240 0 320 0" fill="none" stroke="#82c287" stroke-width="5"/>
+
+  <!-- Snarky roadside sign -->
+  <path d="M667 288v127" stroke="#80543a" stroke-width="10" stroke-linecap="round"/>
+  <rect x="606" y="244" width="132" height="75" rx="9" fill="#fff5db" class="ink"/>
+  <text x="672" y="273" text-anchor="middle" class="label">EFFORT?</text>
+  <text x="672" y="298" text-anchor="middle" class="small">FOR THE BIRDS.</text>
+  <path d="M622 332l-14 21m43-21l-14 21m43-21l-14 21" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Bicycle wheels -->
+  <g class="wheelspin">
+    <circle class="wheel" cx="230" cy="405" r="76"/>
+    <g class="spokes">
+      <path d="M230 329v152M154 405h152M176 351l108 108m0-108L176 459"/>
+    </g>
+  </g>
+  <g class="wheelspin">
+    <circle class="wheel" cx="500" cy="405" r="76"/>
+    <g class="spokes">
+      <path d="M500 329v152M424 405h152M446 351l108 108m0-108L446 459"/>
+    </g>
+  </g>
+
+  <!-- Frame and handlebars -->
+  <path class="frame" d="M230 405l91-114 91 114H230l78-16 13-98m90 98l43-114h45m-2 0l19-17"/>
+  <path d="M545 266l30 5m-30-5l-7-16" fill="none" class="ink"/>
+  <circle cx="230" cy="405" r="11" fill="#ffd269" class="ink"/>
+  <circle cx="412" cy="405" r="11" fill="#ffd269" class="ink"/>
+  <g class="crank">
+    <path d="M412 405l27 25m-27-25l-26-24" stroke="#19313b" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="412" cy="405" r="8" fill="#e34f36" stroke="#19313b" stroke-width="3"/>
+    <path d="M432 431h24m-94-50h-24" stroke="#19313b" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <path d="M295 279h51m-7 0l-8-13" fill="none" class="ink"/>
+
+  <!-- Riding pelican -->
+  <g class="rider">
+    <!-- tail and body -->
+    <path d="M350 264q-35-22-53-4 18 4 26 23" fill="#f7f1df" class="ink"/>
+    <ellipse cx="397" cy="257" rx="66" ry="48" fill="#f7f1df" class="ink"/>
+    <ellipse cx="399" cy="269" rx="34" ry="24" fill="#e5dfcc" stroke="#19313b" stroke-width="3"/>
+    <path d="M365 287l-6 28m70-19l12 29" fill="none" stroke="#f0a12e" stroke-width="8" stroke-linecap="round"/>
+    <path d="M348 315h24m61 9h24" stroke="#19313b" stroke-width="5" stroke-linecap="round"/>
+    <!-- neck and head -->
+    <path d="M436 249q17-35 31-72l29 9q-16 45-34 80" fill="#f7f1df" class="ink"/>
+    <ellipse cx="478" cy="168" rx="36" ry="31" fill="#f7f1df" class="ink"/>
+    <circle cx="493" cy="160" r="5.5" fill="#19313b"/>
+    <path d="M503 171l81 14q-25 22-80 9z" fill="#f0a12e" class="ink"/>
+    <path d="M505 189q31 26 61 7-22 36-59 1" fill="#f4a34a" class="ink"/>
+    <!-- helmet -->
+    <path d="M448 153q13-37 54-31 25 4 32 29z" fill="#e34f36" class="ink"/>
+    <path d="M446 153h91" stroke="#19313b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M473 129l8 20m16-21l7 21" stroke="#ffb6a0" stroke-width="4"/>
+    <!-- wing with tiny briefcase -->
+    <path d="M365 246q26-29 57-5-22 26-48 33" fill="#fffdf4" class="ink"/>
+    <rect x="381" y="255" width="41" height="30" rx="5" fill="#557b88" class="ink"/>
+    <path d="M392 255v-7h18v7m-9 0v30" fill="none" stroke="#19313b" stroke-width="3"/>
+    <text x="402" y="276" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" font-weight="800" fill="#fff">TAX</text>
+    <!-- sweat / expression -->
+    <path d="M525 220q-11 10-2 16 9-3 2-16z" fill="#56a9d2"/>
+    <path d="M458 164l10 3" stroke="#19313b" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Comic speech bubble -->
+  <path d="M102 279q0-16 17-16h154q17 0 17 16v56q0 16-17 16h-96l-26 22 6-22h-38q-17 0-17-16z" fill="#fffdf4" class="ink"/>
+  <text x="194" y="290" text-anchor="middle" class="label">“I’M ON A</text>
+  <text x="194" y="313" text-anchor="middle" class="label">WING-POWERED</text>
+  <text x="194" y="336" text-anchor="middle" class="label">COMMUTE!”</text>
+
+  <!-- Ground -->
+  <path d="M71 482h648" stroke="#527c54" stroke-width="5" stroke-linecap="round"/>
+  <path d="M116 493l-9 8m33-10l-7 9m425-5l-8 10m39-13l-8 9" stroke="#527c54" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Footer with reserved clear space -->
+  <rect x="0" y="532" width="800" height="68" fill="#19313b"/>
+  <text x="400" y="557" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#fff4c9">A pelican pedals past peak productivity. The briefcase is mostly breadcrumbs.</text>
+  <text x="400" y="585" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#ffffff">2026-11-04 08:02:02 SGT (UTC+08:00)</text>
+</svg>
