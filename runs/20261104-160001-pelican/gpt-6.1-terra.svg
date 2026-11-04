@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN IN THE BIKE LANE</title>
+  <desc id="desc">A pelican with a fish in its beak rides a bicycle past a road sign. Its wheels spin and its body bobs.</desc>
+  <defs>
+    <pattern id="spokes" width="100%" height="100%">
+      <path d="M0-72V72M-72 0H72M-51-51L51 51M51-51L-51 51" fill="none" stroke="#31505b" stroke-width="3"/>
+      <circle r="7" fill="#ef694b" stroke="#243c45" stroke-width="3"/>
+    </pattern>
+    <style>
+      .ink { stroke:#243c45; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2s linear infinite; }
+      .rider { animation:bob 1s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-5px); } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider { animation-duration:8s; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d9"/>
+  <rect x="16" y="16" width="768" height="568" rx="20" fill="#d8f1ed" stroke="#243c45" stroke-width="5"/>
+  <path d="M19 440H781V501H19Z" fill="#e9c691"/>
+  <path d="M19 440H781" fill="none" stroke="#243c45" stroke-width="5"/>
+  <path d="M39 470H151M186 470H298M333 470H445M480 470H592M627 470H739" stroke="#fff4d9" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="400" y="68" text-anchor="middle" fill="#243c45" font-family="Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="1">PELICAN IN THE BIKE LANE</text>
+  <text x="400" y="95" text-anchor="middle" fill="#47636a" font-family="Arial, sans-serif" font-size="16" font-weight="700">A commute with a considerable carry-on.</text>
+
+  <g fill="#fffdf2" opacity=".85">
+    <path d="M82 165c5-22 33-30 49-14 10-25 48-22 55 5 19-3 30 7 31 20H77c0-5 2-9 5-11Z"/>
+    <path d="M573 137c5-19 27-25 41-11 9-21 40-18 47 4 17-2 26 7 26 18H568c0-4 2-8 5-11Z"/>
+  </g>
+
+  <g class="ink">
+    <path d="M94 438V270" fill="none"/>
+    <rect x="40" y="219" width="108" height="62" rx="8" fill="#f7c75d"/>
+    <path d="M60 251h68m-34-18v36" fill="none" stroke-width="4"/>
+  </g>
+  <text x="94" y="242" text-anchor="middle" fill="#243c45" font-family="Arial, sans-serif" font-size="12" font-weight="900">SHARE</text>
+  <text x="94" y="266" text-anchor="middle" fill="#243c45" font-family="Arial, sans-serif" font-size="12" font-weight="900">THE ROAD</text>
+
+  <g class="wheel">
+    <circle cx="260" cy="420" r="75" fill="#fff4d9" stroke="#243c45" stroke-width="9"/>
+    <circle cx="260" cy="420" r="62" fill="none" stroke="#ef694b" stroke-width="4"/>
+    <g transform="translate(260 420)" fill="url(#spokes)">
+      <circle r="60"/>
+    </g>
+  </g>
+  <g class="wheel">
+    <circle cx="588" cy="420" r="75" fill="#fff4d9" stroke="#243c45" stroke-width="9"/>
+    <circle cx="588" cy="420" r="62" fill="none" stroke="#ef694b" stroke-width="4"/>
+    <g transform="translate(588 420)" fill="url(#spokes)">
+      <circle r="60"/>
+    </g>
+  </g>
+
+  <g fill="none" class="ink" stroke-width="9">
+    <path d="M260 420 337 318 402 420 260 420 348 354 536 354 402 420"/>
+    <path d="M536 354 588 420M536 354 519 305h-27"/>
+    <path d="M337 318h-27"/>
+  </g>
+  <path d="M307 310h57" stroke="#243c45" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="402" cy="420" r="19" fill="#f7c75d" stroke="#243c45" stroke-width="5"/>
+  <path d="M402 420 420 438h22" fill="none" stroke="#243c45" stroke-width="6" stroke-linecap="round"/>
+
+  <g class="rider">
+    <path d="M372 301c-15 31-18 54 2 69l31 26" fill="none" stroke="#ed9a43" stroke-width="10" stroke-linecap="round"/>
+    <path d="M405 396h29" fill="none" stroke="#243c45" stroke-width="8" stroke-linecap="round"/>
+    <path d="M397 302c17 31 20 50 1 70l-22 26" fill="none" stroke="#ed9a43" stroke-width="10" stroke-linecap="round"/>
+    <path d="M370 399h28" fill="none" stroke="#243c45" stroke-width="8" stroke-linecap="round"/>
+    <path d="M298 248c-26 0-43-13-56-33 4 32 17 54 45 67" fill="#f5f0df" class="ink"/>
+    <path d="M298 216c-22 13-32 37-22 62 13 31 62 44 107 34 35-7 57-29 55-54-1-20-14-32-32-38-9-3-11-15-10-28l-44-3c-1 19-12 25-54 27Z" fill="#fffdf2" class="ink"/>
+    <path d="M295 248c24-7 51-4 74 8-10 24-31 34-56 28-13-3-21-15-18-36Z" fill="#e8e6d7" class="ink"/>
+    <path d="M365 211c-7-28-4-66 14-83 14-13 39-14 54-2 16 13 18 34 12 51l-13 37Z" fill="#fffdf2" class="ink"/>
+    <path d="M427 153c38 0 88 9 139 26-29 9-76 13-135 5Z" fill="#f4a344" class="ink"/>
+    <path d="M432 184c22 4 71 4 116-1-9 38-35 61-70 56-28-4-42-26-46-55Z" fill="#f7bd65" class="ink"/>
+    <path d="M448 187c11 16 26 27 47 31" fill="none" stroke="#dd8a3d" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="415" cy="146" r="12" fill="#fff" stroke="#243c45" stroke-width="4"/>
+    <circle cx="419" cy="147" r="4" fill="#243c45"/>
+    <path d="M400 128q11-9 23-3" fill="none" stroke="#243c45" stroke-width="4" stroke-linecap="round"/>
+    <path d="M355 265c29 2 54 10 78 25l46 20" fill="none" stroke="#243c45" stroke-width="7" stroke-linecap="round"/>
+    <path d="M474 306q11-8 20 0" fill="none" stroke="#243c45" stroke-width="7" stroke-linecap="round"/>
+    <g transform="translate(510 204) rotate(12)">
+      <path d="M-19 0Q0-15 19 0 0 15-19 0Z" fill="#83b7c4" stroke="#243c45" stroke-width="3"/>
+      <path d="M-18 0-28-8v16Z" fill="#83b7c4" stroke="#243c45" stroke-width="3"/>
+      <circle cx="10" cy="-2" r="2" fill="#243c45"/>
+    </g>
+  </g>
+
+  <path d="M184 376h-40m32 19h-53m55 20h-37" stroke="#79b8b4" stroke-width="5" stroke-linecap="round"/>
+  <path d="M673 339q9-15 18 0m10-17q8-13 16 0" fill="none" stroke="#79b8b4" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M19 501H781" stroke="#243c45" stroke-width="5"/>
+  <text x="400" y="531" text-anchor="middle" fill="#243c45" font-family="Arial, sans-serif" font-size="20" font-weight="700">“I said I packed a light lunch.”</text>
+  <text x="400" y="562" text-anchor="middle" fill="#47636a" font-family="Arial, sans-serif" font-size="15" font-weight="700">2026-11-04 16:04:00 SGT (UTC+08:00)</text>
+</svg>

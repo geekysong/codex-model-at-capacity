@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Fish: a pelican riding a bicycle</title>
+  <desc id="desc">A determined pelican pedals a tiny bicycle, carrying a fish in its enormous bill pouch. The wheels spin and the rider bobs in a looping animation.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#bfe9f4"/>
+      <stop offset="1" stop-color="#fff5cd"/>
+    </linearGradient>
+    <linearGradient id="pouch" x2="0" y2="1">
+      <stop stop-color="#ffd36c"/>
+      <stop offset="1" stop-color="#f1a23d"/>
+    </linearGradient>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif}
+      .ink{stroke:#213342;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .spin{animation:spin 1.6s linear infinite}
+      .rider{animation:bob .8s ease-in-out infinite}
+      .pedal{animation:spin 1.6s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff9eb"/>
+  <rect x="18" y="18" width="764" height="503" rx="22" fill="url(#sky)" stroke="#213342" stroke-width="4"/>
+  <text x="400" y="66" text-anchor="middle" font-size="43" font-weight="900" fill="#213342" letter-spacing="2">TOUR DE FISH</text>
+  <text x="400" y="96" text-anchor="middle" font-size="17" font-weight="700" fill="#385365">ALL POUCH. NO BRAKES.</text>
+
+  <g fill="#fff" opacity=".75">
+    <path d="M57 166c-10-23 24-42 40-22 9-32 54-24 54 4 28-6 39 20 25 28H63Z"/>
+    <path d="M590 146c-6-22 25-31 37-14 15-28 54-13 50 10 25-8 44 15 31 27H592Z"/>
+  </g>
+  <path d="M21 374Q139 331 259 364T505 364T779 351V519H21Z" fill="#b5cf97"/>
+  <path d="M20 432Q388 409 780 433V499H20Z" fill="#e6cf9e"/>
+  <path d="M45 478H755" stroke="#fff5dc" stroke-width="5" stroke-dasharray="40 27"/>
+  <ellipse cx="405" cy="463" rx="235" ry="15" fill="#776d58" opacity=".18"/>
+
+  <g transform="translate(654 288)">
+    <path d="M0 37V143" stroke="#5b614f" stroke-width="8"/>
+    <path d="M-66-5H47L69 22 47 49H-66Z" fill="#fff9eb" class="ink"/>
+    <text x="-2" y="18" text-anchor="middle" font-size="14" font-weight="800" fill="#213342">FISH MARKET</text>
+    <text x="-4" y="37" text-anchor="middle" font-size="13" fill="#213342">0.2 km →</text>
+  </g>
+
+  <!-- Bicycle wheels rotate around their own hubs. -->
+  <g transform="translate(249 412)">
+    <circle r="69" fill="#f5edda" class="ink" stroke-width="9"/>
+    <circle r="59" fill="#c8dfce" stroke="#829e9b" stroke-width="3"/>
+    <g class="spin">
+      <g stroke="#536b75" stroke-width="2.5">
+        <path d="M-59 0H59M0-59V59M-42-42 42 42M-42 42 42-42"/>
+        <path d="M-23-55 23 55M-55-23 55 23M-55 23 55-23M-23 55 23-55"/>
+      </g>
+      <path d="M4-59H19" stroke="#f49b38" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <circle r="9" fill="#213342"/>
+  </g>
+  <g transform="translate(525 412)">
+    <circle r="69" fill="#f5edda" class="ink" stroke-width="9"/>
+    <circle r="59" fill="#c8dfce" stroke="#829e9b" stroke-width="3"/>
+    <g class="spin">
+      <g stroke="#536b75" stroke-width="2.5">
+        <path d="M-59 0H59M0-59V59M-42-42 42 42M-42 42 42-42"/>
+        <path d="M-23-55 23 55M-55-23 55 23M-55 23 55-23M-23 55 23-55"/>
+      </g>
+      <path d="M4-59H19" stroke="#f49b38" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <circle r="9" fill="#213342"/>
+  </g>
+
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M249 412 312 318 372 412H249L461 326 372 412M461 326 525 412" stroke="#213342" stroke-width="12"/>
+    <path d="M249 412 312 318 372 412H249L461 326 372 412M461 326 525 412" stroke="#e85b50" stroke-width="7"/>
+    <path d="M312 318 303 298M461 326 447 291 466 280" stroke="#213342" stroke-width="8"/>
+    <path d="M283 299H325" stroke="#213342" stroke-width="12"/>
+    <path d="M461 279H484" stroke="#213342" stroke-width="7"/>
+  </g>
+
+  <g class="rider">
+    <!-- The famously aerodynamic pelican. -->
+    <path d="M307 297Q265 286 253 252L224 242 248 220Q263 177 313 186 354 190 365 222L374 276 341 302Z" fill="#fffdf1" class="ink"/>
+    <path d="M267 241Q297 215 332 244L306 280Q283 278 267 259" fill="#d7e1df" class="ink"/>
+    <path d="M341 254Q380 231 374 191L365 168Q356 136 380 125 407 116 419 140 430 167 411 191L409 231Q405 277 365 286" fill="#fffdf1" class="ink"/>
+    <path d="M405 156 568 176Q543 237 470 245 424 240 409 195Z" fill="url(#pouch)" class="ink"/>
+    <path d="M405 155 573 175 407 180Z" fill="#f7b443" class="ink"/>
+    <path d="M431 189Q474 207 547 189" fill="none" stroke="#ce8533" stroke-width="3"/>
+
+    <g transform="translate(482 215) rotate(-8)">
+      <path d="M-23 0Q-4-21 23-2L38-14 34 3 39 17 22 8Q-5 24-23 0Z" fill="#68b7bd" stroke="#213342" stroke-width="3"/>
+      <circle cx="-11" cy="-2" r="3" fill="#213342"/>
+      <path d="M-5 12 3 18 9 10" fill="#4f929e" stroke="#213342" stroke-width="2"/>
+    </g>
+
+    <path d="M365 143Q384 128 407 141" fill="none" stroke="#213342" stroke-width="5"/>
+    <circle cx="397" cy="151" r="5" fill="#213342"/>
+    <path d="M388 137 403 133" stroke="#213342" stroke-width="4" stroke-linecap="round"/>
+    <path d="M360 135Q362 111 386 108 407 108 416 129Z" fill="#ed6250" class="ink"/>
+    <path d="M374 112 371 130M392 111 397 130" fill="none" stroke="#fff1cb" stroke-width="4"/>
+    <path d="M361 134 351 147" stroke="#213342" stroke-width="3"/>
+    <path d="M338 247Q379 284 457 279" fill="none" stroke="#213342" stroke-width="15" stroke-linecap="round"/>
+    <path d="M338 247Q379 284 457 279" fill="none" stroke="#fffdf1" stroke-width="9" stroke-linecap="round"/>
+    <path d="M456 276 470 275 477 284" fill="none" stroke="#213342" stroke-width="4" stroke-linecap="round"/>
+
+    <path d="M318 293 344 342 373 388" fill="none" stroke="#213342" stroke-width="11" stroke-linecap="round"/>
+    <path d="M318 293 344 342 373 388" fill="none" stroke="#edab3e" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(372 412)">
+    <circle r="17" fill="#f8bd53" class="ink"/>
+    <g class="pedal">
+      <path d="M0-25V25" stroke="#213342" stroke-width="6"/>
+      <path d="M-12-25H12M-12 25H12" stroke="#213342" stroke-width="7" stroke-linecap="round"/>
+      <path d="M-19-30-9-37 3-30 16-34 20-25H-17Z" fill="#f7b443" stroke="#213342" stroke-width="3"/>
+    </g>
+    <circle r="5" fill="#213342"/>
+  </g>
+
+  <g fill="none" stroke="#213342" stroke-width="3" stroke-linecap="round">
+    <path d="M174 341H210M158 356H195M177 373H204"/>
+    <path d="M429 132 435 121M441 146 452 140"/>
+  </g>
+  <g transform="translate(92 212)">
+    <path d="M0 0Q0-13 15-13H113Q128-13 128 2V42Q128 55 113 55H74L86 76 48 55H15Q0 55 0 40Z" fill="#fffdf1" stroke="#213342" stroke-width="3"/>
+    <text x="64" y="13" text-anchor="middle" font-size="17" font-weight="700" fill="#213342">My other car</text>
+    <text x="64" y="35" text-anchor="middle" font-size="17" font-weight="700" fill="#213342">is a beak.</text>
+  </g>
+
+  <rect x="0" y="530" width="800" height="70" fill="#fff9eb"/>
+  <text x="400" y="552" text-anchor="middle" font-size="19" font-weight="700" fill="#213342">The pelican pedals for fitness. The fish calls it a delivery.</text>
+  <text x="400" y="582" text-anchor="middle" font-size="16" fill="#385365">2026-11-04 16:01:58 SGT (UTC+08:00)</text>
+</svg>
