@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Wheel Deal</title>
+  <desc id="desc">A determined pelican pedals a bicycle, with a fish in its beak and a tiny helmet. The wheels spin and the pelican bobs.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 3s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob 0.65s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-5px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bdeeff"/>
+  <circle cx="684" cy="111" r="48" fill="#ffe27a"/>
+  <path d="M0 353 Q130 309 265 351 T535 344 T800 340 V540 H0Z" fill="#91d77c"/>
+  <path d="M0 419 Q174 395 344 417 T800 405 V540 H0Z" fill="#71bd67"/>
+  <path d="M0 470 H800" stroke="#f8f0d5" stroke-width="8" stroke-dasharray="34 25"/>
+  <text x="400" y="53" text-anchor="middle" font-size="35" font-weight="900" fill="#17324d">THE PELICAN’S WHEEL DEAL</text>
+  <text x="400" y="82" text-anchor="middle" font-size="17" font-weight="700" fill="#31566b">He’s winging it. The fish is not impressed.</text>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke="#d94f38" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M218 404 L337 404 L300 316 L218 404"/>
+    <path d="M337 404 L395 310 L300 316"/>
+    <path d="M395 310 L432 404"/>
+    <path d="M395 310 L448 288"/>
+    <path d="M218 404 L196 294"/>
+    <path d="M180 294 H219"/>
+  </g>
+  <g fill="#26394a" stroke="#26394a">
+    <circle cx="337" cy="404" r="13"/>
+    <path d="M337 404 L375 429 M337 404 L300 430" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="375" cy="429" r="6"/>
+    <circle cx="300" cy="430" r="6"/>
+  </g>
+  <path d="M275 301 H324" stroke="#26394a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M382 296 H414" stroke="#26394a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M415 294 L429 272" stroke="#26394a" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Spinning wheels -->
+  <g class="wheel" fill="none" stroke="#26394a" stroke-width="6">
+    <circle cx="218" cy="404" r="62"/>
+    <path d="M218 342 V466 M156 404 H280 M174 360 L262 448 M262 360 L174 448"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#26394a" stroke-width="6">
+    <circle cx="432" cy="404" r="62"/>
+    <path d="M432 342 V466 M370 404 H494 M388 360 L476 448 M476 360 L388 448"/>
+  </g>
+
+  <!-- Expressive rider -->
+  <g class="rider">
+    <!-- wings and body -->
+    <path d="M314 257 Q277 268 268 311 Q280 338 329 328 Q359 304 351 269Z" fill="#fffaf0" stroke="#26394a" stroke-width="5"/>
+    <path d="M309 286 Q281 292 283 311 Q304 320 330 304" fill="none" stroke="#cfdae0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M313 249 Q345 229 376 251 Q393 280 369 312 Q336 324 311 297Z" fill="#fffaf0" stroke="#26394a" stroke-width="5"/>
+    <path d="M331 278 Q354 270 373 286" fill="none" stroke="#cfdae0" stroke-width="5" stroke-linecap="round"/>
+    <!-- long neck and head -->
+    <path d="M345 266 Q365 221 370 179 Q373 154 400 147" fill="none" stroke="#fffaf0" stroke-width="27" stroke-linecap="round"/>
+    <path d="M345 266 Q365 221 370 179 Q373 154 400 147" fill="none" stroke="#26394a" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="411" cy="145" rx="40" ry="32" fill="#fffaf0" stroke="#26394a" stroke-width="5"/>
+    <circle cx="424" cy="137" r="5.5" fill="#172d3e"/>
+    <circle cx="426" cy="135" r="1.8" fill="#fff"/>
+    <!-- helmet -->
+    <path d="M380 132 Q389 102 419 106 Q442 110 449 133 L384 137Z" fill="#f4c542" stroke="#26394a" stroke-width="5"/>
+    <path d="M386 136 L378 142 M417 108 L417 99" stroke="#26394a" stroke-width="4" stroke-linecap="round"/>
+    <!-- enormous bill -->
+    <path d="M438 151 Q480 143 515 159 Q490 172 443 166Z" fill="#f3a536" stroke="#26394a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M449 163 Q483 171 511 159 Q500 188 465 184 Q447 178 449 163Z" fill="#ed795d" stroke="#26394a" stroke-width="4" stroke-linejoin="round"/>
+    <!-- fish in bill -->
+    <path d="M469 159 Q480 149 492 158 Q480 168 469 159Z" fill="#5ac7d4" stroke="#26394a" stroke-width="2"/>
+    <path d="M470 159 L463 154 L463 164Z" fill="#5ac7d4" stroke="#26394a" stroke-width="2"/>
+    <circle cx="486" cy="157" r="1.5" fill="#26394a"/>
+    <!-- feet on pedals -->
+    <path d="M354 309 Q361 333 378 344 L375 361" fill="none" stroke="#f3a536" stroke-width="10" stroke-linecap="round"/>
+    <path d="M375 361 Q389 366 399 361" fill="none" stroke="#f3a536" stroke-width="8" stroke-linecap="round"/>
+    <path d="M333 313 Q320 335 313 350 L302 367" fill="none" stroke="#f3a536" stroke-width="10" stroke-linecap="round"/>
+    <path d="M302 367 Q314 378 326 374" fill="none" stroke="#f3a536" stroke-width="8" stroke-linecap="round"/>
+    <!-- wing gripping handlebar -->
+    <path d="M369 259 Q401 266 423 286" fill="none" stroke="#fffaf0" stroke-width="17" stroke-linecap="round"/>
+    <path d="M369 259 Q401 266 423 286" fill="none" stroke="#26394a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M416 284 Q425 282 431 288" fill="none" stroke="#f3a536" stroke-width="9" stroke-linecap="round"/>
+    <!-- motion marks -->
+    <path d="M477 221 l20 -9 M485 235 l25 -2 M474 205 l14 -15" stroke="#fffaf0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground shadows and small scene details -->
+  <ellipse cx="325" cy="472" rx="195" ry="13" fill="#428c54" opacity=".4"/>
+  <path d="M95 362 q10 -20 20 0 q10 -19 20 0" fill="none" stroke="#398b57" stroke-width="4"/>
+  <path d="M574 358 q9 -17 18 0 q9 -16 18 0" fill="none" stroke="#398b57" stroke-width="4"/>
+  <rect y="520" width="800" height="80" fill="#17324d"/>
+  <text x="400" y="550" text-anchor="middle" font-size="15" font-weight="700" fill="#fffaf0">LOCAL BIRD CLAIMS “BIKE LANE” AFTER ONE WINGED LAP</text>
+  <text x="400" y="581" text-anchor="middle" font-size="17" font-weight="700" fill="#ffe27a">2026-11-05 00:02:32 SGT (UTC+08:00)</text>
+</svg>
