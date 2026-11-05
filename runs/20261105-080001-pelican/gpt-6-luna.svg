@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">THE PELICAN COMMUTE</title>
+  <desc id="desc">A determined pelican pedals a bicycle, carrying a tiny fish passenger and a sign that says “I brake for snacks.”</desc>
+  <defs>
+    <style>
+      .ink{stroke:#263238;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{transform-box:fill-box;transform-origin:center;animation:spin 3s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .65s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-4px)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8edcf"/>
+  <path d="M0 430 Q130 415 245 431 T490 427 T800 428 V600 H0Z" fill="#b8d9b6"/>
+  <path d="M0 452H800" stroke="#657e68" stroke-width="4" stroke-dasharray="18 16"/>
+  <circle cx="98" cy="112" r="42" fill="#ffd166"/>
+  <path d="M0 374 Q130 347 255 376 Q400 343 535 373 Q680 341 800 372" fill="none" stroke="#9bc3bf" stroke-width="5"/>
+
+  <text x="400" y="57" text-anchor="middle" font-family="Arial,sans-serif" font-size="31" font-weight="900" letter-spacing="2" fill="#263238">THE PELICAN COMMUTE</text>
+  <text x="400" y="88" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#52656a">“I brake for snacks.” — technically, I have no brakes.</text>
+
+  <!-- bicycle frame -->
+  <g fill="none" class="ink">
+    <path d="M257 385 L344 385 L395 311 L257 385 M344 385 L395 311 L457 385 M344 385 L457 385"/>
+    <path d="M395 311 L423 311 M344 385 L331 330 L307 330"/>
+    <path d="M457 385 L472 355"/>
+  </g>
+  <g class="wheel">
+    <circle cx="257" cy="385" r="57" fill="#f8edcf" class="ink"/>
+    <circle cx="257" cy="385" r="6" fill="#263238"/>
+    <path d="M257 328V442 M200 385H314 M217 345L297 425 M297 345L217 425" stroke="#68777a" stroke-width="3"/>
+  </g>
+  <g class="wheel">
+    <circle cx="457" cy="385" r="57" fill="#f8edcf" class="ink"/>
+    <circle cx="457" cy="385" r="6" fill="#263238"/>
+    <path d="M457 328V442 M400 385H514 M417 345L497 425 M497 345L417 425" stroke="#68777a" stroke-width="3"/>
+  </g>
+  <g class="ink">
+    <circle cx="344" cy="385" r="19" fill="#ffd166"/>
+    <path d="M344 385L361 366 M344 385L328 401" stroke-width="6"/>
+    <path d="M361 366L367 361 M328 401L322 406" stroke-width="5"/>
+  </g>
+
+  <!-- rider bob -->
+  <g class="rider">
+    <!-- legs and flippers -->
+    <path d="M361 304 Q342 337 356 365" fill="none" class="ink"/>
+    <path d="M356 365 Q370 373 380 365 Q367 354 356 365Z" fill="#f4a261" class="ink"/>
+    <path d="M363 305 Q386 331 369 365" fill="none" class="ink"/>
+    <path d="M369 365 Q383 373 393 364 Q380 354 369 365Z" fill="#f4a261" class="ink"/>
+    <!-- body -->
+    <ellipse cx="364" cy="275" rx="48" ry="58" fill="#fffdf5" class="ink"/>
+    <path d="M337 274 Q362 285 388 275 Q381 311 360 319 Q340 309 337 274Z" fill="#e8a25a" stroke="#263238" stroke-width="4"/>
+    <!-- neck and head -->
+    <path d="M377 246 Q402 216 405 187" fill="none" stroke="#263238" stroke-width="24" stroke-linecap="round"/>
+    <path d="M377 246 Q402 216 405 187" fill="none" stroke="#fffdf5" stroke-width="16" stroke-linecap="round"/>
+    <ellipse cx="411" cy="172" rx="31" ry="25" fill="#fffdf5" class="ink"/>
+    <circle cx="420" cy="166" r="4.5" fill="#263238"/>
+    <path d="M437 178 Q491 183 512 199 Q485 212 438 193Z" fill="#f4a261" class="ink"/>
+    <path d="M440 191 Q476 197 493 205 Q474 221 448 211Z" fill="#dc7357" stroke="#263238" stroke-width="4"/>
+    <path d="M437 190 Q458 205 476 211" fill="none" stroke="#b85645" stroke-width="3"/>
+    <!-- helmet -->
+    <path d="M383 166 Q390 130 422 137 Q443 141 447 160 L435 165 Q420 150 398 165Z" fill="#ef476f" class="ink"/>
+    <path d="M396 143 Q414 132 432 144" fill="none" stroke="#ffd166" stroke-width="5"/>
+    <!-- handlebars grip -->
+    <path d="M395 311 L410 291 L420 291" fill="none" class="ink"/>
+    <!-- tiny briefcase -->
+    <path d="M321 244 Q298 238 289 257 L313 270" fill="#06a6a6" class="ink"/>
+  </g>
+
+  <!-- absurd passenger and sign -->
+  <g class="ink">
+    <path d="M465 264 Q510 244 548 261 L548 316 Q507 300 465 318Z" fill="#fffdf5"/>
+    <path d="M486 274 L506 274 M496 264V284" stroke="#263238" stroke-width="3"/>
+    <path d="M515 289 Q526 279 536 289 Q526 298 515 289Z" fill="#67b7c7" stroke-width="3"/>
+    <circle cx="520" cy="287" r="2.5" fill="#263238" stroke="none"/>
+    <path d="M536 289l7-5v10z" fill="#f4a261" stroke-width="2"/>
+  </g>
+  <text x="507" y="337" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#263238">EXECUTIVE FISH</text>
+
+  <!-- motion marks and quip -->
+  <path d="M180 302l-22-8 M185 319l-28 0 M195 337l-20 9" stroke="#ef476f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M542 140 Q558 119 586 130" fill="none" stroke="#263238" stroke-width="3"/>
+  <text x="587" y="124" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#263238">ON TIME!</text>
+  <text x="588" y="143" font-family="Arial,sans-serif" font-size="11" fill="#52656a">(for the tide)</text>
+
+  <!-- footer with clear breathing room -->
+  <path d="M34 487H766" stroke="#263238" stroke-width="2" opacity=".35"/>
+  <text x="400" y="526" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#263238">A bird of leisure, late for absolutely nothing.</text>
+  <text x="400" y="566" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#263238">2026-11-05 08:01:57 SGT (UTC+08:00)</text>
+</svg>
