@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Verdana, Arial, Helvetica, sans-serif">
+  <title>The Pelican Commuter</title>
+  <defs>
+    <clipPath id="skyClip"><rect x="0" y="0" width="800" height="446"/></clipPath>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#dff4ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect x="0" y="0" width="800" height="446" fill="url(#sky)"/>
+
+  <!-- Sun -->
+  <g transform="translate(700,110)">
+    <circle r="38" fill="#ffd93b" stroke="#f3b51c" stroke-width="3"/>
+    <g stroke="#f3b51c" stroke-width="4" stroke-linecap="round">
+      <line x1="0" y1="-50" x2="0" y2="-62"/>
+      <line x1="0" y1="50" x2="0" y2="62"/>
+      <line x1="-50" y1="0" x2="-62" y2="0"/>
+      <line x1="50" y1="0" x2="62" y2="0"/>
+      <line x1="36" y1="-36" x2="44" y2="-44"/>
+      <line x1="-36" y1="36" x2="-44" y2="44"/>
+      <line x1="36" y1="36" x2="44" y2="44"/>
+      <line x1="-36" y1="-36" x2="-44" y2="-44"/>
+    </g>
+    <circle cx="-12" cy="-6" r="4" fill="#333"/>
+    <circle cx="12" cy="-6" r="4" fill="#333"/>
+    <path d="M-14,10 Q0,22 14,10" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Clouds (looping drift) -->
+  <g clip-path="url(#skyClip)" fill="#ffffff" opacity="0.95">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -800 0" dur="30s" repeatCount="indefinite"/>
+      <g>
+        <ellipse cx="120" cy="120" rx="46" ry="20"/><ellipse cx="150" cy="106" rx="34" ry="24"/><ellipse cx="90" cy="110" rx="28" ry="18"/>
+        <ellipse cx="470" cy="80" rx="52" ry="20"/><ellipse cx="500" cy="64" rx="36" ry="24"/><ellipse cx="440" cy="70" rx="30" ry="18"/>
+        <ellipse cx="920" cy="120" rx="46" ry="20"/><ellipse cx="950" cy="106" rx="34" ry="24"/><ellipse cx="890" cy="110" rx="28" ry="18"/>
+        <ellipse cx="1270" cy="80" rx="52" ry="20"/><ellipse cx="1300" cy="64" rx="36" ry="24"/><ellipse cx="1240" cy="70" rx="30" ry="18"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Jealous flying birds -->
+  <g stroke="#2c3e50" stroke-width="3" fill="none" stroke-linecap="round">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M80,200 q12,-14 24,0 q12,-14 24,0"/>
+      <path d="M150,170 q10,-12 20,0 q10,-12 20,0"/>
+      <path d="M600,220 q12,-14 24,0 q12,-14 24,0"/>
+    </g>
+  </g>
+
+  <!-- Road -->
+  <rect x="0" y="446" width="800" height="40" fill="#555"/>
+  <line x1="0" y1="466" x2="800" y2="466" stroke="#f8e36a" stroke-width="4" stroke-dasharray="30 24">
+    <animate attributeName="stroke-dashoffset" from="0" to="-54" dur="0.6s" repeatCount="indefinite"/>
+  </line>
+  <!-- Grass -->
+  <rect x="0" y="486" width="800" height="24" fill="#6cc04a"/>
+
+  <!-- Roadside sign -->
+  <g>
+    <rect x="690" y="330" width="6" height="116" fill="#8b5a2b"/>
+    <rect x="648" y="300" width="90" height="46" rx="6" fill="#ffffff" stroke="#c0392b" stroke-width="4"/>
+    <text x="693" y="319" font-size="12" font-weight="bold" text-anchor="middle" fill="#c0392b">NO FLYING</text>
+    <text x="693" y="337" font-size="12" font-weight="bold" text-anchor="middle" fill="#c0392b">BIKE LANE</text>
+  </g>
+
+  <!-- Motion lines -->
+  <g stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.9">
+    <g>
+      <animate attributeName="opacity" values="0.9;0.2;0.9" dur="0.5s" repeatCount="indefinite"/>
+      <line x1="120" y1="380" x2="190" y2="380"/>
+      <line x1="100" y1="405" x2="180" y2="405"/>
+      <line x1="130" y1="430" x2="195" y2="430"/>
+    </g>
+  </g>
+
+  <!-- BICYCLE -->
+  <g id="bike">
+    <!-- Rear wheel -->
+    <g transform="translate(260,400)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1s" repeatCount="indefinite"/>
+        <circle r="48" fill="none" stroke="#222" stroke-width="8"/>
+        <circle r="44" fill="none" stroke="#bbb" stroke-width="2"/>
+        <g stroke="#999" stroke-width="2">
+          <line x1="-44" y1="0" x2="44" y2="0"/><line x1="0" y1="-44" x2="0" y2="44"/>
+          <line x1="-31" y1="-31" x2="31" y2="31"/><line x1="31" y1="-31" x2="-31" y2="31"/>
+          <line x1="-41" y1="-17" x2="41" y2="17"/><line x1="-17" y1="-41" x2="17" y2="41"/>
+          <line x1="-41" y1="17" x2="41" y2="-17"/><line x1="17" y1="-41" x2="-17" y2="41"/>
+        </g>
+        <circle r="6" fill="#333"/>
+        <circle cx="0" cy="-30" r="4" fill="#e74c3c"/>
+      </g>
+    </g>
+    <!-- Front wheel -->
+    <g transform="translate(520,400)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1s" repeatCount="indefinite"/>
+        <circle r="48" fill="none" stroke="#222" stroke-width="8"/>
+        <circle r="44" fill="none" stroke="#bbb" stroke-width="2"/>
+        <g stroke="#999" stroke-width="2">
+          <line x1="-44" y1="0" x2="44" y2="0"/><line x1="0" y1="-44" x2="0" y2="44"/>
+          <line x1="-31" y1="-31" x2="31" y2="31"/><line x1="31" y1="-31" x2="-31" y2="31"/>
+          <line x1="-41" y1="-17" x2="41" y2="17"/><line x1="-17" y1="-41" x2="17" y2="41"/>
+          <line x1="-41" y1="17" x2="41" y2="-17"/><line x1="17" y1="-41" x2="-17" y2="41"/>
+        </g>
+        <circle r="6" fill="#333"/>
+        <circle cx="0" cy="-30" r="4" fill="#e74c3c"/>
+      </g>
+    </g>
+
+    <!-- Chain -->
+    <g stroke="#444" stroke-width="3">
+      <line x1="260" y1="393" x2="380" y2="387"/>
+      <line x1="260" y1="407" x2="380" y2="423"/>
+    </g>
+    <circle cx="260" cy="400" r="7" fill="none" stroke="#444" stroke-width="3"/>
+    <circle cx="380" cy="405" r="18" fill="none" stroke="#444" stroke-width="4"/>
+
+    <!-- Frame -->
+    <g stroke="#d6336c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <line x1="380" y1="405" x2="335" y2="308"/>
+      <line x1="335" y1="312" x2="478" y2="312"/>
+      <line x1="478" y1="300" x2="498" y2="348"/>
+      <line x1="380" y1="405" x2="492" y2="335"/>
+      <line x1="335" y1="312" x2="260" y2="400"/>
+      <line x1="380" y1="405" x2="260" y2="400"/>
+      <line x1="498" y1="348" x2="520" y2="400"/>
+    </g>
+    <!-- Handlebar -->
+    <g stroke="#333" stroke-width="6" stroke-linecap="round" fill="none">
+      <line x1="480" y1="300" x2="468" y2="282"/>
+      <line x1="452" y1="286" x2="486" y2="278"/>
+    </g>
+    <!-- Bell -->
+    <circle cx="488" cy="276" r="5" fill="#f1c40f" stroke="#333" stroke-width="2"/>
+    <!-- Seat -->
+    <ellipse cx="332" cy="304" rx="24" ry="8" fill="#222"/>
+
+    <!-- Crank + pedals -->
+    <g transform="translate(380,405)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1s" repeatCount="indefinite"/>
+        <line x1="-18" y1="0" x2="18" y2="0" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+        <rect x="14" y="-4" width="12" height="8" rx="2" fill="#333"/>
+        <rect x="-26" y="-4" width="12" height="8" rx="2" fill="#333"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- PELICAN LEGS (pedaling) -->
+  <g stroke="#f39c12" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M340,285 L389,330 L398,405">
+      <animate attributeName="d" dur="1s" repeatCount="indefinite" calcMode="linear"
+        values="M340,285 L389,330 L398,405;
+                M340,285 L386,336 L392.7,417.7;
+                M340,285 L380,339 L380,423;
+                M340,285 L374,336 L367.3,417.7;
+                M340,285 L371,330 L362,405;
+                M340,285 L374,324 L367.3,392.3;
+                M340,285 L380,321 L380,387;
+                M340,285 L386,324 L392.7,392.3;
+                M340,285 L389,330 L398,405"/>
+    </path>
+    <path d="M340,285 L371,330 L362,405" stroke="#e67e22">
+      <animate attributeName="d" dur="1s" repeatCount="indefinite" calcMode="linear"
+        values="M340,285 L371,330 L362,405;
+                M340,285 L374,324 L367.3,392.3;
+                M340,285 L380,321 L380,387;
+                M340,285 L386,324 L392.7,392.3;
+                M340,285 L389,330 L398,405;
+                M340,285 L386,336 L392.7,417.7;
+                M340,285 L380,339 L380,423;
+                M340,285 L374,336 L367.3,417.7;
+                M340,285 L371,330 L362,405"/>
+    </path>
+  </g>
+
+  <!-- PELICAN BODY (bobbing) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0; 0 -5; 0 0" dur="1s" repeatCount="indefinite"/>
+    <!-- Tail feathers -->
+    <path d="M278,250 L240,232 L262,258 L236,262 L270,270 Z" fill="#e8e8e8" stroke="#555" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Body -->
+    <ellipse cx="335" cy="255" rx="62" ry="42" fill="#ffffff" stroke="#555" stroke-width="3"/>
+    <!-- Back wing -->
+    <path d="M300,232 Q340,218 385,236 Q345,262 300,250 Z" fill="#dcdcdc" stroke="#555" stroke-width="2"/>
+    <!-- Neck -->
+    <path d="M372,228 C402,232 406,198 418,180" stroke="#555" stroke-width="26" fill="none" stroke-linecap="round"/>
+    <path d="M372,228 C402,232 406,198 418,180" stroke="#ffffff" stroke-width="20" fill="none" stroke-linecap="round"/>
+    <!-- Front wing gripping handlebar -->
+    <path d="M365,252 Q420,250 464,286" stroke="#555" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <path d="M365,252 Q420,250 464,286" stroke="#f4f4f4" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="425" cy="172" r="19" fill="#ffffff" stroke="#555" stroke-width="3"/>
+    <!-- Pouch -->
+    <path d="M438,182 Q475,240 540,194 Z" fill="#f6b64b" stroke="#c77d12" stroke-width="3"/>
+    <!-- Upper beak -->
+    <path d="M436,168 L545,192 L438,184 Z" fill="#f39c12" stroke="#c77d12" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Fish sticking out -->
+    <g transform="translate(540,193)">
+      <animateTransform attributeName="transform" type="rotate" values="-8 540 193; 8 540 193; -8 540 193" dur="0.4s" repeatCount="indefinite" additive="sum"/>
+      <path d="M0,0 L18,-7 L14,0 L18,7 Z" fill="#3fa9f5" stroke="#1f5f8f" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+    <!-- Eye (wide, determined) -->
+    <circle cx="432" cy="166" r="6" fill="#fff" stroke="#333" stroke-width="2"/>
+    <circle cx="434" cy="167" r="2.5" fill="#111"/>
+    <path d="M422,156 L440,160" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    <!-- Helmet -->
+    <path d="M405,166 A20,20 0 0 1 445,166 Z" fill="#e74c3c" stroke="#8e1b10" stroke-width="3"/>
+    <path d="M412,154 L438,154" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M410,170 Q425,196 442,172" stroke="#8e1b10" stroke-width="2" fill="none"/>
+    <!-- Sweat drops -->
+    <g fill="#5dade2">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+      <path d="M452,150 q4,8 0,10 q-4,-2 0,-10"/>
+      <path d="M402,150 q-4,8 0,10 q4,-2 0,-10"/>
+    </g>
+  </g>
+
+  <!-- Speech bubble -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="1s" repeatCount="indefinite"/>
+    <path d="M470,92 h200 a12,12 0 0 1 12,12 v44 a12,12 0 0 1 -12,12 h-150 l-18,16 l4,-16 h-36 a12,12 0 0 1 -12,-12 v-44 a12,12 0 0 1 12,-12 z" fill="#ffffff" stroke="#333" stroke-width="3"/>
+    <text x="582" y="118" font-size="14" font-weight="bold" text-anchor="middle" fill="#222">Wings are SO last season.</text>
+    <text x="582" y="140" font-size="13" text-anchor="middle" fill="#444">Also, I lost my flying licence.</text>
+  </g>
+
+  <!-- TITLE -->
+  <text x="400" y="52" font-size="36" font-weight="bold" text-anchor="middle" fill="#1b2a41" stroke="#ffffff" stroke-width="6" paint-order="stroke" letter-spacing="2">THE PELICAN COMMUTER</text>
+
+  <!-- CAPTION -->
+  <rect x="0" y="510" width="800" height="38" fill="#fff8e1"/>
+  <text x="400" y="535" font-size="17" font-style="italic" text-anchor="middle" fill="#333">Pedro refuses to fly: "Why soar for free when you can sweat in traffic like everyone else?"</text>
+
+  <!-- FOOTER -->
+  <rect x="0" y="548" width="800" height="52" fill="#1b2a41"/>
+  <text x="400" y="580" font-size="16" text-anchor="middle" fill="#ffffff">2026-11-06 00:07:18 SGT (UTC+08:00)</text>
+</svg>
