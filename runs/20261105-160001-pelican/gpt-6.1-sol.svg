@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Pedal Economy</title>
+  <desc id="desc">A smug pelican cycles along the waterfront with a fish in its enormous bill pouch. Its wheels spin and its body bobs as it pedals past a fuel price sign.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#bdeaf2"/>
+      <stop offset="1" stop-color="#fff5d8"/>
+    </linearGradient>
+    <pattern id="water" width="70" height="23" patternUnits="userSpaceOnUse">
+      <path d="M5 13h29m11 0h12" stroke="#77bac6" stroke-width="3" stroke-linecap="round"/>
+    </pattern>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#203343}
+      .ink{stroke:#203343;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .spin{animation:spin 1.6s linear infinite}
+      .bob{animation:bob .8s ease-in-out infinite}
+      .pedal{animation:spin 1.6s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <path fill="url(#sky)" d="M0 0h800v600H0z"/>
+  <circle cx="681" cy="150" r="43" fill="#ffd16c"/>
+  <g fill="#fff" opacity=".8">
+    <path d="M45 160c-15-25 21-46 39-25 13-36 63-21 59 9 31-5 42 20 25 27H45z"/>
+    <path d="M482 125c-8-20 20-33 32-15 19-25 48-6 43 13h28v15H480z"/>
+  </g>
+
+  <text x="400" y="53" text-anchor="middle" font-size="35" font-weight="900" letter-spacing="1">THE PELICAN PEDAL ECONOMY</text>
+  <text x="400" y="83" text-anchor="middle" font-size="17">One bird. Two wheels. An outrageous lunch allowance.</text>
+
+  <path d="M0 341q120-17 240 0t240 0 320 0v107H0z" fill="#9fd8dd"/>
+  <path d="M0 353h800v80H0z" fill="url(#water)"/>
+  <path d="M0 427h800v99H0z" fill="#e6cda1"/>
+  <path d="M0 433h800" stroke="#ac987b" stroke-width="5"/>
+  <path d="M25 494h72m35 0h72m35 0h72m35 0h72m35 0h72m35 0h72m35 0h72" stroke="#fff5d8" stroke-width="5"/>
+
+  <g class="ink">
+    <path d="M104 433V259" fill="none" stroke="#816c59"/>
+    <rect x="39" y="221" width="132" height="94" rx="7" fill="#fff9e8"/>
+  </g>
+  <text x="105" y="247" text-anchor="middle" font-size="17" font-weight="bold">FUEL PRICES</text>
+  <text x="105" y="276" text-anchor="middle" font-size="26" font-weight="bold" fill="#be4e39">SKY HIGH</text>
+  <text x="105" y="300" text-anchor="middle" font-size="14">birds included</text>
+
+  <ellipse cx="417" cy="469" rx="230" ry="12" fill="#9a8568" opacity=".23"/>
+
+  <!-- Wheel centers stay fixed while their spokes rotate. -->
+  <g transform="translate(267 400)">
+    <circle r="70" fill="#fff7e5" class="ink" stroke-width="10"/>
+    <circle r="59" fill="#d2e6dd" stroke="#748a8d" stroke-width="3"/>
+    <g class="spin" stroke="#60777c" stroke-width="3">
+      <path d="M-59 0H59M0-59V59M-42-42l84 84M-42 42l84-84"/>
+    </g>
+    <circle r="8" fill="#203343"/>
+  </g>
+  <g transform="translate(574 400)">
+    <circle r="70" fill="#fff7e5" class="ink" stroke-width="10"/>
+    <circle r="59" fill="#d2e6dd" stroke="#748a8d" stroke-width="3"/>
+    <g class="spin" stroke="#60777c" stroke-width="3">
+      <path d="M-59 0H59M0-59V59M-42-42l84 84M-42 42l84-84"/>
+    </g>
+    <circle r="8" fill="#203343"/>
+  </g>
+
+  <g fill="none" class="ink">
+    <path d="M267 400l83-112 57 112H267l244-103-104 103" stroke="#df6047" stroke-width="9"/>
+    <path d="M350 288l-9-28m233 140-65-139 29-14 15 6" stroke-width="8"/>
+    <path d="M315 259h52" stroke-width="12"/>
+  </g>
+  <circle cx="407" cy="400" r="19" fill="#f9df94" class="ink"/>
+
+  <g class="bob">
+    <!-- Tail, round body, long neck, and a thoroughly self-satisfied face. -->
+    <path d="M305 270l-39-29 8 42 42 13" fill="#fffdf1" class="ink"/>
+    <path d="M304 232c-24 17-30 56 0 75 32 21 90 7 119-17l26-49-47-37z" fill="#fffdf1" class="ink"/>
+    <path d="M385 264c24-23 28-61 28-91-1-42 32-60 58-45 23 13 19 45 1 64-18 21-24 49-27 73-5 29-26 43-51 37" fill="#fffdf1" class="ink"/>
+    <path d="M317 244q34-28 69-7-2 51-55 51l16-16-23 2 14-15" fill="#d8e3df" class="ink"/>
+    <path d="M388 247q48-6 115 25l25-18" fill="none" class="ink" stroke-width="11"/>
+    <path d="M520 250l14 8" fill="none" class="ink"/>
+
+    <!-- A bill pouch with its own passenger. -->
+    <path d="M468 168l176 14c-23 19-49 69-103 70-36-2-62-31-67-60z" fill="#f8b86a" class="ink"/>
+    <path d="M474 169l182 15-181 12z" fill="#ffd36b" class="ink"/>
+    <path d="M493 210q53 26 99-4" fill="none" stroke="#da8a4b" stroke-width="3"/>
+    <g transform="translate(552 226) rotate(-9)">
+      <path d="M-22 0q20-20 42 0-22 20-42 0l-15 11V-11z" fill="#69b6b3" stroke="#203343" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="11" cy="-2" r="3" fill="#203343"/>
+      <path d="M-9-7l3 13" stroke="#338d94" stroke-width="2"/>
+    </g>
+
+    <circle cx="464" cy="151" r="11" fill="white" stroke="#203343" stroke-width="3"/>
+    <circle cx="469" cy="151" r="4" fill="#203343"/>
+    <path d="M451 134l23 4" fill="none" class="ink"/>
+    <path d="M413 136q30-35 67-8l-3 9h-66z" fill="#df6047" class="ink"/>
+    <path d="M427 118l-3 15m18-18-1 17m17-12 1 13" stroke="#943e32" stroke-width="3"/>
+    <path d="M439 167q-12 17-3 30" fill="none" stroke="#8b9b97" stroke-width="3"/>
+    <path d="M408 209l33 11-11 19-30-11z" fill="#59a9a4" stroke="#203343" stroke-width="3"/>
+    <path d="M408 226l-24 28 27-5 1 22 16-35" fill="#59a9a4" stroke="#203343" stroke-width="3"/>
+  </g>
+
+  <!-- An orbiting webbed foot and crank provide an unmistakable pedal cycle. -->
+  <g transform="translate(407 400)">
+    <g class="pedal">
+      <path d="M0 0v-25M0 0v25" stroke="#203343" stroke-width="6"/>
+      <path d="M-13-25h26M-13 25h26" stroke="#203343" stroke-width="7" stroke-linecap="round"/>
+      <path d="M-8-34l17 1 14 13-39-1z" fill="#efaa4a" stroke="#203343" stroke-width="3"/>
+    </g>
+  </g>
+  <path d="M357 307q-13 20 8 42l25 31" fill="none" stroke="#203343" stroke-width="14" stroke-linecap="round"/>
+  <path d="M357 307q-13 20 8 42l25 31" fill="none" stroke="#efaa4a" stroke-width="8" stroke-linecap="round"/>
+
+  <g>
+    <path d="M597 280h165q10 0 10 10v51q0 10-10 10H629l-25 20 5-20h-12q-10 0-10-10v-51q0-10 10-10z" fill="#fffdf1" stroke="#203343" stroke-width="3"/>
+    <text x="679" y="306" text-anchor="middle" font-size="17" font-weight="bold">“My only fuel?</text>
+    <text x="679" y="331" text-anchor="middle" font-size="18" font-weight="bold">Petty herring.”</text>
+  </g>
+  <path d="M192 369h-34m43 17h-22" fill="none" stroke="#fffdf1" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="0" y="526" width="800" height="74" fill="#203343"/>
+  <text x="400" y="554" text-anchor="middle" font-size="19" font-weight="bold" style="fill:#fff5d8">He pedals for the planet. He bills for lunch.</text>
+  <text x="400" y="583" text-anchor="middle" font-size="16" style="fill:#cce7e8">2026-11-05 16:01:56 SGT (UTC+08:00)</text>
+</svg>
