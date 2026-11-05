@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling furiously while its enormous beak catches the wind.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+      .pedal { transform-box: fill-box; transform-origin: center; animation: spin 1s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { from { transform: translateY(0px) rotate(-1deg); } to { transform: translateY(-4px) rotate(1deg); } }
+      @media (prefers-reduced-motion: reduce) {
+        .wheel, .rider, .pedal { animation: none; }
+      }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#e56f32"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="600" fill="#f6eddb"/>
+  <path d="M0 390 Q160 360 315 390 T620 380 T800 390 V544 H0Z" fill="#dce9d5"/>
+  <path d="M0 474 Q180 453 360 474 T800 468" fill="none" stroke="#b2c9aa" stroke-width="4"/>
+  <circle cx="690" cy="128" r="47" fill="#f5c85b"/>
+  <path d="M642 129h96M690 81v96M656 95l68 68M724 95l-68 68" stroke="#e5a93c" stroke-width="3" opacity=".65"/>
+
+  <text x="40" y="57" font-size="34" font-weight="900" letter-spacing="1.5" fill="#183f46">THE PELICAN CYCLE</text>
+  <text x="42" y="84" font-size="15" font-weight="700" fill="#507078">“Finally, a vehicle with built-in snack storage.”</text>
+  <path d="M45 101H330" stroke="#e56f32" stroke-width="5" stroke-linecap="round"/>
+
+  <g fill="none" stroke="#e56f32" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M587 177q38-19 67-2"/>
+    <path d="M602 199q26-11 47 0"/>
+  </g>
+  <text x="572" y="158" font-size="13" font-weight="700" fill="#b8572d">HEADWIND</text>
+
+  <!-- Bicycle frame -->
+  <g stroke="#183f46" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M226 425L345 425L393 332L301 332L226 425"/>
+    <path d="M345 425L393 332L455 425L345 425"/>
+    <path d="M393 332L431 332"/>
+    <path d="M226 425L208 393"/>
+    <path d="M195 393h34"/>
+    <path d="M301 332L287 318h-38"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#183f46" stroke-width="7">
+    <circle cx="226" cy="425" r="64"/>
+    <path d="M226 361V489M162 425H290M181 380l90 90M271 380l-90 90" stroke-width="2.5"/>
+  </g>
+  <g class="wheel" fill="none" stroke="#183f46" stroke-width="7">
+    <circle cx="455" cy="425" r="64"/>
+    <path d="M455 361V489M391 425H519M410 380l90 90M500 380l-90 90" stroke-width="2.5"/>
+  </g>
+  <circle cx="345" cy="425" r="12" fill="#e56f32" stroke="#183f46" stroke-width="5"/>
+  <g class="pedal" stroke="#183f46" stroke-width="5" stroke-linecap="round">
+    <path d="M345 425l25 22M345 425l-24-22"/>
+    <path d="M364 447h22M321 403h-22"/>
+  </g>
+  <path d="M274 332h42" stroke="#183f46" stroke-width="8" stroke-linecap="round"/>
+  <path d="M415 331l12-25h24" fill="none" stroke="#183f46" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Riding pelican -->
+  <g class="rider">
+    <!-- legs, dramatically overworked -->
+    <path d="M354 315L337 361L350 405" fill="none" stroke="#e56f32" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M350 405l-15 11" fill="none" stroke="#e56f32" stroke-width="9" stroke-linecap="round"/>
+    <path d="M379 318L407 363L368 423" fill="none" stroke="#e56f32" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M368 423l12 13" fill="none" stroke="#e56f32" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- body -->
+    <ellipse cx="365" cy="270" rx="51" ry="64" fill="#fffdf5" stroke="#183f46" stroke-width="5"/>
+    <path d="M334 275q31-28 66 5q-18 40-48 32" fill="#d9e7e4" stroke="#183f46" stroke-width="4"/>
+    <path d="M352 311l-8 24M380 309l8 24" stroke="#183f46" stroke-width="6" stroke-linecap="round"/>
+    <path d="M339 336h26M379 336h26" stroke="#e56f32" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- neck and head -->
+    <path d="M378 237Q405 204 394 173" fill="none" stroke="#fffdf5" stroke-width="25" stroke-linecap="round"/>
+    <path d="M378 237Q405 204 394 173" fill="none" stroke="#183f46" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="398" cy="158" r="34" fill="#fffdf5" stroke="#183f46" stroke-width="5"/>
+    <path d="M424 155Q488 138 559 165Q503 183 425 176Z" fill="#f2a943" stroke="#183f46" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M427 174Q483 177 546 168Q503 208 440 197Q423 193 427 174Z" fill="#e56f32" stroke="#183f46" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M435 181Q482 185 526 174" fill="none" stroke="#f8d47c" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="405" cy="150" r="4.5" fill="#183f46"/>
+    <path d="M384 138q12-10 25-4" fill="none" stroke="#183f46" stroke-width="4" stroke-linecap="round"/>
+    <path d="M373 115q-10-12-18 1M390 111q-3-15-14-12M407 115q7-13 17-8" fill="none" stroke="#e56f32" stroke-width="4" stroke-linecap="round"/>
+    <!-- tiny helmet -->
+    <path d="M371 135q8-31 31-29q22 2 26 28Z" fill="#e56f32" stroke="#183f46" stroke-width="4"/>
+    <path d="M366 137h67" stroke="#183f46" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="rotate(-9 622 294)">
+    <path d="M570 257h116v66H570z" rx="8" fill="#fffdf5" stroke="#183f46" stroke-width="3"/>
+    <text x="628" y="283" text-anchor="middle" font-size="12" font-weight="900" fill="#183f46">NO HANDS.</text>
+    <text x="628" y="302" text-anchor="middle" font-size="12" font-weight="900" fill="#183f46">ALL BEAK.</text>
+  </g>
+  <path d="M586 321q-23 17-40 20" fill="none" stroke="#183f46" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="400" y="526" text-anchor="middle" font-size="15" font-weight="700" fill="#31585b">Local bird discovers cycling is mostly just beak management.</text>
+  <path d="M0 546H800" stroke="#183f46" stroke-width="2" opacity=".25"/>
+  <text x="400" y="578" text-anchor="middle" font-size="14" font-weight="700" fill="#183f46">2026-11-06 00:03:33 SGT (UTC+08:00)</text>
+</svg>
