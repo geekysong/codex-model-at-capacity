@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Beak</title>
+  <desc id="desc">An expressive pelican pedals a bicycle with a fish-filled bill beneath a sign advertising expensive fuel. Wheels spin, pedals turn, and the pelican bobs in a seamless loop.</desc>
+  <defs>
+    <pattern id="road" width="160" height="12" patternUnits="userSpaceOnUse">
+      <path d="M15 6h65" stroke="#fff5cf" stroke-width="5" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff3d5"/>
+  <circle cx="690" cy="140" r="54" fill="#ffcc59"/>
+  <path d="M0 365Q140 315 280 363T570 350T800 360V465H0Z" fill="#bdd5b1"/>
+  <path d="M0 405Q190 370 355 407T800 397V475H0Z" fill="#88b6a1"/>
+  <path d="M54 177q17-20 34 0q17-20 34 0M607 211q13-16 26 0q13-16 26 0" fill="none" stroke="#6d8d8b" stroke-width="4" stroke-linecap="round"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#173b43" text-anchor="middle">
+    <text x="400" y="62" font-size="47" font-weight="900" letter-spacing="3">TOUR DE BEAK</text>
+    <text x="400" y="94" font-size="19" font-weight="bold">One bird. Two wheels. Absolutely no dignity.</text>
+  </g>
+
+  <!-- A single roadside joke -->
+  <g stroke="#173b43" stroke-width="4" stroke-linejoin="round">
+    <path d="M112 280v144" stroke-width="9"/>
+    <rect x="35" y="205" width="153" height="96" rx="9" fill="#ffdd75"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#173b43" text-anchor="middle" font-weight="bold">
+    <text x="111" y="233" font-size="18">FUEL PRICES</text>
+    <text x="111" y="263" font-size="28">SKY HIGH</text>
+    <text x="111" y="286" font-size="14">birds included</text>
+  </g>
+
+  <path d="M0 456H800V518H0Z" fill="#56696b"/>
+  <rect y="487" width="800" height="12" fill="url(#road)"/>
+  <ellipse cx="422" cy="459" rx="231" ry="12" fill="#263e43" opacity=".2"/>
+
+  <!-- Bicycle wheels: rotating spokes inside stationary tire silhouettes -->
+  <g fill="#fff7e3" stroke="#173b43" stroke-width="8">
+    <circle cx="269" cy="389" r="68"/>
+    <circle cx="590" cy="389" r="68"/>
+  </g>
+  <g stroke="#779397" stroke-width="3">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 269 389" to="360 269 389" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M201 389h136M269 321v136M221 341l96 96M221 437l96-96"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 590 389" to="360 590 389" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M522 389h136M590 321v136M542 341l96 96M542 437l96-96"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#173b43" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M269 389l83-113 66 113H269l192-113-43 113M352 276h109M461 276l129 113M461 276l-16-52 31-13" stroke-width="13"/>
+    <path d="M269 389l83-113 66 113H269l192-113-43 113M352 276h109M461 276l129 113" stroke="#e96545" stroke-width="7"/>
+    <path d="M352 276l-9-30M445 224l31-13 23 4" stroke-width="8"/>
+    <path d="M320 246h48" stroke-width="13"/>
+  </g>
+  <circle cx="418" cy="389" r="17" fill="#ffdc75" stroke="#173b43" stroke-width="5"/>
+  <g stroke="#173b43" stroke-width="6" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 418 389" to="360 418 389" dur="1.6s" repeatCount="indefinite"/>
+    <path d="M418 363v52"/>
+    <path d="M407 363h22M407 415h22" stroke-width="8"/>
+  </g>
+
+  <!-- Rider and the tiny, increasingly desperate pedaling motion -->
+  <g stroke="#173b43" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M355 270l-17 43 51 38" fill="none" stroke="#dc913c" stroke-width="11">
+      <animate attributeName="d" values="M355 270l-17 43 51 38;M355 270l-6 52 40 29;M355 270l-17 43 51 38" dur=".8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M381 345l24 12-31 8-11-9Z" fill="#ffbd48"/>
+    <path d="M284 224l-33-40 54 16" fill="#fffdf3"/>
+    <path d="M298 205C299 165 352 146 393 176L420 231C407 267 362 284 321 264 290 249 281 225 298 205Z" fill="#fffdf3"/>
+    <path d="M309 209q36-28 73 8-21 41-62 27" fill="#dbe9df"/>
+    <path d="M380 201C406 177 393 151 411 126 425 106 453 112 458 132 465 155 446 175 446 203L424 238" fill="#fffdf3"/>
+    <path d="M443 142L623 162Q601 231 471 197Z" fill="#ffbc4e"/>
+    <path d="M446 141l185 18-11 13-172-13Z" fill="#f68c37"/>
+    <path d="M480 178q70 32 117-1" fill="none" stroke="#db8834" stroke-width="3"/>
+
+    <!-- Fish commuting in the pouch -->
+    <path d="M520 185q18-21 40-4l15-12-1 22-18-1q-20 14-36-5Z" fill="#69b6bb" stroke-width="3"/>
+    <circle cx="534" cy="181" r="2.7" fill="#173b43" stroke="none"/>
+    <path d="M548 179l-3 10" fill="none" stroke-width="2"/>
+
+    <circle cx="442" cy="131" r="13" fill="white"/>
+    <ellipse cx="447" cy="132" rx="4" ry="6" fill="#173b43" stroke="none"/>
+    <path d="M429 113l22 4" fill="none" stroke-width="5"/>
+    <path d="M408 117q14-30 42-17l14 14-59 8Z" fill="#e96545"/>
+    <path d="M419 103l4 12M434 101l3 12" fill="none" stroke-width="3"/>
+    <path d="M397 178q22 15 39 7" fill="none" stroke="#e96545" stroke-width="12"/>
+    <path d="M401 181l-38 1 15 17 31-13" fill="#e96545" stroke-width="2"/>
+    <path d="M395 225q38 17 80-11" fill="none" stroke-width="10"/>
+    <path d="M476 209l13 2-1 13-14-1" fill="#ffbd48" stroke-width="3"/>
+    <path d="M466 119q7-13 9-5t-5 12Z" fill="#78c4d0" stroke-width="2"/>
+  </g>
+
+  <g fill="none" stroke="#173b43" stroke-width="3" stroke-linecap="round">
+    <path d="M186 347h-27M183 369h-40M189 391h-24"/>
+  </g>
+  <g transform="rotate(-7 652 279)" font-family="Arial, Helvetica, sans-serif" fill="#173b43" text-anchor="middle">
+    <rect x="587" y="249" width="141" height="60" rx="9" fill="#fffdf3" stroke="#173b43" stroke-width="3"/>
+    <text x="657" y="273" font-size="17" font-weight="bold">MY OTHER CAR</text>
+    <text x="657" y="295" font-size="18" font-weight="bold">IS A SEAGULL.</text>
+  </g>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <rect y="518" width="800" height="82" fill="#fff3d5"/>
+  <path d="M35 519h730" stroke="#173b43" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#173b43" text-anchor="middle">
+    <text x="400" y="548" font-size="20" font-weight="bold">He cycles to save the planet. His lunch prefers the bus.</text>
+    <text x="400" y="581" font-size="17">2026-11-05 20:01:31 SGT (UTC+08:00)</text>
+  </g>
+</svg>
