@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Bike Lobby</title>
+  <desc id="desc">A pompous pelican pedals a tiny bicycle, insisting the ride is a matter of national beak security.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#20313a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#f5f0dc;stroke:#20313a;stroke-width:7}
+      .spoke{stroke:#647982;stroke-width:2}
+      .type{font-family:Arial,Helvetica,sans-serif}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin 2.8s linear infinite}
+      .ride{transform-box:fill-box;transform-origin:center;animation:bob .7s ease-in-out infinite alternate}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes bob{to{transform:translateY(-5px) rotate(-1deg)}}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#d8f1eb"/>
+  <path d="M0 380 Q120 340 238 380 T480 374 T800 377 V600 H0Z" fill="#b9dfc7"/>
+  <circle cx="695" cy="105" r="43" fill="#ffd06b"/>
+  <path d="M0 427 H800" stroke="#788f85" stroke-width="4" stroke-dasharray="18 13"/>
+  
+  <text id="title" x="400" y="54" text-anchor="middle" class="type" font-size="31" font-weight="900" fill="#20313a">THE PELICAN BIKE LOBBY</text>
+  <text x="400" y="83" text-anchor="middle" class="type" font-size="16" font-weight="700" fill="#42605d">“I’m not feathering the brakes. I’m feathering the economy!”</text>
+
+  <!-- Flying policy papers -->
+  <g transform="rotate(-12 150 159)">
+    <rect x="107" y="126" width="83" height="56" rx="3" fill="#fffdf4" class="ink"/>
+    <text x="148" y="149" text-anchor="middle" class="type" font-size="9" font-weight="700" fill="#42535b">BEAK SECURITY</text>
+    <text x="148" y="166" text-anchor="middle" class="type" font-size="8" fill="#42535b">BILL № 1</text>
+  </g>
+  <path d="M200 161 Q236 149 250 167" fill="none" stroke="#42605d" stroke-width="3" stroke-dasharray="5 6"/>
+
+  <!-- bicycle -->
+  <g class="ink" fill="none">
+    <path d="M260 374 L366 374 L315 290 L260 374 M366 374 L424 283 L315 290 M424 283 L476 374 L366 374"/>
+    <path d="M408 283 L440 283 M305 282 L331 282"/>
+    <path d="M366 374 L388 402 M354 401 L395 401"/>
+  </g>
+  <g>
+    <circle class="wheel" cx="260" cy="374" r="54"/>
+    <circle class="wheel" cx="476" cy="374" r="54"/>
+    <g class="spin" stroke-linecap="round">
+      <path class="spoke" d="M260 326V422 M212 374H308 M226 340L294 408 M226 408L294 340"/>
+      <circle cx="260" cy="374" r="7" fill="#e88a54" stroke="#20313a" stroke-width="3"/>
+    </g>
+    <g class="spin" stroke-linecap="round">
+      <path class="spoke" d="M476 326V422 M428 374H524 M442 340L510 408 M442 408L510 340"/>
+      <circle cx="476" cy="374" r="7" fill="#e88a54" stroke="#20313a" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- pedaling pelican -->
+  <g class="ride">
+    <!-- tail feathers -->
+    <path d="M361 226 Q328 204 324 231 Q343 241 366 241" fill="#f8f4e8" class="ink"/>
+    <!-- body -->
+    <ellipse cx="400" cy="232" rx="61" ry="47" fill="#fffdf4" class="ink"/>
+    <path d="M385 246 Q417 223 451 244 Q436 270 402 272Z" fill="#75b8c0" class="ink"/>
+    <!-- neck -->
+    <path d="M420 224 Q438 196 432 165 Q429 145 449 140 Q469 137 474 155 Q480 179 459 204 L449 237" fill="#fffdf4" class="ink"/>
+    <!-- head -->
+    <ellipse cx="458" cy="145" rx="32" ry="27" fill="#fffdf4" class="ink"/>
+    <path d="M481 148 Q531 143 559 159 Q543 177 485 165Z" fill="#f3a343" class="ink"/>
+    <path d="M505 165 Q523 184 544 163 Q534 191 508 181Z" fill="#e88760" class="ink"/>
+    <circle cx="466" cy="139" r="4.5" fill="#20313a"/>
+    <path d="M447 124 Q458 111 473 120" fill="none" class="ink"/>
+    <!-- helmet -->
+    <path d="M429 125 Q439 100 466 104 Q486 108 490 127Z" fill="#ef7059" class="ink"/>
+    <path d="M425 127 Q459 132 491 129" fill="none" class="ink"/>
+    <!-- necktie -->
+    <path d="M433 196 L445 199 L451 218 L439 214 L429 221 L428 202Z" fill="#ef7059" class="ink"/>
+    <!-- legs pedaling -->
+    <path d="M391 263 Q373 285 394 307 L366 374" fill="none" class="ink"/>
+    <path d="M426 259 Q438 284 411 307 L366 374" fill="none" class="ink"/>
+    <path d="M366 374 L346 379 M366 374 L382 389" fill="none" class="ink"/>
+    <path d="M346 380 Q337 375 332 381 M382 390 Q389 392 393 387" fill="none" class="ink"/>
+    <!-- wing -->
+    <path d="M374 225 Q393 204 422 225 Q404 239 381 245Z" fill="#f0dfbd" class="ink"/>
+    <path d="M388 228 L407 230 M385 235 L400 237" fill="none" stroke="#9a9588" stroke-width="2"/>
+  </g>
+
+  <!-- handlebars and speech -->
+  <path d="M424 283 L440 258 L458 258" fill="none" class="ink"/>
+  <path d="M452 254 Q472 250 483 257" fill="none" class="ink"/>
+  <path d="M492 106 Q510 88 533 103 L543 122 Q533 135 513 125 L495 127Z" fill="#fffdf4" class="ink"/>
+  <text x="519" y="111" text-anchor="middle" class="type" font-size="10" font-weight="700" fill="#20313a">MORE</text>
+  <text x="519" y="122" text-anchor="middle" class="type" font-size="10" font-weight="700" fill="#20313a">BIKE LANES!</text>
+
+  <!-- road sign -->
+  <path d="M626 275 V406" stroke="#20313a" stroke-width="7"/>
+  <rect x="568" y="235" width="130" height="59" rx="8" fill="#fff4d6" class="ink"/>
+  <text x="633" y="258" text-anchor="middle" class="type" font-size="12" font-weight="900" fill="#20313a">HONK IF YOU</text>
+  <text x="633" y="276" text-anchor="middle" class="type" font-size="12" font-weight="900" fill="#20313a">HAVE A FISH</text>
+  <path d="M588 327 Q612 313 636 327 T684 327" fill="none" stroke="#fffdf4" stroke-width="7"/>
+
+  <!-- footer -->
+  <rect x="0" y="454" width="800" height="146" fill="#20313a"/>
+  <text x="400" y="490" text-anchor="middle" class="type" font-size="19" font-weight="800" fill="#fff4d6">He pedals for progress. The fish rides in the campaign fund.</text>
+  <text x="400" y="526" text-anchor="middle" class="type" font-size="13" font-weight="700" fill="#b9dfc7">A beak ahead of the traffic, and several bills behind.</text>
+  <path d="M190 544 H610" stroke="#66827c" stroke-width="1"/>
+  <text x="400" y="574" text-anchor="middle" class="type" font-size="15" font-weight="700" fill="#ffffff">2026-11-06 08:02:04 SGT (UTC+08:00)</text>
+</svg>
