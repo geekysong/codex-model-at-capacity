@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Beak</title>
+  <desc id="desc">A smug pelican pedals a bicycle with a huge fish-filled bill, beneath a sign declaring a strictly enforced one-fish limit. Wheels spin and the rider bobs in a continuous loop.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#a9e5ec"/>
+      <stop offset="1" stop-color="#fff6d6"/>
+    </linearGradient>
+    <style>
+      .ink{stroke:#24313a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .type{font-family:Verdana,Arial,sans-serif;fill:#24313a;text-anchor:middle}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff9ea"/>
+  <rect x="18" y="18" width="764" height="488" rx="24" fill="url(#sky)" stroke="#24313a" stroke-width="4"/>
+  <circle cx="688" cy="142" r="39" fill="#ffce58"/>
+  <path d="M43 183 Q87 146 129 181 Q169 145 207 183" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+  <text class="type" x="400" y="70" font-size="43" font-weight="900" letter-spacing="3">TOUR DE BEAK</text>
+  <text class="type" x="400" y="101" font-size="16" font-weight="bold">THE COMMUTE JUST GOT FISHY.</text>
+
+  <path d="M20 388 Q180 351 344 388 T780 380 V480 H20Z" fill="#a6c18b"/>
+  <path d="M20 429 Q389 400 780 434 V505 H20Z" fill="#e6c99c"/>
+  <path d="M35 474 H765" stroke="#fff7dc" stroke-width="5" stroke-dasharray="36 27"/>
+  <ellipse cx="365" cy="462" rx="222" ry="15" fill="#796d57" opacity=".19"/>
+
+  <!-- A municipal rule meets an unusually capacious commuter. -->
+  <path d="M672 264 V423" class="ink" fill="none"/>
+  <rect x="596" y="201" width="153" height="81" rx="9" fill="#fff9ea" class="ink"/>
+  <text class="type" x="672" y="227" font-size="17" font-weight="bold">1 FISH LIMIT</text>
+  <text class="type" x="672" y="250" font-size="12">STRICTLY ENFORCED</text>
+  <text class="type" x="672" y="269" font-size="11">(unless you have a pouch)</text>
+
+  <!-- Wheels: rotating spokes inside stationary tires. -->
+  <g fill="#faf6df" class="ink">
+    <circle cx="233" cy="402" r="66"/>
+    <circle cx="507" cy="402" r="66"/>
+  </g>
+  <g stroke="#73878a" stroke-width="3">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 233 402" to="360 233 402" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M233 339 V465 M170 402 H296 M188 357 L278 447 M188 447 L278 357"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 507 402" to="360 507 402" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M507 339 V465 M444 402 H570 M462 357 L552 447 M462 447 L552 357"/>
+    </g>
+  </g>
+  <g class="ink" fill="none">
+    <path d="M233 402 L300 302 L354 402 Z M300 302 H455 L354 402 M455 302 L507 402" stroke="#db5448" stroke-width="9"/>
+    <path d="M300 302 L290 281 M269 281 H316" stroke-width="9"/>
+    <path d="M455 302 L444 269 L463 250 H489"/>
+    <path d="M490 250 Q508 251 502 266"/>
+  </g>
+  <g fill="#24313a">
+    <circle cx="233" cy="402" r="7"/>
+    <circle cx="507" cy="402" r="7"/>
+    <circle cx="354" cy="402" r="12"/>
+  </g>
+  <g class="ink">
+    <animateTransform attributeName="transform" type="rotate" from="0 354 402" to="360 354 402" dur="1.6s" repeatCount="indefinite"/>
+    <path d="M332 402 H376" fill="none"/>
+    <path d="M323 402 H341 M367 402 H385" stroke-width="8"/>
+  </g>
+
+  <!-- The rider gently bobs; all typography stays still. -->
+  <g class="ink">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M291 310 Q284 349 331 384" fill="none" stroke="#eaa52f" stroke-width="12">
+      <animate attributeName="d" values="M291 310 Q284 349 331 384;M291 310 Q323 345 371 392;M291 310 Q284 349 331 384" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M319 311 Q363 348 376 401" fill="none" stroke="#ffbe43" stroke-width="12">
+      <animate attributeName="d" values="M319 311 Q363 348 376 401;M319 311 Q296 356 333 411;M319 311 Q363 348 376 401" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M329 385 L348 388 M371 403 L389 405" fill="none" stroke="#f4aa32" stroke-width="10"/>
+    <path d="M273 282 L227 263 L248 303" fill="#fffdf0"/>
+    <path d="M273 230 Q244 239 250 280 Q259 325 313 324 Q363 324 373 280 L391 229Z" fill="#fffdf0"/>
+    <path d="M279 249 Q307 233 337 267 Q326 304 277 291 Q304 288 309 278 Q290 278 279 268" fill="#d7e4df"/>
+    <path d="M345 273 Q350 231 339 204 Q328 169 355 153 Q385 135 407 163 Q423 184 398 213 L382 267" fill="#fffdf0"/>
+    <path d="M394 186 Q462 181 559 213 Q484 289 411 241Z" fill="#ffb74e"/>
+    <path d="M397 187 Q478 182 566 207 L405 207Z" fill="#ffd666"/>
+    <path d="M414 218 Q463 260 529 221" fill="none" stroke="#d78636" stroke-width="3"/>
+
+    <!-- Fish visible through the cartoonishly overloaded pouch. -->
+    <g stroke-width="3">
+      <path d="M438 222 Q452 210 468 223 L478 216 V233 L468 227 Q452 241 438 222Z" fill="#65b3ae"/>
+      <circle cx="446" cy="221" r="2" fill="#24313a" stroke="none"/>
+      <path d="M478 235 Q491 225 505 237 L514 232 V246 L504 241 Q491 251 478 235Z" fill="#80a9cd"/>
+      <circle cx="485" cy="235" r="2" fill="#24313a" stroke="none"/>
+    </g>
+    <circle cx="386" cy="173" r="12" fill="white"/>
+    <circle cx="390" cy="172" r="4" fill="#24313a" stroke="none"/>
+    <path d="M374 153 L396 151" fill="none"/>
+    <path d="M341 146 Q367 122 397 145 L406 156 H339Z" fill="#e85b4d"/>
+    <path d="M353 141 L365 130 M371 143 L383 133" fill="none" stroke-width="3"/>
+    <path d="M352 282 Q403 301 457 259" fill="none" stroke="#fffdf0" stroke-width="17"/>
+    <path d="M451 260 L468 251" fill="none" stroke-width="7"/>
+  </g>
+
+  <path d="M128 337 H176 M109 357 H165 M137 377 H180" fill="none" stroke="#fff9ea" stroke-width="6" stroke-linecap="round"/>
+  <text class="type" x="400" y="536" font-size="20" font-weight="bold">“My pelican gets 40 miles per herring.”</text>
+  <path d="M110 551 H690" stroke="#d5c8ac" stroke-width="2"/>
+  <text class="type" x="400" y="578" font-size="17">2026-11-07 04:01:04 SGT (UTC+08:00)</text>
+</svg>

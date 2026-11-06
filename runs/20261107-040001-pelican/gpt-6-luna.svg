@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican’s Cycle of Blame</title>
+  <desc id="desc">A smug pelican pedals a bicycle while a fish complains from the bird’s beak pouch.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 3s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .6s ease-in-out infinite alternate; }
+      .pedal { transform-box: fill-box; transform-origin: center; animation: spin 1.2s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d6"/>
+  <path d="M0 430 Q130 405 260 430 T520 430 T800 425 V600 H0Z" fill="#b9e2d0"/>
+  <path d="M0 468 Q150 447 300 468 T600 462 T800 470" fill="none" stroke="#88c8ae" stroke-width="4"/>
+
+  <text id="title" x="400" y="58" text-anchor="middle" font-size="34" font-weight="900" fill="#163d4a">THE PELICAN’S CYCLE OF BLAME</text>
+  <text x="400" y="88" text-anchor="middle" font-size="17" font-weight="700" fill="#46616a">“I’m not carrying passengers. I’m carrying a grievance.”</text>
+
+  <!-- comic motion marks -->
+  <path d="M130 260 l-28 -12 M138 282 l-34 -2 M153 302 l-27 12" stroke="#e56e4b" stroke-width="5" stroke-linecap="round"/>
+  <text x="105" y="233" font-size="16" font-weight="900" fill="#e56e4b">WHEEE?</text>
+
+  <!-- bicycle -->
+  <g fill="none" stroke="#244b5a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="250" cy="395" r="68" stroke="#244b5a"/>
+      <path d="M250 327V463 M182 395H318 M202 347L298 443 M298 347L202 443" stroke="#5d8b91" stroke-width="3"/>
+      <circle cx="250" cy="395" r="7" fill="#e56e4b" stroke="none"/>
+    </g>
+    <g class="wheel">
+      <circle cx="550" cy="395" r="68" stroke="#244b5a"/>
+      <path d="M550 327V463 M482 395H618 M502 347L598 443 M598 347L502 443" stroke="#5d8b91" stroke-width="3"/>
+      <circle cx="550" cy="395" r="7" fill="#e56e4b" stroke="none"/>
+    </g>
+    <path d="M250 395 L350 395 L410 315 L470 395 L350 395 L318 340"/>
+    <path d="M410 315 L430 286 M401 286 H454"/>
+    <path d="M470 395 L550 395 M466 395 L478 382"/>
+    <path d="M308 340 H334"/>
+    <circle cx="350" cy="395" r="16" stroke="#e56e4b"/>
+    <g class="pedal" stroke="#e56e4b" stroke-width="6">
+      <path d="M350 395 L370 414 M338 376 L350 395"/>
+      <path d="M363 414 H382 M321 376 H338"/>
+    </g>
+  </g>
+  <rect x="383" y="272" width="54" height="10" rx="5" fill="#244b5a"/>
+
+  <!-- pelican, gently bobbing -->
+  <g class="rider">
+    <!-- body and wing -->
+    <ellipse cx="380" cy="245" rx="78" ry="56" fill="#f8f7ef" stroke="#244b5a" stroke-width="5"/>
+    <path d="M330 247 Q376 199 429 239 Q401 270 347 276Z" fill="#d7e5de" stroke="#244b5a" stroke-width="4"/>
+    <path d="M356 244 Q382 222 409 240" fill="none" stroke="#aac7bd" stroke-width="4"/>
+    <!-- neck and head -->
+    <path d="M425 240 Q449 203 447 163 Q445 137 466 124" fill="none" stroke="#f8f7ef" stroke-width="24" stroke-linecap="round"/>
+    <path d="M425 240 Q449 203 447 163 Q445 137 466 124" fill="none" stroke="#244b5a" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="481" cy="120" rx="38" ry="31" fill="#f8f7ef" stroke="#244b5a" stroke-width="5"/>
+    <circle cx="494" cy="113" r="5" fill="#163d4a"/>
+    <path d="M515 120 Q565 115 615 133 Q580 153 516 145Z" fill="#f3a43b" stroke="#244b5a" stroke-width="4"/>
+    <!-- dangling pouch -->
+    <path d="M520 139 Q565 154 602 135 Q596 183 554 187 Q526 177 520 139Z" fill="#ee8b52" stroke="#244b5a" stroke-width="4"/>
+    <!-- fish complaint -->
+    <path d="M551 158 Q568 145 585 158 Q568 172 551 158Z" fill="#79c8d0" stroke="#244b5a" stroke-width="3"/>
+    <path d="M551 158 l-12 -9 v18Z" fill="#79c8d0" stroke="#244b5a" stroke-width="3"/>
+    <circle cx="578" cy="156" r="2.5" fill="#163d4a"/>
+    <path d="M563 179 q7 7 14 0" fill="none" stroke="#244b5a" stroke-width="2"/>
+    <!-- legs pedaling -->
+    <path d="M355 283 Q348 315 350 379 M401 284 Q420 323 356 392" fill="none" stroke="#f3a43b" stroke-width="10" stroke-linecap="round"/>
+    <path d="M350 379 l-15 7 M356 392 l17 5" stroke="#244b5a" stroke-width="5" stroke-linecap="round"/>
+    <!-- tiny cap -->
+    <path d="M454 94 Q478 73 507 93 L511 101 H459Z" fill="#e56e4b" stroke="#244b5a" stroke-width="4"/>
+    <path d="M455 101 H516" stroke="#244b5a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- speech bubble -->
+  <path d="M605 208 Q630 179 681 190 Q720 199 710 231 Q701 256 657 251 L638 267 L642 246 Q600 239 605 208Z" fill="#fff" stroke="#244b5a" stroke-width="3"/>
+  <text x="661" y="216" text-anchor="middle" font-size="13" font-weight="800" fill="#244b5a">YOUR HONOR,</text>
+  <text x="661" y="234" text-anchor="middle" font-size="13" font-weight="800" fill="#244b5a">I WAS SWIMMING!</text>
+
+  <text x="400" y="510" text-anchor="middle" font-size="18" font-weight="800" fill="#244b5a">The pelican insists this counts as “active transport.”</text>
+  <path d="M166 523 H634" stroke="#e6b764" stroke-width="2"/>
+
+  <rect x="0" y="548" width="800" height="52" fill="#163d4a"/>
+  <text x="400" y="580" text-anchor="middle" font-size="17" font-weight="700" fill="#fff4d6">2026-11-07 04:01:55 SGT (UTC+08:00)</text>
+</svg>
