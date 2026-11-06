@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Cycle</title>
+  <desc id="desc">A determined pelican pedals a bicycle, carrying an absurdly large fish while a tiny bird cheers.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center; animation: bob .6s ease-in-out infinite alternate; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-4px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#dff4f3"/>
+  <circle cx="684" cy="105" r="48" fill="#ffd66b"/>
+  <path d="M0 364 Q145 333 283 363 T560 356 T800 361 V600 H0Z" fill="#b8df9b"/>
+  <path d="M0 402 Q172 381 336 400 T800 391" fill="none" stroke="#8cc477" stroke-width="4"/>
+  <path d="M0 460 Q200 436 400 457 T800 448" fill="none" stroke="#8cc477" stroke-width="3"/>
+
+  <text x="400" y="55" text-anchor="middle" font-size="34" font-weight="900" letter-spacing="2" fill="#153b52">THE PELICAN CYCLE</text>
+  <text x="400" y="83" text-anchor="middle" font-size="15" font-weight="700" fill="#416679">“I’m not carrying a fish. I’m carrying a passenger.”</text>
+
+  <!-- distant cheering bird -->
+  <g transform="translate(92 300)">
+    <ellipse cx="0" cy="0" rx="22" ry="15" fill="#f4a261"/>
+    <circle cx="18" cy="-10" r="11" fill="#f4a261"/>
+    <circle cx="21" cy="-12" r="2.2" fill="#173b4d"/>
+    <path d="M28 -10 l15 5 -15 3" fill="#e99a31"/>
+    <path d="M-4 14 l-3 13 M8 14 l4 13" stroke="#b76530" stroke-width="3"/>
+    <path d="M-12 -12 l-8 -13 M-4 -15 l-1 -15" stroke="#b76530" stroke-width="3" stroke-linecap="round"/>
+    <text x="0" y="-39" text-anchor="middle" font-size="12" font-weight="800" fill="#416679">GO, BIRD!</text>
+  </g>
+
+  <!-- bicycle -->
+  <g fill="none" stroke="#183e56" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="270" cy="414" r="57" stroke="#263b49" stroke-width="6"/>
+      <circle cx="270" cy="414" r="5" fill="#e76848" stroke="none"/>
+      <path d="M270 357V471 M213 414H327 M230 374L310 454 M310 374L230 454" stroke="#607d8b" stroke-width="2"/>
+    </g>
+    <g class="wheel">
+      <circle cx="535" cy="414" r="57" stroke="#263b49" stroke-width="6"/>
+      <circle cx="535" cy="414" r="5" fill="#e76848" stroke="none"/>
+      <path d="M535 357V471 M478 414H592 M495 374L575 454 M575 374L495 454" stroke="#607d8b" stroke-width="2"/>
+    </g>
+    <path d="M270 414 L355 414 L414 342 L478 414 L355 414 L330 350"/>
+    <path d="M414 342 L451 342 M318 350 L343 350"/>
+    <path d="M478 414 L521 354"/>
+  </g>
+  <circle cx="355" cy="414" r="11" fill="#f3a641" stroke="#183e56" stroke-width="4"/>
+  <path d="M355 414 L373 395 M355 414 L336 432" stroke="#183e56" stroke-width="5" stroke-linecap="round"/>
+  <path d="M330 350 Q315 342 307 351 M445 337 L458 347" fill="none" stroke="#183e56" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- rider and enormous fish -->
+  <g class="rider">
+    <!-- tail feathers -->
+    <path d="M350 291 Q325 272 314 245 Q341 256 363 276" fill="#efa941" stroke="#a95c2c" stroke-width="3"/>
+    <path d="M359 288 Q350 258 361 238 Q377 263 374 287" fill="#f4bc55" stroke="#a95c2c" stroke-width="3"/>
+    <!-- body -->
+    <ellipse cx="397" cy="290" rx="43" ry="55" transform="rotate(-18 397 290)" fill="#fffdf4" stroke="#294d5b" stroke-width="4"/>
+    <path d="M372 316 Q398 322 422 305" fill="none" stroke="#cfdbd5" stroke-width="4"/>
+    <path d="M385 331 Q369 355 359 379 L345 405 M420 328 Q438 350 456 367 L471 390" fill="none" stroke="#e7a447" stroke-width="11" stroke-linecap="round"/>
+    <path d="M345 405 Q339 412 329 410 M471 390 Q478 397 487 394" fill="none" stroke="#344b53" stroke-width="7" stroke-linecap="round"/>
+    <!-- neck and head -->
+    <path d="M411 276 Q414 235 435 213" fill="none" stroke="#fffdf4" stroke-width="22" stroke-linecap="round"/>
+    <ellipse cx="445" cy="204" rx="31" ry="26" fill="#fffdf4" stroke="#294d5b" stroke-width="4"/>
+    <circle cx="455" cy="197" r="4" fill="#183e56"/>
+    <path d="M468 207 Q519 201 555 216 Q520 230 469 220Z" fill="#ef9b35" stroke="#a85d2e" stroke-width="3"/>
+    <path d="M476 221 Q518 225 545 219 Q522 241 490 235" fill="#f4b543" stroke="#a85d2e" stroke-width="3"/>
+    <path d="M480 219 Q509 219 533 218" fill="none" stroke="#a85d2e" stroke-width="2"/>
+    <!-- helmet -->
+    <path d="M416 190 Q425 163 450 170 Q468 174 474 190 L416 190Z" fill="#e76848" stroke="#294d5b" stroke-width="3"/>
+    <path d="M414 191 H477" stroke="#294d5b" stroke-width="4" stroke-linecap="round"/>
+    <!-- wing on handlebar -->
+    <path d="M377 285 Q350 273 331 290 Q350 300 376 297" fill="#f7f3e7" stroke="#294d5b" stroke-width="3"/>
+    <path d="M365 292 L342 290" stroke="#c3d0ca" stroke-width="2"/>
+    <!-- absurd passenger fish in beak -->
+    <g transform="translate(0 0)">
+      <path d="M513 198 Q538 177 562 196 Q579 208 562 226 Q539 241 513 220 Q502 209 513 198Z" fill="#77b9c2" stroke="#24546a" stroke-width="3"/>
+      <path d="M558 197 L578 184 L575 205Z M558 226 L579 238 L575 217Z" fill="#ef9b35" stroke="#24546a" stroke-width="2"/>
+      <circle cx="539" cy="202" r="3" fill="#173b4d"/>
+      <path d="M521 210 Q535 214 548 210" fill="none" stroke="#d9f1e9" stroke-width="2"/>
+      <text x="548" y="174" text-anchor="middle" font-size="11" font-weight="800" fill="#24546a">TAXI?</text>
+    </g>
+  </g>
+
+  <path d="M183 328 Q199 315 211 329 M602 326 Q614 313 626 327" fill="none" stroke="#5b9a72" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="507" text-anchor="middle" font-size="17" font-weight="800" fill="#24546a">Two wheels, one beak, absolutely no cargo policy.</text>
+  <path d="M185 524 H615" stroke="#6eaa7d" stroke-width="2"/>
+
+  <rect x="0" y="550" width="800" height="50" fill="#173b4d"/>
+  <text x="400" y="581" text-anchor="middle" font-size="17" font-weight="700" fill="#fffdf4">2026-11-07 00:02:59 SGT (UTC+08:00)</text>
+</svg>
