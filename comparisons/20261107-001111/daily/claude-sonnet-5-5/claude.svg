@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#ffffff"/>
+  <text x="300" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#222">Robot Path on 5x5 Grid</text>
+
+  <!-- Visited cells -->
+  <g fill="#add8e6">
+    <rect x="150" y="50" width="60" height="60"/>
+    <rect x="210" y="50" width="60" height="60"/>
+    <rect x="270" y="50" width="60" height="60"/>
+    <rect x="270" y="110" width="60" height="60"/>
+    <rect x="270" y="170" width="60" height="60"/>
+    <rect x="330" y="170" width="60" height="60"/>
+  </g>
+
+  <!-- Grid -->
+  <g fill="none" stroke="#444" stroke-width="1.5">
+    <rect x="150" y="50" width="300" height="300"/>
+    <path d="M210 50V350M270 50V350M330 50V350M390 50V350M150 110H450M150 170H450M150 230H450M150 290H450"/>
+  </g>
+
+  <!-- Path -->
+  <polyline points="180,80 240,80 300,80 300,140 300,200 360,200" fill="none" stroke="#e00000" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Start marker -->
+  <circle cx="180" cy="80" r="6" fill="#e00000"/>
+  <text x="142" y="85" font-family="Arial, sans-serif" font-size="13" text-anchor="end" fill="#222">Start</text>
+
+  <!-- Final cell -->
+  <circle cx="360" cy="200" r="14" fill="#2e9e3e" stroke="#1b6b27" stroke-width="2"/>
+  <line x1="392" y1="200" x2="458" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="462" y="193" font-family="Arial, sans-serif" font-size="13" fill="#222">Final: row 3, col 4</text>
+  <text x="462" y="215" font-family="Arial, sans-serif" font-size="13" fill="#222">Facing: Right</text>
+
+  <!-- Footer -->
+  <text x="300" y="383" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#222">2026-11-07 00:11:11 SGT (UTC+08:00)</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#ffffff"/>
+  <text x="300" y="30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#222">Robot path: F, F, R, F, F, L, F (start top-left, facing Right)</text>
+
+  <!-- visited cells (light blue) -->
+  <g fill="#bfe0ff" stroke="none">
+    <rect x="150" y="50" width="60" height="60"/>
+    <rect x="210" y="50" width="60" height="60"/>
+    <rect x="270" y="50" width="60" height="60"/>
+    <rect x="270" y="110" width="60" height="60"/>
+    <rect x="270" y="170" width="60" height="60"/>
+    <rect x="330" y="170" width="60" height="60"/>
+  </g>
+
+  <!-- 5x5 grid lines -->
+  <g stroke="#333" stroke-width="1.5" fill="none">
+    <rect x="150" y="50" width="300" height="300"/>
+    <line x1="210" y1="50" x2="210" y2="350"/>
+    <line x1="270" y1="50" x2="270" y2="350"/>
+    <line x1="330" y1="50" x2="330" y2="350"/>
+    <line x1="390" y1="50" x2="390" y2="350"/>
+    <line x1="150" y1="110" x2="450" y2="110"/>
+    <line x1="150" y1="170" x2="450" y2="170"/>
+    <line x1="150" y1="230" x2="450" y2="230"/>
+    <line x1="150" y1="290" x2="450" y2="290"/>
+  </g>
+
+  <!-- path through cell centers -->
+  <polyline points="180,80 240,80 300,80 300,140 300,200 360,200" fill="none" stroke="#e02020" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- start marker -->
+  <circle cx="180" cy="80" r="5" fill="#ffffff" stroke="#e02020" stroke-width="2"/>
+
+  <!-- final cell marker -->
+  <circle cx="360" cy="200" r="12" fill="#22a822"/>
+  <!-- arrow showing final facing (Right) -->
+  <polygon points="374,200 366,194 366,206" fill="#22a822"/>
+
+  <!-- labels to the right of the grid -->
+  <text x="462" y="190" font-family="Arial, sans-serif" font-size="13" fill="#222">Final cell:</text>
+  <text x="462" y="208" font-family="Arial, sans-serif" font-size="13" fill="#222">Row 3, Col 4</text>
+  <text x="462" y="232" font-family="Arial, sans-serif" font-size="13" fill="#222">Facing: Right</text>
+
+  <!-- label to the left of the grid -->
+  <text x="140" y="84" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#222">Start</text>
+
+  <!-- footer -->
+  <text x="300" y="382" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#444">2026-11-07 00:10:24 SGT (UTC+08:00)</text>
+</svg>
