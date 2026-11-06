@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Great Pelican Getaway</title>
+  <desc id="desc">A smug pelican pedals a bicycle, carrying a tiny fish in its beak while a bewildered fish watches from a basket.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#243047;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#d9f2ed;stroke:#243047;stroke-width:7}
+      .spoke{stroke:#66818a;stroke-width:3}
+      .frame{fill:none;stroke:#e45f48;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+      .small{font-family:Arial,Helvetica,sans-serif}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .turn{transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+      .bob{transform-box:fill-box;transform-origin:center;animation:pedal .65s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#f9e9b8"/>
+  <path d="M0 354 Q160 324 315 350 T800 338 V600 H0Z" fill="#a9d8c0"/>
+  <circle cx="684" cy="103" r="45" fill="#f4a84d"/>
+  <path d="M0 386 Q155 367 298 390 T574 382 T800 389" fill="none" stroke="#6bb598" stroke-width="5"/>
+
+  <text id="title" x="400" y="55" text-anchor="middle" class="small" font-size="34" font-weight="900" fill="#243047" letter-spacing="1">THE GREAT PELICAN GETAWAY</text>
+  <text x="400" y="82" text-anchor="middle" class="small" font-size="17" font-weight="700" fill="#526072">“I’m not late. I’m making a dramatic entrance.”</text>
+
+  <!-- bicycle -->
+  <g aria-label="bicycle">
+    <circle class="wheel" cx="244" cy="408" r="72"/>
+    <circle class="wheel" cx="558" cy="408" r="72"/>
+    <g class="turn">
+      <path class="spoke" d="M244 336V480 M172 408H316 M193 357L295 459 M295 357L193 459"/>
+      <circle cx="244" cy="408" r="8" fill="#e45f48"/>
+    </g>
+    <g class="turn">
+      <path class="spoke" d="M558 336V480 M486 408H630 M507 357L609 459 M609 357L507 459"/>
+      <circle cx="558" cy="408" r="8" fill="#e45f48"/>
+    </g>
+    <path class="frame" d="M244 408 L343 408 L302 330 L244 408 M343 408 L400 324 L558 408 M400 324 L343 408 M343 408 L373 455"/>
+    <path d="M287 325h43 M390 318h50 M528 337l23-22" fill="none" stroke="#243047" stroke-width="8" stroke-linecap="round"/>
+    <path d="M376 455h-30 M376 455h30" fill="none" stroke="#243047" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="343" cy="408" r="10" fill="#243047"/>
+  </g>
+
+  <!-- basket and fish passenger -->
+  <path d="M487 248h89l-9 53h-72z" fill="#d7964a" class="ink"/>
+  <path d="M497 264h71M494 279h77" stroke="#f5cc83" stroke-width="5"/>
+  <path d="M518 246q-4-28 20-30 23 0 21 29" fill="none" stroke="#243047" stroke-width="5"/>
+  <g transform="translate(530 228)">
+    <path d="M-19 0q18-18 37 0-19 18-37 0M18 0l12-10v20z" fill="#65b8bc" stroke="#243047" stroke-width="3"/>
+    <circle cx="-8" cy="-3" r="2.5" fill="#243047"/>
+    <path d="M-11 5q5 6 10 1" fill="none" stroke="#243047" stroke-width="2"/>
+  </g>
+
+  <!-- expressive pelican -->
+  <g class="bob">
+    <path d="M355 240q-20-59 16-97 31-33 69-7 31 22 17 66l-14 47z" fill="#fffdf4" class="ink"/>
+    <path d="M398 226q42-21 73-3 12 7 5 19-22 33-81 24z" fill="#f4a84d" class="ink"/>
+    <path d="M404 251q33 18 67-3-13 37-46 40-24 2-21-37z" fill="#e9815c" stroke="#243047" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M425 220q22 4 40 0" fill="none" stroke="#243047" stroke-width="4"/>
+    <circle cx="421" cy="158" r="7" fill="#243047"/>
+    <path d="M407 147q15-12 28 0" fill="none" stroke="#243047" stroke-width="4" stroke-linecap="round"/>
+    <path d="M385 262q-16 39-4 68l33 3q3-31 19-48" fill="#fffdf4" class="ink"/>
+    <path d="M414 325l-16 6-10-8M431 327l16 4 9-9" fill="none" stroke="#e45f48" stroke-width="7" stroke-linecap="round"/>
+    <path d="M399 329l-20 2M444 331l19 1" fill="none" stroke="#243047" stroke-width="5" stroke-linecap="round"/>
+    <!-- tiny fish in beak -->
+    <path d="M476 236q13-12 27 0-14 12-27 0M502 236l9-7v14z" fill="#65b8bc" stroke="#243047" stroke-width="2.5"/>
+    <circle cx="483" cy="234" r="2" fill="#243047"/>
+    <!-- jaunty helmet -->
+    <path d="M370 139q8-42 43-45 33-2 44 34z" fill="#e45f48" class="ink"/>
+    <path d="M362 140h102" stroke="#243047" stroke-width="7" stroke-linecap="round"/>
+    <path d="M398 99l18 36M425 99l16 36" stroke="#f9c7a9" stroke-width="4"/>
+    <!-- wing -->
+    <path d="M367 215q-38-5-52 23 20 18 57 5" fill="#f4f0df" stroke="#243047" stroke-width="5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- pedals and motion marks -->
+  <path d="M125 305l-20-11M144 286l-12-21M617 279l19-14M635 299l24-5" stroke="#e45f48" stroke-width="5" stroke-linecap="round"/>
+  <path d="M271 505h271" stroke="#718a7f" stroke-width="4" stroke-linecap="round"/>
+  <text x="400" y="536" text-anchor="middle" class="small" font-size="19" font-weight="700" fill="#243047">Big beak. Tiny fish. Questionable traffic manners.</text>
+  <path d="M0 553H800" stroke="#243047" stroke-width="2" opacity=".22"/>
+  <text x="400" y="581" text-anchor="middle" class="small" font-size="16" font-weight="700" fill="#243047">2026-11-06 16:03:07 SGT (UTC+08:00)</text>
+</svg>
