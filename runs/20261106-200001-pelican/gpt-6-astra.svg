@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">PELICAN EXPRESS</title>
+  <desc id="desc">A determined pelican cycles with a giant beak full of fish, wearing a tiny helmet and a necktie. Its wheels spin, pedals turn, and body bobs. A sign promises free delivery, with fish charged extra.</desc>
+  <defs>
+    <pattern id="paper" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="1" fill="#dfd5b9" opacity=".35"/>
+    </pattern>
+    <g id="spokes" stroke="#263c48" stroke-width="3">
+      <path d="M-65 0H65 M0-65V65 M-46-46L46 46 M-46 46L46-46"/>
+      <circle r="8" fill="#f5bb45" stroke-width="4"/>
+    </g>
+    <g id="fish">
+      <path d="M0 0Q18-16 40 0Q18 16 0 0L-13-10V10Z" fill="#68b9b0" stroke="#263c48" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="29" cy="-2" r="3" fill="#263c48"/>
+      <path d="M19-7Q13 0 19 7" fill="none" stroke="#263c48" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff6df"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M0 110H800" stroke="#263c48" stroke-width="3"/>
+  <text x="400" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="43" font-weight="900" letter-spacing="3" fill="#263c48">PELICAN EXPRESS</text>
+  <text x="400" y="89" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#b95135">THE GIG ECONOMY HAS A VERY BIG BILL.</text>
+
+  <!-- One seaside delivery route -->
+  <path d="M0 349Q145 325 280 349T560 347T800 340V443H0Z" fill="#c9e5db"/>
+  <path d="M0 377Q95 364 184 377M610 374Q705 361 800 375" fill="none" stroke="#95c5be" stroke-width="3"/>
+  <path d="M36 162Q48 150 60 162Q72 150 84 162M222 142Q232 132 242 142Q252 132 262 142" fill="none" stroke="#849b99" stroke-width="3" stroke-linecap="round"/>
+  <rect y="443" width="800" height="57" fill="#e5cfa3"/>
+  <path d="M0 454H800" stroke="#263c48" stroke-width="4"/>
+  <path d="M25 480H105M160 480H240M595 480H675M730 480H790" stroke="#fff6df" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="402" cy="454" rx="214" ry="12" fill="#263c48" opacity=".13"/>
+
+  <!-- Roadside joke -->
+  <path d="M693 286V444" stroke="#263c48" stroke-width="8"/>
+  <rect x="608" y="210" width="169" height="91" rx="8" fill="#f7bd48" stroke="#263c48" stroke-width="4"/>
+  <text x="692" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="900" fill="#263c48">FREE DELIVERY*</text>
+  <text x="692" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#263c48">*fish not included</text>
+  <path d="M665 283H721M713 276L721 283L713 290" fill="none" stroke="#263c48" stroke-width="3"/>
+
+  <!-- Spinning wheels, with fixed tires -->
+  <g fill="#fff6df" stroke="#263c48">
+    <circle cx="258" cy="382" r="72" stroke-width="9"/>
+    <circle cx="545" cy="382" r="72" stroke-width="9"/>
+  </g>
+  <g transform="translate(258 382)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(545 382)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M258 382L327 284L388 382ZM327 284L505 284L388 382M505 284L545 382" stroke="#263c48" stroke-width="14"/>
+    <path d="M258 382L327 284L388 382ZM327 284L505 284L388 382M505 284L545 382" stroke="#dc6147" stroke-width="8"/>
+    <path d="M327 284L315 258M505 284L493 247L520 229L545 234" stroke="#263c48" stroke-width="9"/>
+    <path d="M290 257H339" stroke="#263c48" stroke-width="13"/>
+    <path d="M258 382L388 369Q407 382 388 395L258 387Z" stroke="#263c48" stroke-width="3"/>
+  </g>
+  <circle cx="388" cy="382" r="19" fill="#f5bb45" stroke="#263c48" stroke-width="4"/>
+
+  <!-- Bobbing bird -->
+  <g stroke="#263c48" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+
+    <!-- Far leg -->
+    <path d="M354 286L406 323L414 366" fill="none" stroke="#d99532" stroke-width="13"/>
+    <path d="M305 254L262 235L281 275L250 269L283 299" fill="#fffdf2"/>
+
+    <!-- Body and long neck -->
+    <path d="M303 205C263 227 267 288 310 302C355 318 401 290 411 250C417 222 427 201 450 186L454 155C416 147 389 173 380 211C358 195 327 192 303 205Z" fill="#fffdf2"/>
+    <path d="M301 222Q341 206 374 242Q348 287 304 269Q323 256 322 242" fill="#e0e8df"/>
+    <path d="M326 237L343 248M319 248L333 258" fill="none" stroke="#9aacaa" stroke-width="3"/>
+
+    <!-- Wing gripping the bars -->
+    <path d="M366 223Q415 217 444 239L509 240" fill="none" stroke="#263c48" stroke-width="20"/>
+    <path d="M366 223Q415 217 444 239L509 240" fill="none" stroke="#fffdf2" stroke-width="12"/>
+    <path d="M502 234L512 243M509 233L518 241" fill="none" stroke-width="3"/>
+
+    <!-- Tiny corporate tie -->
+    <path d="M409 205L426 213L416 225L430 263L410 280L400 259L407 224L401 216Z" fill="#dc6147"/>
+    <path d="M408 241L423 252" stroke="#fff6df" stroke-width="3"/>
+
+    <!-- Head -->
+    <path d="M408 168C403 133 427 117 453 125C480 131 484 160 468 180L443 192Z" fill="#fffdf2"/>
+
+    <!-- Huge pouch full of questionable cargo -->
+    <path d="M465 158L606 169Q600 221 551 228Q497 230 463 177Z" fill="#f6bc53"/>
+    <path d="M479 179Q529 194 587 177" fill="none" stroke="#d98c31" stroke-width="3"/>
+    <g stroke-width="3">
+      <use href="#fish" transform="translate(500 185) rotate(-17) scale(.85)"/>
+      <use href="#fish" transform="translate(548 190) rotate(12) scale(.8)"/>
+    </g>
+    <path d="M465 152L616 165Q620 173 604 177L463 169Z" fill="#f9cd68"/>
+    <path d="M478 165L596 170" stroke="#b8772b" stroke-width="2"/>
+
+    <!-- Exhausted eye and skeptical eyebrow -->
+    <ellipse cx="450" cy="148" rx="13" ry="15" fill="white" stroke-width="3"/>
+    <circle cx="455" cy="150" r="5" fill="#263c48" stroke="none"/>
+    <path d="M437 142L461 144M434 130L458 135" fill="none" stroke-width="4"/>
+
+    <!-- Comically inadequate helmet -->
+    <path d="M412 130Q410 109 435 111Q454 112 455 128Z" fill="#dc6147"/>
+    <path d="M420 117L420 125M433 115L433 123" stroke="#fff6df" stroke-width="3"/>
+    <path d="M417 132L429 173L444 178" fill="none" stroke-width="3"/>
+    <path d="M396 147Q386 157 392 161Q399 162 396 147Z" fill="#78bed0" stroke-width="2"/>
+
+    <!-- Near leg makes a small pedaling motion -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-4 342 290;5 342 290;-4 342 290" dur=".8s" repeatCount="indefinite"/>
+      <path d="M342 290L366 329L377 361" fill="none" stroke="#263c48" stroke-width="16"/>
+      <path d="M342 290L366 329L377 361" fill="none" stroke="#f5bb45" stroke-width="10"/>
+      <path d="M375 353L405 367L398 375L386 370L378 375L364 367Z" fill="#f5bb45"/>
+    </g>
+  </g>
+
+  <!-- Rotating crank and pedals -->
+  <g transform="translate(388 382)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M-19-17L19 17" stroke="#263c48" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-29-17H-9M9 17H29" stroke="#263c48" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <circle r="5" fill="#fff6df"/>
+  </g>
+
+  <!-- Speech stays still for readability -->
+  <path d="M66 179Q66 164 82 164H240Q256 164 256 180V221Q256 237 240 237H218L245 263L195 237H82Q66 237 66 221Z" fill="white" stroke="#263c48" stroke-width="3"/>
+  <text x="161" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#263c48">“Paid in exposure.</text>
+  <text x="161" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#263c48">Mostly headwind.”</text>
+
+  <!-- Dedicated caption and timestamp footer -->
+  <rect x="0" y="500" width="800" height="100" fill="#263c48"/>
+  <text x="400" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff6df">One pelican. Two wheels. A bill nobody wants to pay.</text>
+  <path d="M80 550H720" stroke="#fff6df" stroke-opacity=".3"/>
+  <text x="400" y="579" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#f7ce74">2026-11-06 20:00:01 SGT (UTC+08:00)</text>
+</svg>

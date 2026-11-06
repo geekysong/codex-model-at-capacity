@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Daily Commute</title>
+  <desc id="desc">A pelican rides a bicycle with spinning wheels and bobbing pedals beneath a satirical caption.</desc>
+  <defs>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#eabf86" opacity=".45"/>
+    </pattern>
+    <style>
+      .ink { stroke:#253447; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#253447; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { animation: spin 2s linear infinite; transform-box:fill-box; transform-origin:center; }
+      .rider { animation: bob 1s ease-in-out infinite alternate; transform-box:fill-box; transform-origin:center; }
+      .pedals { animation: spin 2s linear infinite; transform-box:fill-box; transform-origin:center; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { from { transform:translateY(0); } to { transform:translateY(-5px); } }
+      @media (prefers-reduced-motion: reduce) { .wheel,.rider,.pedals { animation:none; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4db"/>
+  <rect width="800" height="510" fill="url(#dots)"/>
+  <circle cx="655" cy="150" r="46" fill="#ffd06a"/>
+  <path d="M0 365 Q110 334 220 364 T440 361 T800 357 V470 H0Z" fill="#b9dcc5"/>
+  <path d="M0 402 Q180 380 355 404 T800 395 V470 H0Z" fill="#8bc5aa"/>
+  <path d="M0 464 H800" stroke="#253447" stroke-width="5"/>
+  <path d="M0 477 H800" stroke="#d6a46c" stroke-width="3" stroke-dasharray="18 15"/>
+
+  <text x="400" y="64" text-anchor="middle" fill="#253447" font-family="Arial, sans-serif" font-size="42" font-weight="900" letter-spacing="2">THE DAILY COMMUTE</text>
+  <text x="400" y="92" text-anchor="middle" fill="#98543e" font-family="Arial, sans-serif" font-size="17" font-weight="bold">ONE BIRD. TWO WHEELS. ZERO REGRETS.</text>
+
+  <g fill="none" stroke="#fffaf0" stroke-width="8" stroke-linecap="round" opacity=".9">
+    <path d="M87 173 h83 M70 192 h58 M125 211 h56"/>
+    <path d="M91 322 h54 M110 339 h80"/>
+  </g>
+
+  <g class="wheel">
+    <circle cx="250" cy="408" r="68" fill="#fffaf0" class="ink"/>
+    <circle cx="250" cy="408" r="57" fill="none" stroke="#d48b67" stroke-width="4"/>
+    <g stroke="#9aa9a6" stroke-width="3">
+      <path d="M250 351 V465 M193 408 H307 M210 368 L290 448 M290 368 L210 448"/>
+    </g>
+    <circle cx="250" cy="408" r="7" fill="#253447"/>
+  </g>
+  <g class="wheel">
+    <circle cx="550" cy="408" r="68" fill="#fffaf0" class="ink"/>
+    <circle cx="550" cy="408" r="57" fill="none" stroke="#d48b67" stroke-width="4"/>
+    <g stroke="#9aa9a6" stroke-width="3">
+      <path d="M550 351 V465 M493 408 H607 M510 368 L590 448 M590 368 L510 448"/>
+    </g>
+    <circle cx="550" cy="408" r="7" fill="#253447"/>
+  </g>
+
+  <g fill="none" class="ink">
+    <path d="M250 408 L329 326 L390 408 Z" stroke="#df6658" stroke-width="9"/>
+    <path d="M329 326 L480 326 L390 408" stroke="#df6658" stroke-width="9"/>
+    <path d="M480 326 L550 408 M464 290 L480 326" stroke="#253447" stroke-width="7"/>
+    <path d="M459 289 Q475 276 493 286 L501 292" stroke="#253447" stroke-width="7"/>
+    <path d="M329 326 L319 300 M300 298 H345" stroke="#253447" stroke-width="7"/>
+  </g>
+  <circle cx="390" cy="408" r="22" fill="#f3bd70" class="thin"/>
+  <g class="pedals">
+    <path d="M375 394 L405 422" fill="none" stroke="#253447" stroke-width="5" stroke-linecap="round"/>
+    <path d="M365 393 H380 M400 423 H415" fill="none" stroke="#253447" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g class="rider">
+    <path d="M338 298 Q349 328 373 345 L390 385" fill="none" stroke="#e99a45" stroke-width="12" stroke-linecap="round"/>
+    <path d="M389 384 Q402 386 412 397" fill="none" stroke="#e99a45" stroke-width="9" stroke-linecap="round"/>
+    <path d="M367 300 Q385 319 408 323 L432 350" fill="none" stroke="#e99a45" stroke-width="12" stroke-linecap="round"/>
+    <path d="M429 349 Q443 347 454 353" fill="none" stroke="#e99a45" stroke-width="9" stroke-linecap="round"/>
+
+    <path d="M288 269 Q264 260 248 238 Q249 272 274 286" fill="#e8e6dc" class="ink"/>
+    <ellipse cx="331" cy="264" rx="77" ry="53" fill="#fffdf4" class="ink" transform="rotate(-8 331 264)"/>
+    <path d="M287 255 Q323 231 366 255 Q347 288 310 285 Q293 282 287 255Z" fill="#dce5df" class="thin"/>
+    <path d="M347 217 Q382 195 378 166 Q376 145 394 133 Q415 119 435 135 Q452 150 446 171 Q440 188 427 198 Q417 210 421 237" fill="#fffdf4" class="ink"/>
+    <path d="M431 155 Q477 151 527 165 Q486 177 442 177 Z" fill="#f4a339" class="ink"/>
+    <path d="M441 175 Q482 179 520 166 Q506 216 472 225 Q443 231 427 198" fill="#f7bd58" class="ink"/>
+    <path d="M447 183 Q464 190 483 188" fill="none" stroke="#d78633" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="420" cy="153" r="11" fill="#fff" class="thin"/>
+    <circle cx="423" cy="153" r="4" fill="#253447"/>
+    <path d="M402 138 Q411 130 422 134" fill="none" stroke="#253447" stroke-width="4" stroke-linecap="round"/>
+    <path d="M389 135 Q402 114 428 124 L442 133 Q422 129 405 138Z" fill="#de6658" class="thin"/>
+    <path d="M405 120 Q414 105 426 111 L434 124" fill="#de6658" class="thin"/>
+    <path d="M387 251 Q411 260 430 282 L462 286" fill="none" stroke="#dce5df" stroke-width="16" stroke-linecap="round"/>
+    <path d="M387 251 Q411 260 430 282 L462 286" fill="none" stroke="#253447" stroke-width="3" stroke-linecap="round"/>
+    <path d="M458 286 Q469 277 476 286" fill="none" stroke="#253447" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(621 275) rotate(5)">
+    <rect x="0" y="0" width="132" height="64" rx="8" fill="#fffaf0" class="thin"/>
+    <text x="66" y="26" text-anchor="middle" fill="#253447" font-family="Arial, sans-serif" font-size="14" font-weight="bold">BIKE LANE</text>
+    <text x="66" y="48" text-anchor="middle" fill="#df6658" font-family="Arial, sans-serif" font-size="14" font-weight="bold">ISH →</text>
+    <path d="M65 64 V128" stroke="#253447" stroke-width="5"/>
+  </g>
+
+  <rect y="510" width="800" height="90" fill="#253447"/>
+  <text x="400" y="544" text-anchor="middle" fill="#fff4db" font-family="Arial, sans-serif" font-size="21" font-weight="bold">“My other vehicle is a very large mouth.”</text>
+  <text x="400" y="579" text-anchor="middle" fill="#cbd9d5" font-family="Arial, sans-serif" font-size="15">2026-11-06 20:03:05 SGT (UTC+08:00)</text>
+</svg>

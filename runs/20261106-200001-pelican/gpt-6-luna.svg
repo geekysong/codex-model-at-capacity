@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Great Pelican Commute</title>
+  <desc id="desc">A determined pelican pedals a bicycle while a fish clings to the handlebars. The wheels turn and the pelican bobs as he rides.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; }
+    .wheel { transform-box: fill-box; transform-origin: center; animation: spin 2.4s linear infinite; }
+    .rider { transform-box: fill-box; transform-origin: center; animation: bob .55s ease-in-out infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bob { to { transform: translateY(-4px); } }
+  </style>
+
+  <rect width="800" height="600" fill="#fff3d6"/>
+  <path d="M0 420 Q170 390 330 420 T800 410 V600 H0Z" fill="#a9d9c7"/>
+  <path d="M0 470 Q180 450 360 475 T800 455" fill="none" stroke="#6aa995" stroke-width="5"/>
+  <text x="400" y="62" text-anchor="middle" font-size="34" font-weight="900" fill="#173c49">THE GREAT PELICAN COMMUTE</text>
+  <text x="400" y="94" text-anchor="middle" font-size="17" font-weight="700" fill="#b44d36">“I’m cutting carbs. The fish is just supervising.”</text>
+
+  <!-- motion marks -->
+  <path d="M125 300h48 M105 328h40 M650 280h40" stroke="#e77b45" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="165" cy="390" r="61" fill="#f8fbf2" stroke="#234f59" stroke-width="8" class="wheel"/>
+  <circle cx="165" cy="390" r="8" fill="#e77b45"/>
+  <g class="wheel" stroke="#7fa8a0" stroke-width="3">
+    <path d="M165 329v122 M104 390h122 M122 347l86 86 M208 347l-86 86"/>
+  </g>
+  <circle cx="625" cy="390" r="61" fill="#f8fbf2" stroke="#234f59" stroke-width="8" class="wheel"/>
+  <circle cx="625" cy="390" r="8" fill="#e77b45"/>
+  <g class="wheel" stroke="#7fa8a0" stroke-width="3">
+    <path d="M625 329v122 M564 390h122 M582 347l86 86 M668 347l-86 86"/>
+  </g>
+
+  <!-- bicycle frame -->
+  <path d="M165 390 L315 390 L405 300 L485 390 L315 390 L270 300"
+        fill="none" stroke="#d85d3c" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M405 300h80 M468 282l17 18" fill="none" stroke="#234f59" stroke-width="9" stroke-linecap="round"/>
+  <path d="M263 293h49 M282 293v-12" fill="none" stroke="#234f59" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="315" cy="390" r="16" fill="#f2bd4b" stroke="#234f59" stroke-width="5"/>
+  <path d="M315 390l25 18 M315 390l-20-22" stroke="#234f59" stroke-width="6" stroke-linecap="round"/>
+  <path d="M337 409h18 M282 368h18" stroke="#234f59" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- pelican, bobbing as it pedals -->
+  <g class="rider">
+    <path d="M300 292 Q307 252 344 245 Q379 239 398 267 L380 305 Q347 321 319 307Z" fill="#f7f3e8" stroke="#234f59" stroke-width="5"/>
+    <path d="M355 271 Q366 241 389 224" fill="none" stroke="#234f59" stroke-width="16" stroke-linecap="round"/>
+    <ellipse cx="397" cy="220" rx="36" ry="27" fill="#f7f3e8" stroke="#234f59" stroke-width="5"/>
+    <path d="M420 223 Q468 218 493 236 Q466 254 423 240Z" fill="#ef9b42" stroke="#a94f34" stroke-width="4"/>
+    <path d="M421 238 Q457 257 483 243 Q461 278 426 253Z" fill="#f5b44e" stroke="#a94f34" stroke-width="4"/>
+    <circle cx="408" cy="214" r="4.5" fill="#173c49"/>
+    <path d="M386 193 Q397 178 410 194" fill="none" stroke="#d85d3c" stroke-width="5" stroke-linecap="round"/>
+    <path d="M331 304 L315 390 M372 302 L340 408" fill="none" stroke="#234f59" stroke-width="8" stroke-linecap="round"/>
+    <path d="M315 390l-19-22 M340 408l15 1" fill="none" stroke="#e77b45" stroke-width="8" stroke-linecap="round"/>
+    <path d="M329 277 Q345 265 359 278" fill="none" stroke="#d9e9df" stroke-width="7"/>
+    <path d="M367 267l17 5" stroke="#e77b45" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- fish passenger -->
+  <g transform="translate(494 205) rotate(10)">
+    <ellipse cx="0" cy="0" rx="27" ry="16" fill="#74bdd0" stroke="#234f59" stroke-width="4"/>
+    <path d="M-24 0l-18-14v28Z" fill="#ef9b42" stroke="#234f59" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="12" cy="-4" r="3.5" fill="#173c49"/>
+    <path d="M25 2q8 4 12 0" fill="none" stroke="#234f59" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-2-12l8-9 8 11" fill="#ef9b42" stroke="#234f59" stroke-width="3"/>
+  </g>
+  <path d="M488 226q-10 18-3 35" fill="none" stroke="#234f59" stroke-width="3" stroke-dasharray="5 5"/>
+  <text x="546" y="192" font-size="15" font-weight="700" fill="#173c49">“I called shotgun.”</text>
+
+  <path d="M62 500h676" stroke="#234f59" stroke-width="3" opacity=".25"/>
+  <text x="400" y="533" text-anchor="middle" font-size="17" font-weight="700" fill="#173c49">Two wheels, one beak, and absolutely no helmet budget.</text>
+  <text x="400" y="579" text-anchor="middle" font-size="15" font-weight="700" fill="#173c49">2026-11-06 20:02:28 SGT (UTC+08:00)</text>
+</svg>
