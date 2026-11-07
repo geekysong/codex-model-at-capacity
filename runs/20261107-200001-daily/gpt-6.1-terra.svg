@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#ffffff"/>
+
+  <!-- Visited cells -->
+  <g fill="#d9efff">
+    <rect x="150" y="30" width="60" height="60"/>
+    <rect x="210" y="30" width="60" height="60"/>
+    <rect x="270" y="30" width="60" height="60"/>
+    <rect x="270" y="90" width="60" height="60"/>
+    <rect x="270" y="150" width="60" height="60"/>
+    <rect x="330" y="150" width="60" height="60"/>
+  </g>
+
+  <!-- Grid -->
+  <g fill="none" stroke="#526273" stroke-width="1.5">
+    <rect x="150" y="30" width="300" height="300"/>
+    <path d="M210 30V330 M270 30V330 M330 30V330 M390 30V330
+             M150 90H450 M150 150H450 M150 210H450 M150 270H450"/>
+  </g>
+
+  <!-- Route -->
+  <polyline points="180,60 240,60 300,60 300,120 300,180 360,180"
+            fill="none" stroke="#d52b2b" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Starting robot, facing right -->
+  <g transform="translate(180 60)">
+    <rect x="-17" y="-13" width="30" height="26" rx="5"
+          fill="#465569" stroke="#263340" stroke-width="2"/>
+    <circle cx="-8" cy="-5" r="2" fill="#ffffff"/>
+    <circle cx="-8" cy="5" r="2" fill="#ffffff"/>
+    <path d="M13 -7 L23 0 L13 7 Z" fill="#465569"/>
+  </g>
+
+  <!-- Final position -->
+  <circle cx="360" cy="180" r="10" fill="#16833b" stroke="#ffffff" stroke-width="2"/>
+
+  <g fill="#263340" font-family="Arial, sans-serif" font-size="15">
+    <text x="462" y="171">Row 3, column 4</text>
+    <text x="462" y="193">Facing: Right</text>
+  </g>
+
+  <line x1="30" y1="352" x2="570" y2="352" stroke="#cbd5df"/>
+  <text x="300" y="380" text-anchor="middle" fill="#344454"
+        font-family="Arial, sans-serif" font-size="15">2026-11-07 20:04:37 SGT (UTC+08:00)</text>
+</svg>

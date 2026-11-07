@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A cheerful pelican rides a bicycle with spinning wheels and a bobbing body. The caption says his bill covers the fare.</desc>
+  <defs>
+    <style>
+      .ink { stroke: #243447; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { stroke: #243447; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.4s linear infinite; }
+      .rider { animation: bob .7s ease-in-out infinite alternate; }
+      .pedal { transform-origin: 405px 389px; animation: spin 1.4s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-5px); } }
+      @media (prefers-reduced-motion: reduce) { .wheel, .rider, .pedal { animation-duration: 8s; } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d9"/>
+  <rect x="18" y="18" width="764" height="564" rx="22" fill="#e7f5f2" stroke="#243447" stroke-width="4"/>
+  <text x="400" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="36" letter-spacing="1" fill="#243447">THE PELICAN COMMUTE</text>
+  <path d="M105 87H695" stroke="#f3a43b" stroke-width="5" stroke-linecap="round"/>
+
+  <circle cx="675" cy="137" r="35" fill="#ffd65c"/>
+  <g fill="#fff" opacity=".9">
+    <path d="M87 156c0-15 13-26 28-23 8-22 41-23 50 0 18-4 32 8 32 23z"/>
+    <path d="M530 119c1-13 12-22 25-20 8-19 34-19 42 0 15-3 27 7 27 20z"/>
+  </g>
+  <path d="M30 417Q145 399 256 418T480 415T770 410V485H30Z" fill="#b9dfbd"/>
+  <path d="M31 459H769" stroke="#243447" stroke-width="5"/>
+  <path d="M53 480H747" stroke="#91b6a3" stroke-width="3" stroke-dasharray="25 18"/>
+
+  <!-- Bicycle wheels -->
+  <g class="wheel">
+    <circle cx="241" cy="389" r="82" fill="#fffaf0" stroke="#243447" stroke-width="9"/>
+    <circle cx="241" cy="389" r="70" fill="none" stroke="#e8a73f" stroke-width="3"/>
+    <g stroke="#91a8a4" stroke-width="3">
+      <path d="M241 319v140M171 389h140M191.5 339.5l99 99M191.5 438.5l99-99"/>
+    </g>
+    <circle cx="241" cy="389" r="7" fill="#243447"/>
+  </g>
+  <g class="wheel">
+    <circle cx="564" cy="389" r="82" fill="#fffaf0" stroke="#243447" stroke-width="9"/>
+    <circle cx="564" cy="389" r="70" fill="none" stroke="#e8a73f" stroke-width="3"/>
+    <g stroke="#91a8a4" stroke-width="3">
+      <path d="M564 319v140M494 389h140M514.5 339.5l99 99M514.5 438.5l99-99"/>
+    </g>
+    <circle cx="564" cy="389" r="7" fill="#243447"/>
+  </g>
+
+  <!-- Frame, fork, handlebars and saddle -->
+  <g fill="none" stroke="#e85d4a" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M241 389l107-122 57 122H241l137-99h139l-112 99"/>
+  </g>
+  <path d="M564 389l-47-150h-27" fill="none" class="ink"/>
+  <path d="M489 239q-12 0-12-10" fill="none" class="ink"/>
+  <path d="M335 259h38" class="ink"/>
+  <path d="M338 250q18-8 38 0" fill="none" stroke="#243447" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="405" cy="389" r="21" fill="#f6c75e" stroke="#243447" stroke-width="4"/>
+  <g class="pedal" fill="none" class="thin">
+    <path d="M405 389l17 20m-34-40l17 20" stroke="#243447" stroke-width="5" stroke-linecap="round"/>
+    <path d="M412 410h21m-55-42h21" stroke="#243447" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pelican -->
+  <g class="rider">
+    <path d="M353 255q-26 23-34 64" fill="none" stroke="#d78835" stroke-width="8" stroke-linecap="round"/>
+    <path d="M319 319l-18 8" fill="none" stroke="#d78835" stroke-width="8" stroke-linecap="round"/>
+    <path d="M414 276q4 35-15 62l20 34" fill="none" stroke="#d78835" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M419 372l18 2" fill="none" stroke="#d78835" stroke-width="8" stroke-linecap="round"/>
+    <path d="M326 209q-34-15-49-3 12 7 22 17-20-3-29 6 18 4 34 18z" fill="#c8d9d5" class="thin"/>
+    <path d="M315 208q30-43 104-23 39 10 45 50 5 46-47 56-74 13-106-25-21-24 4-58z" fill="#fffdf4" class="ink"/>
+    <path d="M337 219q23-17 67-8 21 5 25 18-16 32-56 27-27-3-36-37z" fill="#d7e7e3" class="thin"/>
+    <path d="M435 223q27 13 52 14" fill="none" stroke="#243447" stroke-width="5" stroke-linecap="round"/>
+    <path d="M420 198q20-28 17-57-4-31 19-41 24-10 41 8 15 16 7 42-7 23-4 43" fill="#fffdf4" class="ink"/>
+    <path d="M486 150q48 7 91 25-26 26-60 25-35-2-45-25z" fill="#f5a43c" class="ink"/>
+    <path d="M488 151q61-8 123 12-52 11-117 10z" fill="#f8bd51" class="ink"/>
+    <path d="M486 173q15 13 31 14" fill="none" stroke="#c57827" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="476" cy="124" rx="13" ry="15" fill="#fff" stroke="#243447" stroke-width="3"/>
+    <circle cx="480" cy="126" r="5" fill="#243447"/>
+    <path d="M462 101q13-10 26-2" fill="none" stroke="#243447" stroke-width="4" stroke-linecap="round"/>
+    <path d="M443 112q-14-8-11-17 12 8 19 4" fill="#fffdf4" class="thin"/>
+    <path d="M477 237l13 2" stroke="#e4a258" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Bell and motion accents -->
+  <path d="M505 229q0-12 11-12t11 12z" fill="#ffd65c" class="thin"/>
+  <path d="M516 214v-4" class="thin"/>
+  <g stroke="#e7a43b" stroke-width="4" stroke-linecap="round">
+    <path d="M535 207l8-7M539 220l11-1M527 198l2-10"/>
+    <path d="M95 345h55M111 363h37M126 382h24"/>
+  </g>
+
+  <rect x="70" y="491" width="660" height="43" rx="15" fill="#fffdf4" stroke="#243447" stroke-width="3"/>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#243447">“Don’t worry, my bill covers the fare.”</text>
+  <path d="M52 548H748" stroke="#9db9b0" stroke-width="2"/>
+  <text x="400" y="571" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#425b63">2026-11-07 20:02:48 SGT (UTC+08:00)</text>
+</svg>

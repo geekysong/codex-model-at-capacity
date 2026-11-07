@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Beak</title>
+  <desc id="desc">A determined pelican pedals a bicycle with a huge pouch full of fish. The wheels spin and the rider bobs in an endless loop.</desc>
+  <defs>
+    <pattern id="paper" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r=".7" fill="#263b45" opacity=".05"/>
+    </pattern>
+    <g id="spokes" stroke="#6a8891" stroke-width="3">
+      <path d="M-65 0H65M0-65V65M-46-46L46 46M-46 46L46-46"/>
+      <circle r="11" fill="#f5cc55" stroke="#233c49" stroke-width="4"/>
+    </g>
+    <g id="fish" stroke="#233c49" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M0 0Q20-18 43 0Q20 18 0 0L-13 12V-12Z" fill="#6dc4bd"/>
+      <circle cx="32" cy="-2" r="2.5" fill="#233c49" stroke="none"/>
+      <path d="M20-6L15 0L20 6" fill="none"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff4d9"/>
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M0 333Q110 285 238 330T500 318T800 322V468H0Z" fill="#dbe6cc"/>
+  <circle cx="694" cy="157" r="44" fill="#f6cd60"/>
+  <g fill="none" stroke="#fffdf4" stroke-width="13" stroke-linecap="round">
+    <path d="M44 181H135M72 166H108M584 225H668"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#233c49" text-anchor="middle">
+    <text x="400" y="66" font-size="49" font-weight="900" letter-spacing="3">TOUR DE BEAK</text>
+    <text x="400" y="99" font-size="17" font-weight="700" letter-spacing="2">THE COMMUTE HAS GONE COMPLETELY FOWL.</text>
+  </g>
+
+  <!-- One roadside scene -->
+  <g stroke="#233c49" stroke-width="4" stroke-linejoin="round">
+    <path d="M680 280V438" fill="none"/>
+    <path d="M617 248H739V303H617Z" fill="#fffdf4"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#233c49" font-weight="700">
+    <text x="678" y="270" font-size="15">BIKE LANE</text>
+    <text x="678" y="291" font-size="13">NO WIDE LOADS</text>
+  </g>
+
+  <ellipse cx="393" cy="464" rx="245" ry="15" fill="#233c49" opacity=".12"/>
+  <path d="M54 470H746" stroke="#233c49" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#b0bda4" stroke-width="3" stroke-linecap="round">
+    <path d="M78 445H127M100 426H145M588 462H628"/>
+  </g>
+
+  <!-- Wheels rotate around their own hubs -->
+  <g transform="translate(241 394)">
+    <circle r="70" fill="#fff9e9" stroke="#233c49" stroke-width="12"/>
+    <circle r="62" fill="none" stroke="#adc3be" stroke-width="3"/>
+    <g>
+      <use href="#spokes"/>
+      <path d="M43-44L49-38" stroke="#e88745" stroke-width="6"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(536 394)">
+    <circle r="70" fill="#fff9e9" stroke="#233c49" stroke-width="12"/>
+    <circle r="62" fill="none" stroke="#adc3be" stroke-width="3"/>
+    <g>
+      <use href="#spokes"/>
+      <path d="M43-44L49-38" stroke="#e88745" stroke-width="6"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M241 394L310 300L373 394ZM310 300H487L373 394M487 300L536 394" stroke="#233c49" stroke-width="13"/>
+    <path d="M241 394L310 300L373 394ZM310 300H487L373 394M487 300L536 394" stroke="#dc6651" stroke-width="7"/>
+    <path d="M310 300L300 275M487 300L479 265L501 250L521 256" stroke="#233c49" stroke-width="8"/>
+    <path d="M278 276H324" stroke="#233c49" stroke-width="13"/>
+    <path d="M500 259Q550 282 531 334" stroke="#233c49" stroke-width="2.5"/>
+    <path d="M243 394L373 394" stroke="#233c49" stroke-width="4"/>
+  </g>
+  <circle cx="373" cy="394" r="20" fill="#f5cc55" stroke="#233c49" stroke-width="4"/>
+
+  <!-- Pelican and its deliberately oversized grocery pouch -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".7s" repeatCount="indefinite"/>
+    <g stroke="#233c49" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M300 264L251 248L270 278L243 275L279 301" fill="#fffdf4"/>
+      <path d="M299 191Q265 203 270 244Q271 285 321 295Q362 303 392 274L410 226Q430 207 425 180Q420 158 401 161Q379 163 377 188L371 225Q331 184 299 191Z" fill="#fffdf4"/>
+      <path d="M289 206Q320 191 353 215L375 260Q337 285 291 264Z" fill="#278f96"/>
+      <path d="M295 223Q320 214 345 237L377 260L403 257" fill="#fffdf4"/>
+      <path d="M306 235Q318 248 344 252" fill="none" stroke="#b5c5be" stroke-width="3"/>
+      <path d="M396 212Q447 213 594 189Q583 265 528 288Q465 304 420 245Z" fill="#f1b957"/>
+      <path d="M405 205L608 182L596 199L412 221Z" fill="#ef914b"/>
+      <path d="M438 242Q480 281 536 257" fill="none" stroke="#d68b3c" stroke-width="3"/>
+      <path d="M390 166Q407 148 425 168" fill="#fffdf4"/>
+      <circle cx="409" cy="181" r="13" fill="white"/>
+      <circle cx="414" cy="181" r="4" fill="#233c49" stroke="none"/>
+      <path d="M399 160L421 164" fill="none"/>
+      <path d="M377 163Q380 132 408 132Q432 134 437 156Z" fill="#dc6651"/>
+      <path d="M388 143L391 156M402 139L405 155M416 140L420 153" stroke-width="3"/>
+      <path d="M383 165L386 191L398 202" fill="none" stroke-width="2.5"/>
+      <path d="M384 147L351 135L359 151L343 158L377 163" fill="#dc6651"/>
+    </g>
+    <use href="#fish" transform="translate(465 233) rotate(-16)"/>
+    <use href="#fish" transform="translate(530 221) rotate(13) scale(.85)"/>
+    <text x="319" y="218" fill="#fffdf4" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">01</text>
+
+    <g stroke="#233c49" stroke-width="4" stroke-linejoin="round">
+      <path d="M330 287L342 330L373 367" fill="none" stroke="#ed9c45" stroke-width="10">
+        <animate attributeName="d" values="M330 287L342 330L373 367;M330 287L359 330L373 411;M330 287L342 330L373 367" dur="1.4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g transform="translate(373 394)">
+    <g stroke="#233c49" stroke-width="5" stroke-linecap="round">
+      <path d="M0-27V27"/>
+      <g transform="translate(0 -27)">
+        <path d="M-13 0H13" stroke-width="7"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 -27" to="-360 0 -27" dur="1.4s" repeatCount="indefinite" additive="sum"/>
+      </g>
+      <circle r="5" fill="#233c49"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Static speech keeps the joke readable -->
+  <path d="M79 135H269Q283 135 283 149V185Q283 199 269 199H246L269 219L225 199H79Q65 199 65 185V149Q65 135 79 135Z" fill="#fffdf4" stroke="#233c49" stroke-width="3"/>
+  <g fill="#233c49" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="174" y="161" font-size="18" font-weight="bold">“I travel light.</text>
+    <text x="174" y="185" font-size="18" font-weight="bold">Just the essentials.”</text>
+  </g>
+
+  <rect x="0" y="490" width="800" height="110" fill="#233c49"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="400" y="523" fill="#fff4d9" font-size="22" font-weight="bold">Two wheels. One pelican. An entire fish market.</text>
+    <path d="M120 541H680" stroke="#78949a" stroke-width="1"/>
+    <text x="400" y="570" fill="#fff4d9" font-size="18">2026-11-07 20:00:01 SGT (UTC+08:00)</text>
+  </g>
+</svg>
