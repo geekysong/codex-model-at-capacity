@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A determined pelican pedals a bicycle with fish peeking out of its enormous beak.</desc>
+  <defs>
+    <style>
+      .ink { stroke:#263b46; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .wheel { transform-box:fill-box; transform-origin:center; animation:spin 2s linear infinite; }
+      .rider { animation:bob .55s ease-in-out infinite alternate; }
+      .pedal { transform-origin:408px 400px; animation:spin 2s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @keyframes bob { to { transform:translateY(5px) rotate(1deg); } }
+      @media (prefers-reduced-motion:reduce) { .wheel,.rider,.pedal { animation:none; } }
+    </style>
+    <pattern id="stripe" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="#fff6d8"/>
+      <rect width="4" height="12" fill="#f3dfaa"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8f1dc"/>
+  <rect x="18" y="18" width="764" height="564" rx="20" fill="#c8eaf0" stroke="#263b46" stroke-width="5"/>
+  <path d="M20 440 Q170 409 317 435 T780 430 V515 H20Z" fill="#a5ceba"/>
+  <path d="M20 482 Q200 470 380 482 T780 477 V515 H20Z" fill="#e3bc7b"/>
+  <path d="M40 479 H760" stroke="#b78c59" stroke-width="3" stroke-dasharray="22 20"/>
+  <g fill="#fffdf0" opacity=".85">
+    <ellipse cx="126" cy="164" rx="42" ry="15"/><ellipse cx="159" cy="158" rx="31" ry="20"/>
+    <ellipse cx="659" cy="174" rx="49" ry="16"/><ellipse cx="621" cy="169" rx="30" ry="20"/>
+  </g>
+  <text x="400" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="42" fill="#263b46">THE PELICAN COMMUTE</text>
+  <text x="400" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="17" fill="#48636b">TWO WHEELS. ONE VERY LARGE LUNCHBOX.</text>
+
+  <g class="wheel">
+    <circle cx="245" cy="402" r="88" fill="#f9f2dc" class="ink"/>
+    <circle cx="245" cy="402" r="76" fill="none" stroke="#e76d4e" stroke-width="5"/>
+    <g stroke="#7e999b" stroke-width="3">
+      <path d="M245 326V478 M169 402H321 M191 348L299 456 M299 348L191 456"/>
+    </g>
+    <circle cx="245" cy="402" r="7" fill="#263b46"/>
+  </g>
+  <g class="wheel">
+    <circle cx="570" cy="402" r="88" fill="#f9f2dc" class="ink"/>
+    <circle cx="570" cy="402" r="76" fill="none" stroke="#e76d4e" stroke-width="5"/>
+    <g stroke="#7e999b" stroke-width="3">
+      <path d="M570 326V478 M494 402H646 M516 348L624 456 M624 348L516 456"/>
+    </g>
+    <circle cx="570" cy="402" r="7" fill="#263b46"/>
+  </g>
+
+  <g fill="none" stroke="#e45f44" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M245 402 L332 310 L408 400 L245 402 L338 326 L490 326 L408 400"/>
+    <path d="M490 326 L570 402 M490 326 L480 290"/>
+  </g>
+  <path d="M322 308 H354 M469 286 H510 Q522 286 522 298" fill="none" class="ink" stroke-width="8"/>
+  <path d="M344 302 H377 Q384 302 384 309 H340Z" fill="#263b46"/>
+  <circle cx="408" cy="400" r="19" fill="#fff3cb" class="ink"/>
+  <g class="pedal">
+    <path d="M393 389 L423 411" class="ink" fill="none"/>
+    <path d="M383 386 H398 M418 414 H433" class="ink" fill="none" stroke-width="7"/>
+  </g>
+
+  <g class="rider">
+    <path d="M352 284 Q321 270 310 240 Q337 247 354 256" fill="#f5f0dd" class="ink"/>
+    <ellipse cx="385" cy="250" rx="62" ry="48" fill="#fffaf0" class="ink" transform="rotate(-12 385 250)"/>
+    <path d="M358 240 Q383 223 412 241 Q405 265 371 266 Q388 257 389 247" fill="#d7e3df" class="ink"/>
+    <path d="M398 284 L412 320 L393 342" fill="none" stroke="#ec9b41" stroke-width="8" stroke-linecap="round"/>
+    <path d="M393 342 L415 342" fill="none" class="ink" stroke-width="6"/>
+    <path d="M369 288 L352 325 L371 344" fill="none" stroke="#ec9b41" stroke-width="8" stroke-linecap="round"/>
+    <path d="M371 344 L390 344" fill="none" class="ink" stroke-width="6"/>
+    <path d="M421 236 Q436 230 449 246 L477 283" fill="none" stroke="#fffaf0" stroke-width="15" stroke-linecap="round"/>
+    <path d="M421 236 Q436 230 449 246 L477 283" fill="none" class="ink" stroke-width="5"/>
+    <path d="M471 283 Q480 274 490 284" fill="none" class="ink" stroke-width="7"/>
+    <path d="M407 220 Q413 190 423 169 Q433 148 454 153 Q476 158 473 180 L461 220Z" fill="#fffaf0" class="ink"/>
+    <path d="M444 186 Q487 179 555 192 Q581 197 596 204 Q561 209 470 210 L449 211Z" fill="#f4aa43" class="ink"/>
+    <path d="M450 211 Q473 257 527 244 Q560 236 596 204 Q536 215 450 211Z" fill="#f3c36a" class="ink"/>
+    <path d="M477 220 Q500 233 522 220" fill="none" stroke="#d38b35" stroke-width="3"/>
+    <path d="M491 214 Q499 205 509 213 Q499 222 491 214Z" fill="#79b4bd" stroke="#263b46" stroke-width="2"/>
+    <path d="M509 213 L516 208 L515 218Z" fill="#79b4bd" stroke="#263b46" stroke-width="2"/>
+    <circle cx="496" cy="213" r="1.7" fill="#263b46"/>
+    <ellipse cx="449" cy="174" rx="10" ry="12" fill="#fff"/>
+    <circle cx="452" cy="175" r="4" fill="#263b46"/>
+    <path d="M441 158 Q450 151 460 159" fill="none" class="ink" stroke-width="3"/>
+    <path d="M420 151 Q435 130 461 143 L469 151 Q446 146 420 155Z" fill="#e45f44" class="ink"/>
+    <path d="M431 140 Q440 126 450 139" fill="#e45f44" class="ink"/>
+  </g>
+
+  <path d="M98 353 Q116 344 132 352 M90 369 Q112 361 129 368 M105 385 H132" fill="none" stroke="#759b9b" stroke-width="4" stroke-linecap="round"/>
+  <rect x="20" y="515" width="760" height="65" rx="0" fill="url(#stripe)"/>
+  <path d="M20 515 H780" stroke="#263b46" stroke-width="4"/>
+  <text x="400" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#263b46">He insists his lunch is just along for the ride.</text>
+  <text x="400" y="566" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#263b46">2026-11-07 12:02:39 SGT (UTC+08:00)</text>
+</svg>
