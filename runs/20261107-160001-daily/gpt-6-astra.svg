@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="white"/>
+
+  <!-- Visited cells -->
+  <g fill="#cceeff">
+    <rect x="150" y="50" width="60" height="60"/>
+    <rect x="210" y="50" width="60" height="60"/>
+    <rect x="270" y="50" width="60" height="60"/>
+    <rect x="270" y="110" width="60" height="60"/>
+    <rect x="270" y="170" width="60" height="60"/>
+    <rect x="330" y="170" width="60" height="60"/>
+  </g>
+
+  <!-- Centered 300 × 300 grid -->
+  <path d="M150 50H450V350H150Z
+           M210 50V350 M270 50V350 M330 50V350 M390 50V350
+           M150 110H450 M150 170H450 M150 230H450 M150 290H450"
+        fill="none" stroke="#374151" stroke-width="2"/>
+
+  <!-- Connected path through cell centers -->
+  <polyline points="180,80 240,80 300,80 300,140 300,200 360,200"
+            fill="none" stroke="#dc2626" stroke-width="5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Starting robot, facing right -->
+  <g stroke="#1f2937" stroke-width="2">
+    <rect x="164" y="67" width="27" height="26" rx="5" fill="#94a3b8"/>
+    <path d="M191 73L201 80L191 87Z" fill="#475569"/>
+    <path d="M176 67V61" fill="none"/>
+    <circle cx="176" cy="59" r="3" fill="#475569"/>
+    <circle cx="183" cy="75" r="2" fill="white" stroke="none"/>
+    <circle cx="183" cy="85" r="2" fill="white" stroke="none"/>
+  </g>
+
+  <!-- Final position -->
+  <circle cx="360" cy="200" r="12" fill="#16a34a" stroke="white" stroke-width="3"/>
+
+  <!-- Labels outside the grid -->
+  <g font-family="Arial, sans-serif" fill="#1f2937">
+    <text x="300" y="28" text-anchor="middle" font-size="17">Commands: F, F, R, F, F, L, F</text>
+    <text x="466" y="181" font-size="16" font-weight="bold">Final cell</text>
+    <text x="466" y="205" font-size="16">Row 3, Col 4</text>
+    <text x="466" y="229" font-size="16">Facing: Right</text>
+  </g>
+
+  <!-- Dedicated timestamp footer -->
+  <text x="300" y="383" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="16" fill="#374151">2026-11-07 16:03:42 SGT (UTC+08:00)</text>
+</svg>

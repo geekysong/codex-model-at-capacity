@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican's Cycle of Life</title>
+  <desc id="desc">A smug pelican rides a bicycle, proudly carrying an absurdly tiny helmet. The wheels turn and the rider bobs gently.</desc>
+  <defs>
+    <style>
+      text { font-family: "Trebuchet MS", Arial, sans-serif; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 3s linear infinite; }
+      .rider { transform-box: fill-box; transform-origin: center bottom; animation: bob .65s ease-in-out infinite alternate; }
+      .pedal { transform-box: fill-box; transform-origin: center; animation: spin 1.3s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes bob { to { transform: translateY(-5px) rotate(-1deg); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#bdeeff"/>
+  <circle cx="680" cy="120" r="55" fill="#ffd85b"/>
+  <path d="M0 355 Q120 310 245 350 T500 344 T800 350 V600 H0Z" fill="#83d59a"/>
+  <path d="M0 410 Q180 385 360 412 T800 402 V600 H0Z" fill="#62bd7e"/>
+  <path d="M70 335 Q150 260 230 335 M570 330 Q650 250 735 330" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <g fill="#fff" opacity=".9">
+    <ellipse cx="130" cy="130" rx="42" ry="15"/><ellipse cx="155" cy="121" rx="25" ry="21"/><ellipse cx="181" cy="132" rx="33" ry="13"/>
+    <ellipse cx="400" cy="190" rx="35" ry="13"/><ellipse cx="422" cy="181" rx="22" ry="18"/><ellipse cx="447" cy="192" rx="30" ry="12"/>
+  </g>
+
+  <text id="title" x="400" y="57" text-anchor="middle" font-size=" thirty" font-size="30" font-weight="900" letter-spacing="1" fill="#173b56">THE PELICAN'S CYCLE OF LIFE</text>
+  <text x="400" y="87" text-anchor="middle" font-size="17" font-weight="700" fill="#315c70">“He’s got a beak for speed—and absolutely no sense of direction.”</text>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke="#173b56" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g class="wheel">
+      <circle cx="250" cy="425" r="74" stroke="#263e4a" stroke-width="8"/>
+      <circle cx="250" cy="425" r="5" fill="#263e4a"/>
+      <path d="M250 351V499 M176 425H324 M198 373L302 477 M302 373L198 477" stroke="#708b95" stroke-width="3"/>
+    </g>
+    <g class="wheel">
+      <circle cx="550" cy="425" r="74" stroke="#263e4a" stroke-width="8"/>
+      <circle cx="550" cy="425" r="5" fill="#263e4a"/>
+      <path d="M550 351V499 M476 425H624 M498 373L602 477 M602 373L498 477" stroke="#708b95" stroke-width="3"/>
+    </g>
+    <path d="M250 425L350 425L405 345L475 425L350 425L320 350L390 350" stroke="#e94f37" stroke-width="9"/>
+    <path d="M310 344H354 M390 350L413 325 M460 425L476 425" stroke="#173b56" stroke-width="8"/>
+    <path d="M404 345L428 345" stroke="#173b56" stroke-width="6"/>
+    <g class="pedal">
+      <circle cx="350" cy="425" r="10" fill="#ffd85b" stroke="#173b56" stroke-width="4"/>
+      <path d="M350 425L371 445 M350 425L330 405" stroke="#173b56" stroke-width="5"/>
+      <path d="M366 445H383 M314 405H331" stroke="#173b56" stroke-width="6"/>
+    </g>
+  </g>
+
+  <!-- Pelican rider -->
+  <g class="rider">
+    <!-- tail and body -->
+    <path d="M337 303 Q307 278 293 291 Q309 315 338 321Z" fill="#f8f5e9" stroke="#173b56" stroke-width="5"/>
+    <ellipse cx="389" cy="292" rx="62" ry="52" fill="#fffdf3" stroke="#173b56" stroke-width="5"/>
+    <path d="M359 294 Q392 260 425 286 Q407 319 371 326Z" fill="#dcecf0" stroke="#173b56" stroke-width="3"/>
+    <!-- neck -->
+    <path d="M426 292 Q444 248 432 207 Q427 188 442 178" fill="none" stroke="#fffdf3" stroke-width="24" stroke-linecap="round"/>
+    <path d="M426 292 Q444 248 432 207 Q427 188 442 178" fill="none" stroke="#173b56" stroke-width="5" stroke-linecap="round"/>
+    <!-- head -->
+    <ellipse cx="453" cy="166" rx="37" ry="31" fill="#fffdf3" stroke="#173b56" stroke-width="5"/>
+    <circle cx="466" cy="158" r="5" fill="#173b56"/>
+    <circle cx="467" cy="156" r="1.6" fill="#fff"/>
+    <!-- enormous beak and pouch -->
+    <path d="M477 171 Q530 159 579 173 Q551 198 486 189Z" fill="#ffb52e" stroke="#173b56" stroke-width="5"/>
+    <path d="M487 184 Q525 191 578 174 Q568 220 526 228 Q493 223 487 184Z" fill="#f47d55" stroke="#173b56" stroke-width="5"/>
+    <path d="M503 196 Q526 204 552 195" fill="none" stroke="#d95443" stroke-width="3"/>
+    <!-- tiny helmet -->
+    <path d="M426 145 Q437 119 463 128 Q476 133 479 147Z" fill="#ffd85b" stroke="#173b56" stroke-width="4"/>
+    <path d="M426 146L477 148 M440 128L439 144 M459 129L461 145" fill="none" stroke="#173b56" stroke-width="3"/>
+    <path d="M438 147L434 158 M468 148L474 159" stroke="#173b56" stroke-width="3"/>
+    <!-- wing and legs -->
+    <path d="M358 281 Q383 267 410 288 Q393 309 362 307Z" fill="#f1eee2" stroke="#173b56" stroke-width="4"/>
+    <path d="M375 323L356 350L332 350 M410 323L393 348L375 348" fill="none" stroke="#e5a52d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M326 350H346 M369 348H389" stroke="#173b56" stroke-width="4" stroke-linecap="round"/>
+    <!-- wings on handlebars -->
+    <path d="M426 277 Q441 292 454 320 M454 320L474 345" fill="none" stroke="#173b56" stroke-width="6" stroke-linecap="round"/>
+    <path d="M428 278 Q448 276 456 288" fill="none" stroke="#f1eee2" stroke-width="9" stroke-linecap="round"/>
+    <path d="M456 288L477 343" fill="none" stroke="#173b56" stroke-width="6" stroke-linecap="round"/>
+    <path d="M473 345L488 337" fill="none" stroke="#173b56" stroke-width="5" stroke-linecap="round"/>
+    <!-- speech -->
+    <path d="M555 109 Q590 92 635 107 Q654 114 648 137 Q643 156 607 153 L584 168 L587 150 Q558 148 552 132Z" fill="#fff" stroke="#173b56" stroke-width="3"/>
+    <text x="603" y="129" text-anchor="middle" font-size="15" font-weight="900" fill="#173b56">I AM THE</text>
+    <text x="604" y="146" text-anchor="middle" font-size="15" font-weight="900" fill="#e94f37">BIKE BOSS!</text>
+  </g>
+
+  <!-- road details -->
+  <path d="M70 525H730" stroke="#fff4cc" stroke-width="7" stroke-dasharray="34 25" stroke-linecap="round"/>
+  <g fill="#315c70" font-size="14" font-weight="800">
+    <text x="111" y="390" transform="rotate(-8 111 390)">HONK IF YOU'RE FISH</text>
+    <text x="596" y="390" transform="rotate(7 596 390)">NO FLYING ZONE</text>
+  </g>
+
+  <rect x="0" y="558" width="800" height="42" fill="#173b56"/>
+  <text x="400" y="585" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">2026-11-07 16:02:10 SGT (UTC+08:00)</text>
+</svg>
