@@ -2,7 +2,7 @@
 
 **English** | [中文](README.zh-CN.md)
 
-> **Census resumed 2026-10-29**, every 30 minutes through November 12, 2026 (SGT inclusive). Previous closeout and excluded records remain documented in `closeout.json`; new attempts retain errors as evidence.
+> **Census concluded 2026-11-07 (SGT).** Scheduled runs on `songyy-pi` were stopped on November 7, 2026 (final scheduled round: `20261107-200001`), and the repository was moved from the Raspberry Pi server to the local Mac mini development machine (`~/Documents/projects/codex-model-at-capacity`). Historical rounds, SVGs, Claude comparisons, and quality reviews remain preserved in `stats.json` and on GitHub Pages. (Previously resumed 2026-10-29 after the earlier closeout documented in `closeout.json`.)
 
 Account region: earlier runs used a Philippines-region account. Resumed runs from October 29, 2026 use a Singapore-region account. Account and region changed together; consider this when comparing the two periods.
 
