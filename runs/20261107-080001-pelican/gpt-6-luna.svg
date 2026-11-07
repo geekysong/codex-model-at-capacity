@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Pelican Commute</title>
+  <desc id="desc">A smug pelican rides a bicycle, pedaling furiously while a tiny fish enjoys the ride in its beak.</desc>
+  <defs>
+    <style>
+      .ink{stroke:#19324a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .wheel{fill:#eaf6f4;stroke:#19324a;stroke-width:7}
+      .spoke{stroke:#72a5a4;stroke-width:2.5}
+      .frame{fill:none;stroke:#e75b45;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .type{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes pedal{0%,100%{transform:rotate(0deg)}50%{transform:rotate(360deg)}}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .spokes{transform-box:fill-box;transform-origin:center;animation:spin 2.8s linear infinite}
+      .crank{transform-box:fill-box;transform-origin:center;animation:pedal 1.4s linear infinite}
+      .rider{transform-box:fill-box;transform-origin:center;animation:bob .7s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#fff3d6"/>
+  <path d="M0 0h800v12H0z" fill="#e75b45"/>
+  <circle cx="692" cy="120" r="43" fill="#ffd267"/>
+  <path d="M0 397q125-25 250 0t250 0 300 0v105H0z" fill="#d9ece2"/>
+  <path d="M0 472h800" stroke="#19324a" stroke-width="4" stroke-dasharray="20 16" opacity=".35"/>
+
+  <text x="40" y="63" class="type ink" fill="#19324a" font-size="31" font-weight="900" letter-spacing="1.2">THE PELICAN COMMUTE</text>
+  <text x="42" y="94" class="type" fill="#496478" font-size="17" font-weight="650">“I’m on a strict fish-and-wheels schedule.”</text>
+
+  <!-- Speed lines -->
+  <path d="M105 263h94M78 285h87M117 307h61" stroke="#e75b45" stroke-width="5" stroke-linecap="round"/>
+  <path d="M617 250h62M632 273h89M610 296h54" stroke="#e75b45" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Bicycle -->
+  <g aria-label="Bicycle">
+    <circle class="wheel" cx="258" cy="405" r="77"/>
+    <circle class="wheel" cx="562" cy="405" r="77"/>
+    <g class="spokes">
+      <g>
+        <path class="spoke" d="M258 331v148M184 405h148M206 353l104 104M206 457l104-104"/>
+        <path class="spoke" d="M562 331v148M488 405h148M510 353l104 104M510 457l104-104"/>
+      </g>
+    </g>
+    <path class="frame" d="M258 405 355 405 314 316 258 405M355 405l81-109 126 109M355 405l80-9"/>
+    <path d="M300 305h46M424 284h37M435 396l-7 31M435 396l25 15" fill="none" stroke="#19324a" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="355" cy="405" r="11" fill="#ffd267" stroke="#19324a" stroke-width="4"/>
+    <g class="crank">
+      <path d="M355 405l27 22M355 405l-27-22" stroke="#19324a" stroke-width="5" stroke-linecap="round"/>
+      <path d="M378 427h17M328 383h-17" stroke="#19324a" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <path d="M410 278l23 7-7 18-24-5z" fill="#19324a"/>
+    <path d="M522 292l22-6 8 22-24 8z" fill="#19324a"/>
+  </g>
+
+  <!-- Expressive pelican rider -->
+  <g class="rider" aria-label="Pelican pedaling">
+    <!-- tail -->
+    <path d="M346 260q-34-17-49-3 19 3 23 18-21-5-32 7 37 16 63-2z" fill="#315e72" class="ink"/>
+    <!-- body -->
+    <path d="M339 263q16-69 91-77 50-5 75 34 18 29 5 62-17 39-75 34l-72-9z" fill="#4f8790" class="ink"/>
+    <path d="M365 280q34-36 87-18 29 10 40 34-27 26-76 18-32-4-51-34z" fill="#fffaf0" stroke="#19324a" stroke-width="4"/>
+    <!-- wing -->
+    <path d="M355 254q45-44 97-22 17 8 22 22-29-10-51 2-28 14-47 36-18-10-21-38z" fill="#78abb0" class="ink"/>
+    <path d="M378 255l41 4m-25-21 33 8m-43 35 35-20" stroke="#315e72" stroke-width="3" stroke-linecap="round"/>
+    <!-- neck -->
+    <path d="M455 230q-8-63 33-98 22-19 45-8 20 10 14 34-7 24-36 30-22 6-24 40z" fill="#4f8790" class="ink"/>
+    <!-- head -->
+    <path d="M499 126q19-31 53-18 31 12 26 42-3 24-29 31-33 9-52-18-12-18 2-37z" fill="#5d98a0" class="ink"/>
+    <!-- eye and cocky brow -->
+    <circle cx="544" cy="132" r="11" fill="#fffaf0" stroke="#19324a" stroke-width="3"/>
+    <circle cx="548" cy="133" r="4.5" fill="#19324a"/>
+    <path d="M533 113q19-15 34-3" fill="none" stroke="#19324a" stroke-width="5" stroke-linecap="round"/>
+    <!-- beak and pouch -->
+    <path d="M562 148q50 1 82 26-27 14-72 12-27-1-38-15z" fill="#f2a43a" class="ink"/>
+    <path d="M571 166q33 18 63 8-11 33-41 37-29 3-40-28z" fill="#ef7652" class="ink"/>
+    <path d="M580 179q18 7 38 5" fill="none" stroke="#c64c40" stroke-width="3"/>
+    <!-- tiny passenger fish -->
+    <path d="M614 159q13-13 29 0-16 15-29 0zm28 0 9-8v16z" fill="#ffd267" stroke="#19324a" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="620" cy="158" r="2.3" fill="#19324a"/>
+    <path d="M622 164q8 5 15 0" fill="none" stroke="#19324a" stroke-width="2"/>
+    <!-- legs and shoes -->
+    <path d="M403 302q-4 32-32 52l-28 33m84-26q19 16 0 39l-13 16" fill="none" stroke="#f2a43a" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M337 381l-13 10q-8 7 0 14l26-1 12-14zm71 29-9 18q-3 9 7 12l24-13-3-13z" fill="#e75b45" class="ink"/>
+    <!-- little helmet -->
+    <path d="M493 118q8-29 37-29 26 0 34 22l-62 9z" fill="#e75b45" class="ink"/>
+    <path d="M503 116l-5 12m20-17-2 10m21-10-1 9" stroke="#ffd267" stroke-width="3" stroke-linecap="round"/>
+    <path d="M524 91q16-14 29-6" fill="none" stroke="#19324a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- comic details -->
+  <path d="M590 97q16-12 32-2m-40-8 8-13m31 17 13-8" fill="none" stroke="#e75b45" stroke-width="4" stroke-linecap="round"/>
+  <path d="M213 338q-18-10-29 3m386 44q23-15 37 0" fill="none" stroke="#19324a" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+  <text x="40" y="535" class="type" fill="#19324a" font-size="15" font-weight="700">LOCAL BIRD CLAIMS BIKE LANE; FISH DECLINES TO COMMENT.</text>
+  <path d="M40 551h720" stroke="#e75b45" stroke-width="3"/>
+  <text x="400" y="580" text-anchor="middle" class="type" fill="#19324a" font-size="16" font-weight="750">2026-11-07 08:02:04 SGT (UTC+08:00)</text>
+</svg>

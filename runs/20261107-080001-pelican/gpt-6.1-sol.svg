@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tour de Beak</title>
+  <desc id="desc">A self-important pelican pedals a bicycle carrying one tiny fish. Its enormous bill defeats its aerodynamic ambitions. Wheels spin, pedals turn, and the pelican bobs in a continuous loop.</desc>
+  <defs>
+    <pattern id="paper" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#fff8e7"/>
+      <circle cx="2" cy="3" r=".65" fill="#e5d9bc"/>
+    </pattern>
+    <g id="spokes" stroke="#425664" stroke-width="3">
+      <path d="M-70 0H70M0-70V70M-49.5-49.5l99 99M-49.5 49.5l99-99"/>
+      <circle r="8" fill="#f6c447" stroke="#253b46"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#paper)"/>
+  <path d="M0 411Q130 369 268 410T548 403T800 398V500H0Z" fill="#dce5b4"/>
+  <path d="M0 443H800V500H0Z" fill="#e0cfa8"/>
+  <path d="M27 471H131m478 0h121" stroke="#fff8e7" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="400" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="43" font-weight="900" letter-spacing="3" fill="#203b45">TOUR DE BEAK</text>
+  <text x="400" y="89" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#b95036">ALL THE GEAR. ABSOLUTELY NO AERODYNAMICS.</text>
+
+  <!-- A boast with a conspicuously large counterargument. -->
+  <path d="M58 118h224q15 0 15 15v52q0 15-15 15h-43l-22 27 2-27H58q-15 0-15-15v-52q0-15 15-15Z" fill="white" stroke="#263d46" stroke-width="3"/>
+  <text x="170" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#263d46">
+    <tspan x="170">“I’m built</tspan>
+    <tspan x="170" dy="25">for speed.”</tspan>
+  </text>
+
+  <!-- Bicycle wheels rotate independently of the stationary tires. -->
+  <g fill="#fff8e7" stroke="#253b46" stroke-width="9">
+    <circle cx="240" cy="408" r="76"/>
+    <circle cx="561" cy="408" r="76"/>
+  </g>
+  <g transform="translate(240 408)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g transform="translate(561 408)">
+    <g>
+      <use href="#spokes"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bright red frame and overloaded front end. -->
+  <g fill="none" stroke="#d6533e" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M240 408l83-126 64 126H240l267-111-120 111M323 282l184 15M561 408l-54-111-13-45"/>
+  </g>
+  <path d="M319 282l-7-26M294 254h48" fill="none" stroke="#253b46" stroke-width="9" stroke-linecap="round"/>
+  <path d="M493 253l-6-20h39" fill="none" stroke="#253b46" stroke-width="7" stroke-linecap="round"/>
+  <path d="M238 408h149" fill="none" stroke="#58656a" stroke-width="3"/>
+  <circle cx="387" cy="408" r="16" fill="#f6c447" stroke="#253b46" stroke-width="4"/>
+
+  <!-- Pedal crank and bright webbed feet. -->
+  <g transform="translate(387 408)">
+    <g>
+      <path d="M-23 0H23" stroke="#253b46" stroke-width="6"/>
+      <path d="M-39-4l14-9 14 10-5 8h-25ZM10-4l14-9L40-3l-5 8H12Z" fill="#f4ad36" stroke="#253b46" stroke-width="3"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Rider bobs while the lettering stays still. -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".8s" repeatCount="indefinite"/>
+    <path d="M340 310q33 33 47 77" fill="none" stroke="#edaa32" stroke-width="12" stroke-linecap="round"/>
+    <path d="M310 309q14 35 54 70" fill="none" stroke="#bd7d26" stroke-width="10" stroke-linecap="round"/>
+
+    <path d="M309 227l-48 45 41 3-32 21 56 2" fill="#f9fcf6" stroke="#263d46" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M314 220q-31 8-25 54 5 46 55 48 53 0 70-48l-15-57Z" fill="#fcfff9" stroke="#263d46" stroke-width="4"/>
+    <path d="M296 265q52 19 109-7l-7 39q-47 43-94 2Z" fill="#33969b" stroke="#263d46" stroke-width="3"/>
+    <path d="M324 231q-11 26 8 44 23 16 49-7" fill="#e8eee3" stroke="#263d46" stroke-width="4" stroke-linecap="round"/>
+    <path d="M377 268q57 3 103-36" fill="none" stroke="#263d46" stroke-width="6" stroke-linecap="round"/>
+    <path d="M381 267q51 7 99-35" fill="none" stroke="#f9fcf6" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- Long curved neck and magnificently impractical bill. -->
+    <path d="M369 232q-14-35-8-64 6-31 39-31 35 0 43 33l-7 28q-23 0-27-15-15 22 1 53" fill="#fcfff9" stroke="#263d46" stroke-width="4"/>
+    <path d="M429 177l245 26q-46 83-149 56-62-16-91-60Z" fill="#f1ba58" stroke="#263d46" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M429 177l251 24-246-1Z" fill="#ffda75" stroke="#263d46" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M462 210q84 44 173 7" fill="none" stroke="#d28b35" stroke-width="3"/>
+    <circle cx="413" cy="164" r="10" fill="white" stroke="#263d46" stroke-width="3"/>
+    <circle cx="417" cy="164" r="4" fill="#263d46"/>
+    <path d="M402 148l20 4" stroke="#263d46" stroke-width="4" stroke-linecap="round"/>
+    <path d="M363 145q9-39 48-27 21 5 26 28Z" fill="#d6533e" stroke="#263d46" stroke-width="4"/>
+    <path d="M378 121l-4 17m20-20-3 21m20-17-2 17" stroke="#ffd576" stroke-width="5" stroke-linecap="round"/>
+    <path d="M370 151q-14 30 23 45" fill="none" stroke="#263d46" stroke-width="3"/>
+  </g>
+
+  <!-- One very small fish gets a very expensive ride. -->
+  <path d="M540 279h99l-12 63h-74Z" fill="#ca965b" stroke="#263d46" stroke-width="4"/>
+  <path d="M550 296h82m-79 17h75m-72 16h69m-56-47 6 57m15-57v59m20-59-5 57" stroke="#805c3e" stroke-width="2"/>
+  <path d="M562 275q17-25 38-9l17-11-3 23-14-4q-20 15-38 1Z" fill="#76bac0" stroke="#263d46" stroke-width="3"/>
+  <circle cx="573" cy="269" r="3" fill="#263d46"/>
+  <path d="M560 343l1 22" stroke="#263d46" stroke-width="4"/>
+  <path d="M154 328h-45m58 21h-30m376-223h39m-27 17h41" fill="none" stroke="#899b91" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Dedicated caption and timestamp footer. -->
+  <rect x="0" y="500" width="800" height="100" fill="#203b45"/>
+  <text x="400" y="535" text-anchor="middle" fill="#fff4cf" font-family="Arial, sans-serif" font-size="21" font-weight="bold">He bought a bicycle to save on fish delivery.</text>
+  <text x="400" y="575" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="17">2026-11-07 08:01:08 SGT (UTC+08:00)</text>
+</svg>
